@@ -61,10 +61,67 @@
   }
 
   // ---------------------------------------------------------------- pieces
+  var GL = window.GLOSSARY || {}, FL = window.FLAGS || {}, GUIDES = window.GUIDES || [];
   function typeLink(t) {
     var base = String(t).replace(/\[\]$/, "");
     var label = esc(t);
-    return A.T[base] ? '<a class="t" href="#/type/' + enc(base) + '">' + label + "</a>" : '<span class="t">' + label + "</span>";
+    if (A.T[base]) return '<a class="t" href="#/type/' + enc(base) + '">' + label + "</a>";
+    if (GL[base]) return '<a class="t gl" href="#/glossary/' + enc(base) + '" title="' + esc(GL[base][0] + (GL[base][1] ? ". " + GL[base][1] : "")) + '">' + label + "</a>";
+    return '<span class="t">' + label + "</span>";
+  }
+
+  // ------------------------------------------------------------ plain English
+  function plainType(t) {
+    t = String(t || "?");
+    if (/\[\]$/.test(t)) return "a list of " + plainType(t.slice(0, -2)).replace(/^(an?|one of the) /, "");
+    if (GL[t]) return GL[t][0];
+    var T = A.T[t];
+    if (T && T.k === "Enumeration") return 'one of the <a href="#/type/' + enc(t) + '">' + esc(t) + "</a> values (a number)";
+    if (T) return 'a <a href="#/type/' + enc(t) + '">' + esc(t) + "</a> table";
+    return esc(t);
+  }
+  function plainParams(list, returning) {
+    return (list || []).map(function (a) {
+      var bits = "<code>" + esc(a[0]) + "</code>: " + plainType(a[1]);
+      if (a[2]) bits += returning ? ", or nothing" : ' <span class="muted">(optional' + (a[3] != null ? ", default " + esc(a[3]) : "") + ")</span>";
+      else if (a[3] != null) bits += ' <span class="muted">(default ' + esc(a[3]) + ")</span>";
+      return "<li>" + bits + (a[4] ? " — " + esc(a[4]) : "") + "</li>";
+    }).join("");
+  }
+  var VERB = { Get: "Gets", Set: "Sets", Is: "True if", Has: "True if it has", Can: "True if it can", Should: "True if it should",
+    Are: "True if", Does: "True if it does", Num: "The number of" };
+  function fromName(name) {
+    var words = String(name).replace(/([a-z0-9])([A-Z])/g, "$1 $2").replace(/([A-Z]+)([A-Z][a-z])/g, "$1 $2").split(" ");
+    var first = words.shift();
+    var rest = words.join(" ").toLowerCase().replace(/\bid\b/g, "ID").replace(/\bui\b/g, "UI").replace(/\bguid\b/g, "GUID");
+    if (!rest) return null;
+    if (first === "Unit") return "The unit's " + rest + ".";
+    var verb = VERB[first] || (/(s|sh|ch|x)$/.test(first) ? first + "es" : /[^aeiou]y$/.test(first) ? first.slice(0, -1) + "ies" : first + "s");
+    return verb + " " + rest + ".";
+  }
+  function allSecret(r) { return !!(r && r.returns && r.returns.length && r.returns.every(function (v) { return /^secret/.test(v); })); }
+  function anySecret(r) { return !!(r && (r.returns || []).some(function (v) { return /^secret/.test(v); })); }
+  function refused(r) { return !!(r && (r.forbidden || /forbidden|blocked/.test(r.skipped || ""))); }
+  // [tone, sentence]: what an add-on author should take away, from what the game did
+  function verdict(f) {
+    var o = f.o, c = f.c, fl = f.fl || {};
+    if (f.s === "not-in-game") return ["bad", "Not in this client. Don't use it."];
+    if (/crash/.test(((o || {}).skipped || "") + ((c || {}).skipped || ""))) return ["bad", "Crashed the client when called with no arguments. Avoid it until someone tests it with real arguments."];
+    if (refused(o)) return ["bad", "Add-ons can't call this: the client refused the probe's call."];
+    if (refused(c)) return ["warn", "Works out of combat; blocked in combat. Call it out of combat only."];
+    if (o && o.missing) return ["bad", "Missing when the probe called it."];
+    if (allSecret(o)) return ["secret", "Always secret, even out of combat. You can hand the value to widgets that accept secrets, but your code can't read, compare or do math on it."];
+    if (o && o.n != null) {
+      if (!c) return ["ok", "Worked out of combat. Not tried in combat."];
+      if (c.error != null) return ["warn", "Works out of combat; errors in combat for add-on code. Call it out of combat only."];
+      if (anySecret(c) && !anySecret(o)) return ["secret", "Works out of combat. In combat the result is " + (allSecret(c) ? "" : "partly ") + "secret: show it with a widget that accepts secrets, but don't compare or calculate with it."];
+      return ["ok", "Worked in and out of combat with no restrictions seen."];
+    }
+    if (o && /Usage|bad argument|Invalid/.test(o.error || "")) return ["plain", "Needs arguments. The probe called it with none, so only its existence is confirmed; the error below says what it expects."];
+    if (o && o.error != null) return ["warn", "Errored when the probe called it with " + (o.arg === "unit" ? '"player"' : "no arguments") + "."];
+    if (fl.IsProtectedFunction) return ["bad", "Protected, says Blizzard's docs: add-ons can't call it. Not tested in game."];
+    if (f.s === "unverified") return ["plain", "Not checked in game yet."];
+    return ["plain", "Exists in game. The probe didn't call it (it needs arguments or isn't a getter), so its behaviour is untested."];
   }
   function params(list) {
     return (list || []).map(function (a) {
@@ -83,7 +140,7 @@
       var word = FLAG_WORDS[k] || (fl[k] === true ? k : k + ": " + fl[k]);
       if (k === "SecretArguments") word = "secret args: " + fl[k];
       var cls = /Secret/.test(k) && k !== "ReturnsNeverSecret" && k !== "SecretArguments" ? "p-secret" : /Protected|Restrict|Requires/.test(k) ? "p-warn" : "p-plain";
-      return '<span class="pill ' + cls + '" title="' + esc(k) + ' (Blizzard\'s docs; not checked in game)">' + esc(word) + "</span>";
+      return '<span class="pill ' + cls + '" title="' + esc((FL[k] || k) + " (Blizzard's docs; not checked in game)") + '">' + esc(word) + "</span>";
     }).join("");
   }
   function callCell(r, long) {
@@ -110,11 +167,19 @@
     if (f.g) h += '<span class="pill p-plain">' + esc(FN_KIND[f.g.split("!")[0]] || f.g) + "</span>";
     if (f.ui) h += '<span class="pill p-plain">Blizzard UI Lua</span>';
     h += "</div>";
-    if (f.a || f.r) h += signature(k, f.a, f.r);
+    var v = verdict(f);
+    h += '<div class="verdict v-' + v[0] + '"><b>In practice:</b> ' + esc(v[1]) + "</div>";
     if (f.d) h += "<p>" + esc(f.d) + "</p>";
-    var docs = (f.a || []).concat(f.r || []).filter(function (a) { return a[4]; });
+    else {
+      var guess = fromName(k.split(".").pop());
+      if (guess) h += "<p>" + esc(guess) + ' <span class="note">(explanation, from its name)</span></p>';
+    }
+    if (f.a || f.r) {
+      h += signature(k, f.a, f.r);
+      h += '<div class="plain">' + (f.a && f.a.length ? "<div><b>You give</b><ul>" + plainParams(f.a) + "</ul></div>" : "<div><b>You give</b> nothing.</div>") +
+        (f.r && f.r.length ? "<div><b>You get back</b><ul>" + plainParams(f.r, true) + "</ul></div>" : "<div><b>You get back</b> nothing.</div>") + "</div>";
+    }
     var kv = "";
-    docs.forEach(function (a) { kv += "<div><code>" + esc(a[0]) + "</code></div><div>" + esc(a[4]) + "</div>"; });
     if (f.fl) kv += "<div>Blizzard flags</div><div><div class=\"flags\">" + flagPills(f.fl) + '</div><div class="note">From the client docs; the call results below are what the game did.</div></div>';
     if (f.o) kv += "<div>Out of combat" + (f.o.arg === "unit" ? ' <span class="note">("player")</span>' : "") + "</div><div>" + callCell(f.o, true) + "</div>";
     if (f.c) kv += "<div>In combat</div><div>" + callCell(f.c, true) + (same(f.c.returns, f.o && f.o.returns) && !f.c.error === !(f.o && f.o.error) ? ' <span class="note">(same)</span>' : "") + "</div>";
@@ -132,7 +197,7 @@
     var h = '<div class="card" id="' + esc(k) + '"><div class="head"><h3><a href="#/event/' + enc(k) + '">' + esc(k) + "</a></h3>" + pill(e.s);
     if (e.chk === "forbidden" || e.chk === "blocked") h += '<span class="pill p-bad">add-ons may not register</span>';
     h += "</div>";
-    if (e.p) h += '<div class="sig">' + esc(k) + "(" + params(e.p) + ")</div>";
+    if (e.p) h += '<div class="sig">' + esc(k) + "(" + params(e.p) + ')</div><div class="plain"><div><b>Handlers receive</b><ul>' + plainParams(e.p) + "</ul></div></div>";
     else if (e.src === "client-docs") h += '<div class="sig">' + esc(k) + "()</div>";
     if (e.d) h += "<p>" + esc(e.d) + "</p>";
     var kv = "";
@@ -239,7 +304,9 @@
     h += "<tr><td>Client docs</td><td>Blizzard_APIDocumentationGenerated from client <code>" + esc(A.client) + "</code></td></tr>";
     h += "<tr><td>Events checked with</td><td>" + esc(A.eventCheck || "nothing yet") + "</td></tr>";
     h += "<tr><td>Generated</td><td>" + esc(A.generated) + "</td></tr></table>";
-    h += '<h2>Good starting points</h2><ul><li><a href="#/restrictions">What changes in combat, what is secret, what is blocked</a></li>' +
+    h += '<h2>Good starting points</h2><ul><li><a href="#/guide/reading">How to read this site</a></li>' +
+      '<li><a href="#/guide/secrets">Secret values</a> and <a href="#/guide/combat">combat on Forever</a>, in plain words</li>' +
+      '<li><a href="#/restrictions">What changes in combat, what is secret, what is blocked</a></li>' +
       '<li><a href="#/globals">Global functions Blizzard never documented</a></li><li><a href="#/events">Events, with what was seen firing</a></li></ul>';
     if (keys(A.tainted).length) h += '<p class="note">Globals made by other add-ons were left out: ' + keys(A.tainted).sort(sortStr).map(function (k) { return esc(k) + " (" + A.tainted[k] + ")"; }).join(", ") + ".</p>";
     main.innerHTML = h;
@@ -380,8 +447,17 @@
       return "<h2>" + title + ' <span class="muted">(' + items.length + ")</span></h2>" + (note ? '<p class="muted">' + note + "</p>" : "") +
         (items.length ? '<div class="cols">' + items.map(function (k) { return '<div><a href="#/fn/' + enc(k) + '">' + esc(k) + "</a></div>"; }).join("") + "</div>" : '<p class="muted">None.</p>');
     }
-    h += "<h2>Answered differently in combat <span class=\"muted\">(" + diff.length + ')</span></h2><div class="tablewrap"><table><tr><th>Function</th><th>Out of combat</th><th>In combat</th></tr>' +
-      diff.map(function (k) { return '<tr><td class="mono"><a href="#/fn/' + enc(k) + '">' + esc(k) + "</a></td><td>" + callCell(A.F[k].o, true) + "</td><td>" + callCell(A.F[k].c, true) + "</td></tr>"; }).join("") + "</table></div>";
+    function diffTable(title, items, note) {
+      return "<h2>" + title + ' <span class="muted">(' + items.length + ")</span></h2>" + (note ? '<p class="muted">' + note + "</p>" : "") +
+        '<div class="tablewrap"><table><tr><th>Function</th><th>Out of combat</th><th>In combat</th></tr>' +
+        items.map(function (k) { return '<tr><td class="mono"><a href="#/fn/' + enc(k) + '">' + esc(k) + "</a></td><td>" + callCell(A.F[k].o, true) + "</td><td>" + callCell(A.F[k].c, true) + "</td></tr>"; }).join("") + "</table></div>";
+    }
+    var wentSecret = diff.filter(function (k) { return anySecret(A.F[k].c) && !anySecret(A.F[k].o); });
+    var broke = diff.filter(function (k) { return A.F[k].c.error != null && A.F[k].o.error == null; });
+    var other = diff.filter(function (k) { return wentSecret.indexOf(k) < 0 && broke.indexOf(k) < 0; });
+    h += diffTable("Went secret in combat", wentSecret, "Plain out of combat, secret during the fight. Show these with widgets that accept secrets; don't compute with them in combat.");
+    h += diffTable("Errored in combat", broke, "Worked out of combat, refused during the fight.");
+    h += diffTable("Returned different data in combat", other, "Not a restriction: the game simply had different things to report during the fight (nameplates, threat, your form).");
     h += list("Secret even out of combat", always, "Every return value was secret on the first, out-of-combat run.");
     h += "<h2>Events add-ons may not register <span class=\"muted\">(" + pev.length + ')</span></h2><div class="cols">' + pev.map(function (k) { return '<div><a href="#/event/' + enc(k) + '">' + esc(k) + "</a></div>"; }).join("") + "</div>";
     h += list("Protected or blocked when called", forbidden, "Calling them raised ADDON_ACTION_FORBIDDEN or ADDON_ACTION_BLOCKED; the probe won't call them again.");
@@ -412,6 +488,21 @@
     main.innerHTML = h;
   }
 
+  function viewGuide(id) {
+    var g = GUIDES.filter(function (x) { return x.id === id; })[0];
+    if (!g) return notFound(id);
+    main.innerHTML = '<p class="note">Guide · an explanation to help read the docs; its links point at the evidence.</p><h1>' + esc(g.title) + '</h1><div class="prose">' + g.html + "</div>";
+  }
+  function viewGlossary(focus) {
+    var h = "<h1>Glossary</h1><p class=\"lede\">What the type names and flags in Blizzard's signatures mean. Written to help reading; not probe results.</p>" +
+      '<h2>Types</h2><div class="tablewrap"><table><tr><th>Type</th><th>Means</th></tr>';
+    keys(GL).sort(sortStr).forEach(function (t) { h += '<tr id="' + esc(t) + '"><td class="mono">' + esc(t) + "</td><td>" + esc(GL[t][0]) + (GL[t][1] ? '<div class="note">' + esc(GL[t][1]) + "</div>" : "") + "</td></tr>"; });
+    h += '</table></div><h2>Flags</h2><div class="tablewrap"><table><tr><th>Flag</th><th>Means</th></tr>';
+    keys(FL).sort(sortStr).forEach(function (t) { h += '<tr id="' + esc(t) + '"><td class="mono">' + esc(t) + "</td><td>" + esc(FL[t]) + "</td></tr>"; });
+    main.innerHTML = h + '</table></div><p class="note">Enums and structures have their own pages; signatures link to them directly.</p>';
+    if (focus) { var el = document.getElementById(focus); if (el) { el.scrollIntoView(); el.style.outline = "2px solid var(--accent)"; } }
+  }
+
   function single(card, back) { main.innerHTML = (back || "") + card; }
   function notFound(what) { main.innerHTML = "<h1>Not found</h1><p class=\"muted\">" + esc(what) + "</p>"; }
 
@@ -419,7 +510,10 @@
   function route() {
     var parts = location.hash.replace(/^#\/?/, "").split("/").map(decodeURIComponent);
     var view = parts[0] || "", arg = parts[1], sub = parts[2];
-    document.querySelectorAll(".side > a").forEach(function (a) { a.classList.toggle("on", a.getAttribute("href") === "#/" + view || (view === "" && a.getAttribute("href") === "#/")); });
+    document.querySelectorAll(".side > a").forEach(function (a) {
+      var href = a.getAttribute("href");
+      a.classList.toggle("on", href === location.hash || href === "#/" + view || (view === "" && href === "#/"));
+    });
     document.querySelectorAll(".syslist a").forEach(function (a) { a.classList.toggle("on", view === "system" && a.dataset.n === arg); });
     document.getElementById("side").classList.remove("open");
     window.scrollTo(0, 0);
@@ -438,6 +532,8 @@
     else if (view === "restrictions") viewRestrictions();
     else if (view === "cvars") viewCVars(arg);
     else if (view === "lua") viewLua();
+    else if (view === "guide") viewGuide(arg);
+    else if (view === "glossary") viewGlossary(arg);
     else notFound(location.hash);
   }
 
