@@ -7,39 +7,39 @@ Namespace: `C_MountJournal`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_MountJournal.ApplyMountEquipment](#c_mountjournalapplymountequipment) |  |  |
-| ✅ | [C_MountJournal.AreMountEquipmentEffectsSuppressed](#c_mountjournalaremountequipmenteffectssuppressed) |  |  |
+| ✅ | [C_MountJournal.AreMountEquipmentEffectsSuppressed](#c_mountjournalaremountequipmenteffectssuppressed) | 1 value |  |
 | ✅ | [C_MountJournal.ClearFanfare](#c_mountjournalclearfanfare) |  |  |
 | ✅ | [C_MountJournal.ClearRecentFanfares](#c_mountjournalclearrecentfanfares) |  |  |
 | ✅ | [C_MountJournal.Dismiss](#c_mountjournaldismiss) |  |  |
 | ✅ | [C_MountJournal.GetAllCreatureDisplayIDsForMountID](#c_mountjournalgetallcreaturedisplayidsformountid) |  |  |
-| ✅ | [C_MountJournal.GetAppliedMountEquipmentID](#c_mountjournalgetappliedmountequipmentid) |  |  |
-| ✅ | [C_MountJournal.GetCollectedDragonridingMounts](#c_mountjournalgetcollecteddragonridingmounts) |  |  |
+| ✅ | [C_MountJournal.GetAppliedMountEquipmentID](#c_mountjournalgetappliedmountequipmentid) | 1 value |  |
+| ✅ | [C_MountJournal.GetCollectedDragonridingMounts](#c_mountjournalgetcollecteddragonridingmounts) | 1 value |  |
 | ✅ | [C_MountJournal.GetCollectedFilterSetting](#c_mountjournalgetcollectedfiltersetting) |  |  |
 | ✅ | [C_MountJournal.GetDisplayedMountAllCreatureDisplayInfo](#c_mountjournalgetdisplayedmountallcreaturedisplayinfo) |  |  |
 | ✅ | [C_MountJournal.GetDisplayedMountID](#c_mountjournalgetdisplayedmountid) |  |  |
 | ✅ | [C_MountJournal.GetDisplayedMountInfo](#c_mountjournalgetdisplayedmountinfo) |  |  |
 | ✅ | [C_MountJournal.GetDisplayedMountInfoExtra](#c_mountjournalgetdisplayedmountinfoextra) |  |  |
-| ✅ | [C_MountJournal.GetDynamicFlightModeSpellID](#c_mountjournalgetdynamicflightmodespellid) |  |  |
+| ✅ | [C_MountJournal.GetDynamicFlightModeSpellID](#c_mountjournalgetdynamicflightmodespellid) | 1 value |  |
 | ✅ | [C_MountJournal.GetIsFavorite](#c_mountjournalgetisfavorite) |  |  |
 | ✅ | [C_MountJournal.GetMountAllCreatureDisplayInfoByID](#c_mountjournalgetmountallcreaturedisplayinfobyid) |  |  |
-| ✅ | [C_MountJournal.GetMountEquipmentUnlockLevel](#c_mountjournalgetmountequipmentunlocklevel) |  |  |
+| ✅ | [C_MountJournal.GetMountEquipmentUnlockLevel](#c_mountjournalgetmountequipmentunlocklevel) | 1 value |  |
 | ✅ | [C_MountJournal.GetMountFromItem](#c_mountjournalgetmountfromitem) |  |  |
 | ✅ | [C_MountJournal.GetMountFromSpell](#c_mountjournalgetmountfromspell) |  |  |
-| ✅ | [C_MountJournal.GetMountIDs](#c_mountjournalgetmountids) |  |  |
+| ✅ | [C_MountJournal.GetMountIDs](#c_mountjournalgetmountids) | 1 value |  |
 | ✅ | [C_MountJournal.GetMountInfoByID](#c_mountjournalgetmountinfobyid) |  |  |
 | ✅ | [C_MountJournal.GetMountInfoExtraByID](#c_mountjournalgetmountinfoextrabyid) |  |  |
 | ✅ | [C_MountJournal.GetMountLink](#c_mountjournalgetmountlink) |  |  |
 | ✅ | [C_MountJournal.GetMountUsabilityByID](#c_mountjournalgetmountusabilitybyid) |  |  |
-| ✅ | [C_MountJournal.GetNumDisplayedMounts](#c_mountjournalgetnumdisplayedmounts) |  |  |
-| ✅ | [C_MountJournal.GetNumMounts](#c_mountjournalgetnummounts) |  |  |
-| ✅ | [C_MountJournal.GetNumMountsNeedingFanfare](#c_mountjournalgetnummountsneedingfanfare) |  |  |
-| ✅ | [C_MountJournal.HasDisplayableMount](#c_mountjournalhasdisplayablemount) |  |  |
-| ✅ | [C_MountJournal.IsDragonridingUnlocked](#c_mountjournalisdragonridingunlocked) |  |  |
+| ✅ | [C_MountJournal.GetNumDisplayedMounts](#c_mountjournalgetnumdisplayedmounts) | 1 value |  |
+| ✅ | [C_MountJournal.GetNumMounts](#c_mountjournalgetnummounts) | 1 value |  |
+| ✅ | [C_MountJournal.GetNumMountsNeedingFanfare](#c_mountjournalgetnummountsneedingfanfare) | 1 value |  |
+| ✅ | [C_MountJournal.HasDisplayableMount](#c_mountjournalhasdisplayablemount) | 1 value |  |
+| ✅ | [C_MountJournal.IsDragonridingUnlocked](#c_mountjournalisdragonridingunlocked) | 1 value |  |
 | ✅ | [C_MountJournal.IsItemMountEquipment](#c_mountjournalisitemmountequipment) |  |  |
-| ✅ | [C_MountJournal.IsMountEquipmentApplied](#c_mountjournalismountequipmentapplied) |  |  |
+| ✅ | [C_MountJournal.IsMountEquipmentApplied](#c_mountjournalismountequipmentapplied) | 1 value |  |
 | ✅ | [C_MountJournal.IsSourceChecked](#c_mountjournalissourcechecked) |  |  |
 | ✅ | [C_MountJournal.IsTypeChecked](#c_mountjournalistypechecked) |  |  |
-| ✅ | [C_MountJournal.IsUsingDefaultFilters](#c_mountjournalisusingdefaultfilters) |  |  |
+| ✅ | [C_MountJournal.IsUsingDefaultFilters](#c_mountjournalisusingdefaultfilters) | 1 value |  |
 | ✅ | [C_MountJournal.IsValidSourceFilter](#c_mountjournalisvalidsourcefilter) |  |  |
 | ✅ | [C_MountJournal.IsValidTypeFilter](#c_mountjournalisvalidtypefilter) |  |  |
 | ✅ | [C_MountJournal.MountEquipmentAvailable](#c_mountjournalmountequipmentavailable) |  |  |
@@ -70,6 +70,7 @@ Namespace: `C_MountJournal`
 `C_MountJournal.AreMountEquipmentEffectsSuppressed() → areEffectsSuppressed: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.ClearFanfare
@@ -107,6 +108,7 @@ Namespace: `C_MountJournal`
 `C_MountJournal.GetAppliedMountEquipmentID() → itemID: number?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.GetCollectedDragonridingMounts
@@ -114,6 +116,7 @@ Namespace: `C_MountJournal`
 `C_MountJournal.GetCollectedDragonridingMounts() → mountIDs: number[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.GetCollectedFilterSetting
@@ -164,6 +167,7 @@ Namespace: `C_MountJournal`
 `C_MountJournal.GetDynamicFlightModeSpellID() → spellID: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.GetIsFavorite
@@ -188,6 +192,7 @@ Namespace: `C_MountJournal`
 `C_MountJournal.GetMountEquipmentUnlockLevel() → level: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.GetMountFromItem
@@ -211,6 +216,7 @@ Namespace: `C_MountJournal`
 `C_MountJournal.GetMountIDs() → mountIDs: number[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,...(136)}`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.GetMountInfoByID
@@ -253,6 +259,7 @@ Namespace: `C_MountJournal`
 `C_MountJournal.GetNumDisplayedMounts() → numMounts: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.GetNumMounts
@@ -260,6 +267,7 @@ Namespace: `C_MountJournal`
 `C_MountJournal.GetNumMounts() → numMounts: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.GetNumMountsNeedingFanfare
@@ -267,6 +275,7 @@ Namespace: `C_MountJournal`
 `C_MountJournal.GetNumMountsNeedingFanfare() → numMountsNeedingFanfare: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.HasDisplayableMount
@@ -274,6 +283,7 @@ Namespace: `C_MountJournal`
 `C_MountJournal.HasDisplayableMount() → hasMount: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.IsDragonridingUnlocked
@@ -282,6 +292,7 @@ Namespace: `C_MountJournal`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns whether the player has unlocked the ability to switch between Skyriding and steady flight styles for flying mounts .
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.IsItemMountEquipment
@@ -298,6 +309,7 @@ Namespace: `C_MountJournal`
 `C_MountJournal.IsMountEquipmentApplied() → isApplied: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.IsSourceChecked
@@ -321,6 +333,7 @@ Namespace: `C_MountJournal`
 `C_MountJournal.IsUsingDefaultFilters() → isUsingDefaultFilters: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.IsValidSourceFilter
@@ -460,14 +473,14 @@ Namespace: `C_MountJournal`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 5 times (0 in combat); argument kinds: ``
 
 ### MOUNT_JOURNAL_USABILITY_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 5 times (0 in combat); argument kinds: ``
 
 ### NEW_MOUNT_ADDED
 

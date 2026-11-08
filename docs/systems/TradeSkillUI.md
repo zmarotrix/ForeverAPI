@@ -12,7 +12,7 @@ Namespace: `C_TradeSkillUI`
 | ✅ | [C_TradeSkillUI.CanStoreEnchantInItem](#c_tradeskilluicanstoreenchantinitem) |  |  |
 | 🆕 | [C_TradeSkillUI.CanTradeSkillListLink](#c_tradeskilluicantradeskilllistlink) |  |  |
 | ✅ | [C_TradeSkillUI.CanTradeSkillShowCraftingUI](#c_tradeskilluicantradeskillshowcraftingui) |  |  |
-| ✅ | [C_TradeSkillUI.CancelProfessionRespec](#c_tradeskilluicancelprofessionrespec) |  |  |
+| ✅ | [C_TradeSkillUI.CancelProfessionRespec](#c_tradeskilluicancelprofessionrespec) | 0 values |  |
 | ✅ | [C_TradeSkillUI.CheckRespecNPC](#c_tradeskilluicheckrespecnpc) |  |  |
 | 🆕 | [C_TradeSkillUI.ClearInventorySlotFilter](#c_tradeskilluiclearinventoryslotfilter) |  |  |
 | 🆕 | [C_TradeSkillUI.ClearPendingObliterateItem](#c_tradeskilluiclearpendingobliterateitem) |  |  |
@@ -28,13 +28,13 @@ Namespace: `C_TradeSkillUI`
 | 🆕 | [C_TradeSkillUI.DropPendingObliterateItemFromCursor](#c_tradeskilluidroppendingobliterateitemfromcursor) |  |  |
 | 🆕 | [C_TradeSkillUI.GetAllFilterableInventorySlots](#c_tradeskilluigetallfilterableinventoryslots) |  |  |
 | 🆕 | [C_TradeSkillUI.GetAllFilterableInventorySlotsCount](#c_tradeskilluigetallfilterableinventoryslotscount) |  |  |
-| ✅ | [C_TradeSkillUI.GetAllProfessionTradeSkillLines](#c_tradeskilluigetallprofessiontradeskilllines) |  |  |
+| ✅ | [C_TradeSkillUI.GetAllProfessionTradeSkillLines](#c_tradeskilluigetallprofessiontradeskilllines) | 1 value |  |
 | 🆕 | [C_TradeSkillUI.GetAllRecipeIDs](#c_tradeskilluigetallrecipeids) |  |  |
-| ✅ | [C_TradeSkillUI.GetBaseProfessionInfo](#c_tradeskilluigetbaseprofessioninfo) |  |  |
+| ✅ | [C_TradeSkillUI.GetBaseProfessionInfo](#c_tradeskilluigetbaseprofessioninfo) | 1 value |  |
 | 🆕 | [C_TradeSkillUI.GetCategories](#c_tradeskilluigetcategories) |  |  |
 | 🆕 | [C_TradeSkillUI.GetCategoryInfo](#c_tradeskilluigetcategoryinfo) |  |  |
-| ✅ | [C_TradeSkillUI.GetChildProfessionInfo](#c_tradeskilluigetchildprofessioninfo) |  |  |
-| ✅ | [C_TradeSkillUI.GetChildProfessionInfos](#c_tradeskilluigetchildprofessioninfos) |  |  |
+| ✅ | [C_TradeSkillUI.GetChildProfessionInfo](#c_tradeskilluigetchildprofessioninfo) | 1 value |  |
+| ✅ | [C_TradeSkillUI.GetChildProfessionInfos](#c_tradeskilluigetchildprofessioninfos) | 1 value |  |
 | ✅ | [C_TradeSkillUI.GetConcentrationCurrencyID](#c_tradeskilluigetconcentrationcurrencyid) |  |  |
 | ✅ | [C_TradeSkillUI.GetCraftableCount](#c_tradeskilluigetcraftablecount) |  |  |
 | ✅ | [C_TradeSkillUI.GetCraftingOperationInfo](#c_tradeskilluigetcraftingoperationinfo) |  |  |
@@ -63,11 +63,11 @@ Namespace: `C_TradeSkillUI`
 | 🆕 | [C_TradeSkillUI.GetPendingObliterateItemID](#c_tradeskilluigetpendingobliterateitemid) |  |  |
 | 🆕 | [C_TradeSkillUI.GetPendingObliterateItemLink](#c_tradeskilluigetpendingobliterateitemlink) |  |  |
 | ✅ | [C_TradeSkillUI.GetProfessionByInventorySlot](#c_tradeskilluigetprofessionbyinventoryslot) |  |  |
-| ✅ | [C_TradeSkillUI.GetProfessionChildSkillLineID](#c_tradeskilluigetprofessionchildskilllineid) |  |  |
-| ✅ | [C_TradeSkillUI.GetProfessionForCursorItem](#c_tradeskilluigetprofessionforcursoritem) |  |  |
+| ✅ | [C_TradeSkillUI.GetProfessionChildSkillLineID](#c_tradeskilluigetprofessionchildskilllineid) | 1 value |  |
+| ✅ | [C_TradeSkillUI.GetProfessionForCursorItem](#c_tradeskilluigetprofessionforcursoritem) | 1 value |  |
 | ✅ | [C_TradeSkillUI.GetProfessionInfoByRecipeID](#c_tradeskilluigetprofessioninfobyrecipeid) |  |  |
 | ✅ | [C_TradeSkillUI.GetProfessionInfoBySkillLineID](#c_tradeskilluigetprofessioninfobyskilllineid) |  |  |
-| ✅ | [C_TradeSkillUI.GetProfessionInventorySlots](#c_tradeskilluigetprofessioninventoryslots) |  |  |
+| ✅ | [C_TradeSkillUI.GetProfessionInventorySlots](#c_tradeskilluigetprofessioninventoryslots) | 1 value |  |
 | ✅ | [C_TradeSkillUI.GetProfessionNameForSkillLineAbility](#c_tradeskilluigetprofessionnameforskilllineability) |  |  |
 | ✅ | [C_TradeSkillUI.GetProfessionSkillLineID](#c_tradeskilluigetprofessionskilllineid) |  |  |
 | ✅ | [C_TradeSkillUI.GetProfessionSlots](#c_tradeskilluigetprofessionslots) |  |  |
@@ -91,26 +91,26 @@ Namespace: `C_TradeSkillUI`
 | ✅ | [C_TradeSkillUI.GetRecipeSchematic](#c_tradeskilluigetrecipeschematic) |  |  |
 | 🆕 | [C_TradeSkillUI.GetRecipeSourceText](#c_tradeskilluigetrecipesourcetext) |  |  |
 | ✅ | [C_TradeSkillUI.GetRecipesTracked](#c_tradeskilluigetrecipestracked) |  |  |
-| ✅ | [C_TradeSkillUI.GetRecraftItems](#c_tradeskilluigetrecraftitems) |  |  |
+| ✅ | [C_TradeSkillUI.GetRecraftItems](#c_tradeskilluigetrecraftitems) | 1 value |  |
 | ✅ | [C_TradeSkillUI.GetRecraftRemovalWarnings](#c_tradeskilluigetrecraftremovalwarnings) |  |  |
-| ✅ | [C_TradeSkillUI.GetRemainingRecasts](#c_tradeskilluigetremainingrecasts) |  |  |
+| ✅ | [C_TradeSkillUI.GetRemainingRecasts](#c_tradeskilluigetremainingrecasts) | 1 value |  |
 | ✅ | [C_TradeSkillUI.GetSalvagableItemIDs](#c_tradeskilluigetsalvagableitemids) |  |  |
-| ✅ | [C_TradeSkillUI.GetShowLearned](#c_tradeskilluigetshowlearned) |  |  |
-| ✅ | [C_TradeSkillUI.GetShowUnlearned](#c_tradeskilluigetshowunlearned) |  |  |
+| ✅ | [C_TradeSkillUI.GetShowLearned](#c_tradeskilluigetshowlearned) | 1 value |  |
+| ✅ | [C_TradeSkillUI.GetShowUnlearned](#c_tradeskilluigetshowunlearned) | 1 value |  |
 | ✅ | [C_TradeSkillUI.GetSkillLineForGear](#c_tradeskilluigetskilllineforgear) |  |  |
-| ✅ | [C_TradeSkillUI.GetSourceTypeFilter](#c_tradeskilluigetsourcetypefilter) |  |  |
+| ✅ | [C_TradeSkillUI.GetSourceTypeFilter](#c_tradeskilluigetsourcetypefilter) | 1 value |  |
 | 🆕 | [C_TradeSkillUI.GetSubCategories](#c_tradeskilluigetsubcategories) |  |  |
 | ✅ | [C_TradeSkillUI.GetTradeSkillDisplayName](#c_tradeskilluigettradeskilldisplayname) |  |  |
 | 🆕 | [C_TradeSkillUI.GetTradeSkillLineForRecipe](#c_tradeskilluigettradeskilllineforrecipe) |  |  |
 | 🆕 | [C_TradeSkillUI.GetTradeSkillListLink](#c_tradeskilluigettradeskilllistlink) |  |  |
 | 🆕 | [C_TradeSkillUI.GetTradeSkillTexture](#c_tradeskilluigettradeskilltexture) |  |  |
-| ✅ | [C_TradeSkillUI.HasFavoriteOrderRecipes](#c_tradeskilluihasfavoriteorderrecipes) |  |  |
+| ✅ | [C_TradeSkillUI.HasFavoriteOrderRecipes](#c_tradeskilluihasfavoriteorderrecipes) | 1 value |  |
 | 🆕 | [C_TradeSkillUI.IsAnyRecipeFromSource](#c_tradeskilluiisanyrecipefromsource) |  |  |
 | 🆕 | [C_TradeSkillUI.IsDataSourceChanging](#c_tradeskilluiisdatasourcechanging) |  |  |
 | ✅ | [C_TradeSkillUI.IsEnchantTargetValid](#c_tradeskilluiisenchanttargetvalid) |  |  |
-| ✅ | [C_TradeSkillUI.IsGuildTradeSkillsEnabled](#c_tradeskilluiisguildtradeskillsenabled) |  |  |
+| ✅ | [C_TradeSkillUI.IsGuildTradeSkillsEnabled](#c_tradeskilluiisguildtradeskillsenabled) | 1 value |  |
 | 🆕 | [C_TradeSkillUI.IsInventorySlotFiltered](#c_tradeskilluiisinventoryslotfiltered) |  |  |
-| ✅ | [C_TradeSkillUI.IsNPCCrafting](#c_tradeskilluiisnpccrafting) |  |  |
+| ✅ | [C_TradeSkillUI.IsNPCCrafting](#c_tradeskilluiisnpccrafting) | 1 value |  |
 | ✅ | [C_TradeSkillUI.IsNearProfessionSpellFocus](#c_tradeskilluiisnearprofessionspellfocus) |  |  |
 | ✅ | [C_TradeSkillUI.IsOriginalCraftRecipeLearned](#c_tradeskilluiisoriginalcraftrecipelearned) |  |  |
 | 🆕 | [C_TradeSkillUI.IsRecipeCategoryFiltered](#c_tradeskilluiisrecipecategoryfiltered) |  |  |
@@ -125,7 +125,7 @@ Namespace: `C_TradeSkillUI`
 | ✅ | [C_TradeSkillUI.IsRecipeTracked](#c_tradeskilluiisrecipetracked) |  |  |
 | ✅ | [C_TradeSkillUI.IsRecraftItemEquipped](#c_tradeskilluiisrecraftitemequipped) |  |  |
 | ✅ | [C_TradeSkillUI.IsRecraftReagentValid](#c_tradeskilluiisrecraftreagentvalid) |  |  |
-| ✅ | [C_TradeSkillUI.IsRuneforging](#c_tradeskilluiisruneforging) |  |  |
+| ✅ | [C_TradeSkillUI.IsRuneforging](#c_tradeskilluiisruneforging) | 1 value |  |
 | 🆕 | [C_TradeSkillUI.IsTradeSkillGuild](#c_tradeskilluiistradeskillguild) |  |  |
 | 🆕 | [C_TradeSkillUI.IsTradeSkillGuildMember](#c_tradeskilluiistradeskillguildmember) |  |  |
 | 🆕 | [C_TradeSkillUI.IsTradeSkillLinked](#c_tradeskilluiistradeskilllinked) |  |  |
@@ -198,6 +198,7 @@ Namespace: `C_TradeSkillUI`
 `C_TradeSkillUI.CancelProfessionRespec()`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 0 values
 - Source: client docs `TradeSkillUIDocumentation.lua`
 
 ### C_TradeSkillUI.CheckRespecNPC
@@ -306,6 +307,7 @@ Namespace: `C_TradeSkillUI`
 `C_TradeSkillUI.GetAllProfessionTradeSkillLines() → skillLineID: number[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number}`
 - Source: client docs `TradeSkillUIDocumentation.lua`
 
 ### C_TradeSkillUI.GetAllRecipeIDs
@@ -319,6 +321,7 @@ Namespace: `C_TradeSkillUI`
 `C_TradeSkillUI.GetBaseProfessionInfo() → info: ProfessionInfo`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{expansionName=string,isPrimaryProfession=boolean,maxSkillLevel=number,professionID=number,professionName=string,skillLevel=number,skillModifier=number,sourceCounter=number}`
 - Source: client docs `TradeSkillUIDocumentation.lua`
 
 ### C_TradeSkillUI.GetCategories
@@ -338,6 +341,7 @@ Namespace: `C_TradeSkillUI`
 `C_TradeSkillUI.GetChildProfessionInfo() → info: ProfessionInfo`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{expansionName=string,isPrimaryProfession=boolean,maxSkillLevel=number,professionID=number,professionName=string,skillLevel=number,skillModifier=number,sourceCounter=number}`
 - Source: client docs `TradeSkillUIDocumentation.lua`
 
 ### C_TradeSkillUI.GetChildProfessionInfos
@@ -345,6 +349,7 @@ Namespace: `C_TradeSkillUI`
 `C_TradeSkillUI.GetChildProfessionInfos() → infos: ProfessionInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `TradeSkillUIDocumentation.lua`
 
 ### C_TradeSkillUI.GetConcentrationCurrencyID
@@ -558,6 +563,7 @@ Namespace: `C_TradeSkillUI`
 `C_TradeSkillUI.GetProfessionChildSkillLineID() → skillLineID: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `TradeSkillUIDocumentation.lua`
 
 ### C_TradeSkillUI.GetProfessionForCursorItem
@@ -565,6 +571,7 @@ Namespace: `C_TradeSkillUI`
 `C_TradeSkillUI.GetProfessionForCursorItem() → profession: Profession?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `TradeSkillUIDocumentation.lua`
 
 ### C_TradeSkillUI.GetProfessionInfoByRecipeID
@@ -588,6 +595,7 @@ Namespace: `C_TradeSkillUI`
 `C_TradeSkillUI.GetProfessionInventorySlots() → invSlots: InventorySlots[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number}`
 - Source: client docs `TradeSkillUIDocumentation.lua`
 
 ### C_TradeSkillUI.GetProfessionNameForSkillLineAbility
@@ -768,6 +776,7 @@ Namespace: `C_TradeSkillUI`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `TradeSkillUIDocumentation.lua`
 
 ### C_TradeSkillUI.GetRecraftRemovalWarnings
@@ -783,6 +792,7 @@ Namespace: `C_TradeSkillUI`
 `C_TradeSkillUI.GetRemainingRecasts() → remaining: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `TradeSkillUIDocumentation.lua`
 
 ### C_TradeSkillUI.GetSalvagableItemIDs
@@ -798,6 +808,7 @@ Namespace: `C_TradeSkillUI`
 `C_TradeSkillUI.GetShowLearned() → flag: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `TradeSkillUIDocumentation.lua`
 
 ### C_TradeSkillUI.GetShowUnlearned
@@ -805,6 +816,7 @@ Namespace: `C_TradeSkillUI`
 `C_TradeSkillUI.GetShowUnlearned() → flag: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `TradeSkillUIDocumentation.lua`
 
 ### C_TradeSkillUI.GetSkillLineForGear
@@ -820,6 +832,7 @@ Namespace: `C_TradeSkillUI`
 `C_TradeSkillUI.GetSourceTypeFilter() → sourceTypeFilter: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `TradeSkillUIDocumentation.lua`
 
 ### C_TradeSkillUI.GetSubCategories
@@ -859,6 +872,7 @@ Namespace: `C_TradeSkillUI`
 `C_TradeSkillUI.HasFavoriteOrderRecipes() → hasFavorites: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `TradeSkillUIDocumentation.lua`
 
 ### C_TradeSkillUI.IsAnyRecipeFromSource
@@ -886,6 +900,7 @@ Namespace: `C_TradeSkillUI`
 `C_TradeSkillUI.IsGuildTradeSkillsEnabled() → enabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `TradeSkillUIDocumentation.lua`
 
 ### C_TradeSkillUI.IsInventorySlotFiltered
@@ -899,6 +914,7 @@ Namespace: `C_TradeSkillUI`
 `C_TradeSkillUI.IsNPCCrafting() → result: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `TradeSkillUIDocumentation.lua`
 
 ### C_TradeSkillUI.IsNearProfessionSpellFocus
@@ -1008,6 +1024,7 @@ Namespace: `C_TradeSkillUI`
 `C_TradeSkillUI.IsRuneforging() → result: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `TradeSkillUIDocumentation.lua`
 
 ### C_TradeSkillUI.IsTradeSkillGuild
@@ -1231,7 +1248,7 @@ Namespace: `C_TradeSkillUI`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### TRADE_SKILL_CRAFTING_REAGENT_BONUS_TEXT_UPDATED
 

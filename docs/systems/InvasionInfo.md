@@ -6,7 +6,7 @@ Namespace: `C_InvasionInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_InvasionInfo.AreInvasionsAvailable](#c_invasioninfoareinvasionsavailable) |  |  |
+| ✅ | [C_InvasionInfo.AreInvasionsAvailable](#c_invasioninfoareinvasionsavailable) | 1 value |  |
 | ✅ | [C_InvasionInfo.GetInvasionForUiMapID](#c_invasioninfogetinvasionforuimapid) |  |  |
 | ✅ | [C_InvasionInfo.GetInvasionInfo](#c_invasioninfogetinvasioninfo) |  |  |
 | ✅ | [C_InvasionInfo.GetInvasionTimeLeft](#c_invasioninfogetinvasiontimeleft) |  |  |
@@ -17,6 +17,7 @@ Namespace: `C_InvasionInfo`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns true if invasions are active in the same physical area as the player.
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `InvasionInfoDocumentation.lua`
 
 ### C_InvasionInfo.GetInvasionForUiMapID

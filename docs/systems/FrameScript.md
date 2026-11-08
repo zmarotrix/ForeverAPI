@@ -9,13 +9,13 @@
 | ✅ | [CreateFromMixins](#createfrommixins) |  |  |
 | ⛔ | [CreateSecureDelegate](#createsecuredelegate) |  |  |
 | ✅ | [CreateWindow](#createwindow) |  |  |
-| ✅ | [GetCallstackHeight](#getcallstackheight) |  |  |
-| ✅ | [GetCurrentEventID](#getcurrenteventid) |  |  |
-| ✅ | [GetErrorCallstackHeight](#geterrorcallstackheight) |  |  |
+| ✅ | [GetCallstackHeight](#getcallstackheight) | 1 value |  |
+| ✅ | [GetCurrentEventID](#getcurrenteventid) | 1 value |  |
+| ✅ | [GetErrorCallstackHeight](#geterrorcallstackheight) | 1 value |  |
 | ✅ | [GetEventTime](#geteventtime) |  |  |
 | ⛔ | [GetForbiddenObjectTable](#getforbiddenobjecttable) |  |  |
-| ✅ | [GetScriptBucketThrottleLimits](#getscriptbucketthrottlelimits) |  |  |
-| ✅ | [GetSourceLocation](#getsourcelocation) |  |  |
+| ✅ | [GetScriptBucketThrottleLimits](#getscriptbucketthrottlelimits) | 1 value |  |
+| ✅ | [GetSourceLocation](#getsourcelocation) | 1 value |  |
 | ✅ | [Mixin](#mixin) |  |  |
 | ✅ | [RegisterEventCallback](#registereventcallback) |  |  |
 | ✅ | [RegisterUnitEventCallback](#registeruniteventcallback) |  |  |
@@ -93,6 +93,7 @@
 `GetCallstackHeight() → height: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `FrameScriptDocumentation.lua`
 
 ### GetCurrentEventID
@@ -100,6 +101,7 @@
 `GetCurrentEventID() → eventID: number?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `FrameScriptDocumentation.lua`
 
 ### GetErrorCallstackHeight
@@ -107,6 +109,7 @@
 `GetErrorCallstackHeight() → height: number?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `FrameScriptDocumentation.lua`
 
 ### GetEventTime
@@ -132,6 +135,7 @@
 `GetScriptBucketThrottleLimits() → limits: ScriptBucketThrottleLimits`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{luaScriptBucketThrottleMaxMsBurstNormal=number,luaScriptBucketThrottleMaxMsBurstRestricted=number,luaScriptBucketThrottleMaxMsPerSecondNormal=number,luaScriptBucketThrottleMaxMsPerSecondRestricted=number}`
 - Source: client docs `FrameScriptDocumentation.lua`
 
 ### GetSourceLocation
@@ -140,6 +144,7 @@
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `string`
 - Source: client docs `FrameScriptDocumentation.lua`
 
 ### Mixin

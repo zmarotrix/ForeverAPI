@@ -8,10 +8,10 @@ Namespace: `C_MerchantFrame`
 |---|---|---|---|
 | ✅ | [C_MerchantFrame.GetBuybackItemID](#c_merchantframegetbuybackitemid) |  |  |
 | ✅ | [C_MerchantFrame.GetItemInfo](#c_merchantframegetiteminfo) |  |  |
-| ✅ | [C_MerchantFrame.GetMerchantCurrencies](#c_merchantframegetmerchantcurrencies) |  |  |
-| ✅ | [C_MerchantFrame.GetNumJunkItems](#c_merchantframegetnumjunkitems) |  |  |
+| ✅ | [C_MerchantFrame.GetMerchantCurrencies](#c_merchantframegetmerchantcurrencies) | 1 value |  |
+| ✅ | [C_MerchantFrame.GetNumJunkItems](#c_merchantframegetnumjunkitems) | 1 value |  |
 | ✅ | [C_MerchantFrame.IsMerchantItemRefundable](#c_merchantframeismerchantitemrefundable) |  |  |
-| ✅ | [C_MerchantFrame.IsSellAllJunkEnabled](#c_merchantframeissellalljunkenabled) |  |  |
+| ✅ | [C_MerchantFrame.IsSellAllJunkEnabled](#c_merchantframeissellalljunkenabled) | 1 value |  |
 | ✅ | [C_MerchantFrame.SellAllJunkItems](#c_merchantframesellalljunkitems) |  |  |
 
 ### C_MerchantFrame.GetBuybackItemID
@@ -38,6 +38,7 @@ Namespace: `C_MerchantFrame`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `MerchantFrameDocumentation.lua`
 
 ### C_MerchantFrame.GetNumJunkItems
@@ -45,6 +46,7 @@ Namespace: `C_MerchantFrame`
 `C_MerchantFrame.GetNumJunkItems() → numJunkItems: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `MerchantFrameDocumentation.lua`
 
 ### C_MerchantFrame.IsMerchantItemRefundable
@@ -60,6 +62,7 @@ Namespace: `C_MerchantFrame`
 `C_MerchantFrame.IsSellAllJunkEnabled() → enabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `MerchantFrameDocumentation.lua`
 
 ### C_MerchantFrame.SellAllJunkItems

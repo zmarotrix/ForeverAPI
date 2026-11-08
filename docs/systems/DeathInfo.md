@@ -9,7 +9,7 @@ Namespace: `C_DeathInfo`
 | ✅ | [C_DeathInfo.GetCorpseMapPosition](#c_deathinfogetcorpsemapposition) |  |  |
 | ✅ | [C_DeathInfo.GetDeathReleasePosition](#c_deathinfogetdeathreleaseposition) |  |  |
 | ✅ | [C_DeathInfo.GetGraveyardsForMap](#c_deathinfogetgraveyardsformap) |  |  |
-| ✅ | [C_DeathInfo.GetSelfResurrectOptions](#c_deathinfogetselfresurrectoptions) |  |  |
+| ✅ | [C_DeathInfo.GetSelfResurrectOptions](#c_deathinfogetselfresurrectoptions) | 0 values |  |
 | ✅ | [C_DeathInfo.UseSelfResurrectOption](#c_deathinfouseselfresurrectoption) |  |  |
 
 ### C_DeathInfo.GetCorpseMapPosition
@@ -42,6 +42,7 @@ Namespace: `C_DeathInfo`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `DeathInfoDocumentation.lua`
 
 ### C_DeathInfo.UseSelfResurrectOption
@@ -65,6 +66,7 @@ Namespace: `C_DeathInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### CEMETERY_PREFERENCE_UPDATED
 
@@ -101,6 +103,7 @@ Namespace: `C_DeathInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### PLAYER_DEAD
 
@@ -125,6 +128,7 @@ Namespace: `C_DeathInfo`
 - Status: ✅ verified
 - Payload: `isGossipTriggered: bool`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `b`
 
 ### RESURRECT_REQUEST
 

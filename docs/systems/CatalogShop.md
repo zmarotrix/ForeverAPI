@@ -11,28 +11,28 @@ Namespace: `C_CatalogShop`
 | ✅ | [C_CatalogShop.CloseCatalogShopInteraction](#c_catalogshopclosecatalogshopinteraction) |  |  |
 | ✅ | [C_CatalogShop.ConfirmHousingPurchase](#c_catalogshopconfirmhousingpurchase) |  |  |
 | ✅ | [C_CatalogShop.FindBestCurrencyProductForNeededAmount](#c_catalogshopfindbestcurrencyproductforneededamount) |  |  |
-| ✅ | [C_CatalogShop.GetAvailableCategoryIDs](#c_catalogshopgetavailablecategoryids) |  |  |
-| ✅ | [C_CatalogShop.GetAvailableTransmogRaceInfos](#c_catalogshopgetavailabletransmograceinfos) |  |  |
+| ✅ | [C_CatalogShop.GetAvailableCategoryIDs](#c_catalogshopgetavailablecategoryids) | 1 value |  |
+| ✅ | [C_CatalogShop.GetAvailableTransmogRaceInfos](#c_catalogshopgetavailabletransmograceinfos) | 1 value |  |
 | ✅ | [C_CatalogShop.GetCatalogShopProductDisplayInfo](#c_catalogshopgetcatalogshopproductdisplayinfo) |  |  |
 | ✅ | [C_CatalogShop.GetCategoryInfo](#c_catalogshopgetcategoryinfo) |  |  |
 | ✅ | [C_CatalogShop.GetCategorySectionInfo](#c_catalogshopgetcategorysectioninfo) |  |  |
-| ✅ | [C_CatalogShop.GetFailureInfo](#c_catalogshopgetfailureinfo) |  |  |
+| ✅ | [C_CatalogShop.GetFailureInfo](#c_catalogshopgetfailureinfo) | 2 values |  |
 | ✅ | [C_CatalogShop.GetFirstCategoryByProductID](#c_catalogshopgetfirstcategorybyproductid) |  |  |
-| ✅ | [C_CatalogShop.GetNewProducts](#c_catalogshopgetnewproducts) |  |  |
+| ✅ | [C_CatalogShop.GetNewProducts](#c_catalogshopgetnewproducts) | 1 value |  |
 | ✅ | [C_CatalogShop.GetProductAvailabilityTimeRemainingSecs](#c_catalogshopgetproductavailabilitytimeremainingsecs) |  |  |
 | ✅ | [C_CatalogShop.GetProductIDsForBundle](#c_catalogshopgetproductidsforbundle) |  |  |
 | ✅ | [C_CatalogShop.GetProductIDsForCategory](#c_catalogshopgetproductidsforcategory) |  |  |
 | ✅ | [C_CatalogShop.GetProductIDsForCategorySection](#c_catalogshopgetproductidsforcategorysection) |  |  |
 | ✅ | [C_CatalogShop.GetProductInfo](#c_catalogshopgetproductinfo) |  |  |
 | ✅ | [C_CatalogShop.GetProductSortOrder](#c_catalogshopgetproductsortorder) |  |  |
-| ✅ | [C_CatalogShop.GetRefundableDecors](#c_catalogshopgetrefundabledecors) |  |  |
+| ✅ | [C_CatalogShop.GetRefundableDecors](#c_catalogshopgetrefundabledecors) | 2 values |  |
 | ✅ | [C_CatalogShop.GetSectionIDsForCategory](#c_catalogshopgetsectionidsforcategory) |  |  |
 | ✅ | [C_CatalogShop.GetSpellVisualInfoForMount](#c_catalogshopgetspellvisualinfoformount) |  |  |
-| ✅ | [C_CatalogShop.GetVCProductInfos](#c_catalogshopgetvcproductinfos) |  |  |
+| ✅ | [C_CatalogShop.GetVCProductInfos](#c_catalogshopgetvcproductinfos) | 1 value |  |
 | ✅ | [C_CatalogShop.GetVirtualCurrencyBalance](#c_catalogshopgetvirtualcurrencybalance) |  |  |
-| ✅ | [C_CatalogShop.HasNewProducts](#c_catalogshophasnewproducts) |  |  |
+| ✅ | [C_CatalogShop.HasNewProducts](#c_catalogshophasnewproducts) | 1 value |  |
 | ✅ | [C_CatalogShop.IsProductIncludedInAnyBundle](#c_catalogshopisproductincludedinanybundle) |  |  |
-| ✅ | [C_CatalogShop.IsShop2Enabled](#c_catalogshopisshop2enabled) |  |  |
+| ✅ | [C_CatalogShop.IsShop2Enabled](#c_catalogshopisshop2enabled) | 1 value |  |
 | ✅ | [C_CatalogShop.OnLegalDisclaimerClicked](#c_catalogshoponlegaldisclaimerclicked) |  |  |
 | ✅ | [C_CatalogShop.OnLegalPersonalizedOptOutClicked](#c_catalogshoponlegalpersonalizedoptoutclicked) |  |  |
 | ✅ | [C_CatalogShop.OpenCatalogShopInteractionFromHouse](#c_catalogshopopencatalogshopinteractionfromhouse) |  |  |
@@ -42,7 +42,7 @@ Namespace: `C_CatalogShop`
 | ✅ | [C_CatalogShop.PurchaseProduct](#c_catalogshoppurchaseproduct) |  |  |
 | ✅ | [C_CatalogShop.RefreshRefundableDecors](#c_catalogshoprefreshrefundabledecors) |  |  |
 | ✅ | [C_CatalogShop.RefreshVirtualCurrencyBalance](#c_catalogshoprefreshvirtualcurrencybalance) |  |  |
-| ✅ | [C_CatalogShop.ShouldShowHousingWarning](#c_catalogshopshouldshowhousingwarning) |  |  |
+| ✅ | [C_CatalogShop.ShouldShowHousingWarning](#c_catalogshopshouldshowhousingwarning) | 1 value |  |
 | ✅ | [C_CatalogShop.StartHousingVCPurchaseConfirmation](#c_catalogshopstarthousingvcpurchaseconfirmation) |  |  |
 
 ### C_CatalogShop.BulkPurchaseProducts
@@ -90,6 +90,7 @@ Namespace: `C_CatalogShop`
 `C_CatalogShop.GetAvailableCategoryIDs() → categoryIDs: number[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `CatalogShopDocumentation.lua`
 
 ### C_CatalogShop.GetAvailableTransmogRaceInfos
@@ -97,6 +98,7 @@ Namespace: `C_CatalogShop`
 `C_CatalogShop.GetAvailableTransmogRaceInfos() → raceIDs: AvailableRaceInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table}`
 - Source: client docs `CatalogShopDocumentation.lua`
 
 ### C_CatalogShop.GetCatalogShopProductDisplayInfo
@@ -128,6 +130,7 @@ Namespace: `C_CatalogShop`
 `C_CatalogShop.GetFailureInfo() → errorResultEnum: StoreError?, errorResultRaw: number?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `number`, `nil`
 - Source: client docs `CatalogShopDocumentation.lua`
 
 ### C_CatalogShop.GetFirstCategoryByProductID
@@ -143,6 +146,7 @@ Namespace: `C_CatalogShop`
 `C_CatalogShop.GetNewProducts() → newProducts: number[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `CatalogShopDocumentation.lua`
 
 ### C_CatalogShop.GetProductAvailabilityTimeRemainingSecs
@@ -200,6 +204,7 @@ Namespace: `C_CatalogShop`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 2 values: `table{}`, `number`
 - Source: client docs `CatalogShopDocumentation.lua`
 
 ### C_CatalogShop.GetSectionIDsForCategory
@@ -223,6 +228,7 @@ Namespace: `C_CatalogShop`
 `C_CatalogShop.GetVCProductInfos() → vcProductInfos: CatalogShopVCProductInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `CatalogShopDocumentation.lua`
 
 ### C_CatalogShop.GetVirtualCurrencyBalance
@@ -238,6 +244,7 @@ Namespace: `C_CatalogShop`
 `C_CatalogShop.HasNewProducts() → hasNewProducts: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `CatalogShopDocumentation.lua`
 
 ### C_CatalogShop.IsProductIncludedInAnyBundle
@@ -253,6 +260,7 @@ Namespace: `C_CatalogShop`
 `C_CatalogShop.IsShop2Enabled() → value: bool?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `CatalogShopDocumentation.lua`
 
 ### C_CatalogShop.OnLegalDisclaimerClicked
@@ -331,6 +339,7 @@ Namespace: `C_CatalogShop`
 `C_CatalogShop.ShouldShowHousingWarning() → shouldShowHousingWarning: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `CatalogShopDocumentation.lua`
 
 ### C_CatalogShop.StartHousingVCPurchaseConfirmation

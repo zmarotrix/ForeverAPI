@@ -6,7 +6,7 @@ Namespace: `C_ZoneAbility`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_ZoneAbility.GetActiveAbilities](#c_zoneabilitygetactiveabilities) |  |  |
+| ✅ | [C_ZoneAbility.GetActiveAbilities](#c_zoneabilitygetactiveabilities) | 1 value |  |
 | ✅ | [C_ZoneAbility.GetZoneAbilityIcon](#c_zoneabilitygetzoneabilityicon) |  |  |
 
 ### C_ZoneAbility.GetActiveAbilities
@@ -14,6 +14,7 @@ Namespace: `C_ZoneAbility`
 `C_ZoneAbility.GetActiveAbilities() → zoneAbilities: ZoneAbilityInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `ZoneAbilityDocumentation.lua`
 
 ### C_ZoneAbility.GetZoneAbilityIcon

@@ -32,7 +32,7 @@ Namespace: `C_SettingsUtil`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### SETTINGS_PANEL_OPEN
 

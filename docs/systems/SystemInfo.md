@@ -6,13 +6,14 @@ Namespace: `C_System`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_System.GetFrameStack](#c_systemgetframestack) |  |  |
+| ✅ | [C_System.GetFrameStack](#c_systemgetframestack) | 1 value |  |
 
 ### C_System.GetFrameStack
 
 `C_System.GetFrameStack() → objects: ScriptRegion[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table}`
 - Source: client docs `SystemDocumentation.lua`
 
 ## Events
@@ -46,7 +47,7 @@ Namespace: `C_System`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### GENERIC_ERROR
 
@@ -59,28 +60,28 @@ Namespace: `C_System`
 - Status: ✅ verified
 - Payload: `button: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 42 times (5 in combat); argument kinds: `s`
+- Seen firing 147 times (62 in combat); argument kinds: `s`
 
 ### GLOBAL_MOUSE_UP
 
 - Status: ✅ verified
 - Payload: `button: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 42 times (6 in combat); argument kinds: `s`
+- Seen firing 147 times (65 in combat); argument kinds: `s`
 
 ### GLOBAL_REGION_MOUSE_DOWN
 
 - Status: ✅ verified
 - Payload: `region: ScriptRegion`, `button: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 33 times (4 in combat); argument kinds: `-,s` / `t,s`
+- Seen firing 127 times (58 in combat); argument kinds: `-,s` / `t,s`
 
 ### GLOBAL_REGION_MOUSE_UP
 
 - Status: ✅ verified
 - Payload: `region: ScriptRegion`, `button: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 42 times (6 in combat); argument kinds: `-,s` / `t,s`
+- Seen firing 147 times (65 in combat); argument kinds: `-,s` / `t,s`
 
 ### INITIAL_HOTFIXES_APPLIED
 
@@ -111,28 +112,28 @@ Namespace: `C_System`
 - Status: ✅ verified
 - Payload: `isInitialLogin: bool`, `isReloadingUi: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `b,b`
+- Seen firing 3 times (0 in combat); argument kinds: `b,b`
 
 ### PLAYER_LEAVING_WORLD
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### PLAYER_LOGIN
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### PLAYER_LOGOUT
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### PLAYER_QUITING
 
@@ -181,14 +182,14 @@ Namespace: `C_System`
 - Status: ✅ verified
 - Payload: `totalTimePlayed: number`, `timePlayedThisLevel: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `n,n`
+- Seen firing 3 times (0 in combat); argument kinds: `n,n`
 
 ### UI_ERROR_MESSAGE
 
 - Status: ✅ verified
 - Payload: `errorType: luaIndex`, `message: string`
 - unique event (Blizzard's docs)
-- Seen firing 21 times (21 in combat); argument kinds: `n,s`
+- Seen firing 235 times (233 in combat); argument kinds: `n,s`
 
 ### UI_ERROR_POPUP
 
@@ -207,7 +208,7 @@ Namespace: `C_System`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### WOW_MOUSE_NOT_FOUND
 

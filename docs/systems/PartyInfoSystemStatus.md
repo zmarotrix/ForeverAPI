@@ -6,14 +6,15 @@ Namespace: `C_PartyInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_PartyInfo.IsRaidListEnabled](#c_partyinfoisraidlistenabled) |  |  |
-| ✅ | [C_PartyInfo.IsRaidListSupported](#c_partyinfoisraidlistsupported) |  |  |
+| ✅ | [C_PartyInfo.IsRaidListEnabled](#c_partyinfoisraidlistenabled) | 1 value |  |
+| ✅ | [C_PartyInfo.IsRaidListSupported](#c_partyinfoisraidlistsupported) | 1 value |  |
 
 ### C_PartyInfo.IsRaidListEnabled
 
 `C_PartyInfo.IsRaidListEnabled() → isRaidListEnabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PartyInfoSystemStatusDocumentation.lua`
 
 ### C_PartyInfo.IsRaidListSupported
@@ -21,6 +22,7 @@ Namespace: `C_PartyInfo`
 `C_PartyInfo.IsRaidListSupported() → isRaidListSupported: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PartyInfoSystemStatusDocumentation.lua`
 
 ## Events

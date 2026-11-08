@@ -6,9 +6,9 @@ Namespace: `C_ExternalEventURL`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_ExternalEventURL.CanShow](#c_externaleventurlcanshow) |  |  |
-| ✅ | [C_ExternalEventURL.HasURL](#c_externaleventurlhasurl) |  |  |
-| ✅ | [C_ExternalEventURL.IsNew](#c_externaleventurlisnew) |  |  |
+| ✅ | [C_ExternalEventURL.CanShow](#c_externaleventurlcanshow) | 1 value |  |
+| ✅ | [C_ExternalEventURL.HasURL](#c_externaleventurlhasurl) | 1 value |  |
+| ✅ | [C_ExternalEventURL.IsNew](#c_externaleventurlisnew) | 1 value |  |
 | ✅ | [C_ExternalEventURL.LaunchURL](#c_externaleventurllaunchurl) |  |  |
 
 ### C_ExternalEventURL.CanShow
@@ -16,6 +16,7 @@ Namespace: `C_ExternalEventURL`
 `C_ExternalEventURL.CanShow() → canShow: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ExternalEventURLDocumentation.lua`
 
 ### C_ExternalEventURL.HasURL
@@ -23,6 +24,7 @@ Namespace: `C_ExternalEventURL`
 `C_ExternalEventURL.HasURL() → hasURL: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ExternalEventURLDocumentation.lua`
 
 ### C_ExternalEventURL.IsNew
@@ -30,6 +32,7 @@ Namespace: `C_ExternalEventURL`
 `C_ExternalEventURL.IsNew() → isNew: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ExternalEventURLDocumentation.lua`
 
 ### C_ExternalEventURL.LaunchURL

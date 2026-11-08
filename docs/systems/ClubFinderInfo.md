@@ -14,24 +14,24 @@ Namespace: `C_ClubFinder`
 | ✅ | [C_ClubFinder.ClearClubApplicantsCache](#c_clubfinderclearclubapplicantscache) |  |  |
 | ✅ | [C_ClubFinder.ClearClubFinderPostingsCache](#c_clubfinderclearclubfinderpostingscache) |  |  |
 | ✅ | [C_ClubFinder.DoesPlayerBelongToClubFromClubGUID](#c_clubfinderdoesplayerbelongtoclubfromclubguid) |  |  |
-| ✅ | [C_ClubFinder.GetClubFinderDisableReason](#c_clubfindergetclubfinderdisablereason) |  |  |
-| ✅ | [C_ClubFinder.GetClubRecruitmentSettings](#c_clubfindergetclubrecruitmentsettings) |  |  |
+| ✅ | [C_ClubFinder.GetClubFinderDisableReason](#c_clubfindergetclubfinderdisablereason) | 1 value |  |
+| ✅ | [C_ClubFinder.GetClubRecruitmentSettings](#c_clubfindergetclubrecruitmentsettings) | 1 value |  |
 | ✅ | [C_ClubFinder.GetClubTypeFromFinderGUID](#c_clubfindergetclubtypefromfinderguid) |  |  |
 | ✅ | [C_ClubFinder.GetFocusIndexFromFlag](#c_clubfindergetfocusindexfromflag) |  |  |
-| ✅ | [C_ClubFinder.GetPlayerApplicantLocaleFlags](#c_clubfindergetplayerapplicantlocaleflags) |  |  |
-| ✅ | [C_ClubFinder.GetPlayerApplicantSettings](#c_clubfindergetplayerapplicantsettings) |  |  |
+| ✅ | [C_ClubFinder.GetPlayerApplicantLocaleFlags](#c_clubfindergetplayerapplicantlocaleflags) | 1 value |  |
+| ✅ | [C_ClubFinder.GetPlayerApplicantSettings](#c_clubfindergetplayerapplicantsettings) | 1 value |  |
 | ✅ | [C_ClubFinder.GetPlayerClubApplicationStatus](#c_clubfindergetplayerclubapplicationstatus) |  |  |
-| ✅ | [C_ClubFinder.GetPlayerSettingsFocusFlagsSelectedCount](#c_clubfindergetplayersettingsfocusflagsselectedcount) |  |  |
+| ✅ | [C_ClubFinder.GetPlayerSettingsFocusFlagsSelectedCount](#c_clubfindergetplayersettingsfocusflagsselectedcount) | 1 value |  |
 | ✅ | [C_ClubFinder.GetPostingIDFromClubFinderGUID](#c_clubfindergetpostingidfromclubfinderguid) |  |  |
 | ✅ | [C_ClubFinder.GetRecruitingClubInfoFromClubID](#c_clubfindergetrecruitingclubinfofromclubid) |  |  |
 | ✅ | [C_ClubFinder.GetRecruitingClubInfoFromFinderGUID](#c_clubfindergetrecruitingclubinfofromfinderguid) |  |  |
 | ✅ | [C_ClubFinder.GetStatusOfPostingFromClubId](#c_clubfindergetstatusofpostingfromclubid) |  |  |
-| ✅ | [C_ClubFinder.GetTotalMatchingCommunityListSize](#c_clubfindergettotalmatchingcommunitylistsize) |  |  |
-| ✅ | [C_ClubFinder.GetTotalMatchingGuildListSize](#c_clubfindergettotalmatchingguildlistsize) |  |  |
+| ✅ | [C_ClubFinder.GetTotalMatchingCommunityListSize](#c_clubfindergettotalmatchingcommunitylistsize) | 1 value |  |
+| ✅ | [C_ClubFinder.GetTotalMatchingGuildListSize](#c_clubfindergettotalmatchingguildlistsize) | 1 value |  |
 | ✅ | [C_ClubFinder.HasAlreadyAppliedToLinkedPosting](#c_clubfinderhasalreadyappliedtolinkedposting) |  |  |
 | ✅ | [C_ClubFinder.HasPostingBeenDelisted](#c_clubfinderhaspostingbeendelisted) |  |  |
-| ✅ | [C_ClubFinder.IsCommunityFinderEnabled](#c_clubfinderiscommunityfinderenabled) |  |  |
-| ✅ | [C_ClubFinder.IsEnabled](#c_clubfinderisenabled) |  |  |
+| ✅ | [C_ClubFinder.IsCommunityFinderEnabled](#c_clubfinderiscommunityfinderenabled) | 1 value |  |
+| ✅ | [C_ClubFinder.IsEnabled](#c_clubfinderisenabled) | 1 value |  |
 | ✅ | [C_ClubFinder.IsListingEnabledFromFlags](#c_clubfinderislistingenabledfromflags) |  |  |
 | ✅ | [C_ClubFinder.IsPostingBanned](#c_clubfinderispostingbanned) |  |  |
 | ✅ | [C_ClubFinder.IsValidSearchString](#c_clubfinderisvalidsearchstring) |  |  |
@@ -60,7 +60,7 @@ Namespace: `C_ClubFinder`
 | ✅ | [C_ClubFinder.SetPlayerApplicantSettings](#c_clubfindersetplayerapplicantsettings) |  |  |
 | ✅ | [C_ClubFinder.SetRecruitmentLocale](#c_clubfindersetrecruitmentlocale) |  |  |
 | ✅ | [C_ClubFinder.SetRecruitmentSettings](#c_clubfindersetrecruitmentsettings) |  |  |
-| ✅ | [C_ClubFinder.ShouldShowClubFinder](#c_clubfindershouldshowclubfinder) |  |  |
+| ✅ | [C_ClubFinder.ShouldShowClubFinder](#c_clubfindershouldshowclubfinder) | 1 value |  |
 
 ### C_ClubFinder.ApplicantAcceptClubInvite
 
@@ -130,6 +130,7 @@ Namespace: `C_ClubFinder`
 `C_ClubFinder.GetClubFinderDisableReason() → disableReason: ClubFinderDisableReason?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `ClubFinderDocumentation.lua`
 
 ### C_ClubFinder.GetClubRecruitmentSettings
@@ -137,6 +138,7 @@ Namespace: `C_ClubFinder`
 `C_ClubFinder.GetClubRecruitmentSettings() → settings: ClubSettingsInfo`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{autoAccept=boolean,crossFaction=boolean,enableListing=boolean,maxLevelOnly=boolean,playStyleDungeon=boolean,playStylePvp=boolean,playStyleRP=boolean,playStyleRaids=boolean,playStyleSocial=boolean,roleDps=boolean,roleHealer=boolean,roleTank=boolean,sizeLarge=boolean,sizeMedium=boolean,sizeSmall=boolean,sortMembers=boolean,sortNewest=boolean,sortRelevance=boolean}`
 - Source: client docs `ClubFinderDocumentation.lua`
 
 ### C_ClubFinder.GetClubTypeFromFinderGUID
@@ -161,6 +163,7 @@ Namespace: `C_ClubFinder`
 `C_ClubFinder.GetPlayerApplicantLocaleFlags() → localeFlags: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ClubFinderDocumentation.lua`
 
 ### C_ClubFinder.GetPlayerApplicantSettings
@@ -168,6 +171,7 @@ Namespace: `C_ClubFinder`
 `C_ClubFinder.GetPlayerApplicantSettings() → settings: ClubSettingsInfo`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{autoAccept=boolean,crossFaction=boolean,enableListing=boolean,maxLevelOnly=boolean,playStyleDungeon=boolean,playStylePvp=boolean,playStyleRP=boolean,playStyleRaids=boolean,playStyleSocial=boolean,roleDps=boolean,roleHealer=boolean,roleTank=boolean,sizeLarge=boolean,sizeMedium=boolean,sizeSmall=boolean,sortMembers=boolean,sortNewest=boolean,sortRelevance=boolean}`
 - Source: client docs `ClubFinderDocumentation.lua`
 
 ### C_ClubFinder.GetPlayerClubApplicationStatus
@@ -183,6 +187,7 @@ Namespace: `C_ClubFinder`
 `C_ClubFinder.GetPlayerSettingsFocusFlagsSelectedCount() → focusCount: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ClubFinderDocumentation.lua`
 
 ### C_ClubFinder.GetPostingIDFromClubFinderGUID
@@ -222,6 +227,7 @@ Namespace: `C_ClubFinder`
 `C_ClubFinder.GetTotalMatchingCommunityListSize() → totalSize: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ClubFinderDocumentation.lua`
 
 ### C_ClubFinder.GetTotalMatchingGuildListSize
@@ -229,6 +235,7 @@ Namespace: `C_ClubFinder`
 `C_ClubFinder.GetTotalMatchingGuildListSize() → totalSize: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ClubFinderDocumentation.lua`
 
 ### C_ClubFinder.HasAlreadyAppliedToLinkedPosting
@@ -252,6 +259,7 @@ Namespace: `C_ClubFinder`
 `C_ClubFinder.IsCommunityFinderEnabled() → isEnabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ClubFinderDocumentation.lua`
 
 ### C_ClubFinder.IsEnabled
@@ -259,6 +267,7 @@ Namespace: `C_ClubFinder`
 `C_ClubFinder.IsEnabled() → isEnabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ClubFinderDocumentation.lua`
 
 ### C_ClubFinder.IsListingEnabledFromFlags
@@ -488,6 +497,7 @@ Namespace: `C_ClubFinder`
 `C_ClubFinder.ShouldShowClubFinder() → shouldShow: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ClubFinderDocumentation.lua`
 
 ## Events

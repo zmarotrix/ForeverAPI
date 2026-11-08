@@ -7,8 +7,8 @@ Namespace: `C_ContentTracking`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_ContentTracking.GetBestMapForTrackable](#c_contenttrackinggetbestmapfortrackable) |  |  |
-| ✅ | [C_ContentTracking.GetCollectableSourceTrackingEnabled](#c_contenttrackinggetcollectablesourcetrackingenabled) |  |  |
-| ✅ | [C_ContentTracking.GetCollectableSourceTypes](#c_contenttrackinggetcollectablesourcetypes) |  |  |
+| ✅ | [C_ContentTracking.GetCollectableSourceTrackingEnabled](#c_contenttrackinggetcollectablesourcetrackingenabled) | 1 value |  |
+| ✅ | [C_ContentTracking.GetCollectableSourceTypes](#c_contenttrackinggetcollectablesourcetypes) | 1 value |  |
 | ✅ | [C_ContentTracking.GetCurrentTrackingTarget](#c_contenttrackinggetcurrenttrackingtarget) |  |  |
 | ✅ | [C_ContentTracking.GetEncounterTrackingInfo](#c_contenttrackinggetencountertrackinginfo) |  |  |
 | ✅ | [C_ContentTracking.GetNextWaypointForTrackable](#c_contenttrackinggetnextwaypointfortrackable) |  |  |
@@ -38,6 +38,7 @@ Namespace: `C_ContentTracking`
 `C_ContentTracking.GetCollectableSourceTrackingEnabled() → isEnabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ContentTrackingDocumentation.lua`
 
 ### C_ContentTracking.GetCollectableSourceTypes
@@ -45,6 +46,7 @@ Namespace: `C_ContentTracking`
 `C_ContentTracking.GetCollectableSourceTypes() → collectableSourceTypes: ContentTrackingType[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{[number]=number,[number]=number}`
 - Source: client docs `ContentTrackingDocumentation.lua`
 
 ### C_ContentTracking.GetCurrentTrackingTarget
@@ -181,13 +183,14 @@ Namespace: `C_ContentTracking`
 - Status: ✅ verified
 - Payload: `isEnabled: bool`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `b`
 
 ### CONTENT_TRACKING_LIST_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### CONTENT_TRACKING_UPDATE
 

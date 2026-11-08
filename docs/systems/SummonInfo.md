@@ -6,19 +6,20 @@ Namespace: `C_SummonInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_SummonInfo.CancelSummon](#c_summoninfocancelsummon) |  |  |
+| ✅ | [C_SummonInfo.CancelSummon](#c_summoninfocancelsummon) | 0 values |  |
 | ✅ | [C_SummonInfo.ConfirmSummon](#c_summoninfoconfirmsummon) |  |  |
-| ✅ | [C_SummonInfo.GetSummonConfirmAreaName](#c_summoninfogetsummonconfirmareaname) |  |  |
-| ✅ | [C_SummonInfo.GetSummonConfirmSummoner](#c_summoninfogetsummonconfirmsummoner) |  |  |
-| ✅ | [C_SummonInfo.GetSummonConfirmTimeLeft](#c_summoninfogetsummonconfirmtimeleft) |  |  |
-| ✅ | [C_SummonInfo.GetSummonReason](#c_summoninfogetsummonreason) |  |  |
-| ✅ | [C_SummonInfo.IsSummonSkippingStartExperience](#c_summoninfoissummonskippingstartexperience) |  |  |
+| ✅ | [C_SummonInfo.GetSummonConfirmAreaName](#c_summoninfogetsummonconfirmareaname) | 1 value |  |
+| ✅ | [C_SummonInfo.GetSummonConfirmSummoner](#c_summoninfogetsummonconfirmsummoner) | 1 value |  |
+| ✅ | [C_SummonInfo.GetSummonConfirmTimeLeft](#c_summoninfogetsummonconfirmtimeleft) | 1 value |  |
+| ✅ | [C_SummonInfo.GetSummonReason](#c_summoninfogetsummonreason) | 1 value |  |
+| ✅ | [C_SummonInfo.IsSummonSkippingStartExperience](#c_summoninfoissummonskippingstartexperience) | 1 value |  |
 
 ### C_SummonInfo.CancelSummon
 
 `C_SummonInfo.CancelSummon()`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 0 values
 - Source: client docs `SummonInfoDocumentation.lua`
 
 ### C_SummonInfo.ConfirmSummon
@@ -33,6 +34,7 @@ Namespace: `C_SummonInfo`
 `C_SummonInfo.GetSummonConfirmAreaName() → areaName: string`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `string`
 - Source: client docs `SummonInfoDocumentation.lua`
 
 ### C_SummonInfo.GetSummonConfirmSummoner
@@ -40,6 +42,7 @@ Namespace: `C_SummonInfo`
 `C_SummonInfo.GetSummonConfirmSummoner() → summoner: string?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `SummonInfoDocumentation.lua`
 
 ### C_SummonInfo.GetSummonConfirmTimeLeft
@@ -47,6 +50,7 @@ Namespace: `C_SummonInfo`
 `C_SummonInfo.GetSummonConfirmTimeLeft() → timeLeft: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `SummonInfoDocumentation.lua`
 
 ### C_SummonInfo.GetSummonReason
@@ -54,6 +58,7 @@ Namespace: `C_SummonInfo`
 `C_SummonInfo.GetSummonReason() → summonReason: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `SummonInfoDocumentation.lua`
 
 ### C_SummonInfo.IsSummonSkippingStartExperience
@@ -61,4 +66,5 @@ Namespace: `C_SummonInfo`
 `C_SummonInfo.IsSummonSkippingStartExperience() → isSummonSkippingStartExperience: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `SummonInfoDocumentation.lua`

@@ -6,45 +6,46 @@ Namespace: `C_PlayerInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_PlayerInfo.CanPlayerEnterChromieTime](#c_playerinfocanplayerenterchromietime) |  |  |
-| ✅ | [C_PlayerInfo.CanPlayerUseAreaLoot](#c_playerinfocanplayerusearealoot) |  |  |
-| ✅ | [C_PlayerInfo.CanPlayerUseMountEquipment](#c_playerinfocanplayerusemountequipment) |  |  |
+| ✅ | [C_PlayerInfo.CanPlayerEnterChromieTime](#c_playerinfocanplayerenterchromietime) | 1 value |  |
+| ✅ | [C_PlayerInfo.CanPlayerUseAreaLoot](#c_playerinfocanplayerusearealoot) | 1 value |  |
+| ✅ | [C_PlayerInfo.CanPlayerUseMountEquipment](#c_playerinfocanplayerusemountequipment) | 2 values |  |
 | ✅ | [C_PlayerInfo.CanUseItem](#c_playerinfocanuseitem) |  |  |
-| ✅ | [C_PlayerInfo.GetAlternateFormInfo](#c_playerinfogetalternateforminfo) |  |  |
-| ✅ | [C_PlayerInfo.GetContentDifficultyCreatureForPlayer](#c_playerinfogetcontentdifficultycreatureforplayer) |  |  |
+| ✅ | [C_PlayerInfo.GetAlternateFormInfo](#c_playerinfogetalternateforminfo) | 2 values |  |
+| ✅ | [C_PlayerInfo.GetContentDifficultyCreatureForPlayer](#c_playerinfogetcontentdifficultycreatureforplayer) | 1 value |  |
 | ✅ | [C_PlayerInfo.GetContentDifficultyQuestForPlayer](#c_playerinfogetcontentdifficultyquestforplayer) |  |  |
-| ✅ | [C_PlayerInfo.GetDisplayID](#c_playerinfogetdisplayid) |  |  |
-| ✅ | [C_PlayerInfo.GetGlidingInfo](#c_playerinfogetglidinginfo) |  |  |
+| ✅ | [C_PlayerInfo.GetDisplayID](#c_playerinfogetdisplayid) | 1 value |  |
+| ✅ | [C_PlayerInfo.GetGlidingInfo](#c_playerinfogetglidinginfo) | 3 values |  |
 | ✅ | [C_PlayerInfo.GetInstancesUnlockedAtLevel](#c_playerinfogetinstancesunlockedatlevel) |  |  |
-| ✅ | [C_PlayerInfo.GetNativeDisplayID](#c_playerinfogetnativedisplayid) |  |  |
+| ✅ | [C_PlayerInfo.GetNativeDisplayID](#c_playerinfogetnativedisplayid) | 1 value |  |
 | ✅ | [C_PlayerInfo.GetPetStableCreatureDisplayInfoID](#c_playerinfogetpetstablecreaturedisplayinfoid) |  |  |
-| ✅ | [C_PlayerInfo.GetPlayerCharacterData](#c_playerinfogetplayercharacterdata) |  |  |
-| ✅ | [C_PlayerInfo.GetPlayerMythicPlusRatingSummary](#c_playerinfogetplayermythicplusratingsummary) |  |  |
-| ✅ | [C_PlayerInfo.HasAccountInventoryLock](#c_playerinfohasaccountinventorylock) |  |  |
+| ✅ | [C_PlayerInfo.GetPlayerCharacterData](#c_playerinfogetplayercharacterdata) | 1 value |  |
+| ✅ | [C_PlayerInfo.GetPlayerMythicPlusRatingSummary](#c_playerinfogetplayermythicplusratingsummary) | 1 value |  |
+| ✅ | [C_PlayerInfo.HasAccountInventoryLock](#c_playerinfohasaccountinventorylock) | 1 value |  |
 | ✅ | [C_PlayerInfo.HasVisibleInvSlot](#c_playerinfohasvisibleinvslot) |  |  |
-| ✅ | [C_PlayerInfo.IsAccountBankEnabled](#c_playerinfoisaccountbankenabled) |  |  |
-| ✅ | [C_PlayerInfo.IsCharacterBankEnabled](#c_playerinfoischaracterbankenabled) |  |  |
-| ✅ | [C_PlayerInfo.IsDisplayRaceNative](#c_playerinfoisdisplayracenative) |  |  |
+| ✅ | [C_PlayerInfo.IsAccountBankEnabled](#c_playerinfoisaccountbankenabled) | 1 value |  |
+| ✅ | [C_PlayerInfo.IsCharacterBankEnabled](#c_playerinfoischaracterbankenabled) | 1 value |  |
+| ✅ | [C_PlayerInfo.IsDisplayRaceNative](#c_playerinfoisdisplayracenative) | 1 value |  |
 | ✅ | [C_PlayerInfo.IsExpansionLandingPageUnlockedForPlayer](#c_playerinfoisexpansionlandingpageunlockedforplayer) |  |  |
-| ✅ | [C_PlayerInfo.IsMirrorImage](#c_playerinfoismirrorimage) |  |  |
-| ✅ | [C_PlayerInfo.IsPlayerEligibleForNPE](#c_playerinfoisplayereligiblefornpe) |  |  |
-| ✅ | [C_PlayerInfo.IsPlayerEligibleForNPEv2](#c_playerinfoisplayereligiblefornpev2) |  |  |
-| ✅ | [C_PlayerInfo.IsPlayerInChromieTime](#c_playerinfoisplayerinchromietime) |  |  |
-| ✅ | [C_PlayerInfo.IsPlayerInRPE](#c_playerinfoisplayerinrpe) |  |  |
-| ✅ | [C_PlayerInfo.IsPlayerInTimerunningHeroicWorldTier](#c_playerinfoisplayerintimerunningheroicworldtier) |  |  |
-| ✅ | [C_PlayerInfo.IsPlayerNPERestricted](#c_playerinfoisplayernperestricted) |  |  |
-| ✅ | [C_PlayerInfo.IsReturningCharacter](#c_playerinfoisreturningcharacter) |  |  |
-| ✅ | [C_PlayerInfo.IsSelfFoundActive](#c_playerinfoisselffoundactive) |  |  |
-| ✅ | [C_PlayerInfo.IsTradingPostAvailable](#c_playerinfoistradingpostavailable) |  |  |
-| ✅ | [C_PlayerInfo.IsTravelersLogAvailable](#c_playerinfoistravelerslogavailable) |  |  |
-| ✅ | [C_PlayerInfo.IsTutorialsTabAvailable](#c_playerinfoistutorialstabavailable) |  |  |
-| ✅ | [C_PlayerInfo.ShouldDisplaySurname](#c_playerinfoshoulddisplaysurname) |  |  |
+| ✅ | [C_PlayerInfo.IsMirrorImage](#c_playerinfoismirrorimage) | 1 value |  |
+| ✅ | [C_PlayerInfo.IsPlayerEligibleForNPE](#c_playerinfoisplayereligiblefornpe) | 2 values |  |
+| ✅ | [C_PlayerInfo.IsPlayerEligibleForNPEv2](#c_playerinfoisplayereligiblefornpev2) | 2 values |  |
+| ✅ | [C_PlayerInfo.IsPlayerInChromieTime](#c_playerinfoisplayerinchromietime) | 1 value |  |
+| ✅ | [C_PlayerInfo.IsPlayerInRPE](#c_playerinfoisplayerinrpe) | 1 value |  |
+| ✅ | [C_PlayerInfo.IsPlayerInTimerunningHeroicWorldTier](#c_playerinfoisplayerintimerunningheroicworldtier) | 1 value |  |
+| ✅ | [C_PlayerInfo.IsPlayerNPERestricted](#c_playerinfoisplayernperestricted) | 1 value |  |
+| ✅ | [C_PlayerInfo.IsReturningCharacter](#c_playerinfoisreturningcharacter) | 1 value |  |
+| ✅ | [C_PlayerInfo.IsSelfFoundActive](#c_playerinfoisselffoundactive) | 1 value |  |
+| ✅ | [C_PlayerInfo.IsTradingPostAvailable](#c_playerinfoistradingpostavailable) | 1 value |  |
+| ✅ | [C_PlayerInfo.IsTravelersLogAvailable](#c_playerinfoistravelerslogavailable) | 1 value |  |
+| ✅ | [C_PlayerInfo.IsTutorialsTabAvailable](#c_playerinfoistutorialstabavailable) | 1 value |  |
+| ✅ | [C_PlayerInfo.ShouldDisplaySurname](#c_playerinfoshoulddisplaysurname) | 1 value |  |
 
 ### C_PlayerInfo.CanPlayerEnterChromieTime
 
 `C_PlayerInfo.CanPlayerEnterChromieTime() → canEnter: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.CanPlayerUseAreaLoot
@@ -52,6 +53,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.CanPlayerUseAreaLoot() → canUseAreaLoot: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.CanPlayerUseMountEquipment
@@ -59,6 +61,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.CanPlayerUseMountEquipment() → canUseMountEquipment: bool, failureReason: string`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `boolean`, `string`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.CanUseItem
@@ -74,6 +77,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.GetAlternateFormInfo() → hasAlternateForm: bool, inAlternateForm: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `boolean`, `boolean`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.GetContentDifficultyCreatureForPlayer
@@ -82,6 +86,7 @@ Namespace: `C_PlayerInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with "player": returned 1 value: `number`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.GetContentDifficultyQuestForPlayer
@@ -97,6 +102,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.GetDisplayID() → displayID: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.GetGlidingInfo
@@ -104,6 +110,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.GetGlidingInfo() → isGliding: bool, canGlide: bool, forwardSpeed: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 3 values: `boolean`, `boolean`, `number`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.GetInstancesUnlockedAtLevel
@@ -120,6 +127,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.GetNativeDisplayID() → nativeDisplayID: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.GetPetStableCreatureDisplayInfoID
@@ -136,6 +144,7 @@ Namespace: `C_PlayerInfo`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `table{createScreenIconAtlas=string,fileName=string,name=string,sex=number}`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.GetPlayerMythicPlusRatingSummary
@@ -146,6 +155,7 @@ Namespace: `C_PlayerInfo`
 - Blizzard: Returns the players mythic+ rating summary which includes the runs they've completed as well as their current season m+ rating
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with "player": returned 1 value: `table{currentSeasonScore=number,runs=table}`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.HasAccountInventoryLock
@@ -153,6 +163,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.HasAccountInventoryLock() → hasAccountInventoryLock: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.HasVisibleInvSlot
@@ -168,6 +179,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.IsAccountBankEnabled() → isAccountBankEnabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.IsCharacterBankEnabled
@@ -175,6 +187,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.IsCharacterBankEnabled() → isCharacterBankEnabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.IsDisplayRaceNative
@@ -182,6 +195,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.IsDisplayRaceNative() → isDisplayRaceNative: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.IsExpansionLandingPageUnlockedForPlayer
@@ -197,6 +211,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.IsMirrorImage() → isMirrorImage: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.IsPlayerEligibleForNPE
@@ -204,6 +219,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.IsPlayerEligibleForNPE() → isEligible: bool, failureReason: string`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `boolean`, `string`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.IsPlayerEligibleForNPEv2
@@ -211,6 +227,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.IsPlayerEligibleForNPEv2() → isEligible: bool, failureReason: string`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `boolean`, `string`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.IsPlayerInChromieTime
@@ -218,6 +235,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.IsPlayerInChromieTime() → inChromieTime: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.IsPlayerInRPE
@@ -225,6 +243,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.IsPlayerInRPE() → isInRPE: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.IsPlayerInTimerunningHeroicWorldTier
@@ -232,6 +251,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.IsPlayerInTimerunningHeroicWorldTier() → inTimerunningHeroicWorldTier: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.IsPlayerNPERestricted
@@ -239,6 +259,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.IsPlayerNPERestricted() → isRestricted: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.IsReturningCharacter
@@ -246,6 +267,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.IsReturningCharacter() → isReturning: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.IsSelfFoundActive
@@ -253,6 +275,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.IsSelfFoundActive() → active: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.IsTradingPostAvailable
@@ -260,6 +283,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.IsTradingPostAvailable() → isAvailable: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.IsTravelersLogAvailable
@@ -267,6 +291,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.IsTravelersLogAvailable() → isAvailable: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.IsTutorialsTabAvailable
@@ -274,6 +299,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.IsTutorialsTabAvailable() → isAvailable: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.ShouldDisplaySurname
@@ -281,6 +307,7 @@ Namespace: `C_PlayerInfo`
 `C_PlayerInfo.ShouldDisplaySurname() → display: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ## Types

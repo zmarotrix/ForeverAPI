@@ -6,7 +6,7 @@ Namespace: `C_ClientScene`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_ClientScene.IsSceneTypeActive](#c_clientsceneisscenetypeactive) |  |  |
+| ✅ | [C_ClientScene.IsSceneTypeActive](#c_clientsceneisscenetypeactive) | 1 value |  |
 
 ### C_ClientScene.IsSceneTypeActive
 
@@ -14,6 +14,7 @@ Namespace: `C_ClientScene`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ClientSceneDocumentation.lua`
 
 ## Events

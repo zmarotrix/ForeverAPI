@@ -8,13 +8,13 @@ Namespace: `C_HouseEditor`
 |---|---|---|---|
 | ✅ | [C_HouseEditor.ActivateHouseEditorMode](#c_houseeditoractivatehouseeditormode) |  |  |
 | ✅ | [C_HouseEditor.EnterHouseEditor](#c_houseeditorenterhouseeditor) |  |  |
-| ✅ | [C_HouseEditor.GetActiveHouseEditorMode](#c_houseeditorgetactivehouseeditormode) |  |  |
-| ✅ | [C_HouseEditor.GetHouseEditorAvailability](#c_houseeditorgethouseeditoravailability) |  |  |
+| ✅ | [C_HouseEditor.GetActiveHouseEditorMode](#c_houseeditorgetactivehouseeditormode) | 1 value |  |
+| ✅ | [C_HouseEditor.GetHouseEditorAvailability](#c_houseeditorgethouseeditoravailability) | 1 value |  |
 | ✅ | [C_HouseEditor.GetHouseEditorModeAvailability](#c_houseeditorgethouseeditormodeavailability) |  |  |
-| ✅ | [C_HouseEditor.GetHouseEditorPlayerType](#c_houseeditorgethouseeditorplayertype) |  |  |
-| ✅ | [C_HouseEditor.IsHouseEditorActive](#c_houseeditorishouseeditoractive) |  |  |
+| ✅ | [C_HouseEditor.GetHouseEditorPlayerType](#c_houseeditorgethouseeditorplayertype) | 1 value |  |
+| ✅ | [C_HouseEditor.IsHouseEditorActive](#c_houseeditorishouseeditoractive) | 1 value |  |
 | ✅ | [C_HouseEditor.IsHouseEditorModeActive](#c_houseeditorishouseeditormodeactive) |  |  |
-| ✅ | [C_HouseEditor.IsHouseEditorStatusAvailable](#c_houseeditorishouseeditorstatusavailable) |  |  |
+| ✅ | [C_HouseEditor.IsHouseEditorStatusAvailable](#c_houseeditorishouseeditorstatusavailable) | 1 value |  |
 | ✅ | [C_HouseEditor.LeaveHouseEditor](#c_houseeditorleavehouseeditor) |  |  |
 
 ### C_HouseEditor.ActivateHouseEditorMode
@@ -41,6 +41,7 @@ Namespace: `C_HouseEditor`
 `C_HouseEditor.GetActiveHouseEditorMode() → editMode: HouseEditorMode`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `HouseEditorUIDocumentation.lua`
 
 ### C_HouseEditor.GetHouseEditorAvailability
@@ -49,6 +50,7 @@ Namespace: `C_HouseEditor`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns the availability state of the House Editor overall
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `HouseEditorUIDocumentation.lua`
 
 ### C_HouseEditor.GetHouseEditorModeAvailability
@@ -65,6 +67,7 @@ Namespace: `C_HouseEditor`
 `C_HouseEditor.GetHouseEditorPlayerType() → playerType: HouseEditorPlayerType`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `HouseEditorUIDocumentation.lua`
 
 ### C_HouseEditor.IsHouseEditorActive
@@ -73,6 +76,7 @@ Namespace: `C_HouseEditor`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns whether the House Editor is active, in any mode
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `HouseEditorUIDocumentation.lua`
 
 ### C_HouseEditor.IsHouseEditorModeActive
@@ -90,6 +94,7 @@ Namespace: `C_HouseEditor`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the HouseEditor currently able process mode availability and switching; May be false if not in a house or plot, or while waiting to get house settings back from the server
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `HouseEditorUIDocumentation.lua`
 
 ### C_HouseEditor.LeaveHouseEditor

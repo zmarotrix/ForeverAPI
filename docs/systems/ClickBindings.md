@@ -10,9 +10,9 @@ Namespace: `C_ClickBindings`
 | ✅ | [C_ClickBindings.ExecuteBinding](#c_clickbindingsexecutebinding) |  |  |
 | ✅ | [C_ClickBindings.GetBindingType](#c_clickbindingsgetbindingtype) |  |  |
 | ✅ | [C_ClickBindings.GetEffectiveInteractionButton](#c_clickbindingsgeteffectiveinteractionbutton) |  |  |
-| ✅ | [C_ClickBindings.GetProfileInfo](#c_clickbindingsgetprofileinfo) |  |  |
+| ✅ | [C_ClickBindings.GetProfileInfo](#c_clickbindingsgetprofileinfo) | 1 value |  |
 | 🆕 | [C_ClickBindings.GetStringFromModifiers](#c_clickbindingsgetstringfrommodifiers) |  |  |
-| ✅ | [C_ClickBindings.GetTutorialShown](#c_clickbindingsgettutorialshown) |  |  |
+| ✅ | [C_ClickBindings.GetTutorialShown](#c_clickbindingsgettutorialshown) | 1 value |  |
 | 🆕 | [C_ClickBindings.MakeModifiers](#c_clickbindingsmakemodifiers) |  |  |
 | ✅ | [C_ClickBindings.ResetCurrentProfile](#c_clickbindingsresetcurrentprofile) |  |  |
 | ✅ | [C_ClickBindings.SetProfileByInfo](#c_clickbindingssetprofilebyinfo) |  |  |
@@ -57,6 +57,7 @@ Namespace: `C_ClickBindings`
 `C_ClickBindings.GetProfileInfo() → infoVec: ClickBindingInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{[number]=table,[number]=table}`
 - Source: client docs `ClickBindingsDocumentation.lua`
 
 ### C_ClickBindings.GetStringFromModifiers
@@ -70,6 +71,7 @@ Namespace: `C_ClickBindings`
 `C_ClickBindings.GetTutorialShown() → tutorialShown: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ClickBindingsDocumentation.lua`
 
 ### C_ClickBindings.MakeModifiers

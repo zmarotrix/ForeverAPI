@@ -12,9 +12,9 @@ Namespace: `C_AddOnProfiler`
 | ✅ | [C_AddOnProfiler.GetAddOnMetric](#c_addonprofilergetaddonmetric) |  |  |
 | ✅ | [C_AddOnProfiler.GetApplicationMetric](#c_addonprofilergetapplicationmetric) |  |  |
 | ✅ | [C_AddOnProfiler.GetOverallMetric](#c_addonprofilergetoverallmetric) |  |  |
-| ✅ | [C_AddOnProfiler.GetTicksPerSecond](#c_addonprofilergettickspersecond) |  |  |
+| ✅ | [C_AddOnProfiler.GetTicksPerSecond](#c_addonprofilergettickspersecond) | 1 value |  |
 | ✅ | [C_AddOnProfiler.GetTopKAddOnsForMetric](#c_addonprofilergettopkaddonsformetric) |  |  |
-| ✅ | [C_AddOnProfiler.IsEnabled](#c_addonprofilerisenabled) |  |  |
+| ✅ | [C_AddOnProfiler.IsEnabled](#c_addonprofilerisenabled) | 1 value |  |
 | ✅ | [C_AddOnProfiler.MeasureCall](#c_addonprofilermeasurecall) |  |  |
 
 ### C_AddOnProfiler.AddMeasuredCallEvent
@@ -79,6 +79,7 @@ Namespace: `C_AddOnProfiler`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns the number of profiling clock ticks that occur within a single real-time second.
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `AddOnProfilerDocumentation.lua`
 
 ### C_AddOnProfiler.GetTopKAddOnsForMetric
@@ -96,6 +97,7 @@ Namespace: `C_AddOnProfiler`
 
 - Status: ✅ verified (function)
 - Blizzard: AddOn profiler will be enabled for all users, but this will return false if it ever isn't
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `AddOnProfilerDocumentation.lua`
 
 ### C_AddOnProfiler.MeasureCall

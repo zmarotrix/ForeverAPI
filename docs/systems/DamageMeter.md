@@ -6,13 +6,13 @@ Namespace: `C_DamageMeter`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_DamageMeter.GetAvailableCombatSessions](#c_damagemetergetavailablecombatsessions) |  |  |
+| ✅ | [C_DamageMeter.GetAvailableCombatSessions](#c_damagemetergetavailablecombatsessions) | 1 value |  |
 | ✅ | [C_DamageMeter.GetCombatSessionFromID](#c_damagemetergetcombatsessionfromid) |  |  |
 | ✅ | [C_DamageMeter.GetCombatSessionFromType](#c_damagemetergetcombatsessionfromtype) |  |  |
 | ✅ | [C_DamageMeter.GetCombatSessionSourceFromID](#c_damagemetergetcombatsessionsourcefromid) |  |  |
 | ✅ | [C_DamageMeter.GetCombatSessionSourceFromType](#c_damagemetergetcombatsessionsourcefromtype) |  |  |
 | ✅ | [C_DamageMeter.GetSessionDurationSeconds](#c_damagemetergetsessiondurationseconds) |  |  |
-| ✅ | [C_DamageMeter.IsDamageMeterAvailable](#c_damagemeterisdamagemeteravailable) |  |  |
+| ✅ | [C_DamageMeter.IsDamageMeterAvailable](#c_damagemeterisdamagemeteravailable) | 2 values |  |
 | ✅ | [C_DamageMeter.ResetAllCombatSessions](#c_damagemeterresetallcombatsessions) |  |  |
 
 ### C_DamageMeter.GetAvailableCombatSessions
@@ -21,6 +21,7 @@ Namespace: `C_DamageMeter`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns a list of combat sessions currently being tracked.
+- Called out of combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table}`
 - Source: client docs `DamageMeterDocumentation.lua`
 
 ### C_DamageMeter.GetCombatSessionFromID
@@ -78,6 +79,7 @@ Namespace: `C_DamageMeter`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns whether the player can enable and use the Damage Meter.
+- Called out of combat: returned 2 values: `boolean`, `string`
 - Source: client docs `DamageMeterDocumentation.lua`
 
 ### C_DamageMeter.ResetAllCombatSessions
@@ -95,20 +97,21 @@ Namespace: `C_DamageMeter`
 - Status: ✅ verified
 - Payload: `type: DamageMeterType`, `sessionID: number`
 - unique event (Blizzard's docs)
-- Seen firing 182 times (182 in combat); argument kinds: `n,n`
+- Seen firing 608 times (608 in combat); argument kinds: `n,n`
 
 ### DAMAGE_METER_CURRENT_SESSION_UPDATED
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 1 times (1 in combat); argument kinds: ``
+- Seen firing 4 times (4 in combat); argument kinds: ``
 
 ### DAMAGE_METER_RESET
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ## Types
 

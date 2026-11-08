@@ -8,7 +8,7 @@ Namespace: `C_ContributionCollector`
 |---|---|---|---|
 | ✅ | [C_ContributionCollector.Close](#c_contributioncollectorclose) |  |  |
 | ✅ | [C_ContributionCollector.Contribute](#c_contributioncollectorcontribute) |  |  |
-| ✅ | [C_ContributionCollector.GetActive](#c_contributioncollectorgetactive) |  |  |
+| ✅ | [C_ContributionCollector.GetActive](#c_contributioncollectorgetactive) | 0 values |  |
 | ✅ | [C_ContributionCollector.GetAtlases](#c_contributioncollectorgetatlases) |  |  |
 | ✅ | [C_ContributionCollector.GetBuffs](#c_contributioncollectorgetbuffs) |  |  |
 | ✅ | [C_ContributionCollector.GetContributionAppearance](#c_contributioncollectorgetcontributionappearance) |  |  |
@@ -45,6 +45,7 @@ Namespace: `C_ContributionCollector`
 `C_ContributionCollector.GetActive() → contributionID: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 0 values
 - Source: client docs `ContributionCollectorDocumentation.lua`
 
 ### C_ContributionCollector.GetAtlases

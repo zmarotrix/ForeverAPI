@@ -5,7 +5,7 @@
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [DestroyTotem](#destroytotem) |  |  |
-| ✅ | [GetNumTotemSlots](#getnumtotemslots) |  |  |
+| ✅ | [GetNumTotemSlots](#getnumtotemslots) | 1 value |  |
 | ✅ | [GetTotemCannotDismiss](#gettotemcannotdismiss) |  |  |
 | ✅ | [GetTotemDuration](#gettotemduration) |  |  |
 | ✅ | [GetTotemInfo](#gettoteminfo) |  |  |
@@ -25,6 +25,7 @@
 `GetNumTotemSlots() → numSlots: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `TotemDocumentation.lua`
 
 ### GetTotemCannotDismiss

@@ -11,16 +11,16 @@ Namespace: `C_ProfSpecs`
 | ✅ | [C_ProfSpecs.GetChildrenForPath](#c_profspecsgetchildrenforpath) |  |  |
 | ✅ | [C_ProfSpecs.GetConfigIDForSkillLine](#c_profspecsgetconfigidforskillline) |  |  |
 | ✅ | [C_ProfSpecs.GetCurrencyInfoForSkillLine](#c_profspecsgetcurrencyinfoforskillline) |  |  |
-| ✅ | [C_ProfSpecs.GetDefaultSpecSkillLine](#c_profspecsgetdefaultspecskillline) |  |  |
+| ✅ | [C_ProfSpecs.GetDefaultSpecSkillLine](#c_profspecsgetdefaultspecskillline) | 1 value |  |
 | ✅ | [C_ProfSpecs.GetDescriptionForPath](#c_profspecsgetdescriptionforpath) |  |  |
 | ✅ | [C_ProfSpecs.GetDescriptionForPerk](#c_profspecsgetdescriptionforperk) |  |  |
 | ✅ | [C_ProfSpecs.GetEntryIDForPerk](#c_profspecsgetentryidforperk) |  |  |
-| ✅ | [C_ProfSpecs.GetNewSpecReminderProfName](#c_profspecsgetnewspecreminderprofname) |  |  |
+| ✅ | [C_ProfSpecs.GetNewSpecReminderProfName](#c_profspecsgetnewspecreminderprofname) | 1 value |  |
 | ✅ | [C_ProfSpecs.GetPerksForPath](#c_profspecsgetperksforpath) |  |  |
 | ✅ | [C_ProfSpecs.GetRootPathForTab](#c_profspecsgetrootpathfortab) |  |  |
 | ✅ | [C_ProfSpecs.GetSourceTextForPath](#c_profspecsgetsourcetextforpath) |  |  |
 | ✅ | [C_ProfSpecs.GetSpecTabIDsForSkillLine](#c_profspecsgetspectabidsforskillline) |  |  |
-| ✅ | [C_ProfSpecs.GetSpecTabInfo](#c_profspecsgetspectabinfo) |  |  |
+| ✅ | [C_ProfSpecs.GetSpecTabInfo](#c_profspecsgetspectabinfo) | 1 value |  |
 | ✅ | [C_ProfSpecs.GetSpendCurrencyForPath](#c_profspecsgetspendcurrencyforpath) |  |  |
 | ✅ | [C_ProfSpecs.GetSpendEntryForPath](#c_profspecsgetspendentryforpath) |  |  |
 | ✅ | [C_ProfSpecs.GetStateForPath](#c_profspecsgetstateforpath) |  |  |
@@ -29,9 +29,9 @@ Namespace: `C_ProfSpecs`
 | ✅ | [C_ProfSpecs.GetTabInfo](#c_profspecsgettabinfo) |  |  |
 | ✅ | [C_ProfSpecs.GetUnlockEntryForPath](#c_profspecsgetunlockentryforpath) |  |  |
 | ✅ | [C_ProfSpecs.GetUnlockRankForPerk](#c_profspecsgetunlockrankforperk) |  |  |
-| ✅ | [C_ProfSpecs.ShouldShowPointsReminder](#c_profspecsshouldshowpointsreminder) |  |  |
+| ✅ | [C_ProfSpecs.ShouldShowPointsReminder](#c_profspecsshouldshowpointsreminder) | 1 value |  |
 | ✅ | [C_ProfSpecs.ShouldShowPointsReminderForSkillLine](#c_profspecsshouldshowpointsreminderforskillline) |  |  |
-| ✅ | [C_ProfSpecs.ShouldShowSpecTab](#c_profspecsshouldshowspectab) |  |  |
+| ✅ | [C_ProfSpecs.ShouldShowSpecTab](#c_profspecsshouldshowspectab) | 1 value |  |
 | ✅ | [C_ProfSpecs.SkillLineHasSpecialization](#c_profspecsskilllinehasspecialization) |  |  |
 
 ### C_ProfSpecs.CanRefundPath
@@ -79,6 +79,7 @@ Namespace: `C_ProfSpecs`
 `C_ProfSpecs.GetDefaultSpecSkillLine() → defaultSpecSkillLine: number?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ProfessionSpecUIDocumentation.lua`
 
 ### C_ProfSpecs.GetDescriptionForPath
@@ -110,6 +111,7 @@ Namespace: `C_ProfSpecs`
 `C_ProfSpecs.GetNewSpecReminderProfName() → profName: cstring?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `ProfessionSpecUIDocumentation.lua`
 
 ### C_ProfSpecs.GetPerksForPath
@@ -149,6 +151,7 @@ Namespace: `C_ProfSpecs`
 `C_ProfSpecs.GetSpecTabInfo() → specTabInfo: SpecializationTabInfo`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{enabled=boolean}`
 - Source: client docs `ProfessionSpecUIDocumentation.lua`
 
 ### C_ProfSpecs.GetSpendCurrencyForPath
@@ -220,6 +223,7 @@ Namespace: `C_ProfSpecs`
 `C_ProfSpecs.ShouldShowPointsReminder() → showReminder: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ProfessionSpecUIDocumentation.lua`
 
 ### C_ProfSpecs.ShouldShowPointsReminderForSkillLine
@@ -235,6 +239,7 @@ Namespace: `C_ProfSpecs`
 `C_ProfSpecs.ShouldShowSpecTab() → showSpecTab: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ProfessionSpecUIDocumentation.lua`
 
 ### C_ProfSpecs.SkillLineHasSpecialization

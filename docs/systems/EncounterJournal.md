@@ -15,7 +15,7 @@ Namespace: `C_EncounterJournal`
 | ✅ | [C_EncounterJournal.GetLootInfoByIndex](#c_encounterjournalgetlootinfobyindex) |  |  |
 | ✅ | [C_EncounterJournal.GetSectionIconFlags](#c_encounterjournalgetsectioniconflags) |  |  |
 | ✅ | [C_EncounterJournal.GetSectionInfo](#c_encounterjournalgetsectioninfo) |  |  |
-| ✅ | [C_EncounterJournal.GetSlotFilter](#c_encounterjournalgetslotfilter) |  |  |
+| ✅ | [C_EncounterJournal.GetSlotFilter](#c_encounterjournalgetslotfilter) | 1 value |  |
 | ✅ | [C_EncounterJournal.InitalizeSelectedTier](#c_encounterjournalinitalizeselectedtier) |  |  |
 | ✅ | [C_EncounterJournal.InstanceHasDifficultyID](#c_encounterjournalinstancehasdifficultyid) |  |  |
 | ✅ | [C_EncounterJournal.InstanceHasLoot](#c_encounterjournalinstancehasloot) |  |  |
@@ -110,6 +110,7 @@ Namespace: `C_EncounterJournal`
 `C_EncounterJournal.GetSlotFilter() → filter: ItemSlotFilterType`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `EncounterJournalDocumentation.lua`
 
 ### C_EncounterJournal.InitalizeSelectedTier
@@ -213,6 +214,7 @@ Namespace: `C_EncounterJournal`
 - Status: ✅ verified
 - Payload: `difficultyID: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `n`
 
 ### EJ_LOOT_DATA_RECIEVED
 

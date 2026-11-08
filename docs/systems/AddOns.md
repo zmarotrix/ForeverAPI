@@ -23,13 +23,13 @@ Namespace: `C_AddOns`
 | ✅ | [C_AddOns.GetAddOnOptionalDependencies](#c_addonsgetaddonoptionaldependencies) |  |  |
 | ✅ | [C_AddOns.GetAddOnSecurity](#c_addonsgetaddonsecurity) |  |  |
 | ✅ | [C_AddOns.GetAddOnTitle](#c_addonsgetaddontitle) |  |  |
-| ✅ | [C_AddOns.GetNumAddOns](#c_addonsgetnumaddons) |  |  |
-| ✅ | [C_AddOns.GetScriptsDisallowedForBeta](#c_addonsgetscriptsdisallowedforbeta) |  |  |
+| ✅ | [C_AddOns.GetNumAddOns](#c_addonsgetnumaddons) | 1 value |  |
+| ✅ | [C_AddOns.GetScriptsDisallowedForBeta](#c_addonsgetscriptsdisallowedforbeta) | 1 value |  |
 | ✅ | [C_AddOns.IsAddOnDefaultEnabled](#c_addonsisaddondefaultenabled) |  |  |
 | ✅ | [C_AddOns.IsAddOnLoadOnDemand](#c_addonsisaddonloadondemand) |  |  |
 | ✅ | [C_AddOns.IsAddOnLoadable](#c_addonsisaddonloadable) |  |  |
 | ✅ | [C_AddOns.IsAddOnLoaded](#c_addonsisaddonloaded) |  |  |
-| ✅ | [C_AddOns.IsAddonVersionCheckEnabled](#c_addonsisaddonversioncheckenabled) |  |  |
+| ✅ | [C_AddOns.IsAddonVersionCheckEnabled](#c_addonsisaddonversioncheckenabled) | 1 value |  |
 | ✅ | [C_AddOns.LoadAddOn](#c_addonsloadaddon) |  |  |
 | ✅ | [C_AddOns.ResetAddOns](#c_addonsresetaddons) |  |  |
 | ✅ | [C_AddOns.ResetDisabledAddOns](#c_addonsresetdisabledaddons) |  |  |
@@ -178,6 +178,7 @@ Namespace: `C_AddOns`
 `C_AddOns.GetNumAddOns() → numAddOns: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `AddOnsDocumentation.lua`
 
 ### C_AddOns.GetScriptsDisallowedForBeta
@@ -185,6 +186,7 @@ Namespace: `C_AddOns`
 `C_AddOns.GetScriptsDisallowedForBeta() → disallowed: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `AddOnsDocumentation.lua`
 
 ### C_AddOns.IsAddOnDefaultEnabled
@@ -224,6 +226,7 @@ Namespace: `C_AddOns`
 `C_AddOns.IsAddonVersionCheckEnabled() → isEnabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `AddOnsDocumentation.lua`
 
 ### C_AddOns.LoadAddOn
@@ -270,14 +273,14 @@ Namespace: `C_AddOns`
 - Status: ✅ verified
 - Payload: `closingClient: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `b`
+- Seen firing 3 times (0 in combat); argument kinds: `b`
 
 ### ADDON_LOADED
 
 - Status: ✅ verified
 - Payload: `addOnName: cstring`, `containsBindings: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 33 times (0 in combat); argument kinds: `s,b`
+- Seen firing 102 times (0 in combat); argument kinds: `s,b`
 
 ### SAVED_VARIABLES_TOO_LARGE
 

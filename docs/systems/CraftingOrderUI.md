@@ -6,7 +6,7 @@ Namespace: `C_CraftingOrders`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_CraftingOrders.AreOrderNotesDisabled](#c_craftingordersareordernotesdisabled) |  |  |
+| ✅ | [C_CraftingOrders.AreOrderNotesDisabled](#c_craftingordersareordernotesdisabled) | 1 value |  |
 | ✅ | [C_CraftingOrders.CalculateCraftingOrderPostingFee](#c_craftingorderscalculatecraftingorderpostingfee) |  |  |
 | ✅ | [C_CraftingOrders.CanOrderSkillAbility](#c_craftingorderscanorderskillability) |  |  |
 | ✅ | [C_CraftingOrders.CancelOrder](#c_craftingorderscancelorder) |  |  |
@@ -14,19 +14,19 @@ Namespace: `C_CraftingOrders`
 | ✅ | [C_CraftingOrders.CloseCrafterCraftingOrders](#c_craftingordersclosecraftercraftingorders) |  |  |
 | ✅ | [C_CraftingOrders.CloseCustomerCraftingOrders](#c_craftingordersclosecustomercraftingorders) |  |  |
 | ✅ | [C_CraftingOrders.FulfillOrder](#c_craftingordersfulfillorder) |  |  |
-| ✅ | [C_CraftingOrders.GetClaimedOrder](#c_craftingordersgetclaimedorder) |  |  |
-| ✅ | [C_CraftingOrders.GetCrafterBuckets](#c_craftingordersgetcrafterbuckets) |  |  |
-| ✅ | [C_CraftingOrders.GetCrafterOrders](#c_craftingordersgetcrafterorders) |  |  |
-| ✅ | [C_CraftingOrders.GetCraftingOrderTime](#c_craftingordersgetcraftingordertime) |  |  |
-| ✅ | [C_CraftingOrders.GetCustomerCategories](#c_craftingordersgetcustomercategories) |  |  |
+| ✅ | [C_CraftingOrders.GetClaimedOrder](#c_craftingordersgetclaimedorder) | 1 value |  |
+| ✅ | [C_CraftingOrders.GetCrafterBuckets](#c_craftingordersgetcrafterbuckets) | 1 value |  |
+| ✅ | [C_CraftingOrders.GetCrafterOrders](#c_craftingordersgetcrafterorders) | 1 value |  |
+| ✅ | [C_CraftingOrders.GetCraftingOrderTime](#c_craftingordersgetcraftingordertime) | 1 value |  |
+| ✅ | [C_CraftingOrders.GetCustomerCategories](#c_craftingordersgetcustomercategories) | 1 value |  |
 | ✅ | [C_CraftingOrders.GetCustomerOptions](#c_craftingordersgetcustomeroptions) |  |  |
-| ✅ | [C_CraftingOrders.GetCustomerOrders](#c_craftingordersgetcustomerorders) |  |  |
-| ✅ | [C_CraftingOrders.GetDefaultOrdersSkillLine](#c_craftingordersgetdefaultordersskillline) |  |  |
-| ✅ | [C_CraftingOrders.GetMyOrders](#c_craftingordersgetmyorders) |  |  |
-| ✅ | [C_CraftingOrders.GetNumFavoriteCustomerOptions](#c_craftingordersgetnumfavoritecustomeroptions) |  |  |
+| ✅ | [C_CraftingOrders.GetCustomerOrders](#c_craftingordersgetcustomerorders) | 1 value |  |
+| ✅ | [C_CraftingOrders.GetDefaultOrdersSkillLine](#c_craftingordersgetdefaultordersskillline) | 1 value |  |
+| ✅ | [C_CraftingOrders.GetMyOrders](#c_craftingordersgetmyorders) | 1 value |  |
+| ✅ | [C_CraftingOrders.GetNumFavoriteCustomerOptions](#c_craftingordersgetnumfavoritecustomeroptions) | 1 value |  |
 | ✅ | [C_CraftingOrders.GetOrderClaimInfo](#c_craftingordersgetorderclaiminfo) |  |  |
-| ✅ | [C_CraftingOrders.GetPersonalOrdersInfo](#c_craftingordersgetpersonalordersinfo) |  |  |
-| ✅ | [C_CraftingOrders.HasFavoriteCustomerOptions](#c_craftingordershasfavoritecustomeroptions) |  |  |
+| ✅ | [C_CraftingOrders.GetPersonalOrdersInfo](#c_craftingordersgetpersonalordersinfo) | 1 value |  |
+| ✅ | [C_CraftingOrders.HasFavoriteCustomerOptions](#c_craftingordershasfavoritecustomeroptions) | 1 value |  |
 | ✅ | [C_CraftingOrders.IsCustomerOptionFavorited](#c_craftingordersiscustomeroptionfavorited) |  |  |
 | ✅ | [C_CraftingOrders.ListMyOrders](#c_craftingorderslistmyorders) |  |  |
 | ✅ | [C_CraftingOrders.OpenCrafterCraftingOrders](#c_craftingordersopencraftercraftingorders) |  |  |
@@ -39,7 +39,7 @@ Namespace: `C_CraftingOrders`
 | ✅ | [C_CraftingOrders.RequestCrafterOrders](#c_craftingordersrequestcrafterorders) |  |  |
 | ✅ | [C_CraftingOrders.RequestCustomerOrders](#c_craftingordersrequestcustomerorders) |  |  |
 | ✅ | [C_CraftingOrders.SetCustomerOptionFavorited](#c_craftingorderssetcustomeroptionfavorited) |  |  |
-| ✅ | [C_CraftingOrders.ShouldShowCraftingOrderTab](#c_craftingordersshouldshowcraftingordertab) |  |  |
+| ✅ | [C_CraftingOrders.ShouldShowCraftingOrderTab](#c_craftingordersshouldshowcraftingordertab) | 1 value |  |
 | ✅ | [C_CraftingOrders.SkillLineHasOrders](#c_craftingordersskilllinehasorders) |  |  |
 | ✅ | [C_CraftingOrders.UpdateIgnoreList](#c_craftingordersupdateignorelist) |  |  |
 
@@ -48,6 +48,7 @@ Namespace: `C_CraftingOrders`
 `C_CraftingOrders.AreOrderNotesDisabled() → areNotesDisabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `CraftingOrderUIDocumentation.lua`
 
 ### C_CraftingOrders.CalculateCraftingOrderPostingFee
@@ -110,6 +111,7 @@ Namespace: `C_CraftingOrders`
 `C_CraftingOrders.GetClaimedOrder() → order: CraftingOrderInfo?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `CraftingOrderUIDocumentation.lua`
 
 ### C_CraftingOrders.GetCrafterBuckets
@@ -117,6 +119,7 @@ Namespace: `C_CraftingOrders`
 `C_CraftingOrders.GetCrafterBuckets() → buckets: CraftingOrderBucketInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `CraftingOrderUIDocumentation.lua`
 
 ### C_CraftingOrders.GetCrafterOrders
@@ -124,6 +127,7 @@ Namespace: `C_CraftingOrders`
 `C_CraftingOrders.GetCrafterOrders() → orders: CraftingOrderInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `CraftingOrderUIDocumentation.lua`
 
 ### C_CraftingOrders.GetCraftingOrderTime
@@ -131,6 +135,7 @@ Namespace: `C_CraftingOrders`
 `C_CraftingOrders.GetCraftingOrderTime() → time: BigUInteger`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `CraftingOrderUIDocumentation.lua`
 
 ### C_CraftingOrders.GetCustomerCategories
@@ -138,6 +143,7 @@ Namespace: `C_CraftingOrders`
 `C_CraftingOrders.GetCustomerCategories() → categories: CraftingOrderCustomerCategory[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `CraftingOrderUIDocumentation.lua`
 
 ### C_CraftingOrders.GetCustomerOptions
@@ -153,6 +159,7 @@ Namespace: `C_CraftingOrders`
 `C_CraftingOrders.GetCustomerOrders() → customerOrders: CraftingOrderInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `CraftingOrderUIDocumentation.lua`
 
 ### C_CraftingOrders.GetDefaultOrdersSkillLine
@@ -160,6 +167,7 @@ Namespace: `C_CraftingOrders`
 `C_CraftingOrders.GetDefaultOrdersSkillLine() → skillLineID: number?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `CraftingOrderUIDocumentation.lua`
 
 ### C_CraftingOrders.GetMyOrders
@@ -167,6 +175,7 @@ Namespace: `C_CraftingOrders`
 `C_CraftingOrders.GetMyOrders() → myOrders: CraftingOrderInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `CraftingOrderUIDocumentation.lua`
 
 ### C_CraftingOrders.GetNumFavoriteCustomerOptions
@@ -174,6 +183,7 @@ Namespace: `C_CraftingOrders`
 `C_CraftingOrders.GetNumFavoriteCustomerOptions() → numFavorites: BigUInteger`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `CraftingOrderUIDocumentation.lua`
 
 ### C_CraftingOrders.GetOrderClaimInfo
@@ -189,6 +199,7 @@ Namespace: `C_CraftingOrders`
 `C_CraftingOrders.GetPersonalOrdersInfo() → infos: CraftingOrderPersonalOrdersInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `CraftingOrderUIDocumentation.lua`
 
 ### C_CraftingOrders.HasFavoriteCustomerOptions
@@ -196,6 +207,7 @@ Namespace: `C_CraftingOrders`
 `C_CraftingOrders.HasFavoriteCustomerOptions() → hasFavorites: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `CraftingOrderUIDocumentation.lua`
 
 ### C_CraftingOrders.IsCustomerOptionFavorited
@@ -297,6 +309,7 @@ Namespace: `C_CraftingOrders`
 `C_CraftingOrders.ShouldShowCraftingOrderTab() → showTab: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `CraftingOrderUIDocumentation.lua`
 
 ### C_CraftingOrders.SkillLineHasOrders

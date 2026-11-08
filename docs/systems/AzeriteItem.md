@@ -10,12 +10,12 @@ Namespace: `C_AzeriteItem`
 | ✅ | [C_AzeriteItem.GetAzeriteItemXPInfo](#c_azeriteitemgetazeriteitemxpinfo) |  |  |
 | ✅ | [C_AzeriteItem.GetPowerLevel](#c_azeriteitemgetpowerlevel) |  |  |
 | ✅ | [C_AzeriteItem.GetUnlimitedPowerLevel](#c_azeriteitemgetunlimitedpowerlevel) |  |  |
-| ✅ | [C_AzeriteItem.HasActiveAzeriteItem](#c_azeriteitemhasactiveazeriteitem) |  |  |
+| ✅ | [C_AzeriteItem.HasActiveAzeriteItem](#c_azeriteitemhasactiveazeriteitem) | 1 value |  |
 | ✅ | [C_AzeriteItem.IsAzeriteItem](#c_azeriteitemisazeriteitem) |  |  |
-| ✅ | [C_AzeriteItem.IsAzeriteItemAtMaxLevel](#c_azeriteitemisazeriteitematmaxlevel) |  |  |
+| ✅ | [C_AzeriteItem.IsAzeriteItemAtMaxLevel](#c_azeriteitemisazeriteitematmaxlevel) | 1 value |  |
 | ✅ | [C_AzeriteItem.IsAzeriteItemByID](#c_azeriteitemisazeriteitembyid) |  |  |
 | ✅ | [C_AzeriteItem.IsAzeriteItemEnabled](#c_azeriteitemisazeriteitemenabled) |  |  |
-| ✅ | [C_AzeriteItem.IsUnlimitedLevelingUnlocked](#c_azeriteitemisunlimitedlevelingunlocked) |  |  |
+| ✅ | [C_AzeriteItem.IsUnlimitedLevelingUnlocked](#c_azeriteitemisunlimitedlevelingunlocked) | 1 value |  |
 
 ### C_AzeriteItem.FindActiveAzeriteItem
 
@@ -55,6 +55,7 @@ Namespace: `C_AzeriteItem`
 `C_AzeriteItem.HasActiveAzeriteItem() → hasActiveAzeriteItem: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `AzeriteItemDocumentation.lua`
 
 ### C_AzeriteItem.IsAzeriteItem
@@ -70,6 +71,7 @@ Namespace: `C_AzeriteItem`
 `C_AzeriteItem.IsAzeriteItemAtMaxLevel() → isAtMax: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `AzeriteItemDocumentation.lua`
 
 ### C_AzeriteItem.IsAzeriteItemByID
@@ -93,6 +95,7 @@ Namespace: `C_AzeriteItem`
 `C_AzeriteItem.IsUnlimitedLevelingUnlocked() → isUnlimitedLevelingUnlocked: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `AzeriteItemDocumentation.lua`
 
 ## Events

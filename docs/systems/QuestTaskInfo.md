@@ -15,7 +15,7 @@ Namespace: `C_TaskQuest`
 | ✅ | [C_TaskQuest.GetQuestUIWidgetSetByType](#c_taskquestgetquestuiwidgetsetbytype) |  |  |
 | ✅ | [C_TaskQuest.GetQuestZoneID](#c_taskquestgetquestzoneid) |  |  |
 | ✅ | [C_TaskQuest.GetQuestsOnMap](#c_taskquestgetquestsonmap) |  |  |
-| ✅ | [C_TaskQuest.GetThreatQuests](#c_taskquestgetthreatquests) |  |  |
+| ✅ | [C_TaskQuest.GetThreatQuests](#c_taskquestgetthreatquests) | 1 value |  |
 | ✅ | [C_TaskQuest.IsActive](#c_taskquestisactive) |  |  |
 | ✅ | [C_TaskQuest.RequestPreloadRewardData](#c_taskquestrequestpreloadrewarddata) |  |  |
 
@@ -104,6 +104,7 @@ Namespace: `C_TaskQuest`
 `C_TaskQuest.GetThreatQuests() → quests: number[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `QuestTaskInfoDocumentation.lua`
 
 ### C_TaskQuest.IsActive

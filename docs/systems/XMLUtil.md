@@ -7,7 +7,7 @@ Namespace: `C_XMLUtil`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_XMLUtil.GetTemplateInfo](#c_xmlutilgettemplateinfo) |  |  |
-| ✅ | [C_XMLUtil.GetTemplates](#c_xmlutilgettemplates) |  |  |
+| ✅ | [C_XMLUtil.GetTemplates](#c_xmlutilgettemplates) | 1 value |  |
 
 ### C_XMLUtil.GetTemplateInfo
 
@@ -23,6 +23,7 @@ Namespace: `C_XMLUtil`
 `C_XMLUtil.GetTemplates() → templates: XMLTemplateListInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,...(2615)}`
 - Source: client docs `XMLUtilDocumentation.lua`
 
 ## Types

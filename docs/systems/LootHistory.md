@@ -6,9 +6,9 @@ Namespace: `C_LootHistory`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_LootHistory.GetAllEncounterInfos](#c_loothistorygetallencounterinfos) |  |  |
+| ✅ | [C_LootHistory.GetAllEncounterInfos](#c_loothistorygetallencounterinfos) | 1 value |  |
 | ✅ | [C_LootHistory.GetInfoForEncounter](#c_loothistorygetinfoforencounter) |  |  |
-| ✅ | [C_LootHistory.GetLootHistoryTime](#c_loothistorygetloothistorytime) |  |  |
+| ✅ | [C_LootHistory.GetLootHistoryTime](#c_loothistorygetloothistorytime) | 1 value |  |
 | ✅ | [C_LootHistory.GetSortedDropsForEncounter](#c_loothistorygetsorteddropsforencounter) |  |  |
 | ✅ | [C_LootHistory.GetSortedInfoForDrop](#c_loothistorygetsortedinfofordrop) |  |  |
 
@@ -17,6 +17,7 @@ Namespace: `C_LootHistory`
 `C_LootHistory.GetAllEncounterInfos() → infos: EncounterLootInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `LootHistoryDocumentation.lua`
 
 ### C_LootHistory.GetInfoForEncounter
@@ -32,6 +33,7 @@ Namespace: `C_LootHistory`
 `C_LootHistory.GetLootHistoryTime() → time: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `LootHistoryDocumentation.lua`
 
 ### C_LootHistory.GetSortedDropsForEncounter

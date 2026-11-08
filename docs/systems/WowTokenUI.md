@@ -6,7 +6,7 @@ Namespace: `C_WowTokenUI`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_WowTokenUI.ShouldDisplayInAuctionHouse](#c_wowtokenuishoulddisplayinauctionhouse) |  |  |
+| ✅ | [C_WowTokenUI.ShouldDisplayInAuctionHouse](#c_wowtokenuishoulddisplayinauctionhouse) | 1 value |  |
 | ✅ | [C_WowTokenUI.StartTokenSell](#c_wowtokenuistarttokensell) |  |  |
 
 ### C_WowTokenUI.ShouldDisplayInAuctionHouse
@@ -14,6 +14,7 @@ Namespace: `C_WowTokenUI`
 `C_WowTokenUI.ShouldDisplayInAuctionHouse() → displayInAH: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `WowTokenUIDocumentation.lua`
 
 ### C_WowTokenUI.StartTokenSell
@@ -115,3 +116,4 @@ Namespace: `C_WowTokenUI`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``

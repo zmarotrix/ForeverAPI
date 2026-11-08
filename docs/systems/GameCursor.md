@@ -13,8 +13,8 @@
 | ✅ | [DeleteCursorItem](#deletecursoritem) |  |  |
 | ✅ | [DropCursorMoney](#dropcursormoney) |  |  |
 | ✅ | [EquipCursorItem](#equipcursoritem) |  |  |
-| ✅ | [GetCursorInfo](#getcursorinfo) |  |  |
-| ✅ | [GetCursorMoney](#getcursormoney) |  |  |
+| ✅ | [GetCursorInfo](#getcursorinfo) | 0 values |  |
+| ✅ | [GetCursorMoney](#getcursormoney) | 1 value |  |
 | ✅ | [PickupPlayerMoney](#pickupplayermoney) |  |  |
 | ✅ | [ResetCursor](#resetcursor) |  |  |
 | ✅ | [SellCursorItem](#sellcursoritem) |  |  |
@@ -95,6 +95,7 @@
 `GetCursorInfo()`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 0 values
 - Source: client docs `GameCursorDocumentation.lua`
 
 ### GetCursorMoney
@@ -102,6 +103,7 @@
 `GetCursorMoney() → amount: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `GameCursorDocumentation.lua`
 
 ### PickupPlayerMoney

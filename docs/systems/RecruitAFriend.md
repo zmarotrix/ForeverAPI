@@ -10,15 +10,15 @@ Namespace: `C_RecruitAFriend`
 | ✅ | [C_RecruitAFriend.ClaimActivityReward](#c_recruitafriendclaimactivityreward) |  |  |
 | ✅ | [C_RecruitAFriend.ClaimNextReward](#c_recruitafriendclaimnextreward) |  |  |
 | ✅ | [C_RecruitAFriend.GenerateRecruitmentLink](#c_recruitafriendgeneraterecruitmentlink) |  |  |
-| ✅ | [C_RecruitAFriend.GetRAFInfo](#c_recruitafriendgetrafinfo) |  |  |
-| ✅ | [C_RecruitAFriend.GetRAFSystemInfo](#c_recruitafriendgetrafsysteminfo) |  |  |
+| ✅ | [C_RecruitAFriend.GetRAFInfo](#c_recruitafriendgetrafinfo) | 1 value |  |
+| ✅ | [C_RecruitAFriend.GetRAFSystemInfo](#c_recruitafriendgetrafsysteminfo) | 1 value |  |
 | ✅ | [C_RecruitAFriend.GetRecruitActivityRequirementsText](#c_recruitafriendgetrecruitactivityrequirementstext) |  |  |
-| ✅ | [C_RecruitAFriend.GetRecruitInfo](#c_recruitafriendgetrecruitinfo) |  |  |
-| ✅ | [C_RecruitAFriend.GetSummonFriendCooldown](#c_recruitafriendgetsummonfriendcooldown) |  |  |
+| ✅ | [C_RecruitAFriend.GetRecruitInfo](#c_recruitafriendgetrecruitinfo) | 2 values |  |
+| ✅ | [C_RecruitAFriend.GetSummonFriendCooldown](#c_recruitafriendgetsummonfriendcooldown) | 3 values |  |
 | ✅ | [C_RecruitAFriend.IsRecruitAFriendLinked](#c_recruitafriendisrecruitafriendlinked) |  |  |
-| ✅ | [C_RecruitAFriend.IsRecruitingEnabled](#c_recruitafriendisrecruitingenabled) |  |  |
-| ✅ | [C_RecruitAFriend.IsSystemEnabled](#c_recruitafriendissystemenabled) |  |  |
-| ✅ | [C_RecruitAFriend.IsSystemSupported](#c_recruitafriendissystemsupported) |  |  |
+| ✅ | [C_RecruitAFriend.IsRecruitingEnabled](#c_recruitafriendisrecruitingenabled) | 1 value |  |
+| ✅ | [C_RecruitAFriend.IsSystemEnabled](#c_recruitafriendissystemenabled) | 1 value |  |
+| ✅ | [C_RecruitAFriend.IsSystemSupported](#c_recruitafriendissystemsupported) | 1 value |  |
 | ✅ | [C_RecruitAFriend.RemoveRAFRecruit](#c_recruitafriendremoverafrecruit) |  |  |
 | ✅ | [C_RecruitAFriend.RequestUpdatedRecruitmentInfo](#c_recruitafriendrequestupdatedrecruitmentinfo) |  |  |
 | ✅ | [C_RecruitAFriend.SummonFriend](#c_recruitafriendsummonfriend) |  |  |
@@ -63,6 +63,7 @@ Namespace: `C_RecruitAFriend`
 `C_RecruitAFriend.GetRAFInfo() → info: RafInfo`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{claimInProgress=boolean,recruits=table,versions=table}`
 - Source: client docs `RecruitAFriendDocumentation.lua`
 
 ### C_RecruitAFriend.GetRAFSystemInfo
@@ -70,6 +71,7 @@ Namespace: `C_RecruitAFriend`
 `C_RecruitAFriend.GetRAFSystemInfo() → systemInfo: RafSystemInfo`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{daysInCycle=number,maxRecruitMonths=number,maxRecruitmentUses=number,maxRecruits=number}`
 - Source: client docs `RecruitAFriendDocumentation.lua`
 
 ### C_RecruitAFriend.GetRecruitActivityRequirementsText
@@ -85,6 +87,7 @@ Namespace: `C_RecruitAFriend`
 `C_RecruitAFriend.GetRecruitInfo() → active: bool, faction: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `boolean`, `number`
 - Source: client docs `RecruitAFriendDocumentation.lua`
 
 ### C_RecruitAFriend.GetSummonFriendCooldown
@@ -92,6 +95,7 @@ Namespace: `C_RecruitAFriend`
 `C_RecruitAFriend.GetSummonFriendCooldown() → startTimeSeconds: number, durationSeconds: number, enableCooldownTimer: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 3 values: `number`, `number`, `boolean`
 - Source: client docs `RecruitAFriendDocumentation.lua`
 
 ### C_RecruitAFriend.IsRecruitAFriendLinked
@@ -107,6 +111,7 @@ Namespace: `C_RecruitAFriend`
 `C_RecruitAFriend.IsRecruitingEnabled() → enabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `RecruitAFriendDocumentation.lua`
 
 ### C_RecruitAFriend.IsSystemEnabled
@@ -114,6 +119,7 @@ Namespace: `C_RecruitAFriend`
 `C_RecruitAFriend.IsSystemEnabled() → isSystemEnabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `RecruitAFriendDocumentation.lua`
 
 ### C_RecruitAFriend.IsSystemSupported
@@ -121,6 +127,7 @@ Namespace: `C_RecruitAFriend`
 `C_RecruitAFriend.IsSystemSupported() → isSystemSupported: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `RecruitAFriendDocumentation.lua`
 
 ### C_RecruitAFriend.RemoveRAFRecruit
@@ -155,6 +162,7 @@ Namespace: `C_RecruitAFriend`
 - Status: ✅ verified
 - Payload: `info: RafInfo`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `t`
 
 ### RAF_RECRUITING_ENABLED_STATUS
 

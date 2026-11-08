@@ -6,10 +6,10 @@
 |---|---|---|---|
 | ✅ | [GetAddOnCPUUsage](#getaddoncpuusage) |  |  |
 | ✅ | [GetAddOnMemoryUsage](#getaddonmemoryusage) |  |  |
-| ✅ | [GetEventCPUUsage](#geteventcpuusage) |  |  |
+| ✅ | [GetEventCPUUsage](#geteventcpuusage) | 2 values |  |
 | ✅ | [GetFrameCPUUsage](#getframecpuusage) |  |  |
-| ✅ | [GetFunctionCPUUsage](#getfunctioncpuusage) |  |  |
-| ✅ | [GetScriptCPUUsage](#getscriptcpuusage) |  |  |
+| ✅ | [GetFunctionCPUUsage](#getfunctioncpuusage) | error |  |
+| ✅ | [GetScriptCPUUsage](#getscriptcpuusage) | 1 value |  |
 | ✅ | [ResetCPUUsage](#resetcpuusage) |  |  |
 | ✅ | [UpdateAddOnCPUUsage](#updateaddoncpuusage) |  |  |
 | ✅ | [UpdateAddOnMemoryUsage](#updateaddonmemoryusage) |  |  |
@@ -35,6 +35,7 @@
 `GetEventCPUUsage() → call_time: number, call_count: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `number`, `number`
 - Source: client docs `PerformanceDocumentation.lua`
 
 ### GetFrameCPUUsage
@@ -50,6 +51,7 @@
 `GetFunctionCPUUsage() → call_time: number, call_count: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: error: `Usage: GetFunctionCPUUsage(function[, includeSubroutines])`
 - Source: client docs `PerformanceDocumentation.lua`
 
 ### GetScriptCPUUsage
@@ -57,6 +59,7 @@
 `GetScriptCPUUsage() → result: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `PerformanceDocumentation.lua`
 
 ### ResetCPUUsage

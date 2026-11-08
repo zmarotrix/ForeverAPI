@@ -4,7 +4,7 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [GetCameraFOVDefaults](#getcamerafovdefaults) |  |  |
+| ✅ | [GetCameraFOVDefaults](#getcamerafovdefaults) | 3 values |  |
 | ✅ | [GetUICameraInfo](#getuicamerainfo) |  |  |
 
 ### GetCameraFOVDefaults
@@ -12,6 +12,7 @@
 `GetCameraFOVDefaults() → fieldOfViewDegreesDefault: number, fieldOfViewDegreesPlayerMin: number, fieldOfViewDegreesPlayerMax: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 3 values: `number`, `number`, `number`
 - Source: client docs `CameraDocumentation.lua`
 
 ### GetUICameraInfo

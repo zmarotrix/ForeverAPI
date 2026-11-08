@@ -8,14 +8,14 @@ Namespace: `C_ScenarioInfo`
 |---|---|---|---|
 | ✅ | [C_ScenarioInfo.GetCriteriaInfo](#c_scenarioinfogetcriteriainfo) |  |  |
 | ✅ | [C_ScenarioInfo.GetCriteriaInfoByStep](#c_scenarioinfogetcriteriainfobystep) |  |  |
-| ✅ | [C_ScenarioInfo.GetDisplayInfo](#c_scenarioinfogetdisplayinfo) |  |  |
+| ✅ | [C_ScenarioInfo.GetDisplayInfo](#c_scenarioinfogetdisplayinfo) | 0 values |  |
 | ✅ | [C_ScenarioInfo.GetJailersTowerTypeString](#c_scenarioinfogetjailerstowertypestring) |  |  |
 | ✅ | [C_ScenarioInfo.GetScenarioIconInfo](#c_scenarioinfogetscenarioiconinfo) |  |  |
-| ✅ | [C_ScenarioInfo.GetScenarioInfo](#c_scenarioinfogetscenarioinfo) |  |  |
-| ✅ | [C_ScenarioInfo.GetScenarioStepInfo](#c_scenarioinfogetscenariostepinfo) |  |  |
-| ✅ | [C_ScenarioInfo.GetTieredEntranceActiveSpells](#c_scenarioinfogettieredentranceactivespells) |  |  |
-| ✅ | [C_ScenarioInfo.GetUnitCriteriaProgressValues](#c_scenarioinfogetunitcriteriaprogressvalues) |  |  |
-| ✅ | [C_ScenarioInfo.IsTieredEntranceScenario](#c_scenarioinfoistieredentrancescenario) |  |  |
+| ✅ | [C_ScenarioInfo.GetScenarioInfo](#c_scenarioinfogetscenarioinfo) | 0 values |  |
+| ✅ | [C_ScenarioInfo.GetScenarioStepInfo](#c_scenarioinfogetscenariostepinfo) | 0 values |  |
+| ✅ | [C_ScenarioInfo.GetTieredEntranceActiveSpells](#c_scenarioinfogettieredentranceactivespells) | 1 value |  |
+| ✅ | [C_ScenarioInfo.GetUnitCriteriaProgressValues](#c_scenarioinfogetunitcriteriaprogressvalues) | 0 values |  |
+| ✅ | [C_ScenarioInfo.IsTieredEntranceScenario](#c_scenarioinfoistieredentrancescenario) | 1 value |  |
 
 ### C_ScenarioInfo.GetCriteriaInfo
 
@@ -41,6 +41,7 @@ Namespace: `C_ScenarioInfo`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `ScenarioInfoDocumentation.lua`
 
 ### C_ScenarioInfo.GetJailersTowerTypeString
@@ -66,6 +67,7 @@ Namespace: `C_ScenarioInfo`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `ScenarioInfoDocumentation.lua`
 
 ### C_ScenarioInfo.GetScenarioStepInfo
@@ -75,6 +77,7 @@ Namespace: `C_ScenarioInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `ScenarioInfoDocumentation.lua`
 
 ### C_ScenarioInfo.GetTieredEntranceActiveSpells
@@ -83,6 +86,7 @@ Namespace: `C_ScenarioInfo`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns list of active challenge spells if inside a tiered entrance scenario
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `ScenarioInfoDocumentation.lua`
 
 ### C_ScenarioInfo.GetUnitCriteriaProgressValues
@@ -93,6 +97,7 @@ Namespace: `C_ScenarioInfo`
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
+- Called out of combat with "player": returned 0 values
 - Source: client docs `ScenarioInfoDocumentation.lua`
 
 ### C_ScenarioInfo.IsTieredEntranceScenario
@@ -100,6 +105,7 @@ Namespace: `C_ScenarioInfo`
 `C_ScenarioInfo.IsTieredEntranceScenario() → isTieredEntrance: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ScenarioInfoDocumentation.lua`
 
 ## Events

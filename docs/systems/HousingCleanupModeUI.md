@@ -6,8 +6,8 @@ Namespace: `C_HousingCleanupMode`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_HousingCleanupMode.GetHoveredDecorInfo](#c_housingcleanupmodegethovereddecorinfo) |  |  |
-| ✅ | [C_HousingCleanupMode.IsHoveringDecor](#c_housingcleanupmodeishoveringdecor) |  |  |
+| ✅ | [C_HousingCleanupMode.GetHoveredDecorInfo](#c_housingcleanupmodegethovereddecorinfo) | 1 value |  |
+| ✅ | [C_HousingCleanupMode.IsHoveringDecor](#c_housingcleanupmodeishoveringdecor) | 1 value |  |
 | ✅ | [C_HousingCleanupMode.RemoveSelectedDecor](#c_housingcleanupmoderemoveselecteddecor) |  |  |
 
 ### C_HousingCleanupMode.GetHoveredDecorInfo
@@ -15,6 +15,7 @@ Namespace: `C_HousingCleanupMode`
 `C_HousingCleanupMode.GetHoveredDecorInfo() → info: HousingDecorInstanceInfo?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `HousingCleanupModeUIDocumentation.lua`
 
 ### C_HousingCleanupMode.IsHoveringDecor
@@ -22,6 +23,7 @@ Namespace: `C_HousingCleanupMode`
 `C_HousingCleanupMode.IsHoveringDecor() → isHoveringDecor: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `HousingCleanupModeUIDocumentation.lua`
 
 ### C_HousingCleanupMode.RemoveSelectedDecor

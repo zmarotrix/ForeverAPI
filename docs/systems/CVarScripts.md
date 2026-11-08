@@ -6,7 +6,7 @@ Namespace: `C_CVar`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_CVar.AreCVarsLoaded](#c_cvararecvarsloaded) |  |  |
+| ✅ | [C_CVar.AreCVarsLoaded](#c_cvararecvarsloaded) | 1 value |  |
 | ✅ | [C_CVar.GetCVar](#c_cvargetcvar) |  |  |
 | ✅ | [C_CVar.GetCVarBitfield](#c_cvargetcvarbitfield) |  |  |
 | ✅ | [C_CVar.GetCVarBool](#c_cvargetcvarbool) |  |  |
@@ -24,6 +24,7 @@ Namespace: `C_CVar`
 `C_CVar.AreCVarsLoaded() → loaded: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `CVarDocumentation.lua`
 
 ### C_CVar.GetCVar

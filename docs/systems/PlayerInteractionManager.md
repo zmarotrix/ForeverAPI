@@ -10,7 +10,7 @@ Namespace: `C_PlayerInteractionManager`
 | ✅ | [C_PlayerInteractionManager.ConfirmationInteraction](#c_playerinteractionmanagerconfirmationinteraction) |  |  |
 | ✅ | [C_PlayerInteractionManager.InteractUnit](#c_playerinteractionmanagerinteractunit) |  |  |
 | ✅ | [C_PlayerInteractionManager.IsInteractingWithNpcOfType](#c_playerinteractionmanagerisinteractingwithnpcoftype) |  |  |
-| ✅ | [C_PlayerInteractionManager.IsReplacingUnit](#c_playerinteractionmanagerisreplacingunit) |  |  |
+| ✅ | [C_PlayerInteractionManager.IsReplacingUnit](#c_playerinteractionmanagerisreplacingunit) | 1 value |  |
 | ✅ | [C_PlayerInteractionManager.IsValidNPCInteraction](#c_playerinteractionmanagerisvalidnpcinteraction) |  |  |
 | ✅ | [C_PlayerInteractionManager.ReopenInteraction](#c_playerinteractionmanagerreopeninteraction) |  |  |
 | ✅ | [C_PlayerInteractionManager.ShardTransferConfirm](#c_playerinteractionmanagershardtransferconfirm) |  |  |
@@ -53,6 +53,7 @@ Namespace: `C_PlayerInteractionManager`
 `C_PlayerInteractionManager.IsReplacingUnit() → replacing: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInteractionManagerDocumentation.lua`
 
 ### C_PlayerInteractionManager.IsValidNPCInteraction

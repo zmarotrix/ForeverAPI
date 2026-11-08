@@ -6,13 +6,14 @@ Namespace: `C_TimerunningUI`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_TimerunningUI.GetActiveTimerunningSeasonID](#c_timerunninguigetactivetimerunningseasonid) |  |  |
+| ✅ | [C_TimerunningUI.GetActiveTimerunningSeasonID](#c_timerunninguigetactivetimerunningseasonid) | 1 value |  |
 
 ### C_TimerunningUI.GetActiveTimerunningSeasonID
 
 `C_TimerunningUI.GetActiveTimerunningSeasonID() → activeTimerunningSeasonID: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `TimerunningUIDocumentation.lua`
 
 ## Events

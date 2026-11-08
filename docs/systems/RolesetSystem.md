@@ -7,8 +7,8 @@ Namespace: `C_Roleset`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_Roleset.ApplyRolesetFilters](#c_rolesetapplyrolesetfilters) |  |  |
-| ✅ | [C_Roleset.GetActiveAllowedRolesets](#c_rolesetgetactiveallowedrolesets) |  |  |
-| ✅ | [C_Roleset.GetActiveBlockedRolesets](#c_rolesetgetactiveblockedrolesets) |  |  |
+| ✅ | [C_Roleset.GetActiveAllowedRolesets](#c_rolesetgetactiveallowedrolesets) | 1 value |  |
+| ✅ | [C_Roleset.GetActiveBlockedRolesets](#c_rolesetgetactiveblockedrolesets) | 1 value |  |
 
 ### C_Roleset.ApplyRolesetFilters
 
@@ -26,6 +26,7 @@ Namespace: `C_Roleset`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns the rolesets in the currently active allowlist.
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `RolesetSystemDocumentation.lua`
 
 ### C_Roleset.GetActiveBlockedRolesets
@@ -34,4 +35,5 @@ Namespace: `C_Roleset`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns the rolesets in the currently active blocklist.
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `RolesetSystemDocumentation.lua`

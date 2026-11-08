@@ -16,58 +16,58 @@ Namespace: `C_ArtifactUI`
 | ✅ | [C_ArtifactUI.Clear](#c_artifactuiclear) |  |  |
 | ✅ | [C_ArtifactUI.ClearForgeCamera](#c_artifactuiclearforgecamera) |  |  |
 | ✅ | [C_ArtifactUI.ConfirmRespec](#c_artifactuiconfirmrespec) |  |  |
-| ✅ | [C_ArtifactUI.DoesEquippedArtifactHaveAnyRelicsSlotted](#c_artifactuidoesequippedartifacthaveanyrelicsslotted) |  |  |
+| ✅ | [C_ArtifactUI.DoesEquippedArtifactHaveAnyRelicsSlotted](#c_artifactuidoesequippedartifacthaveanyrelicsslotted) | 1 value |  |
 | ✅ | [C_ArtifactUI.GetAppearanceInfo](#c_artifactuigetappearanceinfo) |  |  |
 | ✅ | [C_ArtifactUI.GetAppearanceInfoByID](#c_artifactuigetappearanceinfobyid) |  |  |
 | ✅ | [C_ArtifactUI.GetAppearanceSetInfo](#c_artifactuigetappearancesetinfo) |  |  |
-| ✅ | [C_ArtifactUI.GetArtifactArtInfo](#c_artifactuigetartifactartinfo) |  |  |
-| ✅ | [C_ArtifactUI.GetArtifactInfo](#c_artifactuigetartifactinfo) |  |  |
-| ✅ | [C_ArtifactUI.GetArtifactItemID](#c_artifactuigetartifactitemid) |  |  |
-| ✅ | [C_ArtifactUI.GetArtifactTier](#c_artifactuigetartifacttier) |  |  |
+| ✅ | [C_ArtifactUI.GetArtifactArtInfo](#c_artifactuigetartifactartinfo) | 0 values |  |
+| ✅ | [C_ArtifactUI.GetArtifactInfo](#c_artifactuigetartifactinfo) | 0 values |  |
+| ✅ | [C_ArtifactUI.GetArtifactItemID](#c_artifactuigetartifactitemid) | 0 values |  |
+| ✅ | [C_ArtifactUI.GetArtifactTier](#c_artifactuigetartifacttier) | 1 value |  |
 | ✅ | [C_ArtifactUI.GetArtifactXPRewardTargetInfo](#c_artifactuigetartifactxprewardtargetinfo) |  |  |
 | ✅ | [C_ArtifactUI.GetCostForPointAtRank](#c_artifactuigetcostforpointatrank) |  |  |
-| ✅ | [C_ArtifactUI.GetEquippedArtifactArtInfo](#c_artifactuigetequippedartifactartinfo) |  |  |
-| ✅ | [C_ArtifactUI.GetEquippedArtifactInfo](#c_artifactuigetequippedartifactinfo) |  |  |
-| ✅ | [C_ArtifactUI.GetEquippedArtifactItemID](#c_artifactuigetequippedartifactitemid) |  |  |
-| ✅ | [C_ArtifactUI.GetEquippedArtifactNumRelicSlots](#c_artifactuigetequippedartifactnumrelicslots) |  |  |
+| ✅ | [C_ArtifactUI.GetEquippedArtifactArtInfo](#c_artifactuigetequippedartifactartinfo) | 0 values |  |
+| ✅ | [C_ArtifactUI.GetEquippedArtifactInfo](#c_artifactuigetequippedartifactinfo) | 0 values |  |
+| ✅ | [C_ArtifactUI.GetEquippedArtifactItemID](#c_artifactuigetequippedartifactitemid) | 0 values |  |
+| ✅ | [C_ArtifactUI.GetEquippedArtifactNumRelicSlots](#c_artifactuigetequippedartifactnumrelicslots) | 1 value |  |
 | ✅ | [C_ArtifactUI.GetEquippedArtifactRelicInfo](#c_artifactuigetequippedartifactrelicinfo) |  |  |
 | ✅ | [C_ArtifactUI.GetEquippedRelicLockedReason](#c_artifactuigetequippedreliclockedreason) |  |  |
-| ✅ | [C_ArtifactUI.GetForgeRotation](#c_artifactuigetforgerotation) |  |  |
+| ✅ | [C_ArtifactUI.GetForgeRotation](#c_artifactuigetforgerotation) | 3 values |  |
 | ✅ | [C_ArtifactUI.GetItemLevelIncreaseProvidedByRelic](#c_artifactuigetitemlevelincreaseprovidedbyrelic) |  |  |
-| ✅ | [C_ArtifactUI.GetMetaPowerInfo](#c_artifactuigetmetapowerinfo) |  |  |
-| ✅ | [C_ArtifactUI.GetNumAppearanceSets](#c_artifactuigetnumappearancesets) |  |  |
-| ✅ | [C_ArtifactUI.GetNumObtainedArtifacts](#c_artifactuigetnumobtainedartifacts) |  |  |
-| ✅ | [C_ArtifactUI.GetNumRelicSlots](#c_artifactuigetnumrelicslots) |  |  |
-| ✅ | [C_ArtifactUI.GetPointsRemaining](#c_artifactuigetpointsremaining) |  |  |
+| ✅ | [C_ArtifactUI.GetMetaPowerInfo](#c_artifactuigetmetapowerinfo) | 0 values |  |
+| ✅ | [C_ArtifactUI.GetNumAppearanceSets](#c_artifactuigetnumappearancesets) | 1 value |  |
+| ✅ | [C_ArtifactUI.GetNumObtainedArtifacts](#c_artifactuigetnumobtainedartifacts) | 1 value |  |
+| ✅ | [C_ArtifactUI.GetNumRelicSlots](#c_artifactuigetnumrelicslots) | 1 value |  |
+| ✅ | [C_ArtifactUI.GetPointsRemaining](#c_artifactuigetpointsremaining) | 1 value |  |
 | ✅ | [C_ArtifactUI.GetPowerHyperlink](#c_artifactuigetpowerhyperlink) |  |  |
 | ✅ | [C_ArtifactUI.GetPowerInfo](#c_artifactuigetpowerinfo) |  |  |
 | ✅ | [C_ArtifactUI.GetPowerLinks](#c_artifactuigetpowerlinks) |  |  |
-| ✅ | [C_ArtifactUI.GetPowers](#c_artifactuigetpowers) |  |  |
+| ✅ | [C_ArtifactUI.GetPowers](#c_artifactuigetpowers) | 0 values |  |
 | ✅ | [C_ArtifactUI.GetPowersAffectedByRelic](#c_artifactuigetpowersaffectedbyrelic) |  |  |
 | ✅ | [C_ArtifactUI.GetPowersAffectedByRelicItemLink](#c_artifactuigetpowersaffectedbyrelicitemlink) |  |  |
-| ✅ | [C_ArtifactUI.GetPreviewAppearance](#c_artifactuigetpreviewappearance) |  |  |
+| ✅ | [C_ArtifactUI.GetPreviewAppearance](#c_artifactuigetpreviewappearance) | 1 value |  |
 | ✅ | [C_ArtifactUI.GetRelicInfo](#c_artifactuigetrelicinfo) |  |  |
 | ✅ | [C_ArtifactUI.GetRelicInfoByItemID](#c_artifactuigetrelicinfobyitemid) |  |  |
 | ✅ | [C_ArtifactUI.GetRelicLockedReason](#c_artifactuigetreliclockedreason) |  |  |
 | ✅ | [C_ArtifactUI.GetRelicSlotType](#c_artifactuigetrelicslottype) |  |  |
-| ✅ | [C_ArtifactUI.GetRespecArtifactArtInfo](#c_artifactuigetrespecartifactartinfo) |  |  |
-| ✅ | [C_ArtifactUI.GetRespecArtifactInfo](#c_artifactuigetrespecartifactinfo) |  |  |
-| ✅ | [C_ArtifactUI.GetRespecCost](#c_artifactuigetrespeccost) |  |  |
+| ✅ | [C_ArtifactUI.GetRespecArtifactArtInfo](#c_artifactuigetrespecartifactartinfo) | 0 values |  |
+| ✅ | [C_ArtifactUI.GetRespecArtifactInfo](#c_artifactuigetrespecartifactinfo) | 0 values |  |
+| ✅ | [C_ArtifactUI.GetRespecCost](#c_artifactuigetrespeccost) | 1 value |  |
 | ✅ | [C_ArtifactUI.GetTotalPowerCost](#c_artifactuigettotalpowercost) |  |  |
-| ✅ | [C_ArtifactUI.GetTotalPurchasedRanks](#c_artifactuigettotalpurchasedranks) |  |  |
-| ✅ | [C_ArtifactUI.IsArtifactDisabled](#c_artifactuiisartifactdisabled) |  |  |
+| ✅ | [C_ArtifactUI.GetTotalPurchasedRanks](#c_artifactuigettotalpurchasedranks) | 1 value |  |
+| ✅ | [C_ArtifactUI.IsArtifactDisabled](#c_artifactuiisartifactdisabled) | 1 value |  |
 | ✅ | [C_ArtifactUI.IsArtifactItem](#c_artifactuiisartifactitem) |  |  |
-| ✅ | [C_ArtifactUI.IsAtForge](#c_artifactuiisatforge) |  |  |
-| ✅ | [C_ArtifactUI.IsEquippedArtifactDisabled](#c_artifactuiisequippedartifactdisabled) |  |  |
-| ✅ | [C_ArtifactUI.IsEquippedArtifactMaxed](#c_artifactuiisequippedartifactmaxed) |  |  |
-| ✅ | [C_ArtifactUI.IsMaxedByRulesOrEffect](#c_artifactuiismaxedbyrulesoreffect) |  |  |
+| ✅ | [C_ArtifactUI.IsAtForge](#c_artifactuiisatforge) | 1 value |  |
+| ✅ | [C_ArtifactUI.IsEquippedArtifactDisabled](#c_artifactuiisequippedartifactdisabled) | 1 value |  |
+| ✅ | [C_ArtifactUI.IsEquippedArtifactMaxed](#c_artifactuiisequippedartifactmaxed) | 1 value |  |
+| ✅ | [C_ArtifactUI.IsMaxedByRulesOrEffect](#c_artifactuiismaxedbyrulesoreffect) | 1 value |  |
 | ✅ | [C_ArtifactUI.IsPowerKnown](#c_artifactuiispowerknown) |  |  |
-| ✅ | [C_ArtifactUI.IsViewedArtifactEquipped](#c_artifactuiisviewedartifactequipped) |  |  |
+| ✅ | [C_ArtifactUI.IsViewedArtifactEquipped](#c_artifactuiisviewedartifactequipped) | 1 value |  |
 | ✅ | [C_ArtifactUI.SetAppearance](#c_artifactuisetappearance) |  |  |
 | ✅ | [C_ArtifactUI.SetForgeCamera](#c_artifactuisetforgecamera) |  |  |
 | ✅ | [C_ArtifactUI.SetForgeRotation](#c_artifactuisetforgerotation) |  |  |
 | ✅ | [C_ArtifactUI.SetPreviewAppearance](#c_artifactuisetpreviewappearance) |  |  |
-| ✅ | [C_ArtifactUI.ShouldSuppressForgeRotation](#c_artifactuishouldsuppressforgerotation) |  |  |
+| ✅ | [C_ArtifactUI.ShouldSuppressForgeRotation](#c_artifactuishouldsuppressforgerotation) | 1 value |  |
 
 ### C_ArtifactUI.AddPower
 
@@ -150,6 +150,7 @@ Namespace: `C_ArtifactUI`
 `C_ArtifactUI.DoesEquippedArtifactHaveAnyRelicsSlotted() → hasAnyRelicsSlotted: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetAppearanceInfo
@@ -185,6 +186,7 @@ Namespace: `C_ArtifactUI`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetArtifactInfo
@@ -193,6 +195,7 @@ Namespace: `C_ArtifactUI`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetArtifactItemID
@@ -201,6 +204,7 @@ Namespace: `C_ArtifactUI`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetArtifactTier
@@ -208,6 +212,7 @@ Namespace: `C_ArtifactUI`
 `C_ArtifactUI.GetArtifactTier() → tier: ArtifactTiers?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetArtifactXPRewardTargetInfo
@@ -233,6 +238,7 @@ Namespace: `C_ArtifactUI`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetEquippedArtifactInfo
@@ -241,6 +247,7 @@ Namespace: `C_ArtifactUI`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetEquippedArtifactItemID
@@ -249,6 +256,7 @@ Namespace: `C_ArtifactUI`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetEquippedArtifactNumRelicSlots
@@ -258,6 +266,7 @@ Namespace: `C_ArtifactUI`
 - Status: ✅ verified (function)
 - `onlyUnlocked`: If true then only the relic slots that are unlocked will be considered.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetEquippedArtifactRelicInfo
@@ -283,6 +292,7 @@ Namespace: `C_ArtifactUI`
 `C_ArtifactUI.GetForgeRotation() → forgeRotationX: number, forgeRotationY: number, forgeRotationZ: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 3 values: `number`, `number`, `number`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetItemLevelIncreaseProvidedByRelic
@@ -299,6 +309,7 @@ Namespace: `C_ArtifactUI`
 `C_ArtifactUI.GetMetaPowerInfo() → spellID: number, powerCost: number, currentRank: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 0 values
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetNumAppearanceSets
@@ -306,6 +317,7 @@ Namespace: `C_ArtifactUI`
 `C_ArtifactUI.GetNumAppearanceSets() → numAppearanceSets: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetNumObtainedArtifacts
@@ -313,6 +325,7 @@ Namespace: `C_ArtifactUI`
 `C_ArtifactUI.GetNumObtainedArtifacts() → numObtainedArtifacts: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetNumRelicSlots
@@ -322,6 +335,7 @@ Namespace: `C_ArtifactUI`
 - Status: ✅ verified (function)
 - `onlyUnlocked`: If true then only the relic slots that are unlocked will be considered.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetPointsRemaining
@@ -329,6 +343,7 @@ Namespace: `C_ArtifactUI`
 `C_ArtifactUI.GetPointsRemaining() → pointsRemaining: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetPowerHyperlink
@@ -362,6 +377,7 @@ Namespace: `C_ArtifactUI`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetPowersAffectedByRelic
@@ -385,6 +401,7 @@ Namespace: `C_ArtifactUI`
 `C_ArtifactUI.GetPreviewAppearance() → artifactAppearanceID: number?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetRelicInfo
@@ -430,6 +447,7 @@ Namespace: `C_ArtifactUI`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetRespecArtifactInfo
@@ -438,6 +456,7 @@ Namespace: `C_ArtifactUI`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetRespecCost
@@ -445,6 +464,7 @@ Namespace: `C_ArtifactUI`
 `C_ArtifactUI.GetRespecCost() → cost: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetTotalPowerCost
@@ -461,6 +481,7 @@ Namespace: `C_ArtifactUI`
 `C_ArtifactUI.GetTotalPurchasedRanks() → totalPurchasedRanks: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.IsArtifactDisabled
@@ -468,6 +489,7 @@ Namespace: `C_ArtifactUI`
 `C_ArtifactUI.IsArtifactDisabled() → artifactDisabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.IsArtifactItem
@@ -483,6 +505,7 @@ Namespace: `C_ArtifactUI`
 `C_ArtifactUI.IsAtForge() → isAtForge: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.IsEquippedArtifactDisabled
@@ -490,6 +513,7 @@ Namespace: `C_ArtifactUI`
 `C_ArtifactUI.IsEquippedArtifactDisabled() → artifactDisabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.IsEquippedArtifactMaxed
@@ -497,6 +521,7 @@ Namespace: `C_ArtifactUI`
 `C_ArtifactUI.IsEquippedArtifactMaxed() → artifactMaxed: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.IsMaxedByRulesOrEffect
@@ -504,6 +529,7 @@ Namespace: `C_ArtifactUI`
 `C_ArtifactUI.IsMaxedByRulesOrEffect() → isEffectivelyMaxed: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.IsPowerKnown
@@ -519,6 +545,7 @@ Namespace: `C_ArtifactUI`
 `C_ArtifactUI.IsViewedArtifactEquipped() → isViewedArtifactEquipped: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.SetAppearance
@@ -558,6 +585,7 @@ Namespace: `C_ArtifactUI`
 `C_ArtifactUI.ShouldSuppressForgeRotation() → shouldSuppressForgeRotation: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ## Events
@@ -567,7 +595,7 @@ Namespace: `C_ArtifactUI`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### ARTIFACT_ENDGAME_REFUND
 

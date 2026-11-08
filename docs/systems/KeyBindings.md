@@ -13,7 +13,7 @@ Namespace: `C_KeyBindings`
 | ✅ | [C_KeyBindings.GetBindingIndex](#c_keybindingsgetbindingindex) |  |  |
 | ✅ | [C_KeyBindings.GetCustomBindingType](#c_keybindingsgetcustombindingtype) |  |  |
 | ✅ | [C_KeyBindings.GetSearchTagsForAction](#c_keybindingsgetsearchtagsforaction) |  |  |
-| ✅ | [C_KeyBindings.GetTurnStrafeStyle](#c_keybindingsgetturnstrafestyle) |  |  |
+| ✅ | [C_KeyBindings.GetTurnStrafeStyle](#c_keybindingsgetturnstrafestyle) | 1 value |  |
 | ✅ | [C_KeyBindings.IsBindingContextActive](#c_keybindingsisbindingcontextactive) |  |  |
 | ✅ | [C_KeyBindings.SetTurnStrafeStyle](#c_keybindingssetturnstrafestyle) |  |  |
 | ✅ | [C_KeyBindings.UpdateTurnStrafeBindingsForCharacter](#c_keybindingsupdateturnstrafebindingsforcharacter) |  |  |
@@ -81,6 +81,7 @@ Namespace: `C_KeyBindings`
 `C_KeyBindings.GetTurnStrafeStyle() → style: TurnStrafeStyle`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `KeyBindingsDocumentation.lua`
 
 ### C_KeyBindings.IsBindingContextActive
@@ -114,14 +115,14 @@ Namespace: `C_KeyBindings`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### MODIFIER_STATE_CHANGED
 
 - Status: ✅ verified
 - Payload: `key: cstring`, `down: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 6 times (5 in combat); argument kinds: `s,n`
+- Seen firing 16 times (10 in combat); argument kinds: `s,n`
 
 ### NOTIFY_TURN_STRAFE_CHANGE
 
@@ -134,7 +135,7 @@ Namespace: `C_KeyBindings`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 5 times (0 in combat); argument kinds: ``
+- Seen firing 14 times (0 in combat); argument kinds: ``
 
 ## Types
 

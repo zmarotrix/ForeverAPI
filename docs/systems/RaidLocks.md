@@ -8,8 +8,8 @@ Namespace: `C_RaidLocks`
 |---|---|---|---|
 | ✅ | [C_RaidLocks.GetRedirectedDifficultyID](#c_raidlocksgetredirecteddifficultyid) |  |  |
 | ✅ | [C_RaidLocks.IsEncounterComplete](#c_raidlocksisencountercomplete) |  |  |
-| ✅ | [C_RaidLocks.IsRaidLockExtendFeatureEnabled](#c_raidlocksisraidlockextendfeatureenabled) |  |  |
-| ✅ | [C_RaidLocks.IsRaidLockExtendFeatureSupported](#c_raidlocksisraidlockextendfeaturesupported) |  |  |
+| ✅ | [C_RaidLocks.IsRaidLockExtendFeatureEnabled](#c_raidlocksisraidlockextendfeatureenabled) | 1 value |  |
+| ✅ | [C_RaidLocks.IsRaidLockExtendFeatureSupported](#c_raidlocksisraidlockextendfeaturesupported) | 1 value |  |
 
 ### C_RaidLocks.GetRedirectedDifficultyID
 
@@ -32,6 +32,7 @@ Namespace: `C_RaidLocks`
 `C_RaidLocks.IsRaidLockExtendFeatureEnabled() → raidLockExtendFeatureEnabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `RaidLocksDocumentation.lua`
 
 ### C_RaidLocks.IsRaidLockExtendFeatureSupported
@@ -39,4 +40,5 @@ Namespace: `C_RaidLocks`
 `C_RaidLocks.IsRaidLockExtendFeatureSupported() → raidLockExtendFeatureSupported: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `RaidLocksDocumentation.lua`

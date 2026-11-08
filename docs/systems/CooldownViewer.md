@@ -8,10 +8,10 @@ Namespace: `C_CooldownViewer`
 |---|---|---|---|
 | ✅ | [C_CooldownViewer.GetCooldownViewerCategorySet](#c_cooldownviewergetcooldownviewercategoryset) |  |  |
 | ✅ | [C_CooldownViewer.GetCooldownViewerCooldownInfo](#c_cooldownviewergetcooldownviewercooldowninfo) |  |  |
-| ✅ | [C_CooldownViewer.GetGroupBuffItems](#c_cooldownviewergetgroupbuffitems) |  |  |
-| ✅ | [C_CooldownViewer.GetLayoutData](#c_cooldownviewergetlayoutdata) |  |  |
+| ✅ | [C_CooldownViewer.GetGroupBuffItems](#c_cooldownviewergetgroupbuffitems) | 1 value |  |
+| ✅ | [C_CooldownViewer.GetLayoutData](#c_cooldownviewergetlayoutdata) | 1 value |  |
 | ✅ | [C_CooldownViewer.GetValidAlertTypes](#c_cooldownviewergetvalidalerttypes) |  |  |
-| ✅ | [C_CooldownViewer.IsCooldownViewerAvailable](#c_cooldownvieweriscooldownvieweravailable) |  |  |
+| ✅ | [C_CooldownViewer.IsCooldownViewerAvailable](#c_cooldownvieweriscooldownvieweravailable) | 2 values |  |
 | ✅ | [C_CooldownViewer.SetLayoutData](#c_cooldownviewersetlayoutdata) |  |  |
 
 ### C_CooldownViewer.GetCooldownViewerCategorySet
@@ -36,6 +36,7 @@ Namespace: `C_CooldownViewer`
 `C_CooldownViewer.GetGroupBuffItems() → groupBuffItems: GroupBuffItem[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table}`
 - Source: client docs `CooldownViewerDocumentation.lua`
 
 ### C_CooldownViewer.GetLayoutData
@@ -43,6 +44,7 @@ Namespace: `C_CooldownViewer`
 `C_CooldownViewer.GetLayoutData() → data: cstring`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `string`
 - Source: client docs `CooldownViewerDocumentation.lua`
 
 ### C_CooldownViewer.GetValidAlertTypes
@@ -58,6 +60,7 @@ Namespace: `C_CooldownViewer`
 `C_CooldownViewer.IsCooldownViewerAvailable() → isAvailable: bool, failureReason: string`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `boolean`, `string`
 - Source: client docs `CooldownViewerDocumentation.lua`
 
 ### C_CooldownViewer.SetLayoutData
@@ -75,7 +78,7 @@ Namespace: `C_CooldownViewer`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### COOLDOWN_VIEWER_SPELL_OVERRIDE_UPDATED
 

@@ -4,12 +4,12 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [CanBeRaidTarget](#canberaidtarget) |  |  |
+| ✅ | [CanBeRaidTarget](#canberaidtarget) | 1 value |  |
 | ✅ | [ClearRaidMarker](#clearraidmarker) |  |  |
 | ✅ | [GetNextAvailableRaidTargetMarkerIndex](#getnextavailableraidtargetmarkerindex) |  |  |
-| ✅ | [GetRaidTargetIndex](#getraidtargetindex) |  |  |
+| ✅ | [GetRaidTargetIndex](#getraidtargetindex) | 1 value |  |
 | ✅ | [IsRaidMarkerActive](#israidmarkeractive) |  |  |
-| ✅ | [IsRaidMarkerSystemEnabled](#israidmarkersystemenabled) |  |  |
+| ✅ | [IsRaidMarkerSystemEnabled](#israidmarkersystemenabled) | 1 value |  |
 | ✅ | [PlaceRaidMarker](#placeraidmarker) |  |  |
 | ✅ | [RemoveRaidTargets](#removeraidtargets) |  |  |
 | ✅ | [SetRaidTarget](#setraidtarget) |  |  |
@@ -20,6 +20,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with "player": returned 1 value: `boolean`
 - Source: client docs `RaidMarkersDocumentation.lua`
 
 ### ClearRaidMarker
@@ -47,6 +48,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
+- Called out of combat with "player": returned 1 value: `nil`
 - Source: client docs `RaidMarkersDocumentation.lua`
 
 ### IsRaidMarkerActive
@@ -63,6 +65,7 @@
 `IsRaidMarkerSystemEnabled() → enabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `RaidMarkersDocumentation.lua`
 
 ### PlaceRaidMarker

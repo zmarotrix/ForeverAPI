@@ -11,15 +11,15 @@ Namespace: `C_LegendaryCrafting`
 | ✅ | [C_LegendaryCrafting.GetRuneforgeItemPreviewInfo](#c_legendarycraftinggetruneforgeitempreviewinfo) |  |  |
 | ✅ | [C_LegendaryCrafting.GetRuneforgeLegendaryComponentInfo](#c_legendarycraftinggetruneforgelegendarycomponentinfo) |  |  |
 | ✅ | [C_LegendaryCrafting.GetRuneforgeLegendaryCost](#c_legendarycraftinggetruneforgelegendarycost) |  |  |
-| ✅ | [C_LegendaryCrafting.GetRuneforgeLegendaryCraftSpellID](#c_legendarycraftinggetruneforgelegendarycraftspellid) |  |  |
-| ✅ | [C_LegendaryCrafting.GetRuneforgeLegendaryCurrencies](#c_legendarycraftinggetruneforgelegendarycurrencies) |  |  |
+| ✅ | [C_LegendaryCrafting.GetRuneforgeLegendaryCraftSpellID](#c_legendarycraftinggetruneforgelegendarycraftspellid) | 1 value |  |
+| ✅ | [C_LegendaryCrafting.GetRuneforgeLegendaryCurrencies](#c_legendarycraftinggetruneforgelegendarycurrencies) | 1 value |  |
 | ✅ | [C_LegendaryCrafting.GetRuneforgeLegendaryUpgradeCost](#c_legendarycraftinggetruneforgelegendaryupgradecost) |  |  |
 | ✅ | [C_LegendaryCrafting.GetRuneforgeModifierInfo](#c_legendarycraftinggetruneforgemodifierinfo) |  |  |
-| ✅ | [C_LegendaryCrafting.GetRuneforgeModifiers](#c_legendarycraftinggetruneforgemodifiers) |  |  |
+| ✅ | [C_LegendaryCrafting.GetRuneforgeModifiers](#c_legendarycraftinggetruneforgemodifiers) | 1 value |  |
 | ✅ | [C_LegendaryCrafting.GetRuneforgePowerInfo](#c_legendarycraftinggetruneforgepowerinfo) |  |  |
 | ✅ | [C_LegendaryCrafting.GetRuneforgePowerSlots](#c_legendarycraftinggetruneforgepowerslots) |  |  |
-| ✅ | [C_LegendaryCrafting.GetRuneforgePowers](#c_legendarycraftinggetruneforgepowers) |  |  |
-| ✅ | [C_LegendaryCrafting.GetRuneforgePowersByClassSpecAndCovenant](#c_legendarycraftinggetruneforgepowersbyclassspecandcovenant) |  |  |
+| ✅ | [C_LegendaryCrafting.GetRuneforgePowers](#c_legendarycraftinggetruneforgepowers) | 2 values |  |
+| ✅ | [C_LegendaryCrafting.GetRuneforgePowersByClassSpecAndCovenant](#c_legendarycraftinggetruneforgepowersbyclassspecandcovenant) | 1 value |  |
 | ✅ | [C_LegendaryCrafting.IsRuneforgeLegendary](#c_legendarycraftingisruneforgelegendary) |  |  |
 | ✅ | [C_LegendaryCrafting.IsRuneforgeLegendaryMaxLevel](#c_legendarycraftingisruneforgelegendarymaxlevel) |  |  |
 | ✅ | [C_LegendaryCrafting.IsUpgradeItemValidForRuneforgeLegendary](#c_legendarycraftingisupgradeitemvalidforruneforgelegendary) |  |  |
@@ -71,6 +71,7 @@ Namespace: `C_LegendaryCrafting`
 `C_LegendaryCrafting.GetRuneforgeLegendaryCraftSpellID() → spellID: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `LegendaryCraftingDocumentation.lua`
 
 ### C_LegendaryCrafting.GetRuneforgeLegendaryCurrencies
@@ -78,6 +79,7 @@ Namespace: `C_LegendaryCrafting`
 `C_LegendaryCrafting.GetRuneforgeLegendaryCurrencies() → currencies: number[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `LegendaryCraftingDocumentation.lua`
 
 ### C_LegendaryCrafting.GetRuneforgeLegendaryUpgradeCost
@@ -101,6 +103,7 @@ Namespace: `C_LegendaryCrafting`
 `C_LegendaryCrafting.GetRuneforgeModifiers() → modifiedReagentItemIDs: number[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `LegendaryCraftingDocumentation.lua`
 
 ### C_LegendaryCrafting.GetRuneforgePowerInfo
@@ -125,6 +128,7 @@ Namespace: `C_LegendaryCrafting`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 2 values: `table{}`, `table{}`
 - Source: client docs `LegendaryCraftingDocumentation.lua`
 
 ### C_LegendaryCrafting.GetRuneforgePowersByClassSpecAndCovenant
@@ -133,6 +137,7 @@ Namespace: `C_LegendaryCrafting`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `LegendaryCraftingDocumentation.lua`
 
 ### C_LegendaryCrafting.IsRuneforgeLegendary

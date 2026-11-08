@@ -11,27 +11,27 @@ Namespace: `C_QuestLog`
 | ✅ | [C_QuestLog.AddWorldQuestWatch](#c_questlogaddworldquestwatch) |  |  |
 | ✅ | [C_QuestLog.CanAbandonQuest](#c_questlogcanabandonquest) |  |  |
 | ✅ | [C_QuestLog.DoesQuestAwardReputationWithFaction](#c_questlogdoesquestawardreputationwithfaction) |  |  |
-| ✅ | [C_QuestLog.GetAbandonQuest](#c_questloggetabandonquest) |  |  |
-| ✅ | [C_QuestLog.GetAbandonQuestItems](#c_questloggetabandonquestitems) |  |  |
-| ✅ | [C_QuestLog.GetActivePreyQuest](#c_questloggetactivepreyquest) |  |  |
-| ✅ | [C_QuestLog.GetActiveThreatMaps](#c_questloggetactivethreatmaps) |  |  |
-| ✅ | [C_QuestLog.GetAllCompletedQuestIDs](#c_questloggetallcompletedquestids) |  |  |
+| ✅ | [C_QuestLog.GetAbandonQuest](#c_questloggetabandonquest) | 1 value |  |
+| ✅ | [C_QuestLog.GetAbandonQuestItems](#c_questloggetabandonquestitems) | 0 values |  |
+| ✅ | [C_QuestLog.GetActivePreyQuest](#c_questloggetactivepreyquest) | 0 values |  |
+| ✅ | [C_QuestLog.GetActiveThreatMaps](#c_questloggetactivethreatmaps) | 0 values |  |
+| ✅ | [C_QuestLog.GetAllCompletedQuestIDs](#c_questloggetallcompletedquestids) | 1 value |  |
 | ✅ | [C_QuestLog.GetBountiesForMapID](#c_questloggetbountiesformapid) |  |  |
 | ✅ | [C_QuestLog.GetBountySetInfoForMapID](#c_questloggetbountysetinfoformapid) |  |  |
 | ✅ | [C_QuestLog.GetDistanceSqToQuest](#c_questloggetdistancesqtoquest) |  |  |
 | ✅ | [C_QuestLog.GetHeaderIndexForQuest](#c_questloggetheaderindexforquest) |  |  |
 | ✅ | [C_QuestLog.GetInfo](#c_questloggetinfo) |  |  |
 | ✅ | [C_QuestLog.GetLogIndexForQuestID](#c_questloggetlogindexforquestid) |  |  |
-| ✅ | [C_QuestLog.GetMapForQuestPOIs](#c_questloggetmapforquestpois) |  |  |
-| ✅ | [C_QuestLog.GetMaxNumQuests](#c_questloggetmaxnumquests) |  |  |
-| ✅ | [C_QuestLog.GetMaxNumQuestsCanAccept](#c_questloggetmaxnumquestscanaccept) |  |  |
+| ✅ | [C_QuestLog.GetMapForQuestPOIs](#c_questloggetmapforquestpois) | 1 value |  |
+| ✅ | [C_QuestLog.GetMaxNumQuests](#c_questloggetmaxnumquests) | 1 value |  |
+| ✅ | [C_QuestLog.GetMaxNumQuestsCanAccept](#c_questloggetmaxnumquestscanaccept) | 1 value |  |
 | ✅ | [C_QuestLog.GetNextWaypoint](#c_questloggetnextwaypoint) |  |  |
 | ✅ | [C_QuestLog.GetNextWaypointForMap](#c_questloggetnextwaypointformap) |  |  |
 | ✅ | [C_QuestLog.GetNextWaypointText](#c_questloggetnextwaypointtext) |  |  |
-| ✅ | [C_QuestLog.GetNumQuestLogEntries](#c_questloggetnumquestlogentries) |  |  |
+| ✅ | [C_QuestLog.GetNumQuestLogEntries](#c_questloggetnumquestlogentries) | 2 values |  |
 | ✅ | [C_QuestLog.GetNumQuestObjectives](#c_questloggetnumquestobjectives) |  |  |
-| ✅ | [C_QuestLog.GetNumQuestWatches](#c_questloggetnumquestwatches) |  |  |
-| ✅ | [C_QuestLog.GetNumWorldQuestWatches](#c_questloggetnumworldquestwatches) |  |  |
+| ✅ | [C_QuestLog.GetNumQuestWatches](#c_questloggetnumquestwatches) | 1 value |  |
+| ✅ | [C_QuestLog.GetNumWorldQuestWatches](#c_questloggetnumworldquestwatches) | 1 value |  |
 | ✅ | [C_QuestLog.GetQuestAdditionalHighlights](#c_questloggetquestadditionalhighlights) |  |  |
 | ✅ | [C_QuestLog.GetQuestDetailsTheme](#c_questloggetquestdetailstheme) |  |  |
 | ✅ | [C_QuestLog.GetQuestDifficultyLevel](#c_questloggetquestdifficultylevel) |  |  |
@@ -39,24 +39,24 @@ Namespace: `C_QuestLog`
 | ✅ | [C_QuestLog.GetQuestIDForQuestWatchIndex](#c_questloggetquestidforquestwatchindex) |  |  |
 | ✅ | [C_QuestLog.GetQuestIDForWorldQuestWatchIndex](#c_questloggetquestidforworldquestwatchindex) |  |  |
 | ✅ | [C_QuestLog.GetQuestLogMajorFactionReputationRewards](#c_questloggetquestlogmajorfactionreputationrewards) |  |  |
-| ✅ | [C_QuestLog.GetQuestLogPortraitGiver](#c_questloggetquestlogportraitgiver) |  |  |
+| ✅ | [C_QuestLog.GetQuestLogPortraitGiver](#c_questloggetquestlogportraitgiver) | 0 values |  |
 | ✅ | [C_QuestLog.GetQuestObjectives](#c_questloggetquestobjectives) |  |  |
 | ✅ | [C_QuestLog.GetQuestRewardCurrencies](#c_questloggetquestrewardcurrencies) |  |  |
 | ✅ | [C_QuestLog.GetQuestRewardCurrencyInfo](#c_questloggetquestrewardcurrencyinfo) |  |  |
 | ✅ | [C_QuestLog.GetQuestTagInfo](#c_questloggetquesttaginfo) |  |  |
-| ✅ | [C_QuestLog.GetQuestTimers](#c_questloggetquesttimers) |  |  |
+| ✅ | [C_QuestLog.GetQuestTimers](#c_questloggetquesttimers) | 1 value |  |
 | ✅ | [C_QuestLog.GetQuestType](#c_questloggetquesttype) |  |  |
 | ✅ | [C_QuestLog.GetQuestWatchType](#c_questloggetquestwatchtype) |  |  |
 | ✅ | [C_QuestLog.GetQuestsOnMap](#c_questloggetquestsonmap) |  |  |
-| ✅ | [C_QuestLog.GetRequiredMoney](#c_questloggetrequiredmoney) |  |  |
-| ✅ | [C_QuestLog.GetSelectedQuest](#c_questloggetselectedquest) |  |  |
+| ✅ | [C_QuestLog.GetRequiredMoney](#c_questloggetrequiredmoney) | 1 value |  |
+| ✅ | [C_QuestLog.GetSelectedQuest](#c_questloggetselectedquest) | 1 value |  |
 | ✅ | [C_QuestLog.GetSuggestedGroupSize](#c_questloggetsuggestedgroupsize) |  |  |
 | ✅ | [C_QuestLog.GetTimeAllowed](#c_questloggettimeallowed) |  |  |
 | ✅ | [C_QuestLog.GetTitleForLogIndex](#c_questloggettitleforlogindex) |  |  |
 | ✅ | [C_QuestLog.GetTitleForQuestID](#c_questloggettitleforquestid) |  |  |
-| ✅ | [C_QuestLog.GetTrivialRange](#c_questloggettrivialrange) |  |  |
+| ✅ | [C_QuestLog.GetTrivialRange](#c_questloggettrivialrange) | 1 value |  |
 | ✅ | [C_QuestLog.GetZoneStoryInfo](#c_questloggetzonestoryinfo) |  |  |
-| ✅ | [C_QuestLog.HasActiveThreats](#c_questloghasactivethreats) |  |  |
+| ✅ | [C_QuestLog.HasActiveThreats](#c_questloghasactivethreats) | 1 value |  |
 | ✅ | [C_QuestLog.IsAccountQuest](#c_questlogisaccountquest) |  |  |
 | ✅ | [C_QuestLog.IsComplete](#c_questlogiscomplete) |  |  |
 | ✅ | [C_QuestLog.IsEliteQuest](#c_questlogiselitequest) |  |  |
@@ -97,7 +97,7 @@ Namespace: `C_QuestLog`
 | ✅ | [C_QuestLog.ShouldDisplayTimeRemaining](#c_questlogshoulddisplaytimeremaining) |  |  |
 | ✅ | [C_QuestLog.ShouldShowQuestRewards](#c_questlogshouldshowquestrewards) |  |  |
 | ✅ | [C_QuestLog.SortQuestWatches](#c_questlogsortquestwatches) |  |  |
-| ✅ | [C_QuestLog.UnitIsRelatedToActiveQuest](#c_questlogunitisrelatedtoactivequest) |  |  |
+| ✅ | [C_QuestLog.UnitIsRelatedToActiveQuest](#c_questlogunitisrelatedtoactivequest) | 1 value |  |
 | ✅ | [C_QuestLog.UpdateCampaignHeaders](#c_questlogupdatecampaignheaders) |  |  |
 
 ### C_QuestLog.AbandonQuest
@@ -144,6 +144,7 @@ Namespace: `C_QuestLog`
 `C_QuestLog.GetAbandonQuest() → questID: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `QuestLogDocumentation.lua`
 
 ### C_QuestLog.GetAbandonQuestItems
@@ -152,6 +153,7 @@ Namespace: `C_QuestLog`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `QuestLogDocumentation.lua`
 
 ### C_QuestLog.GetActivePreyQuest
@@ -160,6 +162,7 @@ Namespace: `C_QuestLog`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `QuestLogDocumentation.lua`
 
 ### C_QuestLog.GetActiveThreatMaps
@@ -168,6 +171,7 @@ Namespace: `C_QuestLog`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `QuestLogDocumentation.lua`
 
 ### C_QuestLog.GetAllCompletedQuestIDs
@@ -175,6 +179,7 @@ Namespace: `C_QuestLog`
 `C_QuestLog.GetAllCompletedQuestIDs() → quests: number[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,...(326)}`
 - Source: client docs `QuestLogDocumentation.lua`
 
 ### C_QuestLog.GetBountiesForMapID
@@ -233,6 +238,7 @@ Namespace: `C_QuestLog`
 `C_QuestLog.GetMapForQuestPOIs() → uiMapID: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `QuestLogDocumentation.lua`
 
 ### C_QuestLog.GetMaxNumQuests
@@ -241,6 +247,7 @@ Namespace: `C_QuestLog`
 
 - Status: ✅ verified (function)
 - Blizzard: This is the maximum number of quests a player can be on, including hidden quests, world quests, emissaries etc
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `QuestLogDocumentation.lua`
 
 ### C_QuestLog.GetMaxNumQuestsCanAccept
@@ -249,6 +256,7 @@ Namespace: `C_QuestLog`
 
 - Status: ✅ verified (function)
 - Blizzard: This is the maximum number of standard quests a player can accept. These are quests that are normally visible in the quest log.
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `QuestLogDocumentation.lua`
 
 ### C_QuestLog.GetNextWaypoint
@@ -283,6 +291,7 @@ Namespace: `C_QuestLog`
 `C_QuestLog.GetNumQuestLogEntries() → numShownEntries: number, numQuests: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `number`, `number`
 - Source: client docs `QuestLogDocumentation.lua`
 
 ### C_QuestLog.GetNumQuestObjectives
@@ -298,6 +307,7 @@ Namespace: `C_QuestLog`
 `C_QuestLog.GetNumQuestWatches() → numQuestWatches: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `QuestLogDocumentation.lua`
 
 ### C_QuestLog.GetNumWorldQuestWatches
@@ -305,6 +315,7 @@ Namespace: `C_QuestLog`
 `C_QuestLog.GetNumWorldQuestWatches() → numQuestWatches: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `QuestLogDocumentation.lua`
 
 ### C_QuestLog.GetQuestAdditionalHighlights
@@ -372,6 +383,7 @@ Namespace: `C_QuestLog`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `QuestLogDocumentation.lua`
 
 ### C_QuestLog.GetQuestObjectives
@@ -412,6 +424,7 @@ Namespace: `C_QuestLog`
 `C_QuestLog.GetQuestTimers() → questTimers: QuestTimerInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `QuestLogDocumentation.lua`
 
 ### C_QuestLog.GetQuestType
@@ -446,6 +459,7 @@ Namespace: `C_QuestLog`
 - Status: ✅ verified (function)
 - Blizzard: Uses the selected quest if no questID is provided
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `QuestLogDocumentation.lua`
 
 ### C_QuestLog.GetSelectedQuest
@@ -453,6 +467,7 @@ Namespace: `C_QuestLog`
 `C_QuestLog.GetSelectedQuest() → questID: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `QuestLogDocumentation.lua`
 
 ### C_QuestLog.GetSuggestedGroupSize
@@ -495,6 +510,7 @@ Namespace: `C_QuestLog`
 `C_QuestLog.GetTrivialRange() → range: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `QuestLogDocumentation.lua`
 
 ### C_QuestLog.GetZoneStoryInfo
@@ -511,6 +527,7 @@ Namespace: `C_QuestLog`
 `C_QuestLog.HasActiveThreats() → hasActiveThreats: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `QuestLogDocumentation.lua`
 
 ### C_QuestLog.IsAccountQuest
@@ -839,6 +856,7 @@ Namespace: `C_QuestLog`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with "player": returned 1 value: `boolean`
 - Source: client docs `QuestLogDocumentation.lua`
 
 ### C_QuestLog.UpdateCampaignHeaders
@@ -879,7 +897,7 @@ Namespace: `C_QuestLog`
 - Status: ✅ verified
 - Payload: `questID: number`, `success: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 24 times (0 in combat); argument kinds: `n,b`
+- Seen firing 72 times (0 in combat); argument kinds: `n,b`
 
 ### QUEST_DETAIL
 
@@ -898,13 +916,14 @@ Namespace: `C_QuestLog`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 7 times (0 in combat); argument kinds: ``
 
 ### QUEST_POI_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### QUEST_REMOVED
 
@@ -924,7 +943,7 @@ Namespace: `C_QuestLog`
 - Payload: `questID: number?`, `added: bool?`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `-,-`
+- Seen firing 4 times (0 in combat); argument kinds: `-,-`
 
 ### QUEST_WATCH_UPDATE
 

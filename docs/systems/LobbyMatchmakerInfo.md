@@ -8,11 +8,11 @@ Namespace: `C_LobbyMatchmakerInfo`
 |---|---|---|---|
 | ✅ | [C_LobbyMatchmakerInfo.AbandonQueue](#c_lobbymatchmakerinfoabandonqueue) |  |  |
 | ✅ | [C_LobbyMatchmakerInfo.EnterQueue](#c_lobbymatchmakerinfoenterqueue) |  |  |
-| ✅ | [C_LobbyMatchmakerInfo.GetCurrQueuePlaylistEntry](#c_lobbymatchmakerinfogetcurrqueueplaylistentry) |  |  |
-| ✅ | [C_LobbyMatchmakerInfo.GetCurrQueueState](#c_lobbymatchmakerinfogetcurrqueuestate) |  |  |
-| ✅ | [C_LobbyMatchmakerInfo.GetQueueFromMainlineEnabled](#c_lobbymatchmakerinfogetqueuefrommainlineenabled) |  |  |
-| ✅ | [C_LobbyMatchmakerInfo.GetQueueStartTime](#c_lobbymatchmakerinfogetqueuestarttime) |  |  |
-| ✅ | [C_LobbyMatchmakerInfo.IsInQueue](#c_lobbymatchmakerinfoisinqueue) |  |  |
+| ✅ | [C_LobbyMatchmakerInfo.GetCurrQueuePlaylistEntry](#c_lobbymatchmakerinfogetcurrqueueplaylistentry) | 1 value |  |
+| ✅ | [C_LobbyMatchmakerInfo.GetCurrQueueState](#c_lobbymatchmakerinfogetcurrqueuestate) | 1 value |  |
+| ✅ | [C_LobbyMatchmakerInfo.GetQueueFromMainlineEnabled](#c_lobbymatchmakerinfogetqueuefrommainlineenabled) | 1 value |  |
+| ✅ | [C_LobbyMatchmakerInfo.GetQueueStartTime](#c_lobbymatchmakerinfogetqueuestarttime) | 1 value |  |
+| ✅ | [C_LobbyMatchmakerInfo.IsInQueue](#c_lobbymatchmakerinfoisinqueue) | 1 value |  |
 | ✅ | [C_LobbyMatchmakerInfo.RespondToQueuePop](#c_lobbymatchmakerinforespondtoqueuepop) |  |  |
 
 ### C_LobbyMatchmakerInfo.AbandonQueue
@@ -35,6 +35,7 @@ Namespace: `C_LobbyMatchmakerInfo`
 `C_LobbyMatchmakerInfo.GetCurrQueuePlaylistEntry() → playlistEntry: PartyPlaylistEntry`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `LobbyMatchmakerInfoDocumentation.lua`
 
 ### C_LobbyMatchmakerInfo.GetCurrQueueState
@@ -42,6 +43,7 @@ Namespace: `C_LobbyMatchmakerInfo`
 `C_LobbyMatchmakerInfo.GetCurrQueueState() → queueState: PlunderstormQueueState`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `LobbyMatchmakerInfoDocumentation.lua`
 
 ### C_LobbyMatchmakerInfo.GetQueueFromMainlineEnabled
@@ -49,6 +51,7 @@ Namespace: `C_LobbyMatchmakerInfo`
 `C_LobbyMatchmakerInfo.GetQueueFromMainlineEnabled() → queueFromMainlineEnabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `LobbyMatchmakerInfoDocumentation.lua`
 
 ### C_LobbyMatchmakerInfo.GetQueueStartTime
@@ -56,6 +59,7 @@ Namespace: `C_LobbyMatchmakerInfo`
 `C_LobbyMatchmakerInfo.GetQueueStartTime() → queueStartTime: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `LobbyMatchmakerInfoDocumentation.lua`
 
 ### C_LobbyMatchmakerInfo.IsInQueue
@@ -63,6 +67,7 @@ Namespace: `C_LobbyMatchmakerInfo`
 `C_LobbyMatchmakerInfo.IsInQueue() → isInQueue: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `LobbyMatchmakerInfoDocumentation.lua`
 
 ### C_LobbyMatchmakerInfo.RespondToQueuePop

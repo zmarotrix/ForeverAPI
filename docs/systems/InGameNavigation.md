@@ -6,12 +6,12 @@ Namespace: `C_Navigation`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_Navigation.GetDistance](#c_navigationgetdistance) |  |  |
-| ✅ | [C_Navigation.GetFrame](#c_navigationgetframe) |  |  |
-| ✅ | [C_Navigation.GetNearestPartyMemberToken](#c_navigationgetnearestpartymembertoken) |  |  |
+| ✅ | [C_Navigation.GetDistance](#c_navigationgetdistance) | 1 value |  |
+| ✅ | [C_Navigation.GetFrame](#c_navigationgetframe) | 1 value |  |
+| ✅ | [C_Navigation.GetNearestPartyMemberToken](#c_navigationgetnearestpartymembertoken) | protected |  |
 | ✅ | [C_Navigation.GetNextWaypointForMap](#c_navigationgetnextwaypointformap) |  |  |
-| ✅ | [C_Navigation.GetTargetState](#c_navigationgettargetstate) |  |  |
-| ✅ | [C_Navigation.HasValidScreenPosition](#c_navigationhasvalidscreenposition) |  |  |
+| ✅ | [C_Navigation.GetTargetState](#c_navigationgettargetstate) | 1 value |  |
+| ✅ | [C_Navigation.HasValidScreenPosition](#c_navigationhasvalidscreenposition) | 1 value |  |
 | ✅ | [C_Navigation.WasClampedToScreen](#c_navigationwasclampedtoscreen) |  |  |
 
 ### C_Navigation.GetDistance
@@ -19,6 +19,7 @@ Namespace: `C_Navigation`
 `C_Navigation.GetDistance() → distance: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `InGameNavigationDocumentation.lua`
 
 ### C_Navigation.GetFrame
@@ -26,6 +27,7 @@ Namespace: `C_Navigation`
 `C_Navigation.GetFrame() → frame: ScriptRegion?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `InGameNavigationDocumentation.lua`
 
 ### C_Navigation.GetNearestPartyMemberToken
@@ -34,6 +36,7 @@ Namespace: `C_Navigation`
 
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
+- Called out of combat: ⛔ protected: calling it raised ADDON_ACTION_FORBIDDEN
 - Source: client docs `InGameNavigationDocumentation.lua`
 
 ### C_Navigation.GetNextWaypointForMap
@@ -50,6 +53,7 @@ Namespace: `C_Navigation`
 `C_Navigation.GetTargetState() → state: NavigationState`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `InGameNavigationDocumentation.lua`
 
 ### C_Navigation.HasValidScreenPosition
@@ -57,6 +61,7 @@ Namespace: `C_Navigation`
 `C_Navigation.HasValidScreenPosition() → hasValidScreenPosition: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `InGameNavigationDocumentation.lua`
 
 ### C_Navigation.WasClampedToScreen
@@ -86,7 +91,7 @@ Namespace: `C_Navigation`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ## Types
 

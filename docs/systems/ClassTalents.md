@@ -6,22 +6,22 @@ Namespace: `C_ClassTalents`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_ClassTalents.CanChangeTalents](#c_classtalentscanchangetalents) |  |  |
-| ✅ | [C_ClassTalents.CanCreateNewConfig](#c_classtalentscancreatenewconfig) |  |  |
-| ✅ | [C_ClassTalents.CanEditTalents](#c_classtalentscanedittalents) |  |  |
+| ✅ | [C_ClassTalents.CanChangeTalents](#c_classtalentscanchangetalents) | 3 values |  |
+| ✅ | [C_ClassTalents.CanCreateNewConfig](#c_classtalentscancreatenewconfig) | 1 value |  |
+| ✅ | [C_ClassTalents.CanEditTalents](#c_classtalentscanedittalents) | 2 values |  |
 | ✅ | [C_ClassTalents.CommitConfig](#c_classtalentscommitconfig) |  |  |
 | ✅ | [C_ClassTalents.DeleteConfig](#c_classtalentsdeleteconfig) |  |  |
-| ✅ | [C_ClassTalents.GetActiveConfigID](#c_classtalentsgetactiveconfigid) |  |  |
-| ✅ | [C_ClassTalents.GetActiveHeroTalentSpec](#c_classtalentsgetactiveherotalentspec) |  |  |
-| ✅ | [C_ClassTalents.GetConfigIDsBySpecID](#c_classtalentsgetconfigidsbyspecid) |  |  |
-| ✅ | [C_ClassTalents.GetHasStarterBuild](#c_classtalentsgethasstarterbuild) |  |  |
-| ✅ | [C_ClassTalents.GetHeroTalentSpecsForClassSpec](#c_classtalentsgetherotalentspecsforclassspec) |  |  |
+| ✅ | [C_ClassTalents.GetActiveConfigID](#c_classtalentsgetactiveconfigid) | 1 value |  |
+| ✅ | [C_ClassTalents.GetActiveHeroTalentSpec](#c_classtalentsgetactiveherotalentspec) | 1 value |  |
+| ✅ | [C_ClassTalents.GetConfigIDsBySpecID](#c_classtalentsgetconfigidsbyspecid) | 1 value |  |
+| ✅ | [C_ClassTalents.GetHasStarterBuild](#c_classtalentsgethasstarterbuild) | 1 value |  |
+| ✅ | [C_ClassTalents.GetHeroTalentSpecsForClassSpec](#c_classtalentsgetherotalentspecsforclassspec) | 0 values |  |
 | ✅ | [C_ClassTalents.GetLastSelectedSavedConfigID](#c_classtalentsgetlastselectedsavedconfigid) |  |  |
-| ✅ | [C_ClassTalents.GetNextStarterBuildPurchase](#c_classtalentsgetnextstarterbuildpurchase) |  |  |
-| ✅ | [C_ClassTalents.GetStarterBuildActive](#c_classtalentsgetstarterbuildactive) |  |  |
+| ✅ | [C_ClassTalents.GetNextStarterBuildPurchase](#c_classtalentsgetnextstarterbuildpurchase) | 2 values |  |
+| ✅ | [C_ClassTalents.GetStarterBuildActive](#c_classtalentsgetstarterbuildactive) | 1 value |  |
 | ✅ | [C_ClassTalents.GetTraitTreeForSpec](#c_classtalentsgettraittreeforspec) |  |  |
-| ✅ | [C_ClassTalents.HasUnspentHeroTalentPoints](#c_classtalentshasunspentherotalentpoints) |  |  |
-| ✅ | [C_ClassTalents.HasUnspentTalentPoints](#c_classtalentshasunspenttalentpoints) |  |  |
+| ✅ | [C_ClassTalents.HasUnspentHeroTalentPoints](#c_classtalentshasunspentherotalentpoints) | 2 values |  |
+| ✅ | [C_ClassTalents.HasUnspentTalentPoints](#c_classtalentshasunspenttalentpoints) | 3 values |  |
 | ✅ | [C_ClassTalents.ImportLoadout](#c_classtalentsimportloadout) |  |  |
 | ✅ | [C_ClassTalents.InitializeViewLoadout](#c_classtalentsinitializeviewloadout) |  |  |
 | ✅ | [C_ClassTalents.IsConfigPopulated](#c_classtalentsisconfigpopulated) |  |  |
@@ -44,6 +44,7 @@ Namespace: `C_ClassTalents`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns true only if the player has staged changes and can commit their talents in their current state.
+- Called out of combat: returned 3 values: `boolean`, `boolean`, `nil`
 - Source: client docs `ClassTalentsDocumentation.lua`
 
 ### C_ClassTalents.CanCreateNewConfig
@@ -51,6 +52,7 @@ Namespace: `C_ClassTalents`
 `C_ClassTalents.CanCreateNewConfig() → canCreate: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ClassTalentsDocumentation.lua`
 
 ### C_ClassTalents.CanEditTalents
@@ -59,6 +61,7 @@ Namespace: `C_ClassTalents`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the player could switch talents if they staged a proper loadout.
+- Called out of combat: returned 2 values: `boolean`, `string`
 - Source: client docs `ClassTalentsDocumentation.lua`
 
 ### C_ClassTalents.CommitConfig
@@ -82,6 +85,7 @@ Namespace: `C_ClassTalents`
 `C_ClassTalents.GetActiveConfigID() → activeConfigID: number?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ClassTalentsDocumentation.lua`
 
 ### C_ClassTalents.GetActiveHeroTalentSpec
@@ -91,6 +95,7 @@ Namespace: `C_ClassTalents`
 - Status: ✅ verified (function)
 - Blizzard: Returns the SubTreeID of the player's active Hero Talent Specialization SubTree.
 - `heroSpecID`: SubTreeID of the player's active Hero Talent Specialization or nil if no Specialization is active.
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `ClassTalentsDocumentation.lua`
 
 ### C_ClassTalents.GetConfigIDsBySpecID
@@ -99,6 +104,7 @@ Namespace: `C_ClassTalents`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `ClassTalentsDocumentation.lua`
 
 ### C_ClassTalents.GetHasStarterBuild
@@ -106,6 +112,7 @@ Namespace: `C_ClassTalents`
 `C_ClassTalents.GetHasStarterBuild() → hasStarterBuild: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ClassTalentsDocumentation.lua`
 
 ### C_ClassTalents.GetHeroTalentSpecsForClassSpec
@@ -120,6 +127,7 @@ Namespace: `C_ClassTalents`
 - `requiredPlayerLevel`: The player level at which one of the Hero Talent Specializations can be activated
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `ClassTalentsDocumentation.lua`
 
 ### C_ClassTalents.GetLastSelectedSavedConfigID
@@ -135,6 +143,7 @@ Namespace: `C_ClassTalents`
 `C_ClassTalents.GetNextStarterBuildPurchase() → nodeID: number?, entryID: number?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `nil`, `nil`
 - Source: client docs `ClassTalentsDocumentation.lua`
 
 ### C_ClassTalents.GetStarterBuildActive
@@ -142,6 +151,7 @@ Namespace: `C_ClassTalents`
 `C_ClassTalents.GetStarterBuildActive() → isActive: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ClassTalentsDocumentation.lua`
 
 ### C_ClassTalents.GetTraitTreeForSpec
@@ -158,6 +168,7 @@ Namespace: `C_ClassTalents`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns whether the player has any unspent talent points in their active hero talent tree. If hasUnspentPoints is true, numHeroPoints will be greater than zero.
+- Called out of combat: returned 2 values: `boolean`, `number`
 - Source: client docs `ClassTalentsDocumentation.lua`
 
 ### C_ClassTalents.HasUnspentTalentPoints
@@ -166,6 +177,7 @@ Namespace: `C_ClassTalents`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns whether the player has any unspent talent points in their class or spec talent trees. If hasUnspentPoints is true, the number of unspent points for at least one of the trees will be greater than zero. Hero talent points are not included by this function.
+- Called out of combat: returned 3 values: `boolean`, `number`, `number`
 - Source: client docs `ClassTalentsDocumentation.lua`
 
 ### C_ClassTalents.ImportLoadout

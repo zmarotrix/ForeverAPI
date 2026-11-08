@@ -9,30 +9,30 @@ Namespace: `C_GameRules`
 | ✅ | [C_GameRules.AccountHasSDEnabled](#c_gamerulesaccounthassdenabled) |  |  |
 | ✅ | [C_GameRules.AutoConnectToGameModeRealm](#c_gamerulesautoconnecttogamemoderealm) |  |  |
 | ✅ | [C_GameRules.DoesGameModeHavePromo](#c_gamerulesdoesgamemodehavepromo) |  |  |
-| ✅ | [C_GameRules.GetActiveGameMode](#c_gamerulesgetactivegamemode) |  |  |
-| ✅ | [C_GameRules.GetCurrentEventRealmQueues](#c_gamerulesgetcurrenteventrealmqueues) |  |  |
-| ✅ | [C_GameRules.GetCurrentGameModeDisplayInfo](#c_gamerulesgetcurrentgamemodedisplayinfo) |  |  |
-| ✅ | [C_GameRules.GetCurrentGameModeRecordID](#c_gamerulesgetcurrentgamemoderecordid) |  |  |
+| ✅ | [C_GameRules.GetActiveGameMode](#c_gamerulesgetactivegamemode) | 1 value |  |
+| ✅ | [C_GameRules.GetCurrentEventRealmQueues](#c_gamerulesgetcurrenteventrealmqueues) | 1 value |  |
+| ✅ | [C_GameRules.GetCurrentGameModeDisplayInfo](#c_gamerulesgetcurrentgamemodedisplayinfo) | 1 value |  |
+| ✅ | [C_GameRules.GetCurrentGameModeRecordID](#c_gamerulesgetcurrentgamemoderecordid) | 1 value |  |
 | ✅ | [C_GameRules.GetDisplayedGameModeRecordIDAtIndex](#c_gamerulesgetdisplayedgamemoderecordidatindex) |  |  |
-| ✅ | [C_GameRules.GetForeverExperiencePreset](#c_gamerulesgetforeverexperiencepreset) |  |  |
+| ✅ | [C_GameRules.GetForeverExperiencePreset](#c_gamerulesgetforeverexperiencepreset) | 1 value |  |
 | ✅ | [C_GameRules.GetGameModeDisplayInfoByRecordID](#c_gamerulesgetgamemodedisplayinfobyrecordid) |  |  |
-| ✅ | [C_GameRules.GetGameModeGlueScreenName](#c_gamerulesgetgamemodegluescreenname) |  |  |
+| ✅ | [C_GameRules.GetGameModeGlueScreenName](#c_gamerulesgetgamemodegluescreenname) | 1 value |  |
 | ✅ | [C_GameRules.GetGameModePromoGlobalString](#c_gamerulesgetgamemodepromoglobalstring) |  |  |
 | ✅ | [C_GameRules.GetGameRuleAsFloat](#c_gamerulesgetgameruleasfloat) |  |  |
 | ✅ | [C_GameRules.GetGameRuleAsFrameStrata](#c_gamerulesgetgameruleasframestrata) |  |  |
-| ✅ | [C_GameRules.GetNumDisplayedGameModes](#c_gamerulesgetnumdisplayedgamemodes) |  |  |
-| ✅ | [C_GameRules.IsCharacterlessLoginActive](#c_gamerulesischaracterlessloginactive) |  |  |
+| ✅ | [C_GameRules.GetNumDisplayedGameModes](#c_gamerulesgetnumdisplayedgamemodes) | 1 value |  |
+| ✅ | [C_GameRules.IsCharacterlessLoginActive](#c_gamerulesischaracterlessloginactive) | 1 value |  |
 | ✅ | [C_GameRules.IsClassAllowedForGameMode](#c_gamerulesisclassallowedforgamemode) |  |  |
 | ✅ | [C_GameRules.IsGameModeEnabled](#c_gamerulesisgamemodeenabled) |  |  |
 | ✅ | [C_GameRules.IsGameRuleActive](#c_gamerulesisgameruleactive) |  |  |
-| ✅ | [C_GameRules.IsHardcoreActive](#c_gamerulesishardcoreactive) |  |  |
-| ✅ | [C_GameRules.IsMultiActionBarVisibilityForced](#c_gamerulesismultiactionbarvisibilityforced) |  |  |
-| ✅ | [C_GameRules.IsPersonalResourceDisplayEnabled](#c_gamerulesispersonalresourcedisplayenabled) |  |  |
-| ✅ | [C_GameRules.IsPlunderstorm](#c_gamerulesisplunderstorm) |  |  |
-| ✅ | [C_GameRules.IsSDHDToggleEnabled](#c_gamerulesissdhdtoggleenabled) |  |  |
-| ✅ | [C_GameRules.IsSelfFoundAllowed](#c_gamerulesisselffoundallowed) |  |  |
-| ✅ | [C_GameRules.IsStandard](#c_gamerulesisstandard) |  |  |
-| ✅ | [C_GameRules.IsWoWHack](#c_gamerulesiswowhack) |  |  |
+| ✅ | [C_GameRules.IsHardcoreActive](#c_gamerulesishardcoreactive) | 1 value |  |
+| ✅ | [C_GameRules.IsMultiActionBarVisibilityForced](#c_gamerulesismultiactionbarvisibilityforced) | 1 value |  |
+| ✅ | [C_GameRules.IsPersonalResourceDisplayEnabled](#c_gamerulesispersonalresourcedisplayenabled) | 1 value |  |
+| ✅ | [C_GameRules.IsPlunderstorm](#c_gamerulesisplunderstorm) | 1 value |  |
+| ✅ | [C_GameRules.IsSDHDToggleEnabled](#c_gamerulesissdhdtoggleenabled) | 1 value |  |
+| ✅ | [C_GameRules.IsSelfFoundAllowed](#c_gamerulesisselffoundallowed) | 1 value |  |
+| ✅ | [C_GameRules.IsStandard](#c_gamerulesisstandard) | 1 value |  |
+| ✅ | [C_GameRules.IsWoWHack](#c_gamerulesiswowhack) | 1 value |  |
 | ✅ | [C_GameRules.SetForeverExperiencePresetPostLogin](#c_gamerulessetforeverexperiencepresetpostlogin) |  |  |
 | ✅ | [C_GameRules.SetForeverExperiencePresetPreLogin](#c_gamerulessetforeverexperiencepresetprelogin) |  |  |
 | ✅ | [C_GameRules.SetSDHDToggleValue](#c_gamerulessetsdhdtogglevalue) |  |  |
@@ -65,6 +65,7 @@ Namespace: `C_GameRules`
 `C_GameRules.GetActiveGameMode() → gameMode: GameMode`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `GameRulesDocumentation.lua`
 
 ### C_GameRules.GetCurrentEventRealmQueues
@@ -72,6 +73,7 @@ Namespace: `C_GameRules`
 `C_GameRules.GetCurrentEventRealmQueues() → eventRealmQueues: EventRealmQueues`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `GameRulesDocumentation.lua`
 
 ### C_GameRules.GetCurrentGameModeDisplayInfo
@@ -79,6 +81,7 @@ Namespace: `C_GameRules`
 `C_GameRules.GetCurrentGameModeDisplayInfo() → info: GameModeDisplayInfo?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{characterCreateExtraHeight=number,logoHeight=number,logoShrunkenHeight=number,logoUsesDarkBackdrop=boolean,logoVerticalOffset=number}`
 - Source: client docs `GameRulesDocumentation.lua`
 
 ### C_GameRules.GetCurrentGameModeRecordID
@@ -86,6 +89,7 @@ Namespace: `C_GameRules`
 `C_GameRules.GetCurrentGameModeRecordID() → gameModeRecordID: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `GameRulesDocumentation.lua`
 
 ### C_GameRules.GetDisplayedGameModeRecordIDAtIndex
@@ -101,6 +105,7 @@ Namespace: `C_GameRules`
 `C_GameRules.GetForeverExperiencePreset() → preset: ForeverExperiencePreset?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `GameRulesDocumentation.lua`
 
 ### C_GameRules.GetGameModeDisplayInfoByRecordID
@@ -116,6 +121,7 @@ Namespace: `C_GameRules`
 `C_GameRules.GetGameModeGlueScreenName() → screenName: cstring`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `GameRulesDocumentation.lua`
 
 ### C_GameRules.GetGameModePromoGlobalString
@@ -149,6 +155,7 @@ Namespace: `C_GameRules`
 `C_GameRules.GetNumDisplayedGameModes() → numDisplayedGameModes: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `GameRulesDocumentation.lua`
 
 ### C_GameRules.IsCharacterlessLoginActive
@@ -156,6 +163,7 @@ Namespace: `C_GameRules`
 `C_GameRules.IsCharacterlessLoginActive() → active: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `GameRulesDocumentation.lua`
 
 ### C_GameRules.IsClassAllowedForGameMode
@@ -187,6 +195,7 @@ Namespace: `C_GameRules`
 `C_GameRules.IsHardcoreActive() → active: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `GameRulesDocumentation.lua`
 
 ### C_GameRules.IsMultiActionBarVisibilityForced
@@ -194,6 +203,7 @@ Namespace: `C_GameRules`
 `C_GameRules.IsMultiActionBarVisibilityForced() → valid: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `GameRulesDocumentation.lua`
 
 ### C_GameRules.IsPersonalResourceDisplayEnabled
@@ -202,6 +212,7 @@ Namespace: `C_GameRules`
 
 - Status: ✅ verified (function)
 - Blizzard: Checks the game rule as well as nameplateShowSelf
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `GameRulesDocumentation.lua`
 
 ### C_GameRules.IsPlunderstorm
@@ -209,6 +220,7 @@ Namespace: `C_GameRules`
 `C_GameRules.IsPlunderstorm() → active: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `GameRulesDocumentation.lua`
 
 ### C_GameRules.IsSDHDToggleEnabled
@@ -216,6 +228,7 @@ Namespace: `C_GameRules`
 `C_GameRules.IsSDHDToggleEnabled() → isEnabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `GameRulesDocumentation.lua`
 
 ### C_GameRules.IsSelfFoundAllowed
@@ -223,6 +236,7 @@ Namespace: `C_GameRules`
 `C_GameRules.IsSelfFoundAllowed() → active: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `GameRulesDocumentation.lua`
 
 ### C_GameRules.IsStandard
@@ -230,6 +244,7 @@ Namespace: `C_GameRules`
 `C_GameRules.IsStandard() → active: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `GameRulesDocumentation.lua`
 
 ### C_GameRules.IsWoWHack
@@ -237,6 +252,7 @@ Namespace: `C_GameRules`
 `C_GameRules.IsWoWHack() → active: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `GameRulesDocumentation.lua`
 
 ### C_GameRules.SetForeverExperiencePresetPostLogin
@@ -288,6 +304,7 @@ Namespace: `C_GameRules`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### GAME_MODE_DISPLAY_MODE_TOGGLE_DISABLED
 
@@ -300,6 +317,7 @@ Namespace: `C_GameRules`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### SETTINGS_HEADER_TEXT_UPDATE
 

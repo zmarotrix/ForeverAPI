@@ -7,16 +7,16 @@ Namespace: `C_TransmogCollection`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_TransmogCollection.AccountCanCollectSource](#c_transmogcollectionaccountcancollectsource) |  |  |
-| ✅ | [C_TransmogCollection.AreAllCollectionTypeFiltersChecked](#c_transmogcollectionareallcollectiontypefilterschecked) |  |  |
-| ✅ | [C_TransmogCollection.AreAllSourceTypeFiltersChecked](#c_transmogcollectionareallsourcetypefilterschecked) |  |  |
+| ✅ | [C_TransmogCollection.AreAllCollectionTypeFiltersChecked](#c_transmogcollectionareallcollectiontypefilterschecked) | 1 value |  |
+| ✅ | [C_TransmogCollection.AreAllSourceTypeFiltersChecked](#c_transmogcollectionareallsourcetypefilterschecked) | 1 value |  |
 | ✅ | [C_TransmogCollection.CanAppearanceHaveIllusion](#c_transmogcollectioncanappearancehaveillusion) |  |  |
 | ✅ | [C_TransmogCollection.ClearNewAppearance](#c_transmogcollectionclearnewappearance) |  |  |
 | ✅ | [C_TransmogCollection.ClearSearch](#c_transmogcollectionclearsearch) |  |  |
 | ✅ | [C_TransmogCollection.DeleteCustomSet](#c_transmogcollectiondeletecustomset) |  |  |
 | ✅ | [C_TransmogCollection.EndSearch](#c_transmogcollectionendsearch) |  |  |
 | ✅ | [C_TransmogCollection.GetAllAppearanceSources](#c_transmogcollectiongetallappearancesources) |  |  |
-| ✅ | [C_TransmogCollection.GetAllFactionsShown](#c_transmogcollectiongetallfactionsshown) |  |  |
-| ✅ | [C_TransmogCollection.GetAllRacesShown](#c_transmogcollectiongetallracesshown) |  |  |
+| ✅ | [C_TransmogCollection.GetAllFactionsShown](#c_transmogcollectiongetallfactionsshown) | 1 value |  |
+| ✅ | [C_TransmogCollection.GetAllRacesShown](#c_transmogcollectiongetallracesshown) | 1 value |  |
 | ✅ | [C_TransmogCollection.GetAppearanceCameraID](#c_transmogcollectiongetappearancecameraid) |  |  |
 | ✅ | [C_TransmogCollection.GetAppearanceCameraIDBySource](#c_transmogcollectiongetappearancecameraidbysource) |  |  |
 | ✅ | [C_TransmogCollection.GetAppearanceInfoBySource](#c_transmogcollectiongetappearanceinfobysource) |  |  |
@@ -29,42 +29,42 @@ Namespace: `C_TransmogCollection`
 | ✅ | [C_TransmogCollection.GetCategoryForItem](#c_transmogcollectiongetcategoryforitem) |  |  |
 | ✅ | [C_TransmogCollection.GetCategoryInfo](#c_transmogcollectiongetcategoryinfo) |  |  |
 | ✅ | [C_TransmogCollection.GetCategoryTotal](#c_transmogcollectiongetcategorytotal) |  |  |
-| ✅ | [C_TransmogCollection.GetClassFilter](#c_transmogcollectiongetclassfilter) |  |  |
-| ✅ | [C_TransmogCollection.GetCollectedShown](#c_transmogcollectiongetcollectedshown) |  |  |
+| ✅ | [C_TransmogCollection.GetClassFilter](#c_transmogcollectiongetclassfilter) | 1 value |  |
+| ✅ | [C_TransmogCollection.GetCollectedShown](#c_transmogcollectiongetcollectedshown) | 1 value |  |
 | ✅ | [C_TransmogCollection.GetCustomSetHyperlinkFromItemTransmogInfoList](#c_transmogcollectiongetcustomsethyperlinkfromitemtransmoginfolist) |  |  |
 | ✅ | [C_TransmogCollection.GetCustomSetInfo](#c_transmogcollectiongetcustomsetinfo) |  |  |
 | ✅ | [C_TransmogCollection.GetCustomSetItemTransmogInfoList](#c_transmogcollectiongetcustomsetitemtransmoginfolist) |  |  |
-| ✅ | [C_TransmogCollection.GetCustomSets](#c_transmogcollectiongetcustomsets) |  |  |
-| ✅ | [C_TransmogCollection.GetFallbackWeaponAppearance](#c_transmogcollectiongetfallbackweaponappearance) |  |  |
+| ✅ | [C_TransmogCollection.GetCustomSets](#c_transmogcollectiongetcustomsets) | 1 value |  |
+| ✅ | [C_TransmogCollection.GetFallbackWeaponAppearance](#c_transmogcollectiongetfallbackweaponappearance) | 1 value |  |
 | ✅ | [C_TransmogCollection.GetFilteredCategoryCollectedCount](#c_transmogcollectiongetfilteredcategorycollectedcount) |  |  |
 | ✅ | [C_TransmogCollection.GetFilteredCategoryTotal](#c_transmogcollectiongetfilteredcategorytotal) |  |  |
 | ✅ | [C_TransmogCollection.GetIllusionInfo](#c_transmogcollectiongetillusioninfo) |  |  |
 | ✅ | [C_TransmogCollection.GetIllusionStrings](#c_transmogcollectiongetillusionstrings) |  |  |
-| ✅ | [C_TransmogCollection.GetIllusions](#c_transmogcollectiongetillusions) |  |  |
-| ✅ | [C_TransmogCollection.GetInspectItemTransmogInfoList](#c_transmogcollectiongetinspectitemtransmoginfolist) |  |  |
+| ✅ | [C_TransmogCollection.GetIllusions](#c_transmogcollectiongetillusions) | 1 value |  |
+| ✅ | [C_TransmogCollection.GetInspectItemTransmogInfoList](#c_transmogcollectiongetinspectitemtransmoginfolist) | 1 value |  |
 | ✅ | [C_TransmogCollection.GetIsAppearanceFavorite](#c_transmogcollectiongetisappearancefavorite) |  |  |
 | ✅ | [C_TransmogCollection.GetItemInfo](#c_transmogcollectiongetiteminfo) |  |  |
 | ✅ | [C_TransmogCollection.GetItemTransmogInfoListFromCustomSetHyperlink](#c_transmogcollectiongetitemtransmoginfolistfromcustomsethyperlink) |  |  |
-| ✅ | [C_TransmogCollection.GetLatestAppearance](#c_transmogcollectiongetlatestappearance) |  |  |
-| ✅ | [C_TransmogCollection.GetNumMaxCustomSets](#c_transmogcollectiongetnummaxcustomsets) |  |  |
-| ✅ | [C_TransmogCollection.GetNumTransmogSources](#c_transmogcollectiongetnumtransmogsources) |  |  |
+| ✅ | [C_TransmogCollection.GetLatestAppearance](#c_transmogcollectiongetlatestappearance) | 0 values |  |
+| ✅ | [C_TransmogCollection.GetNumMaxCustomSets](#c_transmogcollectiongetnummaxcustomsets) | 1 value |  |
+| ✅ | [C_TransmogCollection.GetNumTransmogSources](#c_transmogcollectiongetnumtransmogsources) | 1 value |  |
 | ✅ | [C_TransmogCollection.GetPairedArtifactAppearance](#c_transmogcollectiongetpairedartifactappearance) |  |  |
 | ✅ | [C_TransmogCollection.GetSourceIcon](#c_transmogcollectiongetsourceicon) |  |  |
 | ✅ | [C_TransmogCollection.GetSourceInfo](#c_transmogcollectiongetsourceinfo) |  |  |
 | ✅ | [C_TransmogCollection.GetSourceItemID](#c_transmogcollectiongetsourceitemid) |  |  |
 | ✅ | [C_TransmogCollection.GetSourceRequiredHoliday](#c_transmogcollectiongetsourcerequiredholiday) |  |  |
-| ✅ | [C_TransmogCollection.GetUncollectedShown](#c_transmogcollectiongetuncollectedshown) |  |  |
+| ✅ | [C_TransmogCollection.GetUncollectedShown](#c_transmogcollectiongetuncollectedshown) | 1 value |  |
 | ✅ | [C_TransmogCollection.GetValidAppearanceSourcesForClass](#c_transmogcollectiongetvalidappearancesourcesforclass) |  |  |
-| ✅ | [C_TransmogCollection.HasAnyAppearance](#c_transmogcollectionhasanyappearance) |  |  |
-| ✅ | [C_TransmogCollection.HasFavorites](#c_transmogcollectionhasfavorites) |  |  |
+| ✅ | [C_TransmogCollection.HasAnyAppearance](#c_transmogcollectionhasanyappearance) | 1 value |  |
+| ✅ | [C_TransmogCollection.HasFavorites](#c_transmogcollectionhasfavorites) | 1 value |  |
 | ✅ | [C_TransmogCollection.IsAppearanceHiddenVisual](#c_transmogcollectionisappearancehiddenvisual) |  |  |
 | ✅ | [C_TransmogCollection.IsCategoryValidForItem](#c_transmogcollectioniscategoryvalidforitem) |  |  |
 | ✅ | [C_TransmogCollection.IsNewAppearance](#c_transmogcollectionisnewappearance) |  |  |
-| ✅ | [C_TransmogCollection.IsSearchDBLoading](#c_transmogcollectionissearchdbloading) |  |  |
+| ✅ | [C_TransmogCollection.IsSearchDBLoading](#c_transmogcollectionissearchdbloading) | 1 value |  |
 | ✅ | [C_TransmogCollection.IsSearchInProgress](#c_transmogcollectionissearchinprogress) |  |  |
 | ✅ | [C_TransmogCollection.IsSourceTypeFilterChecked](#c_transmogcollectionissourcetypefilterchecked) |  |  |
 | ✅ | [C_TransmogCollection.IsSpellItemEnchantmentHiddenVisual](#c_transmogcollectionisspellitemenchantmenthiddenvisual) |  |  |
-| ✅ | [C_TransmogCollection.IsUsingDefaultFilters](#c_transmogcollectionisusingdefaultfilters) |  |  |
+| ✅ | [C_TransmogCollection.IsUsingDefaultFilters](#c_transmogcollectionisusingdefaultfilters) | 1 value |  |
 | ✅ | [C_TransmogCollection.IsValidCustomSetName](#c_transmogcollectionisvalidcustomsetname) |  |  |
 | ✅ | [C_TransmogCollection.IsValidTransmogSource](#c_transmogcollectionisvalidtransmogsource) |  |  |
 | ✅ | [C_TransmogCollection.ModifyCustomSet](#c_transmogcollectionmodifycustomset) |  |  |
@@ -104,6 +104,7 @@ Namespace: `C_TransmogCollection`
 `C_TransmogCollection.AreAllCollectionTypeFiltersChecked() → areAllCollectionTypeFiltersChecked: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `TransmogItemsDocumentation.lua`
 
 ### C_TransmogCollection.AreAllSourceTypeFiltersChecked
@@ -111,6 +112,7 @@ Namespace: `C_TransmogCollection`
 `C_TransmogCollection.AreAllSourceTypeFiltersChecked() → areAllSourceTypeFiltersChecked: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `TransmogItemsDocumentation.lua`
 
 ### C_TransmogCollection.CanAppearanceHaveIllusion
@@ -165,6 +167,7 @@ Namespace: `C_TransmogCollection`
 `C_TransmogCollection.GetAllFactionsShown() → shown: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `TransmogItemsDocumentation.lua`
 
 ### C_TransmogCollection.GetAllRacesShown
@@ -172,6 +175,7 @@ Namespace: `C_TransmogCollection`
 `C_TransmogCollection.GetAllRacesShown() → shown: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `TransmogItemsDocumentation.lua`
 
 ### C_TransmogCollection.GetAppearanceCameraID
@@ -283,6 +287,7 @@ Namespace: `C_TransmogCollection`
 `C_TransmogCollection.GetClassFilter() → classID: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `TransmogItemsDocumentation.lua`
 
 ### C_TransmogCollection.GetCollectedShown
@@ -290,6 +295,7 @@ Namespace: `C_TransmogCollection`
 `C_TransmogCollection.GetCollectedShown() → shown: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `TransmogItemsDocumentation.lua`
 
 ### C_TransmogCollection.GetCustomSetHyperlinkFromItemTransmogInfoList
@@ -324,6 +330,7 @@ Namespace: `C_TransmogCollection`
 `C_TransmogCollection.GetCustomSets() → customSetID: number[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `TransmogItemsDocumentation.lua`
 
 ### C_TransmogCollection.GetFallbackWeaponAppearance
@@ -331,6 +338,7 @@ Namespace: `C_TransmogCollection`
 `C_TransmogCollection.GetFallbackWeaponAppearance() → appearanceID: number?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `TransmogItemsDocumentation.lua`
 
 ### C_TransmogCollection.GetFilteredCategoryCollectedCount
@@ -373,6 +381,7 @@ Namespace: `C_TransmogCollection`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `TransmogItemsDocumentation.lua`
 
 ### C_TransmogCollection.GetInspectItemTransmogInfoList
@@ -381,6 +390,7 @@ Namespace: `C_TransmogCollection`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `TransmogItemsDocumentation.lua`
 
 ### C_TransmogCollection.GetIsAppearanceFavorite
@@ -415,6 +425,7 @@ Namespace: `C_TransmogCollection`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `TransmogItemsDocumentation.lua`
 
 ### C_TransmogCollection.GetNumMaxCustomSets
@@ -422,6 +433,7 @@ Namespace: `C_TransmogCollection`
 `C_TransmogCollection.GetNumMaxCustomSets() → maxCustomSets: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `TransmogItemsDocumentation.lua`
 
 ### C_TransmogCollection.GetNumTransmogSources
@@ -429,6 +441,7 @@ Namespace: `C_TransmogCollection`
 `C_TransmogCollection.GetNumTransmogSources() → count: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `TransmogItemsDocumentation.lua`
 
 ### C_TransmogCollection.GetPairedArtifactAppearance
@@ -481,6 +494,7 @@ Namespace: `C_TransmogCollection`
 `C_TransmogCollection.GetUncollectedShown() → shown: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `TransmogItemsDocumentation.lua`
 
 ### C_TransmogCollection.GetValidAppearanceSourcesForClass
@@ -497,6 +511,7 @@ Namespace: `C_TransmogCollection`
 `C_TransmogCollection.HasAnyAppearance() → hasAnyAppearance: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `TransmogItemsDocumentation.lua`
 
 ### C_TransmogCollection.HasFavorites
@@ -504,6 +519,7 @@ Namespace: `C_TransmogCollection`
 `C_TransmogCollection.HasFavorites() → hasFavorites: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `TransmogItemsDocumentation.lua`
 
 ### C_TransmogCollection.IsAppearanceHiddenVisual
@@ -535,6 +551,7 @@ Namespace: `C_TransmogCollection`
 `C_TransmogCollection.IsSearchDBLoading() → isLoading: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `TransmogItemsDocumentation.lua`
 
 ### C_TransmogCollection.IsSearchInProgress
@@ -566,6 +583,7 @@ Namespace: `C_TransmogCollection`
 `C_TransmogCollection.IsUsingDefaultFilters() → isUsingDefaultFilters: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `TransmogItemsDocumentation.lua`
 
 ### C_TransmogCollection.IsValidCustomSetName

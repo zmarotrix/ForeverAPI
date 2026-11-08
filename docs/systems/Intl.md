@@ -19,7 +19,7 @@ Namespace: `C_Intl`
 | ✅ | [C_Intl.GetCharacterProperties](#c_intlgetcharacterproperties) |  |  |
 | ✅ | [C_Intl.GetCurrencyFractionDigits](#c_intlgetcurrencyfractiondigits) |  |  |
 | ✅ | [C_Intl.GetCurrencyName](#c_intlgetcurrencyname) |  |  |
-| ✅ | [C_Intl.GetCurrentLocale](#c_intlgetcurrentlocale) |  |  |
+| ✅ | [C_Intl.GetCurrentLocale](#c_intlgetcurrentlocale) | 1 value |  |
 | ✅ | [C_Intl.GetDisplayName](#c_intlgetdisplayname) |  |  |
 | ✅ | [C_Intl.GetSortKey](#c_intlgetsortkey) |  |  |
 | ✅ | [C_Intl.IsNormalized](#c_intlisnormalized) |  |  |
@@ -211,6 +211,7 @@ Namespace: `C_Intl`
 - Status: ✅ verified (function)
 - Blizzard: Gets the current locale used by C_Intl.
 - `result`: The current locale ID.
+- Called out of combat: returned 1 value: `string`
 - Source: client docs `IntlDocumentation.lua`
 
 ### C_Intl.GetDisplayName

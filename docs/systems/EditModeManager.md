@@ -8,9 +8,9 @@ Namespace: `C_EditMode`
 |---|---|---|---|
 | ✅ | [C_EditMode.ConvertLayoutInfoToString](#c_editmodeconvertlayoutinfotostring) |  |  |
 | ✅ | [C_EditMode.ConvertStringToLayoutInfo](#c_editmodeconvertstringtolayoutinfo) |  |  |
-| ✅ | [C_EditMode.GetAccountSettings](#c_editmodegetaccountsettings) |  |  |
-| ✅ | [C_EditMode.GetEditModeDefaultLayout](#c_editmodegeteditmodedefaultlayout) |  |  |
-| ✅ | [C_EditMode.GetLayouts](#c_editmodegetlayouts) |  |  |
+| ✅ | [C_EditMode.GetAccountSettings](#c_editmodegetaccountsettings) | 1 value |  |
+| ✅ | [C_EditMode.GetEditModeDefaultLayout](#c_editmodegeteditmodedefaultlayout) | 1 value |  |
+| ✅ | [C_EditMode.GetLayouts](#c_editmodegetlayouts) | 1 value |  |
 | ✅ | [C_EditMode.IsValidLayoutName](#c_editmodeisvalidlayoutname) |  |  |
 | ✅ | [C_EditMode.OnEditModeExit](#c_editmodeoneditmodeexit) |  |  |
 | ✅ | [C_EditMode.OnLayoutAdded](#c_editmodeonlayoutadded) |  |  |
@@ -41,6 +41,7 @@ Namespace: `C_EditMode`
 `C_EditMode.GetAccountSettings() → accountSettings: EditModeSettingInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table}`
 - Source: client docs `EditModeManagerDocumentation.lua`
 
 ### C_EditMode.GetEditModeDefaultLayout
@@ -48,6 +49,7 @@ Namespace: `C_EditMode`
 `C_EditMode.GetEditModeDefaultLayout() → defaultLayout: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `EditModeManagerDocumentation.lua`
 
 ### C_EditMode.GetLayouts
@@ -55,6 +57,7 @@ Namespace: `C_EditMode`
 `C_EditMode.GetLayouts() → layoutInfo: EditModeLayouts`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{activeLayout=number,layouts=table}`
 - Source: client docs `EditModeManagerDocumentation.lua`
 
 ### C_EditMode.IsValidLayoutName
@@ -119,7 +122,7 @@ Namespace: `C_EditMode`
 - Status: ✅ verified
 - Payload: `layoutInfo: EditModeLayouts`, `reconcileLayouts: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `t,b`
+- Seen firing 3 times (0 in combat); argument kinds: `t,b`
 
 ## Types
 

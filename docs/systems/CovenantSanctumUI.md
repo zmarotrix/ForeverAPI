@@ -6,21 +6,21 @@ Namespace: `C_CovenantSanctumUI`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_CovenantSanctumUI.CanAccessReservoir](#c_covenantsanctumuicanaccessreservoir) |  |  |
-| ✅ | [C_CovenantSanctumUI.CanDepositAnima](#c_covenantsanctumuicandepositanima) |  |  |
+| ✅ | [C_CovenantSanctumUI.CanAccessReservoir](#c_covenantsanctumuicanaccessreservoir) | 1 value |  |
+| ✅ | [C_CovenantSanctumUI.CanDepositAnima](#c_covenantsanctumuicandepositanima) | 1 value |  |
 | ✅ | [C_CovenantSanctumUI.DepositAnima](#c_covenantsanctumuidepositanima) |  |  |
 | ✅ | [C_CovenantSanctumUI.EndInteraction](#c_covenantsanctumuiendinteraction) |  |  |
-| ✅ | [C_CovenantSanctumUI.GetAnimaInfo](#c_covenantsanctumuigetanimainfo) |  |  |
-| ✅ | [C_CovenantSanctumUI.GetCurrentTalentTreeID](#c_covenantsanctumuigetcurrenttalenttreeid) |  |  |
-| ✅ | [C_CovenantSanctumUI.GetFeatures](#c_covenantsanctumuigetfeatures) |  |  |
-| ✅ | [C_CovenantSanctumUI.GetRenownLevel](#c_covenantsanctumuigetrenownlevel) |  |  |
+| ✅ | [C_CovenantSanctumUI.GetAnimaInfo](#c_covenantsanctumuigetanimainfo) | 2 values |  |
+| ✅ | [C_CovenantSanctumUI.GetCurrentTalentTreeID](#c_covenantsanctumuigetcurrenttalenttreeid) | 1 value |  |
+| ✅ | [C_CovenantSanctumUI.GetFeatures](#c_covenantsanctumuigetfeatures) | 1 value |  |
+| ✅ | [C_CovenantSanctumUI.GetRenownLevel](#c_covenantsanctumuigetrenownlevel) | 1 value |  |
 | ✅ | [C_CovenantSanctumUI.GetRenownLevels](#c_covenantsanctumuigetrenownlevels) |  |  |
 | ✅ | [C_CovenantSanctumUI.GetRenownRewardsForLevel](#c_covenantsanctumuigetrenownrewardsforlevel) |  |  |
-| ✅ | [C_CovenantSanctumUI.GetSanctumType](#c_covenantsanctumuigetsanctumtype) |  |  |
-| ✅ | [C_CovenantSanctumUI.GetSoulCurrencies](#c_covenantsanctumuigetsoulcurrencies) |  |  |
-| ✅ | [C_CovenantSanctumUI.HasMaximumRenown](#c_covenantsanctumuihasmaximumrenown) |  |  |
-| ✅ | [C_CovenantSanctumUI.IsPlayerInRenownCatchUpMode](#c_covenantsanctumuiisplayerinrenowncatchupmode) |  |  |
-| ✅ | [C_CovenantSanctumUI.IsWeeklyRenownCapped](#c_covenantsanctumuiisweeklyrenowncapped) |  |  |
+| ✅ | [C_CovenantSanctumUI.GetSanctumType](#c_covenantsanctumuigetsanctumtype) | 1 value |  |
+| ✅ | [C_CovenantSanctumUI.GetSoulCurrencies](#c_covenantsanctumuigetsoulcurrencies) | 1 value |  |
+| ✅ | [C_CovenantSanctumUI.HasMaximumRenown](#c_covenantsanctumuihasmaximumrenown) | 1 value |  |
+| ✅ | [C_CovenantSanctumUI.IsPlayerInRenownCatchUpMode](#c_covenantsanctumuiisplayerinrenowncatchupmode) | 1 value |  |
+| ✅ | [C_CovenantSanctumUI.IsWeeklyRenownCapped](#c_covenantsanctumuiisweeklyrenowncapped) | 1 value |  |
 | ✅ | [C_CovenantSanctumUI.RequestCatchUpState](#c_covenantsanctumuirequestcatchupstate) |  |  |
 
 ### C_CovenantSanctumUI.CanAccessReservoir
@@ -28,6 +28,7 @@ Namespace: `C_CovenantSanctumUI`
 `C_CovenantSanctumUI.CanAccessReservoir() → canAccess: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `CovenantSanctumDocumentation.lua`
 
 ### C_CovenantSanctumUI.CanDepositAnima
@@ -35,6 +36,7 @@ Namespace: `C_CovenantSanctumUI`
 `C_CovenantSanctumUI.CanDepositAnima() → canDeposit: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `CovenantSanctumDocumentation.lua`
 
 ### C_CovenantSanctumUI.DepositAnima
@@ -56,6 +58,7 @@ Namespace: `C_CovenantSanctumUI`
 `C_CovenantSanctumUI.GetAnimaInfo() → currencyID: number, maxDisplayableValue: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `number`, `number`
 - Source: client docs `CovenantSanctumDocumentation.lua`
 
 ### C_CovenantSanctumUI.GetCurrentTalentTreeID
@@ -63,6 +66,7 @@ Namespace: `C_CovenantSanctumUI`
 `C_CovenantSanctumUI.GetCurrentTalentTreeID() → currentTalentTreeID: number?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `CovenantSanctumDocumentation.lua`
 
 ### C_CovenantSanctumUI.GetFeatures
@@ -70,6 +74,7 @@ Namespace: `C_CovenantSanctumUI`
 `C_CovenantSanctumUI.GetFeatures() → features: CovenantSanctumFeatureInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `CovenantSanctumDocumentation.lua`
 
 ### C_CovenantSanctumUI.GetRenownLevel
@@ -77,6 +82,7 @@ Namespace: `C_CovenantSanctumUI`
 `C_CovenantSanctumUI.GetRenownLevel() → level: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `CovenantSanctumDocumentation.lua`
 
 ### C_CovenantSanctumUI.GetRenownLevels
@@ -100,6 +106,7 @@ Namespace: `C_CovenantSanctumUI`
 `C_CovenantSanctumUI.GetSanctumType() → sanctumType: GarrTalentFeatureSubtype?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `CovenantSanctumDocumentation.lua`
 
 ### C_CovenantSanctumUI.GetSoulCurrencies
@@ -107,6 +114,7 @@ Namespace: `C_CovenantSanctumUI`
 `C_CovenantSanctumUI.GetSoulCurrencies() → currencyIDs: number[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `CovenantSanctumDocumentation.lua`
 
 ### C_CovenantSanctumUI.HasMaximumRenown
@@ -114,6 +122,7 @@ Namespace: `C_CovenantSanctumUI`
 `C_CovenantSanctumUI.HasMaximumRenown() → hasMaxRenown: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `CovenantSanctumDocumentation.lua`
 
 ### C_CovenantSanctumUI.IsPlayerInRenownCatchUpMode
@@ -121,6 +130,7 @@ Namespace: `C_CovenantSanctumUI`
 `C_CovenantSanctumUI.IsPlayerInRenownCatchUpMode() → isInCatchUpMode: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `CovenantSanctumDocumentation.lua`
 
 ### C_CovenantSanctumUI.IsWeeklyRenownCapped
@@ -128,6 +138,7 @@ Namespace: `C_CovenantSanctumUI`
 `C_CovenantSanctumUI.IsWeeklyRenownCapped() → isWeeklyCapped: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `CovenantSanctumDocumentation.lua`
 
 ### C_CovenantSanctumUI.RequestCatchUpState

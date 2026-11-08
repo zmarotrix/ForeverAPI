@@ -1,6 +1,6 @@
 # Restrictions seen in game
 
-- Out of combat run: not run; restrictions active at start: unknown
+- Out of combat run: done; restrictions active at start: none
 - In combat run: not run; restrictions active at start: unknown
 
 ## Getters that answered differently in combat
@@ -12,6 +12,14 @@
 
 Getters whose every return was secret even out of combat.
 
+- `UnitGetIncomingHeals`
+- `UnitGetTotalAbsorbs`
+- `UnitGetTotalHealAbsorbs`
+- `UnitHealth`
+- `UnitHealthMissing`
+- `UnitHealthPercent`
+- `UnitInRange`
+- `UnitSpellTargetName`
 
 ## Blocked actions
 
@@ -23,6 +31,34 @@ Getters whose every return was secret even out of combat.
 - ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
 - ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
 - ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `event:COMBAT_LOG_EVENT`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `event:COMBAT_LOG_EVENT_UNFILTERED`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `event:UNIT_PING_PIN_ADDED`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `event:UNIT_PING_PIN_REMOVED`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `C_Discord.GetDiscordUserID`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `C_Discord.GetDisplayNameType`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `C_Discord.GetGuildLinkStatus`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `C_Discord.GetNumDiscordServers`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `C_Discord.IsGuildChannelLinked`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `C_Discord.IsUserOAuthed`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `C_HousingDecor.GetAllPlacedDecor`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `C_Navigation.GetNearestPartyMemberToken`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `C_SocialRestrictions.IsAgeVerificationRestrictedMinor`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `C_Spell.CancelAutoRepeatSpell`
+- ADDON_ACTION_BLOCKED: `UNKNOWN()` during `CancelLogout`
+- ADDON_ACTION_BLOCKED: `UNKNOWN()` during `CancelTradeAccept`
 
 ## Documented restriction flags
 

@@ -6,15 +6,15 @@ Namespace: `C_EventScheduler`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_EventScheduler.CanShowEvents](#c_eventschedulercanshowevents) |  |  |
+| ✅ | [C_EventScheduler.CanShowEvents](#c_eventschedulercanshowevents) | 1 value |  |
 | ✅ | [C_EventScheduler.ClearReminder](#c_eventschedulerclearreminder) |  |  |
-| ✅ | [C_EventScheduler.GetActiveContinentName](#c_eventschedulergetactivecontinentname) |  |  |
+| ✅ | [C_EventScheduler.GetActiveContinentName](#c_eventschedulergetactivecontinentname) | 0 values |  |
 | ✅ | [C_EventScheduler.GetEventUiMapID](#c_eventschedulergeteventuimapid) |  |  |
 | ✅ | [C_EventScheduler.GetEventZoneName](#c_eventschedulergeteventzonename) |  |  |
-| ✅ | [C_EventScheduler.GetOngoingEvents](#c_eventschedulergetongoingevents) |  |  |
-| ✅ | [C_EventScheduler.GetScheduledEvents](#c_eventschedulergetscheduledevents) |  |  |
-| ✅ | [C_EventScheduler.HasData](#c_eventschedulerhasdata) |  |  |
-| ✅ | [C_EventScheduler.HasSavedReminders](#c_eventschedulerhassavedreminders) |  |  |
+| ✅ | [C_EventScheduler.GetOngoingEvents](#c_eventschedulergetongoingevents) | 0 values |  |
+| ✅ | [C_EventScheduler.GetScheduledEvents](#c_eventschedulergetscheduledevents) | 0 values |  |
+| ✅ | [C_EventScheduler.HasData](#c_eventschedulerhasdata) | 1 value |  |
+| ✅ | [C_EventScheduler.HasSavedReminders](#c_eventschedulerhassavedreminders) | 1 value |  |
 | ✅ | [C_EventScheduler.RequestEvents](#c_eventschedulerrequestevents) |  |  |
 | ✅ | [C_EventScheduler.SetReminder](#c_eventschedulersetreminder) |  |  |
 
@@ -24,6 +24,7 @@ Namespace: `C_EventScheduler`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns true if there are any events eligible to show for the player.
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `EventSchedulerUIDocumentation.lua`
 
 ### C_EventScheduler.ClearReminder
@@ -42,6 +43,7 @@ Namespace: `C_EventScheduler`
 - Status: ✅ verified (function)
 - Blizzard: Returns the name of the continent with current events
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `EventSchedulerUIDocumentation.lua`
 
 ### C_EventScheduler.GetEventUiMapID
@@ -69,6 +71,7 @@ Namespace: `C_EventScheduler`
 - Status: ✅ verified (function)
 - Blizzard: Will request data from the server on a throttle
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `EventSchedulerUIDocumentation.lua`
 
 ### C_EventScheduler.GetScheduledEvents
@@ -78,6 +81,7 @@ Namespace: `C_EventScheduler`
 - Status: ✅ verified (function)
 - Blizzard: Will request data from the server on a throttle
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `EventSchedulerUIDocumentation.lua`
 
 ### C_EventScheduler.HasData
@@ -86,6 +90,7 @@ Namespace: `C_EventScheduler`
 
 - Status: ✅ verified (function)
 - Blizzard: True if the server sent a list, even if the list had 0 events.
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `EventSchedulerUIDocumentation.lua`
 
 ### C_EventScheduler.HasSavedReminders
@@ -94,6 +99,7 @@ Namespace: `C_EventScheduler`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns whether there are any event reminders saved. Can include reminders that have expired since set and haven't gotten removed yet. Has to be called after cvars are loaded.
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `EventSchedulerUIDocumentation.lua`
 
 ### C_EventScheduler.RequestEvents
@@ -120,7 +126,7 @@ Namespace: `C_EventScheduler`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ## Types
 

@@ -6,7 +6,7 @@ Namespace: `C_CovenantCallings`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_CovenantCallings.AreCallingsUnlocked](#c_covenantcallingsarecallingsunlocked) |  |  |
+| ✅ | [C_CovenantCallings.AreCallingsUnlocked](#c_covenantcallingsarecallingsunlocked) | 1 value |  |
 | ✅ | [C_CovenantCallings.RequestCallings](#c_covenantcallingsrequestcallings) |  |  |
 
 ### C_CovenantCallings.AreCallingsUnlocked
@@ -14,6 +14,7 @@ Namespace: `C_CovenantCallings`
 `C_CovenantCallings.AreCallingsUnlocked() → unlocked: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `CovenantCallingsDocumentation.lua`
 
 ### C_CovenantCallings.RequestCallings
@@ -30,3 +31,4 @@ Namespace: `C_CovenantCallings`
 - Status: ✅ verified
 - Payload: `callings: BountyInfo[]`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `t`

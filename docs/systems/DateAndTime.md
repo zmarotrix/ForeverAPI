@@ -11,12 +11,12 @@ Namespace: `C_DateAndTime`
 | ✅ | [C_DateAndTime.AdjustTimeByMonths](#c_dateandtimeadjusttimebymonths) |  |  |
 | ✅ | [C_DateAndTime.CompareCalendarTime](#c_dateandtimecomparecalendartime) |  |  |
 | ✅ | [C_DateAndTime.GetCalendarTimeFromEpoch](#c_dateandtimegetcalendartimefromepoch) |  |  |
-| ✅ | [C_DateAndTime.GetCurrentCalendarTime](#c_dateandtimegetcurrentcalendartime) |  |  |
-| ✅ | [C_DateAndTime.GetSecondsUntilDailyReset](#c_dateandtimegetsecondsuntildailyreset) |  |  |
-| ✅ | [C_DateAndTime.GetSecondsUntilWeeklyReset](#c_dateandtimegetsecondsuntilweeklyreset) |  |  |
-| ✅ | [C_DateAndTime.GetServerTimeLocal](#c_dateandtimegetservertimelocal) |  |  |
-| ✅ | [C_DateAndTime.GetWeeklyResetStartTime](#c_dateandtimegetweeklyresetstarttime) |  |  |
-| ✅ | [C_DateAndTime.IsDayTime](#c_dateandtimeisdaytime) |  |  |
+| ✅ | [C_DateAndTime.GetCurrentCalendarTime](#c_dateandtimegetcurrentcalendartime) | 1 value |  |
+| ✅ | [C_DateAndTime.GetSecondsUntilDailyReset](#c_dateandtimegetsecondsuntildailyreset) | 1 value |  |
+| ✅ | [C_DateAndTime.GetSecondsUntilWeeklyReset](#c_dateandtimegetsecondsuntilweeklyreset) | 1 value |  |
+| ✅ | [C_DateAndTime.GetServerTimeLocal](#c_dateandtimegetservertimelocal) | 1 value |  |
+| ✅ | [C_DateAndTime.GetWeeklyResetStartTime](#c_dateandtimegetweeklyresetstarttime) | 1 value |  |
+| ✅ | [C_DateAndTime.IsDayTime](#c_dateandtimeisdaytime) | 1 value |  |
 
 ### C_DateAndTime.AdjustTimeByDays
 
@@ -64,6 +64,7 @@ Namespace: `C_DateAndTime`
 `C_DateAndTime.GetCurrentCalendarTime() → date: CalendarTime`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{hour=number,minute=number,month=number,monthDay=number,weekday=number,year=number}`
 - Source: client docs `DateAndTimeDocumentation.lua`
 
 ### C_DateAndTime.GetSecondsUntilDailyReset
@@ -71,6 +72,7 @@ Namespace: `C_DateAndTime`
 `C_DateAndTime.GetSecondsUntilDailyReset() → seconds: time_t`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `DateAndTimeDocumentation.lua`
 
 ### C_DateAndTime.GetSecondsUntilWeeklyReset
@@ -78,6 +80,7 @@ Namespace: `C_DateAndTime`
 `C_DateAndTime.GetSecondsUntilWeeklyReset() → seconds: time_t`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `DateAndTimeDocumentation.lua`
 
 ### C_DateAndTime.GetServerTimeLocal
@@ -85,6 +88,7 @@ Namespace: `C_DateAndTime`
 `C_DateAndTime.GetServerTimeLocal() → serverTimeLocal: time_t`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `DateAndTimeDocumentation.lua`
 
 ### C_DateAndTime.GetWeeklyResetStartTime
@@ -92,6 +96,7 @@ Namespace: `C_DateAndTime`
 `C_DateAndTime.GetWeeklyResetStartTime() → seconds: time_t`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `DateAndTimeDocumentation.lua`
 
 ### C_DateAndTime.IsDayTime
@@ -99,6 +104,7 @@ Namespace: `C_DateAndTime`
 `C_DateAndTime.IsDayTime() → isDayTime: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `DateAndTimeDocumentation.lua`
 
 ## Events
@@ -109,6 +115,7 @@ Namespace: `C_DateAndTime`
 - Payload: `isDayTime: bool`
 - Blizzard: Signaled when the game time transitions between day and night.
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `b`
 
 ## Types
 

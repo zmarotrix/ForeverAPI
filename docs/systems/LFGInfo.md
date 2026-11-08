@@ -7,28 +7,28 @@ Namespace: `C_LFGInfo`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_LFGInfo.AreCrossFactionGroupQueuesAllowed](#c_lfginfoarecrossfactiongroupqueuesallowed) |  |  |
-| ✅ | [C_LFGInfo.CanPlayerUseGroupFinder](#c_lfginfocanplayerusegroupfinder) |  |  |
-| ✅ | [C_LFGInfo.CanPlayerUseLFD](#c_lfginfocanplayeruselfd) |  |  |
-| ✅ | [C_LFGInfo.CanPlayerUseLFR](#c_lfginfocanplayeruselfr) |  |  |
-| ✅ | [C_LFGInfo.CanPlayerUsePVP](#c_lfginfocanplayerusepvp) |  |  |
-| ✅ | [C_LFGInfo.CanPlayerUsePremadeGroup](#c_lfginfocanplayerusepremadegroup) |  |  |
-| ✅ | [C_LFGInfo.CanPlayerUseScenarioFinder](#c_lfginfocanplayerusescenariofinder) |  |  |
+| ✅ | [C_LFGInfo.CanPlayerUseGroupFinder](#c_lfginfocanplayerusegroupfinder) | 2 values |  |
+| ✅ | [C_LFGInfo.CanPlayerUseLFD](#c_lfginfocanplayeruselfd) | 2 values |  |
+| ✅ | [C_LFGInfo.CanPlayerUseLFR](#c_lfginfocanplayeruselfr) | 2 values |  |
+| ✅ | [C_LFGInfo.CanPlayerUsePVP](#c_lfginfocanplayerusepvp) | 2 values |  |
+| ✅ | [C_LFGInfo.CanPlayerUsePremadeGroup](#c_lfginfocanplayerusepremadegroup) | 2 values |  |
+| ✅ | [C_LFGInfo.CanPlayerUseScenarioFinder](#c_lfginfocanplayerusescenariofinder) | 2 values |  |
 | ✅ | [C_LFGInfo.ConfirmLfgExpandSearch](#c_lfginfoconfirmlfgexpandsearch) |  |  |
 | ✅ | [C_LFGInfo.DoesActivePartyMeetPremadeLaunchCount](#c_lfginfodoesactivepartymeetpremadelaunchcount) |  |  |
 | ✅ | [C_LFGInfo.DoesCrossFactionQueueRequireFullPremade](#c_lfginfodoescrossfactionqueuerequirefullpremade) |  |  |
-| ✅ | [C_LFGInfo.GetActiveLFGDungeonName](#c_lfginfogetactivelfgdungeonname) |  |  |
+| ✅ | [C_LFGInfo.GetActiveLFGDungeonName](#c_lfginfogetactivelfgdungeonname) | 1 value |  |
 | ✅ | [C_LFGInfo.GetAllEntriesForCategory](#c_lfginfogetallentriesforcategory) |  |  |
 | ✅ | [C_LFGInfo.GetDungeonInfo](#c_lfginfogetdungeoninfo) |  |  |
-| ✅ | [C_LFGInfo.GetLFDLockStates](#c_lfginfogetlfdlockstates) |  |  |
+| ✅ | [C_LFGInfo.GetLFDLockStates](#c_lfginfogetlfdlockstates) | 1 value |  |
 | ✅ | [C_LFGInfo.GetLevelUpInstances](#c_lfginfogetlevelupinstances) |  |  |
-| ✅ | [C_LFGInfo.GetRoleCheckDifficultyDetails](#c_lfginfogetrolecheckdifficultydetails) |  |  |
+| ✅ | [C_LFGInfo.GetRoleCheckDifficultyDetails](#c_lfginfogetrolecheckdifficultydetails) | 2 values |  |
 | ✅ | [C_LFGInfo.HideNameFromUI](#c_lfginfohidenamefromui) |  |  |
-| ✅ | [C_LFGInfo.IsGroupFinderEnabled](#c_lfginfoisgroupfinderenabled) |  |  |
-| ✅ | [C_LFGInfo.IsInLFGFollowerDungeon](#c_lfginfoisinlfgfollowerdungeon) |  |  |
-| ✅ | [C_LFGInfo.IsInMatchmadeRaidWithoutRoleRequirements](#c_lfginfoisinmatchmaderaidwithoutrolerequirements) |  |  |
-| ✅ | [C_LFGInfo.IsLFDEnabled](#c_lfginfoislfdenabled) |  |  |
+| ✅ | [C_LFGInfo.IsGroupFinderEnabled](#c_lfginfoisgroupfinderenabled) | 1 value |  |
+| ✅ | [C_LFGInfo.IsInLFGFollowerDungeon](#c_lfginfoisinlfgfollowerdungeon) | 1 value |  |
+| ✅ | [C_LFGInfo.IsInMatchmadeRaidWithoutRoleRequirements](#c_lfginfoisinmatchmaderaidwithoutrolerequirements) | 1 value |  |
+| ✅ | [C_LFGInfo.IsLFDEnabled](#c_lfginfoislfdenabled) | 1 value |  |
 | ✅ | [C_LFGInfo.IsLFGFollowerDungeon](#c_lfginfoislfgfollowerdungeon) |  |  |
-| ✅ | [C_LFGInfo.IsLFREnabled](#c_lfginfoislfrenabled) |  |  |
+| ✅ | [C_LFGInfo.IsLFREnabled](#c_lfginfoislfrenabled) | 1 value |  |
 
 ### C_LFGInfo.AreCrossFactionGroupQueuesAllowed
 
@@ -43,6 +43,7 @@ Namespace: `C_LFGInfo`
 `C_LFGInfo.CanPlayerUseGroupFinder() → canUse: bool, failureReason: string`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `boolean`, `string`
 - Source: client docs `LFGInfoDocumentation.lua`
 
 ### C_LFGInfo.CanPlayerUseLFD
@@ -50,6 +51,7 @@ Namespace: `C_LFGInfo`
 `C_LFGInfo.CanPlayerUseLFD() → canUse: bool, failureReason: string`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `boolean`, `string`
 - Source: client docs `LFGInfoDocumentation.lua`
 
 ### C_LFGInfo.CanPlayerUseLFR
@@ -57,6 +59,7 @@ Namespace: `C_LFGInfo`
 `C_LFGInfo.CanPlayerUseLFR() → canUse: bool, failureReason: string`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `boolean`, `string`
 - Source: client docs `LFGInfoDocumentation.lua`
 
 ### C_LFGInfo.CanPlayerUsePVP
@@ -64,6 +67,7 @@ Namespace: `C_LFGInfo`
 `C_LFGInfo.CanPlayerUsePVP() → canUse: bool, failureReason: string`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `boolean`, `string`
 - Source: client docs `LFGInfoDocumentation.lua`
 
 ### C_LFGInfo.CanPlayerUsePremadeGroup
@@ -71,6 +75,7 @@ Namespace: `C_LFGInfo`
 `C_LFGInfo.CanPlayerUsePremadeGroup() → canUse: bool, failureReason: string`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `boolean`, `string`
 - Source: client docs `LFGInfoDocumentation.lua`
 
 ### C_LFGInfo.CanPlayerUseScenarioFinder
@@ -78,6 +83,7 @@ Namespace: `C_LFGInfo`
 `C_LFGInfo.CanPlayerUseScenarioFinder() → canUse: bool, failureReason: string`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `boolean`, `string`
 - Source: client docs `LFGInfoDocumentation.lua`
 
 ### C_LFGInfo.ConfirmLfgExpandSearch
@@ -108,6 +114,7 @@ Namespace: `C_LFGInfo`
 `C_LFGInfo.GetActiveLFGDungeonName() → name: string`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `string`
 - Source: client docs `LFGInfoDocumentation.lua`
 
 ### C_LFGInfo.GetAllEntriesForCategory
@@ -132,6 +139,7 @@ Namespace: `C_LFGInfo`
 `C_LFGInfo.GetLFDLockStates() → lockInfo: LFGLockInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `LFGInfoDocumentation.lua`
 
 ### C_LFGInfo.GetLevelUpInstances
@@ -147,6 +155,7 @@ Namespace: `C_LFGInfo`
 `C_LFGInfo.GetRoleCheckDifficultyDetails() → maxLevel: number?, isLevelReduced: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `nil`, `boolean`
 - Source: client docs `LFGInfoDocumentation.lua`
 
 ### C_LFGInfo.HideNameFromUI
@@ -162,6 +171,7 @@ Namespace: `C_LFGInfo`
 `C_LFGInfo.IsGroupFinderEnabled() → enabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `LFGInfoDocumentation.lua`
 
 ### C_LFGInfo.IsInLFGFollowerDungeon
@@ -169,6 +179,7 @@ Namespace: `C_LFGInfo`
 `C_LFGInfo.IsInLFGFollowerDungeon() → result: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `LFGInfoDocumentation.lua`
 
 ### C_LFGInfo.IsInMatchmadeRaidWithoutRoleRequirements
@@ -176,6 +187,7 @@ Namespace: `C_LFGInfo`
 `C_LFGInfo.IsInMatchmadeRaidWithoutRoleRequirements() → result: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `LFGInfoDocumentation.lua`
 
 ### C_LFGInfo.IsLFDEnabled
@@ -183,6 +195,7 @@ Namespace: `C_LFGInfo`
 `C_LFGInfo.IsLFDEnabled() → enabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `LFGInfoDocumentation.lua`
 
 ### C_LFGInfo.IsLFGFollowerDungeon
@@ -198,6 +211,7 @@ Namespace: `C_LFGInfo`
 `C_LFGInfo.IsLFREnabled() → enabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `LFGInfoDocumentation.lua`
 
 ## Events
@@ -225,7 +239,7 @@ Namespace: `C_LFGInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### LFG_ENABLED_STATE_CHANGED
 
@@ -244,7 +258,7 @@ Namespace: `C_LFGInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### LFG_OFFER_CONTINUE
 
@@ -371,7 +385,7 @@ Namespace: `C_LFGInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### SHOW_LFG_EXPAND_SEARCH_PROMPT
 

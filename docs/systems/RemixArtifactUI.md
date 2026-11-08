@@ -8,11 +8,11 @@ Namespace: `C_RemixArtifactUI`
 |---|---|---|---|
 | ✅ | [C_RemixArtifactUI.ClearRemixArtifactItem](#c_remixartifactuiclearremixartifactitem) |  |  |
 | ✅ | [C_RemixArtifactUI.GetAppearanceInfoByID](#c_remixartifactuigetappearanceinfobyid) |  |  |
-| ✅ | [C_RemixArtifactUI.GetArtifactArtInfo](#c_remixartifactuigetartifactartinfo) |  |  |
-| ✅ | [C_RemixArtifactUI.GetArtifactItemInfo](#c_remixartifactuigetartifactiteminfo) |  |  |
-| ✅ | [C_RemixArtifactUI.GetCurrArtifactItemID](#c_remixartifactuigetcurrartifactitemid) |  |  |
-| ✅ | [C_RemixArtifactUI.GetCurrItemSpecIndex](#c_remixartifactuigetcurritemspecindex) |  |  |
-| ✅ | [C_RemixArtifactUI.GetCurrTraitTreeID](#c_remixartifactuigetcurrtraittreeid) |  |  |
+| ✅ | [C_RemixArtifactUI.GetArtifactArtInfo](#c_remixartifactuigetartifactartinfo) | 0 values |  |
+| ✅ | [C_RemixArtifactUI.GetArtifactItemInfo](#c_remixartifactuigetartifactiteminfo) | 0 values |  |
+| ✅ | [C_RemixArtifactUI.GetCurrArtifactItemID](#c_remixartifactuigetcurrartifactitemid) | 1 value |  |
+| ✅ | [C_RemixArtifactUI.GetCurrItemSpecIndex](#c_remixartifactuigetcurritemspecindex) | 1 value |  |
+| ✅ | [C_RemixArtifactUI.GetCurrTraitTreeID](#c_remixartifactuigetcurrtraittreeid) | 1 value |  |
 | ✅ | [C_RemixArtifactUI.ItemInSlotIsRemixArtifact](#c_remixartifactuiiteminslotisremixartifact) |  |  |
 
 ### C_RemixArtifactUI.ClearRemixArtifactItem
@@ -37,6 +37,7 @@ Namespace: `C_RemixArtifactUI`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `RemixArtifactUIDocumentation.lua`
 
 ### C_RemixArtifactUI.GetArtifactItemInfo
@@ -45,6 +46,7 @@ Namespace: `C_RemixArtifactUI`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `RemixArtifactUIDocumentation.lua`
 
 ### C_RemixArtifactUI.GetCurrArtifactItemID
@@ -52,6 +54,7 @@ Namespace: `C_RemixArtifactUI`
 `C_RemixArtifactUI.GetCurrArtifactItemID() → reqitemID: number?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `RemixArtifactUIDocumentation.lua`
 
 ### C_RemixArtifactUI.GetCurrItemSpecIndex
@@ -59,6 +62,7 @@ Namespace: `C_RemixArtifactUI`
 `C_RemixArtifactUI.GetCurrItemSpecIndex() → specIndex: luaIndex?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `RemixArtifactUIDocumentation.lua`
 
 ### C_RemixArtifactUI.GetCurrTraitTreeID
@@ -66,6 +70,7 @@ Namespace: `C_RemixArtifactUI`
 `C_RemixArtifactUI.GetCurrTraitTreeID() → traitTreeID: number?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `RemixArtifactUIDocumentation.lua`
 
 ### C_RemixArtifactUI.ItemInSlotIsRemixArtifact

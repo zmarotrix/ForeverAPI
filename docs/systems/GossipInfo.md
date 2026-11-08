@@ -8,19 +8,19 @@ Namespace: `C_GossipInfo`
 |---|---|---|---|
 | ✅ | [C_GossipInfo.CloseGossip](#c_gossipinfoclosegossip) |  |  |
 | ✅ | [C_GossipInfo.ForceGossip](#c_gossipinfoforcegossip) |  |  |
-| ✅ | [C_GossipInfo.GetActiveQuests](#c_gossipinfogetactivequests) |  |  |
-| ✅ | [C_GossipInfo.GetAvailableQuests](#c_gossipinfogetavailablequests) |  |  |
-| ✅ | [C_GossipInfo.GetCompletedOptionDescriptionString](#c_gossipinfogetcompletedoptiondescriptionstring) |  |  |
-| ✅ | [C_GossipInfo.GetCustomGossipDescriptionString](#c_gossipinfogetcustomgossipdescriptionstring) |  |  |
+| ✅ | [C_GossipInfo.GetActiveQuests](#c_gossipinfogetactivequests) | 1 value |  |
+| ✅ | [C_GossipInfo.GetAvailableQuests](#c_gossipinfogetavailablequests) | 1 value |  |
+| ✅ | [C_GossipInfo.GetCompletedOptionDescriptionString](#c_gossipinfogetcompletedoptiondescriptionstring) | 1 value |  |
+| ✅ | [C_GossipInfo.GetCustomGossipDescriptionString](#c_gossipinfogetcustomgossipdescriptionstring) | 1 value |  |
 | ✅ | [C_GossipInfo.GetFriendshipReputation](#c_gossipinfogetfriendshipreputation) |  |  |
 | ✅ | [C_GossipInfo.GetFriendshipReputationRanks](#c_gossipinfogetfriendshipreputationranks) |  |  |
-| ✅ | [C_GossipInfo.GetNumActiveQuests](#c_gossipinfogetnumactivequests) |  |  |
-| ✅ | [C_GossipInfo.GetNumAvailableQuests](#c_gossipinfogetnumavailablequests) |  |  |
+| ✅ | [C_GossipInfo.GetNumActiveQuests](#c_gossipinfogetnumactivequests) | 1 value |  |
+| ✅ | [C_GossipInfo.GetNumAvailableQuests](#c_gossipinfogetnumavailablequests) | 1 value |  |
 | ✅ | [C_GossipInfo.GetOptionUIWidgetSetsAndTypesByOptionID](#c_gossipinfogetoptionuiwidgetsetsandtypesbyoptionid) |  |  |
-| ✅ | [C_GossipInfo.GetOptions](#c_gossipinfogetoptions) |  |  |
+| ✅ | [C_GossipInfo.GetOptions](#c_gossipinfogetoptions) | 1 value |  |
 | ✅ | [C_GossipInfo.GetPoiForUiMapID](#c_gossipinfogetpoiforuimapid) |  |  |
 | ✅ | [C_GossipInfo.GetPoiInfo](#c_gossipinfogetpoiinfo) |  |  |
-| ✅ | [C_GossipInfo.GetText](#c_gossipinfogettext) |  |  |
+| ✅ | [C_GossipInfo.GetText](#c_gossipinfogettext) | 1 value |  |
 | ✅ | [C_GossipInfo.RefreshOptions](#c_gossipinforefreshoptions) |  |  |
 | ✅ | [C_GossipInfo.SelectActiveQuest](#c_gossipinfoselectactivequest) |  |  |
 | ✅ | [C_GossipInfo.SelectAvailableQuest](#c_gossipinfoselectavailablequest) |  |  |
@@ -46,6 +46,7 @@ Namespace: `C_GossipInfo`
 `C_GossipInfo.GetActiveQuests() → info: GossipQuestUIInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `GossipInfoDocumentation.lua`
 
 ### C_GossipInfo.GetAvailableQuests
@@ -53,6 +54,7 @@ Namespace: `C_GossipInfo`
 `C_GossipInfo.GetAvailableQuests() → info: GossipQuestUIInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `GossipInfoDocumentation.lua`
 
 ### C_GossipInfo.GetCompletedOptionDescriptionString
@@ -60,6 +62,7 @@ Namespace: `C_GossipInfo`
 `C_GossipInfo.GetCompletedOptionDescriptionString() → description: string?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `GossipInfoDocumentation.lua`
 
 ### C_GossipInfo.GetCustomGossipDescriptionString
@@ -67,6 +70,7 @@ Namespace: `C_GossipInfo`
 `C_GossipInfo.GetCustomGossipDescriptionString() → description: string?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `GossipInfoDocumentation.lua`
 
 ### C_GossipInfo.GetFriendshipReputation
@@ -91,6 +95,7 @@ Namespace: `C_GossipInfo`
 `C_GossipInfo.GetNumActiveQuests() → numQuests: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `GossipInfoDocumentation.lua`
 
 ### C_GossipInfo.GetNumAvailableQuests
@@ -98,6 +103,7 @@ Namespace: `C_GossipInfo`
 `C_GossipInfo.GetNumAvailableQuests() → numQuests: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `GossipInfoDocumentation.lua`
 
 ### C_GossipInfo.GetOptionUIWidgetSetsAndTypesByOptionID
@@ -113,6 +119,7 @@ Namespace: `C_GossipInfo`
 `C_GossipInfo.GetOptions() → info: GossipOptionUIInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `GossipInfoDocumentation.lua`
 
 ### C_GossipInfo.GetPoiForUiMapID
@@ -136,6 +143,7 @@ Namespace: `C_GossipInfo`
 `C_GossipInfo.GetText() → gossipText: cstring`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `string`
 - Source: client docs `GossipInfoDocumentation.lua`
 
 ### C_GossipInfo.RefreshOptions

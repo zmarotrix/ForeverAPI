@@ -7,9 +7,9 @@ Namespace: `C_ToyBoxInfo`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_ToyBoxInfo.ClearFanfare](#c_toyboxinfoclearfanfare) |  |  |
-| ✅ | [C_ToyBoxInfo.HasAnyToy](#c_toyboxinfohasanytoy) |  |  |
+| ✅ | [C_ToyBoxInfo.HasAnyToy](#c_toyboxinfohasanytoy) | 1 value |  |
 | ✅ | [C_ToyBoxInfo.IsToySourceValid](#c_toyboxinfoistoysourcevalid) |  |  |
-| ✅ | [C_ToyBoxInfo.IsUsingDefaultFilters](#c_toyboxinfoisusingdefaultfilters) |  |  |
+| ✅ | [C_ToyBoxInfo.IsUsingDefaultFilters](#c_toyboxinfoisusingdefaultfilters) | 1 value |  |
 | ✅ | [C_ToyBoxInfo.NeedsFanfare](#c_toyboxinfoneedsfanfare) |  |  |
 | ✅ | [C_ToyBoxInfo.SetDefaultFilters](#c_toyboxinfosetdefaultfilters) |  |  |
 
@@ -26,6 +26,7 @@ Namespace: `C_ToyBoxInfo`
 `C_ToyBoxInfo.HasAnyToy() → hasToy: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ToyBoxInfoDocumentation.lua`
 
 ### C_ToyBoxInfo.IsToySourceValid
@@ -41,6 +42,7 @@ Namespace: `C_ToyBoxInfo`
 `C_ToyBoxInfo.IsUsingDefaultFilters() → isUsingDefaultFilters: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ToyBoxInfoDocumentation.lua`
 
 ### C_ToyBoxInfo.NeedsFanfare
@@ -72,4 +74,4 @@ Namespace: `C_ToyBoxInfo`
 - Payload: `itemID: number?`, `isNew: bool?`, `hasFanfare: bool?`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `-,-,-`
+- Seen firing 16 times (0 in combat); argument kinds: `-,-,-` / `n,b,b`

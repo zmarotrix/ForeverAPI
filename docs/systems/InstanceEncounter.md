@@ -6,16 +6,17 @@ Namespace: `C_InstanceEncounter`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_InstanceEncounter.IsEncounterInProgress](#c_instanceencounterisencounterinprogress) |  |  |
-| ✅ | [C_InstanceEncounter.IsEncounterLimitingResurrections](#c_instanceencounterisencounterlimitingresurrections) |  |  |
-| ✅ | [C_InstanceEncounter.IsEncounterSuppressingRelease](#c_instanceencounterisencountersuppressingrelease) |  |  |
-| ✅ | [C_InstanceEncounter.ShouldShowTimelineForEncounter](#c_instanceencountershouldshowtimelineforencounter) |  |  |
+| ✅ | [C_InstanceEncounter.IsEncounterInProgress](#c_instanceencounterisencounterinprogress) | 1 value |  |
+| ✅ | [C_InstanceEncounter.IsEncounterLimitingResurrections](#c_instanceencounterisencounterlimitingresurrections) | 1 value |  |
+| ✅ | [C_InstanceEncounter.IsEncounterSuppressingRelease](#c_instanceencounterisencountersuppressingrelease) | 1 value |  |
+| ✅ | [C_InstanceEncounter.ShouldShowTimelineForEncounter](#c_instanceencountershouldshowtimelineforencounter) | 1 value |  |
 
 ### C_InstanceEncounter.IsEncounterInProgress
 
 `C_InstanceEncounter.IsEncounterInProgress() → isInProgress: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `InstanceEncounterDocumentation.lua`
 
 ### C_InstanceEncounter.IsEncounterLimitingResurrections
@@ -23,6 +24,7 @@ Namespace: `C_InstanceEncounter`
 `C_InstanceEncounter.IsEncounterLimitingResurrections() → isLimitingResurrections: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `InstanceEncounterDocumentation.lua`
 
 ### C_InstanceEncounter.IsEncounterSuppressingRelease
@@ -30,6 +32,7 @@ Namespace: `C_InstanceEncounter`
 `C_InstanceEncounter.IsEncounterSuppressingRelease() → isSuppressingRelease: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `InstanceEncounterDocumentation.lua`
 
 ### C_InstanceEncounter.ShouldShowTimelineForEncounter
@@ -37,6 +40,7 @@ Namespace: `C_InstanceEncounter`
 `C_InstanceEncounter.ShouldShowTimelineForEncounter() → shouldShow: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `InstanceEncounterDocumentation.lua`
 
 ## Events

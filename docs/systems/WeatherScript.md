@@ -6,7 +6,7 @@ Namespace: `C_Weather`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_Weather.GetCurrentWeather](#c_weathergetcurrentweather) |  |  |
+| ✅ | [C_Weather.GetCurrentWeather](#c_weathergetcurrentweather) | 1 value |  |
 
 ### C_Weather.GetCurrentWeather
 
@@ -14,6 +14,7 @@ Namespace: `C_Weather`
 
 - Status: ✅ verified (function)
 - Blizzard: C_Weather the outlook is favorable.
+- Called out of combat: returned 1 value: `table{intensity=number,type=number}`
 - Source: client docs `WeatherScriptDocumentation.lua`
 
 ## Events
@@ -24,6 +25,7 @@ Namespace: `C_Weather`
 - Payload: none
 - Blizzard: The weather has taken a turn.
 - unique event (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ## Types
 

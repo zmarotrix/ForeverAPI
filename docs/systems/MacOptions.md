@@ -6,12 +6,12 @@ Namespace: `C_MacOptions`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ⛔ | [C_MacOptions.AreOSShortcutsDisabled](#c_macoptionsareosshortcutsdisabled) |  |  |
-| ⛔ | [C_MacOptions.GetGameBundleName](#c_macoptionsgetgamebundlename) |  |  |
-| ⛔ | [C_MacOptions.HasNewStyleInputMonitoring](#c_macoptionshasnewstyleinputmonitoring) |  |  |
-| ⛔ | [C_MacOptions.IsInputMonitoringEnabled](#c_macoptionsisinputmonitoringenabled) |  |  |
-| ⛔ | [C_MacOptions.IsMicrophoneEnabled](#c_macoptionsismicrophoneenabled) |  |  |
-| ⛔ | [C_MacOptions.IsUniversalAccessEnabled](#c_macoptionsisuniversalaccessenabled) |  |  |
+| ⛔ | [C_MacOptions.AreOSShortcutsDisabled](#c_macoptionsareosshortcutsdisabled) | missing |  |
+| ⛔ | [C_MacOptions.GetGameBundleName](#c_macoptionsgetgamebundlename) | missing |  |
+| ⛔ | [C_MacOptions.HasNewStyleInputMonitoring](#c_macoptionshasnewstyleinputmonitoring) | missing |  |
+| ⛔ | [C_MacOptions.IsInputMonitoringEnabled](#c_macoptionsisinputmonitoringenabled) | missing |  |
+| ⛔ | [C_MacOptions.IsMicrophoneEnabled](#c_macoptionsismicrophoneenabled) | missing |  |
+| ⛔ | [C_MacOptions.IsUniversalAccessEnabled](#c_macoptionsisuniversalaccessenabled) | missing |  |
 | ⛔ | [C_MacOptions.OpenInputMonitoring](#c_macoptionsopeninputmonitoring) |  |  |
 | ⛔ | [C_MacOptions.OpenMicrophoneRequestDialogue](#c_macoptionsopenmicrophonerequestdialogue) |  |  |
 | ⛔ | [C_MacOptions.OpenUniversalAccess](#c_macoptionsopenuniversalaccess) |  |  |
@@ -22,6 +22,7 @@ Namespace: `C_MacOptions`
 `C_MacOptions.AreOSShortcutsDisabled() → osShortcutsDisabledCVar: bool?, osShortcutsDisabled: bool`
 
 - Status: ⛔ in Blizzard's docs, not in game
+- Called out of combat: missing at call time
 - Source: client docs `MacOptionsDocumentation.lua`
 
 ### C_MacOptions.GetGameBundleName
@@ -29,6 +30,7 @@ Namespace: `C_MacOptions`
 `C_MacOptions.GetGameBundleName() → result: cstring`
 
 - Status: ⛔ in Blizzard's docs, not in game
+- Called out of combat: missing at call time
 - Source: client docs `MacOptionsDocumentation.lua`
 
 ### C_MacOptions.HasNewStyleInputMonitoring
@@ -36,6 +38,7 @@ Namespace: `C_MacOptions`
 `C_MacOptions.HasNewStyleInputMonitoring() → result: bool`
 
 - Status: ⛔ in Blizzard's docs, not in game
+- Called out of combat: missing at call time
 - Source: client docs `MacOptionsDocumentation.lua`
 
 ### C_MacOptions.IsInputMonitoringEnabled
@@ -43,6 +46,7 @@ Namespace: `C_MacOptions`
 `C_MacOptions.IsInputMonitoringEnabled() → result: bool`
 
 - Status: ⛔ in Blizzard's docs, not in game
+- Called out of combat: missing at call time
 - Source: client docs `MacOptionsDocumentation.lua`
 
 ### C_MacOptions.IsMicrophoneEnabled
@@ -50,6 +54,7 @@ Namespace: `C_MacOptions`
 `C_MacOptions.IsMicrophoneEnabled() → result: bool`
 
 - Status: ⛔ in Blizzard's docs, not in game
+- Called out of combat: missing at call time
 - Source: client docs `MacOptionsDocumentation.lua`
 
 ### C_MacOptions.IsUniversalAccessEnabled
@@ -57,6 +62,7 @@ Namespace: `C_MacOptions`
 `C_MacOptions.IsUniversalAccessEnabled() → result: bool`
 
 - Status: ⛔ in Blizzard's docs, not in game
+- Called out of combat: missing at call time
 - Source: client docs `MacOptionsDocumentation.lua`
 
 ### C_MacOptions.OpenInputMonitoring

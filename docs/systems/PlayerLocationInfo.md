@@ -11,7 +11,7 @@ Namespace: `C_PlayerInfo`
 | ✅ | [C_PlayerInfo.GetName](#c_playerinfogetname) |  |  |
 | ✅ | [C_PlayerInfo.GetRace](#c_playerinfogetrace) |  |  |
 | ✅ | [C_PlayerInfo.GetSex](#c_playerinfogetsex) |  |  |
-| ✅ | [C_PlayerInfo.IsConnected](#c_playerinfoisconnected) |  |  |
+| ✅ | [C_PlayerInfo.IsConnected](#c_playerinfoisconnected) | 1 value |  |
 | ✅ | [C_PlayerInfo.UnitIsSameServer](#c_playerinfounitissameserver) |  |  |
 
 ### C_PlayerInfo.GUIDIsPlayer
@@ -61,6 +61,7 @@ Namespace: `C_PlayerInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `PlayerLocationDocumentation.lua`
 
 ### C_PlayerInfo.UnitIsSameServer

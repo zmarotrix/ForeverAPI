@@ -9,19 +9,19 @@ Namespace: `C_SuperTrack`
 | ✅ | [C_SuperTrack.ClearAllSuperTracked](#c_supertrackclearallsupertracked) |  |  |
 | ✅ | [C_SuperTrack.ClearSuperTrackedContent](#c_supertrackclearsupertrackedcontent) |  |  |
 | ✅ | [C_SuperTrack.ClearSuperTrackedMapPin](#c_supertrackclearsupertrackedmappin) |  |  |
-| ✅ | [C_SuperTrack.GetHighestPrioritySuperTrackingType](#c_supertrackgethighestprioritysupertrackingtype) |  |  |
+| ✅ | [C_SuperTrack.GetHighestPrioritySuperTrackingType](#c_supertrackgethighestprioritysupertrackingtype) | 1 value |  |
 | 🆕 | [C_SuperTrack.GetNextWaypointForMap](#c_supertrackgetnextwaypointformap) |  |  |
-| ✅ | [C_SuperTrack.GetSuperTrackedContent](#c_supertrackgetsupertrackedcontent) |  |  |
-| ✅ | [C_SuperTrack.GetSuperTrackedItemName](#c_supertrackgetsupertrackeditemname) |  |  |
-| ✅ | [C_SuperTrack.GetSuperTrackedMapPin](#c_supertrackgetsupertrackedmappin) |  |  |
-| ✅ | [C_SuperTrack.GetSuperTrackedQuestID](#c_supertrackgetsupertrackedquestid) |  |  |
-| ✅ | [C_SuperTrack.GetSuperTrackedVignette](#c_supertrackgetsupertrackedvignette) |  |  |
-| ✅ | [C_SuperTrack.IsSuperTrackingAnything](#c_supertrackissupertrackinganything) |  |  |
-| ✅ | [C_SuperTrack.IsSuperTrackingContent](#c_supertrackissupertrackingcontent) |  |  |
-| ✅ | [C_SuperTrack.IsSuperTrackingCorpse](#c_supertrackissupertrackingcorpse) |  |  |
-| ✅ | [C_SuperTrack.IsSuperTrackingMapPin](#c_supertrackissupertrackingmappin) |  |  |
-| ✅ | [C_SuperTrack.IsSuperTrackingQuest](#c_supertrackissupertrackingquest) |  |  |
-| ✅ | [C_SuperTrack.IsSuperTrackingUserWaypoint](#c_supertrackissupertrackinguserwaypoint) |  |  |
+| ✅ | [C_SuperTrack.GetSuperTrackedContent](#c_supertrackgetsupertrackedcontent) | 0 values |  |
+| ✅ | [C_SuperTrack.GetSuperTrackedItemName](#c_supertrackgetsupertrackeditemname) | 0 values |  |
+| ✅ | [C_SuperTrack.GetSuperTrackedMapPin](#c_supertrackgetsupertrackedmappin) | 0 values |  |
+| ✅ | [C_SuperTrack.GetSuperTrackedQuestID](#c_supertrackgetsupertrackedquestid) | 1 value |  |
+| ✅ | [C_SuperTrack.GetSuperTrackedVignette](#c_supertrackgetsupertrackedvignette) | 1 value |  |
+| ✅ | [C_SuperTrack.IsSuperTrackingAnything](#c_supertrackissupertrackinganything) | 1 value |  |
+| ✅ | [C_SuperTrack.IsSuperTrackingContent](#c_supertrackissupertrackingcontent) | 1 value |  |
+| ✅ | [C_SuperTrack.IsSuperTrackingCorpse](#c_supertrackissupertrackingcorpse) | 1 value |  |
+| ✅ | [C_SuperTrack.IsSuperTrackingMapPin](#c_supertrackissupertrackingmappin) | 1 value |  |
+| ✅ | [C_SuperTrack.IsSuperTrackingQuest](#c_supertrackissupertrackingquest) | 1 value |  |
+| ✅ | [C_SuperTrack.IsSuperTrackingUserWaypoint](#c_supertrackissupertrackinguserwaypoint) | 1 value |  |
 | ✅ | [C_SuperTrack.SetSuperTrackedContent](#c_supertracksetsupertrackedcontent) |  |  |
 | ✅ | [C_SuperTrack.SetSuperTrackedMapPin](#c_supertracksetsupertrackedmappin) |  |  |
 | ✅ | [C_SuperTrack.SetSuperTrackedQuestID](#c_supertracksetsupertrackedquestid) |  |  |
@@ -54,6 +54,7 @@ Namespace: `C_SuperTrack`
 `C_SuperTrack.GetHighestPrioritySuperTrackingType() → type: SuperTrackingType?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `SuperTrackManagerDocumentation.lua`
 
 ### C_SuperTrack.GetNextWaypointForMap
@@ -68,6 +69,7 @@ Namespace: `C_SuperTrack`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `SuperTrackManagerDocumentation.lua`
 
 ### C_SuperTrack.GetSuperTrackedItemName
@@ -76,6 +78,7 @@ Namespace: `C_SuperTrack`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `SuperTrackManagerDocumentation.lua`
 
 ### C_SuperTrack.GetSuperTrackedMapPin
@@ -84,6 +87,7 @@ Namespace: `C_SuperTrack`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `SuperTrackManagerDocumentation.lua`
 
 ### C_SuperTrack.GetSuperTrackedQuestID
@@ -91,6 +95,7 @@ Namespace: `C_SuperTrack`
 `C_SuperTrack.GetSuperTrackedQuestID() → questID: number?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `SuperTrackManagerDocumentation.lua`
 
 ### C_SuperTrack.GetSuperTrackedVignette
@@ -98,6 +103,7 @@ Namespace: `C_SuperTrack`
 `C_SuperTrack.GetSuperTrackedVignette() → vignetteGUID: WOWGUID?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `SuperTrackManagerDocumentation.lua`
 
 ### C_SuperTrack.IsSuperTrackingAnything
@@ -105,6 +111,7 @@ Namespace: `C_SuperTrack`
 `C_SuperTrack.IsSuperTrackingAnything() → isSuperTracking: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `SuperTrackManagerDocumentation.lua`
 
 ### C_SuperTrack.IsSuperTrackingContent
@@ -112,6 +119,7 @@ Namespace: `C_SuperTrack`
 `C_SuperTrack.IsSuperTrackingContent() → isSuperTracking: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `SuperTrackManagerDocumentation.lua`
 
 ### C_SuperTrack.IsSuperTrackingCorpse
@@ -119,6 +127,7 @@ Namespace: `C_SuperTrack`
 `C_SuperTrack.IsSuperTrackingCorpse() → isSuperTracking: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `SuperTrackManagerDocumentation.lua`
 
 ### C_SuperTrack.IsSuperTrackingMapPin
@@ -126,6 +135,7 @@ Namespace: `C_SuperTrack`
 `C_SuperTrack.IsSuperTrackingMapPin() → isSuperTracking: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `SuperTrackManagerDocumentation.lua`
 
 ### C_SuperTrack.IsSuperTrackingQuest
@@ -133,6 +143,7 @@ Namespace: `C_SuperTrack`
 `C_SuperTrack.IsSuperTrackingQuest() → isSuperTracking: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `SuperTrackManagerDocumentation.lua`
 
 ### C_SuperTrack.IsSuperTrackingUserWaypoint
@@ -140,6 +151,7 @@ Namespace: `C_SuperTrack`
 `C_SuperTrack.IsSuperTrackingUserWaypoint() → isSuperTracking: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `SuperTrackManagerDocumentation.lua`
 
 ### C_SuperTrack.SetSuperTrackedContent

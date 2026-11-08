@@ -54,13 +54,14 @@ Namespace: `C_RestrictedActions`
 - Status: ✅ verified
 - Payload: `isTainted: cstring`, `function: cstring`
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: `s,s`
 
 ### ADDON_ACTION_FORBIDDEN
 
 - Status: ✅ verified
 - Payload: `isTainted: cstring`, `function: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (0 in combat); argument kinds: `s,s`
+- Seen firing 34 times (0 in combat); argument kinds: `s,s`
 
 ### ADDON_RESTRICTION_STATE_CHANGED
 
@@ -68,7 +69,7 @@ Namespace: `C_RestrictedActions`
 - Payload: `type: AddOnRestrictionType`, `state: AddOnRestrictionState`
 - Blizzard: Fired when the state of an addon restriction type is changing. This event is sequenced such that it will always be fired before a restriction becomes active, or after it is deactivated.
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `n,n`
+- Seen firing 8 times (0 in combat); argument kinds: `n,n`
 
 ### MACRO_ACTION_BLOCKED
 

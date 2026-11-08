@@ -7,7 +7,7 @@ Namespace: `C_AutoComplete`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_AutoComplete.GetAutoCompletePresenceID](#c_autocompletegetautocompletepresenceid) |  |  |
-| ✅ | [C_AutoComplete.GetAutoCompleteRealms](#c_autocompletegetautocompleterealms) |  |  |
+| ✅ | [C_AutoComplete.GetAutoCompleteRealms](#c_autocompletegetautocompleterealms) | 1 value |  |
 | ✅ | [C_AutoComplete.GetAutoCompleteResults](#c_autocompletegetautocompleteresults) |  |  |
 | ✅ | [C_AutoComplete.IsRecognizedName](#c_autocompleteisrecognizedname) |  |  |
 
@@ -24,6 +24,7 @@ Namespace: `C_AutoComplete`
 `C_AutoComplete.GetAutoCompleteRealms() → realms: string[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `AutoCompleteDocumentation.lua`
 
 ### C_AutoComplete.GetAutoCompleteResults

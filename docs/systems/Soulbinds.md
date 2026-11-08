@@ -8,20 +8,20 @@ Namespace: `C_Soulbinds`
 |---|---|---|---|
 | ✅ | [C_Soulbinds.ActivateSoulbind](#c_soulbindsactivatesoulbind) |  |  |
 | ✅ | [C_Soulbinds.CanActivateSoulbind](#c_soulbindscanactivatesoulbind) |  |  |
-| ✅ | [C_Soulbinds.CanModifySoulbind](#c_soulbindscanmodifysoulbind) |  |  |
+| ✅ | [C_Soulbinds.CanModifySoulbind](#c_soulbindscanmodifysoulbind) | 1 value |  |
 | ✅ | [C_Soulbinds.CanResetConduitsInSoulbind](#c_soulbindscanresetconduitsinsoulbind) |  |  |
-| ✅ | [C_Soulbinds.CanSwitchActiveSoulbindTreeBranch](#c_soulbindscanswitchactivesoulbindtreebranch) |  |  |
+| ✅ | [C_Soulbinds.CanSwitchActiveSoulbindTreeBranch](#c_soulbindscanswitchactivesoulbindtreebranch) | 1 value |  |
 | ✅ | [C_Soulbinds.CloseUI](#c_soulbindscloseui) |  |  |
 | ✅ | [C_Soulbinds.CommitPendingConduitsInSoulbind](#c_soulbindscommitpendingconduitsinsoulbind) |  |  |
 | ✅ | [C_Soulbinds.FindNodeIDActuallyInstalled](#c_soulbindsfindnodeidactuallyinstalled) |  |  |
 | ✅ | [C_Soulbinds.FindNodeIDAppearingInstalled](#c_soulbindsfindnodeidappearinginstalled) |  |  |
 | ✅ | [C_Soulbinds.FindNodeIDPendingInstall](#c_soulbindsfindnodeidpendinginstall) |  |  |
 | ✅ | [C_Soulbinds.FindNodeIDPendingUninstall](#c_soulbindsfindnodeidpendinguninstall) |  |  |
-| ✅ | [C_Soulbinds.GetActiveSoulbindID](#c_soulbindsgetactivesoulbindid) |  |  |
+| ✅ | [C_Soulbinds.GetActiveSoulbindID](#c_soulbindsgetactivesoulbindid) | 1 value |  |
 | ✅ | [C_Soulbinds.GetConduitCollection](#c_soulbindsgetconduitcollection) |  |  |
-| ✅ | [C_Soulbinds.GetConduitCollectionCount](#c_soulbindsgetconduitcollectioncount) |  |  |
+| ✅ | [C_Soulbinds.GetConduitCollectionCount](#c_soulbindsgetconduitcollectioncount) | 1 value |  |
 | ✅ | [C_Soulbinds.GetConduitCollectionData](#c_soulbindsgetconduitcollectiondata) |  |  |
-| ✅ | [C_Soulbinds.GetConduitCollectionDataAtCursor](#c_soulbindsgetconduitcollectiondataatcursor) |  |  |
+| ✅ | [C_Soulbinds.GetConduitCollectionDataAtCursor](#c_soulbindsgetconduitcollectiondataatcursor) | 1 value |  |
 | ✅ | [C_Soulbinds.GetConduitCollectionDataByVirtualID](#c_soulbindsgetconduitcollectiondatabyvirtualid) |  |  |
 | ✅ | [C_Soulbinds.GetConduitDisplayed](#c_soulbindsgetconduitdisplayed) |  |  |
 | ✅ | [C_Soulbinds.GetConduitHyperlink](#c_soulbindsgetconduithyperlink) |  |  |
@@ -35,7 +35,7 @@ Namespace: `C_Soulbinds`
 | ✅ | [C_Soulbinds.GetSpecsAssignedToSoulbind](#c_soulbindsgetspecsassignedtosoulbind) |  |  |
 | ✅ | [C_Soulbinds.GetTree](#c_soulbindsgettree) |  |  |
 | ✅ | [C_Soulbinds.HasAnyInstalledConduitInSoulbind](#c_soulbindshasanyinstalledconduitinsoulbind) |  |  |
-| ✅ | [C_Soulbinds.HasAnyPendingConduits](#c_soulbindshasanypendingconduits) |  |  |
+| ✅ | [C_Soulbinds.HasAnyPendingConduits](#c_soulbindshasanypendingconduits) | 1 value |  |
 | ✅ | [C_Soulbinds.HasPendingConduitsInSoulbind](#c_soulbindshaspendingconduitsinsoulbind) |  |  |
 | ✅ | [C_Soulbinds.IsConduitInstalled](#c_soulbindsisconduitinstalled) |  |  |
 | ✅ | [C_Soulbinds.IsConduitInstalledInSoulbind](#c_soulbindsisconduitinstalledinsoulbind) |  |  |
@@ -67,6 +67,7 @@ Namespace: `C_Soulbinds`
 `C_Soulbinds.CanModifySoulbind() → result: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `SoulbindsDocumentation.lua`
 
 ### C_Soulbinds.CanResetConduitsInSoulbind
@@ -82,6 +83,7 @@ Namespace: `C_Soulbinds`
 `C_Soulbinds.CanSwitchActiveSoulbindTreeBranch() → result: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `SoulbindsDocumentation.lua`
 
 ### C_Soulbinds.CloseUI
@@ -136,6 +138,7 @@ Namespace: `C_Soulbinds`
 `C_Soulbinds.GetActiveSoulbindID() → soulbindID: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `SoulbindsDocumentation.lua`
 
 ### C_Soulbinds.GetConduitCollection
@@ -151,6 +154,7 @@ Namespace: `C_Soulbinds`
 `C_Soulbinds.GetConduitCollectionCount() → count: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `SoulbindsDocumentation.lua`
 
 ### C_Soulbinds.GetConduitCollectionData
@@ -166,6 +170,7 @@ Namespace: `C_Soulbinds`
 `C_Soulbinds.GetConduitCollectionDataAtCursor() → collectionData: ConduitCollectionData?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `SoulbindsDocumentation.lua`
 
 ### C_Soulbinds.GetConduitCollectionDataByVirtualID
@@ -277,6 +282,7 @@ Namespace: `C_Soulbinds`
 `C_Soulbinds.HasAnyPendingConduits() → result: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `SoulbindsDocumentation.lua`
 
 ### C_Soulbinds.HasPendingConduitsInSoulbind

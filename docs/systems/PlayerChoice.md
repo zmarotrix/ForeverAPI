@@ -6,10 +6,10 @@ Namespace: `C_PlayerChoice`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_PlayerChoice.GetCurrentPlayerChoiceInfo](#c_playerchoicegetcurrentplayerchoiceinfo) |  |  |
-| ✅ | [C_PlayerChoice.GetNumRerolls](#c_playerchoicegetnumrerolls) |  |  |
-| ✅ | [C_PlayerChoice.GetRemainingTime](#c_playerchoicegetremainingtime) |  |  |
-| ✅ | [C_PlayerChoice.IsWaitingForPlayerChoiceResponse](#c_playerchoiceiswaitingforplayerchoiceresponse) |  |  |
+| ✅ | [C_PlayerChoice.GetCurrentPlayerChoiceInfo](#c_playerchoicegetcurrentplayerchoiceinfo) | 0 values |  |
+| ✅ | [C_PlayerChoice.GetNumRerolls](#c_playerchoicegetnumrerolls) | 1 value |  |
+| ✅ | [C_PlayerChoice.GetRemainingTime](#c_playerchoicegetremainingtime) | 1 value |  |
+| ✅ | [C_PlayerChoice.IsWaitingForPlayerChoiceResponse](#c_playerchoiceiswaitingforplayerchoiceresponse) | 1 value |  |
 | ✅ | [C_PlayerChoice.OnUIClosed](#c_playerchoiceonuiclosed) |  |  |
 | ✅ | [C_PlayerChoice.RequestRerollPlayerChoice](#c_playerchoicerequestrerollplayerchoice) |  |  |
 | ✅ | [C_PlayerChoice.SendPlayerChoiceResponse](#c_playerchoicesendplayerchoiceresponse) |  |  |
@@ -20,6 +20,7 @@ Namespace: `C_PlayerChoice`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `PlayerChoiceDocumentation.lua`
 
 ### C_PlayerChoice.GetNumRerolls
@@ -27,6 +28,7 @@ Namespace: `C_PlayerChoice`
 `C_PlayerChoice.GetNumRerolls() → numRerolls: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `PlayerChoiceDocumentation.lua`
 
 ### C_PlayerChoice.GetRemainingTime
@@ -34,6 +36,7 @@ Namespace: `C_PlayerChoice`
 `C_PlayerChoice.GetRemainingTime() → remainingTime: number?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `PlayerChoiceDocumentation.lua`
 
 ### C_PlayerChoice.IsWaitingForPlayerChoiceResponse
@@ -41,6 +44,7 @@ Namespace: `C_PlayerChoice`
 `C_PlayerChoice.IsWaitingForPlayerChoiceResponse() → isWaitingForResponse: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PlayerChoiceDocumentation.lua`
 
 ### C_PlayerChoice.OnUIClosed
@@ -78,6 +82,7 @@ Namespace: `C_PlayerChoice`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ## Types
 

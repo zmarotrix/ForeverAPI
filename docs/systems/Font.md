@@ -6,7 +6,7 @@
 |---|---|---|---|
 | ✅ | [CreateFontFamily](#createfontfamily) |  |  |
 | ✅ | [GetFontInfo](#getfontinfo) |  |  |
-| ✅ | [GetFonts](#getfonts) |  |  |
+| ✅ | [GetFonts](#getfonts) | 1 value |  |
 
 ### CreateFontFamily
 
@@ -29,6 +29,7 @@
 `GetFonts() → fontNames: cstring[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,...(478)}`
 - Source: client docs `FontDocumentation.lua`
 
 ## Types

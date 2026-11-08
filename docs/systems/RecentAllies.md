@@ -7,16 +7,16 @@ Namespace: `C_RecentAllies`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_RecentAllies.CanSetRecentAllyNote](#c_recentalliescansetrecentallynote) |  |  |
-| ✅ | [C_RecentAllies.GetRecentAllies](#c_recentalliesgetrecentallies) |  |  |
+| ✅ | [C_RecentAllies.GetRecentAllies](#c_recentalliesgetrecentallies) | 1 value |  |
 | ✅ | [C_RecentAllies.GetRecentAllyByFullName](#c_recentalliesgetrecentallybyfullname) |  |  |
 | ✅ | [C_RecentAllies.GetRecentAllyByGUID](#c_recentalliesgetrecentallybyguid) |  |  |
 | ✅ | [C_RecentAllies.IsInteractionCategoryFilterSupportedForCurrentGameType](#c_recentalliesisinteractioncategoryfiltersupportedforcurrentgametype) |  |  |
 | ✅ | [C_RecentAllies.IsRecentAllyByFullName](#c_recentalliesisrecentallybyfullname) |  |  |
 | ✅ | [C_RecentAllies.IsRecentAllyByGUID](#c_recentalliesisrecentallybyguid) |  |  |
-| ✅ | [C_RecentAllies.IsRecentAllyDataReady](#c_recentalliesisrecentallydataready) |  |  |
+| ✅ | [C_RecentAllies.IsRecentAllyDataReady](#c_recentalliesisrecentallydataready) | 1 value |  |
 | ✅ | [C_RecentAllies.IsRecentAllyPinned](#c_recentalliesisrecentallypinned) |  |  |
-| ✅ | [C_RecentAllies.IsSystemEnabled](#c_recentalliesissystemenabled) |  |  |
-| ✅ | [C_RecentAllies.IsSystemSupported](#c_recentalliesissystemsupported) |  |  |
+| ✅ | [C_RecentAllies.IsSystemEnabled](#c_recentalliesissystemenabled) | 1 value |  |
+| ✅ | [C_RecentAllies.IsSystemSupported](#c_recentalliesissystemsupported) | 1 value |  |
 | ✅ | [C_RecentAllies.SearchRecentAllies](#c_recentalliessearchrecentallies) |  |  |
 | ✅ | [C_RecentAllies.SetRecentAllyNote](#c_recentalliessetrecentallynote) |  |  |
 | ✅ | [C_RecentAllies.SetRecentAllyPinned](#c_recentalliessetrecentallypinned) |  |  |
@@ -37,6 +37,7 @@ Namespace: `C_RecentAllies`
 
 - Status: ✅ verified (function)
 - RequiresRecentAllies (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,...(45)}`
 - Source: client docs `RecentAlliesDocumentation.lua`
 
 ### C_RecentAllies.GetRecentAllyByFullName
@@ -89,6 +90,7 @@ Namespace: `C_RecentAllies`
 
 - Status: ✅ verified (function)
 - RequiresRecentAllies (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `RecentAlliesDocumentation.lua`
 
 ### C_RecentAllies.IsRecentAllyPinned
@@ -105,6 +107,7 @@ Namespace: `C_RecentAllies`
 `C_RecentAllies.IsSystemEnabled() → isRecentAllySystemEnabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `RecentAlliesDocumentation.lua`
 
 ### C_RecentAllies.IsSystemSupported
@@ -112,6 +115,7 @@ Namespace: `C_RecentAllies`
 `C_RecentAllies.IsSystemSupported() → isRecentAllySystemSupported: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `RecentAlliesDocumentation.lua`
 
 ### C_RecentAllies.SearchRecentAllies
@@ -163,12 +167,14 @@ Namespace: `C_RecentAllies`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### RECENT_ALLIES_DATA_READY
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### RECENT_ALLIES_SYSTEM_STATUS_UPDATED
 
@@ -181,6 +187,7 @@ Namespace: `C_RecentAllies`
 - Status: ✅ verified
 - Payload: `characterGUID: WOWGUID`
 - fires synchronously (Blizzard's docs)
+- Seen firing 45 times (0 in combat); argument kinds: `s`
 
 ## Types
 

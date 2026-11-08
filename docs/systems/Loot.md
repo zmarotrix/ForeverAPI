@@ -7,7 +7,7 @@ Namespace: `C_Loot`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_Loot.GetLootRollDuration](#c_lootgetlootrollduration) |  |  |
-| ✅ | [C_Loot.IsLegacyLootModeEnabled](#c_lootislegacylootmodeenabled) |  |  |
+| ✅ | [C_Loot.IsLegacyLootModeEnabled](#c_lootislegacylootmodeenabled) | 1 value |  |
 
 ### C_Loot.GetLootRollDuration
 
@@ -22,6 +22,7 @@ Namespace: `C_Loot`
 `C_Loot.IsLegacyLootModeEnabled() → isLegacyLootModeEnabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `LootDocumentation.lua`
 
 ## Events
@@ -103,7 +104,7 @@ Namespace: `C_Loot`
 - Status: ✅ verified
 - Payload: `bagSlot: luaIndex`, `iconFileID: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `n,n`
+- Seen firing 8 times (0 in combat); argument kinds: `n,n`
 
 ### LEGACY_LOOT_RULES_CHANGED
 
@@ -122,7 +123,7 @@ Namespace: `C_Loot`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 17 times (1 in combat); argument kinds: ``
 
 ### LOOT_ITEM_AVAILABLE
 
@@ -141,13 +142,14 @@ Namespace: `C_Loot`
 - Status: ✅ verified
 - Payload: `autoLoot: bool`, `isFromItem: bool`
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: `b,b`
 
 ### LOOT_READY
 
 - Status: ✅ verified
 - Payload: `autoloot: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `b`
+- Seen firing 11 times (0 in combat); argument kinds: `b`
 
 ### LOOT_ROLLS_COMPLETE
 
@@ -166,7 +168,7 @@ Namespace: `C_Loot`
 - Status: ✅ verified
 - Payload: `lootSlot: luaIndex`
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `n`
+- Seen firing 9 times (0 in combat); argument kinds: `n`
 
 ### MAIN_SPEC_NEED_ROLL
 

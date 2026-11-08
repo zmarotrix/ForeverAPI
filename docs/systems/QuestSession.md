@@ -6,16 +6,16 @@ Namespace: `C_QuestSession`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_QuestSession.CanStart](#c_questsessioncanstart) |  |  |
-| ✅ | [C_QuestSession.CanStop](#c_questsessioncanstop) |  |  |
+| ✅ | [C_QuestSession.CanStart](#c_questsessioncanstart) | 1 value |  |
+| ✅ | [C_QuestSession.CanStop](#c_questsessioncanstop) | 1 value |  |
 | ✅ | [C_QuestSession.Exists](#c_questsessionexists) |  |  |
-| ✅ | [C_QuestSession.GetAvailableSessionCommand](#c_questsessiongetavailablesessioncommand) |  |  |
-| ✅ | [C_QuestSession.GetPendingCommand](#c_questsessiongetpendingcommand) |  |  |
-| ✅ | [C_QuestSession.GetProposedMaxLevelForSession](#c_questsessiongetproposedmaxlevelforsession) |  |  |
-| ✅ | [C_QuestSession.GetSessionBeginDetails](#c_questsessiongetsessionbegindetails) |  |  |
-| ✅ | [C_QuestSession.GetSuperTrackedQuest](#c_questsessiongetsupertrackedquest) |  |  |
-| ✅ | [C_QuestSession.HasJoined](#c_questsessionhasjoined) |  |  |
-| ✅ | [C_QuestSession.HasPendingCommand](#c_questsessionhaspendingcommand) |  |  |
+| ✅ | [C_QuestSession.GetAvailableSessionCommand](#c_questsessiongetavailablesessioncommand) | 1 value |  |
+| ✅ | [C_QuestSession.GetPendingCommand](#c_questsessiongetpendingcommand) | 1 value |  |
+| ✅ | [C_QuestSession.GetProposedMaxLevelForSession](#c_questsessiongetproposedmaxlevelforsession) | 1 value |  |
+| ✅ | [C_QuestSession.GetSessionBeginDetails](#c_questsessiongetsessionbegindetails) | 1 value |  |
+| ✅ | [C_QuestSession.GetSuperTrackedQuest](#c_questsessiongetsupertrackedquest) | 1 value |  |
+| ✅ | [C_QuestSession.HasJoined](#c_questsessionhasjoined) | 1 value |  |
+| ✅ | [C_QuestSession.HasPendingCommand](#c_questsessionhaspendingcommand) | 1 value |  |
 | ✅ | [C_QuestSession.RequestSessionStart](#c_questsessionrequestsessionstart) |  |  |
 | ✅ | [C_QuestSession.RequestSessionStop](#c_questsessionrequestsessionstop) |  |  |
 | ✅ | [C_QuestSession.SendSessionBeginResponse](#c_questsessionsendsessionbeginresponse) |  |  |
@@ -26,6 +26,7 @@ Namespace: `C_QuestSession`
 `C_QuestSession.CanStart() → allowed: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `QuestSessionDocumentation.lua`
 
 ### C_QuestSession.CanStop
@@ -33,6 +34,7 @@ Namespace: `C_QuestSession`
 `C_QuestSession.CanStop() → allowed: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `QuestSessionDocumentation.lua`
 
 ### C_QuestSession.Exists
@@ -47,6 +49,7 @@ Namespace: `C_QuestSession`
 `C_QuestSession.GetAvailableSessionCommand() → command: QuestSessionCommand`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `QuestSessionDocumentation.lua`
 
 ### C_QuestSession.GetPendingCommand
@@ -54,6 +57,7 @@ Namespace: `C_QuestSession`
 `C_QuestSession.GetPendingCommand() → command: QuestSessionCommand`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `QuestSessionDocumentation.lua`
 
 ### C_QuestSession.GetProposedMaxLevelForSession
@@ -61,6 +65,7 @@ Namespace: `C_QuestSession`
 `C_QuestSession.GetProposedMaxLevelForSession() → proposedMaxLevel: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `QuestSessionDocumentation.lua`
 
 ### C_QuestSession.GetSessionBeginDetails
@@ -68,6 +73,7 @@ Namespace: `C_QuestSession`
 `C_QuestSession.GetSessionBeginDetails() → details: QuestSessionPlayerDetails?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `QuestSessionDocumentation.lua`
 
 ### C_QuestSession.GetSuperTrackedQuest
@@ -75,6 +81,7 @@ Namespace: `C_QuestSession`
 `C_QuestSession.GetSuperTrackedQuest() → questID: number?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `QuestSessionDocumentation.lua`
 
 ### C_QuestSession.HasJoined
@@ -82,6 +89,7 @@ Namespace: `C_QuestSession`
 `C_QuestSession.HasJoined() → hasJoined: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `QuestSessionDocumentation.lua`
 
 ### C_QuestSession.HasPendingCommand
@@ -89,6 +97,7 @@ Namespace: `C_QuestSession`
 `C_QuestSession.HasPendingCommand() → hasPendingCommand: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `QuestSessionDocumentation.lua`
 
 ### C_QuestSession.RequestSessionStart
@@ -140,6 +149,7 @@ Namespace: `C_QuestSession`
 - Status: ✅ verified
 - Payload: `enabled: bool`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `b`
 
 ### QUEST_SESSION_JOINED
 

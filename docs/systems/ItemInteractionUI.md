@@ -8,10 +8,10 @@ Namespace: `C_ItemInteraction`
 |---|---|---|---|
 | ✅ | [C_ItemInteraction.ClearPendingItem](#c_iteminteractionclearpendingitem) |  |  |
 | ✅ | [C_ItemInteraction.CloseUI](#c_iteminteractioncloseui) |  |  |
-| ✅ | [C_ItemInteraction.GetChargeInfo](#c_iteminteractiongetchargeinfo) |  |  |
+| ✅ | [C_ItemInteraction.GetChargeInfo](#c_iteminteractiongetchargeinfo) | 1 value |  |
 | ✅ | [C_ItemInteraction.GetItemConversionCurrencyCost](#c_iteminteractiongetitemconversioncurrencycost) |  |  |
-| ✅ | [C_ItemInteraction.GetItemInteractionInfo](#c_iteminteractiongetiteminteractioninfo) |  |  |
-| ✅ | [C_ItemInteraction.GetItemInteractionSpellId](#c_iteminteractiongetiteminteractionspellid) |  |  |
+| ✅ | [C_ItemInteraction.GetItemInteractionInfo](#c_iteminteractiongetiteminteractioninfo) | 1 value |  |
+| ✅ | [C_ItemInteraction.GetItemInteractionSpellId](#c_iteminteractiongetiteminteractionspellid) | 1 value |  |
 | ✅ | [C_ItemInteraction.InitializeFrame](#c_iteminteractioninitializeframe) |  |  |
 | ✅ | [C_ItemInteraction.PerformItemInteraction](#c_iteminteractionperformiteminteraction) |  |  |
 | ✅ | [C_ItemInteraction.Reset](#c_iteminteractionreset) |  |  |
@@ -36,6 +36,7 @@ Namespace: `C_ItemInteraction`
 `C_ItemInteraction.GetChargeInfo() → chargeInfo: ItemInteractionChargeInfo`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{newChargeAmount=number,rechargeRate=number,timeToNextCharge=number}`
 - Source: client docs `ItemInteractionUIDocumentation.lua`
 
 ### C_ItemInteraction.GetItemConversionCurrencyCost
@@ -51,6 +52,7 @@ Namespace: `C_ItemInteraction`
 `C_ItemInteraction.GetItemInteractionInfo() → info: ItemInteractionFrameInfo?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `ItemInteractionUIDocumentation.lua`
 
 ### C_ItemInteraction.GetItemInteractionSpellId
@@ -58,6 +60,7 @@ Namespace: `C_ItemInteraction`
 `C_ItemInteraction.GetItemInteractionSpellId() → spellId: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ItemInteractionUIDocumentation.lua`
 
 ### C_ItemInteraction.InitializeFrame

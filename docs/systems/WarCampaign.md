@@ -6,7 +6,7 @@ Namespace: `C_CampaignInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_CampaignInfo.GetAvailableCampaigns](#c_campaigninfogetavailablecampaigns) |  |  |
+| ✅ | [C_CampaignInfo.GetAvailableCampaigns](#c_campaigninfogetavailablecampaigns) | 1 value |  |
 | ✅ | [C_CampaignInfo.GetCampaignChapterInfo](#c_campaigninfogetcampaignchapterinfo) |  |  |
 | ✅ | [C_CampaignInfo.GetCampaignID](#c_campaigninfogetcampaignid) |  |  |
 | ✅ | [C_CampaignInfo.GetCampaignInfo](#c_campaigninfogetcampaigninfo) |  |  |
@@ -22,6 +22,7 @@ Namespace: `C_CampaignInfo`
 `C_CampaignInfo.GetAvailableCampaigns() → campaignIDs: number[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `WarCampaignDocumentation.lua`
 
 ### C_CampaignInfo.GetCampaignChapterInfo

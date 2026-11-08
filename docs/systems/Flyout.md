@@ -11,7 +11,7 @@ Namespace: `C_Flyout`
 | ✅ | [C_Flyout.GetFlyoutInfo](#c_flyoutgetflyoutinfo) |  |  |
 | ✅ | [C_Flyout.GetFlyoutSlotInfo](#c_flyoutgetflyoutslotinfo) |  |  |
 | ✅ | [C_Flyout.GetFlyoutTexture](#c_flyoutgetflyouttexture) |  |  |
-| ✅ | [C_Flyout.GetNumFlyouts](#c_flyoutgetnumflyouts) |  |  |
+| ✅ | [C_Flyout.GetNumFlyouts](#c_flyoutgetnumflyouts) | 1 value |  |
 
 ### C_Flyout.FlyoutHasSpell
 
@@ -63,6 +63,7 @@ Namespace: `C_Flyout`
 `C_Flyout.GetNumFlyouts() → numFlyouts: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `FlyoutDocumentation.lua`
 
 ## Types

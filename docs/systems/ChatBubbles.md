@@ -6,7 +6,7 @@ Namespace: `C_ChatBubbles`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_ChatBubbles.GetAllChatBubbles](#c_chatbubblesgetallchatbubbles) |  |  |
+| ✅ | [C_ChatBubbles.GetAllChatBubbles](#c_chatbubblesgetallchatbubbles) | 1 value |  |
 
 ### C_ChatBubbles.GetAllChatBubbles
 
@@ -14,4 +14,5 @@ Namespace: `C_ChatBubbles`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `ChatBubblesDocumentation.lua`

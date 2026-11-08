@@ -6,10 +6,10 @@ Namespace: `C_Ping`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_Ping.GetCooldownInfo](#c_pinggetcooldowninfo) |  |  |
-| ✅ | [C_Ping.GetDefaultPingOptions](#c_pinggetdefaultpingoptions) |  |  |
+| ✅ | [C_Ping.GetCooldownInfo](#c_pinggetcooldowninfo) | 1 value |  |
+| ✅ | [C_Ping.GetDefaultPingOptions](#c_pinggetdefaultpingoptions) | 1 value |  |
 | ✅ | [C_Ping.GetTextureKitForType](#c_pinggettexturekitfortype) |  |  |
-| ✅ | [C_Ping.IsPingSystemEnabled](#c_pingispingsystemenabled) |  |  |
+| ✅ | [C_Ping.IsPingSystemEnabled](#c_pingispingsystemenabled) | 1 value |  |
 | ✅ | [C_Ping.SendMacroPing](#c_pingsendmacroping) |  |  |
 | ✅ | [C_Ping.TogglePingListener](#c_pingtogglepinglistener) |  |  |
 
@@ -18,6 +18,7 @@ Namespace: `C_Ping`
 `C_Ping.GetCooldownInfo() → cooldownInfo: PingCooldownInfo`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{endTimeMs=number,startTimeMs=number}`
 - Source: client docs `PingManagerDocumentation.lua`
 
 ### C_Ping.GetDefaultPingOptions
@@ -25,6 +26,7 @@ Namespace: `C_Ping`
 `C_Ping.GetDefaultPingOptions() → pingTypes: PingTypeInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table}`
 - Source: client docs `PingManagerDocumentation.lua`
 
 ### C_Ping.GetTextureKitForType
@@ -40,6 +42,7 @@ Namespace: `C_Ping`
 `C_Ping.IsPingSystemEnabled() → isEnabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PingManagerDocumentation.lua`
 
 ### C_Ping.SendMacroPing

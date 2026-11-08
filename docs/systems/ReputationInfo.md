@@ -6,7 +6,7 @@ Namespace: `C_Reputation`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_Reputation.AreLegacyReputationsShown](#c_reputationarelegacyreputationsshown) |  |  |
+| ✅ | [C_Reputation.AreLegacyReputationsShown](#c_reputationarelegacyreputationsshown) | 1 value |  |
 | ✅ | [C_Reputation.CollapseAllFactionHeaders](#c_reputationcollapseallfactionheaders) |  |  |
 | ✅ | [C_Reputation.CollapseFactionHeader](#c_reputationcollapsefactionheader) |  |  |
 | ✅ | [C_Reputation.ExpandAllFactionHeaders](#c_reputationexpandallfactionheaders) |  |  |
@@ -14,12 +14,12 @@ Namespace: `C_Reputation`
 | ✅ | [C_Reputation.GetFactionDataByID](#c_reputationgetfactiondatabyid) |  |  |
 | ✅ | [C_Reputation.GetFactionDataByIndex](#c_reputationgetfactiondatabyindex) |  |  |
 | ✅ | [C_Reputation.GetFactionParagonInfo](#c_reputationgetfactionparagoninfo) |  |  |
-| ✅ | [C_Reputation.GetGuildFactionData](#c_reputationgetguildfactiondata) |  |  |
-| ✅ | [C_Reputation.GetGuildRepExpirationTime](#c_reputationgetguildrepexpirationtime) |  |  |
-| ✅ | [C_Reputation.GetNumFactions](#c_reputationgetnumfactions) |  |  |
-| ✅ | [C_Reputation.GetReputationSortType](#c_reputationgetreputationsorttype) |  |  |
-| ✅ | [C_Reputation.GetSelectedFaction](#c_reputationgetselectedfaction) |  |  |
-| ✅ | [C_Reputation.GetWatchedFactionData](#c_reputationgetwatchedfactiondata) |  |  |
+| ✅ | [C_Reputation.GetGuildFactionData](#c_reputationgetguildfactiondata) | 1 value |  |
+| ✅ | [C_Reputation.GetGuildRepExpirationTime](#c_reputationgetguildrepexpirationtime) | 1 value |  |
+| ✅ | [C_Reputation.GetNumFactions](#c_reputationgetnumfactions) | 1 value |  |
+| ✅ | [C_Reputation.GetReputationSortType](#c_reputationgetreputationsorttype) | 1 value |  |
+| ✅ | [C_Reputation.GetSelectedFaction](#c_reputationgetselectedfaction) | 1 value |  |
+| ✅ | [C_Reputation.GetWatchedFactionData](#c_reputationgetwatchedfactiondata) | 1 value |  |
 | ✅ | [C_Reputation.IsAccountWideReputation](#c_reputationisaccountwidereputation) |  |  |
 | ✅ | [C_Reputation.IsFactionActive](#c_reputationisfactionactive) |  |  |
 | ✅ | [C_Reputation.IsFactionParagon](#c_reputationisfactionparagon) |  |  |
@@ -39,6 +39,7 @@ Namespace: `C_Reputation`
 `C_Reputation.AreLegacyReputationsShown() → areLegacyReputationsShown: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ReputationInfoDocumentation.lua`
 
 ### C_Reputation.CollapseAllFactionHeaders
@@ -101,6 +102,7 @@ Namespace: `C_Reputation`
 `C_Reputation.GetGuildFactionData() → guildFactionData: FactionData?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `ReputationInfoDocumentation.lua`
 
 ### C_Reputation.GetGuildRepExpirationTime
@@ -108,6 +110,7 @@ Namespace: `C_Reputation`
 `C_Reputation.GetGuildRepExpirationTime() → expirationTime: number?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ReputationInfoDocumentation.lua`
 
 ### C_Reputation.GetNumFactions
@@ -115,6 +118,7 @@ Namespace: `C_Reputation`
 `C_Reputation.GetNumFactions() → numFactions: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ReputationInfoDocumentation.lua`
 
 ### C_Reputation.GetReputationSortType
@@ -122,6 +126,7 @@ Namespace: `C_Reputation`
 `C_Reputation.GetReputationSortType() → sortType: ReputationSortType`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ReputationInfoDocumentation.lua`
 
 ### C_Reputation.GetSelectedFaction
@@ -129,6 +134,7 @@ Namespace: `C_Reputation`
 `C_Reputation.GetSelectedFaction() → selectedFactionSortIndex: luaIndex`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ReputationInfoDocumentation.lua`
 
 ### C_Reputation.GetWatchedFactionData
@@ -136,6 +142,7 @@ Namespace: `C_Reputation`
 `C_Reputation.GetWatchedFactionData() → watchedFactionData: FactionData?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `ReputationInfoDocumentation.lua`
 
 ### C_Reputation.IsAccountWideReputation

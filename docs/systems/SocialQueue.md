@@ -6,8 +6,8 @@ Namespace: `C_SocialQueue`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_SocialQueue.GetAllGroups](#c_socialqueuegetallgroups) |  |  |
-| ✅ | [C_SocialQueue.GetConfig](#c_socialqueuegetconfig) |  |  |
+| ✅ | [C_SocialQueue.GetAllGroups](#c_socialqueuegetallgroups) | 1 value |  |
+| ✅ | [C_SocialQueue.GetConfig](#c_socialqueuegetconfig) | 1 value |  |
 | ✅ | [C_SocialQueue.GetGroupForPlayer](#c_socialqueuegetgroupforplayer) |  |  |
 | ✅ | [C_SocialQueue.GetGroupInfo](#c_socialqueuegetgroupinfo) |  |  |
 | ✅ | [C_SocialQueue.GetGroupMembers](#c_socialqueuegetgroupmembers) |  |  |
@@ -21,6 +21,7 @@ Namespace: `C_SocialQueue`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `SocialQueueDocumentation.lua`
 
 ### C_SocialQueue.GetConfig
@@ -29,6 +30,7 @@ Namespace: `C_SocialQueue`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `table{DELAY_DURATION=number,PLAYER_FRIEND_VALUE=number,PLAYER_GUILD_VALUE=number,PLAYER_MULTIPLIER=number,QUEUE_MULTIPLIER=number,THROTTLE_DECAY_TIME=number,THROTTLE_DF_BEST_PRIORITY=number,THROTTLE_DF_MAX_ITEM_LEVEL=number,THROTTLE_INITIAL_THRESHOLD=number,THROTTLE_LFGLIST_ILVL_SCALING_ABOVE=number,THROTTLE_LFGLIST_ILVL_SCALING_BELOW=number,THROTTLE_LFGLIST_PRIORITY_ABOVE=number,THROTTLE_LFGLIST_PRIORITY_BELOW=number,THROTTLE_LFGLIST_PRIORITY_DEFAULT=number,THROTTLE_MIN_THRESHOLD=number,THROTTLE_PRIORITY_SPIKE=number,THROTTLE_PVP_HONOR_THRESHOLD=number,THROTTLE_PVP_PRIORITY_LOW=number,THROTTLE_PVP_PRIORITY_NORMAL=number,THROTTLE_RF_ILVL_SCALING_ABOVE=number,THROTTLE_RF_PRIORITY_ABOVE=number,TOASTS_DISABLED=boolean,TOAST_DURATION=number}`
 - Source: client docs `SocialQueueDocumentation.lua`
 
 ### C_SocialQueue.GetGroupForPlayer
@@ -90,12 +92,14 @@ Namespace: `C_SocialQueue`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### SOCIAL_QUEUE_UPDATE
 
 - Status: ✅ verified
 - Payload: `groupGUID: WOWGUID`, `numAddedItems: number?`
 - fires synchronously (Blizzard's docs)
+- Seen firing 5 times (2 in combat); argument kinds: `s,-` / `s,n`
 
 ## Types
 

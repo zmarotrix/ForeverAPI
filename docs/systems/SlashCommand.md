@@ -4,7 +4,7 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [AreDangerousScriptsAllowed](#aredangerousscriptsallowed) |  |  |
+| ✅ | [AreDangerousScriptsAllowed](#aredangerousscriptsallowed) | 1 value |  |
 | ✅ | [SetAllowDangerousScripts](#setallowdangerousscripts) |  |  |
 
 ### AreDangerousScriptsAllowed
@@ -12,6 +12,7 @@
 `AreDangerousScriptsAllowed() → allowed: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `SlashCommandDocumentation.lua`
 
 ### SetAllowDangerousScripts

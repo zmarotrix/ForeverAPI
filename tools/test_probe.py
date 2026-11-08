@@ -36,6 +36,8 @@ function GetPrivateThing() error("Usage: GetPrivateThing(index)") end
 function GetQuestReward() error("must never be called") end
 function GetUIThing() error("UI helpers must not be called") end
 function SendChatMessage() error("must never be called") end
+function CancelLogout() error("must never be called") end
+function CancelShapeshiftForm() error("must never be called") end
 PLAYER_NAME_TEXT = "Maro the Brave"
 ADDON_GLOBAL = function() end
 TAINTED = { ADDON_GLOBAL = "SomeAddOn" }
@@ -125,7 +127,7 @@ ApiProbeLeads = { build = "1.60.1.70862",
   events = { "UNIT_AURA", "NOT_IN_FOREVER_EVENT", "FOREVER_ONLY_EVENT", "PROTECTED_EVENT" },
   crashers = { ["C_UnitAuras.GetCrashy"] = true },
   calls = { { "C_UnitAuras", "GetUnitAuraInstanceIDs", "unit" }, { "C_UnitAuras", "GetAuraDataByIndex" },
-            { "C_UnitAuras", "GetSecretKeyed" }, { "C_UnitAuras", "GetCrashy" }, { "C_Missing", "GetNothing" }, { nil, "UnitHealth", "unit" } },
+            { "C_UnitAuras", "GetSecretKeyed" }, { "C_UnitAuras", "GetCrashy" }, { nil, "CancelShapeshiftForm" }, { "C_Missing", "GetNothing" }, { nil, "UnitHealth", "unit" } },
   documented = { UnitHealth = true },
   uiGetters = { GetUIThing = true },
 }
@@ -211,6 +213,7 @@ def main():
     live = db["live"]["events"]
     check("live: event counted", live["FOREVER_ONLY_EVENT"]["n"] == 1)
     check("live: secret argument marked S", "s,S" in live["UNIT_AURA"]["sigs"], live["UNIT_AURA"])
+    check("Cancel* never called, even if leads list it", "CancelLogout" not in out and out["CancelShapeshiftForm"].get("skipped") == "not a getter", out.get("CancelShapeshiftForm"))
     check("crash-listed call skipped", out["C_UnitAuras.GetCrashy"].get("skipped") == "crashed the client", out.get("C_UnitAuras.GetCrashy"))
     check("forbidden event recorded", d["events"]["PROTECTED_EVENT"]["register"] == "forbidden", d["events"].get("PROTECTED_EVENT"))
     check("forbidden event remembered", db["skip"]["event:PROTECTED_EVENT"] == "forbidden")
@@ -239,7 +242,7 @@ def main():
         apidoc.cmd_build()
         with open(os.path.join(tmp, "docs", "index.md"), encoding="utf-8") as f:
             index = f.read()
-        check("build: index names the dump", "ApiProbe 0.1.2 on 1.60.1.70862" in index)
+        check("build: index names the dump", "ApiProbe 0.1.3 on 1.60.1.70862" in index)
         with open(os.path.join(tmp, "docs", "systems", "UnitAuras.md"), encoding="utf-8") as f:
             page = f.read()
         check("build: documented function verified", "✅ | [C_UnitAuras.GetUnitAuraInstanceIDs]" in page)

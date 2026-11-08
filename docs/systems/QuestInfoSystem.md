@@ -6,13 +6,13 @@ Namespace: `C_QuestInfoSystem`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_QuestInfoSystem.GetQuestClassification](#c_questinfosystemgetquestclassification) |  |  |
-| ✅ | [C_QuestInfoSystem.GetQuestHasShortExpirationWarning](#c_questinfosystemgetquesthasshortexpirationwarning) |  |  |
+| ✅ | [C_QuestInfoSystem.GetQuestClassification](#c_questinfosystemgetquestclassification) | 1 value |  |
+| ✅ | [C_QuestInfoSystem.GetQuestHasShortExpirationWarning](#c_questinfosystemgetquesthasshortexpirationwarning) | 1 value |  |
 | ✅ | [C_QuestInfoSystem.GetQuestLogRewardFavor](#c_questinfosystemgetquestlogrewardfavor) |  |  |
 | ✅ | [C_QuestInfoSystem.GetQuestRewardCurrencies](#c_questinfosystemgetquestrewardcurrencies) |  |  |
 | ✅ | [C_QuestInfoSystem.GetQuestRewardSpellInfo](#c_questinfosystemgetquestrewardspellinfo) |  |  |
 | ✅ | [C_QuestInfoSystem.GetQuestRewardSpells](#c_questinfosystemgetquestrewardspells) |  |  |
-| ✅ | [C_QuestInfoSystem.GetQuestShouldToastCompletion](#c_questinfosystemgetquestshouldtoastcompletion) |  |  |
+| ✅ | [C_QuestInfoSystem.GetQuestShouldToastCompletion](#c_questinfosystemgetquestshouldtoastcompletion) | 1 value |  |
 | ✅ | [C_QuestInfoSystem.HasQuestRewardCurrencies](#c_questinfosystemhasquestrewardcurrencies) |  |  |
 | ✅ | [C_QuestInfoSystem.HasQuestRewardSpells](#c_questinfosystemhasquestrewardspells) |  |  |
 
@@ -22,6 +22,7 @@ Namespace: `C_QuestInfoSystem`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `QuestInfoSystemDocumentation.lua`
 
 ### C_QuestInfoSystem.GetQuestHasShortExpirationWarning
@@ -30,6 +31,7 @@ Namespace: `C_QuestInfoSystem`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `QuestInfoSystemDocumentation.lua`
 
 ### C_QuestInfoSystem.GetQuestLogRewardFavor
@@ -72,6 +74,7 @@ Namespace: `C_QuestInfoSystem`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `QuestInfoSystemDocumentation.lua`
 
 ### C_QuestInfoSystem.HasQuestRewardCurrencies

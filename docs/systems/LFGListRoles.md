@@ -6,8 +6,8 @@ Namespace: `C_LFGListRoles`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_LFGListRoles.GetRoles](#c_lfglistrolesgetroles) |  |  |
-| ✅ | [C_LFGListRoles.GetSavedRoles](#c_lfglistrolesgetsavedroles) |  |  |
+| ✅ | [C_LFGListRoles.GetRoles](#c_lfglistrolesgetroles) | 1 value |  |
+| ✅ | [C_LFGListRoles.GetSavedRoles](#c_lfglistrolesgetsavedroles) | 1 value |  |
 | ✅ | [C_LFGListRoles.SetRoles](#c_lfglistrolessetroles) |  |  |
 
 ### C_LFGListRoles.GetRoles
@@ -16,6 +16,7 @@ Namespace: `C_LFGListRoles`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `table{dps=boolean,healer=boolean,tank=boolean}`
 - Source: client docs `LFGListRolesDocumentation.lua`
 
 ### C_LFGListRoles.GetSavedRoles
@@ -24,6 +25,7 @@ Namespace: `C_LFGListRoles`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `table{dps=boolean,healer=boolean,tank=boolean}`
 - Source: client docs `LFGListRolesDocumentation.lua`
 
 ### C_LFGListRoles.SetRoles

@@ -43,7 +43,7 @@
 - Status: ✅ verified
 - Payload: `shouldShow: number?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `-`
+- Seen firing 4 times (0 in combat); argument kinds: `-`
 
 ### VEHICLE_PASSENGERS_CHANGED
 
@@ -56,10 +56,11 @@
 - Status: ✅ verified
 - Payload: `shouldShow: number?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `-`
+- Seen firing 4 times (0 in combat); argument kinds: `-`
 
 ### VEHICLE_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``

@@ -35,7 +35,7 @@ Namespace: `C_SpellActivationOverlay`
 - Status: ✅ verified
 - Payload: `spellID: number?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 36 times (6 in combat); argument kinds: `-`
+- Seen firing 202 times (38 in combat); argument kinds: `-`
 
 ### SPELL_ACTIVATION_OVERLAY_SHOW
 

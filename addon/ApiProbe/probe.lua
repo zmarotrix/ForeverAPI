@@ -13,7 +13,7 @@
 -- It never casts, targets, sends or changes a setting; the only calls it makes are getters (Get/Is/Has/Can/...).
 
 local ADDON = ...
-local VERSION = "0.1.2"
+local VERSION = "0.1.3"
 local CHUNK = 1500          -- globals examined per frame while dumping
 local CALLS_PER_FRAME = 20  -- getters called per frame
 local MAX_MEMBERS = 10000   -- members recorded per table (Enum alone has thousands)
@@ -415,12 +415,14 @@ end
 -- Calls: getters, in and out of combat
 -------------------------------------------------------------------------------------------
 
-local GETTER = { "^Get", "^Is", "^Has", "^Can", "^Should", "^Are", "^Does", "^Unit", "^Num" }
+-- The prefix must be followed by a capital or digit: "^Can" alone matched Cancel* (0.1.2 called CancelLogout).
+local GETTER = { "^Get[%u%d]", "^Is[%u%d]", "^Has[%u%d]", "^Can[%u%d]", "^Should[%u%d]", "^Are[%u%d]",
+  "^Does[%u%d]", "^Unit[%u%d]", "^Num[%u%d]" }
 local NEVER = { GetQuestReward = true } -- names that act despite the prefix
 
 local function isGetter(name)
   if NEVER[name] then return false end
-  if name:find("Reward") or name:find("Request") then return false end
+  if name:find("Reward") or name:find("Request") or name:find("Cancel") then return false end
   for _, p in ipairs(GETTER) do
     if name:find(p) then return true end
   end
@@ -542,6 +544,7 @@ local function stepCalls()
     -- a string local, so a client crash log's Lua stack names the call (crash logs print locals)
     local callKey = c.key
     local why = skipped(callKey)
+    if not why and not isGetter(c.fn) then why = "not a getter" end -- second guard, whatever leads.lua says
     if why then
       rec = { skipped = why }
     elseif type(fn) ~= "function" then

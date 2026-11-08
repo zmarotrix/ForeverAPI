@@ -6,16 +6,16 @@ Namespace: `C_VideoOptions`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_VideoOptions.AreHighResTexturesAvailable](#c_videooptionsarehighrestexturesavailable) |  |  |
-| ✅ | [C_VideoOptions.GetCurrentGameWindowSize](#c_videooptionsgetcurrentgamewindowsize) |  |  |
+| ✅ | [C_VideoOptions.AreHighResTexturesAvailable](#c_videooptionsarehighrestexturesavailable) | 1 value |  |
+| ✅ | [C_VideoOptions.GetCurrentGameWindowSize](#c_videooptionsgetcurrentgamewindowsize) | 1 value |  |
 | ✅ | [C_VideoOptions.GetDefaultGameWindowSize](#c_videooptionsgetdefaultgamewindowsize) |  |  |
 | ✅ | [C_VideoOptions.GetGameWindowSizes](#c_videooptionsgetgamewindowsizes) |  |  |
-| ✅ | [C_VideoOptions.GetGxAdapterInfo](#c_videooptionsgetgxadapterinfo) |  |  |
-| ✅ | [C_VideoOptions.IsLinearEnabledOnStart](#c_videooptionsislinearenabledonstart) |  |  |
-| ✅ | [C_VideoOptions.IsOutlineModeSupported](#c_videooptionsisoutlinemodesupported) |  |  |
-| ✅ | [C_VideoOptions.IsPBRWaterSupported](#c_videooptionsispbrwatersupported) |  |  |
-| ✅ | [C_VideoOptions.IsSecondaryLightingSupported](#c_videooptionsissecondarylightingsupported) |  |  |
-| ✅ | [C_VideoOptions.IsSpellVisualDensitySystemSupported](#c_videooptionsisspellvisualdensitysystemsupported) |  |  |
+| ✅ | [C_VideoOptions.GetGxAdapterInfo](#c_videooptionsgetgxadapterinfo) | 1 value |  |
+| ✅ | [C_VideoOptions.IsLinearEnabledOnStart](#c_videooptionsislinearenabledonstart) | 1 value |  |
+| ✅ | [C_VideoOptions.IsOutlineModeSupported](#c_videooptionsisoutlinemodesupported) | 1 value |  |
+| ✅ | [C_VideoOptions.IsPBRWaterSupported](#c_videooptionsispbrwatersupported) | 1 value |  |
+| ✅ | [C_VideoOptions.IsSecondaryLightingSupported](#c_videooptionsissecondarylightingsupported) | 1 value |  |
+| ✅ | [C_VideoOptions.IsSpellVisualDensitySystemSupported](#c_videooptionsisspellvisualdensitysystemsupported) | 1 value |  |
 | ✅ | [C_VideoOptions.SetGameWindowSize](#c_videooptionssetgamewindowsize) |  |  |
 
 ### C_VideoOptions.AreHighResTexturesAvailable
@@ -23,6 +23,7 @@ Namespace: `C_VideoOptions`
 `C_VideoOptions.AreHighResTexturesAvailable() → areAvailable: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `VideoDocumentation.lua`
 
 ### C_VideoOptions.GetCurrentGameWindowSize
@@ -30,6 +31,7 @@ Namespace: `C_VideoOptions`
 `C_VideoOptions.GetCurrentGameWindowSize() → size: vector2`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{Add=function,Clone=function,Cross=function,DivideBy=function,Dot=function,GetLength=function,GetLengthSquared=function,GetXY=function,IsEqualTo=function,IsZero=function,Normalize=function,OnLoad=function,RotateDirection=function,ScaleBy=function,SetXY=function,Subtract=function,x=number,y=number}`
 - Source: client docs `VideoDocumentation.lua`
 
 ### C_VideoOptions.GetDefaultGameWindowSize
@@ -53,6 +55,7 @@ Namespace: `C_VideoOptions`
 `C_VideoOptions.GetGxAdapterInfo() → adapters: GxAdapterInfoDetails[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{[number]=table,[number]=table}`
 - Source: client docs `VideoDocumentation.lua`
 
 ### C_VideoOptions.IsLinearEnabledOnStart
@@ -60,6 +63,7 @@ Namespace: `C_VideoOptions`
 `C_VideoOptions.IsLinearEnabledOnStart() → isEnabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `VideoDocumentation.lua`
 
 ### C_VideoOptions.IsOutlineModeSupported
@@ -67,6 +71,7 @@ Namespace: `C_VideoOptions`
 `C_VideoOptions.IsOutlineModeSupported() → isSupported: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `VideoDocumentation.lua`
 
 ### C_VideoOptions.IsPBRWaterSupported
@@ -74,6 +79,7 @@ Namespace: `C_VideoOptions`
 `C_VideoOptions.IsPBRWaterSupported() → isSupported: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `VideoDocumentation.lua`
 
 ### C_VideoOptions.IsSecondaryLightingSupported
@@ -81,6 +87,7 @@ Namespace: `C_VideoOptions`
 `C_VideoOptions.IsSecondaryLightingSupported() → isSupported: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `VideoDocumentation.lua`
 
 ### C_VideoOptions.IsSpellVisualDensitySystemSupported
@@ -88,6 +95,7 @@ Namespace: `C_VideoOptions`
 `C_VideoOptions.IsSpellVisualDensitySystemSupported() → isSupported: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `VideoDocumentation.lua`
 
 ### C_VideoOptions.SetGameWindowSize
@@ -111,7 +119,7 @@ Namespace: `C_VideoOptions`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 6 times (0 in combat); argument kinds: ``
 
 ### GLUE_SCREENSHOT_FAILED
 

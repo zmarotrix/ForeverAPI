@@ -6,15 +6,16 @@ Namespace: `C_Covenants`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_Covenants.GetActiveCovenantID](#c_covenantsgetactivecovenantid) |  |  |
+| ✅ | [C_Covenants.GetActiveCovenantID](#c_covenantsgetactivecovenantid) | 1 value |  |
 | ✅ | [C_Covenants.GetCovenantData](#c_covenantsgetcovenantdata) |  |  |
-| ✅ | [C_Covenants.GetCovenantIDs](#c_covenantsgetcovenantids) |  |  |
+| ✅ | [C_Covenants.GetCovenantIDs](#c_covenantsgetcovenantids) | 1 value |  |
 
 ### C_Covenants.GetActiveCovenantID
 
 `C_Covenants.GetActiveCovenantID() → covenantID: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `CovenantsDocumentation.lua`
 
 ### C_Covenants.GetCovenantData
@@ -30,6 +31,7 @@ Namespace: `C_Covenants`
 `C_Covenants.GetCovenantIDs() → covenantID: number[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{[number]=number,[number]=number}`
 - Source: client docs `CovenantsDocumentation.lua`
 
 ## Events

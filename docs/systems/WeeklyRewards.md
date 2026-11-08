@@ -10,23 +10,23 @@ Namespace: `C_WeeklyRewards`
 | ✅ | [C_WeeklyRewards.CanClaimRewards](#c_weeklyrewardscanclaimrewards) |  |  |
 | ✅ | [C_WeeklyRewards.ClaimReward](#c_weeklyrewardsclaimreward) |  |  |
 | ✅ | [C_WeeklyRewards.CloseInteraction](#c_weeklyrewardscloseinteraction) |  |  |
-| ✅ | [C_WeeklyRewards.GetActivities](#c_weeklyrewardsgetactivities) |  |  |
+| ✅ | [C_WeeklyRewards.GetActivities](#c_weeklyrewardsgetactivities) | 1 value |  |
 | ✅ | [C_WeeklyRewards.GetActivityEncounterInfo](#c_weeklyrewardsgetactivityencounterinfo) |  |  |
-| ✅ | [C_WeeklyRewards.GetConquestWeeklyProgress](#c_weeklyrewardsgetconquestweeklyprogress) |  |  |
+| ✅ | [C_WeeklyRewards.GetConquestWeeklyProgress](#c_weeklyrewardsgetconquestweeklyprogress) | 1 value |  |
 | ✅ | [C_WeeklyRewards.GetDifficultyIDForActivityTier](#c_weeklyrewardsgetdifficultyidforactivitytier) |  |  |
 | ✅ | [C_WeeklyRewards.GetExampleRewardItemHyperlinks](#c_weeklyrewardsgetexamplerewarditemhyperlinks) |  |  |
 | ✅ | [C_WeeklyRewards.GetItemHyperlink](#c_weeklyrewardsgetitemhyperlink) |  |  |
 | ✅ | [C_WeeklyRewards.GetNextActivitiesIncrease](#c_weeklyrewardsgetnextactivitiesincrease) |  |  |
 | ✅ | [C_WeeklyRewards.GetNextMythicPlusIncrease](#c_weeklyrewardsgetnextmythicplusincrease) |  |  |
-| ✅ | [C_WeeklyRewards.GetNumCompletedDungeonRuns](#c_weeklyrewardsgetnumcompleteddungeonruns) |  |  |
+| ✅ | [C_WeeklyRewards.GetNumCompletedDungeonRuns](#c_weeklyrewardsgetnumcompleteddungeonruns) | 3 values |  |
 | ✅ | [C_WeeklyRewards.GetSortedProgressForActivity](#c_weeklyrewardsgetsortedprogressforactivity) |  |  |
 | ✅ | [C_WeeklyRewards.HasAvailableRewards](#c_weeklyrewardshasavailablerewards) |  |  |
 | ✅ | [C_WeeklyRewards.HasGeneratedRewards](#c_weeklyrewardshasgeneratedrewards) |  |  |
-| ✅ | [C_WeeklyRewards.HasInteraction](#c_weeklyrewardshasinteraction) |  |  |
-| ✅ | [C_WeeklyRewards.IsWeeklyChestRetired](#c_weeklyrewardsisweeklychestretired) |  |  |
+| ✅ | [C_WeeklyRewards.HasInteraction](#c_weeklyrewardshasinteraction) | 1 value |  |
+| ✅ | [C_WeeklyRewards.IsWeeklyChestRetired](#c_weeklyrewardsisweeklychestretired) | 1 value |  |
 | ✅ | [C_WeeklyRewards.OnUIInteract](#c_weeklyrewardsonuiinteract) |  |  |
-| ✅ | [C_WeeklyRewards.ShouldShowFinalRetirementMessage](#c_weeklyrewardsshouldshowfinalretirementmessage) |  |  |
-| ✅ | [C_WeeklyRewards.ShouldShowRetirementMessage](#c_weeklyrewardsshouldshowretirementmessage) |  |  |
+| ✅ | [C_WeeklyRewards.ShouldShowFinalRetirementMessage](#c_weeklyrewardsshouldshowfinalretirementmessage) | 1 value |  |
+| ✅ | [C_WeeklyRewards.ShouldShowRetirementMessage](#c_weeklyrewardsshouldshowretirementmessage) | 1 value |  |
 
 ### C_WeeklyRewards.AreRewardsForCurrentRewardPeriod
 
@@ -63,6 +63,7 @@ Namespace: `C_WeeklyRewards`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `WeeklyRewardsDocumentation.lua`
 
 ### C_WeeklyRewards.GetActivityEncounterInfo
@@ -79,6 +80,7 @@ Namespace: `C_WeeklyRewards`
 `C_WeeklyRewards.GetConquestWeeklyProgress() → weeklyProgress: ConquestWeeklyProgress`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{displayType=number,maxProgress=number,maxUnlocks=number,progress=number,sampleItemHyperlink=string,unlocksCompleted=number}`
 - Source: client docs `WeeklyRewardsDocumentation.lua`
 
 ### C_WeeklyRewards.GetDifficultyIDForActivityTier
@@ -129,6 +131,7 @@ Namespace: `C_WeeklyRewards`
 `C_WeeklyRewards.GetNumCompletedDungeonRuns() → numHeroic: number, numMythic: number, numMythicPlus: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 3 values: `number`, `number`, `number`
 - Source: client docs `WeeklyRewardsDocumentation.lua`
 
 ### C_WeeklyRewards.GetSortedProgressForActivity
@@ -158,6 +161,7 @@ Namespace: `C_WeeklyRewards`
 `C_WeeklyRewards.HasInteraction() → isInteracting: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `WeeklyRewardsDocumentation.lua`
 
 ### C_WeeklyRewards.IsWeeklyChestRetired
@@ -165,6 +169,7 @@ Namespace: `C_WeeklyRewards`
 `C_WeeklyRewards.IsWeeklyChestRetired() → isRetired: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `WeeklyRewardsDocumentation.lua`
 
 ### C_WeeklyRewards.OnUIInteract
@@ -179,6 +184,7 @@ Namespace: `C_WeeklyRewards`
 `C_WeeklyRewards.ShouldShowFinalRetirementMessage() → showRetirementMessage: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `WeeklyRewardsDocumentation.lua`
 
 ### C_WeeklyRewards.ShouldShowRetirementMessage
@@ -186,6 +192,7 @@ Namespace: `C_WeeklyRewards`
 `C_WeeklyRewards.ShouldShowRetirementMessage() → showRetirementMessage: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `WeeklyRewardsDocumentation.lua`
 
 ## Events
@@ -201,6 +208,7 @@ Namespace: `C_WeeklyRewards`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ## Types
 

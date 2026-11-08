@@ -7,12 +7,12 @@ Namespace: `C_CombatLog`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_CombatLog.ApplyFilterSettings](#c_combatlogapplyfiltersettings) |  |  |
-| ✅ | [C_CombatLog.AreFilteredEventsEnabled](#c_combatlogarefilteredeventsenabled) |  |  |
+| ✅ | [C_CombatLog.AreFilteredEventsEnabled](#c_combatlogarefilteredeventsenabled) | 1 value |  |
 | ✅ | [C_CombatLog.ClearEntries](#c_combatlogclearentries) |  |  |
 | ✅ | [C_CombatLog.DoesObjectMatchFilter](#c_combatlogdoesobjectmatchfilter) |  |  |
-| ✅ | [C_CombatLog.GetEntryRetentionTime](#c_combatloggetentryretentiontime) |  |  |
-| ✅ | [C_CombatLog.GetMessageLimit](#c_combatloggetmessagelimit) |  |  |
-| ✅ | [C_CombatLog.IsCombatLogRestricted](#c_combatlogiscombatlogrestricted) |  |  |
+| ✅ | [C_CombatLog.GetEntryRetentionTime](#c_combatloggetentryretentiontime) | 1 value |  |
+| ✅ | [C_CombatLog.GetMessageLimit](#c_combatloggetmessagelimit) | 1 value |  |
+| ✅ | [C_CombatLog.IsCombatLogRestricted](#c_combatlogiscombatlogrestricted) | 1 value |  |
 | ✅ | [C_CombatLog.RefilterEntries](#c_combatlogrefilterentries) |  |  |
 | ✅ | [C_CombatLog.SetEntryRetentionTime](#c_combatlogsetentryretentiontime) |  |  |
 | ✅ | [C_CombatLog.SetFilteredEventsEnabled](#c_combatlogsetfilteredeventsenabled) |  |  |
@@ -32,6 +32,7 @@ Namespace: `C_CombatLog`
 `C_CombatLog.AreFilteredEventsEnabled() → enabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `CombatLogDocumentation.lua`
 
 ### C_CombatLog.ClearEntries
@@ -54,6 +55,7 @@ Namespace: `C_CombatLog`
 `C_CombatLog.GetEntryRetentionTime() → retentionTime: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `CombatLogDocumentation.lua`
 
 ### C_CombatLog.GetMessageLimit
@@ -61,6 +63,7 @@ Namespace: `C_CombatLog`
 `C_CombatLog.GetMessageLimit() → messageLimit: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `CombatLogDocumentation.lua`
 
 ### C_CombatLog.IsCombatLogRestricted
@@ -68,6 +71,7 @@ Namespace: `C_CombatLog`
 `C_CombatLog.IsCombatLogRestricted() → restricted: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `CombatLogDocumentation.lua`
 
 ### C_CombatLog.RefilterEntries
@@ -116,6 +120,7 @@ Namespace: `C_CombatLog`
 - CallbackEvent (Blizzard's docs)
 - restricted in some situations (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- ⛔ Add-ons may not register it: RegisterEvent raised ADDON_ACTION_FORBIDDEN
 
 ### COMBAT_LOG_EVENT_UNFILTERED
 
@@ -124,6 +129,7 @@ Namespace: `C_CombatLog`
 - CallbackEvent (Blizzard's docs)
 - restricted in some situations (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- ⛔ Add-ons may not register it: RegisterEvent raised ADDON_ACTION_FORBIDDEN
 
 ### COMBAT_LOG_MESSAGE_LIMIT_CHANGED
 

@@ -13,7 +13,7 @@ Namespace: `C_ActionBar`
 | ✅ | [C_ActionBar.FindSpellActionButtons](#c_actionbarfindspellactionbuttons) |  |  |
 | ✅ | [C_ActionBar.ForceUpdateAction](#c_actionbarforceupdateaction) |  |  |
 | ✅ | [C_ActionBar.GetActionAutocast](#c_actionbargetactionautocast) |  |  |
-| ✅ | [C_ActionBar.GetActionBarPage](#c_actionbargetactionbarpage) |  |  |
+| ✅ | [C_ActionBar.GetActionBarPage](#c_actionbargetactionbarpage) | 1 value |  |
 | ✅ | [C_ActionBar.GetActionChargeDuration](#c_actionbargetactionchargeduration) |  |  |
 | ✅ | [C_ActionBar.GetActionCharges](#c_actionbargetactioncharges) |  |  |
 | ✅ | [C_ActionBar.GetActionCooldown](#c_actionbargetactioncooldown) |  |  |
@@ -25,32 +25,32 @@ Namespace: `C_ActionBar`
 | ✅ | [C_ActionBar.GetActionText](#c_actionbargetactiontext) |  |  |
 | ✅ | [C_ActionBar.GetActionTexture](#c_actionbargetactiontexture) |  |  |
 | ✅ | [C_ActionBar.GetActionUseCount](#c_actionbargetactionusecount) |  |  |
-| ✅ | [C_ActionBar.GetBonusBarIndex](#c_actionbargetbonusbarindex) |  |  |
+| ✅ | [C_ActionBar.GetBonusBarIndex](#c_actionbargetbonusbarindex) | 1 value |  |
 | ✅ | [C_ActionBar.GetBonusBarIndexForSlot](#c_actionbargetbonusbarindexforslot) |  |  |
-| ✅ | [C_ActionBar.GetBonusBarOffset](#c_actionbargetbonusbaroffset) |  |  |
-| ✅ | [C_ActionBar.GetExtraBarIndex](#c_actionbargetextrabarindex) |  |  |
+| ✅ | [C_ActionBar.GetBonusBarOffset](#c_actionbargetbonusbaroffset) | 1 value |  |
+| ✅ | [C_ActionBar.GetExtraBarIndex](#c_actionbargetextrabarindex) | 1 value |  |
 | ✅ | [C_ActionBar.GetItemActionOnEquipSpellID](#c_actionbargetitemactiononequipspellid) |  |  |
-| ✅ | [C_ActionBar.GetMultiCastBarIndex](#c_actionbargetmulticastbarindex) |  |  |
-| ✅ | [C_ActionBar.GetOverrideBarIndex](#c_actionbargetoverridebarindex) |  |  |
-| ✅ | [C_ActionBar.GetOverrideBarSkin](#c_actionbargetoverridebarskin) |  |  |
+| ✅ | [C_ActionBar.GetMultiCastBarIndex](#c_actionbargetmulticastbarindex) | 1 value |  |
+| ✅ | [C_ActionBar.GetOverrideBarIndex](#c_actionbargetoverridebarindex) | 1 value |  |
+| ✅ | [C_ActionBar.GetOverrideBarSkin](#c_actionbargetoverridebarskin) | 1 value |  |
 | ✅ | [C_ActionBar.GetPetActionPetBarIndices](#c_actionbargetpetactionpetbarindices) |  |  |
 | ✅ | [C_ActionBar.GetProfessionQuality](#c_actionbargetprofessionquality) |  |  |
 | ✅ | [C_ActionBar.GetProfessionQualityInfo](#c_actionbargetprofessionqualityinfo) |  |  |
 | ✅ | [C_ActionBar.GetSpell](#c_actionbargetspell) |  |  |
-| ✅ | [C_ActionBar.GetTempShapeshiftBarIndex](#c_actionbargettempshapeshiftbarindex) |  |  |
-| ✅ | [C_ActionBar.GetVehicleBarIndex](#c_actionbargetvehiclebarindex) |  |  |
+| ✅ | [C_ActionBar.GetTempShapeshiftBarIndex](#c_actionbargettempshapeshiftbarindex) | 1 value |  |
+| ✅ | [C_ActionBar.GetVehicleBarIndex](#c_actionbargetvehiclebarindex) | 1 value |  |
 | ✅ | [C_ActionBar.HasAction](#c_actionbarhasaction) |  |  |
-| ✅ | [C_ActionBar.HasAssistedCombatActionButtons](#c_actionbarhasassistedcombatactionbuttons) |  |  |
-| ✅ | [C_ActionBar.HasBonusActionBar](#c_actionbarhasbonusactionbar) |  |  |
-| ✅ | [C_ActionBar.HasExtraActionBar](#c_actionbarhasextraactionbar) |  |  |
+| ✅ | [C_ActionBar.HasAssistedCombatActionButtons](#c_actionbarhasassistedcombatactionbuttons) | 1 value |  |
+| ✅ | [C_ActionBar.HasBonusActionBar](#c_actionbarhasbonusactionbar) | 1 value |  |
+| ✅ | [C_ActionBar.HasExtraActionBar](#c_actionbarhasextraactionbar) | 1 value |  |
 | ✅ | [C_ActionBar.HasFlyoutActionButtons](#c_actionbarhasflyoutactionbuttons) |  |  |
-| ✅ | [C_ActionBar.HasOverrideActionBar](#c_actionbarhasoverrideactionbar) |  |  |
+| ✅ | [C_ActionBar.HasOverrideActionBar](#c_actionbarhasoverrideactionbar) | 1 value |  |
 | ✅ | [C_ActionBar.HasPetActionButtons](#c_actionbarhaspetactionbuttons) |  |  |
 | ✅ | [C_ActionBar.HasPetActionPetBarIndices](#c_actionbarhaspetactionpetbarindices) |  |  |
 | ✅ | [C_ActionBar.HasRangeRequirements](#c_actionbarhasrangerequirements) |  |  |
 | ✅ | [C_ActionBar.HasSpellActionButtons](#c_actionbarhasspellactionbuttons) |  |  |
-| ✅ | [C_ActionBar.HasTempShapeshiftActionBar](#c_actionbarhastempshapeshiftactionbar) |  |  |
-| ✅ | [C_ActionBar.HasVehicleActionBar](#c_actionbarhasvehicleactionbar) |  |  |
+| ✅ | [C_ActionBar.HasTempShapeshiftActionBar](#c_actionbarhastempshapeshiftactionbar) | 1 value |  |
+| ✅ | [C_ActionBar.HasVehicleActionBar](#c_actionbarhasvehicleactionbar) | 1 value |  |
 | ✅ | [C_ActionBar.IsActionInRange](#c_actionbarisactioninrange) |  |  |
 | ✅ | [C_ActionBar.IsAssistedCombatAction](#c_actionbarisassistedcombataction) |  |  |
 | ✅ | [C_ActionBar.IsAttackAction](#c_actionbarisattackaction) |  |  |
@@ -68,15 +68,15 @@ Namespace: `C_ActionBar`
 | ✅ | [C_ActionBar.IsItemAction](#c_actionbarisitemaction) |  |  |
 | ✅ | [C_ActionBar.IsMacroActionWithShowTooltip](#c_actionbarismacroactionwithshowtooltip) |  |  |
 | ✅ | [C_ActionBar.IsOnBarOrSpecialBar](#c_actionbarisonbarorspecialbar) |  |  |
-| ✅ | [C_ActionBar.IsPossessBarVisible](#c_actionbarispossessbarvisible) |  |  |
+| ✅ | [C_ActionBar.IsPossessBarVisible](#c_actionbarispossessbarvisible) | 1 value |  |
 | ✅ | [C_ActionBar.IsStackableAction](#c_actionbarisstackableaction) |  |  |
 | ✅ | [C_ActionBar.IsUsableAction](#c_actionbarisusableaction) |  |  |
 | ✅ | [C_ActionBar.PutActionInSlot](#c_actionbarputactioninslot) |  |  |
 | ✅ | [C_ActionBar.RegisterActionUIButton](#c_actionbarregisteractionuibutton) |  |  |
 | ✅ | [C_ActionBar.SetActionBarPage](#c_actionbarsetactionbarpage) |  |  |
-| ✅ | [C_ActionBar.ShouldOverrideBarShowHealthBar](#c_actionbarshouldoverridebarshowhealthbar) |  |  |
-| ✅ | [C_ActionBar.ShouldOverrideBarShowManaBar](#c_actionbarshouldoverridebarshowmanabar) |  |  |
-| ✅ | [C_ActionBar.ShouldShowKeyring](#c_actionbarshouldshowkeyring) |  |  |
+| ✅ | [C_ActionBar.ShouldOverrideBarShowHealthBar](#c_actionbarshouldoverridebarshowhealthbar) | 1 value |  |
+| ✅ | [C_ActionBar.ShouldOverrideBarShowManaBar](#c_actionbarshouldoverridebarshowmanabar) | 1 value |  |
+| ✅ | [C_ActionBar.ShouldShowKeyring](#c_actionbarshouldshowkeyring) | 1 value |  |
 | ✅ | [C_ActionBar.ToggleAutoCastPetAction](#c_actionbartoggleautocastpetaction) |  |  |
 | ✅ | [C_ActionBar.UnregisterActionUIButton](#c_actionbarunregisteractionuibutton) |  |  |
 | ✅ | [C_ActionBar.UsesActionText](#c_actionbarusesactiontext) |  |  |
@@ -153,6 +153,7 @@ Namespace: `C_ActionBar`
 `C_ActionBar.GetActionBarPage() → currentPage: luaIndex`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ActionBarFrameDocumentation.lua`
 
 ### C_ActionBar.GetActionChargeDuration
@@ -266,6 +267,7 @@ Namespace: `C_ActionBar`
 `C_ActionBar.GetBonusBarIndex() → bonusBarIndex: luaIndex`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ActionBarFrameDocumentation.lua`
 
 ### C_ActionBar.GetBonusBarIndexForSlot
@@ -281,6 +283,7 @@ Namespace: `C_ActionBar`
 `C_ActionBar.GetBonusBarOffset() → bonusBarOffset: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ActionBarFrameDocumentation.lua`
 
 ### C_ActionBar.GetExtraBarIndex
@@ -288,6 +291,7 @@ Namespace: `C_ActionBar`
 `C_ActionBar.GetExtraBarIndex() → extraBarIndex: luaIndex`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ActionBarFrameDocumentation.lua`
 
 ### C_ActionBar.GetItemActionOnEquipSpellID
@@ -303,6 +307,7 @@ Namespace: `C_ActionBar`
 `C_ActionBar.GetMultiCastBarIndex() → multiCastBarIndex: luaIndex`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ActionBarFrameDocumentation.lua`
 
 ### C_ActionBar.GetOverrideBarIndex
@@ -310,6 +315,7 @@ Namespace: `C_ActionBar`
 `C_ActionBar.GetOverrideBarIndex() → overrideBarIndex: luaIndex`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ActionBarFrameDocumentation.lua`
 
 ### C_ActionBar.GetOverrideBarSkin
@@ -317,6 +323,7 @@ Namespace: `C_ActionBar`
 `C_ActionBar.GetOverrideBarSkin() → textureFileID: fileID?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `ActionBarFrameDocumentation.lua`
 
 ### C_ActionBar.GetPetActionPetBarIndices
@@ -357,6 +364,7 @@ Namespace: `C_ActionBar`
 `C_ActionBar.GetTempShapeshiftBarIndex() → tempShapeshiftBarIndex: luaIndex`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ActionBarFrameDocumentation.lua`
 
 ### C_ActionBar.GetVehicleBarIndex
@@ -364,6 +372,7 @@ Namespace: `C_ActionBar`
 `C_ActionBar.GetVehicleBarIndex() → vehicleBarIndex: luaIndex`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `ActionBarFrameDocumentation.lua`
 
 ### C_ActionBar.HasAction
@@ -382,6 +391,7 @@ Namespace: `C_ActionBar`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ActionBarFrameDocumentation.lua`
 
 ### C_ActionBar.HasBonusActionBar
@@ -389,6 +399,7 @@ Namespace: `C_ActionBar`
 `C_ActionBar.HasBonusActionBar() → hasBonusActionBar: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ActionBarFrameDocumentation.lua`
 
 ### C_ActionBar.HasExtraActionBar
@@ -396,6 +407,7 @@ Namespace: `C_ActionBar`
 `C_ActionBar.HasExtraActionBar() → hasExtraActionBar: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ActionBarFrameDocumentation.lua`
 
 ### C_ActionBar.HasFlyoutActionButtons
@@ -411,6 +423,7 @@ Namespace: `C_ActionBar`
 `C_ActionBar.HasOverrideActionBar() → hasOverrideActionBar: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ActionBarFrameDocumentation.lua`
 
 ### C_ActionBar.HasPetActionButtons
@@ -451,6 +464,7 @@ Namespace: `C_ActionBar`
 `C_ActionBar.HasTempShapeshiftActionBar() → hasTempShapeshiftActionBar: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ActionBarFrameDocumentation.lua`
 
 ### C_ActionBar.HasVehicleActionBar
@@ -458,6 +472,7 @@ Namespace: `C_ActionBar`
 `C_ActionBar.HasVehicleActionBar() → hasVehicleActionBar: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ActionBarFrameDocumentation.lua`
 
 ### C_ActionBar.IsActionInRange
@@ -613,6 +628,7 @@ Namespace: `C_ActionBar`
 `C_ActionBar.IsPossessBarVisible() → isPossessBarVisible: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ActionBarFrameDocumentation.lua`
 
 ### C_ActionBar.IsStackableAction
@@ -663,6 +679,7 @@ Namespace: `C_ActionBar`
 `C_ActionBar.ShouldOverrideBarShowHealthBar() → showHealthBar: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ActionBarFrameDocumentation.lua`
 
 ### C_ActionBar.ShouldOverrideBarShowManaBar
@@ -670,6 +687,7 @@ Namespace: `C_ActionBar`
 `C_ActionBar.ShouldOverrideBarShowManaBar() → showManaBar: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ActionBarFrameDocumentation.lua`
 
 ### C_ActionBar.ShouldShowKeyring
@@ -677,6 +695,7 @@ Namespace: `C_ActionBar`
 `C_ActionBar.ShouldShowKeyring() → isKeyringEnabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `ActionBarFrameDocumentation.lua`
 
 ### C_ActionBar.ToggleAutoCastPetAction
@@ -735,27 +754,28 @@ Namespace: `C_ActionBar`
 - Status: ✅ verified
 - Payload: `slot: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 20 times (0 in combat); argument kinds: `n`
 
 ### ACTIONBAR_UPDATE_COOLDOWN
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 31 times (27 in combat); argument kinds: ``
+- Seen firing 109 times (92 in combat); argument kinds: ``
 
 ### ACTIONBAR_UPDATE_STATE
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 44 times (40 in combat); argument kinds: ``
+- Seen firing 329 times (312 in combat); argument kinds: ``
 
 ### ACTIONBAR_UPDATE_USABLE
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 16 times (12 in combat); argument kinds: ``
+- Seen firing 112 times (85 in combat); argument kinds: ``
 
 ### ACTION_RANGE_CHECK_UPDATE
 
@@ -763,14 +783,14 @@ Namespace: `C_ActionBar`
 - Payload: `slot: luaIndex`, `isInRange: bool`, `checksRange: bool`
 - Blizzard: Used in conjunction with EnableActionRangeCheck to inform the UI when an action goes in or out of range with its current target.
 - fires synchronously (Blizzard's docs)
-- Seen firing 124 times (20 in combat); argument kinds: `n,b,b`
+- Seen firing 442 times (118 in combat); argument kinds: `n,b,b`
 
 ### ACTION_USABLE_CHANGED
 
 - Status: ✅ verified
 - Payload: `changes: ActionUsableState[]`
 - fires synchronously (Blizzard's docs)
-- Seen firing 16 times (12 in combat); argument kinds: `t`
+- Seen firing 112 times (85 in combat); argument kinds: `t`
 
 ### PET_BAR_UPDATE
 
@@ -784,13 +804,14 @@ Namespace: `C_ActionBar`
 - Payload: none
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### UPDATE_EXTRA_ACTIONBAR
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### UPDATE_MULTI_CAST_ACTIONBAR
 
@@ -803,7 +824,7 @@ Namespace: `C_ActionBar`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ## Types
 

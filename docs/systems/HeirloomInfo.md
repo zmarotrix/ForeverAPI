@@ -6,11 +6,11 @@ Namespace: `C_HeirloomInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_HeirloomInfo.AreAllCollectionFiltersChecked](#c_heirloominfoareallcollectionfilterschecked) |  |  |
-| ✅ | [C_HeirloomInfo.AreAllSourceFiltersChecked](#c_heirloominfoareallsourcefilterschecked) |  |  |
+| ✅ | [C_HeirloomInfo.AreAllCollectionFiltersChecked](#c_heirloominfoareallcollectionfilterschecked) | 1 value |  |
+| ✅ | [C_HeirloomInfo.AreAllSourceFiltersChecked](#c_heirloominfoareallsourcefilterschecked) | 1 value |  |
 | ✅ | [C_HeirloomInfo.HeirloomsAvailable](#c_heirloominfoheirloomsavailable) |  |  |
 | ✅ | [C_HeirloomInfo.IsHeirloomSourceValid](#c_heirloominfoisheirloomsourcevalid) |  |  |
-| ✅ | [C_HeirloomInfo.IsUsingDefaultFilters](#c_heirloominfoisusingdefaultfilters) |  |  |
+| ✅ | [C_HeirloomInfo.IsUsingDefaultFilters](#c_heirloominfoisusingdefaultfilters) | 1 value |  |
 | ✅ | [C_HeirloomInfo.SetAllCollectionFilters](#c_heirloominfosetallcollectionfilters) |  |  |
 | ✅ | [C_HeirloomInfo.SetAllSourceFilters](#c_heirloominfosetallsourcefilters) |  |  |
 | ✅ | [C_HeirloomInfo.SetDefaultFilters](#c_heirloominfosetdefaultfilters) |  |  |
@@ -20,6 +20,7 @@ Namespace: `C_HeirloomInfo`
 `C_HeirloomInfo.AreAllCollectionFiltersChecked() → areAllCollectionFiltersChecked: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `HeirloomInfoDocumentation.lua`
 
 ### C_HeirloomInfo.AreAllSourceFiltersChecked
@@ -27,6 +28,7 @@ Namespace: `C_HeirloomInfo`
 `C_HeirloomInfo.AreAllSourceFiltersChecked() → areAllSourceFiltersChecked: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `HeirloomInfoDocumentation.lua`
 
 ### C_HeirloomInfo.HeirloomsAvailable
@@ -49,6 +51,7 @@ Namespace: `C_HeirloomInfo`
 `C_HeirloomInfo.IsUsingDefaultFilters() → isUsingDefaultFilters: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `HeirloomInfoDocumentation.lua`
 
 ### C_HeirloomInfo.SetAllCollectionFilters

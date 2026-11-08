@@ -7,24 +7,24 @@ Namespace: `C_PaperDollInfo`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_PaperDollInfo.AmmoNeeded](#c_paperdollinfoammoneeded) |  |  |
-| ✅ | [C_PaperDollInfo.CanAutoEquipCursorItem](#c_paperdollinfocanautoequipcursoritem) |  |  |
+| ✅ | [C_PaperDollInfo.CanAutoEquipCursorItem](#c_paperdollinfocanautoequipcursoritem) | 1 value |  |
 | ✅ | [C_PaperDollInfo.CancelTemporaryEnchantment](#c_paperdollinfocanceltemporaryenchantment) |  |  |
 | ✅ | [C_PaperDollInfo.CursorCanGoInSlot](#c_paperdollinfocursorcangoinslot) |  |  |
 | ✅ | [C_PaperDollInfo.GetArmorEffectiveness](#c_paperdollinfogetarmoreffectiveness) |  |  |
 | ✅ | [C_PaperDollInfo.GetArmorEffectivenessAgainstTarget](#c_paperdollinfogetarmoreffectivenessagainsttarget) |  |  |
 | ✅ | [C_PaperDollInfo.GetInspectAzeriteItemEmpoweredChoices](#c_paperdollinfogetinspectazeriteitemempoweredchoices) |  |  |
 | ✅ | [C_PaperDollInfo.GetInspectGuildInfo](#c_paperdollinfogetinspectguildinfo) |  |  |
-| ✅ | [C_PaperDollInfo.GetInspectItemLevel](#c_paperdollinfogetinspectitemlevel) |  |  |
-| ✅ | [C_PaperDollInfo.GetInspectRatedBGBlitzData](#c_paperdollinfogetinspectratedbgblitzdata) |  |  |
-| ✅ | [C_PaperDollInfo.GetInspectRatedBGData](#c_paperdollinfogetinspectratedbgdata) |  |  |
-| ✅ | [C_PaperDollInfo.GetInspectRatedSoloShuffleData](#c_paperdollinfogetinspectratedsoloshuffledata) |  |  |
+| ✅ | [C_PaperDollInfo.GetInspectItemLevel](#c_paperdollinfogetinspectitemlevel) | 1 value |  |
+| ✅ | [C_PaperDollInfo.GetInspectRatedBGBlitzData](#c_paperdollinfogetinspectratedbgblitzdata) | 1 value |  |
+| ✅ | [C_PaperDollInfo.GetInspectRatedBGData](#c_paperdollinfogetinspectratedbgdata) | 1 value |  |
+| ✅ | [C_PaperDollInfo.GetInspectRatedSoloShuffleData](#c_paperdollinfogetinspectratedsoloshuffledata) | 1 value |  |
 | ✅ | [C_PaperDollInfo.GetInventorySlotInfo](#c_paperdollinfogetinventoryslotinfo) |  |  |
 | ✅ | [C_PaperDollInfo.GetInventorySlotInfoForInvSlot](#c_paperdollinfogetinventoryslotinfoforinvslot) |  |  |
-| ✅ | [C_PaperDollInfo.GetMinItemLevel](#c_paperdollinfogetminitemlevel) |  |  |
-| ✅ | [C_PaperDollInfo.GetStaggerPercentage](#c_paperdollinfogetstaggerpercentage) |  |  |
+| ✅ | [C_PaperDollInfo.GetMinItemLevel](#c_paperdollinfogetminitemlevel) | 1 value |  |
+| ✅ | [C_PaperDollInfo.GetStaggerPercentage](#c_paperdollinfogetstaggerpercentage) | 2 values |  |
 | ✅ | [C_PaperDollInfo.GetTemporaryEnchantmentInfo](#c_paperdollinfogettemporaryenchantmentinfo) |  |  |
 | ✅ | [C_PaperDollInfo.IsInventorySlotEnabled](#c_paperdollinfoisinventoryslotenabled) |  |  |
-| ✅ | [C_PaperDollInfo.IsRangedSlotShown](#c_paperdollinfoisrangedslotshown) |  |  |
+| ✅ | [C_PaperDollInfo.IsRangedSlotShown](#c_paperdollinfoisrangedslotshown) | 1 value |  |
 | ✅ | [C_PaperDollInfo.OffhandHasShield](#c_paperdollinfooffhandhasshield) |  |  |
 | ✅ | [C_PaperDollInfo.OffhandHasWeapon](#c_paperdollinfooffhandhasweapon) |  |  |
 
@@ -40,6 +40,7 @@ Namespace: `C_PaperDollInfo`
 `C_PaperDollInfo.CanAutoEquipCursorItem() → canAutoEquip: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PaperDollInfoDocumentation.lua`
 
 ### C_PaperDollInfo.CancelTemporaryEnchantment
@@ -99,6 +100,7 @@ Namespace: `C_PaperDollInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with "player": returned 1 value: `number`
 - Source: client docs `PaperDollInfoDocumentation.lua`
 
 ### C_PaperDollInfo.GetInspectRatedBGBlitzData
@@ -106,6 +108,7 @@ Namespace: `C_PaperDollInfo`
 `C_PaperDollInfo.GetInspectRatedBGBlitzData() → ratedBGBlitzData: InspectPVPData`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{gamesPlayed=number,gamesWon=number,rating=number,roundsPlayed=number,roundsWon=number}`
 - Source: client docs `PaperDollInfoDocumentation.lua`
 
 ### C_PaperDollInfo.GetInspectRatedBGData
@@ -113,6 +116,7 @@ Namespace: `C_PaperDollInfo`
 `C_PaperDollInfo.GetInspectRatedBGData() → ratedBGData: InspectRatedBGData`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{played=number,rating=number,won=number}`
 - Source: client docs `PaperDollInfoDocumentation.lua`
 
 ### C_PaperDollInfo.GetInspectRatedSoloShuffleData
@@ -120,6 +124,7 @@ Namespace: `C_PaperDollInfo`
 `C_PaperDollInfo.GetInspectRatedSoloShuffleData() → ratedSoloShuffleData: InspectPVPData`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{gamesPlayed=number,gamesWon=number,rating=number,roundsPlayed=number,roundsWon=number}`
 - Source: client docs `PaperDollInfoDocumentation.lua`
 
 ### C_PaperDollInfo.GetInventorySlotInfo
@@ -146,6 +151,7 @@ Namespace: `C_PaperDollInfo`
 `C_PaperDollInfo.GetMinItemLevel() → minItemLevel: number?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `PaperDollInfoDocumentation.lua`
 
 ### C_PaperDollInfo.GetStaggerPercentage
@@ -154,6 +160,7 @@ Namespace: `C_PaperDollInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with "player": returned 2 values: `number`, `nil`
 - Source: client docs `PaperDollInfoDocumentation.lua`
 
 ### C_PaperDollInfo.GetTemporaryEnchantmentInfo
@@ -181,6 +188,7 @@ Namespace: `C_PaperDollInfo`
 `C_PaperDollInfo.IsRangedSlotShown() → isShown: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `PaperDollInfoDocumentation.lua`
 
 ### C_PaperDollInfo.OffhandHasShield
@@ -318,20 +326,21 @@ Namespace: `C_PaperDollInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 11 times (0 in combat); argument kinds: ``
 
 ### UPDATE_INVENTORY_ALERTS
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (1 in combat); argument kinds: ``
 
 ### UPDATE_INVENTORY_DURABILITY
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (1 in combat); argument kinds: ``
+- Seen firing 7 times (4 in combat); argument kinds: ``
 
 ### WEAPON_SLOT_CHANGED
 

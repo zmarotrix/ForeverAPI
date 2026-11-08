@@ -6,9 +6,9 @@ Namespace: `C_GamepadUI`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_GamepadUI.GetFirstGamepadActionBarStorageSlotIndexForActiveStance](#c_gamepaduigetfirstgamepadactionbarstorageslotindexforactivestance) |  |  |
-| ✅ | [C_GamepadUI.GetFirstGamepadActionStorageSlotIndex](#c_gamepaduigetfirstgamepadactionstorageslotindex) |  |  |
-| ✅ | [C_GamepadUI.GetFirstGamepadPetActionStorageSlotIndex](#c_gamepaduigetfirstgamepadpetactionstorageslotindex) |  |  |
+| ✅ | [C_GamepadUI.GetFirstGamepadActionBarStorageSlotIndexForActiveStance](#c_gamepaduigetfirstgamepadactionbarstorageslotindexforactivestance) | 1 value |  |
+| ✅ | [C_GamepadUI.GetFirstGamepadActionStorageSlotIndex](#c_gamepaduigetfirstgamepadactionstorageslotindex) | 1 value |  |
+| ✅ | [C_GamepadUI.GetFirstGamepadPetActionStorageSlotIndex](#c_gamepaduigetfirstgamepadpetactionstorageslotindex) | 1 value |  |
 | ✅ | [C_GamepadUI.IsValidGamepadActionStorageSlotIndex](#c_gamepaduiisvalidgamepadactionstorageslotindex) |  |  |
 | ✅ | [C_GamepadUI.IsValidGamepadPossessBarStorageSlotIndex](#c_gamepaduiisvalidgamepadpossessbarstorageslotindex) |  |  |
 
@@ -17,6 +17,7 @@ Namespace: `C_GamepadUI`
 `C_GamepadUI.GetFirstGamepadActionBarStorageSlotIndexForActiveStance() → activeStanceFirstGamepadStorageSlotIndex: luaIndex?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `GamepadUIDocumentation.lua`
 
 ### C_GamepadUI.GetFirstGamepadActionStorageSlotIndex
@@ -24,6 +25,7 @@ Namespace: `C_GamepadUI`
 `C_GamepadUI.GetFirstGamepadActionStorageSlotIndex() → firstGamepadActionStorageSlotIndex: luaIndex`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `GamepadUIDocumentation.lua`
 
 ### C_GamepadUI.GetFirstGamepadPetActionStorageSlotIndex
@@ -31,6 +33,7 @@ Namespace: `C_GamepadUI`
 `C_GamepadUI.GetFirstGamepadPetActionStorageSlotIndex() → firstGamepadPetActionStorageSlotID: luaIndex`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `GamepadUIDocumentation.lua`
 
 ### C_GamepadUI.IsValidGamepadActionStorageSlotIndex

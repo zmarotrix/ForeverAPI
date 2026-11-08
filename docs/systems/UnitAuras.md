@@ -24,12 +24,12 @@ Namespace: `C_UnitAuras`
 | ✅ | [C_UnitAuras.GetAuraDataBySpellName](#c_unitaurasgetauradatabyspellname) |  |  |
 | ✅ | [C_UnitAuras.GetAuraDispelTypeColor](#c_unitaurasgetauradispeltypecolor) |  |  |
 | ✅ | [C_UnitAuras.GetAuraDuration](#c_unitaurasgetauraduration) |  |  |
-| ✅ | [C_UnitAuras.GetAuraSlots](#c_unitaurasgetauraslots) |  |  |
+| ✅ | [C_UnitAuras.GetAuraSlots](#c_unitaurasgetauraslots) | 1 value |  |
 | ✅ | [C_UnitAuras.GetBuffDataByIndex](#c_unitaurasgetbuffdatabyindex) |  |  |
 | ✅ | [C_UnitAuras.GetCooldownAuraBySpellID](#c_unitaurasgetcooldownaurabyspellid) |  |  |
 | ✅ | [C_UnitAuras.GetDebuffDataByIndex](#c_unitaurasgetdebuffdatabyindex) |  |  |
-| ✅ | [C_UnitAuras.GetGroupBuffVisualAlerts](#c_unitaurasgetgroupbuffvisualalerts) |  |  |
-| ✅ | [C_UnitAuras.GetHiddenGroupBuffs](#c_unitaurasgethiddengroupbuffs) |  |  |
+| ✅ | [C_UnitAuras.GetGroupBuffVisualAlerts](#c_unitaurasgetgroupbuffvisualalerts) | 1 value |  |
+| ✅ | [C_UnitAuras.GetHiddenGroupBuffs](#c_unitaurasgethiddengroupbuffs) | 1 value |  |
 | ✅ | [C_UnitAuras.GetPlayerAuraBySpellID](#c_unitaurasgetplayeraurabyspellid) |  |  |
 | ✅ | [C_UnitAuras.GetRefreshCarryOverDuration](#c_unitaurasgetrefreshcarryoverduration) |  |  |
 | ✅ | [C_UnitAuras.GetRefreshExtendedDuration](#c_unitaurasgetrefreshextendedduration) |  |  |
@@ -232,6 +232,7 @@ Namespace: `C_UnitAuras`
 - Status: ✅ verified (function)
 - RequiresUnitAuraAccess (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with "player": returned 1 value: `nil`
 - Source: client docs `UnitAuraDocumentation.lua`
 
 ### C_UnitAuras.GetBuffDataByIndex
@@ -268,6 +269,7 @@ Namespace: `C_UnitAuras`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns the alerts passed to SetGroupBuffVisualAlerts plus an entry for every linked rank spell of those group buffs.
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `UnitAuraDocumentation.lua`
 
 ### C_UnitAuras.GetHiddenGroupBuffs
@@ -276,6 +278,7 @@ Namespace: `C_UnitAuras`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns the spell IDs passed to SetHiddenGroupBuffs plus every linked rank spell of those group buffs.
+- Called out of combat: returned 1 value: `table{[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number}`
 - Source: client docs `UnitAuraDocumentation.lua`
 
 ### C_UnitAuras.GetPlayerAuraBySpellID
@@ -434,7 +437,7 @@ Namespace: `C_UnitAuras`
 - Payload: `visualAlerts: GroupBuffVisualAlertInfo[]`
 - Blizzard: The payload matches GetGroupBuffVisualAlerts, including linked rank spells.
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: `t`
+- Seen firing 11 times (0 in combat); argument kinds: `t`
 
 ### HIDDEN_GROUP_BUFFS_CHANGED
 
@@ -442,7 +445,7 @@ Namespace: `C_UnitAuras`
 - Payload: `spellIDs: number[]`
 - Blizzard: The payload matches GetHiddenGroupBuffs, including linked rank spells.
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: `t`
+- Seen firing 11 times (0 in combat); argument kinds: `t`
 
 ### UNIT_AURA
 
@@ -450,7 +453,7 @@ Namespace: `C_UnitAuras`
 - Payload: `unitTarget: UnitTokenVariant`, `updateInfo: UnitAuraUpdateInfo`
 - SecretWhenAurasRestricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 10 times (9 in combat); argument kinds: `s,t`
+- Seen firing 45 times (41 in combat); argument kinds: `s,t`
 
 ### UNIT_AURA_BLOCKED
 

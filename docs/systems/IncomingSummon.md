@@ -6,7 +6,7 @@ Namespace: `C_IncomingSummon`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_IncomingSummon.HasIncomingSummon](#c_incomingsummonhasincomingsummon) |  |  |
+| ✅ | [C_IncomingSummon.HasIncomingSummon](#c_incomingsummonhasincomingsummon) | 1 value |  |
 | ✅ | [C_IncomingSummon.IncomingSummonStatus](#c_incomingsummonincomingsummonstatus) |  |  |
 
 ### C_IncomingSummon.HasIncomingSummon
@@ -15,6 +15,7 @@ Namespace: `C_IncomingSummon`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with "player": returned 1 value: `boolean`
 - Source: client docs `IncomingSummonDocumentation.lua`
 
 ### C_IncomingSummon.IncomingSummonStatus

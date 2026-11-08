@@ -6,13 +6,14 @@ Namespace: `C_CombatLogInternal`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ⛔ | [C_CombatLogInternal.GetCurrentEventInfo](#c_combatloginternalgetcurrenteventinfo) |  |  |
+| ⛔ | [C_CombatLogInternal.GetCurrentEventInfo](#c_combatloginternalgetcurrenteventinfo) | missing |  |
 
 ### C_CombatLogInternal.GetCurrentEventInfo
 
 `C_CombatLogInternal.GetCurrentEventInfo()`
 
 - Status: ⛔ in Blizzard's docs, not in game
+- Called out of combat: missing at call time
 - Source: client docs `CombatLogInternalDocumentation.lua`
 
 ## Events

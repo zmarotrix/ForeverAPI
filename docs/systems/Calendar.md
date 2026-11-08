@@ -7,9 +7,9 @@ Namespace: `C_Calendar`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_Calendar.AddEvent](#c_calendaraddevent) |  |  |
-| ✅ | [C_Calendar.AreNamesReady](#c_calendararenamesready) |  |  |
-| ✅ | [C_Calendar.CanAddEvent](#c_calendarcanaddevent) |  |  |
-| ✅ | [C_Calendar.CanSendInvite](#c_calendarcansendinvite) |  |  |
+| ✅ | [C_Calendar.AreNamesReady](#c_calendararenamesready) | 1 value |  |
+| ✅ | [C_Calendar.CanAddEvent](#c_calendarcanaddevent) | 1 value |  |
+| ✅ | [C_Calendar.CanSendInvite](#c_calendarcansendinvite) | 1 value |  |
 | ✅ | [C_Calendar.CloseEvent](#c_calendarcloseevent) |  |  |
 | ✅ | [C_Calendar.ContextMenuEventCanComplain](#c_calendarcontextmenueventcancomplain) |  |  |
 | ✅ | [C_Calendar.ContextMenuEventCanEdit](#c_calendarcontextmenueventcanedit) |  |  |
@@ -68,25 +68,25 @@ Namespace: `C_Calendar`
 | ✅ | [C_Calendar.EventTentative](#c_calendareventtentative) |  |  |
 | ✅ | [C_Calendar.GetClubCalendarEvents](#c_calendargetclubcalendarevents) |  |  |
 | ✅ | [C_Calendar.GetDayEvent](#c_calendargetdayevent) |  |  |
-| ✅ | [C_Calendar.GetDefaultGuildFilter](#c_calendargetdefaultguildfilter) |  |  |
-| ✅ | [C_Calendar.GetEventIndex](#c_calendargeteventindex) |  |  |
+| ✅ | [C_Calendar.GetDefaultGuildFilter](#c_calendargetdefaultguildfilter) | 1 value |  |
+| ✅ | [C_Calendar.GetEventIndex](#c_calendargeteventindex) | 0 values |  |
 | ✅ | [C_Calendar.GetEventIndexInfo](#c_calendargeteventindexinfo) |  |  |
-| ✅ | [C_Calendar.GetEventInfo](#c_calendargeteventinfo) |  |  |
+| ✅ | [C_Calendar.GetEventInfo](#c_calendargeteventinfo) | 0 values |  |
 | ✅ | [C_Calendar.GetFirstPendingInvite](#c_calendargetfirstpendinginvite) |  |  |
 | ✅ | [C_Calendar.GetGuildEventInfo](#c_calendargetguildeventinfo) |  |  |
 | ✅ | [C_Calendar.GetGuildEventSelectionInfo](#c_calendargetguildeventselectioninfo) |  |  |
 | ✅ | [C_Calendar.GetHolidayInfo](#c_calendargetholidayinfo) |  |  |
-| ✅ | [C_Calendar.GetMaxCreateDate](#c_calendargetmaxcreatedate) |  |  |
-| ✅ | [C_Calendar.GetMinDate](#c_calendargetmindate) |  |  |
-| ✅ | [C_Calendar.GetMonthInfo](#c_calendargetmonthinfo) |  |  |
-| ✅ | [C_Calendar.GetNextClubId](#c_calendargetnextclubid) |  |  |
+| ✅ | [C_Calendar.GetMaxCreateDate](#c_calendargetmaxcreatedate) | 1 value |  |
+| ✅ | [C_Calendar.GetMinDate](#c_calendargetmindate) | 1 value |  |
+| ✅ | [C_Calendar.GetMonthInfo](#c_calendargetmonthinfo) | 1 value |  |
+| ✅ | [C_Calendar.GetNextClubId](#c_calendargetnextclubid) | 1 value |  |
 | ✅ | [C_Calendar.GetNumDayEvents](#c_calendargetnumdayevents) |  |  |
-| ✅ | [C_Calendar.GetNumGuildEvents](#c_calendargetnumguildevents) |  |  |
-| ✅ | [C_Calendar.GetNumInvites](#c_calendargetnuminvites) |  |  |
-| ✅ | [C_Calendar.GetNumPendingInvites](#c_calendargetnumpendinginvites) |  |  |
+| ✅ | [C_Calendar.GetNumGuildEvents](#c_calendargetnumguildevents) | 1 value |  |
+| ✅ | [C_Calendar.GetNumInvites](#c_calendargetnuminvites) | 1 value |  |
+| ✅ | [C_Calendar.GetNumPendingInvites](#c_calendargetnumpendinginvites) | 1 value |  |
 | ✅ | [C_Calendar.GetRaidInfo](#c_calendargetraidinfo) |  |  |
-| ✅ | [C_Calendar.IsActionPending](#c_calendarisactionpending) |  |  |
-| ✅ | [C_Calendar.IsEventOpen](#c_calendariseventopen) |  |  |
+| ✅ | [C_Calendar.IsActionPending](#c_calendarisactionpending) | 1 value |  |
+| ✅ | [C_Calendar.IsEventOpen](#c_calendariseventopen) | 1 value |  |
 | ✅ | [C_Calendar.MassInviteCommunity](#c_calendarmassinvitecommunity) |  |  |
 | ✅ | [C_Calendar.MassInviteGuild](#c_calendarmassinviteguild) |  |  |
 | ✅ | [C_Calendar.OpenCalendar](#c_calendaropencalendar) |  |  |
@@ -110,6 +110,7 @@ Namespace: `C_Calendar`
 `C_Calendar.AreNamesReady() → ready: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.CanAddEvent
@@ -117,6 +118,7 @@ Namespace: `C_Calendar`
 `C_Calendar.CanAddEvent() → canAddEvent: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.CanSendInvite
@@ -124,6 +126,7 @@ Namespace: `C_Calendar`
 `C_Calendar.CanSendInvite() → canSendInvite: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.CloseEvent
@@ -571,6 +574,7 @@ Namespace: `C_Calendar`
 `C_Calendar.GetDefaultGuildFilter() → info: CalendarGuildFilterInfo`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{maxLevel=number,minLevel=number,rank=number}`
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.GetEventIndex
@@ -579,6 +583,7 @@ Namespace: `C_Calendar`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.GetEventIndexInfo
@@ -595,6 +600,7 @@ Namespace: `C_Calendar`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.GetFirstPendingInvite
@@ -637,6 +643,7 @@ Namespace: `C_Calendar`
 `C_Calendar.GetMaxCreateDate() → maxCreateDate: CalendarTime`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{hour=number,minute=number,month=number,monthDay=number,weekday=number,year=number}`
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.GetMinDate
@@ -644,6 +651,7 @@ Namespace: `C_Calendar`
 `C_Calendar.GetMinDate() → minDate: CalendarTime`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{hour=number,minute=number,month=number,monthDay=number,weekday=number,year=number}`
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.GetMonthInfo
@@ -652,6 +660,7 @@ Namespace: `C_Calendar`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `table{firstWeekday=number,month=number,numDays=number,year=number}`
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.GetNextClubId
@@ -659,6 +668,7 @@ Namespace: `C_Calendar`
 `C_Calendar.GetNextClubId() → clubId: ClubId?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.GetNumDayEvents
@@ -674,6 +684,7 @@ Namespace: `C_Calendar`
 `C_Calendar.GetNumGuildEvents() → numGuildEvents: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.GetNumInvites
@@ -681,6 +692,7 @@ Namespace: `C_Calendar`
 `C_Calendar.GetNumInvites() → num: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.GetNumPendingInvites
@@ -688,6 +700,7 @@ Namespace: `C_Calendar`
 `C_Calendar.GetNumPendingInvites() → num: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.GetRaidInfo
@@ -704,6 +717,7 @@ Namespace: `C_Calendar`
 `C_Calendar.IsActionPending() → actionPending: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.IsEventOpen
@@ -711,6 +725,7 @@ Namespace: `C_Calendar`
 `C_Calendar.IsEventOpen() → isOpen: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.MassInviteCommunity
@@ -790,7 +805,7 @@ Namespace: `C_Calendar`
 - Status: ✅ verified
 - Payload: `pending: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `b`
+- Seen firing 3 times (0 in combat); argument kinds: `b`
 
 ### CALENDAR_CLOSE_EVENT
 

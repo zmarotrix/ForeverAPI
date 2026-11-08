@@ -11,7 +11,7 @@ Namespace: `C_VignetteInfo`
 | ✅ | [C_VignetteInfo.GetRecommendedGroupSize](#c_vignetteinfogetrecommendedgroupsize) |  |  |
 | ✅ | [C_VignetteInfo.GetVignetteInfo](#c_vignetteinfogetvignetteinfo) |  |  |
 | ✅ | [C_VignetteInfo.GetVignettePosition](#c_vignetteinfogetvignetteposition) |  |  |
-| ✅ | [C_VignetteInfo.GetVignettes](#c_vignetteinfogetvignettes) |  |  |
+| ✅ | [C_VignetteInfo.GetVignettes](#c_vignetteinfogetvignettes) | 1 value |  |
 
 ### C_VignetteInfo.FindBestUniqueVignette
 
@@ -60,6 +60,7 @@ Namespace: `C_VignetteInfo`
 `C_VignetteInfo.GetVignettes() → vignetteGUIDs: WOWGUID[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `VignetteInfoDocumentation.lua`
 
 ## Events
@@ -69,6 +70,7 @@ Namespace: `C_VignetteInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### VIGNETTE_MINIMAP_UPDATED
 

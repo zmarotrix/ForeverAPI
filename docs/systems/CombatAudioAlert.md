@@ -10,10 +10,10 @@ Namespace: `C_CombatAudioAlert`
 | ✅ | [C_CombatAudioAlert.GetCategoryVoice](#c_combataudioalertgetcategoryvoice) |  |  |
 | ✅ | [C_CombatAudioAlert.GetCategoryVolume](#c_combataudioalertgetcategoryvolume) |  |  |
 | ✅ | [C_CombatAudioAlert.GetFormatSetting](#c_combataudioalertgetformatsetting) |  |  |
-| ✅ | [C_CombatAudioAlert.GetSpeakerSpeed](#c_combataudioalertgetspeakerspeed) |  |  |
+| ✅ | [C_CombatAudioAlert.GetSpeakerSpeed](#c_combataudioalertgetspeakerspeed) | 1 value |  |
 | ✅ | [C_CombatAudioAlert.GetSpecSetting](#c_combataudioalertgetspecsetting) |  |  |
 | ✅ | [C_CombatAudioAlert.GetThrottle](#c_combataudioalertgetthrottle) |  |  |
-| ✅ | [C_CombatAudioAlert.IsEnabled](#c_combataudioalertisenabled) |  |  |
+| ✅ | [C_CombatAudioAlert.IsEnabled](#c_combataudioalertisenabled) | 1 value |  |
 | ✅ | [C_CombatAudioAlert.RemoveFromKnownTargetingList](#c_combataudioalertremovefromknowntargetinglist) |  |  |
 | ✅ | [C_CombatAudioAlert.SetCategoryVoice](#c_combataudioalertsetcategoryvoice) |  |  |
 | ✅ | [C_CombatAudioAlert.SetCategoryVolume](#c_combataudioalertsetcategoryvolume) |  |  |
@@ -61,6 +61,7 @@ Namespace: `C_CombatAudioAlert`
 `C_CombatAudioAlert.GetSpeakerSpeed() → speed: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `CombatAudioAlertDocumentation.lua`
 
 ### C_CombatAudioAlert.GetSpecSetting
@@ -84,6 +85,7 @@ Namespace: `C_CombatAudioAlert`
 `C_CombatAudioAlert.IsEnabled() → isEnabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `CombatAudioAlertDocumentation.lua`
 
 ### C_CombatAudioAlert.RemoveFromKnownTargetingList

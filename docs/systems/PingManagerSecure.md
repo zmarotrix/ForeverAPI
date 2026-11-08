@@ -203,6 +203,7 @@ Namespace: `C_PingSecure`
 - Payload: `guid: WOWGUID`, `uiTextureKit: textureKit`
 - restricted in some situations (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- ⛔ Add-ons may not register it: RegisterEvent raised ADDON_ACTION_FORBIDDEN
 
 ### UNIT_PING_PIN_REMOVED
 
@@ -210,6 +211,7 @@ Namespace: `C_PingSecure`
 - Payload: `guid: WOWGUID`
 - restricted in some situations (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- ⛔ Add-ons may not register it: RegisterEvent raised ADDON_ACTION_FORBIDDEN
 
 ## Types
 

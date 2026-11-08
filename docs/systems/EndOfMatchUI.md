@@ -6,13 +6,14 @@ Namespace: `C_EndOfMatchUI`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_EndOfMatchUI.GetEndOfMatchDetails](#c_endofmatchuigetendofmatchdetails) |  |  |
+| ✅ | [C_EndOfMatchUI.GetEndOfMatchDetails](#c_endofmatchuigetendofmatchdetails) | 1 value |  |
 
 ### C_EndOfMatchUI.GetEndOfMatchDetails
 
 `C_EndOfMatchUI.GetEndOfMatchDetails() → matchDetails: MatchDetails?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `EndOfMatchUIDocumentation.lua`
 
 ## Events

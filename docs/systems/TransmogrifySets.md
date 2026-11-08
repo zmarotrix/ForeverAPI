@@ -9,17 +9,17 @@ Namespace: `C_TransmogSets`
 | ✅ | [C_TransmogSets.ClearLatestSource](#c_transmogsetsclearlatestsource) |  |  |
 | ✅ | [C_TransmogSets.ClearNewSource](#c_transmogsetsclearnewsource) |  |  |
 | ✅ | [C_TransmogSets.ClearSetNewSourcesForSlot](#c_transmogsetsclearsetnewsourcesforslot) |  |  |
-| ✅ | [C_TransmogSets.GetAllSets](#c_transmogsetsgetallsets) |  |  |
+| ✅ | [C_TransmogSets.GetAllSets](#c_transmogsetsgetallsets) | 1 value |  |
 | ✅ | [C_TransmogSets.GetAllSourceIDs](#c_transmogsetsgetallsourceids) |  |  |
-| ✅ | [C_TransmogSets.GetAvailableSets](#c_transmogsetsgetavailablesets) |  |  |
+| ✅ | [C_TransmogSets.GetAvailableSets](#c_transmogsetsgetavailablesets) | 1 value |  |
 | ✅ | [C_TransmogSets.GetBaseSetID](#c_transmogsetsgetbasesetid) |  |  |
-| ✅ | [C_TransmogSets.GetBaseSets](#c_transmogsetsgetbasesets) |  |  |
+| ✅ | [C_TransmogSets.GetBaseSets](#c_transmogsetsgetbasesets) | 1 value |  |
 | ✅ | [C_TransmogSets.GetBaseSetsFilter](#c_transmogsetsgetbasesetsfilter) |  |  |
-| ✅ | [C_TransmogSets.GetCameraIDs](#c_transmogsetsgetcameraids) |  |  |
-| ✅ | [C_TransmogSets.GetFilteredBaseSetsCounts](#c_transmogsetsgetfilteredbasesetscounts) |  |  |
-| ✅ | [C_TransmogSets.GetFullBaseSetsCounts](#c_transmogsetsgetfullbasesetscounts) |  |  |
+| ✅ | [C_TransmogSets.GetCameraIDs](#c_transmogsetsgetcameraids) | 2 values |  |
+| ✅ | [C_TransmogSets.GetFilteredBaseSetsCounts](#c_transmogsetsgetfilteredbasesetscounts) | 2 values |  |
+| ✅ | [C_TransmogSets.GetFullBaseSetsCounts](#c_transmogsetsgetfullbasesetscounts) | 2 values |  |
 | ✅ | [C_TransmogSets.GetIsFavorite](#c_transmogsetsgetisfavorite) |  |  |
-| ✅ | [C_TransmogSets.GetLatestSource](#c_transmogsetsgetlatestsource) |  |  |
+| ✅ | [C_TransmogSets.GetLatestSource](#c_transmogsetsgetlatestsource) | 1 value |  |
 | ✅ | [C_TransmogSets.GetSetInfo](#c_transmogsetsgetsetinfo) |  |  |
 | ✅ | [C_TransmogSets.GetSetNewSources](#c_transmogsetsgetsetnewsources) |  |  |
 | ✅ | [C_TransmogSets.GetSetPrimaryAppearances](#c_transmogsetsgetsetprimaryappearances) |  |  |
@@ -27,19 +27,19 @@ Namespace: `C_TransmogSets`
 | ✅ | [C_TransmogSets.GetSetsFilter](#c_transmogsetsgetsetsfilter) |  |  |
 | ✅ | [C_TransmogSets.GetSourceIDsForSlot](#c_transmogsetsgetsourceidsforslot) |  |  |
 | ✅ | [C_TransmogSets.GetSourcesForSlot](#c_transmogsetsgetsourcesforslot) |  |  |
-| ✅ | [C_TransmogSets.GetTransmogSetsClassFilter](#c_transmogsetsgettransmogsetsclassfilter) |  |  |
-| ✅ | [C_TransmogSets.GetUsableSets](#c_transmogsetsgetusablesets) |  |  |
-| ✅ | [C_TransmogSets.GetValidBaseSetsCountsForCharacter](#c_transmogsetsgetvalidbasesetscountsforcharacter) |  |  |
+| ✅ | [C_TransmogSets.GetTransmogSetsClassFilter](#c_transmogsetsgettransmogsetsclassfilter) | 1 value |  |
+| ✅ | [C_TransmogSets.GetUsableSets](#c_transmogsetsgetusablesets) | 1 value |  |
+| ✅ | [C_TransmogSets.GetValidBaseSetsCountsForCharacter](#c_transmogsetsgetvalidbasesetscountsforcharacter) | 2 values |  |
 | ✅ | [C_TransmogSets.GetValidClassForSet](#c_transmogsetsgetvalidclassforset) |  |  |
 | ✅ | [C_TransmogSets.GetVariantSets](#c_transmogsetsgetvariantsets) |  |  |
-| ✅ | [C_TransmogSets.HasAnyValidSets](#c_transmogsetshasanyvalidsets) |  |  |
-| ✅ | [C_TransmogSets.HasAvailableSets](#c_transmogsetshasavailablesets) |  |  |
-| ✅ | [C_TransmogSets.HasUsableSets](#c_transmogsetshasusablesets) |  |  |
+| ✅ | [C_TransmogSets.HasAnyValidSets](#c_transmogsetshasanyvalidsets) | 1 value |  |
+| ✅ | [C_TransmogSets.HasAvailableSets](#c_transmogsetshasavailablesets) | 1 value |  |
+| ✅ | [C_TransmogSets.HasUsableSets](#c_transmogsetshasusablesets) | 1 value |  |
 | ✅ | [C_TransmogSets.IsBaseSetCollected](#c_transmogsetsisbasesetcollected) |  |  |
 | ✅ | [C_TransmogSets.IsNewSource](#c_transmogsetsisnewsource) |  |  |
 | ✅ | [C_TransmogSets.IsSetVisible](#c_transmogsetsissetvisible) |  |  |
-| ✅ | [C_TransmogSets.IsUsingDefaultBaseSetsFilters](#c_transmogsetsisusingdefaultbasesetsfilters) |  |  |
-| ✅ | [C_TransmogSets.IsUsingDefaultSetsFilters](#c_transmogsetsisusingdefaultsetsfilters) |  |  |
+| ✅ | [C_TransmogSets.IsUsingDefaultBaseSetsFilters](#c_transmogsetsisusingdefaultbasesetsfilters) | 1 value |  |
+| ✅ | [C_TransmogSets.IsUsingDefaultSetsFilters](#c_transmogsetsisusingdefaultsetsfilters) | 1 value |  |
 | ✅ | [C_TransmogSets.SetBaseSetsFilter](#c_transmogsetssetbasesetsfilter) |  |  |
 | ✅ | [C_TransmogSets.SetDefaultBaseSetsFilters](#c_transmogsetssetdefaultbasesetsfilters) |  |  |
 | ✅ | [C_TransmogSets.SetDefaultSetsFilters](#c_transmogsetssetdefaultsetsfilters) |  |  |
@@ -77,6 +77,7 @@ Namespace: `C_TransmogSets`
 `C_TransmogSets.GetAllSets() → sets: TransmogSetInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{[number]=table}`
 - Source: client docs `TransmogSetsDocumentation.lua`
 
 ### C_TransmogSets.GetAllSourceIDs
@@ -93,6 +94,7 @@ Namespace: `C_TransmogSets`
 `C_TransmogSets.GetAvailableSets() → sets: TransmogSetInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `TransmogSetsDocumentation.lua`
 
 ### C_TransmogSets.GetBaseSetID
@@ -109,6 +111,7 @@ Namespace: `C_TransmogSets`
 `C_TransmogSets.GetBaseSets() → sets: TransmogSetInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `TransmogSetsDocumentation.lua`
 
 ### C_TransmogSets.GetBaseSetsFilter
@@ -125,6 +128,7 @@ Namespace: `C_TransmogSets`
 `C_TransmogSets.GetCameraIDs() → detailsCameraID: number?, vendorCameraID: number?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `number`, `number`
 - Source: client docs `TransmogSetsDocumentation.lua`
 
 ### C_TransmogSets.GetFilteredBaseSetsCounts
@@ -132,6 +136,7 @@ Namespace: `C_TransmogSets`
 `C_TransmogSets.GetFilteredBaseSetsCounts() → numCollected: number, numTotal: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `number`, `number`
 - Source: client docs `TransmogSetsDocumentation.lua`
 
 ### C_TransmogSets.GetFullBaseSetsCounts
@@ -139,6 +144,7 @@ Namespace: `C_TransmogSets`
 `C_TransmogSets.GetFullBaseSetsCounts() → numCollected: number, numTotal: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `number`, `number`
 - Source: client docs `TransmogSetsDocumentation.lua`
 
 ### C_TransmogSets.GetIsFavorite
@@ -155,6 +161,7 @@ Namespace: `C_TransmogSets`
 `C_TransmogSets.GetLatestSource() → sourceID: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `TransmogSetsDocumentation.lua`
 
 ### C_TransmogSets.GetSetInfo
@@ -225,6 +232,7 @@ Namespace: `C_TransmogSets`
 `C_TransmogSets.GetTransmogSetsClassFilter() → classID: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `TransmogSetsDocumentation.lua`
 
 ### C_TransmogSets.GetUsableSets
@@ -232,6 +240,7 @@ Namespace: `C_TransmogSets`
 `C_TransmogSets.GetUsableSets() → sets: TransmogSetInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `TransmogSetsDocumentation.lua`
 
 ### C_TransmogSets.GetValidBaseSetsCountsForCharacter
@@ -239,6 +248,7 @@ Namespace: `C_TransmogSets`
 `C_TransmogSets.GetValidBaseSetsCountsForCharacter() → numCollected: number, numTotal: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 2 values: `number`, `number`
 - Source: client docs `TransmogSetsDocumentation.lua`
 
 ### C_TransmogSets.GetValidClassForSet
@@ -263,6 +273,7 @@ Namespace: `C_TransmogSets`
 `C_TransmogSets.HasAnyValidSets() → hasAnyValidSets: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `TransmogSetsDocumentation.lua`
 
 ### C_TransmogSets.HasAvailableSets
@@ -270,6 +281,7 @@ Namespace: `C_TransmogSets`
 `C_TransmogSets.HasAvailableSets() → hasAvailableSets: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `TransmogSetsDocumentation.lua`
 
 ### C_TransmogSets.HasUsableSets
@@ -277,6 +289,7 @@ Namespace: `C_TransmogSets`
 `C_TransmogSets.HasUsableSets() → hasUsableSets: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `TransmogSetsDocumentation.lua`
 
 ### C_TransmogSets.IsBaseSetCollected
@@ -308,6 +321,7 @@ Namespace: `C_TransmogSets`
 `C_TransmogSets.IsUsingDefaultBaseSetsFilters() → isUsingDefaultBaseSetsFilters: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `TransmogSetsDocumentation.lua`
 
 ### C_TransmogSets.IsUsingDefaultSetsFilters
@@ -315,6 +329,7 @@ Namespace: `C_TransmogSets`
 `C_TransmogSets.IsUsingDefaultSetsFilters() → isUsingDefaultSetsFilters: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `TransmogSetsDocumentation.lua`
 
 ### C_TransmogSets.SetBaseSetsFilter

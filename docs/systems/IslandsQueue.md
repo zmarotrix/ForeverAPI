@@ -7,9 +7,9 @@ Namespace: `C_IslandsQueue`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_IslandsQueue.CloseIslandsQueueScreen](#c_islandsqueuecloseislandsqueuescreen) |  |  |
-| ✅ | [C_IslandsQueue.GetIslandDifficultyInfo](#c_islandsqueuegetislanddifficultyinfo) |  |  |
-| ✅ | [C_IslandsQueue.GetIslandsMaxGroupSize](#c_islandsqueuegetislandsmaxgroupsize) |  |  |
-| ✅ | [C_IslandsQueue.GetIslandsWeeklyQuestID](#c_islandsqueuegetislandsweeklyquestid) |  |  |
+| ✅ | [C_IslandsQueue.GetIslandDifficultyInfo](#c_islandsqueuegetislanddifficultyinfo) | 1 value |  |
+| ✅ | [C_IslandsQueue.GetIslandsMaxGroupSize](#c_islandsqueuegetislandsmaxgroupsize) | 1 value |  |
+| ✅ | [C_IslandsQueue.GetIslandsWeeklyQuestID](#c_islandsqueuegetislandsweeklyquestid) | 1 value |  |
 | ✅ | [C_IslandsQueue.QueueForIsland](#c_islandsqueuequeueforisland) |  |  |
 | ✅ | [C_IslandsQueue.RequestPreloadRewardData](#c_islandsqueuerequestpreloadrewarddata) |  |  |
 
@@ -25,6 +25,7 @@ Namespace: `C_IslandsQueue`
 `C_IslandsQueue.GetIslandDifficultyInfo() → islandDifficultyInfo: IslandsQueueDifficultyInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table}`
 - Source: client docs `IslandsQueueUIDocumentation.lua`
 
 ### C_IslandsQueue.GetIslandsMaxGroupSize
@@ -32,6 +33,7 @@ Namespace: `C_IslandsQueue`
 `C_IslandsQueue.GetIslandsMaxGroupSize() → maxGroupSize: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `IslandsQueueUIDocumentation.lua`
 
 ### C_IslandsQueue.GetIslandsWeeklyQuestID
@@ -39,6 +41,7 @@ Namespace: `C_IslandsQueue`
 `C_IslandsQueue.GetIslandsWeeklyQuestID() → questID: number?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `IslandsQueueUIDocumentation.lua`
 
 ### C_IslandsQueue.QueueForIsland

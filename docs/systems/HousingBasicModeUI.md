@@ -6,20 +6,20 @@ Namespace: `C_HousingBasicMode`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_HousingBasicMode.CancelActiveEditing](#c_housingbasicmodecancelactiveediting) |  |  |
+| ✅ | [C_HousingBasicMode.CancelActiveEditing](#c_housingbasicmodecancelactiveediting) | 0 values |  |
 | ✅ | [C_HousingBasicMode.CommitDecorMovement](#c_housingbasicmodecommitdecormovement) |  |  |
 | ✅ | [C_HousingBasicMode.CommitHouseExteriorPosition](#c_housingbasicmodecommithouseexteriorposition) |  |  |
 | ✅ | [C_HousingBasicMode.FinishPlacingNewDecor](#c_housingbasicmodefinishplacingnewdecor) |  |  |
-| ✅ | [C_HousingBasicMode.GetHoveredDecorInfo](#c_housingbasicmodegethovereddecorinfo) |  |  |
-| ✅ | [C_HousingBasicMode.GetSelectedDecorInfo](#c_housingbasicmodegetselecteddecorinfo) |  |  |
-| ✅ | [C_HousingBasicMode.IsDecorSelected](#c_housingbasicmodeisdecorselected) |  |  |
-| ✅ | [C_HousingBasicMode.IsFreePlaceEnabled](#c_housingbasicmodeisfreeplaceenabled) |  |  |
-| ✅ | [C_HousingBasicMode.IsGridSnapEnabled](#c_housingbasicmodeisgridsnapenabled) |  |  |
-| ✅ | [C_HousingBasicMode.IsGridVisible](#c_housingbasicmodeisgridvisible) |  |  |
-| ✅ | [C_HousingBasicMode.IsHouseExteriorHovered](#c_housingbasicmodeishouseexteriorhovered) |  |  |
-| ✅ | [C_HousingBasicMode.IsHouseExteriorSelected](#c_housingbasicmodeishouseexteriorselected) |  |  |
-| ✅ | [C_HousingBasicMode.IsHoveringDecor](#c_housingbasicmodeishoveringdecor) |  |  |
-| ✅ | [C_HousingBasicMode.IsPlacingNewDecor](#c_housingbasicmodeisplacingnewdecor) |  |  |
+| ✅ | [C_HousingBasicMode.GetHoveredDecorInfo](#c_housingbasicmodegethovereddecorinfo) | 1 value |  |
+| ✅ | [C_HousingBasicMode.GetSelectedDecorInfo](#c_housingbasicmodegetselecteddecorinfo) | 1 value |  |
+| ✅ | [C_HousingBasicMode.IsDecorSelected](#c_housingbasicmodeisdecorselected) | 1 value |  |
+| ✅ | [C_HousingBasicMode.IsFreePlaceEnabled](#c_housingbasicmodeisfreeplaceenabled) | 1 value |  |
+| ✅ | [C_HousingBasicMode.IsGridSnapEnabled](#c_housingbasicmodeisgridsnapenabled) | 1 value |  |
+| ✅ | [C_HousingBasicMode.IsGridVisible](#c_housingbasicmodeisgridvisible) | 1 value |  |
+| ✅ | [C_HousingBasicMode.IsHouseExteriorHovered](#c_housingbasicmodeishouseexteriorhovered) | 1 value |  |
+| ✅ | [C_HousingBasicMode.IsHouseExteriorSelected](#c_housingbasicmodeishouseexteriorselected) | 1 value |  |
+| ✅ | [C_HousingBasicMode.IsHoveringDecor](#c_housingbasicmodeishoveringdecor) | 1 value |  |
+| ✅ | [C_HousingBasicMode.IsPlacingNewDecor](#c_housingbasicmodeisplacingnewdecor) | 1 value |  |
 | ✅ | [C_HousingBasicMode.RemoveSelectedDecor](#c_housingbasicmoderemoveselecteddecor) |  |  |
 | ✅ | [C_HousingBasicMode.RotateDecor](#c_housingbasicmoderotatedecor) |  |  |
 | ✅ | [C_HousingBasicMode.RotateHouseExterior](#c_housingbasicmoderotatehouseexterior) |  |  |
@@ -35,6 +35,7 @@ Namespace: `C_HousingBasicMode`
 
 - Status: ✅ verified (function)
 - Blizzard: Cancels all in-progress editing of the selected target, which will reset any unsaved changes and deselect the active target; Un-placed decor will be returned to the house chest
+- Called out of combat: returned 0 values
 - Source: client docs `HousingBasicModeUIDocumentation.lua`
 
 ### C_HousingBasicMode.CommitDecorMovement
@@ -66,6 +67,7 @@ Namespace: `C_HousingBasicMode`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns info for the placed decor instance currently being hovered, if there is one
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `HousingBasicModeUIDocumentation.lua`
 
 ### C_HousingBasicMode.GetSelectedDecorInfo
@@ -74,6 +76,7 @@ Namespace: `C_HousingBasicMode`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns info for the decor instance that's currently selected, if there is one
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `HousingBasicModeUIDocumentation.lua`
 
 ### C_HousingBasicMode.IsDecorSelected
@@ -82,6 +85,7 @@ Namespace: `C_HousingBasicMode`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a decor instance is currently selected and being dragged
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `HousingBasicModeUIDocumentation.lua`
 
 ### C_HousingBasicMode.IsFreePlaceEnabled
@@ -90,6 +94,7 @@ Namespace: `C_HousingBasicMode`
 
 - Status: ✅ verified (function)
 - Blizzard: When free place is enabled, collision checks while dragging decor/the house exterior are ignored
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `HousingBasicModeUIDocumentation.lua`
 
 ### C_HousingBasicMode.IsGridSnapEnabled
@@ -97,6 +102,7 @@ Namespace: `C_HousingBasicMode`
 `C_HousingBasicMode.IsGridSnapEnabled() → isGridSnapEnabled: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `HousingBasicModeUIDocumentation.lua`
 
 ### C_HousingBasicMode.IsGridVisible
@@ -104,6 +110,7 @@ Namespace: `C_HousingBasicMode`
 `C_HousingBasicMode.IsGridVisible() → gridVisible: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `HousingBasicModeUIDocumentation.lua`
 
 ### C_HousingBasicMode.IsHouseExteriorHovered
@@ -112,6 +119,7 @@ Namespace: `C_HousingBasicMode`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the house's exterior is currently being hovered
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `HousingBasicModeUIDocumentation.lua`
 
 ### C_HousingBasicMode.IsHouseExteriorSelected
@@ -120,6 +128,7 @@ Namespace: `C_HousingBasicMode`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the house's exterior is currently selected and being moved
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `HousingBasicModeUIDocumentation.lua`
 
 ### C_HousingBasicMode.IsHoveringDecor
@@ -128,6 +137,7 @@ Namespace: `C_HousingBasicMode`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a placed decor instance is currently being hovered
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `HousingBasicModeUIDocumentation.lua`
 
 ### C_HousingBasicMode.IsPlacingNewDecor
@@ -135,6 +145,7 @@ Namespace: `C_HousingBasicMode`
 `C_HousingBasicMode.IsPlacingNewDecor() → hasPendingDecor: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `HousingBasicModeUIDocumentation.lua`
 
 ### C_HousingBasicMode.RemoveSelectedDecor

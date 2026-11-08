@@ -8,7 +8,7 @@ Namespace: `C_Texture`
 |---|---|---|---|
 | ✅ | [C_Texture.ClearTitleIconTexture](#c_texturecleartitleicontexture) |  |  |
 | ✅ | [C_Texture.GetAtlasElementID](#c_texturegetatlaselementid) |  |  |
-| ✅ | [C_Texture.GetAtlasElements](#c_texturegetatlaselements) |  |  |
+| ✅ | [C_Texture.GetAtlasElements](#c_texturegetatlaselements) | 1 value |  |
 | ✅ | [C_Texture.GetAtlasExists](#c_texturegetatlasexists) |  |  |
 | ✅ | [C_Texture.GetAtlasID](#c_texturegetatlasid) |  |  |
 | ✅ | [C_Texture.GetAtlasInfo](#c_texturegetatlasinfo) |  |  |
@@ -39,6 +39,7 @@ Namespace: `C_Texture`
 `C_Texture.GetAtlasElements() → atlases: textureAtlas[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,...(16858)}`
 - Source: client docs `TextureUtilsDocumentation.lua`
 
 ### C_Texture.GetAtlasExists

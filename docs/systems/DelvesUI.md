@@ -6,42 +6,42 @@ Namespace: `C_DelvesUI`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_DelvesUI.GetActiveDelveTier](#c_delvesuigetactivedelvetier) |  |  |
-| ✅ | [C_DelvesUI.GetCompanionInfoForActivePlayer](#c_delvesuigetcompanioninfoforactiveplayer) |  |  |
-| ✅ | [C_DelvesUI.GetCreatureDisplayInfoForCompanion](#c_delvesuigetcreaturedisplayinfoforcompanion) |  |  |
+| ✅ | [C_DelvesUI.GetActiveDelveTier](#c_delvesuigetactivedelvetier) | 1 value |  |
+| ✅ | [C_DelvesUI.GetCompanionInfoForActivePlayer](#c_delvesuigetcompanioninfoforactiveplayer) | 1 value |  |
+| ✅ | [C_DelvesUI.GetCreatureDisplayInfoForCompanion](#c_delvesuigetcreaturedisplayinfoforcompanion) | 1 value |  |
 | ✅ | [C_DelvesUI.GetCurioLink](#c_delvesuigetcuriolink) |  |  |
 | ✅ | [C_DelvesUI.GetCurioNodeForCompanion](#c_delvesuigetcurionodeforcompanion) |  |  |
 | ✅ | [C_DelvesUI.GetCurioRarityByTraitCondAccountElementID](#c_delvesuigetcurioraritybytraitcondaccountelementid) |  |  |
-| ✅ | [C_DelvesUI.GetCurrentDelvesSeasonNumber](#c_delvesuigetcurrentdelvesseasonnumber) |  |  |
-| ✅ | [C_DelvesUI.GetDelveEntranceBackgroundWidgetSetID](#c_delvesuigetdelveentrancebackgroundwidgetsetid) |  |  |
-| ✅ | [C_DelvesUI.GetDelveEntranceDescriptionString](#c_delvesuigetdelveentrancedescriptionstring) |  |  |
-| ✅ | [C_DelvesUI.GetDelveEntranceHeaderString](#c_delvesuigetdelveentranceheaderstring) |  |  |
-| ✅ | [C_DelvesUI.GetDelveEntranceMapID](#c_delvesuigetdelveentrancemapid) |  |  |
-| ✅ | [C_DelvesUI.GetDelveEntranceTiers](#c_delvesuigetdelveentrancetiers) |  |  |
-| ✅ | [C_DelvesUI.GetDelveEntranceTitleString](#c_delvesuigetdelveentrancetitlestring) |  |  |
-| ✅ | [C_DelvesUI.GetDelvesAffixSpellsForSeason](#c_delvesuigetdelvesaffixspellsforseason) |  |  |
-| ✅ | [C_DelvesUI.GetDelvesFactionForSeason](#c_delvesuigetdelvesfactionforseason) |  |  |
-| ✅ | [C_DelvesUI.GetDelvesMinRequiredLevel](#c_delvesuigetdelvesminrequiredlevel) |  |  |
-| ✅ | [C_DelvesUI.GetFactionForCompanion](#c_delvesuigetfactionforcompanion) |  |  |
-| ✅ | [C_DelvesUI.GetFlavorNodeForCompanion](#c_delvesuigetflavornodeforcompanion) |  |  |
-| ✅ | [C_DelvesUI.GetFlavorNodeNameForCompanion](#c_delvesuigetflavornodenameforcompanion) |  |  |
-| ✅ | [C_DelvesUI.GetLockedTextForCompanion](#c_delvesuigetlockedtextforcompanion) |  |  |
-| ✅ | [C_DelvesUI.GetModelSceneForCompanion](#c_delvesuigetmodelsceneforcompanion) |  |  |
-| ✅ | [C_DelvesUI.GetPlayerCompanionPDEID](#c_delvesuigetplayercompanionpdeid) |  |  |
-| ✅ | [C_DelvesUI.GetRoleNodeForCompanion](#c_delvesuigetrolenodeforcompanion) |  |  |
+| ✅ | [C_DelvesUI.GetCurrentDelvesSeasonNumber](#c_delvesuigetcurrentdelvesseasonnumber) | 1 value |  |
+| ✅ | [C_DelvesUI.GetDelveEntranceBackgroundWidgetSetID](#c_delvesuigetdelveentrancebackgroundwidgetsetid) | 1 value |  |
+| ✅ | [C_DelvesUI.GetDelveEntranceDescriptionString](#c_delvesuigetdelveentrancedescriptionstring) | 1 value |  |
+| ✅ | [C_DelvesUI.GetDelveEntranceHeaderString](#c_delvesuigetdelveentranceheaderstring) | 1 value |  |
+| ✅ | [C_DelvesUI.GetDelveEntranceMapID](#c_delvesuigetdelveentrancemapid) | 1 value |  |
+| ✅ | [C_DelvesUI.GetDelveEntranceTiers](#c_delvesuigetdelveentrancetiers) | 1 value |  |
+| ✅ | [C_DelvesUI.GetDelveEntranceTitleString](#c_delvesuigetdelveentrancetitlestring) | 1 value |  |
+| ✅ | [C_DelvesUI.GetDelvesAffixSpellsForSeason](#c_delvesuigetdelvesaffixspellsforseason) | 1 value |  |
+| ✅ | [C_DelvesUI.GetDelvesFactionForSeason](#c_delvesuigetdelvesfactionforseason) | 1 value |  |
+| ✅ | [C_DelvesUI.GetDelvesMinRequiredLevel](#c_delvesuigetdelvesminrequiredlevel) | 1 value |  |
+| ✅ | [C_DelvesUI.GetFactionForCompanion](#c_delvesuigetfactionforcompanion) | 1 value |  |
+| ✅ | [C_DelvesUI.GetFlavorNodeForCompanion](#c_delvesuigetflavornodeforcompanion) | 1 value |  |
+| ✅ | [C_DelvesUI.GetFlavorNodeNameForCompanion](#c_delvesuigetflavornodenameforcompanion) | 1 value |  |
+| ✅ | [C_DelvesUI.GetLockedTextForCompanion](#c_delvesuigetlockedtextforcompanion) | 1 value |  |
+| ✅ | [C_DelvesUI.GetModelSceneForCompanion](#c_delvesuigetmodelsceneforcompanion) | 1 value |  |
+| ✅ | [C_DelvesUI.GetPlayerCompanionPDEID](#c_delvesuigetplayercompanionpdeid) | 0 values |  |
+| ✅ | [C_DelvesUI.GetRoleNodeForCompanion](#c_delvesuigetrolenodeforcompanion) | 1 value |  |
 | ✅ | [C_DelvesUI.GetRoleSubtreeForCompanion](#c_delvesuigetrolesubtreeforcompanion) |  |  |
-| ✅ | [C_DelvesUI.GetTieredEntranceOptionalAffixTraitTreeID](#c_delvesuigettieredentranceoptionalaffixtraittreeid) |  |  |
-| ✅ | [C_DelvesUI.GetTieredEntrancePDEID](#c_delvesuigettieredentrancepdeid) |  |  |
-| ✅ | [C_DelvesUI.GetTieredEntranceType](#c_delvesuigettieredentrancetype) |  |  |
-| ✅ | [C_DelvesUI.GetTraitTreeForCompanion](#c_delvesuigettraittreeforcompanion) |  |  |
+| ✅ | [C_DelvesUI.GetTieredEntranceOptionalAffixTraitTreeID](#c_delvesuigettieredentranceoptionalaffixtraittreeid) | 1 value |  |
+| ✅ | [C_DelvesUI.GetTieredEntrancePDEID](#c_delvesuigettieredentrancepdeid) | 1 value |  |
+| ✅ | [C_DelvesUI.GetTieredEntranceType](#c_delvesuigettieredentrancetype) | 1 value |  |
+| ✅ | [C_DelvesUI.GetTraitTreeForCompanion](#c_delvesuigettraittreeforcompanion) | 1 value |  |
 | ✅ | [C_DelvesUI.GetUnseenCuriosBySlotType](#c_delvesuigetunseencuriosbyslottype) |  |  |
-| ✅ | [C_DelvesUI.GetWorldTierDifficultyForActivePlayer](#c_delvesuigetworldtierdifficultyforactiveplayer) |  |  |
-| ✅ | [C_DelvesUI.HasActiveDelve](#c_delvesuihasactivedelve) |  |  |
-| ✅ | [C_DelvesUI.HasActiveLFGLair](#c_delvesuihasactivelfglair) |  |  |
-| ✅ | [C_DelvesUI.HasActiveLair](#c_delvesuihasactivelair) |  |  |
+| ✅ | [C_DelvesUI.GetWorldTierDifficultyForActivePlayer](#c_delvesuigetworldtierdifficultyforactiveplayer) | 1 value |  |
+| ✅ | [C_DelvesUI.HasActiveDelve](#c_delvesuihasactivedelve) | 1 value |  |
+| ✅ | [C_DelvesUI.HasActiveLFGLair](#c_delvesuihasactivelfglair) | 1 value |  |
+| ✅ | [C_DelvesUI.HasActiveLair](#c_delvesuihasactivelair) | 1 value |  |
 | ✅ | [C_DelvesUI.IsDelveEntranceTierEnabled](#c_delvesuiisdelveentrancetierenabled) |  |  |
 | ✅ | [C_DelvesUI.IsEligibleForActiveDelveRewards](#c_delvesuiiseligibleforactivedelverewards) |  |  |
-| ✅ | [C_DelvesUI.IsInLair](#c_delvesuiisinlair) |  |  |
+| ✅ | [C_DelvesUI.IsInLair](#c_delvesuiisinlair) | 1 value |  |
 | ✅ | [C_DelvesUI.IsTraitTreeForCompanion](#c_delvesuiistraittreeforcompanion) |  |  |
 | ✅ | [C_DelvesUI.RequestPartyEligibilityForDelveTiers](#c_delvesuirequestpartyeligibilityfordelvetiers) |  |  |
 | ✅ | [C_DelvesUI.SaveSeenCuriosBySlotType](#c_delvesuisaveseencuriosbyslottype) |  |  |
@@ -53,6 +53,7 @@ Namespace: `C_DelvesUI`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns the entrance tier information for the active Delve (via party data). Assumes only Delves use this type for now.
+- Called out of combat: returned 1 value: `table{difficultyID=number,modifierUIWidgetSetID=number,overrideTooltipSpellID=number,queueAsLFG=boolean,rewards=table,suggestedILvl=number,tier=number,tierDescription=string,unlocked=boolean}`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetCompanionInfoForActivePlayer
@@ -60,6 +61,7 @@ Namespace: `C_DelvesUI`
 `C_DelvesUI.GetCompanionInfoForActivePlayer() → playerCompanionInfoID: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetCreatureDisplayInfoForCompanion
@@ -68,6 +70,7 @@ Namespace: `C_DelvesUI`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetCurioLink
@@ -100,6 +103,7 @@ Namespace: `C_DelvesUI`
 `C_DelvesUI.GetCurrentDelvesSeasonNumber() → seasonNumber: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetDelveEntranceBackgroundWidgetSetID
@@ -107,6 +111,7 @@ Namespace: `C_DelvesUI`
 `C_DelvesUI.GetDelveEntranceBackgroundWidgetSetID() → backgroundWidgetSetID: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetDelveEntranceDescriptionString
@@ -114,6 +119,7 @@ Namespace: `C_DelvesUI`
 `C_DelvesUI.GetDelveEntranceDescriptionString() → description: string?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetDelveEntranceHeaderString
@@ -121,6 +127,7 @@ Namespace: `C_DelvesUI`
 `C_DelvesUI.GetDelveEntranceHeaderString() → header: string?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetDelveEntranceMapID
@@ -128,6 +135,7 @@ Namespace: `C_DelvesUI`
 `C_DelvesUI.GetDelveEntranceMapID() → mapID: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetDelveEntranceTiers
@@ -135,6 +143,7 @@ Namespace: `C_DelvesUI`
 `C_DelvesUI.GetDelveEntranceTiers() → levelInfo: TieredEntranceTierInfo[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetDelveEntranceTitleString
@@ -142,6 +151,7 @@ Namespace: `C_DelvesUI`
 `C_DelvesUI.GetDelveEntranceTitleString() → title: cstring?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetDelvesAffixSpellsForSeason
@@ -149,6 +159,7 @@ Namespace: `C_DelvesUI`
 `C_DelvesUI.GetDelvesAffixSpellsForSeason() → affixSpellIDs: number[]`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `table{}`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetDelvesFactionForSeason
@@ -156,6 +167,7 @@ Namespace: `C_DelvesUI`
 `C_DelvesUI.GetDelvesFactionForSeason() → factionID: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetDelvesMinRequiredLevel
@@ -164,6 +176,7 @@ Namespace: `C_DelvesUI`
 
 - Status: ✅ verified (function)
 - Blizzard: Players must be at or above the min level + offset to enter Delves. This function returns that min level.
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetFactionForCompanion
@@ -172,6 +185,7 @@ Namespace: `C_DelvesUI`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetFlavorNodeForCompanion
@@ -180,6 +194,7 @@ Namespace: `C_DelvesUI`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetFlavorNodeNameForCompanion
@@ -188,6 +203,7 @@ Namespace: `C_DelvesUI`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetLockedTextForCompanion
@@ -196,6 +212,7 @@ Namespace: `C_DelvesUI`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `string`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetModelSceneForCompanion
@@ -204,6 +221,7 @@ Namespace: `C_DelvesUI`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetPlayerCompanionPDEID
@@ -213,6 +231,7 @@ Namespace: `C_DelvesUI`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 0 values
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetRoleNodeForCompanion
@@ -221,6 +240,7 @@ Namespace: `C_DelvesUI`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetRoleSubtreeForCompanion
@@ -236,6 +256,7 @@ Namespace: `C_DelvesUI`
 `C_DelvesUI.GetTieredEntranceOptionalAffixTraitTreeID() → treeID: number?`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `nil`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetTieredEntrancePDEID
@@ -243,6 +264,7 @@ Namespace: `C_DelvesUI`
 `C_DelvesUI.GetTieredEntrancePDEID() → pdeID: number`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetTieredEntranceType
@@ -250,6 +272,7 @@ Namespace: `C_DelvesUI`
 `C_DelvesUI.GetTieredEntranceType() → entranceType: TieredEntranceType`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetTraitTreeForCompanion
@@ -258,6 +281,7 @@ Namespace: `C_DelvesUI`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetUnseenCuriosBySlotType
@@ -273,6 +297,7 @@ Namespace: `C_DelvesUI`
 `C_DelvesUI.GetWorldTierDifficultyForActivePlayer() → difficulty: WorldTierDifficulty`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `number`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.HasActiveDelve
@@ -280,6 +305,7 @@ Namespace: `C_DelvesUI`
 `C_DelvesUI.HasActiveDelve() → result: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.HasActiveLFGLair
@@ -287,6 +313,7 @@ Namespace: `C_DelvesUI`
 `C_DelvesUI.HasActiveLFGLair() → result: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.HasActiveLair
@@ -294,6 +321,7 @@ Namespace: `C_DelvesUI`
 `C_DelvesUI.HasActiveLair() → result: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.IsDelveEntranceTierEnabled
@@ -317,6 +345,7 @@ Namespace: `C_DelvesUI`
 `C_DelvesUI.IsInLair() → result: bool`
 
 - Status: ✅ verified (function)
+- Called out of combat: returned 1 value: `boolean`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.IsTraitTreeForCompanion
