@@ -12,7 +12,7 @@ Namespace: `C_ContributionCollector`
 | ✅ | [C_ContributionCollector.GetAtlases](#c_contributioncollectorgetatlases) |  |  |
 | ✅ | [C_ContributionCollector.GetBuffs](#c_contributioncollectorgetbuffs) |  |  |
 | ✅ | [C_ContributionCollector.GetContributionAppearance](#c_contributioncollectorgetcontributionappearance) |  |  |
-| ✅ | [C_ContributionCollector.GetContributionCollectorsForMap](#c_contributioncollectorgetcontributioncollectorsformap) |  |  |
+| ✅ | [C_ContributionCollector.GetContributionCollectorsForMap](#c_contributioncollectorgetcontributioncollectorsformap) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_ContributionCollector.GetContributionResult](#c_contributioncollectorgetcontributionresult) |  |  |
 | ✅ | [C_ContributionCollector.GetDescription](#c_contributioncollectorgetdescription) |  |  |
 | ✅ | [C_ContributionCollector.GetManagedContributionsForCreatureID](#c_contributioncollectorgetmanagedcontributionsforcreatureid) |  |  |
@@ -79,6 +79,8 @@ Namespace: `C_ContributionCollector`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `ContributionCollectorDocumentation.lua`
 
 ### C_ContributionCollector.GetContributionResult

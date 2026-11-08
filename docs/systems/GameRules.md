@@ -13,7 +13,7 @@ Namespace: `C_GameRules`
 | ✅ | [C_GameRules.GetCurrentEventRealmQueues](#c_gamerulesgetcurrenteventrealmqueues) | 1 value | 1 value |
 | ✅ | [C_GameRules.GetCurrentGameModeDisplayInfo](#c_gamerulesgetcurrentgamemodedisplayinfo) | 1 value | 1 value |
 | ✅ | [C_GameRules.GetCurrentGameModeRecordID](#c_gamerulesgetcurrentgamemoderecordid) | 1 value | 1 value |
-| ✅ | [C_GameRules.GetDisplayedGameModeRecordIDAtIndex](#c_gamerulesgetdisplayedgamemoderecordidatindex) |  |  |
+| ✅ | [C_GameRules.GetDisplayedGameModeRecordIDAtIndex](#c_gamerulesgetdisplayedgamemoderecordidatindex) | 1 value | 1 value |
 | ✅ | [C_GameRules.GetForeverExperiencePreset](#c_gamerulesgetforeverexperiencepreset) | 1 value | 1 value |
 | ✅ | [C_GameRules.GetGameModeDisplayInfoByRecordID](#c_gamerulesgetgamemodedisplayinfobyrecordid) |  |  |
 | ✅ | [C_GameRules.GetGameModeGlueScreenName](#c_gamerulesgetgamemodegluescreenname) | 1 value | 1 value |
@@ -22,7 +22,7 @@ Namespace: `C_GameRules`
 | ✅ | [C_GameRules.GetGameRuleAsFrameStrata](#c_gamerulesgetgameruleasframestrata) |  |  |
 | ✅ | [C_GameRules.GetNumDisplayedGameModes](#c_gamerulesgetnumdisplayedgamemodes) | 1 value | 1 value |
 | ✅ | [C_GameRules.IsCharacterlessLoginActive](#c_gamerulesischaracterlessloginactive) | 1 value | 1 value |
-| ✅ | [C_GameRules.IsClassAllowedForGameMode](#c_gamerulesisclassallowedforgamemode) |  |  |
+| ✅ | [C_GameRules.IsClassAllowedForGameMode](#c_gamerulesisclassallowedforgamemode) | 1 value | 1 value |
 | ✅ | [C_GameRules.IsGameModeEnabled](#c_gamerulesisgamemodeenabled) |  |  |
 | ✅ | [C_GameRules.IsGameRuleActive](#c_gamerulesisgameruleactive) |  |  |
 | ✅ | [C_GameRules.IsHardcoreActive](#c_gamerulesishardcoreactive) | 1 value | 1 value |
@@ -102,6 +102,8 @@ Namespace: `C_GameRules`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `GameRulesDocumentation.lua`
 
 ### C_GameRules.GetForeverExperiencePreset
@@ -180,6 +182,8 @@ Namespace: `C_GameRules`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `class`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `GameRulesDocumentation.lua`
 
 ### C_GameRules.IsGameModeEnabled
@@ -320,7 +324,7 @@ Namespace: `C_GameRules`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### GAME_MODE_DISPLAY_MODE_TOGGLE_DISABLED
 
@@ -333,7 +337,7 @@ Namespace: `C_GameRules`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### SETTINGS_HEADER_TEXT_UPDATE
 

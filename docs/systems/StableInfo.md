@@ -14,12 +14,12 @@ Namespace: `C_StableInfo`
 | ✅ | [C_StableInfo.GetNumActivePets](#c_stableinfogetnumactivepets) | 1 value | 1 value |
 | ✅ | [C_StableInfo.GetNumStablePets](#c_stableinfogetnumstablepets) | 1 value | 1 value |
 | ✅ | [C_StableInfo.GetNumStableSlots](#c_stableinfogetnumstableslots) | 1 value | 1 value |
-| ✅ | [C_StableInfo.GetStablePetFoodTypes](#c_stableinfogetstablepetfoodtypes) |  |  |
-| ✅ | [C_StableInfo.GetStablePetInfo](#c_stableinfogetstablepetinfo) |  |  |
+| ✅ | [C_StableInfo.GetStablePetFoodTypes](#c_stableinfogetstablepetfoodtypes) | 1 value | 1 value |
+| ✅ | [C_StableInfo.GetStablePetInfo](#c_stableinfogetstablepetinfo) | 1 value | 1 value |
 | ✅ | [C_StableInfo.GetStabledPetList](#c_stableinfogetstabledpetlist) | 1 value | 1 value |
 | ✅ | [C_StableInfo.IsAtStableMaster](#c_stableinfoisatstablemaster) | 1 value | 1 value |
 | ✅ | [C_StableInfo.IsBonusPetSlotAvailable](#c_stableinfoisbonuspetslotavailable) | 1 value | 1 value |
-| ✅ | [C_StableInfo.IsPetFavorite](#c_stableinfoispetfavorite) |  |  |
+| ✅ | [C_StableInfo.IsPetFavorite](#c_stableinfoispetfavorite) | 1 value | 1 value |
 | ✅ | [C_StableInfo.PickupStablePet](#c_stableinfopickupstablepet) |  |  |
 | ✅ | [C_StableInfo.SetPetFavorite](#c_stableinfosetpetfavorite) |  |  |
 | ✅ | [C_StableInfo.SetPetSlot](#c_stableinfosetpetslot) |  |  |
@@ -98,6 +98,8 @@ Namespace: `C_StableInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.GetStablePetInfo
@@ -106,6 +108,8 @@ Namespace: `C_StableInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.GetStabledPetList
@@ -141,6 +145,8 @@ Namespace: `C_StableInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.PickupStablePet

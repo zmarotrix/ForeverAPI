@@ -9,7 +9,7 @@ Namespace: `C_ArtifactUI`
 | ✅ | [C_ArtifactUI.AddPower](#c_artifactuiaddpower) |  |  |
 | ✅ | [C_ArtifactUI.ApplyCursorRelicToSlot](#c_artifactuiapplycursorrelictoslot) |  |  |
 | ✅ | [C_ArtifactUI.CanApplyArtifactRelic](#c_artifactuicanapplyartifactrelic) |  |  |
-| ✅ | [C_ArtifactUI.CanApplyCursorRelicToSlot](#c_artifactuicanapplycursorrelictoslot) |  |  |
+| ✅ | [C_ArtifactUI.CanApplyCursorRelicToSlot](#c_artifactuicanapplycursorrelictoslot) | 1 value | 1 value |
 | ✅ | [C_ArtifactUI.CanApplyRelicItemIDToEquippedArtifactSlot](#c_artifactuicanapplyrelicitemidtoequippedartifactslot) |  |  |
 | ✅ | [C_ArtifactUI.CanApplyRelicItemIDToSlot](#c_artifactuicanapplyrelicitemidtoslot) |  |  |
 | ✅ | [C_ArtifactUI.CheckRespecNPC](#c_artifactuicheckrespecnpc) |  |  |
@@ -30,10 +30,10 @@ Namespace: `C_ArtifactUI`
 | ✅ | [C_ArtifactUI.GetEquippedArtifactInfo](#c_artifactuigetequippedartifactinfo) | 0 values | 0 values |
 | ✅ | [C_ArtifactUI.GetEquippedArtifactItemID](#c_artifactuigetequippedartifactitemid) | 0 values | 0 values |
 | ✅ | [C_ArtifactUI.GetEquippedArtifactNumRelicSlots](#c_artifactuigetequippedartifactnumrelicslots) | 1 value | 1 value |
-| ✅ | [C_ArtifactUI.GetEquippedArtifactRelicInfo](#c_artifactuigetequippedartifactrelicinfo) |  |  |
-| ✅ | [C_ArtifactUI.GetEquippedRelicLockedReason](#c_artifactuigetequippedreliclockedreason) |  |  |
+| ✅ | [C_ArtifactUI.GetEquippedArtifactRelicInfo](#c_artifactuigetequippedartifactrelicinfo) | 0 values | 0 values |
+| ✅ | [C_ArtifactUI.GetEquippedRelicLockedReason](#c_artifactuigetequippedreliclockedreason) | 1 value | 1 value |
 | ✅ | [C_ArtifactUI.GetForgeRotation](#c_artifactuigetforgerotation) | 3 values | 3 values |
-| ✅ | [C_ArtifactUI.GetItemLevelIncreaseProvidedByRelic](#c_artifactuigetitemlevelincreaseprovidedbyrelic) |  |  |
+| ✅ | [C_ArtifactUI.GetItemLevelIncreaseProvidedByRelic](#c_artifactuigetitemlevelincreaseprovidedbyrelic) | 0 values | 0 values |
 | ✅ | [C_ArtifactUI.GetMetaPowerInfo](#c_artifactuigetmetapowerinfo) | 0 values | 0 values |
 | ✅ | [C_ArtifactUI.GetNumAppearanceSets](#c_artifactuigetnumappearancesets) | 1 value | 1 value |
 | ✅ | [C_ArtifactUI.GetNumObtainedArtifacts](#c_artifactuigetnumobtainedartifacts) | 1 value | 1 value |
@@ -43,20 +43,20 @@ Namespace: `C_ArtifactUI`
 | ✅ | [C_ArtifactUI.GetPowerInfo](#c_artifactuigetpowerinfo) |  |  |
 | ✅ | [C_ArtifactUI.GetPowerLinks](#c_artifactuigetpowerlinks) |  |  |
 | ✅ | [C_ArtifactUI.GetPowers](#c_artifactuigetpowers) | 0 values | 0 values |
-| ✅ | [C_ArtifactUI.GetPowersAffectedByRelic](#c_artifactuigetpowersaffectedbyrelic) |  |  |
-| ✅ | [C_ArtifactUI.GetPowersAffectedByRelicItemLink](#c_artifactuigetpowersaffectedbyrelicitemlink) |  |  |
+| ✅ | [C_ArtifactUI.GetPowersAffectedByRelic](#c_artifactuigetpowersaffectedbyrelic) | 0 values | 0 values |
+| ✅ | [C_ArtifactUI.GetPowersAffectedByRelicItemLink](#c_artifactuigetpowersaffectedbyrelicitemlink) | 0 values | 0 values |
 | ✅ | [C_ArtifactUI.GetPreviewAppearance](#c_artifactuigetpreviewappearance) | 1 value | 1 value |
-| ✅ | [C_ArtifactUI.GetRelicInfo](#c_artifactuigetrelicinfo) |  |  |
-| ✅ | [C_ArtifactUI.GetRelicInfoByItemID](#c_artifactuigetrelicinfobyitemid) |  |  |
-| ✅ | [C_ArtifactUI.GetRelicLockedReason](#c_artifactuigetreliclockedreason) |  |  |
-| ✅ | [C_ArtifactUI.GetRelicSlotType](#c_artifactuigetrelicslottype) |  |  |
+| ✅ | [C_ArtifactUI.GetRelicInfo](#c_artifactuigetrelicinfo) | 0 values | 0 values |
+| ✅ | [C_ArtifactUI.GetRelicInfoByItemID](#c_artifactuigetrelicinfobyitemid) | 0 values | 0 values |
+| ✅ | [C_ArtifactUI.GetRelicLockedReason](#c_artifactuigetreliclockedreason) | 1 value | 1 value |
+| ✅ | [C_ArtifactUI.GetRelicSlotType](#c_artifactuigetrelicslottype) | 0 values | 0 values |
 | ✅ | [C_ArtifactUI.GetRespecArtifactArtInfo](#c_artifactuigetrespecartifactartinfo) | 0 values | 0 values |
 | ✅ | [C_ArtifactUI.GetRespecArtifactInfo](#c_artifactuigetrespecartifactinfo) | 0 values | 0 values |
 | ✅ | [C_ArtifactUI.GetRespecCost](#c_artifactuigetrespeccost) | 1 value | 1 value |
 | ✅ | [C_ArtifactUI.GetTotalPowerCost](#c_artifactuigettotalpowercost) |  |  |
 | ✅ | [C_ArtifactUI.GetTotalPurchasedRanks](#c_artifactuigettotalpurchasedranks) | 1 value | 1 value |
 | ✅ | [C_ArtifactUI.IsArtifactDisabled](#c_artifactuiisartifactdisabled) | 1 value | 1 value |
-| ✅ | [C_ArtifactUI.IsArtifactItem](#c_artifactuiisartifactitem) |  |  |
+| ✅ | [C_ArtifactUI.IsArtifactItem](#c_artifactuiisartifactitem) | 1 value | 1 value |
 | ✅ | [C_ArtifactUI.IsAtForge](#c_artifactuiisatforge) | 1 value | 1 value |
 | ✅ | [C_ArtifactUI.IsEquippedArtifactDisabled](#c_artifactuiisequippedartifactdisabled) | 1 value | 1 value |
 | ✅ | [C_ArtifactUI.IsEquippedArtifactMaxed](#c_artifactuiisequippedartifactmaxed) | 1 value | 1 value |
@@ -99,6 +99,8 @@ Namespace: `C_ArtifactUI`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.CanApplyRelicItemIDToEquippedArtifactSlot
@@ -286,6 +288,8 @@ Namespace: `C_ArtifactUI`
 - `slotTypeName`: Matches the socket identifiers used in the socketing system.
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetEquippedRelicLockedReason
@@ -294,6 +298,8 @@ Namespace: `C_ArtifactUI`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetForgeRotation
@@ -312,6 +318,8 @@ Namespace: `C_ArtifactUI`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetMetaPowerInfo
@@ -402,6 +410,8 @@ Namespace: `C_ArtifactUI`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetPowersAffectedByRelicItemLink
@@ -410,6 +420,8 @@ Namespace: `C_ArtifactUI`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetPreviewAppearance
@@ -429,6 +441,8 @@ Namespace: `C_ArtifactUI`
 - `slotTypeName`: Matches the socket identifiers used in the socketing system.
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetRelicInfoByItemID
@@ -439,6 +453,8 @@ Namespace: `C_ArtifactUI`
 - `slotTypeName`: Matches the socket identifiers used in the socketing system.
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetRelicLockedReason
@@ -447,6 +463,8 @@ Namespace: `C_ArtifactUI`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetRelicSlotType
@@ -456,6 +474,8 @@ Namespace: `C_ArtifactUI`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.GetRespecArtifactArtInfo
@@ -520,6 +540,8 @@ Namespace: `C_ArtifactUI`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ArtifactUIDocumentation.lua`
 
 ### C_ArtifactUI.IsAtForge
@@ -623,7 +645,7 @@ Namespace: `C_ArtifactUI`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 18 times (0 in combat); argument kinds: ``
 
 ### ARTIFACT_ENDGAME_REFUND
 

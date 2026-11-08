@@ -9,11 +9,11 @@ Namespace: `C_TTSSettings`
 | ✅ | [C_TTSSettings.GetChannelEnabled](#c_ttssettingsgetchannelenabled) |  |  |
 | ✅ | [C_TTSSettings.GetCharacterSettingsSaved](#c_ttssettingsgetcharactersettingssaved) | 1 value | 1 value |
 | ✅ | [C_TTSSettings.GetChatTypeEnabled](#c_ttssettingsgetchattypeenabled) |  |  |
-| ✅ | [C_TTSSettings.GetSetting](#c_ttssettingsgetsetting) |  |  |
+| ✅ | [C_TTSSettings.GetSetting](#c_ttssettingsgetsetting) | 1 value | 1 value |
 | ✅ | [C_TTSSettings.GetSpeechRate](#c_ttssettingsgetspeechrate) | 1 value | 1 value |
 | ✅ | [C_TTSSettings.GetSpeechVolume](#c_ttssettingsgetspeechvolume) | 1 value | 1 value |
-| ✅ | [C_TTSSettings.GetVoiceOptionID](#c_ttssettingsgetvoiceoptionid) |  |  |
-| ✅ | [C_TTSSettings.GetVoiceOptionName](#c_ttssettingsgetvoiceoptionname) |  |  |
+| ✅ | [C_TTSSettings.GetVoiceOptionID](#c_ttssettingsgetvoiceoptionid) | 1 value | 1 value |
+| ✅ | [C_TTSSettings.GetVoiceOptionName](#c_ttssettingsgetvoiceoptionname) | 1 value | 1 value |
 | ✅ | [C_TTSSettings.MarkCharacterSettingsSaved](#c_ttssettingsmarkcharactersettingssaved) |  |  |
 | ✅ | [C_TTSSettings.SetChannelEnabled](#c_ttssettingssetchannelenabled) |  |  |
 | ✅ | [C_TTSSettings.SetChannelKeyEnabled](#c_ttssettingssetchannelkeyenabled) |  |  |
@@ -57,6 +57,8 @@ Namespace: `C_TTSSettings`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `TTSSettingsDocumentation.lua`
 
 ### C_TTSSettings.GetSpeechRate
@@ -83,6 +85,8 @@ Namespace: `C_TTSSettings`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `TTSSettingsDocumentation.lua`
 
 ### C_TTSSettings.GetVoiceOptionName
@@ -91,6 +95,8 @@ Namespace: `C_TTSSettings`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `TTSSettingsDocumentation.lua`
 
 ### C_TTSSettings.MarkCharacterSettingsSaved

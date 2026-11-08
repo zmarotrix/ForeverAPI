@@ -6,12 +6,12 @@ Namespace: `C_ItemUpgrade`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_ItemUpgrade.CanUpgradeItem](#c_itemupgradecanupgradeitem) |  |  |
+| ✅ | [C_ItemUpgrade.CanUpgradeItem](#c_itemupgradecanupgradeitem) | 1 value | 1 value |
 | ✅ | [C_ItemUpgrade.ClearItemUpgrade](#c_itemupgradeclearitemupgrade) |  |  |
 | ✅ | [C_ItemUpgrade.CloseItemUpgrade](#c_itemupgradecloseitemupgrade) |  |  |
-| ✅ | [C_ItemUpgrade.GetHighWatermarkForItem](#c_itemupgradegethighwatermarkforitem) |  |  |
+| ✅ | [C_ItemUpgrade.GetHighWatermarkForItem](#c_itemupgradegethighwatermarkforitem) | 2 values | 2 values |
 | ✅ | [C_ItemUpgrade.GetHighWatermarkForSlot](#c_itemupgradegethighwatermarkforslot) |  |  |
-| ✅ | [C_ItemUpgrade.GetHighWatermarkSlotForItem](#c_itemupgradegethighwatermarkslotforitem) |  |  |
+| ✅ | [C_ItemUpgrade.GetHighWatermarkSlotForItem](#c_itemupgradegethighwatermarkslotforitem) | 1 value | 1 value |
 | ✅ | [C_ItemUpgrade.GetItemHyperlink](#c_itemupgradegetitemhyperlink) | 0 values | 0 values |
 | ✅ | [C_ItemUpgrade.GetItemUpgradeCurrentLevel](#c_itemupgradegetitemupgradecurrentlevel) | 0 values | 0 values |
 | ✅ | [C_ItemUpgrade.GetItemUpgradeEffect](#c_itemupgradegetitemupgradeeffect) |  |  |
@@ -29,6 +29,8 @@ Namespace: `C_ItemUpgrade`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemUpgradeDocumentation.lua`
 
 ### C_ItemUpgrade.ClearItemUpgrade
@@ -53,6 +55,8 @@ Namespace: `C_ItemUpgrade`
 - `itemInfo`: Item ID, Link, or Name
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `ItemUpgradeDocumentation.lua`
 
 ### C_ItemUpgrade.GetHighWatermarkForSlot
@@ -74,6 +78,8 @@ Namespace: `C_ItemUpgrade`
 - `itemRedundancySlot`: Enum.ItemRedundancySlot value
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ItemUpgradeDocumentation.lua`
 
 ### C_ItemUpgrade.GetItemHyperlink

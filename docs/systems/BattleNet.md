@@ -14,22 +14,22 @@ Namespace: `C_BattleNet`
 | ✅ | [C_BattleNet.BNCheckBattleTagInviteToRecentAlly](#c_battlenetbncheckbattletaginvitetorecentally) |  |  |
 | ✅ | [C_BattleNet.BNCheckTitleFriendInviteToUnit](#c_battlenetbnchecktitlefriendinvitetounit) |  |  |
 | ✅ | [C_BattleNet.CanToggleHighResTexturesWithoutClientReload](#c_battlenetcantogglehighrestextureswithoutclientreload) | 1 value | 1 value |
-| ✅ | [C_BattleNet.GetAccountInfoByGUID](#c_battlenetgetaccountinfobyguid) |  |  |
+| ✅ | [C_BattleNet.GetAccountInfoByGUID](#c_battlenetgetaccountinfobyguid) | 1 value | 1 value |
 | ✅ | [C_BattleNet.GetAccountInfoByID](#c_battlenetgetaccountinfobyid) |  |  |
 | ✅ | [C_BattleNet.GetCustomTitleFriendName](#c_battlenetgetcustomtitlefriendname) |  |  |
 | ✅ | [C_BattleNet.GetDefaultTitleWhisperTarget](#c_battlenetgetdefaulttitlewhispertarget) |  |  |
-| ✅ | [C_BattleNet.GetFriendAccountInfo](#c_battlenetgetfriendaccountinfo) |  |  |
-| ✅ | [C_BattleNet.GetFriendGameAccountInfo](#c_battlenetgetfriendgameaccountinfo) |  |  |
-| ✅ | [C_BattleNet.GetFriendInviteInfo](#c_battlenetgetfriendinviteinfo) |  |  |
+| ✅ | [C_BattleNet.GetFriendAccountInfo](#c_battlenetgetfriendaccountinfo) | 1 value | 1 value |
+| ✅ | [C_BattleNet.GetFriendGameAccountInfo](#c_battlenetgetfriendgameaccountinfo) | 1 value | 1 value |
+| ✅ | [C_BattleNet.GetFriendInviteInfo](#c_battlenetgetfriendinviteinfo) | 1 value | 1 value |
 | ✅ | [C_BattleNet.GetFriendLevelFromInviteText](#c_battlenetgetfriendlevelfrominvitetext) |  |  |
-| ✅ | [C_BattleNet.GetFriendNumGameAccounts](#c_battlenetgetfriendnumgameaccounts) |  |  |
-| ✅ | [C_BattleNet.GetGameAccountInfoByGUID](#c_battlenetgetgameaccountinfobyguid) |  |  |
+| ✅ | [C_BattleNet.GetFriendNumGameAccounts](#c_battlenetgetfriendnumgameaccounts) | 1 value | 1 value |
+| ✅ | [C_BattleNet.GetGameAccountInfoByGUID](#c_battlenetgetgameaccountinfobyguid) | 1 value | 1 value |
 | ✅ | [C_BattleNet.GetGameAccountInfoByID](#c_battlenetgetgameaccountinfobyid) |  |  |
 | ✅ | [C_BattleNet.InstallHighResTextures](#c_battlenetinstallhighrestextures) |  |  |
 | ✅ | [C_BattleNet.InviteFriend](#c_battlenetinvitefriend) |  |  |
 | ✅ | [C_BattleNet.IsBattleNetFriendsListEnabled](#c_battlenetisbattlenetfriendslistenabled) | 1 value | 1 value |
 | ✅ | [C_BattleNet.IsBattleNetFriendsListSupported](#c_battlenetisbattlenetfriendslistsupported) | 1 value | 1 value |
-| ✅ | [C_BattleNet.IsFriendTagSupportedForCurrentGameType](#c_battlenetisfriendtagsupportedforcurrentgametype) |  |  |
+| ✅ | [C_BattleNet.IsFriendTagSupportedForCurrentGameType](#c_battlenetisfriendtagsupportedforcurrentgametype) | 1 value | 1 value |
 | ✅ | [C_BattleNet.SearchFriends](#c_battlenetsearchfriends) |  |  |
 | ✅ | [C_BattleNet.SendGameData](#c_battlenetsendgamedata) |  |  |
 | ✅ | [C_BattleNet.SendTitleFriendInviteByName](#c_battlenetsendtitlefriendinvitebyname) |  |  |
@@ -119,6 +119,8 @@ Namespace: `C_BattleNet`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `table{accountName=string,appearOffline=boolean,battleTag=string,bnetAccountID=number,customMessage=string,customMessageTime=number,friendTags=table,gameAccountInfo=table,isAFK=boolean,isBattleTagFriend=boolean,isDND=boolean,isFavorite=boolean,isFriend=boolean,lastOnlineTime=number,note=string,rafLinkType=number}`
+- Called in combat: returned 1 value: `table{accountName=string,appearOffline=boolean,battleTag=string,bnetAccountID=number,customMessage=string,customMessageTime=number,friendTags=table,gameAccountInfo=table,isAFK=boolean,isBattleTagFriend=boolean,isDND=boolean,isFavorite=boolean,isFriend=boolean,lastOnlineTime=number,note=string,rafLinkType=number}`
 - Source: client docs `BattleNetDocumentation.lua`
 
 ### C_BattleNet.GetAccountInfoByID
@@ -153,6 +155,8 @@ Namespace: `C_BattleNet`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `table{accountName=string,appearOffline=boolean,battleTag=string,bnetAccountID=number,customMessage=string,customMessageTime=number,friendLevel=number,friendTags=table,gameAccountInfo=table,isAFK=boolean,isBattleTagFriend=boolean,isDND=boolean,isFavorite=boolean,isFriend=boolean,lastOnlineTime=number,note=string,rafLinkType=number}`
+- Called in combat: returned 1 value: `table{accountName=string,appearOffline=boolean,battleTag=string,bnetAccountID=number,customMessage=string,customMessageTime=number,friendLevel=number,friendTags=table,gameAccountInfo=table,isAFK=boolean,isBattleTagFriend=boolean,isDND=boolean,isFavorite=boolean,isFriend=boolean,lastOnlineTime=number,note=string,rafLinkType=number}`
 - Source: client docs `BattleNetDocumentation.lua`
 
 ### C_BattleNet.GetFriendGameAccountInfo
@@ -161,6 +165,8 @@ Namespace: `C_BattleNet`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:1`: returned 1 value: `table{areaName=string,canSummon=boolean,characterLevel=number,characterName=string,classFilename=string,classID=number,className=string,clientProgram=string,factionName=string,gameAccountID=number,hasFocus=boolean,isAppearOffline=boolean,isGameAFK=boolean,isGameBusy=boolean,isInCurrentRegion=boolean,isOnline=boolean,playerGuid=string,raceName=string,realmDisplayName=string,realmID=number,realmName=string,regionID=number,richPresence=string,subIcon=string,wowProjectID=number}`
+- Called in combat: returned 1 value: `table{areaName=string,canSummon=boolean,characterLevel=number,characterName=string,classFilename=string,classID=number,className=string,clientProgram=string,factionName=string,gameAccountID=number,hasFocus=boolean,isAppearOffline=boolean,isGameAFK=boolean,isGameBusy=boolean,isInCurrentRegion=boolean,isOnline=boolean,playerGuid=string,raceName=string,realmDisplayName=string,realmID=number,realmName=string,regionID=number,richPresence=string,subIcon=string,wowProjectID=number}`
 - Source: client docs `BattleNetDocumentation.lua`
 
 ### C_BattleNet.GetFriendInviteInfo
@@ -169,6 +175,8 @@ Namespace: `C_BattleNet`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `BattleNetDocumentation.lua`
 
 ### C_BattleNet.GetFriendLevelFromInviteText
@@ -185,6 +193,8 @@ Namespace: `C_BattleNet`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `BattleNetDocumentation.lua`
 
 ### C_BattleNet.GetGameAccountInfoByGUID
@@ -193,6 +203,8 @@ Namespace: `C_BattleNet`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `table{areaName=string,canSummon=boolean,characterLevel=number,characterName=string,classFilename=string,classID=number,className=string,clientProgram=string,factionName=string,gameAccountID=number,hasFocus=boolean,isAppearOffline=boolean,isGameAFK=boolean,isGameBusy=boolean,isInCurrentRegion=boolean,isOnline=boolean,playerGuid=string,raceName=string,realmDisplayName=string,realmID=number,realmName=string,regionID=number,richPresence=string,subIcon=string,wowProjectID=number}`
+- Called in combat: returned 1 value: `table{areaName=string,canSummon=boolean,characterLevel=number,characterName=string,classFilename=string,classID=number,className=string,clientProgram=string,factionName=string,gameAccountID=number,hasFocus=boolean,isAppearOffline=boolean,isGameAFK=boolean,isGameBusy=boolean,isInCurrentRegion=boolean,isOnline=boolean,playerGuid=string,raceName=string,realmDisplayName=string,realmID=number,realmName=string,regionID=number,richPresence=string,subIcon=string,wowProjectID=number}`
 - Source: client docs `BattleNetDocumentation.lua`
 
 ### C_BattleNet.GetGameAccountInfoByID
@@ -243,6 +255,8 @@ Namespace: `C_BattleNet`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BattleNetDocumentation.lua`
 
 ### C_BattleNet.SearchFriends

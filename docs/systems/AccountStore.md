@@ -13,7 +13,7 @@ Namespace: `C_AccountStore`
 | ✅ | [C_AccountStore.GetCurrencyAvailable](#c_accountstoregetcurrencyavailable) |  |  |
 | ✅ | [C_AccountStore.GetCurrencyIDForStore](#c_accountstoregetcurrencyidforstore) |  |  |
 | ✅ | [C_AccountStore.GetCurrencyInfo](#c_accountstoregetcurrencyinfo) |  |  |
-| ✅ | [C_AccountStore.GetItemInfo](#c_accountstoregetiteminfo) |  |  |
+| ✅ | [C_AccountStore.GetItemInfo](#c_accountstoregetiteminfo) | 1 value | 1 value |
 | ✅ | [C_AccountStore.GetStoreFrontState](#c_accountstoregetstorefrontstate) |  |  |
 | ✅ | [C_AccountStore.RefundItem](#c_accountstorerefunditem) |  |  |
 | ✅ | [C_AccountStore.RequestStoreFrontInfoUpdate](#c_accountstorerequeststorefrontinfoupdate) |  |  |
@@ -80,6 +80,8 @@ Namespace: `C_AccountStore`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `AccountStoreDocumentation.lua`
 
 ### C_AccountStore.GetStoreFrontState

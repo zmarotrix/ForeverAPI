@@ -4,7 +4,7 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [GetSpecializationInfoForClassID](#getspecializationinfoforclassid) |  |  |
+| ✅ | [GetSpecializationInfoForClassID](#getspecializationinfoforclassid) | 9 values | 9 values |
 | ✅ | [GetSpecializationInfoForSpecID](#getspecializationinfoforspecid) |  |  |
 | ✅ | [GetSpecializationNameForSpecID](#getspecializationnameforspecid) |  |  |
 | ✅ | [GetSpecializationSystem](#getspecializationsystem) | 1 value | 1 value |
@@ -16,6 +16,8 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `class,n:1`: returned 9 values: `number`, `string`, `string`, `number`, `string`, `boolean`, `boolean`, `nil`, `nil`
+- Called in combat: returned 9 values: `number`, `string`, `string`, `number`, `string`, `boolean`, `boolean`, `nil`, `nil`
 - Source: client docs `SpecializationSharedDocumentation.lua`
 
 ### GetSpecializationInfoForSpecID

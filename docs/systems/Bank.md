@@ -9,15 +9,15 @@ Namespace: `C_Bank`
 | ✅ | [C_Bank.AreAnyBankTypesViewable](#c_bankareanybanktypesviewable) | 1 value | 1 value |
 | ✅ | [C_Bank.AutoDepositItemsIntoBank](#c_bankautodeposititemsintobank) |  |  |
 | ✅ | [C_Bank.BankBagTypeAndIDToInvSlot](#c_bankbankbagtypeandidtoinvslot) |  |  |
-| ✅ | [C_Bank.CanDepositMoney](#c_bankcandepositmoney) |  |  |
-| ✅ | [C_Bank.CanPurchaseBankTab](#c_bankcanpurchasebanktab) |  |  |
-| ✅ | [C_Bank.CanUseBank](#c_bankcanusebank) |  |  |
-| ✅ | [C_Bank.CanViewBank](#c_bankcanviewbank) |  |  |
-| ✅ | [C_Bank.CanWithdrawMoney](#c_bankcanwithdrawmoney) |  |  |
+| ✅ | [C_Bank.CanDepositMoney](#c_bankcandepositmoney) | 1 value | 1 value |
+| ✅ | [C_Bank.CanPurchaseBankTab](#c_bankcanpurchasebanktab) | 1 value | 1 value |
+| ✅ | [C_Bank.CanUseBank](#c_bankcanusebank) | 1 value | 1 value |
+| ✅ | [C_Bank.CanViewBank](#c_bankcanviewbank) | 1 value | 1 value |
+| ✅ | [C_Bank.CanWithdrawMoney](#c_bankcanwithdrawmoney) | 1 value | 1 value |
 | ✅ | [C_Bank.CloseBankFrame](#c_bankclosebankframe) |  |  |
 | ✅ | [C_Bank.DepositMoney](#c_bankdepositmoney) |  |  |
-| ✅ | [C_Bank.DoesBankTypeSupportAutoDeposit](#c_bankdoesbanktypesupportautodeposit) |  |  |
-| ✅ | [C_Bank.DoesBankTypeSupportMoneyTransfer](#c_bankdoesbanktypesupportmoneytransfer) |  |  |
+| ✅ | [C_Bank.DoesBankTypeSupportAutoDeposit](#c_bankdoesbanktypesupportautodeposit) | 1 value | 1 value |
+| ✅ | [C_Bank.DoesBankTypeSupportMoneyTransfer](#c_bankdoesbanktypesupportmoneytransfer) | 1 value | 1 value |
 | ✅ | [C_Bank.FetchBankLockedReason](#c_bankfetchbanklockedreason) |  |  |
 | ✅ | [C_Bank.FetchDepositedMoney](#c_bankfetchdepositedmoney) |  |  |
 | ✅ | [C_Bank.FetchMaxNumBankTabs](#c_bankfetchmaxnumbanktabs) |  |  |
@@ -26,8 +26,8 @@ Namespace: `C_Bank`
 | ✅ | [C_Bank.FetchPurchasedBankTabData](#c_bankfetchpurchasedbanktabdata) |  |  |
 | ✅ | [C_Bank.FetchPurchasedBankTabIDs](#c_bankfetchpurchasedbanktabids) |  |  |
 | ✅ | [C_Bank.FetchViewableBankTypes](#c_bankfetchviewablebanktypes) |  |  |
-| ✅ | [C_Bank.HasMaxBankTabs](#c_bankhasmaxbanktabs) |  |  |
-| ✅ | [C_Bank.IsItemAllowedInBankType](#c_bankisitemallowedinbanktype) |  |  |
+| ✅ | [C_Bank.HasMaxBankTabs](#c_bankhasmaxbanktabs) | 1 value | 1 value |
+| ✅ | [C_Bank.IsItemAllowedInBankType](#c_bankisitemallowedinbanktype) | 1 value | 1 value |
 | ✅ | [C_Bank.PurchaseBankTab](#c_bankpurchasebanktab) |  |  |
 | ✅ | [C_Bank.ShouldUsePlayerBagsInBank](#c_bankshoulduseplayerbagsinbank) | 1 value | 1 value |
 | ✅ | [C_Bank.UpdateBankTabSettings](#c_bankupdatebanktabsettings) |  |  |
@@ -64,6 +64,8 @@ Namespace: `C_Bank`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BankDocumentation.lua`
 
 ### C_Bank.CanPurchaseBankTab
@@ -72,6 +74,8 @@ Namespace: `C_Bank`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BankDocumentation.lua`
 
 ### C_Bank.CanUseBank
@@ -80,6 +84,8 @@ Namespace: `C_Bank`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BankDocumentation.lua`
 
 ### C_Bank.CanViewBank
@@ -88,6 +94,8 @@ Namespace: `C_Bank`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BankDocumentation.lua`
 
 ### C_Bank.CanWithdrawMoney
@@ -96,6 +104,8 @@ Namespace: `C_Bank`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BankDocumentation.lua`
 
 ### C_Bank.CloseBankFrame
@@ -119,6 +129,8 @@ Namespace: `C_Bank`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BankDocumentation.lua`
 
 ### C_Bank.DoesBankTypeSupportMoneyTransfer
@@ -127,6 +139,8 @@ Namespace: `C_Bank`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BankDocumentation.lua`
 
 ### C_Bank.FetchBankLockedReason
@@ -198,6 +212,8 @@ Namespace: `C_Bank`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BankDocumentation.lua`
 
 ### C_Bank.IsItemAllowedInBankType
@@ -206,6 +222,8 @@ Namespace: `C_Bank`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BankDocumentation.lua`
 
 ### C_Bank.PurchaseBankTab
@@ -249,12 +267,14 @@ Namespace: `C_Bank`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### BANKFRAME_OPENED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### BANK_BAG_SLOT_FLAGS_UPDATED
 
@@ -279,6 +299,7 @@ Namespace: `C_Bank`
 - Status: ✅ verified
 - Payload: `slot: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 7 times (0 in combat); argument kinds: `n`
 
 ### PLAYER_ACCOUNT_BANK_TAB_SLOTS_CHANGED
 

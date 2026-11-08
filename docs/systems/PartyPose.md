@@ -7,8 +7,8 @@ Namespace: `C_PartyPose`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_PartyPose.ExtraAction](#c_partyposeextraaction) |  |  |
-| ✅ | [C_PartyPose.GetPartyPoseInfoByID](#c_partyposegetpartyposeinfobyid) |  |  |
-| ✅ | [C_PartyPose.GetPartyPoseInfoByMapID](#c_partyposegetpartyposeinfobymapid) |  |  |
+| ✅ | [C_PartyPose.GetPartyPoseInfoByID](#c_partyposegetpartyposeinfobyid) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_PartyPose.GetPartyPoseInfoByMapID](#c_partyposegetpartyposeinfobymapid) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_PartyPose.HasExtraAction](#c_partyposehasextraaction) |  |  |
 
 ### C_PartyPose.ExtraAction
@@ -26,6 +26,8 @@ Namespace: `C_PartyPose`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `PartyPoseUIDocumentation.lua`
 
 ### C_PartyPose.GetPartyPoseInfoByMapID
@@ -35,6 +37,8 @@ Namespace: `C_PartyPose`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `PartyPoseUIDocumentation.lua`
 
 ### C_PartyPose.HasExtraAction

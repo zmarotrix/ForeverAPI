@@ -6,11 +6,11 @@ Namespace: `C_Transmog`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_Transmog.CanHaveSecondaryAppearanceForSlotID](#c_transmogcanhavesecondaryappearanceforslotid) |  |  |
+| ✅ | [C_Transmog.CanHaveSecondaryAppearanceForSlotID](#c_transmogcanhavesecondaryappearanceforslotid) | 1 value | 1 value |
 | ✅ | [C_Transmog.ExtractTransmogIDList](#c_transmogextracttransmogidlist) |  |  |
 | ✅ | [C_Transmog.GetAllSetAppearancesByID](#c_transmoggetallsetappearancesbyid) |  |  |
 | ✅ | [C_Transmog.GetItemIDForSource](#c_transmoggetitemidforsource) |  |  |
-| ✅ | [C_Transmog.GetSlotForInventoryType](#c_transmoggetslotforinventorytype) |  |  |
+| ✅ | [C_Transmog.GetSlotForInventoryType](#c_transmoggetslotforinventorytype) | 1 value | 1 value |
 | ✅ | [C_Transmog.GetSlotVisualInfo](#c_transmoggetslotvisualinfo) |  |  |
 | ✅ | [C_Transmog.IsAtTransmogNPC](#c_transmogisattransmognpc) | 1 value | 1 value |
 
@@ -20,6 +20,8 @@ Namespace: `C_Transmog`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `TransmogDocumentation.lua`
 
 ### C_Transmog.ExtractTransmogIDList
@@ -53,6 +55,8 @@ Namespace: `C_Transmog`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `TransmogDocumentation.lua`
 
 ### C_Transmog.GetSlotVisualInfo
@@ -141,7 +145,7 @@ Namespace: `C_Transmog`
 - Payload: `collectionIndex: luaIndex?`, `modID: number?`, `itemAppearanceID: number?`, `reason: cstring?`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `-,-,-,-`
+- Seen firing 2 times (0 in combat); argument kinds: `-,-,-,-`
 
 ### TRANSMOG_COSMETIC_COLLECTION_SOURCE_ADDED
 
@@ -154,14 +158,14 @@ Namespace: `C_Transmog`
 - Status: ✅ verified
 - Payload: `searchType: TransmogSearchType`, `collectionType: TransmogCollectionType?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 16 times (0 in combat); argument kinds: `n,-`
+- Seen firing 72 times (0 in combat); argument kinds: `n,-`
 
 ### TRANSMOG_SETS_UPDATE_FAVORITE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### TRANSMOG_SOURCE_COLLECTABILITY_UPDATE
 

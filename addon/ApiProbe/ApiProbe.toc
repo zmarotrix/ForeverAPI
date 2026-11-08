@@ -3,7 +3,7 @@
 ## Category: Probes
 ## Notes: Records what this client's add-on API really is: globals, namespaces, enums, widgets, events, CVars, and how getters answer in and out of combat. Stores types only, never values from your character. /apiprobe
 ## Author: Maro
-## Version: 0.2.1
+## Version: 0.2.2
 ## X-License: All Rights Reserved
 ## SavedVariables: ApiProbeDB
 

@@ -6,13 +6,13 @@ Namespace: `C_AreaPoiInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_AreaPoiInfo.GetAreaPOIForMap](#c_areapoiinfogetareapoiformap) |  |  |
+| ✅ | [C_AreaPoiInfo.GetAreaPOIForMap](#c_areapoiinfogetareapoiformap) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_AreaPoiInfo.GetAreaPOIInfo](#c_areapoiinfogetareapoiinfo) |  |  |
 | ✅ | [C_AreaPoiInfo.GetAreaPOISecondsLeft](#c_areapoiinfogetareapoisecondsleft) |  |  |
-| ✅ | [C_AreaPoiInfo.GetDelvesForMap](#c_areapoiinfogetdelvesformap) |  |  |
-| ✅ | [C_AreaPoiInfo.GetDragonridingRacesForMap](#c_areapoiinfogetdragonridingracesformap) |  |  |
-| ✅ | [C_AreaPoiInfo.GetEventsForMap](#c_areapoiinfogeteventsformap) |  |  |
-| ✅ | [C_AreaPoiInfo.GetQuestHubsForMap](#c_areapoiinfogetquesthubsformap) |  |  |
+| ✅ | [C_AreaPoiInfo.GetDelvesForMap](#c_areapoiinfogetdelvesformap) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_AreaPoiInfo.GetDragonridingRacesForMap](#c_areapoiinfogetdragonridingracesformap) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_AreaPoiInfo.GetEventsForMap](#c_areapoiinfogeteventsformap) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_AreaPoiInfo.GetQuestHubsForMap](#c_areapoiinfogetquesthubsformap) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_AreaPoiInfo.IsAreaPOITimed](#c_areapoiinfoisareapoitimed) |  |  |
 
 ### C_AreaPoiInfo.GetAreaPOIForMap
@@ -21,6 +21,8 @@ Namespace: `C_AreaPoiInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `AreaPoiInfoDocumentation.lua`
 
 ### C_AreaPoiInfo.GetAreaPOIInfo
@@ -49,6 +51,8 @@ Namespace: `C_AreaPoiInfo`
 - Status: ✅ verified (function)
 - Blizzard: Returns all area POIInfos flagged as delves for the given map.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `AreaPoiInfoDocumentation.lua`
 
 ### C_AreaPoiInfo.GetDragonridingRacesForMap
@@ -58,6 +62,8 @@ Namespace: `C_AreaPoiInfo`
 - Status: ✅ verified (function)
 - Blizzard: Returns all area POIInfos flagged as dragonriding races for the given map.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `AreaPoiInfoDocumentation.lua`
 
 ### C_AreaPoiInfo.GetEventsForMap
@@ -67,6 +73,8 @@ Namespace: `C_AreaPoiInfo`
 - Status: ✅ verified (function)
 - Blizzard: Returns all area POIInfos flagged as events for the given map.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `AreaPoiInfoDocumentation.lua`
 
 ### C_AreaPoiInfo.GetQuestHubsForMap
@@ -76,6 +84,8 @@ Namespace: `C_AreaPoiInfo`
 - Status: ✅ verified (function)
 - Blizzard: Returns all area POIInfos flagged as quest hubs for the given map.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `AreaPoiInfoDocumentation.lua`
 
 ### C_AreaPoiInfo.IsAreaPOITimed
@@ -94,7 +104,7 @@ Namespace: `C_AreaPoiInfo`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 60 times (4 in combat); argument kinds: ``
 
 ## Types
 

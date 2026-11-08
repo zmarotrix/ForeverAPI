@@ -6,7 +6,7 @@ Namespace: `C_ChallengeMode`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_ChallengeMode.CanUseKeystoneInCurrentMap](#c_challengemodecanusekeystoneincurrentmap) |  |  |
+| ✅ | [C_ChallengeMode.CanUseKeystoneInCurrentMap](#c_challengemodecanusekeystoneincurrentmap) | 1 value | 1 value |
 | ✅ | [C_ChallengeMode.ClearKeystone](#c_challengemodeclearkeystone) |  |  |
 | ✅ | [C_ChallengeMode.CloseKeystoneFrame](#c_challengemodeclosekeystoneframe) |  |  |
 | ✅ | [C_ChallengeMode.GetActiveChallengeMapID](#c_challengemodegetactivechallengemapid) | 1 value | 1 value |
@@ -16,7 +16,7 @@ Namespace: `C_ChallengeMode`
 | ✅ | [C_ChallengeMode.GetDeathCount](#c_challengemodegetdeathcount) | 0 values | 0 values |
 | ✅ | [C_ChallengeMode.GetDungeonScoreRarityColor](#c_challengemodegetdungeonscoreraritycolor) |  |  |
 | ✅ | [C_ChallengeMode.GetGuildLeaders](#c_challengemodegetguildleaders) | 1 value | 1 value |
-| ✅ | [C_ChallengeMode.GetKeystoneLevelRarityColor](#c_challengemodegetkeystonelevelraritycolor) |  |  |
+| ✅ | [C_ChallengeMode.GetKeystoneLevelRarityColor](#c_challengemodegetkeystonelevelraritycolor) | 1 value | 1 value |
 | ✅ | [C_ChallengeMode.GetLeaverPenaltyWarningTimeLeft](#c_challengemodegetleaverpenaltywarningtimeleft) | 1 value | 1 value |
 | ✅ | [C_ChallengeMode.GetMapScoreInfo](#c_challengemodegetmapscoreinfo) | 0 values | 0 values |
 | ✅ | [C_ChallengeMode.GetMapTable](#c_challengemodegetmaptable) | 1 value | 1 value |
@@ -42,6 +42,8 @@ Namespace: `C_ChallengeMode`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ChallengeModeInfoDocumentation.lua`
 
 ### C_ChallengeMode.ClearKeystone
@@ -130,6 +132,8 @@ Namespace: `C_ChallengeMode`
 - Status: ✅ verified (function)
 - Blizzard: Returns a color value from the passed in keystone level.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:10`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `ChallengeModeInfoDocumentation.lua`
 
 ### C_ChallengeMode.GetLeaverPenaltyWarningTimeLeft

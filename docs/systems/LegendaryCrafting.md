@@ -8,22 +8,22 @@ Namespace: `C_LegendaryCrafting`
 |---|---|---|---|
 | ✅ | [C_LegendaryCrafting.CloseRuneforgeInteraction](#c_legendarycraftingcloseruneforgeinteraction) |  |  |
 | ✅ | [C_LegendaryCrafting.CraftRuneforgeLegendary](#c_legendarycraftingcraftruneforgelegendary) |  |  |
-| ✅ | [C_LegendaryCrafting.GetRuneforgeItemPreviewInfo](#c_legendarycraftinggetruneforgeitempreviewinfo) |  |  |
-| ✅ | [C_LegendaryCrafting.GetRuneforgeLegendaryComponentInfo](#c_legendarycraftinggetruneforgelegendarycomponentinfo) |  |  |
-| ✅ | [C_LegendaryCrafting.GetRuneforgeLegendaryCost](#c_legendarycraftinggetruneforgelegendarycost) |  |  |
+| ✅ | [C_LegendaryCrafting.GetRuneforgeItemPreviewInfo](#c_legendarycraftinggetruneforgeitempreviewinfo) | 1 value | 1 value |
+| ✅ | [C_LegendaryCrafting.GetRuneforgeLegendaryComponentInfo](#c_legendarycraftinggetruneforgelegendarycomponentinfo) | 1 value | 1 value |
+| ✅ | [C_LegendaryCrafting.GetRuneforgeLegendaryCost](#c_legendarycraftinggetruneforgelegendarycost) | 1 value | 1 value |
 | ✅ | [C_LegendaryCrafting.GetRuneforgeLegendaryCraftSpellID](#c_legendarycraftinggetruneforgelegendarycraftspellid) | 1 value | 1 value |
 | ✅ | [C_LegendaryCrafting.GetRuneforgeLegendaryCurrencies](#c_legendarycraftinggetruneforgelegendarycurrencies) | 1 value | 1 value |
-| ✅ | [C_LegendaryCrafting.GetRuneforgeLegendaryUpgradeCost](#c_legendarycraftinggetruneforgelegendaryupgradecost) |  |  |
+| ✅ | [C_LegendaryCrafting.GetRuneforgeLegendaryUpgradeCost](#c_legendarycraftinggetruneforgelegendaryupgradecost) | 1 value | 1 value |
 | ✅ | [C_LegendaryCrafting.GetRuneforgeModifierInfo](#c_legendarycraftinggetruneforgemodifierinfo) |  |  |
 | ✅ | [C_LegendaryCrafting.GetRuneforgeModifiers](#c_legendarycraftinggetruneforgemodifiers) | 1 value | 1 value |
 | ✅ | [C_LegendaryCrafting.GetRuneforgePowerInfo](#c_legendarycraftinggetruneforgepowerinfo) |  |  |
 | ✅ | [C_LegendaryCrafting.GetRuneforgePowerSlots](#c_legendarycraftinggetruneforgepowerslots) |  |  |
 | ✅ | [C_LegendaryCrafting.GetRuneforgePowers](#c_legendarycraftinggetruneforgepowers) | 2 values | 2 values |
 | ✅ | [C_LegendaryCrafting.GetRuneforgePowersByClassSpecAndCovenant](#c_legendarycraftinggetruneforgepowersbyclassspecandcovenant) | 1 value | 1 value |
-| ✅ | [C_LegendaryCrafting.IsRuneforgeLegendary](#c_legendarycraftingisruneforgelegendary) |  |  |
-| ✅ | [C_LegendaryCrafting.IsRuneforgeLegendaryMaxLevel](#c_legendarycraftingisruneforgelegendarymaxlevel) |  |  |
-| ✅ | [C_LegendaryCrafting.IsUpgradeItemValidForRuneforgeLegendary](#c_legendarycraftingisupgradeitemvalidforruneforgelegendary) |  |  |
-| ✅ | [C_LegendaryCrafting.IsValidRuneforgeBaseItem](#c_legendarycraftingisvalidruneforgebaseitem) |  |  |
+| ✅ | [C_LegendaryCrafting.IsRuneforgeLegendary](#c_legendarycraftingisruneforgelegendary) | 1 value | 1 value |
+| ✅ | [C_LegendaryCrafting.IsRuneforgeLegendaryMaxLevel](#c_legendarycraftingisruneforgelegendarymaxlevel) | 1 value | 1 value |
+| ✅ | [C_LegendaryCrafting.IsUpgradeItemValidForRuneforgeLegendary](#c_legendarycraftingisupgradeitemvalidforruneforgelegendary) | 1 value | 1 value |
+| ✅ | [C_LegendaryCrafting.IsValidRuneforgeBaseItem](#c_legendarycraftingisvalidruneforgebaseitem) | 1 value | 1 value |
 | ✅ | [C_LegendaryCrafting.MakeRuneforgeCraftDescription](#c_legendarycraftingmakeruneforgecraftdescription) |  |  |
 | ✅ | [C_LegendaryCrafting.UpgradeRuneforgeLegendary](#c_legendarycraftingupgraderuneforgelegendary) |  |  |
 
@@ -48,6 +48,8 @@ Namespace: `C_LegendaryCrafting`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `table{itemGUID=string,itemLevel=number,itemName=string}`
+- Called in combat: returned 1 value: `table{itemGUID=string,itemLevel=number,itemName=string}`
 - Source: client docs `LegendaryCraftingDocumentation.lua`
 
 ### C_LegendaryCrafting.GetRuneforgeLegendaryComponentInfo
@@ -56,6 +58,8 @@ Namespace: `C_LegendaryCrafting`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `table{modifiers=table,powerID=number}`
+- Called in combat: returned 1 value: `table{modifiers=table,powerID=number}`
 - Source: client docs `LegendaryCraftingDocumentation.lua`
 
 ### C_LegendaryCrafting.GetRuneforgeLegendaryCost
@@ -64,6 +68,8 @@ Namespace: `C_LegendaryCrafting`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `LegendaryCraftingDocumentation.lua`
 
 ### C_LegendaryCrafting.GetRuneforgeLegendaryCraftSpellID
@@ -90,6 +96,8 @@ Namespace: `C_LegendaryCrafting`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc,itemloc`: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `LegendaryCraftingDocumentation.lua`
 
 ### C_LegendaryCrafting.GetRuneforgeModifierInfo
@@ -151,6 +159,8 @@ Namespace: `C_LegendaryCrafting`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `LegendaryCraftingDocumentation.lua`
 
 ### C_LegendaryCrafting.IsRuneforgeLegendaryMaxLevel
@@ -159,6 +169,8 @@ Namespace: `C_LegendaryCrafting`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `LegendaryCraftingDocumentation.lua`
 
 ### C_LegendaryCrafting.IsUpgradeItemValidForRuneforgeLegendary
@@ -167,6 +179,8 @@ Namespace: `C_LegendaryCrafting`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc,itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `LegendaryCraftingDocumentation.lua`
 
 ### C_LegendaryCrafting.IsValidRuneforgeBaseItem
@@ -175,6 +189,8 @@ Namespace: `C_LegendaryCrafting`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `LegendaryCraftingDocumentation.lua`
 
 ### C_LegendaryCrafting.MakeRuneforgeCraftDescription

@@ -6,7 +6,7 @@ Namespace: `C_ClickBindings`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_ClickBindings.CanSpellBeClickBound](#c_clickbindingscanspellbeclickbound) |  |  |
+| ✅ | [C_ClickBindings.CanSpellBeClickBound](#c_clickbindingscanspellbeclickbound) | 1 value | 1 value |
 | ✅ | [C_ClickBindings.ExecuteBinding](#c_clickbindingsexecutebinding) |  |  |
 | ✅ | [C_ClickBindings.GetBindingType](#c_clickbindingsgetbindingtype) |  |  |
 | ✅ | [C_ClickBindings.GetEffectiveInteractionButton](#c_clickbindingsgeteffectiveinteractionbutton) |  |  |
@@ -25,6 +25,8 @@ Namespace: `C_ClickBindings`
 - Status: ✅ verified (function)
 - `spellID`: Base spellID for spell, spellID for PetAction
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ClickBindingsDocumentation.lua`
 
 ### C_ClickBindings.ExecuteBinding

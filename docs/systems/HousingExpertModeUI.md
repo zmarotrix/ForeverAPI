@@ -6,18 +6,18 @@ Namespace: `C_HousingExpertMode`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_HousingExpertMode.CancelActiveEditing](#c_housingexpertmodecancelactiveediting) | 0 values | 0 values |
+| ✅ | [C_HousingExpertMode.CancelActiveEditing](#c_housingexpertmodecancelactiveediting) |  |  |
 | ✅ | [C_HousingExpertMode.CommitDecorMovement](#c_housingexpertmodecommitdecormovement) |  |  |
 | ✅ | [C_HousingExpertMode.CommitHouseExteriorPosition](#c_housingexpertmodecommithouseexteriorposition) |  |  |
-| ✅ | [C_HousingExpertMode.GetHoveredDecorInfo](#c_housingexpertmodegethovereddecorinfo) | 1 value | 1 value |
-| ✅ | [C_HousingExpertMode.GetPrecisionSubmode](#c_housingexpertmodegetprecisionsubmode) | 1 value | 1 value |
-| ✅ | [C_HousingExpertMode.GetPrecisionSubmodeRestriction](#c_housingexpertmodegetprecisionsubmoderestriction) |  |  |
-| ✅ | [C_HousingExpertMode.GetSelectedDecorInfo](#c_housingexpertmodegetselecteddecorinfo) | 1 value | 1 value |
-| ✅ | [C_HousingExpertMode.IsDecorSelected](#c_housingexpertmodeisdecorselected) | 1 value | 1 value |
-| ✅ | [C_HousingExpertMode.IsGridVisible](#c_housingexpertmodeisgridvisible) | 1 value | 1 value |
-| ✅ | [C_HousingExpertMode.IsHouseExteriorHovered](#c_housingexpertmodeishouseexteriorhovered) | 1 value | 1 value |
-| ✅ | [C_HousingExpertMode.IsHouseExteriorSelected](#c_housingexpertmodeishouseexteriorselected) | 1 value | 1 value |
-| ✅ | [C_HousingExpertMode.IsHoveringDecor](#c_housingexpertmodeishoveringdecor) | 1 value | 1 value |
+| ✅ | [C_HousingExpertMode.GetHoveredDecorInfo](#c_housingexpertmodegethovereddecorinfo) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingExpertMode.GetPrecisionSubmode](#c_housingexpertmodegetprecisionsubmode) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingExpertMode.GetPrecisionSubmodeRestriction](#c_housingexpertmodegetprecisionsubmoderestriction) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingExpertMode.GetSelectedDecorInfo](#c_housingexpertmodegetselecteddecorinfo) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingExpertMode.IsDecorSelected](#c_housingexpertmodeisdecorselected) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingExpertMode.IsGridVisible](#c_housingexpertmodeisgridvisible) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingExpertMode.IsHouseExteriorHovered](#c_housingexpertmodeishouseexteriorhovered) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingExpertMode.IsHouseExteriorSelected](#c_housingexpertmodeishouseexteriorselected) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingExpertMode.IsHoveringDecor](#c_housingexpertmodeishoveringdecor) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | ✅ | [C_HousingExpertMode.RemoveSelectedDecor](#c_housingexpertmoderemoveselecteddecor) |  |  |
 | ✅ | [C_HousingExpertMode.ResetPrecisionChanges](#c_housingexpertmoderesetprecisionchanges) |  |  |
 | ✅ | [C_HousingExpertMode.SelectNextRotationAxis](#c_housingexpertmodeselectnextrotationaxis) |  |  |
@@ -31,8 +31,6 @@ Namespace: `C_HousingExpertMode`
 
 - Status: ✅ verified (function)
 - Blizzard: Cancels all in-progress editing of the selected target, which will reset any unsaved changes and deselect the active target; Will not reset any already-applied changes
-- Called out of combat: returned 0 values
-- Called in combat: returned 0 values
 - Source: client docs `HousingExpertModeUIDocumentation.lua`
 
 ### C_HousingExpertMode.CommitDecorMovement
@@ -57,8 +55,8 @@ Namespace: `C_HousingExpertMode`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns info for the placed decor instance currently being hovered, if there is one
-- Called out of combat: returned 1 value: `nil`
-- Called in combat: returned 1 value: `nil`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingExpertModeUIDocumentation.lua`
 
 ### C_HousingExpertMode.GetPrecisionSubmode
@@ -67,8 +65,8 @@ Namespace: `C_HousingExpertMode`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns the currently active Expert submode, if there is one
-- Called out of combat: returned 1 value: `nil`
-- Called in combat: returned 1 value: `nil`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingExpertModeUIDocumentation.lua`
 
 ### C_HousingExpertMode.GetPrecisionSubmodeRestriction
@@ -78,6 +76,8 @@ Namespace: `C_HousingExpertMode`
 - Status: ✅ verified (function)
 - Blizzard: Returns the type of restriction currently active on the submode; Will return HousingExpertSubmodeRestriction:None if submode is not currently restricted
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingExpertModeUIDocumentation.lua`
 
 ### C_HousingExpertMode.GetSelectedDecorInfo
@@ -86,8 +86,8 @@ Namespace: `C_HousingExpertMode`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns info for the placed decor instance that's currently selected, if there is one
-- Called out of combat: returned 1 value: `nil`
-- Called in combat: returned 1 value: `nil`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingExpertModeUIDocumentation.lua`
 
 ### C_HousingExpertMode.IsDecorSelected
@@ -96,8 +96,8 @@ Namespace: `C_HousingExpertMode`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a placed decor instance is currently selected
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingExpertModeUIDocumentation.lua`
 
 ### C_HousingExpertMode.IsGridVisible
@@ -105,8 +105,8 @@ Namespace: `C_HousingExpertMode`
 `C_HousingExpertMode.IsGridVisible() → gridVisible: bool`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingExpertModeUIDocumentation.lua`
 
 ### C_HousingExpertMode.IsHouseExteriorHovered
@@ -115,8 +115,8 @@ Namespace: `C_HousingExpertMode`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the house's exterior is currently being hovered
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingExpertModeUIDocumentation.lua`
 
 ### C_HousingExpertMode.IsHouseExteriorSelected
@@ -125,8 +125,8 @@ Namespace: `C_HousingExpertMode`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the house's exterior is currently selected
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingExpertModeUIDocumentation.lua`
 
 ### C_HousingExpertMode.IsHoveringDecor
@@ -135,8 +135,8 @@ Namespace: `C_HousingExpertMode`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a placed decor instance is currently being hovered
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingExpertModeUIDocumentation.lua`
 
 ### C_HousingExpertMode.RemoveSelectedDecor

@@ -27,14 +27,14 @@ Namespace: `C_PetBattles`
 | 🆕 | [C_PetBattles.GetAttackModifier](#c_petbattlesgetattackmodifier) |  |  |
 | 🆕 | [C_PetBattles.GetAuraInfo](#c_petbattlesgetaurainfo) |  |  |
 | 🆕 | [C_PetBattles.GetBattleState](#c_petbattlesgetbattlestate) |  |  |
-| ✅ | [C_PetBattles.GetBreedQuality](#c_petbattlesgetbreedquality) |  |  |
+| ✅ | [C_PetBattles.GetBreedQuality](#c_petbattlesgetbreedquality) | 1 value | 1 value |
 | 🆕 | [C_PetBattles.GetDisplayID](#c_petbattlesgetdisplayid) |  |  |
 | 🆕 | [C_PetBattles.GetForfeitPenalty](#c_petbattlesgetforfeitpenalty) |  |  |
 | 🆕 | [C_PetBattles.GetHealth](#c_petbattlesgethealth) |  |  |
-| ✅ | [C_PetBattles.GetIcon](#c_petbattlesgeticon) |  |  |
+| ✅ | [C_PetBattles.GetIcon](#c_petbattlesgeticon) | 0 values | 0 values |
 | 🆕 | [C_PetBattles.GetLevel](#c_petbattlesgetlevel) |  |  |
 | 🆕 | [C_PetBattles.GetMaxHealth](#c_petbattlesgetmaxhealth) |  |  |
-| ✅ | [C_PetBattles.GetName](#c_petbattlesgetname) |  |  |
+| ✅ | [C_PetBattles.GetName](#c_petbattlesgetname) | 0 values | 0 values |
 | 🆕 | [C_PetBattles.GetNumAuras](#c_petbattlesgetnumauras) |  |  |
 | 🆕 | [C_PetBattles.GetNumPets](#c_petbattlesgetnumpets) |  |  |
 | 🆕 | [C_PetBattles.GetPVPMatchmakingInfo](#c_petbattlesgetpvpmatchmakinginfo) |  |  |
@@ -195,6 +195,8 @@ Namespace: `C_PetBattles`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:1`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PetBattlesDocumentation.lua`
 
 ### C_PetBattles.GetDisplayID
@@ -222,6 +224,8 @@ Namespace: `C_PetBattles`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `PetBattlesDocumentation.lua`
 
 ### C_PetBattles.GetLevel
@@ -243,6 +247,8 @@ Namespace: `C_PetBattles`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `PetBattlesDocumentation.lua`
 
 ### C_PetBattles.GetNumAuras

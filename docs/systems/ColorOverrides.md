@@ -7,9 +7,9 @@ Namespace: `C_ColorOverrides`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_ColorOverrides.ClearColorOverrides](#c_coloroverridesclearcoloroverrides) |  |  |
-| ✅ | [C_ColorOverrides.GetColorForQuality](#c_coloroverridesgetcolorforquality) |  |  |
-| ✅ | [C_ColorOverrides.GetColorOverrideInfo](#c_coloroverridesgetcoloroverrideinfo) |  |  |
-| ✅ | [C_ColorOverrides.GetDefaultColorForQuality](#c_coloroverridesgetdefaultcolorforquality) |  |  |
+| ✅ | [C_ColorOverrides.GetColorForQuality](#c_coloroverridesgetcolorforquality) | 1 value | 1 value |
+| ✅ | [C_ColorOverrides.GetColorOverrideInfo](#c_coloroverridesgetcoloroverrideinfo) | 1 value | 1 value |
+| ✅ | [C_ColorOverrides.GetDefaultColorForQuality](#c_coloroverridesgetdefaultcolorforquality) | 1 value | 1 value |
 | ✅ | [C_ColorOverrides.RemoveColorOverride](#c_coloroverridesremovecoloroverride) |  |  |
 | ✅ | [C_ColorOverrides.SetColorOverride](#c_coloroverridessetcoloroverride) |  |  |
 
@@ -26,6 +26,8 @@ Namespace: `C_ColorOverrides`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `table{GenerateHexColor=function,GenerateHexColorMarkup=function,GenerateHexColorNoAlpha=function,GetHSL=function,GetRGB=function,GetRGBA=function,GetRGBAAsBytes=function,GetRGBAsBytes=function,IsEqualTo=function,IsRGBEqualTo=function,OnLoad=function,SetRGB=function,SetRGBA=function,WrapTextInColorCode=function,a=number,b=number,g=number,r=number}`
+- Called in combat: returned 1 value: `table{GenerateHexColor=function,GenerateHexColorMarkup=function,GenerateHexColorNoAlpha=function,GetHSL=function,GetRGB=function,GetRGBA=function,GetRGBAAsBytes=function,GetRGBAsBytes=function,IsEqualTo=function,IsRGBEqualTo=function,OnLoad=function,SetRGB=function,SetRGBA=function,WrapTextInColorCode=function,a=number,b=number,g=number,r=number}`
 - Source: client docs `ColorOverridesDocumentation.lua`
 
 ### C_ColorOverrides.GetColorOverrideInfo
@@ -34,6 +36,8 @@ Namespace: `C_ColorOverrides`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `ColorOverridesDocumentation.lua`
 
 ### C_ColorOverrides.GetDefaultColorForQuality
@@ -42,6 +46,8 @@ Namespace: `C_ColorOverrides`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `table{GenerateHexColor=function,GenerateHexColorMarkup=function,GenerateHexColorNoAlpha=function,GetHSL=function,GetRGB=function,GetRGBA=function,GetRGBAAsBytes=function,GetRGBAsBytes=function,IsEqualTo=function,IsRGBEqualTo=function,OnLoad=function,SetRGB=function,SetRGBA=function,WrapTextInColorCode=function,a=number,b=number,g=number,r=number}`
+- Called in combat: returned 1 value: `table{GenerateHexColor=function,GenerateHexColorMarkup=function,GenerateHexColorNoAlpha=function,GetHSL=function,GetRGB=function,GetRGBA=function,GetRGBAAsBytes=function,GetRGBAsBytes=function,IsEqualTo=function,IsRGBEqualTo=function,OnLoad=function,SetRGB=function,SetRGBA=function,WrapTextInColorCode=function,a=number,b=number,g=number,r=number}`
 - Source: client docs `ColorOverridesDocumentation.lua`
 
 ### C_ColorOverrides.RemoveColorOverride

@@ -6,8 +6,8 @@ Namespace: `C_Macro`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_Macro.GetMacroName](#c_macrogetmacroname) |  |  |
-| ✅ | [C_Macro.GetSelectedMacroIcon](#c_macrogetselectedmacroicon) |  |  |
+| ✅ | [C_Macro.GetMacroName](#c_macrogetmacroname) | 1 value | 1 value |
+| ✅ | [C_Macro.GetSelectedMacroIcon](#c_macrogetselectedmacroicon) | 1 value | 1 value |
 | ✅ | [C_Macro.RunMacroText](#c_macrorunmacrotext) |  |  |
 | ⛔ | [C_Macro.SetMacroExecuteLineCallback](#c_macrosetmacroexecutelinecallback) |  |  |
 
@@ -17,6 +17,8 @@ Namespace: `C_Macro`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `UIMacrosDocumentation.lua`
 
 ### C_Macro.GetSelectedMacroIcon
@@ -25,6 +27,8 @@ Namespace: `C_Macro`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UIMacrosDocumentation.lua`
 
 ### C_Macro.RunMacroText
@@ -52,7 +56,7 @@ Namespace: `C_Macro`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (0 in combat); argument kinds: ``
+- Seen firing 24 times (0 in combat); argument kinds: ``
 
 ## Types
 

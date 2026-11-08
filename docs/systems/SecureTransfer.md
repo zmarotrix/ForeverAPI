@@ -7,7 +7,7 @@ Namespace: `C_SecureTransfer`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ⛔ | [C_SecureTransfer.AcceptTrade](#c_securetransferaccepttrade) |  |  |
-| ⛔ | [C_SecureTransfer.Cancel](#c_securetransfercancel) | missing | missing |
+| ⛔ | [C_SecureTransfer.Cancel](#c_securetransfercancel) |  |  |
 | ⛔ | [C_SecureTransfer.CompleteHousingPurchase](#c_securetransfercompletehousingpurchase) |  |  |
 | ⛔ | [C_SecureTransfer.CompleteHousingVCPurchase](#c_securetransfercompletehousingvcpurchase) |  |  |
 | ⛔ | [C_SecureTransfer.GetHousingPurchaseCost](#c_securetransfergethousingpurchasecost) | missing | missing |
@@ -35,8 +35,6 @@ Namespace: `C_SecureTransfer`
 
 - Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: missing at call time
-- Called in combat: missing at call time
 - Source: client docs `SecureTransferDocumentation.lua`
 
 ### C_SecureTransfer.CompleteHousingPurchase
@@ -158,7 +156,7 @@ Namespace: `C_SecureTransfer`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 12 times (2 in combat); argument kinds: ``
+- Seen firing 34 times (2 in combat); argument kinds: ``
 
 ### SECURE_TRANSFER_CONFIRM_HOUSING_PURCHASE
 

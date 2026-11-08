@@ -6,7 +6,7 @@ Namespace: `C_FrameManager`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_FrameManager.GetFrameVisibilityState](#c_framemanagergetframevisibilitystate) |  |  |
+| ✅ | [C_FrameManager.GetFrameVisibilityState](#c_framemanagergetframevisibilitystate) | 1 value | 1 value |
 
 ### C_FrameManager.GetFrameVisibilityState
 
@@ -14,6 +14,8 @@ Namespace: `C_FrameManager`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UIFrameManagerDocumentation.lua`
 
 ## Events
@@ -23,7 +25,7 @@ Namespace: `C_FrameManager`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 8 times (0 in combat); argument kinds: ``
 
 ### FRAME_MANAGER_UPDATE_FRAME
 

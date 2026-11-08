@@ -21,12 +21,12 @@ Namespace: `C_VoiceChat`
 | ✅ | [C_VoiceChat.GetAvailableInputDevices](#c_voicechatgetavailableinputdevices) | 1 value | 1 value |
 | ✅ | [C_VoiceChat.GetAvailableOutputDevices](#c_voicechatgetavailableoutputdevices) | 1 value | 1 value |
 | ✅ | [C_VoiceChat.GetChannel](#c_voicechatgetchannel) |  |  |
-| ✅ | [C_VoiceChat.GetChannelForChannelType](#c_voicechatgetchannelforchanneltype) |  |  |
+| ✅ | [C_VoiceChat.GetChannelForChannelType](#c_voicechatgetchannelforchanneltype) | 0 values | 0 values |
 | ✅ | [C_VoiceChat.GetChannelForCommunityStream](#c_voicechatgetchannelforcommunitystream) |  |  |
 | ✅ | [C_VoiceChat.GetCommunicationMode](#c_voicechatgetcommunicationmode) | 1 value | 1 value |
 | ✅ | [C_VoiceChat.GetCurrentVoiceChatConnectionStatusCode](#c_voicechatgetcurrentvoicechatconnectionstatuscode) | 1 value | 1 value |
 | ✅ | [C_VoiceChat.GetInputVolume](#c_voicechatgetinputvolume) | 1 value | 1 value |
-| ✅ | [C_VoiceChat.GetJoinClubVoiceChannelError](#c_voicechatgetjoinclubvoicechannelerror) |  |  |
+| ✅ | [C_VoiceChat.GetJoinClubVoiceChannelError](#c_voicechatgetjoinclubvoicechannelerror) | 1 value | 1 value |
 | ✅ | [C_VoiceChat.GetLocalPlayerActiveChannelMemberInfo](#c_voicechatgetlocalplayeractivechannelmemberinfo) | 1 value | 1 value |
 | ✅ | [C_VoiceChat.GetLocalPlayerMemberID](#c_voicechatgetlocalplayermemberid) |  |  |
 | ✅ | [C_VoiceChat.GetMasterVolumeScale](#c_voicechatgetmastervolumescale) | 1 value | 1 value |
@@ -34,7 +34,7 @@ Namespace: `C_VoiceChat`
 | ✅ | [C_VoiceChat.GetMemberID](#c_voicechatgetmemberid) |  |  |
 | ✅ | [C_VoiceChat.GetMemberInfo](#c_voicechatgetmemberinfo) |  |  |
 | ✅ | [C_VoiceChat.GetMemberName](#c_voicechatgetmembername) |  |  |
-| ✅ | [C_VoiceChat.GetMemberVolume](#c_voicechatgetmembervolume) |  |  |
+| ✅ | [C_VoiceChat.GetMemberVolume](#c_voicechatgetmembervolume) | 1 value | 1 value |
 | ✅ | [C_VoiceChat.GetOutputVolume](#c_voicechatgetoutputvolume) | 1 value | 1 value |
 | ✅ | [C_VoiceChat.GetPTTButtonPressedState](#c_voicechatgetpttbuttonpressedstate) | 1 value | 1 value |
 | ✅ | [C_VoiceChat.GetProcesses](#c_voicechatgetprocesses) | 0 values | 0 values |
@@ -42,18 +42,18 @@ Namespace: `C_VoiceChat`
 | ✅ | [C_VoiceChat.GetRemoteTtsVoices](#c_voicechatgetremotettsvoices) | 1 value | 1 value |
 | ✅ | [C_VoiceChat.GetTtsVoices](#c_voicechatgetttsvoices) | 1 value | 1 value |
 | ✅ | [C_VoiceChat.GetVADSensitivity](#c_voicechatgetvadsensitivity) | 1 value | 1 value |
-| ✅ | [C_VoiceChat.IsChannelJoinPending](#c_voicechatischanneljoinpending) |  |  |
+| ✅ | [C_VoiceChat.IsChannelJoinPending](#c_voicechatischanneljoinpending) | 1 value | 1 value |
 | ✅ | [C_VoiceChat.IsDeafened](#c_voicechatisdeafened) | 1 value | 1 value |
 | ✅ | [C_VoiceChat.IsEnabled](#c_voicechatisenabled) | 1 value | 1 value |
 | ✅ | [C_VoiceChat.IsLoggedIn](#c_voicechatisloggedin) | 1 value | 1 value |
 | ✅ | [C_VoiceChat.IsMemberLocalPlayer](#c_voicechatismemberlocalplayer) |  |  |
-| ✅ | [C_VoiceChat.IsMemberMuted](#c_voicechatismembermuted) |  |  |
+| ✅ | [C_VoiceChat.IsMemberMuted](#c_voicechatismembermuted) | 1 value | 1 value |
 | ✅ | [C_VoiceChat.IsMemberMutedForAll](#c_voicechatismembermutedforall) |  |  |
 | ✅ | [C_VoiceChat.IsMemberSilenced](#c_voicechatismembersilenced) |  |  |
 | ✅ | [C_VoiceChat.IsMuted](#c_voicechatismuted) | 1 value | 1 value |
 | ✅ | [C_VoiceChat.IsParentalDisabled](#c_voicechatisparentaldisabled) | 1 value | 1 value |
 | ✅ | [C_VoiceChat.IsParentalMuted](#c_voicechatisparentalmuted) | 1 value | 1 value |
-| ✅ | [C_VoiceChat.IsPlayerUsingVoice](#c_voicechatisplayerusingvoice) |  |  |
+| ✅ | [C_VoiceChat.IsPlayerUsingVoice](#c_voicechatisplayerusingvoice) | 1 value | 1 value |
 | ✅ | [C_VoiceChat.IsSilenced](#c_voicechatissilenced) | 1 value | 1 value |
 | ✅ | [C_VoiceChat.IsSpeakForMeActive](#c_voicechatisspeakformeactive) | 1 value | 1 value |
 | ✅ | [C_VoiceChat.IsSpeakForMeAllowed](#c_voicechatisspeakformeallowed) | 1 value | 1 value |
@@ -194,8 +194,8 @@ Namespace: `C_VoiceChat`
 `C_VoiceChat.GetAvailableInputDevices() → inputDevices: VoiceAudioDevice[]?`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table}`
-- Called in combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table}`
+- Called out of combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table}`
+- Called in combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table}`
 - Source: client docs `VoiceChatDocumentation.lua`
 
 ### C_VoiceChat.GetAvailableOutputDevices
@@ -203,8 +203,8 @@ Namespace: `C_VoiceChat`
 `C_VoiceChat.GetAvailableOutputDevices() → outputDevices: VoiceAudioDevice[]?`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table}`
-- Called in combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table}`
+- Called out of combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table}`
+- Called in combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table}`
 - Source: client docs `VoiceChatDocumentation.lua`
 
 ### C_VoiceChat.GetChannel
@@ -225,6 +225,8 @@ Namespace: `C_VoiceChat`
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret during chat lockdown (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `VoiceChatDocumentation.lua`
 
 ### C_VoiceChat.GetChannelForCommunityStream
@@ -270,6 +272,8 @@ Namespace: `C_VoiceChat`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `club`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `VoiceChatDocumentation.lua`
 
 ### C_VoiceChat.GetLocalPlayerActiveChannelMemberInfo
@@ -340,6 +344,8 @@ Namespace: `C_VoiceChat`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `playerloc`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `VoiceChatDocumentation.lua`
 
 ### C_VoiceChat.GetOutputVolume
@@ -384,8 +390,8 @@ Namespace: `C_VoiceChat`
 `C_VoiceChat.GetRemoteTtsVoices() → ttsVoices: VoiceTtsVoiceType[]`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `table{}`
-- Called in combat: returned 1 value: `table{}`
+- Called out of combat: returned 1 value: `table{[number]=table,[number]=table}`
+- Called in combat: returned 1 value: `table{[number]=table,[number]=table}`
 - Source: client docs `VoiceChatDocumentation.lua`
 
 ### C_VoiceChat.GetTtsVoices
@@ -412,6 +418,8 @@ Namespace: `C_VoiceChat`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `VoiceChatDocumentation.lua`
 
 ### C_VoiceChat.IsDeafened
@@ -455,6 +463,8 @@ Namespace: `C_VoiceChat`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `playerloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `VoiceChatDocumentation.lua`
 
 ### C_VoiceChat.IsMemberMutedForAll
@@ -508,6 +518,8 @@ Namespace: `C_VoiceChat`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `playerloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `VoiceChatDocumentation.lua`
 
 ### C_VoiceChat.IsSilenced
@@ -796,20 +808,21 @@ Namespace: `C_VoiceChat`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 13 times (0 in combat); argument kinds: ``
 
 ### VOICE_CHAT_ACTIVE_OUTPUT_DEVICE_UPDATED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 13 times (0 in combat); argument kinds: ``
 
 ### VOICE_CHAT_ACTIVE_VOICE_PROVIDER_CHANGED
 
 - Status: ✅ verified
 - Payload: `voiceProviderID: VoiceProviderID`
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: `n`
 
 ### VOICE_CHAT_AUDIO_CAPTURE_ENERGY
 
@@ -977,14 +990,14 @@ Namespace: `C_VoiceChat`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### VOICE_CHAT_DEAFENED_CHANGED
 
 - Status: ✅ verified
 - Payload: `isDeafened: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `b`
+- Seen firing 7 times (0 in combat); argument kinds: `b`
 
 ### VOICE_CHAT_DISCORD_SETTINGS_UPDATED
 
@@ -1003,7 +1016,7 @@ Namespace: `C_VoiceChat`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 6 times (0 in combat); argument kinds: ``
 
 ### VOICE_CHAT_LOGIN
 
@@ -1022,14 +1035,14 @@ Namespace: `C_VoiceChat`
 - Status: ✅ verified
 - Payload: `isMuted: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `b`
+- Seen firing 8 times (0 in combat); argument kinds: `b`
 
 ### VOICE_CHAT_OUTPUT_DEVICES_UPDATED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 6 times (0 in combat); argument kinds: ``
 
 ### VOICE_CHAT_PENDING_CHANNEL_JOIN_STATE
 
@@ -1042,6 +1055,7 @@ Namespace: `C_VoiceChat`
 - Status: ✅ verified
 - Payload: `isPressed: bool`
 - fires synchronously (Blizzard's docs)
+- Seen firing 14 times (0 in combat); argument kinds: `b`
 
 ### VOICE_CHAT_SILENCED_CHANGED
 
@@ -1096,13 +1110,14 @@ Namespace: `C_VoiceChat`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### VOICE_CHAT_VAD_SETTINGS_UPDATED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 4 times (0 in combat); argument kinds: ``
 
 ### VOICE_CHAT_VOICE_PROVIDERS_AVAILABLE_CHANGED
 
@@ -1115,6 +1130,7 @@ Namespace: `C_VoiceChat`
 - Status: ✅ verified
 - Payload: `voiceProviderID: VoiceProviderID`
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: `n`
 
 ## Types
 

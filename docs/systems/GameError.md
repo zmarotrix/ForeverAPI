@@ -4,7 +4,7 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [GetGameMessageInfo](#getgamemessageinfo) |  |  |
+| ✅ | [GetGameMessageInfo](#getgamemessageinfo) | 3 values | 3 values |
 | ✅ | [NotWhileDeadError](#notwhiledeaderror) |  |  |
 
 ### GetGameMessageInfo
@@ -14,6 +14,8 @@
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 3 values: `string`, `nil`, `nil`
+- Called in combat: returned 3 values: `string`, `nil`, `nil`
 - Source: client docs `GameErrorDocumentation.lua`
 
 ### NotWhileDeadError

@@ -256,7 +256,7 @@ def main():
         apidoc.cmd_build()
         with open(os.path.join(tmp, "docs", "index.md"), encoding="utf-8") as f:
             index = f.read()
-        check("build: index names the dump", "ApiProbe 0.2.1 on 1.60.1.70862" in index)
+        check("build: index names the dump", "ApiProbe 0.2.2 on 1.60.1.70862" in index)
         with open(os.path.join(tmp, "docs", "systems", "UnitAuras.md"), encoding="utf-8") as f:
             page = f.read()
         check("build: documented function verified", "✅ | [C_UnitAuras.GetUnitAuraInstanceIDs]" in page)

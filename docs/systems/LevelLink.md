@@ -6,8 +6,8 @@ Namespace: `C_LevelLink`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_LevelLink.IsActionLocked](#c_levellinkisactionlocked) |  |  |
-| ✅ | [C_LevelLink.IsSpellLocked](#c_levellinkisspelllocked) |  |  |
+| ✅ | [C_LevelLink.IsActionLocked](#c_levellinkisactionlocked) | 1 value | 1 value |
+| ✅ | [C_LevelLink.IsSpellLocked](#c_levellinkisspelllocked) | 1 value | 1 value |
 
 ### C_LevelLink.IsActionLocked
 
@@ -15,6 +15,8 @@ Namespace: `C_LevelLink`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `LevelLinkDocumentation.lua`
 
 ### C_LevelLink.IsSpellLocked
@@ -23,4 +25,6 @@ Namespace: `C_LevelLink`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `LevelLinkDocumentation.lua`

@@ -27,12 +27,12 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `ACTIONBAR_PAGE_CHANGED` |  |  | [ActionBar](systems/ActionBar.md) |
 | ✅ | `ACTIONBAR_SHOWGRID` |  |  | [ActionBar](systems/ActionBar.md) |
 | ✅ | `ACTIONBAR_SHOW_BOTTOMLEFT` |  |  | [ActionBar](systems/ActionBar.md) |
-| ✅ | `ACTIONBAR_SLOT_CHANGED` | 22 | `n` | [ActionBar](systems/ActionBar.md) |
-| ✅ | `ACTIONBAR_UPDATE_COOLDOWN` | 222 | `` | [ActionBar](systems/ActionBar.md) |
-| ✅ | `ACTIONBAR_UPDATE_STATE` | 674 | `` | [ActionBar](systems/ActionBar.md) |
-| ✅ | `ACTIONBAR_UPDATE_USABLE` | 234 | `` | [ActionBar](systems/ActionBar.md) |
-| ✅ | `ACTION_RANGE_CHECK_UPDATE` | 643 | `n,b,b` | [ActionBar](systems/ActionBar.md) |
-| ✅ | `ACTION_USABLE_CHANGED` | 235 | `t` | [ActionBar](systems/ActionBar.md) |
+| ✅ | `ACTIONBAR_SLOT_CHANGED` | 120 | `n` | [ActionBar](systems/ActionBar.md) |
+| ✅ | `ACTIONBAR_UPDATE_COOLDOWN` | 551 | `` | [ActionBar](systems/ActionBar.md) |
+| ✅ | `ACTIONBAR_UPDATE_STATE` | 1523 | `` | [ActionBar](systems/ActionBar.md) |
+| ✅ | `ACTIONBAR_UPDATE_USABLE` | 508 | `` | [ActionBar](systems/ActionBar.md) |
+| ✅ | `ACTION_RANGE_CHECK_UPDATE` | 2665 | `n,b,b` | [ActionBar](systems/ActionBar.md) |
+| ✅ | `ACTION_USABLE_CHANGED` | 510 | `t` | [ActionBar](systems/ActionBar.md) |
 | ✅ | `ACTION_WILL_BIND_ITEM` |  |  | [Item](systems/Item.md) |
 | ✅ | `ACTIVATE_GLYPH` |  |  | [GlyphInfo](systems/GlyphInfo.md) |
 | ✅ | `ACTIVE_COMBAT_CONFIG_CHANGED` |  |  | [ClassTalents](systems/ClassTalents.md) |
@@ -40,13 +40,13 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `ACTIVE_GAME_MODE_UPDATED` |  |  | [GameRules](systems/GameRules.md) |
 | 🆕 | `ACTIVE_MAP_SCENE_TRANSITIONED` |  |  | used in `Blizzard_GlueXML/Mainline/CharacterSelect.lua` |
 | ✅ | `ACTIVE_PLAYER_SPECIALIZATION_CHANGED` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `ACTIVE_TALENT_GROUP_CHANGED` | 1 | `n,n` | [SpecializationInfo](systems/SpecializationInfo.md) |
+| ✅ | `ACTIVE_TALENT_GROUP_CHANGED` | 2 | `n,n` | [SpecializationInfo](systems/SpecializationInfo.md) |
 | ✅ | `ADAPTER_LIST_CHANGED` |  |  | [Video](systems/Video.md) |
-| ✅ | `ADDONS_UNLOADING` | 4 | `b` | [AddOns](systems/AddOns.md) |
+| ✅ | `ADDONS_UNLOADING` | 12 | `b` | [AddOns](systems/AddOns.md) |
 | ✅ | `ADDON_ACTION_BLOCKED` | 8 | `s,s` | [RestrictedActions](systems/RestrictedActions.md) |
-| ✅ | `ADDON_ACTION_FORBIDDEN` | 34 | `s,s` | [RestrictedActions](systems/RestrictedActions.md) |
-| ✅ | `ADDON_LOADED` | 135 | `s,b` | [AddOns](systems/AddOns.md) |
-| ✅ | `ADDON_RESTRICTION_STATE_CHANGED` | 16 | `n,n` | [RestrictedActions](systems/RestrictedActions.md) |
+| ✅ | `ADDON_ACTION_FORBIDDEN` | 39 | `s,s` | [RestrictedActions](systems/RestrictedActions.md) |
+| ✅ | `ADDON_LOADED` | 415 | `s,b` | [AddOns](systems/AddOns.md) |
+| ✅ | `ADDON_RESTRICTION_STATE_CHANGED` | 39 | `n,n` | [RestrictedActions](systems/RestrictedActions.md) |
 | ⛔ | `ADD_GUILDMEMBER` |  |  | used in `Blizzard_Communities/CommunitiesFrame.lua` |
 | ⛔ | `ADD_GUILDMEMBER_WITH_FINDER_LINK` |  |  | used in `Blizzard_Communities/CommunitiesFrame.lua` |
 | ✅ | `ADD_NEIGHBORHOOD_CHARTER_SIGNATURE` |  |  | [HousingUI](systems/HousingUI.md) |
@@ -87,17 +87,17 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `ARCHAEOLOGY_SURVEY_CAST` |  |  | [ResearchInfo](systems/ResearchInfo.md) |
 | ✅ | `ARCHAEOLOGY_TOGGLE` |  |  | [ResearchInfo](systems/ResearchInfo.md) |
 | ⛔ | `AREA_NOT_EXPLORED` |  |  | used in `Blizzard_GroupFinder/Shared/LFGFrame.lua` |
-| ✅ | `AREA_POIS_UPDATED` | 1 | `` | [AreaPoiInfo](systems/AreaPoiInfo.md) |
+| ✅ | `AREA_POIS_UPDATED` | 60 | `` | [AreaPoiInfo](systems/AreaPoiInfo.md) |
 | ✅ | `AREA_SPIRIT_HEALER_IN_RANGE` |  |  | [DeathInfo](systems/DeathInfo.md) |
 | ✅ | `AREA_SPIRIT_HEALER_OUT_OF_RANGE` | 4 | `` | [DeathInfo](systems/DeathInfo.md) |
 | ✅ | `ARENA_COOLDOWNS_UPDATE` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `ARENA_CROWD_CONTROL_SPELL_UPDATE` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `ARENA_OPPONENT_UPDATE` |  |  | [PvpInfo](systems/PvpInfo.md) |
+| ✅ | `ARENA_OPPONENT_UPDATE` | 180 | `s,s` | [PvpInfo](systems/PvpInfo.md) |
 | ✅ | `ARENA_PREP_OPPONENT_SPECIALIZATIONS` |  |  | [PvpInfo](systems/PvpInfo.md) |
-| ✅ | `ARENA_SEASON_WORLD_STATE` | 1 | `` | [PvpInfo](systems/PvpInfo.md) |
+| ✅ | `ARENA_SEASON_WORLD_STATE` | 2 | `` | [PvpInfo](systems/PvpInfo.md) |
 | ⛔ | `ARENA_TEAM_ROSTER_UPDATE` |  |  | used in `Blizzard_UIPanels_Game/Cata/PVPFrame.lua` |
 | ⛔ | `ARENA_TEAM_UPDATE` |  |  | used in `Blizzard_UIPanels_Game/Cata/PVPFrame.lua` |
-| ✅ | `ARTIFACT_CLOSE` | 4 | `` | [ArtifactUI](systems/ArtifactUI.md) |
+| ✅ | `ARTIFACT_CLOSE` | 18 | `` | [ArtifactUI](systems/ArtifactUI.md) |
 | ✅ | `ARTIFACT_DIGSITE_COMPLETE` |  |  | [ResearchInfo](systems/ResearchInfo.md) |
 | ✅ | `ARTIFACT_ENDGAME_REFUND` |  |  | [ArtifactUI](systems/ArtifactUI.md) |
 | ✅ | `ARTIFACT_RELIC_FORGE_CLOSE` |  |  | [ArtifactUI](systems/ArtifactUI.md) |
@@ -130,7 +130,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `AUCTION_HOUSE_SCRIPT_DEPRECATED` |  |  | [AuctionHouse](systems/AuctionHouse.md) |
 | ✅ | `AUCTION_HOUSE_SHOW` |  |  | [AuctionHouse](systems/AuctionHouse.md) |
 | ✅ | `AUCTION_HOUSE_SHOW_COMMODITY_WON_NOTIFICATION` |  |  | [AuctionHouse](systems/AuctionHouse.md) |
-| ✅ | `AUCTION_HOUSE_SHOW_ERROR` |  |  | [AuctionHouse](systems/AuctionHouse.md) |
+| ✅ | `AUCTION_HOUSE_SHOW_ERROR` | 2 | `n` | [AuctionHouse](systems/AuctionHouse.md) |
 | ✅ | `AUCTION_HOUSE_SHOW_FORMATTED_NOTIFICATION` |  |  | [AuctionHouse](systems/AuctionHouse.md) |
 | ✅ | `AUCTION_HOUSE_SHOW_NOTIFICATION` |  |  | [AuctionHouse](systems/AuctionHouse.md) |
 | ✅ | `AUCTION_HOUSE_THROTTLED_MESSAGE_DROPPED` |  |  | [AuctionHouse](systems/AuctionHouse.md) |
@@ -147,7 +147,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `AUTOFOLLOW_END` |  |  | [Unit](systems/Unit.md) |
 | 🆕 | `AUTO_REALM_SWAP` |  |  | used in `Blizzard_GlueXML/Mainline/CharacterSelect.lua` |
 | ✅ | `AVAILABLE_GAME_MODES_UPDATED` |  |  | [GameRules](systems/GameRules.md) |
-| ✅ | `AVATAR_LIST_UPDATED` |  |  | [Club](systems/Club.md) |
+| ✅ | `AVATAR_LIST_UPDATED` | 1 | `n` | [Club](systems/Club.md) |
 | ✅ | `AVOIDANCE_UPDATE` |  |  | [PaperDollInfo](systems/PaperDollInfo.md) |
 | ✅ | `AZERITE_EMPOWERED_ITEM_EQUIPPED_STATUS_CHANGED` |  |  | [AzeriteEmpoweredItem](systems/AzeriteEmpoweredItem.md) |
 | ✅ | `AZERITE_EMPOWERED_ITEM_LOOTED` |  |  | [Loot](systems/Loot.md) |
@@ -163,16 +163,16 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `AZERITE_ITEM_EXPERIENCE_CHANGED` |  |  | [AzeriteItem](systems/AzeriteItem.md) |
 | ✅ | `AZERITE_ITEM_POWER_LEVEL_CHANGED` |  |  | [AzeriteItem](systems/AzeriteItem.md) |
 | ✅ | `BAG_CLOSED` |  |  | [Container](systems/Container.md) |
-| ✅ | `BAG_CONTAINER_UPDATE` | 9 | `` | [Container](systems/Container.md) |
-| ✅ | `BAG_NEW_ITEMS_UPDATED` | 1 | `` | [Container](systems/Container.md) |
+| ✅ | `BAG_CONTAINER_UPDATE` | 64 | `` | [Container](systems/Container.md) |
+| ✅ | `BAG_NEW_ITEMS_UPDATED` | 3 | `` | [Container](systems/Container.md) |
 | ✅ | `BAG_OPEN` |  |  | [Container](systems/Container.md) |
 | ✅ | `BAG_OVERFLOW_WITH_FULL_INVENTORY` |  |  | [Container](systems/Container.md) |
 | ✅ | `BAG_SLOT_FLAGS_UPDATED` |  |  | [Container](systems/Container.md) |
-| ✅ | `BAG_UPDATE` | 172 | `n` | [Container](systems/Container.md) |
-| ✅ | `BAG_UPDATE_COOLDOWN` | 106 | `` | [Container](systems/Container.md) |
-| ✅ | `BAG_UPDATE_DELAYED` | 20 | `` | [Container](systems/Container.md) |
-| ✅ | `BANKFRAME_CLOSED` |  |  | [Bank](systems/Bank.md) |
-| ✅ | `BANKFRAME_OPENED` |  |  | [Bank](systems/Bank.md) |
+| ✅ | `BAG_UPDATE` | 1297 | `n` | [Container](systems/Container.md) |
+| ✅ | `BAG_UPDATE_COOLDOWN` | 261 | `` | [Container](systems/Container.md) |
+| ✅ | `BAG_UPDATE_DELAYED` | 67 | `` | [Container](systems/Container.md) |
+| ✅ | `BANKFRAME_CLOSED` | 1 | `` | [Bank](systems/Bank.md) |
+| ✅ | `BANKFRAME_OPENED` | 1 | `` | [Bank](systems/Bank.md) |
 | ✅ | `BANK_BAG_SLOT_FLAGS_UPDATED` |  |  | [Bank](systems/Bank.md) |
 | ✅ | `BANK_TABS_CHANGED` |  |  | [Bank](systems/Bank.md) |
 | ✅ | `BANK_TAB_SETTINGS_UPDATED` |  |  | [Bank](systems/Bank.md) |
@@ -200,7 +200,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `BIDS_UPDATED` |  |  | [AuctionHouse](systems/AuctionHouse.md) |
 | ✅ | `BID_ADDED` |  |  | [AuctionHouse](systems/AuctionHouse.md) |
 | ⛔ | `BID_AUCTION` |  |  | used in `Blizzard_AuctionHouseUI/Shared/Blizzard_AuctionHouseFrame.lua` |
-| ✅ | `BINDINGS_LOADED` | 4 | `` | [KeyBindings](systems/KeyBindings.md) |
+| ✅ | `BINDINGS_LOADED` | 12 | `` | [KeyBindings](systems/KeyBindings.md) |
 | ✅ | `BIND_ENCHANT` |  |  | [Item](systems/Item.md) |
 | ✅ | `BLACK_MARKET_BID_RESULT` |  |  | [BlackMarketInfo](systems/BlackMarketInfo.md) |
 | ✅ | `BLACK_MARKET_CLOSE` |  |  | [BlackMarketInfo](systems/BlackMarketInfo.md) |
@@ -212,20 +212,20 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `BNET_REQUEST_INVITE_CONFIRMATION` |  |  | [PartyInfo](systems/PartyInfo.md) |
 | ✅ | `BN_BLOCK_FAILED_TOO_MANY` |  |  | [FriendList](systems/FriendList.md) |
 | ✅ | `BN_BLOCK_LIST_UPDATED` |  |  | [FriendList](systems/FriendList.md) |
-| ✅ | `BN_CHAT_MSG_ADDON` |  |  | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `BN_CHAT_MSG_ADDON` | 2 | `s,s,s,n` | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `BN_CHAT_WHISPER_UNDELIVERABLE` |  |  | [FriendList](systems/FriendList.md) |
 | ✅ | `BN_CONNECTED` |  |  | [FriendList](systems/FriendList.md) |
 | ✅ | `BN_CUSTOM_MESSAGE_CHANGED` |  |  | [FriendList](systems/FriendList.md) |
-| ✅ | `BN_CUSTOM_MESSAGE_LOADED` | 1 | `` | [FriendList](systems/FriendList.md) |
+| ✅ | `BN_CUSTOM_MESSAGE_LOADED` | 2 | `` | [FriendList](systems/FriendList.md) |
 | ✅ | `BN_DISCONNECTED` |  |  | [FriendList](systems/FriendList.md) |
-| ✅ | `BN_FRIEND_ACCOUNT_OFFLINE` |  |  | [FriendList](systems/FriendList.md) |
-| ✅ | `BN_FRIEND_ACCOUNT_ONLINE` |  |  | [FriendList](systems/FriendList.md) |
-| ✅ | `BN_FRIEND_INFO_CHANGED` | 69 | `-` / `n` | [FriendList](systems/FriendList.md) |
+| ✅ | `BN_FRIEND_ACCOUNT_OFFLINE` | 2 | `n,b` | [FriendList](systems/FriendList.md) |
+| ✅ | `BN_FRIEND_ACCOUNT_ONLINE` | 1 | `n,b` | [FriendList](systems/FriendList.md) |
+| ✅ | `BN_FRIEND_INFO_CHANGED` | 908 | `-` / `n` | [FriendList](systems/FriendList.md) |
 | ✅ | `BN_FRIEND_INVITE_ADDED` |  |  | [FriendList](systems/FriendList.md) |
 | ✅ | `BN_FRIEND_INVITE_LIST_INITIALIZED` |  |  | [FriendList](systems/FriendList.md) |
 | ✅ | `BN_FRIEND_INVITE_REMOVED` |  |  | [FriendList](systems/FriendList.md) |
 | ✅ | `BN_FRIEND_LIST_SIZE_CHANGED` |  |  | [FriendList](systems/FriendList.md) |
-| ✅ | `BN_INFO_CHANGED` | 4 | `` | [FriendList](systems/FriendList.md) |
+| ✅ | `BN_INFO_CHANGED` | 50 | `` | [FriendList](systems/FriendList.md) |
 | ✅ | `BN_REQUEST_FOF_SUCCEEDED` |  |  | [FriendList](systems/FriendList.md) |
 | ⛔ | `BN_WHISPER` |  |  | used in `Blizzard_ChatFrame/Mainline/TextToSpeechFrameConstants.lua` |
 | ✅ | `BONUS_ROLL_ACTIVATE` |  |  | [Loot](systems/Loot.md) |
@@ -238,7 +238,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `BULK_REFUND_RESULT_RECEIVED` |  |  | [CatalogShop](systems/CatalogShop.md) |
 | ⛔ | `BUYOUT_AUCTION` |  |  | used in `Blizzard_AuctionHouseUI/Shared/Blizzard_AuctionHouseFrame.lua` |
 | ✅ | `B_NET_NEIGHBORHOOD_LIST_UPDATED` |  |  | [HousingUI](systems/HousingUI.md) |
-| ✅ | `CALENDAR_ACTION_PENDING` | 4 | `b` | [Calendar](systems/Calendar.md) |
+| ✅ | `CALENDAR_ACTION_PENDING` | 18 | `b` | [Calendar](systems/Calendar.md) |
 | ✅ | `CALENDAR_CLOSE_EVENT` |  |  | [Calendar](systems/Calendar.md) |
 | ✅ | `CALENDAR_EVENT_ALARM` |  |  | [Calendar](systems/Calendar.md) |
 | ✅ | `CALENDAR_NEW_EVENT` |  |  | [Calendar](systems/Calendar.md) |
@@ -251,13 +251,13 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `CALENDAR_UPDATE_GUILD_EVENTS` |  |  | [Calendar](systems/Calendar.md) |
 | ✅ | `CALENDAR_UPDATE_INVITE_LIST` |  |  | [Calendar](systems/Calendar.md) |
 | ✅ | `CALENDAR_UPDATE_PENDING_INVITES` |  |  | [Calendar](systems/Calendar.md) |
-| ✅ | `CANCEL_ALL_LOOT_ROLLS` |  |  | [Loot](systems/Loot.md) |
+| ✅ | `CANCEL_ALL_LOOT_ROLLS` | 6 | `` | [Loot](systems/Loot.md) |
 | ⛔ | `CANCEL_AUCTION` |  |  | used in `Blizzard_AuctionHouseUI/Shared/Blizzard_AuctionHouseFrame.lua` |
 | ✅ | `CANCEL_GLYPH_CAST` |  |  | [GlyphInfo](systems/GlyphInfo.md) |
 | ✅ | `CANCEL_LOOT_ROLL` |  |  | [Loot](systems/Loot.md) |
 | ✅ | `CANCEL_NEIGHBORHOOD_INVITE_RESPONSE` |  |  | [HousingNeighborhoodUI](systems/HousingNeighborhoodUI.md) |
 | ✅ | `CANCEL_PLAYER_COUNTDOWN` |  |  | [WorldStateInfo](systems/WorldStateInfo.md) |
-| ✅ | `CANCEL_SUMMON` |  |  | [Unit](systems/Unit.md) |
+| ✅ | `CANCEL_SUMMON` | 1 | `` | [Unit](systems/Unit.md) |
 | ⛔ | `CANNOT_RUN_ANY_CHILD_DUNGEON` |  |  | used in `Blizzard_GroupFinder/Shared/LFGFrame.lua` |
 | ✅ | `CAN_LOCAL_WHISPER_TARGET_RESPONSE` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CAN_PLAYER_SPEAK_LANGUAGE_CHANGED` |  |  | [ChatInfo](systems/ChatInfo.md) |
@@ -297,10 +297,10 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `CHANNEL_COUNT_UPDATE` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHANNEL_FLAGS_UPDATED` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHANNEL_INVITE_REQUEST` |  |  | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHANNEL_LEFT` |  |  | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHANNEL_LEFT` | 9 | `n,s` | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHANNEL_PASSWORD_REQUEST` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHANNEL_ROSTER_UPDATE` |  |  | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHANNEL_UI_UPDATE` | 4 | `` | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHANNEL_UI_UPDATE` | 39 | `` | [ChatInfo](systems/ChatInfo.md) |
 | 🆕 | `CHARACTER_COPY_STATUS_CHANGED` |  |  | used in `Blizzard_GlueXML/Mainline/CharacterSelect.lua` |
 | 🆕 | `CHARACTER_CREATION_RESULT` |  |  | used in `Blizzard_CharacterCreate/Camelot/Blizzard_CharacterCreate.lua` |
 | 🆕 | `CHARACTER_DECLINE_IN_PROGRESS` |  |  | used in `Blizzard_DeclensionFrame/Camelot/DeclensionFrameGlue.lua` |
@@ -331,60 +331,60 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `CHAT_COMBAT_MSG_ARENA_POINTS_GAIN` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_DISABLED_CHANGED` |  |  | [SocialRestrictions](systems/SocialRestrictions.md) |
 | ✅ | `CHAT_DISABLED_CHANGE_FAILED` |  |  | [SocialRestrictions](systems/SocialRestrictions.md) |
-| ✅ | `CHAT_LOGGING_CHANGED` |  |  | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHAT_LOGGING_CHANGED` | 4 | `n,b` | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_ACHIEVEMENT` |  |  | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHAT_MSG_ADDON` | 103 | `s,s,s,s,s,n,n,s,n` | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHAT_MSG_ADDON` | 478 | `s,s,s,s,s,n,n,s,n` | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_ADDON_LOGGED` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_AFK` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_BG_SYSTEM_ALLIANCE` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_BG_SYSTEM_HORDE` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_BG_SYSTEM_NEUTRAL` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_BN` |  |  | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHAT_MSG_BN_INLINE_TOAST_ALERT` |  |  | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHAT_MSG_BN_INLINE_TOAST_ALERT` | 3 | `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_BN_INLINE_TOAST_BROADCAST` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_BN_INLINE_TOAST_BROADCAST_INFORM` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_BN_INLINE_TOAST_CONVERSATION` |  |  | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHAT_MSG_BN_WHISPER` |  |  | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHAT_MSG_BN_WHISPER` | 1 | `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_BN_WHISPER_INFORM` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_BN_WHISPER_PLAYER_OFFLINE` |  |  | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHAT_MSG_CHANNEL` | 1 | `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHAT_MSG_CHANNEL` | 155 | `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t` / `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_CHANNEL_JOIN` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_CHANNEL_LEAVE` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_CHANNEL_LEAVE_PREVENTED` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_CHANNEL_LIST` |  |  | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHAT_MSG_CHANNEL_NOTICE` |  |  | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHAT_MSG_CHANNEL_NOTICE` | 27 | `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_CHANNEL_NOTICE_USER` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_COLLECTED_APPEARANCE` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_COMBAT_FACTION_CHANGE` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_COMBAT_HONOR_GAIN` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_COMBAT_MISC_INFO` |  |  | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHAT_MSG_COMBAT_XP_GAIN` | 8 | `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHAT_MSG_COMBAT_XP_GAIN` | 16 | `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_COMMUNITIES_CHANNEL` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_CURRENCY` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_DND` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_EMOTE` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_FILTERED` |  |  | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHAT_MSG_GUILD` | 8 | `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHAT_MSG_GUILD` | 38 | `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_GUILD_ACHIEVEMENT` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_GUILD_DISCORD` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_GUILD_ITEM_LOOTED` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_IGNORED` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_INSTANCE_CHAT` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_INSTANCE_CHAT_LEADER` |  |  | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHAT_MSG_LOOT` | 15 | `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHAT_MSG_MONEY` |  |  | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHAT_MSG_LOOT` | 25 | `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHAT_MSG_MONEY` | 1 | `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_MONSTER_EMOTE` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_MONSTER_PARTY` |  |  | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHAT_MSG_MONSTER_SAY` |  |  | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHAT_MSG_MONSTER_SAY` | 1 | `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_MONSTER_WHISPER` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_MONSTER_YELL` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_OFFICER` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_OPENING` |  |  | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHAT_MSG_PARTY` | 7 | `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHAT_MSG_PARTY_LEADER` |  |  | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHAT_MSG_PARTY` | 21 | `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHAT_MSG_PARTY_LEADER` | 6 | `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_PET_BATTLE_COMBAT_LOG` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_PET_BATTLE_INFO` |  |  | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHAT_MSG_PET_INFO` |  |  | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHAT_MSG_PET_INFO` | 4 | `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_PING` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_RAID` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_RAID_BOSS_EMOTE` |  |  | [ChatInfo](systems/ChatInfo.md) |
@@ -392,16 +392,16 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `CHAT_MSG_RAID_LEADER` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_RAID_WARNING` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_RESTRICTED` |  |  | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHAT_MSG_SAY` |  |  | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHAT_MSG_SKILL` | 3 | `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHAT_MSG_SYSTEM` | 4 | `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHAT_MSG_TARGETICONS` |  |  | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHAT_MSG_TEXT_EMOTE` |  |  | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHAT_MSG_TRADESKILLS` |  |  | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHAT_MSG_SAY` | 1 | `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHAT_MSG_SKILL` | 5 | `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHAT_MSG_SYSTEM` | 22 | `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHAT_MSG_TARGETICONS` | 1 | `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHAT_MSG_TEXT_EMOTE` | 1 | `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHAT_MSG_TRADESKILLS` | 695 | `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_VOICE_TEXT` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_WHISPER` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_MSG_WHISPER_INFORM` |  |  | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `CHAT_MSG_YELL` |  |  | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `CHAT_MSG_YELL` | 1 | `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t` | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_REGIONAL_SEND_FAILED` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_REGIONAL_STATUS_CHANGED` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `CHAT_SERVER_DISCONNECTED` |  |  | [ChatInfo](systems/ChatInfo.md) |
@@ -429,7 +429,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `CLOSE_INBOX_ITEM` |  |  | [MailInfo](systems/MailInfo.md) |
 | ✅ | `CLOSE_PLOT_CORNERSTONE` |  |  | [HousingNeighborhoodUI](systems/HousingNeighborhoodUI.md) |
 | ✅ | `CLOSE_TABARD_FRAME` |  |  | [GuildInfo](systems/GuildInfo.md) |
-| ✅ | `CLUB_ADDED` | 1 | `n` | [Club](systems/Club.md) |
+| ✅ | `CLUB_ADDED` | 2 | `n` | [Club](systems/Club.md) |
 | ✅ | `CLUB_ERROR` |  |  | [Club](systems/Club.md) |
 | ✅ | `CLUB_FINDER_APPLICANT_INVITE_RECIEVED` |  |  | [ClubFinderInfo](systems/ClubFinderInfo.md) |
 | ✅ | `CLUB_FINDER_APPLICATIONS_UPDATED` |  |  | [ClubFinderInfo](systems/ClubFinderInfo.md) |
@@ -449,22 +449,22 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `CLUB_INVITATIONS_RECEIVED_FOR_CLUB` |  |  | [Club](systems/Club.md) |
 | ✅ | `CLUB_INVITATION_ADDED_FOR_SELF` |  |  | [Club](systems/Club.md) |
 | ✅ | `CLUB_INVITATION_REMOVED_FOR_SELF` |  |  | [Club](systems/Club.md) |
-| ✅ | `CLUB_MEMBERS_UPDATED` | 1 | `n` | [Club](systems/Club.md) |
+| ✅ | `CLUB_MEMBERS_UPDATED` | 2 | `n` | [Club](systems/Club.md) |
 | ✅ | `CLUB_MEMBER_ADDED` |  |  | [Club](systems/Club.md) |
 | ✅ | `CLUB_MEMBER_PRESENCE_UPDATED` |  |  | [Club](systems/Club.md) |
 | ✅ | `CLUB_MEMBER_REMOVED` |  |  | [Club](systems/Club.md) |
 | ✅ | `CLUB_MEMBER_ROLE_UPDATED` |  |  | [Club](systems/Club.md) |
-| ✅ | `CLUB_MEMBER_UPDATED` |  |  | [Club](systems/Club.md) |
-| ✅ | `CLUB_MESSAGE_ADDED` | 8 | `n,n,t` | [Club](systems/Club.md) |
+| ✅ | `CLUB_MEMBER_UPDATED` | 27 | `n,n` | [Club](systems/Club.md) |
+| ✅ | `CLUB_MESSAGE_ADDED` | 38 | `n,n,t` | [Club](systems/Club.md) |
 | ✅ | `CLUB_MESSAGE_HISTORY_RECEIVED` |  |  | [Club](systems/Club.md) |
 | ✅ | `CLUB_MESSAGE_UPDATED` |  |  | [Club](systems/Club.md) |
 | ✅ | `CLUB_REMOVED` |  |  | [Club](systems/Club.md) |
 | ✅ | `CLUB_REMOVED_MESSAGE` |  |  | [Club](systems/Club.md) |
 | ✅ | `CLUB_SELF_MEMBER_ROLE_UPDATED` |  |  | [Club](systems/Club.md) |
-| ✅ | `CLUB_STREAMS_LOADED` | 1 | `n` | [Club](systems/Club.md) |
+| ✅ | `CLUB_STREAMS_LOADED` | 2 | `n` | [Club](systems/Club.md) |
 | ✅ | `CLUB_STREAM_ADDED` |  |  | [Club](systems/Club.md) |
 | ✅ | `CLUB_STREAM_REMOVED` |  |  | [Club](systems/Club.md) |
-| ✅ | `CLUB_STREAM_SUBSCRIBED` | 2 | `n,n` | [Club](systems/Club.md) |
+| ✅ | `CLUB_STREAM_SUBSCRIBED` | 4 | `n,n` | [Club](systems/Club.md) |
 | ✅ | `CLUB_STREAM_UNSUBSCRIBED` |  |  | [Club](systems/Club.md) |
 | ✅ | `CLUB_STREAM_UPDATED` |  |  | [Club](systems/Club.md) |
 | ✅ | `CLUB_TICKETS_RECEIVED` |  |  | [Club](systems/Club.md) |
@@ -478,14 +478,14 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `COMBAT_LOG_EVENT` (protected) |  |  | [CombatLog](systems/CombatLog.md) |
 | ⛔ | `COMBAT_LOG_EVENT_INTERNAL_UNFILTERED` |  |  | [CombatLogInternal](systems/CombatLogInternal.md) |
 | ✅ | `COMBAT_LOG_EVENT_UNFILTERED` (protected) |  |  | [CombatLog](systems/CombatLog.md) |
-| ✅ | `COMBAT_LOG_MESSAGE` | 446 | `s,n,n,n,n` | [CombatLogSecure](systems/CombatLogSecure.md) |
+| ✅ | `COMBAT_LOG_MESSAGE` | 1041 | `s,n,n,n,n` | [CombatLogSecure](systems/CombatLogSecure.md) |
 | ✅ | `COMBAT_LOG_MESSAGE_LIMIT_CHANGED` |  |  | [CombatLog](systems/CombatLog.md) |
 | ⛔ | `COMBAT_LOG_REFILTER_ENTRIES` |  |  | [CombatLogSecure](systems/CombatLogSecure.md) |
 | ✅ | `COMBAT_RATING_UPDATE` |  |  | [PaperDollInfo](systems/PaperDollInfo.md) |
 | ✅ | `COMBAT_TEXT_UPDATE` |  |  | [CombatText](systems/CombatText.md) |
-| ✅ | `COMBO_TARGET_CHANGED` | 15 | `` | [Unit](systems/Unit.md) |
+| ✅ | `COMBO_TARGET_CHANGED` | 34 | `` | [Unit](systems/Unit.md) |
 | ✅ | `COMMENTATOR_COMBAT_EVENT` |  |  | [CommentatorFrame](systems/CommentatorFrame.md) |
-| ✅ | `COMMENTATOR_ENTER_WORLD` | 1 | `` | [CommentatorFrame](systems/CommentatorFrame.md) |
+| ✅ | `COMMENTATOR_ENTER_WORLD` | 8 | `` | [CommentatorFrame](systems/CommentatorFrame.md) |
 | ✅ | `COMMENTATOR_HISTORY_FLUSHED` |  |  | [CommentatorFrame](systems/CommentatorFrame.md) |
 | ✅ | `COMMENTATOR_IMMEDIATE_FOV_UPDATE` |  |  | [CommentatorFrame](systems/CommentatorFrame.md) |
 | ✅ | `COMMENTATOR_MAP_UPDATE` |  |  | [CommentatorFrame](systems/CommentatorFrame.md) |
@@ -502,14 +502,14 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `COMMODITY_SEARCH_RESULTS_ADDED` |  |  | [AuctionHouse](systems/AuctionHouse.md) |
 | ✅ | `COMMODITY_SEARCH_RESULTS_RECEIVED` |  |  | [AuctionHouse](systems/AuctionHouse.md) |
 | ✅ | `COMMODITY_SEARCH_RESULTS_UPDATED` |  |  | [AuctionHouse](systems/AuctionHouse.md) |
-| ✅ | `COMPACT_UNIT_FRAME_PROFILES_LOADED` | 4 | `` | [CompactUnitFrames](systems/CompactUnitFrames.md) |
+| ✅ | `COMPACT_UNIT_FRAME_PROFILES_LOADED` | 12 | `` | [CompactUnitFrames](systems/CompactUnitFrames.md) |
 | ✅ | `COMPANION_LEARNED` |  |  | [PetJournalInfo](systems/PetJournalInfo.md) |
 | ✅ | `COMPANION_UNLEARNED` |  |  | [PetJournalInfo](systems/PetJournalInfo.md) |
-| ✅ | `COMPANION_UPDATE` | 1 | `-` | [PetJournalInfo](systems/PetJournalInfo.md) |
+| ✅ | `COMPANION_UPDATE` | 8 | `-` | [PetJournalInfo](systems/PetJournalInfo.md) |
 | ✅ | `CONFIG_COMMIT_FAILED` |  |  | [SharedTraits](systems/SharedTraits.md) |
 | ✅ | `CONFIRM_BATTLE_NET_FRIEND_INVITE_SHOW` |  |  | [FriendList](systems/FriendList.md) |
 | ✅ | `CONFIRM_BEFORE_USE` |  |  | [Item](systems/Item.md) |
-| ✅ | `CONFIRM_BINDER` |  |  | [Unit](systems/Unit.md) |
+| ✅ | `CONFIRM_BINDER` | 1 | `s` | [Unit](systems/Unit.md) |
 | ⛔ | `CONFIRM_BUY_OUTFIT_SLOT` |  |  | used in `Blizzard_Transmog/Blizzard_Transmog.lua` |
 | ⛔ | `CONFIRM_DELETE_TRANSMOG_CUSTOM_SET` |  |  | used in `Blizzard_FrameXML/WardrobeCustomSets.lua` |
 | ⛔ | `CONFIRM_DESTROY_COMMUNITY` |  |  | used in `Blizzard_Communities/CommunitiesFrame.lua` |
@@ -531,9 +531,9 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `CONSOLE_COLORS_CHANGED` |  |  | [Console](systems/Console.md) |
 | ✅ | `CONSOLE_FONT_SIZE_CHANGED` |  |  | [Console](systems/Console.md) |
 | ✅ | `CONSOLE_LOG` |  |  | [Console](systems/Console.md) |
-| ✅ | `CONSOLE_MESSAGE` | 243 | `s,n` | [Console](systems/Console.md) |
-| ✅ | `CONTENT_TRACKING_IS_ENABLED_UPDATE` | 1 | `b` | [ContentTracking](systems/ContentTracking.md) |
-| ✅ | `CONTENT_TRACKING_LIST_UPDATE` | 4 | `` | [ContentTracking](systems/ContentTracking.md) |
+| ✅ | `CONSOLE_MESSAGE` | 733 | `s,n` | [Console](systems/Console.md) |
+| ✅ | `CONTENT_TRACKING_IS_ENABLED_UPDATE` | 2 | `b` | [ContentTracking](systems/ContentTracking.md) |
+| ✅ | `CONTENT_TRACKING_LIST_UPDATE` | 18 | `` | [ContentTracking](systems/ContentTracking.md) |
 | ✅ | `CONTENT_TRACKING_UPDATE` |  |  | [ContentTracking](systems/ContentTracking.md) |
 | ✅ | `CONTRIBUTION_CHANGED` |  |  | [ContributionCollector](systems/ContributionCollector.md) |
 | ✅ | `CONTRIBUTION_COLLECTOR_PENDING` |  |  | [ContributionCollector](systems/ContributionCollector.md) |
@@ -541,13 +541,13 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `CONTRIBUTION_COLLECTOR_UPDATE_SINGLE` |  |  | [ContributionCollector](systems/ContributionCollector.md) |
 | ✅ | `CONVERT_TO_BIND_TO_ACCOUNT_CONFIRM` |  |  | [Item](systems/Item.md) |
 | ✅ | `CONVERT_TO_RAID_CONFIRMATION` |  |  | [PartyInfo](systems/PartyInfo.md) |
-| ✅ | `COOLDOWN_VIEWER_DATA_LOADED` | 4 | `` | [CooldownViewer](systems/CooldownViewer.md) |
+| ✅ | `COOLDOWN_VIEWER_DATA_LOADED` | 18 | `` | [CooldownViewer](systems/CooldownViewer.md) |
 | ✅ | `COOLDOWN_VIEWER_SPELL_OVERRIDE_UPDATED` |  |  | [CooldownViewer](systems/CooldownViewer.md) |
 | ✅ | `COOLDOWN_VIEWER_TABLE_HOTFIXED` |  |  | [CooldownViewer](systems/CooldownViewer.md) |
 | ✅ | `CORPSE_IN_INSTANCE` |  |  | [DeathInfo](systems/DeathInfo.md) |
 | ✅ | `CORPSE_IN_RANGE` |  |  | [DeathInfo](systems/DeathInfo.md) |
 | ✅ | `CORPSE_OUT_OF_RANGE` |  |  | [DeathInfo](systems/DeathInfo.md) |
-| ✅ | `COVENANT_CALLINGS_UPDATED` | 1 | `t` | [CovenantCallings](systems/CovenantCallings.md) |
+| ✅ | `COVENANT_CALLINGS_UPDATED` | 2 | `t` | [CovenantCallings](systems/CovenantCallings.md) |
 | ✅ | `COVENANT_CHOSEN` |  |  | [Covenant](systems/Covenant.md) |
 | ⛔ | `COVENANT_MISSIONS_CONFIRM_ADVENTURE` |  |  | used in `Blizzard_GarrisonUI/Mainline/Blizzard_CovenantMissionUI.lua` |
 | ⛔ | `COVENANT_MISSIONS_HEAL_CONFIRMATION` |  |  | used in `Blizzard_GarrisonUI/Mainline/Blizzard_CovenantMissionUI.lua` |
@@ -583,25 +583,25 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `CREATE_NEIGHBORHOOD_RESULT` |  |  | [HousingUI](systems/HousingUI.md) |
 | ✅ | `CRITERIA_COMPLETE` |  |  | [AchievementInfo](systems/AchievementInfo.md) |
 | ✅ | `CRITERIA_EARNED` |  |  | [AchievementInfo](systems/AchievementInfo.md) |
-| ✅ | `CRITERIA_UPDATE` | 42 | `` | [AchievementInfo](systems/AchievementInfo.md) |
+| ✅ | `CRITERIA_UPDATE` | 102 | `` | [AchievementInfo](systems/AchievementInfo.md) |
 | ⛔ | `CURRENCY` |  |  | used in `Blizzard_ChatFrame/Mainline/TextToSpeechFrameConstants.lua` |
-| ✅ | `CURRENCY_DISPLAY_UPDATE` | 5 | `-,-,-,-,-` | [CurrencySystem](systems/CurrencySystem.md) |
+| ✅ | `CURRENCY_DISPLAY_UPDATE` | 20 | `-,-,-,-,-` | [CurrencySystem](systems/CurrencySystem.md) |
 | ✅ | `CURRENCY_TRANSFER_FAILED` |  |  | [CurrencySystem](systems/CurrencySystem.md) |
 | ✅ | `CURRENCY_TRANSFER_INITIATED` |  |  | [CurrencySystem](systems/CurrencySystem.md) |
 | ✅ | `CURRENCY_TRANSFER_LOG_UPDATE` |  |  | [CurrencySystem](systems/CurrencySystem.md) |
 | ✅ | `CURRENCY_TRANSFER_SUCCESS` |  |  | [CurrencySystem](systems/CurrencySystem.md) |
 | ✅ | `CURRENT_HOUSE_INFO_RECIEVED` |  |  | [HousingUI](systems/HousingUI.md) |
 | ✅ | `CURRENT_HOUSE_INFO_UPDATED` |  |  | [HousingUI](systems/HousingUI.md) |
-| ✅ | `CURRENT_SPELL_CAST_CHANGED` | 757 | `b` | [SpellBook](systems/SpellBook.md) |
-| ✅ | `CURSOR_CHANGED` | 311 | `b,n,n,n` | [Cursor](systems/Cursor.md) |
+| ✅ | `CURRENT_SPELL_CAST_CHANGED` | 1731 | `b` | [SpellBook](systems/SpellBook.md) |
+| ✅ | `CURSOR_CHANGED` | 769 | `b,n,n,n` | [Cursor](systems/Cursor.md) |
 | 🆕 | `CUSTOMIZE_CHARACTER_RESULT` |  |  | used in `Blizzard_CharacterCreate/Camelot/Blizzard_CharacterCreate.lua` |
 | 🆕 | `CUSTOMIZE_CHARACTER_STARTED` |  |  | used in `Blizzard_CharacterCreate/Camelot/Blizzard_CharacterCreate.lua` |
 | ⛔ | `CUSTOM_SET_INVALID_NAME` |  |  | used in `Blizzard_FrameXML/WardrobeCustomSets.lua` |
-| ✅ | `CVAR_UPDATE` | 58 | `s,s` | [Console](systems/Console.md) |
+| ✅ | `CVAR_UPDATE` | 156 | `s,s` | [Console](systems/Console.md) |
 | ✅ | `DAILY_RESET_INSTANCE_WELCOME` |  |  | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `DAMAGE_METER_COMBAT_SESSION_UPDATED` | 1222 | `n,n` | [DamageMeter](systems/DamageMeter.md) |
-| ✅ | `DAMAGE_METER_CURRENT_SESSION_UPDATED` | 8 | `` | [DamageMeter](systems/DamageMeter.md) |
-| ✅ | `DAMAGE_METER_RESET` | 1 | `` | [DamageMeter](systems/DamageMeter.md) |
+| ✅ | `DAMAGE_METER_COMBAT_SESSION_UPDATED` | 2950 | `n,n` | [DamageMeter](systems/DamageMeter.md) |
+| ✅ | `DAMAGE_METER_CURRENT_SESSION_UPDATED` | 18 | `` | [DamageMeter](systems/DamageMeter.md) |
+| ✅ | `DAMAGE_METER_RESET` | 3 | `` | [DamageMeter](systems/DamageMeter.md) |
 | ⛔ | `DANCE` |  |  | used in `Blizzard_ChatFrameBase/Mainline/ChatEmoteConstants.lua` |
 | ⛔ | `DEATHKNIGHT` |  |  | used in `Blizzard_FrameXMLBase/Cata/Constants.lua` |
 | 🆕 | `DEBUG_MAP_OBJECTS_UPDATED` |  |  | used in `Blizzard_WorldMap/WM_DebugDataProvider.lua` |
@@ -610,11 +610,11 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `DECLINE_NEIGHBORHOOD_INVITATION_RESPONSE` |  |  | [HousingUI](systems/HousingUI.md) |
 | 🆕 | `DELETED_CHARACTER_LIST_RETRIEVAL_RESULT` |  |  | used in `Blizzard_GlueXML/Mainline/CharacterSelect.lua` |
 | 🆕 | `DELETED_CHARACTER_LIST_RETRIEVING` |  |  | used in `Blizzard_GlueXML/Mainline/CharacterSelect.lua` |
-| ✅ | `DELETE_ITEM_CONFIRM` |  |  | [Item](systems/Item.md) |
+| ✅ | `DELETE_ITEM_CONFIRM` | 2 | `s,n,n,n,-` | [Item](systems/Item.md) |
 | ✅ | `DELVES_ACCOUNT_DATA_ELEMENT_CHANGED` |  |  | [DelvesUI](systems/DelvesUI.md) |
 | ✅ | `DELVE_ASSIST_ACTION` |  |  | [DelvesUI](systems/DelvesUI.md) |
 | ⛔ | `DEMONHUNTER` |  |  | used in `Blizzard_FrameXMLBase/Mainline/Constants.lua` |
-| ✅ | `DIEL_CYCLE_CHANGED` | 1 | `b` | [DateAndTime](systems/DateAndTime.md) |
+| ✅ | `DIEL_CYCLE_CHANGED` | 2 | `b` | [DateAndTime](systems/DateAndTime.md) |
 | ✅ | `DISABLE_DECLINE_GUILD_INVITE` |  |  | [GuildInfo](systems/GuildInfo.md) |
 | ✅ | `DISABLE_LOW_LEVEL_RAID` |  |  | [EncounterInfo](systems/EncounterInfo.md) |
 | ✅ | `DISABLE_TAXI_BENCHMARK` |  |  | [SystemInfo](systems/SystemInfo.md) |
@@ -628,7 +628,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `DISPLAY_EVENT_TOASTS` |  |  | [UIEventToastManagerInfo](systems/UIEventToastManagerInfo.md) |
 | ✅ | `DISPLAY_EVENT_TOAST_LINK` |  |  | [UIEventToastManagerInfo](systems/UIEventToastManagerInfo.md) |
 | 🆕 | `DISPLAY_PROMOTION` |  |  | used in `Blizzard_GlueXML/PromotionFrame.lua` |
-| ✅ | `DISPLAY_SIZE_CHANGED` | 8 | `` | [Video](systems/Video.md) |
+| ✅ | `DISPLAY_SIZE_CHANGED` | 24 | `` | [Video](systems/Video.md) |
 | ⛔ | `DRUID` |  |  | used in `Blizzard_FrameXMLBase/Camelot/Constants.lua` |
 | ✅ | `DUEL_FINISHED` |  |  | [DuelInfo](systems/DuelInfo.md) |
 | ✅ | `DUEL_INBOUNDS` |  |  | [DuelInfo](systems/DuelInfo.md) |
@@ -640,15 +640,15 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | 🆕 | `DYNAMIC_BUNDLE_PRICE_UPDATED` |  |  | used in `Blizzard_StoreUI/Blizzard_Shared_StoreUISecure.lua` |
 | ✅ | `DYNAMIC_GOSSIP_POI_UPDATED` |  |  | [GossipInfo](systems/GossipInfo.md) |
 | ✅ | `ECLIPSE_DIRECTION_CHANGE` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `EDIT_MODE_LAYOUTS_UPDATED` | 4 | `t,b` | [EditModeManager](systems/EditModeManager.md) |
-| ✅ | `EJ_DIFFICULTY_UPDATE` | 1 | `n` | [EncounterJournal](systems/EncounterJournal.md) |
+| ✅ | `EDIT_MODE_LAYOUTS_UPDATED` | 18 | `t,b` | [EditModeManager](systems/EditModeManager.md) |
+| ✅ | `EJ_DIFFICULTY_UPDATE` | 2 | `n` | [EncounterJournal](systems/EncounterJournal.md) |
 | ✅ | `EJ_LOOT_DATA_RECIEVED` |  |  | [EncounterJournal](systems/EncounterJournal.md) |
 | ⛔ | `EMOTE` |  |  | used in `Blizzard_ChatFrame/Mainline/TextToSpeechFrameConstants.lua` |
 | ✅ | `ENABLE_DECLINE_GUILD_INVITE` |  |  | [GuildInfo](systems/GuildInfo.md) |
 | ✅ | `ENABLE_LOW_LEVEL_RAID` |  |  | [EncounterInfo](systems/EncounterInfo.md) |
 | ✅ | `ENABLE_TAXI_BENCHMARK` |  |  | [SystemInfo](systems/SystemInfo.md) |
 | ✅ | `ENABLE_XP_GAIN` |  |  | [PaperDollInfo](systems/PaperDollInfo.md) |
-| ✅ | `ENCHANT_SPELL_COMPLETED` |  |  | [Spell](systems/Spell.md) |
+| ✅ | `ENCHANT_SPELL_COMPLETED` | 17 | `b,-` | [Spell](systems/Spell.md) |
 | ✅ | `ENCHANT_SPELL_SELECTED` |  |  | [Spell](systems/Spell.md) |
 | ✅ | `ENCOUNTER_END` |  |  | [EncounterInfo](systems/EncounterInfo.md) |
 | ⛔ | `ENCOUNTER_EVENT` |  |  | used in `Blizzard_ChatFrame/Mainline/TextToSpeechFrameConstants.lua` |
@@ -662,7 +662,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `ENCOUNTER_TIMELINE_EVENT_REMOVED` |  |  | [EncounterTimeline](systems/EncounterTimeline.md) |
 | ✅ | `ENCOUNTER_TIMELINE_EVENT_STATE_CHANGED` |  |  | [EncounterTimeline](systems/EncounterTimeline.md) |
 | ✅ | `ENCOUNTER_TIMELINE_EVENT_TRACK_CHANGED` |  |  | [EncounterTimeline](systems/EncounterTimeline.md) |
-| ✅ | `ENCOUNTER_TIMELINE_LAYOUT_UPDATED` | 4 | `` | [EncounterTimeline](systems/EncounterTimeline.md) |
+| ✅ | `ENCOUNTER_TIMELINE_LAYOUT_UPDATED` | 12 | `` | [EncounterTimeline](systems/EncounterTimeline.md) |
 | ✅ | `ENCOUNTER_TIMELINE_STATE_UPDATED` |  |  | [EncounterTimeline](systems/EncounterTimeline.md) |
 | ✅ | `ENCOUNTER_TIMELINE_VIEW_ACTIVATED` |  |  | [EncounterTimeline](systems/EncounterTimeline.md) |
 | ✅ | `ENCOUNTER_TIMELINE_VIEW_DEACTIVATED` |  |  | [EncounterTimeline](systems/EncounterTimeline.md) |
@@ -678,43 +678,43 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `EQUIP_BIND_REFUNDABLE_CONFIRM` |  |  | [Container](systems/Container.md) |
 | ✅ | `EQUIP_BIND_TRADEABLE_CONFIRM` |  |  | [Container](systems/Container.md) |
 | ✅ | `EVENT_REALM_QUEUES_UPDATED` |  |  | [GameRules](systems/GameRules.md) |
-| ✅ | `EVENT_SCHEDULER_UPDATE` | 4 | `` | [EventSchedulerUI](systems/EventSchedulerUI.md) |
+| ✅ | `EVENT_SCHEDULER_UPDATE` | 12 | `` | [EventSchedulerUI](systems/EventSchedulerUI.md) |
 | ⛔ | `EVOKER` |  |  | used in `Blizzard_FrameXMLBase/Mainline/Constants.lua` |
 | ✅ | `EXPAND_BAG_BAR_CHANGED` |  |  | [Container](systems/Container.md) |
 | ⛔ | `EXPANSION_TOO_LOW` |  |  | used in `Blizzard_GroupFinder/Shared/LFGFrame.lua` |
-| 🆕 | `EXPERIMENTAL_CVAR_CONFIRMATION_NEEDED` | 4 | `` |  |
+| 🆕 | `EXPERIMENTAL_CVAR_CONFIRMATION_NEEDED` | 12 | `` |  |
 | ✅ | `EXTERNAL_EVENT_LAUNCH_URL_RESULT` |  |  | [ExternalEventURL](systems/ExternalEventURL.md) |
 | ✅ | `EXTERNAL_EVENT_URL_CHANGED` |  |  | [ExternalEventURL](systems/ExternalEventURL.md) |
 | ✅ | `EXTRA_BROWSE_INFO_RECEIVED` |  |  | [AuctionHouse](systems/AuctionHouse.md) |
 | ✅ | `FACTION_STANDING_CHANGED` |  |  | [ReputationInfo](systems/ReputationInfo.md) |
-| ✅ | `FIRST_FRAME_RENDERED` | 4 | `` | [SystemInfo](systems/SystemInfo.md) |
+| ✅ | `FIRST_FRAME_RENDERED` | 12 | `` | [SystemInfo](systems/SystemInfo.md) |
 | ⛔ | `FLIRT` |  |  | used in `Blizzard_ChatFrameBase/Mainline/ChatEmoteConstants.lua` |
-| ✅ | `FOG_OF_WAR_UPDATED` | 1 | `` | [FogOfWar](systems/FogOfWar.md) |
+| ✅ | `FOG_OF_WAR_UPDATED` | 59 | `` | [FogOfWar](systems/FogOfWar.md) |
 | ⛔ | `FOLLOW` |  |  | used in `Blizzard_ChatFrameBase/Mainline/ChatEmoteConstants.lua` |
-| ✅ | `FORBIDDEN_NAME_PLATE_CREATED` |  |  | [NamePlateManager](systems/NamePlateManager.md) |
-| ✅ | `FORBIDDEN_NAME_PLATE_UNIT_ADDED` |  |  | [NamePlateManager](systems/NamePlateManager.md) |
-| ✅ | `FORBIDDEN_NAME_PLATE_UNIT_REMOVED` |  |  | [NamePlateManager](systems/NamePlateManager.md) |
+| ✅ | `FORBIDDEN_NAME_PLATE_CREATED` | 2 | `t` | [NamePlateManager](systems/NamePlateManager.md) |
+| ✅ | `FORBIDDEN_NAME_PLATE_UNIT_ADDED` | 2 | `s` | [NamePlateManager](systems/NamePlateManager.md) |
+| ✅ | `FORBIDDEN_NAME_PLATE_UNIT_REMOVED` | 2 | `s` | [NamePlateManager](systems/NamePlateManager.md) |
 | 🆕 | `FORCE_DECLINE_CHARACTER` |  |  | used in `Blizzard_DeclensionFrame/Camelot/DeclensionFrameGlue.lua` |
 | ✅ | `FORCE_REFRESH_HOUSE_FINDER` |  |  | [HousingUI](systems/HousingUI.md) |
 | 🆕 | `FORCE_RENAME_CHARACTER` |  |  | used in `Blizzard_GlueXML/Mainline/CharacterSelect.lua` |
 | 🆕 | `FRAMESTACK_VISIBILITY_UPDATED` |  |  | used in `Blizzard_DebugTools/Blizzard_DebugTools.lua` |
 | 🆕 | `FRAMES_LOADED` |  |  | used in `Blizzard_FriendsFrame/Camelot/FriendsFrame.lua` |
-| ✅ | `FRAME_MANAGER_UPDATE_ALL` | 1 | `` | [UIFrameManager](systems/UIFrameManager.md) |
+| ✅ | `FRAME_MANAGER_UPDATE_ALL` | 8 | `` | [UIFrameManager](systems/UIFrameManager.md) |
 | ✅ | `FRAME_MANAGER_UPDATE_FRAME` |  |  | [UIFrameManager](systems/UIFrameManager.md) |
 | ✅ | `FRIENDLIST_UPDATE` |  |  | [FriendList](systems/FriendList.md) |
 | ✅ | `FULLSCREEN_BROWSER_SPINNER_HIDE` |  |  | [Browser](systems/Browser.md) |
 | ✅ | `FULLSCREEN_BROWSER_SPINNER_SHOW` |  |  | [Browser](systems/Browser.md) |
 | ✅ | `GAMEPAD_POSSESS_BAR_OVERRIDE_CHANGED` |  |  | [GamepadUI](systems/GamepadUI.md) |
 | ✅ | `GAMEPAD_STANCE_BAR_OVERRIDE_CHANGED` |  |  | [GamepadUI](systems/GamepadUI.md) |
-| ✅ | `GAME_MODE_DISPLAY_INFO_UPDATED` | 1 | `` | [GameRules](systems/GameRules.md) |
+| ✅ | `GAME_MODE_DISPLAY_INFO_UPDATED` | 2 | `` | [GameRules](systems/GameRules.md) |
 | ✅ | `GAME_MODE_DISPLAY_MODE_TOGGLE_DISABLED` |  |  | [GameRules](systems/GameRules.md) |
 | ✅ | `GAME_PAD_ACTIVE_CHANGED` |  |  | [GamePad](systems/GamePad.md) |
 | ✅ | `GAME_PAD_ALLOW_HOVER_EVENTS_WITH_FREE_LOOK_CHANGED` |  |  | [GamePad](systems/GamePad.md) |
-| ✅ | `GAME_PAD_CONFIGS_CHANGED` | 4 | `` | [GamePad](systems/GamePad.md) |
+| ✅ | `GAME_PAD_CONFIGS_CHANGED` | 12 | `` | [GamePad](systems/GamePad.md) |
 | ✅ | `GAME_PAD_CONNECTED` |  |  | [GamePad](systems/GamePad.md) |
 | ✅ | `GAME_PAD_DISCONNECTED` |  |  | [GamePad](systems/GamePad.md) |
 | ✅ | `GAME_PAD_POWER_CHANGED` |  |  | [GamePad](systems/GamePad.md) |
-| ✅ | `GAME_RULES_CHANGED` | 1 | `` | [GameRules](systems/GameRules.md) |
+| ✅ | `GAME_RULES_CHANGED` | 2 | `` | [GameRules](systems/GameRules.md) |
 | ✅ | `GARRISON_ARCHITECT_CLOSED` |  |  | [GarrisonInfo](systems/GarrisonInfo.md) |
 | ✅ | `GARRISON_ARCHITECT_OPENED` |  |  | [GarrisonInfo](systems/GarrisonInfo.md) |
 | ✅ | `GARRISON_BUILDING_ACTIVATABLE` |  |  | [GarrisonInfo](systems/GarrisonInfo.md) |
@@ -732,10 +732,10 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `GARRISON_FOLLOWER_REMOVED` |  |  | [GarrisonInfo](systems/GarrisonInfo.md) |
 | ✅ | `GARRISON_FOLLOWER_UPGRADED` |  |  | [GarrisonInfo](systems/GarrisonInfo.md) |
 | ✅ | `GARRISON_FOLLOWER_XP_CHANGED` |  |  | [GarrisonInfo](systems/GarrisonInfo.md) |
-| ✅ | `GARRISON_HIDE_LANDING_PAGE` | 5 | `` | [GarrisonInfo](systems/GarrisonInfo.md) |
+| ✅ | `GARRISON_HIDE_LANDING_PAGE` | 28 | `` | [GarrisonInfo](systems/GarrisonInfo.md) |
 | ✅ | `GARRISON_INVASION_AVAILABLE` |  |  | [GarrisonInfo](systems/GarrisonInfo.md) |
 | ✅ | `GARRISON_INVASION_UNAVAILABLE` |  |  | [GarrisonInfo](systems/GarrisonInfo.md) |
-| ✅ | `GARRISON_LANDINGPAGE_SHIPMENTS` | 4 | `` | [GarrisonInfo](systems/GarrisonInfo.md) |
+| ✅ | `GARRISON_LANDINGPAGE_SHIPMENTS` | 19 | `` | [GarrisonInfo](systems/GarrisonInfo.md) |
 | ✅ | `GARRISON_MISSION_AREA_BONUS_ADDED` |  |  | [GarrisonInfo](systems/GarrisonInfo.md) |
 | ✅ | `GARRISON_MISSION_BONUS_ROLL_COMPLETE` |  |  | [GarrisonInfo](systems/GarrisonInfo.md) |
 | ✅ | `GARRISON_MISSION_BONUS_ROLL_LOOT` |  |  | [Loot](systems/Loot.md) |
@@ -773,7 +773,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `GARRISON_TALENT_UNLOCKS_RESULT` |  |  | [GarrisonInfo](systems/GarrisonInfo.md) |
 | ✅ | `GARRISON_TALENT_UPDATE` |  |  | [GarrisonInfo](systems/GarrisonInfo.md) |
 | ✅ | `GARRISON_TRADESKILL_NPC_CLOSED` |  |  | [GarrisonInfo](systems/GarrisonInfo.md) |
-| ✅ | `GARRISON_UPDATE` | 5 | `` | [GarrisonInfo](systems/GarrisonInfo.md) |
+| ✅ | `GARRISON_UPDATE` | 21 | `` | [GarrisonInfo](systems/GarrisonInfo.md) |
 | ✅ | `GARRISON_UPGRADEABLE_RESULT` |  |  | [GarrisonInfo](systems/GarrisonInfo.md) |
 | ✅ | `GARRISON_USE_PARTY_GARRISON_CHANGED` |  |  | [GarrisonInfo](systems/GarrisonInfo.md) |
 | ✅ | `GDF_SIM_COMPLETE` |  |  | [PvpInfo](systems/PvpInfo.md) |
@@ -781,28 +781,28 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ⛔ | `GEAR_TOO_LOW` |  |  | used in `Blizzard_GroupFinder/Shared/LFGFrame.lua` |
 | ✅ | `GENERIC_ERROR` |  |  | [SystemInfo](systems/SystemInfo.md) |
 | ✅ | `GENERIC_WIDGET_DISPLAY_SHOW` |  |  | [GenericWidgetDisplay](systems/GenericWidgetDisplay.md) |
-| ✅ | `GET_ITEM_INFO_RECEIVED` | 51 | `n,b` | [Item](systems/Item.md) |
-| ✅ | `GLOBAL_MOUSE_DOWN` | 245 | `s` | [SystemInfo](systems/SystemInfo.md) |
-| ✅ | `GLOBAL_MOUSE_UP` | 245 | `s` | [SystemInfo](systems/SystemInfo.md) |
-| ✅ | `GLOBAL_REGION_MOUSE_DOWN` | 218 | `-,s` / `t,s` | [SystemInfo](systems/SystemInfo.md) |
-| ✅ | `GLOBAL_REGION_MOUSE_UP` | 245 | `-,s` / `t,s` | [SystemInfo](systems/SystemInfo.md) |
+| ✅ | `GET_ITEM_INFO_RECEIVED` | 88 | `n,b` | [Item](systems/Item.md) |
+| ✅ | `GLOBAL_MOUSE_DOWN` | 1101 | `s` | [SystemInfo](systems/SystemInfo.md) |
+| ✅ | `GLOBAL_MOUSE_UP` | 1101 | `s` | [SystemInfo](systems/SystemInfo.md) |
+| ✅ | `GLOBAL_REGION_MOUSE_DOWN` | 875 | `-,s` / `t,s` | [SystemInfo](systems/SystemInfo.md) |
+| ✅ | `GLOBAL_REGION_MOUSE_UP` | 1101 | `-,s` / `t,s` | [SystemInfo](systems/SystemInfo.md) |
 | 🆕 | `GLUES_RESUMED` |  |  | used in `Blizzard_MatchmakingQueueDisplay/Blizzard_MatchmakingQueueDisplay.lua` |
 | ✅ | `GLUE_SCREENSHOT_FAILED` |  |  | [Video](systems/Video.md) |
 | ✅ | `GLUE_SCREENSHOT_STARTED` |  |  | [Video](systems/Video.md) |
 | ✅ | `GLUE_SCREENSHOT_SUCCEEDED` |  |  | [Video](systems/Video.md) |
 | ✅ | `GM_PLAYER_INFO` |  |  | [GMTicketInfo](systems/GMTicketInfo.md) |
-| ✅ | `GOSSIP_CLOSED` |  |  | [GossipInfo](systems/GossipInfo.md) |
+| ✅ | `GOSSIP_CLOSED` | 11 | `b` | [GossipInfo](systems/GossipInfo.md) |
 | ✅ | `GOSSIP_CONFIRM` |  |  | [GossipInfo](systems/GossipInfo.md) |
-| ✅ | `GOSSIP_CONFIRM_CANCEL` |  |  | [GossipInfo](systems/GossipInfo.md) |
+| ✅ | `GOSSIP_CONFIRM_CANCEL` | 6 | `` | [GossipInfo](systems/GossipInfo.md) |
 | ✅ | `GOSSIP_ENTER_CODE` |  |  | [GossipInfo](systems/GossipInfo.md) |
 | ✅ | `GOSSIP_OPTIONS_REFRESHED` |  |  | [GossipInfo](systems/GossipInfo.md) |
-| ✅ | `GOSSIP_SHOW` |  |  | [GossipInfo](systems/GossipInfo.md) |
-| ✅ | `GROUP_BUFF_VISUAL_ALERTS_CHANGED` | 16 | `t` | [UnitAuras](systems/UnitAuras.md) |
-| ✅ | `GROUP_FORMED` | 1 | `n,s` | [PartyInfo](systems/PartyInfo.md) |
+| ✅ | `GOSSIP_SHOW` | 8 | `-` | [GossipInfo](systems/GossipInfo.md) |
+| ✅ | `GROUP_BUFF_VISUAL_ALERTS_CHANGED` | 70 | `t` | [UnitAuras](systems/UnitAuras.md) |
+| ✅ | `GROUP_FORMED` | 3 | `n,s` | [PartyInfo](systems/PartyInfo.md) |
 | ✅ | `GROUP_INVITE_CONFIRMATION` |  |  | [PartyInfo](systems/PartyInfo.md) |
-| ✅ | `GROUP_JOINED` | 1 | `n,s` | [PartyInfo](systems/PartyInfo.md) |
-| ✅ | `GROUP_LEFT` |  |  | [PartyInfo](systems/PartyInfo.md) |
-| ✅ | `GROUP_ROSTER_UPDATE` | 5 | `` | [PartyInfo](systems/PartyInfo.md) |
+| ✅ | `GROUP_JOINED` | 3 | `n,s` | [PartyInfo](systems/PartyInfo.md) |
+| ✅ | `GROUP_LEFT` | 1 | `n,s` | [PartyInfo](systems/PartyInfo.md) |
+| ✅ | `GROUP_ROSTER_UPDATE` | 31 | `` | [PartyInfo](systems/PartyInfo.md) |
 | ⛔ | `GUILD` |  |  | used in `Blizzard_ChatFrame/Mainline/TextToSpeechFrameConstants.lua` |
 | ✅ | `GUILDBANKBAGSLOTS_CHANGED` |  |  | [GuildBank](systems/GuildBank.md) |
 | ✅ | `GUILDBANKFRAME_CLOSED` |  |  | [GuildBank](systems/GuildBank.md) |
@@ -813,11 +813,11 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `GUILDBANK_UPDATE_MONEY` |  |  | [GuildBank](systems/GuildBank.md) |
 | ✅ | `GUILDBANK_UPDATE_TABS` |  |  | [GuildBank](systems/GuildBank.md) |
 | ✅ | `GUILDBANK_UPDATE_TEXT` |  |  | [GuildBank](systems/GuildBank.md) |
-| ✅ | `GUILDBANK_UPDATE_WITHDRAWMONEY` | 4 | `` | [GuildBank](systems/GuildBank.md) |
+| ✅ | `GUILDBANK_UPDATE_WITHDRAWMONEY` | 18 | `` | [GuildBank](systems/GuildBank.md) |
 | ✅ | `GUILDTABARD_UPDATE` |  |  | [GuildInfo](systems/GuildInfo.md) |
 | ⛔ | `GUILD_ACHIEVEMENT` |  |  | used in `Blizzard_ChatFrame/Mainline/TextToSpeechFrameConstants.lua` |
 | ✅ | `GUILD_CHALLENGE_COMPLETED` |  |  | [GuildInfo](systems/GuildInfo.md) |
-| ✅ | `GUILD_CHALLENGE_UPDATED` | 3 | `` | [GuildInfo](systems/GuildInfo.md) |
+| ✅ | `GUILD_CHALLENGE_UPDATED` | 10 | `` | [GuildInfo](systems/GuildInfo.md) |
 | ✅ | `GUILD_EVENT_LOG_UPDATE` |  |  | [GuildInfo](systems/GuildInfo.md) |
 | ✅ | `GUILD_INVITE_CANCEL` |  |  | [GuildInfo](systems/GuildInfo.md) |
 | ✅ | `GUILD_INVITE_REQUEST` |  |  | [GuildInfo](systems/GuildInfo.md) |
@@ -825,8 +825,8 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `GUILD_NEWS_UPDATE` |  |  | [GuildInfo](systems/GuildInfo.md) |
 | ✅ | `GUILD_PARTY_STATE_UPDATED` |  |  | [GuildInfo](systems/GuildInfo.md) |
 | ✅ | `GUILD_PREFERRED_PLAY_SETTINGS_UPDATED` |  |  | [GuildInfo](systems/GuildInfo.md) |
-| ✅ | `GUILD_RANKS_UPDATE` | 12 | `` | [GuildInfo](systems/GuildInfo.md) |
-| ✅ | `GUILD_RANKS_UPDATE_ACTIVE_PLAYER` | 1 | `` | [GuildInfo](systems/GuildInfo.md) |
+| ✅ | `GUILD_RANKS_UPDATE` | 56 | `` | [GuildInfo](systems/GuildInfo.md) |
+| ✅ | `GUILD_RANKS_UPDATE_ACTIVE_PLAYER` | 8 | `` | [GuildInfo](systems/GuildInfo.md) |
 | ✅ | `GUILD_RECIPE_KNOWN_BY_MEMBERS` |  |  | [GuildInfo](systems/GuildInfo.md) |
 | ✅ | `GUILD_REGISTRAR_CLOSED` |  |  | [GuildInfo](systems/GuildInfo.md) |
 | ✅ | `GUILD_REGISTRAR_SHOW` |  |  | [GuildInfo](systems/GuildInfo.md) |
@@ -836,18 +836,18 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `GUILD_RENAME_STATUS_UPDATE` |  |  | [GuildInfo](systems/GuildInfo.md) |
 | ✅ | `GUILD_REWARDS_LIST` |  |  | [GuildInfo](systems/GuildInfo.md) |
 | ✅ | `GUILD_REWARDS_LIST_UPDATE` |  |  | [GuildInfo](systems/GuildInfo.md) |
-| ✅ | `GUILD_ROSTER_UPDATE` | 33 | `b` | [GuildInfo](systems/GuildInfo.md) |
-| ✅ | `GUILD_TRADESKILL_UPDATE` | 15 | `` | [GuildInfo](systems/GuildInfo.md) |
+| ✅ | `GUILD_ROSTER_UPDATE` | 145 | `b` | [GuildInfo](systems/GuildInfo.md) |
+| ✅ | `GUILD_TRADESKILL_UPDATE` | 87 | `` | [GuildInfo](systems/GuildInfo.md) |
 | ✅ | `GX_RESTARTED` |  |  | [Video](systems/Video.md) |
 | ✅ | `HANDLE_UI_ACTION` |  |  | [UIActionHandlerSystem](systems/UIActionHandlerSystem.md) |
 | ✅ | `HARDCORE_DEATHS` |  |  | [DeathAlert](systems/DeathAlert.md) |
 | ⛔ | `HEALME` |  |  | used in `Blizzard_ChatFrameBase/Mainline/ChatEmoteConstants.lua` |
-| ✅ | `HEARTHSTONE_BOUND` |  |  | [Unit](systems/Unit.md) |
+| ✅ | `HEARTHSTONE_BOUND` | 1 | `` | [Unit](systems/Unit.md) |
 | ✅ | `HEIRLOOMS_UPDATED` |  |  | [HeirloomInfo](systems/HeirloomInfo.md) |
 | ✅ | `HEIRLOOM_UPGRADE_TARGETING_CHANGED` |  |  | [HeirloomInfo](systems/HeirloomInfo.md) |
 | ⛔ | `HELLO` |  |  | used in `Blizzard_ChatFrameBase/Mainline/ChatEmoteConstants.lua` |
 | ⛔ | `HELPME` |  |  | used in `Blizzard_ChatFrameBase/Mainline/ChatEmoteConstants.lua` |
-| ✅ | `HIDDEN_GROUP_BUFFS_CHANGED` | 16 | `t` | [UnitAuras](systems/UnitAuras.md) |
+| ✅ | `HIDDEN_GROUP_BUFFS_CHANGED` | 70 | `t` | [UnitAuras](systems/UnitAuras.md) |
 | 🆕 | `HIDE_ARROW_CALLOUT` |  |  | used in `Blizzard_ArrowCalloutFrame/ArrowCalloutFrame.lua` |
 | ✅ | `HIDE_HYPERLINK_TOOLTIP` |  |  | [TooltipInfo](systems/TooltipInfo.md) |
 | ✅ | `HIDE_SUBTITLE` |  |  | [Cinematic](systems/Cinematic.md) |
@@ -959,12 +959,12 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ⛔ | `INCOMING` |  |  | used in `Blizzard_ChatFrameBase/Mainline/ChatEmoteConstants.lua` |
 | ✅ | `INCOMING_RESURRECT_CHANGED` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `INCOMING_SUMMON_CHANGED` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `INITIAL_CLUBS_LOADED` | 4 | `` | [Club](systems/Club.md) |
+| ✅ | `INITIAL_CLUBS_LOADED` | 18 | `` | [Club](systems/Club.md) |
 | ✅ | `INITIAL_HOTFIXES_APPLIED` |  |  | [SystemInfo](systems/SystemInfo.md) |
 | ✅ | `INITIATIVE_ACTIVITY_LOG_UPDATED` |  |  | [NeighborhoodInitiative](systems/NeighborhoodInitiative.md) |
 | ✅ | `INITIATIVE_COMPLETED` |  |  | [NeighborhoodInitiative](systems/NeighborhoodInitiative.md) |
 | ✅ | `INITIATIVE_TASKS_TRACKED_LIST_CHANGED` |  |  | [NeighborhoodInitiative](systems/NeighborhoodInitiative.md) |
-| ✅ | `INITIATIVE_TASKS_TRACKED_UPDATED` | 1 | `` | [NeighborhoodInitiative](systems/NeighborhoodInitiative.md) |
+| ✅ | `INITIATIVE_TASKS_TRACKED_UPDATED` | 2 | `` | [NeighborhoodInitiative](systems/NeighborhoodInitiative.md) |
 | ✅ | `INITIATIVE_TASK_COMPLETED` |  |  | [NeighborhoodInitiative](systems/NeighborhoodInitiative.md) |
 | ✅ | `INPUT_DEVICE_INTERFACE_TRANSITION` |  |  | [Input](systems/Input.md) |
 | ✅ | `INSPECT_ACHIEVEMENT_READY` |  |  | [AchievementInfo](systems/AchievementInfo.md) |
@@ -982,10 +982,10 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `INSTANCE_ENCOUNTER_OBJECTIVE_COMPLETE` |  |  | [InstanceEncounter](systems/InstanceEncounter.md) |
 | ✅ | `INSTANCE_ENCOUNTER_OBJECTIVE_START` |  |  | [InstanceEncounter](systems/InstanceEncounter.md) |
 | ✅ | `INSTANCE_ENCOUNTER_OBJECTIVE_UPDATE` |  |  | [InstanceEncounter](systems/InstanceEncounter.md) |
-| ✅ | `INSTANCE_GROUP_SIZE_CHANGED` |  |  | [PartyInfo](systems/PartyInfo.md) |
+| ✅ | `INSTANCE_GROUP_SIZE_CHANGED` | 3 | `` | [PartyInfo](systems/PartyInfo.md) |
 | ✅ | `INSTANCE_LEAVER_STATUS_CHANGED` |  |  | [InstanceLeaverInfo](systems/InstanceLeaverInfo.md) |
 | ✅ | `INSTANCE_LOCK_START` |  |  | [EncounterInfo](systems/EncounterInfo.md) |
-| ✅ | `INSTANCE_LOCK_STOP` | 4 | `` | [EncounterInfo](systems/EncounterInfo.md) |
+| ✅ | `INSTANCE_LOCK_STOP` | 18 | `` | [EncounterInfo](systems/EncounterInfo.md) |
 | ✅ | `INSTANCE_LOCK_WARNING` |  |  | [EncounterInfo](systems/EncounterInfo.md) |
 | ✅ | `INSTANCE_RESET_WARNING` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `INVENTORY_SEARCH_UPDATE` |  |  | [Container](systems/Container.md) |
@@ -999,23 +999,23 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `ISLAND_COMPLETED` |  |  | [LFGInfo](systems/LFGInfo.md) |
 | ✅ | `ITEM_CHANGED` |  |  | [Item](systems/Item.md) |
 | ✅ | `ITEM_CONVERSION_DATA_READY` |  |  | [Item](systems/Item.md) |
-| ✅ | `ITEM_COUNT_CHANGED` | 14 | `n` | [Item](systems/Item.md) |
-| ✅ | `ITEM_DATA_LOAD_RESULT` | 1800 | `n,b` | [Item](systems/Item.md) |
+| ✅ | `ITEM_COUNT_CHANGED` | 28 | `n` | [Item](systems/Item.md) |
+| ✅ | `ITEM_DATA_LOAD_RESULT` | 6020 | `n,b` | [Item](systems/Item.md) |
 | ✅ | `ITEM_INTERACTION_CHARGE_INFO_UPDATED` |  |  | [ItemInteractionUI](systems/ItemInteractionUI.md) |
 | ✅ | `ITEM_INTERACTION_ITEM_SELECTION_UPDATED` |  |  | [ItemInteractionUI](systems/ItemInteractionUI.md) |
 | ✅ | `ITEM_KEY_ITEM_INFO_RECEIVED` |  |  | [AuctionHouse](systems/AuctionHouse.md) |
-| ✅ | `ITEM_LOCKED` |  |  | [Container](systems/Container.md) |
-| ✅ | `ITEM_LOCK_CHANGED` |  |  | [Container](systems/Container.md) |
+| ✅ | `ITEM_LOCKED` | 23 | `n,n` | [Container](systems/Container.md) |
+| ✅ | `ITEM_LOCK_CHANGED` | 40 | `n,n` | [Container](systems/Container.md) |
 | ✅ | `ITEM_PURCHASED` |  |  | [AuctionHouse](systems/AuctionHouse.md) |
-| ✅ | `ITEM_PUSH` | 15 | `n,n` | [Loot](systems/Loot.md) |
-| ✅ | `ITEM_RESTORATION_BUTTON_STATUS` | 1 | `` | [GMTicketInfo](systems/GMTicketInfo.md) |
+| ✅ | `ITEM_PUSH` | 25 | `n,n` | [Loot](systems/Loot.md) |
+| ✅ | `ITEM_RESTORATION_BUTTON_STATUS` | 2 | `` | [GMTicketInfo](systems/GMTicketInfo.md) |
 | ✅ | `ITEM_SEARCH_RESULTS_ADDED` |  |  | [AuctionHouse](systems/AuctionHouse.md) |
 | ✅ | `ITEM_SEARCH_RESULTS_UPDATED` |  |  | [AuctionHouse](systems/AuctionHouse.md) |
-| ✅ | `ITEM_TEXT_BEGIN` |  |  | [ItemText](systems/ItemText.md) |
-| ✅ | `ITEM_TEXT_CLOSED` |  |  | [ItemText](systems/ItemText.md) |
-| ✅ | `ITEM_TEXT_READY` |  |  | [ItemText](systems/ItemText.md) |
+| ✅ | `ITEM_TEXT_BEGIN` | 1 | `` | [ItemText](systems/ItemText.md) |
+| ✅ | `ITEM_TEXT_CLOSED` | 2 | `` | [ItemText](systems/ItemText.md) |
+| ✅ | `ITEM_TEXT_READY` | 1 | `` | [ItemText](systems/ItemText.md) |
 | ✅ | `ITEM_TEXT_TRANSLATION` |  |  | [ItemText](systems/ItemText.md) |
-| ✅ | `ITEM_UNLOCKED` |  |  | [Container](systems/Container.md) |
+| ✅ | `ITEM_UNLOCKED` | 17 | `n,n` | [Container](systems/Container.md) |
 | ✅ | `ITEM_UPGRADE_FAILED` |  |  | [ItemUpgrade](systems/ItemUpgrade.md) |
 | ✅ | `ITEM_UPGRADE_MASTER_SET_ITEM` |  |  | [ItemUpgrade](systems/ItemUpgrade.md) |
 | ✅ | `ITEM_UPGRADE_MASTER_UPDATE` |  |  | [ItemUpgrade](systems/ItemUpgrade.md) |
@@ -1044,7 +1044,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ⛔ | `LEVEL_TOO_LOW` |  |  | used in `Blizzard_GroupFinder/Shared/LFGFrame.lua` |
 | ✅ | `LFG_BOOT_PROPOSAL_UPDATE` |  |  | [LFGInfo](systems/LFGInfo.md) |
 | ✅ | `LFG_COMPLETION_REWARD` |  |  | [LFGInfo](systems/LFGInfo.md) |
-| ✅ | `LFG_COOLDOWNS_UPDATED` | 7 | `` | [LFGInfo](systems/LFGInfo.md) |
+| ✅ | `LFG_COOLDOWNS_UPDATED` | 46 | `` | [LFGInfo](systems/LFGInfo.md) |
 | ✅ | `LFG_ENABLED_STATE_CHANGED` |  |  | [LFGInfo](systems/LFGInfo.md) |
 | ✅ | `LFG_GROUP_DELISTED_LEADERSHIP_CHANGE` |  |  | [LFGList](systems/LFGList.md) |
 | ✅ | `LFG_INVALID_ERROR_MESSAGE` |  |  | [LFGInfo](systems/LFGInfo.md) |
@@ -1052,7 +1052,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `LFG_LIST_APPLICANT_LIST_UPDATED` |  |  | [LFGList](systems/LFGList.md) |
 | ✅ | `LFG_LIST_APPLICANT_UPDATED` |  |  | [LFGList](systems/LFGList.md) |
 | ✅ | `LFG_LIST_APPLICATION_STATUS_UPDATED` |  |  | [LFGList](systems/LFGList.md) |
-| ✅ | `LFG_LIST_AVAILABILITY_UPDATE` | 4 | `` | [LFGList](systems/LFGList.md) |
+| ✅ | `LFG_LIST_AVAILABILITY_UPDATE` | 18 | `` | [LFGList](systems/LFGList.md) |
 | ✅ | `LFG_LIST_CENSORED_ACTIVE_ENTRY_UPDATE` |  |  | [LFGList](systems/LFGList.md) |
 | ✅ | `LFG_LIST_ENTRY_CREATION_FAILED` |  |  | [LFGList](systems/LFGList.md) |
 | ✅ | `LFG_LIST_ENTRY_EXPIRED_TIMEOUT` |  |  | [LFGList](systems/LFGList.md) |
@@ -1062,10 +1062,10 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `LFG_LIST_ROLE_UPDATE` |  |  | [LFGListRoles](systems/LFGListRoles.md) |
 | ✅ | `LFG_LIST_SEARCH_FAILED` |  |  | [LFGList](systems/LFGList.md) |
 | ✅ | `LFG_LIST_SEARCH_RESULTS_RECEIVED` |  |  | [LFGList](systems/LFGList.md) |
-| ✅ | `LFG_LIST_SEARCH_RESULT_UPDATED` |  |  | [LFGList](systems/LFGList.md) |
+| ✅ | `LFG_LIST_SEARCH_RESULT_UPDATED` | 7 | `n` | [LFGList](systems/LFGList.md) |
 | ✅ | `LFG_LIST_SHOW_SEARCH` |  |  | [LFGList](systems/LFGList.md) |
 | ✅ | `LFG_LIST_UPDATE_SEARCH_RESULTS` |  |  | [LFGList](systems/LFGList.md) |
-| ✅ | `LFG_LOCK_INFO_RECEIVED` | 10 | `` | [LFGInfo](systems/LFGInfo.md) |
+| ✅ | `LFG_LOCK_INFO_RECEIVED` | 24 | `` | [LFGInfo](systems/LFGInfo.md) |
 | ✅ | `LFG_OFFER_CONTINUE` |  |  | [LFGInfo](systems/LFGInfo.md) |
 | ✅ | `LFG_OPEN_FROM_GOSSIP` |  |  | [LFGInfo](systems/LFGInfo.md) |
 | ✅ | `LFG_PROPOSAL_DONE` |  |  | [LFGInfo](systems/LFGInfo.md) |
@@ -1086,10 +1086,10 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `LFG_ROLE_CHECK_UPDATE` |  |  | [LFGInfo](systems/LFGInfo.md) |
 | ✅ | `LFG_ROLE_UPDATE` |  |  | [LFGInfo](systems/LFGInfo.md) |
 | ✅ | `LFG_UPDATE` |  |  | [LFGInfo](systems/LFGInfo.md) |
-| ✅ | `LFG_UPDATE_RANDOM_INFO` | 10 | `` | [LFGInfo](systems/LFGInfo.md) |
+| ✅ | `LFG_UPDATE_RANDOM_INFO` | 24 | `` | [LFGInfo](systems/LFGInfo.md) |
 | ✅ | `LIFESTEAL_UPDATE` |  |  | [PaperDollInfo](systems/PaperDollInfo.md) |
-| ✅ | `LOADING_SCREEN_DISABLED` | 4 | `` | [LoadingScreen](systems/LoadingScreen.md) |
-| ✅ | `LOADING_SCREEN_ENABLED` | 4 | `` | [LoadingScreen](systems/LoadingScreen.md) |
+| ✅ | `LOADING_SCREEN_DISABLED` | 18 | `` | [LoadingScreen](systems/LoadingScreen.md) |
+| ✅ | `LOADING_SCREEN_ENABLED` | 18 | `` | [LoadingScreen](systems/LoadingScreen.md) |
 | 🆕 | `LOBBY_MATCHMAKER_PARTY_UPDATE` |  |  | used in `Blizzard_GlueXML/WoWLabs/GluePartyPoseUI.lua` |
 | ✅ | `LOBBY_MATCHMAKER_QUEUE_ABANDONED` |  |  | [LobbyMatchmakerInfo](systems/LobbyMatchmakerInfo.md) |
 | ✅ | `LOBBY_MATCHMAKER_QUEUE_ERROR` |  |  | [LobbyMatchmakerInfo](systems/LobbyMatchmakerInfo.md) |
@@ -1101,8 +1101,8 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | 🆕 | `LOGIN_STATE_CHANGED` |  |  | used in `Blizzard_GlueParent/Mainline/GlueParent.lua` |
 | ✅ | `LOGOUT_CANCEL` |  |  | [SystemInfo](systems/SystemInfo.md) |
 | ✅ | `LOOT_BIND_CONFIRM` |  |  | [Loot](systems/Loot.md) |
-| ✅ | `LOOT_CLOSED` | 30 | `` | [Loot](systems/Loot.md) |
-| ✅ | `LOOT_HISTORY_CLEAR_HISTORY` |  |  | [LootHistory](systems/LootHistory.md) |
+| ✅ | `LOOT_CLOSED` | 61 | `` | [Loot](systems/Loot.md) |
+| ✅ | `LOOT_HISTORY_CLEAR_HISTORY` | 2 | `` | [LootHistory](systems/LootHistory.md) |
 | ✅ | `LOOT_HISTORY_GO_TO_ENCOUNTER` |  |  | [LootHistory](systems/LootHistory.md) |
 | ✅ | `LOOT_HISTORY_ONE_HUNDRED_ROLL` |  |  | [LootHistory](systems/LootHistory.md) |
 | ✅ | `LOOT_HISTORY_UPDATE_DROP` |  |  | [LootHistory](systems/LootHistory.md) |
@@ -1110,11 +1110,11 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `LOOT_ITEM_AVAILABLE` |  |  | [Loot](systems/Loot.md) |
 | ✅ | `LOOT_ITEM_ROLL_WON` |  |  | [Loot](systems/Loot.md) |
 | ✅ | `LOOT_JOURNAL_ITEM_UPDATE` |  |  | [LootJournal](systems/LootJournal.md) |
-| ✅ | `LOOT_OPENED` | 4 | `b,b` | [Loot](systems/Loot.md) |
-| ✅ | `LOOT_READY` | 21 | `b` | [Loot](systems/Loot.md) |
+| ✅ | `LOOT_OPENED` | 19 | `b,b` | [Loot](systems/Loot.md) |
+| ✅ | `LOOT_READY` | 62 | `b` | [Loot](systems/Loot.md) |
 | ✅ | `LOOT_ROLLS_COMPLETE` |  |  | [Loot](systems/Loot.md) |
 | ✅ | `LOOT_SLOT_CHANGED` |  |  | [Loot](systems/Loot.md) |
-| ✅ | `LOOT_SLOT_CLEARED` | 17 | `n` | [Loot](systems/Loot.md) |
+| ✅ | `LOOT_SLOT_CLEARED` | 30 | `n` | [Loot](systems/Loot.md) |
 | ✅ | `LORE_TEXT_UPDATED_CAMPAIGN` |  |  | [LoreText](systems/LoreText.md) |
 | ✅ | `LOSS_OF_CONTROL_ADDED` |  |  | [LossOfControl](systems/LossOfControl.md) |
 | ✅ | `LOSS_OF_CONTROL_COMMENTATOR_ADDED` |  |  | [LossOfControl](systems/LossOfControl.md) |
@@ -1125,7 +1125,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `MACRO_ACTION_FORBIDDEN` |  |  | [RestrictedActions](systems/RestrictedActions.md) |
 | ✅ | `MAIL_CLOSED` |  |  | [MailInfo](systems/MailInfo.md) |
 | ✅ | `MAIL_FAILED` |  |  | [MailInfo](systems/MailInfo.md) |
-| ✅ | `MAIL_INBOX_UPDATE` | 1 | `` | [MailInfo](systems/MailInfo.md) |
+| ✅ | `MAIL_INBOX_UPDATE` | 2 | `` | [MailInfo](systems/MailInfo.md) |
 | ✅ | `MAIL_LOCK_SEND_ITEMS` |  |  | [MailInfo](systems/MailInfo.md) |
 | ✅ | `MAIL_OPEN_ALL_CANCELED` |  |  | [MailInfo](systems/MailInfo.md) |
 | ✅ | `MAIL_SEND_INFO_UPDATE` |  |  | [MailInfo](systems/MailInfo.md) |
@@ -1138,27 +1138,27 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `MAJOR_FACTION_INTERACTION_STARTED` |  |  | [MajorFactionsUI](systems/MajorFactionsUI.md) |
 | ✅ | `MAJOR_FACTION_RENOWN_LEVEL_CHANGED` |  |  | [MajorFactionsUI](systems/MajorFactionsUI.md) |
 | ✅ | `MAJOR_FACTION_UNLOCKED` |  |  | [MajorFactionsUI](systems/MajorFactionsUI.md) |
-| ✅ | `MAP_EXPLORATION_UPDATED` |  |  | [MapExplorationInfo](systems/MapExplorationInfo.md) |
+| ✅ | `MAP_EXPLORATION_UPDATED` | 1 | `` | [MapExplorationInfo](systems/MapExplorationInfo.md) |
 | 🆕 | `MAP_SCENE_CHARACTER_ON_MOUSE_ENTER` |  |  | used in `Blizzard_GlueXML/Mainline/CharacterSelect/CharacterSelectUI.lua` |
 | 🆕 | `MAP_SCENE_CHARACTER_ON_MOUSE_LEAVE` |  |  | used in `Blizzard_GlueXML/Mainline/CharacterSelect/CharacterSelectUI.lua` |
 | 🆕 | `MAP_SCENE_CHARACTER_UPDATE_OVERLAY_FRAME` |  |  | used in `Blizzard_GlueXML/Mainline/CharacterSelect/CharacterSelectUI.lua` |
 | ✅ | `MASTERY_UPDATE` |  |  | [PaperDollInfo](systems/PaperDollInfo.md) |
 | ✅ | `MAX_EXPANSION_LEVEL_UPDATED` |  |  | [Expansion](systems/Expansion.md) |
 | ✅ | `MAX_SPELL_START_RECOVERY_OFFSET_CHANGED` |  |  | [SpellBook](systems/SpellBook.md) |
-| ✅ | `MENTORSHIP_STATUS_CHANGED` | 4 | `` | [PlayerMentorship](systems/PlayerMentorship.md) |
-| ✅ | `MERCHANT_CLOSED` |  |  | [MerchantFrame](systems/MerchantFrame.md) |
+| ✅ | `MENTORSHIP_STATUS_CHANGED` | 18 | `` | [PlayerMentorship](systems/PlayerMentorship.md) |
+| ✅ | `MERCHANT_CLOSED` | 4 | `` | [MerchantFrame](systems/MerchantFrame.md) |
 | ✅ | `MERCHANT_CONFIRM_TRADE_TIMER_REMOVAL` |  |  | [Item](systems/Item.md) |
-| ✅ | `MERCHANT_FILTER_ITEM_UPDATE` |  |  | [MerchantFrame](systems/MerchantFrame.md) |
-| ✅ | `MERCHANT_SHOW` |  |  | [MerchantFrame](systems/MerchantFrame.md) |
-| ✅ | `MERCHANT_UPDATE` |  |  | [MerchantFrame](systems/MerchantFrame.md) |
+| ✅ | `MERCHANT_FILTER_ITEM_UPDATE` | 37 | `n` | [MerchantFrame](systems/MerchantFrame.md) |
+| ✅ | `MERCHANT_SHOW` | 2 | `` | [MerchantFrame](systems/MerchantFrame.md) |
+| ✅ | `MERCHANT_UPDATE` | 5 | `` | [MerchantFrame](systems/MerchantFrame.md) |
 | ⛔ | `MINIMAP_PING` |  |  | [Minimap](systems/Minimap.md) |
 | ✅ | `MINIMAP_UPDATE_TRACKING` |  |  | [Minimap](systems/Minimap.md) |
-| ✅ | `MINIMAP_UPDATE_ZOOM` | 5 | `` | [Minimap](systems/Minimap.md) |
+| ✅ | `MINIMAP_UPDATE_ZOOM` | 24 | `` | [Minimap](systems/Minimap.md) |
 | ✅ | `MIN_EXPANSION_LEVEL_UPDATED` |  |  | [Expansion](systems/Expansion.md) |
 | ✅ | `MIRROR_TIMER_PAUSE` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `MIRROR_TIMER_START` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `MIRROR_TIMER_STOP` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `MODIFIER_STATE_CHANGED` | 38 | `s,n` | [KeyBindings](systems/KeyBindings.md) |
+| ✅ | `MODIFIER_STATE_CHANGED` | 164 | `s,n` | [KeyBindings](systems/KeyBindings.md) |
 | ⛔ | `MONEY` |  |  | used in `Blizzard_ChatFrame/Mainline/TextToSpeechFrameConstants.lua` |
 | ⛔ | `MONSTER_EMOTE` |  |  | used in `Blizzard_ChatFrame/Mainline/TextToSpeechFrameConstants.lua` |
 | ⛔ | `MONSTER_SAY` |  |  | used in `Blizzard_ChatFrame/Mainline/TextToSpeechFrameConstants.lua` |
@@ -1166,24 +1166,24 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ⛔ | `MONSTER_YELL` |  |  | used in `Blizzard_ChatFrame/Mainline/TextToSpeechFrameConstants.lua` |
 | ✅ | `MOUNT_CURSOR_CLEAR` |  |  | [Cursor](systems/Cursor.md) |
 | ✅ | `MOUNT_EQUIPMENT_APPLY_RESULT` |  |  | [MountJournal](systems/MountJournal.md) |
-| ✅ | `MOUNT_JOURNAL_SEARCH_UPDATED` | 6 | `` | [MountJournal](systems/MountJournal.md) |
-| ✅ | `MOUNT_JOURNAL_USABILITY_CHANGED` | 6 | `` | [MountJournal](systems/MountJournal.md) |
+| ✅ | `MOUNT_JOURNAL_SEARCH_UPDATED` | 28 | `` | [MountJournal](systems/MountJournal.md) |
+| ✅ | `MOUNT_JOURNAL_USABILITY_CHANGED` | 77 | `` | [MountJournal](systems/MountJournal.md) |
 | ⛔ | `MOVEBACKWARD` |  |  | used in `Blizzard_BoostTutorial/Blizzard_TutorialKeyboardMouseFrame.lua` |
 | ⛔ | `MOVEFORWARD` |  |  | used in `Blizzard_BoostTutorial/Blizzard_TutorialKeyboardMouseFrame.lua` |
 | ✅ | `MOVE_OUT_RESERVATION_UPDATED` |  |  | [HousingUI](systems/HousingUI.md) |
 | ✅ | `MUTELIST_UPDATE` |  |  | [FriendList](systems/FriendList.md) |
-| ✅ | `MYTHIC_PLUS_CURRENT_AFFIX_UPDATE` | 1 | `` | [MythicPlusInfo](systems/MythicPlusInfo.md) |
+| ✅ | `MYTHIC_PLUS_CURRENT_AFFIX_UPDATE` | 2 | `` | [MythicPlusInfo](systems/MythicPlusInfo.md) |
 | ✅ | `MYTHIC_PLUS_NEW_WEEKLY_RECORD` |  |  | [MythicPlusInfo](systems/MythicPlusInfo.md) |
-| ✅ | `NAME_PLATE_CREATED` | 8 | `t` | [NamePlateManager](systems/NamePlateManager.md) |
-| ✅ | `NAME_PLATE_UNIT_ADDED` | 53 | `s` | [NamePlateManager](systems/NamePlateManager.md) |
+| ✅ | `NAME_PLATE_CREATED` | 36 | `t` | [NamePlateManager](systems/NamePlateManager.md) |
+| ✅ | `NAME_PLATE_UNIT_ADDED` | 262 | `s` | [NamePlateManager](systems/NamePlateManager.md) |
 | ✅ | `NAME_PLATE_UNIT_BEHIND_CAMERA_CHANGED` |  |  | [NamePlateManager](systems/NamePlateManager.md) |
-| ✅ | `NAME_PLATE_UNIT_REMOVED` | 53 | `s` | [NamePlateManager](systems/NamePlateManager.md) |
+| ✅ | `NAME_PLATE_UNIT_REMOVED` | 262 | `s` | [NamePlateManager](systems/NamePlateManager.md) |
 | ✅ | `NAVIGATION_DESTINATION_REACHED` |  |  | [InGameNavigation](systems/InGameNavigation.md) |
 | ✅ | `NAVIGATION_FRAME_CREATED` | 1 | `t` | [InGameNavigation](systems/InGameNavigation.md) |
-| ✅ | `NAVIGATION_FRAME_DESTROYED` | 4 | `` | [InGameNavigation](systems/InGameNavigation.md) |
+| ✅ | `NAVIGATION_FRAME_DESTROYED` | 18 | `` | [InGameNavigation](systems/InGameNavigation.md) |
 | ✅ | `NEIGHBORHOOD_GUILD_SIZE_VALIDATED` |  |  | [HousingUI](systems/HousingUI.md) |
 | ✅ | `NEIGHBORHOOD_INFO_UPDATED` |  |  | [HousingNeighborhoodUI](systems/HousingNeighborhoodUI.md) |
-| ✅ | `NEIGHBORHOOD_INITIATIVE_UPDATED` | 1 | `` | [NeighborhoodInitiative](systems/NeighborhoodInitiative.md) |
+| ✅ | `NEIGHBORHOOD_INITIATIVE_UPDATED` | 2 | `` | [NeighborhoodInitiative](systems/NeighborhoodInitiative.md) |
 | ✅ | `NEIGHBORHOOD_INVITE_RESPONSE` |  |  | [HousingNeighborhoodUI](systems/HousingNeighborhoodUI.md) |
 | ✅ | `NEIGHBORHOOD_LIST_UPDATED` |  |  | [HousingUI](systems/HousingUI.md) |
 | ✅ | `NEIGHBORHOOD_MAP_DATA_UPDATED` |  |  | [HousingNeighborhoodUI](systems/HousingNeighborhoodUI.md) |
@@ -1199,7 +1199,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `NEW_RUNEFORGE_POWER_ADDED` |  |  | [LegendaryCrafting](systems/LegendaryCrafting.md) |
 | ✅ | `NEW_TOY_ADDED` |  |  | [ToyBoxInfo](systems/ToyBoxInfo.md) |
 | ✅ | `NEW_WARBAND_SCENE_ADDED` |  |  | [WarbandSceneInfo](systems/WarbandSceneInfo.md) |
-| ✅ | `NEW_WMO_CHUNK` |  |  | [MapUI](systems/MapUI.md) |
+| ✅ | `NEW_WMO_CHUNK` | 36 | `` | [MapUI](systems/MapUI.md) |
 | ✅ | `NOTCHED_DISPLAY_MODE_CHANGED` |  |  | [UI](systems/UI.md) |
 | ✅ | `NOTIFY_CHAT_SUPPRESSED` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `NOTIFY_PVP_AFK_RESULT` |  |  | [PvpInfo](systems/PvpInfo.md) |
@@ -1220,7 +1220,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `OPEN_NEIGHBORHOOD_CHARTER_SIGNATURE_REQUEST` |  |  | [HousingUI](systems/HousingUI.md) |
 | ✅ | `OPEN_PLOT_CORNERSTONE` |  |  | [HousingNeighborhoodUI](systems/HousingNeighborhoodUI.md) |
 | ✅ | `OPEN_RECIPE_RESPONSE` |  |  | [TradeSkillUI](systems/TradeSkillUI.md) |
-| ✅ | `OPEN_SPLASH_SCREEN` | 4 | `-` | [SplashScreen](systems/SplashScreen.md) |
+| ✅ | `OPEN_SPLASH_SCREEN` | 12 | `-` | [SplashScreen](systems/SplashScreen.md) |
 | 🆕 | `OPEN_STATUS_DIALOG` |  |  | used in `Blizzard_GlueParent/Mainline/GlueParent.lua` |
 | ✅ | `OPEN_TABARD_FRAME` |  |  | [GuildInfo](systems/GuildInfo.md) |
 | ✅ | `OWNED_AUCTIONS_UPDATED` |  |  | [AuctionHouse](systems/AuctionHouse.md) |
@@ -1229,19 +1229,19 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ⛔ | `PARTY` |  |  | used in `Blizzard_ChatFrame/Mainline/TextToSpeechFrameConstants.lua` |
 | ✅ | `PARTY_ELIGIBILITY_FOR_DELVE_TIERS_CHANGED` |  |  | [DelvesUI](systems/DelvesUI.md) |
 | ✅ | `PARTY_INVITE_CANCEL` |  |  | [PartyInfo](systems/PartyInfo.md) |
-| ✅ | `PARTY_INVITE_REQUEST` |  |  | [PartyInfo](systems/PartyInfo.md) |
-| ✅ | `PARTY_KILL` | 8 | `s,s` | [Unit](systems/Unit.md) |
+| ✅ | `PARTY_INVITE_REQUEST` | 1 | `s,b,b,b,b,b,s,b` | [PartyInfo](systems/PartyInfo.md) |
+| ✅ | `PARTY_KILL` | 18 | `S,S` / `s,s` | [Unit](systems/Unit.md) |
 | ⛔ | `PARTY_LEADER` |  |  | used in `Blizzard_ChatFrame/Mainline/TextToSpeechFrameConstants.lua` |
-| ✅ | `PARTY_LEADER_CHANGED` | 1 | `` | [PartyInfo](systems/PartyInfo.md) |
-| ✅ | `PARTY_LFG_RESTRICTED` | 1 | `` | [PartyInfo](systems/PartyInfo.md) |
-| ✅ | `PARTY_LOOT_METHOD_CHANGED` | 1 | `` | [PartyInfo](systems/PartyInfo.md) |
-| ✅ | `PARTY_MEMBER_DISABLE` |  |  | [PartyInfo](systems/PartyInfo.md) |
-| ✅ | `PARTY_MEMBER_ENABLE` |  |  | [PartyInfo](systems/PartyInfo.md) |
+| ✅ | `PARTY_LEADER_CHANGED` | 3 | `` | [PartyInfo](systems/PartyInfo.md) |
+| ✅ | `PARTY_LFG_RESTRICTED` | 3 | `` | [PartyInfo](systems/PartyInfo.md) |
+| ✅ | `PARTY_LOOT_METHOD_CHANGED` | 3 | `` | [PartyInfo](systems/PartyInfo.md) |
+| ✅ | `PARTY_MEMBER_DISABLE` | 8 | `s` | [PartyInfo](systems/PartyInfo.md) |
+| ✅ | `PARTY_MEMBER_ENABLE` | 13 | `s` | [PartyInfo](systems/PartyInfo.md) |
 | ✅ | `PENDING_AZERITE_ESSENCE_CHANGED` |  |  | [AzeriteEssence](systems/AzeriteEssence.md) |
 | ✅ | `PENDING_NEIGHBORHOOD_INVITES_RECIEVED` |  |  | [HousingNeighborhoodUI](systems/HousingNeighborhoodUI.md) |
 | ✅ | `PERKS_ACTIVITIES_TRACKED_LIST_CHANGED` |  |  | [PerksActivities](systems/PerksActivities.md) |
-| ✅ | `PERKS_ACTIVITIES_TRACKED_UPDATED` | 2 | `` | [PerksActivities](systems/PerksActivities.md) |
-| ✅ | `PERKS_ACTIVITIES_UPDATED` | 2 | `` | [PerksActivities](systems/PerksActivities.md) |
+| ✅ | `PERKS_ACTIVITIES_TRACKED_UPDATED` | 4 | `` | [PerksActivities](systems/PerksActivities.md) |
+| ✅ | `PERKS_ACTIVITIES_UPDATED` | 4 | `` | [PerksActivities](systems/PerksActivities.md) |
 | ✅ | `PERKS_ACTIVITY_COMPLETED` |  |  | [PerksActivities](systems/PerksActivities.md) |
 | ✅ | `PERKS_PROGRAM_ADD_PENDING_SHOP_ITEM` |  |  | [PerksProgram](systems/PerksProgram.md) |
 | ✅ | `PERKS_PROGRAM_CLOSE` |  |  | [PerksProgram](systems/PerksProgram.md) |
@@ -1265,7 +1265,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `PET_BAR_SHOWGRID` |  |  | [PetInfo](systems/PetInfo.md) |
 | ✅ | `PET_BAR_UPDATE` |  |  | [ActionBar](systems/ActionBar.md) |
 | ✅ | `PET_BAR_UPDATE_COOLDOWN` |  |  | [PetInfo](systems/PetInfo.md) |
-| ✅ | `PET_BAR_UPDATE_USABLE` | 64 | `` | [Unit](systems/Unit.md) |
+| ✅ | `PET_BAR_UPDATE_USABLE` | 164 | `` | [Unit](systems/Unit.md) |
 | ✅ | `PET_BATTLE_ABILITY_CHANGED` |  |  | [BattlePet](systems/BattlePet.md) |
 | ✅ | `PET_BATTLE_ACTION_SELECTED` |  |  | [BattlePet](systems/BattlePet.md) |
 | ✅ | `PET_BATTLE_AURA_APPLIED` |  |  | [BattlePet](systems/BattlePet.md) |
@@ -1298,13 +1298,13 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `PET_INFO_UPDATE` |  |  | [StableInfo](systems/StableInfo.md) |
 | ✅ | `PET_JOURNAL_AUTO_SLOTTED_PET` |  |  | [PetJournalInfo](systems/PetJournalInfo.md) |
 | ✅ | `PET_JOURNAL_CAGE_FAILED` |  |  | [PetJournalInfo](systems/PetJournalInfo.md) |
-| ✅ | `PET_JOURNAL_LIST_UPDATE` | 9 | `` | [PetJournalInfo](systems/PetJournalInfo.md) |
+| ✅ | `PET_JOURNAL_LIST_UPDATE` | 32 | `` | [PetJournalInfo](systems/PetJournalInfo.md) |
 | ✅ | `PET_JOURNAL_NEW_BATTLE_SLOT` |  |  | [PetJournalInfo](systems/PetJournalInfo.md) |
 | ✅ | `PET_JOURNAL_PETS_HEALED` |  |  | [PetJournalInfo](systems/PetJournalInfo.md) |
 | ✅ | `PET_JOURNAL_PET_DELETED` |  |  | [PetJournalInfo](systems/PetJournalInfo.md) |
 | ✅ | `PET_JOURNAL_PET_RESTORED` |  |  | [PetJournalInfo](systems/PetJournalInfo.md) |
 | ✅ | `PET_JOURNAL_PET_REVOKED` |  |  | [PetJournalInfo](systems/PetJournalInfo.md) |
-| ✅ | `PET_JOURNAL_TRAP_LEVEL_SET` | 4 | `n` | [PetJournalInfo](systems/PetJournalInfo.md) |
+| ✅ | `PET_JOURNAL_TRAP_LEVEL_SET` | 12 | `n` | [PetJournalInfo](systems/PetJournalInfo.md) |
 | ✅ | `PET_ORDER_MOVE_TO_PENDING_CHANGED` |  |  | [PetInfo](systems/PetInfo.md) |
 | ✅ | `PET_SPECIALIZATION_CHANGED` |  |  | [SpecializationInfo](systems/SpecializationInfo.md) |
 | ✅ | `PET_STABLE_CLOSED` |  |  | [StableInfo](systems/StableInfo.md) |
@@ -1322,92 +1322,92 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `PHOTO_SHARING_THIRD_PARTY_AUTHORIZATION_NEEDED` |  |  | [PhotoSharingUI](systems/PhotoSharingUI.md) |
 | ✅ | `PING_SYSTEM_ERROR` |  |  | [PingManager](systems/PingManager.md) |
 | ⛔ | `PLAYERBANKBAGSLOTS_CHANGED` |  |  | used in `Blizzard_UIPanels_Game/Vanilla/BankFrame.lua` |
-| ✅ | `PLAYERBANKSLOTS_CHANGED` |  |  | [Bank](systems/Bank.md) |
+| ✅ | `PLAYERBANKSLOTS_CHANGED` | 7 | `n` | [Bank](systems/Bank.md) |
 | ✅ | `PLAYER_ACCOUNT_BANK_TAB_SLOTS_CHANGED` |  |  | [Bank](systems/Bank.md) |
-| ✅ | `PLAYER_ALIVE` | 1 | `` | [DeathInfo](systems/DeathInfo.md) |
+| ✅ | `PLAYER_ALIVE` | 8 | `` | [DeathInfo](systems/DeathInfo.md) |
 | ✅ | `PLAYER_AVG_ITEM_LEVEL_UPDATE` |  |  | [PaperDollInfo](systems/PaperDollInfo.md) |
 | ✅ | `PLAYER_CAMPING` |  |  | [SystemInfo](systems/SystemInfo.md) |
 | ✅ | `PLAYER_CAN_GLIDE_CHANGED` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `PLAYER_CHARACTER_LIST_UPDATED` |  |  | [HousingUI](systems/HousingUI.md) |
 | ✅ | `PLAYER_CHOICE_CLOSE` |  |  | [PlayerChoice](systems/PlayerChoice.md) |
-| ✅ | `PLAYER_CHOICE_UPDATE` | 1 | `` | [PlayerChoice](systems/PlayerChoice.md) |
+| ✅ | `PLAYER_CHOICE_UPDATE` | 9 | `` | [PlayerChoice](systems/PlayerChoice.md) |
 | ✅ | `PLAYER_CONTROL_GAINED` |  |  | [LossOfControl](systems/LossOfControl.md) |
 | ✅ | `PLAYER_CONTROL_LOST` |  |  | [LossOfControl](systems/LossOfControl.md) |
-| ✅ | `PLAYER_DAMAGE_DONE_MODS` | 8 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `PLAYER_DAMAGE_DONE_MODS` | 89 | `s` | [Unit](systems/Unit.md) |
 | ✅ | `PLAYER_DEAD` |  |  | [DeathInfo](systems/DeathInfo.md) |
-| ✅ | `PLAYER_DIFFICULTY_CHANGED` | 20 | `` | [PartyInfo](systems/PartyInfo.md) |
+| ✅ | `PLAYER_DIFFICULTY_CHANGED` | 54 | `` | [PartyInfo](systems/PartyInfo.md) |
 | ✅ | `PLAYER_ENTERING_BATTLEGROUND` |  |  | [PvpInfo](systems/PvpInfo.md) |
-| ✅ | `PLAYER_ENTERING_WORLD` | 4 | `b,b` | [SystemInfo](systems/SystemInfo.md) |
-| ✅ | `PLAYER_ENTER_COMBAT` | 9 | `` | [Unit](systems/Unit.md) |
-| 🆕 | `PLAYER_EQUIPED_SPELLS_CHANGED` | 904 | `n` | used in `Blizzard_ActionBar/WoWLabs/ActionButtonOverrides.lua` |
+| ✅ | `PLAYER_ENTERING_WORLD` | 18 | `b,b` | [SystemInfo](systems/SystemInfo.md) |
+| ✅ | `PLAYER_ENTER_COMBAT` | 26 | `` | [Unit](systems/Unit.md) |
+| 🆕 | `PLAYER_EQUIPED_SPELLS_CHANGED` | 6584 | `n` | used in `Blizzard_ActionBar/WoWLabs/ActionButtonOverrides.lua` |
 | ✅ | `PLAYER_EQUIPMENT_CHANGED` |  |  | [PaperDollInfo](systems/PaperDollInfo.md) |
 | ✅ | `PLAYER_FARSIGHT_FOCUS_CHANGED` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `PLAYER_FLAGS_CHANGED` |  |  | [Unit](systems/Unit.md) |
+| ✅ | `PLAYER_FLAGS_CHANGED` | 7 | `s` | [Unit](systems/Unit.md) |
 | ✅ | `PLAYER_FOCUS_CHANGED` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `PLAYER_GAINS_VEHICLE_DATA` |  |  | [Vehicle](systems/Vehicle.md) |
-| ✅ | `PLAYER_GUILD_UPDATE` | 2 | `s` | [GuildInfo](systems/GuildInfo.md) |
+| ✅ | `PLAYER_GUILD_UPDATE` | 18 | `s` | [GuildInfo](systems/GuildInfo.md) |
 | ✅ | `PLAYER_HOUSE_LIST_UPDATED` |  |  | [HousingUI](systems/HousingUI.md) |
 | ✅ | `PLAYER_IMPULSE_APPLIED` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `PLAYER_INSIDE_QUEST_BLOB_STATE_CHANGED` | 12 | `n,b` | [Minimap](systems/Minimap.md) |
-| ✅ | `PLAYER_INTERACTION_MANAGER_FRAME_HIDE` |  |  | [PlayerInteractionManager](systems/PlayerInteractionManager.md) |
-| ✅ | `PLAYER_INTERACTION_MANAGER_FRAME_SHOW` |  |  | [PlayerInteractionManager](systems/PlayerInteractionManager.md) |
-| ✅ | `PLAYER_IN_COMBAT_CHANGED` | 16 | `b` | [PlayerScript](systems/PlayerScript.md) |
+| ✅ | `PLAYER_INSIDE_QUEST_BLOB_STATE_CHANGED` | 36 | `n,b` | [Minimap](systems/Minimap.md) |
+| ✅ | `PLAYER_INTERACTION_MANAGER_FRAME_HIDE` | 18 | `n` | [PlayerInteractionManager](systems/PlayerInteractionManager.md) |
+| ✅ | `PLAYER_INTERACTION_MANAGER_FRAME_SHOW` | 13 | `n` | [PlayerInteractionManager](systems/PlayerInteractionManager.md) |
+| ✅ | `PLAYER_IN_COMBAT_CHANGED` | 36 | `b` | [PlayerScript](systems/PlayerScript.md) |
 | ✅ | `PLAYER_IS_GLIDING_CHANGED` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `PLAYER_JOINED_PVP_MATCH` |  |  | [PvpInfo](systems/PvpInfo.md) |
 | ✅ | `PLAYER_LEARN_PVP_TALENT_FAILED` |  |  | [SpecializationInfo](systems/SpecializationInfo.md) |
 | ✅ | `PLAYER_LEARN_TALENT_FAILED` |  |  | [SpecializationInfo](systems/SpecializationInfo.md) |
-| ✅ | `PLAYER_LEAVE_COMBAT` | 9 | `` | [Unit](systems/Unit.md) |
-| ✅ | `PLAYER_LEAVING_WORLD` | 4 | `` | [SystemInfo](systems/SystemInfo.md) |
+| ✅ | `PLAYER_LEAVE_COMBAT` | 26 | `` | [Unit](systems/Unit.md) |
+| ✅ | `PLAYER_LEAVING_WORLD` | 18 | `` | [SystemInfo](systems/SystemInfo.md) |
 | ✅ | `PLAYER_LEVEL_CHANGED` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `PLAYER_LEVEL_UP` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `PLAYER_LOGIN` | 4 | `` | [SystemInfo](systems/SystemInfo.md) |
-| ✅ | `PLAYER_LOGOUT` | 4 | `` | [SystemInfo](systems/SystemInfo.md) |
+| ✅ | `PLAYER_LOGIN` | 12 | `` | [SystemInfo](systems/SystemInfo.md) |
+| ✅ | `PLAYER_LOGOUT` | 12 | `` | [SystemInfo](systems/SystemInfo.md) |
 | ✅ | `PLAYER_LOOT_SPEC_UPDATED` |  |  | [Loot](systems/Loot.md) |
 | ✅ | `PLAYER_LOSES_VEHICLE_DATA` |  |  | [Vehicle](systems/Vehicle.md) |
-| ✅ | `PLAYER_MAP_CHANGED` |  |  | [MapUI](systems/MapUI.md) |
+| ✅ | `PLAYER_MAP_CHANGED` | 6 | `n,n` | [MapUI](systems/MapUI.md) |
 | ✅ | `PLAYER_MAX_LEVEL_UPDATE` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `PLAYER_MONEY` |  |  | [CurrencySystem](systems/CurrencySystem.md) |
+| ✅ | `PLAYER_MONEY` | 5 | `` | [CurrencySystem](systems/CurrencySystem.md) |
 | ✅ | `PLAYER_MOUNT_DISPLAY_CHANGED` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `PLAYER_PVP_FLAG_CHANGED` |  |  | [PvpInfo](systems/PvpInfo.md) |
 | ✅ | `PLAYER_PVP_KILLS_CHANGED` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `PLAYER_PVP_RANK_CHANGED` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `PLAYER_PVP_TALENT_UPDATE` | 5 | `` | [SpecializationInfo](systems/SpecializationInfo.md) |
+| ✅ | `PLAYER_PVP_TALENT_UPDATE` | 20 | `` | [SpecializationInfo](systems/SpecializationInfo.md) |
 | ✅ | `PLAYER_QUITING` |  |  | [SystemInfo](systems/SystemInfo.md) |
-| ✅ | `PLAYER_REGEN_DISABLED` | 8 | `` | [Unit](systems/Unit.md) |
-| ✅ | `PLAYER_REGEN_ENABLED` | 8 | `` | [Unit](systems/Unit.md) |
+| ✅ | `PLAYER_REGEN_DISABLED` | 18 | `` | [Unit](systems/Unit.md) |
+| ✅ | `PLAYER_REGEN_ENABLED` | 18 | `` | [Unit](systems/Unit.md) |
 | ✅ | `PLAYER_REPORT_SUBMITTED` |  |  | [GMTicketInfo](systems/GMTicketInfo.md) |
-| ✅ | `PLAYER_ROLES_ASSIGNED` | 5 | `` | [PartyInfo](systems/PartyInfo.md) |
+| ✅ | `PLAYER_ROLES_ASSIGNED` | 31 | `` | [PartyInfo](systems/PartyInfo.md) |
 | ✅ | `PLAYER_SKINNED` |  |  | [DeathInfo](systems/DeathInfo.md) |
-| ✅ | `PLAYER_SOFT_ENEMY_CHANGED` | 18 | `` | [Unit](systems/Unit.md) |
-| ✅ | `PLAYER_SOFT_FRIEND_CHANGED` |  |  | [Unit](systems/Unit.md) |
+| ✅ | `PLAYER_SOFT_ENEMY_CHANGED` | 69 | `` | [Unit](systems/Unit.md) |
+| ✅ | `PLAYER_SOFT_FRIEND_CHANGED` | 27 | `` | [Unit](systems/Unit.md) |
 | ✅ | `PLAYER_SOFT_INTERACT_CHANGED` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `PLAYER_SOFT_TARGET_INTERACTION` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `PLAYER_SPECIALIZATION_CHANGED` | 1 | `s` | [Unit](systems/Unit.md) |
-| ✅ | `PLAYER_STARTED_LOOKING` | 34 | `` | [Unit](systems/Unit.md) |
-| ✅ | `PLAYER_STARTED_MOVING` | 123 | `` | [Unit](systems/Unit.md) |
-| ✅ | `PLAYER_STARTED_TURNING` | 118 | `` | [Unit](systems/Unit.md) |
-| ✅ | `PLAYER_STOPPED_LOOKING` | 34 | `` | [Unit](systems/Unit.md) |
-| ✅ | `PLAYER_STOPPED_MOVING` | 123 | `` | [Unit](systems/Unit.md) |
-| ✅ | `PLAYER_STOPPED_TURNING` | 118 | `` | [Unit](systems/Unit.md) |
-| ✅ | `PLAYER_SWING` | 147 | `n,n` | [SwingTimer](systems/SwingTimer.md) |
+| ✅ | `PLAYER_SPECIALIZATION_CHANGED` | 6 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `PLAYER_STARTED_LOOKING` | 142 | `` | [Unit](systems/Unit.md) |
+| ✅ | `PLAYER_STARTED_MOVING` | 447 | `` | [Unit](systems/Unit.md) |
+| ✅ | `PLAYER_STARTED_TURNING` | 458 | `` | [Unit](systems/Unit.md) |
+| ✅ | `PLAYER_STOPPED_LOOKING` | 142 | `` | [Unit](systems/Unit.md) |
+| ✅ | `PLAYER_STOPPED_MOVING` | 447 | `` | [Unit](systems/Unit.md) |
+| ✅ | `PLAYER_STOPPED_TURNING` | 458 | `` | [Unit](systems/Unit.md) |
+| ✅ | `PLAYER_SWING` | 305 | `n,n` | [SwingTimer](systems/SwingTimer.md) |
 | ✅ | `PLAYER_SWING_RANGE_UPDATE` |  |  | [SwingTimer](systems/SwingTimer.md) |
-| ✅ | `PLAYER_TALENT_UPDATE` | 5 | `` | [SpecializationInfo](systems/SpecializationInfo.md) |
-| ✅ | `PLAYER_TARGET_CHANGED` | 51 | `` | [Unit](systems/Unit.md) |
-| ✅ | `PLAYER_TARGET_DIED` | 8 | `` | [PlayerScript](systems/PlayerScript.md) |
+| ✅ | `PLAYER_TALENT_UPDATE` | 20 | `` | [SpecializationInfo](systems/SpecializationInfo.md) |
+| ✅ | `PLAYER_TARGET_CHANGED` | 140 | `` | [Unit](systems/Unit.md) |
+| ✅ | `PLAYER_TARGET_DIED` | 18 | `` | [PlayerScript](systems/PlayerScript.md) |
 | ✅ | `PLAYER_TOTEM_UPDATE` |  |  | [SpellBook](systems/SpellBook.md) |
 | ✅ | `PLAYER_TRADE_CURRENCY` |  |  | [TradeInfo](systems/TradeInfo.md) |
 | ✅ | `PLAYER_TRADE_MONEY` |  |  | [TradeInfo](systems/TradeInfo.md) |
 | ✅ | `PLAYER_TRIAL_XP_UPDATE` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `PLAYER_UNGHOST` |  |  | [DeathInfo](systems/DeathInfo.md) |
 | ✅ | `PLAYER_UPDATE_RESTING` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `PLAYER_XP_UPDATE` | 13 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `PLAYER_XP_UPDATE` | 27 | `s` | [Unit](systems/Unit.md) |
 | 🆕 | `PLAYTIME_CHANGED` |  |  | used in `Blizzard_UnitFrame/Mainline/PlayerFrame.lua` |
 | ✅ | `PLAY_MOVIE` |  |  | [Cinematic](systems/Cinematic.md) |
 | ⛔ | `POINT` |  |  | used in `Blizzard_ChatFrameBase/Mainline/ChatEmoteConstants.lua` |
-| ✅ | `PORTRAITS_UPDATED` | 3 | `` | [Unit](systems/Unit.md) |
+| ✅ | `PORTRAITS_UPDATED` | 31 | `` | [Unit](systems/Unit.md) |
 | ✅ | `POST_MATCH_CURRENCY_REWARD_UPDATE` |  |  | [PvpInfo](systems/PvpInfo.md) |
 | ✅ | `POST_MATCH_ITEM_REWARD_UPDATE` |  |  | [PvpInfo](systems/PvpInfo.md) |
-| 🆕 | `PREFERRED_PLAY_SETTINGS_UPDATED` | 4 | `n,n,n,n,n` | used in `Blizzard_Settings_Shared/Blizzard_Settings_PreferredPlaySettings.lua` |
+| 🆕 | `PREFERRED_PLAY_SETTINGS_UPDATED` | 12 | `n,n,n,n,n` | used in `Blizzard_Settings_Shared/Blizzard_Settings_PreferredPlaySettings.lua` |
 | ⛔ | `PRIEST` |  |  | used in `Blizzard_FrameXMLBase/Camelot/Constants.lua` |
 | 🆕 | `PRODUCT_ASSIGN_TO_TARGET_FAILED` |  |  | used in `Blizzard_GlueXML/Mainline/CharacterSelect.lua` |
 | 🆕 | `PRODUCT_DISTRIBUTIONS_UPDATED` |  |  | used in `Blizzard_ClassTrialSecure/Blizzard_ClassTrialSecure.lua` |
@@ -1430,7 +1430,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `PURCHASE_PLOT_RESULT` |  |  | [HousingNeighborhoodUI](systems/HousingNeighborhoodUI.md) |
 | ✅ | `PVPQUEUE_ANYWHERE_SHOW` |  |  | [PvpInfo](systems/PvpInfo.md) |
 | ✅ | `PVPQUEUE_ANYWHERE_UPDATE_AVAILABLE` |  |  | [PvpInfo](systems/PvpInfo.md) |
-| ✅ | `PVP_BRAWL_INFO_UPDATED` | 4 | `` | [PvpInfo](systems/PvpInfo.md) |
+| ✅ | `PVP_BRAWL_INFO_UPDATED` | 18 | `` | [PvpInfo](systems/PvpInfo.md) |
 | ✅ | `PVP_MATCH_ACTIVE` |  |  | [PvpInfo](systems/PvpInfo.md) |
 | ✅ | `PVP_MATCH_COMPLETE` |  |  | [PvpInfo](systems/PvpInfo.md) |
 | ✅ | `PVP_MATCH_INACTIVE` |  |  | [PvpInfo](systems/PvpInfo.md) |
@@ -1441,46 +1441,46 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `PVP_ROLE_POPUP_HIDE` |  |  | [PvpInfo](systems/PvpInfo.md) |
 | ✅ | `PVP_ROLE_POPUP_SHOW` |  |  | [PvpInfo](systems/PvpInfo.md) |
 | ✅ | `PVP_ROLE_UPDATE` |  |  | [PvpInfo](systems/PvpInfo.md) |
-| ✅ | `PVP_SPECIAL_EVENT_INFO_UPDATED` | 4 | `` | [PvpInfo](systems/PvpInfo.md) |
-| ✅ | `PVP_TIMER_UPDATE` | 1 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `PVP_SPECIAL_EVENT_INFO_UPDATED` | 18 | `` | [PvpInfo](systems/PvpInfo.md) |
+| ✅ | `PVP_TIMER_UPDATE` | 8 | `s` | [Unit](systems/Unit.md) |
 | ✅ | `PVP_TYPES_ENABLED` |  |  | [PvpInfo](systems/PvpInfo.md) |
 | ✅ | `PVP_VEHICLE_INFO_UPDATED` |  |  | [PvpInfo](systems/PvpInfo.md) |
 | ✅ | `PVP_WORLDSTATE_UPDATE` |  |  | [PvpInfo](systems/PvpInfo.md) |
-| ✅ | `QUESTLINE_UPDATE` |  |  | [QuestLog](systems/QuestLog.md) |
+| ✅ | `QUESTLINE_UPDATE` | 7 | `b` | [QuestLog](systems/QuestLog.md) |
 | ✅ | `QUEST_ACCEPTED` |  |  | [QuestLog](systems/QuestLog.md) |
 | ✅ | `QUEST_ACCEPT_CONFIRM` |  |  | [QuestOffer](systems/QuestOffer.md) |
 | ✅ | `QUEST_AUTOCOMPLETE` |  |  | [QuestLog](systems/QuestLog.md) |
 | ✅ | `QUEST_BOSS_EMOTE` |  |  | [ChatInfo](systems/ChatInfo.md) |
 | ✅ | `QUEST_COMPLETE` |  |  | [QuestLog](systems/QuestLog.md) |
 | ✅ | `QUEST_CURRENCY_LOOT_RECEIVED` |  |  | [Loot](systems/Loot.md) |
-| ✅ | `QUEST_DATA_LOAD_RESULT` | 96 | `n,b` | [QuestLog](systems/QuestLog.md) |
+| ✅ | `QUEST_DATA_LOAD_RESULT` | 292 | `n,b` | [QuestLog](systems/QuestLog.md) |
 | ✅ | `QUEST_DETAIL` |  |  | [QuestLog](systems/QuestLog.md) |
 | ✅ | `QUEST_FINISHED` |  |  | [QuestOffer](systems/QuestOffer.md) |
 | ✅ | `QUEST_GREETING` |  |  | [QuestOffer](systems/QuestOffer.md) |
 | ✅ | `QUEST_ITEM_UPDATE` |  |  | [QuestOffer](systems/QuestOffer.md) |
 | ✅ | `QUEST_LOG_CRITERIA_UPDATE` |  |  | [QuestLog](systems/QuestLog.md) |
-| ✅ | `QUEST_LOG_UPDATE` | 9 | `` | [QuestLog](systems/QuestLog.md) |
+| ✅ | `QUEST_LOG_UPDATE` | 53 | `` | [QuestLog](systems/QuestLog.md) |
 | ✅ | `QUEST_LOOT_RECEIVED` |  |  | [Loot](systems/Loot.md) |
-| ✅ | `QUEST_POI_UPDATE` | 1 | `` | [QuestLog](systems/QuestLog.md) |
+| ✅ | `QUEST_POI_UPDATE` | 2 | `` | [QuestLog](systems/QuestLog.md) |
 | ✅ | `QUEST_PROGRESS` |  |  | [QuestOffer](systems/QuestOffer.md) |
 | ✅ | `QUEST_REMOVED` |  |  | [QuestLog](systems/QuestLog.md) |
 | ✅ | `QUEST_SESSION_CREATED` |  |  | [QuestSession](systems/QuestSession.md) |
 | ✅ | `QUEST_SESSION_DESTROYED` |  |  | [QuestSession](systems/QuestSession.md) |
-| ✅ | `QUEST_SESSION_ENABLED_STATE_CHANGED` | 1 | `b` | [QuestSession](systems/QuestSession.md) |
+| ✅ | `QUEST_SESSION_ENABLED_STATE_CHANGED` | 2 | `b` | [QuestSession](systems/QuestSession.md) |
 | ✅ | `QUEST_SESSION_JOINED` |  |  | [QuestSession](systems/QuestSession.md) |
 | ✅ | `QUEST_SESSION_LEFT` |  |  | [QuestSession](systems/QuestSession.md) |
 | ✅ | `QUEST_SESSION_MEMBER_CONFIRM` |  |  | [QuestSession](systems/QuestSession.md) |
 | ✅ | `QUEST_SESSION_MEMBER_START_RESPONSE` |  |  | [QuestSession](systems/QuestSession.md) |
 | ✅ | `QUEST_SESSION_NOTIFICATION` |  |  | [QuestSession](systems/QuestSession.md) |
 | ✅ | `QUEST_TURNED_IN` |  |  | [QuestLog](systems/QuestLog.md) |
-| ✅ | `QUEST_WATCH_LIST_CHANGED` | 5 | `-,-` | [QuestLog](systems/QuestLog.md) |
+| ✅ | `QUEST_WATCH_LIST_CHANGED` | 22 | `-,-` | [QuestLog](systems/QuestLog.md) |
 | ✅ | `QUEST_WATCH_UPDATE` | 1 | `n` | [QuestLog](systems/QuestLog.md) |
 | ✅ | `QUICK_TICKET_SYSTEM_STATUS` |  |  | [GMTicketInfo](systems/GMTicketInfo.md) |
-| ✅ | `QUICK_TICKET_THROTTLE_CHANGED` | 1 | `` | [GMTicketInfo](systems/GMTicketInfo.md) |
+| ✅ | `QUICK_TICKET_THROTTLE_CHANGED` | 2 | `` | [GMTicketInfo](systems/GMTicketInfo.md) |
 | 🆕 | `RACE_FACTION_CHANGE_RESULT` |  |  | used in `Blizzard_CharacterCreate/Camelot/Blizzard_CharacterCreate.lua` |
 | 🆕 | `RACE_FACTION_CHANGE_STARTED` |  |  | used in `Blizzard_CharacterCreate/Camelot/Blizzard_CharacterCreate.lua` |
 | ✅ | `RAF_ENTITLEMENT_DELIVERED` |  |  | [WowEntitlementInfo](systems/WowEntitlementInfo.md) |
-| ✅ | `RAF_INFO_UPDATED` | 1 | `t` | [RecruitAFriend](systems/RecruitAFriend.md) |
+| ✅ | `RAF_INFO_UPDATED` | 2 | `t` | [RecruitAFriend](systems/RecruitAFriend.md) |
 | ✅ | `RAF_RECRUITING_ENABLED_STATUS` |  |  | [RecruitAFriend](systems/RecruitAFriend.md) |
 | ✅ | `RAF_REWARD_CLAIM_FAILED` |  |  | [RecruitAFriend](systems/RecruitAFriend.md) |
 | ✅ | `RAF_SYSTEM_ENABLED_STATUS` |  |  | [RecruitAFriend](systems/RecruitAFriend.md) |
@@ -1491,7 +1491,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ⛔ | `RAID_LEADER` |  |  | used in `Blizzard_ChatFrame/Mainline/TextToSpeechFrameConstants.lua` |
 | ⛔ | `RAID_LOCKED` |  |  | used in `Blizzard_GroupFinder/Shared/LFGFrame.lua` |
 | ✅ | `RAID_ROSTER_UPDATE` |  |  | [PartyInfo](systems/PartyInfo.md) |
-| ✅ | `RAID_TARGET_UPDATE` | 3 | `` | [EncounterInfo](systems/EncounterInfo.md) |
+| ✅ | `RAID_TARGET_UPDATE` | 11 | `` | [EncounterInfo](systems/EncounterInfo.md) |
 | ⛔ | `RAID_WARNING` |  |  | used in `Blizzard_ChatFrame/Mainline/TextToSpeechFrameConstants.lua` |
 | ✅ | `RAISED_AS_GHOUL` |  |  | [PetInfo](systems/PetInfo.md) |
 | 🆕 | `RANDOM_CHARACTER_NAME_RESULT` |  |  | used in `Blizzard_CharacterCreate/Camelot/Blizzard_CharacterCreate.lua` |
@@ -1500,13 +1500,13 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `READY_CHECK_FINISHED` |  |  | [PartyInfo](systems/PartyInfo.md) |
 | 🆕 | `REALM_HIDDEN_INFO_UPDATE` |  |  | used in `Blizzard_GlueXML/Mainline/CharacterSelect.lua` |
 | 🆕 | `REALM_LIST_UPDATED` |  |  | used in `Blizzard_GlueXML/Mainline/RealmList.lua` |
-| ✅ | `RECEIVED_ACHIEVEMENT_LIST` | 2 | `` | [AchievementInfo](systems/AchievementInfo.md) |
+| ✅ | `RECEIVED_ACHIEVEMENT_LIST` | 4 | `` | [AchievementInfo](systems/AchievementInfo.md) |
 | ✅ | `RECEIVED_ACHIEVEMENT_MEMBER_LIST` |  |  | [AchievementInfo](systems/AchievementInfo.md) |
 | ✅ | `RECEIVED_HOUSE_LEVEL_REWARDS` |  |  | [HousingUI](systems/HousingUI.md) |
-| ✅ | `RECENT_ALLIES_CACHE_UPDATE` | 3 | `` | [RecentAllies](systems/RecentAllies.md) |
-| ✅ | `RECENT_ALLIES_DATA_READY` | 1 | `` | [RecentAllies](systems/RecentAllies.md) |
+| ✅ | `RECENT_ALLIES_CACHE_UPDATE` | 6 | `` | [RecentAllies](systems/RecentAllies.md) |
+| ✅ | `RECENT_ALLIES_DATA_READY` | 2 | `` | [RecentAllies](systems/RecentAllies.md) |
 | ✅ | `RECENT_ALLIES_SYSTEM_STATUS_UPDATED` |  |  | [RecentAllies](systems/RecentAllies.md) |
-| ✅ | `RECENT_ALLY_DATA_UPDATED` | 45 | `s` | [RecentAllies](systems/RecentAllies.md) |
+| ✅ | `RECENT_ALLY_DATA_UPDATED` | 89 | `s` | [RecentAllies](systems/RecentAllies.md) |
 | ✅ | `REJECTED_MATCHMAKING_PARTY_INVITE` |  |  | [FriendList](systems/FriendList.md) |
 | ✅ | `REMIX_ARTIFACT_ITEM_SPECS_LOADED` |  |  | [RemixArtifactUI](systems/RemixArtifactUI.md) |
 | ✅ | `REMIX_ARTIFACT_UPDATE` |  |  | [RemixArtifactUI](systems/RemixArtifactUI.md) |
@@ -1518,7 +1518,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `REPORT_PLAYER_RESULT` |  |  | [ReportSystem](systems/ReportSystem.md) |
 | ✅ | `REPORT_SCREENSHOT_READY` |  |  | [ReportSystem](systems/ReportSystem.md) |
 | ✅ | `REQUESTED_GUILD_RENAME_RESULT` |  |  | [GuildInfo](systems/GuildInfo.md) |
-| ✅ | `REQUEST_CEMETERY_LIST_RESPONSE` | 1 | `b` | [DeathInfo](systems/DeathInfo.md) |
+| ✅ | `REQUEST_CEMETERY_LIST_RESPONSE` | 8 | `b` | [DeathInfo](systems/DeathInfo.md) |
 | ⛔ | `REQUEST_INVITE` |  |  | used in `Blizzard_FriendsFrame/Mainline/FriendsListUtil.lua` |
 | ✅ | `REQUEST_INVITE_CONFIRMATION` |  |  | [PartyInfo](systems/PartyInfo.md) |
 | ⛔ | `REQUEST_INVITE_CROSS_FACTION` |  |  | used in `Blizzard_FriendsFrame/Mainline/FriendsListUtil.lua` |
@@ -1529,7 +1529,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `RESURRECT_REQUEST` |  |  | [DeathInfo](systems/DeathInfo.md) |
 | ⛔ | `REVEAL_CAPTURE_TOGGLED` |  |  | used in `Blizzard_Console/Blizzard_Console.lua` |
 | ⛔ | `ROGUE` |  |  | used in `Blizzard_FrameXMLBase/Camelot/Constants.lua` |
-| ✅ | `ROLE_CHANGED_INFORM` | 1 | `s,s,s,s` | [UnitRole](systems/UnitRole.md) |
+| ✅ | `ROLE_CHANGED_INFORM` | 2 | `s,s,s,s` | [UnitRole](systems/UnitRole.md) |
 | ✅ | `ROLE_POLL_BEGIN` |  |  | [UnitRole](systems/UnitRole.md) |
 | ✅ | `RUNEFORGE_LEGENDARY_CRAFTING_CLOSED` |  |  | [LegendaryCrafting](systems/LegendaryCrafting.md) |
 | ✅ | `RUNEFORGE_LEGENDARY_CRAFTING_OPENED` |  |  | [LegendaryCrafting](systems/LegendaryCrafting.md) |
@@ -1545,7 +1545,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `SCENARIO_CRITERIA_UPDATE` |  |  | [ScenarioInfo](systems/ScenarioInfo.md) |
 | ✅ | `SCENARIO_POI_UPDATE` |  |  | [ScenarioInfo](systems/ScenarioInfo.md) |
 | ✅ | `SCENARIO_SPELL_UPDATE` |  |  | [ScenarioInfo](systems/ScenarioInfo.md) |
-| ✅ | `SCENARIO_UPDATE` |  |  | [ScenarioInfo](systems/ScenarioInfo.md) |
+| ✅ | `SCENARIO_UPDATE` | 1 | `-` | [ScenarioInfo](systems/ScenarioInfo.md) |
 | ✅ | `SCRAPPING_MACHINE_ITEM_ADDED` |  |  | [ScrappingMachineUI](systems/ScrappingMachineUI.md) |
 | ✅ | `SCRAPPING_MACHINE_ITEM_REMOVED` |  |  | [ScrappingMachineUI](systems/ScrappingMachineUI.md) |
 | ✅ | `SCRAPPING_MACHINE_PENDING_ITEM_CHANGED` |  |  | [ScrappingMachineUI](systems/ScrappingMachineUI.md) |
@@ -1556,7 +1556,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | 🆕 | `SCREEN_FIRST_DISPLAYED` |  |  | used in `Blizzard_GlueXML/Mainline/AccountLogin.lua` |
 | ✅ | `SCRIPTED_ANIMATIONS_UPDATE` |  |  | [ScriptedAnimations](systems/ScriptedAnimations.md) |
 | ✅ | `SEARCH_DB_LOADED` |  |  | [SystemInfo](systems/SystemInfo.md) |
-| ✅ | `SECURE_TRANSFER_CANCEL` | 12 | `` | [SecureTransfer](systems/SecureTransfer.md) |
+| ✅ | `SECURE_TRANSFER_CANCEL` | 34 | `` | [SecureTransfer](systems/SecureTransfer.md) |
 | ✅ | `SECURE_TRANSFER_CONFIRM_HOUSING_PURCHASE` |  |  | [SecureTransfer](systems/SecureTransfer.md) |
 | ✅ | `SECURE_TRANSFER_CONFIRM_SEND_MAIL` |  |  | [SecureTransfer](systems/SecureTransfer.md) |
 | ✅ | `SECURE_TRANSFER_CONFIRM_TAKE_MAIL_MONEY` |  |  | [SecureTransfer](systems/SecureTransfer.md) |
@@ -1569,12 +1569,12 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `SEND_MAIL_MONEY_CHANGED` |  |  | [MailInfo](systems/MailInfo.md) |
 | 🆕 | `SESSION_TIME_ALERT` |  |  | used in `Blizzard_BNet/Mainline/BNet.lua` |
 | ✅ | `SETTINGS_HEADER_TEXT_UPDATE` |  |  | [GameRules](systems/GameRules.md) |
-| ✅ | `SETTINGS_LOADED` | 4 | `` | [SettingsUtil](systems/SettingsUtil.md) |
-| ✅ | `SETTINGS_PANEL_OPEN` |  |  | [SettingsUtil](systems/SettingsUtil.md) |
+| ✅ | `SETTINGS_LOADED` | 12 | `` | [SettingsUtil](systems/SettingsUtil.md) |
+| ✅ | `SETTINGS_PANEL_OPEN` | 1 | `n,-` | [SettingsUtil](systems/SettingsUtil.md) |
 | ⛔ | `SET_COMMUNITY_MEMBER_NOTE` |  |  | used in `Blizzard_Communities/CommunitiesFrame.lua` |
 | ✅ | `SET_SEEN_PRODUCTS` |  |  | [CatalogShop](systems/CatalogShop.md) |
 | ⛔ | `SHAMAN` |  |  | used in `Blizzard_FrameXMLBase/Camelot/Constants.lua` |
-| ✅ | `SHARD_TRANSFER` |  |  | [SystemInfo](systems/SystemInfo.md) |
+| ✅ | `SHARD_TRANSFER` | 1 | `` | [SystemInfo](systems/SystemInfo.md) |
 | ✅ | `SHARD_TRANSFER_CANCELLED` |  |  | [SystemInfo](systems/SystemInfo.md) |
 | ✅ | `SHARD_TRANSFER_IMMINENT` |  |  | [SystemInfo](systems/SystemInfo.md) |
 | ✅ | `SHIPMENT_CRAFTER_CLOSED` |  |  | [GarrisonInfo](systems/GarrisonInfo.md) |
@@ -1608,21 +1608,21 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `SIMPLE_BROWSER_WEB_ERROR` |  |  | [Browser](systems/Browser.md) |
 | ✅ | `SIMPLE_BROWSER_WEB_PROXY_FAILED` |  |  | [Browser](systems/Browser.md) |
 | ✅ | `SIMPLE_CHECKOUT_CLOSED` |  |  | [Browser](systems/Browser.md) |
-| ✅ | `SKILL_LINES_CHANGED` | 7 | `` | [SkillInfo](systems/SkillInfo.md) |
+| ✅ | `SKILL_LINES_CHANGED` | 23 | `` | [SkillInfo](systems/SkillInfo.md) |
 | ✅ | `SKILL_LINE_SPECS_RANKS_CHANGED` |  |  | [ProfessionSpecUI](systems/ProfessionSpecUI.md) |
 | ✅ | `SKILL_LINE_SPECS_UNLOCKED` |  |  | [ProfessionSpecUI](systems/ProfessionSpecUI.md) |
 | ⛔ | `SLEEP` |  |  | used in `Blizzard_ChatFrameBase/Mainline/ChatEmoteConstants.lua` |
 | 🆕 | `SOCIAL_CONTRACT_STATUS_UPDATE` |  |  | used in `Blizzard_GlueXML/Mainline/CharacterSelect.lua` |
 | ⛔ | `SOCIAL_ENABLE_DISCORD_FUNCTIONALITY` |  |  | used in `Blizzard_Settings_Shared/Mainline/NewDefinitions.lua` |
-| ✅ | `SOCIAL_QUEUE_CONFIG_UPDATED` | 1 | `` | [SocialQueue](systems/SocialQueue.md) |
-| ✅ | `SOCIAL_QUEUE_UPDATE` | 5 | `s,-` / `s,n` | [SocialQueue](systems/SocialQueue.md) |
+| ✅ | `SOCIAL_QUEUE_CONFIG_UPDATED` | 2 | `` | [SocialQueue](systems/SocialQueue.md) |
+| ✅ | `SOCIAL_QUEUE_UPDATE` | 23 | `s,-` / `s,n` | [SocialQueue](systems/SocialQueue.md) |
 | ✅ | `SOCIAL_UI_FRIENDS_LIST_SYSTEM_STATUS_UPDATED` |  |  | [FriendList](systems/FriendList.md) |
 | ✅ | `SOCIAL_UI_RAID_LIST_SYSTEM_STATUS_UPDATED` |  |  | [PartyInfoSystemStatus](systems/PartyInfoSystemStatus.md) |
 | ✅ | `SOCIAL_UI_SOCIAL_QUEUE_SYSTEM_STATUS_UPDATED` |  |  | [SocialQueueSystemStatus](systems/SocialQueueSystemStatus.md) |
 | ✅ | `SOCIAL_UI_SYSTEM_STATUS_UPDATED` |  |  | [SocialUI](systems/SocialUI.md) |
 | ✅ | `SOCKET_INFO_ACCEPT` |  |  | [ItemSocketInfo](systems/ItemSocketInfo.md) |
 | ✅ | `SOCKET_INFO_BIND_CONFIRM` |  |  | [ItemSocketInfo](systems/ItemSocketInfo.md) |
-| ✅ | `SOCKET_INFO_CLOSE` | 4 | `` | [ItemSocketInfo](systems/ItemSocketInfo.md) |
+| ✅ | `SOCKET_INFO_CLOSE` | 18 | `` | [ItemSocketInfo](systems/ItemSocketInfo.md) |
 | ✅ | `SOCKET_INFO_FAILURE` |  |  | [ItemSocketInfo](systems/ItemSocketInfo.md) |
 | ✅ | `SOCKET_INFO_REFUNDABLE_CONFIRM` |  |  | [ItemSocketInfo](systems/ItemSocketInfo.md) |
 | ✅ | `SOCKET_INFO_SUCCESS` |  |  | [ItemSocketInfo](systems/ItemSocketInfo.md) |
@@ -1649,25 +1649,25 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | 🆕 | `SPECTATE_TARGET_INFO_UPDATED` |  |  | used in `Blizzard_SpectateFrame/SpectateFrame.lua` |
 | ✅ | `SPEC_INVOLUNTARILY_CHANGED` |  |  | [SpecializationInfo](systems/SpecializationInfo.md) |
 | ✅ | `SPEED_UPDATE` |  |  | [PaperDollInfo](systems/PaperDollInfo.md) |
-| ✅ | `SPELLS_CHANGED` | 8 | `` | [SpellBook](systems/SpellBook.md) |
+| ✅ | `SPELLS_CHANGED` | 40 | `` | [SpellBook](systems/SpellBook.md) |
 | ✅ | `SPELL_ACTIVATION_OVERLAY_GLOW_HIDE` |  |  | [SpellActivationOverlay](systems/SpellActivationOverlay.md) |
 | ✅ | `SPELL_ACTIVATION_OVERLAY_GLOW_SHOW` |  |  | [SpellActivationOverlay](systems/SpellActivationOverlay.md) |
-| ✅ | `SPELL_ACTIVATION_OVERLAY_HIDE` | 285 | `-` | [SpellActivationOverlay](systems/SpellActivationOverlay.md) |
+| ✅ | `SPELL_ACTIVATION_OVERLAY_HIDE` | 4350 | `-` | [SpellActivationOverlay](systems/SpellActivationOverlay.md) |
 | ✅ | `SPELL_ACTIVATION_OVERLAY_SHOW` |  |  | [SpellActivationOverlay](systems/SpellActivationOverlay.md) |
 | ✅ | `SPELL_CONFIRMATION_PROMPT` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `SPELL_CONFIRMATION_TIMEOUT` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `SPELL_DATA_LOAD_RESULT` | 193 | `n,b` | [Spell](systems/Spell.md) |
-| ✅ | `SPELL_FLYOUT_UPDATE` | 4 | `n,n,b` | [SpellBook](systems/SpellBook.md) |
+| ✅ | `SPELL_DATA_LOAD_RESULT` | 417 | `n,b` | [Spell](systems/Spell.md) |
+| ✅ | `SPELL_FLYOUT_UPDATE` | 32 | `n,n,b` | [SpellBook](systems/SpellBook.md) |
 | ✅ | `SPELL_POWER_CHANGED` |  |  | [PaperDollInfo](systems/PaperDollInfo.md) |
 | ✅ | `SPELL_PUSHED_TO_ACTIONBAR` |  |  | [SpellBook](systems/SpellBook.md) |
 | ✅ | `SPELL_PUSHED_TO_FLYOUT_ON_ACTIONBAR` |  |  | [SpellBook](systems/SpellBook.md) |
 | ✅ | `SPELL_RANGE_CHECK_UPDATE` |  |  | [Spell](systems/Spell.md) |
 | 🆕 | `SPELL_SCRIPT_ERROR` |  |  | used in `Blizzard_Console/Blizzard_Console.lua` |
 | ✅ | `SPELL_TEXT_UPDATE` |  |  | [Spell](systems/Spell.md) |
-| ✅ | `SPELL_UPDATE_CHARGES` | 1 | `` | [SpellBook](systems/SpellBook.md) |
-| ✅ | `SPELL_UPDATE_COOLDOWN` | 232 | `-,-,-,-,-` / `n,-,-,-,-` / `n,-,n,n,-` | [SpellBook](systems/SpellBook.md) |
-| ✅ | `SPELL_UPDATE_ICON` | 3 | `n` | [SpellBook](systems/SpellBook.md) |
-| ✅ | `SPELL_UPDATE_USABLE` | 2291 | `` | [SpellBook](systems/SpellBook.md) |
+| ✅ | `SPELL_UPDATE_CHARGES` | 17 | `` | [SpellBook](systems/SpellBook.md) |
+| ✅ | `SPELL_UPDATE_COOLDOWN` | 628 | `-,-,-,-,-` / `n,-,-,-,-` / `n,-,n,n,-` / `n,-,n,n,n` | [SpellBook](systems/SpellBook.md) |
+| ✅ | `SPELL_UPDATE_ICON` | 21 | `n` | [SpellBook](systems/SpellBook.md) |
+| ✅ | `SPELL_UPDATE_USABLE` | 8072 | `` | [SpellBook](systems/SpellBook.md) |
 | ✅ | `SPELL_UPDATE_USES` |  |  | [SpellBook](systems/SpellBook.md) |
 | ⛔ | `STAND` |  |  | used in `Blizzard_ChatFrameBase/Mainline/ChatEmoteConstants.lua` |
 | ✅ | `STARTER_BUILD_ACTIVATION_FAILED` |  |  | [ClassTalents](systems/ClassTalents.md) |
@@ -1688,15 +1688,15 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | 🆕 | `STORE_ORDER_INITIATION_FAILED` |  |  | used in `Blizzard_StoreUI/Blizzard_Shared_StoreUISecure.lua` |
 | 🆕 | `STORE_PRODUCTS_UPDATED` |  |  | used in `Blizzard_GlueXML/Mainline/CharacterSelect.lua` |
 | 🆕 | `STORE_PURCHASE_ERROR` |  |  | used in `Blizzard_CatalogShop/Blizzard_CatalogShop.lua` |
-| 🆕 | `STORE_PURCHASE_LIST_UPDATED` | 4 | `` | used in `Blizzard_StoreUI/Blizzard_Shared_StoreUISecure.lua` |
+| 🆕 | `STORE_PURCHASE_LIST_UPDATED` | 12 | `` | used in `Blizzard_StoreUI/Blizzard_Shared_StoreUISecure.lua` |
 | 🆕 | `STORE_REFRESH` |  |  | used in `Blizzard_StoreUI/Blizzard_Shared_StoreUISecure.lua` |
-| 🆕 | `STORE_STATUS_CHANGED` | 1 | `` | used in `Blizzard_GameMenu/Shared/GameMenuFrame.lua` |
+| 🆕 | `STORE_STATUS_CHANGED` | 2 | `` | used in `Blizzard_GameMenu/Shared/GameMenuFrame.lua` |
 | 🆕 | `STORE_VAS_PURCHASE_COMPLETE` |  |  | used in `Blizzard_StoreUI/Blizzard_Shared_StoreUISecure.lua` |
 | 🆕 | `STORE_VAS_PURCHASE_ERROR` |  |  | used in `Blizzard_CharacterCreate/Camelot/Blizzard_CharacterCreate.lua` |
 | ⛔ | `STRAFELEFT` |  |  | used in `Blizzard_NewPlayerExperience/Blizzard_TutorialKeyboardMouseFrame.lua` |
 | ⛔ | `STRAFERIGHT` |  |  | used in `Blizzard_NewPlayerExperience/Blizzard_TutorialKeyboardMouseFrame.lua` |
 | ✅ | `STREAMING_ICON` |  |  | [SystemInfo](systems/SystemInfo.md) |
-| ✅ | `STREAM_VIEW_MARKER_UPDATED` | 1 | `n,n,n` | [Club](systems/Club.md) |
+| ✅ | `STREAM_VIEW_MARKER_UPDATED` | 23 | `n,n,-` / `n,n,n` | [Club](systems/Club.md) |
 | ✅ | `STURDINESS_UPDATE` |  |  | [PaperDollInfo](systems/PaperDollInfo.md) |
 | 🆕 | `SUBSCRIPTION_CHANGED_KICK_IMMINENT` |  |  | used in `Blizzard_GlueParent/Mainline/GlueParent.lua` |
 | 🆕 | `SUBSCRIPTION_INTERSTITIAL_AVAILABLE` |  |  | used in `Blizzard_GlueXML/Mainline/CharacterSelect.lua` |
@@ -1707,18 +1707,18 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `SYSMSG` |  |  | [SystemInfo](systems/SystemInfo.md) |
 | ⛔ | `SYSTEM` |  |  | used in `Blizzard_ChatFrame/Mainline/TextToSpeechFrameConstants.lua` |
 | ✅ | `SYSTEM_VISIBILITY_CHANGED` |  |  | [UISystemVisibilityManager](systems/UISystemVisibilityManager.md) |
-| ✅ | `TABARD_CANSAVE_CHANGED` | 1 | `` | [GuildInfo](systems/GuildInfo.md) |
+| ✅ | `TABARD_CANSAVE_CHANGED` | 8 | `` | [GuildInfo](systems/GuildInfo.md) |
 | ✅ | `TABARD_SAVE_PENDING` |  |  | [GuildInfo](systems/GuildInfo.md) |
 | ✅ | `TALENTS_INVOLUNTARILY_RESET` |  |  | [SpecializationInfo](systems/SpecializationInfo.md) |
 | ✅ | `TALKINGHEAD_CLOSE` |  |  | [TalkingHead](systems/TalkingHead.md) |
 | ✅ | `TALKINGHEAD_REQUESTED` |  |  | [TalkingHead](systems/TalkingHead.md) |
 | ✅ | `TASK_PROGRESS_UPDATE` |  |  | [QuestLog](systems/QuestLog.md) |
-| ✅ | `TAXIMAP_CLOSED` | 4 | `` | [TaxiMap](systems/TaxiMap.md) |
+| ✅ | `TAXIMAP_CLOSED` | 18 | `` | [TaxiMap](systems/TaxiMap.md) |
 | ✅ | `TAXIMAP_OPENED` |  |  | [TaxiMap](systems/TaxiMap.md) |
 | ✅ | `TAXI_NODE_STATUS_CHANGED` |  |  | [TaxiMap](systems/TaxiMap.md) |
 | ⛔ | `THANK` |  |  | used in `Blizzard_ChatFrameBase/Mainline/ChatEmoteConstants.lua` |
 | 🆕 | `TIMERUNNING_SEASON_UPDATE` |  |  | used in `Blizzard_GlueXML/Mainline/CharacterSelect.lua` |
-| ✅ | `TIME_PLAYED_MSG` | 4 | `n,n` | [SystemInfo](systems/SystemInfo.md) |
+| ✅ | `TIME_PLAYED_MSG` | 12 | `n,n` | [SystemInfo](systems/SystemInfo.md) |
 | ⛔ | `TOGGLEPINGTARGET` |  |  | used in `Blizzard_Settings_Shared/Mainline/NewDefinitions.lua` |
 | ✅ | `TOGGLE_CONSOLE` |  |  | [Console](systems/Console.md) |
 | 🆕 | `TOGGLE_FRAMESTACK` |  |  | used in `Blizzard_FrameStack/FrameStack.lua` |
@@ -1738,10 +1738,10 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `TOKEN_SELL_CONFIRMED` |  |  | [WowTokenUI](systems/WowTokenUI.md) |
 | ✅ | `TOKEN_SELL_CONFIRM_REQUIRED` |  |  | [WowTokenUI](systems/WowTokenUI.md) |
 | ✅ | `TOKEN_SELL_RESULT` |  |  | [WowTokenUI](systems/WowTokenUI.md) |
-| ✅ | `TOKEN_STATUS_CHANGED` | 1 | `` | [WowTokenUI](systems/WowTokenUI.md) |
-| ✅ | `TOOLTIP_DATA_UPDATE` | 4 | `n` | [TooltipInfo](systems/TooltipInfo.md) |
+| ✅ | `TOKEN_STATUS_CHANGED` | 2 | `` | [WowTokenUI](systems/WowTokenUI.md) |
+| ✅ | `TOOLTIP_DATA_UPDATE` | 86 | `n` | [TooltipInfo](systems/TooltipInfo.md) |
 | ⛔ | `TOOLTIP_SHOW_ITEM_COMPARISON` |  |  | [TooltipComparison](systems/TooltipComparison.md) |
-| ✅ | `TOYS_UPDATED` | 17 | `-,-,-` / `n,b,b` | [ToyBoxInfo](systems/ToyBoxInfo.md) |
+| ✅ | `TOYS_UPDATED` | 50 | `-,-,-` / `n,b,b` | [ToyBoxInfo](systems/ToyBoxInfo.md) |
 | ✅ | `TRACKABLE_INFO_UPDATE` |  |  | [ContentTracking](systems/ContentTracking.md) |
 | ✅ | `TRACKED_ACHIEVEMENT_LIST_CHANGED` |  |  | [AchievementInfo](systems/AchievementInfo.md) |
 | ✅ | `TRACKED_ACHIEVEMENT_UPDATE` |  |  | [AchievementInfo](systems/AchievementInfo.md) |
@@ -1759,7 +1759,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `TRADE_REQUEST` |  |  | [TradeInfo](systems/TradeInfo.md) |
 | ✅ | `TRADE_REQUEST_CANCEL` |  |  | [TradeInfo](systems/TradeInfo.md) |
 | ✅ | `TRADE_SHOW` |  |  | [TradeInfo](systems/TradeInfo.md) |
-| ✅ | `TRADE_SKILL_CLOSE` | 4 | `` | [TradeSkillUI](systems/TradeSkillUI.md) |
+| ✅ | `TRADE_SKILL_CLOSE` | 18 | `` | [TradeSkillUI](systems/TradeSkillUI.md) |
 | ✅ | `TRADE_SKILL_CRAFTING_REAGENT_BONUS_TEXT_UPDATED` |  |  | [TradeSkillUI](systems/TradeSkillUI.md) |
 | ✅ | `TRADE_SKILL_CRAFT_BEGIN` |  |  | [TradeSkillUI](systems/TradeSkillUI.md) |
 | ✅ | `TRADE_SKILL_CURRENCY_REWARD_RESULT` |  |  | [TradeSkillUI](systems/TradeSkillUI.md) |
@@ -1776,16 +1776,16 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `TRADE_UPDATE` |  |  | [TradeInfo](systems/TradeInfo.md) |
 | ✅ | `TRADE_UPDATE_WARNINGS` |  |  | [TradeInfo](systems/TradeInfo.md) |
 | ⛔ | `TRAIN` |  |  | used in `Blizzard_ChatFrameBase/Mainline/ChatEmoteConstants.lua` |
-| ✅ | `TRAINER_CLOSED` |  |  | [Trainer](systems/Trainer.md) |
+| ✅ | `TRAINER_CLOSED` | 1 | `` | [Trainer](systems/Trainer.md) |
 | ✅ | `TRAINER_DESCRIPTION_UPDATE` |  |  | [Trainer](systems/Trainer.md) |
 | ✅ | `TRAINER_SERVICE_INFO_NAME_UPDATE` |  |  | [Trainer](systems/Trainer.md) |
-| ✅ | `TRAINER_SHOW` |  |  | [Trainer](systems/Trainer.md) |
-| ✅ | `TRAINER_UPDATE` |  |  | [Trainer](systems/Trainer.md) |
+| ✅ | `TRAINER_SHOW` | 1 | `` | [Trainer](systems/Trainer.md) |
+| ✅ | `TRAINER_UPDATE` | 1 | `` | [Trainer](systems/Trainer.md) |
 | ✅ | `TRAINING_GROUNDS_ENABLED_STATUS_UPDATED` |  |  | [PvpInfo](systems/PvpInfo.md) |
 | ✅ | `TRAIT_COND_INFO_CHANGED` |  |  | [SharedTraits](systems/SharedTraits.md) |
 | ✅ | `TRAIT_CONFIG_CREATED` |  |  | [SharedTraits](systems/SharedTraits.md) |
 | ✅ | `TRAIT_CONFIG_DELETED` |  |  | [SharedTraits](systems/SharedTraits.md) |
-| ✅ | `TRAIT_CONFIG_LIST_UPDATED` | 4 | `` | [SharedTraits](systems/SharedTraits.md) |
+| ✅ | `TRAIT_CONFIG_LIST_UPDATED` | 18 | `` | [SharedTraits](systems/SharedTraits.md) |
 | ✅ | `TRAIT_CONFIG_UPDATED` |  |  | [SharedTraits](systems/SharedTraits.md) |
 | ✅ | `TRAIT_NODE_CHANGED` |  |  | [SharedTraits](systems/SharedTraits.md) |
 | ✅ | `TRAIT_NODE_CHANGED_PARTIAL` |  |  | [SharedTraits](systems/SharedTraits.md) |
@@ -1805,7 +1805,7 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `TRANSMOG_COLLECTION_ITEM_UPDATE` |  |  | [Transmogrify](systems/Transmogrify.md) |
 | ✅ | `TRANSMOG_COLLECTION_SOURCE_ADDED` |  |  | [Transmogrify](systems/Transmogrify.md) |
 | ✅ | `TRANSMOG_COLLECTION_SOURCE_REMOVED` |  |  | [Transmogrify](systems/Transmogrify.md) |
-| ✅ | `TRANSMOG_COLLECTION_UPDATED` | 1 | `-,-,-,-` | [Transmogrify](systems/Transmogrify.md) |
+| ✅ | `TRANSMOG_COLLECTION_UPDATED` | 2 | `-,-,-,-` | [Transmogrify](systems/Transmogrify.md) |
 | ✅ | `TRANSMOG_COSMETIC_COLLECTION_SOURCE_ADDED` |  |  | [Transmogrify](systems/Transmogrify.md) |
 | ✅ | `TRANSMOG_CUSTOM_SETS_CHANGED` |  |  | [EquipmentSet](systems/EquipmentSet.md) |
 | ⛔ | `TRANSMOG_CUSTOM_SET_ALL_INVALID_APPEARANCES` |  |  | used in `Blizzard_FrameXML/WardrobeCustomSets.lua` |
@@ -1817,10 +1817,10 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `TRANSMOG_OUTFITS_CHANGED` |  |  | [TransmogOutfitInfo](systems/TransmogOutfitInfo.md) |
 | ⛔ | `TRANSMOG_OUTFIT_INVALID_NAME` |  |  | used in `Blizzard_Transmog/Blizzard_Transmog.lua` |
 | ⛔ | `TRANSMOG_PENDING_CHANGES` |  |  | used in `Blizzard_Transmog/Blizzard_Transmog.lua` |
-| ✅ | `TRANSMOG_SEARCH_UPDATED` | 16 | `n,-` | [Transmogrify](systems/Transmogrify.md) |
-| ✅ | `TRANSMOG_SETS_UPDATE_FAVORITE` | 1 | `` | [Transmogrify](systems/Transmogrify.md) |
+| ✅ | `TRANSMOG_SEARCH_UPDATED` | 72 | `n,-` | [Transmogrify](systems/Transmogrify.md) |
+| ✅ | `TRANSMOG_SETS_UPDATE_FAVORITE` | 2 | `` | [Transmogrify](systems/Transmogrify.md) |
 | ✅ | `TRANSMOG_SOURCE_COLLECTABILITY_UPDATE` |  |  | [Transmogrify](systems/Transmogrify.md) |
-| ✅ | `TREASURE_PICKER_CACHE_FLUSH` |  |  | [QuestLog](systems/QuestLog.md) |
+| ✅ | `TREASURE_PICKER_CACHE_FLUSH` | 6 | `` | [QuestLog](systems/QuestLog.md) |
 | ✅ | `TRIAL_CAP_REACHED_MONEY` |  |  | [Loot](systems/Loot.md) |
 | 🆕 | `TRIAL_STATUS_UPDATE` |  |  | used in `Blizzard_AuctionHouseUI/Shared/Blizzard_AuctionHouseWoWTokenFrame.lua` |
 | ✅ | `TRY_PURCHASE_TO_NODE_PARTIAL_SUCCESS` |  |  | [SharedTraits](systems/SharedTraits.md) |
@@ -1830,70 +1830,70 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `TUTORIAL_HIGHLIGHT_SPELL` |  |  | [Tutorial](systems/Tutorial.md) |
 | ✅ | `TUTORIAL_TRIGGER` |  |  | [Tutorial](systems/Tutorial.md) |
 | ✅ | `TUTORIAL_UNHIGHLIGHT_SPELL` |  |  | [Tutorial](systems/Tutorial.md) |
-| ✅ | `UI_ERROR_MESSAGE` | 484 | `n,s` | [SystemInfo](systems/SystemInfo.md) |
+| ✅ | `UI_ERROR_MESSAGE` | 1060 | `n,s` | [SystemInfo](systems/SystemInfo.md) |
 | ✅ | `UI_ERROR_POPUP` |  |  | [SystemInfo](systems/SystemInfo.md) |
-| ✅ | `UI_INFO_MESSAGE` | 1 | `n,s` | [SystemInfo](systems/SystemInfo.md) |
+| ✅ | `UI_INFO_MESSAGE` | 2 | `n,s` | [SystemInfo](systems/SystemInfo.md) |
 | ✅ | `UI_MODEL_SCENE_INFO_UPDATED` |  |  | [ModelInfo](systems/ModelInfo.md) |
-| ✅ | `UI_SCALE_CHANGED` | 8 | `` | [UI](systems/UI.md) |
+| ✅ | `UI_SCALE_CHANGED` | 24 | `` | [UI](systems/UI.md) |
 | ✅ | `UNIT_ABSORB_AMOUNT_CHANGED` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_AREA_CHANGED` | 12 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_AREA_CHANGED` | 64 | `s` | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_ARENA_COOLDOWNS_UPDATE` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_ATTACK` | 4 | `s` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_ATTACK_POWER` | 2 | `s` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_ATTACK_SPEED` | 4 | `s` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_AURA` | 112 | `s,t` | [UnitAuras](systems/UnitAuras.md) |
+| ✅ | `UNIT_ATTACK` | 7 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_ATTACK_POWER` | 18 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_ATTACK_SPEED` | 44 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_AURA` | 388 | `s,t` | [UnitAuras](systems/UnitAuras.md) |
 | ✅ | `UNIT_AURA_BLOCKED` |  |  | [UnitAuras](systems/UnitAuras.md) |
 | ✅ | `UNIT_AURA_BLOCK_LIST_CLEARED` |  |  | [UnitAuras](systems/UnitAuras.md) |
 | ✅ | `UNIT_CHEAT_TOGGLE_EVENT` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_CLASSIFICATION_CHANGED` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_COMBAT` | 637 | `s,s,s,S,n` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_COMBAT` | 1526 | `s,s,s,S,n` | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_CONNECTION` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_CTR_OPTIONS` | 1 | `s` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_DAMAGE` | 8 | `s` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_DEFENSE` | 4 | `s` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_DIED` | 17 | `s` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_DISPLAYPOWER` | 2 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_CTR_OPTIONS` | 5 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_DAMAGE` | 104 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_DEFENSE` | 7 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_DIED` | 45 | `S` / `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_DISPLAYPOWER` | 24 | `s` | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_DISTANCE_CHECK_UPDATE` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_ENTERED_VEHICLE` |  |  | [Vehicle](systems/Vehicle.md) |
 | ✅ | `UNIT_ENTERING_VEHICLE` |  |  | [Vehicle](systems/Vehicle.md) |
 | ✅ | `UNIT_EXITED_VEHICLE` |  |  | [Vehicle](systems/Vehicle.md) |
 | ✅ | `UNIT_EXITING_VEHICLE` |  |  | [Vehicle](systems/Vehicle.md) |
-| ✅ | `UNIT_FACTION` | 1 | `s` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_FLAGS` | 114 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_FACTION` | 21 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_FLAGS` | 262 | `s` | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_FORM_CHANGED` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_GUILD_LEVEL` |  |  | [GuildInfo](systems/GuildInfo.md) |
-| ✅ | `UNIT_HAPPINESS` | 483 | `s` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_HEALTH` | 626 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_HAPPINESS` | 1349 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_HEALTH` | 1678 | `s` | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_HEAL_ABSORB_AMOUNT_CHANGED` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_HEAL_PREDICTION` | 2 | `s` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_INVENTORY_CHANGED` | 103 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_HEAL_PREDICTION` | 34 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_INVENTORY_CHANGED` | 765 | `s` | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_IN_RANGE_UPDATE` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_LEVEL` | 1 | `s` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_LOOT` | 23 | `s,b` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_LEVEL` | 5 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_LOOT` | 45 | `s,b` | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_MANA` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_MAXHEALTH` | 1 | `s` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_MAXPOWER` | 1 | `s,s` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_MAX_HEALTH_MODIFIERS_CHANGED` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_MODEL_CHANGED` | 7 | `s` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_NAME_UPDATE` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_OTHER_PARTY_CHANGED` | 1 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_MAXHEALTH` | 20 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_MAXPOWER` | 11 | `s,s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_MAX_HEALTH_MODIFIERS_CHANGED` | 3 | `s,S` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_MODEL_CHANGED` | 56 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_NAME_UPDATE` | 3 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_OTHER_PARTY_CHANGED` | 7 | `s` | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_PET` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_PET_EXPERIENCE` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_PET_TRAINING_POINTS` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_PHASE` | 1 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_PHASE` | 22 | `s` | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_PING_PIN_ADDED` (protected) |  |  | [PingManagerSecure](systems/PingManagerSecure.md) |
 | ✅ | `UNIT_PING_PIN_REMOVED` (protected) |  |  | [PingManagerSecure](systems/PingManagerSecure.md) |
-| ✅ | `UNIT_PORTRAIT_UPDATE` | 9 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_PORTRAIT_UPDATE` | 83 | `s` | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_POWER_BAR_HIDE` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_POWER_BAR_SHOW` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_POWER_BAR_TIMER_UPDATE` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_POWER_FREQUENT` | 4328 | `s,s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_POWER_FREQUENT` | 13297 | `s,s` | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_POWER_POINT_CHARGE` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_POWER_UPDATE` | 634 | `s,s` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_QUEST_LOG_CHANGED` | 2 | `s` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_RANGEDDAMAGE` | 4 | `s` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_RANGED_ATTACK_POWER` | 4 | `s` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_RESISTANCES` | 2 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_POWER_UPDATE` | 1720 | `s,s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_QUEST_LOG_CHANGED` | 5 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_RANGEDDAMAGE` | 36 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_RANGED_ATTACK_POWER` | 7 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_RESISTANCES` | 29 | `s` | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_SPELLCAST_CHANNEL_START` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_SPELLCAST_CHANNEL_STOP` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_SPELLCAST_CHANNEL_UPDATE` |  |  | [Unit](systems/Unit.md) |
@@ -1901,82 +1901,82 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `UNIT_SPELLCAST_EMPOWER_START` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_SPELLCAST_EMPOWER_STOP` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_SPELLCAST_EMPOWER_UPDATE` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_SPELLCAST_FAILED` | 913 | `s,s,n,-` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_SPELLCAST_FAILED_QUIET` | 48 | `s,s,n,-` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_SPELLCAST_INTERRUPTED` |  |  | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_SPELLCAST_FAILED` | 1976 | `s,s,n,-` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_SPELLCAST_FAILED_QUIET` | 110 | `s,s,n,-` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_SPELLCAST_INTERRUPTED` | 2 | `s,s,n,-,-` | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_SPELLCAST_INTERRUPTIBLE` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_SPELLCAST_NOT_INTERRUPTIBLE` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_SPELLCAST_RETICLE_CLEAR` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_SPELLCAST_RETICLE_TARGET` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_SPELLCAST_SENT` | 156 | `s,-,s,n` / `s,s,s,n` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_SPELLCAST_START` | 11 | `s,-,n,s` / `s,s,n,s` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_SPELLCAST_STOP` | 8 | `s,s,n,s` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_SPELLCAST_SUCCEEDED` | 144 | `s,s,n,-` / `s,s,n,s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_SPELLCAST_SENT` | 360 | `s,-,s,n` / `s,S,s,n` / `s,s,s,n` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_SPELLCAST_START` | 32 | `s,-,n,s` / `s,S,S,s` / `s,s,n,s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_SPELLCAST_STOP` | 25 | `s,S,S,s` / `s,s,n,s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_SPELLCAST_SUCCEEDED` | 340 | `s,S,S,s` / `s,s,n,-` / `s,s,n,s` | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_SPELL_DIMINISH_CATEGORY_STATE_UPDATED` |  |  | [SpellDiminishUI](systems/SpellDiminishUI.md) |
 | ✅ | `UNIT_SPELL_HASTE` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_STATS` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_TARGET` | 73 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_TARGET` | 211 | `s` | [Unit](systems/Unit.md) |
 | ✅ | `UNIT_TARGETABLE_CHANGED` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_THREAT_LIST_UPDATE` | 267 | `s` | [Unit](systems/Unit.md) |
-| ✅ | `UNIT_THREAT_SITUATION_UPDATE` | 28 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_THREAT_LIST_UPDATE` | 617 | `s` | [Unit](systems/Unit.md) |
+| ✅ | `UNIT_THREAT_SITUATION_UPDATE` | 75 | `s` | [Unit](systems/Unit.md) |
 | ✅ | `UPDATE_ACTIVE_BATTLEFIELD` |  |  | [PvpInfo](systems/PvpInfo.md) |
-| ✅ | `UPDATE_ALL_UI_WIDGETS` | 1 | `` | [UIWidgetManager](systems/UIWidgetManager.md) |
+| ✅ | `UPDATE_ALL_UI_WIDGETS` | 8 | `` | [UIWidgetManager](systems/UIWidgetManager.md) |
 | ✅ | `UPDATE_BATTLEFIELD_SCORE` |  |  | [PvpInfo](systems/PvpInfo.md) |
 | ✅ | `UPDATE_BATTLEFIELD_STATUS` |  |  | [PvpInfo](systems/PvpInfo.md) |
-| ✅ | `UPDATE_BINDINGS` | 19 | `` | [KeyBindings](systems/KeyBindings.md) |
-| ✅ | `UPDATE_BONUS_ACTIONBAR` | 3 | `` | [ActionBar](systems/ActionBar.md) |
+| ✅ | `UPDATE_BINDINGS` | 58 | `` | [KeyBindings](systems/KeyBindings.md) |
+| ✅ | `UPDATE_BONUS_ACTIONBAR` | 22 | `` | [ActionBar](systems/ActionBar.md) |
 | ✅ | `UPDATE_BULLETIN_BOARD_MEMBER_TYPE` |  |  | [HousingNeighborhoodUI](systems/HousingNeighborhoodUI.md) |
 | ✅ | `UPDATE_BULLETIN_BOARD_ROSTER` |  |  | [HousingNeighborhoodUI](systems/HousingNeighborhoodUI.md) |
 | ✅ | `UPDATE_BULLETIN_BOARD_ROSTER_STATUSES` |  |  | [HousingNeighborhoodUI](systems/HousingNeighborhoodUI.md) |
-| ✅ | `UPDATE_CHAT_COLOR` | 376 | `s,n,n,n` | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `UPDATE_CHAT_COLOR_NAME_BY_CLASS` | 376 | `s,b` | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `UPDATE_CHAT_WINDOWS` | 12 | `` | [ChatInfo](systems/ChatInfo.md) |
-| ✅ | `UPDATE_EXHAUSTION` |  |  | [Unit](systems/Unit.md) |
+| ✅ | `UPDATE_CHAT_COLOR` | 1128 | `s,n,n,n` | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `UPDATE_CHAT_COLOR_NAME_BY_CLASS` | 1128 | `s,b` | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `UPDATE_CHAT_WINDOWS` | 36 | `` | [ChatInfo](systems/ChatInfo.md) |
+| ✅ | `UPDATE_EXHAUSTION` | 25 | `` | [Unit](systems/Unit.md) |
 | 🆕 | `UPDATE_EXPANSION_LEVEL` |  |  | used in `Blizzard_ClassTrial/Blizzard_ClassTrial.lua` |
-| ✅ | `UPDATE_EXTRA_ACTIONBAR` | 4 | `` | [ActionBar](systems/ActionBar.md) |
-| ✅ | `UPDATE_FACTION` | 15 | `` | [PaperDollInfo](systems/PaperDollInfo.md) |
-| ✅ | `UPDATE_FLOATING_CHAT_WINDOWS` | 8 | `` | [ChatInfo](systems/ChatInfo.md) |
-| 🆕 | `UPDATE_GM_STATUS` | 4 | `n` | used in `Blizzard_HelpFrame/HelpFrame.lua` |
-| ✅ | `UPDATE_INSTANCE_INFO` | 12 | `` | [EncounterInfo](systems/EncounterInfo.md) |
-| ✅ | `UPDATE_INVENTORY_ALERTS` | 1 | `` | [PaperDollInfo](systems/PaperDollInfo.md) |
-| ✅ | `UPDATE_INVENTORY_DURABILITY` | 10 | `` | [PaperDollInfo](systems/PaperDollInfo.md) |
+| ✅ | `UPDATE_EXTRA_ACTIONBAR` | 18 | `` | [ActionBar](systems/ActionBar.md) |
+| ✅ | `UPDATE_FACTION` | 58 | `` | [PaperDollInfo](systems/PaperDollInfo.md) |
+| ✅ | `UPDATE_FLOATING_CHAT_WINDOWS` | 24 | `` | [ChatInfo](systems/ChatInfo.md) |
+| 🆕 | `UPDATE_GM_STATUS` | 6 | `n` | used in `Blizzard_HelpFrame/HelpFrame.lua` |
+| ✅ | `UPDATE_INSTANCE_INFO` | 48 | `` | [EncounterInfo](systems/EncounterInfo.md) |
+| ✅ | `UPDATE_INVENTORY_ALERTS` | 2 | `` | [PaperDollInfo](systems/PaperDollInfo.md) |
+| ✅ | `UPDATE_INVENTORY_DURABILITY` | 103 | `` | [PaperDollInfo](systems/PaperDollInfo.md) |
 | ✅ | `UPDATE_LFG_LIST` |  |  | [LFGInfo](systems/LFGInfo.md) |
-| ✅ | `UPDATE_MACROS` | 8 | `` | [UIMacros](systems/UIMacros.md) |
+| ✅ | `UPDATE_MACROS` | 24 | `` | [UIMacros](systems/UIMacros.md) |
 | ✅ | `UPDATE_MASTER_LOOT_LIST` |  |  | [Loot](systems/Loot.md) |
-| ✅ | `UPDATE_MOUSEOVER_UNIT` | 121 | `` | [Unit](systems/Unit.md) |
+| ✅ | `UPDATE_MOUSEOVER_UNIT` | 637 | `` | [Unit](systems/Unit.md) |
 | ✅ | `UPDATE_MULTI_CAST_ACTIONBAR` |  |  | [ActionBar](systems/ActionBar.md) |
-| ✅ | `UPDATE_OVERRIDE_ACTIONBAR` | 4 | `` | [ActionBar](systems/ActionBar.md) |
-| ✅ | `UPDATE_PENDING_MAIL` | 5 | `` | [MailInfo](systems/MailInfo.md) |
+| ✅ | `UPDATE_OVERRIDE_ACTIONBAR` | 18 | `` | [ActionBar](systems/ActionBar.md) |
+| ✅ | `UPDATE_PENDING_MAIL` | 20 | `` | [MailInfo](systems/MailInfo.md) |
 | ✅ | `UPDATE_POSSESS_BAR` |  |  | [PetInfo](systems/PetInfo.md) |
 | 🆕 | `UPDATE_REALM_NAME_FOR_GUID` |  |  | used in `Blizzard_GlueXML/Mainline/CharacterSelect/CharacterSelectList.lua` |
 | 🆕 | `UPDATE_SELECTED_CHARACTER` |  |  | used in `Blizzard_GlueXML/Mainline/CharacterSelect.lua` |
-| ✅ | `UPDATE_SHAPESHIFT_COOLDOWN` | 217 | `` | [SpellBook](systems/SpellBook.md) |
-| ✅ | `UPDATE_SHAPESHIFT_FORM` | 7 | `` | [SpellBook](systems/SpellBook.md) |
-| ✅ | `UPDATE_SHAPESHIFT_FORMS` | 1 | `` | [SpellBook](systems/SpellBook.md) |
-| ✅ | `UPDATE_SHAPESHIFT_USABLE` |  |  | [SpellBook](systems/SpellBook.md) |
+| ✅ | `UPDATE_SHAPESHIFT_COOLDOWN` | 533 | `` | [SpellBook](systems/SpellBook.md) |
+| ✅ | `UPDATE_SHAPESHIFT_FORM` | 52 | `` | [SpellBook](systems/SpellBook.md) |
+| ✅ | `UPDATE_SHAPESHIFT_FORMS` | 8 | `` | [SpellBook](systems/SpellBook.md) |
+| ✅ | `UPDATE_SHAPESHIFT_USABLE` | 7 | `` | [SpellBook](systems/SpellBook.md) |
 | ✅ | `UPDATE_SPELL_TARGET_ITEM_CONTEXT` |  |  | [Spell](systems/Spell.md) |
 | ✅ | `UPDATE_STEALTH` |  |  | [Unit](systems/Unit.md) |
-| ✅ | `UPDATE_SUMMONPETS_ACTION` | 4 | `` | [PetJournalInfo](systems/PetJournalInfo.md) |
+| ✅ | `UPDATE_SUMMONPETS_ACTION` | 12 | `` | [PetJournalInfo](systems/PetJournalInfo.md) |
 | ✅ | `UPDATE_TRADESKILL_CAST_STOPPED` |  |  | [TradeSkillUI](systems/TradeSkillUI.md) |
 | ✅ | `UPDATE_UI_WIDGET` |  |  | [UIWidgetManager](systems/UIWidgetManager.md) |
-| ✅ | `UPDATE_VEHICLE_ACTIONBAR` | 4 | `` | [PetInfo](systems/PetInfo.md) |
-| ✅ | `UPDATE_WEB_TICKET` | 4 | `b,-,-,-,-,-,-,-` | [GMTicketInfo](systems/GMTicketInfo.md) |
+| ✅ | `UPDATE_VEHICLE_ACTIONBAR` | 18 | `` | [PetInfo](systems/PetInfo.md) |
+| ✅ | `UPDATE_WEB_TICKET` | 6 | `b,-,-,-,-,-,-,-` | [GMTicketInfo](systems/GMTicketInfo.md) |
 | ✅ | `URL_TEXTURE_REQUEST_RESULT` |  |  | [TextureUtils](systems/TextureUtils.md) |
 | ✅ | `USER_WAYPOINT_UPDATED` |  |  | [MapUI](systems/MapUI.md) |
 | ✅ | `USE_BIND_CONFIRM` |  |  | [Item](systems/Item.md) |
 | ✅ | `USE_COMBINED_BAGS_CHANGED` |  |  | [Container](systems/Container.md) |
 | ✅ | `USE_GLYPH` |  |  | [GlyphInfo](systems/GlyphInfo.md) |
 | ✅ | `USE_NO_REFUND_CONFIRM` |  |  | [Item](systems/Item.md) |
-| ✅ | `VARIABLES_LOADED` | 4 | `` | [SystemInfo](systems/SystemInfo.md) |
+| ✅ | `VARIABLES_LOADED` | 12 | `` | [SystemInfo](systems/SystemInfo.md) |
 | 🆕 | `VAS_CHARACTER_QUEUE_STATUS_UPDATE` |  |  | used in `Blizzard_GlueXML/Mainline/CharacterSelect.lua` |
 | 🆕 | `VAS_CHARACTER_STATE_CHANGED` |  |  | used in `Blizzard_GlueXML/Mainline/CharacterSelect.lua` |
 | 🆕 | `VAS_QUEUE_STATUS_UPDATE` |  |  | used in `Blizzard_StoreUI/Blizzard_Shared_StoreUISecure.lua` |
 | 🆕 | `VAS_TRANSFER_VALIDATION_UPDATE` |  |  | used in `Blizzard_StoreUI/Blizzard_Shared_StoreUISecure.lua` |
-| ✅ | `VEHICLE_ANGLE_SHOW` | 5 | `-` | [Vehicle](systems/Vehicle.md) |
+| ✅ | `VEHICLE_ANGLE_SHOW` | 26 | `-` | [Vehicle](systems/Vehicle.md) |
 | ✅ | `VEHICLE_ANGLE_UPDATE` |  |  | [Unit](systems/Unit.md) |
 | ✅ | `VEHICLE_PASSENGERS_CHANGED` |  |  | [Vehicle](systems/Vehicle.md) |
-| ✅ | `VEHICLE_POWER_SHOW` | 5 | `-` | [Vehicle](systems/Vehicle.md) |
-| ✅ | `VEHICLE_UPDATE` | 1 | `` | [Vehicle](systems/Vehicle.md) |
+| ✅ | `VEHICLE_POWER_SHOW` | 26 | `-` | [Vehicle](systems/Vehicle.md) |
+| ✅ | `VEHICLE_UPDATE` | 8 | `` | [Vehicle](systems/Vehicle.md) |
 | ✅ | `VIEWED_TRANSMOG_OUTFIT_CHANGED` |  |  | [TransmogOutfitInfo](systems/TransmogOutfitInfo.md) |
 | ✅ | `VIEWED_TRANSMOG_OUTFIT_SECONDARY_SLOTS_CHANGED` |  |  | [TransmogOutfitInfo](systems/TransmogOutfitInfo.md) |
 | ✅ | `VIEWED_TRANSMOG_OUTFIT_SITUATIONS_CHANGED` |  |  | [TransmogOutfitInfo](systems/TransmogOutfitInfo.md) |
@@ -1984,11 +1984,11 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `VIEWED_TRANSMOG_OUTFIT_SLOT_REFRESH` |  |  | [TransmogOutfitInfo](systems/TransmogOutfitInfo.md) |
 | ✅ | `VIEWED_TRANSMOG_OUTFIT_SLOT_SAVE_SUCCESS` |  |  | [TransmogOutfitInfo](systems/TransmogOutfitInfo.md) |
 | ✅ | `VIEW_HOUSES_LIST_RECIEVED` |  |  | [HousingUI](systems/HousingUI.md) |
-| ✅ | `VIGNETTES_UPDATED` | 1 | `` | [Vignette](systems/Vignette.md) |
+| ✅ | `VIGNETTES_UPDATED` | 2 | `` | [Vignette](systems/Vignette.md) |
 | ✅ | `VIGNETTE_MINIMAP_UPDATED` |  |  | [Vignette](systems/Vignette.md) |
-| ✅ | `VOICE_CHAT_ACTIVE_INPUT_DEVICE_UPDATED` | 4 | `` | [VoiceChat](systems/VoiceChat.md) |
-| ✅ | `VOICE_CHAT_ACTIVE_OUTPUT_DEVICE_UPDATED` | 4 | `` | [VoiceChat](systems/VoiceChat.md) |
-| ✅ | `VOICE_CHAT_ACTIVE_VOICE_PROVIDER_CHANGED` |  |  | [VoiceChat](systems/VoiceChat.md) |
+| ✅ | `VOICE_CHAT_ACTIVE_INPUT_DEVICE_UPDATED` | 13 | `` | [VoiceChat](systems/VoiceChat.md) |
+| ✅ | `VOICE_CHAT_ACTIVE_OUTPUT_DEVICE_UPDATED` | 13 | `` | [VoiceChat](systems/VoiceChat.md) |
+| ✅ | `VOICE_CHAT_ACTIVE_VOICE_PROVIDER_CHANGED` | 2 | `n` | [VoiceChat](systems/VoiceChat.md) |
 | ✅ | `VOICE_CHAT_AUDIO_CAPTURE_ENERGY` |  |  | [VoiceChat](systems/VoiceChat.md) |
 | ✅ | `VOICE_CHAT_AUDIO_CAPTURE_STARTED` |  |  | [VoiceChat](systems/VoiceChat.md) |
 | ✅ | `VOICE_CHAT_AUDIO_CAPTURE_STOPPED` |  |  | [VoiceChat](systems/VoiceChat.md) |
@@ -2014,17 +2014,17 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `VOICE_CHAT_CHANNEL_TRANSMIT_CHANGED` |  |  | [VoiceChat](systems/VoiceChat.md) |
 | ✅ | `VOICE_CHAT_CHANNEL_VOLUME_CHANGED` |  |  | [VoiceChat](systems/VoiceChat.md) |
 | ✅ | `VOICE_CHAT_COMMUNICATION_MODE_CHANGED` |  |  | [VoiceChat](systems/VoiceChat.md) |
-| ✅ | `VOICE_CHAT_CONNECTION_SUCCESS` | 1 | `` | [VoiceChat](systems/VoiceChat.md) |
-| ✅ | `VOICE_CHAT_DEAFENED_CHANGED` | 1 | `b` | [VoiceChat](systems/VoiceChat.md) |
+| ✅ | `VOICE_CHAT_CONNECTION_SUCCESS` | 2 | `` | [VoiceChat](systems/VoiceChat.md) |
+| ✅ | `VOICE_CHAT_DEAFENED_CHANGED` | 7 | `b` | [VoiceChat](systems/VoiceChat.md) |
 | ✅ | `VOICE_CHAT_DISCORD_SETTINGS_UPDATED` |  |  | [VoiceChat](systems/VoiceChat.md) |
 | ✅ | `VOICE_CHAT_ERROR` |  |  | [VoiceChat](systems/VoiceChat.md) |
-| ✅ | `VOICE_CHAT_INPUT_DEVICES_UPDATED` | 2 | `` | [VoiceChat](systems/VoiceChat.md) |
+| ✅ | `VOICE_CHAT_INPUT_DEVICES_UPDATED` | 6 | `` | [VoiceChat](systems/VoiceChat.md) |
 | ✅ | `VOICE_CHAT_LOGIN` |  |  | [VoiceChat](systems/VoiceChat.md) |
 | ✅ | `VOICE_CHAT_LOGOUT` |  |  | [VoiceChat](systems/VoiceChat.md) |
-| ✅ | `VOICE_CHAT_MUTED_CHANGED` | 1 | `b` | [VoiceChat](systems/VoiceChat.md) |
-| ✅ | `VOICE_CHAT_OUTPUT_DEVICES_UPDATED` | 2 | `` | [VoiceChat](systems/VoiceChat.md) |
+| ✅ | `VOICE_CHAT_MUTED_CHANGED` | 8 | `b` | [VoiceChat](systems/VoiceChat.md) |
+| ✅ | `VOICE_CHAT_OUTPUT_DEVICES_UPDATED` | 6 | `` | [VoiceChat](systems/VoiceChat.md) |
 | ✅ | `VOICE_CHAT_PENDING_CHANNEL_JOIN_STATE` |  |  | [VoiceChat](systems/VoiceChat.md) |
-| ✅ | `VOICE_CHAT_PTT_BUTTON_PRESSED_STATE_CHANGED` |  |  | [VoiceChat](systems/VoiceChat.md) |
+| ✅ | `VOICE_CHAT_PTT_BUTTON_PRESSED_STATE_CHANGED` | 14 | `b` | [VoiceChat](systems/VoiceChat.md) |
 | ✅ | `VOICE_CHAT_SILENCED_CHANGED` |  |  | [VoiceChat](systems/VoiceChat.md) |
 | ✅ | `VOICE_CHAT_SPEAK_FOR_ME_ACTIVE_STATUS_UPDATED` |  |  | [VoiceChat](systems/VoiceChat.md) |
 | ✅ | `VOICE_CHAT_SPEAK_FOR_ME_FEATURE_STATUS_UPDATED` |  |  | [VoiceChat](systems/VoiceChat.md) |
@@ -2033,10 +2033,10 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `VOICE_CHAT_TTS_PLAYBACK_FINISHED` |  |  | [VoiceChat](systems/VoiceChat.md) |
 | ✅ | `VOICE_CHAT_TTS_PLAYBACK_STARTED` |  |  | [VoiceChat](systems/VoiceChat.md) |
 | ✅ | `VOICE_CHAT_TTS_SPEAK_TEXT_UPDATE` |  |  | [VoiceChat](systems/VoiceChat.md) |
-| ✅ | `VOICE_CHAT_TTS_VOICES_UPDATE` |  |  | [VoiceChat](systems/VoiceChat.md) |
-| ✅ | `VOICE_CHAT_VAD_SETTINGS_UPDATED` | 1 | `` | [VoiceChat](systems/VoiceChat.md) |
+| ✅ | `VOICE_CHAT_TTS_VOICES_UPDATE` | 2 | `` | [VoiceChat](systems/VoiceChat.md) |
+| ✅ | `VOICE_CHAT_VAD_SETTINGS_UPDATED` | 4 | `` | [VoiceChat](systems/VoiceChat.md) |
 | ✅ | `VOICE_CHAT_VOICE_PROVIDERS_AVAILABLE_CHANGED` |  |  | [VoiceChat](systems/VoiceChat.md) |
-| ✅ | `VOICE_CHAT_VOICE_PROVIDER_CHANGED` |  |  | [VoiceChat](systems/VoiceChat.md) |
+| ✅ | `VOICE_CHAT_VOICE_PROVIDER_CHANGED` | 2 | `n` | [VoiceChat](systems/VoiceChat.md) |
 | ✅ | `VOTE_KICK_REASON_NEEDED` |  |  | [PartyInfo](systems/PartyInfo.md) |
 | ✅ | `WALK_IN_DATA_UPDATE` |  |  | [DelvesUI](systems/DelvesUI.md) |
 | 🆕 | `WARBAND_GROUP_SCENE_UPDATED` |  |  | used in `Blizzard_GlueXML/Mainline/CharacterSelect.lua` |
@@ -2047,17 +2047,17 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | ✅ | `WARGAME_REQUEST_RESPONSE` |  |  | [PvpInfo](systems/PvpInfo.md) |
 | ⛔ | `WARLOCK` |  |  | used in `Blizzard_FrameXMLBase/Camelot/Constants.lua` |
 | ⛔ | `WARRIOR` |  |  | used in `Blizzard_FrameXMLBase/Camelot/Constants.lua` |
-| ✅ | `WAR_MODE_STATUS_UPDATE` | 1 | `b` | [PvpInfo](systems/PvpInfo.md) |
+| ✅ | `WAR_MODE_STATUS_UPDATE` | 2 | `b` | [PvpInfo](systems/PvpInfo.md) |
 | ✅ | `WAYPOINT_UPDATE` |  |  | [QuestLog](systems/QuestLog.md) |
 | ✅ | `WEAPON_ENCHANT_CHANGED` |  |  | [Item](systems/Item.md) |
 | ✅ | `WEAPON_SLOT_CHANGED` |  |  | [PaperDollInfo](systems/PaperDollInfo.md) |
-| ✅ | `WEATHER_CHANGED` | 1 | `` | [WeatherScript](systems/WeatherScript.md) |
+| ✅ | `WEATHER_CHANGED` | 9 | `` | [WeatherScript](systems/WeatherScript.md) |
 | ✅ | `WEEKLY_REWARDS_ITEM_CHANGED` |  |  | [WeeklyRewards](systems/WeeklyRewards.md) |
-| ✅ | `WEEKLY_REWARDS_UPDATE` | 1 | `` | [WeeklyRewards](systems/WeeklyRewards.md) |
+| ✅ | `WEEKLY_REWARDS_UPDATE` | 2 | `` | [WeeklyRewards](systems/WeeklyRewards.md) |
 | ⛔ | `WELCOME` |  |  | used in `Blizzard_ChatFrameBase/Mainline/ChatEmoteConstants.lua` |
 | ⛔ | `WHISPER` |  |  | used in `Blizzard_ChatFrame/Mainline/TextToSpeechFrameConstants.lua` |
 | ✅ | `WHO_LIST_UPDATE` |  |  | [FriendList](systems/FriendList.md) |
-| ✅ | `WORLD_CURSOR_TOOLTIP_UPDATE` | 246 | `n` | [Cursor](systems/Cursor.md) |
+| ✅ | `WORLD_CURSOR_TOOLTIP_UPDATE` | 1307 | `n` | [Cursor](systems/Cursor.md) |
 | ✅ | `WORLD_LOOT_OBJECT_INFO_UPDATED` |  |  | [WorldLootObject](systems/WorldLootObject.md) |
 | ✅ | `WORLD_MAP_OPEN` |  |  | [MapUI](systems/MapUI.md) |
 | ✅ | `WORLD_PVP_QUEUE` |  |  | [PvpInfo](systems/PvpInfo.md) |
@@ -2070,6 +2070,6 @@ Checked with RegisterEvent. Payloads are Blizzard's; "seen" counts and argument 
 | 🆕 | `WOW_LABS_DATA_BR_CIRCLE` |  |  | used in `Blizzard_SharedMapDataProviders/PlunderstormCircleDataProvider.lua` |
 | 🆕 | `WOW_LABS_MATCH_STATE_UPDATED` |  |  | used in `Blizzard_PlunderstormPrematchUI/Blizzard_PlunderstormPrematchUI.lua` |
 | ✅ | `WOW_MOUSE_NOT_FOUND` |  |  | [SystemInfo](systems/SystemInfo.md) |
-| ✅ | `ZONE_CHANGED` |  |  | [MapUI](systems/MapUI.md) |
-| ✅ | `ZONE_CHANGED_INDOORS` |  |  | [MapUI](systems/MapUI.md) |
-| ✅ | `ZONE_CHANGED_NEW_AREA` | 1 | `` | [MapUI](systems/MapUI.md) |
+| ✅ | `ZONE_CHANGED` | 9 | `` | [MapUI](systems/MapUI.md) |
+| ✅ | `ZONE_CHANGED_INDOORS` | 6 | `` | [MapUI](systems/MapUI.md) |
+| ✅ | `ZONE_CHANGED_NEW_AREA` | 8 | `` | [MapUI](systems/MapUI.md) |

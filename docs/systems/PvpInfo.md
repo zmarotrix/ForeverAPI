@@ -13,7 +13,7 @@ Namespace: `C_PvP`
 | ✅ | [C_PvP.CanPlayerUseRatedPVPUI](#c_pvpcanplayeruseratedpvpui) | 2 values | 2 values |
 | ✅ | [C_PvP.CanPlayerUseTrainingGroundsUI](#c_pvpcanplayerusetraininggroundsui) | 2 values | 2 values |
 | ✅ | [C_PvP.CanSurrenderArena](#c_pvpcansurrenderarena) | 1 value | 1 value |
-| ✅ | [C_PvP.CanToggleWarMode](#c_pvpcantogglewarmode) |  |  |
+| ✅ | [C_PvP.CanToggleWarMode](#c_pvpcantogglewarmode) | 1 value | 1 value |
 | ✅ | [C_PvP.CanToggleWarModeInArea](#c_pvpcantogglewarmodeinarea) | 1 value | 1 value |
 | ✅ | [C_PvP.DoesMatchOutcomeAffectRating](#c_pvpdoesmatchoutcomeaffectrating) | 1 value | 1 value |
 | ✅ | [C_PvP.GetActiveBrawlInfo](#c_pvpgetactivebrawlinfo) | 1 value | 1 value |
@@ -23,25 +23,25 @@ Namespace: `C_PvP`
 | ✅ | [C_PvP.GetActiveMatchWinner](#c_pvpgetactivematchwinner) | 1 value | 1 value |
 | ✅ | [C_PvP.GetArenaCrowdControlDuration](#c_pvpgetarenacrowdcontrolduration) | 1 value | 1 value |
 | ✅ | [C_PvP.GetArenaCrowdControlInfo](#c_pvpgetarenacrowdcontrolinfo) | 0 values | 0 values |
-| ⛔ | [C_PvP.GetArenaOpponentSpec](#c_pvpgetarenaopponentspec) |  |  |
+| ⛔ | [C_PvP.GetArenaOpponentSpec](#c_pvpgetarenaopponentspec) | missing | missing |
 | ✅ | [C_PvP.GetArenaRewards](#c_pvpgetarenarewards) |  |  |
 | ✅ | [C_PvP.GetArenaSkirmishRewards](#c_pvpgetarenaskirmishrewards) |  |  |
 | ✅ | [C_PvP.GetAssignedSpecForBattlefieldQueue](#c_pvpgetassignedspecforbattlefieldqueue) |  |  |
 | ✅ | [C_PvP.GetAvailableBrawlInfo](#c_pvpgetavailablebrawlinfo) | 1 value | 1 value |
-| ✅ | [C_PvP.GetBattlefieldFlagPosition](#c_pvpgetbattlefieldflagposition) |  |  |
-| ✅ | [C_PvP.GetBattlefieldVehicleInfo](#c_pvpgetbattlefieldvehicleinfo) |  |  |
-| ✅ | [C_PvP.GetBattlefieldVehicles](#c_pvpgetbattlefieldvehicles) |  |  |
-| ✅ | [C_PvP.GetBattlegroundInfo](#c_pvpgetbattlegroundinfo) |  |  |
+| ✅ | [C_PvP.GetBattlefieldFlagPosition](#c_pvpgetbattlefieldflagposition) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_PvP.GetBattlefieldVehicleInfo](#c_pvpgetbattlefieldvehicleinfo) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_PvP.GetBattlefieldVehicles](#c_pvpgetbattlefieldvehicles) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_PvP.GetBattlegroundInfo](#c_pvpgetbattlegroundinfo) | 1 value | 1 value |
 | ✅ | [C_PvP.GetBrawlRewards](#c_pvpgetbrawlrewards) |  |  |
 | ✅ | [C_PvP.GetBrawlSoloRBGMinItemLevel](#c_pvpgetbrawlsolorbgminitemlevel) | 1 value | 1 value |
 | ✅ | [C_PvP.GetCustomVictoryStatID](#c_pvpgetcustomvictorystatid) | 1 value | 1 value |
 | ✅ | [C_PvP.GetGlobalPvpScalingInfoForSpecID](#c_pvpgetglobalpvpscalinginfoforspecid) |  |  |
 | ✅ | [C_PvP.GetHonorRewardInfo](#c_pvpgethonorrewardinfo) |  |  |
-| ✅ | [C_PvP.GetLevelUpBattlegrounds](#c_pvpgetlevelupbattlegrounds) |  |  |
+| ✅ | [C_PvP.GetLevelUpBattlegrounds](#c_pvpgetlevelupbattlegrounds) | 1 value | 1 value |
 | ✅ | [C_PvP.GetMatchPVPStatColumn](#c_pvpgetmatchpvpstatcolumn) |  |  |
 | ✅ | [C_PvP.GetMatchPVPStatColumns](#c_pvpgetmatchpvpstatcolumns) | 1 value | 1 value |
 | ✅ | [C_PvP.GetNextHonorLevelForReward](#c_pvpgetnexthonorlevelforreward) |  |  |
-| ✅ | [C_PvP.GetOutdoorPvPWaitTime](#c_pvpgetoutdoorpvpwaittime) |  |  |
+| ✅ | [C_PvP.GetOutdoorPvPWaitTime](#c_pvpgetoutdoorpvpwaittime) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_PvP.GetPVPActiveMatchPersonalRatedInfo](#c_pvpgetpvpactivematchpersonalratedinfo) | 1 value | 1 value |
 | ✅ | [C_PvP.GetPVPActiveRatedMatchDeserterPenalty](#c_pvpgetpvpactiveratedmatchdeserterpenalty) | 1 value | 1 value |
 | ✅ | [C_PvP.GetPVPSeasonRewardAchievementID](#c_pvpgetpvpseasonrewardachievementid) |  |  |
@@ -64,8 +64,8 @@ Namespace: `C_PvP`
 | ✅ | [C_PvP.GetRatedSoloShuffleMinItemLevel](#c_pvpgetratedsoloshuffleminitemlevel) | 1 value | 1 value |
 | ✅ | [C_PvP.GetRatedSoloShuffleRewards](#c_pvpgetratedsoloshufflerewards) |  |  |
 | ✅ | [C_PvP.GetRewardItemLevelsByTierEnum](#c_pvpgetrewarditemlevelsbytierenum) |  |  |
-| ✅ | [C_PvP.GetScoreInfo](#c_pvpgetscoreinfo) |  |  |
-| ✅ | [C_PvP.GetScoreInfoByPlayerGuid](#c_pvpgetscoreinfobyplayerguid) |  |  |
+| ✅ | [C_PvP.GetScoreInfo](#c_pvpgetscoreinfo) | 1 value | 1 value |
+| ✅ | [C_PvP.GetScoreInfoByPlayerGuid](#c_pvpgetscoreinfobyplayerguid) | 1 value | 1 value |
 | ✅ | [C_PvP.GetSeasonBestInfo](#c_pvpgetseasonbestinfo) | 2 values | 2 values |
 | ✅ | [C_PvP.GetSkirmishInfo](#c_pvpgetskirmishinfo) |  |  |
 | ✅ | [C_PvP.GetSpecialEventBrawlInfo](#c_pvpgetspecialeventbrawlinfo) | 1 value | 1 value |
@@ -190,6 +190,8 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `b:false`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.CanToggleWarModeInArea
@@ -286,6 +288,8 @@ Namespace: `C_PvP`
 - Namespace:  (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: missing at call time
+- Called in combat: missing at call time
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetArenaRewards
@@ -328,6 +332,8 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetBattlefieldVehicleInfo
@@ -337,6 +343,8 @@ Namespace: `C_PvP`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetBattlefieldVehicles
@@ -346,6 +354,8 @@ Namespace: `C_PvP`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetBattlegroundInfo
@@ -354,6 +364,8 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `table{battlegroundID=number,canEnter=boolean,gameType=string,isHoliday=boolean,isRandom=boolean,isTrainingGround=boolean,longDescription=string,mapDescription=string,mapID=number,maxPlayers=number,name=string,shortDescription=string}`
+- Called in combat: returned 1 value: `table{battlegroundID=number,canEnter=boolean,gameType=string,isHoliday=boolean,isRandom=boolean,isTrainingGround=boolean,longDescription=string,mapDescription=string,mapID=number,maxPlayers=number,name=string,shortDescription=string}`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetBrawlRewards
@@ -406,6 +418,8 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:10`: returned 1 value: `table{[number]=table}`
+- Called in combat: returned 1 value: `table{[number]=table}`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetMatchPVPStatColumn
@@ -439,6 +453,8 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetPVPActiveMatchPersonalRatedInfo
@@ -624,6 +640,8 @@ Namespace: `C_PvP`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretInActivePvPMatch (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetScoreInfoByPlayerGuid
@@ -633,6 +651,8 @@ Namespace: `C_PvP`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretInActivePvPMatch (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetSeasonBestInfo
@@ -1110,6 +1130,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: `unitToken: cstring`, `updateReason: cstring`
 - fires synchronously (Blizzard's docs)
+- Seen firing 180 times (0 in combat); argument kinds: `s,s`
 
 ### ARENA_PREP_OPPONENT_SPECIALIZATIONS
 
@@ -1122,7 +1143,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### BATTLEFIELDS_CLOSED
 
@@ -1231,7 +1252,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 18 times (0 in combat); argument kinds: ``
 
 ### PVP_MATCH_ACTIVE
 
@@ -1292,7 +1313,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 18 times (0 in combat); argument kinds: ``
 
 ### PVP_TYPES_ENABLED
 
@@ -1359,7 +1380,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: `warModeEnabled: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `b`
+- Seen firing 2 times (0 in combat); argument kinds: `b`
 
 ### WORLD_PVP_QUEUE
 

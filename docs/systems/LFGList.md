@@ -9,7 +9,7 @@ Namespace: `C_LFGList`
 | 🆕 | [C_LFGList.AcceptInvite](#c_lfglistacceptinvite) |  |  |
 | 🆕 | [C_LFGList.ApplyToGroup](#c_lfglistapplytogroup) |  |  |
 | ✅ | [C_LFGList.CanActiveEntryUseAutoAccept](#c_lfglistcanactiveentryuseautoaccept) | 1 value | 1 value |
-| ✅ | [C_LFGList.CanCreateQuestGroup](#c_lfglistcancreatequestgroup) |  |  |
+| ✅ | [C_LFGList.CanCreateQuestGroup](#c_lfglistcancreatequestgroup) | 1 value | 1 value |
 | ✅ | [C_LFGList.CanCreateScenarioGroup](#c_lfglistcancreatescenariogroup) |  |  |
 | 🆕 | [C_LFGList.CancelApplication](#c_lfglistcancelapplication) |  |  |
 | ✅ | [C_LFGList.ClearApplicationTextFields](#c_lfglistclearapplicationtextfields) |  |  |
@@ -122,6 +122,8 @@ Namespace: `C_LFGList`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `quest`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `LFGListInfoDocumentation.lua`
 
 ### C_LFGList.CanCreateScenarioGroup
@@ -797,7 +799,7 @@ Namespace: `C_LFGList`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 18 times (0 in combat); argument kinds: ``
 
 ### LFG_LIST_CENSORED_ACTIVE_ENTRY_UPDATE
 
@@ -852,6 +854,7 @@ Namespace: `C_LFGList`
 - Status: ✅ verified
 - Payload: `searchResultID: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 7 times (0 in combat); argument kinds: `n`
 
 ### LFG_LIST_SHOW_SEARCH
 

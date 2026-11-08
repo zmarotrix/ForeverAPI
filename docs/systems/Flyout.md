@@ -7,7 +7,7 @@ Namespace: `C_Flyout`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_Flyout.FlyoutHasSpell](#c_flyoutflyouthasspell) |  |  |
-| ✅ | [C_Flyout.GetFlyoutID](#c_flyoutgetflyoutid) |  |  |
+| ✅ | [C_Flyout.GetFlyoutID](#c_flyoutgetflyoutid) | 1 value | 1 value |
 | ✅ | [C_Flyout.GetFlyoutInfo](#c_flyoutgetflyoutinfo) |  |  |
 | ✅ | [C_Flyout.GetFlyoutSlotInfo](#c_flyoutgetflyoutslotinfo) |  |  |
 | ✅ | [C_Flyout.GetFlyoutTexture](#c_flyoutgetflyouttexture) |  |  |
@@ -29,6 +29,8 @@ Namespace: `C_Flyout`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `FlyoutDocumentation.lua`
 
 ### C_Flyout.GetFlyoutInfo

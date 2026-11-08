@@ -6,7 +6,7 @@ Namespace: `C_ResearchInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_ResearchInfo.GetDigSitesForMap](#c_researchinfogetdigsitesformap) |  |  |
+| ✅ | [C_ResearchInfo.GetDigSitesForMap](#c_researchinfogetdigsitesformap) | 💥 no sample for map | 💥 no sample for map |
 
 ### C_ResearchInfo.GetDigSitesForMap
 
@@ -14,6 +14,8 @@ Namespace: `C_ResearchInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `ResearchInfoDocumentation.lua`
 
 ## Events

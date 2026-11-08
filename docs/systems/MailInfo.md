@@ -7,8 +7,8 @@ Namespace: `C_Mail`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_Mail.CanCheckInbox](#c_mailcancheckinbox) | 2 values | 2 values |
-| ✅ | [C_Mail.GetCraftingOrderMailInfo](#c_mailgetcraftingordermailinfo) |  |  |
-| ✅ | [C_Mail.HasInboxMoney](#c_mailhasinboxmoney) |  |  |
+| ✅ | [C_Mail.GetCraftingOrderMailInfo](#c_mailgetcraftingordermailinfo) | 1 value | 1 value |
+| ✅ | [C_Mail.HasInboxMoney](#c_mailhasinboxmoney) | 1 value | 1 value |
 | ✅ | [C_Mail.IsCommandPending](#c_mailiscommandpending) | 1 value | 1 value |
 | ✅ | [C_Mail.SetOpeningAll](#c_mailsetopeningall) |  |  |
 
@@ -27,6 +27,8 @@ Namespace: `C_Mail`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `MailInfoDocumentation.lua`
 
 ### C_Mail.HasInboxMoney
@@ -35,6 +37,8 @@ Namespace: `C_Mail`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `MailInfoDocumentation.lua`
 
 ### C_Mail.IsCommandPending
@@ -80,7 +84,7 @@ Namespace: `C_Mail`
 - Payload: none
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### MAIL_LOCK_SEND_ITEMS
 
@@ -142,4 +146,4 @@ Namespace: `C_Mail`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 5 times (0 in combat); argument kinds: ``
+- Seen firing 20 times (0 in combat); argument kinds: ``

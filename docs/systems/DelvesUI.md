@@ -9,8 +9,8 @@ Namespace: `C_DelvesUI`
 | ✅ | [C_DelvesUI.GetActiveDelveTier](#c_delvesuigetactivedelvetier) | 1 value | 1 value |
 | ✅ | [C_DelvesUI.GetCompanionInfoForActivePlayer](#c_delvesuigetcompanioninfoforactiveplayer) | 1 value | 1 value |
 | ✅ | [C_DelvesUI.GetCreatureDisplayInfoForCompanion](#c_delvesuigetcreaturedisplayinfoforcompanion) | 1 value | 1 value |
-| ✅ | [C_DelvesUI.GetCurioLink](#c_delvesuigetcuriolink) |  |  |
-| ✅ | [C_DelvesUI.GetCurioNodeForCompanion](#c_delvesuigetcurionodeforcompanion) |  |  |
+| ✅ | [C_DelvesUI.GetCurioLink](#c_delvesuigetcuriolink) | 1 value | 1 value |
+| ✅ | [C_DelvesUI.GetCurioNodeForCompanion](#c_delvesuigetcurionodeforcompanion) | 1 value | 1 value |
 | ✅ | [C_DelvesUI.GetCurioRarityByTraitCondAccountElementID](#c_delvesuigetcurioraritybytraitcondaccountelementid) |  |  |
 | ✅ | [C_DelvesUI.GetCurrentDelvesSeasonNumber](#c_delvesuigetcurrentdelvesseasonnumber) | 1 value | 1 value |
 | ✅ | [C_DelvesUI.GetDelveEntranceBackgroundWidgetSetID](#c_delvesuigetdelveentrancebackgroundwidgetsetid) | 1 value | 1 value |
@@ -29,7 +29,7 @@ Namespace: `C_DelvesUI`
 | ✅ | [C_DelvesUI.GetModelSceneForCompanion](#c_delvesuigetmodelsceneforcompanion) | 1 value | 1 value |
 | ✅ | [C_DelvesUI.GetPlayerCompanionPDEID](#c_delvesuigetplayercompanionpdeid) | 0 values | 0 values |
 | ✅ | [C_DelvesUI.GetRoleNodeForCompanion](#c_delvesuigetrolenodeforcompanion) | 1 value | 1 value |
-| ✅ | [C_DelvesUI.GetRoleSubtreeForCompanion](#c_delvesuigetrolesubtreeforcompanion) |  |  |
+| ✅ | [C_DelvesUI.GetRoleSubtreeForCompanion](#c_delvesuigetrolesubtreeforcompanion) | 1 value | 1 value |
 | ✅ | [C_DelvesUI.GetTieredEntranceOptionalAffixTraitTreeID](#c_delvesuigettieredentranceoptionalaffixtraittreeid) | 1 value | 1 value |
 | ✅ | [C_DelvesUI.GetTieredEntrancePDEID](#c_delvesuigettieredentrancepdeid) | 1 value | 1 value |
 | ✅ | [C_DelvesUI.GetTieredEntranceType](#c_delvesuigettieredentrancetype) | 1 value | 1 value |
@@ -83,6 +83,8 @@ Namespace: `C_DelvesUI`
 - Status: ✅ verified (function)
 - Blizzard: Given the spell ID for an owned curio and its rarity, return a spell link style hyperlink for the curio spell, since they aren't items when learned
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell,n:1`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetCurioNodeForCompanion
@@ -91,6 +93,8 @@ Namespace: `C_DelvesUI`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetCurioRarityByTraitCondAccountElementID
@@ -269,6 +273,8 @@ Namespace: `C_DelvesUI`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `DelvesUIDocumentation.lua`
 
 ### C_DelvesUI.GetTieredEntranceOptionalAffixTraitTreeID

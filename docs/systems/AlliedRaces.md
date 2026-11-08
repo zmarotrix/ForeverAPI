@@ -6,8 +6,8 @@ Namespace: `C_AlliedRaces`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_AlliedRaces.GetAllRacialAbilitiesFromID](#c_alliedracesgetallracialabilitiesfromid) |  |  |
-| ✅ | [C_AlliedRaces.GetRaceInfoByID](#c_alliedracesgetraceinfobyid) |  |  |
+| ✅ | [C_AlliedRaces.GetAllRacialAbilitiesFromID](#c_alliedracesgetallracialabilitiesfromid) | 1 value | 1 value |
+| ✅ | [C_AlliedRaces.GetRaceInfoByID](#c_alliedracesgetraceinfobyid) | 0 values | 0 values |
 
 ### C_AlliedRaces.GetAllRacialAbilitiesFromID
 
@@ -16,6 +16,8 @@ Namespace: `C_AlliedRaces`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `race`: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table}`
+- Called in combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table}`
 - Source: client docs `AlliedRacesFrameDocumentation.lua`
 
 ### C_AlliedRaces.GetRaceInfoByID
@@ -25,6 +27,8 @@ Namespace: `C_AlliedRaces`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `race`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `AlliedRacesFrameDocumentation.lua`
 
 ## Events

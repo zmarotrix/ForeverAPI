@@ -12,11 +12,11 @@
 | ✅ | [BeginTrade](#begintrade) |  |  |
 | ✅ | [CanDualWield](#candualwield) | 1 value | 1 value |
 | ✅ | [CanInspect](#caninspect) | 1 value | 1 value |
-| ✅ | [CanLootUnit](#canlootunit) |  |  |
+| ✅ | [CanLootUnit](#canlootunit) | 2 values | 2 values |
 | ✅ | [CanPortGraveyard](#canportgraveyard) | 1 value | 1 value |
-| ✅ | [CancelAreaSpiritHeal](#cancelareaspiritheal) | 0 values | 0 values |
+| ✅ | [CancelAreaSpiritHeal](#cancelareaspiritheal) |  |  |
 | ✅ | [CancelPendingEquip](#cancelpendingequip) |  |  |
-| ✅ | [CancelTrade](#canceltrade) | 0 values | 0 values |
+| ✅ | [CancelTrade](#canceltrade) |  |  |
 | ✅ | [CheckInteractDistance](#checkinteractdistance) |  |  |
 | ✅ | [CheckTalentMasterDist](#checktalentmasterdist) |  |  |
 | ✅ | [ClearPendingBindConversionItem](#clearpendingbindconversionitem) |  |  |
@@ -39,8 +39,8 @@
 | ✅ | [GetBlockChance](#getblockchance) | 1 value | secret |
 | ✅ | [GetCemeteryPreference](#getcemeterypreference) | 1 value | 1 value |
 | ✅ | [GetCollapsingStarCost](#getcollapsingstarcost) | 1 value | 1 value |
-| ✅ | [GetCombatRating](#getcombatrating) |  |  |
-| ✅ | [GetCombatRatingBonus](#getcombatratingbonus) |  |  |
+| ✅ | [GetCombatRating](#getcombatrating) | 1 value | secret |
+| ✅ | [GetCombatRatingBonus](#getcombatratingbonus) | 1 value | secret |
 | ✅ | [GetCombatRatingBonusForCombatRatingValue](#getcombatratingbonusforcombatratingvalue) |  |  |
 | ✅ | [GetCorpseRecoveryDelay](#getcorpserecoverydelay) | 1 value | 1 value |
 | ✅ | [GetCorruption](#getcorruption) | 1 value | 1 value |
@@ -89,7 +89,7 @@
 | ✅ | [GetPetSpellBonusDamage](#getpetspellbonusdamage) | 1 value | secret |
 | ✅ | [GetPetSpellHitChanceModifier](#getpetspellhitchancemodifier) | 1 value | secret |
 | ✅ | [GetPlayerFacing](#getplayerfacing) | 1 value | 1 value |
-| ✅ | [GetPlayerInfoByGUID](#getplayerinfobyguid) |  |  |
+| ✅ | [GetPlayerInfoByGUID](#getplayerinfobyguid) | 8 values | 8 values |
 | ✅ | [GetPowerRegen](#getpowerregen) | 2 values | secret |
 | ✅ | [GetPowerRegenForPowerType](#getpowerregenforpowertype) |  |  |
 | ✅ | [GetPvpPowerDamage](#getpvppowerdamage) | 1 value | secret |
@@ -102,12 +102,12 @@
 | ✅ | [GetResSicknessDuration](#getressicknessduration) | 1 value | 1 value |
 | ✅ | [GetRestState](#getreststate) | 3 values | 3 values |
 | ✅ | [GetRestrictedAccountData](#getrestrictedaccountdata) | 3 values | 3 values |
-| ✅ | [GetRuneCooldown](#getrunecooldown) |  |  |
-| ✅ | [GetRuneCount](#getrunecount) |  |  |
+| ✅ | [GetRuneCooldown](#getrunecooldown) | 0 values | 0 values |
+| ✅ | [GetRuneCount](#getrunecount) | 0 values | 0 values |
 | ✅ | [GetSheathState](#getsheathstate) | 1 value | 1 value |
 | ✅ | [GetShieldBlock](#getshieldblock) | 1 value | secret |
 | ✅ | [GetSpeed](#getspeed) | 1 value | secret |
-| ✅ | [GetSpellBonusDamage](#getspellbonusdamage) |  |  |
+| ✅ | [GetSpellBonusDamage](#getspellbonusdamage) | 1 value | secret |
 | ✅ | [GetSpellBonusHealing](#getspellbonushealing) | 1 value | secret |
 | ✅ | [GetSpellCritChance](#getspellcritchance) | 1 value | secret |
 | ✅ | [GetSpellCritChanceFromStat](#getspellcritchancefromstat) |  |  |
@@ -115,7 +115,7 @@
 | ✅ | [GetSpellPenetration](#getspellpenetration) | 1 value | secret |
 | ✅ | [GetSturdiness](#getsturdiness) | 1 value | secret |
 | ✅ | [GetTaxiBenchmarkMode](#gettaxibenchmarkmode) | 1 value | 1 value |
-| ✅ | [GetVersatilityBonus](#getversatilitybonus) |  |  |
+| ✅ | [GetVersatilityBonus](#getversatilitybonus) | 1 value | secret |
 | ✅ | [GetXPExhaustion](#getxpexhaustion) | 1 value | 1 value |
 | ✅ | [HasAPEffectsSpellPower](#hasapeffectsspellpower) | 1 value | 1 value |
 | ✅ | [HasDualWieldPenalty](#hasdualwieldpenalty) | 1 value | 1 value |
@@ -137,7 +137,7 @@
 | ✅ | [IsInJailersTower](#isinjailerstower) | 1 value | 1 value |
 | ✅ | [IsIndoors](#isindoors) | 1 value | 1 value |
 | ✅ | [IsInsane](#isinsane) | 1 value | 1 value |
-| ✅ | [IsItemPreferredArmorType](#isitempreferredarmortype) |  |  |
+| ✅ | [IsItemPreferredArmorType](#isitempreferredarmortype) | 1 value | 1 value |
 | ✅ | [IsJailersTowerLayerTimeLocked](#isjailerstowerlayertimelocked) |  |  |
 | ✅ | [IsLoggedIn](#isloggedin) | 1 value | 1 value |
 | ✅ | [IsMounted](#ismounted) | 1 value | 1 value |
@@ -264,6 +264,8 @@
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 2 values: `boolean`, `boolean`
+- Called in combat: returned 2 values: `boolean`, `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### CanPortGraveyard
@@ -280,8 +282,6 @@
 `CancelAreaSpiritHeal()`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 0 values
-- Called in combat: returned 0 values
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### CancelPendingEquip
@@ -297,8 +297,6 @@
 `CancelTrade()`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 0 values
-- Called in combat: returned 0 values
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### CheckInteractDistance
@@ -492,6 +490,8 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetCombatRatingBonus
@@ -501,6 +501,8 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetCombatRatingBonusForCombatRatingValue
@@ -956,8 +958,8 @@
 `GetPlayerFacing() → result: number?`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `number`
-- Called in combat: returned 1 value: `number`
+- Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPlayerInfoByGUID
@@ -967,6 +969,8 @@
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 8 values: `string`, `string`, `string`, `string`, `number`, `string`, `string`, `number`
+- Called in combat: returned 8 values: `string`, `string`, `string`, `string`, `number`, `string`, `string`, `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPowerRegen
@@ -1091,6 +1095,8 @@
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetRuneCount
@@ -1100,6 +1106,8 @@
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetSheathState
@@ -1138,6 +1146,8 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetSpellBonusHealing
@@ -1215,6 +1225,8 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetXPExhaustion
@@ -1222,8 +1234,8 @@
 `GetXPExhaustion() → result: number?`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `nil`
-- Called in combat: returned 1 value: `nil`
+- Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### HasAPEffectsSpellPower
@@ -1411,6 +1423,8 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsJailersTowerLayerTimeLocked
@@ -1864,14 +1878,14 @@
 - Status: ✅ verified
 - Payload: `inCombat: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 16 times (0 in combat); argument kinds: `b`
+- Seen firing 36 times (0 in combat); argument kinds: `b`
 
 ### PLAYER_TARGET_DIED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (8 in combat); argument kinds: ``
+- Seen firing 18 times (18 in combat); argument kinds: ``
 
 ## Types
 

@@ -30,11 +30,11 @@ Namespace: `C_PartyInfo`
 | ✅ | [C_PartyInfo.GetInstanceAbandonVoteRequirements](#c_partyinfogetinstanceabandonvoterequirements) | 2 values | 2 values |
 | ✅ | [C_PartyInfo.GetInstanceAbandonVoteResponse](#c_partyinfogetinstanceabandonvoteresponse) | 1 value | 1 value |
 | ✅ | [C_PartyInfo.GetInstanceAbandonVoteTime](#c_partyinfogetinstanceabandonvotetime) | 2 values | 2 values |
-| ✅ | [C_PartyInfo.GetInviteConfirmationInvalidQueues](#c_partyinfogetinviteconfirmationinvalidqueues) |  |  |
-| ✅ | [C_PartyInfo.GetInviteReferralInfo](#c_partyinfogetinvitereferralinfo) |  |  |
+| ✅ | [C_PartyInfo.GetInviteConfirmationInvalidQueues](#c_partyinfogetinviteconfirmationinvalidqueues) | 0 values | 0 values |
+| ✅ | [C_PartyInfo.GetInviteReferralInfo](#c_partyinfogetinvitereferralinfo) | 0 values | 0 values |
 | ✅ | [C_PartyInfo.GetLootMethod](#c_partyinfogetlootmethod) | 3 values | 3 values |
 | ✅ | [C_PartyInfo.GetLootMethodStyle](#c_partyinfogetlootmethodstyle) | 1 value | 1 value |
-| ✅ | [C_PartyInfo.GetMinItemLevel](#c_partyinfogetminitemlevel) |  |  |
+| ✅ | [C_PartyInfo.GetMinItemLevel](#c_partyinfogetminitemlevel) | 2 values | 2 values |
 | ✅ | [C_PartyInfo.GetMinLevel](#c_partyinfogetminlevel) | 1 value | 1 value |
 | ✅ | [C_PartyInfo.GetNumInstanceAbandonGroupVoteResponses](#c_partyinfogetnuminstanceabandongroupvoteresponses) | 1 value | 1 value |
 | ✅ | [C_PartyInfo.GetRestrictPings](#c_partyinfogetrestrictpings) | 1 value | 1 value |
@@ -44,8 +44,8 @@ Namespace: `C_PartyInfo`
 | ✅ | [C_PartyInfo.IsCrossFactionParty](#c_partyinfoiscrossfactionparty) | 1 value | 1 value |
 | ✅ | [C_PartyInfo.IsDelveComplete](#c_partyinfoisdelvecomplete) | 1 value | 1 value |
 | ✅ | [C_PartyInfo.IsDelveInProgress](#c_partyinfoisdelveinprogress) | 1 value | 1 value |
-| ✅ | [C_PartyInfo.IsGUIDInGroup](#c_partyinfoisguidingroup) |  |  |
-| ✅ | [C_PartyInfo.IsLootMethodAvailable](#c_partyinfoislootmethodavailable) |  |  |
+| ✅ | [C_PartyInfo.IsGUIDInGroup](#c_partyinfoisguidingroup) | 1 value | 1 value |
+| ✅ | [C_PartyInfo.IsLootMethodAvailable](#c_partyinfoislootmethodavailable) | 1 value | 1 value |
 | ✅ | [C_PartyInfo.IsPartyFull](#c_partyinfoispartyfull) | 1 value | 1 value |
 | ✅ | [C_PartyInfo.IsPartyInJailersTower](#c_partyinfoispartyinjailerstower) | 1 value | 1 value |
 | ✅ | [C_PartyInfo.IsPartyWalkIn](#c_partyinfoispartywalkin) | 1 value | 1 value |
@@ -285,6 +285,8 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.GetInviteReferralInfo
@@ -294,6 +296,8 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.GetLootMethod
@@ -321,6 +325,8 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified (function)
 - `avgItemLevelCategory`: The active party is always used
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 2 values: `number`, `string`
+- Called in combat: returned 2 values: `number`, `string`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.GetMinLevel
@@ -417,6 +423,8 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified (function)
 - `category`: If not provided, the active party is used
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.IsLootMethodAvailable
@@ -425,6 +433,8 @@ Namespace: `C_PartyInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.IsPartyFull
@@ -573,7 +583,7 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified
 - Payload: `category: number`, `partyGUID: WOWGUID`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `n,s`
+- Seen firing 3 times (0 in combat); argument kinds: `n,s`
 
 ### GROUP_INVITE_CONFIRMATION
 
@@ -586,20 +596,21 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified
 - Payload: `category: number`, `partyGUID: WOWGUID`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `n,s`
+- Seen firing 3 times (0 in combat); argument kinds: `n,s`
 
 ### GROUP_LEFT
 
 - Status: ✅ verified
 - Payload: `category: number`, `partyGUID: WOWGUID`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `n,s`
 
 ### GROUP_ROSTER_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 5 times (1 in combat); argument kinds: ``
+- Seen firing 31 times (4 in combat); argument kinds: ``
 
 ### INSTANCE_ABANDON_VOTE_FINISHED
 
@@ -636,6 +647,7 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### INVITE_TO_PARTY_CONFIRMATION
 
@@ -666,53 +678,56 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified
 - Payload: `name: cstring`, `isTank: bool`, `isHealer: bool`, `isDamage: bool`, `isNativeRealm: bool`, `allowMultipleRoles: bool`, `inviterGUID: WOWGUID`, `questSessionActive: bool`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `s,b,b,b,b,b,s,b`
 
 ### PARTY_LEADER_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### PARTY_LFG_RESTRICTED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### PARTY_LOOT_METHOD_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### PARTY_MEMBER_DISABLE
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 8 times (0 in combat); argument kinds: `s`
 
 ### PARTY_MEMBER_ENABLE
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 13 times (0 in combat); argument kinds: `s`
 
 ### PLAYER_DIFFICULTY_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 20 times (1 in combat); argument kinds: ``
+- Seen firing 54 times (3 in combat); argument kinds: ``
 
 ### PLAYER_ROLES_ASSIGNED
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 5 times (1 in combat); argument kinds: ``
+- Seen firing 31 times (4 in combat); argument kinds: ``
 
 ### RAID_ROSTER_UPDATE
 

@@ -8,10 +8,10 @@ Namespace: `C_SocialQueue`
 |---|---|---|---|
 | ✅ | [C_SocialQueue.GetAllGroups](#c_socialqueuegetallgroups) | 1 value | 1 value |
 | ✅ | [C_SocialQueue.GetConfig](#c_socialqueuegetconfig) | 1 value | 1 value |
-| ✅ | [C_SocialQueue.GetGroupForPlayer](#c_socialqueuegetgroupforplayer) |  |  |
-| ✅ | [C_SocialQueue.GetGroupInfo](#c_socialqueuegetgroupinfo) |  |  |
-| ✅ | [C_SocialQueue.GetGroupMembers](#c_socialqueuegetgroupmembers) |  |  |
-| ✅ | [C_SocialQueue.GetGroupQueues](#c_socialqueuegetgroupqueues) |  |  |
+| ✅ | [C_SocialQueue.GetGroupForPlayer](#c_socialqueuegetgroupforplayer) | 0 values | 0 values |
+| ✅ | [C_SocialQueue.GetGroupInfo](#c_socialqueuegetgroupinfo) | 0 values | 0 values |
+| ✅ | [C_SocialQueue.GetGroupMembers](#c_socialqueuegetgroupmembers) | 0 values | 0 values |
+| ✅ | [C_SocialQueue.GetGroupQueues](#c_socialqueuegetgroupqueues) | 0 values | 0 values |
 | ✅ | [C_SocialQueue.RequestToJoin](#c_socialqueuerequesttojoin) |  |  |
 | ✅ | [C_SocialQueue.SignalToastDisplayed](#c_socialqueuesignaltoastdisplayed) |  |  |
 
@@ -42,6 +42,8 @@ Namespace: `C_SocialQueue`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `SocialQueueDocumentation.lua`
 
 ### C_SocialQueue.GetGroupInfo
@@ -51,6 +53,8 @@ Namespace: `C_SocialQueue`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `SocialQueueDocumentation.lua`
 
 ### C_SocialQueue.GetGroupMembers
@@ -60,6 +64,8 @@ Namespace: `C_SocialQueue`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `SocialQueueDocumentation.lua`
 
 ### C_SocialQueue.GetGroupQueues
@@ -69,6 +75,8 @@ Namespace: `C_SocialQueue`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `SocialQueueDocumentation.lua`
 
 ### C_SocialQueue.RequestToJoin
@@ -94,14 +102,14 @@ Namespace: `C_SocialQueue`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### SOCIAL_QUEUE_UPDATE
 
 - Status: ✅ verified
 - Payload: `groupGUID: WOWGUID`, `numAddedItems: number?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 5 times (2 in combat); argument kinds: `s,-` / `s,n`
+- Seen firing 23 times (2 in combat); argument kinds: `s,-` / `s,n`
 
 ## Types
 

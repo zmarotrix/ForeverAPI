@@ -6,7 +6,7 @@ Namespace: `C_EventToastManager`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_EventToastManager.GetLevelUpDisplayToastsFromLevel](#c_eventtoastmanagergetlevelupdisplaytoastsfromlevel) |  |  |
+| ✅ | [C_EventToastManager.GetLevelUpDisplayToastsFromLevel](#c_eventtoastmanagergetlevelupdisplaytoastsfromlevel) | 1 value | 1 value |
 | ✅ | [C_EventToastManager.GetNextToastToDisplay](#c_eventtoastmanagergetnexttoasttodisplay) | 0 values | 0 values |
 | ✅ | [C_EventToastManager.RemoveCurrentToast](#c_eventtoastmanagerremovecurrenttoast) |  |  |
 
@@ -17,6 +17,8 @@ Namespace: `C_EventToastManager`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:10`: returned 1 value: `table{[number]=table}`
+- Called in combat: returned 1 value: `table{[number]=table}`
 - Source: client docs `UIEventToastManagerDocumentation.lua`
 
 ### C_EventToastManager.GetNextToastToDisplay

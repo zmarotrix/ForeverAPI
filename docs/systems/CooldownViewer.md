@@ -6,7 +6,7 @@ Namespace: `C_CooldownViewer`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_CooldownViewer.GetCooldownViewerCategorySet](#c_cooldownviewergetcooldownviewercategoryset) |  |  |
+| ✅ | [C_CooldownViewer.GetCooldownViewerCategorySet](#c_cooldownviewergetcooldownviewercategoryset) | 1 value | 1 value |
 | ✅ | [C_CooldownViewer.GetCooldownViewerCooldownInfo](#c_cooldownviewergetcooldownviewercooldowninfo) |  |  |
 | ✅ | [C_CooldownViewer.GetGroupBuffItems](#c_cooldownviewergetgroupbuffitems) | 1 value | 1 value |
 | ✅ | [C_CooldownViewer.GetLayoutData](#c_cooldownviewergetlayoutdata) | 1 value | 1 value |
@@ -20,6 +20,8 @@ Namespace: `C_CooldownViewer`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `table{[number]=number,[number]=number,[number]=number,[number]=number,[number]=number}`
+- Called in combat: returned 1 value: `table{[number]=number,[number]=number,[number]=number,[number]=number,[number]=number}`
 - Source: client docs `CooldownViewerDocumentation.lua`
 
 ### C_CooldownViewer.GetCooldownViewerCooldownInfo
@@ -81,7 +83,7 @@ Namespace: `C_CooldownViewer`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 18 times (0 in combat); argument kinds: ``
 
 ### COOLDOWN_VIEWER_SPELL_OVERRIDE_UPDATED
 

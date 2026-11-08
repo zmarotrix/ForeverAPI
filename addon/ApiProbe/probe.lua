@@ -13,7 +13,7 @@
 -- It never casts, targets, sends or changes a setting; the only calls it makes are getters (Get/Is/Has/Can/...).
 
 local ADDON = ...
-local VERSION = "0.2.1"
+local VERSION = "0.2.2"
 local CHUNK = 1500          -- globals examined per frame while dumping
 local CALLS_PER_FRAME = 20  -- getters called per frame
 local MAX_MEMBERS = 10000   -- members recorded per table (Enum alone has thousands)
@@ -539,7 +539,12 @@ local SAMPLERS = {
       if try(GetInventoryItemID, "player", slot) then return try(L.CreateFromEquipmentSlot, L, slot) end
     end
   end,
-  map = function() local M = rawget(G, "C_Map") return M and M.GetBestMapForUnit and try(M.GetBestMapForUnit, "player") end,
+  -- GetBestMapForUnit("player") returns nil on Forever (seen in 0.2.1), so fall back to the client's world map
+  map = function()
+    local M = rawget(G, "C_Map")
+    if not M then return end
+    return (M.GetBestMapForUnit and try(M.GetBestMapForUnit, "player")) or (M.GetFallbackWorldMapID and try(M.GetFallbackWorldMapID))
+  end,
   quest = function()
     local Q = rawget(G, "C_QuestLog")
     if not (Q and Q.GetNumQuestLogEntries and Q.GetInfo) then return end

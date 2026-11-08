@@ -8,7 +8,7 @@ Namespace: `C_PlayerMentorship`
 |---|---|---|---|
 | ✅ | [C_PlayerMentorship.GetMentorLevelRequirement](#c_playermentorshipgetmentorlevelrequirement) | 1 value | 1 value |
 | ✅ | [C_PlayerMentorship.GetMentorRequirements](#c_playermentorshipgetmentorrequirements) | 3 values | 3 values |
-| ✅ | [C_PlayerMentorship.GetMentorshipStatus](#c_playermentorshipgetmentorshipstatus) |  |  |
+| ✅ | [C_PlayerMentorship.GetMentorshipStatus](#c_playermentorshipgetmentorshipstatus) | 1 value | 1 value |
 | ✅ | [C_PlayerMentorship.IsActivePlayerConsideredNewcomer](#c_playermentorshipisactiveplayerconsiderednewcomer) | 1 value | 1 value |
 | ✅ | [C_PlayerMentorship.IsMentorRestricted](#c_playermentorshipismentorrestricted) | 1 value | 1 value |
 
@@ -36,6 +36,8 @@ Namespace: `C_PlayerMentorship`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `playerloc`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PlayerMentorshipDocumentation.lua`
 
 ### C_PlayerMentorship.IsActivePlayerConsideredNewcomer
@@ -63,7 +65,7 @@ Namespace: `C_PlayerMentorship`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 18 times (0 in combat); argument kinds: ``
 
 ### NEWCOMER_GRADUATION
 

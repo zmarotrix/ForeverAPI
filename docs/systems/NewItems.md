@@ -7,7 +7,7 @@ Namespace: `C_NewItems`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_NewItems.ClearAll](#c_newitemsclearall) |  |  |
-| ✅ | [C_NewItems.IsNewItem](#c_newitemsisnewitem) |  |  |
+| ✅ | [C_NewItems.IsNewItem](#c_newitemsisnewitem) | 1 value | 1 value |
 | ✅ | [C_NewItems.RemoveNewItem](#c_newitemsremovenewitem) |  |  |
 
 ### C_NewItems.ClearAll
@@ -23,6 +23,8 @@ Namespace: `C_NewItems`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `NewItemsDocumentation.lua`
 
 ### C_NewItems.RemoveNewItem

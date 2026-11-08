@@ -16,7 +16,7 @@ Namespace: `C_AdventureMap`
 | ✅ | [C_AdventureMap.GetNumZoneChoices](#c_adventuremapgetnumzonechoices) | 1 value | 1 value |
 | 🆕 | [C_AdventureMap.GetQuestInfo](#c_adventuremapgetquestinfo) |  |  |
 | 🆕 | [C_AdventureMap.GetQuestOfferInfo](#c_adventuremapgetquestofferinfo) |  |  |
-| ✅ | [C_AdventureMap.GetQuestPortraitInfo](#c_adventuremapgetquestportraitinfo) |  |  |
+| ✅ | [C_AdventureMap.GetQuestPortraitInfo](#c_adventuremapgetquestportraitinfo) | 0 values | 0 values |
 | 🆕 | [C_AdventureMap.GetZoneChoiceInfo](#c_adventuremapgetzonechoiceinfo) |  |  |
 | 🆕 | [C_AdventureMap.StartQuest](#c_adventuremapstartquest) |  |  |
 
@@ -99,6 +99,8 @@ Namespace: `C_AdventureMap`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `quest`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `AdventureMapDocumentation.lua`
 
 ### C_AdventureMap.GetZoneChoiceInfo

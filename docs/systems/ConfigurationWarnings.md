@@ -6,8 +6,8 @@ Namespace: `C_ConfigurationWarnings`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ⛔ | [C_ConfigurationWarnings.GetConfigurationWarningSeen](#c_configurationwarningsgetconfigurationwarningseen) |  |  |
-| ⛔ | [C_ConfigurationWarnings.GetConfigurationWarningString](#c_configurationwarningsgetconfigurationwarningstring) |  |  |
+| ⛔ | [C_ConfigurationWarnings.GetConfigurationWarningSeen](#c_configurationwarningsgetconfigurationwarningseen) | missing | missing |
+| ⛔ | [C_ConfigurationWarnings.GetConfigurationWarningString](#c_configurationwarningsgetconfigurationwarningstring) | missing | missing |
 | ⛔ | [C_ConfigurationWarnings.GetConfigurationWarnings](#c_configurationwarningsgetconfigurationwarnings) | missing | missing |
 | ⛔ | [C_ConfigurationWarnings.SetConfigurationWarningSeen](#c_configurationwarningssetconfigurationwarningseen) |  |  |
 
@@ -17,6 +17,8 @@ Namespace: `C_ConfigurationWarnings`
 
 - Status: ⛔ in Blizzard's docs, not in game
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: missing at call time
+- Called in combat: missing at call time
 - Source: client docs `ConfigurationWarningsDocumentation.lua`
 
 ### C_ConfigurationWarnings.GetConfigurationWarningString
@@ -26,6 +28,8 @@ Namespace: `C_ConfigurationWarnings`
 - Status: ⛔ in Blizzard's docs, not in game
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: missing at call time
+- Called in combat: missing at call time
 - Source: client docs `ConfigurationWarningsDocumentation.lua`
 
 ### C_ConfigurationWarnings.GetConfigurationWarnings

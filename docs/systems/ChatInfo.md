@@ -8,19 +8,19 @@ Namespace: `C_ChatInfo`
 |---|---|---|---|
 | ✅ | [C_ChatInfo.AreOutgoingAddonChatMessagesRestricted](#c_chatinfoareoutgoingaddonchatmessagesrestricted) | 1 value | 1 value |
 | ✅ | [C_ChatInfo.CanPlayerSpeakLanguage](#c_chatinfocanplayerspeaklanguage) |  |  |
-| ✅ | [C_ChatInfo.CancelEmote](#c_chatinfocancelemote) | 0 values | 0 values |
+| ✅ | [C_ChatInfo.CancelEmote](#c_chatinfocancelemote) |  |  |
 | ✅ | [C_ChatInfo.DropCautionaryChatMessage](#c_chatinfodropcautionarychatmessage) |  |  |
 | ✅ | [C_ChatInfo.GetChannelInfoFromIdentifier](#c_chatinfogetchannelinfofromidentifier) |  |  |
-| ✅ | [C_ChatInfo.GetChannelRosterInfo](#c_chatinfogetchannelrosterinfo) |  |  |
-| ✅ | [C_ChatInfo.GetChannelRuleset](#c_chatinfogetchannelruleset) |  |  |
+| ✅ | [C_ChatInfo.GetChannelRosterInfo](#c_chatinfogetchannelrosterinfo) | 0 values | 0 values |
+| ✅ | [C_ChatInfo.GetChannelRuleset](#c_chatinfogetchannelruleset) | 1 value | 1 value |
 | ✅ | [C_ChatInfo.GetChannelRulesetForChannelID](#c_chatinfogetchannelrulesetforchannelid) |  |  |
-| ✅ | [C_ChatInfo.GetChannelShortcut](#c_chatinfogetchannelshortcut) |  |  |
+| ✅ | [C_ChatInfo.GetChannelShortcut](#c_chatinfogetchannelshortcut) | 1 value | 1 value |
 | ✅ | [C_ChatInfo.GetChannelShortcutForChannelID](#c_chatinfogetchannelshortcutforchannelid) |  |  |
 | ✅ | [C_ChatInfo.GetChatLineSenderGUID](#c_chatinfogetchatlinesenderguid) |  |  |
 | ✅ | [C_ChatInfo.GetChatLineSenderName](#c_chatinfogetchatlinesendername) |  |  |
 | ✅ | [C_ChatInfo.GetChatLineText](#c_chatinfogetchatlinetext) |  |  |
 | ✅ | [C_ChatInfo.GetChatTypeName](#c_chatinfogetchattypename) |  |  |
-| ✅ | [C_ChatInfo.GetClubStreamIDs](#c_chatinfogetclubstreamids) |  |  |
+| ✅ | [C_ChatInfo.GetClubStreamIDs](#c_chatinfogetclubstreamids) | 1 value | 1 value |
 | ✅ | [C_ChatInfo.GetColorForChatType](#c_chatinfogetcolorforchattype) |  |  |
 | ✅ | [C_ChatInfo.GetGeneralChannelID](#c_chatinfogetgeneralchannelid) | 1 value | 1 value |
 | ✅ | [C_ChatInfo.GetGeneralChannelLocalID](#c_chatinfogetgeneralchannellocalid) | 1 value | 1 value |
@@ -30,14 +30,14 @@ Namespace: `C_ChatInfo`
 | ✅ | [C_ChatInfo.GetRegisteredAddonMessagePrefixes](#c_chatinfogetregisteredaddonmessageprefixes) | 1 value | 1 value |
 | ✅ | [C_ChatInfo.InChatMessagingLockdown](#c_chatinfoinchatmessaginglockdown) |  |  |
 | ✅ | [C_ChatInfo.IsAddonMessagePrefixRegistered](#c_chatinfoisaddonmessageprefixregistered) |  |  |
-| ✅ | [C_ChatInfo.IsChannelRegional](#c_chatinfoischannelregional) |  |  |
+| ✅ | [C_ChatInfo.IsChannelRegional](#c_chatinfoischannelregional) | 1 value | 1 value |
 | ✅ | [C_ChatInfo.IsChannelRegionalForChannelID](#c_chatinfoischannelregionalforchannelid) |  |  |
 | ✅ | [C_ChatInfo.IsChatLineCensored](#c_chatinfoischatlinecensored) |  |  |
 | ✅ | [C_ChatInfo.IsLoggingChat](#c_chatinfoisloggingchat) | 1 value | 1 value |
 | ✅ | [C_ChatInfo.IsLoggingCombat](#c_chatinfoisloggingcombat) | 2 values | 2 values |
-| ✅ | [C_ChatInfo.IsPartyChannelType](#c_chatinfoispartychanneltype) |  |  |
+| ✅ | [C_ChatInfo.IsPartyChannelType](#c_chatinfoispartychanneltype) | 1 value | 1 value |
 | ✅ | [C_ChatInfo.IsRegionalServiceAvailable](#c_chatinfoisregionalserviceavailable) | 1 value | 1 value |
-| ✅ | [C_ChatInfo.IsTimerunningPlayer](#c_chatinfoistimerunningplayer) |  |  |
+| ✅ | [C_ChatInfo.IsTimerunningPlayer](#c_chatinfoistimerunningplayer) | 1 value | 1 value |
 | ✅ | [C_ChatInfo.IsValidChatLine](#c_chatinfoisvalidchatline) | 1 value | 1 value |
 | ✅ | [C_ChatInfo.IsValidCombatFilterName](#c_chatinfoisvalidcombatfiltername) |  |  |
 | ✅ | [C_ChatInfo.PerformEmote](#c_chatinfoperformemote) |  |  |
@@ -75,8 +75,6 @@ Namespace: `C_ChatInfo`
 `C_ChatInfo.CancelEmote()`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 0 values
-- Called in combat: returned 0 values
 - Source: client docs `ChatInfoDocumentation.lua`
 
 ### C_ChatInfo.DropCautionaryChatMessage
@@ -103,6 +101,8 @@ Namespace: `C_ChatInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ChatInfoDocumentation.lua`
 
 ### C_ChatInfo.GetChannelRuleset
@@ -111,6 +111,8 @@ Namespace: `C_ChatInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ChatInfoDocumentation.lua`
 
 ### C_ChatInfo.GetChannelRulesetForChannelID
@@ -127,6 +129,8 @@ Namespace: `C_ChatInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `ChatInfoDocumentation.lua`
 
 ### C_ChatInfo.GetChannelShortcutForChannelID
@@ -178,6 +182,8 @@ Namespace: `C_ChatInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `club`: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `ChatInfoDocumentation.lua`
 
 ### C_ChatInfo.GetColorForChatType
@@ -264,6 +270,8 @@ Namespace: `C_ChatInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ChatInfoDocumentation.lua`
 
 ### C_ChatInfo.IsChannelRegionalForChannelID
@@ -306,6 +314,8 @@ Namespace: `C_ChatInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ChatInfoDocumentation.lua`
 
 ### C_ChatInfo.IsRegionalServiceAvailable
@@ -323,6 +333,8 @@ Namespace: `C_ChatInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ChatInfoDocumentation.lua`
 
 ### C_ChatInfo.IsValidChatLine
@@ -456,6 +468,7 @@ Namespace: `C_ChatInfo`
 - Status: ✅ verified
 - Payload: `prefix: cstring`, `text: cstring`, `channel: cstring`, `senderID: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (1 in combat); argument kinds: `s,s,s,n`
 
 ### CAN_LOCAL_WHISPER_TARGET_RESPONSE
 
@@ -504,6 +517,7 @@ Namespace: `C_ChatInfo`
 - Status: ✅ verified
 - Payload: `chatChannelID: number`, `name: cstring`
 - fires synchronously (Blizzard's docs)
+- Seen firing 9 times (0 in combat); argument kinds: `n,s`
 
 ### CHANNEL_PASSWORD_REQUEST
 
@@ -522,7 +536,7 @@ Namespace: `C_ChatInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 39 times (0 in combat); argument kinds: ``
 
 ### CHAT_COMBAT_MSG_ARENA_POINTS_GAIN
 
@@ -535,6 +549,7 @@ Namespace: `C_ChatInfo`
 - Status: ✅ verified
 - Payload: `whichLog: number`, `isEnabled: bool`
 - fires synchronously (Blizzard's docs)
+- Seen firing 4 times (0 in combat); argument kinds: `n,b`
 
 ### CHAT_MSG_ACHIEVEMENT
 
@@ -547,7 +562,7 @@ Namespace: `C_ChatInfo`
 - Status: ✅ verified
 - Payload: `prefix: cstring`, `text: cstring`, `channel: cstring`, `sender: cstring`, `target: cstring`, `zoneChannelID: number`, `localID: number`, `name: cstring`, `instanceID: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 103 times (23 in combat); argument kinds: `s,s,s,s,s,n,n,s,n`
+- Seen firing 478 times (35 in combat); argument kinds: `s,s,s,s,s,n,n,s,n`
 
 ### CHAT_MSG_ADDON_LOGGED
 
@@ -593,6 +608,7 @@ Namespace: `C_ChatInfo`
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 3 times (0 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t`
 
 ### CHAT_MSG_BN_INLINE_TOAST_BROADCAST
 
@@ -621,6 +637,7 @@ Namespace: `C_ChatInfo`
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t`
 
 ### CHAT_MSG_BN_WHISPER_INFORM
 
@@ -642,7 +659,7 @@ Namespace: `C_ChatInfo`
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t`
+- Seen firing 155 times (0 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t` / `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t`
 
 ### CHAT_MSG_CHANNEL_JOIN
 
@@ -677,6 +694,7 @@ Namespace: `C_ChatInfo`
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 27 times (0 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t`
 
 ### CHAT_MSG_CHANNEL_NOTICE_USER
 
@@ -714,7 +732,7 @@ Namespace: `C_ChatInfo`
 - Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (8 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t`
+- Seen firing 16 times (16 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t`
 
 ### CHAT_MSG_COMMUNITIES_CHANNEL
 
@@ -755,7 +773,7 @@ Namespace: `C_ChatInfo`
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (5 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t`
+- Seen firing 38 times (9 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t`
 
 ### CHAT_MSG_GUILD_ACHIEVEMENT
 
@@ -801,13 +819,14 @@ Namespace: `C_ChatInfo`
 - Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
-- Seen firing 15 times (1 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t`
+- Seen firing 25 times (3 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t`
 
 ### CHAT_MSG_MONEY
 
 - Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t`
 
 ### CHAT_MSG_MONSTER_EMOTE
 
@@ -829,6 +848,7 @@ Namespace: `C_ChatInfo`
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t`
 
 ### CHAT_MSG_MONSTER_WHISPER
 
@@ -864,7 +884,7 @@ Namespace: `C_ChatInfo`
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 7 times (3 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t`
+- Seen firing 21 times (3 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t`
 
 ### CHAT_MSG_PARTY_LEADER
 
@@ -872,6 +892,7 @@ Namespace: `C_ChatInfo`
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 6 times (0 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t`
 
 ### CHAT_MSG_PET_BATTLE_COMBAT_LOG
 
@@ -890,6 +911,7 @@ Namespace: `C_ChatInfo`
 - Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
+- Seen firing 4 times (0 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t`
 
 ### CHAT_MSG_PING
 
@@ -945,6 +967,7 @@ Namespace: `C_ChatInfo`
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t`
 
 ### CHAT_MSG_SKILL
 
@@ -952,7 +975,7 @@ Namespace: `C_ChatInfo`
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (1 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t`
+- Seen firing 5 times (2 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t`
 
 ### CHAT_MSG_SYSTEM
 
@@ -960,7 +983,7 @@ Namespace: `C_ChatInfo`
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (1 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t`
+- Seen firing 22 times (3 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t`
 
 ### CHAT_MSG_TARGETICONS
 
@@ -968,6 +991,7 @@ Namespace: `C_ChatInfo`
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t`
 
 ### CHAT_MSG_TEXT_EMOTE
 
@@ -975,6 +999,7 @@ Namespace: `C_ChatInfo`
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t`
 
 ### CHAT_MSG_TRADESKILLS
 
@@ -982,6 +1007,7 @@ Namespace: `C_ChatInfo`
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 695 times (0 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t`
 
 ### CHAT_MSG_VOICE_TEXT
 
@@ -1010,6 +1036,7 @@ Namespace: `C_ChatInfo`
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t`
 
 ### CHAT_REGIONAL_SEND_FAILED
 
@@ -1094,28 +1121,28 @@ Namespace: `C_ChatInfo`
 - Status: ✅ verified
 - Payload: `name: cstring`, `r: number`, `g: number`, `b: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 376 times (0 in combat); argument kinds: `s,n,n,n`
+- Seen firing 1128 times (0 in combat); argument kinds: `s,n,n,n`
 
 ### UPDATE_CHAT_COLOR_NAME_BY_CLASS
 
 - Status: ✅ verified
 - Payload: `name: cstring`, `colorNameByClass: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 376 times (0 in combat); argument kinds: `s,b`
+- Seen firing 1128 times (0 in combat); argument kinds: `s,b`
 
 ### UPDATE_CHAT_WINDOWS
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 12 times (0 in combat); argument kinds: ``
+- Seen firing 36 times (0 in combat); argument kinds: ``
 
 ### UPDATE_FLOATING_CHAT_WINDOWS
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (0 in combat); argument kinds: ``
+- Seen firing 24 times (0 in combat); argument kinds: ``
 
 ## Types
 

@@ -114,14 +114,14 @@ Namespace: `C_PerksActivities`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 4 times (0 in combat); argument kinds: ``
 
 ### PERKS_ACTIVITIES_UPDATED
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 4 times (0 in combat); argument kinds: ``
 
 ### PERKS_ACTIVITY_COMPLETED
 

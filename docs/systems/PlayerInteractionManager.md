@@ -9,9 +9,9 @@ Namespace: `C_PlayerInteractionManager`
 | ✅ | [C_PlayerInteractionManager.ClearInteraction](#c_playerinteractionmanagerclearinteraction) |  |  |
 | ✅ | [C_PlayerInteractionManager.ConfirmationInteraction](#c_playerinteractionmanagerconfirmationinteraction) |  |  |
 | ✅ | [C_PlayerInteractionManager.InteractUnit](#c_playerinteractionmanagerinteractunit) |  |  |
-| ✅ | [C_PlayerInteractionManager.IsInteractingWithNpcOfType](#c_playerinteractionmanagerisinteractingwithnpcoftype) |  |  |
+| ✅ | [C_PlayerInteractionManager.IsInteractingWithNpcOfType](#c_playerinteractionmanagerisinteractingwithnpcoftype) | 1 value | 1 value |
 | ✅ | [C_PlayerInteractionManager.IsReplacingUnit](#c_playerinteractionmanagerisreplacingunit) | 1 value | 1 value |
-| ✅ | [C_PlayerInteractionManager.IsValidNPCInteraction](#c_playerinteractionmanagerisvalidnpcinteraction) |  |  |
+| ✅ | [C_PlayerInteractionManager.IsValidNPCInteraction](#c_playerinteractionmanagerisvalidnpcinteraction) | 1 value | 1 value |
 | ✅ | [C_PlayerInteractionManager.ReopenInteraction](#c_playerinteractionmanagerreopeninteraction) |  |  |
 | ✅ | [C_PlayerInteractionManager.ShardTransferConfirm](#c_playerinteractionmanagershardtransferconfirm) |  |  |
 
@@ -46,6 +46,8 @@ Namespace: `C_PlayerInteractionManager`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInteractionManagerDocumentation.lua`
 
 ### C_PlayerInteractionManager.IsReplacingUnit
@@ -63,6 +65,8 @@ Namespace: `C_PlayerInteractionManager`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInteractionManagerDocumentation.lua`
 
 ### C_PlayerInteractionManager.ReopenInteraction
@@ -87,9 +91,11 @@ Namespace: `C_PlayerInteractionManager`
 - Status: ✅ verified
 - Payload: `type: PlayerInteractionType`
 - fires synchronously (Blizzard's docs)
+- Seen firing 18 times (0 in combat); argument kinds: `n`
 
 ### PLAYER_INTERACTION_MANAGER_FRAME_SHOW
 
 - Status: ✅ verified
 - Payload: `type: PlayerInteractionType`
 - fires synchronously (Blizzard's docs)
+- Seen firing 13 times (0 in combat); argument kinds: `n`

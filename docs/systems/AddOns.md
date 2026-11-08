@@ -8,27 +8,27 @@ Namespace: `C_AddOns`
 |---|---|---|---|
 | ✅ | [C_AddOns.DisableAddOn](#c_addonsdisableaddon) |  |  |
 | ✅ | [C_AddOns.DisableAllAddOns](#c_addonsdisablealladdons) |  |  |
-| ✅ | [C_AddOns.DoesAddOnExist](#c_addonsdoesaddonexist) |  |  |
-| ✅ | [C_AddOns.DoesAddOnHaveLoadError](#c_addonsdoesaddonhaveloaderror) |  |  |
+| ✅ | [C_AddOns.DoesAddOnExist](#c_addonsdoesaddonexist) | 1 value | 1 value |
+| ✅ | [C_AddOns.DoesAddOnHaveLoadError](#c_addonsdoesaddonhaveloaderror) | 1 value | 1 value |
 | ✅ | [C_AddOns.EnableAddOn](#c_addonsenableaddon) |  |  |
 | ✅ | [C_AddOns.EnableAllAddOns](#c_addonsenablealladdons) |  |  |
-| ✅ | [C_AddOns.GetAddOnDependencies](#c_addonsgetaddondependencies) |  |  |
-| ✅ | [C_AddOns.GetAddOnEnableState](#c_addonsgetaddonenablestate) |  |  |
-| ✅ | [C_AddOns.GetAddOnInfo](#c_addonsgetaddoninfo) |  |  |
-| ✅ | [C_AddOns.GetAddOnInterfaceVersion](#c_addonsgetaddoninterfaceversion) |  |  |
-| ✅ | [C_AddOns.GetAddOnLocalTable](#c_addonsgetaddonlocaltable) |  |  |
+| ✅ | [C_AddOns.GetAddOnDependencies](#c_addonsgetaddondependencies) | 0 values | 0 values |
+| ✅ | [C_AddOns.GetAddOnEnableState](#c_addonsgetaddonenablestate) | 1 value | 1 value |
+| ✅ | [C_AddOns.GetAddOnInfo](#c_addonsgetaddoninfo) | 6 values | 6 values |
+| ✅ | [C_AddOns.GetAddOnInterfaceVersion](#c_addonsgetaddoninterfaceversion) | 1 value | 1 value |
+| ✅ | [C_AddOns.GetAddOnLocalTable](#c_addonsgetaddonlocaltable) | 0 values | 0 values |
 | ✅ | [C_AddOns.GetAddOnMetadata](#c_addonsgetaddonmetadata) |  |  |
-| ✅ | [C_AddOns.GetAddOnName](#c_addonsgetaddonname) |  |  |
-| ✅ | [C_AddOns.GetAddOnNotes](#c_addonsgetaddonnotes) |  |  |
-| ✅ | [C_AddOns.GetAddOnOptionalDependencies](#c_addonsgetaddonoptionaldependencies) |  |  |
-| ✅ | [C_AddOns.GetAddOnSecurity](#c_addonsgetaddonsecurity) |  |  |
-| ✅ | [C_AddOns.GetAddOnTitle](#c_addonsgetaddontitle) |  |  |
+| ✅ | [C_AddOns.GetAddOnName](#c_addonsgetaddonname) | 1 value | 1 value |
+| ✅ | [C_AddOns.GetAddOnNotes](#c_addonsgetaddonnotes) | 1 value | 1 value |
+| ✅ | [C_AddOns.GetAddOnOptionalDependencies](#c_addonsgetaddonoptionaldependencies) | 0 values | 0 values |
+| ✅ | [C_AddOns.GetAddOnSecurity](#c_addonsgetaddonsecurity) | 1 value | 1 value |
+| ✅ | [C_AddOns.GetAddOnTitle](#c_addonsgetaddontitle) | 1 value | 1 value |
 | ✅ | [C_AddOns.GetNumAddOns](#c_addonsgetnumaddons) | 1 value | 1 value |
 | ✅ | [C_AddOns.GetScriptsDisallowedForBeta](#c_addonsgetscriptsdisallowedforbeta) | 1 value | 1 value |
-| ✅ | [C_AddOns.IsAddOnDefaultEnabled](#c_addonsisaddondefaultenabled) |  |  |
-| ✅ | [C_AddOns.IsAddOnLoadOnDemand](#c_addonsisaddonloadondemand) |  |  |
-| ✅ | [C_AddOns.IsAddOnLoadable](#c_addonsisaddonloadable) |  |  |
-| ✅ | [C_AddOns.IsAddOnLoaded](#c_addonsisaddonloaded) |  |  |
+| ✅ | [C_AddOns.IsAddOnDefaultEnabled](#c_addonsisaddondefaultenabled) | 1 value | 1 value |
+| ✅ | [C_AddOns.IsAddOnLoadOnDemand](#c_addonsisaddonloadondemand) | 1 value | 1 value |
+| ✅ | [C_AddOns.IsAddOnLoadable](#c_addonsisaddonloadable) | 2 values | 2 values |
+| ✅ | [C_AddOns.IsAddOnLoaded](#c_addonsisaddonloaded) | 2 values | 2 values |
 | ✅ | [C_AddOns.IsAddonVersionCheckEnabled](#c_addonsisaddonversioncheckenabled) | 1 value | 1 value |
 | ✅ | [C_AddOns.LoadAddOn](#c_addonsloadaddon) |  |  |
 | ✅ | [C_AddOns.ResetAddOns](#c_addonsresetaddons) |  |  |
@@ -58,6 +58,8 @@ Namespace: `C_AddOns`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `s:ApiProbe`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `AddOnsDocumentation.lua`
 
 ### C_AddOns.DoesAddOnHaveLoadError
@@ -66,6 +68,8 @@ Namespace: `C_AddOns`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `s:ApiProbe`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `AddOnsDocumentation.lua`
 
 ### C_AddOns.EnableAddOn
@@ -90,6 +94,8 @@ Namespace: `C_AddOns`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `s:ApiProbe`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `AddOnsDocumentation.lua`
 
 ### C_AddOns.GetAddOnEnableState
@@ -98,6 +104,8 @@ Namespace: `C_AddOns`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `s:ApiProbe`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `AddOnsDocumentation.lua`
 
 ### C_AddOns.GetAddOnInfo
@@ -106,6 +114,8 @@ Namespace: `C_AddOns`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `s:ApiProbe`: returned 6 values: `string`, `string`, `string`, `boolean`, `string`, `string`
+- Called in combat: returned 6 values: `string`, `string`, `string`, `boolean`, `string`, `string`
 - Source: client docs `AddOnsDocumentation.lua`
 
 ### C_AddOns.GetAddOnInterfaceVersion
@@ -114,6 +124,8 @@ Namespace: `C_AddOns`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `s:ApiProbe`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `AddOnsDocumentation.lua`
 
 ### C_AddOns.GetAddOnLocalTable
@@ -123,6 +135,8 @@ Namespace: `C_AddOns`
 - Status: ✅ verified (function)
 - Blizzard: Returns the addon table (passed as the second argument of ... to files) for any addon that opts in through setting AllowAddOnTableAccess: 1 in the toc file. Insecure code cannot query addon tables from Blizzard addons.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `s:ApiProbe`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `AddOnsDocumentation.lua`
 
 ### C_AddOns.GetAddOnMetadata
@@ -139,6 +153,8 @@ Namespace: `C_AddOns`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `s:ApiProbe`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `AddOnsDocumentation.lua`
 
 ### C_AddOns.GetAddOnNotes
@@ -147,6 +163,8 @@ Namespace: `C_AddOns`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `s:ApiProbe`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `AddOnsDocumentation.lua`
 
 ### C_AddOns.GetAddOnOptionalDependencies
@@ -155,6 +173,8 @@ Namespace: `C_AddOns`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `s:ApiProbe`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `AddOnsDocumentation.lua`
 
 ### C_AddOns.GetAddOnSecurity
@@ -163,6 +183,8 @@ Namespace: `C_AddOns`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `s:ApiProbe`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `AddOnsDocumentation.lua`
 
 ### C_AddOns.GetAddOnTitle
@@ -171,6 +193,8 @@ Namespace: `C_AddOns`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `s:ApiProbe`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `AddOnsDocumentation.lua`
 
 ### C_AddOns.GetNumAddOns
@@ -197,6 +221,8 @@ Namespace: `C_AddOns`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `s:ApiProbe`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `AddOnsDocumentation.lua`
 
 ### C_AddOns.IsAddOnLoadOnDemand
@@ -205,6 +231,8 @@ Namespace: `C_AddOns`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `s:ApiProbe`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `AddOnsDocumentation.lua`
 
 ### C_AddOns.IsAddOnLoadable
@@ -213,6 +241,8 @@ Namespace: `C_AddOns`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `s:ApiProbe`: returned 2 values: `boolean`, `string`
+- Called in combat: returned 2 values: `boolean`, `string`
 - Source: client docs `AddOnsDocumentation.lua`
 
 ### C_AddOns.IsAddOnLoaded
@@ -221,6 +251,8 @@ Namespace: `C_AddOns`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `s:ApiProbe`: returned 2 values: `boolean`, `boolean`
+- Called in combat: returned 2 values: `boolean`, `boolean`
 - Source: client docs `AddOnsDocumentation.lua`
 
 ### C_AddOns.IsAddonVersionCheckEnabled
@@ -276,14 +308,14 @@ Namespace: `C_AddOns`
 - Status: ✅ verified
 - Payload: `closingClient: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: `b`
+- Seen firing 12 times (0 in combat); argument kinds: `b`
 
 ### ADDON_LOADED
 
 - Status: ✅ verified
 - Payload: `addOnName: cstring`, `containsBindings: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 135 times (0 in combat); argument kinds: `s,b`
+- Seen firing 415 times (1 in combat); argument kinds: `s,b`
 
 ### SAVED_VARIABLES_TOO_LARGE
 

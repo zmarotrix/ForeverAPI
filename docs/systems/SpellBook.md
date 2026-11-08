@@ -14,45 +14,45 @@ Namespace: `C_SpellBook`
 | ✅ | [C_SpellBook.FindSpellBookSlotForSpell](#c_spellbookfindspellbookslotforspell) |  |  |
 | ✅ | [C_SpellBook.FindSpellOverrideByID](#c_spellbookfindspelloverridebyid) |  |  |
 | ✅ | [C_SpellBook.GetClassSkillLineInfo](#c_spellbookgetclassskilllineinfo) | 1 value | 1 value |
-| ✅ | [C_SpellBook.GetCurrentLevelSpells](#c_spellbookgetcurrentlevelspells) |  |  |
+| ✅ | [C_SpellBook.GetCurrentLevelSpells](#c_spellbookgetcurrentlevelspells) | 1 value | 1 value |
 | ✅ | [C_SpellBook.GetNumSpellBookSkillLines](#c_spellbookgetnumspellbookskilllines) | 1 value | 1 value |
 | ✅ | [C_SpellBook.GetSkillLineIndexByID](#c_spellbookgetskilllineindexbyid) |  |  |
-| ✅ | [C_SpellBook.GetSpellBookItemAutoCast](#c_spellbookgetspellbookitemautocast) |  |  |
-| ✅ | [C_SpellBook.GetSpellBookItemCastCount](#c_spellbookgetspellbookitemcastcount) |  |  |
-| ✅ | [C_SpellBook.GetSpellBookItemChargeDuration](#c_spellbookgetspellbookitemchargeduration) |  |  |
-| ✅ | [C_SpellBook.GetSpellBookItemCharges](#c_spellbookgetspellbookitemcharges) |  |  |
-| ✅ | [C_SpellBook.GetSpellBookItemCooldown](#c_spellbookgetspellbookitemcooldown) |  |  |
-| ✅ | [C_SpellBook.GetSpellBookItemCooldownDuration](#c_spellbookgetspellbookitemcooldownduration) |  |  |
-| ✅ | [C_SpellBook.GetSpellBookItemDescription](#c_spellbookgetspellbookitemdescription) |  |  |
-| ✅ | [C_SpellBook.GetSpellBookItemInfo](#c_spellbookgetspellbookiteminfo) |  |  |
-| ✅ | [C_SpellBook.GetSpellBookItemLevelLearned](#c_spellbookgetspellbookitemlevellearned) |  |  |
-| ✅ | [C_SpellBook.GetSpellBookItemLink](#c_spellbookgetspellbookitemlink) |  |  |
+| ✅ | [C_SpellBook.GetSpellBookItemAutoCast](#c_spellbookgetspellbookitemautocast) | 2 values | 2 values |
+| ✅ | [C_SpellBook.GetSpellBookItemCastCount](#c_spellbookgetspellbookitemcastcount) | 1 value | secret |
+| ✅ | [C_SpellBook.GetSpellBookItemChargeDuration](#c_spellbookgetspellbookitemchargeduration) | 0 values | 0 values |
+| ✅ | [C_SpellBook.GetSpellBookItemCharges](#c_spellbookgetspellbookitemcharges) | 0 values | 0 values |
+| ✅ | [C_SpellBook.GetSpellBookItemCooldown](#c_spellbookgetspellbookitemcooldown) | 1 value | 1 value |
+| ✅ | [C_SpellBook.GetSpellBookItemCooldownDuration](#c_spellbookgetspellbookitemcooldownduration) | 1 value | 1 value |
+| ✅ | [C_SpellBook.GetSpellBookItemDescription](#c_spellbookgetspellbookitemdescription) | 1 value | 1 value |
+| ✅ | [C_SpellBook.GetSpellBookItemInfo](#c_spellbookgetspellbookiteminfo) | 1 value | 1 value |
+| ✅ | [C_SpellBook.GetSpellBookItemLevelLearned](#c_spellbookgetspellbookitemlevellearned) | 1 value | 1 value |
+| ✅ | [C_SpellBook.GetSpellBookItemLink](#c_spellbookgetspellbookitemlink) | 1 value | 1 value |
 | 🆕 | [C_SpellBook.GetSpellBookItemLossOfControlCooldown](#c_spellbookgetspellbookitemlossofcontrolcooldown) |  |  |
-| ✅ | [C_SpellBook.GetSpellBookItemLossOfControlCooldownDuration](#c_spellbookgetspellbookitemlossofcontrolcooldownduration) |  |  |
-| ✅ | [C_SpellBook.GetSpellBookItemLossOfControlCooldownInfo](#c_spellbookgetspellbookitemlossofcontrolcooldowninfo) |  |  |
-| ✅ | [C_SpellBook.GetSpellBookItemName](#c_spellbookgetspellbookitemname) |  |  |
-| ✅ | [C_SpellBook.GetSpellBookItemPowerCost](#c_spellbookgetspellbookitempowercost) |  |  |
-| ✅ | [C_SpellBook.GetSpellBookItemSkillLineIndex](#c_spellbookgetspellbookitemskilllineindex) |  |  |
-| ✅ | [C_SpellBook.GetSpellBookItemTexture](#c_spellbookgetspellbookitemtexture) |  |  |
-| ✅ | [C_SpellBook.GetSpellBookItemTradeSkillLink](#c_spellbookgetspellbookitemtradeskilllink) |  |  |
-| ✅ | [C_SpellBook.GetSpellBookItemType](#c_spellbookgetspellbookitemtype) |  |  |
-| ✅ | [C_SpellBook.GetSpellBookSkillLineInfo](#c_spellbookgetspellbookskilllineinfo) |  |  |
+| ✅ | [C_SpellBook.GetSpellBookItemLossOfControlCooldownDuration](#c_spellbookgetspellbookitemlossofcontrolcooldownduration) | 1 value | 1 value |
+| ✅ | [C_SpellBook.GetSpellBookItemLossOfControlCooldownInfo](#c_spellbookgetspellbookitemlossofcontrolcooldowninfo) | 1 value | 1 value |
+| ✅ | [C_SpellBook.GetSpellBookItemName](#c_spellbookgetspellbookitemname) | 2 values | 2 values |
+| ✅ | [C_SpellBook.GetSpellBookItemPowerCost](#c_spellbookgetspellbookitempowercost) | 0 values | 0 values |
+| ✅ | [C_SpellBook.GetSpellBookItemSkillLineIndex](#c_spellbookgetspellbookitemskilllineindex) | 1 value | 1 value |
+| ✅ | [C_SpellBook.GetSpellBookItemTexture](#c_spellbookgetspellbookitemtexture) | 1 value | 1 value |
+| ✅ | [C_SpellBook.GetSpellBookItemTradeSkillLink](#c_spellbookgetspellbookitemtradeskilllink) | 0 values | 0 values |
+| ✅ | [C_SpellBook.GetSpellBookItemType](#c_spellbookgetspellbookitemtype) | 3 values | 3 values |
+| ✅ | [C_SpellBook.GetSpellBookSkillLineInfo](#c_spellbookgetspellbookskilllineinfo) | 1 value | 1 value |
 | ✅ | [C_SpellBook.HasPetSpells](#c_spellbookhaspetspells) | 0 values | 0 values |
-| ✅ | [C_SpellBook.IsAutoAttackSpellBookItem](#c_spellbookisautoattackspellbookitem) |  |  |
-| ✅ | [C_SpellBook.IsClassTalentSpellBookItem](#c_spellbookisclasstalentspellbookitem) |  |  |
-| ✅ | [C_SpellBook.IsPvPTalentSpellBookItem](#c_spellbookispvptalentspellbookitem) |  |  |
-| ✅ | [C_SpellBook.IsRangedAutoAttackSpellBookItem](#c_spellbookisrangedautoattackspellbookitem) |  |  |
-| ✅ | [C_SpellBook.IsSpellBookItemHarmful](#c_spellbookisspellbookitemharmful) |  |  |
-| ✅ | [C_SpellBook.IsSpellBookItemHelpful](#c_spellbookisspellbookitemhelpful) |  |  |
-| ✅ | [C_SpellBook.IsSpellBookItemInRange](#c_spellbookisspellbookiteminrange) |  |  |
-| ✅ | [C_SpellBook.IsSpellBookItemLooseFlyoutMember](#c_spellbookisspellbookitemlooseflyoutmember) |  |  |
-| ✅ | [C_SpellBook.IsSpellBookItemLowRank](#c_spellbookisspellbookitemlowrank) |  |  |
-| ✅ | [C_SpellBook.IsSpellBookItemOffSpec](#c_spellbookisspellbookitemoffspec) |  |  |
-| ✅ | [C_SpellBook.IsSpellBookItemPassive](#c_spellbookisspellbookitempassive) |  |  |
-| ✅ | [C_SpellBook.IsSpellBookItemUsable](#c_spellbookisspellbookitemusable) |  |  |
-| ✅ | [C_SpellBook.IsSpellInSpellBook](#c_spellbookisspellinspellbook) |  |  |
-| ✅ | [C_SpellBook.IsSpellKnown](#c_spellbookisspellknown) |  |  |
-| ✅ | [C_SpellBook.IsSpellKnownOrInSpellBook](#c_spellbookisspellknownorinspellbook) |  |  |
+| ✅ | [C_SpellBook.IsAutoAttackSpellBookItem](#c_spellbookisautoattackspellbookitem) | 1 value | 1 value |
+| ✅ | [C_SpellBook.IsClassTalentSpellBookItem](#c_spellbookisclasstalentspellbookitem) | 1 value | 1 value |
+| ✅ | [C_SpellBook.IsPvPTalentSpellBookItem](#c_spellbookispvptalentspellbookitem) | 1 value | 1 value |
+| ✅ | [C_SpellBook.IsRangedAutoAttackSpellBookItem](#c_spellbookisrangedautoattackspellbookitem) | 1 value | 1 value |
+| ✅ | [C_SpellBook.IsSpellBookItemHarmful](#c_spellbookisspellbookitemharmful) | 1 value | 1 value |
+| ✅ | [C_SpellBook.IsSpellBookItemHelpful](#c_spellbookisspellbookitemhelpful) | 1 value | 1 value |
+| ✅ | [C_SpellBook.IsSpellBookItemInRange](#c_spellbookisspellbookiteminrange) | 1 value | 1 value |
+| ✅ | [C_SpellBook.IsSpellBookItemLooseFlyoutMember](#c_spellbookisspellbookitemlooseflyoutmember) | 1 value | 1 value |
+| ✅ | [C_SpellBook.IsSpellBookItemLowRank](#c_spellbookisspellbookitemlowrank) | 1 value | 1 value |
+| ✅ | [C_SpellBook.IsSpellBookItemOffSpec](#c_spellbookisspellbookitemoffspec) | 1 value | 1 value |
+| ✅ | [C_SpellBook.IsSpellBookItemPassive](#c_spellbookisspellbookitempassive) | 1 value | 1 value |
+| ✅ | [C_SpellBook.IsSpellBookItemUsable](#c_spellbookisspellbookitemusable) | 2 values | 2 values |
+| ✅ | [C_SpellBook.IsSpellInSpellBook](#c_spellbookisspellinspellbook) | 1 value | 1 value |
+| ✅ | [C_SpellBook.IsSpellKnown](#c_spellbookisspellknown) | 1 value | 1 value |
+| ✅ | [C_SpellBook.IsSpellKnownOrInSpellBook](#c_spellbookisspellknownorinspellbook) | 1 value | 1 value |
 | ✅ | [C_SpellBook.PickupSpellBookItem](#c_spellbookpickupspellbookitem) |  |  |
 | ✅ | [C_SpellBook.SetBarSlotFromIntro](#c_spellbooksetbarslotfromintro) |  |  |
 | ✅ | [C_SpellBook.SetSpellBookItemAutoCastEnabled](#c_spellbooksetspellbookitemautocastenabled) |  |  |
@@ -140,6 +140,8 @@ Namespace: `C_SpellBook`
 - Blizzard: Returns general, class, and active spec spells that are learned at the specified level
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:10`: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.GetNumSpellBookSkillLines
@@ -170,6 +172,8 @@ Namespace: `C_SpellBook`
 - `autoCastEnabled`: True if auto-casting this spell is currently enabled (usually by the player)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 2 values: `boolean`, `boolean`
+- Called in combat: returned 2 values: `boolean`, `boolean`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.GetSpellBookItemCastCount
@@ -180,6 +184,8 @@ Namespace: `C_SpellBook`
 - Blizzard: Returns number of times a SpellBookItem can be cast, typically based on availability of things like required reagent items; Always returns 0 if item is not found or is not a spell
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while cooldowns are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.GetSpellBookItemChargeDuration
@@ -190,6 +196,8 @@ Namespace: `C_SpellBook`
 - Blizzard: Returns a duration object describing the active recharge time for a spellbook item.
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.GetSpellBookItemCharges
@@ -201,6 +209,8 @@ Namespace: `C_SpellBook`
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while cooldowns are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.GetSpellBookItemCooldown
@@ -212,6 +222,8 @@ Namespace: `C_SpellBook`
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while cooldowns are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `table{duration=number,isActive=boolean,isEnabled=boolean,modRate=number,startTime=number}`
+- Called in combat: returned 1 value: `table{duration=secret,isActive=boolean,isEnabled=boolean,modRate=secret,startTime=secret}`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.GetSpellBookItemCooldownDuration
@@ -222,6 +234,8 @@ Namespace: `C_SpellBook`
 - Blizzard: Returns a duration object describing the active cooldown duration for a spellbook item.
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `userdata`
+- Called in combat: returned 1 value: `userdata`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.GetSpellBookItemDescription
@@ -232,6 +246,8 @@ Namespace: `C_SpellBook`
 - `description`: May be empty if spell's data isn't loaded yet; Listen for SPELL_TEXT_UPDATE event, or use SpellMixin to load asynchronously
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.GetSpellBookItemInfo
@@ -241,6 +257,8 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `table{actionID=number,iconID=number,isOffSpec=boolean,isPassive=boolean,itemType=number,name=string,spellID=number,subName=string}`
+- Called in combat: returned 1 value: `table{actionID=number,iconID=number,isOffSpec=boolean,isPassive=boolean,itemType=number,name=string,spellID=number,subName=string}`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.GetSpellBookItemLevelLearned
@@ -250,6 +268,8 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified (function)
 - Blizzard: Returns the level the spell is learned at; May return a different value if the player is currently Level Linked with another player; Returns 0 if item is not a Spell
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.GetSpellBookItemLink
@@ -259,6 +279,8 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.GetSpellBookItemLossOfControlCooldown
@@ -275,6 +297,8 @@ Namespace: `C_SpellBook`
 - Blizzard: Returns a duration object describing the active loss of control cooldown duration for a spellbook item.
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `userdata`
+- Called in combat: returned 1 value: `userdata`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.GetSpellBookItemLossOfControlCooldownInfo
@@ -286,6 +310,8 @@ Namespace: `C_SpellBook`
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while cooldowns are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `table{duration=number,isActive=boolean,modRate=number,shouldReplaceNormalCooldown=boolean,startTime=number}`
+- Called in combat: returned 1 value: `table{duration=secret,isActive=boolean,modRate=secret,shouldReplaceNormalCooldown=boolean,startTime=secret}`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.GetSpellBookItemName
@@ -296,6 +322,8 @@ Namespace: `C_SpellBook`
 - `subName`: May be empty if spell's data isn't loaded yet; Listen for SPELL_TEXT_UPDATE event, or use SpellMixin to load asynchronously
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 2 values: `string`, `string`
+- Called in combat: returned 2 values: `string`, `string`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.GetSpellBookItemPowerCost
@@ -306,6 +334,8 @@ Namespace: `C_SpellBook`
 - Blizzard: Returns a table containing one or more SpellPowerCostInfos, one for each power type a SpellBookItem costs; May return nil if item is not found or has no resource costs
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.GetSpellBookItemSkillLineIndex
@@ -316,6 +346,8 @@ Namespace: `C_SpellBook`
 - Blizzard: Get the index of the SkillLine this SpellBookItem is part of
 - `skillLineIndex`: Will be nil if the specified SpellBookItem doesn't exist or isn't part of a SkillLine
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.GetSpellBookItemTexture
@@ -325,6 +357,8 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.GetSpellBookItemTradeSkillLink
@@ -335,6 +369,8 @@ Namespace: `C_SpellBook`
 - Blizzard: Returns nil if SpellBookItem is not associated with a trade skill
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.GetSpellBookItemType
@@ -346,6 +382,8 @@ Namespace: `C_SpellBook`
 - `spellID`: May be nil if item is not a spell; Will be the overriding spellID if spell is overriden, otherwise will match actionID
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 3 values: `number`, `number`, `number`
+- Called in combat: returned 3 values: `number`, `number`, `number`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.GetSpellBookSkillLineInfo
@@ -355,6 +393,8 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `table{iconID=number,isGuild=boolean,itemIndexOffset=number,name=string,numSpellBookItems=number,shouldHide=boolean}`
+- Called in combat: returned 1 value: `table{iconID=number,isGuild=boolean,itemIndexOffset=number,name=string,numSpellBookItems=number,shouldHide=boolean}`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.HasPetSpells
@@ -375,6 +415,8 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the SpellBookItem is the player's melee Auto Attack spell
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.IsClassTalentSpellBookItem
@@ -384,6 +426,8 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the SpellBookItem comes from a Class Talent
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.IsPvPTalentSpellBookItem
@@ -393,6 +437,8 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the SpellBookItem comes from a PvP Talent
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.IsRangedAutoAttackSpellBookItem
@@ -402,6 +448,8 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the SpellBookItem is the player's ranged Auto Attack spell (ex: Shoot, Auto Shot, etc)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.IsSpellBookItemHarmful
@@ -411,6 +459,8 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the SpellBookIem can be cast on hostile targets
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.IsSpellBookItemHelpful
@@ -420,6 +470,8 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the SpellBookIem can be cast on the player or other friendly targets
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.IsSpellBookItemInRange
@@ -431,6 +483,8 @@ Namespace: `C_SpellBook`
 - `targetUnit`: Optional specific target; If not supplied, player's current target (if any) will be used
 - `inRange`: May be nil if the range check was invalid, ie due to unknown/invalid spell, missing/invalid target, etc
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.IsSpellBookItemLooseFlyoutMember
@@ -440,6 +494,8 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the SpellBookItem is represented in a Flyout.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.IsSpellBookItemLowRank
@@ -449,6 +505,8 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the SpellBookItem is a lower rank of a known higher rank spell.  Returns false if there is only a single rank or it is the highest rank known.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.IsSpellBookItemOffSpec
@@ -458,6 +516,8 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the SpellBookItem belongs to a non-active class specialization
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.IsSpellBookItemPassive
@@ -467,6 +527,8 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the SpellBookItem is a passive spell; Will always return false if it is not a spell
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.IsSpellBookItemUsable
@@ -477,6 +539,8 @@ Namespace: `C_SpellBook`
 - Blizzard: Returns whether the SpellBookIem is currently castable; Typically based on things like learned status, required resources, etc
 - `insufficientPower`: True if SpellBookIem is specifically unusable due to insufficient power (ie MANA, RAGE, etc)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 2 values: `boolean`, `boolean`
+- Called in combat: returned 2 values: `boolean`, `boolean`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.IsSpellInSpellBook
@@ -486,6 +550,8 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a spell should be found in the spellbook. This function can also return true for spells that aren't known, such as override spells granted by an aura linked to class talents
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.IsSpellKnown
@@ -495,6 +561,8 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a player knows a spell. This function can also return true for spells that aren't in the spellbook, such as temporarily-granted abilities
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.IsSpellKnownOrInSpellBook
@@ -504,6 +572,8 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a spell is considered to be known or present in the spellbook
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.PickupSpellBookItem
@@ -554,7 +624,7 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified
 - Payload: `cancelledCast: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 757 times (707 in combat); argument kinds: `b`
+- Seen firing 1731 times (1520 in combat); argument kinds: `b`
 
 ### LEARNED_SPELL_IN_SKILL_LINE
 
@@ -579,7 +649,7 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 8 times (0 in combat); argument kinds: ``
+- Seen firing 40 times (0 in combat); argument kinds: ``
 
 ### SPELL_FLYOUT_UPDATE
 
@@ -587,7 +657,7 @@ Namespace: `C_SpellBook`
 - Payload: `flyoutID: number?`, `spellID: number?`, `isLearned: bool?`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: `n,n,b`
+- Seen firing 32 times (0 in combat); argument kinds: `n,n,b`
 
 ### SPELL_PUSHED_TO_ACTIONBAR
 
@@ -607,28 +677,28 @@ Namespace: `C_SpellBook`
 - Payload: none
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 17 times (0 in combat); argument kinds: ``
 
 ### SPELL_UPDATE_COOLDOWN
 
 - Status: ✅ verified
 - Payload: `spellID: number?`, `baseSpellID: number?`, `category: number?`, `startRecoveryCategory: number?`, `itemID: number?`
 - unique event (Blizzard's docs)
-- Seen firing 232 times (196 in combat); argument kinds: `-,-,-,-,-` / `n,-,-,-,-` / `n,-,n,n,-`
+- Seen firing 628 times (417 in combat); argument kinds: `-,-,-,-,-` / `n,-,-,-,-` / `n,-,n,n,-` / `n,-,n,n,n`
 
 ### SPELL_UPDATE_ICON
 
 - Status: ✅ verified
 - Payload: `spellID: number?`
 - unique event (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: `n`
+- Seen firing 21 times (0 in combat); argument kinds: `n`
 
 ### SPELL_UPDATE_USABLE
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 2291 times (1575 in combat); argument kinds: ``
+- Seen firing 8072 times (3484 in combat); argument kinds: ``
 
 ### SPELL_UPDATE_USES
 
@@ -653,27 +723,28 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 217 times (189 in combat); argument kinds: ``
+- Seen firing 533 times (403 in combat); argument kinds: ``
 
 ### UPDATE_SHAPESHIFT_FORM
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 7 times (0 in combat); argument kinds: ``
+- Seen firing 52 times (0 in combat); argument kinds: ``
 
 ### UPDATE_SHAPESHIFT_FORMS
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 8 times (0 in combat); argument kinds: ``
 
 ### UPDATE_SHAPESHIFT_USABLE
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
+- Seen firing 7 times (0 in combat); argument kinds: ``
 
 ## Types
 

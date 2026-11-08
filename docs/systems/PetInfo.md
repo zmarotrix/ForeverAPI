@@ -6,12 +6,12 @@ Namespace: `C_PetInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_PetInfo.CanPetEatItem](#c_petinfocanpeteatitem) |  |  |
+| ✅ | [C_PetInfo.CanPetEatItem](#c_petinfocanpeteatitem) | 1 value | 1 value |
 | ✅ | [C_PetInfo.GetPetFoodTypes](#c_petinfogetpetfoodtypes) | 1 value | 1 value |
 | ✅ | [C_PetInfo.GetPetHappiness](#c_petinfogetpethappiness) | 0 values | 0 values |
 | ✅ | [C_PetInfo.GetPetLoyalty](#c_petinfogetpetloyalty) | 0 values | 0 values |
 | ✅ | [C_PetInfo.GetPetTalentTree](#c_petinfogetpettalenttree) | 0 values | 0 values |
-| ✅ | [C_PetInfo.GetPetTamersForMap](#c_petinfogetpettamersformap) |  |  |
+| ✅ | [C_PetInfo.GetPetTamersForMap](#c_petinfogetpettamersformap) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_PetInfo.GetPetTrainingPoints](#c_petinfogetpettrainingpoints) | 2 values | 2 values |
 | ✅ | [C_PetInfo.GetPetUIModelSceneID](#c_petinfogetpetuimodelsceneid) | 1 value | 1 value |
 | ✅ | [C_PetInfo.GetSpellForPetAction](#c_petinfogetspellforpetaction) |  |  |
@@ -27,6 +27,8 @@ Namespace: `C_PetInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PetInfoDocumentation.lua`
 
 ### C_PetInfo.GetPetFoodTypes
@@ -74,6 +76,8 @@ Namespace: `C_PetInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `PetInfoDocumentation.lua`
 
 ### C_PetInfo.GetPetTrainingPoints
@@ -215,7 +219,7 @@ Namespace: `C_PetInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 18 times (0 in combat); argument kinds: ``
 
 ## Types
 

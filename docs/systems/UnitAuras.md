@@ -19,23 +19,23 @@ Namespace: `C_UnitAuras`
 | ✅ | [C_UnitAuras.GetAuraBaseDuration](#c_unitaurasgetaurabaseduration) |  |  |
 | ✅ | [C_UnitAuras.GetAuraCasterGUID](#c_unitaurasgetauracasterguid) |  |  |
 | ✅ | [C_UnitAuras.GetAuraDataByAuraInstanceID](#c_unitaurasgetauradatabyaurainstanceid) |  |  |
-| ✅ | [C_UnitAuras.GetAuraDataByIndex](#c_unitaurasgetauradatabyindex) |  |  |
-| ✅ | [C_UnitAuras.GetAuraDataBySlot](#c_unitaurasgetauradatabyslot) |  |  |
+| ✅ | [C_UnitAuras.GetAuraDataByIndex](#c_unitaurasgetauradatabyindex) | 1 value | error |
+| ✅ | [C_UnitAuras.GetAuraDataBySlot](#c_unitaurasgetauradatabyslot) | 1 value | error |
 | ✅ | [C_UnitAuras.GetAuraDataBySpellName](#c_unitaurasgetauradatabyspellname) |  |  |
 | ✅ | [C_UnitAuras.GetAuraDispelTypeColor](#c_unitaurasgetauradispeltypecolor) |  |  |
 | ✅ | [C_UnitAuras.GetAuraDuration](#c_unitaurasgetauraduration) |  |  |
 | ✅ | [C_UnitAuras.GetAuraSlots](#c_unitaurasgetauraslots) | 1 value | error |
-| ✅ | [C_UnitAuras.GetBuffDataByIndex](#c_unitaurasgetbuffdatabyindex) |  |  |
-| ✅ | [C_UnitAuras.GetCooldownAuraBySpellID](#c_unitaurasgetcooldownaurabyspellid) |  |  |
-| ✅ | [C_UnitAuras.GetDebuffDataByIndex](#c_unitaurasgetdebuffdatabyindex) |  |  |
+| ✅ | [C_UnitAuras.GetBuffDataByIndex](#c_unitaurasgetbuffdatabyindex) | 1 value | error |
+| ✅ | [C_UnitAuras.GetCooldownAuraBySpellID](#c_unitaurasgetcooldownaurabyspellid) | 1 value | 1 value |
+| ✅ | [C_UnitAuras.GetDebuffDataByIndex](#c_unitaurasgetdebuffdatabyindex) | 1 value | error |
 | ✅ | [C_UnitAuras.GetGroupBuffVisualAlerts](#c_unitaurasgetgroupbuffvisualalerts) | 1 value | 1 value |
 | ✅ | [C_UnitAuras.GetHiddenGroupBuffs](#c_unitaurasgethiddengroupbuffs) | 1 value | 1 value |
-| ✅ | [C_UnitAuras.GetPlayerAuraBySpellID](#c_unitaurasgetplayeraurabyspellid) |  |  |
+| ✅ | [C_UnitAuras.GetPlayerAuraBySpellID](#c_unitaurasgetplayeraurabyspellid) | 1 value | 0 values |
 | ✅ | [C_UnitAuras.GetRefreshCarryOverDuration](#c_unitaurasgetrefreshcarryoverduration) |  |  |
 | ✅ | [C_UnitAuras.GetRefreshExtendedDuration](#c_unitaurasgetrefreshextendedduration) |  |  |
-| ✅ | [C_UnitAuras.GetUnitAuraBySpellID](#c_unitaurasgetunitaurabyspellid) |  |  |
-| ✅ | [C_UnitAuras.GetUnitAuraInstanceIDs](#c_unitaurasgetunitaurainstanceids) |  |  |
-| ✅ | [C_UnitAuras.GetUnitAuras](#c_unitaurasgetunitauras) |  |  |
+| ✅ | [C_UnitAuras.GetUnitAuraBySpellID](#c_unitaurasgetunitaurabyspellid) | 1 value | 0 values |
+| ✅ | [C_UnitAuras.GetUnitAuraInstanceIDs](#c_unitaurasgetunitaurainstanceids) | 1 value | error |
+| ✅ | [C_UnitAuras.GetUnitAuras](#c_unitaurasgetunitauras) | 1 value | error |
 | ✅ | [C_UnitAuras.IsAuraFilteredOutByInstanceID](#c_unitaurasisaurafilteredoutbyinstanceid) |  |  |
 | ✅ | [C_UnitAuras.RemoveAuraSound](#c_unitaurasremoveaurasound) |  |  |
 | ✅ | [C_UnitAuras.RemovePrivateAuraAnchor](#c_unitaurasremoveprivateauraanchor) |  |  |
@@ -180,6 +180,9 @@ Namespace: `C_UnitAuras`
 - RequiresUnitAuraAccess (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit auras are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:1`: returned 1 value: `table{applications=number,auraInstanceID=number,canActivePlayerDispel=boolean,canApplyAura=boolean,dispelName=string,duration=number,expirationTime=number,hideOnPartyFrames=boolean,icon=number,isBossAura=boolean,isDPSRoleAura=boolean,isFromPlayerOrPlayerPet=boolean,isHarmful=boolean,isHealerRoleAura=boolean,isHelpful=boolean,isNameplateOnly=boolean,isRaid=boolean,isStealable=boolean,isTankRoleAura=boolean,name=string,nameplateShowAll=boolean,nameplateShowPersonal=boolean,points=table,sourceUnit=string,spellId=number,timeMod=number}`
+- Called in combat: error: `GetAuraDataByIndex(): Auras cannot be accessed when secret while tainted by 'ApiProbe'
+Lua Taint: ApiProbe`
 - Source: client docs `UnitAuraDocumentation.lua`
 
 ### C_UnitAuras.GetAuraDataBySlot
@@ -190,6 +193,9 @@ Namespace: `C_UnitAuras`
 - RequiresUnitAuraAccess (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit auras are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:1`: returned 1 value: `table{applications=number,auraInstanceID=number,canActivePlayerDispel=boolean,canApplyAura=boolean,dispelName=string,duration=number,expirationTime=number,hideOnPartyFrames=boolean,icon=number,isBossAura=boolean,isDPSRoleAura=boolean,isFromPlayerOrPlayerPet=boolean,isHarmful=boolean,isHealerRoleAura=boolean,isHelpful=boolean,isNameplateOnly=boolean,isRaid=boolean,isStealable=boolean,isTankRoleAura=boolean,name=string,nameplateShowAll=boolean,nameplateShowPersonal=boolean,points=table,sourceUnit=string,spellId=number,timeMod=number}`
+- Called in combat: error: `GetAuraDataBySlot(): Auras cannot be accessed when secret while tainted by 'ApiProbe'
+Lua Taint: ApiProbe`
 - Source: client docs `UnitAuraDocumentation.lua`
 
 ### C_UnitAuras.GetAuraDataBySpellName
@@ -245,6 +251,9 @@ Lua Taint: ApiProbe`
 - RequiresUnitAuraAccess (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit auras are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:1`: returned 1 value: `table{applications=number,auraInstanceID=number,canActivePlayerDispel=boolean,canApplyAura=boolean,dispelName=string,duration=number,expirationTime=number,hideOnPartyFrames=boolean,icon=number,isBossAura=boolean,isDPSRoleAura=boolean,isFromPlayerOrPlayerPet=boolean,isHarmful=boolean,isHealerRoleAura=boolean,isHelpful=boolean,isNameplateOnly=boolean,isRaid=boolean,isStealable=boolean,isTankRoleAura=boolean,name=string,nameplateShowAll=boolean,nameplateShowPersonal=boolean,points=table,sourceUnit=string,spellId=number,timeMod=number}`
+- Called in combat: error: `GetBuffDataByIndex(): Auras cannot be accessed when secret while tainted by 'ApiProbe'
+Lua Taint: ApiProbe`
 - Source: client docs `UnitAuraDocumentation.lua`
 
 ### C_UnitAuras.GetCooldownAuraBySpellID
@@ -253,6 +262,8 @@ Lua Taint: ApiProbe`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `UnitAuraDocumentation.lua`
 
 ### C_UnitAuras.GetDebuffDataByIndex
@@ -263,6 +274,9 @@ Lua Taint: ApiProbe`
 - RequiresUnitAuraAccess (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit auras are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:1`: returned 1 value: `nil`
+- Called in combat: error: `GetDebuffDataByIndex(): Auras cannot be accessed when secret while tainted by 'ApiProbe'
+Lua Taint: ApiProbe`
 - Source: client docs `UnitAuraDocumentation.lua`
 
 ### C_UnitAuras.GetGroupBuffVisualAlerts
@@ -293,6 +307,8 @@ Lua Taint: ApiProbe`
 - RequiresNonSecretAura (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - secret while unit auras are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `nil`
+- Called in combat: returned 0 values
 - Source: client docs `UnitAuraDocumentation.lua`
 
 ### C_UnitAuras.GetRefreshCarryOverDuration
@@ -328,6 +344,8 @@ Lua Taint: ApiProbe`
 - RequiresNonSecretAura (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - secret while unit auras are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,spell`: returned 1 value: `nil`
+- Called in combat: returned 0 values
 - Source: client docs `UnitAuraDocumentation.lua`
 
 ### C_UnitAuras.GetUnitAuraInstanceIDs
@@ -337,6 +355,9 @@ Lua Taint: ApiProbe`
 - Status: ✅ verified (function)
 - RequiresUnitAuraAccess (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,s:HELPFUL`: returned 1 value: `table{[number]=number,[number]=number}`
+- Called in combat: error: `GetUnitAuraInstanceIDs(): Auras cannot be accessed when secret while tainted by 'ApiProbe'
+Lua Taint: ApiProbe`
 - Source: client docs `UnitAuraDocumentation.lua`
 
 ### C_UnitAuras.GetUnitAuras
@@ -346,6 +367,9 @@ Lua Taint: ApiProbe`
 - Status: ✅ verified (function)
 - RequiresUnitAuraAccess (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,s:HELPFUL`: returned 1 value: `table{[number]=table,[number]=table}`
+- Called in combat: error: `GetUnitAuras(): Auras cannot be accessed when secret while tainted by 'ApiProbe'
+Lua Taint: ApiProbe`
 - Source: client docs `UnitAuraDocumentation.lua`
 
 ### C_UnitAuras.IsAuraFilteredOutByInstanceID
@@ -441,7 +465,7 @@ Lua Taint: ApiProbe`
 - Payload: `visualAlerts: GroupBuffVisualAlertInfo[]`
 - Blizzard: The payload matches GetGroupBuffVisualAlerts, including linked rank spells.
 - fires synchronously (Blizzard's docs)
-- Seen firing 16 times (0 in combat); argument kinds: `t`
+- Seen firing 70 times (0 in combat); argument kinds: `t`
 
 ### HIDDEN_GROUP_BUFFS_CHANGED
 
@@ -449,7 +473,7 @@ Lua Taint: ApiProbe`
 - Payload: `spellIDs: number[]`
 - Blizzard: The payload matches GetHiddenGroupBuffs, including linked rank spells.
 - fires synchronously (Blizzard's docs)
-- Seen firing 16 times (0 in combat); argument kinds: `t`
+- Seen firing 70 times (0 in combat); argument kinds: `t`
 
 ### UNIT_AURA
 
@@ -457,7 +481,7 @@ Lua Taint: ApiProbe`
 - Payload: `unitTarget: UnitTokenVariant`, `updateInfo: UnitAuraUpdateInfo`
 - SecretWhenAurasRestricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 112 times (101 in combat); argument kinds: `s,t`
+- Seen firing 388 times (253 in combat); argument kinds: `s,t`
 
 ### UNIT_AURA_BLOCKED
 

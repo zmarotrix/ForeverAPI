@@ -8,13 +8,13 @@ Namespace: `C_CampaignInfo`
 |---|---|---|---|
 | ✅ | [C_CampaignInfo.GetAvailableCampaigns](#c_campaigninfogetavailablecampaigns) | 1 value | 1 value |
 | ✅ | [C_CampaignInfo.GetCampaignChapterInfo](#c_campaigninfogetcampaignchapterinfo) |  |  |
-| ✅ | [C_CampaignInfo.GetCampaignID](#c_campaigninfogetcampaignid) |  |  |
+| ✅ | [C_CampaignInfo.GetCampaignID](#c_campaigninfogetcampaignid) | 1 value | 1 value |
 | ✅ | [C_CampaignInfo.GetCampaignInfo](#c_campaigninfogetcampaigninfo) |  |  |
 | ✅ | [C_CampaignInfo.GetChapterIDs](#c_campaigninfogetchapterids) |  |  |
 | ✅ | [C_CampaignInfo.GetCurrentChapterID](#c_campaigninfogetcurrentchapterid) |  |  |
 | ✅ | [C_CampaignInfo.GetFailureReason](#c_campaigninfogetfailurereason) |  |  |
 | ✅ | [C_CampaignInfo.GetState](#c_campaigninfogetstate) |  |  |
-| ✅ | [C_CampaignInfo.IsCampaignQuest](#c_campaigninfoiscampaignquest) |  |  |
+| ✅ | [C_CampaignInfo.IsCampaignQuest](#c_campaigninfoiscampaignquest) | 1 value | 1 value |
 | ✅ | [C_CampaignInfo.SortAsNormalQuest](#c_campaigninfosortasnormalquest) |  |  |
 
 ### C_CampaignInfo.GetAvailableCampaigns
@@ -40,6 +40,8 @@ Namespace: `C_CampaignInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `quest`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `WarCampaignDocumentation.lua`
 
 ### C_CampaignInfo.GetCampaignInfo
@@ -88,6 +90,8 @@ Namespace: `C_CampaignInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `quest`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `WarCampaignDocumentation.lua`
 
 ### C_CampaignInfo.SortAsNormalQuest

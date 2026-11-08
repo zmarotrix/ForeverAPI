@@ -7,82 +7,82 @@ Namespace: `C_TooltipInfo`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_TooltipInfo.GetAchievementByID](#c_tooltipinfogetachievementbyid) |  |  |
-| ✅ | [C_TooltipInfo.GetAction](#c_tooltipinfogetaction) |  |  |
+| ✅ | [C_TooltipInfo.GetAction](#c_tooltipinfogetaction) | 1 value | 1 value |
 | ✅ | [C_TooltipInfo.GetArtifactItem](#c_tooltipinfogetartifactitem) | 0 values | 0 values |
 | ✅ | [C_TooltipInfo.GetArtifactPowerByID](#c_tooltipinfogetartifactpowerbyid) |  |  |
 | ✅ | [C_TooltipInfo.GetAzeriteEssence](#c_tooltipinfogetazeriteessence) |  |  |
-| ✅ | [C_TooltipInfo.GetAzeriteEssenceSlot](#c_tooltipinfogetazeriteessenceslot) |  |  |
+| ✅ | [C_TooltipInfo.GetAzeriteEssenceSlot](#c_tooltipinfogetazeriteessenceslot) | 0 values | 0 values |
 | ✅ | [C_TooltipInfo.GetAzeritePower](#c_tooltipinfogetazeritepower) |  |  |
-| ✅ | [C_TooltipInfo.GetBackpackToken](#c_tooltipinfogetbackpacktoken) |  |  |
-| ✅ | [C_TooltipInfo.GetBagItem](#c_tooltipinfogetbagitem) |  |  |
-| ✅ | [C_TooltipInfo.GetBagItemChild](#c_tooltipinfogetbagitemchild) |  |  |
-| ✅ | [C_TooltipInfo.GetBuybackItem](#c_tooltipinfogetbuybackitem) |  |  |
-| ✅ | [C_TooltipInfo.GetCompanionPet](#c_tooltipinfogetcompanionpet) |  |  |
+| ✅ | [C_TooltipInfo.GetBackpackToken](#c_tooltipinfogetbackpacktoken) | 0 values | 0 values |
+| ✅ | [C_TooltipInfo.GetBagItem](#c_tooltipinfogetbagitem) | 1 value | 1 value |
+| ✅ | [C_TooltipInfo.GetBagItemChild](#c_tooltipinfogetbagitemchild) | 0 values | 0 values |
+| ✅ | [C_TooltipInfo.GetBuybackItem](#c_tooltipinfogetbuybackitem) | 1 value | 1 value |
+| ✅ | [C_TooltipInfo.GetCompanionPet](#c_tooltipinfogetcompanionpet) | 1 value | 1 value |
 | ✅ | [C_TooltipInfo.GetConduit](#c_tooltipinfogetconduit) |  |  |
 | ✅ | [C_TooltipInfo.GetCurrencyByID](#c_tooltipinfogetcurrencybyid) |  |  |
-| ✅ | [C_TooltipInfo.GetCurrencyToken](#c_tooltipinfogetcurrencytoken) |  |  |
+| ✅ | [C_TooltipInfo.GetCurrencyToken](#c_tooltipinfogetcurrencytoken) | 0 values | 0 values |
 | ✅ | [C_TooltipInfo.GetEnhancedConduit](#c_tooltipinfogetenhancedconduit) |  |  |
 | ✅ | [C_TooltipInfo.GetEquipmentSet](#c_tooltipinfogetequipmentset) |  |  |
-| ✅ | [C_TooltipInfo.GetExistingSocketGem](#c_tooltipinfogetexistingsocketgem) |  |  |
-| ✅ | [C_TooltipInfo.GetGuildBankItem](#c_tooltipinfogetguildbankitem) |  |  |
-| ✅ | [C_TooltipInfo.GetHeirloomByItemID](#c_tooltipinfogetheirloombyitemid) |  |  |
+| ✅ | [C_TooltipInfo.GetExistingSocketGem](#c_tooltipinfogetexistingsocketgem) | 0 values | 0 values |
+| ✅ | [C_TooltipInfo.GetGuildBankItem](#c_tooltipinfogetguildbankitem) | 0 values | 0 values |
+| ✅ | [C_TooltipInfo.GetHeirloomByItemID](#c_tooltipinfogetheirloombyitemid) | 1 value | 1 value |
 | ✅ | [C_TooltipInfo.GetHyperlink](#c_tooltipinfogethyperlink) |  |  |
-| ✅ | [C_TooltipInfo.GetInboxItem](#c_tooltipinfogetinboxitem) |  |  |
-| ✅ | [C_TooltipInfo.GetInstanceLockEncountersComplete](#c_tooltipinfogetinstancelockencounterscomplete) |  |  |
-| ✅ | [C_TooltipInfo.GetInventoryItem](#c_tooltipinfogetinventoryitem) |  |  |
-| ✅ | [C_TooltipInfo.GetInventoryItemByID](#c_tooltipinfogetinventoryitembyid) |  |  |
-| ✅ | [C_TooltipInfo.GetItemByGUID](#c_tooltipinfogetitembyguid) |  |  |
-| ✅ | [C_TooltipInfo.GetItemByID](#c_tooltipinfogetitembyid) |  |  |
+| ✅ | [C_TooltipInfo.GetInboxItem](#c_tooltipinfogetinboxitem) | 0 values | 0 values |
+| ✅ | [C_TooltipInfo.GetInstanceLockEncountersComplete](#c_tooltipinfogetinstancelockencounterscomplete) | 0 values | 0 values |
+| ✅ | [C_TooltipInfo.GetInventoryItem](#c_tooltipinfogetinventoryitem) | 1 value | 1 value |
+| ✅ | [C_TooltipInfo.GetInventoryItemByID](#c_tooltipinfogetinventoryitembyid) | 1 value | 1 value |
+| ✅ | [C_TooltipInfo.GetItemByGUID](#c_tooltipinfogetitembyguid) | 0 values | 0 values |
+| ✅ | [C_TooltipInfo.GetItemByID](#c_tooltipinfogetitembyid) | 1 value | 1 value |
 | ✅ | [C_TooltipInfo.GetItemByItemModifiedAppearanceID](#c_tooltipinfogetitembyitemmodifiedappearanceid) |  |  |
 | ✅ | [C_TooltipInfo.GetItemInteractionItem](#c_tooltipinfogetiteminteractionitem) | 0 values | 0 values |
 | ✅ | [C_TooltipInfo.GetItemKey](#c_tooltipinfogetitemkey) |  |  |
 | ✅ | [C_TooltipInfo.GetLFGDungeonReward](#c_tooltipinfogetlfgdungeonreward) |  |  |
 | ✅ | [C_TooltipInfo.GetLFGDungeonShortageReward](#c_tooltipinfogetlfgdungeonshortagereward) |  |  |
-| ✅ | [C_TooltipInfo.GetLootCurrency](#c_tooltipinfogetlootcurrency) |  |  |
-| ✅ | [C_TooltipInfo.GetLootItem](#c_tooltipinfogetlootitem) |  |  |
+| ✅ | [C_TooltipInfo.GetLootCurrency](#c_tooltipinfogetlootcurrency) | 0 values | 0 values |
+| ✅ | [C_TooltipInfo.GetLootItem](#c_tooltipinfogetlootitem) | 0 values | 0 values |
 | ✅ | [C_TooltipInfo.GetLootRollItem](#c_tooltipinfogetlootrollitem) |  |  |
-| ✅ | [C_TooltipInfo.GetMerchantCostItem](#c_tooltipinfogetmerchantcostitem) |  |  |
-| ✅ | [C_TooltipInfo.GetMerchantItem](#c_tooltipinfogetmerchantitem) |  |  |
+| ✅ | [C_TooltipInfo.GetMerchantCostItem](#c_tooltipinfogetmerchantcostitem) | 0 values | 0 values |
+| ✅ | [C_TooltipInfo.GetMerchantItem](#c_tooltipinfogetmerchantitem) | 0 values | 0 values |
 | ✅ | [C_TooltipInfo.GetMinimapMouseover](#c_tooltipinfogetminimapmouseover) | 0 values | 0 values |
-| ✅ | [C_TooltipInfo.GetMountBySpellID](#c_tooltipinfogetmountbyspellid) |  |  |
+| ✅ | [C_TooltipInfo.GetMountBySpellID](#c_tooltipinfogetmountbyspellid) | 0 values | 0 values |
 | ✅ | [C_TooltipInfo.GetOutfit](#c_tooltipinfogetoutfit) |  |  |
-| ✅ | [C_TooltipInfo.GetOwnedItemByID](#c_tooltipinfogetowneditembyid) |  |  |
-| ✅ | [C_TooltipInfo.GetPetAction](#c_tooltipinfogetpetaction) |  |  |
-| ✅ | [C_TooltipInfo.GetPossession](#c_tooltipinfogetpossession) |  |  |
+| ✅ | [C_TooltipInfo.GetOwnedItemByID](#c_tooltipinfogetowneditembyid) | 1 value | 1 value |
+| ✅ | [C_TooltipInfo.GetPetAction](#c_tooltipinfogetpetaction) | 0 values | 0 values |
+| ✅ | [C_TooltipInfo.GetPossession](#c_tooltipinfogetpossession) | 0 values | 0 values |
 | ✅ | [C_TooltipInfo.GetPvpBrawl](#c_tooltipinfogetpvpbrawl) | 0 values | 0 values |
 | ✅ | [C_TooltipInfo.GetPvpTalent](#c_tooltipinfogetpvptalent) |  |  |
 | ✅ | [C_TooltipInfo.GetQuestCurrency](#c_tooltipinfogetquestcurrency) |  |  |
 | ✅ | [C_TooltipInfo.GetQuestItem](#c_tooltipinfogetquestitem) |  |  |
 | ✅ | [C_TooltipInfo.GetQuestLogCurrency](#c_tooltipinfogetquestlogcurrency) |  |  |
 | ✅ | [C_TooltipInfo.GetQuestLogItem](#c_tooltipinfogetquestlogitem) |  |  |
-| ✅ | [C_TooltipInfo.GetQuestLogSpecialItem](#c_tooltipinfogetquestlogspecialitem) |  |  |
-| ✅ | [C_TooltipInfo.GetQuestPartyProgress](#c_tooltipinfogetquestpartyprogress) |  |  |
+| ✅ | [C_TooltipInfo.GetQuestLogSpecialItem](#c_tooltipinfogetquestlogspecialitem) | 0 values | 0 values |
+| ✅ | [C_TooltipInfo.GetQuestPartyProgress](#c_tooltipinfogetquestpartyprogress) | 1 value | 1 value |
 | ✅ | [C_TooltipInfo.GetRecipeRankInfo](#c_tooltipinfogetreciperankinfo) |  |  |
 | ✅ | [C_TooltipInfo.GetRecipeReagentItem](#c_tooltipinfogetrecipereagentitem) |  |  |
 | ✅ | [C_TooltipInfo.GetRecipeResultItem](#c_tooltipinfogetreciperesultitem) |  |  |
 | ✅ | [C_TooltipInfo.GetRecipeResultItemForOrder](#c_tooltipinfogetreciperesultitemfororder) |  |  |
 | ✅ | [C_TooltipInfo.GetRuneforgeResultItem](#c_tooltipinfogetruneforgeresultitem) |  |  |
 | ✅ | [C_TooltipInfo.GetSendMailItem](#c_tooltipinfogetsendmailitem) | 0 values | 0 values |
-| ✅ | [C_TooltipInfo.GetShapeshift](#c_tooltipinfogetshapeshift) |  |  |
+| ✅ | [C_TooltipInfo.GetShapeshift](#c_tooltipinfogetshapeshift) | 1 value | 1 value |
 | ✅ | [C_TooltipInfo.GetSlottedKeystone](#c_tooltipinfogetslottedkeystone) | 0 values | 0 values |
-| ✅ | [C_TooltipInfo.GetSocketGem](#c_tooltipinfogetsocketgem) |  |  |
+| ✅ | [C_TooltipInfo.GetSocketGem](#c_tooltipinfogetsocketgem) | 0 values | 0 values |
 | ✅ | [C_TooltipInfo.GetSocketedItem](#c_tooltipinfogetsocketeditem) | 0 values | 0 values |
-| ✅ | [C_TooltipInfo.GetSocketedRelic](#c_tooltipinfogetsocketedrelic) |  |  |
-| ✅ | [C_TooltipInfo.GetSpellBookItem](#c_tooltipinfogetspellbookitem) |  |  |
-| ✅ | [C_TooltipInfo.GetSpellByID](#c_tooltipinfogetspellbyid) |  |  |
+| ✅ | [C_TooltipInfo.GetSocketedRelic](#c_tooltipinfogetsocketedrelic) | 0 values | 0 values |
+| ✅ | [C_TooltipInfo.GetSpellBookItem](#c_tooltipinfogetspellbookitem) | 1 value | 1 value |
+| ✅ | [C_TooltipInfo.GetSpellByID](#c_tooltipinfogetspellbyid) | 1 value | 1 value |
 | ✅ | [C_TooltipInfo.GetTalent](#c_tooltipinfogettalent) |  |  |
-| ✅ | [C_TooltipInfo.GetTotem](#c_tooltipinfogettotem) |  |  |
-| ✅ | [C_TooltipInfo.GetToyByItemID](#c_tooltipinfogettoybyitemid) |  |  |
-| ✅ | [C_TooltipInfo.GetTradePlayerItem](#c_tooltipinfogettradeplayeritem) |  |  |
-| ✅ | [C_TooltipInfo.GetTradeTargetItem](#c_tooltipinfogettradetargetitem) |  |  |
-| ✅ | [C_TooltipInfo.GetTrainerService](#c_tooltipinfogettrainerservice) |  |  |
+| ✅ | [C_TooltipInfo.GetTotem](#c_tooltipinfogettotem) | 0 values | 0 values |
+| ✅ | [C_TooltipInfo.GetToyByItemID](#c_tooltipinfogettoybyitemid) | 1 value | 1 value |
+| ✅ | [C_TooltipInfo.GetTradePlayerItem](#c_tooltipinfogettradeplayeritem) | 0 values | 0 values |
+| ✅ | [C_TooltipInfo.GetTradeTargetItem](#c_tooltipinfogettradetargetitem) | 0 values | 0 values |
+| ✅ | [C_TooltipInfo.GetTrainerService](#c_tooltipinfogettrainerservice) | 0 values | 0 values |
 | ✅ | [C_TooltipInfo.GetTraitEntry](#c_tooltipinfogettraitentry) |  |  |
 | ✅ | [C_TooltipInfo.GetUnit](#c_tooltipinfogetunit) | 1 value | 1 value |
-| ✅ | [C_TooltipInfo.GetUnitAura](#c_tooltipinfogetunitaura) |  |  |
+| ✅ | [C_TooltipInfo.GetUnitAura](#c_tooltipinfogetunitaura) | 0 values | error |
 | ✅ | [C_TooltipInfo.GetUnitAuraByAuraInstanceID](#c_tooltipinfogetunitaurabyaurainstanceid) |  |  |
-| ✅ | [C_TooltipInfo.GetUnitBuff](#c_tooltipinfogetunitbuff) |  |  |
+| ✅ | [C_TooltipInfo.GetUnitBuff](#c_tooltipinfogetunitbuff) | 1 value | error |
 | ✅ | [C_TooltipInfo.GetUnitBuffByAuraInstanceID](#c_tooltipinfogetunitbuffbyaurainstanceid) |  |  |
-| ✅ | [C_TooltipInfo.GetUnitDebuff](#c_tooltipinfogetunitdebuff) |  |  |
+| ✅ | [C_TooltipInfo.GetUnitDebuff](#c_tooltipinfogetunitdebuff) | 0 values | error |
 | ✅ | [C_TooltipInfo.GetUnitDebuffByAuraInstanceID](#c_tooltipinfogetunitdebuffbyaurainstanceid) |  |  |
 | ✅ | [C_TooltipInfo.GetUpgradeItem](#c_tooltipinfogetupgradeitem) | 0 values | 0 values |
 | ✅ | [C_TooltipInfo.GetWeeklyReward](#c_tooltipinfogetweeklyreward) |  |  |
@@ -105,6 +105,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `table{dataInstanceID=number,id=number,lines=table,type=number}`
+- Called in combat: returned 1 value: `table{dataInstanceID=number,id=number,lines=table,type=number}`
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetArtifactItem
@@ -142,6 +144,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetAzeritePower
@@ -160,6 +164,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetBagItem
@@ -169,6 +175,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:1`: returned 1 value: `table{dataInstanceID=number,guid=string,hasDynamicData=boolean,id=number,isAzeriteEmpoweredItem=boolean,isAzeriteItem=boolean,isCorruptedItem=boolean,lines=table,type=number}`
+- Called in combat: returned 1 value: `table{dataInstanceID=number,guid=string,hasDynamicData=boolean,id=number,isAzeriteEmpoweredItem=boolean,isAzeriteItem=boolean,isCorruptedItem=boolean,lines=table,type=number}`
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetBagItemChild
@@ -178,6 +186,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:1,n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetBuybackItem
@@ -187,6 +197,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `table{dataInstanceID=number,guid=string,id=number,isAzeriteEmpoweredItem=boolean,isAzeriteItem=boolean,isCorruptedItem=boolean,lines=table,type=number}`
+- Called in combat: returned 1 value: `table{dataInstanceID=number,guid=string,id=number,isAzeriteEmpoweredItem=boolean,isAzeriteItem=boolean,isCorruptedItem=boolean,lines=table,type=number}`
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetCompanionPet
@@ -196,6 +208,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `table{dataInstanceID=number,lines=table,type=number}`
+- Called in combat: returned 1 value: `table{dataInstanceID=number,lines=table,type=number}`
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetConduit
@@ -223,6 +237,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetEnhancedConduit
@@ -250,6 +266,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetGuildBankItem
@@ -259,6 +277,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetHeirloomByItemID
@@ -268,6 +288,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `table{dataInstanceID=number,hyperlink=string,id=number,isAzeriteEmpoweredItem=boolean,isAzeriteItem=boolean,isCorruptedItem=boolean,lines=table,type=number}`
+- Called in combat: returned 1 value: `table{dataInstanceID=number,hyperlink=string,id=number,isAzeriteEmpoweredItem=boolean,isAzeriteItem=boolean,isCorruptedItem=boolean,lines=table,type=number}`
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetHyperlink
@@ -286,6 +308,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetInstanceLockEncountersComplete
@@ -295,6 +319,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetInventoryItem
@@ -304,6 +330,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:1`: returned 1 value: `table{dataInstanceID=number,guid=string,id=number,isAzeriteEmpoweredItem=boolean,isAzeriteItem=boolean,isCorruptedItem=boolean,lines=table,type=number}`
+- Called in combat: returned 1 value: `table{dataInstanceID=number,guid=string,id=number,isAzeriteEmpoweredItem=boolean,isAzeriteItem=boolean,isCorruptedItem=boolean,lines=table,type=number}`
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetInventoryItemByID
@@ -313,6 +341,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `table{dataInstanceID=number,guid=string,hasDynamicData=boolean,id=number,isAzeriteEmpoweredItem=boolean,isAzeriteItem=boolean,isCorruptedItem=boolean,lines=table,type=number}`
+- Called in combat: returned 1 value: `table{dataInstanceID=number,guid=string,hasDynamicData=boolean,id=number,isAzeriteEmpoweredItem=boolean,isAzeriteItem=boolean,isCorruptedItem=boolean,lines=table,type=number}`
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetItemByGUID
@@ -322,6 +352,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetItemByID
@@ -331,6 +363,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `table{dataInstanceID=number,hyperlink=string,id=number,isAzeriteEmpoweredItem=boolean,isAzeriteItem=boolean,isCorruptedItem=boolean,lines=table,type=number}`
+- Called in combat: returned 1 value: `table{dataInstanceID=number,hyperlink=string,id=number,isAzeriteEmpoweredItem=boolean,isAzeriteItem=boolean,isCorruptedItem=boolean,lines=table,type=number}`
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetItemByItemModifiedAppearanceID
@@ -386,6 +420,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetLootItem
@@ -395,6 +431,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetLootRollItem
@@ -413,6 +451,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetMerchantItem
@@ -422,6 +462,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetMinimapMouseover
@@ -441,6 +483,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetOutfit
@@ -459,6 +503,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `table{dataInstanceID=number,guid=string,id=number,isAzeriteEmpoweredItem=boolean,isAzeriteItem=boolean,isCorruptedItem=boolean,lines=table,type=number}`
+- Called in combat: returned 1 value: `table{dataInstanceID=number,guid=string,id=number,isAzeriteEmpoweredItem=boolean,isAzeriteItem=boolean,isCorruptedItem=boolean,lines=table,type=number}`
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetPetAction
@@ -468,6 +514,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetPossession
@@ -477,6 +525,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetPvpBrawl
@@ -542,6 +592,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetQuestPartyProgress
@@ -551,6 +603,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `quest`: returned 1 value: `table{dataInstanceID=number,id=number,lines=table,type=number}`
+- Called in combat: returned 1 value: `table{dataInstanceID=number,id=number,lines=table,type=number}`
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetRecipeRankInfo
@@ -616,6 +670,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `table{dataInstanceID=number,id=number,lines=table,type=number}`
+- Called in combat: returned 1 value: `table{dataInstanceID=number,hasDynamicData=secret,id=number,lines=table,type=number}`
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetSlottedKeystone
@@ -635,6 +691,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetSocketedItem
@@ -654,6 +712,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetSpellBookItem
@@ -663,6 +723,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `table{dataInstanceID=number,id=number,lines=table,type=number}`
+- Called in combat: returned 1 value: `table{dataInstanceID=number,id=number,lines=table,type=number}`
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetSpellByID
@@ -672,6 +734,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `table{dataInstanceID=number,id=number,lines=table,type=number}`
+- Called in combat: returned 1 value: `table{dataInstanceID=number,id=number,lines=table,type=number}`
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetTalent
@@ -690,6 +754,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetToyByItemID
@@ -699,6 +765,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `table{dataInstanceID=number,hasDynamicData=boolean,id=number,lines=table,type=number}`
+- Called in combat: returned 1 value: `table{dataInstanceID=number,hasDynamicData=boolean,id=number,lines=table,type=number}`
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetTradePlayerItem
@@ -708,6 +776,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetTradeTargetItem
@@ -717,6 +787,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetTrainerService
@@ -726,6 +798,8 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetTraitEntry
@@ -757,6 +831,9 @@ Namespace: `C_TooltipInfo`
 - RequiresUnitAuraAccess (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit auras are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:1`: returned 0 values
+- Called in combat: error: `GetUnitAura(): Auras cannot be accessed when secret while tainted by 'ApiProbe'
+Lua Taint: ApiProbe`
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetUnitAuraByAuraInstanceID
@@ -780,6 +857,9 @@ Namespace: `C_TooltipInfo`
 - RequiresUnitAuraAccess (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit auras are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:1`: returned 1 value: `table{dataInstanceID=number,id=number,lines=table,type=number}`
+- Called in combat: error: `GetUnitBuff(): Auras cannot be accessed when secret while tainted by 'ApiProbe'
+Lua Taint: ApiProbe`
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetUnitBuffByAuraInstanceID
@@ -802,6 +882,9 @@ Namespace: `C_TooltipInfo`
 - RequiresUnitAuraAccess (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit auras are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:1`: returned 0 values
+- Called in combat: error: `GetUnitDebuff(): Auras cannot be accessed when secret while tainted by 'ApiProbe'
+Lua Taint: ApiProbe`
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetUnitDebuffByAuraInstanceID
@@ -873,4 +956,4 @@ Namespace: `C_TooltipInfo`
 - Payload: `dataInstanceID: number?`
 - Blizzard: Sends an update to the UI that a sparse or cache lookup has resolved
 - unique event (Blizzard's docs)
-- Seen firing 4 times (2 in combat); argument kinds: `n`
+- Seen firing 86 times (4 in combat); argument kinds: `n`

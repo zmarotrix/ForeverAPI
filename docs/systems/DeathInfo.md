@@ -6,9 +6,9 @@ Namespace: `C_DeathInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_DeathInfo.GetCorpseMapPosition](#c_deathinfogetcorpsemapposition) |  |  |
-| ✅ | [C_DeathInfo.GetDeathReleasePosition](#c_deathinfogetdeathreleaseposition) |  |  |
-| ✅ | [C_DeathInfo.GetGraveyardsForMap](#c_deathinfogetgraveyardsformap) |  |  |
+| ✅ | [C_DeathInfo.GetCorpseMapPosition](#c_deathinfogetcorpsemapposition) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_DeathInfo.GetDeathReleasePosition](#c_deathinfogetdeathreleaseposition) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_DeathInfo.GetGraveyardsForMap](#c_deathinfogetgraveyardsformap) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_DeathInfo.GetSelfResurrectOptions](#c_deathinfogetselfresurrectoptions) | 0 values | 0 values |
 | ✅ | [C_DeathInfo.UseSelfResurrectOption](#c_deathinfouseselfresurrectoption) |  |  |
 
@@ -18,6 +18,8 @@ Namespace: `C_DeathInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `DeathInfoDocumentation.lua`
 
 ### C_DeathInfo.GetDeathReleasePosition
@@ -26,6 +28,8 @@ Namespace: `C_DeathInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `DeathInfoDocumentation.lua`
 
 ### C_DeathInfo.GetGraveyardsForMap
@@ -34,6 +38,8 @@ Namespace: `C_DeathInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `DeathInfoDocumentation.lua`
 
 ### C_DeathInfo.GetSelfResurrectOptions
@@ -104,7 +110,7 @@ Namespace: `C_DeathInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 8 times (0 in combat); argument kinds: ``
 
 ### PLAYER_DEAD
 
@@ -129,7 +135,7 @@ Namespace: `C_DeathInfo`
 - Status: ✅ verified
 - Payload: `isGossipTriggered: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `b`
+- Seen firing 8 times (0 in combat); argument kinds: `b`
 
 ### RESURRECT_REQUEST
 

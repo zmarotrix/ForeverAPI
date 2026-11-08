@@ -6,9 +6,9 @@ Namespace: `C_TaxiMap`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_TaxiMap.GetAllTaxiNodes](#c_taximapgetalltaxinodes) |  |  |
-| ✅ | [C_TaxiMap.GetTaxiNodesForMap](#c_taximapgettaxinodesformap) |  |  |
-| ✅ | [C_TaxiMap.ShouldMapShowTaxiNodes](#c_taximapshouldmapshowtaxinodes) |  |  |
+| ✅ | [C_TaxiMap.GetAllTaxiNodes](#c_taximapgetalltaxinodes) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_TaxiMap.GetTaxiNodesForMap](#c_taximapgettaxinodesformap) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_TaxiMap.ShouldMapShowTaxiNodes](#c_taximapshouldmapshowtaxinodes) | 💥 no sample for map | 💥 no sample for map |
 
 ### C_TaxiMap.GetAllTaxiNodes
 
@@ -17,6 +17,8 @@ Namespace: `C_TaxiMap`
 - Status: ✅ verified (function)
 - Blizzard: Returns information on taxi nodes at the current flight master.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `TaxiMapDocumentation.lua`
 
 ### C_TaxiMap.GetTaxiNodesForMap
@@ -26,6 +28,8 @@ Namespace: `C_TaxiMap`
 - Status: ✅ verified (function)
 - Blizzard: Returns information on taxi nodes for a given map, without considering the current flight master.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `TaxiMapDocumentation.lua`
 
 ### C_TaxiMap.ShouldMapShowTaxiNodes
@@ -34,6 +38,8 @@ Namespace: `C_TaxiMap`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `TaxiMapDocumentation.lua`
 
 ## Events
@@ -43,7 +49,7 @@ Namespace: `C_TaxiMap`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 18 times (0 in combat); argument kinds: ``
 
 ### TAXIMAP_OPENED
 

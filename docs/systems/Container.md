@@ -11,29 +11,29 @@ Namespace: `C_Container`
 | ✅ | [C_Container.ContainerRefundItemPurchase](#c_containercontainerrefunditempurchase) |  |  |
 | ✅ | [C_Container.GetBackpackAutosortDisabled](#c_containergetbackpackautosortdisabled) | 1 value | 1 value |
 | ✅ | [C_Container.GetBackpackSellJunkDisabled](#c_containergetbackpackselljunkdisabled) | 1 value | 1 value |
-| ✅ | [C_Container.GetBagName](#c_containergetbagname) |  |  |
-| ✅ | [C_Container.GetBagSlotFlag](#c_containergetbagslotflag) |  |  |
+| ✅ | [C_Container.GetBagName](#c_containergetbagname) | 1 value | 1 value |
+| ✅ | [C_Container.GetBagSlotFlag](#c_containergetbagslotflag) | 1 value | 1 value |
 | ✅ | [C_Container.GetBankAutosortDisabled](#c_containergetbankautosortdisabled) | 1 value | 1 value |
-| ✅ | [C_Container.GetContainerFreeSlots](#c_containergetcontainerfreeslots) |  |  |
-| ✅ | [C_Container.GetContainerItemCooldown](#c_containergetcontaineritemcooldown) |  |  |
-| ✅ | [C_Container.GetContainerItemDurability](#c_containergetcontaineritemdurability) |  |  |
-| ✅ | [C_Container.GetContainerItemEquipmentSetInfo](#c_containergetcontaineritemequipmentsetinfo) |  |  |
-| ✅ | [C_Container.GetContainerItemID](#c_containergetcontaineritemid) |  |  |
-| ✅ | [C_Container.GetContainerItemInfo](#c_containergetcontaineriteminfo) |  |  |
-| ✅ | [C_Container.GetContainerItemLink](#c_containergetcontaineritemlink) |  |  |
-| ✅ | [C_Container.GetContainerItemPurchaseCurrency](#c_containergetcontaineritempurchasecurrency) |  |  |
-| ✅ | [C_Container.GetContainerItemPurchaseInfo](#c_containergetcontaineritempurchaseinfo) |  |  |
-| ✅ | [C_Container.GetContainerItemPurchaseItem](#c_containergetcontaineritempurchaseitem) |  |  |
-| ✅ | [C_Container.GetContainerItemQuestInfo](#c_containergetcontaineritemquestinfo) |  |  |
-| ✅ | [C_Container.GetContainerNumFreeSlots](#c_containergetcontainernumfreeslots) |  |  |
-| ✅ | [C_Container.GetContainerNumSlots](#c_containergetcontainernumslots) |  |  |
+| ✅ | [C_Container.GetContainerFreeSlots](#c_containergetcontainerfreeslots) | 1 value | 1 value |
+| ✅ | [C_Container.GetContainerItemCooldown](#c_containergetcontaineritemcooldown) | 3 values | 3 values |
+| ✅ | [C_Container.GetContainerItemDurability](#c_containergetcontaineritemdurability) | 0 values | 0 values |
+| ✅ | [C_Container.GetContainerItemEquipmentSetInfo](#c_containergetcontaineritemequipmentsetinfo) | 2 values | 2 values |
+| ✅ | [C_Container.GetContainerItemID](#c_containergetcontaineritemid) | 1 value | 1 value |
+| ✅ | [C_Container.GetContainerItemInfo](#c_containergetcontaineriteminfo) | 1 value | 1 value |
+| ✅ | [C_Container.GetContainerItemLink](#c_containergetcontaineritemlink) | 1 value | 1 value |
+| ✅ | [C_Container.GetContainerItemPurchaseCurrency](#c_containergetcontaineritempurchasecurrency) | 0 values | 0 values |
+| ✅ | [C_Container.GetContainerItemPurchaseInfo](#c_containergetcontaineritempurchaseinfo) | 0 values | 0 values |
+| ✅ | [C_Container.GetContainerItemPurchaseItem](#c_containergetcontaineritempurchaseitem) | 0 values | 0 values |
+| ✅ | [C_Container.GetContainerItemQuestInfo](#c_containergetcontaineritemquestinfo) | 1 value | 1 value |
+| ✅ | [C_Container.GetContainerNumFreeSlots](#c_containergetcontainernumfreeslots) | 2 values | 2 values |
+| ✅ | [C_Container.GetContainerNumSlots](#c_containergetcontainernumslots) | 1 value | 1 value |
 | ✅ | [C_Container.GetInsertItemsLeftToRight](#c_containergetinsertitemslefttoright) | 1 value | 1 value |
-| ✅ | [C_Container.GetItemCooldown](#c_containergetitemcooldown) |  |  |
+| ✅ | [C_Container.GetItemCooldown](#c_containergetitemcooldown) | 3 values | 3 values |
 | ✅ | [C_Container.GetMaxArenaCurrency](#c_containergetmaxarenacurrency) | 1 value | 1 value |
 | ✅ | [C_Container.GetSortBagsRightToLeft](#c_containergetsortbagsrighttoleft) | 1 value | 1 value |
-| ✅ | [C_Container.HasContainerItem](#c_containerhascontaineritem) |  |  |
-| ✅ | [C_Container.IsBattlePayItem](#c_containerisbattlepayitem) |  |  |
-| ✅ | [C_Container.IsContainerFiltered](#c_containeriscontainerfiltered) |  |  |
+| ✅ | [C_Container.HasContainerItem](#c_containerhascontaineritem) | 1 value | 1 value |
+| ✅ | [C_Container.IsBattlePayItem](#c_containerisbattlepayitem) | 1 value | 1 value |
+| ✅ | [C_Container.IsContainerFiltered](#c_containeriscontainerfiltered) | 1 value | 1 value |
 | ✅ | [C_Container.PickupContainerItem](#c_containerpickupcontaineritem) |  |  |
 | ✅ | [C_Container.PlayerHasHearthstone](#c_containerplayerhashearthstone) |  |  |
 | ✅ | [C_Container.SetBackpackAutosortDisabled](#c_containersetbackpackautosortdisabled) |  |  |
@@ -102,6 +102,8 @@ Namespace: `C_Container`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.GetBagSlotFlag
@@ -110,6 +112,8 @@ Namespace: `C_Container`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.GetBankAutosortDisabled
@@ -128,6 +132,8 @@ Namespace: `C_Container`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `table{[number]=number,[number]=number,[number]=number,[number]=number}`
+- Called in combat: returned 1 value: `table{[number]=number,[number]=number,[number]=number,[number]=number}`
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.GetContainerItemCooldown
@@ -136,6 +142,8 @@ Namespace: `C_Container`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:1`: returned 3 values: `number`, `number`, `number`
+- Called in combat: returned 3 values: `number`, `number`, `number`
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.GetContainerItemDurability
@@ -145,6 +153,8 @@ Namespace: `C_Container`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.GetContainerItemEquipmentSetInfo
@@ -153,6 +163,8 @@ Namespace: `C_Container`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:1`: returned 2 values: `boolean`, `string`
+- Called in combat: returned 2 values: `boolean`, `string`
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.GetContainerItemID
@@ -162,6 +174,8 @@ Namespace: `C_Container`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:1`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.GetContainerItemInfo
@@ -171,6 +185,8 @@ Namespace: `C_Container`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:1`: returned 1 value: `table{hasLoot=boolean,hasNoValue=boolean,hyperlink=string,iconFileID=number,isBound=boolean,isFiltered=boolean,isLocked=boolean,isReadable=boolean,itemID=number,itemName=string,quality=number,stackCount=number}`
+- Called in combat: returned 1 value: `table{hasLoot=boolean,hasNoValue=boolean,hyperlink=string,iconFileID=number,isBound=boolean,isFiltered=boolean,isLocked=boolean,isReadable=boolean,itemID=number,itemName=string,quality=number,stackCount=number}`
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.GetContainerItemLink
@@ -179,6 +195,8 @@ Namespace: `C_Container`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:1`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.GetContainerItemPurchaseCurrency
@@ -188,6 +206,8 @@ Namespace: `C_Container`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:1,n:1,b:false`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.GetContainerItemPurchaseInfo
@@ -197,6 +217,8 @@ Namespace: `C_Container`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:1,b:false`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.GetContainerItemPurchaseItem
@@ -206,6 +228,8 @@ Namespace: `C_Container`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:1,n:1,b:false`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.GetContainerItemQuestInfo
@@ -214,6 +238,8 @@ Namespace: `C_Container`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:1`: returned 1 value: `table{isActive=boolean,isQuestItem=boolean}`
+- Called in combat: returned 1 value: `table{isActive=boolean,isQuestItem=boolean}`
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.GetContainerNumFreeSlots
@@ -222,6 +248,8 @@ Namespace: `C_Container`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.GetContainerNumSlots
@@ -230,6 +258,8 @@ Namespace: `C_Container`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.GetInsertItemsLeftToRight
@@ -248,6 +278,8 @@ Namespace: `C_Container`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 3 values: `number`, `number`, `number`
+- Called in combat: returned 3 values: `number`, `number`, `number`
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.GetMaxArenaCurrency
@@ -274,6 +306,8 @@ Namespace: `C_Container`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.IsBattlePayItem
@@ -282,6 +316,8 @@ Namespace: `C_Container`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.IsContainerFiltered
@@ -290,6 +326,8 @@ Namespace: `C_Container`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.PickupContainerItem
@@ -452,14 +490,14 @@ Namespace: `C_Container`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 9 times (0 in combat); argument kinds: ``
+- Seen firing 64 times (0 in combat); argument kinds: ``
 
 ### BAG_NEW_ITEMS_UPDATED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### BAG_OPEN
 
@@ -484,21 +522,21 @@ Namespace: `C_Container`
 - Status: ✅ verified
 - Payload: `bagID: BagIndex`
 - fires synchronously (Blizzard's docs)
-- Seen firing 172 times (1 in combat); argument kinds: `n`
+- Seen firing 1297 times (4 in combat); argument kinds: `n`
 
 ### BAG_UPDATE_COOLDOWN
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 106 times (95 in combat); argument kinds: ``
+- Seen firing 261 times (206 in combat); argument kinds: ``
 
 ### BAG_UPDATE_DELAYED
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 20 times (1 in combat); argument kinds: ``
+- Seen firing 67 times (3 in combat); argument kinds: ``
 
 ### EQUIP_BIND_REFUNDABLE_CONFIRM
 
@@ -529,18 +567,21 @@ Namespace: `C_Container`
 - Status: ✅ verified
 - Payload: `bagOrSlotIndex: BagIndex`, `slotIndex: luaIndex?`
 - fires synchronously (Blizzard's docs)
+- Seen firing 23 times (0 in combat); argument kinds: `n,n`
 
 ### ITEM_LOCK_CHANGED
 
 - Status: ✅ verified
 - Payload: `bagOrSlotIndex: BagIndex`, `slotIndex: luaIndex?`
 - fires synchronously (Blizzard's docs)
+- Seen firing 40 times (0 in combat); argument kinds: `n,n`
 
 ### ITEM_UNLOCKED
 
 - Status: ✅ verified
 - Payload: `bagOrSlotIndex: BagIndex`, `slotIndex: luaIndex?`
 - fires synchronously (Blizzard's docs)
+- Seen firing 17 times (0 in combat); argument kinds: `n,n`
 
 ### USE_COMBINED_BAGS_CHANGED
 

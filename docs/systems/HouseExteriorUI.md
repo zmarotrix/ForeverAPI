@@ -6,23 +6,23 @@ Namespace: `C_HouseExterior`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_HouseExterior.CancelActiveExteriorEditing](#c_houseexteriorcancelactiveexteriorediting) | 0 values | 0 values |
-| ✅ | [C_HouseExterior.GetCoreFixtureOptionsInfo](#c_houseexteriorgetcorefixtureoptionsinfo) |  |  |
-| ✅ | [C_HouseExterior.GetCurrentHouseExteriorSize](#c_houseexteriorgetcurrenthouseexteriorsize) | 1 value | 1 value |
-| ✅ | [C_HouseExterior.GetCurrentHouseExteriorType](#c_houseexteriorgetcurrenthouseexteriortype) | 2 values | 2 values |
+| ✅ | [C_HouseExterior.CancelActiveExteriorEditing](#c_houseexteriorcancelactiveexteriorediting) |  |  |
+| ✅ | [C_HouseExterior.GetCoreFixtureOptionsInfo](#c_houseexteriorgetcorefixtureoptionsinfo) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HouseExterior.GetCurrentHouseExteriorSize](#c_houseexteriorgetcurrenthouseexteriorsize) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HouseExterior.GetCurrentHouseExteriorType](#c_houseexteriorgetcurrenthouseexteriortype) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | 🆕 | [C_HouseExterior.GetFixtureDebugInfoForGUID](#c_houseexteriorgetfixturedebuginfoforguid) |  |  |
-| ✅ | [C_HouseExterior.GetHouseExteriorSizeOptions](#c_houseexteriorgethouseexteriorsizeoptions) | 1 value | 1 value |
-| ✅ | [C_HouseExterior.GetHouseExteriorTypeOptions](#c_houseexteriorgethouseexteriortypeoptions) | 1 value | 1 value |
+| ✅ | [C_HouseExterior.GetHouseExteriorSizeOptions](#c_houseexteriorgethouseexteriorsizeoptions) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HouseExterior.GetHouseExteriorTypeOptions](#c_houseexteriorgethouseexteriortypeoptions) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | 🆕 | [C_HouseExterior.GetHoveredFixtureDebugInfo](#c_houseexteriorgethoveredfixturedebuginfo) |  |  |
 | 🆕 | [C_HouseExterior.GetSelectedFixtureDebugInfo](#c_houseexteriorgetselectedfixturedebuginfo) |  |  |
-| ✅ | [C_HouseExterior.GetSelectedFixturePointInfo](#c_houseexteriorgetselectedfixturepointinfo) | 1 value | 1 value |
-| ✅ | [C_HouseExterior.HasHoveredFixture](#c_houseexteriorhashoveredfixture) | 1 value | 1 value |
-| ✅ | [C_HouseExterior.HasSelectedFixturePoint](#c_houseexteriorhasselectedfixturepoint) | 1 value | 1 value |
-| ✅ | [C_HouseExterior.IsAnyDecorAttachedToCoreFixture](#c_houseexteriorisanydecorattachedtocorefixture) |  |  |
-| ✅ | [C_HouseExterior.IsAnyDecorAttachedToDoor](#c_houseexteriorisanydecorattachedtodoor) | 1 value | 1 value |
-| ✅ | [C_HouseExterior.IsAnyDecorAttachedToHouseExterior](#c_houseexteriorisanydecorattachedtohouseexterior) | 1 value | 1 value |
-| ✅ | [C_HouseExterior.IsAnyDecorAttachedToSelectedFixturePoint](#c_houseexteriorisanydecorattachedtoselectedfixturepoint) | 1 value | 1 value |
-| ✅ | [C_HouseExterior.IsExteriorDecorHidden](#c_houseexteriorisexteriordecorhidden) | 1 value | 1 value |
+| ✅ | [C_HouseExterior.GetSelectedFixturePointInfo](#c_houseexteriorgetselectedfixturepointinfo) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HouseExterior.HasHoveredFixture](#c_houseexteriorhashoveredfixture) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HouseExterior.HasSelectedFixturePoint](#c_houseexteriorhasselectedfixturepoint) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HouseExterior.IsAnyDecorAttachedToCoreFixture](#c_houseexteriorisanydecorattachedtocorefixture) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HouseExterior.IsAnyDecorAttachedToDoor](#c_houseexteriorisanydecorattachedtodoor) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HouseExterior.IsAnyDecorAttachedToHouseExterior](#c_houseexteriorisanydecorattachedtohouseexterior) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HouseExterior.IsAnyDecorAttachedToSelectedFixturePoint](#c_houseexteriorisanydecorattachedtoselectedfixturepoint) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HouseExterior.IsExteriorDecorHidden](#c_houseexteriorisexteriordecorhidden) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | ✅ | [C_HouseExterior.RemoveFixtureFromSelectedPoint](#c_houseexteriorremovefixturefromselectedpoint) |  |  |
 | ✅ | [C_HouseExterior.SelectCoreFixtureOption](#c_houseexteriorselectcorefixtureoption) |  |  |
 | ✅ | [C_HouseExterior.SelectFixtureOption](#c_houseexteriorselectfixtureoption) |  |  |
@@ -36,8 +36,6 @@ Namespace: `C_HouseExterior`
 
 - Status: ✅ verified (function)
 - Blizzard: Cancels all in-progress editing of house exterior fixtures, which will deselect any active targets
-- Called out of combat: returned 0 values
-- Called in combat: returned 0 values
 - Source: client docs `HouseExteriorUIDocumentation.lua`
 
 ### C_HouseExterior.GetCoreFixtureOptionsInfo
@@ -46,6 +44,8 @@ Namespace: `C_HouseExterior`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HouseExteriorUIDocumentation.lua`
 
 ### C_HouseExterior.GetCurrentHouseExteriorSize
@@ -53,8 +53,8 @@ Namespace: `C_HouseExterior`
 `C_HouseExterior.GetCurrentHouseExteriorSize() → houseExteriorSize: HousingFixtureSize?`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `nil`
-- Called in combat: returned 1 value: `nil`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HouseExteriorUIDocumentation.lua`
 
 ### C_HouseExterior.GetCurrentHouseExteriorType
@@ -62,8 +62,8 @@ Namespace: `C_HouseExterior`
 `C_HouseExterior.GetCurrentHouseExteriorType() → houseExteriorTypeID: number?, houseExteriorTypeName: cstring?`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 2 values: `nil`, `nil`
-- Called in combat: returned 2 values: `nil`, `nil`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HouseExteriorUIDocumentation.lua`
 
 ### C_HouseExterior.GetFixtureDebugInfoForGUID
@@ -77,8 +77,8 @@ Namespace: `C_HouseExterior`
 `C_HouseExterior.GetHouseExteriorSizeOptions() → options: HouseExteriorSizeOptionsInfo?`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `nil`
-- Called in combat: returned 1 value: `nil`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HouseExteriorUIDocumentation.lua`
 
 ### C_HouseExterior.GetHouseExteriorTypeOptions
@@ -86,8 +86,8 @@ Namespace: `C_HouseExterior`
 `C_HouseExterior.GetHouseExteriorTypeOptions() → options: HouseExteriorTypeOptionsInfo?`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `nil`
-- Called in combat: returned 1 value: `nil`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HouseExteriorUIDocumentation.lua`
 
 ### C_HouseExterior.GetHoveredFixtureDebugInfo
@@ -107,8 +107,8 @@ Namespace: `C_HouseExterior`
 `C_HouseExterior.GetSelectedFixturePointInfo() → fixturePointInfo: HousingFixturePointInfo?`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `nil`
-- Called in combat: returned 1 value: `nil`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HouseExteriorUIDocumentation.lua`
 
 ### C_HouseExterior.HasHoveredFixture
@@ -116,8 +116,8 @@ Namespace: `C_HouseExterior`
 `C_HouseExterior.HasHoveredFixture() → anyHoveredFixture: bool`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HouseExteriorUIDocumentation.lua`
 
 ### C_HouseExterior.HasSelectedFixturePoint
@@ -125,8 +125,8 @@ Namespace: `C_HouseExterior`
 `C_HouseExterior.HasSelectedFixturePoint() → anySelectedFixturePoint: bool`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HouseExteriorUIDocumentation.lua`
 
 ### C_HouseExterior.IsAnyDecorAttachedToCoreFixture
@@ -136,6 +136,8 @@ Namespace: `C_HouseExterior`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if any decor is attached to the specified core fixture type, OR any child fixtures attached to it; Will also return false if the type provided is not a core fixture type, or if not in Exterior Customization mode on an owned plot
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HouseExteriorUIDocumentation.lua`
 
 ### C_HouseExterior.IsAnyDecorAttachedToDoor
@@ -144,8 +146,8 @@ Namespace: `C_HouseExterior`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns true if any decor is attached to the current House Exterior's door; Will also return false if not in Exterior Customization mode on an owned plot
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HouseExteriorUIDocumentation.lua`
 
 ### C_HouseExterior.IsAnyDecorAttachedToHouseExterior
@@ -154,8 +156,8 @@ Namespace: `C_HouseExterior`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns true if any decor is attached to any component of the current House Exterior; Will also return false if not in House Exterior Customization mode on an owned Plot
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HouseExteriorUIDocumentation.lua`
 
 ### C_HouseExterior.IsAnyDecorAttachedToSelectedFixturePoint
@@ -164,8 +166,8 @@ Namespace: `C_HouseExterior`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns true if any decor is attached to the Fixture occupying the currently selected fixture point; Will also return false if no point is currently selected, or if there is currently no Fixture there
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HouseExteriorUIDocumentation.lua`
 
 ### C_HouseExterior.IsExteriorDecorHidden
@@ -173,8 +175,8 @@ Namespace: `C_HouseExterior`
 `C_HouseExterior.IsExteriorDecorHidden() → decorHidden: bool`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HouseExteriorUIDocumentation.lua`
 
 ### C_HouseExterior.RemoveFixtureFromSelectedPoint

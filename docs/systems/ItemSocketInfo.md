@@ -11,17 +11,17 @@ Namespace: `C_ItemSocketInfo`
 | ✅ | [C_ItemSocketInfo.CloseSocketInfo](#c_itemsocketinfoclosesocketinfo) |  |  |
 | ✅ | [C_ItemSocketInfo.CompleteSocketing](#c_itemsocketinfocompletesocketing) |  |  |
 | ✅ | [C_ItemSocketInfo.GetCurrUIType](#c_itemsocketinfogetcurruitype) | 1 value | 1 value |
-| ✅ | [C_ItemSocketInfo.GetExistingSocketInfo](#c_itemsocketinfogetexistingsocketinfo) |  |  |
-| ✅ | [C_ItemSocketInfo.GetExistingSocketLink](#c_itemsocketinfogetexistingsocketlink) |  |  |
-| ✅ | [C_ItemSocketInfo.GetNewSocketInfo](#c_itemsocketinfogetnewsocketinfo) |  |  |
-| ✅ | [C_ItemSocketInfo.GetNewSocketLink](#c_itemsocketinfogetnewsocketlink) |  |  |
+| ✅ | [C_ItemSocketInfo.GetExistingSocketInfo](#c_itemsocketinfogetexistingsocketinfo) | 3 values | 3 values |
+| ✅ | [C_ItemSocketInfo.GetExistingSocketLink](#c_itemsocketinfogetexistingsocketlink) | 1 value | 1 value |
+| ✅ | [C_ItemSocketInfo.GetNewSocketInfo](#c_itemsocketinfogetnewsocketinfo) | 3 values | 3 values |
+| ✅ | [C_ItemSocketInfo.GetNewSocketLink](#c_itemsocketinfogetnewsocketlink) | 1 value | 1 value |
 | ✅ | [C_ItemSocketInfo.GetNumSockets](#c_itemsocketinfogetnumsockets) | 1 value | 1 value |
 | ✅ | [C_ItemSocketInfo.GetSocketItemBoundTradeable](#c_itemsocketinfogetsocketitemboundtradeable) | 1 value | 1 value |
 | ✅ | [C_ItemSocketInfo.GetSocketItemInfo](#c_itemsocketinfogetsocketiteminfo) | 3 values | 3 values |
 | ✅ | [C_ItemSocketInfo.GetSocketItemRefundable](#c_itemsocketinfogetsocketitemrefundable) | 1 value | 1 value |
-| ✅ | [C_ItemSocketInfo.GetSocketTypes](#c_itemsocketinfogetsockettypes) |  |  |
+| ✅ | [C_ItemSocketInfo.GetSocketTypes](#c_itemsocketinfogetsockettypes) | 1 value | 1 value |
 | ✅ | [C_ItemSocketInfo.HasBoundGemProposed](#c_itemsocketinfohasboundgemproposed) | 1 value | 1 value |
-| ✅ | [C_ItemSocketInfo.IsArtifactRelicItem](#c_itemsocketinfoisartifactrelicitem) |  |  |
+| ✅ | [C_ItemSocketInfo.IsArtifactRelicItem](#c_itemsocketinfoisartifactrelicitem) | 1 value | 1 value |
 
 ### C_ItemSocketInfo.AcceptSockets
 
@@ -67,6 +67,8 @@ Namespace: `C_ItemSocketInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 3 values: `nil`, `nil`, `boolean`
+- Called in combat: returned 3 values: `nil`, `nil`, `boolean`
 - Source: client docs `ItemSocketInfoDocumentation.lua`
 
 ### C_ItemSocketInfo.GetExistingSocketLink
@@ -75,6 +77,8 @@ Namespace: `C_ItemSocketInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `ItemSocketInfoDocumentation.lua`
 
 ### C_ItemSocketInfo.GetNewSocketInfo
@@ -83,6 +87,8 @@ Namespace: `C_ItemSocketInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 3 values: `nil`, `nil`, `boolean`
+- Called in combat: returned 3 values: `nil`, `nil`, `boolean`
 - Source: client docs `ItemSocketInfoDocumentation.lua`
 
 ### C_ItemSocketInfo.GetNewSocketLink
@@ -91,6 +97,8 @@ Namespace: `C_ItemSocketInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `ItemSocketInfoDocumentation.lua`
 
 ### C_ItemSocketInfo.GetNumSockets
@@ -135,6 +143,8 @@ Namespace: `C_ItemSocketInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `ItemSocketInfoDocumentation.lua`
 
 ### C_ItemSocketInfo.HasBoundGemProposed
@@ -152,6 +162,8 @@ Namespace: `C_ItemSocketInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemSocketInfoDocumentation.lua`
 
 ## Events
@@ -173,7 +185,7 @@ Namespace: `C_ItemSocketInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 18 times (0 in combat); argument kinds: ``
 
 ### SOCKET_INFO_FAILURE
 

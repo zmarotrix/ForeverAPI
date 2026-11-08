@@ -14,7 +14,7 @@ Namespace: `C_TransmogSets`
 | ✅ | [C_TransmogSets.GetAvailableSets](#c_transmogsetsgetavailablesets) | 1 value | 1 value |
 | ✅ | [C_TransmogSets.GetBaseSetID](#c_transmogsetsgetbasesetid) |  |  |
 | ✅ | [C_TransmogSets.GetBaseSets](#c_transmogsetsgetbasesets) | 1 value | 1 value |
-| ✅ | [C_TransmogSets.GetBaseSetsFilter](#c_transmogsetsgetbasesetsfilter) |  |  |
+| ✅ | [C_TransmogSets.GetBaseSetsFilter](#c_transmogsetsgetbasesetsfilter) | 1 value | 1 value |
 | ✅ | [C_TransmogSets.GetCameraIDs](#c_transmogsetsgetcameraids) | 2 values | 2 values |
 | ✅ | [C_TransmogSets.GetFilteredBaseSetsCounts](#c_transmogsetsgetfilteredbasesetscounts) | 2 values | 2 values |
 | ✅ | [C_TransmogSets.GetFullBaseSetsCounts](#c_transmogsetsgetfullbasesetscounts) | 2 values | 2 values |
@@ -24,7 +24,7 @@ Namespace: `C_TransmogSets`
 | ✅ | [C_TransmogSets.GetSetNewSources](#c_transmogsetsgetsetnewsources) |  |  |
 | ✅ | [C_TransmogSets.GetSetPrimaryAppearances](#c_transmogsetsgetsetprimaryappearances) |  |  |
 | ✅ | [C_TransmogSets.GetSetsContainingSourceID](#c_transmogsetsgetsetscontainingsourceid) |  |  |
-| ✅ | [C_TransmogSets.GetSetsFilter](#c_transmogsetsgetsetsfilter) |  |  |
+| ✅ | [C_TransmogSets.GetSetsFilter](#c_transmogsetsgetsetsfilter) | 1 value | 1 value |
 | ✅ | [C_TransmogSets.GetSourceIDsForSlot](#c_transmogsetsgetsourceidsforslot) |  |  |
 | ✅ | [C_TransmogSets.GetSourcesForSlot](#c_transmogsetsgetsourcesforslot) |  |  |
 | ✅ | [C_TransmogSets.GetTransmogSetsClassFilter](#c_transmogsetsgettransmogsetsclassfilter) | 1 value | 1 value |
@@ -124,6 +124,8 @@ Namespace: `C_TransmogSets`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `TransmogSetsDocumentation.lua`
 
 ### C_TransmogSets.GetCameraIDs
@@ -214,6 +216,8 @@ Namespace: `C_TransmogSets`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `TransmogSetsDocumentation.lua`
 
 ### C_TransmogSets.GetSourceIDsForSlot

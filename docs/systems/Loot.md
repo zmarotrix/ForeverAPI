@@ -69,6 +69,7 @@ Namespace: `C_Loot`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 6 times (0 in combat); argument kinds: ``
 
 ### CANCEL_LOOT_ROLL
 
@@ -105,7 +106,7 @@ Namespace: `C_Loot`
 - Status: ✅ verified
 - Payload: `bagSlot: luaIndex`, `iconFileID: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 15 times (1 in combat); argument kinds: `n,n`
+- Seen firing 25 times (3 in combat); argument kinds: `n,n`
 
 ### LEGACY_LOOT_RULES_CHANGED
 
@@ -124,7 +125,7 @@ Namespace: `C_Loot`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 30 times (4 in combat); argument kinds: ``
+- Seen firing 61 times (6 in combat); argument kinds: ``
 
 ### LOOT_ITEM_AVAILABLE
 
@@ -143,14 +144,14 @@ Namespace: `C_Loot`
 - Status: ✅ verified
 - Payload: `autoLoot: bool`, `isFromItem: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (1 in combat); argument kinds: `b,b`
+- Seen firing 19 times (2 in combat); argument kinds: `b,b`
 
 ### LOOT_READY
 
 - Status: ✅ verified
 - Payload: `autoloot: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 21 times (3 in combat); argument kinds: `b`
+- Seen firing 62 times (7 in combat); argument kinds: `b`
 
 ### LOOT_ROLLS_COMPLETE
 
@@ -169,7 +170,7 @@ Namespace: `C_Loot`
 - Status: ✅ verified
 - Payload: `lootSlot: luaIndex`
 - fires synchronously (Blizzard's docs)
-- Seen firing 17 times (1 in combat); argument kinds: `n`
+- Seen firing 30 times (4 in combat); argument kinds: `n`
 
 ### MAIN_SPEC_NEED_ROLL
 

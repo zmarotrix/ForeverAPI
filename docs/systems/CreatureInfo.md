@@ -6,14 +6,14 @@ Namespace: `C_CreatureInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_CreatureInfo.GetClassInfo](#c_creatureinfogetclassinfo) |  |  |
+| ✅ | [C_CreatureInfo.GetClassInfo](#c_creatureinfogetclassinfo) | 1 value | 1 value |
 | ✅ | [C_CreatureInfo.GetCreatureFamilyIDs](#c_creatureinfogetcreaturefamilyids) | 1 value | 1 value |
 | ✅ | [C_CreatureInfo.GetCreatureFamilyInfo](#c_creatureinfogetcreaturefamilyinfo) |  |  |
-| ✅ | [C_CreatureInfo.GetCreatureID](#c_creatureinfogetcreatureid) |  |  |
+| ✅ | [C_CreatureInfo.GetCreatureID](#c_creatureinfogetcreatureid) | 1 value | 1 value |
 | ✅ | [C_CreatureInfo.GetCreatureTypeIDs](#c_creatureinfogetcreaturetypeids) | 1 value | 1 value |
 | ✅ | [C_CreatureInfo.GetCreatureTypeInfo](#c_creatureinfogetcreaturetypeinfo) |  |  |
-| ✅ | [C_CreatureInfo.GetFactionInfo](#c_creatureinfogetfactioninfo) |  |  |
-| ✅ | [C_CreatureInfo.GetRaceInfo](#c_creatureinfogetraceinfo) |  |  |
+| ✅ | [C_CreatureInfo.GetFactionInfo](#c_creatureinfogetfactioninfo) | 1 value | 1 value |
+| ✅ | [C_CreatureInfo.GetRaceInfo](#c_creatureinfogetraceinfo) | 1 value | 1 value |
 
 ### C_CreatureInfo.GetClassInfo
 
@@ -21,6 +21,8 @@ Namespace: `C_CreatureInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `class`: returned 1 value: `table{classFile=string,classID=number,className=string}`
+- Called in combat: returned 1 value: `table{classFile=string,classID=number,className=string}`
 - Source: client docs `CreatureInfoDocumentation.lua`
 
 ### C_CreatureInfo.GetCreatureFamilyIDs
@@ -46,6 +48,8 @@ Namespace: `C_CreatureInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `CreatureInfoDocumentation.lua`
 
 ### C_CreatureInfo.GetCreatureTypeIDs
@@ -71,6 +75,8 @@ Namespace: `C_CreatureInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `race`: returned 1 value: `table{groupTag=string,name=string}`
+- Called in combat: returned 1 value: `table{groupTag=string,name=string}`
 - Source: client docs `CreatureInfoDocumentation.lua`
 
 ### C_CreatureInfo.GetRaceInfo
@@ -79,6 +85,8 @@ Namespace: `C_CreatureInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `race`: returned 1 value: `table{clientFileString=string,raceID=number,raceName=string}`
+- Called in combat: returned 1 value: `table{clientFileString=string,raceID=number,raceName=string}`
 - Source: client docs `CreatureInfoDocumentation.lua`
 
 ## Types

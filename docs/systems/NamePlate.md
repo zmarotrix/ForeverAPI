@@ -6,7 +6,7 @@ Namespace: `C_NamePlate`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_NamePlate.GetNamePlateForUnit](#c_nameplategetnameplateforunit) |  |  |
+| ✅ | [C_NamePlate.GetNamePlateForUnit](#c_nameplategetnameplateforunit) | 1 value | 1 value |
 | ✅ | [C_NamePlate.GetNamePlateSize](#c_nameplategetnameplatesize) | 2 values | 2 values |
 | ✅ | [C_NamePlate.GetNamePlates](#c_nameplategetnameplates) | 1 value | 1 value |
 | ✅ | [C_NamePlate.SetNamePlateSize](#c_nameplatesetnameplatesize) |  |  |
@@ -17,6 +17,8 @@ Namespace: `C_NamePlate`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `player`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `NamePlateDocumentation.lua`
 
 ### C_NamePlate.GetNamePlateSize
@@ -34,7 +36,7 @@ Namespace: `C_NamePlate`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
-- Called in combat: returned 1 value: `table{[number]=table}`
+- Called in combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table}`
 - Source: client docs `NamePlateDocumentation.lua`
 
 ### C_NamePlate.SetNamePlateSize

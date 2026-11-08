@@ -4,7 +4,7 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [CancelLogout](#cancellogout) | 💥 blocked | 💥 blocked |
+| ✅ | [CancelLogout](#cancellogout) |  |  |
 | ✅ | [ForceLogout](#forcelogout) |  |  |
 | ✅ | [ForceQuit](#forcequit) |  |  |
 | ✅ | [GetNativeRealmID](#getnativerealmid) | 1 value | 1 value |
@@ -23,8 +23,6 @@
 `CancelLogout()`
 
 - Status: ✅ verified (function)
-- Called out of combat: not called: blocked
-- Called in combat: not called: blocked
 - Source: client docs `ConnectionDocumentation.lua`
 
 ### ForceLogout

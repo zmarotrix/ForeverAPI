@@ -220,7 +220,7 @@ Namespace: `C_MythicPlus`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### MYTHIC_PLUS_NEW_WEEKLY_RECORD
 

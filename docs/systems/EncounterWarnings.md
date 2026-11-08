@@ -6,10 +6,10 @@ Namespace: `C_EncounterWarnings`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_EncounterWarnings.GetColorForSeverity](#c_encounterwarningsgetcolorforseverity) |  |  |
-| ✅ | [C_EncounterWarnings.GetEditModeWarningInfo](#c_encounterwarningsgeteditmodewarninginfo) |  |  |
+| ✅ | [C_EncounterWarnings.GetColorForSeverity](#c_encounterwarningsgetcolorforseverity) | 1 value | 1 value |
+| ✅ | [C_EncounterWarnings.GetEditModeWarningInfo](#c_encounterwarningsgeteditmodewarninginfo) | 1 value | 1 value |
 | ✅ | [C_EncounterWarnings.GetPlayCustomSoundsWhenHidden](#c_encounterwarningsgetplaycustomsoundswhenhidden) | 1 value | 1 value |
-| ✅ | [C_EncounterWarnings.GetSoundKitForSeverity](#c_encounterwarningsgetsoundkitforseverity) |  |  |
+| ✅ | [C_EncounterWarnings.GetSoundKitForSeverity](#c_encounterwarningsgetsoundkitforseverity) | 1 value | 1 value |
 | ✅ | [C_EncounterWarnings.GetWarningsShown](#c_encounterwarningsgetwarningsshown) | 1 value | 1 value |
 | ✅ | [C_EncounterWarnings.IsFeatureAvailable](#c_encounterwarningsisfeatureavailable) | 1 value | 1 value |
 | ✅ | [C_EncounterWarnings.IsFeatureEnabled](#c_encounterwarningsisfeatureenabled) | 1 value | 1 value |
@@ -23,6 +23,8 @@ Namespace: `C_EncounterWarnings`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `table{GenerateHexColor=function,GenerateHexColorMarkup=function,GenerateHexColorNoAlpha=function,GetHSL=function,GetRGB=function,GetRGBA=function,GetRGBAAsBytes=function,GetRGBAsBytes=function,IsEqualTo=function,IsRGBEqualTo=function,OnLoad=function,SetRGB=function,SetRGBA=function,WrapTextInColorCode=function,a=number,b=number,g=number,r=number}`
+- Called in combat: returned 1 value: `table{GenerateHexColor=function,GenerateHexColorMarkup=function,GenerateHexColorNoAlpha=function,GetHSL=function,GetRGB=function,GetRGBA=function,GetRGBAAsBytes=function,GetRGBAsBytes=function,IsEqualTo=function,IsRGBEqualTo=function,OnLoad=function,SetRGB=function,SetRGBA=function,WrapTextInColorCode=function,a=number,b=number,g=number,r=number}`
 - Source: client docs `EncounterWarningsDocumentation.lua`
 
 ### C_EncounterWarnings.GetEditModeWarningInfo
@@ -31,6 +33,8 @@ Namespace: `C_EncounterWarnings`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `table{casterName=secret,color=table,duration=number,iconFileID=secret,isDeadly=secret,severity=number,shouldPlaySound=boolean,shouldShowChatMessage=boolean,shouldShowWarning=boolean,targetName=secret,text=secret,tooltipSpellID=secret}`
+- Called in combat: returned 1 value: `table{casterName=secret,color=table,duration=number,iconFileID=secret,isDeadly=secret,severity=number,shouldPlaySound=boolean,shouldShowChatMessage=boolean,shouldShowWarning=boolean,targetName=secret,text=secret,tooltipSpellID=secret}`
 - Source: client docs `EncounterWarningsDocumentation.lua`
 
 ### C_EncounterWarnings.GetPlayCustomSoundsWhenHidden
@@ -49,6 +53,8 @@ Namespace: `C_EncounterWarnings`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `EncounterWarningsDocumentation.lua`
 
 ### C_EncounterWarnings.GetWarningsShown

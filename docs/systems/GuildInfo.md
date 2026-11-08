@@ -12,8 +12,8 @@ Namespace: `C_GuildInfo`
 | ✅ | [C_GuildInfo.CanViewOfficerNote](#c_guildinfocanviewofficernote) | 1 value | 1 value |
 | ✅ | [C_GuildInfo.Demote](#c_guildinfodemote) |  |  |
 | ✅ | [C_GuildInfo.Disband](#c_guildinfodisband) |  |  |
-| ✅ | [C_GuildInfo.GetGuildNewsInfo](#c_guildinfogetguildnewsinfo) |  |  |
-| ✅ | [C_GuildInfo.GetGuildRankOrder](#c_guildinfogetguildrankorder) |  |  |
+| ✅ | [C_GuildInfo.GetGuildNewsInfo](#c_guildinfogetguildnewsinfo) | 0 values | 0 values |
+| ✅ | [C_GuildInfo.GetGuildRankOrder](#c_guildinfogetguildrankorder) | 1 value | 1 value |
 | ✅ | [C_GuildInfo.GetGuildTabardInfo](#c_guildinfogetguildtabardinfo) | 1 value | 1 value |
 | ✅ | [C_GuildInfo.GetInfoText](#c_guildinfogetinfotext) | 💥 blocked | 💥 blocked |
 | ✅ | [C_GuildInfo.GetMOTD](#c_guildinfogetmotd) | 💥 blocked | 💥 blocked |
@@ -25,7 +25,7 @@ Namespace: `C_GuildInfo`
 | ✅ | [C_GuildInfo.IsDiscordStreamSeparate](#c_guildinfoisdiscordstreamseparate) | 1 value | 1 value |
 | ✅ | [C_GuildInfo.IsEncounterGuildNewsEnabled](#c_guildinfoisencounterguildnewsenabled) | 1 value | 1 value |
 | ✅ | [C_GuildInfo.IsGuildOfficer](#c_guildinfoisguildofficer) | 1 value | 1 value |
-| ✅ | [C_GuildInfo.IsGuildRankAssignmentAllowed](#c_guildinfoisguildrankassignmentallowed) |  |  |
+| ✅ | [C_GuildInfo.IsGuildRankAssignmentAllowed](#c_guildinfoisguildrankassignmentallowed) | 1 value | 1 value |
 | ✅ | [C_GuildInfo.IsGuildReputationEnabled](#c_guildinfoisguildreputationenabled) | 1 value | 1 value |
 | ✅ | [C_GuildInfo.Leave](#c_guildinfoleave) |  |  |
 | ✅ | [C_GuildInfo.MemberExistsByName](#c_guildinfomemberexistsbyname) |  |  |
@@ -104,6 +104,8 @@ Namespace: `C_GuildInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `GuildInfoDocumentation.lua`
 
 ### C_GuildInfo.GetGuildRankOrder
@@ -112,6 +114,8 @@ Namespace: `C_GuildInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `GuildInfoDocumentation.lua`
 
 ### C_GuildInfo.GetGuildTabardInfo
@@ -218,6 +222,8 @@ Namespace: `C_GuildInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid,n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `GuildInfoDocumentation.lua`
 
 ### C_GuildInfo.IsGuildReputationEnabled
@@ -414,7 +420,7 @@ Namespace: `C_GuildInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 10 times (0 in combat); argument kinds: ``
 
 ### GUILD_EVENT_LOG_UPDATE
 
@@ -464,14 +470,14 @@ Namespace: `C_GuildInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 12 times (2 in combat); argument kinds: ``
+- Seen firing 56 times (6 in combat); argument kinds: ``
 
 ### GUILD_RANKS_UPDATE_ACTIVE_PLAYER
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 8 times (0 in combat); argument kinds: ``
 
 ### GUILD_RECIPE_KNOWN_BY_MEMBERS
 
@@ -532,14 +538,14 @@ Namespace: `C_GuildInfo`
 - Status: ✅ verified
 - Payload: `canRequestRosterUpdate: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 33 times (9 in combat); argument kinds: `b`
+- Seen firing 145 times (21 in combat); argument kinds: `b`
 
 ### GUILD_TRADESKILL_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 15 times (3 in combat); argument kinds: ``
+- Seen firing 87 times (16 in combat); argument kinds: ``
 
 ### OPEN_TABARD_FRAME
 
@@ -552,7 +558,7 @@ Namespace: `C_GuildInfo`
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `s`
+- Seen firing 18 times (0 in combat); argument kinds: `s`
 
 ### REQUESTED_GUILD_RENAME_RESULT
 
@@ -571,7 +577,7 @@ Namespace: `C_GuildInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 8 times (0 in combat); argument kinds: ``
 
 ### TABARD_SAVE_PENDING
 

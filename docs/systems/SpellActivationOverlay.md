@@ -6,7 +6,7 @@ Namespace: `C_SpellActivationOverlay`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_SpellActivationOverlay.IsSpellOverlayed](#c_spellactivationoverlayisspelloverlayed) |  |  |
+| ✅ | [C_SpellActivationOverlay.IsSpellOverlayed](#c_spellactivationoverlayisspelloverlayed) | 1 value | 1 value |
 
 ### C_SpellActivationOverlay.IsSpellOverlayed
 
@@ -14,6 +14,8 @@ Namespace: `C_SpellActivationOverlay`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellActivationOverlayDocumentation.lua`
 
 ## Events
@@ -35,7 +37,7 @@ Namespace: `C_SpellActivationOverlay`
 - Status: ✅ verified
 - Payload: `spellID: number?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 285 times (77 in combat); argument kinds: `-`
+- Seen firing 4350 times (186 in combat); argument kinds: `-`
 
 ### SPELL_ACTIVATION_OVERLAY_SHOW
 

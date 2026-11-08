@@ -10,8 +10,8 @@ Namespace: `C_AddOnProfiler`
 | ✅ | [C_AddOnProfiler.AddPerformanceMessageShown](#c_addonprofileraddperformancemessageshown) |  |  |
 | ✅ | [C_AddOnProfiler.CheckForPerformanceMessage](#c_addonprofilercheckforperformancemessage) |  |  |
 | ✅ | [C_AddOnProfiler.GetAddOnMetric](#c_addonprofilergetaddonmetric) |  |  |
-| ✅ | [C_AddOnProfiler.GetApplicationMetric](#c_addonprofilergetapplicationmetric) |  |  |
-| ✅ | [C_AddOnProfiler.GetOverallMetric](#c_addonprofilergetoverallmetric) |  |  |
+| ✅ | [C_AddOnProfiler.GetApplicationMetric](#c_addonprofilergetapplicationmetric) | 1 value | 1 value |
+| ✅ | [C_AddOnProfiler.GetOverallMetric](#c_addonprofilergetoverallmetric) | 1 value | 1 value |
 | ✅ | [C_AddOnProfiler.GetTicksPerSecond](#c_addonprofilergettickspersecond) | 1 value | 1 value |
 | ✅ | [C_AddOnProfiler.GetTopKAddOnsForMetric](#c_addonprofilergettopkaddonsformetric) |  |  |
 | ✅ | [C_AddOnProfiler.IsEnabled](#c_addonprofilerisenabled) | 1 value | 1 value |
@@ -62,6 +62,8 @@ Namespace: `C_AddOnProfiler`
 - Status: ✅ verified (function)
 - Blizzard: Overall profiling data for the entire application (not just the UI)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `AddOnProfilerDocumentation.lua`
 
 ### C_AddOnProfiler.GetOverallMetric
@@ -71,6 +73,8 @@ Namespace: `C_AddOnProfiler`
 - Status: ✅ verified (function)
 - Blizzard: Overall profiling data for all addons
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `AddOnProfilerDocumentation.lua`
 
 ### C_AddOnProfiler.GetTicksPerSecond

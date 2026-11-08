@@ -11,7 +11,7 @@ Namespace: `C_SkillInfo`
 | ✅ | [C_SkillInfo.ExpandSkillHeader](#c_skillinfoexpandskillheader) |  |  |
 | ✅ | [C_SkillInfo.GetNumSkillLines](#c_skillinfogetnumskilllines) | 1 value | 1 value |
 | ✅ | [C_SkillInfo.GetSelectedSkill](#c_skillinfogetselectedskill) | 1 value | 1 value |
-| ✅ | [C_SkillInfo.GetSkillLineInfo](#c_skillinfogetskilllineinfo) |  |  |
+| ✅ | [C_SkillInfo.GetSkillLineInfo](#c_skillinfogetskilllineinfo) | 1 value | 1 value |
 | ✅ | [C_SkillInfo.GetSkillLineInfoByID](#c_skillinfogetskilllineinfobyid) |  |  |
 | ✅ | [C_SkillInfo.SetSelectedSkill](#c_skillinfosetselectedskill) |  |  |
 
@@ -63,6 +63,8 @@ Namespace: `C_SkillInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `table{costType=number,description=string,isAbandonable=boolean,isCollapsed=boolean,isHeader=boolean,maxRank=number,minLevel=number,modifier=number,name=string,parentSkillLineID=number,rank=number,rankCost=number,skillID=number,skillLineCategoryID=number,stepCost=number,tempPoints=number}`
+- Called in combat: returned 1 value: `table{costType=number,description=string,isAbandonable=boolean,isCollapsed=boolean,isHeader=boolean,maxRank=number,minLevel=number,modifier=number,name=string,parentSkillLineID=number,rank=number,rankCost=number,skillID=number,skillLineCategoryID=number,stepCost=number,tempPoints=number}`
 - Source: client docs `SkillInfoDocumentation.lua`
 
 ### C_SkillInfo.GetSkillLineInfoByID
@@ -88,7 +90,7 @@ Namespace: `C_SkillInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 7 times (1 in combat); argument kinds: ``
+- Seen firing 23 times (2 in combat); argument kinds: ``
 
 ## Types
 

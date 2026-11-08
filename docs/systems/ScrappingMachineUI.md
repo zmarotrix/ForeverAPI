@@ -8,7 +8,7 @@ Namespace: `C_ScrappingMachineUI`
 |---|---|---|---|
 | ✅ | [C_ScrappingMachineUI.CloseScrappingMachine](#c_scrappingmachineuiclosescrappingmachine) |  |  |
 | ✅ | [C_ScrappingMachineUI.DropPendingScrapItemFromCursor](#c_scrappingmachineuidroppendingscrapitemfromcursor) |  |  |
-| ✅ | [C_ScrappingMachineUI.GetCurrentPendingScrapItemLocationByIndex](#c_scrappingmachineuigetcurrentpendingscrapitemlocationbyindex) |  |  |
+| ✅ | [C_ScrappingMachineUI.GetCurrentPendingScrapItemLocationByIndex](#c_scrappingmachineuigetcurrentpendingscrapitemlocationbyindex) | 0 values | 0 values |
 | ✅ | [C_ScrappingMachineUI.GetScrapSpellID](#c_scrappingmachineuigetscrapspellid) | 1 value | 1 value |
 | ✅ | [C_ScrappingMachineUI.GetScrappingMachineName](#c_scrappingmachineuigetscrappingmachinename) | 0 values | 0 values |
 | ✅ | [C_ScrappingMachineUI.HasScrappableItems](#c_scrappingmachineuihasscrappableitems) | 1 value | 1 value |
@@ -40,6 +40,8 @@ Namespace: `C_ScrappingMachineUI`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ScrappingMachineUIDocumentation.lua`
 
 ### C_ScrappingMachineUI.GetScrapSpellID

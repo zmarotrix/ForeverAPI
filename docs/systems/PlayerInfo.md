@@ -9,19 +9,19 @@ Namespace: `C_PlayerInfo`
 | ✅ | [C_PlayerInfo.CanPlayerEnterChromieTime](#c_playerinfocanplayerenterchromietime) | 1 value | 1 value |
 | ✅ | [C_PlayerInfo.CanPlayerUseAreaLoot](#c_playerinfocanplayerusearealoot) | 1 value | 1 value |
 | ✅ | [C_PlayerInfo.CanPlayerUseMountEquipment](#c_playerinfocanplayerusemountequipment) | 2 values | 2 values |
-| ✅ | [C_PlayerInfo.CanUseItem](#c_playerinfocanuseitem) |  |  |
+| ✅ | [C_PlayerInfo.CanUseItem](#c_playerinfocanuseitem) | 1 value | 1 value |
 | ✅ | [C_PlayerInfo.GetAlternateFormInfo](#c_playerinfogetalternateforminfo) | 2 values | 2 values |
 | ✅ | [C_PlayerInfo.GetContentDifficultyCreatureForPlayer](#c_playerinfogetcontentdifficultycreatureforplayer) | 1 value | 1 value |
-| ✅ | [C_PlayerInfo.GetContentDifficultyQuestForPlayer](#c_playerinfogetcontentdifficultyquestforplayer) |  |  |
+| ✅ | [C_PlayerInfo.GetContentDifficultyQuestForPlayer](#c_playerinfogetcontentdifficultyquestforplayer) | 1 value | 1 value |
 | ✅ | [C_PlayerInfo.GetDisplayID](#c_playerinfogetdisplayid) | 1 value | 1 value |
 | ✅ | [C_PlayerInfo.GetGlidingInfo](#c_playerinfogetglidinginfo) | 3 values | 3 values |
-| ✅ | [C_PlayerInfo.GetInstancesUnlockedAtLevel](#c_playerinfogetinstancesunlockedatlevel) |  |  |
+| ✅ | [C_PlayerInfo.GetInstancesUnlockedAtLevel](#c_playerinfogetinstancesunlockedatlevel) | 0 values | 0 values |
 | ✅ | [C_PlayerInfo.GetNativeDisplayID](#c_playerinfogetnativedisplayid) | 1 value | 1 value |
-| ✅ | [C_PlayerInfo.GetPetStableCreatureDisplayInfoID](#c_playerinfogetpetstablecreaturedisplayinfoid) |  |  |
+| ✅ | [C_PlayerInfo.GetPetStableCreatureDisplayInfoID](#c_playerinfogetpetstablecreaturedisplayinfoid) | 1 value | 1 value |
 | ✅ | [C_PlayerInfo.GetPlayerCharacterData](#c_playerinfogetplayercharacterdata) | 1 value | 1 value |
 | ✅ | [C_PlayerInfo.GetPlayerMythicPlusRatingSummary](#c_playerinfogetplayermythicplusratingsummary) | 1 value | 1 value |
 | ✅ | [C_PlayerInfo.HasAccountInventoryLock](#c_playerinfohasaccountinventorylock) | 1 value | 1 value |
-| ✅ | [C_PlayerInfo.HasVisibleInvSlot](#c_playerinfohasvisibleinvslot) |  |  |
+| ✅ | [C_PlayerInfo.HasVisibleInvSlot](#c_playerinfohasvisibleinvslot) | 1 value | 1 value |
 | ✅ | [C_PlayerInfo.IsAccountBankEnabled](#c_playerinfoisaccountbankenabled) | 1 value | 1 value |
 | ✅ | [C_PlayerInfo.IsCharacterBankEnabled](#c_playerinfoischaracterbankenabled) | 1 value | 1 value |
 | ✅ | [C_PlayerInfo.IsDisplayRaceNative](#c_playerinfoisdisplayracenative) | 1 value | 1 value |
@@ -73,6 +73,8 @@ Namespace: `C_PlayerInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.GetAlternateFormInfo
@@ -100,6 +102,8 @@ Namespace: `C_PlayerInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `quest`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.GetDisplayID
@@ -127,6 +131,8 @@ Namespace: `C_PlayerInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:10,b:false`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.GetNativeDisplayID
@@ -144,6 +150,8 @@ Namespace: `C_PlayerInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.GetPlayerCharacterData
@@ -183,6 +191,8 @@ Namespace: `C_PlayerInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
 ### C_PlayerInfo.IsAccountBankEnabled

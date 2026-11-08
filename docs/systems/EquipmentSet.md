@@ -13,7 +13,7 @@ Namespace: `C_EquipmentSet`
 | ✅ | [C_EquipmentSet.DeleteEquipmentSet](#c_equipmentsetdeleteequipmentset) |  |  |
 | ✅ | [C_EquipmentSet.EquipmentSetContainsLockedItems](#c_equipmentsetequipmentsetcontainslockeditems) |  |  |
 | ✅ | [C_EquipmentSet.GetEquipmentSetAssignedSpec](#c_equipmentsetgetequipmentsetassignedspec) |  |  |
-| ✅ | [C_EquipmentSet.GetEquipmentSetForSpec](#c_equipmentsetgetequipmentsetforspec) |  |  |
+| ✅ | [C_EquipmentSet.GetEquipmentSetForSpec](#c_equipmentsetgetequipmentsetforspec) | 0 values | 0 values |
 | ✅ | [C_EquipmentSet.GetEquipmentSetID](#c_equipmentsetgetequipmentsetid) |  |  |
 | ✅ | [C_EquipmentSet.GetEquipmentSetIDs](#c_equipmentsetgetequipmentsetids) | 1 value | 1 value |
 | ✅ | [C_EquipmentSet.GetEquipmentSetInfo](#c_equipmentsetgetequipmentsetinfo) |  |  |
@@ -22,7 +22,7 @@ Namespace: `C_EquipmentSet`
 | ✅ | [C_EquipmentSet.GetItemLocations](#c_equipmentsetgetitemlocations) |  |  |
 | ✅ | [C_EquipmentSet.GetNumEquipmentSets](#c_equipmentsetgetnumequipmentsets) | 1 value | 1 value |
 | ✅ | [C_EquipmentSet.IgnoreSlotForSave](#c_equipmentsetignoreslotforsave) |  |  |
-| ✅ | [C_EquipmentSet.IsSlotIgnoredForSave](#c_equipmentsetisslotignoredforsave) |  |  |
+| ✅ | [C_EquipmentSet.IsSlotIgnoredForSave](#c_equipmentsetisslotignoredforsave) | 1 value | 1 value |
 | ✅ | [C_EquipmentSet.ModifyEquipmentSet](#c_equipmentsetmodifyequipmentset) |  |  |
 | ✅ | [C_EquipmentSet.PickupEquipmentSet](#c_equipmentsetpickupequipmentset) |  |  |
 | ✅ | [C_EquipmentSet.SaveEquipmentSet](#c_equipmentsetsaveequipmentset) |  |  |
@@ -94,6 +94,8 @@ Namespace: `C_EquipmentSet`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `EquipmentManagerDocumentation.lua`
 
 ### C_EquipmentSet.GetEquipmentSetID
@@ -173,6 +175,8 @@ Namespace: `C_EquipmentSet`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `EquipmentManagerDocumentation.lua`
 
 ### C_EquipmentSet.ModifyEquipmentSet

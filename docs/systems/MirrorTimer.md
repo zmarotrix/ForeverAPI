@@ -4,7 +4,7 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [GetMirrorTimerInfo](#getmirrortimerinfo) |  |  |
+| ✅ | [GetMirrorTimerInfo](#getmirrortimerinfo) | 7 values | 7 values |
 | ✅ | [GetMirrorTimerProgress](#getmirrortimerprogress) |  |  |
 
 ### GetMirrorTimerInfo
@@ -14,6 +14,8 @@
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 7 values: `string`, `number`, `number`, `number`, `number`, `string`, `number`
+- Called in combat: returned 7 values: `string`, `number`, `number`, `number`, `number`, `string`, `number`
 - Source: client docs `MirrorTimerDocumentation.lua`
 
 ### GetMirrorTimerProgress

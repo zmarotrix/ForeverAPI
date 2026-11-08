@@ -8,8 +8,8 @@
 | ✅ | [CanShowSetRoleButton](#canshowsetrolebutton) | 1 value | 1 value |
 | ✅ | [InitiateRolePoll](#initiaterolepoll) |  |  |
 | ✅ | [UnitGetAvailableRoles](#unitgetavailableroles) | 3 values | 3 values |
-| ✅ | [UnitSetRole](#unitsetrole) | 💥 blocked | 💥 blocked |
-| ✅ | [UnitSetRoleEnum](#unitsetroleenum) | 💥 blocked | 💥 blocked |
+| ✅ | [UnitSetRole](#unitsetrole) |  |  |
+| ✅ | [UnitSetRoleEnum](#unitsetroleenum) |  |  |
 
 ### AreClassRolesSoftSuggestions
 
@@ -56,8 +56,6 @@
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with `player`: not called: blocked
-- Called in combat: not called: blocked
 - Source: client docs `UnitRoleDocumentation.lua`
 
 ### UnitSetRoleEnum
@@ -67,8 +65,6 @@
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with `player`: not called: blocked
-- Called in combat: not called: blocked
 - Source: client docs `UnitRoleDocumentation.lua`
 
 ## Events
@@ -78,7 +74,7 @@
 - Status: ✅ verified
 - Payload: `changedName: cstring`, `fromName: cstring`, `oldRole: cstring`, `newRole: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `s,s,s,s`
+- Seen firing 2 times (0 in combat); argument kinds: `s,s,s,s`
 
 ### ROLE_POLL_BEGIN
 

@@ -6,8 +6,8 @@ Namespace: `C_HousingCleanupMode`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_HousingCleanupMode.GetHoveredDecorInfo](#c_housingcleanupmodegethovereddecorinfo) | 1 value | 1 value |
-| ✅ | [C_HousingCleanupMode.IsHoveringDecor](#c_housingcleanupmodeishoveringdecor) | 1 value | 1 value |
+| ✅ | [C_HousingCleanupMode.GetHoveredDecorInfo](#c_housingcleanupmodegethovereddecorinfo) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingCleanupMode.IsHoveringDecor](#c_housingcleanupmodeishoveringdecor) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | ✅ | [C_HousingCleanupMode.RemoveSelectedDecor](#c_housingcleanupmoderemoveselecteddecor) |  |  |
 
 ### C_HousingCleanupMode.GetHoveredDecorInfo
@@ -15,8 +15,8 @@ Namespace: `C_HousingCleanupMode`
 `C_HousingCleanupMode.GetHoveredDecorInfo() → info: HousingDecorInstanceInfo?`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `nil`
-- Called in combat: returned 1 value: `nil`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingCleanupModeUIDocumentation.lua`
 
 ### C_HousingCleanupMode.IsHoveringDecor
@@ -24,8 +24,8 @@ Namespace: `C_HousingCleanupMode`
 `C_HousingCleanupMode.IsHoveringDecor() → isHoveringDecor: bool`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingCleanupModeUIDocumentation.lua`
 
 ### C_HousingCleanupMode.RemoveSelectedDecor

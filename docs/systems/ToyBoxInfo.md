@@ -8,7 +8,7 @@ Namespace: `C_ToyBoxInfo`
 |---|---|---|---|
 | ✅ | [C_ToyBoxInfo.ClearFanfare](#c_toyboxinfoclearfanfare) |  |  |
 | ✅ | [C_ToyBoxInfo.HasAnyToy](#c_toyboxinfohasanytoy) | 1 value | 1 value |
-| ✅ | [C_ToyBoxInfo.IsToySourceValid](#c_toyboxinfoistoysourcevalid) |  |  |
+| ✅ | [C_ToyBoxInfo.IsToySourceValid](#c_toyboxinfoistoysourcevalid) | 1 value | 1 value |
 | ✅ | [C_ToyBoxInfo.IsUsingDefaultFilters](#c_toyboxinfoisusingdefaultfilters) | 1 value | 1 value |
 | ✅ | [C_ToyBoxInfo.NeedsFanfare](#c_toyboxinfoneedsfanfare) |  |  |
 | ✅ | [C_ToyBoxInfo.SetDefaultFilters](#c_toyboxinfosetdefaultfilters) |  |  |
@@ -36,6 +36,8 @@ Namespace: `C_ToyBoxInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ToyBoxInfoDocumentation.lua`
 
 ### C_ToyBoxInfo.IsUsingDefaultFilters
@@ -76,4 +78,4 @@ Namespace: `C_ToyBoxInfo`
 - Payload: `itemID: number?`, `isNew: bool?`, `hasFanfare: bool?`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 17 times (0 in combat); argument kinds: `-,-,-` / `n,b,b`
+- Seen firing 50 times (0 in combat); argument kinds: `-,-,-` / `n,b,b`

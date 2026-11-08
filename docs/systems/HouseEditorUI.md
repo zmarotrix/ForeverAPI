@@ -8,13 +8,13 @@ Namespace: `C_HouseEditor`
 |---|---|---|---|
 | ✅ | [C_HouseEditor.ActivateHouseEditorMode](#c_houseeditoractivatehouseeditormode) |  |  |
 | ✅ | [C_HouseEditor.EnterHouseEditor](#c_houseeditorenterhouseeditor) |  |  |
-| ✅ | [C_HouseEditor.GetActiveHouseEditorMode](#c_houseeditorgetactivehouseeditormode) | 1 value | 1 value |
-| ✅ | [C_HouseEditor.GetHouseEditorAvailability](#c_houseeditorgethouseeditoravailability) | 1 value | 1 value |
-| ✅ | [C_HouseEditor.GetHouseEditorModeAvailability](#c_houseeditorgethouseeditormodeavailability) |  |  |
-| ✅ | [C_HouseEditor.GetHouseEditorPlayerType](#c_houseeditorgethouseeditorplayertype) | 1 value | 1 value |
-| ✅ | [C_HouseEditor.IsHouseEditorActive](#c_houseeditorishouseeditoractive) | 1 value | 1 value |
-| ✅ | [C_HouseEditor.IsHouseEditorModeActive](#c_houseeditorishouseeditormodeactive) |  |  |
-| ✅ | [C_HouseEditor.IsHouseEditorStatusAvailable](#c_houseeditorishouseeditorstatusavailable) | 1 value | 1 value |
+| ✅ | [C_HouseEditor.GetActiveHouseEditorMode](#c_houseeditorgetactivehouseeditormode) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HouseEditor.GetHouseEditorAvailability](#c_houseeditorgethouseeditoravailability) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HouseEditor.GetHouseEditorModeAvailability](#c_houseeditorgethouseeditormodeavailability) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HouseEditor.GetHouseEditorPlayerType](#c_houseeditorgethouseeditorplayertype) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HouseEditor.IsHouseEditorActive](#c_houseeditorishouseeditoractive) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HouseEditor.IsHouseEditorModeActive](#c_houseeditorishouseeditormodeactive) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HouseEditor.IsHouseEditorStatusAvailable](#c_houseeditorishouseeditorstatusavailable) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | ✅ | [C_HouseEditor.LeaveHouseEditor](#c_houseeditorleavehouseeditor) |  |  |
 
 ### C_HouseEditor.ActivateHouseEditorMode
@@ -41,8 +41,8 @@ Namespace: `C_HouseEditor`
 `C_HouseEditor.GetActiveHouseEditorMode() → editMode: HouseEditorMode`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `number`
-- Called in combat: returned 1 value: `number`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HouseEditorUIDocumentation.lua`
 
 ### C_HouseEditor.GetHouseEditorAvailability
@@ -51,8 +51,8 @@ Namespace: `C_HouseEditor`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns the availability state of the House Editor overall
-- Called out of combat: returned 1 value: `number`
-- Called in combat: returned 1 value: `number`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HouseEditorUIDocumentation.lua`
 
 ### C_HouseEditor.GetHouseEditorModeAvailability
@@ -62,6 +62,8 @@ Namespace: `C_HouseEditor`
 - Status: ✅ verified (function)
 - Blizzard: Returns the availability of a specific House Editor mode
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HouseEditorUIDocumentation.lua`
 
 ### C_HouseEditor.GetHouseEditorPlayerType
@@ -69,8 +71,8 @@ Namespace: `C_HouseEditor`
 `C_HouseEditor.GetHouseEditorPlayerType() → playerType: HouseEditorPlayerType`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `number`
-- Called in combat: returned 1 value: `number`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HouseEditorUIDocumentation.lua`
 
 ### C_HouseEditor.IsHouseEditorActive
@@ -79,8 +81,8 @@ Namespace: `C_HouseEditor`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns whether the House Editor is active, in any mode
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HouseEditorUIDocumentation.lua`
 
 ### C_HouseEditor.IsHouseEditorModeActive
@@ -90,6 +92,8 @@ Namespace: `C_HouseEditor`
 - Status: ✅ verified (function)
 - Blizzard: Returns whether the specific House Editor mode is active
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HouseEditorUIDocumentation.lua`
 
 ### C_HouseEditor.IsHouseEditorStatusAvailable
@@ -98,8 +102,8 @@ Namespace: `C_HouseEditor`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the HouseEditor currently able process mode availability and switching; May be false if not in a house or plot, or while waiting to get house settings back from the server
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HouseEditorUIDocumentation.lua`
 
 ### C_HouseEditor.LeaveHouseEditor

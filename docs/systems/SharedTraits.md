@@ -21,7 +21,7 @@ Namespace: `C_Traits`
 | ✅ | [C_Traits.GetConfigIDByTreeID](#c_traitsgetconfigidbytreeid) |  |  |
 | ✅ | [C_Traits.GetConfigInfo](#c_traitsgetconfiginfo) |  |  |
 | ✅ | [C_Traits.GetConfigVariationID](#c_traitsgetconfigvariationid) |  |  |
-| ✅ | [C_Traits.GetConfigsByType](#c_traitsgetconfigsbytype) |  |  |
+| ✅ | [C_Traits.GetConfigsByType](#c_traitsgetconfigsbytype) | 1 value | 1 value |
 | ✅ | [C_Traits.GetDefinitionInfo](#c_traitsgetdefinitioninfo) |  |  |
 | ✅ | [C_Traits.GetEntryInfo](#c_traitsgetentryinfo) |  |  |
 | ✅ | [C_Traits.GetGroupCurrencyInfo](#c_traitsgetgroupcurrencyinfo) |  |  |
@@ -192,6 +192,8 @@ Namespace: `C_Traits`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `SharedTraitsDocumentation.lua`
 
 ### C_Traits.GetDefinitionInfo
@@ -538,7 +540,7 @@ Namespace: `C_Traits`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 18 times (0 in combat); argument kinds: ``
 
 ### TRAIT_CONFIG_UPDATED
 

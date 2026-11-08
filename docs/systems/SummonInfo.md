@@ -6,7 +6,7 @@ Namespace: `C_SummonInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_SummonInfo.CancelSummon](#c_summoninfocancelsummon) | 0 values | 0 values |
+| ✅ | [C_SummonInfo.CancelSummon](#c_summoninfocancelsummon) |  |  |
 | ✅ | [C_SummonInfo.ConfirmSummon](#c_summoninfoconfirmsummon) |  |  |
 | ✅ | [C_SummonInfo.GetSummonConfirmAreaName](#c_summoninfogetsummonconfirmareaname) | 1 value | 1 value |
 | ✅ | [C_SummonInfo.GetSummonConfirmSummoner](#c_summoninfogetsummonconfirmsummoner) | 1 value | 1 value |
@@ -19,8 +19,6 @@ Namespace: `C_SummonInfo`
 `C_SummonInfo.CancelSummon()`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 0 values
-- Called in combat: returned 0 values
 - Source: client docs `SummonInfoDocumentation.lua`
 
 ### C_SummonInfo.ConfirmSummon

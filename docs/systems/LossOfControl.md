@@ -6,11 +6,11 @@ Namespace: `C_LossOfControl`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_LossOfControl.GetActiveLossOfControlData](#c_lossofcontrolgetactivelossofcontroldata) |  |  |
-| ✅ | [C_LossOfControl.GetActiveLossOfControlDataByUnit](#c_lossofcontrolgetactivelossofcontroldatabyunit) |  |  |
+| ✅ | [C_LossOfControl.GetActiveLossOfControlData](#c_lossofcontrolgetactivelossofcontroldata) | 1 value | 1 value |
+| ✅ | [C_LossOfControl.GetActiveLossOfControlDataByUnit](#c_lossofcontrolgetactivelossofcontroldatabyunit) | 1 value | 1 value |
 | ✅ | [C_LossOfControl.GetActiveLossOfControlDataCount](#c_lossofcontrolgetactivelossofcontroldatacount) | 1 value | 1 value |
 | ✅ | [C_LossOfControl.GetActiveLossOfControlDataCountByUnit](#c_lossofcontrolgetactivelossofcontroldatacountbyunit) | 1 value | 1 value |
-| ✅ | [C_LossOfControl.GetActiveLossOfControlDuration](#c_lossofcontrolgetactivelossofcontrolduration) |  |  |
+| ✅ | [C_LossOfControl.GetActiveLossOfControlDuration](#c_lossofcontrolgetactivelossofcontrolduration) | 1 value | 1 value |
 
 ### C_LossOfControl.GetActiveLossOfControlData
 
@@ -19,6 +19,8 @@ Namespace: `C_LossOfControl`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenLossOfControlRestricted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `LossOfControlDocumentation.lua`
 
 ### C_LossOfControl.GetActiveLossOfControlDataByUnit
@@ -28,6 +30,8 @@ Namespace: `C_LossOfControl`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenLossOfControlRestricted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:1`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `LossOfControlDocumentation.lua`
 
 ### C_LossOfControl.GetActiveLossOfControlDataCount
@@ -55,6 +59,8 @@ Namespace: `C_LossOfControl`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:1`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `LossOfControlDocumentation.lua`
 
 ## Events

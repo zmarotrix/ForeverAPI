@@ -6,9 +6,9 @@
 |---|---|---|---|
 | ✅ | [CanBeRaidTarget](#canberaidtarget) | 1 value | 1 value |
 | ✅ | [ClearRaidMarker](#clearraidmarker) |  |  |
-| ✅ | [GetNextAvailableRaidTargetMarkerIndex](#getnextavailableraidtargetmarkerindex) |  |  |
+| ✅ | [GetNextAvailableRaidTargetMarkerIndex](#getnextavailableraidtargetmarkerindex) | 1 value | 1 value |
 | ✅ | [GetRaidTargetIndex](#getraidtargetindex) | 1 value | 1 value |
-| ✅ | [IsRaidMarkerActive](#israidmarkeractive) |  |  |
+| ✅ | [IsRaidMarkerActive](#israidmarkeractive) | 1 value | 1 value |
 | ✅ | [IsRaidMarkerSystemEnabled](#israidmarkersystemenabled) | 1 value | 1 value |
 | ✅ | [PlaceRaidMarker](#placeraidmarker) |  |  |
 | ✅ | [RemoveRaidTargets](#removeraidtargets) |  |  |
@@ -40,6 +40,8 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret during chat lockdown (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `RaidMarkersDocumentation.lua`
 
 ### GetRaidTargetIndex
@@ -60,6 +62,8 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret during chat lockdown (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `RaidMarkersDocumentation.lua`
 
 ### IsRaidMarkerSystemEnabled

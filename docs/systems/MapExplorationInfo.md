@@ -7,7 +7,7 @@ Namespace: `C_MapExplorationInfo`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_MapExplorationInfo.GetExploredAreaIDsAtPosition](#c_mapexplorationinfogetexploredareaidsatposition) |  |  |
-| ✅ | [C_MapExplorationInfo.GetExploredMapTextures](#c_mapexplorationinfogetexploredmaptextures) |  |  |
+| ✅ | [C_MapExplorationInfo.GetExploredMapTextures](#c_mapexplorationinfogetexploredmaptextures) | 💥 no sample for map | 💥 no sample for map |
 
 ### C_MapExplorationInfo.GetExploredAreaIDsAtPosition
 
@@ -24,6 +24,8 @@ Namespace: `C_MapExplorationInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `MapExplorationDocumentation.lua`
 
 ## Events
@@ -33,6 +35,7 @@ Namespace: `C_MapExplorationInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (1 in combat); argument kinds: ``
 
 ## Types
 

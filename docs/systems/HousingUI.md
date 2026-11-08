@@ -7,44 +7,44 @@ Namespace: `C_Housing`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_Housing.AcceptNeighborhoodOwnership](#c_housingacceptneighborhoodownership) |  |  |
-| ✅ | [C_Housing.CanEditCharter](#c_housingcaneditcharter) | 1 value | 1 value |
+| ✅ | [C_Housing.CanEditCharter](#c_housingcaneditcharter) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | ✅ | [C_Housing.CanTakeReportScreenshot](#c_housingcantakereportscreenshot) |  |  |
 | ✅ | [C_Housing.CreateGuildNeighborhood](#c_housingcreateguildneighborhood) |  |  |
 | ✅ | [C_Housing.CreateNeighborhoodCharter](#c_housingcreateneighborhoodcharter) |  |  |
 | ✅ | [C_Housing.DeclineNeighborhoodOwnership](#c_housingdeclineneighborhoodownership) |  |  |
-| ✅ | [C_Housing.DoesFactionMatchNeighborhood](#c_housingdoesfactionmatchneighborhood) |  |  |
+| ✅ | [C_Housing.DoesFactionMatchNeighborhood](#c_housingdoesfactionmatchneighborhood) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | ✅ | [C_Housing.EditNeighborhoodCharter](#c_housingeditneighborhoodcharter) |  |  |
-| ✅ | [C_Housing.GetCurrentHouseInfo](#c_housinggetcurrenthouseinfo) | 1 value | 1 value |
-| ✅ | [C_Housing.GetCurrentHouseLevelFavor](#c_housinggetcurrenthouselevelfavor) |  |  |
-| ✅ | [C_Housing.GetCurrentHouseRefundAmount](#c_housinggetcurrenthouserefundamount) | 1 value | 1 value |
-| ✅ | [C_Housing.GetCurrentNeighborhoodGUID](#c_housinggetcurrentneighborhoodguid) | 1 value | 1 value |
-| ✅ | [C_Housing.GetHouseLevelFavorForLevel](#c_housinggethouselevelfavorforlevel) |  |  |
+| ✅ | [C_Housing.GetCurrentHouseInfo](#c_housinggetcurrenthouseinfo) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_Housing.GetCurrentHouseLevelFavor](#c_housinggetcurrenthouselevelfavor) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_Housing.GetCurrentHouseRefundAmount](#c_housinggetcurrenthouserefundamount) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_Housing.GetCurrentNeighborhoodGUID](#c_housinggetcurrentneighborhoodguid) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_Housing.GetHouseLevelFavorForLevel](#c_housinggethouselevelfavorforlevel) | 💥 crashed the client | 💥 crashed the client |
 | ✅ | [C_Housing.GetHouseLevelRewardsForLevel](#c_housinggethouselevelrewardsforlevel) |  |  |
-| ✅ | [C_Housing.GetHousingAccessFlags](#c_housinggethousingaccessflags) | 1 value | 1 value |
+| ✅ | [C_Housing.GetHousingAccessFlags](#c_housinggethousingaccessflags) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | ✅ | [C_Housing.GetMaxHouseLevel](#c_housinggetmaxhouselevel) | 💥 crashed the client | 💥 crashed the client |
-| ✅ | [C_Housing.GetNeighborhoodTextureSuffix](#c_housinggetneighborhoodtexturesuffix) |  |  |
-| ✅ | [C_Housing.GetOthersOwnedHouses](#c_housinggetothersownedhouses) |  |  |
-| ✅ | [C_Housing.GetPlayerOwnedHouses](#c_housinggetplayerownedhouses) | 0 values | 0 values |
-| ✅ | [C_Housing.GetTrackedHouseGuid](#c_housinggettrackedhouseguid) | 1 value | 1 value |
-| ✅ | [C_Housing.GetUIMapIDForNeighborhood](#c_housinggetuimapidforneighborhood) |  |  |
-| ✅ | [C_Housing.GetVisitCooldownInfo](#c_housinggetvisitcooldowninfo) | 0 values | 0 values |
-| ✅ | [C_Housing.HasHousingExpansionAccess](#c_housinghashousingexpansionaccess) | 1 value | 1 value |
+| ✅ | [C_Housing.GetNeighborhoodTextureSuffix](#c_housinggetneighborhoodtexturesuffix) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_Housing.GetOthersOwnedHouses](#c_housinggetothersownedhouses) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_Housing.GetPlayerOwnedHouses](#c_housinggetplayerownedhouses) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_Housing.GetTrackedHouseGuid](#c_housinggettrackedhouseguid) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_Housing.GetUIMapIDForNeighborhood](#c_housinggetuimapidforneighborhood) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_Housing.GetVisitCooldownInfo](#c_housinggetvisitcooldowninfo) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_Housing.HasHousingExpansionAccess](#c_housinghashousingexpansionaccess) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | ✅ | [C_Housing.HouseFinderDeclineNeighborhoodInvitation](#c_housinghousefinderdeclineneighborhoodinvitation) |  |  |
 | ✅ | [C_Housing.HouseFinderIgnoreNeighborhood](#c_housinghousefinderignoreneighborhood) |  |  |
 | ✅ | [C_Housing.HouseFinderRequestNeighborhoods](#c_housinghousefinderrequestneighborhoods) |  |  |
 | ✅ | [C_Housing.HouseFinderRequestReservationAndPort](#c_housinghousefinderrequestreservationandport) |  |  |
-| ✅ | [C_Housing.IsHousingMarketCartFullRemoveEnabled](#c_housingishousingmarketcartfullremoveenabled) | 1 value | 1 value |
-| ✅ | [C_Housing.IsHousingMarketEnabled](#c_housingishousingmarketenabled) | 1 value | 1 value |
-| ✅ | [C_Housing.IsHousingMarketShopEnabled](#c_housingishousingmarketshopenabled) | 1 value | 1 value |
-| ✅ | [C_Housing.IsHousingServiceEnabled](#c_housingishousingserviceenabled) | 1 value | 1 value |
-| ✅ | [C_Housing.IsInsideHouse](#c_housingisinsidehouse) | 1 value | 1 value |
-| ✅ | [C_Housing.IsInsideHouseOrPlot](#c_housingisinsidehouseorplot) | 1 value | 1 value |
+| ✅ | [C_Housing.IsHousingMarketCartFullRemoveEnabled](#c_housingishousingmarketcartfullremoveenabled) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_Housing.IsHousingMarketEnabled](#c_housingishousingmarketenabled) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_Housing.IsHousingMarketShopEnabled](#c_housingishousingmarketshopenabled) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_Housing.IsHousingServiceEnabled](#c_housingishousingserviceenabled) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_Housing.IsInsideHouse](#c_housingisinsidehouse) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_Housing.IsInsideHouseOrPlot](#c_housingisinsidehouseorplot) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | 🆕 | [C_Housing.IsInsideOwnHouse](#c_housingisinsideownhouse) |  |  |
-| ✅ | [C_Housing.IsInsideOwnedHouse](#c_housingisinsideownedhouse) | 1 value | 1 value |
-| ✅ | [C_Housing.IsInsideOwnedHouseOrPlot](#c_housingisinsideownedhouseorplot) | 1 value | 1 value |
-| ✅ | [C_Housing.IsInsideOwnedPlot](#c_housingisinsideownedplot) | 1 value | 1 value |
-| ✅ | [C_Housing.IsInsidePlot](#c_housingisinsideplot) | 1 value | 1 value |
-| ✅ | [C_Housing.IsOnNeighborhoodMap](#c_housingisonneighborhoodmap) | 1 value | 1 value |
+| ✅ | [C_Housing.IsInsideOwnedHouse](#c_housingisinsideownedhouse) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_Housing.IsInsideOwnedHouseOrPlot](#c_housingisinsideownedhouseorplot) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_Housing.IsInsideOwnedPlot](#c_housingisinsideownedplot) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_Housing.IsInsidePlot](#c_housingisinsideplot) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_Housing.IsOnNeighborhoodMap](#c_housingisonneighborhoodmap) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | ✅ | [C_Housing.LeaveHouse](#c_housingleavehouse) |  |  |
 | ✅ | [C_Housing.OnCharterConfirmationAccepted](#c_housingoncharterconfirmationaccepted) |  |  |
 | ✅ | [C_Housing.OnCharterConfirmationClosed](#c_housingoncharterconfirmationclosed) |  |  |
@@ -82,8 +82,8 @@ Namespace: `C_Housing`
 `C_Housing.CanEditCharter() → canEditCharter: bool`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.CanTakeReportScreenshot
@@ -123,6 +123,8 @@ Namespace: `C_Housing`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.EditNeighborhoodCharter
@@ -138,8 +140,8 @@ Namespace: `C_Housing`
 `C_Housing.GetCurrentHouseInfo() → houseInfo: HouseInfo?`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `nil`
-- Called in combat: returned 1 value: `nil`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.GetCurrentHouseLevelFavor
@@ -148,6 +150,8 @@ Namespace: `C_Housing`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.GetCurrentHouseRefundAmount
@@ -155,8 +159,8 @@ Namespace: `C_Housing`
 `C_Housing.GetCurrentHouseRefundAmount() → refundAmount: number`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `number`
-- Called in combat: returned 1 value: `number`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.GetCurrentNeighborhoodGUID
@@ -164,8 +168,8 @@ Namespace: `C_Housing`
 `C_Housing.GetCurrentNeighborhoodGUID() → neighborhoodGUID: WOWGUID?`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `nil`
-- Called in combat: returned 1 value: `nil`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.GetHouseLevelFavorForLevel
@@ -174,6 +178,8 @@ Namespace: `C_Housing`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:10`: 💥 not called: crashed the client
+- Called in combat: 💥 not called: crashed the client
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.GetHouseLevelRewardsForLevel
@@ -189,8 +195,8 @@ Namespace: `C_Housing`
 `C_Housing.GetHousingAccessFlags() → accessFlags: HouseSettingFlags`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `number`
-- Called in combat: returned 1 value: `number`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.GetMaxHouseLevel
@@ -208,6 +214,8 @@ Namespace: `C_Housing`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.GetOthersOwnedHouses
@@ -216,6 +224,8 @@ Namespace: `C_Housing`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `nil,nil,b:false`: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.GetPlayerOwnedHouses
@@ -223,8 +233,8 @@ Namespace: `C_Housing`
 `C_Housing.GetPlayerOwnedHouses()`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 0 values
-- Called in combat: returned 0 values
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.GetTrackedHouseGuid
@@ -232,8 +242,8 @@ Namespace: `C_Housing`
 `C_Housing.GetTrackedHouseGuid() → trackedHouse: WOWGUID?`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `nil`
-- Called in combat: returned 1 value: `nil`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.GetUIMapIDForNeighborhood
@@ -242,6 +252,8 @@ Namespace: `C_Housing`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.GetVisitCooldownInfo
@@ -250,8 +262,8 @@ Namespace: `C_Housing`
 
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
-- Called out of combat: returned 0 values
-- Called in combat: returned 0 values
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.HasHousingExpansionAccess
@@ -259,8 +271,8 @@ Namespace: `C_Housing`
 `C_Housing.HasHousingExpansionAccess() → hasAccess: bool`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.HouseFinderDeclineNeighborhoodInvitation
@@ -298,8 +310,8 @@ Namespace: `C_Housing`
 `C_Housing.IsHousingMarketCartFullRemoveEnabled() → isHousingMarketCartFullRemoveEnabled: bool`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.IsHousingMarketEnabled
@@ -307,8 +319,8 @@ Namespace: `C_Housing`
 `C_Housing.IsHousingMarketEnabled() → isHousingMarketEnabled: bool`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.IsHousingMarketShopEnabled
@@ -316,8 +328,8 @@ Namespace: `C_Housing`
 `C_Housing.IsHousingMarketShopEnabled() → isHousingMarketShopEnabled: bool`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.IsHousingServiceEnabled
@@ -325,8 +337,8 @@ Namespace: `C_Housing`
 `C_Housing.IsHousingServiceEnabled() → isAvailable: bool`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.IsInsideHouse
@@ -334,8 +346,8 @@ Namespace: `C_Housing`
 `C_Housing.IsInsideHouse() → isInside: bool`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.IsInsideHouseOrPlot
@@ -343,8 +355,8 @@ Namespace: `C_Housing`
 `C_Housing.IsInsideHouseOrPlot() → isInside: bool`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.IsInsideOwnHouse
@@ -358,8 +370,8 @@ Namespace: `C_Housing`
 `C_Housing.IsInsideOwnedHouse() → isInsideOwnedHouse: bool`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.IsInsideOwnedHouseOrPlot
@@ -367,8 +379,8 @@ Namespace: `C_Housing`
 `C_Housing.IsInsideOwnedHouseOrPlot() → isInsideOwnedHouseOrPlot: bool`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.IsInsideOwnedPlot
@@ -376,8 +388,8 @@ Namespace: `C_Housing`
 `C_Housing.IsInsideOwnedPlot() → isInside: bool`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.IsInsidePlot
@@ -385,8 +397,8 @@ Namespace: `C_Housing`
 `C_Housing.IsInsidePlot() → isInside: bool`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.IsOnNeighborhoodMap
@@ -394,8 +406,8 @@ Namespace: `C_Housing`
 `C_Housing.IsOnNeighborhoodMap() → isOnNeighborhoodMap: bool`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.LeaveHouse

@@ -6,7 +6,7 @@ Namespace: `C_FogOfWar`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_FogOfWar.GetFogOfWarForMap](#c_fogofwargetfogofwarformap) |  |  |
+| ✅ | [C_FogOfWar.GetFogOfWarForMap](#c_fogofwargetfogofwarformap) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_FogOfWar.GetFogOfWarInfo](#c_fogofwargetfogofwarinfo) |  |  |
 
 ### C_FogOfWar.GetFogOfWarForMap
@@ -15,6 +15,8 @@ Namespace: `C_FogOfWar`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `FogOfWarDocumentation.lua`
 
 ### C_FogOfWar.GetFogOfWarInfo
@@ -32,7 +34,7 @@ Namespace: `C_FogOfWar`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 59 times (4 in combat); argument kinds: ``
 
 ## Types
 

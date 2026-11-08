@@ -118,7 +118,7 @@ Namespace: `C_Garrison`
 | 🆕 | [C_Garrison.GetFollowersSpellsForMission](#c_garrisongetfollowersspellsformission) |  |  |
 | 🆕 | [C_Garrison.GetFollowersTraitsForMission](#c_garrisongetfollowerstraitsformission) |  |  |
 | 🆕 | [C_Garrison.GetGarrisonInfo](#c_garrisongetgarrisoninfo) |  |  |
-| ✅ | [C_Garrison.GetGarrisonPlotsInstancesForMap](#c_garrisongetgarrisonplotsinstancesformap) |  |  |
+| ✅ | [C_Garrison.GetGarrisonPlotsInstancesForMap](#c_garrisongetgarrisonplotsinstancesformap) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_Garrison.GetGarrisonTalentTreeCurrencyTypes](#c_garrisongetgarrisontalenttreecurrencytypes) |  |  |
 | ✅ | [C_Garrison.GetGarrisonTalentTreeType](#c_garrisongetgarrisontalenttreetype) |  |  |
 | 🆕 | [C_Garrison.GetGarrisonUpgradeCost](#c_garrisongetgarrisonupgradecost) |  |  |
@@ -948,6 +948,8 @@ Namespace: `C_Garrison`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `GarrisonInfoDocumentation.lua`
 
 ### C_Garrison.GetGarrisonTalentTreeCurrencyTypes
@@ -1796,7 +1798,7 @@ Namespace: `C_Garrison`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 5 times (0 in combat); argument kinds: ``
+- Seen firing 28 times (0 in combat); argument kinds: ``
 
 ### GARRISON_INVASION_AVAILABLE
 
@@ -1816,7 +1818,7 @@ Namespace: `C_Garrison`
 - Payload: none
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 19 times (0 in combat); argument kinds: ``
 
 ### GARRISON_MISSION_AREA_BONUS_ADDED
 
@@ -2039,7 +2041,7 @@ Namespace: `C_Garrison`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 5 times (0 in combat); argument kinds: ``
+- Seen firing 21 times (0 in combat); argument kinds: ``
 
 ### GARRISON_UPGRADEABLE_RESULT
 

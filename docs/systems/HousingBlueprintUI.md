@@ -6,17 +6,17 @@ Namespace: `C_HousingBlueprint`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_HousingBlueprint.CanExportRoom](#c_housingblueprintcanexportroom) |  |  |
-| ✅ | [C_HousingBlueprint.CanExportTypeFromCurrentLocation](#c_housingblueprintcanexporttypefromcurrentlocation) |  |  |
-| ✅ | [C_HousingBlueprint.CanImportTypeFromCurrentLocation](#c_housingblueprintcanimporttypefromcurrentlocation) |  |  |
+| ✅ | [C_HousingBlueprint.CanExportRoom](#c_housingblueprintcanexportroom) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingBlueprint.CanExportTypeFromCurrentLocation](#c_housingblueprintcanexporttypefromcurrentlocation) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingBlueprint.CanImportTypeFromCurrentLocation](#c_housingblueprintcanimporttypefromcurrentlocation) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | ✅ | [C_HousingBlueprint.DeleteBlueprint](#c_housingblueprintdeleteblueprint) |  |  |
 | ✅ | [C_HousingBlueprint.ExportBlueprint](#c_housingblueprintexportblueprint) |  |  |
 | ✅ | [C_HousingBlueprint.ExportRoomBlueprint](#c_housingblueprintexportroomblueprint) |  |  |
 | ✅ | [C_HousingBlueprint.GetBlueprintHyperlink](#c_housingblueprintgetblueprinthyperlink) |  |  |
 | ✅ | [C_HousingBlueprint.GetBlueprintTypeForCode](#c_housingblueprintgetblueprinttypeforcode) |  |  |
-| ✅ | [C_HousingBlueprint.GetExportAvailability](#c_housingblueprintgetexportavailability) | 1 value | 1 value |
-| ✅ | [C_HousingBlueprint.GetFeatureAvailability](#c_housingblueprintgetfeatureavailability) | 1 value | 1 value |
-| ✅ | [C_HousingBlueprint.GetImportAvailability](#c_housingblueprintgetimportavailability) | 1 value | 1 value |
+| ✅ | [C_HousingBlueprint.GetExportAvailability](#c_housingblueprintgetexportavailability) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingBlueprint.GetFeatureAvailability](#c_housingblueprintgetfeatureavailability) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingBlueprint.GetImportAvailability](#c_housingblueprintgetimportavailability) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | ✅ | [C_HousingBlueprint.ImportBlueprint](#c_housingblueprintimportblueprint) |  |  |
 | ✅ | [C_HousingBlueprint.IsShareCodeValid](#c_housingblueprintissharecodevalid) |  |  |
 | ✅ | [C_HousingBlueprint.RenameBlueprint](#c_housingblueprintrenameblueprint) |  |  |
@@ -33,6 +33,8 @@ Namespace: `C_HousingBlueprint`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the specific room is allowed to be exported
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingBlueprintUIDocumentation.lua`
 
 ### C_HousingBlueprint.CanExportTypeFromCurrentLocation
@@ -42,6 +44,8 @@ Namespace: `C_HousingBlueprint`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the player's current location is a valid place to attempt to export a specific kind of blueprint
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingBlueprintUIDocumentation.lua`
 
 ### C_HousingBlueprint.CanImportTypeFromCurrentLocation
@@ -51,6 +55,8 @@ Namespace: `C_HousingBlueprint`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the player's current location is a valid place to attempt to import a specific kind of blueprint
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingBlueprintUIDocumentation.lua`
 
 ### C_HousingBlueprint.DeleteBlueprint
@@ -104,8 +110,8 @@ Namespace: `C_HousingBlueprint`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns success if the player can currently export Blueprints, or a specific error type (ex: invalid location or permissions)
-- Called out of combat: returned 1 value: `number`
-- Called in combat: returned 1 value: `number`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingBlueprintUIDocumentation.lua`
 
 ### C_HousingBlueprint.GetFeatureAvailability
@@ -114,8 +120,8 @@ Namespace: `C_HousingBlueprint`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns success if Blueprints as a feature is currently enabled and available
-- Called out of combat: returned 1 value: `number`
-- Called in combat: returned 1 value: `number`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingBlueprintUIDocumentation.lua`
 
 ### C_HousingBlueprint.GetImportAvailability
@@ -124,8 +130,8 @@ Namespace: `C_HousingBlueprint`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns success if the player can currently import Blueprints, or a specific error type (ex: invalid location or permissions)
-- Called out of combat: returned 1 value: `number`
-- Called in combat: returned 1 value: `number`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingBlueprintUIDocumentation.lua`
 
 ### C_HousingBlueprint.ImportBlueprint

@@ -10,33 +10,33 @@ Namespace: `C_HousingCatalog`
 | ✅ | [C_HousingCatalog.CreateCatalogSearcher](#c_housingcatalogcreatecatalogsearcher) |  |  |
 | ✅ | [C_HousingCatalog.DeletePreviewCartDecor](#c_housingcatalogdeletepreviewcartdecor) |  |  |
 | ✅ | [C_HousingCatalog.DestroyEntry](#c_housingcatalogdestroyentry) |  |  |
-| ✅ | [C_HousingCatalog.GetAllFilterTagGroups](#c_housingcataloggetallfiltertaggroups) | 1 value | 1 value |
+| ✅ | [C_HousingCatalog.GetAllFilterTagGroups](#c_housingcataloggetallfiltertaggroups) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | ✅ | [C_HousingCatalog.GetAllVariantInfosForEntry](#c_housingcataloggetallvariantinfosforentry) |  |  |
 | ✅ | [C_HousingCatalog.GetBundleInfo](#c_housingcataloggetbundleinfo) |  |  |
-| ✅ | [C_HousingCatalog.GetCartSizeLimit](#c_housingcataloggetcartsizelimit) | 1 value | 1 value |
+| ✅ | [C_HousingCatalog.GetCartSizeLimit](#c_housingcataloggetcartsizelimit) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | ✅ | [C_HousingCatalog.GetCatalogCategoryAndSubcategoryNames](#c_housingcataloggetcatalogcategoryandsubcategorynames) |  |  |
 | ✅ | [C_HousingCatalog.GetCatalogCategoryInfo](#c_housingcataloggetcatalogcategoryinfo) |  |  |
 | 🆕 | [C_HousingCatalog.GetCatalogEntryDebugInfoForID](#c_housingcataloggetcatalogentrydebuginfoforid) |  |  |
 | ✅ | [C_HousingCatalog.GetCatalogEntryInfo](#c_housingcataloggetcatalogentryinfo) |  |  |
-| ✅ | [C_HousingCatalog.GetCatalogEntryInfoByItem](#c_housingcataloggetcatalogentryinfobyitem) |  |  |
+| ✅ | [C_HousingCatalog.GetCatalogEntryInfoByItem](#c_housingcataloggetcatalogentryinfobyitem) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | ✅ | [C_HousingCatalog.GetCatalogEntryInfoByRecordID](#c_housingcataloggetcatalogentryinfobyrecordid) |  |  |
 | ✅ | [C_HousingCatalog.GetCatalogEntryRefundTimeStampByRecordID](#c_housingcataloggetcatalogentryrefundtimestampbyrecordid) |  |  |
 | ✅ | [C_HousingCatalog.GetCatalogEntryVariantInfo](#c_housingcataloggetcatalogentryvariantinfo) |  |  |
 | ✅ | [C_HousingCatalog.GetCatalogSubcategoryInfo](#c_housingcataloggetcatalogsubcategoryinfo) |  |  |
-| ✅ | [C_HousingCatalog.GetDecorMaxOwnedCount](#c_housingcataloggetdecormaxownedcount) | 1 value | 1 value |
-| ✅ | [C_HousingCatalog.GetDecorTotalOwnedCount](#c_housingcataloggetdecortotalownedcount) | 2 values | 2 values |
+| ✅ | [C_HousingCatalog.GetDecorMaxOwnedCount](#c_housingcataloggetdecormaxownedcount) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingCatalog.GetDecorTotalOwnedCount](#c_housingcataloggetdecortotalownedcount) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | ✅ | [C_HousingCatalog.GetDestroyableInstanceCount](#c_housingcataloggetdestroyableinstancecount) |  |  |
-| ✅ | [C_HousingCatalog.GetFeaturedBundles](#c_housingcataloggetfeaturedbundles) | 1 value | 1 value |
+| ✅ | [C_HousingCatalog.GetFeaturedBundles](#c_housingcataloggetfeaturedbundles) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | 🆕 | [C_HousingCatalog.GetFeaturedDecor](#c_housingcataloggetfeatureddecor) |  |  |
-| ✅ | [C_HousingCatalog.GetFeaturedSmallProducts](#c_housingcataloggetfeaturedsmallproducts) | 1 value | 1 value |
+| ✅ | [C_HousingCatalog.GetFeaturedSmallProducts](#c_housingcataloggetfeaturedsmallproducts) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | ✅ | [C_HousingCatalog.GetMarketInfoForDecor](#c_housingcataloggetmarketinfofordecor) |  |  |
-| ✅ | [C_HousingCatalog.HasFeaturedEntries](#c_housingcataloghasfeaturedentries) | 1 value | 1 value |
+| ✅ | [C_HousingCatalog.HasFeaturedEntries](#c_housingcataloghasfeaturedentries) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | ✅ | [C_HousingCatalog.HousingMarketActionAddToCart](#c_housingcataloghousingmarketactionaddtocart) |  |  |
 | ✅ | [C_HousingCatalog.HousingMarketActionClearCart](#c_housingcataloghousingmarketactionclearcart) |  |  |
 | ✅ | [C_HousingCatalog.HousingMarketActionRemoveFromCart](#c_housingcataloghousingmarketactionremovefromcart) |  |  |
 | ✅ | [C_HousingCatalog.HousingMarketActionViewBundle](#c_housingcataloghousingmarketactionviewbundle) |  |  |
 | ✅ | [C_HousingCatalog.HousingMarketActionViewInStore](#c_housingcataloghousingmarketactionviewinstore) |  |  |
-| ✅ | [C_HousingCatalog.IsPreviewCartItemShown](#c_housingcatalogispreviewcartitemshown) |  |  |
+| ✅ | [C_HousingCatalog.IsPreviewCartItemShown](#c_housingcatalogispreviewcartitemshown) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | ✅ | [C_HousingCatalog.PromotePreviewDecor](#c_housingcatalogpromotepreviewdecor) |  |  |
 | ✅ | [C_HousingCatalog.RequestHousingMarketInfoRefresh](#c_housingcatalogrequesthousingmarketinforefresh) |  |  |
 | ✅ | [C_HousingCatalog.RequestHousingMarketRefundInfo](#c_housingcatalogrequesthousingmarketrefundinfo) |  |  |
@@ -81,8 +81,8 @@ Namespace: `C_HousingCatalog`
 `C_HousingCatalog.GetAllFilterTagGroups() → filterTagGroups: HousingCatalogFilterTagGroupInfo[]`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `table{}`
-- Called in combat: returned 1 value: `table{}`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
 ### C_HousingCatalog.GetAllVariantInfosForEntry
@@ -107,8 +107,8 @@ Namespace: `C_HousingCatalog`
 `C_HousingCatalog.GetCartSizeLimit() → cartSizeLimit: number`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `number`
-- Called in combat: returned 1 value: `number`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
 ### C_HousingCatalog.GetCatalogCategoryAndSubcategoryNames
@@ -150,6 +150,8 @@ Namespace: `C_HousingCatalog`
 - Status: ✅ verified (function)
 - `itemInfo`: ItemID, name, or link of an item that grants/corresponds to a particular type of housing catalog object (ex: decor)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
 ### C_HousingCatalog.GetCatalogEntryInfoByRecordID
@@ -190,8 +192,8 @@ Namespace: `C_HousingCatalog`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns the maximum total number of decor that can be in storage/in the house chest; Note that not all decor entries in storage count towards this limit (see GetDecorTotalOwnedCount)
-- Called out of combat: returned 1 value: `number`
-- Called in combat: returned 1 value: `number`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
 ### C_HousingCatalog.GetDecorTotalOwnedCount
@@ -201,8 +203,8 @@ Namespace: `C_HousingCatalog`
 - Status: ✅ verified (function)
 - `totalOwnedCount`: The total number of owned decor in storage, including both exempt and non-exempt decor
 - `exemptDecorCount`: The number of decor that do not count against the max storage limit
-- Called out of combat: returned 2 values: `number`, `number`
-- Called in combat: returned 2 values: `number`, `number`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
 ### C_HousingCatalog.GetDestroyableInstanceCount
@@ -219,8 +221,8 @@ Namespace: `C_HousingCatalog`
 `C_HousingCatalog.GetFeaturedBundles() → bundleInfos: HousingBundleInfo[]`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `table{}`
-- Called in combat: returned 1 value: `table{}`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
 ### C_HousingCatalog.GetFeaturedDecor
@@ -234,8 +236,8 @@ Namespace: `C_HousingCatalog`
 `C_HousingCatalog.GetFeaturedSmallProducts() → infos: HousingFeaturedSmallProductInfo[]`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `table{}`
-- Called in combat: returned 1 value: `table{}`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
 ### C_HousingCatalog.GetMarketInfoForDecor
@@ -252,8 +254,8 @@ Namespace: `C_HousingCatalog`
 `C_HousingCatalog.HasFeaturedEntries() → hasEntries: bool`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
 ### C_HousingCatalog.HousingMarketActionAddToCart
@@ -306,6 +308,8 @@ Namespace: `C_HousingCatalog`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
 ### C_HousingCatalog.PromotePreviewDecor

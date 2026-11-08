@@ -7,18 +7,21 @@
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### ITEM_TEXT_CLOSED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### ITEM_TEXT_READY
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### ITEM_TEXT_TRANSLATION
 

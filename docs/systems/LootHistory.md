@@ -61,6 +61,7 @@ Namespace: `C_LootHistory`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### LOOT_HISTORY_GO_TO_ENCOUNTER
 

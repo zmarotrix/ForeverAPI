@@ -4,7 +4,7 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [CanEjectPassengerFromSeat](#canejectpassengerfromseat) |  |  |
+| ✅ | [CanEjectPassengerFromSeat](#canejectpassengerfromseat) | 1 value | 1 value |
 | ✅ | [CanSwitchVehicleSeat](#canswitchvehicleseat) | 1 value | 1 value |
 | ✅ | [ClosestGameObjectPosition](#closestgameobjectposition) |  |  |
 | ✅ | [ClosestUnitPosition](#closestunitposition) |  |  |
@@ -15,14 +15,14 @@
 | ✅ | [GetUnitChargedPowerPoints](#getunitchargedpowerpoints) | 0 values | 0 values |
 | ✅ | [GetUnitEmpowerHoldAtMaxTime](#getunitempowerholdatmaxtime) | 1 value | 1 value |
 | ✅ | [GetUnitEmpowerMinHoldTime](#getunitempowerminholdtime) | 1 value | 1 value |
-| ✅ | [GetUnitEmpowerStageDuration](#getunitempowerstageduration) |  |  |
+| ✅ | [GetUnitEmpowerStageDuration](#getunitempowerstageduration) | 1 value | 1 value |
 | ✅ | [GetUnitHealthModifier](#getunithealthmodifier) | 1 value | 1 value |
 | ✅ | [GetUnitMaxHealthModifier](#getunitmaxhealthmodifier) | 1 value | 1 value |
 | ✅ | [GetUnitPowerBarInfo](#getunitpowerbarinfo) | 0 values | 0 values |
 | ✅ | [GetUnitPowerBarInfoByID](#getunitpowerbarinfobyid) |  |  |
 | ✅ | [GetUnitPowerBarStrings](#getunitpowerbarstrings) | 3 values | 3 values |
 | ✅ | [GetUnitPowerBarStringsByID](#getunitpowerbarstringsbyid) |  |  |
-| ✅ | [GetUnitPowerBarTextureInfo](#getunitpowerbartextureinfo) |  |  |
+| ✅ | [GetUnitPowerBarTextureInfo](#getunitpowerbartextureinfo) | 5 values | 5 values |
 | ✅ | [GetUnitPowerBarTextureInfoByID](#getunitpowerbartextureinfobyid) |  |  |
 | ✅ | [GetUnitPowerModifier](#getunitpowermodifier) | 1 value | 1 value |
 | ✅ | [GetUnitSpeed](#getunitspeed) | 4 values | secret |
@@ -31,7 +31,7 @@
 | ✅ | [GetVehicleUIIndicatorSeat](#getvehicleuiindicatorseat) |  |  |
 | ✅ | [IsFalling](#isfalling) | 1 value | 1 value |
 | ✅ | [IsFlying](#isflying) | 1 value | 1 value |
-| ✅ | [IsPlayerInGuildFromGUID](#isplayeringuildfromguid) |  |  |
+| ✅ | [IsPlayerInGuildFromGUID](#isplayeringuildfromguid) | 1 value | 1 value |
 | ✅ | [IsSubmerged](#issubmerged) | 1 value | 1 value |
 | ✅ | [IsSwimming](#isswimming) | 1 value | 1 value |
 | ✅ | [IsUnitModelReadyForUI](#isunitmodelreadyforui) | 1 value | 1 value |
@@ -52,10 +52,10 @@
 | ✅ | [UnitBattlePetLevel](#unitbattlepetlevel) | 1 value | 1 value |
 | ✅ | [UnitBattlePetSpeciesID](#unitbattlepetspeciesid) | 1 value | 1 value |
 | ✅ | [UnitBattlePetType](#unitbattlepettype) | 1 value | 1 value |
-| ✅ | [UnitCanAssist](#unitcanassist) |  |  |
-| ✅ | [UnitCanAttack](#unitcanattack) |  |  |
-| ✅ | [UnitCanCooperate](#unitcancooperate) |  |  |
-| ✅ | [UnitCanPetBattle](#unitcanpetbattle) |  |  |
+| ✅ | [UnitCanAssist](#unitcanassist) | 1 value | 1 value |
+| ✅ | [UnitCanAttack](#unitcanattack) | 1 value | 1 value |
+| ✅ | [UnitCanCooperate](#unitcancooperate) | 1 value | 1 value |
+| ✅ | [UnitCanPetBattle](#unitcanpetbattle) | 1 value | 1 value |
 | ✅ | [UnitCastingDuration](#unitcastingduration) | 0 values | 0 values |
 | ✅ | [UnitCastingInfo](#unitcastinginfo) | 0 values | 0 values |
 | ✅ | [UnitChannelDuration](#unitchannelduration) | 0 values | 0 values |
@@ -63,15 +63,15 @@
 | ✅ | [UnitChromieTimeID](#unitchromietimeid) | 1 value | 1 value |
 | ✅ | [UnitClass](#unitclass) | 3 values | 3 values |
 | ✅ | [UnitClassBase](#unitclassbase) | 2 values | 2 values |
-| ✅ | [UnitClassFromGUID](#unitclassfromguid) |  |  |
+| ✅ | [UnitClassFromGUID](#unitclassfromguid) | 3 values | 3 values |
 | ✅ | [UnitClassification](#unitclassification) | 1 value | 1 value |
 | ✅ | [UnitControllingVehicle](#unitcontrollingvehicle) | 1 value | 1 value |
 | ✅ | [UnitCreatureFamily](#unitcreaturefamily) | 0 values | 0 values |
-| ✅ | [UnitCreatureID](#unitcreatureid) | 1 value | 1 value |
+| ✅ | [UnitCreatureID](#unitcreatureid) | 2 values | 2 values |
 | ✅ | [UnitCreatureType](#unitcreaturetype) | 2 values | 2 values |
 | ✅ | [UnitDamage](#unitdamage) | 7 values | secret |
 | ✅ | [UnitDefenseSkill](#unitdefenseskill) | 2 values | secret |
-| ✅ | [UnitDetailedThreatSituation](#unitdetailedthreatsituation) |  |  |
+| ✅ | [UnitDetailedThreatSituation](#unitdetailedthreatsituation) | 0 values | 0 values |
 | ✅ | [UnitDistanceSquared](#unitdistancesquared) | 2 values | 2 values |
 | ✅ | [UnitEffectiveLevel](#uniteffectivelevel) |  |  |
 | ✅ | [UnitEmpoweredChannelDuration](#unitempoweredchannelduration) | 0 values | 0 values |
@@ -91,7 +91,7 @@
 | ✅ | [UnitHasEffectivelyTankAura](#unithaseffectivelytankaura) | 1 value | 1 value |
 | ✅ | [UnitHasLootInteraction](#unithaslootinteraction) | 1 value | 1 value |
 | ✅ | [UnitHasMouseoverHighlight](#unithasmouseoverhighlight) | 1 value | 1 value |
-| ✅ | [UnitHasPowerType](#unithaspowertype) |  |  |
+| ✅ | [UnitHasPowerType](#unithaspowertype) | 1 value | 1 value |
 | ✅ | [UnitHasRelicSlot](#unithasrelicslot) | 1 value | 1 value |
 | ✅ | [UnitHasVehiclePlayerFrameUI](#unithasvehicleplayerframeui) | 1 value | 1 value |
 | ✅ | [UnitHasVehicleUI](#unithasvehicleui) | 1 value | 1 value |
@@ -125,9 +125,9 @@
 | ✅ | [UnitIsDND](#unitisdnd) | 1 value | 1 value |
 | ✅ | [UnitIsDead](#unitisdead) | 1 value | 1 value |
 | ✅ | [UnitIsDeadOrGhost](#unitisdeadorghost) | 1 value | 1 value |
-| ✅ | [UnitIsEnemy](#unitisenemy) |  |  |
+| ✅ | [UnitIsEnemy](#unitisenemy) | 1 value | 1 value |
 | ✅ | [UnitIsFeignDeath](#unitisfeigndeath) | 1 value | 1 value |
-| ✅ | [UnitIsFriend](#unitisfriend) |  |  |
+| ✅ | [UnitIsFriend](#unitisfriend) | 1 value | 1 value |
 | ✅ | [UnitIsGameObject](#unitisgameobject) | 1 value | 1 value |
 | ✅ | [UnitIsGhost](#unitisghost) | 1 value | 1 value |
 | ✅ | [UnitIsGroupAssistant](#unitisgroupassistant) | 1 value | 1 value |
@@ -142,7 +142,7 @@
 | ✅ | [UnitIsNPCAsPlayer](#unitisnpcasplayer) | 1 value | 1 value |
 | ✅ | [UnitIsOtherPlayersBattlePet](#unitisotherplayersbattlepet) | 1 value | 1 value |
 | ✅ | [UnitIsOtherPlayersPet](#unitisotherplayerspet) | 1 value | 1 value |
-| ✅ | [UnitIsOwnerOrControllerOfUnit](#unitisownerorcontrollerofunit) |  |  |
+| ✅ | [UnitIsOwnerOrControllerOfUnit](#unitisownerorcontrollerofunit) | 1 value | 1 value |
 | ✅ | [UnitIsPVP](#unitispvp) | 1 value | 1 value |
 | ✅ | [UnitIsPVPFreeForAll](#unitispvpfreeforall) | 1 value | 1 value |
 | ✅ | [UnitIsPVPSanctuary](#unitispvpsanctuary) | 1 value | 1 value |
@@ -155,33 +155,33 @@
 | ✅ | [UnitIsTapDenied](#unitistapdenied) | 1 value | 1 value |
 | ✅ | [UnitIsTrivial](#unitistrivial) | 1 value | 1 value |
 | ✅ | [UnitIsUnconscious](#unitisunconscious) | 1 value | 1 value |
-| ✅ | [UnitIsUnit](#unitisunit) |  |  |
+| ✅ | [UnitIsUnit](#unitisunit) | 1 value | 1 value |
 | ✅ | [UnitIsVisible](#unitisvisible) | 1 value | 1 value |
 | ✅ | [UnitIsWildBattlePet](#unitiswildbattlepet) | 1 value | 1 value |
 | ✅ | [UnitLeadsAnyGroup](#unitleadsanygroup) | 1 value | 1 value |
 | ✅ | [UnitLevel](#unitlevel) |  |  |
 | ✅ | [UnitName](#unitname) | 2 values | 2 values |
-| ✅ | [UnitNameFromGUID](#unitnamefromguid) |  |  |
+| ✅ | [UnitNameFromGUID](#unitnamefromguid) | 2 values | 2 values |
 | ✅ | [UnitNameUnmodified](#unitnameunmodified) | 2 values | 2 values |
 | ✅ | [UnitNameplateShowsWidgetsOnly](#unitnameplateshowswidgetsonly) | 1 value | 1 value |
 | ✅ | [UnitNumPowerBarTimers](#unitnumpowerbartimers) | 1 value | 1 value |
 | ✅ | [UnitOnTaxi](#unitontaxi) | 1 value | 1 value |
 | ✅ | [UnitOwnerGUID](#unitownerguid) | 1 value | 1 value |
 | ✅ | [UnitPVPName](#unitpvpname) | 1 value | 1 value |
-| ✅ | [UnitPartialPower](#unitpartialpower) |  |  |
-| ✅ | [UnitPercentHealthFromGUID](#unitpercenthealthfromguid) |  |  |
+| ✅ | [UnitPartialPower](#unitpartialpower) | secret | secret |
+| ✅ | [UnitPercentHealthFromGUID](#unitpercenthealthfromguid) | secret | secret |
 | ✅ | [UnitPhaseReason](#unitphasereason) | 1 value | 1 value |
 | ✅ | [UnitPlayerControlled](#unitplayercontrolled) | 1 value | 1 value |
 | ✅ | [UnitPlayerOrPetInParty](#unitplayerorpetinparty) | 1 value | 1 value |
 | ✅ | [UnitPlayerOrPetInRaid](#unitplayerorpetinraid) | 1 value | 1 value |
 | ✅ | [UnitPosition](#unitposition) | 4 values | 4 values |
-| ✅ | [UnitPower](#unitpower) |  |  |
+| ✅ | [UnitPower](#unitpower) | secret | secret |
 | ✅ | [UnitPowerBarID](#unitpowerbarid) | 1 value | 1 value |
 | ✅ | [UnitPowerBarTimerInfo](#unitpowerbartimerinfo) | 0 values | 0 values |
-| ✅ | [UnitPowerDisplayMod](#unitpowerdisplaymod) |  |  |
-| ✅ | [UnitPowerMax](#unitpowermax) |  |  |
-| ✅ | [UnitPowerMissing](#unitpowermissing) |  |  |
-| ✅ | [UnitPowerPercent](#unitpowerpercent) |  |  |
+| ✅ | [UnitPowerDisplayMod](#unitpowerdisplaymod) | 1 value | 1 value |
+| ✅ | [UnitPowerMax](#unitpowermax) | 1 value | 1 value |
+| ✅ | [UnitPowerMissing](#unitpowermissing) | secret | secret |
+| ✅ | [UnitPowerPercent](#unitpowerpercent) | secret | secret |
 | ✅ | [UnitPowerType](#unitpowertype) | 5 values | 5 values |
 | ✅ | [UnitPvpClassification](#unitpvpclassification) | 1 value | 1 value |
 | ✅ | [UnitQuestTrivialLevelRange](#unitquesttriviallevelrange) | 1 value | 1 value |
@@ -189,9 +189,9 @@
 | ✅ | [UnitRace](#unitrace) | 3 values | 3 values |
 | ✅ | [UnitRangedAttackPower](#unitrangedattackpower) | 3 values | secret |
 | ✅ | [UnitRangedDamage](#unitrangeddamage) | 6 values | secret |
-| ✅ | [UnitReaction](#unitreaction) |  |  |
+| ✅ | [UnitReaction](#unitreaction) | 1 value | 1 value |
 | ✅ | [UnitRealmRelationship](#unitrealmrelationship) | 1 value | 1 value |
-| ✅ | [UnitResistance](#unitresistance) |  |  |
+| ✅ | [UnitResistance](#unitresistance) | 4 values | 4 values |
 | ✅ | [UnitSelectionColor](#unitselectioncolor) | 4 values | 4 values |
 | ✅ | [UnitSelectionType](#unitselectiontype) | 1 value | 1 value |
 | ✅ | [UnitSex](#unitsex) | 1 value | 1 value |
@@ -199,23 +199,23 @@
 | ✅ | [UnitShouldDisplayName](#unitshoulddisplayname) | 1 value | 1 value |
 | ✅ | [UnitShouldDisplaySpellTargetName](#unitshoulddisplayspelltargetname) | 1 value | 1 value |
 | ✅ | [UnitSpellHaste](#unitspellhaste) | 1 value | secret |
-| ✅ | [UnitSpellTargetClass](#unitspelltargetclass) | secret | secret |
-| ✅ | [UnitSpellTargetName](#unitspelltargetname) | secret | secret |
+| ✅ | [UnitSpellTargetClass](#unitspelltargetclass) | 1 value | 1 value |
+| ✅ | [UnitSpellTargetName](#unitspelltargetname) | 0 values | 0 values |
 | ✅ | [UnitStagger](#unitstagger) | 1 value | 1 value |
-| ✅ | [UnitStat](#unitstat) |  |  |
-| ✅ | [UnitSwitchToVehicleSeat](#unitswitchtovehicleseat) |  |  |
+| ✅ | [UnitStat](#unitstat) | 4 values | secret |
+| ✅ | [UnitSwitchToVehicleSeat](#unitswitchtovehicleseat) | 0 values | 0 values |
 | ✅ | [UnitTargetsVehicleInRaidUI](#unittargetsvehicleinraidui) | 1 value | 1 value |
-| ✅ | [UnitThreatLeadSituation](#unitthreatleadsituation) |  |  |
-| ✅ | [UnitThreatPercentageOfLead](#unitthreatpercentageoflead) |  |  |
+| ✅ | [UnitThreatLeadSituation](#unitthreatleadsituation) | 1 value | 1 value |
+| ✅ | [UnitThreatPercentageOfLead](#unitthreatpercentageoflead) | secret | secret |
 | ✅ | [UnitThreatSituation](#unitthreatsituation) | 1 value | 1 value |
-| ✅ | [UnitTokenFromGUID](#unittokenfromguid) |  |  |
+| ✅ | [UnitTokenFromGUID](#unittokenfromguid) | 1 value | 1 value |
 | ✅ | [UnitTreatAsPlayerForDisplay](#unittreatasplayerfordisplay) | 1 value | 1 value |
 | ✅ | [UnitTrialBankedLevels](#unittrialbankedlevels) | 3 values | 3 values |
 | ✅ | [UnitTrialXP](#unittrialxp) | 1 value | 1 value |
 | ✅ | [UnitUsesAmmo](#unitusesammo) | 1 value | 1 value |
 | ✅ | [UnitUsingVehicle](#unitusingvehicle) | 1 value | 1 value |
 | ✅ | [UnitVehicleSeatCount](#unitvehicleseatcount) | 1 value | 1 value |
-| ✅ | [UnitVehicleSeatInfo](#unitvehicleseatinfo) |  |  |
+| ✅ | [UnitVehicleSeatInfo](#unitvehicleseatinfo) | 0 values | 0 values |
 | ✅ | [UnitVehicleSkin](#unitvehicleskin) | 1 value | 1 value |
 | ✅ | [UnitWeaponAttackPower](#unitweaponattackpower) | 3 values | secret |
 | ✅ | [UnitWidgetSet](#unitwidgetset) | 0 values | 0 values |
@@ -229,6 +229,8 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### CanSwitchVehicleSeat
@@ -334,6 +336,8 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit spellcasts are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:1`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### GetUnitHealthModifier
@@ -400,6 +404,8 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:1`: returned 5 values: `nil`, `number`, `number`, `number`, `number`
+- Called in combat: returned 5 values: `nil`, `number`, `number`, `number`, `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### GetUnitPowerBarTextureInfoByID
@@ -485,6 +491,8 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### IsSubmerged
@@ -679,6 +687,8 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,unit`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitCanAttack
@@ -687,6 +697,8 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,unit`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitCanCooperate
@@ -695,6 +707,8 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,unit`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitCanPetBattle
@@ -703,6 +717,8 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,unit`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitCastingDuration
@@ -791,6 +807,8 @@
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 3 values: `string`, `string`, `number`
+- Called in combat: returned 3 values: `string`, `string`, `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitClassification
@@ -832,8 +850,8 @@
 - RequiresUnitIdentityAccess (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with `player`: returned 1 value: `nil`
-- Called in combat: returned 1 value: `nil`
+- Called out of combat with `player`: returned 2 values: `nil`, `string`
+- Called in combat: returned 2 values: `nil`, `string`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitCreatureType
@@ -877,6 +895,8 @@
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitThreatValuesRestricted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,unit`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitDistanceSquared
@@ -1086,6 +1106,8 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitHasRelicSlot
@@ -1439,6 +1461,8 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,unit`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsFeignDeath
@@ -1457,6 +1481,8 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,unit`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsGameObject
@@ -1607,6 +1633,8 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,unit`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsPVP
@@ -1739,6 +1767,8 @@
 - RequiresComparableUnitTokens (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitComparisonRestricted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,unit`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsVisible
@@ -1798,6 +1828,8 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 2 values: `string`, `string`
+- Called in combat: returned 2 values: `string`, `string`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitNameUnmodified
@@ -1870,6 +1902,8 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit power is restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `player`: returned 1 value: `secret:number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitPercentHealthFromGUID
@@ -1879,6 +1913,8 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `secret:number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitPhaseReason
@@ -1928,8 +1964,8 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with `player`: returned 4 values: `number`, `number`, `number`, `number`
-- Called in combat: returned 4 values: `number`, `number`, `number`, `number`
+- Called out of combat with `player`: returned 4 values: `nil`, `nil`, `nil`, `number`
+- Called in combat: returned 4 values: `nil`, `nil`, `nil`, `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitPower
@@ -1939,6 +1975,8 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit power is restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `player`: returned 1 value: `secret:number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitPowerBarID
@@ -1969,6 +2007,8 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitPowerMax
@@ -1978,6 +2018,8 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitPowerMaxRestricted (Blizzard's docs; not checked in game)
+- Called out of combat with `player`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitPowerMissing
@@ -1988,6 +2030,8 @@
 - Blizzard: Result of UnitPowerMax() - UnitPower()
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit power is restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `player`: returned 1 value: `secret:number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitPowerPercent
@@ -2000,6 +2044,8 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenCurveSecret (Blizzard's docs; not checked in game)
 - secret while unit power is restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `player`: returned 1 value: `secret:number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitPowerType
@@ -2083,6 +2129,8 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,unit`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitRealmRelationship
@@ -2102,6 +2150,8 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:0`: returned 4 values: `number`, `number`, `number`, `number`
+- Called in combat: returned 4 values: `number`, `number`, `number`, `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitSelectionColor
@@ -2186,8 +2236,8 @@
 - Blizzard: If the unit is currently casting a spell, returns the class of the spell's target unit. Returns nil if the unit is not casting a spell or the spell has no target.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
-- Called out of combat with `player`: returned 1 value: `secret:string`
-- Called in combat: returned 1 value: `secret:string`
+- Called out of combat with `player`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitSpellTargetName
@@ -2199,8 +2249,8 @@
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
-- Called out of combat with `player`: returned 1 value: `secret:string`
-- Called in combat: returned 1 value: `secret:string`
+- Called out of combat with `player`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitStagger
@@ -2220,6 +2270,8 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:1`: returned 4 values: `number`, `number`, `number`, `number`
+- Called in combat: returned 4 values: `secret:number`, `secret:number`, `secret:number`, `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitSwitchToVehicleSeat
@@ -2228,6 +2280,8 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitTargetsVehicleInRaidUI
@@ -2248,6 +2302,8 @@
 - Blizzard: Returns a threat state (0-3; representing none, yellow, orange, red) that indicates how far the provided unit is above the secondmost threat on the provided mob. If the unit is not first on threat, will always return red. Can return nil if the provided mob does not exist.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitThreatStateRestricted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,unit`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitThreatPercentageOfLead
@@ -2257,6 +2313,8 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitThreatValuesRestricted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,unit`: returned 1 value: `secret:number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitThreatSituation
@@ -2277,6 +2335,8 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitTreatAsPlayerForDisplay
@@ -2346,6 +2406,8 @@
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitVehicleSkin
@@ -2446,19 +2508,21 @@
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### COMBO_TARGET_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 15 times (10 in combat); argument kinds: ``
+- Seen firing 34 times (21 in combat); argument kinds: ``
 
 ### CONFIRM_BINDER
 
 - Status: ✅ verified
 - Payload: `areaName: cstring`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `s`
 
 ### CONFIRM_SUMMON
 
@@ -2477,6 +2541,7 @@
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### HONOR_XP_UPDATE
 
@@ -2550,14 +2615,14 @@
 - Payload: `attackerGUID: WOWGUID`, `targetGUID: WOWGUID`
 - secret while unit identity is restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (8 in combat); argument kinds: `s,s`
+- Seen firing 18 times (18 in combat); argument kinds: `S,S` / `s,s`
 
 ### PET_BAR_UPDATE_USABLE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 64 times (57 in combat); argument kinds: ``
+- Seen firing 164 times (128 in combat); argument kinds: ``
 
 ### PET_UI_UPDATE
 
@@ -2576,14 +2641,14 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (0 in combat); argument kinds: `s`
+- Seen firing 89 times (18 in combat); argument kinds: `s`
 
 ### PLAYER_ENTER_COMBAT
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 9 times (9 in combat); argument kinds: ``
+- Seen firing 26 times (25 in combat); argument kinds: ``
 
 ### PLAYER_FARSIGHT_FOCUS_CHANGED
 
@@ -2596,6 +2661,7 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 7 times (0 in combat); argument kinds: `s`
 
 ### PLAYER_FOCUS_CHANGED
 
@@ -2620,7 +2686,7 @@
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 9 times (8 in combat); argument kinds: ``
+- Seen firing 26 times (23 in combat); argument kinds: ``
 
 ### PLAYER_LEVEL_CHANGED
 
@@ -2663,27 +2729,28 @@
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (0 in combat); argument kinds: ``
+- Seen firing 18 times (0 in combat); argument kinds: ``
 
 ### PLAYER_REGEN_ENABLED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (0 in combat); argument kinds: ``
+- Seen firing 18 times (0 in combat); argument kinds: ``
 
 ### PLAYER_SOFT_ENEMY_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 18 times (9 in combat); argument kinds: ``
+- Seen firing 69 times (32 in combat); argument kinds: ``
 
 ### PLAYER_SOFT_FRIEND_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 27 times (0 in combat); argument kinds: ``
 
 ### PLAYER_SOFT_INTERACT_CHANGED
 
@@ -2704,56 +2771,56 @@
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `s`
+- Seen firing 6 times (0 in combat); argument kinds: `s`
 
 ### PLAYER_STARTED_LOOKING
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 34 times (19 in combat); argument kinds: ``
+- Seen firing 142 times (39 in combat); argument kinds: ``
 
 ### PLAYER_STARTED_MOVING
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 123 times (90 in combat); argument kinds: ``
+- Seen firing 447 times (201 in combat); argument kinds: ``
 
 ### PLAYER_STARTED_TURNING
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 118 times (79 in combat); argument kinds: ``
+- Seen firing 458 times (151 in combat); argument kinds: ``
 
 ### PLAYER_STOPPED_LOOKING
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 34 times (18 in combat); argument kinds: ``
+- Seen firing 142 times (37 in combat); argument kinds: ``
 
 ### PLAYER_STOPPED_MOVING
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 123 times (96 in combat); argument kinds: ``
+- Seen firing 447 times (213 in combat); argument kinds: ``
 
 ### PLAYER_STOPPED_TURNING
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 118 times (84 in combat); argument kinds: ``
+- Seen firing 458 times (163 in combat); argument kinds: ``
 
 ### PLAYER_TARGET_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 51 times (18 in combat); argument kinds: ``
+- Seen firing 140 times (49 in combat); argument kinds: ``
 
 ### PLAYER_TRIAL_XP_UPDATE
 
@@ -2772,14 +2839,14 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 13 times (13 in combat); argument kinds: `s`
+- Seen firing 27 times (27 in combat); argument kinds: `s`
 
 ### PORTRAITS_UPDATED
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 31 times (0 in combat); argument kinds: ``
 
 ### PROVING_GROUNDS_SCORE_UPDATE
 
@@ -2792,7 +2859,7 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `s`
+- Seen firing 8 times (0 in combat); argument kinds: `s`
 
 ### RUNE_POWER_UPDATE
 
@@ -2837,7 +2904,7 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 12 times (7 in combat); argument kinds: `s`
+- Seen firing 64 times (16 in combat); argument kinds: `s`
 
 ### UNIT_ARENA_COOLDOWNS_UPDATE
 
@@ -2852,21 +2919,21 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (2 in combat); argument kinds: `s`
+- Seen firing 7 times (4 in combat); argument kinds: `s`
 
 ### UNIT_ATTACK_POWER
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `s`
+- Seen firing 18 times (0 in combat); argument kinds: `s`
 
 ### UNIT_ATTACK_SPEED
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: `s`
+- Seen firing 44 times (0 in combat); argument kinds: `s`
 
 ### UNIT_CHEAT_TOGGLE_EVENT
 
@@ -2885,7 +2952,7 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `event: cstring`, `flagText: cstring`, `amount: number`, `schoolMask: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 637 times (636 in combat); argument kinds: `s,s,s,S,n`
+- Seen firing 1526 times (1490 in combat); argument kinds: `s,s,s,S,n`
 
 ### UNIT_CONNECTION
 
@@ -2898,21 +2965,21 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `s`
+- Seen firing 5 times (0 in combat); argument kinds: `s`
 
 ### UNIT_DAMAGE
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (0 in combat); argument kinds: `s`
+- Seen firing 104 times (0 in combat); argument kinds: `s`
 
 ### UNIT_DEFENSE
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (2 in combat); argument kinds: `s`
+- Seen firing 7 times (4 in combat); argument kinds: `s`
 
 ### UNIT_DIED
 
@@ -2920,14 +2987,14 @@
 - Payload: `unitGUID: WOWGUID`
 - secret while unit identity is restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 17 times (12 in combat); argument kinds: `s`
+- Seen firing 45 times (27 in combat); argument kinds: `S` / `s`
 
 ### UNIT_DISPLAYPOWER
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `s`
+- Seen firing 24 times (0 in combat); argument kinds: `s`
 
 ### UNIT_DISTANCE_CHECK_UPDATE
 
@@ -2941,14 +3008,14 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `s`
+- Seen firing 21 times (0 in combat); argument kinds: `s`
 
 ### UNIT_FLAGS
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 114 times (74 in combat); argument kinds: `s`
+- Seen firing 262 times (154 in combat); argument kinds: `s`
 
 ### UNIT_FORM_CHANGED
 
@@ -2962,7 +3029,7 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 483 times (434 in combat); argument kinds: `s`
+- Seen firing 1349 times (1004 in combat); argument kinds: `s`
 
 ### UNIT_HEALTH
 
@@ -2970,7 +3037,7 @@
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 626 times (491 in combat); argument kinds: `s`
+- Seen firing 1678 times (1188 in combat); argument kinds: `s`
 
 ### UNIT_HEAL_ABSORB_AMOUNT_CHANGED
 
@@ -2983,14 +3050,14 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `s`
+- Seen firing 34 times (5 in combat); argument kinds: `s`
 
 ### UNIT_INVENTORY_CHANGED
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 103 times (2 in combat); argument kinds: `s`
+- Seen firing 765 times (6 in combat); argument kinds: `s`
 
 ### UNIT_IN_RANGE_UPDATE
 
@@ -3005,14 +3072,14 @@
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `s`
+- Seen firing 5 times (0 in combat); argument kinds: `s`
 
 ### UNIT_LOOT
 
 - Status: ✅ verified
 - Payload: `unitGUID: WOWGUID`, `hasLoot: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 23 times (10 in combat); argument kinds: `s,b`
+- Seen firing 45 times (20 in combat); argument kinds: `s,b`
 
 ### UNIT_MANA
 
@@ -3026,14 +3093,14 @@
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `s`
+- Seen firing 20 times (0 in combat); argument kinds: `s`
 
 ### UNIT_MAXPOWER
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `powerType: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `s,s`
+- Seen firing 11 times (0 in combat); argument kinds: `s,s`
 
 ### UNIT_MAX_HEALTH_MODIFIERS_CHANGED
 
@@ -3042,6 +3109,7 @@
 - SecretPayloads (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
+- Seen firing 3 times (0 in combat); argument kinds: `s,S`
 
 ### UNIT_MODEL_CHANGED
 
@@ -3049,20 +3117,21 @@
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 7 times (0 in combat); argument kinds: `s`
+- Seen firing 56 times (0 in combat); argument kinds: `s`
 
 ### UNIT_NAME_UPDATE
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 3 times (0 in combat); argument kinds: `s`
 
 ### UNIT_OTHER_PARTY_CHANGED
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `s`
+- Seen firing 7 times (0 in combat); argument kinds: `s`
 
 ### UNIT_PET
 
@@ -3087,7 +3156,7 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `s`
+- Seen firing 22 times (0 in combat); argument kinds: `s`
 
 ### UNIT_PORTRAIT_UPDATE
 
@@ -3095,7 +3164,7 @@
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 9 times (0 in combat); argument kinds: `s`
+- Seen firing 83 times (0 in combat); argument kinds: `s`
 
 ### UNIT_POWER_BAR_HIDE
 
@@ -3120,7 +3189,7 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `powerType: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 4328 times (3742 in combat); argument kinds: `s,s`
+- Seen firing 13297 times (8695 in combat); argument kinds: `s,s`
 
 ### UNIT_POWER_POINT_CHARGE
 
@@ -3134,35 +3203,35 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `powerType: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 634 times (576 in combat); argument kinds: `s,s`
+- Seen firing 1720 times (1284 in combat); argument kinds: `s,s`
 
 ### UNIT_QUEST_LOG_CHANGED
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (2 in combat); argument kinds: `s`
+- Seen firing 5 times (3 in combat); argument kinds: `s`
 
 ### UNIT_RANGEDDAMAGE
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: `s`
+- Seen firing 36 times (0 in combat); argument kinds: `s`
 
 ### UNIT_RANGED_ATTACK_POWER
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (2 in combat); argument kinds: `s`
+- Seen firing 7 times (4 in combat); argument kinds: `s`
 
 ### UNIT_RESISTANCES
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `s`
+- Seen firing 29 times (2 in combat); argument kinds: `s`
 
 ### UNIT_SPELLCAST_CHANNEL_START
 
@@ -3219,7 +3288,7 @@
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 913 times (913 in combat); argument kinds: `s,s,n,-`
+- Seen firing 1976 times (1959 in combat); argument kinds: `s,s,n,-`
 
 ### UNIT_SPELLCAST_FAILED_QUIET
 
@@ -3227,7 +3296,7 @@
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 48 times (48 in combat); argument kinds: `s,s,n,-`
+- Seen firing 110 times (106 in combat); argument kinds: `s,s,n,-`
 
 ### UNIT_SPELLCAST_INTERRUPTED
 
@@ -3235,6 +3304,7 @@
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `interruptedBy: WOWGUID`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (2 in combat); argument kinds: `s,s,n,-,-`
 
 ### UNIT_SPELLCAST_INTERRUPTIBLE
 
@@ -3268,7 +3338,7 @@
 - Payload: `unitTarget: UnitTokenVariant`, `target: cstring`, `castGUID: WOWGUID`, `spellID: number`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 156 times (140 in combat); argument kinds: `s,-,s,n` / `s,s,s,n`
+- Seen firing 360 times (304 in combat); argument kinds: `s,-,s,n` / `s,S,s,n` / `s,s,s,n`
 
 ### UNIT_SPELLCAST_START
 
@@ -3276,7 +3346,7 @@
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 11 times (2 in combat); argument kinds: `s,-,n,s` / `s,s,n,s`
+- Seen firing 32 times (7 in combat); argument kinds: `s,-,n,s` / `s,S,S,s` / `s,s,n,s`
 
 ### UNIT_SPELLCAST_STOP
 
@@ -3284,7 +3354,7 @@
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (0 in combat); argument kinds: `s,s,n,s`
+- Seen firing 25 times (3 in combat); argument kinds: `s,S,S,s` / `s,s,n,s`
 
 ### UNIT_SPELLCAST_SUCCEEDED
 
@@ -3292,7 +3362,7 @@
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 144 times (128 in combat); argument kinds: `s,s,n,-` / `s,s,n,s`
+- Seen firing 340 times (279 in combat); argument kinds: `s,S,S,s` / `s,s,n,-` / `s,s,n,s`
 
 ### UNIT_SPELL_HASTE
 
@@ -3311,7 +3381,7 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 73 times (35 in combat); argument kinds: `s`
+- Seen firing 211 times (105 in combat); argument kinds: `s`
 
 ### UNIT_TARGETABLE_CHANGED
 
@@ -3325,7 +3395,7 @@
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 267 times (258 in combat); argument kinds: `s`
+- Seen firing 617 times (583 in combat); argument kinds: `s`
 
 ### UNIT_THREAT_SITUATION_UPDATE
 
@@ -3333,20 +3403,21 @@
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 28 times (17 in combat); argument kinds: `s`
+- Seen firing 75 times (41 in combat); argument kinds: `s`
 
 ### UPDATE_EXHAUSTION
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 25 times (0 in combat); argument kinds: ``
 
 ### UPDATE_MOUSEOVER_UNIT
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 121 times (100 in combat); argument kinds: ``
+- Seen firing 637 times (173 in combat); argument kinds: ``
 
 ### UPDATE_STEALTH
 

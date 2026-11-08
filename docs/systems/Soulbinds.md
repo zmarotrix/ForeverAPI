@@ -18,7 +18,7 @@ Namespace: `C_Soulbinds`
 | ✅ | [C_Soulbinds.FindNodeIDPendingInstall](#c_soulbindsfindnodeidpendinginstall) |  |  |
 | ✅ | [C_Soulbinds.FindNodeIDPendingUninstall](#c_soulbindsfindnodeidpendinguninstall) |  |  |
 | ✅ | [C_Soulbinds.GetActiveSoulbindID](#c_soulbindsgetactivesoulbindid) | 1 value | 1 value |
-| ✅ | [C_Soulbinds.GetConduitCollection](#c_soulbindsgetconduitcollection) |  |  |
+| ✅ | [C_Soulbinds.GetConduitCollection](#c_soulbindsgetconduitcollection) | 1 value | 1 value |
 | ✅ | [C_Soulbinds.GetConduitCollectionCount](#c_soulbindsgetconduitcollectioncount) | 1 value | 1 value |
 | ✅ | [C_Soulbinds.GetConduitCollectionData](#c_soulbindsgetconduitcollectiondata) |  |  |
 | ✅ | [C_Soulbinds.GetConduitCollectionDataAtCursor](#c_soulbindsgetconduitcollectiondataatcursor) | 1 value | 1 value |
@@ -39,7 +39,7 @@ Namespace: `C_Soulbinds`
 | ✅ | [C_Soulbinds.HasPendingConduitsInSoulbind](#c_soulbindshaspendingconduitsinsoulbind) |  |  |
 | ✅ | [C_Soulbinds.IsConduitInstalled](#c_soulbindsisconduitinstalled) |  |  |
 | ✅ | [C_Soulbinds.IsConduitInstalledInSoulbind](#c_soulbindsisconduitinstalledinsoulbind) |  |  |
-| ✅ | [C_Soulbinds.IsItemConduitByItemInfo](#c_soulbindsisitemconduitbyiteminfo) |  |  |
+| ✅ | [C_Soulbinds.IsItemConduitByItemInfo](#c_soulbindsisitemconduitbyiteminfo) | 1 value | 1 value |
 | ✅ | [C_Soulbinds.IsNodePendingModify](#c_soulbindsisnodependingmodify) |  |  |
 | ✅ | [C_Soulbinds.IsUnselectedConduitPendingInSoulbind](#c_soulbindsisunselectedconduitpendinginsoulbind) |  |  |
 | ✅ | [C_Soulbinds.ModifyNode](#c_soulbindsmodifynode) |  |  |
@@ -150,6 +150,8 @@ Namespace: `C_Soulbinds`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `SoulbindsDocumentation.lua`
 
 ### C_Soulbinds.GetConduitCollectionCount
@@ -321,6 +323,8 @@ Namespace: `C_Soulbinds`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SoulbindsDocumentation.lua`
 
 ### C_Soulbinds.IsNodePendingModify

@@ -7,20 +7,20 @@ Namespace: `C_Discord`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_Discord.Authorize](#c_discordauthorize) |  |  |
-| ✅ | [C_Discord.GetDiscordChannelName](#c_discordgetdiscordchannelname) |  |  |
+| ✅ | [C_Discord.GetDiscordChannelName](#c_discordgetdiscordchannelname) | protected | 💥 forbidden |
 | ✅ | [C_Discord.GetDiscordUserID](#c_discordgetdiscorduserid) | 💥 forbidden | 💥 forbidden |
 | ✅ | [C_Discord.GetDiscordUserName](#c_discordgetdiscordusername) |  |  |
 | ✅ | [C_Discord.GetDisplayNameType](#c_discordgetdisplaynametype) | 💥 forbidden | 💥 forbidden |
 | ✅ | [C_Discord.GetGuildLinkStatus](#c_discordgetguildlinkstatus) | 💥 forbidden | 💥 forbidden |
-| ✅ | [C_Discord.GetNumDiscordChannels](#c_discordgetnumdiscordchannels) |  |  |
+| ✅ | [C_Discord.GetNumDiscordChannels](#c_discordgetnumdiscordchannels) | protected | 💥 forbidden |
 | ✅ | [C_Discord.GetNumDiscordServers](#c_discordgetnumdiscordservers) | 💥 forbidden | 💥 forbidden |
-| ✅ | [C_Discord.GetServerLinkableChannels](#c_discordgetserverlinkablechannels) |  |  |
-| ✅ | [C_Discord.GetServerName](#c_discordgetservername) |  |  |
+| ✅ | [C_Discord.GetServerLinkableChannels](#c_discordgetserverlinkablechannels) | protected | 💥 forbidden |
+| ✅ | [C_Discord.GetServerName](#c_discordgetservername) | protected | 💥 forbidden |
 | ✅ | [C_Discord.GuildLink](#c_discordguildlink) |  |  |
 | ✅ | [C_Discord.GuildUnlink](#c_discordguildunlink) |  |  |
 | ✅ | [C_Discord.IsEnabled](#c_discordisenabled) | 1 value | 1 value |
 | ✅ | [C_Discord.IsGuildChannelLinked](#c_discordisguildchannellinked) | 💥 forbidden | 💥 forbidden |
-| ✅ | [C_Discord.IsGuildSettingSet](#c_discordisguildsettingset) |  |  |
+| ✅ | [C_Discord.IsGuildSettingSet](#c_discordisguildsettingset) | protected | 💥 forbidden |
 | ✅ | [C_Discord.IsUserOAuthed](#c_discordisuseroauthed) | 💥 forbidden | 💥 forbidden |
 | ✅ | [C_Discord.IsVoiceEnabled](#c_discordisvoiceenabled) | 1 value | 1 value |
 | ✅ | [C_Discord.RefreshAuth](#c_discordrefreshauth) |  |  |
@@ -43,6 +43,8 @@ Namespace: `C_Discord`
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:1`: ⛔ protected: calling it raised ADDON_ACTION_FORBIDDEN
+- Called in combat: not called: forbidden
 - Source: client docs `DiscordDocumentation.lua`
 
 ### C_Discord.GetDiscordUserID
@@ -91,6 +93,8 @@ Namespace: `C_Discord`
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: ⛔ protected: calling it raised ADDON_ACTION_FORBIDDEN
+- Called in combat: not called: forbidden
 - Source: client docs `DiscordDocumentation.lua`
 
 ### C_Discord.GetNumDiscordServers
@@ -110,6 +114,8 @@ Namespace: `C_Discord`
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: ⛔ protected: calling it raised ADDON_ACTION_FORBIDDEN
+- Called in combat: not called: forbidden
 - Source: client docs `DiscordDocumentation.lua`
 
 ### C_Discord.GetServerName
@@ -119,6 +125,8 @@ Namespace: `C_Discord`
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: ⛔ protected: calling it raised ADDON_ACTION_FORBIDDEN
+- Called in combat: not called: forbidden
 - Source: client docs `DiscordDocumentation.lua`
 
 ### C_Discord.GuildLink
@@ -164,6 +172,8 @@ Namespace: `C_Discord`
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: ⛔ protected: calling it raised ADDON_ACTION_FORBIDDEN
+- Called in combat: not called: forbidden
 - Source: client docs `DiscordDocumentation.lua`
 
 ### C_Discord.IsUserOAuthed

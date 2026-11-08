@@ -14,34 +14,34 @@ Namespace: `C_MountJournal`
 | ✅ | [C_MountJournal.GetAllCreatureDisplayIDsForMountID](#c_mountjournalgetallcreaturedisplayidsformountid) |  |  |
 | ✅ | [C_MountJournal.GetAppliedMountEquipmentID](#c_mountjournalgetappliedmountequipmentid) | 1 value | 1 value |
 | ✅ | [C_MountJournal.GetCollectedDragonridingMounts](#c_mountjournalgetcollecteddragonridingmounts) | 1 value | 1 value |
-| ✅ | [C_MountJournal.GetCollectedFilterSetting](#c_mountjournalgetcollectedfiltersetting) |  |  |
-| ✅ | [C_MountJournal.GetDisplayedMountAllCreatureDisplayInfo](#c_mountjournalgetdisplayedmountallcreaturedisplayinfo) |  |  |
-| ✅ | [C_MountJournal.GetDisplayedMountID](#c_mountjournalgetdisplayedmountid) |  |  |
-| ✅ | [C_MountJournal.GetDisplayedMountInfo](#c_mountjournalgetdisplayedmountinfo) |  |  |
-| ✅ | [C_MountJournal.GetDisplayedMountInfoExtra](#c_mountjournalgetdisplayedmountinfoextra) |  |  |
+| ✅ | [C_MountJournal.GetCollectedFilterSetting](#c_mountjournalgetcollectedfiltersetting) | 1 value | 1 value |
+| ✅ | [C_MountJournal.GetDisplayedMountAllCreatureDisplayInfo](#c_mountjournalgetdisplayedmountallcreaturedisplayinfo) | 1 value | 1 value |
+| ✅ | [C_MountJournal.GetDisplayedMountID](#c_mountjournalgetdisplayedmountid) | 1 value | 1 value |
+| ✅ | [C_MountJournal.GetDisplayedMountInfo](#c_mountjournalgetdisplayedmountinfo) | 13 values | 13 values |
+| ✅ | [C_MountJournal.GetDisplayedMountInfoExtra](#c_mountjournalgetdisplayedmountinfoextra) | 9 values | 9 values |
 | ✅ | [C_MountJournal.GetDynamicFlightModeSpellID](#c_mountjournalgetdynamicflightmodespellid) | 1 value | 1 value |
-| ✅ | [C_MountJournal.GetIsFavorite](#c_mountjournalgetisfavorite) |  |  |
+| ✅ | [C_MountJournal.GetIsFavorite](#c_mountjournalgetisfavorite) | 2 values | 2 values |
 | ✅ | [C_MountJournal.GetMountAllCreatureDisplayInfoByID](#c_mountjournalgetmountallcreaturedisplayinfobyid) |  |  |
 | ✅ | [C_MountJournal.GetMountEquipmentUnlockLevel](#c_mountjournalgetmountequipmentunlocklevel) | 1 value | 1 value |
-| ✅ | [C_MountJournal.GetMountFromItem](#c_mountjournalgetmountfromitem) |  |  |
-| ✅ | [C_MountJournal.GetMountFromSpell](#c_mountjournalgetmountfromspell) |  |  |
+| ✅ | [C_MountJournal.GetMountFromItem](#c_mountjournalgetmountfromitem) | 1 value | 1 value |
+| ✅ | [C_MountJournal.GetMountFromSpell](#c_mountjournalgetmountfromspell) | 1 value | 1 value |
 | ✅ | [C_MountJournal.GetMountIDs](#c_mountjournalgetmountids) | 1 value | 1 value |
 | ✅ | [C_MountJournal.GetMountInfoByID](#c_mountjournalgetmountinfobyid) |  |  |
 | ✅ | [C_MountJournal.GetMountInfoExtraByID](#c_mountjournalgetmountinfoextrabyid) |  |  |
-| ✅ | [C_MountJournal.GetMountLink](#c_mountjournalgetmountlink) |  |  |
+| ✅ | [C_MountJournal.GetMountLink](#c_mountjournalgetmountlink) | 1 value | 1 value |
 | ✅ | [C_MountJournal.GetMountUsabilityByID](#c_mountjournalgetmountusabilitybyid) |  |  |
 | ✅ | [C_MountJournal.GetNumDisplayedMounts](#c_mountjournalgetnumdisplayedmounts) | 1 value | 1 value |
 | ✅ | [C_MountJournal.GetNumMounts](#c_mountjournalgetnummounts) | 1 value | 1 value |
 | ✅ | [C_MountJournal.GetNumMountsNeedingFanfare](#c_mountjournalgetnummountsneedingfanfare) | 1 value | 1 value |
 | ✅ | [C_MountJournal.HasDisplayableMount](#c_mountjournalhasdisplayablemount) | 1 value | 1 value |
 | ✅ | [C_MountJournal.IsDragonridingUnlocked](#c_mountjournalisdragonridingunlocked) | 1 value | 1 value |
-| ✅ | [C_MountJournal.IsItemMountEquipment](#c_mountjournalisitemmountequipment) |  |  |
+| ✅ | [C_MountJournal.IsItemMountEquipment](#c_mountjournalisitemmountequipment) | 1 value | 1 value |
 | ✅ | [C_MountJournal.IsMountEquipmentApplied](#c_mountjournalismountequipmentapplied) | 1 value | 1 value |
-| ✅ | [C_MountJournal.IsSourceChecked](#c_mountjournalissourcechecked) |  |  |
-| ✅ | [C_MountJournal.IsTypeChecked](#c_mountjournalistypechecked) |  |  |
+| ✅ | [C_MountJournal.IsSourceChecked](#c_mountjournalissourcechecked) | 1 value | 1 value |
+| ✅ | [C_MountJournal.IsTypeChecked](#c_mountjournalistypechecked) | 1 value | 1 value |
 | ✅ | [C_MountJournal.IsUsingDefaultFilters](#c_mountjournalisusingdefaultfilters) | 1 value | 1 value |
-| ✅ | [C_MountJournal.IsValidSourceFilter](#c_mountjournalisvalidsourcefilter) |  |  |
-| ✅ | [C_MountJournal.IsValidTypeFilter](#c_mountjournalisvalidtypefilter) |  |  |
+| ✅ | [C_MountJournal.IsValidSourceFilter](#c_mountjournalisvalidsourcefilter) | 1 value | 1 value |
+| ✅ | [C_MountJournal.IsValidTypeFilter](#c_mountjournalisvalidtypefilter) | 1 value | 1 value |
 | ✅ | [C_MountJournal.MountEquipmentAvailable](#c_mountjournalmountequipmentavailable) |  |  |
 | ✅ | [C_MountJournal.NeedsFanfare](#c_mountjournalneedsfanfare) |  |  |
 | ✅ | [C_MountJournal.Pickup](#c_mountjournalpickup) |  |  |
@@ -128,6 +128,8 @@ Namespace: `C_MountJournal`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.GetDisplayedMountAllCreatureDisplayInfo
@@ -137,6 +139,8 @@ Namespace: `C_MountJournal`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `table{[number]=table}`
+- Called in combat: returned 1 value: `table{[number]=table}`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.GetDisplayedMountID
@@ -145,6 +149,8 @@ Namespace: `C_MountJournal`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.GetDisplayedMountInfo
@@ -154,6 +160,8 @@ Namespace: `C_MountJournal`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 13 values: `string`, `number`, `number`, `boolean`, `boolean`, `number`, `boolean`, `boolean`, `nil`, `boolean`, `boolean`, `number`, `boolean`
+- Called in combat: returned 13 values: `string`, `number`, `number`, `boolean`, `boolean`, `number`, `boolean`, `boolean`, `nil`, `boolean`, `boolean`, `number`, `boolean`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.GetDisplayedMountInfoExtra
@@ -163,6 +171,8 @@ Namespace: `C_MountJournal`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 9 values: `number`, `string`, `string`, `boolean`, `number`, `number`, `number`, `number`, `boolean`
+- Called in combat: returned 9 values: `number`, `string`, `string`, `boolean`, `number`, `number`, `number`, `number`, `boolean`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.GetDynamicFlightModeSpellID
@@ -180,6 +190,8 @@ Namespace: `C_MountJournal`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 2 values: `boolean`, `boolean`
+- Called in combat: returned 2 values: `boolean`, `boolean`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.GetMountAllCreatureDisplayInfoByID
@@ -206,6 +218,8 @@ Namespace: `C_MountJournal`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.GetMountFromSpell
@@ -214,6 +228,8 @@ Namespace: `C_MountJournal`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.GetMountIDs
@@ -249,6 +265,8 @@ Namespace: `C_MountJournal`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.GetMountUsabilityByID
@@ -313,6 +331,8 @@ Namespace: `C_MountJournal`
 - Status: ✅ verified (function)
 - Blizzard: Determines if the item is mount equipment based on its class and subclass.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.IsMountEquipmentApplied
@@ -330,6 +350,8 @@ Namespace: `C_MountJournal`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.IsTypeChecked
@@ -338,6 +360,8 @@ Namespace: `C_MountJournal`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.IsUsingDefaultFilters
@@ -355,6 +379,8 @@ Namespace: `C_MountJournal`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.IsValidTypeFilter
@@ -363,6 +389,8 @@ Namespace: `C_MountJournal`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `MountJournalDocumentation.lua`
 
 ### C_MountJournal.MountEquipmentAvailable
@@ -486,14 +514,14 @@ Namespace: `C_MountJournal`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 6 times (0 in combat); argument kinds: ``
+- Seen firing 28 times (0 in combat); argument kinds: ``
 
 ### MOUNT_JOURNAL_USABILITY_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 6 times (1 in combat); argument kinds: ``
+- Seen firing 77 times (6 in combat); argument kinds: ``
 
 ### NEW_MOUNT_ADDED
 

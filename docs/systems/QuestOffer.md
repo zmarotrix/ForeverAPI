@@ -8,7 +8,7 @@ Namespace: `C_QuestOffer`
 |---|---|---|---|
 | ✅ | [C_QuestOffer.GetHideRequiredItems](#c_questoffergethiderequireditems) | 1 value | 1 value |
 | ✅ | [C_QuestOffer.GetQuestOfferMajorFactionReputationRewards](#c_questoffergetquestoffermajorfactionreputationrewards) |  |  |
-| ✅ | [C_QuestOffer.GetQuestRequiredCurrencyInfo](#c_questoffergetquestrequiredcurrencyinfo) |  |  |
+| ✅ | [C_QuestOffer.GetQuestRequiredCurrencyInfo](#c_questoffergetquestrequiredcurrencyinfo) | 1 value | 1 value |
 | ✅ | [C_QuestOffer.GetQuestRewardCurrencyInfo](#c_questoffergetquestrewardcurrencyinfo) |  |  |
 
 ### C_QuestOffer.GetHideRequiredItems
@@ -34,6 +34,8 @@ Namespace: `C_QuestOffer`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `QuestOfferDocumentation.lua`
 
 ### C_QuestOffer.GetQuestRewardCurrencyInfo

@@ -12,7 +12,7 @@ Namespace: `C_PaperDollInfo`
 | ✅ | [C_PaperDollInfo.CursorCanGoInSlot](#c_paperdollinfocursorcangoinslot) |  |  |
 | ✅ | [C_PaperDollInfo.GetArmorEffectiveness](#c_paperdollinfogetarmoreffectiveness) |  |  |
 | ✅ | [C_PaperDollInfo.GetArmorEffectivenessAgainstTarget](#c_paperdollinfogetarmoreffectivenessagainsttarget) |  |  |
-| ✅ | [C_PaperDollInfo.GetInspectAzeriteItemEmpoweredChoices](#c_paperdollinfogetinspectazeriteitemempoweredchoices) |  |  |
+| ✅ | [C_PaperDollInfo.GetInspectAzeriteItemEmpoweredChoices](#c_paperdollinfogetinspectazeriteitemempoweredchoices) | 0 values | 0 values |
 | ✅ | [C_PaperDollInfo.GetInspectGuildInfo](#c_paperdollinfogetinspectguildinfo) |  |  |
 | ✅ | [C_PaperDollInfo.GetInspectItemLevel](#c_paperdollinfogetinspectitemlevel) | 1 value | 1 value |
 | ✅ | [C_PaperDollInfo.GetInspectRatedBGBlitzData](#c_paperdollinfogetinspectratedbgblitzdata) | 1 value | 1 value |
@@ -85,6 +85,8 @@ Namespace: `C_PaperDollInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `PaperDollInfoDocumentation.lua`
 
 ### C_PaperDollInfo.GetInspectGuildInfo
@@ -334,21 +336,21 @@ Namespace: `C_PaperDollInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 15 times (0 in combat); argument kinds: ``
+- Seen firing 58 times (0 in combat); argument kinds: ``
 
 ### UPDATE_INVENTORY_ALERTS
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (1 in combat); argument kinds: ``
+- Seen firing 2 times (1 in combat); argument kinds: ``
 
 ### UPDATE_INVENTORY_DURABILITY
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 10 times (6 in combat); argument kinds: ``
+- Seen firing 103 times (13 in combat); argument kinds: ``
 
 ### WEAPON_SLOT_CHANGED
 

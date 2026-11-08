@@ -9,7 +9,7 @@ Namespace: `C_Navigation`
 | ✅ | [C_Navigation.GetDistance](#c_navigationgetdistance) | 1 value | 1 value |
 | ✅ | [C_Navigation.GetFrame](#c_navigationgetframe) | 1 value | 1 value |
 | ✅ | [C_Navigation.GetNearestPartyMemberToken](#c_navigationgetnearestpartymembertoken) | 💥 forbidden | 💥 forbidden |
-| ✅ | [C_Navigation.GetNextWaypointForMap](#c_navigationgetnextwaypointformap) |  |  |
+| ✅ | [C_Navigation.GetNextWaypointForMap](#c_navigationgetnextwaypointformap) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_Navigation.GetTargetState](#c_navigationgettargetstate) | 1 value | 1 value |
 | ✅ | [C_Navigation.HasValidScreenPosition](#c_navigationhasvalidscreenposition) | 1 value | 1 value |
 | ✅ | [C_Navigation.WasClampedToScreen](#c_navigationwasclampedtoscreen) |  |  |
@@ -49,6 +49,8 @@ Namespace: `C_Navigation`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `InGameNavigationDocumentation.lua`
 
 ### C_Navigation.GetTargetState
@@ -96,7 +98,7 @@ Namespace: `C_Navigation`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 18 times (0 in combat); argument kinds: ``
 
 ## Types
 

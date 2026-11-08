@@ -13,27 +13,27 @@ Namespace: `C_ClubFinder`
 | ✅ | [C_ClubFinder.ClearAllFinderCache](#c_clubfinderclearallfindercache) |  |  |
 | ✅ | [C_ClubFinder.ClearClubApplicantsCache](#c_clubfinderclearclubapplicantscache) |  |  |
 | ✅ | [C_ClubFinder.ClearClubFinderPostingsCache](#c_clubfinderclearclubfinderpostingscache) |  |  |
-| ✅ | [C_ClubFinder.DoesPlayerBelongToClubFromClubGUID](#c_clubfinderdoesplayerbelongtoclubfromclubguid) |  |  |
+| ✅ | [C_ClubFinder.DoesPlayerBelongToClubFromClubGUID](#c_clubfinderdoesplayerbelongtoclubfromclubguid) | 1 value | 1 value |
 | ✅ | [C_ClubFinder.GetClubFinderDisableReason](#c_clubfindergetclubfinderdisablereason) | 1 value | 1 value |
 | ✅ | [C_ClubFinder.GetClubRecruitmentSettings](#c_clubfindergetclubrecruitmentsettings) | 1 value | 1 value |
-| ✅ | [C_ClubFinder.GetClubTypeFromFinderGUID](#c_clubfindergetclubtypefromfinderguid) |  |  |
+| ✅ | [C_ClubFinder.GetClubTypeFromFinderGUID](#c_clubfindergetclubtypefromfinderguid) | 0 values | 0 values |
 | ✅ | [C_ClubFinder.GetFocusIndexFromFlag](#c_clubfindergetfocusindexfromflag) |  |  |
 | ✅ | [C_ClubFinder.GetPlayerApplicantLocaleFlags](#c_clubfindergetplayerapplicantlocaleflags) | 1 value | 1 value |
 | ✅ | [C_ClubFinder.GetPlayerApplicantSettings](#c_clubfindergetplayerapplicantsettings) | 1 value | 1 value |
-| ✅ | [C_ClubFinder.GetPlayerClubApplicationStatus](#c_clubfindergetplayerclubapplicationstatus) |  |  |
+| ✅ | [C_ClubFinder.GetPlayerClubApplicationStatus](#c_clubfindergetplayerclubapplicationstatus) | 1 value | 1 value |
 | ✅ | [C_ClubFinder.GetPlayerSettingsFocusFlagsSelectedCount](#c_clubfindergetplayersettingsfocusflagsselectedcount) | 1 value | 1 value |
-| ✅ | [C_ClubFinder.GetPostingIDFromClubFinderGUID](#c_clubfindergetpostingidfromclubfinderguid) |  |  |
-| ✅ | [C_ClubFinder.GetRecruitingClubInfoFromClubID](#c_clubfindergetrecruitingclubinfofromclubid) |  |  |
-| ✅ | [C_ClubFinder.GetRecruitingClubInfoFromFinderGUID](#c_clubfindergetrecruitingclubinfofromfinderguid) |  |  |
-| ✅ | [C_ClubFinder.GetStatusOfPostingFromClubId](#c_clubfindergetstatusofpostingfromclubid) |  |  |
+| ✅ | [C_ClubFinder.GetPostingIDFromClubFinderGUID](#c_clubfindergetpostingidfromclubfinderguid) | 1 value | 1 value |
+| ✅ | [C_ClubFinder.GetRecruitingClubInfoFromClubID](#c_clubfindergetrecruitingclubinfofromclubid) | 1 value | 1 value |
+| ✅ | [C_ClubFinder.GetRecruitingClubInfoFromFinderGUID](#c_clubfindergetrecruitingclubinfofromfinderguid) | 1 value | 1 value |
+| ✅ | [C_ClubFinder.GetStatusOfPostingFromClubId](#c_clubfindergetstatusofpostingfromclubid) | 1 value | 1 value |
 | ✅ | [C_ClubFinder.GetTotalMatchingCommunityListSize](#c_clubfindergettotalmatchingcommunitylistsize) | 1 value | 1 value |
 | ✅ | [C_ClubFinder.GetTotalMatchingGuildListSize](#c_clubfindergettotalmatchingguildlistsize) | 1 value | 1 value |
-| ✅ | [C_ClubFinder.HasAlreadyAppliedToLinkedPosting](#c_clubfinderhasalreadyappliedtolinkedposting) |  |  |
-| ✅ | [C_ClubFinder.HasPostingBeenDelisted](#c_clubfinderhaspostingbeendelisted) |  |  |
+| ✅ | [C_ClubFinder.HasAlreadyAppliedToLinkedPosting](#c_clubfinderhasalreadyappliedtolinkedposting) | 1 value | 1 value |
+| ✅ | [C_ClubFinder.HasPostingBeenDelisted](#c_clubfinderhaspostingbeendelisted) | 1 value | 1 value |
 | ✅ | [C_ClubFinder.IsCommunityFinderEnabled](#c_clubfinderiscommunityfinderenabled) | 1 value | 1 value |
 | ✅ | [C_ClubFinder.IsEnabled](#c_clubfinderisenabled) | 1 value | 1 value |
 | ✅ | [C_ClubFinder.IsListingEnabledFromFlags](#c_clubfinderislistingenabledfromflags) |  |  |
-| ✅ | [C_ClubFinder.IsPostingBanned](#c_clubfinderispostingbanned) |  |  |
+| ✅ | [C_ClubFinder.IsPostingBanned](#c_clubfinderispostingbanned) | 1 value | 1 value |
 | ✅ | [C_ClubFinder.IsValidSearchString](#c_clubfinderisvalidsearchstring) |  |  |
 | ✅ | [C_ClubFinder.LookupClubPostingFromClubFinderGUID](#c_clubfinderlookupclubpostingfromclubfinderguid) |  |  |
 | ✅ | [C_ClubFinder.PlayerGetClubInvitationList](#c_clubfinderplayergetclubinvitationlist) |  |  |
@@ -123,6 +123,8 @@ Namespace: `C_ClubFinder`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ClubFinderDocumentation.lua`
 
 ### C_ClubFinder.GetClubFinderDisableReason
@@ -150,6 +152,8 @@ Namespace: `C_ClubFinder`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ClubFinderDocumentation.lua`
 
 ### C_ClubFinder.GetFocusIndexFromFlag
@@ -184,6 +188,8 @@ Namespace: `C_ClubFinder`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ClubFinderDocumentation.lua`
 
 ### C_ClubFinder.GetPlayerSettingsFocusFlagsSelectedCount
@@ -201,6 +207,8 @@ Namespace: `C_ClubFinder`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ClubFinderDocumentation.lua`
 
 ### C_ClubFinder.GetRecruitingClubInfoFromClubID
@@ -209,6 +217,8 @@ Namespace: `C_ClubFinder`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `club`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `ClubFinderDocumentation.lua`
 
 ### C_ClubFinder.GetRecruitingClubInfoFromFinderGUID
@@ -217,6 +227,8 @@ Namespace: `C_ClubFinder`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `table{cacheRequested=number,cached=number,clubId=number,comment=string,emblemInfo=number,guildLeader=string,isCrossFaction=boolean,isGuild=boolean,lastUpdatedTime=number,localeSet=boolean,minILvl=number,name=string,numActiveMembers=number,recruitingSpecIds=table,recruitmentFlags=number,recruitmentLocale=number}`
+- Called in combat: returned 1 value: `table{cacheRequested=number,cached=number,clubId=number,comment=string,emblemInfo=number,guildLeader=string,isCrossFaction=boolean,isGuild=boolean,lastUpdatedTime=number,localeSet=boolean,minILvl=number,name=string,numActiveMembers=number,recruitingSpecIds=table,recruitmentFlags=number,recruitmentLocale=number}`
 - Source: client docs `ClubFinderDocumentation.lua`
 
 ### C_ClubFinder.GetStatusOfPostingFromClubId
@@ -225,6 +237,8 @@ Namespace: `C_ClubFinder`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `club`: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `ClubFinderDocumentation.lua`
 
 ### C_ClubFinder.GetTotalMatchingCommunityListSize
@@ -251,6 +265,8 @@ Namespace: `C_ClubFinder`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ClubFinderDocumentation.lua`
 
 ### C_ClubFinder.HasPostingBeenDelisted
@@ -259,6 +275,8 @@ Namespace: `C_ClubFinder`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `club`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ClubFinderDocumentation.lua`
 
 ### C_ClubFinder.IsCommunityFinderEnabled
@@ -293,6 +311,8 @@ Namespace: `C_ClubFinder`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `club`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ClubFinderDocumentation.lua`
 
 ### C_ClubFinder.IsValidSearchString

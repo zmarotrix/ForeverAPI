@@ -12,8 +12,8 @@ Namespace: `C_DyeColor`
 | 🆕 | [C_DyeColor.GetDyeColorForItem](#c_dyecolorgetdyecolorforitem) |  |  |
 | 🆕 | [C_DyeColor.GetDyeColorForItemLocation](#c_dyecolorgetdyecolorforitemlocation) |  |  |
 | ✅ | [C_DyeColor.GetDyeColorInfo](#c_dyecolorgetdyecolorinfo) |  |  |
-| ✅ | [C_DyeColor.GetDyeColorsForItem](#c_dyecolorgetdyecolorsforitem) |  |  |
-| ✅ | [C_DyeColor.GetDyeColorsForItemLocation](#c_dyecolorgetdyecolorsforitemlocation) |  |  |
+| ✅ | [C_DyeColor.GetDyeColorsForItem](#c_dyecolorgetdyecolorsforitem) | 1 value | 1 value |
+| ✅ | [C_DyeColor.GetDyeColorsForItemLocation](#c_dyecolorgetdyecolorsforitemlocation) | 1 value | 1 value |
 | ✅ | [C_DyeColor.GetDyeColorsInCategory](#c_dyecolorgetdyecolorsincategory) |  |  |
 | ✅ | [C_DyeColor.IsDyeColorOwned](#c_dyecolorisdyecolorowned) |  |  |
 
@@ -70,6 +70,8 @@ Namespace: `C_DyeColor`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `DyeColorInfoDocumentation.lua`
 
 ### C_DyeColor.GetDyeColorsForItemLocation
@@ -78,6 +80,8 @@ Namespace: `C_DyeColor`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `DyeColorInfoDocumentation.lua`
 
 ### C_DyeColor.GetDyeColorsInCategory

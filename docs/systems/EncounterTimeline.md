@@ -8,13 +8,13 @@ Namespace: `C_EncounterTimeline`
 |---|---|---|---|
 | ✅ | [C_EncounterTimeline.AddEditModeEvents](#c_encountertimelineaddeditmodeevents) |  |  |
 | ✅ | [C_EncounterTimeline.AddScriptEvent](#c_encountertimelineaddscriptevent) |  |  |
-| ✅ | [C_EncounterTimeline.CancelAllScriptEvents](#c_encountertimelinecancelallscriptevents) | 0 values | 0 values |
-| ✅ | [C_EncounterTimeline.CancelEditModeEvents](#c_encountertimelinecanceleditmodeevents) | 0 values | 0 values |
+| ✅ | [C_EncounterTimeline.CancelAllScriptEvents](#c_encountertimelinecancelallscriptevents) |  |  |
+| ✅ | [C_EncounterTimeline.CancelEditModeEvents](#c_encountertimelinecanceleditmodeevents) |  |  |
 | ✅ | [C_EncounterTimeline.CancelScriptEvent](#c_encountertimelinecancelscriptevent) |  |  |
 | ✅ | [C_EncounterTimeline.FinishScriptEvent](#c_encountertimelinefinishscriptevent) |  |  |
 | ✅ | [C_EncounterTimeline.GetCurrentTime](#c_encountertimelinegetcurrenttime) | 1 value | 1 value |
 | ✅ | [C_EncounterTimeline.GetEventColor](#c_encountertimelinegeteventcolor) |  |  |
-| ✅ | [C_EncounterTimeline.GetEventCountBySource](#c_encountertimelinegeteventcountbysource) |  |  |
+| ✅ | [C_EncounterTimeline.GetEventCountBySource](#c_encountertimelinegeteventcountbysource) | 1 value | 1 value |
 | ✅ | [C_EncounterTimeline.GetEventHighlightTime](#c_encountertimelinegeteventhighlighttime) | 1 value | 1 value |
 | ✅ | [C_EncounterTimeline.GetEventInfo](#c_encountertimelinegeteventinfo) |  |  |
 | ✅ | [C_EncounterTimeline.GetEventList](#c_encountertimelinegeteventlist) | 1 value | 1 value |
@@ -24,10 +24,10 @@ Namespace: `C_EncounterTimeline`
 | ✅ | [C_EncounterTimeline.GetEventTimer](#c_encountertimelinegeteventtimer) |  |  |
 | ✅ | [C_EncounterTimeline.GetEventTrack](#c_encountertimelinegeteventtrack) |  |  |
 | ✅ | [C_EncounterTimeline.GetSortedEventList](#c_encountertimelinegetsortedeventlist) | 1 value | 1 value |
-| ✅ | [C_EncounterTimeline.GetTrackInfo](#c_encountertimelinegettrackinfo) |  |  |
+| ✅ | [C_EncounterTimeline.GetTrackInfo](#c_encountertimelinegettrackinfo) | 1 value | 1 value |
 | ✅ | [C_EncounterTimeline.GetTrackList](#c_encountertimelinegettracklist) | 1 value | 1 value |
-| ✅ | [C_EncounterTimeline.GetTrackMaxEventDuration](#c_encountertimelinegettrackmaxeventduration) |  |  |
-| ✅ | [C_EncounterTimeline.GetTrackType](#c_encountertimelinegettracktype) |  |  |
+| ✅ | [C_EncounterTimeline.GetTrackMaxEventDuration](#c_encountertimelinegettrackmaxeventduration) | 1 value | 1 value |
+| ✅ | [C_EncounterTimeline.GetTrackType](#c_encountertimelinegettracktype) | 1 value | 1 value |
 | ✅ | [C_EncounterTimeline.GetViewType](#c_encountertimelinegetviewtype) | 1 value | 1 value |
 | ✅ | [C_EncounterTimeline.HasActiveEvents](#c_encountertimelinehasactiveevents) | 1 value | 1 value |
 | ✅ | [C_EncounterTimeline.HasAnyEvents](#c_encountertimelinehasanyevents) | 1 value | 1 value |
@@ -64,8 +64,6 @@ Namespace: `C_EncounterTimeline`
 
 - Status: ✅ verified (function)
 - Blizzard: Cancels all custom timeline events, removing them from the timeline.
-- Called out of combat: returned 0 values
-- Called in combat: returned 0 values
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
 ### C_EncounterTimeline.CancelEditModeEvents
@@ -74,8 +72,6 @@ Namespace: `C_EncounterTimeline`
 
 - Status: ✅ verified (function)
 - Blizzard: Removes all Edit Mode events from the timeline.
-- Called out of combat: returned 0 values
-- Called in combat: returned 0 values
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
 ### C_EncounterTimeline.CancelScriptEvent
@@ -126,6 +122,8 @@ Namespace: `C_EncounterTimeline`
 - Status: ✅ verified (function)
 - Blizzard: Returns the number of present events in the timeline by their source type.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
 ### C_EncounterTimeline.GetEventHighlightTime
@@ -230,6 +228,8 @@ Namespace: `C_EncounterTimeline`
 - Status: ✅ verified (function)
 - Blizzard: Returns information for a single timeline track.
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `table{id=number,maximumDuration=number,maximumEventCount=number,minimumDuration=number,minimumEventGapDuration=number,minimumEventIntroDuration=number,sortDirection=number,type=number}`
+- Called in combat: returned 1 value: `table{id=number,maximumDuration=number,maximumEventCount=number,minimumDuration=number,minimumEventGapDuration=number,minimumEventIntroDuration=number,sortDirection=number,type=number}`
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
 ### C_EncounterTimeline.GetTrackList
@@ -249,6 +249,8 @@ Namespace: `C_EncounterTimeline`
 - Status: ✅ verified (function)
 - Blizzard: Returns the maximum permitted event duration on a single timeline track.
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
 ### C_EncounterTimeline.GetTrackType
@@ -258,6 +260,8 @@ Namespace: `C_EncounterTimeline`
 - Status: ✅ verified (function)
 - Blizzard: Returns the type of a single timeline track.
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
 ### C_EncounterTimeline.GetViewType
@@ -439,7 +443,7 @@ Namespace: `C_EncounterTimeline`
 - Payload: none
 - Blizzard: Fired when the layout of tracks on the timeline has been updated. This can include changes to the minimum or maximum durations of tracks.
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 12 times (0 in combat); argument kinds: ``
 
 ### ENCOUNTER_TIMELINE_STATE_UPDATED
 

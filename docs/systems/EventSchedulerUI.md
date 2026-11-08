@@ -132,7 +132,7 @@ Namespace: `C_EventScheduler`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 12 times (0 in combat); argument kinds: ``
 
 ## Types
 

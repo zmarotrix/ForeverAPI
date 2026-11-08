@@ -7,38 +7,38 @@ Namespace: `C_HousingDecor`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_HousingDecor.AnyDecorPlacedInRoom](#c_housingdecoranydecorplacedinroom) |  |  |
-| ✅ | [C_HousingDecor.CancelActiveEditing](#c_housingdecorcancelactiveediting) | 0 values | 0 values |
+| ✅ | [C_HousingDecor.CancelActiveEditing](#c_housingdecorcancelactiveediting) |  |  |
 | ✅ | [C_HousingDecor.CommitDecorMovement](#c_housingdecorcommitdecormovement) |  |  |
 | ✅ | [C_HousingDecor.EnterPreviewState](#c_housingdecorenterpreviewstate) |  |  |
 | ✅ | [C_HousingDecor.ExitPreviewState](#c_housingdecorexitpreviewstate) |  |  |
-| ✅ | [C_HousingDecor.GetAllMaxPlacementBudgets](#c_housingdecorgetallmaxplacementbudgets) | 2 values | 2 values |
-| ✅ | [C_HousingDecor.GetAllPlacedDecor](#c_housingdecorgetallplaceddecor) | 💥 forbidden | 💥 forbidden |
-| ✅ | [C_HousingDecor.GetAllSpentPlacementBudgets](#c_housingdecorgetallspentplacementbudgets) | 2 values | 2 values |
-| ✅ | [C_HousingDecor.GetDecorAssignedPetName](#c_housingdecorgetdecorassignedpetname) |  |  |
+| ✅ | [C_HousingDecor.GetAllMaxPlacementBudgets](#c_housingdecorgetallmaxplacementbudgets) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingDecor.GetAllPlacedDecor](#c_housingdecorgetallplaceddecor) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingDecor.GetAllSpentPlacementBudgets](#c_housingdecorgetallspentplacementbudgets) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingDecor.GetDecorAssignedPetName](#c_housingdecorgetdecorassignedpetname) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | ✅ | [C_HousingDecor.GetDecorCanAttachPet](#c_housingdecorgetdecorcanattachpet) |  |  |
 | 🆕 | [C_HousingDecor.GetDecorDebugInfoForGUID](#c_housingdecorgetdecordebuginfoforguid) |  |  |
 | ✅ | [C_HousingDecor.GetDecorHyperlink](#c_housingdecorgetdecorhyperlink) |  |  |
 | ✅ | [C_HousingDecor.GetDecorIcon](#c_housingdecorgetdecoricon) |  |  |
-| ✅ | [C_HousingDecor.GetDecorInstanceInfoForGUID](#c_housingdecorgetdecorinstanceinfoforguid) |  |  |
+| ✅ | [C_HousingDecor.GetDecorInstanceInfoForGUID](#c_housingdecorgetdecorinstanceinfoforguid) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | ✅ | [C_HousingDecor.GetDecorName](#c_housingdecorgetdecorname) |  |  |
 | 🆕 | [C_HousingDecor.GetHoveredDecorDebugInfo](#c_housingdecorgethovereddecordebuginfo) |  |  |
-| ✅ | [C_HousingDecor.GetHoveredDecorInfo](#c_housingdecorgethovereddecorinfo) | 1 value | 1 value |
-| ✅ | [C_HousingDecor.GetMaxPetPlacementBudget](#c_housingdecorgetmaxpetplacementbudget) | 1 value | 1 value |
-| ✅ | [C_HousingDecor.GetMaxPlacementBudget](#c_housingdecorgetmaxplacementbudget) | 1 value | 1 value |
-| ✅ | [C_HousingDecor.GetNumDecorPlaced](#c_housingdecorgetnumdecorplaced) | 1 value | 1 value |
-| ✅ | [C_HousingDecor.GetNumPreviewDecor](#c_housingdecorgetnumpreviewdecor) | 1 value | 1 value |
+| ✅ | [C_HousingDecor.GetHoveredDecorInfo](#c_housingdecorgethovereddecorinfo) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingDecor.GetMaxPetPlacementBudget](#c_housingdecorgetmaxpetplacementbudget) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingDecor.GetMaxPlacementBudget](#c_housingdecorgetmaxplacementbudget) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingDecor.GetNumDecorPlaced](#c_housingdecorgetnumdecorplaced) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingDecor.GetNumPreviewDecor](#c_housingdecorgetnumpreviewdecor) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | 🆕 | [C_HousingDecor.GetSelectedDecorDebugInfo](#c_housingdecorgetselecteddecordebuginfo) |  |  |
-| ✅ | [C_HousingDecor.GetSelectedDecorInfo](#c_housingdecorgetselecteddecorinfo) | 1 value | 1 value |
-| ✅ | [C_HousingDecor.GetSpentPetPlacementBudget](#c_housingdecorgetspentpetplacementbudget) | 1 value | 1 value |
-| ✅ | [C_HousingDecor.GetSpentPlacementBudget](#c_housingdecorgetspentplacementbudget) | 1 value | 1 value |
-| ✅ | [C_HousingDecor.HasMaxPlacementBudget](#c_housingdecorhasmaxplacementbudget) | 1 value | 1 value |
-| ✅ | [C_HousingDecor.IsDecorSelected](#c_housingdecorisdecorselected) | 1 value | 1 value |
-| ✅ | [C_HousingDecor.IsGridVisible](#c_housingdecorisgridvisible) | 1 value | 1 value |
-| ✅ | [C_HousingDecor.IsHouseExteriorDoorHovered](#c_housingdecorishouseexteriordoorhovered) | 1 value | 1 value |
-| ✅ | [C_HousingDecor.IsHouseExteriorHovered](#c_housingdecorishouseexteriorhovered) | 1 value | 1 value |
-| ✅ | [C_HousingDecor.IsHoveringDecor](#c_housingdecorishoveringdecor) | 1 value | 1 value |
-| ✅ | [C_HousingDecor.IsModeDisabledForPreviewState](#c_housingdecorismodedisabledforpreviewstate) |  |  |
-| ✅ | [C_HousingDecor.IsPreviewState](#c_housingdecorispreviewstate) | 1 value | 1 value |
+| ✅ | [C_HousingDecor.GetSelectedDecorInfo](#c_housingdecorgetselecteddecorinfo) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingDecor.GetSpentPetPlacementBudget](#c_housingdecorgetspentpetplacementbudget) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingDecor.GetSpentPlacementBudget](#c_housingdecorgetspentplacementbudget) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingDecor.HasMaxPlacementBudget](#c_housingdecorhasmaxplacementbudget) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingDecor.IsDecorSelected](#c_housingdecorisdecorselected) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingDecor.IsGridVisible](#c_housingdecorisgridvisible) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingDecor.IsHouseExteriorDoorHovered](#c_housingdecorishouseexteriordoorhovered) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingDecor.IsHouseExteriorHovered](#c_housingdecorishouseexteriorhovered) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingDecor.IsHoveringDecor](#c_housingdecorishoveringdecor) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingDecor.IsModeDisabledForPreviewState](#c_housingdecorismodedisabledforpreviewstate) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
+| ✅ | [C_HousingDecor.IsPreviewState](#c_housingdecorispreviewstate) | 💥 crashed the client (whole namespace skipped) | 💥 crashed the client (whole namespace skipped) |
 | ✅ | [C_HousingDecor.RemovePlacedDecorEntry](#c_housingdecorremoveplaceddecorentry) |  |  |
 | ✅ | [C_HousingDecor.RemoveSelectedDecor](#c_housingdecorremoveselecteddecor) |  |  |
 | ✅ | [C_HousingDecor.SetGridVisible](#c_housingdecorsetgridvisible) |  |  |
@@ -60,8 +60,6 @@ Namespace: `C_HousingDecor`
 
 - Status: ✅ verified (function)
 - Blizzard: Cancels all in-progress editing of the selected target, which will reset any unsaved changes and deselect the active target
-- Called out of combat: returned 0 values
-- Called in combat: returned 0 values
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.CommitDecorMovement
@@ -94,8 +92,8 @@ Namespace: `C_HousingDecor`
 - Blizzard: Returns the interior and exterior max decor placement budgets for the current owned house interior or plot; Can be increased via house level
 - `interiorMaxBudgets`: Map of budget type to max budget amount; Will be nil if not in an owned House or Plot
 - `exteriorMaxBudgets`: Map of budget type to max budget amount; Will be nil if not in an owned House or Plot
-- Called out of combat: returned 2 values: `nil`, `nil`
-- Called in combat: returned 2 values: `nil`, `nil`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.GetAllPlacedDecor
@@ -105,8 +103,8 @@ Namespace: `C_HousingDecor`
 - Status: ✅ verified (function)
 - Blizzard: Placed Decor List APIs currently restricted due to being potentially very expensive operations, may be reworked & opened up in the future
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: not called: forbidden
-- Called in combat: not called: forbidden
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.GetAllSpentPlacementBudgets
@@ -117,8 +115,8 @@ Namespace: `C_HousingDecor`
 - Blizzard: Returns how much of the interior and exterior placement budgets for the current owned house interior or plot's decor budget have been spent
 - `interiorSpentBudgets`: Map of budget type to spent budget amount; Will be nil if not in an owned House or Plot
 - `exteriorSpentBudgets`: Map of budget type to spent budget amount; Will be nil if not in an owned House or Plot
-- Called out of combat: returned 2 values: `nil`, `nil`
-- Called in combat: returned 2 values: `nil`, `nil`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.GetDecorAssignedPetName
@@ -128,6 +126,8 @@ Namespace: `C_HousingDecor`
 - Status: ✅ verified (function)
 - Blizzard: Returns pet name for the placed decor instance associated with the passed Decor GUID, if there is one
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.GetDecorCanAttachPet
@@ -169,6 +169,8 @@ Namespace: `C_HousingDecor`
 - Status: ✅ verified (function)
 - Blizzard: Returns info for the placed decor instance associated with the passed Decor GUID, if there is one
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.GetDecorName
@@ -192,8 +194,8 @@ Namespace: `C_HousingDecor`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns info for the placed decor instance currently being hovered, if there is one
-- Called out of combat: returned 1 value: `nil`
-- Called in combat: returned 1 value: `nil`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.GetMaxPetPlacementBudget
@@ -203,8 +205,8 @@ Namespace: `C_HousingDecor`
 - Status: ✅ verified (function)
 - Blizzard: Returns the max pet decor placement budget for the current owned house interior or plot
 - `maxBudget`: Will be nil if not in an owned House or Plot
-- Called out of combat: returned 1 value: `nil`
-- Called in combat: returned 1 value: `nil`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.GetMaxPlacementBudget
@@ -214,8 +216,8 @@ Namespace: `C_HousingDecor`
 - Status: ✅ verified (function)
 - Blizzard: Returns the max decor placement budget for the current owned house interior or plot; Can be increased via house level
 - `maxBudget`: Will be nil if not in an owned House or Plot
-- Called out of combat: returned 1 value: `number`
-- Called in combat: returned 1 value: `number`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.GetNumDecorPlaced
@@ -224,8 +226,8 @@ Namespace: `C_HousingDecor`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns the number of individual decor objects placed in the current house or plot; This is NOT the value used in placement budget calculations, see GetSpentPlacementBudget for that
-- Called out of combat: returned 1 value: `number`
-- Called in combat: returned 1 value: `number`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.GetNumPreviewDecor
@@ -233,8 +235,8 @@ Namespace: `C_HousingDecor`
 `C_HousingDecor.GetNumPreviewDecor() → numDecor: number`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `number`
-- Called in combat: returned 1 value: `number`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.GetSelectedDecorDebugInfo
@@ -249,8 +251,8 @@ Namespace: `C_HousingDecor`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns info for the placed decor instance that's currently selected, if there is one
-- Called out of combat: returned 1 value: `nil`
-- Called in combat: returned 1 value: `nil`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.GetSpentPetPlacementBudget
@@ -260,8 +262,8 @@ Namespace: `C_HousingDecor`
 - Status: ✅ verified (function)
 - Blizzard: Returns how much of the current owned house interior or plot's pet decor placement budget has been spent
 - `totalCost`: Will be nil if not in an owned House or Plot
-- Called out of combat: returned 1 value: `nil`
-- Called in combat: returned 1 value: `nil`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.GetSpentPlacementBudget
@@ -271,8 +273,8 @@ Namespace: `C_HousingDecor`
 - Status: ✅ verified (function)
 - Blizzard: Returns how much of the current owned house interior or plot's decor placement budget has been spent; Different kinds of decor take up different budget amounts, so this value isn't an individual decor count, see GetNumDecorPlaced for that
 - `totalCost`: Will be nil if not in an owned House or Plot
-- Called out of combat: returned 1 value: `number`
-- Called in combat: returned 1 value: `number`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.HasMaxPlacementBudget
@@ -281,8 +283,8 @@ Namespace: `C_HousingDecor`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns whether there's a max decor placement budget available and active for the current player, in the current house interior or plot
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.IsDecorSelected
@@ -291,8 +293,8 @@ Namespace: `C_HousingDecor`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a placed decor instance is currently selected
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.IsGridVisible
@@ -300,8 +302,8 @@ Namespace: `C_HousingDecor`
 `C_HousingDecor.IsGridVisible() → gridVisible: bool`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.IsHouseExteriorDoorHovered
@@ -310,8 +312,8 @@ Namespace: `C_HousingDecor`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the entry door of the house's exterior is currently being hovered
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.IsHouseExteriorHovered
@@ -320,8 +322,8 @@ Namespace: `C_HousingDecor`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the house's exterior is currently being hovered
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.IsHoveringDecor
@@ -330,8 +332,8 @@ Namespace: `C_HousingDecor`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a placed decor instance is currently being hovered
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.IsModeDisabledForPreviewState
@@ -340,6 +342,8 @@ Namespace: `C_HousingDecor`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.IsPreviewState
@@ -347,8 +351,8 @@ Namespace: `C_HousingDecor`
 `C_HousingDecor.IsPreviewState() → isPreviewState: bool`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `boolean`
-- Called in combat: returned 1 value: `boolean`
+- Called out of combat: 💥 not called: crashed the client (whole namespace skipped)
+- Called in combat: 💥 not called: crashed the client (whole namespace skipped)
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.RemovePlacedDecorEntry

@@ -6,12 +6,12 @@ Namespace: `C_ReportSystem`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_ReportSystem.CanReportPlayer](#c_reportsystemcanreportplayer) |  |  |
-| ✅ | [C_ReportSystem.CanReportPlayerForLanguage](#c_reportsystemcanreportplayerforlanguage) |  |  |
-| ✅ | [C_ReportSystem.GetMajorCategoriesForReportType](#c_reportsystemgetmajorcategoriesforreporttype) |  |  |
-| ✅ | [C_ReportSystem.GetMajorCategoryString](#c_reportsystemgetmajorcategorystring) |  |  |
-| ✅ | [C_ReportSystem.GetMinorCategoriesForReportTypeAndMajorCategory](#c_reportsystemgetminorcategoriesforreporttypeandmajorcategory) |  |  |
-| ✅ | [C_ReportSystem.GetMinorCategoryString](#c_reportsystemgetminorcategorystring) |  |  |
+| ✅ | [C_ReportSystem.CanReportPlayer](#c_reportsystemcanreportplayer) | 1 value | 1 value |
+| ✅ | [C_ReportSystem.CanReportPlayerForLanguage](#c_reportsystemcanreportplayerforlanguage) | 1 value | 1 value |
+| ✅ | [C_ReportSystem.GetMajorCategoriesForReportType](#c_reportsystemgetmajorcategoriesforreporttype) | 1 value | 1 value |
+| ✅ | [C_ReportSystem.GetMajorCategoryString](#c_reportsystemgetmajorcategorystring) | 1 value | 1 value |
+| ✅ | [C_ReportSystem.GetMinorCategoriesForReportTypeAndMajorCategory](#c_reportsystemgetminorcategoriesforreporttypeandmajorcategory) | 1 value | 1 value |
+| ✅ | [C_ReportSystem.GetMinorCategoryString](#c_reportsystemgetminorcategorystring) | 1 value | 1 value |
 | ✅ | [C_ReportSystem.ReportServerLag](#c_reportsystemreportserverlag) |  |  |
 | ✅ | [C_ReportSystem.ReportStuckInCombat](#c_reportsystemreportstuckincombat) |  |  |
 | ✅ | [C_ReportSystem.RequiresScreenshotForReportType](#c_reportsystemrequiresscreenshotforreporttype) |  |  |
@@ -25,6 +25,8 @@ Namespace: `C_ReportSystem`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `playerloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ReportSystemDocumentation.lua`
 
 ### C_ReportSystem.CanReportPlayerForLanguage
@@ -33,6 +35,8 @@ Namespace: `C_ReportSystem`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `playerloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ReportSystemDocumentation.lua`
 
 ### C_ReportSystem.GetMajorCategoriesForReportType
@@ -41,6 +45,8 @@ Namespace: `C_ReportSystem`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `table{[number]=number,[number]=number}`
+- Called in combat: returned 1 value: `table{[number]=number,[number]=number}`
 - Source: client docs `ReportSystemDocumentation.lua`
 
 ### C_ReportSystem.GetMajorCategoryString
@@ -49,6 +55,8 @@ Namespace: `C_ReportSystem`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `ReportSystemDocumentation.lua`
 
 ### C_ReportSystem.GetMinorCategoriesForReportTypeAndMajorCategory
@@ -57,6 +65,8 @@ Namespace: `C_ReportSystem`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:0`: returned 1 value: `table{[number]=number,[number]=number,[number]=number,[number]=number,[number]=number}`
+- Called in combat: returned 1 value: `table{[number]=number,[number]=number,[number]=number,[number]=number,[number]=number}`
 - Source: client docs `ReportSystemDocumentation.lua`
 
 ### C_ReportSystem.GetMinorCategoryString
@@ -65,6 +75,8 @@ Namespace: `C_ReportSystem`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `ReportSystemDocumentation.lua`
 
 ### C_ReportSystem.ReportServerLag

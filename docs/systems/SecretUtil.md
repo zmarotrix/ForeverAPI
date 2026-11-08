@@ -6,33 +6,33 @@ Namespace: `C_Secrets`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_Secrets.CanCompareUnitTokens](#c_secretscancompareunittokens) |  |  |
-| ✅ | [C_Secrets.GetPowerTypeSecrecy](#c_secretsgetpowertypesecrecy) |  |  |
-| ✅ | [C_Secrets.GetSpellAuraSecrecy](#c_secretsgetspellaurasecrecy) |  |  |
-| ✅ | [C_Secrets.GetSpellCastSecrecy](#c_secretsgetspellcastsecrecy) |  |  |
-| ✅ | [C_Secrets.GetSpellCooldownSecrecy](#c_secretsgetspellcooldownsecrecy) |  |  |
+| ✅ | [C_Secrets.CanCompareUnitTokens](#c_secretscancompareunittokens) | 1 value | 1 value |
+| ✅ | [C_Secrets.GetPowerTypeSecrecy](#c_secretsgetpowertypesecrecy) | 1 value | 1 value |
+| ✅ | [C_Secrets.GetSpellAuraSecrecy](#c_secretsgetspellaurasecrecy) | 1 value | 1 value |
+| ✅ | [C_Secrets.GetSpellCastSecrecy](#c_secretsgetspellcastsecrecy) | 1 value | 1 value |
+| ✅ | [C_Secrets.GetSpellCooldownSecrecy](#c_secretsgetspellcooldownsecrecy) | 1 value | 1 value |
 | ✅ | [C_Secrets.HasSecretRestrictions](#c_secretshassecretrestrictions) | 1 value | 1 value |
-| ✅ | [C_Secrets.ShouldActionCooldownBeSecret](#c_secretsshouldactioncooldownbesecret) |  |  |
+| ✅ | [C_Secrets.ShouldActionCooldownBeSecret](#c_secretsshouldactioncooldownbesecret) | 1 value | 1 value |
 | ✅ | [C_Secrets.ShouldAurasBeSecret](#c_secretsshouldaurasbesecret) | 1 value | 1 value |
 | ✅ | [C_Secrets.ShouldCooldownsBeSecret](#c_secretsshouldcooldownsbesecret) | 1 value | 1 value |
-| ✅ | [C_Secrets.ShouldSpellAuraBeSecret](#c_secretsshouldspellaurabesecret) |  |  |
-| ✅ | [C_Secrets.ShouldSpellBookItemCooldownBeSecret](#c_secretsshouldspellbookitemcooldownbesecret) |  |  |
-| ✅ | [C_Secrets.ShouldSpellCooldownBeSecret](#c_secretsshouldspellcooldownbesecret) |  |  |
-| ✅ | [C_Secrets.ShouldTotemSlotBeSecret](#c_secretsshouldtotemslotbesecret) |  |  |
-| ✅ | [C_Secrets.ShouldTotemSpellBeSecret](#c_secretsshouldtotemspellbesecret) |  |  |
-| ✅ | [C_Secrets.ShouldUnitAuraIndexBeSecret](#c_secretsshouldunitauraindexbesecret) |  |  |
+| ✅ | [C_Secrets.ShouldSpellAuraBeSecret](#c_secretsshouldspellaurabesecret) | 1 value | 1 value |
+| ✅ | [C_Secrets.ShouldSpellBookItemCooldownBeSecret](#c_secretsshouldspellbookitemcooldownbesecret) | 1 value | 1 value |
+| ✅ | [C_Secrets.ShouldSpellCooldownBeSecret](#c_secretsshouldspellcooldownbesecret) | 1 value | 1 value |
+| ✅ | [C_Secrets.ShouldTotemSlotBeSecret](#c_secretsshouldtotemslotbesecret) | 1 value | 1 value |
+| ✅ | [C_Secrets.ShouldTotemSpellBeSecret](#c_secretsshouldtotemspellbesecret) | 1 value | 1 value |
+| ✅ | [C_Secrets.ShouldUnitAuraIndexBeSecret](#c_secretsshouldunitauraindexbesecret) | 1 value | 1 value |
 | ✅ | [C_Secrets.ShouldUnitAuraInstanceBeSecret](#c_secretsshouldunitaurainstancebesecret) |  |  |
-| ✅ | [C_Secrets.ShouldUnitAuraSlotBeSecret](#c_secretsshouldunitauraslotbesecret) |  |  |
-| ✅ | [C_Secrets.ShouldUnitComparisonBeSecret](#c_secretsshouldunitcomparisonbesecret) |  |  |
+| ✅ | [C_Secrets.ShouldUnitAuraSlotBeSecret](#c_secretsshouldunitauraslotbesecret) | 1 value | 1 value |
+| ✅ | [C_Secrets.ShouldUnitComparisonBeSecret](#c_secretsshouldunitcomparisonbesecret) | 1 value | 1 value |
 | ✅ | [C_Secrets.ShouldUnitHealthMaxBeSecret](#c_secretsshouldunithealthmaxbesecret) | 1 value | 1 value |
 | ✅ | [C_Secrets.ShouldUnitIdentityBeSecret](#c_secretsshouldunitidentitybesecret) | 1 value | 1 value |
 | ✅ | [C_Secrets.ShouldUnitPowerBeSecret](#c_secretsshouldunitpowerbesecret) | 1 value | 1 value |
 | ✅ | [C_Secrets.ShouldUnitPowerMaxBeSecret](#c_secretsshouldunitpowermaxbesecret) | 1 value | 1 value |
-| ✅ | [C_Secrets.ShouldUnitSpellCastBeSecret](#c_secretsshouldunitspellcastbesecret) |  |  |
+| ✅ | [C_Secrets.ShouldUnitSpellCastBeSecret](#c_secretsshouldunitspellcastbesecret) | 1 value | 1 value |
 | ✅ | [C_Secrets.ShouldUnitSpellCastingBeSecret](#c_secretsshouldunitspellcastingbesecret) | 1 value | 1 value |
 | ✅ | [C_Secrets.ShouldUnitStatsBeSecret](#c_secretsshouldunitstatsbesecret) | 1 value | 1 value |
 | ✅ | [C_Secrets.ShouldUnitThreatStateBeSecret](#c_secretsshouldunitthreatstatebesecret) | 1 value | 1 value |
-| ✅ | [C_Secrets.ShouldUnitThreatValuesBeSecret](#c_secretsshouldunitthreatvaluesbesecret) |  |  |
+| ✅ | [C_Secrets.ShouldUnitThreatValuesBeSecret](#c_secretsshouldunitthreatvaluesbesecret) | 1 value | 1 value |
 
 ### C_Secrets.CanCompareUnitTokens
 
@@ -41,6 +41,8 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if queries to compare two input unit tokens are permitted. If this returns false, APIs guarded by the RequiresComparableUnitTokens predicate will fail.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,unit`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`
 
 ### C_Secrets.GetPowerTypeSecrecy
@@ -50,6 +52,8 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Queries the base secrecy for a power type.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`
 
 ### C_Secrets.GetSpellAuraSecrecy
@@ -59,6 +63,8 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Queries the base secrecy for a spell if queried as an aura.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`
 
 ### C_Secrets.GetSpellCastSecrecy
@@ -68,6 +74,8 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Queries the base secrecy for a spell if queried as a cast.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`
 
 ### C_Secrets.GetSpellCooldownSecrecy
@@ -77,6 +85,8 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Queries the base secrecy for a spell if queried as a cooldown.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`
 
 ### C_Secrets.HasSecretRestrictions
@@ -96,6 +106,8 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a given action bar slot ID will produce secret values for cooldowns if queried.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`
 
 ### C_Secrets.ShouldAurasBeSecret
@@ -125,6 +137,8 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a given spell identifier would, if applied as an aura, produce secret values when queried.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`
 
 ### C_Secrets.ShouldSpellBookItemCooldownBeSecret
@@ -134,6 +148,8 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a given spellbook item will produce secret values for cooldowns if queried.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`
 
 ### C_Secrets.ShouldSpellCooldownBeSecret
@@ -143,6 +159,8 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a given spell identifier will produce secret values for cooldowns if queried.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`
 
 ### C_Secrets.ShouldTotemSlotBeSecret
@@ -152,6 +170,8 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if information about a totem slot will produce secret values if queried.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`
 
 ### C_Secrets.ShouldTotemSpellBeSecret
@@ -161,6 +181,8 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if information about a spell when associated with a totem slot will produce secret values if queried.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`
 
 ### C_Secrets.ShouldUnitAuraIndexBeSecret
@@ -170,6 +192,8 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a given aura index will produce secret values if queried.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`
 
 ### C_Secrets.ShouldUnitAuraInstanceBeSecret
@@ -188,6 +212,8 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a given aura slot ID will produce secret values if queried.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`
 
 ### C_Secrets.ShouldUnitComparisonBeSecret
@@ -197,6 +223,8 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if queries that compare units will produce secret values.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,unit`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`
 
 ### C_Secrets.ShouldUnitHealthMaxBeSecret
@@ -250,6 +278,8 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if queries for spell casting information for a unit would produce secret values when queried.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`
 
 ### C_Secrets.ShouldUnitSpellCastingBeSecret
@@ -291,4 +321,6 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if queries for unit threat values will produce secret values.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,unit`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`

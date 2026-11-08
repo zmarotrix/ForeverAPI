@@ -73,8 +73,8 @@ Namespace: `C_Calendar`
 | ✅ | [C_Calendar.GetEventIndexInfo](#c_calendargeteventindexinfo) |  |  |
 | ✅ | [C_Calendar.GetEventInfo](#c_calendargeteventinfo) | 0 values | 0 values |
 | ✅ | [C_Calendar.GetFirstPendingInvite](#c_calendargetfirstpendinginvite) |  |  |
-| ✅ | [C_Calendar.GetGuildEventInfo](#c_calendargetguildeventinfo) |  |  |
-| ✅ | [C_Calendar.GetGuildEventSelectionInfo](#c_calendargetguildeventselectioninfo) |  |  |
+| ✅ | [C_Calendar.GetGuildEventInfo](#c_calendargetguildeventinfo) | 0 values | 0 values |
+| ✅ | [C_Calendar.GetGuildEventSelectionInfo](#c_calendargetguildeventselectioninfo) | 0 values | 0 values |
 | ✅ | [C_Calendar.GetHolidayInfo](#c_calendargetholidayinfo) |  |  |
 | ✅ | [C_Calendar.GetMaxCreateDate](#c_calendargetmaxcreatedate) | 1 value | 1 value |
 | ✅ | [C_Calendar.GetMinDate](#c_calendargetmindate) | 1 value | 1 value |
@@ -624,6 +624,8 @@ Namespace: `C_Calendar`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.GetGuildEventSelectionInfo
@@ -633,6 +635,8 @@ Namespace: `C_Calendar`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.GetHolidayInfo
@@ -820,7 +824,7 @@ Namespace: `C_Calendar`
 - Status: ✅ verified
 - Payload: `pending: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: `b`
+- Seen firing 18 times (0 in combat); argument kinds: `b`
 
 ### CALENDAR_CLOSE_EVENT
 

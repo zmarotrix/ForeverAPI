@@ -17,7 +17,7 @@ Namespace: `C_LFGInfo`
 | ✅ | [C_LFGInfo.DoesActivePartyMeetPremadeLaunchCount](#c_lfginfodoesactivepartymeetpremadelaunchcount) |  |  |
 | ✅ | [C_LFGInfo.DoesCrossFactionQueueRequireFullPremade](#c_lfginfodoescrossfactionqueuerequirefullpremade) |  |  |
 | ✅ | [C_LFGInfo.GetActiveLFGDungeonName](#c_lfginfogetactivelfgdungeonname) | 1 value | 1 value |
-| ✅ | [C_LFGInfo.GetAllEntriesForCategory](#c_lfginfogetallentriesforcategory) |  |  |
+| ✅ | [C_LFGInfo.GetAllEntriesForCategory](#c_lfginfogetallentriesforcategory) | 1 value | 1 value |
 | ✅ | [C_LFGInfo.GetDungeonInfo](#c_lfginfogetdungeoninfo) |  |  |
 | ✅ | [C_LFGInfo.GetLFDLockStates](#c_lfginfogetlfdlockstates) | 1 value | 1 value |
 | ✅ | [C_LFGInfo.GetLevelUpInstances](#c_lfginfogetlevelupinstances) |  |  |
@@ -130,6 +130,8 @@ Namespace: `C_LFGInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `LFGInfoDocumentation.lua`
 
 ### C_LFGInfo.GetDungeonInfo
@@ -253,7 +255,7 @@ Namespace: `C_LFGInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 7 times (2 in combat); argument kinds: ``
+- Seen firing 46 times (2 in combat); argument kinds: ``
 
 ### LFG_ENABLED_STATE_CHANGED
 
@@ -272,7 +274,7 @@ Namespace: `C_LFGInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 10 times (0 in combat); argument kinds: ``
+- Seen firing 24 times (0 in combat); argument kinds: ``
 
 ### LFG_OFFER_CONTINUE
 
@@ -399,7 +401,7 @@ Namespace: `C_LFGInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 10 times (0 in combat); argument kinds: ``
+- Seen firing 24 times (0 in combat); argument kinds: ``
 
 ### SHOW_LFG_EXPAND_SEARCH_PROMPT
 

@@ -13,7 +13,7 @@ Namespace: `C_CurrencyInfo`
 | ✅ | [C_CurrencyInfo.FetchCurrencyDataFromAccountCharacters](#c_currencyinfofetchcurrencydatafromaccountcharacters) |  |  |
 | ✅ | [C_CurrencyInfo.FetchCurrencyTransferTransactions](#c_currencyinfofetchcurrencytransfertransactions) |  |  |
 | ✅ | [C_CurrencyInfo.GetAzeriteCurrencyID](#c_currencyinfogetazeritecurrencyid) | 1 value | 1 value |
-| ✅ | [C_CurrencyInfo.GetBackpackCurrencyInfo](#c_currencyinfogetbackpackcurrencyinfo) |  |  |
+| ✅ | [C_CurrencyInfo.GetBackpackCurrencyInfo](#c_currencyinfogetbackpackcurrencyinfo) | 0 values | 0 values |
 | ✅ | [C_CurrencyInfo.GetBasicCurrencyInfo](#c_currencyinfogetbasiccurrencyinfo) |  |  |
 | ✅ | [C_CurrencyInfo.GetCoinIcon](#c_currencyinfogetcoinicon) |  |  |
 | ✅ | [C_CurrencyInfo.GetCoinText](#c_currencyinfogetcointext) |  |  |
@@ -26,8 +26,8 @@ Namespace: `C_CurrencyInfo`
 | ✅ | [C_CurrencyInfo.GetCurrencyInfo](#c_currencyinfogetcurrencyinfo) |  |  |
 | ✅ | [C_CurrencyInfo.GetCurrencyInfoFromLink](#c_currencyinfogetcurrencyinfofromlink) |  |  |
 | ✅ | [C_CurrencyInfo.GetCurrencyLink](#c_currencyinfogetcurrencylink) |  |  |
-| ✅ | [C_CurrencyInfo.GetCurrencyListInfo](#c_currencyinfogetcurrencylistinfo) |  |  |
-| ✅ | [C_CurrencyInfo.GetCurrencyListLink](#c_currencyinfogetcurrencylistlink) |  |  |
+| ✅ | [C_CurrencyInfo.GetCurrencyListInfo](#c_currencyinfogetcurrencylistinfo) | 1 value | 1 value |
+| ✅ | [C_CurrencyInfo.GetCurrencyListLink](#c_currencyinfogetcurrencylistlink) | 1 value | 1 value |
 | ✅ | [C_CurrencyInfo.GetCurrencyListSize](#c_currencyinfogetcurrencylistsize) | 1 value | 1 value |
 | ✅ | [C_CurrencyInfo.GetDragonIslesSuppliesCurrencyID](#c_currencyinfogetdragonislessuppliescurrencyid) | 1 value | 1 value |
 | ✅ | [C_CurrencyInfo.GetFactionGrantedByCurrency](#c_currencyinfogetfactiongrantedbycurrency) |  |  |
@@ -115,6 +115,8 @@ Namespace: `C_CurrencyInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.GetBasicCurrencyInfo
@@ -225,6 +227,8 @@ Namespace: `C_CurrencyInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `table{canEarnPerWeek=boolean,currencyID=number,currencyListDepth=number,description=string,discovered=boolean,isAccountTransferable=boolean,isAccountWide=boolean,isHeader=boolean,isHeaderExpanded=boolean,isShowInBackpack=boolean,isTradeable=boolean,isTypeUnused=boolean,maxQuantity=number,maxWeeklyQuantity=number,name=string,quality=number,quantity=number,quantityEarnedThisWeek=number,rechargingAmountPerCycle=number,rechargingCycleDurationMS=number,totalEarned=number,trackedQuantity=number,useTotalEarnedForMaxQty=boolean}`
+- Called in combat: returned 1 value: `table{canEarnPerWeek=boolean,currencyID=number,currencyListDepth=number,description=string,discovered=boolean,isAccountTransferable=boolean,isAccountWide=boolean,isHeader=boolean,isHeaderExpanded=boolean,isShowInBackpack=boolean,isTradeable=boolean,isTypeUnused=boolean,maxQuantity=number,maxWeeklyQuantity=number,name=string,quality=number,quantity=number,quantityEarnedThisWeek=number,rechargingAmountPerCycle=number,rechargingCycleDurationMS=number,totalEarned=number,trackedQuantity=number,useTotalEarnedForMaxQty=boolean}`
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.GetCurrencyListLink
@@ -233,6 +237,8 @@ Namespace: `C_CurrencyInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.GetCurrencyListSize
@@ -430,7 +436,7 @@ Namespace: `C_CurrencyInfo`
 - Status: ✅ verified
 - Payload: `currencyType: number?`, `quantity: number?`, `quantityChange: number?`, `quantityGainSource: number?`, `destroyReason: number?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 5 times (0 in combat); argument kinds: `-,-,-,-,-`
+- Seen firing 20 times (0 in combat); argument kinds: `-,-,-,-,-`
 
 ### CURRENCY_TRANSFER_FAILED
 
@@ -461,6 +467,7 @@ Namespace: `C_CurrencyInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 5 times (0 in combat); argument kinds: ``
 
 ## Types
 

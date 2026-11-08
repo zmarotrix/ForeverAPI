@@ -6,17 +6,17 @@ Namespace: `C_TaskQuest`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_TaskQuest.DoesMapShowTaskQuestObjectives](#c_taskquestdoesmapshowtaskquestobjectives) |  |  |
-| ✅ | [C_TaskQuest.GetQuestInfoByQuestID](#c_taskquestgetquestinfobyquestid) |  |  |
-| ✅ | [C_TaskQuest.GetQuestLocation](#c_taskquestgetquestlocation) |  |  |
-| ✅ | [C_TaskQuest.GetQuestProgressBarInfo](#c_taskquestgetquestprogressbarinfo) |  |  |
-| ✅ | [C_TaskQuest.GetQuestTimeLeftMinutes](#c_taskquestgetquesttimeleftminutes) |  |  |
-| ✅ | [C_TaskQuest.GetQuestTimeLeftSeconds](#c_taskquestgetquesttimeleftseconds) |  |  |
-| ✅ | [C_TaskQuest.GetQuestUIWidgetSetByType](#c_taskquestgetquestuiwidgetsetbytype) |  |  |
-| ✅ | [C_TaskQuest.GetQuestZoneID](#c_taskquestgetquestzoneid) |  |  |
-| ✅ | [C_TaskQuest.GetQuestsOnMap](#c_taskquestgetquestsonmap) |  |  |
+| ✅ | [C_TaskQuest.DoesMapShowTaskQuestObjectives](#c_taskquestdoesmapshowtaskquestobjectives) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_TaskQuest.GetQuestInfoByQuestID](#c_taskquestgetquestinfobyquestid) | 0 values | 0 values |
+| ✅ | [C_TaskQuest.GetQuestLocation](#c_taskquestgetquestlocation) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_TaskQuest.GetQuestProgressBarInfo](#c_taskquestgetquestprogressbarinfo) | 0 values | 0 values |
+| ✅ | [C_TaskQuest.GetQuestTimeLeftMinutes](#c_taskquestgetquesttimeleftminutes) | 0 values | 0 values |
+| ✅ | [C_TaskQuest.GetQuestTimeLeftSeconds](#c_taskquestgetquesttimeleftseconds) | 0 values | 0 values |
+| ✅ | [C_TaskQuest.GetQuestUIWidgetSetByType](#c_taskquestgetquestuiwidgetsetbytype) | 0 values | 0 values |
+| ✅ | [C_TaskQuest.GetQuestZoneID](#c_taskquestgetquestzoneid) | 0 values | 0 values |
+| ✅ | [C_TaskQuest.GetQuestsOnMap](#c_taskquestgetquestsonmap) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_TaskQuest.GetThreatQuests](#c_taskquestgetthreatquests) | 1 value | 1 value |
-| ✅ | [C_TaskQuest.IsActive](#c_taskquestisactive) |  |  |
+| ✅ | [C_TaskQuest.IsActive](#c_taskquestisactive) | 1 value | 1 value |
 | ✅ | [C_TaskQuest.RequestPreloadRewardData](#c_taskquestrequestpreloadrewarddata) |  |  |
 
 ### C_TaskQuest.DoesMapShowTaskQuestObjectives
@@ -25,6 +25,8 @@ Namespace: `C_TaskQuest`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `QuestTaskInfoDocumentation.lua`
 
 ### C_TaskQuest.GetQuestInfoByQuestID
@@ -34,6 +36,8 @@ Namespace: `C_TaskQuest`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `quest`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `QuestTaskInfoDocumentation.lua`
 
 ### C_TaskQuest.GetQuestLocation
@@ -43,6 +47,8 @@ Namespace: `C_TaskQuest`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `quest,map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `QuestTaskInfoDocumentation.lua`
 
 ### C_TaskQuest.GetQuestProgressBarInfo
@@ -52,6 +58,8 @@ Namespace: `C_TaskQuest`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `quest`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `QuestTaskInfoDocumentation.lua`
 
 ### C_TaskQuest.GetQuestTimeLeftMinutes
@@ -61,6 +69,8 @@ Namespace: `C_TaskQuest`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `quest`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `QuestTaskInfoDocumentation.lua`
 
 ### C_TaskQuest.GetQuestTimeLeftSeconds
@@ -70,6 +80,8 @@ Namespace: `C_TaskQuest`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `quest`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `QuestTaskInfoDocumentation.lua`
 
 ### C_TaskQuest.GetQuestUIWidgetSetByType
@@ -79,6 +91,8 @@ Namespace: `C_TaskQuest`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `quest,n:0`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `QuestTaskInfoDocumentation.lua`
 
 ### C_TaskQuest.GetQuestZoneID
@@ -88,6 +102,8 @@ Namespace: `C_TaskQuest`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `quest`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `QuestTaskInfoDocumentation.lua`
 
 ### C_TaskQuest.GetQuestsOnMap
@@ -97,6 +113,8 @@ Namespace: `C_TaskQuest`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `QuestTaskInfoDocumentation.lua`
 
 ### C_TaskQuest.GetThreatQuests
@@ -114,6 +132,8 @@ Namespace: `C_TaskQuest`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `quest`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `QuestTaskInfoDocumentation.lua`
 
 ### C_TaskQuest.RequestPreloadRewardData

@@ -13,7 +13,7 @@
 | ✅ | [GetInstanceBootTimeRemaining](#getinstanceboottimeremaining) | 1 value | 1 value |
 | ✅ | [GetInstanceInfo](#getinstanceinfo) | 11 values | 11 values |
 | ✅ | [GetInstanceLockTimeRemaining](#getinstancelocktimeremaining) | 4 values | 4 values |
-| ✅ | [GetInstanceLockTimeRemainingEncounter](#getinstancelocktimeremainingencounter) |  |  |
+| ✅ | [GetInstanceLockTimeRemainingEncounter](#getinstancelocktimeremainingencounter) | 4 values | 4 values |
 | ✅ | [GetLegacyRaidDifficultyID](#getlegacyraiddifficultyid) | 1 value | 1 value |
 | ✅ | [GetRaidDifficultyID](#getraiddifficultyid) | 1 value | 1 value |
 | ✅ | [IsInInstance](#isininstance) | 2 values | 2 values |
@@ -110,6 +110,8 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 4 values: `string`, `nil`, `boolean`, `boolean`
+- Called in combat: returned 4 values: `string`, `nil`, `boolean`, `boolean`
 - Source: client docs `InstanceDocumentation.lua`
 
 ### GetLegacyRaidDifficultyID

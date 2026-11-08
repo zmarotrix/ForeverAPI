@@ -4,8 +4,8 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [GetAddOnCPUUsage](#getaddoncpuusage) |  |  |
-| ✅ | [GetAddOnMemoryUsage](#getaddonmemoryusage) |  |  |
+| ✅ | [GetAddOnCPUUsage](#getaddoncpuusage) | 1 value | 1 value |
+| ✅ | [GetAddOnMemoryUsage](#getaddonmemoryusage) | 1 value | 1 value |
 | ✅ | [GetEventCPUUsage](#geteventcpuusage) | 2 values | 2 values |
 | ✅ | [GetFrameCPUUsage](#getframecpuusage) |  |  |
 | ✅ | [GetFunctionCPUUsage](#getfunctioncpuusage) | error | error |
@@ -20,6 +20,8 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `s:ApiProbe`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PerformanceDocumentation.lua`
 
 ### GetAddOnMemoryUsage
@@ -28,6 +30,8 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `s:ApiProbe`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PerformanceDocumentation.lua`
 
 ### GetEventCPUUsage

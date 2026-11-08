@@ -43,9 +43,9 @@ Namespace: `C_Commentator`
 | ✅ | [C_Commentator.GetHardlockWeight](#c_commentatorgethardlockweight) | 1 value | 1 value |
 | ✅ | [C_Commentator.GetHorizontalAngleThresholdToSmooth](#c_commentatorgethorizontalanglethresholdtosmooth) | 1 value | 1 value |
 | ✅ | [C_Commentator.GetIndirectSpellID](#c_commentatorgetindirectspellid) |  |  |
-| ✅ | [C_Commentator.GetInstanceInfo](#c_commentatorgetinstanceinfo) |  |  |
+| ✅ | [C_Commentator.GetInstanceInfo](#c_commentatorgetinstanceinfo) | 0 values | 0 values |
 | ✅ | [C_Commentator.GetLookAtLerpAmount](#c_commentatorgetlookatlerpamount) | 1 value | 1 value |
-| ✅ | [C_Commentator.GetMapInfo](#c_commentatorgetmapinfo) |  |  |
+| ✅ | [C_Commentator.GetMapInfo](#c_commentatorgetmapinfo) | 0 values | 0 values |
 | ✅ | [C_Commentator.GetMatchDuration](#c_commentatorgetmatchduration) | 1 value | 1 value |
 | ✅ | [C_Commentator.GetMaxNumPlayersPerTeam](#c_commentatorgetmaxnumplayersperteam) | 1 value | 1 value |
 | ✅ | [C_Commentator.GetMaxNumTeams](#c_commentatorgetmaxnumteams) | 1 value | 1 value |
@@ -55,42 +55,42 @@ Namespace: `C_Commentator`
 | ✅ | [C_Commentator.GetMsToSmoothHorizontalChange](#c_commentatorgetmstosmoothhorizontalchange) | 1 value | 1 value |
 | ✅ | [C_Commentator.GetMsToSmoothVerticalChange](#c_commentatorgetmstosmoothverticalchange) | 1 value | 1 value |
 | ✅ | [C_Commentator.GetNumMaps](#c_commentatorgetnummaps) | 1 value | 1 value |
-| ✅ | [C_Commentator.GetNumPlayers](#c_commentatorgetnumplayers) |  |  |
+| ✅ | [C_Commentator.GetNumPlayers](#c_commentatorgetnumplayers) | 0 values | 0 values |
 | ✅ | [C_Commentator.GetOrCreateSeries](#c_commentatorgetorcreateseries) |  |  |
-| ✅ | [C_Commentator.GetPlayerAuraInfo](#c_commentatorgetplayeraurainfo) |  |  |
-| ✅ | [C_Commentator.GetPlayerAuraInfoByUnit](#c_commentatorgetplayeraurainfobyunit) |  |  |
-| ✅ | [C_Commentator.GetPlayerCooldownInfo](#c_commentatorgetplayercooldowninfo) |  |  |
-| ✅ | [C_Commentator.GetPlayerCooldownInfoByUnit](#c_commentatorgetplayercooldowninfobyunit) |  |  |
-| ✅ | [C_Commentator.GetPlayerCrowdControlInfo](#c_commentatorgetplayercrowdcontrolinfo) |  |  |
+| ✅ | [C_Commentator.GetPlayerAuraInfo](#c_commentatorgetplayeraurainfo) | 0 values | 0 values |
+| ✅ | [C_Commentator.GetPlayerAuraInfoByUnit](#c_commentatorgetplayeraurainfobyunit) | 0 values | 0 values |
+| ✅ | [C_Commentator.GetPlayerCooldownInfo](#c_commentatorgetplayercooldowninfo) | 0 values | 0 values |
+| ✅ | [C_Commentator.GetPlayerCooldownInfoByUnit](#c_commentatorgetplayercooldowninfobyunit) | 0 values | 0 values |
+| ✅ | [C_Commentator.GetPlayerCrowdControlInfo](#c_commentatorgetplayercrowdcontrolinfo) | 0 values | 0 values |
 | ✅ | [C_Commentator.GetPlayerCrowdControlInfoByUnit](#c_commentatorgetplayercrowdcontrolinfobyunit) | 0 values | 0 values |
-| ✅ | [C_Commentator.GetPlayerData](#c_commentatorgetplayerdata) |  |  |
-| ✅ | [C_Commentator.GetPlayerFlagInfo](#c_commentatorgetplayerflaginfo) |  |  |
+| ✅ | [C_Commentator.GetPlayerData](#c_commentatorgetplayerdata) | 0 values | 0 values |
+| ✅ | [C_Commentator.GetPlayerFlagInfo](#c_commentatorgetplayerflaginfo) | 0 values | 0 values |
 | ✅ | [C_Commentator.GetPlayerFlagInfoByUnit](#c_commentatorgetplayerflaginfobyunit) | 0 values | 0 values |
-| ✅ | [C_Commentator.GetPlayerItemCooldownInfo](#c_commentatorgetplayeritemcooldowninfo) |  |  |
-| ✅ | [C_Commentator.GetPlayerItemCooldownInfoByUnit](#c_commentatorgetplayeritemcooldowninfobyunit) |  |  |
+| ✅ | [C_Commentator.GetPlayerItemCooldownInfo](#c_commentatorgetplayeritemcooldowninfo) | 0 values | 0 values |
+| ✅ | [C_Commentator.GetPlayerItemCooldownInfoByUnit](#c_commentatorgetplayeritemcooldowninfobyunit) | 0 values | 0 values |
 | ✅ | [C_Commentator.GetPlayerOverrideName](#c_commentatorgetplayeroverridename) |  |  |
-| ✅ | [C_Commentator.GetPlayerSpellCharges](#c_commentatorgetplayerspellcharges) |  |  |
-| ✅ | [C_Commentator.GetPlayerSpellChargesByUnit](#c_commentatorgetplayerspellchargesbyunit) |  |  |
+| ✅ | [C_Commentator.GetPlayerSpellCharges](#c_commentatorgetplayerspellcharges) | 0 values | 0 values |
+| ✅ | [C_Commentator.GetPlayerSpellChargesByUnit](#c_commentatorgetplayerspellchargesbyunit) | 0 values | 0 values |
 | ✅ | [C_Commentator.GetPositionLerpAmount](#c_commentatorgetpositionlerpamount) | 1 value | 1 value |
 | ✅ | [C_Commentator.GetSmoothFollowTransitioning](#c_commentatorgetsmoothfollowtransitioning) | 0 values | 0 values |
 | ✅ | [C_Commentator.GetSoftlockWeight](#c_commentatorgetsoftlockweight) | 1 value | 1 value |
 | ✅ | [C_Commentator.GetSpeedFactor](#c_commentatorgetspeedfactor) | 1 value | 1 value |
-| ✅ | [C_Commentator.GetStartLocation](#c_commentatorgetstartlocation) |  |  |
-| ✅ | [C_Commentator.GetTeamColor](#c_commentatorgetteamcolor) |  |  |
+| ✅ | [C_Commentator.GetStartLocation](#c_commentatorgetstartlocation) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_Commentator.GetTeamColor](#c_commentatorgetteamcolor) | 1 value | 1 value |
 | ✅ | [C_Commentator.GetTeamColorByUnit](#c_commentatorgetteamcolorbyunit) | 1 value | 1 value |
 | ✅ | [C_Commentator.GetTimeLeftInMatch](#c_commentatorgettimeleftinmatch) | 1 value | 1 value |
 | ✅ | [C_Commentator.GetTrackedSpellID](#c_commentatorgettrackedspellid) |  |  |
-| ✅ | [C_Commentator.GetTrackedSpells](#c_commentatorgettrackedspells) |  |  |
-| ✅ | [C_Commentator.GetTrackedSpellsByUnit](#c_commentatorgettrackedspellsbyunit) |  |  |
+| ✅ | [C_Commentator.GetTrackedSpells](#c_commentatorgettrackedspells) | 0 values | 0 values |
+| ✅ | [C_Commentator.GetTrackedSpellsByUnit](#c_commentatorgettrackedspellsbyunit) | 0 values | 0 values |
 | ✅ | [C_Commentator.GetUnitData](#c_commentatorgetunitdata) | 0 values | 0 values |
 | ✅ | [C_Commentator.GetWargameInfo](#c_commentatorgetwargameinfo) |  |  |
 | ✅ | [C_Commentator.HasTrackedAuras](#c_commentatorhastrackedauras) | 0 values | 0 values |
 | ✅ | [C_Commentator.IsSmartCameraLocked](#c_commentatorissmartcameralocked) | 1 value | 1 value |
 | ✅ | [C_Commentator.IsSpectating](#c_commentatorisspectating) | 1 value | 1 value |
-| ✅ | [C_Commentator.IsTrackedDefensiveAura](#c_commentatoristrackeddefensiveaura) |  |  |
-| ✅ | [C_Commentator.IsTrackedOffensiveAura](#c_commentatoristrackedoffensiveaura) |  |  |
-| ✅ | [C_Commentator.IsTrackedSpell](#c_commentatoristrackedspell) |  |  |
-| ✅ | [C_Commentator.IsTrackedSpellByUnit](#c_commentatoristrackedspellbyunit) |  |  |
+| ✅ | [C_Commentator.IsTrackedDefensiveAura](#c_commentatoristrackeddefensiveaura) | 0 values | 0 values |
+| ✅ | [C_Commentator.IsTrackedOffensiveAura](#c_commentatoristrackedoffensiveaura) | 0 values | 0 values |
+| ✅ | [C_Commentator.IsTrackedSpell](#c_commentatoristrackedspell) | 0 values | 0 values |
+| ✅ | [C_Commentator.IsTrackedSpellByUnit](#c_commentatoristrackedspellbyunit) | 0 values | 0 values |
 | ✅ | [C_Commentator.IsUsingSmartCamera](#c_commentatorisusingsmartcamera) | 1 value | 1 value |
 | ✅ | [C_Commentator.LookAtPlayer](#c_commentatorlookatplayer) |  |  |
 | ✅ | [C_Commentator.RemoveAllOverrideNames](#c_commentatorremovealloverridenames) |  |  |
@@ -492,6 +492,8 @@ Namespace: `C_Commentator`
 - may return nothing (Blizzard's docs; not checked in game)
 - RequiresCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetLookAtLerpAmount
@@ -511,6 +513,8 @@ Namespace: `C_Commentator`
 - may return nothing (Blizzard's docs; not checked in game)
 - RequiresCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetMatchDuration
@@ -602,6 +606,8 @@ Namespace: `C_Commentator`
 - may return nothing (Blizzard's docs; not checked in game)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetOrCreateSeries
@@ -620,6 +626,8 @@ Namespace: `C_Commentator`
 - may return nothing (Blizzard's docs; not checked in game)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:1,spell`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetPlayerAuraInfoByUnit
@@ -630,6 +638,8 @@ Namespace: `C_Commentator`
 - may return nothing (Blizzard's docs; not checked in game)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,spell`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetPlayerCooldownInfo
@@ -640,6 +650,8 @@ Namespace: `C_Commentator`
 - may return nothing (Blizzard's docs; not checked in game)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:1,spell`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetPlayerCooldownInfoByUnit
@@ -650,6 +662,8 @@ Namespace: `C_Commentator`
 - may return nothing (Blizzard's docs; not checked in game)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,spell`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetPlayerCrowdControlInfo
@@ -660,6 +674,8 @@ Namespace: `C_Commentator`
 - may return nothing (Blizzard's docs; not checked in game)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetPlayerCrowdControlInfoByUnit
@@ -681,6 +697,8 @@ Namespace: `C_Commentator`
 - Status: ✅ verified (function)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetPlayerFlagInfo
@@ -690,6 +708,8 @@ Namespace: `C_Commentator`
 - Status: ✅ verified (function)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetPlayerFlagInfoByUnit
@@ -711,6 +731,8 @@ Namespace: `C_Commentator`
 - may return nothing (Blizzard's docs; not checked in game)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:1,item`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetPlayerItemCooldownInfoByUnit
@@ -721,6 +743,8 @@ Namespace: `C_Commentator`
 - may return nothing (Blizzard's docs; not checked in game)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,item`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetPlayerOverrideName
@@ -740,6 +764,8 @@ Namespace: `C_Commentator`
 - may return nothing (Blizzard's docs; not checked in game)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:1,spell`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetPlayerSpellChargesByUnit
@@ -750,6 +776,8 @@ Namespace: `C_Commentator`
 - may return nothing (Blizzard's docs; not checked in game)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,spell`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetPositionLerpAmount
@@ -796,6 +824,8 @@ Namespace: `C_Commentator`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetTeamColor
@@ -804,6 +834,8 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `table{GenerateHexColor=function,GenerateHexColorMarkup=function,GenerateHexColorNoAlpha=function,GetHSL=function,GetRGB=function,GetRGBA=function,GetRGBAAsBytes=function,GetRGBAsBytes=function,IsEqualTo=function,IsRGBEqualTo=function,OnLoad=function,SetRGB=function,SetRGBA=function,WrapTextInColorCode=function,b=number,g=number,r=number}`
+- Called in combat: returned 1 value: `table{GenerateHexColor=function,GenerateHexColorMarkup=function,GenerateHexColorNoAlpha=function,GetHSL=function,GetRGB=function,GetRGBA=function,GetRGBAAsBytes=function,GetRGBAsBytes=function,IsEqualTo=function,IsRGBEqualTo=function,OnLoad=function,SetRGB=function,SetRGBA=function,WrapTextInColorCode=function,b=number,g=number,r=number}`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetTeamColorByUnit
@@ -841,6 +873,8 @@ Namespace: `C_Commentator`
 - Status: ✅ verified (function)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:1,n:0`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetTrackedSpellsByUnit
@@ -850,6 +884,8 @@ Namespace: `C_Commentator`
 - Status: ✅ verified (function)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:0`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetUnitData
@@ -909,6 +945,8 @@ Namespace: `C_Commentator`
 - Status: ✅ verified (function)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.IsTrackedOffensiveAura
@@ -918,6 +956,8 @@ Namespace: `C_Commentator`
 - Status: ✅ verified (function)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.IsTrackedSpell
@@ -927,6 +967,8 @@ Namespace: `C_Commentator`
 - Status: ✅ verified (function)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1,n:1,spell,n:0`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.IsTrackedSpellByUnit
@@ -936,6 +978,8 @@ Namespace: `C_Commentator`
 - Status: ✅ verified (function)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,spell,n:0`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.IsUsingSmartCamera
@@ -1436,7 +1480,7 @@ Namespace: `C_Commentator`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 8 times (0 in combat); argument kinds: ``
 
 ### COMMENTATOR_HISTORY_FLUSHED
 

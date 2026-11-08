@@ -9,7 +9,7 @@ Namespace: `C_ItemInteraction`
 | ✅ | [C_ItemInteraction.ClearPendingItem](#c_iteminteractionclearpendingitem) |  |  |
 | ✅ | [C_ItemInteraction.CloseUI](#c_iteminteractioncloseui) |  |  |
 | ✅ | [C_ItemInteraction.GetChargeInfo](#c_iteminteractiongetchargeinfo) | 1 value | 1 value |
-| ✅ | [C_ItemInteraction.GetItemConversionCurrencyCost](#c_iteminteractiongetitemconversioncurrencycost) |  |  |
+| ✅ | [C_ItemInteraction.GetItemConversionCurrencyCost](#c_iteminteractiongetitemconversioncurrencycost) | 1 value | 1 value |
 | ✅ | [C_ItemInteraction.GetItemInteractionInfo](#c_iteminteractiongetiteminteractioninfo) | 1 value | 1 value |
 | ✅ | [C_ItemInteraction.GetItemInteractionSpellId](#c_iteminteractiongetiteminteractionspellid) | 1 value | 1 value |
 | ✅ | [C_ItemInteraction.InitializeFrame](#c_iteminteractioninitializeframe) |  |  |
@@ -46,6 +46,8 @@ Namespace: `C_ItemInteraction`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `table{amount=number,currencyID=number}`
+- Called in combat: returned 1 value: `table{amount=number,currencyID=number}`
 - Source: client docs `ItemInteractionUIDocumentation.lua`
 
 ### C_ItemInteraction.GetItemInteractionInfo

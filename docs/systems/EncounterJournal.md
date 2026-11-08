@@ -7,12 +7,12 @@ Namespace: `C_EncounterJournal`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_EncounterJournal.GetBaseDifficultyID](#c_encounterjournalgetbasedifficultyid) |  |  |
-| ✅ | [C_EncounterJournal.GetDungeonEntrancesForMap](#c_encounterjournalgetdungeonentrancesformap) |  |  |
+| ✅ | [C_EncounterJournal.GetDungeonEntrancesForMap](#c_encounterjournalgetdungeonentrancesformap) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_EncounterJournal.GetEncounterJournalLink](#c_encounterjournalgetencounterjournallink) |  |  |
-| ✅ | [C_EncounterJournal.GetEncountersOnMap](#c_encounterjournalgetencountersonmap) |  |  |
-| ✅ | [C_EncounterJournal.GetInstanceForGameMap](#c_encounterjournalgetinstanceforgamemap) |  |  |
+| ✅ | [C_EncounterJournal.GetEncountersOnMap](#c_encounterjournalgetencountersonmap) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_EncounterJournal.GetInstanceForGameMap](#c_encounterjournalgetinstanceforgamemap) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_EncounterJournal.GetLootInfo](#c_encounterjournalgetlootinfo) |  |  |
-| ✅ | [C_EncounterJournal.GetLootInfoByIndex](#c_encounterjournalgetlootinfobyindex) |  |  |
+| ✅ | [C_EncounterJournal.GetLootInfoByIndex](#c_encounterjournalgetlootinfobyindex) | 0 values | 0 values |
 | ✅ | [C_EncounterJournal.GetSectionIconFlags](#c_encounterjournalgetsectioniconflags) |  |  |
 | ✅ | [C_EncounterJournal.GetSectionInfo](#c_encounterjournalgetsectioninfo) |  |  |
 | ✅ | [C_EncounterJournal.GetSlotFilter](#c_encounterjournalgetslotfilter) | 1 value | 1 value |
@@ -43,6 +43,8 @@ Namespace: `C_EncounterJournal`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `EncounterJournalDocumentation.lua`
 
 ### C_EncounterJournal.GetEncounterJournalLink
@@ -59,6 +61,8 @@ Namespace: `C_EncounterJournal`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `EncounterJournalDocumentation.lua`
 
 ### C_EncounterJournal.GetInstanceForGameMap
@@ -68,6 +72,8 @@ Namespace: `C_EncounterJournal`
 - Status: ✅ verified (function)
 - Blizzard: GameMap as opposed to UIMap since we use a mapID not a uiMapID.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `EncounterJournalDocumentation.lua`
 
 ### C_EncounterJournal.GetLootInfo
@@ -85,6 +91,8 @@ Namespace: `C_EncounterJournal`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `EncounterJournalDocumentation.lua`
 
 ### C_EncounterJournal.GetSectionIconFlags
@@ -215,7 +223,7 @@ Namespace: `C_EncounterJournal`
 - Status: ✅ verified
 - Payload: `difficultyID: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `n`
+- Seen firing 2 times (0 in combat); argument kinds: `n`
 
 ### EJ_LOOT_DATA_RECIEVED
 

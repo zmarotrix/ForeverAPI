@@ -9,17 +9,17 @@ Namespace: `C_Minimap`
 | ✅ | [C_Minimap.CanTrackBattlePets](#c_minimapcantrackbattlepets) | 1 value | 1 value |
 | ✅ | [C_Minimap.ClearAllTracking](#c_minimapclearalltracking) |  |  |
 | ✅ | [C_Minimap.ClearMinimapInsetInfo](#c_minimapclearminimapinsetinfo) |  |  |
-| ✅ | [C_Minimap.GetDefaultTrackingValue](#c_minimapgetdefaulttrackingvalue) |  |  |
+| ✅ | [C_Minimap.GetDefaultTrackingValue](#c_minimapgetdefaulttrackingvalue) | 1 value | 1 value |
 | ✅ | [C_Minimap.GetDrawGroundTextures](#c_minimapgetdrawgroundtextures) | 1 value | 1 value |
 | ✅ | [C_Minimap.GetNumQuestPOIWorldEffects](#c_minimapgetnumquestpoiworldeffects) | 1 value | 1 value |
 | ✅ | [C_Minimap.GetNumTrackingTypes](#c_minimapgetnumtrackingtypes) | 1 value | 1 value |
 | ✅ | [C_Minimap.GetPOITextureCoords](#c_minimapgetpoitexturecoords) | 4 values | 4 values |
-| ✅ | [C_Minimap.GetTrackingFilter](#c_minimapgettrackingfilter) |  |  |
-| ✅ | [C_Minimap.GetTrackingInfo](#c_minimapgettrackinginfo) |  |  |
+| ✅ | [C_Minimap.GetTrackingFilter](#c_minimapgettrackingfilter) | 1 value | 1 value |
+| ✅ | [C_Minimap.GetTrackingInfo](#c_minimapgettrackinginfo) | 1 value | 1 value |
 | ✅ | [C_Minimap.GetUiMapID](#c_minimapgetuimapid) | 1 value | 1 value |
 | ✅ | [C_Minimap.GetViewRadius](#c_minimapgetviewradius) | 1 value | 1 value |
-| ✅ | [C_Minimap.IsFilteredOut](#c_minimapisfilteredout) |  |  |
-| ✅ | [C_Minimap.IsInsideQuestBlob](#c_minimapisinsidequestblob) |  |  |
+| ✅ | [C_Minimap.IsFilteredOut](#c_minimapisfilteredout) | 1 value | 1 value |
+| ✅ | [C_Minimap.IsInsideQuestBlob](#c_minimapisinsidequestblob) | 1 value | 1 value |
 | ✅ | [C_Minimap.IsRotateMinimapIgnored](#c_minimapisrotateminimapignored) | 1 value | 1 value |
 | ✅ | [C_Minimap.IsTrackingAccountCompletedQuests](#c_minimapistrackingaccountcompletedquests) | 1 value | 1 value |
 | ✅ | [C_Minimap.IsTrackingBattlePets](#c_minimapistrackingbattlepets) | 1 value | 1 value |
@@ -59,6 +59,8 @@ Namespace: `C_Minimap`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `MinimapDocumentation.lua`
 
 ### C_Minimap.GetDrawGroundTextures
@@ -104,6 +106,8 @@ Namespace: `C_Minimap`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `table{filterID=number}`
+- Called in combat: returned 1 value: `table{filterID=number}`
 - Source: client docs `MinimapDocumentation.lua`
 
 ### C_Minimap.GetTrackingInfo
@@ -112,6 +116,8 @@ Namespace: `C_Minimap`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `table{active=boolean,name=string,subType=number,texture=number,type=string}`
+- Called in combat: returned 1 value: `table{active=boolean,name=string,subType=number,texture=number,type=string}`
 - Source: client docs `MinimapDocumentation.lua`
 
 ### C_Minimap.GetUiMapID
@@ -138,6 +144,8 @@ Namespace: `C_Minimap`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `MinimapDocumentation.lua`
 
 ### C_Minimap.IsInsideQuestBlob
@@ -146,6 +154,8 @@ Namespace: `C_Minimap`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `quest`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `MinimapDocumentation.lua`
 
 ### C_Minimap.IsRotateMinimapIgnored
@@ -246,14 +256,14 @@ Namespace: `C_Minimap`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 5 times (0 in combat); argument kinds: ``
+- Seen firing 24 times (0 in combat); argument kinds: ``
 
 ### PLAYER_INSIDE_QUEST_BLOB_STATE_CHANGED
 
 - Status: ✅ verified
 - Payload: `questID: number`, `isInside: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 12 times (3 in combat); argument kinds: `n,b`
+- Seen firing 36 times (10 in combat); argument kinds: `n,b`
 
 ## Types
 

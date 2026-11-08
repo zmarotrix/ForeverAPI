@@ -9,7 +9,7 @@ Namespace: `C_HeirloomInfo`
 | ✅ | [C_HeirloomInfo.AreAllCollectionFiltersChecked](#c_heirloominfoareallcollectionfilterschecked) | 1 value | 1 value |
 | ✅ | [C_HeirloomInfo.AreAllSourceFiltersChecked](#c_heirloominfoareallsourcefilterschecked) | 1 value | 1 value |
 | ✅ | [C_HeirloomInfo.HeirloomsAvailable](#c_heirloominfoheirloomsavailable) |  |  |
-| ✅ | [C_HeirloomInfo.IsHeirloomSourceValid](#c_heirloominfoisheirloomsourcevalid) |  |  |
+| ✅ | [C_HeirloomInfo.IsHeirloomSourceValid](#c_heirloominfoisheirloomsourcevalid) | 1 value | 1 value |
 | ✅ | [C_HeirloomInfo.IsUsingDefaultFilters](#c_heirloominfoisusingdefaultfilters) | 1 value | 1 value |
 | ✅ | [C_HeirloomInfo.SetAllCollectionFilters](#c_heirloominfosetallcollectionfilters) |  |  |
 | ✅ | [C_HeirloomInfo.SetAllSourceFilters](#c_heirloominfosetallsourcefilters) |  |  |
@@ -46,6 +46,8 @@ Namespace: `C_HeirloomInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `HeirloomInfoDocumentation.lua`
 
 ### C_HeirloomInfo.IsUsingDefaultFilters

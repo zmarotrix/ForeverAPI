@@ -11,10 +11,10 @@ Namespace: `C_KeyBindings`
 | ✅ | [C_KeyBindings.GetBindingByKey](#c_keybindingsgetbindingbykey) |  |  |
 | ✅ | [C_KeyBindings.GetBindingContextForAction](#c_keybindingsgetbindingcontextforaction) |  |  |
 | ✅ | [C_KeyBindings.GetBindingIndex](#c_keybindingsgetbindingindex) |  |  |
-| ✅ | [C_KeyBindings.GetCustomBindingType](#c_keybindingsgetcustombindingtype) |  |  |
+| ✅ | [C_KeyBindings.GetCustomBindingType](#c_keybindingsgetcustombindingtype) | 1 value | 1 value |
 | ✅ | [C_KeyBindings.GetSearchTagsForAction](#c_keybindingsgetsearchtagsforaction) |  |  |
 | ✅ | [C_KeyBindings.GetTurnStrafeStyle](#c_keybindingsgetturnstrafestyle) | 1 value | 1 value |
-| ✅ | [C_KeyBindings.IsBindingContextActive](#c_keybindingsisbindingcontextactive) |  |  |
+| ✅ | [C_KeyBindings.IsBindingContextActive](#c_keybindingsisbindingcontextactive) | 1 value | 1 value |
 | ✅ | [C_KeyBindings.SetTurnStrafeStyle](#c_keybindingssetturnstrafestyle) |  |  |
 | ✅ | [C_KeyBindings.UpdateTurnStrafeBindingsForCharacter](#c_keybindingsupdateturnstrafebindingsforcharacter) |  |  |
 
@@ -66,6 +66,8 @@ Namespace: `C_KeyBindings`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `KeyBindingsDocumentation.lua`
 
 ### C_KeyBindings.GetSearchTagsForAction
@@ -91,6 +93,8 @@ Namespace: `C_KeyBindings`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `KeyBindingsDocumentation.lua`
 
 ### C_KeyBindings.SetTurnStrafeStyle
@@ -116,14 +120,14 @@ Namespace: `C_KeyBindings`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 12 times (0 in combat); argument kinds: ``
 
 ### MODIFIER_STATE_CHANGED
 
 - Status: ✅ verified
 - Payload: `key: cstring`, `down: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 38 times (26 in combat); argument kinds: `s,n`
+- Seen firing 164 times (53 in combat); argument kinds: `s,n`
 
 ### NOTIFY_TURN_STRAFE_CHANGE
 
@@ -136,7 +140,7 @@ Namespace: `C_KeyBindings`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 19 times (0 in combat); argument kinds: ``
+- Seen firing 58 times (0 in combat); argument kinds: ``
 
 ## Types
 

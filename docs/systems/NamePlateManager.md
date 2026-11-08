@@ -6,8 +6,8 @@ Namespace: `C_NamePlateManager`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_NamePlateManager.GetNamePlateHitTestInsets](#c_nameplatemanagergetnameplatehittestinsets) |  |  |
-| ✅ | [C_NamePlateManager.IsNamePlateUnitBehindCamera](#c_nameplatemanagerisnameplateunitbehindcamera) |  |  |
+| ✅ | [C_NamePlateManager.GetNamePlateHitTestInsets](#c_nameplatemanagergetnameplatehittestinsets) | 4 values | 4 values |
+| ✅ | [C_NamePlateManager.IsNamePlateUnitBehindCamera](#c_nameplatemanagerisnameplateunitbehindcamera) | 1 value | 1 value |
 | ✅ | [C_NamePlateManager.SetNamePlateHitTestInsets](#c_nameplatemanagersetnameplatehittestinsets) |  |  |
 | ✅ | [C_NamePlateManager.SetNamePlateSimplified](#c_nameplatemanagersetnameplatesimplified) |  |  |
 
@@ -18,6 +18,8 @@ Namespace: `C_NamePlateManager`
 - Status: ✅ verified (function)
 - Blizzard: Returns the values used to adjust the hit testing area for nameplates.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 4 values: `number`, `number`, `number`, `number`
+- Called in combat: returned 4 values: `number`, `number`, `number`, `number`
 - Source: client docs `NamePlateManagerDocumentation.lua`
 
 ### C_NamePlateManager.IsNamePlateUnitBehindCamera
@@ -27,6 +29,8 @@ Namespace: `C_NamePlateManager`
 - Status: ✅ verified (function)
 - Blizzard: Returns whether the unit to which the nameplate is attached is behind the player's camera.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `player`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `NamePlateManagerDocumentation.lua`
 
 ### C_NamePlateManager.SetNamePlateHitTestInsets
@@ -55,32 +59,35 @@ Namespace: `C_NamePlateManager`
 - Status: ✅ verified
 - Payload: `namePlateFrame: NamePlateFrame`
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: `t`
 
 ### FORBIDDEN_NAME_PLATE_UNIT_ADDED
 
 - Status: ✅ verified
 - Payload: `unitToken: UnitTokenType`
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: `s`
 
 ### FORBIDDEN_NAME_PLATE_UNIT_REMOVED
 
 - Status: ✅ verified
 - Payload: `unitToken: UnitTokenType`
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: `s`
 
 ### NAME_PLATE_CREATED
 
 - Status: ✅ verified
 - Payload: `namePlateFrame: NamePlateFrame`
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (2 in combat); argument kinds: `t`
+- Seen firing 36 times (2 in combat); argument kinds: `t`
 
 ### NAME_PLATE_UNIT_ADDED
 
 - Status: ✅ verified
 - Payload: `unitToken: UnitTokenType`
 - fires synchronously (Blizzard's docs)
-- Seen firing 53 times (22 in combat); argument kinds: `s`
+- Seen firing 262 times (46 in combat); argument kinds: `s`
 
 ### NAME_PLATE_UNIT_BEHIND_CAMERA_CHANGED
 
@@ -93,4 +100,4 @@ Namespace: `C_NamePlateManager`
 - Status: ✅ verified
 - Payload: `unitToken: UnitTokenType`
 - fires synchronously (Blizzard's docs)
-- Seen firing 53 times (27 in combat); argument kinds: `s`
+- Seen firing 262 times (57 in combat); argument kinds: `s`

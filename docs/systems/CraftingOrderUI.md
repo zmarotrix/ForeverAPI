@@ -24,7 +24,7 @@ Namespace: `C_CraftingOrders`
 | ✅ | [C_CraftingOrders.GetDefaultOrdersSkillLine](#c_craftingordersgetdefaultordersskillline) | 1 value | 1 value |
 | ✅ | [C_CraftingOrders.GetMyOrders](#c_craftingordersgetmyorders) | 1 value | 1 value |
 | ✅ | [C_CraftingOrders.GetNumFavoriteCustomerOptions](#c_craftingordersgetnumfavoritecustomeroptions) | 1 value | 1 value |
-| ✅ | [C_CraftingOrders.GetOrderClaimInfo](#c_craftingordersgetorderclaiminfo) |  |  |
+| ✅ | [C_CraftingOrders.GetOrderClaimInfo](#c_craftingordersgetorderclaiminfo) | 1 value | 1 value |
 | ✅ | [C_CraftingOrders.GetPersonalOrdersInfo](#c_craftingordersgetpersonalordersinfo) | 1 value | 1 value |
 | ✅ | [C_CraftingOrders.HasFavoriteCustomerOptions](#c_craftingordershasfavoritecustomeroptions) | 1 value | 1 value |
 | ✅ | [C_CraftingOrders.IsCustomerOptionFavorited](#c_craftingordersiscustomeroptionfavorited) |  |  |
@@ -202,6 +202,8 @@ Namespace: `C_CraftingOrders`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `table{claimsRemaining=number}`
+- Called in combat: returned 1 value: `table{claimsRemaining=number}`
 - Source: client docs `CraftingOrderUIDocumentation.lua`
 
 ### C_CraftingOrders.GetPersonalOrdersInfo

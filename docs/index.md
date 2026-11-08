@@ -1,16 +1,16 @@
 # WoW Forever add-on API
 
-Generated 2026-11-07 19:58 by `tools/apidoc.py build`. Do not edit by hand.
+Generated 2026-11-07 20:02 by `tools/apidoc.py build`. Do not edit by hand.
 
 - Client docs: Blizzard_APIDocumentationGenerated from client 1.60.1.70862
-- Game dump: ApiProbe 0.1.2 on 1.60.1.70862 (interface 16001), enUS
+- Game dump: ApiProbe 0.2.1 on 1.60.1.70862 (interface 16001), enUS
 
 Statuses: ✅ verified; 🆕 in game, not in Blizzard's docs; ⛔ in Blizzard's docs, not in game; ❔ unverified
 
 | | Functions | Events | Enums and constants |
 |---|---|---|---|
 | ✅ verified | 5066 | 1807 | 948 |
-| 🆕 in game, not in Blizzard's docs | 5919 | 126 | 1034 |
+| 🆕 in game, not in Blizzard's docs | 5960 | 126 | 1034 |
 | ⛔ in Blizzard's docs, not in game | 78 | 136 | 18 |
 | ❔ unverified | 0 | 0 | 0 |
 
@@ -604,23 +604,22 @@ Globals written by add-ons when the dump ran (not API):
 - BetterWorldMap: 11
 - BlizzMove: 25
 - BugSack: 11
+- Bulwark: 6
 - CameraTilt: 7
 - Clairvoyance: 12
 - Council: 6
 - CouncilProbe: 2
 - Dimension: 12
 - ForeverAutoQuest: 5
-- ForeverDungeonJournal: 22
+- ForeverDungeonJournal: 23
 - Guise: 14
-- HealProbe: 7
 - Mercy: 7
 - Muster: 6
 - NKThreat: 44
 - NorgannonDB: 1
 - NorgannonDBCollector: 5
-- NorgannonDB_Core: 148
-- Oracle: 8
-- PlateProbe: 2
+- NorgannonDB_Core: 150
+- Oracle: 10
 - RecruitProbe: 2
 - Retrospect: 9
 - RoleplayProbe: 2

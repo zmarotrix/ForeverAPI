@@ -7,7 +7,7 @@ Namespace: `C_SwingTimer`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_SwingTimer.EnableRangeCheck](#c_swingtimerenablerangecheck) |  |  |
-| ✅ | [C_SwingTimer.IsTargetWithinSwingRange](#c_swingtimeristargetwithinswingrange) |  |  |
+| ✅ | [C_SwingTimer.IsTargetWithinSwingRange](#c_swingtimeristargetwithinswingrange) | 1 value | 1 value |
 
 ### C_SwingTimer.EnableRangeCheck
 
@@ -27,6 +27,8 @@ Namespace: `C_SwingTimer`
 - Blizzard: Whether the current target is within range of the player's auto attack for the given swing type. Auto attacks only ever apply to the current target, so no other unit can be queried.
 - `isInRange`: Nil when no range check could be made, for example there is no target, the target cannot be attacked, or no weapon is equipped for the swing type. Nil must not be treated as out of range.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `SwingTimerDocumentation.lua`
 
 ## Events
@@ -36,7 +38,7 @@ Namespace: `C_SwingTimer`
 - Status: ✅ verified
 - Payload: `swingDuration: number`, `swingType: PlayerSwingType`
 - fires synchronously (Blizzard's docs)
-- Seen firing 147 times (147 in combat); argument kinds: `n,n`
+- Seen firing 305 times (305 in combat); argument kinds: `n,n`
 
 ### PLAYER_SWING_RANGE_UPDATE
 

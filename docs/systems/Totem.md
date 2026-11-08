@@ -6,10 +6,10 @@
 |---|---|---|---|
 | ✅ | [DestroyTotem](#destroytotem) |  |  |
 | ✅ | [GetNumTotemSlots](#getnumtotemslots) | 1 value | 1 value |
-| ✅ | [GetTotemCannotDismiss](#gettotemcannotdismiss) |  |  |
-| ✅ | [GetTotemDuration](#gettotemduration) |  |  |
-| ✅ | [GetTotemInfo](#gettoteminfo) |  |  |
-| ✅ | [GetTotemTimeLeft](#gettotemtimeleft) |  |  |
+| ✅ | [GetTotemCannotDismiss](#gettotemcannotdismiss) | 1 value | 1 value |
+| ✅ | [GetTotemDuration](#gettotemduration) | 1 value | 1 value |
+| ✅ | [GetTotemInfo](#gettoteminfo) | 7 values | partly secret |
+| ✅ | [GetTotemTimeLeft](#gettotemtimeleft) | 1 value | 1 value |
 | ✅ | [TargetTotem](#targettotem) |  |  |
 
 ### DestroyTotem
@@ -35,6 +35,8 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `TotemDocumentation.lua`
 
 ### GetTotemDuration
@@ -43,6 +45,8 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `TotemDocumentation.lua`
 
 ### GetTotemInfo
@@ -53,6 +57,8 @@
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenTotemSlotSecret (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 7 values: `boolean`, `string`, `number`, `number`, `nil`, `number`, `number`
+- Called in combat: returned 7 values: `secret:boolean`, `secret:string`, `secret:number`, `secret:number`, `nil`, `secret:number`, `secret:number`
 - Source: client docs `TotemDocumentation.lua`
 
 ### GetTotemTimeLeft
@@ -62,6 +68,8 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenTotemSlotSecret (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `TotemDocumentation.lua`
 
 ### TargetTotem

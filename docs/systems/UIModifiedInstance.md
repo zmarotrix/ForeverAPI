@@ -6,7 +6,7 @@ Namespace: `C_ModifiedInstance`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_ModifiedInstance.GetModifiedInstanceInfoFromMapID](#c_modifiedinstancegetmodifiedinstanceinfofrommapid) |  |  |
+| ✅ | [C_ModifiedInstance.GetModifiedInstanceInfoFromMapID](#c_modifiedinstancegetmodifiedinstanceinfofrommapid) | 💥 no sample for map | 💥 no sample for map |
 
 ### C_ModifiedInstance.GetModifiedInstanceInfoFromMapID
 
@@ -15,6 +15,8 @@ Namespace: `C_ModifiedInstance`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `UIModifiedInstanceDocumentation.lua`
 
 ## Types

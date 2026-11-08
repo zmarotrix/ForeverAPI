@@ -7,10 +7,10 @@ Namespace: `C_VignetteInfo`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_VignetteInfo.FindBestUniqueVignette](#c_vignetteinfofindbestuniquevignette) |  |  |
-| ✅ | [C_VignetteInfo.GetHealthPercent](#c_vignetteinfogethealthpercent) |  |  |
-| ✅ | [C_VignetteInfo.GetRecommendedGroupSize](#c_vignetteinfogetrecommendedgroupsize) |  |  |
-| ✅ | [C_VignetteInfo.GetVignetteInfo](#c_vignetteinfogetvignetteinfo) |  |  |
-| ✅ | [C_VignetteInfo.GetVignettePosition](#c_vignetteinfogetvignetteposition) |  |  |
+| ✅ | [C_VignetteInfo.GetHealthPercent](#c_vignetteinfogethealthpercent) | 1 value | 1 value |
+| ✅ | [C_VignetteInfo.GetRecommendedGroupSize](#c_vignetteinfogetrecommendedgroupsize) | 0 values | 0 values |
+| ✅ | [C_VignetteInfo.GetVignetteInfo](#c_vignetteinfogetvignetteinfo) | 1 value | 1 value |
+| ✅ | [C_VignetteInfo.GetVignettePosition](#c_vignetteinfogetvignetteposition) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_VignetteInfo.GetVignettes](#c_vignetteinfogetvignettes) | 1 value | 1 value |
 
 ### C_VignetteInfo.FindBestUniqueVignette
@@ -27,6 +27,8 @@ Namespace: `C_VignetteInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `VignetteInfoDocumentation.lua`
 
 ### C_VignetteInfo.GetRecommendedGroupSize
@@ -36,6 +38,8 @@ Namespace: `C_VignetteInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `VignetteInfoDocumentation.lua`
 
 ### C_VignetteInfo.GetVignetteInfo
@@ -44,6 +48,8 @@ Namespace: `C_VignetteInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `VignetteInfoDocumentation.lua`
 
 ### C_VignetteInfo.GetVignettePosition
@@ -53,6 +59,8 @@ Namespace: `C_VignetteInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid,map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `VignetteInfoDocumentation.lua`
 
 ### C_VignetteInfo.GetVignettes
@@ -71,7 +79,7 @@ Namespace: `C_VignetteInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### VIGNETTE_MINIMAP_UPDATED
 

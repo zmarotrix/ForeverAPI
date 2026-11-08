@@ -92,4 +92,4 @@ Namespace: `C_UI`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (0 in combat); argument kinds: ``
+- Seen firing 24 times (0 in combat); argument kinds: ``

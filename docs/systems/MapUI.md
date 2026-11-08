@@ -6,42 +6,42 @@ Namespace: `C_Map`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_Map.CanSetUserWaypointOnMap](#c_mapcansetuserwaypointonmap) |  |  |
+| ✅ | [C_Map.CanSetUserWaypointOnMap](#c_mapcansetuserwaypointonmap) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_Map.ClearUserWaypoint](#c_mapclearuserwaypoint) |  |  |
 | ✅ | [C_Map.CloseWorldMapInteraction](#c_mapcloseworldmapinteraction) |  |  |
 | ✅ | [C_Map.GetAreaInfo](#c_mapgetareainfo) |  |  |
 | ✅ | [C_Map.GetBestMapForUnit](#c_mapgetbestmapforunit) | 1 value | 1 value |
 | ✅ | [C_Map.GetBountySetMaps](#c_mapgetbountysetmaps) |  |  |
 | ✅ | [C_Map.GetFallbackWorldMapID](#c_mapgetfallbackworldmapid) | 1 value | 1 value |
-| ✅ | [C_Map.GetMapArtBackgroundAtlas](#c_mapgetmapartbackgroundatlas) |  |  |
-| ✅ | [C_Map.GetMapArtHelpTextPosition](#c_mapgetmaparthelptextposition) |  |  |
-| ✅ | [C_Map.GetMapArtID](#c_mapgetmapartid) |  |  |
-| ✅ | [C_Map.GetMapArtLayerTextures](#c_mapgetmapartlayertextures) |  |  |
-| ✅ | [C_Map.GetMapArtLayers](#c_mapgetmapartlayers) |  |  |
-| ✅ | [C_Map.GetMapArtZoneTextPosition](#c_mapgetmapartzonetextposition) |  |  |
-| ✅ | [C_Map.GetMapBannersForMap](#c_mapgetmapbannersformap) |  |  |
-| ✅ | [C_Map.GetMapChildrenInfo](#c_mapgetmapchildreninfo) |  |  |
-| ✅ | [C_Map.GetMapDisplayInfo](#c_mapgetmapdisplayinfo) |  |  |
-| ✅ | [C_Map.GetMapGroupID](#c_mapgetmapgroupid) |  |  |
+| ✅ | [C_Map.GetMapArtBackgroundAtlas](#c_mapgetmapartbackgroundatlas) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_Map.GetMapArtHelpTextPosition](#c_mapgetmaparthelptextposition) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_Map.GetMapArtID](#c_mapgetmapartid) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_Map.GetMapArtLayerTextures](#c_mapgetmapartlayertextures) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_Map.GetMapArtLayers](#c_mapgetmapartlayers) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_Map.GetMapArtZoneTextPosition](#c_mapgetmapartzonetextposition) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_Map.GetMapBannersForMap](#c_mapgetmapbannersformap) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_Map.GetMapChildrenInfo](#c_mapgetmapchildreninfo) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_Map.GetMapDisplayInfo](#c_mapgetmapdisplayinfo) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_Map.GetMapGroupID](#c_mapgetmapgroupid) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_Map.GetMapGroupMembersInfo](#c_mapgetmapgroupmembersinfo) |  |  |
 | ✅ | [C_Map.GetMapHighlightInfoAtPosition](#c_mapgetmaphighlightinfoatposition) |  |  |
-| ✅ | [C_Map.GetMapHighlightPulseInfo](#c_mapgetmaphighlightpulseinfo) |  |  |
-| ✅ | [C_Map.GetMapInfo](#c_mapgetmapinfo) |  |  |
+| ✅ | [C_Map.GetMapHighlightPulseInfo](#c_mapgetmaphighlightpulseinfo) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_Map.GetMapInfo](#c_mapgetmapinfo) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_Map.GetMapInfoAtPosition](#c_mapgetmapinfoatposition) |  |  |
-| ✅ | [C_Map.GetMapLevels](#c_mapgetmaplevels) |  |  |
-| ✅ | [C_Map.GetMapLinksForMap](#c_mapgetmaplinksformap) |  |  |
+| ✅ | [C_Map.GetMapLevels](#c_mapgetmaplevels) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_Map.GetMapLinksForMap](#c_mapgetmaplinksformap) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_Map.GetMapPosFromWorldPos](#c_mapgetmapposfromworldpos) |  |  |
 | ✅ | [C_Map.GetMapRectOnMap](#c_mapgetmaprectonmap) |  |  |
-| ✅ | [C_Map.GetMapWorldSize](#c_mapgetmapworldsize) |  |  |
-| ✅ | [C_Map.GetPlayerMapPosition](#c_mapgetplayermapposition) |  |  |
+| ✅ | [C_Map.GetMapWorldSize](#c_mapgetmapworldsize) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_Map.GetPlayerMapPosition](#c_mapgetplayermapposition) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_Map.GetUserWaypoint](#c_mapgetuserwaypoint) | 0 values | 0 values |
 | ✅ | [C_Map.GetUserWaypointFromHyperlink](#c_mapgetuserwaypointfromhyperlink) |  |  |
 | ✅ | [C_Map.GetUserWaypointHyperlink](#c_mapgetuserwaypointhyperlink) | 0 values | 0 values |
-| ✅ | [C_Map.GetUserWaypointPositionForMap](#c_mapgetuserwaypointpositionformap) |  |  |
+| ✅ | [C_Map.GetUserWaypointPositionForMap](#c_mapgetuserwaypointpositionformap) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_Map.GetWorldPosFromMapPos](#c_mapgetworldposfrommappos) |  |  |
 | ✅ | [C_Map.HasUserWaypoint](#c_maphasuserwaypoint) | 1 value | 1 value |
-| ✅ | [C_Map.IsCityMap](#c_mapiscitymap) |  |  |
-| ✅ | [C_Map.IsMapValidForNavBarDropdown](#c_mapismapvalidfornavbardropdown) |  |  |
+| ✅ | [C_Map.IsCityMap](#c_mapiscitymap) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_Map.IsMapValidForNavBarDropdown](#c_mapismapvalidfornavbardropdown) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_Map.MapHasArt](#c_mapmaphasart) |  |  |
 | ✅ | [C_Map.OpenWorldMap](#c_mapopenworldmap) |  |  |
 | ✅ | [C_Map.RequestPreloadMap](#c_maprequestpreloadmap) |  |  |
@@ -53,6 +53,8 @@ Namespace: `C_Map`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.ClearUserWaypoint
@@ -84,8 +86,8 @@ Namespace: `C_Map`
 - Status: ✅ verified (function)
 - Blizzard: Only works for the player and party members.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with `player`: returned 1 value: `number`
-- Called in combat: returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetBountySetMaps
@@ -111,6 +113,8 @@ Namespace: `C_Map`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetMapArtHelpTextPosition
@@ -119,6 +123,8 @@ Namespace: `C_Map`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetMapArtID
@@ -128,6 +134,8 @@ Namespace: `C_Map`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetMapArtLayerTextures
@@ -137,6 +145,8 @@ Namespace: `C_Map`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map,n:1`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetMapArtLayers
@@ -146,6 +156,8 @@ Namespace: `C_Map`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetMapArtZoneTextPosition
@@ -154,6 +166,8 @@ Namespace: `C_Map`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetMapBannersForMap
@@ -162,6 +176,8 @@ Namespace: `C_Map`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetMapChildrenInfo
@@ -171,6 +187,8 @@ Namespace: `C_Map`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetMapDisplayInfo
@@ -180,6 +198,8 @@ Namespace: `C_Map`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetMapGroupID
@@ -189,6 +209,8 @@ Namespace: `C_Map`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetMapGroupMembersInfo
@@ -216,6 +238,8 @@ Namespace: `C_Map`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetMapInfo
@@ -225,6 +249,8 @@ Namespace: `C_Map`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetMapInfoAtPosition
@@ -243,6 +269,8 @@ Namespace: `C_Map`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetMapLinksForMap
@@ -251,6 +279,8 @@ Namespace: `C_Map`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetMapPosFromWorldPos
@@ -278,6 +308,8 @@ Namespace: `C_Map`
 - Status: ✅ verified (function)
 - Blizzard: Returns the size in yards of the area represented by the map.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetPlayerMapPosition
@@ -287,6 +319,8 @@ Namespace: `C_Map`
 - Status: ✅ verified (function)
 - Blizzard: Only works for the player and party members.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map,unit`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetUserWaypoint
@@ -325,6 +359,8 @@ Namespace: `C_Map`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetWorldPosFromMapPos
@@ -351,6 +387,8 @@ Namespace: `C_Map`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.IsMapValidForNavBarDropdown
@@ -359,6 +397,8 @@ Namespace: `C_Map`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.MapHasArt
@@ -401,12 +441,14 @@ Namespace: `C_Map`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 36 times (0 in combat); argument kinds: ``
 
 ### PLAYER_MAP_CHANGED
 
 - Status: ✅ verified
 - Payload: `oldMapID: number`, `newMapID: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 6 times (0 in combat); argument kinds: `n,n`
 
 ### USER_WAYPOINT_UPDATED
 
@@ -425,19 +467,21 @@ Namespace: `C_Map`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 9 times (4 in combat); argument kinds: ``
 
 ### ZONE_CHANGED_INDOORS
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 6 times (0 in combat); argument kinds: ``
 
 ### ZONE_CHANGED_NEW_AREA
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 8 times (0 in combat); argument kinds: ``
 
 ## Types
 

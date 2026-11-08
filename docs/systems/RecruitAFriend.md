@@ -6,7 +6,7 @@ Namespace: `C_RecruitAFriend`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_RecruitAFriend.CanSummonFriend](#c_recruitafriendcansummonfriend) |  |  |
+| ✅ | [C_RecruitAFriend.CanSummonFriend](#c_recruitafriendcansummonfriend) | 2 values | 2 values |
 | ✅ | [C_RecruitAFriend.ClaimActivityReward](#c_recruitafriendclaimactivityreward) |  |  |
 | ✅ | [C_RecruitAFriend.ClaimNextReward](#c_recruitafriendclaimnextreward) |  |  |
 | ✅ | [C_RecruitAFriend.GenerateRecruitmentLink](#c_recruitafriendgeneraterecruitmentlink) |  |  |
@@ -15,7 +15,7 @@ Namespace: `C_RecruitAFriend`
 | ✅ | [C_RecruitAFriend.GetRecruitActivityRequirementsText](#c_recruitafriendgetrecruitactivityrequirementstext) |  |  |
 | ✅ | [C_RecruitAFriend.GetRecruitInfo](#c_recruitafriendgetrecruitinfo) | 2 values | 2 values |
 | ✅ | [C_RecruitAFriend.GetSummonFriendCooldown](#c_recruitafriendgetsummonfriendcooldown) | 3 values | 3 values |
-| ✅ | [C_RecruitAFriend.IsRecruitAFriendLinked](#c_recruitafriendisrecruitafriendlinked) |  |  |
+| ✅ | [C_RecruitAFriend.IsRecruitAFriendLinked](#c_recruitafriendisrecruitafriendlinked) | 1 value | 1 value |
 | ✅ | [C_RecruitAFriend.IsRecruitingEnabled](#c_recruitafriendisrecruitingenabled) | 1 value | 1 value |
 | ✅ | [C_RecruitAFriend.IsSystemEnabled](#c_recruitafriendissystemenabled) | 1 value | 1 value |
 | ✅ | [C_RecruitAFriend.IsSystemSupported](#c_recruitafriendissystemsupported) | 1 value | 1 value |
@@ -30,6 +30,8 @@ Namespace: `C_RecruitAFriend`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 2 values: `boolean`, `number`
+- Called in combat: returned 2 values: `boolean`, `number`
 - Source: client docs `RecruitAFriendDocumentation.lua`
 
 ### C_RecruitAFriend.ClaimActivityReward
@@ -108,6 +110,8 @@ Namespace: `C_RecruitAFriend`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `RecruitAFriendDocumentation.lua`
 
 ### C_RecruitAFriend.IsRecruitingEnabled
@@ -169,7 +173,7 @@ Namespace: `C_RecruitAFriend`
 - Status: ✅ verified
 - Payload: `info: RafInfo`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `t`
+- Seen firing 2 times (0 in combat); argument kinds: `t`
 
 ### RAF_RECRUITING_ENABLED_STATUS
 

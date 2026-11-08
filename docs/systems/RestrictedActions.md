@@ -7,9 +7,9 @@ Namespace: `C_RestrictedActions`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_RestrictedActions.CheckAllowProtectedFunctions](#c_restrictedactionscheckallowprotectedfunctions) |  |  |
-| ✅ | [C_RestrictedActions.GetAddOnRestrictionState](#c_restrictedactionsgetaddonrestrictionstate) |  |  |
+| ✅ | [C_RestrictedActions.GetAddOnRestrictionState](#c_restrictedactionsgetaddonrestrictionstate) | 1 value | 1 value |
 | ⛔ | [C_RestrictedActions.InCombatLockdown](#c_restrictedactionsincombatlockdown) |  |  |
-| ✅ | [C_RestrictedActions.IsAddOnRestrictionActive](#c_restrictedactionsisaddonrestrictionactive) |  |  |
+| ✅ | [C_RestrictedActions.IsAddOnRestrictionActive](#c_restrictedactionsisaddonrestrictionactive) | 1 value | 1 value |
 
 ### C_RestrictedActions.CheckAllowProtectedFunctions
 
@@ -28,6 +28,8 @@ Namespace: `C_RestrictedActions`
 - Status: ✅ verified (function)
 - Blizzard: Returns the current state of an addon restriction type.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `RestrictedActionsDocumentation.lua`
 
 ### C_RestrictedActions.InCombatLockdown
@@ -45,6 +47,8 @@ Namespace: `C_RestrictedActions`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if an addon restriction type is in an active state. Will always return false during dispatch of ADDON_RESTRICTION_STATE_CHANGED.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `RestrictedActionsDocumentation.lua`
 
 ## Events
@@ -61,7 +65,7 @@ Namespace: `C_RestrictedActions`
 - Status: ✅ verified
 - Payload: `isTainted: cstring`, `function: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 34 times (0 in combat); argument kinds: `s,s`
+- Seen firing 39 times (0 in combat); argument kinds: `s,s`
 
 ### ADDON_RESTRICTION_STATE_CHANGED
 
@@ -69,7 +73,7 @@ Namespace: `C_RestrictedActions`
 - Payload: `type: AddOnRestrictionType`, `state: AddOnRestrictionState`
 - Blizzard: Fired when the state of an addon restriction type is changing. This event is sequenced such that it will always be fired before a restriction becomes active, or after it is deactivated.
 - fires synchronously (Blizzard's docs)
-- Seen firing 16 times (0 in combat); argument kinds: `n,n`
+- Seen firing 39 times (0 in combat); argument kinds: `n,n`
 
 ### MACRO_ACTION_BLOCKED
 

@@ -14,8 +14,8 @@ Namespace: `C_ContentTracking`
 | ✅ | [C_ContentTracking.GetNextWaypointForTrackable](#c_contenttrackinggetnextwaypointfortrackable) |  |  |
 | ✅ | [C_ContentTracking.GetObjectiveText](#c_contenttrackinggetobjectivetext) |  |  |
 | ✅ | [C_ContentTracking.GetTitle](#c_contenttrackinggettitle) |  |  |
-| ✅ | [C_ContentTracking.GetTrackablesOnMap](#c_contenttrackinggettrackablesonmap) |  |  |
-| ✅ | [C_ContentTracking.GetTrackedIDs](#c_contenttrackinggettrackedids) |  |  |
+| ✅ | [C_ContentTracking.GetTrackablesOnMap](#c_contenttrackinggettrackablesonmap) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_ContentTracking.GetTrackedIDs](#c_contenttrackinggettrackedids) | 1 value | 1 value |
 | ✅ | [C_ContentTracking.GetVendorTrackingInfo](#c_contenttrackinggetvendortrackinginfo) |  |  |
 | ✅ | [C_ContentTracking.GetWaypointText](#c_contenttrackinggetwaypointtext) |  |  |
 | ✅ | [C_ContentTracking.IsNavigable](#c_contenttrackingisnavigable) |  |  |
@@ -101,6 +101,8 @@ Namespace: `C_ContentTracking`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `ContentTrackingDocumentation.lua`
 
 ### C_ContentTracking.GetTrackedIDs
@@ -109,6 +111,8 @@ Namespace: `C_ContentTracking`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `ContentTrackingDocumentation.lua`
 
 ### C_ContentTracking.GetVendorTrackingInfo
@@ -185,14 +189,14 @@ Namespace: `C_ContentTracking`
 - Status: ✅ verified
 - Payload: `isEnabled: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `b`
+- Seen firing 2 times (0 in combat); argument kinds: `b`
 
 ### CONTENT_TRACKING_LIST_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 18 times (0 in combat); argument kinds: ``
 
 ### CONTENT_TRACKING_UPDATE
 

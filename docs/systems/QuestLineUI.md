@@ -6,9 +6,9 @@ Namespace: `C_QuestLine`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_QuestLine.GetAvailableQuestLines](#c_questlinegetavailablequestlines) |  |  |
-| ✅ | [C_QuestLine.GetForceVisibleQuests](#c_questlinegetforcevisiblequests) |  |  |
-| ✅ | [C_QuestLine.GetQuestLineInfo](#c_questlinegetquestlineinfo) |  |  |
+| ✅ | [C_QuestLine.GetAvailableQuestLines](#c_questlinegetavailablequestlines) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_QuestLine.GetForceVisibleQuests](#c_questlinegetforcevisiblequests) | 💥 no sample for map | 💥 no sample for map |
+| ✅ | [C_QuestLine.GetQuestLineInfo](#c_questlinegetquestlineinfo) | 1 value | 1 value |
 | ✅ | [C_QuestLine.GetQuestLineQuests](#c_questlinegetquestlinequests) |  |  |
 | ✅ | [C_QuestLine.IsComplete](#c_questlineiscomplete) |  |  |
 | ✅ | [C_QuestLine.QuestLineIgnoresAccountCompletedFiltering](#c_questlinequestlineignoresaccountcompletedfiltering) |  |  |
@@ -20,6 +20,8 @@ Namespace: `C_QuestLine`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `QuestLineInfoDocumentation.lua`
 
 ### C_QuestLine.GetForceVisibleQuests
@@ -28,6 +30,8 @@ Namespace: `C_QuestLine`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `QuestLineInfoDocumentation.lua`
 
 ### C_QuestLine.GetQuestLineInfo
@@ -36,6 +40,8 @@ Namespace: `C_QuestLine`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `quest`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `QuestLineInfoDocumentation.lua`
 
 ### C_QuestLine.GetQuestLineQuests

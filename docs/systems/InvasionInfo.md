@@ -7,7 +7,7 @@ Namespace: `C_InvasionInfo`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_InvasionInfo.AreInvasionsAvailable](#c_invasioninfoareinvasionsavailable) | 1 value | 1 value |
-| ✅ | [C_InvasionInfo.GetInvasionForUiMapID](#c_invasioninfogetinvasionforuimapid) |  |  |
+| ✅ | [C_InvasionInfo.GetInvasionForUiMapID](#c_invasioninfogetinvasionforuimapid) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_InvasionInfo.GetInvasionInfo](#c_invasioninfogetinvasioninfo) |  |  |
 | ✅ | [C_InvasionInfo.GetInvasionTimeLeft](#c_invasioninfogetinvasiontimeleft) |  |  |
 
@@ -27,6 +27,8 @@ Namespace: `C_InvasionInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `InvasionInfoDocumentation.lua`
 
 ### C_InvasionInfo.GetInvasionInfo

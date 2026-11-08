@@ -8,10 +8,10 @@ Namespace: `C_DamageMeter`
 |---|---|---|---|
 | ✅ | [C_DamageMeter.GetAvailableCombatSessions](#c_damagemetergetavailablecombatsessions) | 1 value | 1 value |
 | ✅ | [C_DamageMeter.GetCombatSessionFromID](#c_damagemetergetcombatsessionfromid) |  |  |
-| ✅ | [C_DamageMeter.GetCombatSessionFromType](#c_damagemetergetcombatsessionfromtype) |  |  |
+| ✅ | [C_DamageMeter.GetCombatSessionFromType](#c_damagemetergetcombatsessionfromtype) | 1 value | 1 value |
 | ✅ | [C_DamageMeter.GetCombatSessionSourceFromID](#c_damagemetergetcombatsessionsourcefromid) |  |  |
-| ✅ | [C_DamageMeter.GetCombatSessionSourceFromType](#c_damagemetergetcombatsessionsourcefromtype) |  |  |
-| ✅ | [C_DamageMeter.GetSessionDurationSeconds](#c_damagemetergetsessiondurationseconds) |  |  |
+| ✅ | [C_DamageMeter.GetCombatSessionSourceFromType](#c_damagemetergetcombatsessionsourcefromtype) | 1 value | 1 value |
+| ✅ | [C_DamageMeter.GetSessionDurationSeconds](#c_damagemetergetsessiondurationseconds) | 1 value | 1 value |
 | ✅ | [C_DamageMeter.IsDamageMeterAvailable](#c_damagemeterisdamagemeteravailable) | 2 values | 2 values |
 | ✅ | [C_DamageMeter.ResetAllCombatSessions](#c_damagemeterresetallcombatsessions) |  |  |
 
@@ -21,8 +21,8 @@ Namespace: `C_DamageMeter`
 
 - Status: ✅ verified (function)
 - Blizzard: Returns a list of combat sessions currently being tracked.
-- Called out of combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table}`
-- Called in combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table}`
+- Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{[number]=table}`
 - Source: client docs `DamageMeterDocumentation.lua`
 
 ### C_DamageMeter.GetCombatSessionFromID
@@ -43,6 +43,8 @@ Namespace: `C_DamageMeter`
 - Blizzard: Returns the data for the player's current combat session.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - returns secrets in combat (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:0`: returned 1 value: `table{combatSources=table,maxAmount=number,totalAmount=number}`
+- Called in combat: returned 1 value: `table{combatSources=table,maxAmount=secret,totalAmount=secret}`
 - Source: client docs `DamageMeterDocumentation.lua`
 
 ### C_DamageMeter.GetCombatSessionSourceFromID
@@ -63,6 +65,8 @@ Namespace: `C_DamageMeter`
 - Blizzard: Returns the data for a single source (unit) in the player's current combat session.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - returns secrets in combat (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0,n:0`: returned 1 value: `table{combatSpells=table,maxAmount=number,totalAmount=number}`
+- Called in combat: returned 1 value: `table{combatSpells=table,maxAmount=secret,totalAmount=secret}`
 - Source: client docs `DamageMeterDocumentation.lua`
 
 ### C_DamageMeter.GetSessionDurationSeconds
@@ -72,6 +76,8 @@ Namespace: `C_DamageMeter`
 - Status: ✅ verified (function)
 - Blizzard: Returns the amount of time a combat session has lasted
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `DamageMeterDocumentation.lua`
 
 ### C_DamageMeter.IsDamageMeterAvailable
@@ -99,21 +105,21 @@ Namespace: `C_DamageMeter`
 - Status: ✅ verified
 - Payload: `type: DamageMeterType`, `sessionID: number`
 - unique event (Blizzard's docs)
-- Seen firing 1222 times (1222 in combat); argument kinds: `n,n`
+- Seen firing 2950 times (2950 in combat); argument kinds: `n,n`
 
 ### DAMAGE_METER_CURRENT_SESSION_UPDATED
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 8 times (8 in combat); argument kinds: ``
+- Seen firing 18 times (18 in combat); argument kinds: ``
 
 ### DAMAGE_METER_RESET
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ## Types
 

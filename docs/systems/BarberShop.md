@@ -7,7 +7,7 @@ Namespace: `C_BarberShopInternal`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_BarberShop.ApplyCustomizationChoices](#c_barbershopapplycustomizationchoices) |  |  |
-| ✅ | [C_BarberShop.Cancel](#c_barbershopcancel) | 0 values | 0 values |
+| ✅ | [C_BarberShop.Cancel](#c_barbershopcancel) |  |  |
 | ✅ | [C_BarberShop.ClearPreviewChoices](#c_barbershopclearpreviewchoices) |  |  |
 | ✅ | [C_BarberShop.GetAvailableCustomizations](#c_barbershopgetavailablecustomizations) | 0 values | 0 values |
 | ✅ | [C_BarberShop.GetCurrentCameraZoom](#c_barbershopgetcurrentcamerazoom) | 1 value | 1 value |
@@ -16,7 +16,7 @@ Namespace: `C_BarberShopInternal`
 | ✅ | [C_BarberShop.GetViewingChrModel](#c_barbershopgetviewingchrmodel) | 1 value | 1 value |
 | ✅ | [C_BarberShop.HasAlteredForm](#c_barbershophasalteredform) | 1 value | 1 value |
 | ✅ | [C_BarberShop.HasAnyChanges](#c_barbershophasanychanges) | 1 value | 1 value |
-| ✅ | [C_BarberShop.HasCustomizationFeature](#c_barbershophascustomizationfeature) |  |  |
+| ✅ | [C_BarberShop.HasCustomizationFeature](#c_barbershophascustomizationfeature) | 1 value | 1 value |
 | ✅ | [C_BarberShop.IsViewingAlteredForm](#c_barbershopisviewingalteredform) | 1 value | 1 value |
 | ✅ | [C_BarberShop.MarkCustomizationChoiceAsSeen](#c_barbershopmarkcustomizationchoiceasseen) |  |  |
 | ✅ | [C_BarberShop.MarkCustomizationOptionAsSeen](#c_barbershopmarkcustomizationoptionasseen) |  |  |
@@ -49,8 +49,6 @@ Namespace: `C_BarberShopInternal`
 `C_BarberShop.Cancel()`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 0 values
-- Called in combat: returned 0 values
 - Source: client docs `BarberShopDocumentation.lua`
 
 ### C_BarberShop.ClearPreviewChoices
@@ -132,6 +130,8 @@ Namespace: `C_BarberShopInternal`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BarberShopDocumentation.lua`
 
 ### C_BarberShop.IsViewingAlteredForm

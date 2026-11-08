@@ -18,7 +18,7 @@ Namespace: `C_GossipInfo`
 | ✅ | [C_GossipInfo.GetNumAvailableQuests](#c_gossipinfogetnumavailablequests) | 1 value | 1 value |
 | ✅ | [C_GossipInfo.GetOptionUIWidgetSetsAndTypesByOptionID](#c_gossipinfogetoptionuiwidgetsetsandtypesbyoptionid) |  |  |
 | ✅ | [C_GossipInfo.GetOptions](#c_gossipinfogetoptions) | 1 value | 1 value |
-| ✅ | [C_GossipInfo.GetPoiForUiMapID](#c_gossipinfogetpoiforuimapid) |  |  |
+| ✅ | [C_GossipInfo.GetPoiForUiMapID](#c_gossipinfogetpoiforuimapid) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_GossipInfo.GetPoiInfo](#c_gossipinfogetpoiinfo) |  |  |
 | ✅ | [C_GossipInfo.GetText](#c_gossipinfogettext) | 1 value | 1 value |
 | ✅ | [C_GossipInfo.RefreshOptions](#c_gossipinforefreshoptions) |  |  |
@@ -135,6 +135,8 @@ Namespace: `C_GossipInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `GossipInfoDocumentation.lua`
 
 ### C_GossipInfo.GetPoiInfo
@@ -206,6 +208,7 @@ Namespace: `C_GossipInfo`
 - Status: ✅ verified
 - Payload: `interactionIsContinuing: bool`
 - fires synchronously (Blizzard's docs)
+- Seen firing 11 times (0 in combat); argument kinds: `b`
 
 ### GOSSIP_CONFIRM
 
@@ -218,6 +221,7 @@ Namespace: `C_GossipInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 6 times (0 in combat); argument kinds: ``
 
 ### GOSSIP_ENTER_CODE
 
@@ -236,6 +240,7 @@ Namespace: `C_GossipInfo`
 - Status: ✅ verified
 - Payload: `uiTextureKit: textureKit?`
 - fires synchronously (Blizzard's docs)
+- Seen firing 8 times (0 in combat); argument kinds: `-`
 
 ## Types
 

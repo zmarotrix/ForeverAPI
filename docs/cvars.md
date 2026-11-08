@@ -1266,7 +1266,7 @@ From `C_Console.GetAllCommands` in game. Defaults only; the probe never reads cu
 | `plunderstormRealm` | `0` | 5 |  |
 | `POIShiftComplete` | `0.3` | 0 |  |
 | `portal` |  | 6 | Name of Battle.net portal to use |
-| `PraiseTheSun` | `0` | 4 |  |
+| `PraiseTheSun` |  | 4 |  |
 | `PreemptiveCastEnable` | `0` | 5 | Enable preemptive triggering of cast visuals based on spell release timing |
 | `preloadLoadingDistObject` | `512` | 5 | Object preload distance when loading |
 | `preloadLoadingDistTerrain` | `1024` | 5 | Terrain preload distance when loading |

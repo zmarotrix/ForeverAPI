@@ -11,20 +11,20 @@ Namespace: `C_Reputation`
 | ✅ | [C_Reputation.CollapseFactionHeader](#c_reputationcollapsefactionheader) |  |  |
 | ✅ | [C_Reputation.ExpandAllFactionHeaders](#c_reputationexpandallfactionheaders) |  |  |
 | ✅ | [C_Reputation.ExpandFactionHeader](#c_reputationexpandfactionheader) |  |  |
-| ✅ | [C_Reputation.GetFactionDataByID](#c_reputationgetfactiondatabyid) |  |  |
-| ✅ | [C_Reputation.GetFactionDataByIndex](#c_reputationgetfactiondatabyindex) |  |  |
-| ✅ | [C_Reputation.GetFactionParagonInfo](#c_reputationgetfactionparagoninfo) |  |  |
+| ✅ | [C_Reputation.GetFactionDataByID](#c_reputationgetfactiondatabyid) | 1 value | 1 value |
+| ✅ | [C_Reputation.GetFactionDataByIndex](#c_reputationgetfactiondatabyindex) | 1 value | 1 value |
+| ✅ | [C_Reputation.GetFactionParagonInfo](#c_reputationgetfactionparagoninfo) | 0 values | 0 values |
 | ✅ | [C_Reputation.GetGuildFactionData](#c_reputationgetguildfactiondata) | 1 value | 1 value |
 | ✅ | [C_Reputation.GetGuildRepExpirationTime](#c_reputationgetguildrepexpirationtime) | 1 value | 1 value |
 | ✅ | [C_Reputation.GetNumFactions](#c_reputationgetnumfactions) | 1 value | 1 value |
 | ✅ | [C_Reputation.GetReputationSortType](#c_reputationgetreputationsorttype) | 1 value | 1 value |
 | ✅ | [C_Reputation.GetSelectedFaction](#c_reputationgetselectedfaction) | 1 value | 1 value |
 | ✅ | [C_Reputation.GetWatchedFactionData](#c_reputationgetwatchedfactiondata) | 1 value | 1 value |
-| ✅ | [C_Reputation.IsAccountWideReputation](#c_reputationisaccountwidereputation) |  |  |
-| ✅ | [C_Reputation.IsFactionActive](#c_reputationisfactionactive) |  |  |
-| ✅ | [C_Reputation.IsFactionParagon](#c_reputationisfactionparagon) |  |  |
-| ✅ | [C_Reputation.IsFactionParagonForCurrentPlayer](#c_reputationisfactionparagonforcurrentplayer) |  |  |
-| ✅ | [C_Reputation.IsMajorFaction](#c_reputationismajorfaction) |  |  |
+| ✅ | [C_Reputation.IsAccountWideReputation](#c_reputationisaccountwidereputation) | 1 value | 1 value |
+| ✅ | [C_Reputation.IsFactionActive](#c_reputationisfactionactive) | 1 value | 1 value |
+| ✅ | [C_Reputation.IsFactionParagon](#c_reputationisfactionparagon) | 1 value | 1 value |
+| ✅ | [C_Reputation.IsFactionParagonForCurrentPlayer](#c_reputationisfactionparagonforcurrentplayer) | 1 value | 1 value |
+| ✅ | [C_Reputation.IsMajorFaction](#c_reputationismajorfaction) | 1 value | 1 value |
 | ✅ | [C_Reputation.RequestFactionParagonPreloadRewardData](#c_reputationrequestfactionparagonpreloadrewarddata) |  |  |
 | ✅ | [C_Reputation.SetFactionActive](#c_reputationsetfactionactive) |  |  |
 | ✅ | [C_Reputation.SetLegacyReputationsShown](#c_reputationsetlegacyreputationsshown) |  |  |
@@ -79,6 +79,8 @@ Namespace: `C_Reputation`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:72`: returned 1 value: `table{atWarWith=boolean,canSetInactive=boolean,canToggleAtWar=boolean,currentReactionThreshold=number,currentStanding=number,description=string,factionID=number,hasBonusRepGain=boolean,isAccountWide=boolean,isChild=boolean,isCollapsed=boolean,isHeader=boolean,isHeaderWithRep=boolean,isWatched=boolean,name=string,nextReactionThreshold=number,reaction=number}`
+- Called in combat: returned 1 value: `table{atWarWith=boolean,canSetInactive=boolean,canToggleAtWar=boolean,currentReactionThreshold=number,currentStanding=number,description=string,factionID=number,hasBonusRepGain=boolean,isAccountWide=boolean,isChild=boolean,isCollapsed=boolean,isHeader=boolean,isHeaderWithRep=boolean,isWatched=boolean,name=string,nextReactionThreshold=number,reaction=number}`
 - Source: client docs `ReputationInfoDocumentation.lua`
 
 ### C_Reputation.GetFactionDataByIndex
@@ -87,6 +89,8 @@ Namespace: `C_Reputation`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `table{atWarWith=boolean,canSetInactive=boolean,canToggleAtWar=boolean,currentReactionThreshold=number,currentStanding=number,description=string,factionID=number,hasBonusRepGain=boolean,isAccountWide=boolean,isChild=boolean,isCollapsed=boolean,isHeader=boolean,isHeaderWithRep=boolean,isWatched=boolean,name=string,nextReactionThreshold=number,reaction=number}`
+- Called in combat: returned 1 value: `table{atWarWith=boolean,canSetInactive=boolean,canToggleAtWar=boolean,currentReactionThreshold=number,currentStanding=number,description=string,factionID=number,hasBonusRepGain=boolean,isAccountWide=boolean,isChild=boolean,isCollapsed=boolean,isHeader=boolean,isHeaderWithRep=boolean,isWatched=boolean,name=string,nextReactionThreshold=number,reaction=number}`
 - Source: client docs `ReputationInfoDocumentation.lua`
 
 ### C_Reputation.GetFactionParagonInfo
@@ -96,6 +100,8 @@ Namespace: `C_Reputation`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:72`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ReputationInfoDocumentation.lua`
 
 ### C_Reputation.GetGuildFactionData
@@ -158,6 +164,8 @@ Namespace: `C_Reputation`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:72`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ReputationInfoDocumentation.lua`
 
 ### C_Reputation.IsFactionActive
@@ -166,6 +174,8 @@ Namespace: `C_Reputation`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ReputationInfoDocumentation.lua`
 
 ### C_Reputation.IsFactionParagon
@@ -174,6 +184,8 @@ Namespace: `C_Reputation`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:72`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ReputationInfoDocumentation.lua`
 
 ### C_Reputation.IsFactionParagonForCurrentPlayer
@@ -182,6 +194,8 @@ Namespace: `C_Reputation`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:72`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ReputationInfoDocumentation.lua`
 
 ### C_Reputation.IsMajorFaction
@@ -190,6 +204,8 @@ Namespace: `C_Reputation`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:72`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ReputationInfoDocumentation.lua`
 
 ### C_Reputation.RequestFactionParagonPreloadRewardData

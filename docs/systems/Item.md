@@ -8,113 +8,113 @@ Namespace: `C_Item`
 |---|---|---|---|
 | ✅ | [C_Item.ActionBindsItem](#c_itemactionbindsitem) |  |  |
 | ✅ | [C_Item.BindEnchant](#c_itembindenchant) |  |  |
-| ✅ | [C_Item.CanBeRefunded](#c_itemcanberefunded) |  |  |
-| ✅ | [C_Item.CanItemTransmogAppearance](#c_itemcanitemtransmogappearance) |  |  |
-| ✅ | [C_Item.CanScrapItem](#c_itemcanscrapitem) |  |  |
-| ✅ | [C_Item.CanViewItemPowers](#c_itemcanviewitempowers) |  |  |
+| ✅ | [C_Item.CanBeRefunded](#c_itemcanberefunded) | 1 value | 1 value |
+| ✅ | [C_Item.CanItemTransmogAppearance](#c_itemcanitemtransmogappearance) | 2 values | 2 values |
+| ✅ | [C_Item.CanScrapItem](#c_itemcanscrapitem) | 1 value | 1 value |
+| ✅ | [C_Item.CanViewItemPowers](#c_itemcanviewitempowers) | 1 value | 1 value |
 | ✅ | [C_Item.ConfirmBindOnUse](#c_itemconfirmbindonuse) |  |  |
 | ✅ | [C_Item.ConfirmDeleteItem](#c_itemconfirmdeleteitem) |  |  |
 | ✅ | [C_Item.ConfirmNoRefundOnUse](#c_itemconfirmnorefundonuse) |  |  |
 | ✅ | [C_Item.ConfirmOnUse](#c_itemconfirmonuse) |  |  |
 | ✅ | [C_Item.DeleteItem](#c_itemdeleteitem) |  |  |
-| ✅ | [C_Item.DoesItemContainSpec](#c_itemdoesitemcontainspec) |  |  |
+| ✅ | [C_Item.DoesItemContainSpec](#c_itemdoesitemcontainspec) | 1 value | 1 value |
 | ✅ | [C_Item.DoesItemExist](#c_itemdoesitemexist) |  |  |
-| ✅ | [C_Item.DoesItemExistByID](#c_itemdoesitemexistbyid) |  |  |
-| ✅ | [C_Item.DoesItemMatchBonusTreeReplacement](#c_itemdoesitemmatchbonustreereplacement) |  |  |
-| ✅ | [C_Item.DoesItemMatchSpellItemCondition](#c_itemdoesitemmatchspellitemcondition) |  |  |
-| ✅ | [C_Item.DoesItemMatchTargetEnchantingSpell](#c_itemdoesitemmatchtargetenchantingspell) |  |  |
-| ✅ | [C_Item.DoesItemMatchTrackJump](#c_itemdoesitemmatchtrackjump) |  |  |
+| ✅ | [C_Item.DoesItemExistByID](#c_itemdoesitemexistbyid) | 1 value | 1 value |
+| ✅ | [C_Item.DoesItemMatchBonusTreeReplacement](#c_itemdoesitemmatchbonustreereplacement) | 1 value | 1 value |
+| ✅ | [C_Item.DoesItemMatchSpellItemCondition](#c_itemdoesitemmatchspellitemcondition) | 1 value | 1 value |
+| ✅ | [C_Item.DoesItemMatchTargetEnchantingSpell](#c_itemdoesitemmatchtargetenchantingspell) | 1 value | 1 value |
+| ✅ | [C_Item.DoesItemMatchTrackJump](#c_itemdoesitemmatchtrackjump) | 1 value | 1 value |
 | ✅ | [C_Item.DropItemOnUnit](#c_itemdropitemonunit) |  |  |
 | ✅ | [C_Item.EndBoundTradeable](#c_itemendboundtradeable) |  |  |
 | ✅ | [C_Item.EndRefund](#c_itemendrefund) |  |  |
 | ✅ | [C_Item.EquipItemByName](#c_itemequipitembyname) |  |  |
-| ✅ | [C_Item.GetAppliedItemTransmogInfo](#c_itemgetapplieditemtransmoginfo) |  |  |
-| ✅ | [C_Item.GetBaseItemTransmogInfo](#c_itemgetbaseitemtransmoginfo) |  |  |
-| ✅ | [C_Item.GetCurrentItemLevel](#c_itemgetcurrentitemlevel) |  |  |
-| ✅ | [C_Item.GetCurrentItemTransmogInfo](#c_itemgetcurrentitemtransmoginfo) |  |  |
+| ✅ | [C_Item.GetAppliedItemTransmogInfo](#c_itemgetapplieditemtransmoginfo) | 1 value | 1 value |
+| ✅ | [C_Item.GetBaseItemTransmogInfo](#c_itemgetbaseitemtransmoginfo) | 1 value | 1 value |
+| ✅ | [C_Item.GetCurrentItemLevel](#c_itemgetcurrentitemlevel) | 1 value | 1 value |
+| ✅ | [C_Item.GetCurrentItemTransmogInfo](#c_itemgetcurrentitemtransmoginfo) | 1 value | 1 value |
 | ✅ | [C_Item.GetDelvePreviewItemLink](#c_itemgetdelvepreviewitemlink) |  |  |
 | ✅ | [C_Item.GetDelvePreviewItemQuality](#c_itemgetdelvepreviewitemquality) |  |  |
-| ✅ | [C_Item.GetDetailedItemLevelInfo](#c_itemgetdetaileditemlevelinfo) |  |  |
+| ✅ | [C_Item.GetDetailedItemLevelInfo](#c_itemgetdetaileditemlevelinfo) | 3 values | 3 values |
 | ✅ | [C_Item.GetFirstTriggeredSpellForItem](#c_itemgetfirsttriggeredspellforitem) |  |  |
-| ✅ | [C_Item.GetItemChildInfo](#c_itemgetitemchildinfo) |  |  |
+| ✅ | [C_Item.GetItemChildInfo](#c_itemgetitemchildinfo) | 1 value | 1 value |
 | ✅ | [C_Item.GetItemClassInfo](#c_itemgetitemclassinfo) |  |  |
-| ✅ | [C_Item.GetItemConversionOutputIcon](#c_itemgetitemconversionoutputicon) |  |  |
-| ✅ | [C_Item.GetItemCooldown](#c_itemgetitemcooldown) |  |  |
-| ✅ | [C_Item.GetItemCount](#c_itemgetitemcount) |  |  |
-| ✅ | [C_Item.GetItemCreationContext](#c_itemgetitemcreationcontext) |  |  |
-| ✅ | [C_Item.GetItemFamily](#c_itemgetitemfamily) |  |  |
-| ✅ | [C_Item.GetItemGUID](#c_itemgetitemguid) |  |  |
+| ✅ | [C_Item.GetItemConversionOutputIcon](#c_itemgetitemconversionoutputicon) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemCooldown](#c_itemgetitemcooldown) | 3 values | 3 values |
+| ✅ | [C_Item.GetItemCount](#c_itemgetitemcount) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemCreationContext](#c_itemgetitemcreationcontext) | 2 values | 2 values |
+| ✅ | [C_Item.GetItemFamily](#c_itemgetitemfamily) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemGUID](#c_itemgetitemguid) | 1 value | 1 value |
 | ✅ | [C_Item.GetItemGem](#c_itemgetitemgem) |  |  |
-| ✅ | [C_Item.GetItemGemID](#c_itemgetitemgemid) |  |  |
-| ✅ | [C_Item.GetItemID](#c_itemgetitemid) |  |  |
-| ✅ | [C_Item.GetItemIDByGUID](#c_itemgetitemidbyguid) |  |  |
-| ✅ | [C_Item.GetItemIDForItemInfo](#c_itemgetitemidforiteminfo) |  |  |
-| ✅ | [C_Item.GetItemIcon](#c_itemgetitemicon) |  |  |
-| ✅ | [C_Item.GetItemIconByID](#c_itemgetitemiconbyid) |  |  |
-| ✅ | [C_Item.GetItemInfo](#c_itemgetiteminfo) |  |  |
-| ✅ | [C_Item.GetItemInfoInstant](#c_itemgetiteminfoinstant) |  |  |
-| ✅ | [C_Item.GetItemInventorySlotInfo](#c_itemgetiteminventoryslotinfo) |  |  |
-| ✅ | [C_Item.GetItemInventorySlotKey](#c_itemgetiteminventoryslotkey) |  |  |
-| ✅ | [C_Item.GetItemInventoryType](#c_itemgetiteminventorytype) |  |  |
-| ✅ | [C_Item.GetItemInventoryTypeByID](#c_itemgetiteminventorytypebyid) |  |  |
-| ✅ | [C_Item.GetItemLearnTransmogSet](#c_itemgetitemlearntransmogset) |  |  |
-| ✅ | [C_Item.GetItemLink](#c_itemgetitemlink) |  |  |
-| ✅ | [C_Item.GetItemLinkByGUID](#c_itemgetitemlinkbyguid) |  |  |
-| ✅ | [C_Item.GetItemLocation](#c_itemgetitemlocation) |  |  |
-| ✅ | [C_Item.GetItemMaxStackSize](#c_itemgetitemmaxstacksize) |  |  |
-| ✅ | [C_Item.GetItemMaxStackSizeByID](#c_itemgetitemmaxstacksizebyid) |  |  |
-| ✅ | [C_Item.GetItemName](#c_itemgetitemname) |  |  |
-| ✅ | [C_Item.GetItemNameByID](#c_itemgetitemnamebyid) |  |  |
-| ✅ | [C_Item.GetItemNumAddedSockets](#c_itemgetitemnumaddedsockets) |  |  |
-| ✅ | [C_Item.GetItemNumSockets](#c_itemgetitemnumsockets) |  |  |
-| ✅ | [C_Item.GetItemQuality](#c_itemgetitemquality) |  |  |
-| ✅ | [C_Item.GetItemQualityByID](#c_itemgetitemqualitybyid) |  |  |
-| ✅ | [C_Item.GetItemQualityColor](#c_itemgetitemqualitycolor) |  |  |
+| ✅ | [C_Item.GetItemGemID](#c_itemgetitemgemid) | 0 values | 0 values |
+| ✅ | [C_Item.GetItemID](#c_itemgetitemid) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemIDByGUID](#c_itemgetitemidbyguid) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemIDForItemInfo](#c_itemgetitemidforiteminfo) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemIcon](#c_itemgetitemicon) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemIconByID](#c_itemgetitemiconbyid) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemInfo](#c_itemgetiteminfo) | 18 values | 18 values |
+| ✅ | [C_Item.GetItemInfoInstant](#c_itemgetiteminfoinstant) | 7 values | 7 values |
+| ✅ | [C_Item.GetItemInventorySlotInfo](#c_itemgetiteminventoryslotinfo) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemInventorySlotKey](#c_itemgetiteminventoryslotkey) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemInventoryType](#c_itemgetiteminventorytype) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemInventoryTypeByID](#c_itemgetiteminventorytypebyid) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemLearnTransmogSet](#c_itemgetitemlearntransmogset) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemLink](#c_itemgetitemlink) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemLinkByGUID](#c_itemgetitemlinkbyguid) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemLocation](#c_itemgetitemlocation) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemMaxStackSize](#c_itemgetitemmaxstacksize) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemMaxStackSizeByID](#c_itemgetitemmaxstacksizebyid) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemName](#c_itemgetitemname) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemNameByID](#c_itemgetitemnamebyid) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemNumAddedSockets](#c_itemgetitemnumaddedsockets) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemNumSockets](#c_itemgetitemnumsockets) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemQuality](#c_itemgetitemquality) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemQualityByID](#c_itemgetitemqualitybyid) | 1 value | 1 value |
+| ✅ | [C_Item.GetItemQualityColor](#c_itemgetitemqualitycolor) | 4 values | 4 values |
 | ✅ | [C_Item.GetItemSetInfo](#c_itemgetitemsetinfo) |  |  |
-| ✅ | [C_Item.GetItemSpecInfo](#c_itemgetitemspecinfo) |  |  |
-| ✅ | [C_Item.GetItemSpell](#c_itemgetitemspell) |  |  |
+| ✅ | [C_Item.GetItemSpecInfo](#c_itemgetitemspecinfo) | 0 values | 0 values |
+| ✅ | [C_Item.GetItemSpell](#c_itemgetitemspell) | 2 values | 2 values |
 | ✅ | [C_Item.GetItemStatDelta](#c_itemgetitemstatdelta) |  |  |
 | ✅ | [C_Item.GetItemStats](#c_itemgetitemstats) |  |  |
 | ✅ | [C_Item.GetItemSubClassInfo](#c_itemgetitemsubclassinfo) |  |  |
-| ✅ | [C_Item.GetItemUniqueness](#c_itemgetitemuniqueness) |  |  |
-| ✅ | [C_Item.GetItemUniquenessByID](#c_itemgetitemuniquenessbyid) |  |  |
-| ✅ | [C_Item.GetItemUpgradeInfo](#c_itemgetitemupgradeinfo) |  |  |
-| ✅ | [C_Item.GetLimitedCurrencyItemInfo](#c_itemgetlimitedcurrencyiteminfo) |  |  |
+| ✅ | [C_Item.GetItemUniqueness](#c_itemgetitemuniqueness) | 0 values | 0 values |
+| ✅ | [C_Item.GetItemUniquenessByID](#c_itemgetitemuniquenessbyid) | 4 values | 4 values |
+| ✅ | [C_Item.GetItemUpgradeInfo](#c_itemgetitemupgradeinfo) | 1 value | 1 value |
+| ✅ | [C_Item.GetLimitedCurrencyItemInfo](#c_itemgetlimitedcurrencyiteminfo) | 0 values | 0 values |
 | ✅ | [C_Item.GetSetBonusesForSpecializationByItemID](#c_itemgetsetbonusesforspecializationbyitemid) |  |  |
-| ✅ | [C_Item.GetStackCount](#c_itemgetstackcount) |  |  |
-| ✅ | [C_Item.GetWeaponEnchantInfo](#c_itemgetweaponenchantinfo) |  |  |
-| ✅ | [C_Item.IsAnimaItemByID](#c_itemisanimaitembyid) |  |  |
-| ✅ | [C_Item.IsArtifactPowerItem](#c_itemisartifactpoweritem) |  |  |
-| ✅ | [C_Item.IsBound](#c_itemisbound) |  |  |
-| ✅ | [C_Item.IsBoundToAccountUntilEquip](#c_itemisboundtoaccountuntilequip) |  |  |
-| ✅ | [C_Item.IsConsumableItem](#c_itemisconsumableitem) |  |  |
-| ✅ | [C_Item.IsCorruptedItem](#c_itemiscorrupteditem) |  |  |
-| ✅ | [C_Item.IsCosmeticItem](#c_itemiscosmeticitem) |  |  |
-| ✅ | [C_Item.IsCurioItem](#c_itemiscurioitem) |  |  |
-| ✅ | [C_Item.IsCurrentItem](#c_itemiscurrentitem) |  |  |
-| ✅ | [C_Item.IsDecorItem](#c_itemisdecoritem) |  |  |
-| ✅ | [C_Item.IsDressableItemByID](#c_itemisdressableitembyid) |  |  |
-| ✅ | [C_Item.IsEquippableItem](#c_itemisequippableitem) |  |  |
-| ✅ | [C_Item.IsEquippedItem](#c_itemisequippeditem) |  |  |
+| ✅ | [C_Item.GetStackCount](#c_itemgetstackcount) | 1 value | 1 value |
+| ✅ | [C_Item.GetWeaponEnchantInfo](#c_itemgetweaponenchantinfo) | 1 value | 1 value |
+| ✅ | [C_Item.IsAnimaItemByID](#c_itemisanimaitembyid) | 1 value | 1 value |
+| ✅ | [C_Item.IsArtifactPowerItem](#c_itemisartifactpoweritem) | 1 value | 1 value |
+| ✅ | [C_Item.IsBound](#c_itemisbound) | 1 value | 1 value |
+| ✅ | [C_Item.IsBoundToAccountUntilEquip](#c_itemisboundtoaccountuntilequip) | 1 value | 1 value |
+| ✅ | [C_Item.IsConsumableItem](#c_itemisconsumableitem) | 1 value | 1 value |
+| ✅ | [C_Item.IsCorruptedItem](#c_itemiscorrupteditem) | 1 value | 1 value |
+| ✅ | [C_Item.IsCosmeticItem](#c_itemiscosmeticitem) | 1 value | 1 value |
+| ✅ | [C_Item.IsCurioItem](#c_itemiscurioitem) | 1 value | 1 value |
+| ✅ | [C_Item.IsCurrentItem](#c_itemiscurrentitem) | 1 value | 1 value |
+| ✅ | [C_Item.IsDecorItem](#c_itemisdecoritem) | 1 value | 1 value |
+| ✅ | [C_Item.IsDressableItemByID](#c_itemisdressableitembyid) | 1 value | 1 value |
+| ✅ | [C_Item.IsEquippableItem](#c_itemisequippableitem) | 1 value | 1 value |
+| ✅ | [C_Item.IsEquippedItem](#c_itemisequippeditem) | 1 value | 1 value |
 | ✅ | [C_Item.IsEquippedItemType](#c_itemisequippeditemtype) |  |  |
-| ✅ | [C_Item.IsHarmfulItem](#c_itemisharmfulitem) |  |  |
-| ✅ | [C_Item.IsHelpfulItem](#c_itemishelpfulitem) |  |  |
-| ✅ | [C_Item.IsItemBindToAccount](#c_itemisitembindtoaccount) |  |  |
-| ✅ | [C_Item.IsItemBindToAccountUntilEquip](#c_itemisitembindtoaccountuntilequip) |  |  |
-| ✅ | [C_Item.IsItemConduit](#c_itemisitemconduit) |  |  |
-| ✅ | [C_Item.IsItemConvertibleAndValidForPlayer](#c_itemisitemconvertibleandvalidforplayer) |  |  |
-| ✅ | [C_Item.IsItemCorrupted](#c_itemisitemcorrupted) |  |  |
-| ✅ | [C_Item.IsItemCorruptionRelated](#c_itemisitemcorruptionrelated) |  |  |
-| ✅ | [C_Item.IsItemCorruptionResistant](#c_itemisitemcorruptionresistant) |  |  |
-| ✅ | [C_Item.IsItemDataCached](#c_itemisitemdatacached) |  |  |
-| ✅ | [C_Item.IsItemDataCachedByID](#c_itemisitemdatacachedbyid) |  |  |
-| ✅ | [C_Item.IsItemGUIDInInventory](#c_itemisitemguidininventory) |  |  |
+| ✅ | [C_Item.IsHarmfulItem](#c_itemisharmfulitem) | 1 value | 1 value |
+| ✅ | [C_Item.IsHelpfulItem](#c_itemishelpfulitem) | 1 value | 1 value |
+| ✅ | [C_Item.IsItemBindToAccount](#c_itemisitembindtoaccount) | 1 value | 1 value |
+| ✅ | [C_Item.IsItemBindToAccountUntilEquip](#c_itemisitembindtoaccountuntilequip) | 1 value | 1 value |
+| ✅ | [C_Item.IsItemConduit](#c_itemisitemconduit) | 1 value | 1 value |
+| ✅ | [C_Item.IsItemConvertibleAndValidForPlayer](#c_itemisitemconvertibleandvalidforplayer) | 1 value | 1 value |
+| ✅ | [C_Item.IsItemCorrupted](#c_itemisitemcorrupted) | 1 value | 1 value |
+| ✅ | [C_Item.IsItemCorruptionRelated](#c_itemisitemcorruptionrelated) | 1 value | 1 value |
+| ✅ | [C_Item.IsItemCorruptionResistant](#c_itemisitemcorruptionresistant) | 1 value | 1 value |
+| ✅ | [C_Item.IsItemDataCached](#c_itemisitemdatacached) | 1 value | 1 value |
+| ✅ | [C_Item.IsItemDataCachedByID](#c_itemisitemdatacachedbyid) | 1 value | 1 value |
+| ✅ | [C_Item.IsItemGUIDInInventory](#c_itemisitemguidininventory) | 1 value | 1 value |
 | ✅ | [C_Item.IsItemInRange](#c_itemisiteminrange) |  |  |
-| ✅ | [C_Item.IsItemKeystoneByID](#c_itemisitemkeystonebyid) |  |  |
-| ✅ | [C_Item.IsItemSpecificToPlayerClass](#c_itemisitemspecifictoplayerclass) |  |  |
-| ✅ | [C_Item.IsLocked](#c_itemislocked) |  |  |
-| ✅ | [C_Item.IsRelicItem](#c_itemisrelicitem) |  |  |
-| ✅ | [C_Item.IsUsableItem](#c_itemisusableitem) |  |  |
+| ✅ | [C_Item.IsItemKeystoneByID](#c_itemisitemkeystonebyid) | 1 value | 1 value |
+| ✅ | [C_Item.IsItemSpecificToPlayerClass](#c_itemisitemspecifictoplayerclass) | 1 value | 1 value |
+| ✅ | [C_Item.IsLocked](#c_itemislocked) | 1 value | 1 value |
+| ✅ | [C_Item.IsRelicItem](#c_itemisrelicitem) | 1 value | 1 value |
+| ✅ | [C_Item.IsUsableItem](#c_itemisusableitem) | 2 values | 2 values |
 | ✅ | [C_Item.ItemHasRange](#c_itemitemhasrange) |  |  |
 | ✅ | [C_Item.LockItem](#c_itemlockitem) |  |  |
 | ✅ | [C_Item.LockItemByGUID](#c_itemlockitembyguid) |  |  |
@@ -148,6 +148,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.CanItemTransmogAppearance
@@ -156,6 +158,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 2 values: `boolean`, `number`
+- Called in combat: returned 2 values: `boolean`, `number`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.CanScrapItem
@@ -164,6 +168,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.CanViewItemPowers
@@ -172,6 +178,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.ConfirmBindOnUse
@@ -219,6 +227,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item,class`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.DoesItemExist
@@ -235,6 +245,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.DoesItemMatchBonusTreeReplacement
@@ -243,6 +255,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.DoesItemMatchSpellItemCondition
@@ -251,6 +265,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.DoesItemMatchTargetEnchantingSpell
@@ -259,6 +275,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.DoesItemMatchTrackJump
@@ -267,6 +285,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.DropItemOnUnit
@@ -307,6 +327,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `table{Clear=function,ConfigureSecondaryForMainHand=function,Init=function,IsEqual=function,IsMainHandIndividualWeapon=function,IsMainHandPairedWeapon=function,appearanceID=number,illusionID=number,secondaryAppearanceID=number}`
+- Called in combat: returned 1 value: `table{Clear=function,ConfigureSecondaryForMainHand=function,Init=function,IsEqual=function,IsMainHandIndividualWeapon=function,IsMainHandPairedWeapon=function,appearanceID=number,illusionID=number,secondaryAppearanceID=number}`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetBaseItemTransmogInfo
@@ -315,6 +337,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `table{Clear=function,ConfigureSecondaryForMainHand=function,Init=function,IsEqual=function,IsMainHandIndividualWeapon=function,IsMainHandPairedWeapon=function,appearanceID=number,illusionID=number,secondaryAppearanceID=number}`
+- Called in combat: returned 1 value: `table{Clear=function,ConfigureSecondaryForMainHand=function,Init=function,IsEqual=function,IsMainHandIndividualWeapon=function,IsMainHandPairedWeapon=function,appearanceID=number,illusionID=number,secondaryAppearanceID=number}`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetCurrentItemLevel
@@ -323,6 +347,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetCurrentItemTransmogInfo
@@ -331,6 +357,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `table{Clear=function,ConfigureSecondaryForMainHand=function,Init=function,IsEqual=function,IsMainHandIndividualWeapon=function,IsMainHandPairedWeapon=function,appearanceID=number,illusionID=number,secondaryAppearanceID=number}`
+- Called in combat: returned 1 value: `table{Clear=function,ConfigureSecondaryForMainHand=function,Init=function,IsEqual=function,IsMainHandIndividualWeapon=function,IsMainHandPairedWeapon=function,appearanceID=number,illusionID=number,secondaryAppearanceID=number}`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetDelvePreviewItemLink
@@ -356,6 +384,8 @@ Namespace: `C_Item`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 3 values: `number`, `boolean`, `number`
+- Called in combat: returned 3 values: `number`, `boolean`, `number`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetFirstTriggeredSpellForItem
@@ -372,6 +402,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemClassInfo
@@ -388,6 +420,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemCooldown
@@ -396,6 +430,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 3 values: `number`, `number`, `boolean`
+- Called in combat: returned 3 values: `number`, `number`, `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemCount
@@ -404,6 +440,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemCreationContext
@@ -412,6 +450,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 2 values: `number`, `string`
+- Called in combat: returned 2 values: `number`, `string`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemFamily
@@ -420,6 +460,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemGUID
@@ -428,6 +470,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemGem
@@ -446,6 +490,8 @@ Namespace: `C_Item`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item,n:1`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemID
@@ -454,6 +500,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemIDByGUID
@@ -462,6 +510,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemIDForItemInfo
@@ -470,6 +520,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemIcon
@@ -478,6 +530,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemIconByID
@@ -486,6 +540,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemInfo
@@ -495,6 +551,8 @@ Namespace: `C_Item`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 18 values: `string`, `string`, `number`, `number`, `number`, `string`, `string`, `number`, `string`, `number`, `number`, `number`, `number`, `number`, `number`, `nil`, `boolean`, `string`
+- Called in combat: returned 18 values: `string`, `string`, `number`, `number`, `number`, `string`, `string`, `number`, `string`, `number`, `number`, `number`, `number`, `number`, `number`, `nil`, `boolean`, `string`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemInfoInstant
@@ -504,6 +562,8 @@ Namespace: `C_Item`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 7 values: `number`, `string`, `string`, `string`, `number`, `number`, `number`
+- Called in combat: returned 7 values: `number`, `string`, `string`, `string`, `number`, `number`, `number`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemInventorySlotInfo
@@ -512,6 +572,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemInventorySlotKey
@@ -520,6 +582,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemInventoryType
@@ -528,6 +592,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemInventoryTypeByID
@@ -536,6 +602,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemLearnTransmogSet
@@ -544,6 +612,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemLink
@@ -552,6 +622,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemLinkByGUID
@@ -560,6 +632,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemLocation
@@ -568,6 +642,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemMaxStackSize
@@ -576,6 +652,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemMaxStackSizeByID
@@ -584,6 +662,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemName
@@ -592,6 +672,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemNameByID
@@ -600,6 +682,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemNumAddedSockets
@@ -608,6 +692,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemNumSockets
@@ -616,6 +702,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemQuality
@@ -624,6 +712,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemQualityByID
@@ -632,6 +722,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemQualityColor
@@ -640,6 +732,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 4 values: `number`, `number`, `number`, `string`
+- Called in combat: returned 4 values: `number`, `number`, `number`, `string`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemSetInfo
@@ -657,6 +751,8 @@ Namespace: `C_Item`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemSpell
@@ -666,6 +762,8 @@ Namespace: `C_Item`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 2 values: `string`, `number`
+- Called in combat: returned 2 values: `string`, `number`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemStatDelta
@@ -702,6 +800,8 @@ Namespace: `C_Item`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemUniquenessByID
@@ -711,6 +811,8 @@ Namespace: `C_Item`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 4 values: `boolean`, `nil`, `nil`, `nil`
+- Called in combat: returned 4 values: `boolean`, `nil`, `nil`, `nil`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetItemUpgradeInfo
@@ -719,6 +821,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `table{currentLevel=number,maxItemLevel=number,maxLevel=number}`
+- Called in combat: returned 1 value: `table{currentLevel=number,maxItemLevel=number,maxLevel=number}`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetLimitedCurrencyItemInfo
@@ -728,6 +832,8 @@ Namespace: `C_Item`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetSetBonusesForSpecializationByItemID
@@ -745,6 +851,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.GetWeaponEnchantInfo
@@ -753,6 +861,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `table{[number]=table,[number]=table}`
+- Called in combat: returned 1 value: `table{[number]=table,[number]=table}`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsAnimaItemByID
@@ -761,6 +871,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsArtifactPowerItem
@@ -769,6 +881,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsBound
@@ -777,6 +891,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsBoundToAccountUntilEquip
@@ -786,6 +902,8 @@ Namespace: `C_Item`
 - Status: ✅ verified (function)
 - Blizzard: You can use IsItemBindToAccountUntilEquip instead if the item is not in your inventory
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsConsumableItem
@@ -794,6 +912,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsCorruptedItem
@@ -802,6 +922,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsCosmeticItem
@@ -810,6 +932,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsCurioItem
@@ -819,6 +943,8 @@ Namespace: `C_Item`
 - Status: ✅ verified (function)
 - Blizzard: Returns whether the item is a consumable curio that can be applied to a delves companion.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsCurrentItem
@@ -827,6 +953,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsDecorItem
@@ -836,6 +964,8 @@ Namespace: `C_Item`
 - Status: ✅ verified (function)
 - Blizzard: Returns whether the item is a consumable decor item.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsDressableItemByID
@@ -844,6 +974,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsEquippableItem
@@ -852,6 +984,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsEquippedItem
@@ -860,6 +994,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsEquippedItemType
@@ -876,6 +1012,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsHelpfulItem
@@ -884,6 +1022,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsItemBindToAccount
@@ -892,6 +1032,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsItemBindToAccountUntilEquip
@@ -901,6 +1043,8 @@ Namespace: `C_Item`
 - Status: ✅ verified (function)
 - Blizzard: You can use IsBoundToAccountUntilEquip instead if the item exists in your inventory
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsItemConduit
@@ -909,6 +1053,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsItemConvertibleAndValidForPlayer
@@ -917,6 +1063,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsItemCorrupted
@@ -925,6 +1073,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsItemCorruptionRelated
@@ -933,6 +1083,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsItemCorruptionResistant
@@ -941,6 +1093,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsItemDataCached
@@ -949,6 +1103,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsItemDataCachedByID
@@ -957,6 +1113,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsItemGUIDInInventory
@@ -965,6 +1123,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `guid`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsItemInRange
@@ -981,6 +1141,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsItemSpecificToPlayerClass
@@ -989,6 +1151,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsLocked
@@ -997,6 +1161,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `itemloc`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsRelicItem
@@ -1006,6 +1172,8 @@ Namespace: `C_Item`
 - Status: ✅ verified (function)
 - Blizzard: Returns whether the item is a consumable relic  that can be applied to an artifact weapon.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.IsUsableItem
@@ -1014,6 +1182,8 @@ Namespace: `C_Item`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 2 values: `boolean`, `boolean`
+- Called in combat: returned 2 values: `boolean`, `boolean`
 - Source: client docs `ItemDocumentation.lua`
 
 ### C_Item.ItemHasRange
@@ -1146,6 +1316,7 @@ Namespace: `C_Item`
 - Status: ✅ verified
 - Payload: `itemName: cstring`, `qualityID: number`, `bonding: number`, `questWarn: number`, `itemGUID: WOWGUID?`
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: `s,n,n,n,-`
 
 ### END_BOUND_TRADEABLE
 
@@ -1158,7 +1329,7 @@ Namespace: `C_Item`
 - Status: ✅ verified
 - Payload: `itemID: number`, `success: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 51 times (0 in combat); argument kinds: `n,b`
+- Seen firing 88 times (0 in combat); argument kinds: `n,b`
 
 ### ITEM_CHANGED
 
@@ -1177,14 +1348,14 @@ Namespace: `C_Item`
 - Status: ✅ verified
 - Payload: `itemID: number`
 - unique event (Blizzard's docs)
-- Seen firing 14 times (1 in combat); argument kinds: `n`
+- Seen firing 28 times (4 in combat); argument kinds: `n`
 
 ### ITEM_DATA_LOAD_RESULT
 
 - Status: ✅ verified
 - Payload: `itemID: number`, `success: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1800 times (1590 in combat); argument kinds: `n,b`
+- Seen firing 6020 times (2454 in combat); argument kinds: `n,b`
 
 ### MERCHANT_CONFIRM_TRADE_TIMER_REMOVAL
 

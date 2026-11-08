@@ -6,7 +6,7 @@ Namespace: `C_SystemVisibilityManager`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_SystemVisibilityManager.IsSystemVisible](#c_systemvisibilitymanagerissystemvisible) |  |  |
+| ✅ | [C_SystemVisibilityManager.IsSystemVisible](#c_systemvisibilitymanagerissystemvisible) | 1 value | 1 value |
 
 ### C_SystemVisibilityManager.IsSystemVisible
 
@@ -14,6 +14,8 @@ Namespace: `C_SystemVisibilityManager`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UISystemVisibilityManagerDocumentation.lua`
 
 ## Events

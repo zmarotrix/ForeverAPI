@@ -6,69 +6,69 @@ Namespace: `C_Spell`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_Spell.CancelAutoRepeatSpell](#c_spellcancelautorepeatspell) | 💥 forbidden | 💥 forbidden |
+| ✅ | [C_Spell.CancelAutoRepeatSpell](#c_spellcancelautorepeatspell) |  |  |
 | ✅ | [C_Spell.CancelItemTempEnchantment](#c_spellcancelitemtempenchantment) |  |  |
 | ✅ | [C_Spell.CancelSpellByID](#c_spellcancelspellbyid) |  |  |
-| ✅ | [C_Spell.DoesSpellExist](#c_spelldoesspellexist) |  |  |
+| ✅ | [C_Spell.DoesSpellExist](#c_spelldoesspellexist) | 1 value | 1 value |
 | ✅ | [C_Spell.EnableSpellRangeCheck](#c_spellenablespellrangecheck) |  |  |
-| ✅ | [C_Spell.GetAuraStatChanges](#c_spellgetaurastatchanges) |  |  |
-| ✅ | [C_Spell.GetBaseSpell](#c_spellgetbasespell) |  |  |
-| ✅ | [C_Spell.GetDeadlyDebuffInfo](#c_spellgetdeadlydebuffinfo) |  |  |
-| ✅ | [C_Spell.GetItemCooldown](#c_spellgetitemcooldown) |  |  |
-| ✅ | [C_Spell.GetItemModifiedAppearancesApplied](#c_spellgetitemmodifiedappearancesapplied) |  |  |
+| ✅ | [C_Spell.GetAuraStatChanges](#c_spellgetaurastatchanges) | 2 values | 2 values |
+| ✅ | [C_Spell.GetBaseSpell](#c_spellgetbasespell) | 1 value | 1 value |
+| ✅ | [C_Spell.GetDeadlyDebuffInfo](#c_spellgetdeadlydebuffinfo) | 0 values | 0 values |
+| ✅ | [C_Spell.GetItemCooldown](#c_spellgetitemcooldown) | 1 value | 1 value |
+| ✅ | [C_Spell.GetItemModifiedAppearancesApplied](#c_spellgetitemmodifiedappearancesapplied) | 1 value | 1 value |
 | ✅ | [C_Spell.GetLastCategoryCooldownSource](#c_spellgetlastcategorycooldownsource) |  |  |
 | 🆕 | [C_Spell.GetMawPowerBorderAtlasBySpellID](#c_spellgetmawpowerborderatlasbyspellid) |  |  |
-| ✅ | [C_Spell.GetMawPowerLinkBySpellID](#c_spellgetmawpowerlinkbyspellid) |  |  |
-| ✅ | [C_Spell.GetMawPowerRarityInfoBySpellID](#c_spellgetmawpowerrarityinfobyspellid) |  |  |
-| ✅ | [C_Spell.GetOverrideSpell](#c_spellgetoverridespell) |  |  |
+| ✅ | [C_Spell.GetMawPowerLinkBySpellID](#c_spellgetmawpowerlinkbyspellid) | 0 values | 0 values |
+| ✅ | [C_Spell.GetMawPowerRarityInfoBySpellID](#c_spellgetmawpowerrarityinfobyspellid) | 0 values | 0 values |
+| ✅ | [C_Spell.GetOverrideSpell](#c_spellgetoverridespell) | 1 value | 1 value |
 | ✅ | [C_Spell.GetSchoolString](#c_spellgetschoolstring) |  |  |
-| ✅ | [C_Spell.GetSpellAutoCast](#c_spellgetspellautocast) |  |  |
-| ✅ | [C_Spell.GetSpellCastCount](#c_spellgetspellcastcount) |  |  |
-| ✅ | [C_Spell.GetSpellChargeDuration](#c_spellgetspellchargeduration) |  |  |
-| ✅ | [C_Spell.GetSpellCharges](#c_spellgetspellcharges) |  |  |
-| ✅ | [C_Spell.GetSpellCooldown](#c_spellgetspellcooldown) |  |  |
-| ✅ | [C_Spell.GetSpellCooldownDuration](#c_spellgetspellcooldownduration) |  |  |
-| ✅ | [C_Spell.GetSpellDescription](#c_spellgetspelldescription) |  |  |
-| ✅ | [C_Spell.GetSpellDescriptionForItemLocation](#c_spellgetspelldescriptionforitemlocation) |  |  |
-| ✅ | [C_Spell.GetSpellDisplayCount](#c_spellgetspelldisplaycount) |  |  |
-| ✅ | [C_Spell.GetSpellIDForSpellIdentifier](#c_spellgetspellidforspellidentifier) |  |  |
-| ✅ | [C_Spell.GetSpellInfo](#c_spellgetspellinfo) |  |  |
-| ✅ | [C_Spell.GetSpellLevelLearned](#c_spellgetspelllevellearned) |  |  |
-| ✅ | [C_Spell.GetSpellLink](#c_spellgetspelllink) |  |  |
+| ✅ | [C_Spell.GetSpellAutoCast](#c_spellgetspellautocast) | 2 values | 2 values |
+| ✅ | [C_Spell.GetSpellCastCount](#c_spellgetspellcastcount) | 1 value | secret |
+| ✅ | [C_Spell.GetSpellChargeDuration](#c_spellgetspellchargeduration) | 0 values | 0 values |
+| ✅ | [C_Spell.GetSpellCharges](#c_spellgetspellcharges) | 0 values | 0 values |
+| ✅ | [C_Spell.GetSpellCooldown](#c_spellgetspellcooldown) | 1 value | 1 value |
+| ✅ | [C_Spell.GetSpellCooldownDuration](#c_spellgetspellcooldownduration) | 1 value | 1 value |
+| ✅ | [C_Spell.GetSpellDescription](#c_spellgetspelldescription) | 1 value | 1 value |
+| ✅ | [C_Spell.GetSpellDescriptionForItemLocation](#c_spellgetspelldescriptionforitemlocation) | 1 value | 1 value |
+| ✅ | [C_Spell.GetSpellDisplayCount](#c_spellgetspelldisplaycount) | 1 value | secret |
+| ✅ | [C_Spell.GetSpellIDForSpellIdentifier](#c_spellgetspellidforspellidentifier) | 1 value | 1 value |
+| ✅ | [C_Spell.GetSpellInfo](#c_spellgetspellinfo) | 1 value | 1 value |
+| ✅ | [C_Spell.GetSpellLevelLearned](#c_spellgetspelllevellearned) | 1 value | 1 value |
+| ✅ | [C_Spell.GetSpellLink](#c_spellgetspelllink) | 1 value | 1 value |
 | 🆕 | [C_Spell.GetSpellLossOfControlCooldown](#c_spellgetspelllossofcontrolcooldown) |  |  |
-| ✅ | [C_Spell.GetSpellLossOfControlCooldownDuration](#c_spellgetspelllossofcontrolcooldownduration) |  |  |
-| ✅ | [C_Spell.GetSpellLossOfControlCooldownInfo](#c_spellgetspelllossofcontrolcooldowninfo) |  |  |
-| ✅ | [C_Spell.GetSpellMaxCumulativeAuraApplications](#c_spellgetspellmaxcumulativeauraapplications) |  |  |
-| ✅ | [C_Spell.GetSpellName](#c_spellgetspellname) |  |  |
-| ✅ | [C_Spell.GetSpellPowerCost](#c_spellgetspellpowercost) |  |  |
+| ✅ | [C_Spell.GetSpellLossOfControlCooldownDuration](#c_spellgetspelllossofcontrolcooldownduration) | 1 value | 1 value |
+| ✅ | [C_Spell.GetSpellLossOfControlCooldownInfo](#c_spellgetspelllossofcontrolcooldowninfo) | 1 value | 1 value |
+| ✅ | [C_Spell.GetSpellMaxCumulativeAuraApplications](#c_spellgetspellmaxcumulativeauraapplications) | 1 value | secret |
+| ✅ | [C_Spell.GetSpellName](#c_spellgetspellname) | 1 value | 1 value |
+| ✅ | [C_Spell.GetSpellPowerCost](#c_spellgetspellpowercost) | 0 values | 0 values |
 | ✅ | [C_Spell.GetSpellQueueWindow](#c_spellgetspellqueuewindow) | 1 value | 1 value |
-| ✅ | [C_Spell.GetSpellSkillLineAbilityRank](#c_spellgetspellskilllineabilityrank) |  |  |
-| ✅ | [C_Spell.GetSpellSubtext](#c_spellgetspellsubtext) |  |  |
-| ✅ | [C_Spell.GetSpellTexture](#c_spellgetspelltexture) |  |  |
-| ✅ | [C_Spell.GetSpellTradeSkillLink](#c_spellgetspelltradeskilllink) |  |  |
+| ✅ | [C_Spell.GetSpellSkillLineAbilityRank](#c_spellgetspellskilllineabilityrank) | 0 values | 0 values |
+| ✅ | [C_Spell.GetSpellSubtext](#c_spellgetspellsubtext) | 1 value | 1 value |
+| ✅ | [C_Spell.GetSpellTexture](#c_spellgetspelltexture) | 3 values | 3 values |
+| ✅ | [C_Spell.GetSpellTradeSkillLink](#c_spellgetspelltradeskilllink) | 0 values | 0 values |
 | ✅ | [C_Spell.GetTargetSpellID](#c_spellgettargetspellid) | 1 value | 1 value |
-| ✅ | [C_Spell.GetVisibilityInfo](#c_spellgetvisibilityinfo) |  |  |
-| ✅ | [C_Spell.IsActiveSpell](#c_spellisactivespell) |  |  |
-| ✅ | [C_Spell.IsAutoAttackSpell](#c_spellisautoattackspell) |  |  |
-| ✅ | [C_Spell.IsAutoRepeatSpell](#c_spellisautorepeatspell) |  |  |
-| ✅ | [C_Spell.IsClassTalentSpell](#c_spellisclasstalentspell) |  |  |
-| ✅ | [C_Spell.IsConsumableSpell](#c_spellisconsumablespell) |  |  |
-| ✅ | [C_Spell.IsCurrentSpell](#c_spelliscurrentspell) |  |  |
-| ✅ | [C_Spell.IsExternalDefensive](#c_spellisexternaldefensive) |  |  |
-| ✅ | [C_Spell.IsPressHoldReleaseSpell](#c_spellispressholdreleasespell) |  |  |
-| ✅ | [C_Spell.IsPriorityAura](#c_spellispriorityaura) |  |  |
-| ✅ | [C_Spell.IsPvPTalentSpell](#c_spellispvptalentspell) |  |  |
-| ✅ | [C_Spell.IsRangedAutoAttackSpell](#c_spellisrangedautoattackspell) |  |  |
-| ✅ | [C_Spell.IsSelfBuff](#c_spellisselfbuff) |  |  |
-| ✅ | [C_Spell.IsSpellCrowdControl](#c_spellisspellcrowdcontrol) |  |  |
-| ✅ | [C_Spell.IsSpellDataCached](#c_spellisspelldatacached) |  |  |
-| ✅ | [C_Spell.IsSpellDisabled](#c_spellisspelldisabled) |  |  |
-| ✅ | [C_Spell.IsSpellHarmful](#c_spellisspellharmful) |  |  |
-| ✅ | [C_Spell.IsSpellHelpful](#c_spellisspellhelpful) |  |  |
-| ✅ | [C_Spell.IsSpellImportant](#c_spellisspellimportant) |  |  |
-| ✅ | [C_Spell.IsSpellInRange](#c_spellisspellinrange) |  |  |
-| ✅ | [C_Spell.IsSpellPassive](#c_spellisspellpassive) |  |  |
-| ✅ | [C_Spell.IsSpellUsable](#c_spellisspellusable) |  |  |
+| ✅ | [C_Spell.GetVisibilityInfo](#c_spellgetvisibilityinfo) | 3 values | 3 values |
+| ✅ | [C_Spell.IsActiveSpell](#c_spellisactivespell) | 1 value | secret |
+| ✅ | [C_Spell.IsAutoAttackSpell](#c_spellisautoattackspell) | 1 value | 1 value |
+| ✅ | [C_Spell.IsAutoRepeatSpell](#c_spellisautorepeatspell) | 1 value | 1 value |
+| ✅ | [C_Spell.IsClassTalentSpell](#c_spellisclasstalentspell) | 1 value | 1 value |
+| ✅ | [C_Spell.IsConsumableSpell](#c_spellisconsumablespell) | 1 value | 1 value |
+| ✅ | [C_Spell.IsCurrentSpell](#c_spelliscurrentspell) | 1 value | 1 value |
+| ✅ | [C_Spell.IsExternalDefensive](#c_spellisexternaldefensive) | 1 value | 1 value |
+| ✅ | [C_Spell.IsPressHoldReleaseSpell](#c_spellispressholdreleasespell) | 1 value | 1 value |
+| ✅ | [C_Spell.IsPriorityAura](#c_spellispriorityaura) | 1 value | 1 value |
+| ✅ | [C_Spell.IsPvPTalentSpell](#c_spellispvptalentspell) | 1 value | 1 value |
+| ✅ | [C_Spell.IsRangedAutoAttackSpell](#c_spellisrangedautoattackspell) | 1 value | 1 value |
+| ✅ | [C_Spell.IsSelfBuff](#c_spellisselfbuff) | 1 value | 1 value |
+| ✅ | [C_Spell.IsSpellCrowdControl](#c_spellisspellcrowdcontrol) | 1 value | 1 value |
+| ✅ | [C_Spell.IsSpellDataCached](#c_spellisspelldatacached) | 1 value | 1 value |
+| ✅ | [C_Spell.IsSpellDisabled](#c_spellisspelldisabled) | 1 value | 1 value |
+| ✅ | [C_Spell.IsSpellHarmful](#c_spellisspellharmful) | 1 value | 1 value |
+| ✅ | [C_Spell.IsSpellHelpful](#c_spellisspellhelpful) | 1 value | 1 value |
+| ✅ | [C_Spell.IsSpellImportant](#c_spellisspellimportant) | 1 value | 1 value |
+| ✅ | [C_Spell.IsSpellInRange](#c_spellisspellinrange) | 1 value | 1 value |
+| ✅ | [C_Spell.IsSpellPassive](#c_spellisspellpassive) | 1 value | 1 value |
+| ✅ | [C_Spell.IsSpellUsable](#c_spellisspellusable) | 2 values | 2 values |
 | ✅ | [C_Spell.PickupSpell](#c_spellpickupspell) |  |  |
 | ✅ | [C_Spell.PlaceTargetingSpellAtCursor](#c_spellplacetargetingspellatcursor) |  |  |
 | ✅ | [C_Spell.RequestLoadSpellData](#c_spellrequestloadspelldata) |  |  |
@@ -87,8 +87,6 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - Blizzard: Cancels the player's active auto repeat spell, if any
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: not called: forbidden
-- Called in combat: not called: forbidden
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.CancelItemTempEnchantment
@@ -118,6 +116,8 @@ Namespace: `C_Spell`
 - Blizzard: Returns true if the spell exists, regardless of whether the player has learned it
 - `spellIdentifier`: Spell ID, name, name(subtext), or link; Using name will always check for an override on that spell
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.EnableSpellRangeCheck
@@ -136,6 +136,8 @@ Namespace: `C_Spell`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 2 values: `number`, `table{}`
+- Called in combat: returned 2 values: `number`, `table{}`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetBaseSpell
@@ -146,6 +148,8 @@ Namespace: `C_Spell`
 - `spec`: Which Class Specialization to consider, as overrides may vary by Spec; Defaults to player's current Spec
 - `baseSpellID`: Returns the spellID passed in if there is no override
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetDeadlyDebuffInfo
@@ -155,6 +159,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetItemCooldown
@@ -165,6 +171,8 @@ Namespace: `C_Spell`
 - Blizzard: Returns nil if the item is not found or on cooldown
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `item`: returned 1 value: `table{activeCategory=number,duration=number,isActive=boolean,isEnabled=boolean,isOnGCD=boolean,modRate=number,startTime=number}`
+- Called in combat: returned 1 value: `table{activeCategory=number,duration=number,isActive=boolean,isEnabled=boolean,isOnGCD=boolean,modRate=number,startTime=number}`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetItemModifiedAppearancesApplied
@@ -173,6 +181,8 @@ Namespace: `C_Spell`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetLastCategoryCooldownSource
@@ -201,6 +211,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetMawPowerRarityInfoBySpellID
@@ -210,6 +222,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetOverrideSpell
@@ -220,6 +234,8 @@ Namespace: `C_Spell`
 - `spec`: Which Class Specialization to consider, as overrides may vary by Spec; Defaults to player's current Spec
 - `overrideSpellID`: Returns the spellID passed in if there is no override
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSchoolString
@@ -238,6 +254,8 @@ Namespace: `C_Spell`
 - Blizzard: Returns nil if spell is not found
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 2 values: `boolean`, `boolean`
+- Called in combat: returned 2 values: `boolean`, `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellCastCount
@@ -248,6 +266,8 @@ Namespace: `C_Spell`
 - Blizzard: Returns number of times a spell can be cast, typically based on availability of things like required reagent items; Returns 0 if spell is not found
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - secret while cooldowns are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellChargeDuration
@@ -258,6 +278,8 @@ Namespace: `C_Spell`
 - Blizzard: Returns a duration object describing the active recharge time for a spell.
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellCharges
@@ -269,6 +291,8 @@ Namespace: `C_Spell`
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - secret while cooldowns are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellCooldown
@@ -280,6 +304,8 @@ Namespace: `C_Spell`
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - secret while cooldowns are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `table{duration=number,isActive=boolean,isEnabled=boolean,modRate=number,startTime=number}`
+- Called in combat: returned 1 value: `table{duration=secret,isActive=boolean,isEnabled=boolean,modRate=secret,startTime=secret}`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellCooldownDuration
@@ -290,6 +316,8 @@ Namespace: `C_Spell`
 - Blizzard: Returns a duration object describing the active cooldown duration for a spell.
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `userdata`
+- Called in combat: returned 1 value: `userdata`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellDescription
@@ -301,6 +329,8 @@ Namespace: `C_Spell`
 - `description`: May be empty if spell's data isn't loaded yet; Listen for SPELL_TEXT_UPDATE event, or use SpellMixin to load asynchronously
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellDescriptionForItemLocation
@@ -312,6 +342,8 @@ Namespace: `C_Spell`
 - `description`: May be empty if spell's data isn't loaded yet; Listen for SPELL_TEXT_UPDATE event, or use SpellMixin to load asynchronously
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell,itemloc`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellDisplayCount
@@ -322,6 +354,8 @@ Namespace: `C_Spell`
 - Blizzard: Depending on the spell, return a string that is either the use count or number of charges. If value is beyond the display count parameter, returns the replacementString (defaults to '*').
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while cooldowns are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `string`
+- Called in combat: returned 1 value: `secret:string`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellIDForSpellIdentifier
@@ -333,6 +367,8 @@ Namespace: `C_Spell`
 - `spellIdentifier`: Spell ID, name, name(subtext), or link; Using name will always check for an override on that spell; If passed a spell ID, will return same id as was passed
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellInfo
@@ -344,6 +380,8 @@ Namespace: `C_Spell`
 - `spellIdentifier`: Spell ID, name, name(subtext), or link; Using name will always check for an override on that spell
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `table{castTime=number,iconID=number,maxRange=number,minRange=number,name=string,originalIconID=number,spellID=number}`
+- Called in combat: returned 1 value: `table{castTime=number,iconID=number,maxRange=number,minRange=number,name=string,originalIconID=number,spellID=number}`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellLevelLearned
@@ -353,6 +391,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - Blizzard: Returns the level the spell is learned at; May return a different value if the player is currently Level Linked with another player
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellLink
@@ -363,6 +403,8 @@ Namespace: `C_Spell`
 - Blizzard: Returns nil if spell is not found
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellLossOfControlCooldown
@@ -379,6 +421,8 @@ Namespace: `C_Spell`
 - Blizzard: Returns a duration object describing the active loss of control cooldown duration for a spell.
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `userdata`
+- Called in combat: returned 1 value: `userdata`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellLossOfControlCooldownInfo
@@ -390,6 +434,8 @@ Namespace: `C_Spell`
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - secret while cooldowns are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `table{duration=number,isActive=boolean,modRate=number,shouldReplaceNormalCooldown=boolean,startTime=number}`
+- Called in combat: returned 1 value: `table{duration=secret,isActive=boolean,modRate=secret,shouldReplaceNormalCooldown=boolean,startTime=secret}`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellMaxCumulativeAuraApplications
@@ -399,6 +445,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - secret while unit auras are restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellName
@@ -409,6 +457,8 @@ Namespace: `C_Spell`
 - Blizzard: Returns nil if spell is not found
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellPowerCost
@@ -419,6 +469,8 @@ Namespace: `C_Spell`
 - Blizzard: Returns a table containing one or more SpellPowerCostInfos, one for each power type this spell costs; May return nil if spell is not found or has no resource costs
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellQueueWindow
@@ -438,6 +490,8 @@ Namespace: `C_Spell`
 - Blizzard: Returns the rank of a spell that corresponds to an ability within a ranked SkillLine (ex: a crafting Recipe); Returns nil if spell is not found, or isn't part of a ranked SkillLine
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellSubtext
@@ -449,6 +503,8 @@ Namespace: `C_Spell`
 - `subtext`: May be empty if spell's data isn't loaded yet; Listen for SPELL_TEXT_UPDATE event, or use SpellMixin to load asynchronously
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellTexture
@@ -459,6 +515,8 @@ Namespace: `C_Spell`
 - Blizzard: Returns nothing if spell is not found
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 3 values: `number`, `number`, `nil`
+- Called in combat: returned 3 values: `number`, `number`, `nil`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellTradeSkillLink
@@ -469,6 +527,8 @@ Namespace: `C_Spell`
 - Blizzard: Returns nil if spell is not associated with a trade skill
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetTargetSpellID
@@ -487,6 +547,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell,n:0`: returned 3 values: `boolean`, `boolean`, `boolean`
+- Called in combat: returned 3 values: `boolean`, `boolean`, `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.IsActiveSpell
@@ -499,6 +561,8 @@ Namespace: `C_Spell`
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - secret while unit auras are restricted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `secret:boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.IsAutoAttackSpell
@@ -508,6 +572,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the spell is the player's melee Auto Attack spell
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.IsAutoRepeatSpell
@@ -517,6 +583,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the spell is an auto repeat player spell
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.IsClassTalentSpell
@@ -526,6 +594,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the spell comes from a Class Talent
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.IsConsumableSpell
@@ -534,6 +604,8 @@ Namespace: `C_Spell`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.IsCurrentSpell
@@ -543,6 +615,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the spell is currently being cast or is queued to be cast
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.IsExternalDefensive
@@ -552,6 +626,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if an aura is considered an external defensive.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.IsPressHoldReleaseSpell
@@ -561,6 +637,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the spell is an 'empower' type spell that is cast by pressing and holding, with the on-release cast typically being affected by time held
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.IsPriorityAura
@@ -570,6 +648,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if an aura is considered high priority and should be ordered ahead of other auras in the UI.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.IsPvPTalentSpell
@@ -579,6 +659,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the spell comes from a PvP Talent
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.IsRangedAutoAttackSpell
@@ -588,6 +670,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the spell is the player's ranged Auto Attack spell (ex: Shoot, Auto Shot, etc)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.IsSelfBuff
@@ -597,6 +681,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if an aura only applies effects to the player, and no other units.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.IsSpellCrowdControl
@@ -606,6 +692,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the spell causes a crowd control effect when cast on a valid target.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.IsSpellDataCached
@@ -615,6 +703,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if data for the spell has already been loaded and cached this session
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.IsSpellDisabled
@@ -623,6 +713,8 @@ Namespace: `C_Spell`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.IsSpellHarmful
@@ -632,6 +724,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the spell can be cast on hostile targets
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.IsSpellHelpful
@@ -641,6 +735,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the spell can be cast on the player or other friendly targets
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.IsSpellImportant
@@ -650,6 +746,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the spell is considered important. For example a spell that's lethal if not interrupted would be considered important.
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.IsSpellInRange
@@ -661,6 +759,8 @@ Namespace: `C_Spell`
 - `targetUnit`: Optional specific target; If not supplied, player's current target (if any) will be used
 - `inRange`: May be nil if the range check was invalid, ie due to unknown/invalid spell, missing/invalid target, etc
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.IsSpellPassive
@@ -669,6 +769,8 @@ Namespace: `C_Spell`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.IsSpellUsable
@@ -679,6 +781,8 @@ Namespace: `C_Spell`
 - Blizzard: Returns whether the spell is currently castable; Typically based on things like learned status, required resources, etc
 - `insufficientPower`: True if spell is specifically unusable due to insufficient power (ie MANA, RAGE, etc)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
+- Called out of combat with `spell`: returned 2 values: `boolean`, `boolean`
+- Called in combat: returned 2 values: `boolean`, `boolean`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.PickupSpell
@@ -767,6 +871,7 @@ Namespace: `C_Spell`
 - Status: ✅ verified
 - Payload: `successful: bool`, `enchantedItem: ItemLocation?`
 - fires synchronously (Blizzard's docs)
+- Seen firing 17 times (0 in combat); argument kinds: `b,-`
 
 ### ENCHANT_SPELL_SELECTED
 
@@ -779,7 +884,7 @@ Namespace: `C_Spell`
 - Status: ✅ verified
 - Payload: `spellID: number`, `success: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 193 times (0 in combat); argument kinds: `n,b`
+- Seen firing 417 times (0 in combat); argument kinds: `n,b`
 
 ### SPELL_RANGE_CHECK_UPDATE
 

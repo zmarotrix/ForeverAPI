@@ -9,8 +9,8 @@ Namespace: `C_ScenarioInfo`
 | ✅ | [C_ScenarioInfo.GetCriteriaInfo](#c_scenarioinfogetcriteriainfo) |  |  |
 | ✅ | [C_ScenarioInfo.GetCriteriaInfoByStep](#c_scenarioinfogetcriteriainfobystep) |  |  |
 | ✅ | [C_ScenarioInfo.GetDisplayInfo](#c_scenarioinfogetdisplayinfo) | 0 values | 0 values |
-| ✅ | [C_ScenarioInfo.GetJailersTowerTypeString](#c_scenarioinfogetjailerstowertypestring) |  |  |
-| ✅ | [C_ScenarioInfo.GetScenarioIconInfo](#c_scenarioinfogetscenarioiconinfo) |  |  |
+| ✅ | [C_ScenarioInfo.GetJailersTowerTypeString](#c_scenarioinfogetjailerstowertypestring) | 1 value | 1 value |
+| ✅ | [C_ScenarioInfo.GetScenarioIconInfo](#c_scenarioinfogetscenarioiconinfo) | 💥 no sample for map | 💥 no sample for map |
 | ✅ | [C_ScenarioInfo.GetScenarioInfo](#c_scenarioinfogetscenarioinfo) | 0 values | 0 values |
 | ✅ | [C_ScenarioInfo.GetScenarioStepInfo](#c_scenarioinfogetscenariostepinfo) | 0 values | 0 values |
 | ✅ | [C_ScenarioInfo.GetTieredEntranceActiveSpells](#c_scenarioinfogettieredentranceactivespells) | 1 value | 1 value |
@@ -51,6 +51,8 @@ Namespace: `C_ScenarioInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `ScenarioInfoDocumentation.lua`
 
 ### C_ScenarioInfo.GetScenarioIconInfo
@@ -60,6 +62,8 @@ Namespace: `C_ScenarioInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `map`: not called: no sample for map
+- Called in combat: not called: no sample for map
 - Source: client docs `ScenarioInfoDocumentation.lua`
 
 ### C_ScenarioInfo.GetScenarioInfo
@@ -169,6 +173,7 @@ Namespace: `C_ScenarioInfo`
 - Status: ✅ verified
 - Payload: `newStep: bool?`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `-`
 
 ## Types
 

@@ -9,8 +9,8 @@ Namespace: `C_GamepadUI`
 | ✅ | [C_GamepadUI.GetFirstGamepadActionBarStorageSlotIndexForActiveStance](#c_gamepaduigetfirstgamepadactionbarstorageslotindexforactivestance) | 1 value | 1 value |
 | ✅ | [C_GamepadUI.GetFirstGamepadActionStorageSlotIndex](#c_gamepaduigetfirstgamepadactionstorageslotindex) | 1 value | 1 value |
 | ✅ | [C_GamepadUI.GetFirstGamepadPetActionStorageSlotIndex](#c_gamepaduigetfirstgamepadpetactionstorageslotindex) | 1 value | 1 value |
-| ✅ | [C_GamepadUI.IsValidGamepadActionStorageSlotIndex](#c_gamepaduiisvalidgamepadactionstorageslotindex) |  |  |
-| ✅ | [C_GamepadUI.IsValidGamepadPossessBarStorageSlotIndex](#c_gamepaduiisvalidgamepadpossessbarstorageslotindex) |  |  |
+| ✅ | [C_GamepadUI.IsValidGamepadActionStorageSlotIndex](#c_gamepaduiisvalidgamepadactionstorageslotindex) | 1 value | 1 value |
+| ✅ | [C_GamepadUI.IsValidGamepadPossessBarStorageSlotIndex](#c_gamepaduiisvalidgamepadpossessbarstorageslotindex) | 1 value | 1 value |
 
 ### C_GamepadUI.GetFirstGamepadActionBarStorageSlotIndexForActiveStance
 
@@ -45,6 +45,8 @@ Namespace: `C_GamepadUI`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `GamepadUIDocumentation.lua`
 
 ### C_GamepadUI.IsValidGamepadPossessBarStorageSlotIndex
@@ -53,6 +55,8 @@ Namespace: `C_GamepadUI`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:1`: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `GamepadUIDocumentation.lua`
 
 ## Events

@@ -7,12 +7,12 @@ Namespace: `C_CombatAudioAlert`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_CombatAudioAlert.AddToKnownTargetingList](#c_combataudioalertaddtoknowntargetinglist) |  |  |
-| ✅ | [C_CombatAudioAlert.GetCategoryVoice](#c_combataudioalertgetcategoryvoice) |  |  |
-| ✅ | [C_CombatAudioAlert.GetCategoryVolume](#c_combataudioalertgetcategoryvolume) |  |  |
-| ✅ | [C_CombatAudioAlert.GetFormatSetting](#c_combataudioalertgetformatsetting) |  |  |
+| ✅ | [C_CombatAudioAlert.GetCategoryVoice](#c_combataudioalertgetcategoryvoice) | 1 value | 1 value |
+| ✅ | [C_CombatAudioAlert.GetCategoryVolume](#c_combataudioalertgetcategoryvolume) | 1 value | 1 value |
+| ✅ | [C_CombatAudioAlert.GetFormatSetting](#c_combataudioalertgetformatsetting) | 1 value | 1 value |
 | ✅ | [C_CombatAudioAlert.GetSpeakerSpeed](#c_combataudioalertgetspeakerspeed) | 1 value | 1 value |
-| ✅ | [C_CombatAudioAlert.GetSpecSetting](#c_combataudioalertgetspecsetting) |  |  |
-| ✅ | [C_CombatAudioAlert.GetThrottle](#c_combataudioalertgetthrottle) |  |  |
+| ✅ | [C_CombatAudioAlert.GetSpecSetting](#c_combataudioalertgetspecsetting) | 1 value | 1 value |
+| ✅ | [C_CombatAudioAlert.GetThrottle](#c_combataudioalertgetthrottle) | 1 value | 1 value |
 | ✅ | [C_CombatAudioAlert.IsEnabled](#c_combataudioalertisenabled) | 1 value | 1 value |
 | ✅ | [C_CombatAudioAlert.RemoveFromKnownTargetingList](#c_combataudioalertremovefromknowntargetinglist) |  |  |
 | ✅ | [C_CombatAudioAlert.SetCategoryVoice](#c_combataudioalertsetcategoryvoice) |  |  |
@@ -38,6 +38,8 @@ Namespace: `C_CombatAudioAlert`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CombatAudioAlertDocumentation.lua`
 
 ### C_CombatAudioAlert.GetCategoryVolume
@@ -46,6 +48,8 @@ Namespace: `C_CombatAudioAlert`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CombatAudioAlertDocumentation.lua`
 
 ### C_CombatAudioAlert.GetFormatSetting
@@ -54,6 +58,8 @@ Namespace: `C_CombatAudioAlert`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `unit,n:0`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CombatAudioAlertDocumentation.lua`
 
 ### C_CombatAudioAlert.GetSpeakerSpeed
@@ -71,6 +77,8 @@ Namespace: `C_CombatAudioAlert`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CombatAudioAlertDocumentation.lua`
 
 ### C_CombatAudioAlert.GetThrottle
@@ -79,6 +87,8 @@ Namespace: `C_CombatAudioAlert`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CombatAudioAlertDocumentation.lua`
 
 ### C_CombatAudioAlert.IsEnabled

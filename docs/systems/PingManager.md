@@ -8,7 +8,7 @@ Namespace: `C_Ping`
 |---|---|---|---|
 | ✅ | [C_Ping.GetCooldownInfo](#c_pinggetcooldowninfo) | 1 value | 1 value |
 | ✅ | [C_Ping.GetDefaultPingOptions](#c_pinggetdefaultpingoptions) | 1 value | 1 value |
-| ✅ | [C_Ping.GetTextureKitForType](#c_pinggettexturekitfortype) |  |  |
+| ✅ | [C_Ping.GetTextureKitForType](#c_pinggettexturekitfortype) | 1 value | 1 value |
 | ✅ | [C_Ping.IsPingSystemEnabled](#c_pingispingsystemenabled) | 1 value | 1 value |
 | ✅ | [C_Ping.SendMacroPing](#c_pingsendmacroping) |  |  |
 | ✅ | [C_Ping.TogglePingListener](#c_pingtogglepinglistener) |  |  |
@@ -37,6 +37,8 @@ Namespace: `C_Ping`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Called out of combat with `n:0`: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `PingManagerDocumentation.lua`
 
 ### C_Ping.IsPingSystemEnabled
