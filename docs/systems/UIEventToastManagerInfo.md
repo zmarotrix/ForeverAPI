@@ -1,0 +1,79 @@
+# UIEventToastManagerInfo
+
+Namespace: `C_EventToastManager`
+
+## Functions
+
+| | Function | Out of combat | In combat |
+|---|---|---|---|
+| ❔ | [C_EventToastManager.GetLevelUpDisplayToastsFromLevel](#c_eventtoastmanagergetlevelupdisplaytoastsfromlevel) |  |  |
+| ❔ | [C_EventToastManager.GetNextToastToDisplay](#c_eventtoastmanagergetnexttoasttodisplay) |  |  |
+| ❔ | [C_EventToastManager.RemoveCurrentToast](#c_eventtoastmanagerremovecurrenttoast) |  |  |
+
+### C_EventToastManager.GetLevelUpDisplayToastsFromLevel
+
+`C_EventToastManager.GetLevelUpDisplayToastsFromLevel(level: number) → toastInfo: EventToastInfo[]`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `UIEventToastManagerDocumentation.lua`
+
+### C_EventToastManager.GetNextToastToDisplay
+
+`C_EventToastManager.GetNextToastToDisplay() → toastInfo: EventToastInfo`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- Source: client docs `UIEventToastManagerDocumentation.lua`
+
+### C_EventToastManager.RemoveCurrentToast
+
+`C_EventToastManager.RemoveCurrentToast()`
+
+- Status: ❔ unverified
+- Source: client docs `UIEventToastManagerDocumentation.lua`
+
+## Events
+
+### DISPLAY_EVENT_TOASTS
+
+- Status: ❔ unverified
+- Payload: none
+- fires synchronously (Blizzard's docs)
+
+### DISPLAY_EVENT_TOAST_LINK
+
+- Status: ❔ unverified
+- Payload: `link: string`
+- fires synchronously (Blizzard's docs)
+
+## Types
+
+### EventToastInfo
+
+- Structure
+  - `eventToastID`: number
+  - `title`: string
+  - `subtitle`: string
+  - `instructionText`: string
+  - `iconFileID`: fileID
+  - `subIcon`: textureAtlas?
+  - `link`: string
+  - `qualityString`: string?
+  - `quality`: number?
+  - `eventType`: EventToastEventType
+  - `displayType`: EventToastDisplayType
+  - `uiTextureKit`: textureKit
+  - `sortOrder`: number
+  - `time`: number?
+  - `uiWidgetSetID`: number?
+  - `extraUiWidgetSetID`: number?
+  - `titleTooltip`: string?
+  - `subtitleTooltip`: string?
+  - `titleTooltipUiWidgetSetID`: number?
+  - `subtitleTooltipUiWidgetSetID`: number?
+  - `showSoundKitID`: number?
+  - `hideSoundKitID`: number?
+  - `colorTint`: colorRGB?
+  - `flags`: number

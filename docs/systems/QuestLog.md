@@ -1,0 +1,1070 @@
+# QuestLog
+
+Namespace: `C_QuestLog`
+
+## Functions
+
+| | Function | Out of combat | In combat |
+|---|---|---|---|
+| ❔ | [C_QuestLog.AbandonQuest](#c_questlogabandonquest) |  |  |
+| ❔ | [C_QuestLog.AddQuestWatch](#c_questlogaddquestwatch) |  |  |
+| ❔ | [C_QuestLog.AddWorldQuestWatch](#c_questlogaddworldquestwatch) |  |  |
+| ❔ | [C_QuestLog.CanAbandonQuest](#c_questlogcanabandonquest) |  |  |
+| ❔ | [C_QuestLog.DoesQuestAwardReputationWithFaction](#c_questlogdoesquestawardreputationwithfaction) |  |  |
+| ❔ | [C_QuestLog.GetAbandonQuest](#c_questloggetabandonquest) |  |  |
+| ❔ | [C_QuestLog.GetAbandonQuestItems](#c_questloggetabandonquestitems) |  |  |
+| ❔ | [C_QuestLog.GetActivePreyQuest](#c_questloggetactivepreyquest) |  |  |
+| ❔ | [C_QuestLog.GetActiveThreatMaps](#c_questloggetactivethreatmaps) |  |  |
+| ❔ | [C_QuestLog.GetAllCompletedQuestIDs](#c_questloggetallcompletedquestids) |  |  |
+| ❔ | [C_QuestLog.GetBountiesForMapID](#c_questloggetbountiesformapid) |  |  |
+| ❔ | [C_QuestLog.GetBountySetInfoForMapID](#c_questloggetbountysetinfoformapid) |  |  |
+| ❔ | [C_QuestLog.GetDistanceSqToQuest](#c_questloggetdistancesqtoquest) |  |  |
+| ❔ | [C_QuestLog.GetHeaderIndexForQuest](#c_questloggetheaderindexforquest) |  |  |
+| ❔ | [C_QuestLog.GetInfo](#c_questloggetinfo) |  |  |
+| ❔ | [C_QuestLog.GetLogIndexForQuestID](#c_questloggetlogindexforquestid) |  |  |
+| ❔ | [C_QuestLog.GetMapForQuestPOIs](#c_questloggetmapforquestpois) |  |  |
+| ❔ | [C_QuestLog.GetMaxNumQuests](#c_questloggetmaxnumquests) |  |  |
+| ❔ | [C_QuestLog.GetMaxNumQuestsCanAccept](#c_questloggetmaxnumquestscanaccept) |  |  |
+| ❔ | [C_QuestLog.GetNextWaypoint](#c_questloggetnextwaypoint) |  |  |
+| ❔ | [C_QuestLog.GetNextWaypointForMap](#c_questloggetnextwaypointformap) |  |  |
+| ❔ | [C_QuestLog.GetNextWaypointText](#c_questloggetnextwaypointtext) |  |  |
+| ❔ | [C_QuestLog.GetNumQuestLogEntries](#c_questloggetnumquestlogentries) |  |  |
+| ❔ | [C_QuestLog.GetNumQuestObjectives](#c_questloggetnumquestobjectives) |  |  |
+| ❔ | [C_QuestLog.GetNumQuestWatches](#c_questloggetnumquestwatches) |  |  |
+| ❔ | [C_QuestLog.GetNumWorldQuestWatches](#c_questloggetnumworldquestwatches) |  |  |
+| ❔ | [C_QuestLog.GetQuestAdditionalHighlights](#c_questloggetquestadditionalhighlights) |  |  |
+| ❔ | [C_QuestLog.GetQuestDetailsTheme](#c_questloggetquestdetailstheme) |  |  |
+| ❔ | [C_QuestLog.GetQuestDifficultyLevel](#c_questloggetquestdifficultylevel) |  |  |
+| ❔ | [C_QuestLog.GetQuestIDForLogIndex](#c_questloggetquestidforlogindex) |  |  |
+| ❔ | [C_QuestLog.GetQuestIDForQuestWatchIndex](#c_questloggetquestidforquestwatchindex) |  |  |
+| ❔ | [C_QuestLog.GetQuestIDForWorldQuestWatchIndex](#c_questloggetquestidforworldquestwatchindex) |  |  |
+| ❔ | [C_QuestLog.GetQuestLogMajorFactionReputationRewards](#c_questloggetquestlogmajorfactionreputationrewards) |  |  |
+| ❔ | [C_QuestLog.GetQuestLogPortraitGiver](#c_questloggetquestlogportraitgiver) |  |  |
+| ❔ | [C_QuestLog.GetQuestObjectives](#c_questloggetquestobjectives) |  |  |
+| ❔ | [C_QuestLog.GetQuestRewardCurrencies](#c_questloggetquestrewardcurrencies) |  |  |
+| ❔ | [C_QuestLog.GetQuestRewardCurrencyInfo](#c_questloggetquestrewardcurrencyinfo) |  |  |
+| ❔ | [C_QuestLog.GetQuestTagInfo](#c_questloggetquesttaginfo) |  |  |
+| ❔ | [C_QuestLog.GetQuestTimers](#c_questloggetquesttimers) |  |  |
+| ❔ | [C_QuestLog.GetQuestType](#c_questloggetquesttype) |  |  |
+| ❔ | [C_QuestLog.GetQuestWatchType](#c_questloggetquestwatchtype) |  |  |
+| ❔ | [C_QuestLog.GetQuestsOnMap](#c_questloggetquestsonmap) |  |  |
+| ❔ | [C_QuestLog.GetRequiredMoney](#c_questloggetrequiredmoney) |  |  |
+| ❔ | [C_QuestLog.GetSelectedQuest](#c_questloggetselectedquest) |  |  |
+| ❔ | [C_QuestLog.GetSuggestedGroupSize](#c_questloggetsuggestedgroupsize) |  |  |
+| ❔ | [C_QuestLog.GetTimeAllowed](#c_questloggettimeallowed) |  |  |
+| ❔ | [C_QuestLog.GetTitleForLogIndex](#c_questloggettitleforlogindex) |  |  |
+| ❔ | [C_QuestLog.GetTitleForQuestID](#c_questloggettitleforquestid) |  |  |
+| ❔ | [C_QuestLog.GetTrivialRange](#c_questloggettrivialrange) |  |  |
+| ❔ | [C_QuestLog.GetZoneStoryInfo](#c_questloggetzonestoryinfo) |  |  |
+| ❔ | [C_QuestLog.HasActiveThreats](#c_questloghasactivethreats) |  |  |
+| ❔ | [C_QuestLog.IsAccountQuest](#c_questlogisaccountquest) |  |  |
+| ❔ | [C_QuestLog.IsComplete](#c_questlogiscomplete) |  |  |
+| ❔ | [C_QuestLog.IsEliteQuest](#c_questlogiselitequest) |  |  |
+| ❔ | [C_QuestLog.IsFailed](#c_questlogisfailed) |  |  |
+| ❔ | [C_QuestLog.IsImportantQuest](#c_questlogisimportantquest) |  |  |
+| ❔ | [C_QuestLog.IsMetaQuest](#c_questlogismetaquest) |  |  |
+| ❔ | [C_QuestLog.IsOnMap](#c_questlogisonmap) |  |  |
+| ❔ | [C_QuestLog.IsOnQuest](#c_questlogisonquest) |  |  |
+| ❔ | [C_QuestLog.IsPushableQuest](#c_questlogispushablequest) |  |  |
+| ❔ | [C_QuestLog.IsQuestBounty](#c_questlogisquestbounty) |  |  |
+| ❔ | [C_QuestLog.IsQuestCalling](#c_questlogisquestcalling) |  |  |
+| ❔ | [C_QuestLog.IsQuestCriteriaForBounty](#c_questlogisquestcriteriaforbounty) |  |  |
+| ❔ | [C_QuestLog.IsQuestDisabledForSession](#c_questlogisquestdisabledforsession) |  |  |
+| ❔ | [C_QuestLog.IsQuestFlaggedCompleted](#c_questlogisquestflaggedcompleted) |  |  |
+| ❔ | [C_QuestLog.IsQuestFlaggedCompletedOnAccount](#c_questlogisquestflaggedcompletedonaccount) |  |  |
+| ❔ | [C_QuestLog.IsQuestFromContentPush](#c_questlogisquestfromcontentpush) |  |  |
+| ❔ | [C_QuestLog.IsQuestInvasion](#c_questlogisquestinvasion) |  |  |
+| ❔ | [C_QuestLog.IsQuestReplayable](#c_questlogisquestreplayable) |  |  |
+| ❔ | [C_QuestLog.IsQuestReplayedRecently](#c_questlogisquestreplayedrecently) |  |  |
+| ❔ | [C_QuestLog.IsQuestTask](#c_questlogisquesttask) |  |  |
+| ❔ | [C_QuestLog.IsQuestTrivial](#c_questlogisquesttrivial) |  |  |
+| ❔ | [C_QuestLog.IsRepeatableQuest](#c_questlogisrepeatablequest) |  |  |
+| ❔ | [C_QuestLog.IsThreatQuest](#c_questlogisthreatquest) |  |  |
+| ❔ | [C_QuestLog.IsUnitOnQuest](#c_questlogisunitonquest) |  |  |
+| ❔ | [C_QuestLog.IsWorldQuest](#c_questlogisworldquest) |  |  |
+| ❔ | [C_QuestLog.QuestCanHaveWarModeBonus](#c_questlogquestcanhavewarmodebonus) |  |  |
+| ❔ | [C_QuestLog.QuestContainsFirstTimeRepBonusForPlayer](#c_questlogquestcontainsfirsttimerepbonusforplayer) |  |  |
+| ❔ | [C_QuestLog.QuestHasQuestSessionBonus](#c_questlogquesthasquestsessionbonus) |  |  |
+| ❔ | [C_QuestLog.QuestHasWarModeBonus](#c_questlogquesthaswarmodebonus) |  |  |
+| ❔ | [C_QuestLog.QuestIgnoresAccountCompletedFiltering](#c_questlogquestignoresaccountcompletedfiltering) |  |  |
+| ❔ | [C_QuestLog.ReadyForTurnIn](#c_questlogreadyforturnin) |  |  |
+| ❔ | [C_QuestLog.RemoveQuestWatch](#c_questlogremovequestwatch) |  |  |
+| ❔ | [C_QuestLog.RemoveWorldQuestWatch](#c_questlogremoveworldquestwatch) |  |  |
+| ❔ | [C_QuestLog.RequestLoadQuestByID](#c_questlogrequestloadquestbyid) |  |  |
+| ❔ | [C_QuestLog.SetAbandonQuest](#c_questlogsetabandonquest) |  |  |
+| ❔ | [C_QuestLog.SetMapForQuestPOIs](#c_questlogsetmapforquestpois) |  |  |
+| ❔ | [C_QuestLog.SetSelectedQuest](#c_questlogsetselectedquest) |  |  |
+| ❔ | [C_QuestLog.ShouldDisplayTimeRemaining](#c_questlogshoulddisplaytimeremaining) |  |  |
+| ❔ | [C_QuestLog.ShouldShowQuestRewards](#c_questlogshouldshowquestrewards) |  |  |
+| ❔ | [C_QuestLog.SortQuestWatches](#c_questlogsortquestwatches) |  |  |
+| ❔ | [C_QuestLog.UnitIsRelatedToActiveQuest](#c_questlogunitisrelatedtoactivequest) |  |  |
+| ❔ | [C_QuestLog.UpdateCampaignHeaders](#c_questlogupdatecampaignheaders) |  |  |
+
+### C_QuestLog.AbandonQuest
+
+`C_QuestLog.AbandonQuest()`
+
+- Status: ❔ unverified
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.AddQuestWatch
+
+`C_QuestLog.AddQuestWatch(questID: number) → wasWatched: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.AddWorldQuestWatch
+
+`C_QuestLog.AddWorldQuestWatch(questID: number, watchType: QuestWatchType?) → wasWatched: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.CanAbandonQuest
+
+`C_QuestLog.CanAbandonQuest(questID: number) → canAbandon: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.DoesQuestAwardReputationWithFaction
+
+`C_QuestLog.DoesQuestAwardReputationWithFaction(questID: number, targetFactionID: number) → awardsReputation: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetAbandonQuest
+
+`C_QuestLog.GetAbandonQuest() → questID: number`
+
+- Status: ❔ unverified
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetAbandonQuestItems
+
+`C_QuestLog.GetAbandonQuestItems() → itemIDs: number[]`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetActivePreyQuest
+
+`C_QuestLog.GetActivePreyQuest() → questID: number`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetActiveThreatMaps
+
+`C_QuestLog.GetActiveThreatMaps() → uiMapIDs: number[]`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetAllCompletedQuestIDs
+
+`C_QuestLog.GetAllCompletedQuestIDs() → quests: number[]`
+
+- Status: ❔ unverified
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetBountiesForMapID
+
+`C_QuestLog.GetBountiesForMapID(uiMapID: number) → bounties: BountyInfo[]?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetBountySetInfoForMapID
+
+`C_QuestLog.GetBountySetInfoForMapID(uiMapID: number) → displayLocation: MapOverlayDisplayLocation, lockQuestID: number, bountySetID: number, isActivitySet: bool`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetDistanceSqToQuest
+
+`C_QuestLog.GetDistanceSqToQuest(questID: number) → distanceSq: number, onContinent: bool`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetHeaderIndexForQuest
+
+`C_QuestLog.GetHeaderIndexForQuest(questID: number) → index: luaIndex?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetInfo
+
+`C_QuestLog.GetInfo(questLogIndex: luaIndex) → info: QuestInfo?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetLogIndexForQuestID
+
+`C_QuestLog.GetLogIndexForQuestID(questID: number) → questLogIndex: luaIndex?`
+
+- Status: ❔ unverified
+- Blizzard: Only returns a log index for actual quests, not headers
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetMapForQuestPOIs
+
+`C_QuestLog.GetMapForQuestPOIs() → uiMapID: number`
+
+- Status: ❔ unverified
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetMaxNumQuests
+
+`C_QuestLog.GetMaxNumQuests() → maxNumQuests: number`
+
+- Status: ❔ unverified
+- Blizzard: This is the maximum number of quests a player can be on, including hidden quests, world quests, emissaries etc
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetMaxNumQuestsCanAccept
+
+`C_QuestLog.GetMaxNumQuestsCanAccept() → maxNumQuestsCanAccept: number`
+
+- Status: ❔ unverified
+- Blizzard: This is the maximum number of standard quests a player can accept. These are quests that are normally visible in the quest log.
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetNextWaypoint
+
+`C_QuestLog.GetNextWaypoint(questID: number) → mapID: number, x: number, y: number`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetNextWaypointForMap
+
+`C_QuestLog.GetNextWaypointForMap(questID: number, uiMapID: number) → x: number, y: number`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetNextWaypointText
+
+`C_QuestLog.GetNextWaypointText(questID: number) → waypointText: string`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetNumQuestLogEntries
+
+`C_QuestLog.GetNumQuestLogEntries() → numShownEntries: number, numQuests: number`
+
+- Status: ❔ unverified
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetNumQuestObjectives
+
+`C_QuestLog.GetNumQuestObjectives(questID: number) → leaderboardCount: number`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetNumQuestWatches
+
+`C_QuestLog.GetNumQuestWatches() → numQuestWatches: number`
+
+- Status: ❔ unverified
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetNumWorldQuestWatches
+
+`C_QuestLog.GetNumWorldQuestWatches() → numQuestWatches: number`
+
+- Status: ❔ unverified
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetQuestAdditionalHighlights
+
+`C_QuestLog.GetQuestAdditionalHighlights(questID: number) → uiMapID: number, worldQuests: bool, worldQuestsElite: bool, dungeons: bool, treasures: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetQuestDetailsTheme
+
+`C_QuestLog.GetQuestDetailsTheme(questID: number) → theme: QuestTheme?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetQuestDifficultyLevel
+
+`C_QuestLog.GetQuestDifficultyLevel(questID: number) → level: number`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetQuestIDForLogIndex
+
+`C_QuestLog.GetQuestIDForLogIndex(questLogIndex: luaIndex) → questID: number?`
+
+- Status: ❔ unverified
+- Blizzard: Only returns a questID for actual quests, not headers
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetQuestIDForQuestWatchIndex
+
+`C_QuestLog.GetQuestIDForQuestWatchIndex(questWatchIndex: luaIndex) → questID: number?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetQuestIDForWorldQuestWatchIndex
+
+`C_QuestLog.GetQuestIDForWorldQuestWatchIndex(questWatchIndex: luaIndex) → questID: number?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetQuestLogMajorFactionReputationRewards
+
+`C_QuestLog.GetQuestLogMajorFactionReputationRewards(questID: number) → reputationRewards: QuestRewardReputationInfo[]`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetQuestLogPortraitGiver
+
+`C_QuestLog.GetQuestLogPortraitGiver(questLogIndex: luaIndex?) → portraitGiver: number, portraitGiverText: cstring, portraitGiverName: cstring, portraitGiverMount: number, portraitGiverModelSceneID: number?`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetQuestObjectives
+
+`C_QuestLog.GetQuestObjectives(questID: number) → objectives: QuestObjectiveInfo[]`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetQuestRewardCurrencies
+
+`C_QuestLog.GetQuestRewardCurrencies(questID: number) → questRewardCurrencies: QuestRewardCurrencyInfo[]`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetQuestRewardCurrencyInfo
+
+`C_QuestLog.GetQuestRewardCurrencyInfo(questID: number, currencyIndex: luaIndex, isChoice: bool) → questRewardCurrencyInfo: QuestRewardCurrencyInfo?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetQuestTagInfo
+
+`C_QuestLog.GetQuestTagInfo(questID: number) → info: QuestTagInfo?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetQuestTimers
+
+`C_QuestLog.GetQuestTimers() → questTimers: QuestTimerInfo[]`
+
+- Status: ❔ unverified
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetQuestType
+
+`C_QuestLog.GetQuestType(questID: number) → questType: number?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetQuestWatchType
+
+`C_QuestLog.GetQuestWatchType(questID: number) → watchType: QuestWatchType?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetQuestsOnMap
+
+`C_QuestLog.GetQuestsOnMap(uiMapID: number) → quests: QuestPOIMapInfo[]`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetRequiredMoney
+
+`C_QuestLog.GetRequiredMoney(questID: number?) → requiredMoney: number`
+
+- Status: ❔ unverified
+- Blizzard: Uses the selected quest if no questID is provided
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetSelectedQuest
+
+`C_QuestLog.GetSelectedQuest() → questID: number`
+
+- Status: ❔ unverified
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetSuggestedGroupSize
+
+`C_QuestLog.GetSuggestedGroupSize(questID: number) → suggestedGroupSize: number`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetTimeAllowed
+
+`C_QuestLog.GetTimeAllowed(questID: number) → totalTime: number, elapsedTime: number`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetTitleForLogIndex
+
+`C_QuestLog.GetTitleForLogIndex(questLogIndex: luaIndex) → title: cstring?`
+
+- Status: ❔ unverified
+- Blizzard: Returns a valid title for anything that is in the quest log.
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetTitleForQuestID
+
+`C_QuestLog.GetTitleForQuestID(questID: number) → title: cstring?`
+
+- Status: ❔ unverified
+- Blizzard: Only returns a valid title for quests, header titles cannot be discovered using this.
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetTrivialRange
+
+`C_QuestLog.GetTrivialRange() → range: number`
+
+- Status: ❔ unverified
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.GetZoneStoryInfo
+
+`C_QuestLog.GetZoneStoryInfo(uiMapID: number) → achievementID: number, storyMapID: number`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.HasActiveThreats
+
+`C_QuestLog.HasActiveThreats() → hasActiveThreats: bool`
+
+- Status: ❔ unverified
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsAccountQuest
+
+`C_QuestLog.IsAccountQuest(questID: number) → isAccountQuest: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsComplete
+
+`C_QuestLog.IsComplete(questID: number) → isComplete: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsEliteQuest
+
+`C_QuestLog.IsEliteQuest(questID: number) → isEliteQuest: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsFailed
+
+`C_QuestLog.IsFailed(questID: number) → isFailed: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsImportantQuest
+
+`C_QuestLog.IsImportantQuest(questID: number) → isImportant: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsMetaQuest
+
+`C_QuestLog.IsMetaQuest(questID: number) → isMeta: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsOnMap
+
+`C_QuestLog.IsOnMap(questID: number) → onMap: bool, hasLocalPOI: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsOnQuest
+
+`C_QuestLog.IsOnQuest(questID: number) → isOnQuest: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsPushableQuest
+
+`C_QuestLog.IsPushableQuest(questID: number) → isPushable: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsQuestBounty
+
+`C_QuestLog.IsQuestBounty(questID: number) → isBounty: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsQuestCalling
+
+`C_QuestLog.IsQuestCalling(questID: number) → isCalling: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsQuestCriteriaForBounty
+
+`C_QuestLog.IsQuestCriteriaForBounty(questID: number, bountyQuestID: number) → isCriteriaForBounty: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsQuestDisabledForSession
+
+`C_QuestLog.IsQuestDisabledForSession(questID: number) → isDisabled: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsQuestFlaggedCompleted
+
+`C_QuestLog.IsQuestFlaggedCompleted(questID: number) → isCompleted: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsQuestFlaggedCompletedOnAccount
+
+`C_QuestLog.IsQuestFlaggedCompletedOnAccount(questID: number) → isCompletedOnAccount: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsQuestFromContentPush
+
+`C_QuestLog.IsQuestFromContentPush(questID: number) → isFromContentPush: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsQuestInvasion
+
+`C_QuestLog.IsQuestInvasion(questID: number) → isInvasion: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsQuestReplayable
+
+`C_QuestLog.IsQuestReplayable(questID: number) → isReplayable: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsQuestReplayedRecently
+
+`C_QuestLog.IsQuestReplayedRecently(questID: number) → recentlyReplayed: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsQuestTask
+
+`C_QuestLog.IsQuestTask(questID: number) → isTask: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsQuestTrivial
+
+`C_QuestLog.IsQuestTrivial(questID: number) → isTrivial: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsRepeatableQuest
+
+`C_QuestLog.IsRepeatableQuest(questID: number) → isRepeatable: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsThreatQuest
+
+`C_QuestLog.IsThreatQuest(questID: number) → isThreat: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsUnitOnQuest
+
+`C_QuestLog.IsUnitOnQuest(unit: UnitToken, questID: number) → isOnQuest: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.IsWorldQuest
+
+`C_QuestLog.IsWorldQuest(questID: number) → isWorldQuest: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.QuestCanHaveWarModeBonus
+
+`C_QuestLog.QuestCanHaveWarModeBonus(questID: number) → hasBonus: bool`
+
+- Status: ❔ unverified
+- Blizzard: Tests whether a quest is eligible for warmode bonuses (e.g. most world quests, some daily quests
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.QuestContainsFirstTimeRepBonusForPlayer
+
+`C_QuestLog.QuestContainsFirstTimeRepBonusForPlayer(questID: number) → questContainsFirstTimeRepBonusForPlayer: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.QuestHasQuestSessionBonus
+
+`C_QuestLog.QuestHasQuestSessionBonus(questID: number) → hasBonus: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.QuestHasWarModeBonus
+
+`C_QuestLog.QuestHasWarModeBonus(questID: number) → hasBonus: bool`
+
+- Status: ❔ unverified
+- Blizzard: Tests whether a quest in the player's quest log that is eligible for warmode bonuses (see 'QuestCanHaveWarModeBOnus') has been completed in warmode (including accepting it)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.QuestIgnoresAccountCompletedFiltering
+
+`C_QuestLog.QuestIgnoresAccountCompletedFiltering(questID: number) → questIgnoresAccountCompletedFiltering: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.ReadyForTurnIn
+
+`C_QuestLog.ReadyForTurnIn(questID: number) → readyForTurnIn: bool?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.RemoveQuestWatch
+
+`C_QuestLog.RemoveQuestWatch(questID: number) → wasRemoved: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.RemoveWorldQuestWatch
+
+`C_QuestLog.RemoveWorldQuestWatch(questID: number) → wasRemoved: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.RequestLoadQuestByID
+
+`C_QuestLog.RequestLoadQuestByID(questID: number)`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.SetAbandonQuest
+
+`C_QuestLog.SetAbandonQuest()`
+
+- Status: ❔ unverified
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.SetMapForQuestPOIs
+
+`C_QuestLog.SetMapForQuestPOIs(uiMapID: number)`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.SetSelectedQuest
+
+`C_QuestLog.SetSelectedQuest(questID: number)`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.ShouldDisplayTimeRemaining
+
+`C_QuestLog.ShouldDisplayTimeRemaining(questID: number) → displayTimeRemaining: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.ShouldShowQuestRewards
+
+`C_QuestLog.ShouldShowQuestRewards(questID: number) → shouldShow: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.SortQuestWatches
+
+`C_QuestLog.SortQuestWatches()`
+
+- Status: ❔ unverified
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.UnitIsRelatedToActiveQuest
+
+`C_QuestLog.UnitIsRelatedToActiveQuest(unit: UnitToken) → isRelatedToActiveQuest: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `QuestLogDocumentation.lua`
+
+### C_QuestLog.UpdateCampaignHeaders
+
+`C_QuestLog.UpdateCampaignHeaders()`
+
+- Status: ❔ unverified
+- Source: client docs `QuestLogDocumentation.lua`
+
+## Events
+
+### QUESTLINE_UPDATE
+
+- Status: ❔ unverified
+- Payload: `requestRequired: bool`
+- fires synchronously (Blizzard's docs)
+
+### QUEST_ACCEPTED
+
+- Status: ❔ unverified
+- Payload: `questId: number`
+- fires synchronously (Blizzard's docs)
+
+### QUEST_AUTOCOMPLETE
+
+- Status: ❔ unverified
+- Payload: `questId: number`
+- fires synchronously (Blizzard's docs)
+
+### QUEST_COMPLETE
+
+- Status: ❔ unverified
+- Payload: none
+- fires synchronously (Blizzard's docs)
+
+### QUEST_DATA_LOAD_RESULT
+
+- Status: ❔ unverified
+- Payload: `questID: number`, `success: bool`
+- fires synchronously (Blizzard's docs)
+
+### QUEST_DETAIL
+
+- Status: ❔ unverified
+- Payload: `questStartItemID: number?`
+- fires synchronously (Blizzard's docs)
+
+### QUEST_LOG_CRITERIA_UPDATE
+
+- Status: ❔ unverified
+- Payload: `questID: number`, `specificTreeID: number`, `description: cstring`, `numFulfilled: number`, `numRequired: number`
+- fires synchronously (Blizzard's docs)
+
+### QUEST_LOG_UPDATE
+
+- Status: ❔ unverified
+- Payload: none
+- unique event (Blizzard's docs)
+
+### QUEST_POI_UPDATE
+
+- Status: ❔ unverified
+- Payload: none
+- unique event (Blizzard's docs)
+
+### QUEST_REMOVED
+
+- Status: ❔ unverified
+- Payload: `questID: number`, `wasReplayQuest: bool`
+- fires synchronously (Blizzard's docs)
+
+### QUEST_TURNED_IN
+
+- Status: ❔ unverified
+- Payload: `questID: number`, `xpReward: number`, `moneyReward: number`
+- fires synchronously (Blizzard's docs)
+
+### QUEST_WATCH_LIST_CHANGED
+
+- Status: ❔ unverified
+- Payload: `questID: number?`, `added: bool?`
+- fires synchronously (Blizzard's docs)
+- unique event (Blizzard's docs)
+
+### QUEST_WATCH_UPDATE
+
+- Status: ❔ unverified
+- Payload: `questID: number`
+- fires synchronously (Blizzard's docs)
+
+### TASK_PROGRESS_UPDATE
+
+- Status: ❔ unverified
+- Payload: none
+- fires synchronously (Blizzard's docs)
+
+### TREASURE_PICKER_CACHE_FLUSH
+
+- Status: ❔ unverified
+- Payload: none
+- fires synchronously (Blizzard's docs)
+
+### WAYPOINT_UPDATE
+
+- Status: ❔ unverified
+- Payload: none
+- fires synchronously (Blizzard's docs)
+
+### WORLD_QUEST_COMPLETED_BY_SPELL
+
+- Status: ❔ unverified
+- Payload: `questID: number`
+- fires synchronously (Blizzard's docs)
+
+## Types
+
+### MapOverlayDisplayLocation
+
+- Enumeration — ❔ unverified
+  - `Default` = 0
+  - `BottomLeft` = 1
+  - `TopLeft` = 2
+  - `BottomRight` = 3
+  - `TopRight` = 4
+  - `Hidden` = 5
+
+### QuestFrequency
+
+- Enumeration — ❔ unverified
+  - `Default` = 0
+  - `Daily` = 1
+  - `Weekly` = 2
+  - `ResetByScheduler` = 3
+
+### QuestInfo
+
+- Structure
+  - `title`: string
+  - `questLogIndex`: luaIndex
+  - `questID`: number
+  - `campaignID`: number?
+  - `level`: number
+  - `difficultyLevel`: number
+  - `suggestedGroup`: number
+  - `frequency`: QuestFrequency?
+  - `isHeader`: bool
+  - `useMinimalHeader`: bool
+  - `sortAsNormalQuest`: bool
+  - `isCollapsed`: bool
+  - `startEvent`: bool
+  - `isTask`: bool
+  - `isBounty`: bool
+  - `isStory`: bool
+  - `isScaling`: bool
+  - `isOnMap`: bool
+  - `hasLocalPOI`: bool
+  - `isHidden`: bool
+  - `isAutoComplete`: bool
+  - `overridesSortOrder`: bool
+  - `readyForTranslation`: bool
+  - `isInternalOnly`: bool
+  - `isAbandonOnDisable`: bool
+  - `headerSortKey`: number?
+  - `questClassification`: QuestClassification
+
+### QuestObjectiveInfo
+
+- Structure
+  - `text`: string
+  - `type`: string
+  - `finished`: bool
+  - `numFulfilled`: number
+  - `numRequired`: number
+  - `objectiveType`: QuestObjectiveType?
+
+### QuestTag
+
+- Enumeration — ❔ unverified
+  - `Group` = 1
+  - `PvP` = 41
+  - `Raid` = 62
+  - `Dungeon` = 81
+  - `Legendary` = 83
+  - `Heroic` = 85
+  - `Raid10` = 88
+  - `Raid25` = 89
+  - `Scenario` = 98
+  - `Account` = 102
+  - `CombatAlly` = 266
+  - `Delve` = 288
+
+### QuestTagInfo
+
+- Structure
+  - `tagName`: cstring
+  - `tagID`: number
+  - `worldQuestType`: number?
+  - `quality`: WorldQuestQuality?
+  - `tradeskillLineID`: number?
+  - `isElite`: bool?
+  - `displayExpiration`: bool?
+
+### QuestTheme
+
+- Structure
+  - `background`: textureAtlas
+  - `seal`: textureAtlas
+  - `signature`: cstring
+  - `poiIcon`: textureAtlas
+  - `mapPinInfo`: UIMapPinInfo?
+
+### QuestTimerInfo
+
+- Structure
+  - `questID`: number
+  - `questTimer`: number
+
+### QuestWatchType
+
+- Enumeration — ❔ unverified
+  - `Automatic` = 0
+  - `Manual` = 1
+
+### WorldQuestQuality
+
+- Enumeration — ❔ unverified
+  - `Common` = 0
+  - `Rare` = 1
+  - `Epic` = 2

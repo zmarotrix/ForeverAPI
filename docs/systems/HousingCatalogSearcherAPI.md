@@ -1,0 +1,7 @@
+# HousingCatalogSearcherAPI
+
+## Types
+
+### HousingCatalogSearchResultsUpdatedCallback
+
+- CallbackType

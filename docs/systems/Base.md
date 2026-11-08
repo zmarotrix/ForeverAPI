@@ -1,0 +1,7 @@
+# Base
+
+## Types
+
+### ScriptObject
+
+- Structure

@@ -1,0 +1,17 @@
+# SpellID
+
+## Types
+
+### SpellBookSpellIDs
+
+- Constants — ❔ unverified
+  - `SPELL_ID_DISMISS_PET` = 2641
+
+### UnitPowerSpellIDs
+
+- Constants — ❔ unverified
+  - `VOID_METAMORPHOSIS_SPELL_ID` = 1217607
+  - `DARK_HEART_SPELL_ID` = 1225789
+  - `SILENCE_THE_WHISPERS_SPELL_ID` = 1227702
+  - `COLLAPSING_STAR_PASSIVE_SPELL_ID` = 1221167
+  - `COLLAPSING_STAR_SPELL_ID` = 1221150

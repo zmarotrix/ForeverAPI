@@ -1,0 +1,11 @@
+# EventSchedulerConstants
+
+## Types
+
+### EventScheduler
+
+- Constants — ❔ unverified
+  - `SCHEDULED_EVENT_REMINDER_WARNING_SECONDS` = 300
+  - `SCHEDULED_EVENT_FUTURE_LIMIT` = 12
+  - `SCHEDULED_EVENT_REMINDER_DEAD_SECONDS` = 10
+  - `SCHEDULED_EVENT_PAST_LIMIT_SECONDS` = 3600

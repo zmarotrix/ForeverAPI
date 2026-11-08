@@ -1,0 +1,426 @@
+# SpecializationInfo
+
+Namespace: `C_SpecializationInfo`
+
+## Functions
+
+| | Function | Out of combat | In combat |
+|---|---|---|---|
+| ❔ | [C_SpecializationInfo.CanPlayerUsePVPTalentUI](#c_specializationinfocanplayerusepvptalentui) |  |  |
+| ❔ | [C_SpecializationInfo.CanPlayerUseTalentSpecUI](#c_specializationinfocanplayerusetalentspecui) |  |  |
+| ❔ | [C_SpecializationInfo.CanPlayerUseTalentUI](#c_specializationinfocanplayerusetalentui) |  |  |
+| ❔ | [C_SpecializationInfo.GetActiveSpecGroup](#c_specializationinfogetactivespecgroup) |  |  |
+| ❔ | [C_SpecializationInfo.GetAllClassIDs](#c_specializationinfogetallclassids) |  |  |
+| ❔ | [C_SpecializationInfo.GetAllSelectedPvpTalentIDs](#c_specializationinfogetallselectedpvptalentids) |  |  |
+| ❔ | [C_SpecializationInfo.GetClassIDFromSpecID](#c_specializationinfogetclassidfromspecid) |  |  |
+| ❔ | [C_SpecializationInfo.GetCombatConfigIDForSpecGroup](#c_specializationinfogetcombatconfigidforspecgroup) |  |  |
+| ❔ | [C_SpecializationInfo.GetInspectSelectedPvpTalent](#c_specializationinfogetinspectselectedpvptalent) |  |  |
+| ❔ | [C_SpecializationInfo.GetInspectSpecialization](#c_specializationinfogetinspectspecialization) |  |  |
+| ❔ | [C_SpecializationInfo.GetNumSpecializationsForClassID](#c_specializationinfogetnumspecializationsforclassid) |  |  |
+| ❔ | [C_SpecializationInfo.GetPvpTalentAlertStatus](#c_specializationinfogetpvptalentalertstatus) |  |  |
+| ❔ | [C_SpecializationInfo.GetPvpTalentInfo](#c_specializationinfogetpvptalentinfo) |  |  |
+| ❔ | [C_SpecializationInfo.GetPvpTalentSlotInfo](#c_specializationinfogetpvptalentslotinfo) |  |  |
+| ❔ | [C_SpecializationInfo.GetPvpTalentSlotUnlockLevel](#c_specializationinfogetpvptalentslotunlocklevel) |  |  |
+| ❔ | [C_SpecializationInfo.GetPvpTalentUnlockLevel](#c_specializationinfogetpvptalentunlocklevel) |  |  |
+| ❔ | [C_SpecializationInfo.GetSpecIDs](#c_specializationinfogetspecids) |  |  |
+| ❔ | [C_SpecializationInfo.GetSpecialization](#c_specializationinfogetspecialization) |  |  |
+| ❔ | [C_SpecializationInfo.GetSpecializationInfo](#c_specializationinfogetspecializationinfo) |  |  |
+| ❔ | [C_SpecializationInfo.GetSpecializationMasterySpells](#c_specializationinfogetspecializationmasteryspells) |  |  |
+| ❔ | [C_SpecializationInfo.GetSpellsDisplay](#c_specializationinfogetspellsdisplay) |  |  |
+| ❔ | [C_SpecializationInfo.GetTalentInfo](#c_specializationinfogettalentinfo) |  |  |
+| ❔ | [C_SpecializationInfo.HasPlayerEarnedATalentPoint](#c_specializationinfohasplayerearnedatalentpoint) |  |  |
+| ❔ | [C_SpecializationInfo.IsInitialized](#c_specializationinfoisinitialized) |  |  |
+| ❔ | [C_SpecializationInfo.IsPvpTalentLocked](#c_specializationinfoispvptalentlocked) |  |  |
+| ❔ | [C_SpecializationInfo.IsSpecSelectionEnabled](#c_specializationinfoisspecselectionenabled) |  |  |
+| ❔ | [C_SpecializationInfo.MatchesCurrentSpecSet](#c_specializationinfomatchescurrentspecset) |  |  |
+| ❔ | [C_SpecializationInfo.SetActiveSpecGroup](#c_specializationinfosetactivespecgroup) |  |  |
+| ❔ | [C_SpecializationInfo.SetPetSpecialization](#c_specializationinfosetpetspecialization) |  |  |
+| ❔ | [C_SpecializationInfo.SetPvpTalentLocked](#c_specializationinfosetpvptalentlocked) |  |  |
+| ❔ | [C_SpecializationInfo.SetSpecialization](#c_specializationinfosetspecialization) |  |  |
+
+### C_SpecializationInfo.CanPlayerUsePVPTalentUI
+
+`C_SpecializationInfo.CanPlayerUsePVPTalentUI() → canUse: bool, failureReason: string`
+
+- Status: ❔ unverified
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.CanPlayerUseTalentSpecUI
+
+`C_SpecializationInfo.CanPlayerUseTalentSpecUI() → canUse: bool, failureReason: string`
+
+- Status: ❔ unverified
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.CanPlayerUseTalentUI
+
+`C_SpecializationInfo.CanPlayerUseTalentUI() → canUse: bool, failureReason: string`
+
+- Status: ❔ unverified
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.GetActiveSpecGroup
+
+`C_SpecializationInfo.GetActiveSpecGroup(isInspect: bool?, isPet: bool?) → groupIndex: luaIndex`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.GetAllClassIDs
+
+`C_SpecializationInfo.GetAllClassIDs() → allClassIDs: number[]`
+
+- Status: ❔ unverified
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.GetAllSelectedPvpTalentIDs
+
+`C_SpecializationInfo.GetAllSelectedPvpTalentIDs() → selectedPvpTalentIDs: number[]`
+
+- Status: ❔ unverified
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.GetClassIDFromSpecID
+
+`C_SpecializationInfo.GetClassIDFromSpecID(specID: number) → classID: number?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.GetCombatConfigIDForSpecGroup
+
+`C_SpecializationInfo.GetCombatConfigIDForSpecGroup(groupIndex: luaIndex) → configID: number?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.GetInspectSelectedPvpTalent
+
+`C_SpecializationInfo.GetInspectSelectedPvpTalent(inspectedUnit: UnitToken, talentIndex: number) → selectedTalentID: number?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.GetInspectSpecialization
+
+`C_SpecializationInfo.GetInspectSpecialization(unit: UnitToken) → specializationID: number`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- secret while unit identity is restricted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.GetNumSpecializationsForClassID
+
+`C_SpecializationInfo.GetNumSpecializationsForClassID(classID: number) → specCount: number`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.GetPvpTalentAlertStatus
+
+`C_SpecializationInfo.GetPvpTalentAlertStatus() → hasUnspentSlot: bool, hasNewTalent: bool`
+
+- Status: ❔ unverified
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.GetPvpTalentInfo
+
+`C_SpecializationInfo.GetPvpTalentInfo(talentID: number) → talentInfo: PvpTalentInfo?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.GetPvpTalentSlotInfo
+
+`C_SpecializationInfo.GetPvpTalentSlotInfo(talentIndex: number) → slotInfo: PvpTalentSlotInfo?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.GetPvpTalentSlotUnlockLevel
+
+`C_SpecializationInfo.GetPvpTalentSlotUnlockLevel(talentIndex: number) → requiredLevel: number?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.GetPvpTalentUnlockLevel
+
+`C_SpecializationInfo.GetPvpTalentUnlockLevel(talentID: number) → requiredLevel: number?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.GetSpecIDs
+
+`C_SpecializationInfo.GetSpecIDs(specSetID: number) → specIDs: number[]`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.GetSpecialization
+
+`C_SpecializationInfo.GetSpecialization(isInspect: bool?, isPet: bool?, specGroupIndex: luaIndex?) → specializationIndex: luaIndex`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.GetSpecializationInfo
+
+`C_SpecializationInfo.GetSpecializationInfo(specializationIndex: luaIndex, isInspect: bool = False, isPet: bool = False, inspectTarget: string?, sex: number?, groupIndex: luaIndex?, classID: number?) → specId: number, name: string?, description: string?, icon: fileID?, role: string?, primaryStat: luaIndex?, pointsSpent: number, background: string?, previewPointsSpent: number, isUnlocked: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.GetSpecializationMasterySpells
+
+`C_SpecializationInfo.GetSpecializationMasterySpells(specializationIndex: luaIndex, isInspect: bool?, isPet: bool?) → spellIDs: number[]`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.GetSpellsDisplay
+
+`C_SpecializationInfo.GetSpellsDisplay(specializationID: number) → spellID: number[]`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.GetTalentInfo
+
+`C_SpecializationInfo.GetTalentInfo(query: TalentInfoQuery) → result: TalentInfoResult?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.HasPlayerEarnedATalentPoint
+
+`C_SpecializationInfo.HasPlayerEarnedATalentPoint() → hasEarned: bool`
+
+- Status: ❔ unverified
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.IsInitialized
+
+`C_SpecializationInfo.IsInitialized() → isSpecializationDataInitialized: bool`
+
+- Status: ❔ unverified
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.IsPvpTalentLocked
+
+`C_SpecializationInfo.IsPvpTalentLocked(talentID: number) → locked: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.IsSpecSelectionEnabled
+
+`C_SpecializationInfo.IsSpecSelectionEnabled(classID: number) → enabled: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.MatchesCurrentSpecSet
+
+`C_SpecializationInfo.MatchesCurrentSpecSet(specSetID: number) → matches: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.SetActiveSpecGroup
+
+`C_SpecializationInfo.SetActiveSpecGroup(groupIndex: luaIndex)`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.SetPetSpecialization
+
+`C_SpecializationInfo.SetPetSpecialization(specIndex: luaIndex, petNumber: number?)`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.SetPvpTalentLocked
+
+`C_SpecializationInfo.SetPvpTalentLocked(talentID: number, locked: bool)`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+### C_SpecializationInfo.SetSpecialization
+
+`C_SpecializationInfo.SetSpecialization(specIndex: luaIndex) → success: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `SpecializationInfoDocumentation.lua`
+
+## Events
+
+### ACTIVE_TALENT_GROUP_CHANGED
+
+- Status: ❔ unverified
+- Payload: `curr: number`, `prev: number`
+- fires synchronously (Blizzard's docs)
+
+### CONFIRM_PET_UNLEARN
+
+- Status: ❔ unverified
+- Payload: `cost: number`
+- fires synchronously (Blizzard's docs)
+
+### CONFIRM_TALENT_WIPE
+
+- Status: ❔ unverified
+- Payload: `cost: number`, `respecType: number`
+- fires synchronously (Blizzard's docs)
+
+### PET_SPECIALIZATION_CHANGED
+
+- Status: ❔ unverified
+- Payload: none
+- fires synchronously (Blizzard's docs)
+
+### PLAYER_LEARN_PVP_TALENT_FAILED
+
+- Status: ❔ unverified
+- Payload: none
+- fires synchronously (Blizzard's docs)
+
+### PLAYER_LEARN_TALENT_FAILED
+
+- Status: ❔ unverified
+- Payload: none
+- fires synchronously (Blizzard's docs)
+
+### PLAYER_PVP_TALENT_UPDATE
+
+- Status: ❔ unverified
+- Payload: none
+- fires synchronously (Blizzard's docs)
+
+### PLAYER_TALENT_UPDATE
+
+- Status: ❔ unverified
+- Payload: none
+- fires synchronously (Blizzard's docs)
+
+### SPEC_INVOLUNTARILY_CHANGED
+
+- Status: ❔ unverified
+- Payload: `isPet: bool`
+- fires synchronously (Blizzard's docs)
+
+### TALENTS_INVOLUNTARILY_RESET
+
+- Status: ❔ unverified
+- Payload: `isPetTalents: bool`
+- fires synchronously (Blizzard's docs)
+
+## Types
+
+### PvpTalentInfo
+
+- Structure
+  - `talentID`: number
+  - `name`: string
+  - `icon`: number
+  - `selected`: bool
+  - `available`: bool
+  - `spellID`: number
+  - `unlocked`: bool
+  - `known`: bool
+  - `grantedByAura`: bool
+  - `dependenciesUnmet`: bool
+  - `dependenciesUnmetReason`: string?
+
+### PvpTalentSlotInfo
+
+- Structure
+  - `enabled`: bool
+  - `level`: number
+  - `selectedTalentID`: number?
+  - `availableTalentIDs`: number[]
+
+### SpecializationInfoOutput
+
+- Structure
+  - `specId`: number
+  - `name`: string?
+  - `description`: string?
+  - `icon`: fileID?
+  - `role`: string?
+  - `primaryStat`: luaIndex?
+  - `pointsSpent`: number
+  - `background`: string?
+  - `previewPointsSpent`: number
+  - `isUnlocked`: bool
+
+### SpecializationInfoQuery
+
+- Structure
+  - `specializationIndex`: luaIndex
+  - `isInspect`: bool
+  - `isPet`: bool
+  - `inspectTarget`: string?
+  - `sex`: number?
+  - `groupIndex`: luaIndex?
+  - `classID`: number?
+
+### TalentInfoQuery
+
+- Structure
+  - `groupIndex`: luaIndex?
+  - `isInspect`: bool
+  - `tier`: luaIndex?
+  - `column`: luaIndex?
+  - `target`: UnitToken?
+  - `specializationIndex`: luaIndex?
+  - `talentIndex`: luaIndex?
+  - `isPet`: bool
+
+### TalentInfoResult
+
+- Structure
+  - `talentID`: number
+  - `name`: string
+  - `icon`: fileID
+  - `tier`: luaIndex
+  - `column`: luaIndex
+  - `selected`: bool
+  - `available`: bool
+  - `spellID`: number
+  - `isPVPTalentUnlocked`: bool
+  - `known`: bool
+  - `grantedByAura`: bool
+  - `rank`: luaIndex
+  - `maxRank`: luaIndex
+  - `meetsPrereq`: bool
+  - `previewRank`: luaIndex
+  - `meetsPreviewPrereq`: bool
+  - `isExceptional`: bool
+  - `hasGoldBorder`: bool

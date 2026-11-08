@@ -1,0 +1,42 @@
+# RaidLocks
+
+Namespace: `C_RaidLocks`
+
+## Functions
+
+| | Function | Out of combat | In combat |
+|---|---|---|---|
+| ❔ | [C_RaidLocks.GetRedirectedDifficultyID](#c_raidlocksgetredirecteddifficultyid) |  |  |
+| ❔ | [C_RaidLocks.IsEncounterComplete](#c_raidlocksisencountercomplete) |  |  |
+| ❔ | [C_RaidLocks.IsRaidLockExtendFeatureEnabled](#c_raidlocksisraidlockextendfeatureenabled) |  |  |
+| ❔ | [C_RaidLocks.IsRaidLockExtendFeatureSupported](#c_raidlocksisraidlockextendfeaturesupported) |  |  |
+
+### C_RaidLocks.GetRedirectedDifficultyID
+
+`C_RaidLocks.GetRedirectedDifficultyID(mapID: number, difficultyID: number) → redirectedDifficultyID: number`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `RaidLocksDocumentation.lua`
+
+### C_RaidLocks.IsEncounterComplete
+
+`C_RaidLocks.IsEncounterComplete(mapID: number, encounterID: number, difficultyID: number?) → encounterIsComplete: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `RaidLocksDocumentation.lua`
+
+### C_RaidLocks.IsRaidLockExtendFeatureEnabled
+
+`C_RaidLocks.IsRaidLockExtendFeatureEnabled() → raidLockExtendFeatureEnabled: bool`
+
+- Status: ❔ unverified
+- Source: client docs `RaidLocksDocumentation.lua`
+
+### C_RaidLocks.IsRaidLockExtendFeatureSupported
+
+`C_RaidLocks.IsRaidLockExtendFeatureSupported() → raidLockExtendFeatureSupported: bool`
+
+- Status: ❔ unverified
+- Source: client docs `RaidLocksDocumentation.lua`

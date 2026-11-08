@@ -1,0 +1,36 @@
+# IncomingSummon
+
+Namespace: `C_IncomingSummon`
+
+## Functions
+
+| | Function | Out of combat | In combat |
+|---|---|---|---|
+| ❔ | [C_IncomingSummon.HasIncomingSummon](#c_incomingsummonhasincomingsummon) |  |  |
+| ❔ | [C_IncomingSummon.IncomingSummonStatus](#c_incomingsummonincomingsummonstatus) |  |  |
+
+### C_IncomingSummon.HasIncomingSummon
+
+`C_IncomingSummon.HasIncomingSummon(unit: UnitToken) → summon: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `IncomingSummonDocumentation.lua`
+
+### C_IncomingSummon.IncomingSummonStatus
+
+`C_IncomingSummon.IncomingSummonStatus(unit: UnitToken) → status: SummonStatus`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `IncomingSummonDocumentation.lua`
+
+## Types
+
+### SummonStatus
+
+- Enumeration — ❔ unverified
+  - `None` = 0
+  - `Pending` = 1
+  - `Accepted` = 2
+  - `Declined` = 3

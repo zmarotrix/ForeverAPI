@@ -1,0 +1,60 @@
+# UIMacros
+
+Namespace: `C_Macro`
+
+## Functions
+
+| | Function | Out of combat | In combat |
+|---|---|---|---|
+| ❔ | [C_Macro.GetMacroName](#c_macrogetmacroname) |  |  |
+| ❔ | [C_Macro.GetSelectedMacroIcon](#c_macrogetselectedmacroicon) |  |  |
+| ❔ | [C_Macro.RunMacroText](#c_macrorunmacrotext) |  |  |
+| ❔ | [C_Macro.SetMacroExecuteLineCallback](#c_macrosetmacroexecutelinecallback) |  |  |
+
+### C_Macro.GetMacroName
+
+`C_Macro.GetMacroName(macroId: luaIndex) → name: cstring?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `UIMacrosDocumentation.lua`
+
+### C_Macro.GetSelectedMacroIcon
+
+`C_Macro.GetSelectedMacroIcon(macroId: luaIndex) → textureNum: fileID`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `UIMacrosDocumentation.lua`
+
+### C_Macro.RunMacroText
+
+`C_Macro.RunMacroText(text: cstring, button: cstring)`
+
+- Status: ❔ unverified
+- restricted in some situations (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `UIMacrosDocumentation.lua`
+
+### C_Macro.SetMacroExecuteLineCallback
+
+`C_Macro.SetMacroExecuteLineCallback(cb: MacroExecuteLineCallback)`
+
+- Status: ❔ unverified
+- restricted in some situations (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `UIMacrosDocumentation.lua`
+
+## Events
+
+### UPDATE_MACROS
+
+- Status: ❔ unverified
+- Payload: none
+- fires synchronously (Blizzard's docs)
+
+## Types
+
+### MacroExecuteLineCallback
+
+- CallbackType

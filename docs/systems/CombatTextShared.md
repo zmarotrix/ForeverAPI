@@ -1,0 +1,7 @@
+# CombatTextShared
+
+## Types
+
+### CombatTextEventInfo
+
+- Structure

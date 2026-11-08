@@ -1,0 +1,289 @@
+# NeighborhoodInitiative
+
+Namespace: `C_NeighborhoodInitiative`
+
+## Functions
+
+| | Function | Out of combat | In combat |
+|---|---|---|---|
+| ❔ | [C_NeighborhoodInitiative.AddTrackedInitiativeTask](#c_neighborhoodinitiativeaddtrackedinitiativetask) |  |  |
+| ❔ | [C_NeighborhoodInitiative.GetActiveNeighborhood](#c_neighborhoodinitiativegetactiveneighborhood) |  |  |
+| ❔ | [C_NeighborhoodInitiative.GetAvailableHouseXP](#c_neighborhoodinitiativegetavailablehousexp) |  |  |
+| ❔ | [C_NeighborhoodInitiative.GetInitiativeActivityLogInfo](#c_neighborhoodinitiativegetinitiativeactivityloginfo) |  |  |
+| ❔ | [C_NeighborhoodInitiative.GetInitiativeTaskChatLink](#c_neighborhoodinitiativegetinitiativetaskchatlink) |  |  |
+| ❔ | [C_NeighborhoodInitiative.GetInitiativeTaskInfo](#c_neighborhoodinitiativegetinitiativetaskinfo) |  |  |
+| ❔ | [C_NeighborhoodInitiative.GetInitiativeTaskRewardScaling](#c_neighborhoodinitiativegetinitiativetaskrewardscaling) |  |  |
+| ❔ | [C_NeighborhoodInitiative.GetNeighborhoodInitiativeInfo](#c_neighborhoodinitiativegetneighborhoodinitiativeinfo) |  |  |
+| ❔ | [C_NeighborhoodInitiative.GetRequiredLevel](#c_neighborhoodinitiativegetrequiredlevel) |  |  |
+| ❔ | [C_NeighborhoodInitiative.GetTrackedInitiativeTasks](#c_neighborhoodinitiativegettrackedinitiativetasks) |  |  |
+| ❔ | [C_NeighborhoodInitiative.IsInitiativeEnabled](#c_neighborhoodinitiativeisinitiativeenabled) |  |  |
+| ❔ | [C_NeighborhoodInitiative.IsPlayerInNeighborhoodGroup](#c_neighborhoodinitiativeisplayerinneighborhoodgroup) |  |  |
+| ❔ | [C_NeighborhoodInitiative.IsViewingActiveNeighborhood](#c_neighborhoodinitiativeisviewingactiveneighborhood) |  |  |
+| ❔ | [C_NeighborhoodInitiative.PlayerHasInitiativeAccess](#c_neighborhoodinitiativeplayerhasinitiativeaccess) |  |  |
+| ❔ | [C_NeighborhoodInitiative.PlayerMeetsRequiredLevel](#c_neighborhoodinitiativeplayermeetsrequiredlevel) |  |  |
+| ❔ | [C_NeighborhoodInitiative.RemoveTrackedInitiativeTask](#c_neighborhoodinitiativeremovetrackedinitiativetask) |  |  |
+| ❔ | [C_NeighborhoodInitiative.RequestInitiativeActivityLog](#c_neighborhoodinitiativerequestinitiativeactivitylog) |  |  |
+| ❔ | [C_NeighborhoodInitiative.RequestNeighborhoodInitiativeInfo](#c_neighborhoodinitiativerequestneighborhoodinitiativeinfo) |  |  |
+| ❔ | [C_NeighborhoodInitiative.SetActiveNeighborhood](#c_neighborhoodinitiativesetactiveneighborhood) |  |  |
+| ❔ | [C_NeighborhoodInitiative.SetViewingNeighborhood](#c_neighborhoodinitiativesetviewingneighborhood) |  |  |
+
+### C_NeighborhoodInitiative.AddTrackedInitiativeTask
+
+`C_NeighborhoodInitiative.AddTrackedInitiativeTask(initiativeTaskID: number)`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `NeighborhoodInitiativeDocumentation.lua`
+
+### C_NeighborhoodInitiative.GetActiveNeighborhood
+
+`C_NeighborhoodInitiative.GetActiveNeighborhood() → neighborhoodGUID: WOWGUID`
+
+- Status: ❔ unverified
+- Source: client docs `NeighborhoodInitiativeDocumentation.lua`
+
+### C_NeighborhoodInitiative.GetAvailableHouseXP
+
+`C_NeighborhoodInitiative.GetAvailableHouseXP() → availabeXP: number`
+
+- Status: ❔ unverified
+- Source: client docs `NeighborhoodInitiativeDocumentation.lua`
+
+### C_NeighborhoodInitiative.GetInitiativeActivityLogInfo
+
+`C_NeighborhoodInitiative.GetInitiativeActivityLogInfo() → info: InitiativeActivityLogInfo?`
+
+- Status: ❔ unverified
+- Source: client docs `NeighborhoodInitiativeDocumentation.lua`
+
+### C_NeighborhoodInitiative.GetInitiativeTaskChatLink
+
+`C_NeighborhoodInitiative.GetInitiativeTaskChatLink(initiativeTaskID: number) → link: cstring`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `NeighborhoodInitiativeDocumentation.lua`
+
+### C_NeighborhoodInitiative.GetInitiativeTaskInfo
+
+`C_NeighborhoodInitiative.GetInitiativeTaskInfo(initiativeTaskID: number) → info: InitiativeTaskInfo?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `NeighborhoodInitiativeDocumentation.lua`
+
+### C_NeighborhoodInitiative.GetInitiativeTaskRewardScaling
+
+`C_NeighborhoodInitiative.GetInitiativeTaskRewardScaling(taskID: number, numItems: number) → scaledAmount: number`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `NeighborhoodInitiativeDocumentation.lua`
+
+### C_NeighborhoodInitiative.GetNeighborhoodInitiativeInfo
+
+`C_NeighborhoodInitiative.GetNeighborhoodInitiativeInfo() → info: NeighborhoodInitiativeInfo?`
+
+- Status: ❔ unverified
+- Source: client docs `NeighborhoodInitiativeDocumentation.lua`
+
+### C_NeighborhoodInitiative.GetRequiredLevel
+
+`C_NeighborhoodInitiative.GetRequiredLevel() → reqLevel: number`
+
+- Status: ❔ unverified
+- Source: client docs `NeighborhoodInitiativeDocumentation.lua`
+
+### C_NeighborhoodInitiative.GetTrackedInitiativeTasks
+
+`C_NeighborhoodInitiative.GetTrackedInitiativeTasks() → trackedInitiativeTasks: InitiativeTasksTracked`
+
+- Status: ❔ unverified
+- Source: client docs `NeighborhoodInitiativeDocumentation.lua`
+
+### C_NeighborhoodInitiative.IsInitiativeEnabled
+
+`C_NeighborhoodInitiative.IsInitiativeEnabled() → enabled: bool`
+
+- Status: ❔ unverified
+- Source: client docs `NeighborhoodInitiativeDocumentation.lua`
+
+### C_NeighborhoodInitiative.IsPlayerInNeighborhoodGroup
+
+`C_NeighborhoodInitiative.IsPlayerInNeighborhoodGroup() → inValidGroup: bool`
+
+- Status: ❔ unverified
+- Source: client docs `NeighborhoodInitiativeDocumentation.lua`
+
+### C_NeighborhoodInitiative.IsViewingActiveNeighborhood
+
+`C_NeighborhoodInitiative.IsViewingActiveNeighborhood() → isViewingActiveNeighborhood: bool`
+
+- Status: ❔ unverified
+- Source: client docs `NeighborhoodInitiativeDocumentation.lua`
+
+### C_NeighborhoodInitiative.PlayerHasInitiativeAccess
+
+`C_NeighborhoodInitiative.PlayerHasInitiativeAccess() → success: bool`
+
+- Status: ❔ unverified
+- Source: client docs `NeighborhoodInitiativeDocumentation.lua`
+
+### C_NeighborhoodInitiative.PlayerMeetsRequiredLevel
+
+`C_NeighborhoodInitiative.PlayerMeetsRequiredLevel() → success: bool`
+
+- Status: ❔ unverified
+- Source: client docs `NeighborhoodInitiativeDocumentation.lua`
+
+### C_NeighborhoodInitiative.RemoveTrackedInitiativeTask
+
+`C_NeighborhoodInitiative.RemoveTrackedInitiativeTask(initiativeTaskID: number)`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `NeighborhoodInitiativeDocumentation.lua`
+
+### C_NeighborhoodInitiative.RequestInitiativeActivityLog
+
+`C_NeighborhoodInitiative.RequestInitiativeActivityLog()`
+
+- Status: ❔ unverified
+- Source: client docs `NeighborhoodInitiativeDocumentation.lua`
+
+### C_NeighborhoodInitiative.RequestNeighborhoodInitiativeInfo
+
+`C_NeighborhoodInitiative.RequestNeighborhoodInitiativeInfo()`
+
+- Status: ❔ unverified
+- Source: client docs `NeighborhoodInitiativeDocumentation.lua`
+
+### C_NeighborhoodInitiative.SetActiveNeighborhood
+
+`C_NeighborhoodInitiative.SetActiveNeighborhood(neighborhoodGUID: WOWGUID)`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `NeighborhoodInitiativeDocumentation.lua`
+
+### C_NeighborhoodInitiative.SetViewingNeighborhood
+
+`C_NeighborhoodInitiative.SetViewingNeighborhood(neighborhoodGUID: WOWGUID)`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `NeighborhoodInitiativeDocumentation.lua`
+
+## Events
+
+### INITIATIVE_ACTIVITY_LOG_UPDATED
+
+- Status: ❔ unverified
+- Payload: none
+- fires synchronously (Blizzard's docs)
+
+### INITIATIVE_COMPLETED
+
+- Status: ❔ unverified
+- Payload: `initiativeTitle: string`
+- fires synchronously (Blizzard's docs)
+
+### INITIATIVE_TASKS_TRACKED_LIST_CHANGED
+
+- Status: ❔ unverified
+- Payload: `initiativeTaskID: number`, `added: bool`
+- fires synchronously (Blizzard's docs)
+
+### INITIATIVE_TASKS_TRACKED_UPDATED
+
+- Status: ❔ unverified
+- Payload: none
+- unique event (Blizzard's docs)
+
+### INITIATIVE_TASK_COMPLETED
+
+- Status: ❔ unverified
+- Payload: `taskName: string`
+- fires synchronously (Blizzard's docs)
+
+### NEIGHBORHOOD_INITIATIVE_UPDATED
+
+- Status: ❔ unverified
+- Payload: none
+- fires synchronously (Blizzard's docs)
+
+## Types
+
+### InitiativeActivityLogEntry
+
+- Structure
+  - `taskID`: number
+  - `playerName`: string
+  - `taskName`: cstring
+  - `completionTime`: time_t
+  - `amount`: number
+
+### InitiativeActivityLogInfo
+
+- Structure
+  - `isLoaded`: bool
+  - `neighborhoodGUID`: WOWGUID
+  - `nextUpdateTime`: time_t
+  - `taskActivity`: InitiativeActivityLogEntry[]
+
+### InitiativeMilestoneInfo
+
+- Structure
+  - `milestoneOrderIndex`: number
+  - `requiredContributionAmount`: number
+  - `rewards`: InitiativeMilestoneRewardInfo[]
+
+### InitiativeMilestoneRewardInfo
+
+- Structure
+  - `title`: string
+  - `description`: string
+  - `decorID`: number
+  - `decorQuantity`: number
+  - `favor`: number
+  - `money`: WOWMONEY
+  - `rewardQuestID`: number
+
+### InitiativeTaskInfo
+
+- Structure
+  - `ID`: number
+  - `taskName`: cstring
+  - `description`: string
+  - `progressContributionAmount`: number
+  - `tracked`: bool
+  - `supersedes`: number
+  - `timesCompleted`: number
+  - `completed`: bool
+  - `inProgress`: bool
+  - `taskType`: NeighborhoodInitiativeTaskType
+  - `sortOrder`: number
+  - `rewardQuestID`: number
+  - `requirementsList`: CriteriaRequirement[]
+  - `criteriaList`: CriteriaRequiredValue[]
+
+### InitiativeTasksTracked
+
+- Structure
+  - `trackedIDs`: number[]
+
+### NeighborhoodInitiativeInfo
+
+- Structure
+  - `isLoaded`: bool
+  - `neighborhoodGUID`: WOWGUID
+  - `initiativeID`: number
+  - `currentCycleID`: number
+  - `progressRequired`: number
+  - `currentProgress`: number
+  - `playerTotalContribution`: number
+  - `duration`: time_t
+  - `tasks`: InitiativeTaskInfo[]
+  - `milestones`: InitiativeMilestoneInfo[]
+  - `title`: string
+  - `description`: string

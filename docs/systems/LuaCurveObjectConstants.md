@@ -1,0 +1,11 @@
+# LuaCurveObjectConstants
+
+## Types
+
+### LuaCurveType
+
+- Enumeration — ❔ unverified
+  - `Linear` = 0
+  - `Step` = 1
+  - `Cosine` = 2
+  - `Cubic` = 3

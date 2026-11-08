@@ -1,0 +1,7 @@
+# HousingFixturePointFrameAPI
+
+## Types
+
+### FixturePointUpdatedCallback
+
+- CallbackType

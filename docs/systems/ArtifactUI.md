@@ -1,0 +1,709 @@
+# ArtifactUI
+
+Namespace: `C_ArtifactUI`
+
+## Functions
+
+| | Function | Out of combat | In combat |
+|---|---|---|---|
+| ❔ | [C_ArtifactUI.AddPower](#c_artifactuiaddpower) |  |  |
+| ❔ | [C_ArtifactUI.ApplyCursorRelicToSlot](#c_artifactuiapplycursorrelictoslot) |  |  |
+| ❔ | [C_ArtifactUI.CanApplyArtifactRelic](#c_artifactuicanapplyartifactrelic) |  |  |
+| ❔ | [C_ArtifactUI.CanApplyCursorRelicToSlot](#c_artifactuicanapplycursorrelictoslot) |  |  |
+| ❔ | [C_ArtifactUI.CanApplyRelicItemIDToEquippedArtifactSlot](#c_artifactuicanapplyrelicitemidtoequippedartifactslot) |  |  |
+| ❔ | [C_ArtifactUI.CanApplyRelicItemIDToSlot](#c_artifactuicanapplyrelicitemidtoslot) |  |  |
+| ❔ | [C_ArtifactUI.CheckRespecNPC](#c_artifactuicheckrespecnpc) |  |  |
+| ❔ | [C_ArtifactUI.Clear](#c_artifactuiclear) |  |  |
+| ❔ | [C_ArtifactUI.ClearForgeCamera](#c_artifactuiclearforgecamera) |  |  |
+| ❔ | [C_ArtifactUI.ConfirmRespec](#c_artifactuiconfirmrespec) |  |  |
+| ❔ | [C_ArtifactUI.DoesEquippedArtifactHaveAnyRelicsSlotted](#c_artifactuidoesequippedartifacthaveanyrelicsslotted) |  |  |
+| ❔ | [C_ArtifactUI.GetAppearanceInfo](#c_artifactuigetappearanceinfo) |  |  |
+| ❔ | [C_ArtifactUI.GetAppearanceInfoByID](#c_artifactuigetappearanceinfobyid) |  |  |
+| ❔ | [C_ArtifactUI.GetAppearanceSetInfo](#c_artifactuigetappearancesetinfo) |  |  |
+| ❔ | [C_ArtifactUI.GetArtifactArtInfo](#c_artifactuigetartifactartinfo) |  |  |
+| ❔ | [C_ArtifactUI.GetArtifactInfo](#c_artifactuigetartifactinfo) |  |  |
+| ❔ | [C_ArtifactUI.GetArtifactItemID](#c_artifactuigetartifactitemid) |  |  |
+| ❔ | [C_ArtifactUI.GetArtifactTier](#c_artifactuigetartifacttier) |  |  |
+| ❔ | [C_ArtifactUI.GetArtifactXPRewardTargetInfo](#c_artifactuigetartifactxprewardtargetinfo) |  |  |
+| ❔ | [C_ArtifactUI.GetCostForPointAtRank](#c_artifactuigetcostforpointatrank) |  |  |
+| ❔ | [C_ArtifactUI.GetEquippedArtifactArtInfo](#c_artifactuigetequippedartifactartinfo) |  |  |
+| ❔ | [C_ArtifactUI.GetEquippedArtifactInfo](#c_artifactuigetequippedartifactinfo) |  |  |
+| ❔ | [C_ArtifactUI.GetEquippedArtifactItemID](#c_artifactuigetequippedartifactitemid) |  |  |
+| ❔ | [C_ArtifactUI.GetEquippedArtifactNumRelicSlots](#c_artifactuigetequippedartifactnumrelicslots) |  |  |
+| ❔ | [C_ArtifactUI.GetEquippedArtifactRelicInfo](#c_artifactuigetequippedartifactrelicinfo) |  |  |
+| ❔ | [C_ArtifactUI.GetEquippedRelicLockedReason](#c_artifactuigetequippedreliclockedreason) |  |  |
+| ❔ | [C_ArtifactUI.GetForgeRotation](#c_artifactuigetforgerotation) |  |  |
+| ❔ | [C_ArtifactUI.GetItemLevelIncreaseProvidedByRelic](#c_artifactuigetitemlevelincreaseprovidedbyrelic) |  |  |
+| ❔ | [C_ArtifactUI.GetMetaPowerInfo](#c_artifactuigetmetapowerinfo) |  |  |
+| ❔ | [C_ArtifactUI.GetNumAppearanceSets](#c_artifactuigetnumappearancesets) |  |  |
+| ❔ | [C_ArtifactUI.GetNumObtainedArtifacts](#c_artifactuigetnumobtainedartifacts) |  |  |
+| ❔ | [C_ArtifactUI.GetNumRelicSlots](#c_artifactuigetnumrelicslots) |  |  |
+| ❔ | [C_ArtifactUI.GetPointsRemaining](#c_artifactuigetpointsremaining) |  |  |
+| ❔ | [C_ArtifactUI.GetPowerHyperlink](#c_artifactuigetpowerhyperlink) |  |  |
+| ❔ | [C_ArtifactUI.GetPowerInfo](#c_artifactuigetpowerinfo) |  |  |
+| ❔ | [C_ArtifactUI.GetPowerLinks](#c_artifactuigetpowerlinks) |  |  |
+| ❔ | [C_ArtifactUI.GetPowers](#c_artifactuigetpowers) |  |  |
+| ❔ | [C_ArtifactUI.GetPowersAffectedByRelic](#c_artifactuigetpowersaffectedbyrelic) |  |  |
+| ❔ | [C_ArtifactUI.GetPowersAffectedByRelicItemLink](#c_artifactuigetpowersaffectedbyrelicitemlink) |  |  |
+| ❔ | [C_ArtifactUI.GetPreviewAppearance](#c_artifactuigetpreviewappearance) |  |  |
+| ❔ | [C_ArtifactUI.GetRelicInfo](#c_artifactuigetrelicinfo) |  |  |
+| ❔ | [C_ArtifactUI.GetRelicInfoByItemID](#c_artifactuigetrelicinfobyitemid) |  |  |
+| ❔ | [C_ArtifactUI.GetRelicLockedReason](#c_artifactuigetreliclockedreason) |  |  |
+| ❔ | [C_ArtifactUI.GetRelicSlotType](#c_artifactuigetrelicslottype) |  |  |
+| ❔ | [C_ArtifactUI.GetRespecArtifactArtInfo](#c_artifactuigetrespecartifactartinfo) |  |  |
+| ❔ | [C_ArtifactUI.GetRespecArtifactInfo](#c_artifactuigetrespecartifactinfo) |  |  |
+| ❔ | [C_ArtifactUI.GetRespecCost](#c_artifactuigetrespeccost) |  |  |
+| ❔ | [C_ArtifactUI.GetTotalPowerCost](#c_artifactuigettotalpowercost) |  |  |
+| ❔ | [C_ArtifactUI.GetTotalPurchasedRanks](#c_artifactuigettotalpurchasedranks) |  |  |
+| ❔ | [C_ArtifactUI.IsArtifactDisabled](#c_artifactuiisartifactdisabled) |  |  |
+| ❔ | [C_ArtifactUI.IsArtifactItem](#c_artifactuiisartifactitem) |  |  |
+| ❔ | [C_ArtifactUI.IsAtForge](#c_artifactuiisatforge) |  |  |
+| ❔ | [C_ArtifactUI.IsEquippedArtifactDisabled](#c_artifactuiisequippedartifactdisabled) |  |  |
+| ❔ | [C_ArtifactUI.IsEquippedArtifactMaxed](#c_artifactuiisequippedartifactmaxed) |  |  |
+| ❔ | [C_ArtifactUI.IsMaxedByRulesOrEffect](#c_artifactuiismaxedbyrulesoreffect) |  |  |
+| ❔ | [C_ArtifactUI.IsPowerKnown](#c_artifactuiispowerknown) |  |  |
+| ❔ | [C_ArtifactUI.IsViewedArtifactEquipped](#c_artifactuiisviewedartifactequipped) |  |  |
+| ❔ | [C_ArtifactUI.SetAppearance](#c_artifactuisetappearance) |  |  |
+| ❔ | [C_ArtifactUI.SetForgeCamera](#c_artifactuisetforgecamera) |  |  |
+| ❔ | [C_ArtifactUI.SetForgeRotation](#c_artifactuisetforgerotation) |  |  |
+| ❔ | [C_ArtifactUI.SetPreviewAppearance](#c_artifactuisetpreviewappearance) |  |  |
+| ❔ | [C_ArtifactUI.ShouldSuppressForgeRotation](#c_artifactuishouldsuppressforgerotation) |  |  |
+
+### C_ArtifactUI.AddPower
+
+`C_ArtifactUI.AddPower(powerID: number) → success: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.ApplyCursorRelicToSlot
+
+`C_ArtifactUI.ApplyCursorRelicToSlot(relicSlotIndex: luaIndex)`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.CanApplyArtifactRelic
+
+`C_ArtifactUI.CanApplyArtifactRelic(relicItemID: number, onlyUnlocked: bool) → canApply: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.CanApplyCursorRelicToSlot
+
+`C_ArtifactUI.CanApplyCursorRelicToSlot(relicSlotIndex: luaIndex) → canApply: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.CanApplyRelicItemIDToEquippedArtifactSlot
+
+`C_ArtifactUI.CanApplyRelicItemIDToEquippedArtifactSlot(relicItemID: number, relicSlotIndex: luaIndex) → canApply: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.CanApplyRelicItemIDToSlot
+
+`C_ArtifactUI.CanApplyRelicItemIDToSlot(relicItemID: number, relicSlotIndex: luaIndex) → canApply: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.CheckRespecNPC
+
+`C_ArtifactUI.CheckRespecNPC() → canRespec: bool`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.Clear
+
+`C_ArtifactUI.Clear()`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.ClearForgeCamera
+
+`C_ArtifactUI.ClearForgeCamera()`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.ConfirmRespec
+
+`C_ArtifactUI.ConfirmRespec()`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.DoesEquippedArtifactHaveAnyRelicsSlotted
+
+`C_ArtifactUI.DoesEquippedArtifactHaveAnyRelicsSlotted() → hasAnyRelicsSlotted: bool`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetAppearanceInfo
+
+`C_ArtifactUI.GetAppearanceInfo(appearanceSetIndex: number, appearanceIndex: number) → artifactAppearanceID: number, appearanceName: string, displayIndex: number, unlocked: bool, failureDescription: string?, uiCameraID: number, altHandCameraID: number?, swatchColorR: number, swatchColorG: number, swatchColorB: number, modelOpacity: number, modelSaturation: number, obtainable: bool`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetAppearanceInfoByID
+
+`C_ArtifactUI.GetAppearanceInfoByID(artifactAppearanceID: number) → artifactAppearanceSetID: number, artifactAppearanceID: number, appearanceName: string, displayIndex: number, unlocked: bool, failureDescription: string?, uiCameraID: number, altHandCameraID: number?, swatchColorR: number, swatchColorG: number, swatchColorB: number, modelOpacity: number, modelSaturation: number, obtainable: bool`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetAppearanceSetInfo
+
+`C_ArtifactUI.GetAppearanceSetInfo(appearanceSetIndex: number) → artifactAppearanceSetID: number, appearanceSetName: string, appearanceSetDescription: string, numAppearances: number`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetArtifactArtInfo
+
+`C_ArtifactUI.GetArtifactArtInfo() → artifactArtInfo: ArtifactArtInfo`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetArtifactInfo
+
+`C_ArtifactUI.GetArtifactInfo() → itemID: number, altItemID: number?, name: string, icon: fileID, xp: number, pointsSpent: number, quality: number, artifactAppearanceID: number, appearanceModID: number, itemAppearanceID: number?, altItemAppearanceID: number?, altOnTop: bool, tier: ArtifactTiers`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetArtifactItemID
+
+`C_ArtifactUI.GetArtifactItemID() → itemID: number`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetArtifactTier
+
+`C_ArtifactUI.GetArtifactTier() → tier: ArtifactTiers?`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetArtifactXPRewardTargetInfo
+
+`C_ArtifactUI.GetArtifactXPRewardTargetInfo(artifactCategoryID: number) → name: string, icon: fileID`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetCostForPointAtRank
+
+`C_ArtifactUI.GetCostForPointAtRank(rank: number, tier: ArtifactTiers) → cost: number`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetEquippedArtifactArtInfo
+
+`C_ArtifactUI.GetEquippedArtifactArtInfo() → artifactArtInfo: ArtifactArtInfo`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetEquippedArtifactInfo
+
+`C_ArtifactUI.GetEquippedArtifactInfo() → itemID: number, altItemID: number?, name: string, icon: fileID, xp: number, pointsSpent: number, quality: number, artifactAppearanceID: number, appearanceModID: number, itemAppearanceID: number?, altItemAppearanceID: number?, altOnTop: bool, tier: ArtifactTiers`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetEquippedArtifactItemID
+
+`C_ArtifactUI.GetEquippedArtifactItemID() → itemID: number`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetEquippedArtifactNumRelicSlots
+
+`C_ArtifactUI.GetEquippedArtifactNumRelicSlots(onlyUnlocked: bool = False) → numRelicSlots: number`
+
+- Status: ❔ unverified
+- `onlyUnlocked`: If true then only the relic slots that are unlocked will be considered.
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetEquippedArtifactRelicInfo
+
+`C_ArtifactUI.GetEquippedArtifactRelicInfo(relicSlotIndex: luaIndex) → name: string, icon: fileID, slotTypeName: cstring, link: string`
+
+- Status: ❔ unverified
+- `slotTypeName`: Matches the socket identifiers used in the socketing system.
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetEquippedRelicLockedReason
+
+`C_ArtifactUI.GetEquippedRelicLockedReason(relicSlotIndex: luaIndex) → lockedReason: string?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetForgeRotation
+
+`C_ArtifactUI.GetForgeRotation() → forgeRotationX: number, forgeRotationY: number, forgeRotationZ: number`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetItemLevelIncreaseProvidedByRelic
+
+`C_ArtifactUI.GetItemLevelIncreaseProvidedByRelic(itemLinkOrID: ItemInfo) → itemIevelIncrease: number`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetMetaPowerInfo
+
+`C_ArtifactUI.GetMetaPowerInfo() → spellID: number, powerCost: number, currentRank: number`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetNumAppearanceSets
+
+`C_ArtifactUI.GetNumAppearanceSets() → numAppearanceSets: number`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetNumObtainedArtifacts
+
+`C_ArtifactUI.GetNumObtainedArtifacts() → numObtainedArtifacts: number`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetNumRelicSlots
+
+`C_ArtifactUI.GetNumRelicSlots(onlyUnlocked: bool = False) → numRelicSlots: number`
+
+- Status: ❔ unverified
+- `onlyUnlocked`: If true then only the relic slots that are unlocked will be considered.
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetPointsRemaining
+
+`C_ArtifactUI.GetPointsRemaining() → pointsRemaining: number`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetPowerHyperlink
+
+`C_ArtifactUI.GetPowerHyperlink(powerID: number) → link: cstring`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetPowerInfo
+
+`C_ArtifactUI.GetPowerInfo(powerID: number) → powerInfo: ArtifactPowerInfo`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetPowerLinks
+
+`C_ArtifactUI.GetPowerLinks(powerID: number) → linkingPowerID: number[]`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetPowers
+
+`C_ArtifactUI.GetPowers() → powerID: number[]`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetPowersAffectedByRelic
+
+`C_ArtifactUI.GetPowersAffectedByRelic(relicSlotIndex: luaIndex) → powerIDs: number`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetPowersAffectedByRelicItemLink
+
+`C_ArtifactUI.GetPowersAffectedByRelicItemLink(relicItemInfo: ItemInfo) → powerIDs: number`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetPreviewAppearance
+
+`C_ArtifactUI.GetPreviewAppearance() → artifactAppearanceID: number?`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetRelicInfo
+
+`C_ArtifactUI.GetRelicInfo(relicSlotIndex: luaIndex) → name: string, icon: fileID, slotTypeName: cstring, link: string`
+
+- Status: ❔ unverified
+- `slotTypeName`: Matches the socket identifiers used in the socketing system.
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetRelicInfoByItemID
+
+`C_ArtifactUI.GetRelicInfoByItemID(itemID: number) → name: string, icon: fileID, slotTypeName: cstring, link: string`
+
+- Status: ❔ unverified
+- `slotTypeName`: Matches the socket identifiers used in the socketing system.
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetRelicLockedReason
+
+`C_ArtifactUI.GetRelicLockedReason(relicSlotIndex: luaIndex) → lockedReason: string?`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetRelicSlotType
+
+`C_ArtifactUI.GetRelicSlotType(relicSlotIndex: luaIndex) → slotTypeName: cstring`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetRespecArtifactArtInfo
+
+`C_ArtifactUI.GetRespecArtifactArtInfo() → artifactArtInfo: ArtifactArtInfo`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetRespecArtifactInfo
+
+`C_ArtifactUI.GetRespecArtifactInfo() → itemID: number, altItemID: number?, name: string, icon: fileID, xp: number, pointsSpent: number, quality: number, artifactAppearanceID: number, appearanceModID: number, itemAppearanceID: number?, altItemAppearanceID: number?, altOnTop: bool, tier: ArtifactTiers`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetRespecCost
+
+`C_ArtifactUI.GetRespecCost() → cost: number`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetTotalPowerCost
+
+`C_ArtifactUI.GetTotalPowerCost(startingTrait: luaIndex, numTraits: number, artifactTier: ArtifactTiers) → totalArtifactPowerCost: number`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.GetTotalPurchasedRanks
+
+`C_ArtifactUI.GetTotalPurchasedRanks() → totalPurchasedRanks: number`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.IsArtifactDisabled
+
+`C_ArtifactUI.IsArtifactDisabled() → artifactDisabled: bool`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.IsArtifactItem
+
+`C_ArtifactUI.IsArtifactItem(itemLocation: ItemLocation) → isArtifact: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.IsAtForge
+
+`C_ArtifactUI.IsAtForge() → isAtForge: bool`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.IsEquippedArtifactDisabled
+
+`C_ArtifactUI.IsEquippedArtifactDisabled() → artifactDisabled: bool`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.IsEquippedArtifactMaxed
+
+`C_ArtifactUI.IsEquippedArtifactMaxed() → artifactMaxed: bool`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.IsMaxedByRulesOrEffect
+
+`C_ArtifactUI.IsMaxedByRulesOrEffect() → isEffectivelyMaxed: bool`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.IsPowerKnown
+
+`C_ArtifactUI.IsPowerKnown(powerID: number) → known: bool`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.IsViewedArtifactEquipped
+
+`C_ArtifactUI.IsViewedArtifactEquipped() → isViewedArtifactEquipped: bool`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.SetAppearance
+
+`C_ArtifactUI.SetAppearance(artifactAppearanceID: number)`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.SetForgeCamera
+
+`C_ArtifactUI.SetForgeCamera()`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.SetForgeRotation
+
+`C_ArtifactUI.SetForgeRotation(forgeRotationX: number, forgeRotationY: number, forgeRotationZ: number)`
+
+- Status: ❔ unverified
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.SetPreviewAppearance
+
+`C_ArtifactUI.SetPreviewAppearance(artifactAppearanceID: number = 0)`
+
+- Status: ❔ unverified
+- Blizzard: Call without an argument to clear the preview.
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+### C_ArtifactUI.ShouldSuppressForgeRotation
+
+`C_ArtifactUI.ShouldSuppressForgeRotation() → shouldSuppressForgeRotation: bool`
+
+- Status: ❔ unverified
+- Source: client docs `ArtifactUIDocumentation.lua`
+
+## Events
+
+### ARTIFACT_CLOSE
+
+- Status: ❔ unverified
+- Payload: none
+- fires synchronously (Blizzard's docs)
+
+### ARTIFACT_ENDGAME_REFUND
+
+- Status: ❔ unverified
+- Payload: `numRefundedPowers: number`, `refundedTier: ArtifactTiers`, `bagOrSlotIndex: luaIndex`, `slotIndex: luaIndex?`
+- fires synchronously (Blizzard's docs)
+
+### ARTIFACT_RELIC_FORGE_CLOSE
+
+- Status: ❔ unverified
+- Payload: none
+- fires synchronously (Blizzard's docs)
+
+### ARTIFACT_RELIC_FORGE_PREVIEW_RELIC_CHANGED
+
+- Status: ❔ unverified
+- Payload: none
+- fires synchronously (Blizzard's docs)
+
+### ARTIFACT_RELIC_FORGE_UPDATE
+
+- Status: ❔ unverified
+- Payload: none
+- fires synchronously (Blizzard's docs)
+
+### ARTIFACT_RELIC_INFO_RECEIVED
+
+- Status: ❔ unverified
+- Payload: none
+- fires synchronously (Blizzard's docs)
+
+### ARTIFACT_RESPEC_PROMPT
+
+- Status: ❔ unverified
+- Payload: none
+- fires synchronously (Blizzard's docs)
+
+### ARTIFACT_TIER_CHANGED
+
+- Status: ❔ unverified
+- Payload: `newTier: luaIndex`, `bagOrSlotIndex: luaIndex`, `slotIndex: luaIndex?`
+- fires synchronously (Blizzard's docs)
+
+### ARTIFACT_UPDATE
+
+- Status: ❔ unverified
+- Payload: `newItem: bool`
+- fires synchronously (Blizzard's docs)
+
+### ARTIFACT_XP_UPDATE
+
+- Status: ❔ unverified
+- Payload: none
+- fires synchronously (Blizzard's docs)
+
+## Types
+
+### ArtifactAppearanceInfo
+
+- Structure
+  - `artifactAppearanceID`: number
+  - `appearanceName`: string
+  - `displayIndex`: number
+  - `unlocked`: bool
+  - `failureDescription`: string?
+  - `uiCameraID`: number
+  - `altHandCameraID`: number?
+  - `swatchColor`: colorRGB
+  - `modelOpacity`: number
+  - `modelSaturation`: number
+  - `obtainable`: bool
+
+### ArtifactAppearanceSetInfo
+
+- Structure
+  - `artifactAppearanceSetID`: number
+  - `appearanceSetName`: string
+  - `appearanceSetDescription`: string
+  - `numAppearances`: number
+
+### ArtifactArtInfo
+
+- Structure
+  - `textureKit`: textureKit
+  - `titleName`: string
+  - `titleColor`: colorRGB
+  - `barConnectedColor`: colorRGB
+  - `barDisconnectedColor`: colorRGB
+  - `uiModelSceneID`: number
+  - `spellVisualKitID`: number
+
+### ArtifactInfo
+
+- Structure
+  - `itemID`: number
+  - `altItemID`: number?
+  - `name`: string
+  - `icon`: fileID
+  - `xp`: number
+  - `pointsSpent`: number
+  - `quality`: number
+  - `artifactAppearanceID`: number
+  - `appearanceModID`: number
+  - `itemAppearanceID`: number?
+  - `altItemAppearanceID`: number?
+  - `altOnTop`: bool
+  - `tier`: ArtifactTiers
+
+### ArtifactMetaPowerInfo
+
+- Structure
+  - `spellID`: number
+  - `powerCost`: number
+  - `currentRank`: number
+
+### ArtifactPowerInfo
+
+- Structure
+  - `spellID`: number
+  - `cost`: number
+  - `currentRank`: number
+  - `maxRank`: number
+  - `bonusRanks`: number
+  - `numMaxRankBonusFromTier`: number
+  - `prereqsMet`: bool
+  - `isStart`: bool
+  - `isGoldMedal`: bool
+  - `isFinal`: bool
+  - `tier`: luaIndex
+  - `position`: vector2
+  - `offset`: vector2?
+  - `linearIndex`: luaIndex?
+
+### ArtifactRelicInfo
+
+- Structure
+  - `name`: string
+  - `icon`: fileID
+  - `slotTypeName`: cstring
+  - `link`: string

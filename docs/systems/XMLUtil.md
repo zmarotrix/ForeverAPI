@@ -1,0 +1,52 @@
+# XMLUtil
+
+Namespace: `C_XMLUtil`
+
+## Functions
+
+| | Function | Out of combat | In combat |
+|---|---|---|---|
+| ❔ | [C_XMLUtil.GetTemplateInfo](#c_xmlutilgettemplateinfo) |  |  |
+| ❔ | [C_XMLUtil.GetTemplates](#c_xmlutilgettemplates) |  |  |
+
+### C_XMLUtil.GetTemplateInfo
+
+`C_XMLUtil.GetTemplateInfo(name: cstring) → info: XMLTemplateInfo`
+
+- Status: ❔ unverified
+- may return nothing (Blizzard's docs; not checked in game)
+- secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
+- Source: client docs `XMLUtilDocumentation.lua`
+
+### C_XMLUtil.GetTemplates
+
+`C_XMLUtil.GetTemplates() → templates: XMLTemplateListInfo[]`
+
+- Status: ❔ unverified
+- Source: client docs `XMLUtilDocumentation.lua`
+
+## Types
+
+### XMLTemplateInfo
+
+- Structure
+  - `type`: cstring
+  - `width`: number
+  - `height`: number
+  - `keyValues`: XMLTemplateKeyValue[]
+  - `inherits`: cstring?
+  - `sourceLocation`: string
+
+### XMLTemplateKeyValue
+
+- Structure
+  - `key`: cstring
+  - `keyType`: cstring
+  - `type`: cstring
+  - `value`: cstring
+
+### XMLTemplateListInfo
+
+- Structure
+  - `name`: cstring
+  - `type`: cstring
