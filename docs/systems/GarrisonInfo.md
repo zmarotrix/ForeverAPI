@@ -30,7 +30,7 @@ Namespace: `C_Garrison`
 | 🆕 | [C_Garrison.GenerateRecruits](#c_garrisongeneraterecruits) |  |  |
 | 🆕 | [C_Garrison.GetAllBonusAbilityEffects](#c_garrisongetallbonusabilityeffects) |  |  |
 | 🆕 | [C_Garrison.GetAllEncounterThreats](#c_garrisongetallencounterthreats) |  |  |
-| ✅ | [C_Garrison.GetAutoCombatDamageClassValues](#c_garrisongetautocombatdamageclassvalues) | 1 value |  |
+| ✅ | [C_Garrison.GetAutoCombatDamageClassValues](#c_garrisongetautocombatdamageclassvalues) | 1 value | 1 value |
 | ✅ | [C_Garrison.GetAutoMissionBoardState](#c_garrisongetautomissionboardstate) |  |  |
 | ✅ | [C_Garrison.GetAutoMissionEnvironmentEffect](#c_garrisongetautomissionenvironmenteffect) |  |  |
 | ✅ | [C_Garrison.GetAutoMissionTargetingInfo](#c_garrisongetautomissiontargetinginfo) |  |  |
@@ -56,10 +56,10 @@ Namespace: `C_Garrison`
 | 🆕 | [C_Garrison.GetCompleteMissions](#c_garrisongetcompletemissions) |  |  |
 | 🆕 | [C_Garrison.GetCompleteTalent](#c_garrisongetcompletetalent) |  |  |
 | 🆕 | [C_Garrison.GetCurrencyTypes](#c_garrisongetcurrencytypes) |  |  |
-| ✅ | [C_Garrison.GetCurrentCypherEquipmentLevel](#c_garrisongetcurrentcypherequipmentlevel) | 1 value |  |
-| ✅ | [C_Garrison.GetCurrentGarrTalentTreeFriendshipFactionID](#c_garrisongetcurrentgarrtalenttreefriendshipfactionid) | 1 value |  |
-| ✅ | [C_Garrison.GetCurrentGarrTalentTreeID](#c_garrisongetcurrentgarrtalenttreeid) | 1 value |  |
-| ✅ | [C_Garrison.GetCyphersToNextEquipmentLevel](#c_garrisongetcypherstonextequipmentlevel) | 1 value |  |
+| ✅ | [C_Garrison.GetCurrentCypherEquipmentLevel](#c_garrisongetcurrentcypherequipmentlevel) | 1 value | 1 value |
+| ✅ | [C_Garrison.GetCurrentGarrTalentTreeFriendshipFactionID](#c_garrisongetcurrentgarrtalenttreefriendshipfactionid) | 1 value | 1 value |
+| ✅ | [C_Garrison.GetCurrentGarrTalentTreeID](#c_garrisongetcurrentgarrtalenttreeid) | 1 value | 1 value |
+| ✅ | [C_Garrison.GetCyphersToNextEquipmentLevel](#c_garrisongetcypherstonextequipmentlevel) | 1 value | 1 value |
 | 🆕 | [C_Garrison.GetFollowerAbilities](#c_garrisongetfollowerabilities) |  |  |
 | 🆕 | [C_Garrison.GetFollowerAbilityAtIndex](#c_garrisongetfollowerabilityatindex) |  |  |
 | 🆕 | [C_Garrison.GetFollowerAbilityAtIndexByID](#c_garrisongetfollowerabilityatindexbyid) |  |  |
@@ -129,7 +129,7 @@ Namespace: `C_Garrison`
 | 🆕 | [C_Garrison.GetLandingPageShipmentInfo](#c_garrisongetlandingpageshipmentinfo) |  |  |
 | 🆕 | [C_Garrison.GetLandingPageShipmentInfoByContainerID](#c_garrisongetlandingpageshipmentinfobycontainerid) |  |  |
 | 🆕 | [C_Garrison.GetLooseShipments](#c_garrisongetlooseshipments) |  |  |
-| ✅ | [C_Garrison.GetMaxCypherEquipmentLevel](#c_garrisongetmaxcypherequipmentlevel) | 1 value |  |
+| ✅ | [C_Garrison.GetMaxCypherEquipmentLevel](#c_garrisongetmaxcypherequipmentlevel) | 1 value | 1 value |
 | 🆕 | [C_Garrison.GetMissionBonusAbilityEffects](#c_garrisongetmissionbonusabilityeffects) |  |  |
 | ✅ | [C_Garrison.GetMissionCompleteEncounters](#c_garrisongetmissioncompleteencounters) |  |  |
 | 🆕 | [C_Garrison.GetMissionCost](#c_garrisongetmissioncost) |  |  |
@@ -181,11 +181,11 @@ Namespace: `C_Garrison`
 | ✅ | [C_Garrison.GetTalentTreeResetInfo](#c_garrisongettalenttreeresetinfo) |  |  |
 | ✅ | [C_Garrison.GetTalentTreeTalentPointResearchInfo](#c_garrisongettalenttreetalentpointresearchinfo) |  |  |
 | ✅ | [C_Garrison.GetTalentUnlockWorldQuest](#c_garrisongettalentunlockworldquest) |  |  |
-| ✅ | [C_Garrison.HasAdventures](#c_garrisonhasadventures) | 1 value |  |
+| ✅ | [C_Garrison.HasAdventures](#c_garrisonhasadventures) | 1 value | 1 value |
 | 🆕 | [C_Garrison.HasGarrison](#c_garrisonhasgarrison) |  |  |
 | 🆕 | [C_Garrison.HasShipyard](#c_garrisonhasshipyard) |  |  |
 | 🆕 | [C_Garrison.IsAboveFollowerSoftCap](#c_garrisonisabovefollowersoftcap) |  |  |
-| ✅ | [C_Garrison.IsAtGarrisonMissionNPC](#c_garrisonisatgarrisonmissionnpc) | 1 value |  |
+| ✅ | [C_Garrison.IsAtGarrisonMissionNPC](#c_garrisonisatgarrisonmissionnpc) | 1 value | 1 value |
 | ✅ | [C_Garrison.IsEnvironmentCountered](#c_garrisonisenvironmentcountered) |  |  |
 | 🆕 | [C_Garrison.IsFollowerCollected](#c_garrisonisfollowercollected) |  |  |
 | ✅ | [C_Garrison.IsFollowerOnCompletedMission](#c_garrisonisfolloweroncompletedmission) |  |  |
@@ -386,6 +386,7 @@ Namespace: `C_Garrison`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table}`
+- Called in combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table}`
 - Source: client docs `GarrisonInfoDocumentation.lua`
 
 ### C_Garrison.GetAutoMissionBoardState
@@ -556,6 +557,7 @@ Namespace: `C_Garrison`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `GarrisonInfoDocumentation.lua`
 
 ### C_Garrison.GetCurrentGarrTalentTreeFriendshipFactionID
@@ -564,6 +566,7 @@ Namespace: `C_Garrison`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `GarrisonInfoDocumentation.lua`
 
 ### C_Garrison.GetCurrentGarrTalentTreeID
@@ -572,6 +575,7 @@ Namespace: `C_Garrison`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `GarrisonInfoDocumentation.lua`
 
 ### C_Garrison.GetCyphersToNextEquipmentLevel
@@ -580,6 +584,7 @@ Namespace: `C_Garrison`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `GarrisonInfoDocumentation.lua`
 
 ### C_Garrison.GetFollowerAbilities
@@ -1015,6 +1020,7 @@ Namespace: `C_Garrison`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `GarrisonInfoDocumentation.lua`
 
 ### C_Garrison.GetMissionBonusAbilityEffects
@@ -1351,6 +1357,7 @@ Namespace: `C_Garrison`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `GarrisonInfoDocumentation.lua`
 
 ### C_Garrison.HasGarrison
@@ -1377,6 +1384,7 @@ Namespace: `C_Garrison`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `GarrisonInfoDocumentation.lua`
 
 ### C_Garrison.IsEnvironmentCountered
@@ -1788,7 +1796,7 @@ Namespace: `C_Garrison`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 5 times (0 in combat); argument kinds: ``
 
 ### GARRISON_INVASION_AVAILABLE
 
@@ -1808,7 +1816,7 @@ Namespace: `C_Garrison`
 - Payload: none
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 4 times (0 in combat); argument kinds: ``
 
 ### GARRISON_MISSION_AREA_BONUS_ADDED
 
@@ -2031,7 +2039,7 @@ Namespace: `C_Garrison`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 5 times (0 in combat); argument kinds: ``
 
 ### GARRISON_UPGRADEABLE_RESULT
 

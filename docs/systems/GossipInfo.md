@@ -8,19 +8,19 @@ Namespace: `C_GossipInfo`
 |---|---|---|---|
 | ✅ | [C_GossipInfo.CloseGossip](#c_gossipinfoclosegossip) |  |  |
 | ✅ | [C_GossipInfo.ForceGossip](#c_gossipinfoforcegossip) |  |  |
-| ✅ | [C_GossipInfo.GetActiveQuests](#c_gossipinfogetactivequests) | 1 value |  |
-| ✅ | [C_GossipInfo.GetAvailableQuests](#c_gossipinfogetavailablequests) | 1 value |  |
-| ✅ | [C_GossipInfo.GetCompletedOptionDescriptionString](#c_gossipinfogetcompletedoptiondescriptionstring) | 1 value |  |
-| ✅ | [C_GossipInfo.GetCustomGossipDescriptionString](#c_gossipinfogetcustomgossipdescriptionstring) | 1 value |  |
+| ✅ | [C_GossipInfo.GetActiveQuests](#c_gossipinfogetactivequests) | 1 value | 1 value |
+| ✅ | [C_GossipInfo.GetAvailableQuests](#c_gossipinfogetavailablequests) | 1 value | 1 value |
+| ✅ | [C_GossipInfo.GetCompletedOptionDescriptionString](#c_gossipinfogetcompletedoptiondescriptionstring) | 1 value | 1 value |
+| ✅ | [C_GossipInfo.GetCustomGossipDescriptionString](#c_gossipinfogetcustomgossipdescriptionstring) | 1 value | 1 value |
 | ✅ | [C_GossipInfo.GetFriendshipReputation](#c_gossipinfogetfriendshipreputation) |  |  |
 | ✅ | [C_GossipInfo.GetFriendshipReputationRanks](#c_gossipinfogetfriendshipreputationranks) |  |  |
-| ✅ | [C_GossipInfo.GetNumActiveQuests](#c_gossipinfogetnumactivequests) | 1 value |  |
-| ✅ | [C_GossipInfo.GetNumAvailableQuests](#c_gossipinfogetnumavailablequests) | 1 value |  |
+| ✅ | [C_GossipInfo.GetNumActiveQuests](#c_gossipinfogetnumactivequests) | 1 value | 1 value |
+| ✅ | [C_GossipInfo.GetNumAvailableQuests](#c_gossipinfogetnumavailablequests) | 1 value | 1 value |
 | ✅ | [C_GossipInfo.GetOptionUIWidgetSetsAndTypesByOptionID](#c_gossipinfogetoptionuiwidgetsetsandtypesbyoptionid) |  |  |
-| ✅ | [C_GossipInfo.GetOptions](#c_gossipinfogetoptions) | 1 value |  |
+| ✅ | [C_GossipInfo.GetOptions](#c_gossipinfogetoptions) | 1 value | 1 value |
 | ✅ | [C_GossipInfo.GetPoiForUiMapID](#c_gossipinfogetpoiforuimapid) |  |  |
 | ✅ | [C_GossipInfo.GetPoiInfo](#c_gossipinfogetpoiinfo) |  |  |
-| ✅ | [C_GossipInfo.GetText](#c_gossipinfogettext) | 1 value |  |
+| ✅ | [C_GossipInfo.GetText](#c_gossipinfogettext) | 1 value | 1 value |
 | ✅ | [C_GossipInfo.RefreshOptions](#c_gossipinforefreshoptions) |  |  |
 | ✅ | [C_GossipInfo.SelectActiveQuest](#c_gossipinfoselectactivequest) |  |  |
 | ✅ | [C_GossipInfo.SelectAvailableQuest](#c_gossipinfoselectavailablequest) |  |  |
@@ -47,6 +47,7 @@ Namespace: `C_GossipInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `GossipInfoDocumentation.lua`
 
 ### C_GossipInfo.GetAvailableQuests
@@ -55,6 +56,7 @@ Namespace: `C_GossipInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `GossipInfoDocumentation.lua`
 
 ### C_GossipInfo.GetCompletedOptionDescriptionString
@@ -63,6 +65,7 @@ Namespace: `C_GossipInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `GossipInfoDocumentation.lua`
 
 ### C_GossipInfo.GetCustomGossipDescriptionString
@@ -71,6 +74,7 @@ Namespace: `C_GossipInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `GossipInfoDocumentation.lua`
 
 ### C_GossipInfo.GetFriendshipReputation
@@ -96,6 +100,7 @@ Namespace: `C_GossipInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `GossipInfoDocumentation.lua`
 
 ### C_GossipInfo.GetNumAvailableQuests
@@ -104,6 +109,7 @@ Namespace: `C_GossipInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `GossipInfoDocumentation.lua`
 
 ### C_GossipInfo.GetOptionUIWidgetSetsAndTypesByOptionID
@@ -120,6 +126,7 @@ Namespace: `C_GossipInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `GossipInfoDocumentation.lua`
 
 ### C_GossipInfo.GetPoiForUiMapID
@@ -144,6 +151,7 @@ Namespace: `C_GossipInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `GossipInfoDocumentation.lua`
 
 ### C_GossipInfo.RefreshOptions

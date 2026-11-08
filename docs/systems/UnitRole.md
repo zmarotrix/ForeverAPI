@@ -4,12 +4,12 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [AreClassRolesSoftSuggestions](#areclassrolessoftsuggestions) | 1 value |  |
-| ✅ | [CanShowSetRoleButton](#canshowsetrolebutton) | 1 value |  |
+| ✅ | [AreClassRolesSoftSuggestions](#areclassrolessoftsuggestions) | 1 value | 1 value |
+| ✅ | [CanShowSetRoleButton](#canshowsetrolebutton) | 1 value | 1 value |
 | ✅ | [InitiateRolePoll](#initiaterolepoll) |  |  |
-| ✅ | [UnitGetAvailableRoles](#unitgetavailableroles) | 3 values |  |
-| ✅ | [UnitSetRole](#unitsetrole) | 1 value |  |
-| ✅ | [UnitSetRoleEnum](#unitsetroleenum) | 1 value |  |
+| ✅ | [UnitGetAvailableRoles](#unitgetavailableroles) | 3 values | 3 values |
+| ✅ | [UnitSetRole](#unitsetrole) | 💥 blocked | 💥 blocked |
+| ✅ | [UnitSetRoleEnum](#unitsetroleenum) | 💥 blocked | 💥 blocked |
 
 ### AreClassRolesSoftSuggestions
 
@@ -18,6 +18,7 @@
 - Status: ✅ verified (function)
 - Blizzard: If true, UnitGetAvailableRoles results should be treated as suggested role, not hard limits on what role the current player can display as.
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitRoleDocumentation.lua`
 
 ### CanShowSetRoleButton
@@ -26,6 +27,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitRoleDocumentation.lua`
 
 ### InitiateRolePoll
@@ -44,6 +46,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 3 values: `boolean`, `boolean`, `boolean`
+- Called in combat: returned 3 values: `boolean`, `boolean`, `boolean`
 - Source: client docs `UnitRoleDocumentation.lua`
 
 ### UnitSetRole
@@ -53,7 +56,8 @@
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with "player": 💥 not called: blocked
+- Called in combat: 💥 not called: blocked
 - Source: client docs `UnitRoleDocumentation.lua`
 
 ### UnitSetRoleEnum
@@ -63,7 +67,8 @@
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with "player": 💥 not called: blocked
+- Called in combat: 💥 not called: blocked
 - Source: client docs `UnitRoleDocumentation.lua`
 
 ## Events

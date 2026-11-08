@@ -4,16 +4,16 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [CancelLogout](#cancellogout) | protected |  |
+| ✅ | [CancelLogout](#cancellogout) | 💥 blocked | 💥 blocked |
 | ✅ | [ForceLogout](#forcelogout) |  |  |
 | ✅ | [ForceQuit](#forcequit) |  |  |
-| ✅ | [GetNativeRealmID](#getnativerealmid) | 1 value |  |
-| ✅ | [GetNetIpTypes](#getnetiptypes) | 2 values |  |
-| ✅ | [GetNetStats](#getnetstats) | 4 values |  |
-| ✅ | [GetProtocolTypes](#getprotocoltypes) | 2 values |  |
-| ✅ | [GetRealmID](#getrealmid) | 1 value |  |
-| ✅ | [GetRealmName](#getrealmname) | 1 value |  |
-| ✅ | [IsOnTournamentRealm](#isontournamentrealm) | 1 value |  |
+| ✅ | [GetNativeRealmID](#getnativerealmid) | 1 value | 1 value |
+| ✅ | [GetNetIpTypes](#getnetiptypes) | 2 values | 2 values |
+| ✅ | [GetNetStats](#getnetstats) | 4 values | 4 values |
+| ✅ | [GetProtocolTypes](#getprotocoltypes) | 2 values | 2 values |
+| ✅ | [GetRealmID](#getrealmid) | 1 value | 1 value |
+| ✅ | [GetRealmName](#getrealmname) | 1 value | 1 value |
+| ✅ | [IsOnTournamentRealm](#isontournamentrealm) | 1 value | 1 value |
 | ✅ | [Logout](#logout) |  |  |
 | ✅ | [Quit](#quit) |  |  |
 | ✅ | [SelectedRealmName](#selectedrealmname) |  |  |
@@ -23,7 +23,8 @@
 `CancelLogout()`
 
 - Status: ✅ verified (function)
-- Called out of combat: ⛔ protected: calling it raised ADDON_ACTION_FORBIDDEN
+- Called out of combat: 💥 not called: blocked
+- Called in combat: 💥 not called: blocked
 - Source: client docs `ConnectionDocumentation.lua`
 
 ### ForceLogout
@@ -46,6 +47,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ConnectionDocumentation.lua`
 
 ### GetNetIpTypes
@@ -54,6 +56,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `ConnectionDocumentation.lua`
 
 ### GetNetStats
@@ -62,6 +65,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 4 values: `number`, `number`, `number`, `number`
+- Called in combat: returned 4 values: `number`, `number`, `number`, `number`
 - Source: client docs `ConnectionDocumentation.lua`
 
 ### GetProtocolTypes
@@ -70,6 +74,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `ConnectionDocumentation.lua`
 
 ### GetRealmID
@@ -78,6 +83,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ConnectionDocumentation.lua`
 
 ### GetRealmName
@@ -86,6 +92,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `ConnectionDocumentation.lua`
 
 ### IsOnTournamentRealm
@@ -94,6 +101,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ConnectionDocumentation.lua`
 
 ### Logout

@@ -6,8 +6,8 @@ Namespace: `C_Trainer`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_Trainer.GetCategorizeTrainerUI](#c_trainergetcategorizetrainerui) | 1 value |  |
-| ✅ | [C_Trainer.GetTrainerType](#c_trainergettrainertype) | 1 value |  |
+| ✅ | [C_Trainer.GetCategorizeTrainerUI](#c_trainergetcategorizetrainerui) | 1 value | 1 value |
+| ✅ | [C_Trainer.GetTrainerType](#c_trainergettrainertype) | 1 value | 1 value |
 | ✅ | [C_Trainer.SetCategorizeTrainerUI](#c_trainersetcategorizetrainerui) |  |  |
 
 ### C_Trainer.GetCategorizeTrainerUI
@@ -16,6 +16,7 @@ Namespace: `C_Trainer`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `TrainerDocumentation.lua`
 
 ### C_Trainer.GetTrainerType
@@ -24,6 +25,7 @@ Namespace: `C_Trainer`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `TrainerDocumentation.lua`
 
 ### C_Trainer.SetCategorizeTrainerUI

@@ -6,7 +6,7 @@ Namespace: `C_WarbandScene`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_WarbandScene.GetRandomEntryID](#c_warbandscenegetrandomentryid) | 1 value |  |
+| ✅ | [C_WarbandScene.GetRandomEntryID](#c_warbandscenegetrandomentryid) | 1 value | 1 value |
 | ✅ | [C_WarbandScene.GetWarbandSceneEntry](#c_warbandscenegetwarbandsceneentry) |  |  |
 | ✅ | [C_WarbandScene.HasWarbandScene](#c_warbandscenehaswarbandscene) |  |  |
 | ✅ | [C_WarbandScene.IsFavorite](#c_warbandsceneisfavorite) |  |  |
@@ -20,6 +20,7 @@ Namespace: `C_WarbandScene`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `WarbandSceneInfoDocumentation.lua`
 
 ### C_WarbandScene.GetWarbandSceneEntry

@@ -8,7 +8,7 @@ Namespace: `C_TooltipInfo`
 |---|---|---|---|
 | ✅ | [C_TooltipInfo.GetAchievementByID](#c_tooltipinfogetachievementbyid) |  |  |
 | ✅ | [C_TooltipInfo.GetAction](#c_tooltipinfogetaction) |  |  |
-| ✅ | [C_TooltipInfo.GetArtifactItem](#c_tooltipinfogetartifactitem) | 0 values |  |
+| ✅ | [C_TooltipInfo.GetArtifactItem](#c_tooltipinfogetartifactitem) | 0 values | 0 values |
 | ✅ | [C_TooltipInfo.GetArtifactPowerByID](#c_tooltipinfogetartifactpowerbyid) |  |  |
 | ✅ | [C_TooltipInfo.GetAzeriteEssence](#c_tooltipinfogetazeriteessence) |  |  |
 | ✅ | [C_TooltipInfo.GetAzeriteEssenceSlot](#c_tooltipinfogetazeriteessenceslot) |  |  |
@@ -34,7 +34,7 @@ Namespace: `C_TooltipInfo`
 | ✅ | [C_TooltipInfo.GetItemByGUID](#c_tooltipinfogetitembyguid) |  |  |
 | ✅ | [C_TooltipInfo.GetItemByID](#c_tooltipinfogetitembyid) |  |  |
 | ✅ | [C_TooltipInfo.GetItemByItemModifiedAppearanceID](#c_tooltipinfogetitembyitemmodifiedappearanceid) |  |  |
-| ✅ | [C_TooltipInfo.GetItemInteractionItem](#c_tooltipinfogetiteminteractionitem) | 0 values |  |
+| ✅ | [C_TooltipInfo.GetItemInteractionItem](#c_tooltipinfogetiteminteractionitem) | 0 values | 0 values |
 | ✅ | [C_TooltipInfo.GetItemKey](#c_tooltipinfogetitemkey) |  |  |
 | ✅ | [C_TooltipInfo.GetLFGDungeonReward](#c_tooltipinfogetlfgdungeonreward) |  |  |
 | ✅ | [C_TooltipInfo.GetLFGDungeonShortageReward](#c_tooltipinfogetlfgdungeonshortagereward) |  |  |
@@ -43,13 +43,13 @@ Namespace: `C_TooltipInfo`
 | ✅ | [C_TooltipInfo.GetLootRollItem](#c_tooltipinfogetlootrollitem) |  |  |
 | ✅ | [C_TooltipInfo.GetMerchantCostItem](#c_tooltipinfogetmerchantcostitem) |  |  |
 | ✅ | [C_TooltipInfo.GetMerchantItem](#c_tooltipinfogetmerchantitem) |  |  |
-| ✅ | [C_TooltipInfo.GetMinimapMouseover](#c_tooltipinfogetminimapmouseover) | 0 values |  |
+| ✅ | [C_TooltipInfo.GetMinimapMouseover](#c_tooltipinfogetminimapmouseover) | 0 values | 0 values |
 | ✅ | [C_TooltipInfo.GetMountBySpellID](#c_tooltipinfogetmountbyspellid) |  |  |
 | ✅ | [C_TooltipInfo.GetOutfit](#c_tooltipinfogetoutfit) |  |  |
 | ✅ | [C_TooltipInfo.GetOwnedItemByID](#c_tooltipinfogetowneditembyid) |  |  |
 | ✅ | [C_TooltipInfo.GetPetAction](#c_tooltipinfogetpetaction) |  |  |
 | ✅ | [C_TooltipInfo.GetPossession](#c_tooltipinfogetpossession) |  |  |
-| ✅ | [C_TooltipInfo.GetPvpBrawl](#c_tooltipinfogetpvpbrawl) | 0 values |  |
+| ✅ | [C_TooltipInfo.GetPvpBrawl](#c_tooltipinfogetpvpbrawl) | 0 values | 0 values |
 | ✅ | [C_TooltipInfo.GetPvpTalent](#c_tooltipinfogetpvptalent) |  |  |
 | ✅ | [C_TooltipInfo.GetQuestCurrency](#c_tooltipinfogetquestcurrency) |  |  |
 | ✅ | [C_TooltipInfo.GetQuestItem](#c_tooltipinfogetquestitem) |  |  |
@@ -62,11 +62,11 @@ Namespace: `C_TooltipInfo`
 | ✅ | [C_TooltipInfo.GetRecipeResultItem](#c_tooltipinfogetreciperesultitem) |  |  |
 | ✅ | [C_TooltipInfo.GetRecipeResultItemForOrder](#c_tooltipinfogetreciperesultitemfororder) |  |  |
 | ✅ | [C_TooltipInfo.GetRuneforgeResultItem](#c_tooltipinfogetruneforgeresultitem) |  |  |
-| ✅ | [C_TooltipInfo.GetSendMailItem](#c_tooltipinfogetsendmailitem) | 0 values |  |
+| ✅ | [C_TooltipInfo.GetSendMailItem](#c_tooltipinfogetsendmailitem) | 0 values | 0 values |
 | ✅ | [C_TooltipInfo.GetShapeshift](#c_tooltipinfogetshapeshift) |  |  |
-| ✅ | [C_TooltipInfo.GetSlottedKeystone](#c_tooltipinfogetslottedkeystone) | 0 values |  |
+| ✅ | [C_TooltipInfo.GetSlottedKeystone](#c_tooltipinfogetslottedkeystone) | 0 values | 0 values |
 | ✅ | [C_TooltipInfo.GetSocketGem](#c_tooltipinfogetsocketgem) |  |  |
-| ✅ | [C_TooltipInfo.GetSocketedItem](#c_tooltipinfogetsocketeditem) | 0 values |  |
+| ✅ | [C_TooltipInfo.GetSocketedItem](#c_tooltipinfogetsocketeditem) | 0 values | 0 values |
 | ✅ | [C_TooltipInfo.GetSocketedRelic](#c_tooltipinfogetsocketedrelic) |  |  |
 | ✅ | [C_TooltipInfo.GetSpellBookItem](#c_tooltipinfogetspellbookitem) |  |  |
 | ✅ | [C_TooltipInfo.GetSpellByID](#c_tooltipinfogetspellbyid) |  |  |
@@ -77,16 +77,16 @@ Namespace: `C_TooltipInfo`
 | ✅ | [C_TooltipInfo.GetTradeTargetItem](#c_tooltipinfogettradetargetitem) |  |  |
 | ✅ | [C_TooltipInfo.GetTrainerService](#c_tooltipinfogettrainerservice) |  |  |
 | ✅ | [C_TooltipInfo.GetTraitEntry](#c_tooltipinfogettraitentry) |  |  |
-| ✅ | [C_TooltipInfo.GetUnit](#c_tooltipinfogetunit) | 1 value |  |
+| ✅ | [C_TooltipInfo.GetUnit](#c_tooltipinfogetunit) | 1 value | 1 value |
 | ✅ | [C_TooltipInfo.GetUnitAura](#c_tooltipinfogetunitaura) |  |  |
 | ✅ | [C_TooltipInfo.GetUnitAuraByAuraInstanceID](#c_tooltipinfogetunitaurabyaurainstanceid) |  |  |
 | ✅ | [C_TooltipInfo.GetUnitBuff](#c_tooltipinfogetunitbuff) |  |  |
 | ✅ | [C_TooltipInfo.GetUnitBuffByAuraInstanceID](#c_tooltipinfogetunitbuffbyaurainstanceid) |  |  |
 | ✅ | [C_TooltipInfo.GetUnitDebuff](#c_tooltipinfogetunitdebuff) |  |  |
 | ✅ | [C_TooltipInfo.GetUnitDebuffByAuraInstanceID](#c_tooltipinfogetunitdebuffbyaurainstanceid) |  |  |
-| ✅ | [C_TooltipInfo.GetUpgradeItem](#c_tooltipinfogetupgradeitem) | 0 values |  |
+| ✅ | [C_TooltipInfo.GetUpgradeItem](#c_tooltipinfogetupgradeitem) | 0 values | 0 values |
 | ✅ | [C_TooltipInfo.GetWeeklyReward](#c_tooltipinfogetweeklyreward) |  |  |
-| ✅ | [C_TooltipInfo.GetWorldCursor](#c_tooltipinfogetworldcursor) | 0 values |  |
+| ✅ | [C_TooltipInfo.GetWorldCursor](#c_tooltipinfogetworldcursor) | 0 values | 0 values |
 | ✅ | [C_TooltipInfo.GetWorldLootObject](#c_tooltipinfogetworldlootobject) |  |  |
 
 ### C_TooltipInfo.GetAchievementByID
@@ -114,6 +114,7 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetArtifactPowerByID
@@ -348,6 +349,7 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetItemKey
@@ -429,6 +431,7 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetMountBySpellID
@@ -484,6 +487,7 @@ Namespace: `C_TooltipInfo`
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetPvpTalent
@@ -602,6 +606,7 @@ Namespace: `C_TooltipInfo`
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetShapeshift
@@ -620,6 +625,7 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetSocketGem
@@ -638,6 +644,7 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetSocketedRelic
@@ -738,6 +745,7 @@ Namespace: `C_TooltipInfo`
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `table{dataInstanceID=number,guid=string,healthGUID=string,lines=table,type=number}`
+- Called in combat: returned 1 value: `table{dataInstanceID=number,guid=string,healthGUID=string,lines=table,type=number}`
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetUnitAura
@@ -814,6 +822,7 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetWeeklyReward
@@ -832,6 +841,7 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TooltipInfoDocumentation.lua`
 
 ### C_TooltipInfo.GetWorldLootObject
@@ -863,4 +873,4 @@ Namespace: `C_TooltipInfo`
 - Payload: `dataInstanceID: number?`
 - Blizzard: Sends an update to the UI that a sparse or cache lookup has resolved
 - unique event (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `n`
+- Seen firing 4 times (2 in combat); argument kinds: `n`

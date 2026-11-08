@@ -7,8 +7,8 @@ Namespace: `C_NamePlate`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_NamePlate.GetNamePlateForUnit](#c_nameplategetnameplateforunit) |  |  |
-| ✅ | [C_NamePlate.GetNamePlateSize](#c_nameplategetnameplatesize) | 2 values |  |
-| ✅ | [C_NamePlate.GetNamePlates](#c_nameplategetnameplates) | 1 value |  |
+| ✅ | [C_NamePlate.GetNamePlateSize](#c_nameplategetnameplatesize) | 2 values | 2 values |
+| ✅ | [C_NamePlate.GetNamePlates](#c_nameplategetnameplates) | 1 value | 1 value |
 | ✅ | [C_NamePlate.SetNamePlateSize](#c_nameplatesetnameplatesize) |  |  |
 
 ### C_NamePlate.GetNamePlateForUnit
@@ -25,6 +25,7 @@ Namespace: `C_NamePlate`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `NamePlateDocumentation.lua`
 
 ### C_NamePlate.GetNamePlates
@@ -32,7 +33,8 @@ Namespace: `C_NamePlate`
 `C_NamePlate.GetNamePlates() → nameplates: NamePlateFrame[]`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `table{[number]=table,[number]=table}`
+- Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{[number]=table}`
 - Source: client docs `NamePlateDocumentation.lua`
 
 ### C_NamePlate.SetNamePlateSize

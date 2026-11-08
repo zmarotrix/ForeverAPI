@@ -4,19 +4,19 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [CanChangePlayerDifficulty](#canchangeplayerdifficulty) | 2 values |  |
-| ✅ | [CanMapChangeDifficulty](#canmapchangedifficulty) | 1 value |  |
-| ✅ | [CanShowResetInstances](#canshowresetinstances) | 1 value |  |
+| ✅ | [CanChangePlayerDifficulty](#canchangeplayerdifficulty) | 2 values | 2 values |
+| ✅ | [CanMapChangeDifficulty](#canmapchangedifficulty) | 1 value | 1 value |
+| ✅ | [CanShowResetInstances](#canshowresetinstances) | 1 value | 1 value |
 | ✅ | [GetBaseDifficultyID](#getbasedifficultyid) |  |  |
 | ✅ | [GetDifficultyInfo](#getdifficultyinfo) |  |  |
-| ✅ | [GetDungeonDifficultyID](#getdungeondifficultyid) | 1 value |  |
-| ✅ | [GetInstanceBootTimeRemaining](#getinstanceboottimeremaining) | 1 value |  |
-| ✅ | [GetInstanceInfo](#getinstanceinfo) | 11 values |  |
-| ✅ | [GetInstanceLockTimeRemaining](#getinstancelocktimeremaining) | 4 values |  |
+| ✅ | [GetDungeonDifficultyID](#getdungeondifficultyid) | 1 value | 1 value |
+| ✅ | [GetInstanceBootTimeRemaining](#getinstanceboottimeremaining) | 1 value | 1 value |
+| ✅ | [GetInstanceInfo](#getinstanceinfo) | 11 values | 11 values |
+| ✅ | [GetInstanceLockTimeRemaining](#getinstancelocktimeremaining) | 4 values | 4 values |
 | ✅ | [GetInstanceLockTimeRemainingEncounter](#getinstancelocktimeremainingencounter) |  |  |
-| ✅ | [GetLegacyRaidDifficultyID](#getlegacyraiddifficultyid) | 1 value |  |
-| ✅ | [GetRaidDifficultyID](#getraiddifficultyid) | 1 value |  |
-| ✅ | [IsInInstance](#isininstance) | 2 values |  |
+| ✅ | [GetLegacyRaidDifficultyID](#getlegacyraiddifficultyid) | 1 value | 1 value |
+| ✅ | [GetRaidDifficultyID](#getraiddifficultyid) | 1 value | 1 value |
+| ✅ | [IsInInstance](#isininstance) | 2 values | 2 values |
 | ✅ | [IsLegacyDifficulty](#islegacydifficulty) |  |  |
 | ✅ | [ResetInstances](#resetinstances) |  |  |
 | ✅ | [SetDungeonDifficultyID](#setdungeondifficultyid) |  |  |
@@ -30,6 +30,7 @@
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 2 values: `boolean`, `boolean`
+- Called in combat: returned 2 values: `boolean`, `boolean`
 - Source: client docs `InstanceDocumentation.lua`
 
 ### CanMapChangeDifficulty
@@ -39,6 +40,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `InstanceDocumentation.lua`
 
 ### CanShowResetInstances
@@ -47,6 +49,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `InstanceDocumentation.lua`
 
 ### GetBaseDifficultyID
@@ -71,6 +74,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `InstanceDocumentation.lua`
 
 ### GetInstanceBootTimeRemaining
@@ -79,6 +83,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `InstanceDocumentation.lua`
 
 ### GetInstanceInfo
@@ -87,6 +92,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 11 values: `string`, `string`, `number`, `string`, `number`, `number`, `boolean`, `number`, `number`, `nil`, `boolean`
+- Called in combat: returned 11 values: `string`, `string`, `number`, `string`, `number`, `number`, `boolean`, `number`, `number`, `nil`, `boolean`
 - Source: client docs `InstanceDocumentation.lua`
 
 ### GetInstanceLockTimeRemaining
@@ -95,6 +101,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 4 values: `number`, `boolean`, `number`, `number`
+- Called in combat: returned 4 values: `number`, `boolean`, `number`, `number`
 - Source: client docs `InstanceDocumentation.lua`
 
 ### GetInstanceLockTimeRemainingEncounter
@@ -111,6 +118,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `InstanceDocumentation.lua`
 
 ### GetRaidDifficultyID
@@ -119,6 +127,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `InstanceDocumentation.lua`
 
 ### IsInInstance
@@ -127,6 +136,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `boolean`, `string`
+- Called in combat: returned 2 values: `boolean`, `string`
 - Source: client docs `InstanceDocumentation.lua`
 
 ### IsLegacyDifficulty

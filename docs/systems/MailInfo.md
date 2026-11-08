@@ -6,10 +6,10 @@ Namespace: `C_Mail`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_Mail.CanCheckInbox](#c_mailcancheckinbox) | 2 values |  |
+| ✅ | [C_Mail.CanCheckInbox](#c_mailcancheckinbox) | 2 values | 2 values |
 | ✅ | [C_Mail.GetCraftingOrderMailInfo](#c_mailgetcraftingordermailinfo) |  |  |
 | ✅ | [C_Mail.HasInboxMoney](#c_mailhasinboxmoney) |  |  |
-| ✅ | [C_Mail.IsCommandPending](#c_mailiscommandpending) | 1 value |  |
+| ✅ | [C_Mail.IsCommandPending](#c_mailiscommandpending) | 1 value | 1 value |
 | ✅ | [C_Mail.SetOpeningAll](#c_mailsetopeningall) |  |  |
 
 ### C_Mail.CanCheckInbox
@@ -18,6 +18,7 @@ Namespace: `C_Mail`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `boolean`, `number`
+- Called in combat: returned 2 values: `boolean`, `number`
 - Source: client docs `MailInfoDocumentation.lua`
 
 ### C_Mail.GetCraftingOrderMailInfo
@@ -42,6 +43,7 @@ Namespace: `C_Mail`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `MailInfoDocumentation.lua`
 
 ### C_Mail.SetOpeningAll
@@ -140,4 +142,4 @@ Namespace: `C_Mail`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 5 times (0 in combat); argument kinds: ``

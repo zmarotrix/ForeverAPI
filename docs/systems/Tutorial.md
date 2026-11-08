@@ -7,7 +7,7 @@ Namespace: `C_Tutorial`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_Tutorial.AbandonTutorialArea](#c_tutorialabandontutorialarea) |  |  |
-| ✅ | [C_Tutorial.GetCombatEventInfo](#c_tutorialgetcombateventinfo) | 0 values |  |
+| ✅ | [C_Tutorial.GetCombatEventInfo](#c_tutorialgetcombateventinfo) | 0 values | 0 values |
 | ✅ | [C_Tutorial.ReturnToTutorialArea](#c_tutorialreturntotutorialarea) |  |  |
 | ✅ | [C_Tutorial.SendTutorialStartButtonTelem](#c_tutorialsendtutorialstartbuttontelem) |  |  |
 
@@ -25,6 +25,7 @@ Namespace: `C_Tutorial`
 - Status: ✅ verified (function)
 - RequireNPERestricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TutorialDocumentation.lua`
 
 ### C_Tutorial.ReturnToTutorialArea

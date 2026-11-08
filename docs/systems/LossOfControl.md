@@ -8,8 +8,8 @@ Namespace: `C_LossOfControl`
 |---|---|---|---|
 | ✅ | [C_LossOfControl.GetActiveLossOfControlData](#c_lossofcontrolgetactivelossofcontroldata) |  |  |
 | ✅ | [C_LossOfControl.GetActiveLossOfControlDataByUnit](#c_lossofcontrolgetactivelossofcontroldatabyunit) |  |  |
-| ✅ | [C_LossOfControl.GetActiveLossOfControlDataCount](#c_lossofcontrolgetactivelossofcontroldatacount) | 1 value |  |
-| ✅ | [C_LossOfControl.GetActiveLossOfControlDataCountByUnit](#c_lossofcontrolgetactivelossofcontroldatacountbyunit) | 1 value |  |
+| ✅ | [C_LossOfControl.GetActiveLossOfControlDataCount](#c_lossofcontrolgetactivelossofcontroldatacount) | 1 value | 1 value |
+| ✅ | [C_LossOfControl.GetActiveLossOfControlDataCountByUnit](#c_lossofcontrolgetactivelossofcontroldatacountbyunit) | 1 value | 1 value |
 | ✅ | [C_LossOfControl.GetActiveLossOfControlDuration](#c_lossofcontrolgetactivelossofcontrolduration) |  |  |
 
 ### C_LossOfControl.GetActiveLossOfControlData
@@ -36,6 +36,7 @@ Namespace: `C_LossOfControl`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `LossOfControlDocumentation.lua`
 
 ### C_LossOfControl.GetActiveLossOfControlDataCountByUnit
@@ -45,6 +46,7 @@ Namespace: `C_LossOfControl`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `LossOfControlDocumentation.lua`
 
 ### C_LossOfControl.GetActiveLossOfControlDuration

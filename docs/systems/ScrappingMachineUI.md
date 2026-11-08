@@ -9,9 +9,9 @@ Namespace: `C_ScrappingMachineUI`
 | ✅ | [C_ScrappingMachineUI.CloseScrappingMachine](#c_scrappingmachineuiclosescrappingmachine) |  |  |
 | ✅ | [C_ScrappingMachineUI.DropPendingScrapItemFromCursor](#c_scrappingmachineuidroppendingscrapitemfromcursor) |  |  |
 | ✅ | [C_ScrappingMachineUI.GetCurrentPendingScrapItemLocationByIndex](#c_scrappingmachineuigetcurrentpendingscrapitemlocationbyindex) |  |  |
-| ✅ | [C_ScrappingMachineUI.GetScrapSpellID](#c_scrappingmachineuigetscrapspellid) | 1 value |  |
-| ✅ | [C_ScrappingMachineUI.GetScrappingMachineName](#c_scrappingmachineuigetscrappingmachinename) | 0 values |  |
-| ✅ | [C_ScrappingMachineUI.HasScrappableItems](#c_scrappingmachineuihasscrappableitems) | 1 value |  |
+| ✅ | [C_ScrappingMachineUI.GetScrapSpellID](#c_scrappingmachineuigetscrapspellid) | 1 value | 1 value |
+| ✅ | [C_ScrappingMachineUI.GetScrappingMachineName](#c_scrappingmachineuigetscrappingmachinename) | 0 values | 0 values |
+| ✅ | [C_ScrappingMachineUI.HasScrappableItems](#c_scrappingmachineuihasscrappableitems) | 1 value | 1 value |
 | ✅ | [C_ScrappingMachineUI.RemoveAllScrapItems](#c_scrappingmachineuiremoveallscrapitems) |  |  |
 | ✅ | [C_ScrappingMachineUI.RemoveCurrentScrappingItem](#c_scrappingmachineuiremovecurrentscrappingitem) |  |  |
 | ✅ | [C_ScrappingMachineUI.RemoveItemToScrap](#c_scrappingmachineuiremoveitemtoscrap) |  |  |
@@ -48,6 +48,7 @@ Namespace: `C_ScrappingMachineUI`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ScrappingMachineUIDocumentation.lua`
 
 ### C_ScrappingMachineUI.GetScrappingMachineName
@@ -57,6 +58,7 @@ Namespace: `C_ScrappingMachineUI`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ScrappingMachineUIDocumentation.lua`
 
 ### C_ScrappingMachineUI.HasScrappableItems
@@ -65,6 +67,7 @@ Namespace: `C_ScrappingMachineUI`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ScrappingMachineUIDocumentation.lua`
 
 ### C_ScrappingMachineUI.RemoveAllScrapItems

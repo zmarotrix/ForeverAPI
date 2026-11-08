@@ -12,13 +12,13 @@ Namespace: `C_ItemUpgrade`
 | ✅ | [C_ItemUpgrade.GetHighWatermarkForItem](#c_itemupgradegethighwatermarkforitem) |  |  |
 | ✅ | [C_ItemUpgrade.GetHighWatermarkForSlot](#c_itemupgradegethighwatermarkforslot) |  |  |
 | ✅ | [C_ItemUpgrade.GetHighWatermarkSlotForItem](#c_itemupgradegethighwatermarkslotforitem) |  |  |
-| ✅ | [C_ItemUpgrade.GetItemHyperlink](#c_itemupgradegetitemhyperlink) | 0 values |  |
-| ✅ | [C_ItemUpgrade.GetItemUpgradeCurrentLevel](#c_itemupgradegetitemupgradecurrentlevel) | 0 values |  |
+| ✅ | [C_ItemUpgrade.GetItemHyperlink](#c_itemupgradegetitemhyperlink) | 0 values | 0 values |
+| ✅ | [C_ItemUpgrade.GetItemUpgradeCurrentLevel](#c_itemupgradegetitemupgradecurrentlevel) | 0 values | 0 values |
 | ✅ | [C_ItemUpgrade.GetItemUpgradeEffect](#c_itemupgradegetitemupgradeeffect) |  |  |
-| ✅ | [C_ItemUpgrade.GetItemUpgradeItemInfo](#c_itemupgradegetitemupgradeiteminfo) | 0 values |  |
+| ✅ | [C_ItemUpgrade.GetItemUpgradeItemInfo](#c_itemupgradegetitemupgradeiteminfo) | 0 values | 0 values |
 | ✅ | [C_ItemUpgrade.GetItemUpgradePvpItemLevelDeltaValues](#c_itemupgradegetitemupgradepvpitemleveldeltavalues) |  |  |
-| ✅ | [C_ItemUpgrade.GetNumItemUpgradeEffects](#c_itemupgradegetnumitemupgradeeffects) | 1 value |  |
-| ✅ | [C_ItemUpgrade.IsItemBound](#c_itemupgradeisitembound) | 1 value |  |
+| ✅ | [C_ItemUpgrade.GetNumItemUpgradeEffects](#c_itemupgradegetnumitemupgradeeffects) | 1 value | 1 value |
+| ✅ | [C_ItemUpgrade.IsItemBound](#c_itemupgradeisitembound) | 1 value | 1 value |
 | ✅ | [C_ItemUpgrade.SetItemUpgradeFromCursorItem](#c_itemupgradesetitemupgradefromcursoritem) |  |  |
 | ✅ | [C_ItemUpgrade.SetItemUpgradeFromLocation](#c_itemupgradesetitemupgradefromlocation) |  |  |
 | ✅ | [C_ItemUpgrade.UpgradeItem](#c_itemupgradeupgradeitem) |  |  |
@@ -83,6 +83,7 @@ Namespace: `C_ItemUpgrade`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ItemUpgradeDocumentation.lua`
 
 ### C_ItemUpgrade.GetItemUpgradeCurrentLevel
@@ -92,6 +93,7 @@ Namespace: `C_ItemUpgrade`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ItemUpgradeDocumentation.lua`
 
 ### C_ItemUpgrade.GetItemUpgradeEffect
@@ -110,6 +112,7 @@ Namespace: `C_ItemUpgrade`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ItemUpgradeDocumentation.lua`
 
 ### C_ItemUpgrade.GetItemUpgradePvpItemLevelDeltaValues
@@ -127,6 +130,7 @@ Namespace: `C_ItemUpgrade`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ItemUpgradeDocumentation.lua`
 
 ### C_ItemUpgrade.IsItemBound
@@ -135,6 +139,7 @@ Namespace: `C_ItemUpgrade`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ItemUpgradeDocumentation.lua`
 
 ### C_ItemUpgrade.SetItemUpgradeFromCursorItem

@@ -6,7 +6,7 @@
 |---|---|---|---|
 | ✅ | [ClassicExpansionAtLeast](#classicexpansionatleast) |  |  |
 | ✅ | [ClassicExpansionAtMost](#classicexpansionatmost) |  |  |
-| ✅ | [GetClassicExpansionLevel](#getclassicexpansionlevel) | 1 value |  |
+| ✅ | [GetClassicExpansionLevel](#getclassicexpansionlevel) | 1 value | 1 value |
 
 ### ClassicExpansionAtLeast
 
@@ -30,4 +30,5 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ExpansionInfoDocumentation.lua`

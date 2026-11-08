@@ -10,7 +10,7 @@ Namespace: `C_AzeriteEmpoweredItem`
 | ✅ | [C_AzeriteEmpoweredItem.ConfirmAzeriteEmpoweredItemRespec](#c_azeriteempowereditemconfirmazeriteempowereditemrespec) |  |  |
 | ✅ | [C_AzeriteEmpoweredItem.GetAllTierInfo](#c_azeriteempowereditemgetalltierinfo) |  |  |
 | ✅ | [C_AzeriteEmpoweredItem.GetAllTierInfoByItemID](#c_azeriteempowereditemgetalltierinfobyitemid) |  |  |
-| ✅ | [C_AzeriteEmpoweredItem.GetAzeriteEmpoweredItemRespecCost](#c_azeriteempowereditemgetazeriteempowereditemrespeccost) | 1 value |  |
+| ✅ | [C_AzeriteEmpoweredItem.GetAzeriteEmpoweredItemRespecCost](#c_azeriteempowereditemgetazeriteempowereditemrespeccost) | 1 value | 1 value |
 | ✅ | [C_AzeriteEmpoweredItem.GetPowerInfo](#c_azeriteempowereditemgetpowerinfo) |  |  |
 | ✅ | [C_AzeriteEmpoweredItem.GetPowerText](#c_azeriteempowereditemgetpowertext) |  |  |
 | ✅ | [C_AzeriteEmpoweredItem.GetSpecsForPower](#c_azeriteempowereditemgetspecsforpower) |  |  |
@@ -19,7 +19,7 @@ Namespace: `C_AzeriteEmpoweredItem`
 | ✅ | [C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItem](#c_azeriteempowereditemisazeriteempowereditem) |  |  |
 | ✅ | [C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItemByID](#c_azeriteempowereditemisazeriteempowereditembyid) |  |  |
 | ✅ | [C_AzeriteEmpoweredItem.IsAzeritePreviewSourceDisplayable](#c_azeriteempowereditemisazeritepreviewsourcedisplayable) |  |  |
-| ✅ | [C_AzeriteEmpoweredItem.IsHeartOfAzerothEquipped](#c_azeriteempowereditemisheartofazerothequipped) | 1 value |  |
+| ✅ | [C_AzeriteEmpoweredItem.IsHeartOfAzerothEquipped](#c_azeriteempowereditemisheartofazerothequipped) | 1 value | 1 value |
 | ✅ | [C_AzeriteEmpoweredItem.IsPowerAvailableForSpec](#c_azeriteempowereditemispoweravailableforspec) |  |  |
 | ✅ | [C_AzeriteEmpoweredItem.IsPowerSelected](#c_azeriteempowereditemispowerselected) |  |  |
 | ✅ | [C_AzeriteEmpoweredItem.SelectPower](#c_azeriteempowereditemselectpower) |  |  |
@@ -64,6 +64,7 @@ Namespace: `C_AzeriteEmpoweredItem`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `AzeriteEmpoweredItemDocumentation.lua`
 
 ### C_AzeriteEmpoweredItem.GetPowerInfo
@@ -140,6 +141,7 @@ Namespace: `C_AzeriteEmpoweredItem`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `AzeriteEmpoweredItemDocumentation.lua`
 
 ### C_AzeriteEmpoweredItem.IsPowerAvailableForSpec

@@ -18,47 +18,47 @@ Namespace: `C_TransmogOutfitInfo`
 | ✅ | [C_TransmogOutfitInfo.CommitAndApplyAllPending](#c_transmogoutfitinfocommitandapplyallpending) |  |  |
 | ✅ | [C_TransmogOutfitInfo.CommitOutfitInfo](#c_transmogoutfitinfocommitoutfitinfo) |  |  |
 | ✅ | [C_TransmogOutfitInfo.CommitPendingSituations](#c_transmogoutfitinfocommitpendingsituations) |  |  |
-| ✅ | [C_TransmogOutfitInfo.GetActiveOutfitID](#c_transmogoutfitinfogetactiveoutfitid) | 1 value |  |
-| ✅ | [C_TransmogOutfitInfo.GetAllSlotLocationInfo](#c_transmogoutfitinfogetallslotlocationinfo) | 2 values |  |
+| ✅ | [C_TransmogOutfitInfo.GetActiveOutfitID](#c_transmogoutfitinfogetactiveoutfitid) | 1 value | 1 value |
+| ✅ | [C_TransmogOutfitInfo.GetAllSlotLocationInfo](#c_transmogoutfitinfogetallslotlocationinfo) | 2 values | 2 values |
 | ✅ | [C_TransmogOutfitInfo.GetAllTransmogOutfitOptionSheatheCategoryInfo](#c_transmogoutfitinfogetalltransmogoutfitoptionsheathecategoryinfo) |  |  |
 | ✅ | [C_TransmogOutfitInfo.GetCollectionInfoForSlotAndOption](#c_transmogoutfitinfogetcollectioninfoforslotandoption) |  |  |
-| ✅ | [C_TransmogOutfitInfo.GetCurrentlyViewedOutfitID](#c_transmogoutfitinfogetcurrentlyviewedoutfitid) | 1 value |  |
+| ✅ | [C_TransmogOutfitInfo.GetCurrentlyViewedOutfitID](#c_transmogoutfitinfogetcurrentlyviewedoutfitid) | 1 value | 1 value |
 | ✅ | [C_TransmogOutfitInfo.GetEquippedSlotOptionFromTransmogSlot](#c_transmogoutfitinfogetequippedslotoptionfromtransmogslot) |  |  |
 | ✅ | [C_TransmogOutfitInfo.GetIllusionDefaultIMAIDForCollectionType](#c_transmogoutfitinfogetillusiondefaultimaidforcollectiontype) |  |  |
 | ✅ | [C_TransmogOutfitInfo.GetItemModifiedAppearanceEffectiveCategory](#c_transmogoutfitinfogetitemmodifiedappearanceeffectivecategory) |  |  |
 | ✅ | [C_TransmogOutfitInfo.GetLinkedSlotInfo](#c_transmogoutfitinfogetlinkedslotinfo) |  |  |
 | ✅ | [C_TransmogOutfitInfo.GetMaxNumberOfTotalOutfitsForSource](#c_transmogoutfitinfogetmaxnumberoftotaloutfitsforsource) |  |  |
-| ✅ | [C_TransmogOutfitInfo.GetMaxNumberOfUsableOutfits](#c_transmogoutfitinfogetmaxnumberofusableoutfits) | 1 value |  |
-| ✅ | [C_TransmogOutfitInfo.GetNextOutfitCost](#c_transmogoutfitinfogetnextoutfitcost) | 1 value |  |
+| ✅ | [C_TransmogOutfitInfo.GetMaxNumberOfUsableOutfits](#c_transmogoutfitinfogetmaxnumberofusableoutfits) | 1 value | 1 value |
+| ✅ | [C_TransmogOutfitInfo.GetNextOutfitCost](#c_transmogoutfitinfogetnextoutfitcost) | 1 value | 1 value |
 | ✅ | [C_TransmogOutfitInfo.GetNumberOfOutfitsUnlockedForSource](#c_transmogoutfitinfogetnumberofoutfitsunlockedforsource) |  |  |
 | ✅ | [C_TransmogOutfitInfo.GetOptionsForSlot](#c_transmogoutfitinfogetoptionsforslot) |  |  |
 | ✅ | [C_TransmogOutfitInfo.GetOutfitInfo](#c_transmogoutfitinfogetoutfitinfo) |  |  |
 | ✅ | [C_TransmogOutfitInfo.GetOutfitInfoByName](#c_transmogoutfitinfogetoutfitinfobyname) |  |  |
 | ✅ | [C_TransmogOutfitInfo.GetOutfitInfoByPlayerFacingIndex](#c_transmogoutfitinfogetoutfitinfobyplayerfacingindex) |  |  |
 | ✅ | [C_TransmogOutfitInfo.GetOutfitSituation](#c_transmogoutfitinfogetoutfitsituation) |  |  |
-| ✅ | [C_TransmogOutfitInfo.GetOutfitSituationsEnabled](#c_transmogoutfitinfogetoutfitsituationsenabled) | 1 value |  |
-| ✅ | [C_TransmogOutfitInfo.GetOutfitsInfo](#c_transmogoutfitinfogetoutfitsinfo) | 1 value |  |
-| ✅ | [C_TransmogOutfitInfo.GetPendingTransmogCost](#c_transmogoutfitinfogetpendingtransmogcost) | 0 values |  |
+| ✅ | [C_TransmogOutfitInfo.GetOutfitSituationsEnabled](#c_transmogoutfitinfogetoutfitsituationsenabled) | 1 value | 1 value |
+| ✅ | [C_TransmogOutfitInfo.GetOutfitsInfo](#c_transmogoutfitinfogetoutfitsinfo) | 1 value | 1 value |
+| ✅ | [C_TransmogOutfitInfo.GetPendingTransmogCost](#c_transmogoutfitinfogetpendingtransmogcost) | 0 values | 0 values |
 | ✅ | [C_TransmogOutfitInfo.GetSecondarySlotState](#c_transmogoutfitinfogetsecondaryslotstate) |  |  |
 | ✅ | [C_TransmogOutfitInfo.GetSetSourcesForSlot](#c_transmogoutfitinfogetsetsourcesforslot) |  |  |
-| ✅ | [C_TransmogOutfitInfo.GetSlotGroupInfo](#c_transmogoutfitinfogetslotgroupinfo) | 1 value |  |
+| ✅ | [C_TransmogOutfitInfo.GetSlotGroupInfo](#c_transmogoutfitinfogetslotgroupinfo) | 1 value | 1 value |
 | ✅ | [C_TransmogOutfitInfo.GetSourceIDsForSlot](#c_transmogoutfitinfogetsourceidsforslot) |  |  |
 | ✅ | [C_TransmogOutfitInfo.GetTransmogOutfitSlotForInventoryType](#c_transmogoutfitinfogettransmogoutfitslotforinventorytype) |  |  |
 | ✅ | [C_TransmogOutfitInfo.GetTransmogOutfitSlotFromInventorySlot](#c_transmogoutfitinfogettransmogoutfitslotfrominventoryslot) |  |  |
-| ✅ | [C_TransmogOutfitInfo.GetUISituationCategoriesAndOptions](#c_transmogoutfitinfogetuisituationcategoriesandoptions) | 1 value |  |
+| ✅ | [C_TransmogOutfitInfo.GetUISituationCategoriesAndOptions](#c_transmogoutfitinfogetuisituationcategoriesandoptions) | 1 value | 1 value |
 | ✅ | [C_TransmogOutfitInfo.GetUnassignedAtlasForSlot](#c_transmogoutfitinfogetunassignedatlasforslot) |  |  |
 | ✅ | [C_TransmogOutfitInfo.GetUnassignedDisplayAtlasForSlot](#c_transmogoutfitinfogetunassigneddisplayatlasforslot) |  |  |
 | ✅ | [C_TransmogOutfitInfo.GetViewedOutfitSlotInfo](#c_transmogoutfitinfogetviewedoutfitslotinfo) |  |  |
 | 🆕 | [C_TransmogOutfitInfo.GetWeaponOptionsForSlot](#c_transmogoutfitinfogetweaponoptionsforslot) |  |  |
-| ✅ | [C_TransmogOutfitInfo.HasPendingOutfitSituations](#c_transmogoutfitinfohaspendingoutfitsituations) | 1 value |  |
-| ✅ | [C_TransmogOutfitInfo.HasPendingOutfitTransmogs](#c_transmogoutfitinfohaspendingoutfittransmogs) | 1 value |  |
+| ✅ | [C_TransmogOutfitInfo.HasPendingOutfitSituations](#c_transmogoutfitinfohaspendingoutfitsituations) | 1 value | 1 value |
+| ✅ | [C_TransmogOutfitInfo.HasPendingOutfitTransmogs](#c_transmogoutfitinfohaspendingoutfittransmogs) | 1 value | 1 value |
 | ✅ | [C_TransmogOutfitInfo.InTransmogEvent](#c_transmogoutfitinfointransmogevent) |  |  |
-| ✅ | [C_TransmogOutfitInfo.IsEquippedGearOutfitDisplayed](#c_transmogoutfitinfoisequippedgearoutfitdisplayed) | 1 value |  |
-| ✅ | [C_TransmogOutfitInfo.IsEquippedGearOutfitLocked](#c_transmogoutfitinfoisequippedgearoutfitlocked) | 1 value |  |
+| ✅ | [C_TransmogOutfitInfo.IsEquippedGearOutfitDisplayed](#c_transmogoutfitinfoisequippedgearoutfitdisplayed) | 1 value | 1 value |
+| ✅ | [C_TransmogOutfitInfo.IsEquippedGearOutfitLocked](#c_transmogoutfitinfoisequippedgearoutfitlocked) | 1 value | 1 value |
 | ✅ | [C_TransmogOutfitInfo.IsLockedOutfit](#c_transmogoutfitinfoislockedoutfit) |  |  |
 | ✅ | [C_TransmogOutfitInfo.IsSlotWeaponSlot](#c_transmogoutfitinfoisslotweaponslot) |  |  |
-| ✅ | [C_TransmogOutfitInfo.IsTransmogEnabled](#c_transmogoutfitinfoistransmogenabled) | 1 value |  |
-| ✅ | [C_TransmogOutfitInfo.IsUsableDiscountAvailable](#c_transmogoutfitinfoisusablediscountavailable) | 1 value |  |
+| ✅ | [C_TransmogOutfitInfo.IsTransmogEnabled](#c_transmogoutfitinfoistransmogenabled) | 1 value | 1 value |
+| ✅ | [C_TransmogOutfitInfo.IsUsableDiscountAvailable](#c_transmogoutfitinfoisusablediscountavailable) | 1 value | 1 value |
 | ✅ | [C_TransmogOutfitInfo.IsValidTransmogOutfitName](#c_transmogoutfitinfoisvalidtransmogoutfitname) |  |  |
 | ✅ | [C_TransmogOutfitInfo.PickupOutfit](#c_transmogoutfitinfopickupoutfit) |  |  |
 | ✅ | [C_TransmogOutfitInfo.ResetOutfitSituations](#c_transmogoutfitinforesetoutfitsituations) |  |  |
@@ -175,6 +175,7 @@ Namespace: `C_TransmogOutfitInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `TransmogOutfitInfoDocumentation.lua`
 
 ### C_TransmogOutfitInfo.GetAllSlotLocationInfo
@@ -184,6 +185,7 @@ Namespace: `C_TransmogOutfitInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 2 values: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table}`, `table{}`
+- Called in combat: returned 2 values: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table}`, `table{}`
 - Source: client docs `TransmogOutfitInfoDocumentation.lua`
 
 ### C_TransmogOutfitInfo.GetAllTransmogOutfitOptionSheatheCategoryInfo
@@ -210,6 +212,7 @@ Namespace: `C_TransmogOutfitInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `TransmogOutfitInfoDocumentation.lua`
 
 ### C_TransmogOutfitInfo.GetEquippedSlotOptionFromTransmogSlot
@@ -261,6 +264,7 @@ Namespace: `C_TransmogOutfitInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `TransmogOutfitInfoDocumentation.lua`
 
 ### C_TransmogOutfitInfo.GetNextOutfitCost
@@ -269,6 +273,7 @@ Namespace: `C_TransmogOutfitInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `TransmogOutfitInfoDocumentation.lua`
 
 ### C_TransmogOutfitInfo.GetNumberOfOutfitsUnlockedForSource
@@ -330,6 +335,7 @@ Namespace: `C_TransmogOutfitInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `TransmogOutfitInfoDocumentation.lua`
 
 ### C_TransmogOutfitInfo.GetOutfitsInfo
@@ -339,6 +345,7 @@ Namespace: `C_TransmogOutfitInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `table{[number]=table,[number]=table}`
+- Called in combat: returned 1 value: `table{[number]=table,[number]=table}`
 - Source: client docs `TransmogOutfitInfoDocumentation.lua`
 
 ### C_TransmogOutfitInfo.GetPendingTransmogCost
@@ -348,6 +355,7 @@ Namespace: `C_TransmogOutfitInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `TransmogOutfitInfoDocumentation.lua`
 
 ### C_TransmogOutfitInfo.GetSecondarySlotState
@@ -374,6 +382,7 @@ Namespace: `C_TransmogOutfitInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table}`
+- Called in combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table}`
 - Source: client docs `TransmogOutfitInfoDocumentation.lua`
 
 ### C_TransmogOutfitInfo.GetSourceIDsForSlot
@@ -410,6 +419,7 @@ Namespace: `C_TransmogOutfitInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table}`
+- Called in combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table}`
 - Source: client docs `TransmogOutfitInfoDocumentation.lua`
 
 ### C_TransmogOutfitInfo.GetUnassignedAtlasForSlot
@@ -451,6 +461,7 @@ Namespace: `C_TransmogOutfitInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `TransmogOutfitInfoDocumentation.lua`
 
 ### C_TransmogOutfitInfo.HasPendingOutfitTransmogs
@@ -459,6 +470,7 @@ Namespace: `C_TransmogOutfitInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `TransmogOutfitInfoDocumentation.lua`
 
 ### C_TransmogOutfitInfo.InTransmogEvent
@@ -474,6 +486,7 @@ Namespace: `C_TransmogOutfitInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `TransmogOutfitInfoDocumentation.lua`
 
 ### C_TransmogOutfitInfo.IsEquippedGearOutfitLocked
@@ -482,6 +495,7 @@ Namespace: `C_TransmogOutfitInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `TransmogOutfitInfoDocumentation.lua`
 
 ### C_TransmogOutfitInfo.IsLockedOutfit
@@ -506,6 +520,7 @@ Namespace: `C_TransmogOutfitInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `TransmogOutfitInfoDocumentation.lua`
 
 ### C_TransmogOutfitInfo.IsUsableDiscountAvailable
@@ -514,6 +529,7 @@ Namespace: `C_TransmogOutfitInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `TransmogOutfitInfoDocumentation.lua`
 
 ### C_TransmogOutfitInfo.IsValidTransmogOutfitName

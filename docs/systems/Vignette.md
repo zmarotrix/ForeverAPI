@@ -11,7 +11,7 @@ Namespace: `C_VignetteInfo`
 | ✅ | [C_VignetteInfo.GetRecommendedGroupSize](#c_vignetteinfogetrecommendedgroupsize) |  |  |
 | ✅ | [C_VignetteInfo.GetVignetteInfo](#c_vignetteinfogetvignetteinfo) |  |  |
 | ✅ | [C_VignetteInfo.GetVignettePosition](#c_vignetteinfogetvignetteposition) |  |  |
-| ✅ | [C_VignetteInfo.GetVignettes](#c_vignetteinfogetvignettes) | 1 value |  |
+| ✅ | [C_VignetteInfo.GetVignettes](#c_vignetteinfogetvignettes) | 1 value | 1 value |
 
 ### C_VignetteInfo.FindBestUniqueVignette
 
@@ -61,6 +61,7 @@ Namespace: `C_VignetteInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `VignetteInfoDocumentation.lua`
 
 ## Events

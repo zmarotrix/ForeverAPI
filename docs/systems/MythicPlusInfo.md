@@ -6,24 +6,24 @@ Namespace: `C_MythicPlus`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_MythicPlus.GetCurrentAffixes](#c_mythicplusgetcurrentaffixes) | 0 values |  |
-| ✅ | [C_MythicPlus.GetCurrentSeason](#c_mythicplusgetcurrentseason) | 1 value |  |
-| ✅ | [C_MythicPlus.GetCurrentSeasonValues](#c_mythicplusgetcurrentseasonvalues) | 3 values |  |
-| ✅ | [C_MythicPlus.GetCurrentUIDisplaySeason](#c_mythicplusgetcurrentuidisplayseason) | 1 value |  |
+| ✅ | [C_MythicPlus.GetCurrentAffixes](#c_mythicplusgetcurrentaffixes) | 0 values | 0 values |
+| ✅ | [C_MythicPlus.GetCurrentSeason](#c_mythicplusgetcurrentseason) | 1 value | 1 value |
+| ✅ | [C_MythicPlus.GetCurrentSeasonValues](#c_mythicplusgetcurrentseasonvalues) | 3 values | 3 values |
+| ✅ | [C_MythicPlus.GetCurrentUIDisplaySeason](#c_mythicplusgetcurrentuidisplayseason) | 1 value | 1 value |
 | ✅ | [C_MythicPlus.GetEndOfRunGearSequenceLevel](#c_mythicplusgetendofrungearsequencelevel) |  |  |
-| ✅ | [C_MythicPlus.GetLastWeeklyBestInformation](#c_mythicplusgetlastweeklybestinformation) | 0 values |  |
-| ✅ | [C_MythicPlus.GetOwnedKeystoneChallengeMapID](#c_mythicplusgetownedkeystonechallengemapid) | 0 values |  |
-| ✅ | [C_MythicPlus.GetOwnedKeystoneLevel](#c_mythicplusgetownedkeystonelevel) | 0 values |  |
-| ✅ | [C_MythicPlus.GetOwnedKeystoneMapID](#c_mythicplusgetownedkeystonemapid) | 0 values |  |
+| ✅ | [C_MythicPlus.GetLastWeeklyBestInformation](#c_mythicplusgetlastweeklybestinformation) | 0 values | 0 values |
+| ✅ | [C_MythicPlus.GetOwnedKeystoneChallengeMapID](#c_mythicplusgetownedkeystonechallengemapid) | 0 values | 0 values |
+| ✅ | [C_MythicPlus.GetOwnedKeystoneLevel](#c_mythicplusgetownedkeystonelevel) | 0 values | 0 values |
+| ✅ | [C_MythicPlus.GetOwnedKeystoneMapID](#c_mythicplusgetownedkeystonemapid) | 0 values | 0 values |
 | ✅ | [C_MythicPlus.GetRewardLevelForDifficultyLevel](#c_mythicplusgetrewardlevelfordifficultylevel) |  |  |
 | ✅ | [C_MythicPlus.GetRewardLevelFromKeystoneLevel](#c_mythicplusgetrewardlevelfromkeystonelevel) |  |  |
-| ✅ | [C_MythicPlus.GetRunHistory](#c_mythicplusgetrunhistory) | 1 value |  |
+| ✅ | [C_MythicPlus.GetRunHistory](#c_mythicplusgetrunhistory) | 1 value | 1 value |
 | ✅ | [C_MythicPlus.GetSeasonBestAffixScoreInfoForMap](#c_mythicplusgetseasonbestaffixscoreinfoformap) |  |  |
 | ✅ | [C_MythicPlus.GetSeasonBestForMap](#c_mythicplusgetseasonbestformap) |  |  |
-| ✅ | [C_MythicPlus.GetSeasonBestMythicRatingFromThisExpansion](#c_mythicplusgetseasonbestmythicratingfromthisexpansion) | 2 values |  |
+| ✅ | [C_MythicPlus.GetSeasonBestMythicRatingFromThisExpansion](#c_mythicplusgetseasonbestmythicratingfromthisexpansion) | 2 values | 2 values |
 | ✅ | [C_MythicPlus.GetWeeklyBestForMap](#c_mythicplusgetweeklybestformap) |  |  |
 | ✅ | [C_MythicPlus.GetWeeklyChestRewardLevel](#c_mythicplusgetweeklychestrewardlevel) |  |  |
-| ✅ | [C_MythicPlus.IsMythicPlusActive](#c_mythicplusismythicplusactive) | 1 value |  |
+| ✅ | [C_MythicPlus.IsMythicPlusActive](#c_mythicplusismythicplusactive) | 1 value | 1 value |
 | ✅ | [C_MythicPlus.RequestCurrentAffixes](#c_mythicplusrequestcurrentaffixes) |  |  |
 | ✅ | [C_MythicPlus.RequestMapInfo](#c_mythicplusrequestmapinfo) |  |  |
 | ✅ | [C_MythicPlus.RequestRewards](#c_mythicplusrequestrewards) |  |  |
@@ -35,6 +35,7 @@ Namespace: `C_MythicPlus`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `MythicPlusInfoDocumentation.lua`
 
 ### C_MythicPlus.GetCurrentSeason
@@ -43,6 +44,7 @@ Namespace: `C_MythicPlus`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `MythicPlusInfoDocumentation.lua`
 
 ### C_MythicPlus.GetCurrentSeasonValues
@@ -51,6 +53,7 @@ Namespace: `C_MythicPlus`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 3 values: `number`, `number`, `number`
+- Called in combat: returned 3 values: `number`, `number`, `number`
 - Source: client docs `MythicPlusInfoDocumentation.lua`
 
 ### C_MythicPlus.GetCurrentUIDisplaySeason
@@ -59,6 +62,7 @@ Namespace: `C_MythicPlus`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `MythicPlusInfoDocumentation.lua`
 
 ### C_MythicPlus.GetEndOfRunGearSequenceLevel
@@ -76,6 +80,7 @@ Namespace: `C_MythicPlus`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `MythicPlusInfoDocumentation.lua`
 
 ### C_MythicPlus.GetOwnedKeystoneChallengeMapID
@@ -85,6 +90,7 @@ Namespace: `C_MythicPlus`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `MythicPlusInfoDocumentation.lua`
 
 ### C_MythicPlus.GetOwnedKeystoneLevel
@@ -94,6 +100,7 @@ Namespace: `C_MythicPlus`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `MythicPlusInfoDocumentation.lua`
 
 ### C_MythicPlus.GetOwnedKeystoneMapID
@@ -103,6 +110,7 @@ Namespace: `C_MythicPlus`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `MythicPlusInfoDocumentation.lua`
 
 ### C_MythicPlus.GetRewardLevelForDifficultyLevel
@@ -128,6 +136,7 @@ Namespace: `C_MythicPlus`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `MythicPlusInfoDocumentation.lua`
 
 ### C_MythicPlus.GetSeasonBestAffixScoreInfoForMap
@@ -155,6 +164,7 @@ Namespace: `C_MythicPlus`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `MythicPlusInfoDocumentation.lua`
 
 ### C_MythicPlus.GetWeeklyBestForMap
@@ -179,6 +189,7 @@ Namespace: `C_MythicPlus`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `MythicPlusInfoDocumentation.lua`
 
 ### C_MythicPlus.RequestCurrentAffixes

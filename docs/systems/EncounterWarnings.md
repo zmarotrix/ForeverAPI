@@ -8,11 +8,11 @@ Namespace: `C_EncounterWarnings`
 |---|---|---|---|
 | ✅ | [C_EncounterWarnings.GetColorForSeverity](#c_encounterwarningsgetcolorforseverity) |  |  |
 | ✅ | [C_EncounterWarnings.GetEditModeWarningInfo](#c_encounterwarningsgeteditmodewarninginfo) |  |  |
-| ✅ | [C_EncounterWarnings.GetPlayCustomSoundsWhenHidden](#c_encounterwarningsgetplaycustomsoundswhenhidden) | 1 value |  |
+| ✅ | [C_EncounterWarnings.GetPlayCustomSoundsWhenHidden](#c_encounterwarningsgetplaycustomsoundswhenhidden) | 1 value | 1 value |
 | ✅ | [C_EncounterWarnings.GetSoundKitForSeverity](#c_encounterwarningsgetsoundkitforseverity) |  |  |
-| ✅ | [C_EncounterWarnings.GetWarningsShown](#c_encounterwarningsgetwarningsshown) | 1 value |  |
-| ✅ | [C_EncounterWarnings.IsFeatureAvailable](#c_encounterwarningsisfeatureavailable) | 1 value |  |
-| ✅ | [C_EncounterWarnings.IsFeatureEnabled](#c_encounterwarningsisfeatureenabled) | 1 value |  |
+| ✅ | [C_EncounterWarnings.GetWarningsShown](#c_encounterwarningsgetwarningsshown) | 1 value | 1 value |
+| ✅ | [C_EncounterWarnings.IsFeatureAvailable](#c_encounterwarningsisfeatureavailable) | 1 value | 1 value |
+| ✅ | [C_EncounterWarnings.IsFeatureEnabled](#c_encounterwarningsisfeatureenabled) | 1 value | 1 value |
 | ✅ | [C_EncounterWarnings.PlaySound](#c_encounterwarningsplaysound) |  |  |
 | ✅ | [C_EncounterWarnings.SetPlayCustomSoundsWhenHidden](#c_encounterwarningssetplaycustomsoundswhenhidden) |  |  |
 | ✅ | [C_EncounterWarnings.SetWarningsShown](#c_encounterwarningssetwarningsshown) |  |  |
@@ -40,6 +40,7 @@ Namespace: `C_EncounterWarnings`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if custom sound alerts are allowed to play for hidden warning messages.
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `EncounterWarningsDocumentation.lua`
 
 ### C_EncounterWarnings.GetSoundKitForSeverity
@@ -57,6 +58,7 @@ Namespace: `C_EncounterWarnings`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if text messages for encounter events are allowed to be shown.
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `EncounterWarningsDocumentation.lua`
 
 ### C_EncounterWarnings.IsFeatureAvailable
@@ -65,6 +67,7 @@ Namespace: `C_EncounterWarnings`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `EncounterWarningsDocumentation.lua`
 
 ### C_EncounterWarnings.IsFeatureEnabled
@@ -73,6 +76,7 @@ Namespace: `C_EncounterWarnings`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `EncounterWarningsDocumentation.lua`
 
 ### C_EncounterWarnings.PlaySound

@@ -9,7 +9,7 @@ Namespace: `C_TradeInfo`
 | ✅ | [C_TradeInfo.AddTradeMoney](#c_tradeinfoaddtrademoney) |  |  |
 | ✅ | [C_TradeInfo.PickupTradeMoney](#c_tradeinfopickuptrademoney) |  |  |
 | ✅ | [C_TradeInfo.SetTradeMoney](#c_tradeinfosettrademoney) |  |  |
-| ✅ | [C_TradeInfo.ShouldShowTradeOfferWarning](#c_tradeinfoshouldshowtradeofferwarning) | 1 value |  |
+| ✅ | [C_TradeInfo.ShouldShowTradeOfferWarning](#c_tradeinfoshouldshowtradeofferwarning) | 1 value | 1 value |
 
 ### C_TradeInfo.AddTradeMoney
 
@@ -45,6 +45,7 @@ Namespace: `C_TradeInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `TradeInfoDocumentation.lua`
 
 ## Events

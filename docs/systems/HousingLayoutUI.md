@@ -8,34 +8,34 @@ Namespace: `C_HousingLayout`
 |---|---|---|---|
 | ✅ | [C_HousingLayout.AnyRoomsOnFloor](#c_housinglayoutanyroomsonfloor) |  |  |
 | ✅ | [C_HousingLayout.CanSetViewedFloor](#c_housinglayoutcansetviewedfloor) |  |  |
-| ✅ | [C_HousingLayout.CancelActiveLayoutEditing](#c_housinglayoutcancelactivelayoutediting) | 0 values |  |
+| ✅ | [C_HousingLayout.CancelActiveLayoutEditing](#c_housinglayoutcancelactivelayoutediting) | 0 values | 0 values |
 | ✅ | [C_HousingLayout.ConfirmStairChoice](#c_housinglayoutconfirmstairchoice) |  |  |
 | ✅ | [C_HousingLayout.DeselectFloorplan](#c_housinglayoutdeselectfloorplan) |  |  |
 | ✅ | [C_HousingLayout.DeselectRoomOrDoor](#c_housinglayoutdeselectroomordoor) |  |  |
-| ✅ | [C_HousingLayout.GetBaseRoomFloor](#c_housinglayoutgetbaseroomfloor) | 1 value |  |
-| ✅ | [C_HousingLayout.GetHighestOccupiedFloorIndex](#c_housinglayoutgethighestoccupiedfloorindex) | 1 value |  |
-| ✅ | [C_HousingLayout.GetLowestOccupiedFloorIndex](#c_housinglayoutgetlowestoccupiedfloorindex) | 1 value |  |
-| ✅ | [C_HousingLayout.GetNumActiveRooms](#c_housinglayoutgetnumactiverooms) | 1 value |  |
+| ✅ | [C_HousingLayout.GetBaseRoomFloor](#c_housinglayoutgetbaseroomfloor) | 1 value | 1 value |
+| ✅ | [C_HousingLayout.GetHighestOccupiedFloorIndex](#c_housinglayoutgethighestoccupiedfloorindex) | 1 value | 1 value |
+| ✅ | [C_HousingLayout.GetLowestOccupiedFloorIndex](#c_housinglayoutgetlowestoccupiedfloorindex) | 1 value | 1 value |
+| ✅ | [C_HousingLayout.GetNumActiveRooms](#c_housinglayoutgetnumactiverooms) | 1 value | 1 value |
 | 🆕 | [C_HousingLayout.GetNumFloors](#c_housinglayoutgetnumfloors) |  |  |
-| ✅ | [C_HousingLayout.GetRoomPlacementBudget](#c_housinglayoutgetroomplacementbudget) | 1 value |  |
-| ✅ | [C_HousingLayout.GetRoomPlayerIsIn](#c_housinglayoutgetroomplayerisin) | 0 values |  |
-| ✅ | [C_HousingLayout.GetSelectedBlueprintFloorplan](#c_housinglayoutgetselectedblueprintfloorplan) | 0 values |  |
-| ✅ | [C_HousingLayout.GetSelectedDoor](#c_housinglayoutgetselecteddoor) | 0 values |  |
-| ✅ | [C_HousingLayout.GetSelectedFloorplan](#c_housinglayoutgetselectedfloorplan) | 1 value |  |
-| ✅ | [C_HousingLayout.GetSelectedRoom](#c_housinglayoutgetselectedroom) | 0 values |  |
-| ✅ | [C_HousingLayout.GetSelectedStairwellRoomCount](#c_housinglayoutgetselectedstairwellroomcount) | 1 value |  |
-| ✅ | [C_HousingLayout.GetSpentPlacementBudget](#c_housinglayoutgetspentplacementbudget) | 1 value |  |
-| ✅ | [C_HousingLayout.GetViewedFloor](#c_housinglayoutgetviewedfloor) | 1 value |  |
-| ✅ | [C_HousingLayout.HasAnySelections](#c_housinglayouthasanyselections) | 1 value |  |
-| ✅ | [C_HousingLayout.HasRoomPlacementBudget](#c_housinglayouthasroomplacementbudget) | 1 value |  |
-| ✅ | [C_HousingLayout.HasSelectedBlueprintFloorplan](#c_housinglayouthasselectedblueprintfloorplan) | 1 value |  |
-| ✅ | [C_HousingLayout.HasSelectedDoor](#c_housinglayouthasselecteddoor) | 1 value |  |
-| ✅ | [C_HousingLayout.HasSelectedFloorplan](#c_housinglayouthasselectedfloorplan) | 1 value |  |
-| ✅ | [C_HousingLayout.HasSelectedRoom](#c_housinglayouthasselectedroom) | 1 value |  |
+| ✅ | [C_HousingLayout.GetRoomPlacementBudget](#c_housinglayoutgetroomplacementbudget) | 1 value | 1 value |
+| ✅ | [C_HousingLayout.GetRoomPlayerIsIn](#c_housinglayoutgetroomplayerisin) | 0 values | 0 values |
+| ✅ | [C_HousingLayout.GetSelectedBlueprintFloorplan](#c_housinglayoutgetselectedblueprintfloorplan) | 0 values | 0 values |
+| ✅ | [C_HousingLayout.GetSelectedDoor](#c_housinglayoutgetselecteddoor) | 0 values | 0 values |
+| ✅ | [C_HousingLayout.GetSelectedFloorplan](#c_housinglayoutgetselectedfloorplan) | 1 value | 1 value |
+| ✅ | [C_HousingLayout.GetSelectedRoom](#c_housinglayoutgetselectedroom) | 0 values | 0 values |
+| ✅ | [C_HousingLayout.GetSelectedStairwellRoomCount](#c_housinglayoutgetselectedstairwellroomcount) | 1 value | 1 value |
+| ✅ | [C_HousingLayout.GetSpentPlacementBudget](#c_housinglayoutgetspentplacementbudget) | 1 value | 1 value |
+| ✅ | [C_HousingLayout.GetViewedFloor](#c_housinglayoutgetviewedfloor) | 1 value | 1 value |
+| ✅ | [C_HousingLayout.HasAnySelections](#c_housinglayouthasanyselections) | 1 value | 1 value |
+| ✅ | [C_HousingLayout.HasRoomPlacementBudget](#c_housinglayouthasroomplacementbudget) | 1 value | 1 value |
+| ✅ | [C_HousingLayout.HasSelectedBlueprintFloorplan](#c_housinglayouthasselectedblueprintfloorplan) | 1 value | 1 value |
+| ✅ | [C_HousingLayout.HasSelectedDoor](#c_housinglayouthasselecteddoor) | 1 value | 1 value |
+| ✅ | [C_HousingLayout.HasSelectedFloorplan](#c_housinglayouthasselectedfloorplan) | 1 value | 1 value |
+| ✅ | [C_HousingLayout.HasSelectedRoom](#c_housinglayouthasselectedroom) | 1 value | 1 value |
 | ✅ | [C_HousingLayout.HasStairs](#c_housinglayouthasstairs) |  |  |
 | ✅ | [C_HousingLayout.HasValidConnection](#c_housinglayouthasvalidconnection) |  |  |
 | ✅ | [C_HousingLayout.IsBaseRoom](#c_housinglayoutisbaseroom) |  |  |
-| ✅ | [C_HousingLayout.IsDraggingRoom](#c_housinglayoutisdraggingroom) | 2 values |  |
+| ✅ | [C_HousingLayout.IsDraggingRoom](#c_housinglayoutisdraggingroom) | 2 values | 2 values |
 | ✅ | [C_HousingLayout.MoveDraggedRoom](#c_housinglayoutmovedraggedroom) |  |  |
 | ✅ | [C_HousingLayout.MoveLayoutCamera](#c_housinglayoutmovelayoutcamera) |  |  |
 | ✅ | [C_HousingLayout.RemoveRoom](#c_housinglayoutremoveroom) |  |  |
@@ -71,6 +71,7 @@ Namespace: `C_HousingLayout`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `HousingLayoutUIDocumentation.lua`
 
 ### C_HousingLayout.ConfirmStairChoice
@@ -102,6 +103,7 @@ Namespace: `C_HousingLayout`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `HousingLayoutUIDocumentation.lua`
 
 ### C_HousingLayout.GetHighestOccupiedFloorIndex
@@ -110,6 +112,7 @@ Namespace: `C_HousingLayout`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `HousingLayoutUIDocumentation.lua`
 
 ### C_HousingLayout.GetLowestOccupiedFloorIndex
@@ -118,6 +121,7 @@ Namespace: `C_HousingLayout`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `HousingLayoutUIDocumentation.lua`
 
 ### C_HousingLayout.GetNumActiveRooms
@@ -126,6 +130,7 @@ Namespace: `C_HousingLayout`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `HousingLayoutUIDocumentation.lua`
 
 ### C_HousingLayout.GetNumFloors
@@ -142,6 +147,7 @@ Namespace: `C_HousingLayout`
 - Blizzard: Returns the max room placement budget for the current owned house's interior; Can be increased via house level
 - `placementBudget`: Will be nil if not in an owned House or Plot
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `HousingLayoutUIDocumentation.lua`
 
 ### C_HousingLayout.GetRoomPlayerIsIn
@@ -152,6 +158,7 @@ Namespace: `C_HousingLayout`
 - Blizzard: Returns the guid of the interior room the player is standing in, or nil if not currently standing in one
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `HousingLayoutUIDocumentation.lua`
 
 ### C_HousingLayout.GetSelectedBlueprintFloorplan
@@ -161,6 +168,7 @@ Namespace: `C_HousingLayout`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `HousingLayoutUIDocumentation.lua`
 
 ### C_HousingLayout.GetSelectedDoor
@@ -171,6 +179,7 @@ Namespace: `C_HousingLayout`
 - Blizzard: If a door is selected, returns its component id and the guid of the room it belongs to; Otherwise returns nothing
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `HousingLayoutUIDocumentation.lua`
 
 ### C_HousingLayout.GetSelectedFloorplan
@@ -179,6 +188,7 @@ Namespace: `C_HousingLayout`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `HousingLayoutUIDocumentation.lua`
 
 ### C_HousingLayout.GetSelectedRoom
@@ -189,6 +199,7 @@ Namespace: `C_HousingLayout`
 - Blizzard: If a Room is selected, returns the room's guid; Otherwise returns nothing
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `HousingLayoutUIDocumentation.lua`
 
 ### C_HousingLayout.GetSelectedStairwellRoomCount
@@ -197,6 +208,7 @@ Namespace: `C_HousingLayout`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `HousingLayoutUIDocumentation.lua`
 
 ### C_HousingLayout.GetSpentPlacementBudget
@@ -207,6 +219,7 @@ Namespace: `C_HousingLayout`
 - Blizzard: Returns how much of the current owned house's room placement budget has been spent; Different kinds of rooms take up different budget amounts, so this value isn't an individual room count, see GetNumActiveRooms for that
 - `spentPlacementBudget`: Will be nil if not in an owned House
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `HousingLayoutUIDocumentation.lua`
 
 ### C_HousingLayout.GetViewedFloor
@@ -215,6 +228,7 @@ Namespace: `C_HousingLayout`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `HousingLayoutUIDocumentation.lua`
 
 ### C_HousingLayout.HasAnySelections
@@ -224,6 +238,7 @@ Namespace: `C_HousingLayout`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if any room, door, or floorplan is currently selected or being dragged
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `HousingLayoutUIDocumentation.lua`
 
 ### C_HousingLayout.HasRoomPlacementBudget
@@ -233,6 +248,7 @@ Namespace: `C_HousingLayout`
 - Status: ✅ verified (function)
 - Blizzard: Returns whether there's a max room placement budget available and active for the current player, in the current house's interior
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `HousingLayoutUIDocumentation.lua`
 
 ### C_HousingLayout.HasSelectedBlueprintFloorplan
@@ -241,6 +257,7 @@ Namespace: `C_HousingLayout`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `HousingLayoutUIDocumentation.lua`
 
 ### C_HousingLayout.HasSelectedDoor
@@ -250,6 +267,7 @@ Namespace: `C_HousingLayout`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a door component is currently selected
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `HousingLayoutUIDocumentation.lua`
 
 ### C_HousingLayout.HasSelectedFloorplan
@@ -258,6 +276,7 @@ Namespace: `C_HousingLayout`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `HousingLayoutUIDocumentation.lua`
 
 ### C_HousingLayout.HasSelectedRoom
@@ -267,6 +286,7 @@ Namespace: `C_HousingLayout`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a room is selected, will NOT return true if a door is selected
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `HousingLayoutUIDocumentation.lua`
 
 ### C_HousingLayout.HasStairs
@@ -299,6 +319,7 @@ Namespace: `C_HousingLayout`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `boolean`, `boolean`
+- Called in combat: returned 2 values: `boolean`, `boolean`
 - Source: client docs `HousingLayoutUIDocumentation.lua`
 
 ### C_HousingLayout.MoveDraggedRoom

@@ -8,34 +8,34 @@ Namespace: `C_EncounterTimeline`
 |---|---|---|---|
 | ✅ | [C_EncounterTimeline.AddEditModeEvents](#c_encountertimelineaddeditmodeevents) |  |  |
 | ✅ | [C_EncounterTimeline.AddScriptEvent](#c_encountertimelineaddscriptevent) |  |  |
-| ✅ | [C_EncounterTimeline.CancelAllScriptEvents](#c_encountertimelinecancelallscriptevents) | 0 values |  |
-| ✅ | [C_EncounterTimeline.CancelEditModeEvents](#c_encountertimelinecanceleditmodeevents) | 0 values |  |
+| ✅ | [C_EncounterTimeline.CancelAllScriptEvents](#c_encountertimelinecancelallscriptevents) | 0 values | 0 values |
+| ✅ | [C_EncounterTimeline.CancelEditModeEvents](#c_encountertimelinecanceleditmodeevents) | 0 values | 0 values |
 | ✅ | [C_EncounterTimeline.CancelScriptEvent](#c_encountertimelinecancelscriptevent) |  |  |
 | ✅ | [C_EncounterTimeline.FinishScriptEvent](#c_encountertimelinefinishscriptevent) |  |  |
-| ✅ | [C_EncounterTimeline.GetCurrentTime](#c_encountertimelinegetcurrenttime) | 1 value |  |
+| ✅ | [C_EncounterTimeline.GetCurrentTime](#c_encountertimelinegetcurrenttime) | 1 value | 1 value |
 | ✅ | [C_EncounterTimeline.GetEventColor](#c_encountertimelinegeteventcolor) |  |  |
 | ✅ | [C_EncounterTimeline.GetEventCountBySource](#c_encountertimelinegeteventcountbysource) |  |  |
-| ✅ | [C_EncounterTimeline.GetEventHighlightTime](#c_encountertimelinegeteventhighlighttime) | 1 value |  |
+| ✅ | [C_EncounterTimeline.GetEventHighlightTime](#c_encountertimelinegeteventhighlighttime) | 1 value | 1 value |
 | ✅ | [C_EncounterTimeline.GetEventInfo](#c_encountertimelinegeteventinfo) |  |  |
-| ✅ | [C_EncounterTimeline.GetEventList](#c_encountertimelinegeteventlist) | 1 value |  |
+| ✅ | [C_EncounterTimeline.GetEventList](#c_encountertimelinegeteventlist) | 1 value | 1 value |
 | ✅ | [C_EncounterTimeline.GetEventState](#c_encountertimelinegeteventstate) |  |  |
 | ✅ | [C_EncounterTimeline.GetEventTimeElapsed](#c_encountertimelinegeteventtimeelapsed) |  |  |
 | ✅ | [C_EncounterTimeline.GetEventTimeRemaining](#c_encountertimelinegeteventtimeremaining) |  |  |
 | ✅ | [C_EncounterTimeline.GetEventTimer](#c_encountertimelinegeteventtimer) |  |  |
 | ✅ | [C_EncounterTimeline.GetEventTrack](#c_encountertimelinegeteventtrack) |  |  |
-| ✅ | [C_EncounterTimeline.GetSortedEventList](#c_encountertimelinegetsortedeventlist) | 1 value |  |
+| ✅ | [C_EncounterTimeline.GetSortedEventList](#c_encountertimelinegetsortedeventlist) | 1 value | 1 value |
 | ✅ | [C_EncounterTimeline.GetTrackInfo](#c_encountertimelinegettrackinfo) |  |  |
-| ✅ | [C_EncounterTimeline.GetTrackList](#c_encountertimelinegettracklist) | 1 value |  |
+| ✅ | [C_EncounterTimeline.GetTrackList](#c_encountertimelinegettracklist) | 1 value | 1 value |
 | ✅ | [C_EncounterTimeline.GetTrackMaxEventDuration](#c_encountertimelinegettrackmaxeventduration) |  |  |
 | ✅ | [C_EncounterTimeline.GetTrackType](#c_encountertimelinegettracktype) |  |  |
-| ✅ | [C_EncounterTimeline.GetViewType](#c_encountertimelinegetviewtype) | 1 value |  |
-| ✅ | [C_EncounterTimeline.HasActiveEvents](#c_encountertimelinehasactiveevents) | 1 value |  |
-| ✅ | [C_EncounterTimeline.HasAnyEvents](#c_encountertimelinehasanyevents) | 1 value |  |
-| ✅ | [C_EncounterTimeline.HasPausedEvents](#c_encountertimelinehaspausedevents) | 1 value |  |
-| ✅ | [C_EncounterTimeline.HasVisibleEvents](#c_encountertimelinehasvisibleevents) | 1 value |  |
+| ✅ | [C_EncounterTimeline.GetViewType](#c_encountertimelinegetviewtype) | 1 value | 1 value |
+| ✅ | [C_EncounterTimeline.HasActiveEvents](#c_encountertimelinehasactiveevents) | 1 value | 1 value |
+| ✅ | [C_EncounterTimeline.HasAnyEvents](#c_encountertimelinehasanyevents) | 1 value | 1 value |
+| ✅ | [C_EncounterTimeline.HasPausedEvents](#c_encountertimelinehaspausedevents) | 1 value | 1 value |
+| ✅ | [C_EncounterTimeline.HasVisibleEvents](#c_encountertimelinehasvisibleevents) | 1 value | 1 value |
 | ✅ | [C_EncounterTimeline.IsEventBlocked](#c_encountertimelineiseventblocked) |  |  |
-| ✅ | [C_EncounterTimeline.IsFeatureAvailable](#c_encountertimelineisfeatureavailable) | 1 value |  |
-| ✅ | [C_EncounterTimeline.IsFeatureEnabled](#c_encountertimelineisfeatureenabled) | 1 value |  |
+| ✅ | [C_EncounterTimeline.IsFeatureAvailable](#c_encountertimelineisfeatureavailable) | 1 value | 1 value |
+| ✅ | [C_EncounterTimeline.IsFeatureEnabled](#c_encountertimelineisfeatureenabled) | 1 value | 1 value |
 | ✅ | [C_EncounterTimeline.PauseScriptEvent](#c_encountertimelinepausescriptevent) |  |  |
 | ✅ | [C_EncounterTimeline.ResumeScriptEvent](#c_encountertimelineresumescriptevent) |  |  |
 | ✅ | [C_EncounterTimeline.SetEventIconTextures](#c_encountertimelineseteventicontextures) |  |  |
@@ -65,6 +65,7 @@ Namespace: `C_EncounterTimeline`
 - Status: ✅ verified (function)
 - Blizzard: Cancels all custom timeline events, removing them from the timeline.
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
 ### C_EncounterTimeline.CancelEditModeEvents
@@ -74,6 +75,7 @@ Namespace: `C_EncounterTimeline`
 - Status: ✅ verified (function)
 - Blizzard: Removes all Edit Mode events from the timeline.
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
 ### C_EncounterTimeline.CancelScriptEvent
@@ -103,6 +105,7 @@ Namespace: `C_EncounterTimeline`
 - Status: ✅ verified (function)
 - Blizzard: Returns the current timestamp used for rendering the timeline display.
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
 ### C_EncounterTimeline.GetEventColor
@@ -132,6 +135,7 @@ Namespace: `C_EncounterTimeline`
 - Status: ✅ verified (function)
 - Blizzard: Returns the duration at which timeline events will be highlighted for imminency.
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
 ### C_EncounterTimeline.GetEventInfo
@@ -152,6 +156,7 @@ Namespace: `C_EncounterTimeline`
 - Status: ✅ verified (function)
 - Blizzard: Returns an unsorted list of event IDs present in the timeline.
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
 ### C_EncounterTimeline.GetEventState
@@ -215,6 +220,7 @@ Namespace: `C_EncounterTimeline`
 - `excludeHiddenEvents`: If false, include events that should be hidden by user configuration, such as events on long tracks when the user has opted to not show long countdowns.
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
 ### C_EncounterTimeline.GetTrackInfo
@@ -233,6 +239,7 @@ Namespace: `C_EncounterTimeline`
 - Status: ✅ verified (function)
 - Blizzard: Returns information about all timeline tracks.
 - Called out of combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table}`
+- Called in combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table}`
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
 ### C_EncounterTimeline.GetTrackMaxEventDuration
@@ -260,6 +267,7 @@ Namespace: `C_EncounterTimeline`
 - Status: ✅ verified (function)
 - Blizzard: Returns the current view type of the timeline.
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
 ### C_EncounterTimeline.HasActiveEvents
@@ -269,6 +277,7 @@ Namespace: `C_EncounterTimeline`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the timeline contains any events in the active state.
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
 ### C_EncounterTimeline.HasAnyEvents
@@ -278,6 +287,7 @@ Namespace: `C_EncounterTimeline`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the timeline contains any events in any state.
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
 ### C_EncounterTimeline.HasPausedEvents
@@ -287,6 +297,7 @@ Namespace: `C_EncounterTimeline`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the timeline contains any events in the paused state.
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
 ### C_EncounterTimeline.HasVisibleEvents
@@ -296,6 +307,7 @@ Namespace: `C_EncounterTimeline`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the timeline contains any events that are on visible tracks.
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
 ### C_EncounterTimeline.IsEventBlocked
@@ -315,6 +327,7 @@ Namespace: `C_EncounterTimeline`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the encounter timeline feature is available on this client.
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
 ### C_EncounterTimeline.IsFeatureEnabled
@@ -324,6 +337,7 @@ Namespace: `C_EncounterTimeline`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the encounter timeline feature has been enabled by the player. This function will always return false if the feature is not available.
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
 ### C_EncounterTimeline.PauseScriptEvent
@@ -425,7 +439,7 @@ Namespace: `C_EncounterTimeline`
 - Payload: none
 - Blizzard: Fired when the layout of tracks on the timeline has been updated. This can include changes to the minimum or maximum durations of tracks.
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 4 times (0 in combat); argument kinds: ``
 
 ### ENCOUNTER_TIMELINE_STATE_UPDATED
 

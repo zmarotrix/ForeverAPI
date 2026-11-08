@@ -8,7 +8,7 @@ Namespace: `C_LFGList`
 |---|---|---|---|
 | 🆕 | [C_LFGList.AcceptInvite](#c_lfglistacceptinvite) |  |  |
 | 🆕 | [C_LFGList.ApplyToGroup](#c_lfglistapplytogroup) |  |  |
-| ✅ | [C_LFGList.CanActiveEntryUseAutoAccept](#c_lfglistcanactiveentryuseautoaccept) | 1 value |  |
+| ✅ | [C_LFGList.CanActiveEntryUseAutoAccept](#c_lfglistcanactiveentryuseautoaccept) | 1 value | 1 value |
 | ✅ | [C_LFGList.CanCreateQuestGroup](#c_lfglistcancreatequestgroup) |  |  |
 | ✅ | [C_LFGList.CanCreateScenarioGroup](#c_lfglistcancreatescenariogroup) |  |  |
 | 🆕 | [C_LFGList.CancelApplication](#c_lfglistcancelapplication) |  |  |
@@ -24,13 +24,13 @@ Namespace: `C_LFGList`
 | 🆕 | [C_LFGList.DeclineInvite](#c_lfglistdeclineinvite) |  |  |
 | ✅ | [C_LFGList.DoesCensoredTextMatch](#c_lfglistdoescensoredtextmatch) |  |  |
 | ✅ | [C_LFGList.DoesEntryTitleMatchPrebuiltTitle](#c_lfglistdoesentrytitlematchprebuilttitle) |  |  |
-| ✅ | [C_LFGList.GetActiveEntryInfo](#c_lfglistgetactiveentryinfo) | 0 values |  |
+| ✅ | [C_LFGList.GetActiveEntryInfo](#c_lfglistgetactiveentryinfo) | 0 values | 0 values |
 | ✅ | [C_LFGList.GetActivityFullName](#c_lfglistgetactivityfullname) |  |  |
 | ✅ | [C_LFGList.GetActivityGroupInfo](#c_lfglistgetactivitygroupinfo) |  |  |
 | 🆕 | [C_LFGList.GetActivityIDForQuestID](#c_lfglistgetactivityidforquestid) |  |  |
 | 🆕 | [C_LFGList.GetActivityInfoExpensive](#c_lfglistgetactivityinfoexpensive) |  |  |
 | ✅ | [C_LFGList.GetActivityInfoTable](#c_lfglistgetactivityinfotable) |  |  |
-| ✅ | [C_LFGList.GetAdvancedFilter](#c_lfglistgetadvancedfilter) | 1 value |  |
+| ✅ | [C_LFGList.GetAdvancedFilter](#c_lfglistgetadvancedfilter) | 1 value | 1 value |
 | ✅ | [C_LFGList.GetApplicantBestDungeonScore](#c_lfglistgetapplicantbestdungeonscore) |  |  |
 | ✅ | [C_LFGList.GetApplicantDungeonScoreForListing](#c_lfglistgetapplicantdungeonscoreforlisting) |  |  |
 | ✅ | [C_LFGList.GetApplicantInfo](#c_lfglistgetapplicantinfo) |  |  |
@@ -46,8 +46,8 @@ Namespace: `C_LFGList`
 | 🆕 | [C_LFGList.GetAvailableLanguageSearchFilter](#c_lfglistgetavailablelanguagesearchfilter) |  |  |
 | 🆕 | [C_LFGList.GetAvailableRoles](#c_lfglistgetavailableroles) |  |  |
 | 🆕 | [C_LFGList.GetDefaultLanguageSearchFilter](#c_lfglistgetdefaultlanguagesearchfilter) |  |  |
-| ✅ | [C_LFGList.GetFilteredSearchResults](#c_lfglistgetfilteredsearchresults) | 2 values |  |
-| ✅ | [C_LFGList.GetGroupLeaverCountsByRole](#c_lfglistgetgroupleavercountsbyrole) | 3 values |  |
+| ✅ | [C_LFGList.GetFilteredSearchResults](#c_lfglistgetfilteredsearchresults) | 2 values | 2 values |
+| ✅ | [C_LFGList.GetGroupLeaverCountsByRole](#c_lfglistgetgroupleavercountsbyrole) | 3 values | 3 values |
 | ✅ | [C_LFGList.GetKeystoneForActivity](#c_lfglistgetkeystoneforactivity) |  |  |
 | 🆕 | [C_LFGList.GetLanguageSearchFilter](#c_lfglistgetlanguagesearchfilter) |  |  |
 | ✅ | [C_LFGList.GetLfgCategoryInfo](#c_lfglistgetlfgcategoryinfo) |  |  |
@@ -55,9 +55,9 @@ Namespace: `C_LFGList`
 | 🆕 | [C_LFGList.GetNumApplications](#c_lfglistgetnumapplications) |  |  |
 | 🆕 | [C_LFGList.GetNumInvitedApplicantMembers](#c_lfglistgetnuminvitedapplicantmembers) |  |  |
 | 🆕 | [C_LFGList.GetNumPendingApplicantMembers](#c_lfglistgetnumpendingapplicantmembers) |  |  |
-| ✅ | [C_LFGList.GetOwnedKeystoneActivityAndGroupAndLevel](#c_lfglistgetownedkeystoneactivityandgroupandlevel) | 0 values |  |
+| ✅ | [C_LFGList.GetOwnedKeystoneActivityAndGroupAndLevel](#c_lfglistgetownedkeystoneactivityandgroupandlevel) | 0 values | 0 values |
 | ✅ | [C_LFGList.GetPlaystyleString](#c_lfglistgetplaystylestring) |  |  |
-| ✅ | [C_LFGList.GetPremadeGroupFinderStyle](#c_lfglistgetpremadegroupfinderstyle) | 1 value |  |
+| ✅ | [C_LFGList.GetPremadeGroupFinderStyle](#c_lfglistgetpremadegroupfinderstyle) | 1 value | 1 value |
 | 🆕 | [C_LFGList.GetRoleCheckInfo](#c_lfglistgetrolecheckinfo) |  |  |
 | 🆕 | [C_LFGList.GetSearchResultEncounterInfo](#c_lfglistgetsearchresultencounterinfo) |  |  |
 | 🆕 | [C_LFGList.GetSearchResultFriends](#c_lfglistgetsearchresultfriends) |  |  |
@@ -65,16 +65,16 @@ Namespace: `C_LFGList`
 | ✅ | [C_LFGList.GetSearchResultLeaderInfo](#c_lfglistgetsearchresultleaderinfo) |  |  |
 | 🆕 | [C_LFGList.GetSearchResultMemberCounts](#c_lfglistgetsearchresultmembercounts) |  |  |
 | ✅ | [C_LFGList.GetSearchResultPlayerInfo](#c_lfglistgetsearchresultplayerinfo) |  |  |
-| ✅ | [C_LFGList.GetSearchResults](#c_lfglistgetsearchresults) | 2 values |  |
-| ✅ | [C_LFGList.HasActiveEntryInfo](#c_lfglisthasactiveentryinfo) | 1 value |  |
+| ✅ | [C_LFGList.GetSearchResults](#c_lfglistgetsearchresults) | 2 values | 2 values |
+| ✅ | [C_LFGList.HasActiveEntryInfo](#c_lfglisthasactiveentryinfo) | 1 value | 1 value |
 | 🆕 | [C_LFGList.HasActivityList](#c_lfglisthasactivitylist) |  |  |
 | ✅ | [C_LFGList.HasSearchResultInfo](#c_lfglisthassearchresultinfo) |  |  |
 | 🆕 | [C_LFGList.InviteApplicant](#c_lfglistinviteapplicant) |  |  |
-| ✅ | [C_LFGList.IsCensoredActiveEntryUnresolved](#c_lfglistiscensoredactiveentryunresolved) | 1 value |  |
+| ✅ | [C_LFGList.IsCensoredActiveEntryUnresolved](#c_lfglistiscensoredactiveentryunresolved) | 1 value | 1 value |
 | 🆕 | [C_LFGList.IsCurrentlyApplying](#c_lfglistiscurrentlyapplying) |  |  |
-| ✅ | [C_LFGList.IsPlayerAuthenticatedForLFG](#c_lfglistisplayerauthenticatedforlfg) | 1 value |  |
-| ✅ | [C_LFGList.IsPlayerValidForEndgameFieldEdits](#c_lfglistisplayervalidforendgamefieldedits) | 1 value |  |
-| ✅ | [C_LFGList.IsPremadeGroupFinderEnabled](#c_lfglistispremadegroupfinderenabled) | 1 value |  |
+| ✅ | [C_LFGList.IsPlayerAuthenticatedForLFG](#c_lfglistisplayerauthenticatedforlfg) | 1 value | 1 value |
+| ✅ | [C_LFGList.IsPlayerValidForEndgameFieldEdits](#c_lfglistisplayervalidforendgamefieldedits) | 1 value | 1 value |
+| ✅ | [C_LFGList.IsPremadeGroupFinderEnabled](#c_lfglistispremadegroupfinderenabled) | 1 value | 1 value |
 | ✅ | [C_LFGList.ListingUsesEndgameEditRestrictions](#c_lfglistlistingusesendgameeditrestrictions) |  |  |
 | 🆕 | [C_LFGList.RefreshApplicants](#c_lfglistrefreshapplicants) |  |  |
 | 🆕 | [C_LFGList.RemoveApplicant](#c_lfglistremoveapplicant) |  |  |
@@ -113,6 +113,7 @@ Namespace: `C_LFGList`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `LFGListInfoDocumentation.lua`
 
 ### C_LFGList.CanCreateQuestGroup
@@ -231,6 +232,7 @@ Namespace: `C_LFGList`
 - may return nothing (Blizzard's docs; not checked in game)
 - secret during chat lockdown (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `LFGListInfoDocumentation.lua`
 
 ### C_LFGList.GetActivityFullName
@@ -277,6 +279,7 @@ Namespace: `C_LFGList`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{activities=table,difficultyHeroic=boolean,difficultyMythic=boolean,difficultyMythicPlus=boolean,difficultyNormal=boolean,generalPlaystyle1=boolean,generalPlaystyle2=boolean,generalPlaystyle3=boolean,generalPlaystyle4=boolean,hasHealer=boolean,hasTank=boolean,minimumRating=number,needsDamage=boolean,needsHealer=boolean,needsMyClass=boolean,needsTank=boolean}`
+- Called in combat: returned 1 value: `table{activities=table,difficultyHeroic=boolean,difficultyMythic=boolean,difficultyMythicPlus=boolean,difficultyNormal=boolean,generalPlaystyle1=boolean,generalPlaystyle2=boolean,generalPlaystyle3=boolean,generalPlaystyle4=boolean,hasHealer=boolean,hasTank=boolean,minimumRating=number,needsDamage=boolean,needsHealer=boolean,needsMyClass=boolean,needsTank=boolean}`
 - Source: client docs `LFGListInfoDocumentation.lua`
 
 ### C_LFGList.GetApplicantBestDungeonScore
@@ -390,6 +393,7 @@ Namespace: `C_LFGList`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `number`, `table{}`
+- Called in combat: returned 2 values: `number`, `table{}`
 - Source: client docs `LFGListInfoDocumentation.lua`
 
 ### C_LFGList.GetGroupLeaverCountsByRole
@@ -398,6 +402,7 @@ Namespace: `C_LFGList`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 3 values: `number`, `number`, `number`
+- Called in combat: returned 3 values: `number`, `number`, `number`
 - Source: client docs `LFGListInfoDocumentation.lua`
 
 ### C_LFGList.GetKeystoneForActivity
@@ -456,6 +461,7 @@ Namespace: `C_LFGList`
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `LFGListInfoDocumentation.lua`
 
 ### C_LFGList.GetPlaystyleString
@@ -472,6 +478,7 @@ Namespace: `C_LFGList`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `LFGListInfoDocumentation.lua`
 
 ### C_LFGList.GetRoleCheckInfo
@@ -534,6 +541,7 @@ Namespace: `C_LFGList`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `number`, `table{}`
+- Called in combat: returned 2 values: `number`, `table{}`
 - Source: client docs `LFGListInfoDocumentation.lua`
 
 ### C_LFGList.HasActiveEntryInfo
@@ -542,6 +550,7 @@ Namespace: `C_LFGList`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `LFGListInfoDocumentation.lua`
 
 ### C_LFGList.HasActivityList
@@ -570,6 +579,7 @@ Namespace: `C_LFGList`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `LFGListInfoDocumentation.lua`
 
 ### C_LFGList.IsCurrentlyApplying
@@ -585,6 +595,7 @@ Namespace: `C_LFGList`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `LFGListInfoDocumentation.lua`
 
 ### C_LFGList.IsPlayerValidForEndgameFieldEdits
@@ -593,6 +604,7 @@ Namespace: `C_LFGList`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `LFGListInfoDocumentation.lua`
 
 ### C_LFGList.IsPremadeGroupFinderEnabled
@@ -601,6 +613,7 @@ Namespace: `C_LFGList`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `LFGListInfoDocumentation.lua`
 
 ### C_LFGList.ListingUsesEndgameEditRestrictions
@@ -784,7 +797,7 @@ Namespace: `C_LFGList`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 4 times (0 in combat); argument kinds: ``
 
 ### LFG_LIST_CENSORED_ACTIVE_ENTRY_UPDATE
 

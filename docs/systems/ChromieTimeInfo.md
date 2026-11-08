@@ -8,7 +8,7 @@ Namespace: `C_ChromieTime`
 |---|---|---|---|
 | ✅ | [C_ChromieTime.CloseUI](#c_chromietimecloseui) |  |  |
 | ✅ | [C_ChromieTime.GetChromieTimeExpansionOption](#c_chromietimegetchromietimeexpansionoption) |  |  |
-| ✅ | [C_ChromieTime.GetChromieTimeExpansionOptions](#c_chromietimegetchromietimeexpansionoptions) | 1 value |  |
+| ✅ | [C_ChromieTime.GetChromieTimeExpansionOptions](#c_chromietimegetchromietimeexpansionoptions) | 1 value | 1 value |
 | ✅ | [C_ChromieTime.SelectChromieTimeOption](#c_chromietimeselectchromietimeoption) |  |  |
 
 ### C_ChromieTime.CloseUI
@@ -32,6 +32,7 @@ Namespace: `C_ChromieTime`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `ChromieTimeUIDocumentation.lua`
 
 ### C_ChromieTime.SelectChromieTimeOption

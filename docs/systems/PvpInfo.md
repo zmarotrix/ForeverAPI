@@ -6,107 +6,107 @@ Namespace: `C_PvP`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_PvP.ArePvpTalentsUnlocked](#c_pvparepvptalentsunlocked) | 1 value |  |
-| ✅ | [C_PvP.AreTrainingGroundsEnabled](#c_pvparetraininggroundsenabled) | 1 value |  |
-| ✅ | [C_PvP.CanDisplayDeaths](#c_pvpcandisplaydeaths) | 1 value |  |
-| ✅ | [C_PvP.CanDisplayHonorableKills](#c_pvpcandisplayhonorablekills) | 1 value |  |
-| ✅ | [C_PvP.CanPlayerUseRatedPVPUI](#c_pvpcanplayeruseratedpvpui) | 2 values |  |
-| ✅ | [C_PvP.CanPlayerUseTrainingGroundsUI](#c_pvpcanplayerusetraininggroundsui) | 2 values |  |
-| ✅ | [C_PvP.CanSurrenderArena](#c_pvpcansurrenderarena) | 1 value |  |
+| ✅ | [C_PvP.ArePvpTalentsUnlocked](#c_pvparepvptalentsunlocked) | 1 value | 1 value |
+| ✅ | [C_PvP.AreTrainingGroundsEnabled](#c_pvparetraininggroundsenabled) | 1 value | 1 value |
+| ✅ | [C_PvP.CanDisplayDeaths](#c_pvpcandisplaydeaths) | 1 value | 1 value |
+| ✅ | [C_PvP.CanDisplayHonorableKills](#c_pvpcandisplayhonorablekills) | 1 value | 1 value |
+| ✅ | [C_PvP.CanPlayerUseRatedPVPUI](#c_pvpcanplayeruseratedpvpui) | 2 values | 2 values |
+| ✅ | [C_PvP.CanPlayerUseTrainingGroundsUI](#c_pvpcanplayerusetraininggroundsui) | 2 values | 2 values |
+| ✅ | [C_PvP.CanSurrenderArena](#c_pvpcansurrenderarena) | 1 value | 1 value |
 | ✅ | [C_PvP.CanToggleWarMode](#c_pvpcantogglewarmode) |  |  |
-| ✅ | [C_PvP.CanToggleWarModeInArea](#c_pvpcantogglewarmodeinarea) | 1 value |  |
-| ✅ | [C_PvP.DoesMatchOutcomeAffectRating](#c_pvpdoesmatchoutcomeaffectrating) | 1 value |  |
-| ✅ | [C_PvP.GetActiveBrawlInfo](#c_pvpgetactivebrawlinfo) | 1 value |  |
-| ✅ | [C_PvP.GetActiveMatchBracket](#c_pvpgetactivematchbracket) | 1 value |  |
-| ✅ | [C_PvP.GetActiveMatchDuration](#c_pvpgetactivematchduration) | 1 value |  |
-| ✅ | [C_PvP.GetActiveMatchState](#c_pvpgetactivematchstate) | 1 value |  |
-| ✅ | [C_PvP.GetActiveMatchWinner](#c_pvpgetactivematchwinner) | 1 value |  |
-| ✅ | [C_PvP.GetArenaCrowdControlDuration](#c_pvpgetarenacrowdcontrolduration) | 1 value |  |
-| ✅ | [C_PvP.GetArenaCrowdControlInfo](#c_pvpgetarenacrowdcontrolinfo) | 0 values |  |
+| ✅ | [C_PvP.CanToggleWarModeInArea](#c_pvpcantogglewarmodeinarea) | 1 value | 1 value |
+| ✅ | [C_PvP.DoesMatchOutcomeAffectRating](#c_pvpdoesmatchoutcomeaffectrating) | 1 value | 1 value |
+| ✅ | [C_PvP.GetActiveBrawlInfo](#c_pvpgetactivebrawlinfo) | 1 value | 1 value |
+| ✅ | [C_PvP.GetActiveMatchBracket](#c_pvpgetactivematchbracket) | 1 value | 1 value |
+| ✅ | [C_PvP.GetActiveMatchDuration](#c_pvpgetactivematchduration) | 1 value | 1 value |
+| ✅ | [C_PvP.GetActiveMatchState](#c_pvpgetactivematchstate) | 1 value | 1 value |
+| ✅ | [C_PvP.GetActiveMatchWinner](#c_pvpgetactivematchwinner) | 1 value | 1 value |
+| ✅ | [C_PvP.GetArenaCrowdControlDuration](#c_pvpgetarenacrowdcontrolduration) | 1 value | 1 value |
+| ✅ | [C_PvP.GetArenaCrowdControlInfo](#c_pvpgetarenacrowdcontrolinfo) | 0 values | 0 values |
 | ⛔ | [C_PvP.GetArenaOpponentSpec](#c_pvpgetarenaopponentspec) |  |  |
 | ✅ | [C_PvP.GetArenaRewards](#c_pvpgetarenarewards) |  |  |
 | ✅ | [C_PvP.GetArenaSkirmishRewards](#c_pvpgetarenaskirmishrewards) |  |  |
 | ✅ | [C_PvP.GetAssignedSpecForBattlefieldQueue](#c_pvpgetassignedspecforbattlefieldqueue) |  |  |
-| ✅ | [C_PvP.GetAvailableBrawlInfo](#c_pvpgetavailablebrawlinfo) | 1 value |  |
+| ✅ | [C_PvP.GetAvailableBrawlInfo](#c_pvpgetavailablebrawlinfo) | 1 value | 1 value |
 | ✅ | [C_PvP.GetBattlefieldFlagPosition](#c_pvpgetbattlefieldflagposition) |  |  |
 | ✅ | [C_PvP.GetBattlefieldVehicleInfo](#c_pvpgetbattlefieldvehicleinfo) |  |  |
 | ✅ | [C_PvP.GetBattlefieldVehicles](#c_pvpgetbattlefieldvehicles) |  |  |
 | ✅ | [C_PvP.GetBattlegroundInfo](#c_pvpgetbattlegroundinfo) |  |  |
 | ✅ | [C_PvP.GetBrawlRewards](#c_pvpgetbrawlrewards) |  |  |
-| ✅ | [C_PvP.GetBrawlSoloRBGMinItemLevel](#c_pvpgetbrawlsolorbgminitemlevel) | 1 value |  |
-| ✅ | [C_PvP.GetCustomVictoryStatID](#c_pvpgetcustomvictorystatid) | 1 value |  |
+| ✅ | [C_PvP.GetBrawlSoloRBGMinItemLevel](#c_pvpgetbrawlsolorbgminitemlevel) | 1 value | 1 value |
+| ✅ | [C_PvP.GetCustomVictoryStatID](#c_pvpgetcustomvictorystatid) | 1 value | 1 value |
 | ✅ | [C_PvP.GetGlobalPvpScalingInfoForSpecID](#c_pvpgetglobalpvpscalinginfoforspecid) |  |  |
 | ✅ | [C_PvP.GetHonorRewardInfo](#c_pvpgethonorrewardinfo) |  |  |
 | ✅ | [C_PvP.GetLevelUpBattlegrounds](#c_pvpgetlevelupbattlegrounds) |  |  |
 | ✅ | [C_PvP.GetMatchPVPStatColumn](#c_pvpgetmatchpvpstatcolumn) |  |  |
-| ✅ | [C_PvP.GetMatchPVPStatColumns](#c_pvpgetmatchpvpstatcolumns) | 1 value |  |
+| ✅ | [C_PvP.GetMatchPVPStatColumns](#c_pvpgetmatchpvpstatcolumns) | 1 value | 1 value |
 | ✅ | [C_PvP.GetNextHonorLevelForReward](#c_pvpgetnexthonorlevelforreward) |  |  |
 | ✅ | [C_PvP.GetOutdoorPvPWaitTime](#c_pvpgetoutdoorpvpwaittime) |  |  |
-| ✅ | [C_PvP.GetPVPActiveMatchPersonalRatedInfo](#c_pvpgetpvpactivematchpersonalratedinfo) | 1 value |  |
-| ✅ | [C_PvP.GetPVPActiveRatedMatchDeserterPenalty](#c_pvpgetpvpactiveratedmatchdeserterpenalty) | 1 value |  |
+| ✅ | [C_PvP.GetPVPActiveMatchPersonalRatedInfo](#c_pvpgetpvpactivematchpersonalratedinfo) | 1 value | 1 value |
+| ✅ | [C_PvP.GetPVPActiveRatedMatchDeserterPenalty](#c_pvpgetpvpactiveratedmatchdeserterpenalty) | 1 value | 1 value |
 | ✅ | [C_PvP.GetPVPSeasonRewardAchievementID](#c_pvpgetpvpseasonrewardachievementid) |  |  |
-| ✅ | [C_PvP.GetPersonalRatedBGBlitzSpecStats](#c_pvpgetpersonalratedbgblitzspecstats) | 1 value |  |
-| ✅ | [C_PvP.GetPersonalRatedSoloShuffleSpecStats](#c_pvpgetpersonalratedsoloshufflespecstats) | 1 value |  |
+| ✅ | [C_PvP.GetPersonalRatedBGBlitzSpecStats](#c_pvpgetpersonalratedbgblitzspecstats) | 1 value | 1 value |
+| ✅ | [C_PvP.GetPersonalRatedSoloShuffleSpecStats](#c_pvpgetpersonalratedsoloshufflespecstats) | 1 value | 1 value |
 | ✅ | [C_PvP.GetPostMatchCurrencyRewards](#c_pvpgetpostmatchcurrencyrewards) |  |  |
 | ✅ | [C_PvP.GetPostMatchItemRewards](#c_pvpgetpostmatchitemrewards) |  |  |
-| ✅ | [C_PvP.GetPvpTalentsUnlockedLevel](#c_pvpgetpvptalentsunlockedlevel) | 1 value |  |
+| ✅ | [C_PvP.GetPvpTalentsUnlockedLevel](#c_pvpgetpvptalentsunlockedlevel) | 1 value | 1 value |
 | ✅ | [C_PvP.GetPvpTierID](#c_pvpgetpvptierid) |  |  |
 | ✅ | [C_PvP.GetPvpTierInfo](#c_pvpgetpvptierinfo) |  |  |
-| ✅ | [C_PvP.GetRandomBGInfo](#c_pvpgetrandombginfo) | 1 value |  |
+| ✅ | [C_PvP.GetRandomBGInfo](#c_pvpgetrandombginfo) | 1 value | 1 value |
 | ✅ | [C_PvP.GetRandomBGRewards](#c_pvpgetrandombgrewards) |  |  |
-| ✅ | [C_PvP.GetRandomEpicBGInfo](#c_pvpgetrandomepicbginfo) | 1 value |  |
+| ✅ | [C_PvP.GetRandomEpicBGInfo](#c_pvpgetrandomepicbginfo) | 1 value | 1 value |
 | ✅ | [C_PvP.GetRandomEpicBGRewards](#c_pvpgetrandomepicbgrewards) |  |  |
 | ✅ | [C_PvP.GetRandomTrainingGroundArenaRewards](#c_pvpgetrandomtraininggroundarenarewards) |  |  |
 | ✅ | [C_PvP.GetRandomTrainingGroundBGRewards](#c_pvpgetrandomtraininggroundbgrewards) |  |  |
 | ✅ | [C_PvP.GetRatedBGRewards](#c_pvpgetratedbgrewards) |  |  |
-| ✅ | [C_PvP.GetRatedSoloRBGMinItemLevel](#c_pvpgetratedsolorbgminitemlevel) | 1 value |  |
+| ✅ | [C_PvP.GetRatedSoloRBGMinItemLevel](#c_pvpgetratedsolorbgminitemlevel) | 1 value | 1 value |
 | ✅ | [C_PvP.GetRatedSoloRBGRewards](#c_pvpgetratedsolorbgrewards) |  |  |
-| ✅ | [C_PvP.GetRatedSoloShuffleMinItemLevel](#c_pvpgetratedsoloshuffleminitemlevel) | 1 value |  |
+| ✅ | [C_PvP.GetRatedSoloShuffleMinItemLevel](#c_pvpgetratedsoloshuffleminitemlevel) | 1 value | 1 value |
 | ✅ | [C_PvP.GetRatedSoloShuffleRewards](#c_pvpgetratedsoloshufflerewards) |  |  |
 | ✅ | [C_PvP.GetRewardItemLevelsByTierEnum](#c_pvpgetrewarditemlevelsbytierenum) |  |  |
 | ✅ | [C_PvP.GetScoreInfo](#c_pvpgetscoreinfo) |  |  |
 | ✅ | [C_PvP.GetScoreInfoByPlayerGuid](#c_pvpgetscoreinfobyplayerguid) |  |  |
-| ✅ | [C_PvP.GetSeasonBestInfo](#c_pvpgetseasonbestinfo) | 2 values |  |
+| ✅ | [C_PvP.GetSeasonBestInfo](#c_pvpgetseasonbestinfo) | 2 values | 2 values |
 | ✅ | [C_PvP.GetSkirmishInfo](#c_pvpgetskirmishinfo) |  |  |
-| ✅ | [C_PvP.GetSpecialEventBrawlInfo](#c_pvpgetspecialeventbrawlinfo) | 1 value |  |
+| ✅ | [C_PvP.GetSpecialEventBrawlInfo](#c_pvpgetspecialeventbrawlinfo) | 1 value | 1 value |
 | ✅ | [C_PvP.GetTeamInfo](#c_pvpgetteaminfo) |  |  |
-| ✅ | [C_PvP.GetTrainingGrounds](#c_pvpgettraininggrounds) | 1 value |  |
-| ✅ | [C_PvP.GetUIDisplaySeason](#c_pvpgetuidisplayseason) | 1 value |  |
+| ✅ | [C_PvP.GetTrainingGrounds](#c_pvpgettraininggrounds) | 1 value | 1 value |
+| ✅ | [C_PvP.GetUIDisplaySeason](#c_pvpgetuidisplayseason) | 1 value | 1 value |
 | ✅ | [C_PvP.GetWarModeRewardBonus](#c_pvpgetwarmoderewardbonus) |  |  |
 | ✅ | [C_PvP.GetWarModeRewardBonusDefault](#c_pvpgetwarmoderewardbonusdefault) |  |  |
-| ✅ | [C_PvP.GetWeeklyChestInfo](#c_pvpgetweeklychestinfo) | 4 values |  |
-| ✅ | [C_PvP.GetZonePVPInfo](#c_pvpgetzonepvpinfo) | 0 values |  |
-| ✅ | [C_PvP.HasArenaSkirmishWinToday](#c_pvphasarenaskirmishwintoday) | 1 value |  |
-| ✅ | [C_PvP.HasMatchStarted](#c_pvphasmatchstarted) | 1 value |  |
-| ✅ | [C_PvP.HasRandomTrainingGroundArenaWinToday](#c_pvphasrandomtraininggroundarenawintoday) | 1 value |  |
-| ✅ | [C_PvP.HasRandomTrainingGroundBGWinToday](#c_pvphasrandomtraininggroundbgwintoday) | 1 value |  |
-| ✅ | [C_PvP.IsActiveBattlefield](#c_pvpisactivebattlefield) | 1 value |  |
-| ✅ | [C_PvP.IsActiveMatchRegistered](#c_pvpisactivematchregistered) | 1 value |  |
-| ✅ | [C_PvP.IsArena](#c_pvpisarena) | 1 value |  |
-| ✅ | [C_PvP.IsBattleground](#c_pvpisbattleground) | 1 value |  |
-| ✅ | [C_PvP.IsBattlegroundEnlistmentBonusActive](#c_pvpisbattlegroundenlistmentbonusactive) | 2 values |  |
-| ✅ | [C_PvP.IsBrawlSoloRBG](#c_pvpisbrawlsolorbg) | 1 value |  |
-| ✅ | [C_PvP.IsBrawlSoloShuffle](#c_pvpisbrawlsoloshuffle) | 1 value |  |
-| ✅ | [C_PvP.IsInBrawl](#c_pvpisinbrawl) | 1 value |  |
-| ✅ | [C_PvP.IsInRatedMatchWithDeserterPenalty](#c_pvpisinratedmatchwithdeserterpenalty) | 1 value |  |
-| ✅ | [C_PvP.IsMatchActive](#c_pvpismatchactive) | 1 value |  |
-| ✅ | [C_PvP.IsMatchComplete](#c_pvpismatchcomplete) | 1 value |  |
-| ✅ | [C_PvP.IsMatchConsideredArena](#c_pvpismatchconsideredarena) | 1 value |  |
-| ✅ | [C_PvP.IsMatchFactional](#c_pvpismatchfactional) | 1 value |  |
-| ✅ | [C_PvP.IsPVPMap](#c_pvpispvpmap) | 1 value |  |
-| ✅ | [C_PvP.IsRatedArena](#c_pvpisratedarena) | 1 value |  |
-| ✅ | [C_PvP.IsRatedBattleground](#c_pvpisratedbattleground) | 1 value |  |
-| ✅ | [C_PvP.IsRatedMap](#c_pvpisratedmap) | 1 value |  |
-| ✅ | [C_PvP.IsRatedSoloRBG](#c_pvpisratedsolorbg) | 1 value |  |
-| ✅ | [C_PvP.IsRatedSoloShuffle](#c_pvpisratedsoloshuffle) | 1 value |  |
-| ✅ | [C_PvP.IsSoloRBG](#c_pvpissolorbg) | 1 value |  |
-| ✅ | [C_PvP.IsSoloShuffle](#c_pvpissoloshuffle) | 1 value |  |
-| ✅ | [C_PvP.IsSubZonePVPPOI](#c_pvpissubzonepvppoi) | 1 value |  |
+| ✅ | [C_PvP.GetWeeklyChestInfo](#c_pvpgetweeklychestinfo) | 4 values | 4 values |
+| ✅ | [C_PvP.GetZonePVPInfo](#c_pvpgetzonepvpinfo) | 0 values | 0 values |
+| ✅ | [C_PvP.HasArenaSkirmishWinToday](#c_pvphasarenaskirmishwintoday) | 1 value | 1 value |
+| ✅ | [C_PvP.HasMatchStarted](#c_pvphasmatchstarted) | 1 value | 1 value |
+| ✅ | [C_PvP.HasRandomTrainingGroundArenaWinToday](#c_pvphasrandomtraininggroundarenawintoday) | 1 value | 1 value |
+| ✅ | [C_PvP.HasRandomTrainingGroundBGWinToday](#c_pvphasrandomtraininggroundbgwintoday) | 1 value | 1 value |
+| ✅ | [C_PvP.IsActiveBattlefield](#c_pvpisactivebattlefield) | 1 value | 1 value |
+| ✅ | [C_PvP.IsActiveMatchRegistered](#c_pvpisactivematchregistered) | 1 value | 1 value |
+| ✅ | [C_PvP.IsArena](#c_pvpisarena) | 1 value | 1 value |
+| ✅ | [C_PvP.IsBattleground](#c_pvpisbattleground) | 1 value | 1 value |
+| ✅ | [C_PvP.IsBattlegroundEnlistmentBonusActive](#c_pvpisbattlegroundenlistmentbonusactive) | 2 values | 2 values |
+| ✅ | [C_PvP.IsBrawlSoloRBG](#c_pvpisbrawlsolorbg) | 1 value | 1 value |
+| ✅ | [C_PvP.IsBrawlSoloShuffle](#c_pvpisbrawlsoloshuffle) | 1 value | 1 value |
+| ✅ | [C_PvP.IsInBrawl](#c_pvpisinbrawl) | 1 value | 1 value |
+| ✅ | [C_PvP.IsInRatedMatchWithDeserterPenalty](#c_pvpisinratedmatchwithdeserterpenalty) | 1 value | 1 value |
+| ✅ | [C_PvP.IsMatchActive](#c_pvpismatchactive) | 1 value | 1 value |
+| ✅ | [C_PvP.IsMatchComplete](#c_pvpismatchcomplete) | 1 value | 1 value |
+| ✅ | [C_PvP.IsMatchConsideredArena](#c_pvpismatchconsideredarena) | 1 value | 1 value |
+| ✅ | [C_PvP.IsMatchFactional](#c_pvpismatchfactional) | 1 value | 1 value |
+| ✅ | [C_PvP.IsPVPMap](#c_pvpispvpmap) | 1 value | 1 value |
+| ✅ | [C_PvP.IsRatedArena](#c_pvpisratedarena) | 1 value | 1 value |
+| ✅ | [C_PvP.IsRatedBattleground](#c_pvpisratedbattleground) | 1 value | 1 value |
+| ✅ | [C_PvP.IsRatedMap](#c_pvpisratedmap) | 1 value | 1 value |
+| ✅ | [C_PvP.IsRatedSoloRBG](#c_pvpisratedsolorbg) | 1 value | 1 value |
+| ✅ | [C_PvP.IsRatedSoloShuffle](#c_pvpisratedsoloshuffle) | 1 value | 1 value |
+| ✅ | [C_PvP.IsSoloRBG](#c_pvpissolorbg) | 1 value | 1 value |
+| ✅ | [C_PvP.IsSoloShuffle](#c_pvpissoloshuffle) | 1 value | 1 value |
+| ✅ | [C_PvP.IsSubZonePVPPOI](#c_pvpissubzonepvppoi) | 1 value | 1 value |
 | ✅ | [C_PvP.IsTrainingGroundsArena](#c_pvpistraininggroundsarena) |  |  |
 | ✅ | [C_PvP.IsTrainingGroundsBG](#c_pvpistraininggroundsbg) |  |  |
-| ✅ | [C_PvP.IsWarModeActive](#c_pvpiswarmodeactive) | 1 value |  |
-| ✅ | [C_PvP.IsWarModeDesired](#c_pvpiswarmodedesired) | 1 value |  |
-| ✅ | [C_PvP.IsWarModeFeatureEnabled](#c_pvpiswarmodefeatureenabled) | 1 value |  |
+| ✅ | [C_PvP.IsWarModeActive](#c_pvpiswarmodeactive) | 1 value | 1 value |
+| ✅ | [C_PvP.IsWarModeDesired](#c_pvpiswarmodedesired) | 1 value | 1 value |
+| ✅ | [C_PvP.IsWarModeFeatureEnabled](#c_pvpiswarmodefeatureenabled) | 1 value | 1 value |
 | ✅ | [C_PvP.JoinBattlefield](#c_pvpjoinbattlefield) |  |  |
 | ✅ | [C_PvP.JoinBrawl](#c_pvpjoinbrawl) |  |  |
 | ✅ | [C_PvP.JoinRandomTrainingGroundArena](#c_pvpjoinrandomtraininggroundarena) |  |  |
@@ -127,6 +127,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.AreTrainingGroundsEnabled
@@ -135,6 +136,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.CanDisplayDeaths
@@ -143,6 +145,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.CanDisplayHonorableKills
@@ -151,6 +154,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.CanPlayerUseRatedPVPUI
@@ -159,6 +163,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `boolean`, `string`
+- Called in combat: returned 2 values: `boolean`, `string`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.CanPlayerUseTrainingGroundsUI
@@ -167,6 +172,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `boolean`, `string`
+- Called in combat: returned 2 values: `boolean`, `string`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.CanSurrenderArena
@@ -175,6 +181,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.CanToggleWarMode
@@ -191,6 +198,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.DoesMatchOutcomeAffectRating
@@ -199,6 +207,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetActiveBrawlInfo
@@ -207,6 +216,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetActiveMatchBracket
@@ -215,6 +225,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetActiveMatchDuration
@@ -223,6 +234,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetActiveMatchState
@@ -231,6 +243,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetActiveMatchWinner
@@ -239,6 +252,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetArenaCrowdControlDuration
@@ -248,6 +262,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `userdata`
+- Called in combat: returned 1 value: `userdata`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetArenaCrowdControlInfo
@@ -259,6 +274,7 @@ Namespace: `C_PvP`
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenLossOfControlInfoRestricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetArenaOpponentSpec
@@ -303,6 +319,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified (function)
 - Blizzard: If nil is returned, PVP_BRAWL_INFO_UPDATED event will be sent when the data is ready.
 - Called out of combat: returned 1 value: `table{brawlID=number,brawlType=number,canQueue=boolean,crossFactionAllowed=boolean,groupsAllowed=boolean,includesAllArenas=boolean,longDescription=string,mapNames=table,maxLevel=number,minItemLevel=number,minLevel=number,name=string,shortDescription=string,shouldHideRewardIcon=boolean,timeLeftUntilNextChange=number}`
+- Called in combat: returned 1 value: `table{brawlID=number,brawlType=number,canQueue=boolean,crossFactionAllowed=boolean,groupsAllowed=boolean,includesAllArenas=boolean,longDescription=string,mapNames=table,maxLevel=number,minItemLevel=number,minLevel=number,name=string,shortDescription=string,shouldHideRewardIcon=boolean,timeLeftUntilNextChange=number}`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetBattlefieldFlagPosition
@@ -354,6 +371,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetCustomVictoryStatID
@@ -362,6 +380,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetGlobalPvpScalingInfoForSpecID
@@ -403,6 +422,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetNextHonorLevelForReward
@@ -427,6 +447,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetPVPActiveRatedMatchDeserterPenalty
@@ -435,6 +456,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetPVPSeasonRewardAchievementID
@@ -451,6 +473,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{seasonMostPlayedSpecGames=number,seasonMostPlayedSpecID=number,weeklyMostPlayedSpecGames=number,weeklyMostPlayedSpecID=number}`
+- Called in combat: returned 1 value: `table{seasonMostPlayedSpecGames=number,seasonMostPlayedSpecID=number,weeklyMostPlayedSpecGames=number,weeklyMostPlayedSpecID=number}`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetPersonalRatedSoloShuffleSpecStats
@@ -459,6 +482,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{seasonMostPlayedSpecID=number,seasonMostPlayedSpecRounds=number,weeklyMostPlayedSpecID=number,weeklyMostPlayedSpecRounds=number}`
+- Called in combat: returned 1 value: `table{seasonMostPlayedSpecID=number,seasonMostPlayedSpecRounds=number,weeklyMostPlayedSpecID=number,weeklyMostPlayedSpecRounds=number}`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetPostMatchCurrencyRewards
@@ -481,6 +505,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetPvpTierID
@@ -505,6 +530,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{bgID=number,bgIndex=number,canQueue=boolean,hasRandomWinToday=boolean,maxLevel=number,minLevel=number,name=string}`
+- Called in combat: returned 1 value: `table{bgID=number,bgIndex=number,canQueue=boolean,hasRandomWinToday=boolean,maxLevel=number,minLevel=number,name=string}`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetRandomBGRewards
@@ -520,6 +546,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{bgID=number,bgIndex=number,canQueue=boolean,hasRandomWinToday=boolean,maxLevel=number,minLevel=number,name=string}`
+- Called in combat: returned 1 value: `table{bgID=number,bgIndex=number,canQueue=boolean,hasRandomWinToday=boolean,maxLevel=number,minLevel=number,name=string}`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetRandomEpicBGRewards
@@ -556,6 +583,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetRatedSoloRBGRewards
@@ -571,6 +599,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetRatedSoloShuffleRewards
@@ -612,6 +641,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `number`, `nil`
+- Called in combat: returned 2 values: `number`, `nil`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetSkirmishInfo
@@ -629,6 +659,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetTeamInfo
@@ -645,6 +676,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetUIDisplaySeason
@@ -653,6 +685,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetWarModeRewardBonus
@@ -675,6 +708,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 4 values: `boolean`, `boolean`, `boolean`, `number`
+- Called in combat: returned 4 values: `boolean`, `boolean`, `boolean`, `number`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.GetZonePVPInfo
@@ -684,6 +718,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.HasArenaSkirmishWinToday
@@ -692,6 +727,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.HasMatchStarted
@@ -701,6 +737,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a match is either active or complete.
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.HasRandomTrainingGroundArenaWinToday
@@ -709,6 +746,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.HasRandomTrainingGroundBGWinToday
@@ -717,6 +755,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsActiveBattlefield
@@ -725,6 +764,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsActiveMatchRegistered
@@ -733,6 +773,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsArena
@@ -741,6 +782,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsBattleground
@@ -749,6 +791,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsBattlegroundEnlistmentBonusActive
@@ -757,6 +800,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `boolean`, `boolean`
+- Called in combat: returned 2 values: `boolean`, `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsBrawlSoloRBG
@@ -765,6 +809,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsBrawlSoloShuffle
@@ -773,6 +818,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsInBrawl
@@ -781,6 +827,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsInRatedMatchWithDeserterPenalty
@@ -789,6 +836,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsMatchActive
@@ -797,6 +845,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsMatchComplete
@@ -805,6 +854,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsMatchConsideredArena
@@ -813,6 +863,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsMatchFactional
@@ -821,6 +872,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsPVPMap
@@ -829,6 +881,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsRatedArena
@@ -837,6 +890,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsRatedBattleground
@@ -845,6 +899,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsRatedMap
@@ -853,6 +908,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsRatedSoloRBG
@@ -861,6 +917,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsRatedSoloShuffle
@@ -869,6 +926,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsSoloRBG
@@ -877,6 +935,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsSoloShuffle
@@ -885,6 +944,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsSubZonePVPPOI
@@ -893,6 +953,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsTrainingGroundsArena
@@ -917,6 +978,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsWarModeDesired
@@ -925,6 +987,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.IsWarModeFeatureEnabled
@@ -933,6 +996,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PvpInfoDocumentation.lua`
 
 ### C_PvP.JoinBattlefield
@@ -1167,7 +1231,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 4 times (0 in combat); argument kinds: ``
 
 ### PVP_MATCH_ACTIVE
 
@@ -1228,7 +1292,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 4 times (0 in combat); argument kinds: ``
 
 ### PVP_TYPES_ENABLED
 

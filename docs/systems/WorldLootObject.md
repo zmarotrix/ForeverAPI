@@ -7,12 +7,12 @@ Namespace: `C_WorldLootObject`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_WorldLootObject.DoesSlotMatchInventoryType](#c_worldlootobjectdoesslotmatchinventorytype) |  |  |
-| ✅ | [C_WorldLootObject.GetWorldLootObjectDistanceSquared](#c_worldlootobjectgetworldlootobjectdistancesquared) | 1 value |  |
-| ✅ | [C_WorldLootObject.GetWorldLootObjectInfo](#c_worldlootobjectgetworldlootobjectinfo) | 0 values |  |
+| ✅ | [C_WorldLootObject.GetWorldLootObjectDistanceSquared](#c_worldlootobjectgetworldlootobjectdistancesquared) | 1 value | 1 value |
+| ✅ | [C_WorldLootObject.GetWorldLootObjectInfo](#c_worldlootobjectgetworldlootobjectinfo) | 0 values | 0 values |
 | ✅ | [C_WorldLootObject.GetWorldLootObjectInfoByGUID](#c_worldlootobjectgetworldlootobjectinfobyguid) |  |  |
-| ✅ | [C_WorldLootObject.IsWorldLootObject](#c_worldlootobjectisworldlootobject) | 1 value |  |
+| ✅ | [C_WorldLootObject.IsWorldLootObject](#c_worldlootobjectisworldlootobject) | 1 value | 1 value |
 | ✅ | [C_WorldLootObject.IsWorldLootObjectByGUID](#c_worldlootobjectisworldlootobjectbyguid) |  |  |
-| ✅ | [C_WorldLootObject.IsWorldLootObjectInRange](#c_worldlootobjectisworldlootobjectinrange) | 1 value |  |
+| ✅ | [C_WorldLootObject.IsWorldLootObjectInRange](#c_worldlootobjectisworldlootobjectinrange) | 1 value | 1 value |
 | ✅ | [C_WorldLootObject.OnWorldLootObjectClick](#c_worldlootobjectonworldlootobjectclick) |  |  |
 
 ### C_WorldLootObject.DoesSlotMatchInventoryType
@@ -30,6 +30,7 @@ Namespace: `C_WorldLootObject`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `WorldLootObjectDocumentation.lua`
 
 ### C_WorldLootObject.GetWorldLootObjectInfo
@@ -40,6 +41,7 @@ Namespace: `C_WorldLootObject`
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `WorldLootObjectDocumentation.lua`
 
 ### C_WorldLootObject.GetWorldLootObjectInfoByGUID
@@ -58,6 +60,7 @@ Namespace: `C_WorldLootObject`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `WorldLootObjectDocumentation.lua`
 
 ### C_WorldLootObject.IsWorldLootObjectByGUID
@@ -75,6 +78,7 @@ Namespace: `C_WorldLootObject`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `WorldLootObjectDocumentation.lua`
 
 ### C_WorldLootObject.OnWorldLootObjectClick

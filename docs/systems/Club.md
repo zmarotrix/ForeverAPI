@@ -23,7 +23,7 @@ Namespace: `C_Club`
 | ✅ | [C_Club.DestroyMessage](#c_clubdestroymessage) |  |  |
 | ✅ | [C_Club.DestroyStream](#c_clubdestroystream) |  |  |
 | ✅ | [C_Club.DestroyTicket](#c_clubdestroyticket) |  |  |
-| ✅ | [C_Club.DoesAnyCommunityHaveUnreadMessages](#c_clubdoesanycommunityhaveunreadmessages) | 1 value |  |
+| ✅ | [C_Club.DoesAnyCommunityHaveUnreadMessages](#c_clubdoesanycommunityhaveunreadmessages) | 1 value | 1 value |
 | ✅ | [C_Club.DoesCommunityHaveMembersOfTheOppositeFaction](#c_clubdoescommunityhavemembersoftheoppositefaction) |  |  |
 | ✅ | [C_Club.EditClub](#c_clubeditclub) |  |  |
 | ✅ | [C_Club.EditMessage](#c_clubeditmessage) |  |  |
@@ -34,19 +34,19 @@ Namespace: `C_Club`
 | ✅ | [C_Club.FocusStream](#c_clubfocusstream) |  |  |
 | ✅ | [C_Club.GetAssignableRoles](#c_clubgetassignableroles) |  |  |
 | ✅ | [C_Club.GetAvatarIdList](#c_clubgetavataridlist) |  |  |
-| ✅ | [C_Club.GetClubCapacity](#c_clubgetclubcapacity) | 1 value |  |
+| ✅ | [C_Club.GetClubCapacity](#c_clubgetclubcapacity) | 1 value | 1 value |
 | ✅ | [C_Club.GetClubInfo](#c_clubgetclubinfo) |  |  |
 | ✅ | [C_Club.GetClubLimits](#c_clubgetclublimits) |  |  |
 | ✅ | [C_Club.GetClubMembers](#c_clubgetclubmembers) |  |  |
 | ✅ | [C_Club.GetClubPrivileges](#c_clubgetclubprivileges) |  |  |
 | ✅ | [C_Club.GetClubStreamNotificationSettings](#c_clubgetclubstreamnotificationsettings) |  |  |
 | ✅ | [C_Club.GetCommunityNameResultText](#c_clubgetcommunitynameresulttext) |  |  |
-| ✅ | [C_Club.GetGuildClubId](#c_clubgetguildclubid) | 1 value |  |
-| ✅ | [C_Club.GetInfoFromLastCommunityChatLine](#c_clubgetinfofromlastcommunitychatline) | 0 values |  |
+| ✅ | [C_Club.GetGuildClubId](#c_clubgetguildclubid) | 1 value | 1 value |
+| ✅ | [C_Club.GetInfoFromLastCommunityChatLine](#c_clubgetinfofromlastcommunitychatline) | 0 values | 0 values |
 | ✅ | [C_Club.GetInvitationCandidates](#c_clubgetinvitationcandidates) |  |  |
 | ✅ | [C_Club.GetInvitationInfo](#c_clubgetinvitationinfo) |  |  |
 | ✅ | [C_Club.GetInvitationsForClub](#c_clubgetinvitationsforclub) |  |  |
-| ✅ | [C_Club.GetInvitationsForSelf](#c_clubgetinvitationsforself) | 1 value |  |
+| ✅ | [C_Club.GetInvitationsForSelf](#c_clubgetinvitationsforself) | 1 value | 1 value |
 | ✅ | [C_Club.GetLastTicketResponse](#c_clubgetlastticketresponse) |  |  |
 | ✅ | [C_Club.GetMemberInfo](#c_clubgetmemberinfo) |  |  |
 | ✅ | [C_Club.GetMemberInfoForSelf](#c_clubgetmemberinfoforself) |  |  |
@@ -57,12 +57,12 @@ Namespace: `C_Club`
 | ✅ | [C_Club.GetStreamInfo](#c_clubgetstreaminfo) |  |  |
 | ✅ | [C_Club.GetStreamViewMarker](#c_clubgetstreamviewmarker) |  |  |
 | ✅ | [C_Club.GetStreams](#c_clubgetstreams) |  |  |
-| ✅ | [C_Club.GetSubscribedClubs](#c_clubgetsubscribedclubs) | 1 value |  |
+| ✅ | [C_Club.GetSubscribedClubs](#c_clubgetsubscribedclubs) | 1 value | 1 value |
 | ✅ | [C_Club.GetTickets](#c_clubgettickets) |  |  |
 | ✅ | [C_Club.IsAccountMuted](#c_clubisaccountmuted) |  |  |
 | ✅ | [C_Club.IsBeginningOfStream](#c_clubisbeginningofstream) |  |  |
-| ✅ | [C_Club.IsEnabled](#c_clubisenabled) | 1 value |  |
-| ✅ | [C_Club.IsRestricted](#c_clubisrestricted) | 1 value |  |
+| ✅ | [C_Club.IsEnabled](#c_clubisenabled) | 1 value | 1 value |
+| ✅ | [C_Club.IsRestricted](#c_clubisrestricted) | 1 value | 1 value |
 | ✅ | [C_Club.IsSubscribedToStream](#c_clubissubscribedtostream) |  |  |
 | ✅ | [C_Club.KickMember](#c_clubkickmember) |  |  |
 | ✅ | [C_Club.LeaveClub](#c_clubleaveclub) |  |  |
@@ -267,6 +267,7 @@ Namespace: `C_Club`
 - Status: ✅ verified (function)
 - RequiresClubsInitialized (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ClubDocumentation.lua`
 
 ### C_Club.DoesCommunityHaveMembersOfTheOppositeFaction
@@ -370,6 +371,7 @@ Namespace: `C_Club`
 - Status: ✅ verified (function)
 - RequiresClubsInitialized (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ClubDocumentation.lua`
 
 ### C_Club.GetClubInfo
@@ -436,6 +438,7 @@ Namespace: `C_Club`
 - Status: ✅ verified (function)
 - RequiresClubsInitialized (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ClubDocumentation.lua`
 
 ### C_Club.GetInfoFromLastCommunityChatLine
@@ -447,6 +450,7 @@ Namespace: `C_Club`
 - RequiresClubsInitialized (Blizzard's docs; not checked in game)
 - secret during chat lockdown (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ClubDocumentation.lua`
 
 ### C_Club.GetInvitationCandidates
@@ -487,6 +491,7 @@ Namespace: `C_Club`
 - Blizzard: These are the clubs the active player has been invited to.
 - RequiresClubsInitialized (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `ClubDocumentation.lua`
 
 ### C_Club.GetLastTicketResponse
@@ -602,6 +607,7 @@ Namespace: `C_Club`
 - RequiresClubsInitialized (Blizzard's docs; not checked in game)
 - secret during chat lockdown (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `table{[number]=table}`
+- Called in combat: returned 1 value: `table{[number]=table}`
 - Source: client docs `ClubDocumentation.lua`
 
 ### C_Club.GetTickets
@@ -641,6 +647,7 @@ Namespace: `C_Club`
 - Status: ✅ verified (function)
 - RequiresClubsInitialized (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ClubDocumentation.lua`
 
 ### C_Club.IsRestricted
@@ -650,6 +657,7 @@ Namespace: `C_Club`
 - Status: ✅ verified (function)
 - RequiresClubsInitialized (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ClubDocumentation.lua`
 
 ### C_Club.IsSubscribedToStream
@@ -996,7 +1004,7 @@ Namespace: `C_Club`
 - Status: ✅ verified
 - Payload: `clubId: ClubId`, `streamId: ClubStreamId`, `messageId: ClubMessageIdentifier`
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (1 in combat); argument kinds: `n,n,t`
+- Seen firing 8 times (5 in combat); argument kinds: `n,n,t`
 
 ### CLUB_MESSAGE_HISTORY_RECEIVED
 
@@ -1098,7 +1106,7 @@ Namespace: `C_Club`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 4 times (0 in combat); argument kinds: ``
 
 ### STREAM_VIEW_MARKER_UPDATED
 

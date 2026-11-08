@@ -7,10 +7,10 @@ Namespace: `C_AnimaDiversion`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_AnimaDiversion.CloseUI](#c_animadiversioncloseui) |  |  |
-| ✅ | [C_AnimaDiversion.GetAnimaDiversionNodes](#c_animadiversiongetanimadiversionnodes) | 0 values |  |
-| ✅ | [C_AnimaDiversion.GetOriginPosition](#c_animadiversiongetoriginposition) | 1 value |  |
-| ✅ | [C_AnimaDiversion.GetReinforceProgress](#c_animadiversiongetreinforceprogress) | 1 value |  |
-| ✅ | [C_AnimaDiversion.GetTextureKit](#c_animadiversiongettexturekit) | 1 value |  |
+| ✅ | [C_AnimaDiversion.GetAnimaDiversionNodes](#c_animadiversiongetanimadiversionnodes) | 0 values | 0 values |
+| ✅ | [C_AnimaDiversion.GetOriginPosition](#c_animadiversiongetoriginposition) | 1 value | 1 value |
+| ✅ | [C_AnimaDiversion.GetReinforceProgress](#c_animadiversiongetreinforceprogress) | 1 value | 1 value |
+| ✅ | [C_AnimaDiversion.GetTextureKit](#c_animadiversiongettexturekit) | 1 value | 1 value |
 | ✅ | [C_AnimaDiversion.OpenAnimaDiversionUI](#c_animadiversionopenanimadiversionui) |  |  |
 | ✅ | [C_AnimaDiversion.SelectAnimaNode](#c_animadiversionselectanimanode) |  |  |
 
@@ -28,6 +28,7 @@ Namespace: `C_AnimaDiversion`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `AnimaDiversionUIDocumentation.lua`
 
 ### C_AnimaDiversion.GetOriginPosition
@@ -36,6 +37,7 @@ Namespace: `C_AnimaDiversion`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `AnimaDiversionUIDocumentation.lua`
 
 ### C_AnimaDiversion.GetReinforceProgress
@@ -44,6 +46,7 @@ Namespace: `C_AnimaDiversion`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `AnimaDiversionUIDocumentation.lua`
 
 ### C_AnimaDiversion.GetTextureKit
@@ -52,6 +55,7 @@ Namespace: `C_AnimaDiversion`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `AnimaDiversionUIDocumentation.lua`
 
 ### C_AnimaDiversion.OpenAnimaDiversionUI

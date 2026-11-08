@@ -9,22 +9,22 @@ Namespace: `C_AzeriteEssence`
 | ✅ | [C_AzeriteEssence.ActivateEssence](#c_azeriteessenceactivateessence) |  |  |
 | ✅ | [C_AzeriteEssence.CanActivateEssence](#c_azeriteessencecanactivateessence) |  |  |
 | ✅ | [C_AzeriteEssence.CanDeactivateEssence](#c_azeriteessencecandeactivateessence) |  |  |
-| ✅ | [C_AzeriteEssence.CanOpenUI](#c_azeriteessencecanopenui) | 1 value |  |
+| ✅ | [C_AzeriteEssence.CanOpenUI](#c_azeriteessencecanopenui) | 1 value | 1 value |
 | ✅ | [C_AzeriteEssence.ClearPendingActivationEssence](#c_azeriteessenceclearpendingactivationessence) |  |  |
 | ✅ | [C_AzeriteEssence.CloseForge](#c_azeriteessencecloseforge) |  |  |
 | ✅ | [C_AzeriteEssence.GetEssenceHyperlink](#c_azeriteessencegetessencehyperlink) |  |  |
 | ✅ | [C_AzeriteEssence.GetEssenceInfo](#c_azeriteessencegetessenceinfo) |  |  |
-| ✅ | [C_AzeriteEssence.GetEssences](#c_azeriteessencegetessences) | 0 values |  |
+| ✅ | [C_AzeriteEssence.GetEssences](#c_azeriteessencegetessences) | 0 values | 0 values |
 | ✅ | [C_AzeriteEssence.GetMilestoneEssence](#c_azeriteessencegetmilestoneessence) |  |  |
 | ✅ | [C_AzeriteEssence.GetMilestoneInfo](#c_azeriteessencegetmilestoneinfo) |  |  |
 | ✅ | [C_AzeriteEssence.GetMilestoneSpell](#c_azeriteessencegetmilestonespell) |  |  |
-| ✅ | [C_AzeriteEssence.GetMilestones](#c_azeriteessencegetmilestones) | 0 values |  |
-| ✅ | [C_AzeriteEssence.GetNumUnlockedEssences](#c_azeriteessencegetnumunlockedessences) | 1 value |  |
-| ✅ | [C_AzeriteEssence.GetNumUsableEssences](#c_azeriteessencegetnumusableessences) | 1 value |  |
-| ✅ | [C_AzeriteEssence.GetPendingActivationEssence](#c_azeriteessencegetpendingactivationessence) | 1 value |  |
-| ✅ | [C_AzeriteEssence.HasNeverActivatedAnyEssences](#c_azeriteessencehasneveractivatedanyessences) | 1 value |  |
-| ✅ | [C_AzeriteEssence.HasPendingActivationEssence](#c_azeriteessencehaspendingactivationessence) | 1 value |  |
-| ✅ | [C_AzeriteEssence.IsAtForge](#c_azeriteessenceisatforge) | 1 value |  |
+| ✅ | [C_AzeriteEssence.GetMilestones](#c_azeriteessencegetmilestones) | 0 values | 0 values |
+| ✅ | [C_AzeriteEssence.GetNumUnlockedEssences](#c_azeriteessencegetnumunlockedessences) | 1 value | 1 value |
+| ✅ | [C_AzeriteEssence.GetNumUsableEssences](#c_azeriteessencegetnumusableessences) | 1 value | 1 value |
+| ✅ | [C_AzeriteEssence.GetPendingActivationEssence](#c_azeriteessencegetpendingactivationessence) | 1 value | 1 value |
+| ✅ | [C_AzeriteEssence.HasNeverActivatedAnyEssences](#c_azeriteessencehasneveractivatedanyessences) | 1 value | 1 value |
+| ✅ | [C_AzeriteEssence.HasPendingActivationEssence](#c_azeriteessencehaspendingactivationessence) | 1 value | 1 value |
+| ✅ | [C_AzeriteEssence.IsAtForge](#c_azeriteessenceisatforge) | 1 value | 1 value |
 | ✅ | [C_AzeriteEssence.SetPendingActivationEssence](#c_azeriteessencesetpendingactivationessence) |  |  |
 | ✅ | [C_AzeriteEssence.UnlockMilestone](#c_azeriteessenceunlockmilestone) |  |  |
 
@@ -59,6 +59,7 @@ Namespace: `C_AzeriteEssence`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `AzeriteEssenceDocumentation.lua`
 
 ### C_AzeriteEssence.ClearPendingActivationEssence
@@ -99,6 +100,7 @@ Namespace: `C_AzeriteEssence`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `AzeriteEssenceDocumentation.lua`
 
 ### C_AzeriteEssence.GetMilestoneEssence
@@ -135,6 +137,7 @@ Namespace: `C_AzeriteEssence`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `AzeriteEssenceDocumentation.lua`
 
 ### C_AzeriteEssence.GetNumUnlockedEssences
@@ -143,6 +146,7 @@ Namespace: `C_AzeriteEssence`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `AzeriteEssenceDocumentation.lua`
 
 ### C_AzeriteEssence.GetNumUsableEssences
@@ -151,6 +155,7 @@ Namespace: `C_AzeriteEssence`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `AzeriteEssenceDocumentation.lua`
 
 ### C_AzeriteEssence.GetPendingActivationEssence
@@ -159,6 +164,7 @@ Namespace: `C_AzeriteEssence`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `AzeriteEssenceDocumentation.lua`
 
 ### C_AzeriteEssence.HasNeverActivatedAnyEssences
@@ -167,6 +173,7 @@ Namespace: `C_AzeriteEssence`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `AzeriteEssenceDocumentation.lua`
 
 ### C_AzeriteEssence.HasPendingActivationEssence
@@ -175,6 +182,7 @@ Namespace: `C_AzeriteEssence`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `AzeriteEssenceDocumentation.lua`
 
 ### C_AzeriteEssence.IsAtForge
@@ -183,6 +191,7 @@ Namespace: `C_AzeriteEssence`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `AzeriteEssenceDocumentation.lua`
 
 ### C_AzeriteEssence.SetPendingActivationEssence

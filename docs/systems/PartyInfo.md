@@ -7,9 +7,9 @@ Namespace: `C_PartyInfo`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_PartyInfo.AllowedToDoPartyConversion](#c_partyinfoallowedtodopartyconversion) |  |  |
-| ✅ | [C_PartyInfo.CanFormCrossFactionParties](#c_partyinfocanformcrossfactionparties) | 1 value |  |
-| ✅ | [C_PartyInfo.CanInvite](#c_partyinfocaninvite) | 1 value |  |
-| ✅ | [C_PartyInfo.CanStartInstanceAbandonVote](#c_partyinfocanstartinstanceabandonvote) | 1 value |  |
+| ✅ | [C_PartyInfo.CanFormCrossFactionParties](#c_partyinfocanformcrossfactionparties) | 1 value | 1 value |
+| ✅ | [C_PartyInfo.CanInvite](#c_partyinfocaninvite) | 1 value | 1 value |
+| ✅ | [C_PartyInfo.CanStartInstanceAbandonVote](#c_partyinfocanstartinstanceabandonvote) | 1 value | 1 value |
 | ✅ | [C_PartyInfo.ChallengeModeRestrictionsActive](#c_partyinfochallengemoderestrictionsactive) |  |  |
 | ✅ | [C_PartyInfo.ConfirmConvertToRaid](#c_partyinfoconfirmconverttoraid) |  |  |
 | ✅ | [C_PartyInfo.ConfirmInviteTravelPass](#c_partyinfoconfirminvitetravelpass) |  |  |
@@ -23,32 +23,32 @@ Namespace: `C_PartyInfo`
 | ✅ | [C_PartyInfo.DemoteAssistant](#c_partyinfodemoteassistant) |  |  |
 | ✅ | [C_PartyInfo.DoCountdown](#c_partyinfodocountdown) |  |  |
 | ✅ | [C_PartyInfo.DoReadyCheck](#c_partyinfodoreadycheck) |  |  |
-| ✅ | [C_PartyInfo.GetActiveCategories](#c_partyinfogetactivecategories) | 1 value |  |
-| ✅ | [C_PartyInfo.GetAvailableLootMethods](#c_partyinfogetavailablelootmethods) | 1 value |  |
-| ✅ | [C_PartyInfo.GetInstanceAbandonShutdownTime](#c_partyinfogetinstanceabandonshutdowntime) | 2 values |  |
-| ✅ | [C_PartyInfo.GetInstanceAbandonVoteCooldownTime](#c_partyinfogetinstanceabandonvotecooldowntime) | 0 values |  |
-| ✅ | [C_PartyInfo.GetInstanceAbandonVoteRequirements](#c_partyinfogetinstanceabandonvoterequirements) | 2 values |  |
-| ✅ | [C_PartyInfo.GetInstanceAbandonVoteResponse](#c_partyinfogetinstanceabandonvoteresponse) | 1 value |  |
-| ✅ | [C_PartyInfo.GetInstanceAbandonVoteTime](#c_partyinfogetinstanceabandonvotetime) | 2 values |  |
+| ✅ | [C_PartyInfo.GetActiveCategories](#c_partyinfogetactivecategories) | 1 value | 1 value |
+| ✅ | [C_PartyInfo.GetAvailableLootMethods](#c_partyinfogetavailablelootmethods) | 1 value | 1 value |
+| ✅ | [C_PartyInfo.GetInstanceAbandonShutdownTime](#c_partyinfogetinstanceabandonshutdowntime) | 2 values | 2 values |
+| ✅ | [C_PartyInfo.GetInstanceAbandonVoteCooldownTime](#c_partyinfogetinstanceabandonvotecooldowntime) | 0 values | 0 values |
+| ✅ | [C_PartyInfo.GetInstanceAbandonVoteRequirements](#c_partyinfogetinstanceabandonvoterequirements) | 2 values | 2 values |
+| ✅ | [C_PartyInfo.GetInstanceAbandonVoteResponse](#c_partyinfogetinstanceabandonvoteresponse) | 1 value | 1 value |
+| ✅ | [C_PartyInfo.GetInstanceAbandonVoteTime](#c_partyinfogetinstanceabandonvotetime) | 2 values | 2 values |
 | ✅ | [C_PartyInfo.GetInviteConfirmationInvalidQueues](#c_partyinfogetinviteconfirmationinvalidqueues) |  |  |
 | ✅ | [C_PartyInfo.GetInviteReferralInfo](#c_partyinfogetinvitereferralinfo) |  |  |
-| ✅ | [C_PartyInfo.GetLootMethod](#c_partyinfogetlootmethod) | 3 values |  |
-| ✅ | [C_PartyInfo.GetLootMethodStyle](#c_partyinfogetlootmethodstyle) | 1 value |  |
+| ✅ | [C_PartyInfo.GetLootMethod](#c_partyinfogetlootmethod) | 3 values | 3 values |
+| ✅ | [C_PartyInfo.GetLootMethodStyle](#c_partyinfogetlootmethodstyle) | 1 value | 1 value |
 | ✅ | [C_PartyInfo.GetMinItemLevel](#c_partyinfogetminitemlevel) |  |  |
-| ✅ | [C_PartyInfo.GetMinLevel](#c_partyinfogetminlevel) | 1 value |  |
-| ✅ | [C_PartyInfo.GetNumInstanceAbandonGroupVoteResponses](#c_partyinfogetnuminstanceabandongroupvoteresponses) | 1 value |  |
-| ✅ | [C_PartyInfo.GetRestrictPings](#c_partyinfogetrestrictpings) | 1 value |  |
+| ✅ | [C_PartyInfo.GetMinLevel](#c_partyinfogetminlevel) | 1 value | 1 value |
+| ✅ | [C_PartyInfo.GetNumInstanceAbandonGroupVoteResponses](#c_partyinfogetnuminstanceabandongroupvoteresponses) | 1 value | 1 value |
+| ✅ | [C_PartyInfo.GetRestrictPings](#c_partyinfogetrestrictpings) | 1 value | 1 value |
 | ✅ | [C_PartyInfo.InviteUnit](#c_partyinfoinviteunit) |  |  |
-| ✅ | [C_PartyInfo.IsChallengeModeActive](#c_partyinfoischallengemodeactive) | 1 value |  |
-| ✅ | [C_PartyInfo.IsChallengeModeKeystoneOwner](#c_partyinfoischallengemodekeystoneowner) | 1 value |  |
-| ✅ | [C_PartyInfo.IsCrossFactionParty](#c_partyinfoiscrossfactionparty) | 1 value |  |
-| ✅ | [C_PartyInfo.IsDelveComplete](#c_partyinfoisdelvecomplete) | 1 value |  |
-| ✅ | [C_PartyInfo.IsDelveInProgress](#c_partyinfoisdelveinprogress) | 1 value |  |
+| ✅ | [C_PartyInfo.IsChallengeModeActive](#c_partyinfoischallengemodeactive) | 1 value | 1 value |
+| ✅ | [C_PartyInfo.IsChallengeModeKeystoneOwner](#c_partyinfoischallengemodekeystoneowner) | 1 value | 1 value |
+| ✅ | [C_PartyInfo.IsCrossFactionParty](#c_partyinfoiscrossfactionparty) | 1 value | 1 value |
+| ✅ | [C_PartyInfo.IsDelveComplete](#c_partyinfoisdelvecomplete) | 1 value | 1 value |
+| ✅ | [C_PartyInfo.IsDelveInProgress](#c_partyinfoisdelveinprogress) | 1 value | 1 value |
 | ✅ | [C_PartyInfo.IsGUIDInGroup](#c_partyinfoisguidingroup) |  |  |
 | ✅ | [C_PartyInfo.IsLootMethodAvailable](#c_partyinfoislootmethodavailable) |  |  |
-| ✅ | [C_PartyInfo.IsPartyFull](#c_partyinfoispartyfull) | 1 value |  |
-| ✅ | [C_PartyInfo.IsPartyInJailersTower](#c_partyinfoispartyinjailerstower) | 1 value |  |
-| ✅ | [C_PartyInfo.IsPartyWalkIn](#c_partyinfoispartywalkin) | 1 value |  |
+| ✅ | [C_PartyInfo.IsPartyFull](#c_partyinfoispartyfull) | 1 value | 1 value |
+| ✅ | [C_PartyInfo.IsPartyInJailersTower](#c_partyinfoispartyinjailerstower) | 1 value | 1 value |
+| ✅ | [C_PartyInfo.IsPartyWalkIn](#c_partyinfoispartywalkin) | 1 value | 1 value |
 | ✅ | [C_PartyInfo.LeaveParty](#c_partyinfoleaveparty) |  |  |
 | ✅ | [C_PartyInfo.PromoteToAssistant](#c_partyinfopromotetoassistant) |  |  |
 | ✅ | [C_PartyInfo.PromoteToLeader](#c_partyinfopromotetoleader) |  |  |
@@ -74,6 +74,7 @@ Namespace: `C_PartyInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.CanInvite
@@ -82,6 +83,7 @@ Namespace: `C_PartyInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.CanStartInstanceAbandonVote
@@ -91,6 +93,7 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified (function)
 - Blizzard: Returns whether it's possible to start a vote at this time
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.ChallengeModeRestrictionsActive
@@ -212,6 +215,7 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `table{[number]=number}`
+- Called in combat: returned 1 value: `table{[number]=number}`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.GetAvailableLootMethods
@@ -220,6 +224,7 @@ Namespace: `C_PartyInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{[number]=number,[number]=number,[number]=number,[number]=number,[number]=number}`
+- Called in combat: returned 1 value: `table{[number]=number,[number]=number,[number]=number,[number]=number,[number]=number}`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.GetInstanceAbandonShutdownTime
@@ -229,6 +234,7 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified (function)
 - Blizzard: Returns the total duration of the shutdown time after a vote passes and how much time is left before it ends
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.GetInstanceAbandonVoteCooldownTime
@@ -239,6 +245,7 @@ Namespace: `C_PartyInfo`
 - Blizzard: Returns the total duration of the abandon vote cooldown and how much time is left before it ends
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.GetInstanceAbandonVoteRequirements
@@ -248,6 +255,7 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified (function)
 - Blizzard: Returns values controlling the vote
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.GetInstanceAbandonVoteResponse
@@ -257,6 +265,7 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified (function)
 - Blizzard: Returns how the player voted, nil for not yet
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.GetInstanceAbandonVoteTime
@@ -266,6 +275,7 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified (function)
 - Blizzard: Returns the total duration of the vote and how much time is left before it ends
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.GetInviteConfirmationInvalidQueues
@@ -292,6 +302,7 @@ Namespace: `C_PartyInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 3 values: `number`, `nil`, `nil`
+- Called in combat: returned 3 values: `number`, `nil`, `nil`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.GetLootMethodStyle
@@ -300,6 +311,7 @@ Namespace: `C_PartyInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.GetMinItemLevel
@@ -319,6 +331,7 @@ Namespace: `C_PartyInfo`
 - `category`: If not provided, the active party is used
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.GetNumInstanceAbandonGroupVoteResponses
@@ -328,6 +341,7 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified (function)
 - Blizzard: Returns how many players have voted either way
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.GetRestrictPings
@@ -336,6 +350,7 @@ Namespace: `C_PartyInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.InviteUnit
@@ -354,6 +369,7 @@ Namespace: `C_PartyInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.IsChallengeModeKeystoneOwner
@@ -362,6 +378,7 @@ Namespace: `C_PartyInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.IsCrossFactionParty
@@ -372,6 +389,7 @@ Namespace: `C_PartyInfo`
 - `category`: If not provided, the active party is used
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.IsDelveComplete
@@ -380,6 +398,7 @@ Namespace: `C_PartyInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.IsDelveInProgress
@@ -388,6 +407,7 @@ Namespace: `C_PartyInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.IsGUIDInGroup
@@ -415,6 +435,7 @@ Namespace: `C_PartyInfo`
 - `category`: If not provided, the active party is used
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.IsPartyInJailersTower
@@ -423,6 +444,7 @@ Namespace: `C_PartyInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.IsPartyWalkIn
@@ -431,6 +453,7 @@ Namespace: `C_PartyInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PartyInfoDocumentation.lua`
 
 ### C_PartyInfo.LeaveParty

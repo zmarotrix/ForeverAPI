@@ -6,26 +6,26 @@ Namespace: `C_HousingNeighborhood`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_HousingNeighborhood.CanReturnAfterVisitingHouse](#c_housingneighborhoodcanreturnaftervisitinghouse) | 1 value |  |
+| ✅ | [C_HousingNeighborhood.CanReturnAfterVisitingHouse](#c_housingneighborhoodcanreturnaftervisitinghouse) | 1 value | 1 value |
 | ✅ | [C_HousingNeighborhood.CancelInviteToNeighborhood](#c_housingneighborhoodcancelinvitetoneighborhood) |  |  |
 | ✅ | [C_HousingNeighborhood.DemoteToResident](#c_housingneighborhooddemotetoresident) |  |  |
-| ✅ | [C_HousingNeighborhood.GetCornerstoneHouseInfo](#c_housingneighborhoodgetcornerstonehouseinfo) | 1 value |  |
-| ✅ | [C_HousingNeighborhood.GetCornerstoneNeighborhoodInfo](#c_housingneighborhoodgetcornerstoneneighborhoodinfo) | 1 value |  |
-| ✅ | [C_HousingNeighborhood.GetCornerstonePurchaseMode](#c_housingneighborhoodgetcornerstonepurchasemode) | 1 value |  |
-| ✅ | [C_HousingNeighborhood.GetCurrentNeighborhoodTextureSuffix](#c_housingneighborhoodgetcurrentneighborhoodtexturesuffix) | 1 value |  |
-| ✅ | [C_HousingNeighborhood.GetDiscountedMovePrice](#c_housingneighborhoodgetdiscountedmoveprice) | 1 value |  |
-| ✅ | [C_HousingNeighborhood.GetMoveCooldownTime](#c_housingneighborhoodgetmovecooldowntime) | 1 value |  |
-| ✅ | [C_HousingNeighborhood.GetNeighborhoodMapData](#c_housingneighborhoodgetneighborhoodmapdata) | 1 value |  |
-| ✅ | [C_HousingNeighborhood.GetNeighborhoodName](#c_housingneighborhoodgetneighborhoodname) | 1 value |  |
+| ✅ | [C_HousingNeighborhood.GetCornerstoneHouseInfo](#c_housingneighborhoodgetcornerstonehouseinfo) | 1 value | 1 value |
+| ✅ | [C_HousingNeighborhood.GetCornerstoneNeighborhoodInfo](#c_housingneighborhoodgetcornerstoneneighborhoodinfo) | 1 value | 1 value |
+| ✅ | [C_HousingNeighborhood.GetCornerstonePurchaseMode](#c_housingneighborhoodgetcornerstonepurchasemode) | 1 value | 1 value |
+| ✅ | [C_HousingNeighborhood.GetCurrentNeighborhoodTextureSuffix](#c_housingneighborhoodgetcurrentneighborhoodtexturesuffix) | 1 value | 1 value |
+| ✅ | [C_HousingNeighborhood.GetDiscountedMovePrice](#c_housingneighborhoodgetdiscountedmoveprice) | 1 value | 1 value |
+| ✅ | [C_HousingNeighborhood.GetMoveCooldownTime](#c_housingneighborhoodgetmovecooldowntime) | 1 value | 1 value |
+| ✅ | [C_HousingNeighborhood.GetNeighborhoodMapData](#c_housingneighborhoodgetneighborhoodmapdata) | 1 value | 1 value |
+| ✅ | [C_HousingNeighborhood.GetNeighborhoodName](#c_housingneighborhoodgetneighborhoodname) | 1 value | 1 value |
 | ✅ | [C_HousingNeighborhood.GetNeighborhoodPlotName](#c_housingneighborhoodgetneighborhoodplotname) |  |  |
-| ✅ | [C_HousingNeighborhood.GetPreviousHouseIdentifier](#c_housingneighborhoodgetprevioushouseidentifier) | 1 value |  |
-| ✅ | [C_HousingNeighborhood.HasPermissionToPurchase](#c_housingneighborhoodhaspermissiontopurchase) | 1 value |  |
+| ✅ | [C_HousingNeighborhood.GetPreviousHouseIdentifier](#c_housingneighborhoodgetprevioushouseidentifier) | 1 value | 1 value |
+| ✅ | [C_HousingNeighborhood.HasPermissionToPurchase](#c_housingneighborhoodhaspermissiontopurchase) | 1 value | 1 value |
 | ✅ | [C_HousingNeighborhood.InvitePlayerToNeighborhood](#c_housingneighborhoodinviteplayertoneighborhood) |  |  |
-| ✅ | [C_HousingNeighborhood.IsNeighborhoodManager](#c_housingneighborhoodisneighborhoodmanager) | 1 value |  |
-| ✅ | [C_HousingNeighborhood.IsNeighborhoodOwner](#c_housingneighborhoodisneighborhoodowner) | 1 value |  |
-| ✅ | [C_HousingNeighborhood.IsPlayerInOtherPlayersPlot](#c_housingneighborhoodisplayerinotherplayersplot) | 1 value |  |
-| ✅ | [C_HousingNeighborhood.IsPlotAvailableForPurchase](#c_housingneighborhoodisplotavailableforpurchase) | 1 value |  |
-| ✅ | [C_HousingNeighborhood.IsPlotOwnedByPlayer](#c_housingneighborhoodisplotownedbyplayer) | 1 value |  |
+| ✅ | [C_HousingNeighborhood.IsNeighborhoodManager](#c_housingneighborhoodisneighborhoodmanager) | 1 value | 1 value |
+| ✅ | [C_HousingNeighborhood.IsNeighborhoodOwner](#c_housingneighborhoodisneighborhoodowner) | 1 value | 1 value |
+| ✅ | [C_HousingNeighborhood.IsPlayerInOtherPlayersPlot](#c_housingneighborhoodisplayerinotherplayersplot) | 1 value | 1 value |
+| ✅ | [C_HousingNeighborhood.IsPlotAvailableForPurchase](#c_housingneighborhoodisplotavailableforpurchase) | 1 value | 1 value |
+| ✅ | [C_HousingNeighborhood.IsPlotOwnedByPlayer](#c_housingneighborhoodisplotownedbyplayer) | 1 value | 1 value |
 | ✅ | [C_HousingNeighborhood.OnBulletinBoardClosed](#c_housingneighborhoodonbulletinboardclosed) |  |  |
 | ✅ | [C_HousingNeighborhood.OnCornerstoneClosed](#c_housingneighborhoodoncornerstoneclosed) |  |  |
 | ✅ | [C_HousingNeighborhood.PromoteToManager](#c_housingneighborhoodpromotetomanager) |  |  |
@@ -43,6 +43,7 @@ Namespace: `C_HousingNeighborhood`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `HousingNeighborhoodUIDocumentation.lua`
 
 ### C_HousingNeighborhood.CancelInviteToNeighborhood
@@ -70,6 +71,7 @@ Namespace: `C_HousingNeighborhood`
 - Status: ✅ verified (function)
 - Blizzard: Only available when interacting with a cornerstone game object
 - Called out of combat: returned 1 value: `table{plotID=number}`
+- Called in combat: returned 1 value: `table{plotID=number}`
 - Source: client docs `HousingNeighborhoodUIDocumentation.lua`
 
 ### C_HousingNeighborhood.GetCornerstoneNeighborhoodInfo
@@ -79,6 +81,7 @@ Namespace: `C_HousingNeighborhood`
 - Status: ✅ verified (function)
 - Blizzard: Only available when interacting with a cornerstone game object
 - Called out of combat: returned 1 value: `table{neighborhoodName=string,neighborhoodOwnerType=number,neighborhoodType=number}`
+- Called in combat: returned 1 value: `table{neighborhoodName=string,neighborhoodOwnerType=number,neighborhoodType=number}`
 - Source: client docs `HousingNeighborhoodUIDocumentation.lua`
 
 ### C_HousingNeighborhood.GetCornerstonePurchaseMode
@@ -88,6 +91,7 @@ Namespace: `C_HousingNeighborhood`
 - Status: ✅ verified (function)
 - Blizzard: Only available when interacting with a cornerstone game object
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `HousingNeighborhoodUIDocumentation.lua`
 
 ### C_HousingNeighborhood.GetCurrentNeighborhoodTextureSuffix
@@ -96,6 +100,7 @@ Namespace: `C_HousingNeighborhood`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `HousingNeighborhoodUIDocumentation.lua`
 
 ### C_HousingNeighborhood.GetDiscountedMovePrice
@@ -106,6 +111,7 @@ Namespace: `C_HousingNeighborhood`
 - Blizzard: Only available when interacting with a cornerstone game object
 - `movePrice`: Can be negative if the refund from moving is more than the cost of the new house
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `HousingNeighborhoodUIDocumentation.lua`
 
 ### C_HousingNeighborhood.GetMoveCooldownTime
@@ -115,6 +121,7 @@ Namespace: `C_HousingNeighborhood`
 - Status: ✅ verified (function)
 - Blizzard: Only available when interacting with a cornerstone game object
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `HousingNeighborhoodUIDocumentation.lua`
 
 ### C_HousingNeighborhood.GetNeighborhoodMapData
@@ -123,6 +130,7 @@ Namespace: `C_HousingNeighborhood`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `HousingNeighborhoodUIDocumentation.lua`
 
 ### C_HousingNeighborhood.GetNeighborhoodName
@@ -131,6 +139,7 @@ Namespace: `C_HousingNeighborhood`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `HousingNeighborhoodUIDocumentation.lua`
 
 ### C_HousingNeighborhood.GetNeighborhoodPlotName
@@ -148,6 +157,7 @@ Namespace: `C_HousingNeighborhood`
 - Status: ✅ verified (function)
 - Blizzard: Only available when interacting with a cornerstone game object
 - Called out of combat: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `HousingNeighborhoodUIDocumentation.lua`
 
 ### C_HousingNeighborhood.HasPermissionToPurchase
@@ -157,6 +167,7 @@ Namespace: `C_HousingNeighborhood`
 - Status: ✅ verified (function)
 - Blizzard: Only available when interacting with a cornerstone game object
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `HousingNeighborhoodUIDocumentation.lua`
 
 ### C_HousingNeighborhood.InvitePlayerToNeighborhood
@@ -174,6 +185,7 @@ Namespace: `C_HousingNeighborhood`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `HousingNeighborhoodUIDocumentation.lua`
 
 ### C_HousingNeighborhood.IsNeighborhoodOwner
@@ -182,6 +194,7 @@ Namespace: `C_HousingNeighborhood`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `HousingNeighborhoodUIDocumentation.lua`
 
 ### C_HousingNeighborhood.IsPlayerInOtherPlayersPlot
@@ -191,6 +204,7 @@ Namespace: `C_HousingNeighborhood`
 - Status: ✅ verified (function)
 - Blizzard: This returns true if the player is in a plot that is owned by another player
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `HousingNeighborhoodUIDocumentation.lua`
 
 ### C_HousingNeighborhood.IsPlotAvailableForPurchase
@@ -200,6 +214,7 @@ Namespace: `C_HousingNeighborhood`
 - Status: ✅ verified (function)
 - Blizzard: Only available when interacting with a cornerstone game object
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `HousingNeighborhoodUIDocumentation.lua`
 
 ### C_HousingNeighborhood.IsPlotOwnedByPlayer
@@ -209,6 +224,7 @@ Namespace: `C_HousingNeighborhood`
 - Status: ✅ verified (function)
 - Blizzard: Only available when interacting with a cornerstone game object
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `HousingNeighborhoodUIDocumentation.lua`
 
 ### C_HousingNeighborhood.OnBulletinBoardClosed

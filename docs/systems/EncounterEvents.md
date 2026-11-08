@@ -8,7 +8,7 @@ Namespace: `C_EncounterEvents`
 |---|---|---|---|
 | ✅ | [C_EncounterEvents.GetEventColor](#c_encountereventsgeteventcolor) |  |  |
 | ✅ | [C_EncounterEvents.GetEventInfo](#c_encountereventsgeteventinfo) |  |  |
-| ✅ | [C_EncounterEvents.GetEventList](#c_encountereventsgeteventlist) | 1 value |  |
+| ✅ | [C_EncounterEvents.GetEventList](#c_encountereventsgeteventlist) | 1 value | 1 value |
 | ✅ | [C_EncounterEvents.GetEventSound](#c_encountereventsgeteventsound) |  |  |
 | ✅ | [C_EncounterEvents.HasEventInfo](#c_encountereventshaseventinfo) |  |  |
 | ✅ | [C_EncounterEvents.PlayEventSound](#c_encountereventsplayeventsound) |  |  |
@@ -41,6 +41,7 @@ Namespace: `C_EncounterEvents`
 - Status: ✅ verified (function)
 - Blizzard: Returns a list of all encounter event IDs.
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `EncounterEventsDocumentation.lua`
 
 ### C_EncounterEvents.GetEventSound

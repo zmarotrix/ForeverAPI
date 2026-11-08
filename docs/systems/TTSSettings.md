@@ -7,11 +7,11 @@ Namespace: `C_TTSSettings`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_TTSSettings.GetChannelEnabled](#c_ttssettingsgetchannelenabled) |  |  |
-| ✅ | [C_TTSSettings.GetCharacterSettingsSaved](#c_ttssettingsgetcharactersettingssaved) | 1 value |  |
+| ✅ | [C_TTSSettings.GetCharacterSettingsSaved](#c_ttssettingsgetcharactersettingssaved) | 1 value | 1 value |
 | ✅ | [C_TTSSettings.GetChatTypeEnabled](#c_ttssettingsgetchattypeenabled) |  |  |
 | ✅ | [C_TTSSettings.GetSetting](#c_ttssettingsgetsetting) |  |  |
-| ✅ | [C_TTSSettings.GetSpeechRate](#c_ttssettingsgetspeechrate) | 1 value |  |
-| ✅ | [C_TTSSettings.GetSpeechVolume](#c_ttssettingsgetspeechvolume) | 1 value |  |
+| ✅ | [C_TTSSettings.GetSpeechRate](#c_ttssettingsgetspeechrate) | 1 value | 1 value |
+| ✅ | [C_TTSSettings.GetSpeechVolume](#c_ttssettingsgetspeechvolume) | 1 value | 1 value |
 | ✅ | [C_TTSSettings.GetVoiceOptionID](#c_ttssettingsgetvoiceoptionid) |  |  |
 | ✅ | [C_TTSSettings.GetVoiceOptionName](#c_ttssettingsgetvoiceoptionname) |  |  |
 | ✅ | [C_TTSSettings.MarkCharacterSettingsSaved](#c_ttssettingsmarkcharactersettingssaved) |  |  |
@@ -40,6 +40,7 @@ Namespace: `C_TTSSettings`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `TTSSettingsDocumentation.lua`
 
 ### C_TTSSettings.GetChatTypeEnabled
@@ -64,6 +65,7 @@ Namespace: `C_TTSSettings`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `TTSSettingsDocumentation.lua`
 
 ### C_TTSSettings.GetSpeechVolume
@@ -72,6 +74,7 @@ Namespace: `C_TTSSettings`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `TTSSettingsDocumentation.lua`
 
 ### C_TTSSettings.GetVoiceOptionID

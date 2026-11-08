@@ -12,7 +12,7 @@ Namespace: `C_Transmog`
 | ✅ | [C_Transmog.GetItemIDForSource](#c_transmoggetitemidforsource) |  |  |
 | ✅ | [C_Transmog.GetSlotForInventoryType](#c_transmoggetslotforinventorytype) |  |  |
 | ✅ | [C_Transmog.GetSlotVisualInfo](#c_transmoggetslotvisualinfo) |  |  |
-| ✅ | [C_Transmog.IsAtTransmogNPC](#c_transmogisattransmognpc) | 1 value |  |
+| ✅ | [C_Transmog.IsAtTransmogNPC](#c_transmogisattransmognpc) | 1 value | 1 value |
 
 ### C_Transmog.CanHaveSecondaryAppearanceForSlotID
 
@@ -70,6 +70,7 @@ Namespace: `C_Transmog`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `TransmogDocumentation.lua`
 
 ## Events
@@ -153,7 +154,7 @@ Namespace: `C_Transmog`
 - Status: ✅ verified
 - Payload: `searchType: TransmogSearchType`, `collectionType: TransmogCollectionType?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 12 times (0 in combat); argument kinds: `n,-`
+- Seen firing 16 times (0 in combat); argument kinds: `n,-`
 
 ### TRANSMOG_SETS_UPDATE_FAVORITE
 

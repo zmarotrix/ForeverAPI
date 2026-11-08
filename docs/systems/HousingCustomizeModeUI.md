@@ -12,28 +12,28 @@ Namespace: `C_HousingCustomizeMode`
 | ✅ | [C_HousingCustomizeMode.ApplyThemeToSelectedRoomComponent](#c_housingcustomizemodeapplythemetoselectedroomcomponent) |  |  |
 | ✅ | [C_HousingCustomizeMode.ApplyWallpaperToAllWalls](#c_housingcustomizemodeapplywallpapertoallwalls) |  |  |
 | ✅ | [C_HousingCustomizeMode.ApplyWallpaperToSelectedRoomComponent](#c_housingcustomizemodeapplywallpapertoselectedroomcomponent) |  |  |
-| ✅ | [C_HousingCustomizeMode.CancelActiveEditing](#c_housingcustomizemodecancelactiveediting) | 0 values |  |
+| ✅ | [C_HousingCustomizeMode.CancelActiveEditing](#c_housingcustomizemodecancelactiveediting) | 0 values | 0 values |
 | ✅ | [C_HousingCustomizeMode.ClearDyesForSelectedDecor](#c_housingcustomizemodecleardyesforselecteddecor) |  |  |
 | ✅ | [C_HousingCustomizeMode.ClearTargetRoomComponent](#c_housingcustomizemodecleartargetroomcomponent) |  |  |
 | ✅ | [C_HousingCustomizeMode.CommitDyesForSelectedDecor](#c_housingcustomizemodecommitdyesforselecteddecor) |  |  |
-| ✅ | [C_HousingCustomizeMode.GetHoveredDecorInfo](#c_housingcustomizemodegethovereddecorinfo) | 1 value |  |
-| ✅ | [C_HousingCustomizeMode.GetHoveredRoomComponentInfo](#c_housingcustomizemodegethoveredroomcomponentinfo) | 1 value |  |
-| ✅ | [C_HousingCustomizeMode.GetNumDyesToRemoveOnSelectedDecor](#c_housingcustomizemodegetnumdyestoremoveonselecteddecor) | 1 value |  |
-| ✅ | [C_HousingCustomizeMode.GetNumDyesToSpendOnSelectedDecor](#c_housingcustomizemodegetnumdyestospendonselecteddecor) | 1 value |  |
-| ✅ | [C_HousingCustomizeMode.GetPreviewDyesOnSelectedDecor](#c_housingcustomizemodegetpreviewdyesonselecteddecor) | 1 value |  |
-| ✅ | [C_HousingCustomizeMode.GetRecentlyUsedDyes](#c_housingcustomizemodegetrecentlyuseddyes) | 1 value |  |
-| ✅ | [C_HousingCustomizeMode.GetRecentlyUsedThemeSets](#c_housingcustomizemodegetrecentlyusedthemesets) | 1 value |  |
-| ✅ | [C_HousingCustomizeMode.GetRecentlyUsedWallpapers](#c_housingcustomizemodegetrecentlyusedwallpapers) | 1 value |  |
-| ✅ | [C_HousingCustomizeMode.GetSelectedDecorInfo](#c_housingcustomizemodegetselecteddecorinfo) | 1 value |  |
-| ✅ | [C_HousingCustomizeMode.GetSelectedDecorPetInfo](#c_housingcustomizemodegetselecteddecorpetinfo) | 2 values |  |
-| ✅ | [C_HousingCustomizeMode.GetSelectedRoomComponentInfo](#c_housingcustomizemodegetselectedroomcomponentinfo) | 1 value |  |
+| ✅ | [C_HousingCustomizeMode.GetHoveredDecorInfo](#c_housingcustomizemodegethovereddecorinfo) | 1 value | 1 value |
+| ✅ | [C_HousingCustomizeMode.GetHoveredRoomComponentInfo](#c_housingcustomizemodegethoveredroomcomponentinfo) | 1 value | 1 value |
+| ✅ | [C_HousingCustomizeMode.GetNumDyesToRemoveOnSelectedDecor](#c_housingcustomizemodegetnumdyestoremoveonselecteddecor) | 1 value | 1 value |
+| ✅ | [C_HousingCustomizeMode.GetNumDyesToSpendOnSelectedDecor](#c_housingcustomizemodegetnumdyestospendonselecteddecor) | 1 value | 1 value |
+| ✅ | [C_HousingCustomizeMode.GetPreviewDyesOnSelectedDecor](#c_housingcustomizemodegetpreviewdyesonselecteddecor) | 1 value | 1 value |
+| ✅ | [C_HousingCustomizeMode.GetRecentlyUsedDyes](#c_housingcustomizemodegetrecentlyuseddyes) | 1 value | 1 value |
+| ✅ | [C_HousingCustomizeMode.GetRecentlyUsedThemeSets](#c_housingcustomizemodegetrecentlyusedthemesets) | 1 value | 1 value |
+| ✅ | [C_HousingCustomizeMode.GetRecentlyUsedWallpapers](#c_housingcustomizemodegetrecentlyusedwallpapers) | 1 value | 1 value |
+| ✅ | [C_HousingCustomizeMode.GetSelectedDecorInfo](#c_housingcustomizemodegetselecteddecorinfo) | 1 value | 1 value |
+| ✅ | [C_HousingCustomizeMode.GetSelectedDecorPetInfo](#c_housingcustomizemodegetselecteddecorpetinfo) | 2 values | 2 values |
+| ✅ | [C_HousingCustomizeMode.GetSelectedRoomComponentInfo](#c_housingcustomizemodegetselectedroomcomponentinfo) | 1 value | 1 value |
 | ✅ | [C_HousingCustomizeMode.GetThemeSetInfo](#c_housingcustomizemodegetthemesetinfo) |  |  |
 | ✅ | [C_HousingCustomizeMode.GetWallpapersForRoomComponentType](#c_housingcustomizemodegetwallpapersforroomcomponenttype) |  |  |
-| ✅ | [C_HousingCustomizeMode.IsDecorSelected](#c_housingcustomizemodeisdecorselected) | 1 value |  |
-| ✅ | [C_HousingCustomizeMode.IsHouseExteriorDoorHovered](#c_housingcustomizemodeishouseexteriordoorhovered) | 1 value |  |
-| ✅ | [C_HousingCustomizeMode.IsHoveringDecor](#c_housingcustomizemodeishoveringdecor) | 1 value |  |
-| ✅ | [C_HousingCustomizeMode.IsHoveringRoomComponent](#c_housingcustomizemodeishoveringroomcomponent) | 1 value |  |
-| ✅ | [C_HousingCustomizeMode.IsRoomComponentSelected](#c_housingcustomizemodeisroomcomponentselected) | 1 value |  |
+| ✅ | [C_HousingCustomizeMode.IsDecorSelected](#c_housingcustomizemodeisdecorselected) | 1 value | 1 value |
+| ✅ | [C_HousingCustomizeMode.IsHouseExteriorDoorHovered](#c_housingcustomizemodeishouseexteriordoorhovered) | 1 value | 1 value |
+| ✅ | [C_HousingCustomizeMode.IsHoveringDecor](#c_housingcustomizemodeishoveringdecor) | 1 value | 1 value |
+| ✅ | [C_HousingCustomizeMode.IsHoveringRoomComponent](#c_housingcustomizemodeishoveringroomcomponent) | 1 value | 1 value |
+| ✅ | [C_HousingCustomizeMode.IsRoomComponentSelected](#c_housingcustomizemodeisroomcomponentselected) | 1 value | 1 value |
 | ✅ | [C_HousingCustomizeMode.RoomComponentSupportsVariant](#c_housingcustomizemoderoomcomponentsupportsvariant) |  |  |
 | ✅ | [C_HousingCustomizeMode.RoomConnectionSupportsDoorType](#c_housingcustomizemoderoomconnectionsupportsdoortype) |  |  |
 | ✅ | [C_HousingCustomizeMode.SetRoomComponentCeilingType](#c_housingcustomizemodesetroomcomponentceilingtype) |  |  |
@@ -101,6 +101,7 @@ Namespace: `C_HousingCustomizeMode`
 - Status: ✅ verified (function)
 - Blizzard: Cancels all in-progress editing of the selected target, which will reset any unapplied customization changes and deselect the active target
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `HousingCustomizeModeUIDocumentation.lua`
 
 ### C_HousingCustomizeMode.ClearDyesForSelectedDecor
@@ -135,6 +136,7 @@ Namespace: `C_HousingCustomizeMode`
 - Status: ✅ verified (function)
 - Blizzard: Returns info for the placed decor instance currently being hovered, if there is one
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `HousingCustomizeModeUIDocumentation.lua`
 
 ### C_HousingCustomizeMode.GetHoveredRoomComponentInfo
@@ -144,6 +146,7 @@ Namespace: `C_HousingCustomizeMode`
 - Status: ✅ verified (function)
 - Blizzard: Returns info for the room component currently being hovered, if there is one
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `HousingCustomizeModeUIDocumentation.lua`
 
 ### C_HousingCustomizeMode.GetNumDyesToRemoveOnSelectedDecor
@@ -153,6 +156,7 @@ Namespace: `C_HousingCustomizeMode`
 - Status: ✅ verified (function)
 - Blizzard: If a dyeable decor instance is selected, returns how many dye slots would be cleared on applying all currently previewed dye changes
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `HousingCustomizeModeUIDocumentation.lua`
 
 ### C_HousingCustomizeMode.GetNumDyesToSpendOnSelectedDecor
@@ -162,6 +166,7 @@ Namespace: `C_HousingCustomizeMode`
 - Status: ✅ verified (function)
 - Blizzard: If a dyeable decor instance is selected, returns how many dye items would be spent on applying all currently previewed dye changes
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `HousingCustomizeModeUIDocumentation.lua`
 
 ### C_HousingCustomizeMode.GetPreviewDyesOnSelectedDecor
@@ -171,6 +176,7 @@ Namespace: `C_HousingCustomizeMode`
 - Status: ✅ verified (function)
 - Blizzard: If a dyeable decor instance is selected, returns info structs for each new/changed dye currently being previewed
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `HousingCustomizeModeUIDocumentation.lua`
 
 ### C_HousingCustomizeMode.GetRecentlyUsedDyes
@@ -180,6 +186,7 @@ Namespace: `C_HousingCustomizeMode`
 - Status: ✅ verified (function)
 - Blizzard: Returns a list of ids for the dyes most recently applied by the player, if any
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `HousingCustomizeModeUIDocumentation.lua`
 
 ### C_HousingCustomizeMode.GetRecentlyUsedThemeSets
@@ -189,6 +196,7 @@ Namespace: `C_HousingCustomizeMode`
 - Status: ✅ verified (function)
 - Blizzard: Returns a list of ids for the theme sets (aka styles) most recently applied by the player, if any
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `HousingCustomizeModeUIDocumentation.lua`
 
 ### C_HousingCustomizeMode.GetRecentlyUsedWallpapers
@@ -198,6 +206,7 @@ Namespace: `C_HousingCustomizeMode`
 - Status: ✅ verified (function)
 - Blizzard: Returns a list of ids for the wallpapers most recently applied by the player, if any
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `HousingCustomizeModeUIDocumentation.lua`
 
 ### C_HousingCustomizeMode.GetSelectedDecorInfo
@@ -207,6 +216,7 @@ Namespace: `C_HousingCustomizeMode`
 - Status: ✅ verified (function)
 - Blizzard: Returns info for the decor instance that's currently selected, if there is one
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `HousingCustomizeModeUIDocumentation.lua`
 
 ### C_HousingCustomizeMode.GetSelectedDecorPetInfo
@@ -216,6 +226,7 @@ Namespace: `C_HousingCustomizeMode`
 - Status: ✅ verified (function)
 - Blizzard: If a decor is selected that supports pets, gets petID and behavior type from decor
 - Called out of combat: returned 2 values: `nil`, `number`
+- Called in combat: returned 2 values: `nil`, `number`
 - Source: client docs `HousingCustomizeModeUIDocumentation.lua`
 
 ### C_HousingCustomizeMode.GetSelectedRoomComponentInfo
@@ -225,6 +236,7 @@ Namespace: `C_HousingCustomizeMode`
 - Status: ✅ verified (function)
 - Blizzard: Returns info for the currently selected room component, if there is one
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `HousingCustomizeModeUIDocumentation.lua`
 
 ### C_HousingCustomizeMode.GetThemeSetInfo
@@ -252,6 +264,7 @@ Namespace: `C_HousingCustomizeMode`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a decor instance is currently selected for customization
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `HousingCustomizeModeUIDocumentation.lua`
 
 ### C_HousingCustomizeMode.IsHouseExteriorDoorHovered
@@ -261,6 +274,7 @@ Namespace: `C_HousingCustomizeMode`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the entry door of the house's exterior is currently being hovered
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `HousingCustomizeModeUIDocumentation.lua`
 
 ### C_HousingCustomizeMode.IsHoveringDecor
@@ -270,6 +284,7 @@ Namespace: `C_HousingCustomizeMode`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a placed decor instance is currently being hovered
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `HousingCustomizeModeUIDocumentation.lua`
 
 ### C_HousingCustomizeMode.IsHoveringRoomComponent
@@ -279,6 +294,7 @@ Namespace: `C_HousingCustomizeMode`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a room component is currently being hovered
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `HousingCustomizeModeUIDocumentation.lua`
 
 ### C_HousingCustomizeMode.IsRoomComponentSelected
@@ -288,6 +304,7 @@ Namespace: `C_HousingCustomizeMode`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if a room component is currently selected for customization
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `HousingCustomizeModeUIDocumentation.lua`
 
 ### C_HousingCustomizeMode.RoomComponentSupportsVariant

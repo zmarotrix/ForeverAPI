@@ -7,7 +7,7 @@ Namespace: `C_EquipmentSet`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_EquipmentSet.AssignSpecToEquipmentSet](#c_equipmentsetassignspectoequipmentset) |  |  |
-| ✅ | [C_EquipmentSet.CanUseEquipmentSets](#c_equipmentsetcanuseequipmentsets) | 1 value |  |
+| ✅ | [C_EquipmentSet.CanUseEquipmentSets](#c_equipmentsetcanuseequipmentsets) | 1 value | 1 value |
 | ✅ | [C_EquipmentSet.ClearIgnoredSlotsForSave](#c_equipmentsetclearignoredslotsforsave) |  |  |
 | ✅ | [C_EquipmentSet.CreateEquipmentSet](#c_equipmentsetcreateequipmentset) |  |  |
 | ✅ | [C_EquipmentSet.DeleteEquipmentSet](#c_equipmentsetdeleteequipmentset) |  |  |
@@ -15,12 +15,12 @@ Namespace: `C_EquipmentSet`
 | ✅ | [C_EquipmentSet.GetEquipmentSetAssignedSpec](#c_equipmentsetgetequipmentsetassignedspec) |  |  |
 | ✅ | [C_EquipmentSet.GetEquipmentSetForSpec](#c_equipmentsetgetequipmentsetforspec) |  |  |
 | ✅ | [C_EquipmentSet.GetEquipmentSetID](#c_equipmentsetgetequipmentsetid) |  |  |
-| ✅ | [C_EquipmentSet.GetEquipmentSetIDs](#c_equipmentsetgetequipmentsetids) | 1 value |  |
+| ✅ | [C_EquipmentSet.GetEquipmentSetIDs](#c_equipmentsetgetequipmentsetids) | 1 value | 1 value |
 | ✅ | [C_EquipmentSet.GetEquipmentSetInfo](#c_equipmentsetgetequipmentsetinfo) |  |  |
 | ✅ | [C_EquipmentSet.GetIgnoredSlots](#c_equipmentsetgetignoredslots) |  |  |
 | ✅ | [C_EquipmentSet.GetItemIDs](#c_equipmentsetgetitemids) |  |  |
 | ✅ | [C_EquipmentSet.GetItemLocations](#c_equipmentsetgetitemlocations) |  |  |
-| ✅ | [C_EquipmentSet.GetNumEquipmentSets](#c_equipmentsetgetnumequipmentsets) | 1 value |  |
+| ✅ | [C_EquipmentSet.GetNumEquipmentSets](#c_equipmentsetgetnumequipmentsets) | 1 value | 1 value |
 | ✅ | [C_EquipmentSet.IgnoreSlotForSave](#c_equipmentsetignoreslotforsave) |  |  |
 | ✅ | [C_EquipmentSet.IsSlotIgnoredForSave](#c_equipmentsetisslotignoredforsave) |  |  |
 | ✅ | [C_EquipmentSet.ModifyEquipmentSet](#c_equipmentsetmodifyequipmentset) |  |  |
@@ -44,6 +44,7 @@ Namespace: `C_EquipmentSet`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `EquipmentManagerDocumentation.lua`
 
 ### C_EquipmentSet.ClearIgnoredSlotsForSave
@@ -110,6 +111,7 @@ Namespace: `C_EquipmentSet`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `EquipmentManagerDocumentation.lua`
 
 ### C_EquipmentSet.GetEquipmentSetInfo
@@ -154,6 +156,7 @@ Namespace: `C_EquipmentSet`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `EquipmentManagerDocumentation.lua`
 
 ### C_EquipmentSet.IgnoreSlotForSave

@@ -13,9 +13,9 @@ Namespace: `C_SpellBook`
 | ✅ | [C_SpellBook.FindFlyoutSlotBySpellID](#c_spellbookfindflyoutslotbyspellid) |  |  |
 | ✅ | [C_SpellBook.FindSpellBookSlotForSpell](#c_spellbookfindspellbookslotforspell) |  |  |
 | ✅ | [C_SpellBook.FindSpellOverrideByID](#c_spellbookfindspelloverridebyid) |  |  |
-| ✅ | [C_SpellBook.GetClassSkillLineInfo](#c_spellbookgetclassskilllineinfo) | 1 value |  |
+| ✅ | [C_SpellBook.GetClassSkillLineInfo](#c_spellbookgetclassskilllineinfo) | 1 value | 1 value |
 | ✅ | [C_SpellBook.GetCurrentLevelSpells](#c_spellbookgetcurrentlevelspells) |  |  |
-| ✅ | [C_SpellBook.GetNumSpellBookSkillLines](#c_spellbookgetnumspellbookskilllines) | 1 value |  |
+| ✅ | [C_SpellBook.GetNumSpellBookSkillLines](#c_spellbookgetnumspellbookskilllines) | 1 value | 1 value |
 | ✅ | [C_SpellBook.GetSkillLineIndexByID](#c_spellbookgetskilllineindexbyid) |  |  |
 | ✅ | [C_SpellBook.GetSpellBookItemAutoCast](#c_spellbookgetspellbookitemautocast) |  |  |
 | ✅ | [C_SpellBook.GetSpellBookItemCastCount](#c_spellbookgetspellbookitemcastcount) |  |  |
@@ -37,7 +37,7 @@ Namespace: `C_SpellBook`
 | ✅ | [C_SpellBook.GetSpellBookItemTradeSkillLink](#c_spellbookgetspellbookitemtradeskilllink) |  |  |
 | ✅ | [C_SpellBook.GetSpellBookItemType](#c_spellbookgetspellbookitemtype) |  |  |
 | ✅ | [C_SpellBook.GetSpellBookSkillLineInfo](#c_spellbookgetspellbookskilllineinfo) |  |  |
-| ✅ | [C_SpellBook.HasPetSpells](#c_spellbookhaspetspells) | 0 values |  |
+| ✅ | [C_SpellBook.HasPetSpells](#c_spellbookhaspetspells) | 0 values | 0 values |
 | ✅ | [C_SpellBook.IsAutoAttackSpellBookItem](#c_spellbookisautoattackspellbookitem) |  |  |
 | ✅ | [C_SpellBook.IsClassTalentSpellBookItem](#c_spellbookisclasstalentspellbookitem) |  |  |
 | ✅ | [C_SpellBook.IsPvPTalentSpellBookItem](#c_spellbookispvptalentspellbookitem) |  |  |
@@ -129,6 +129,7 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `table{iconID=number,isGuild=boolean,itemIndexOffset=number,name=string,numSpellBookItems=number,shouldHide=boolean}`
+- Called in combat: returned 1 value: `table{iconID=number,isGuild=boolean,itemIndexOffset=number,name=string,numSpellBookItems=number,shouldHide=boolean}`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.GetCurrentLevelSpells
@@ -147,6 +148,7 @@ Namespace: `C_SpellBook`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.GetSkillLineIndexByID
@@ -363,6 +365,7 @@ Namespace: `C_SpellBook`
 - Blizzard: Returns nothing if player has no pet spells
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `SpellBookDocumentation.lua`
 
 ### C_SpellBook.IsAutoAttackSpellBookItem
@@ -551,7 +554,7 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified
 - Payload: `cancelledCast: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 366 times (341 in combat); argument kinds: `b`
+- Seen firing 757 times (707 in combat); argument kinds: `b`
 
 ### LEARNED_SPELL_IN_SKILL_LINE
 
@@ -576,7 +579,7 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 5 times (0 in combat); argument kinds: ``
+- Seen firing 8 times (0 in combat); argument kinds: ``
 
 ### SPELL_FLYOUT_UPDATE
 
@@ -611,21 +614,21 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified
 - Payload: `spellID: number?`, `baseSpellID: number?`, `category: number?`, `startRecoveryCategory: number?`, `itemID: number?`
 - unique event (Blizzard's docs)
-- Seen firing 108 times (95 in combat); argument kinds: `-,-,-,-,-` / `n,-,-,-,-` / `n,-,n,n,-`
+- Seen firing 232 times (196 in combat); argument kinds: `-,-,-,-,-` / `n,-,-,-,-` / `n,-,n,n,-`
 
 ### SPELL_UPDATE_ICON
 
 - Status: ✅ verified
 - Payload: `spellID: number?`
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `n`
+- Seen firing 3 times (0 in combat); argument kinds: `n`
 
 ### SPELL_UPDATE_USABLE
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 1196 times (731 in combat); argument kinds: ``
+- Seen firing 2291 times (1575 in combat); argument kinds: ``
 
 ### SPELL_UPDATE_USES
 
@@ -650,14 +653,14 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 105 times (92 in combat); argument kinds: ``
+- Seen firing 217 times (189 in combat); argument kinds: ``
 
 ### UPDATE_SHAPESHIFT_FORM
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 7 times (0 in combat); argument kinds: ``
 
 ### UPDATE_SHAPESHIFT_FORMS
 

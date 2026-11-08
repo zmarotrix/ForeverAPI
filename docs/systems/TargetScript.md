@@ -9,7 +9,7 @@
 | ✅ | [ClearFocus](#clearfocus) |  |  |
 | ✅ | [ClearTarget](#cleartarget) |  |  |
 | ✅ | [FocusUnit](#focusunit) |  |  |
-| ✅ | [IsTargetLoose](#istargetloose) | 1 value |  |
+| ✅ | [IsTargetLoose](#istargetloose) | 1 value | 1 value |
 | ✅ | [SetPreferredGamepadInteractTarget](#setpreferredgamepadinteracttarget) |  |  |
 | ✅ | [TargetDirectionEnemy](#targetdirectionenemy) |  |  |
 | ✅ | [TargetDirectionFinished](#targetdirectionfinished) |  |  |
@@ -74,6 +74,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `TargetScriptDocumentation.lua`
 
 ### SetPreferredGamepadInteractTarget

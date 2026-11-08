@@ -7,10 +7,10 @@ Namespace: `C_CreatureInfo`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_CreatureInfo.GetClassInfo](#c_creatureinfogetclassinfo) |  |  |
-| ✅ | [C_CreatureInfo.GetCreatureFamilyIDs](#c_creatureinfogetcreaturefamilyids) | 1 value |  |
+| ✅ | [C_CreatureInfo.GetCreatureFamilyIDs](#c_creatureinfogetcreaturefamilyids) | 1 value | 1 value |
 | ✅ | [C_CreatureInfo.GetCreatureFamilyInfo](#c_creatureinfogetcreaturefamilyinfo) |  |  |
 | ✅ | [C_CreatureInfo.GetCreatureID](#c_creatureinfogetcreatureid) |  |  |
-| ✅ | [C_CreatureInfo.GetCreatureTypeIDs](#c_creatureinfogetcreaturetypeids) | 1 value |  |
+| ✅ | [C_CreatureInfo.GetCreatureTypeIDs](#c_creatureinfogetcreaturetypeids) | 1 value | 1 value |
 | ✅ | [C_CreatureInfo.GetCreatureTypeInfo](#c_creatureinfogetcreaturetypeinfo) |  |  |
 | ✅ | [C_CreatureInfo.GetFactionInfo](#c_creatureinfogetfactioninfo) |  |  |
 | ✅ | [C_CreatureInfo.GetRaceInfo](#c_creatureinfogetraceinfo) |  |  |
@@ -29,6 +29,7 @@ Namespace: `C_CreatureInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number}`
+- Called in combat: returned 1 value: `table{[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number}`
 - Source: client docs `CreatureInfoDocumentation.lua`
 
 ### C_CreatureInfo.GetCreatureFamilyInfo
@@ -53,6 +54,7 @@ Namespace: `C_CreatureInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number}`
+- Called in combat: returned 1 value: `table{[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number}`
 - Source: client docs `CreatureInfoDocumentation.lua`
 
 ### C_CreatureInfo.GetCreatureTypeInfo

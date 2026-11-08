@@ -6,9 +6,9 @@ Namespace: `C_SpellDiminish`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_SpellDiminish.GetAllSpellDiminishCategories](#c_spelldiminishgetallspelldiminishcategories) | 0 values |  |
+| ✅ | [C_SpellDiminish.GetAllSpellDiminishCategories](#c_spelldiminishgetallspelldiminishcategories) | 0 values | 0 values |
 | ✅ | [C_SpellDiminish.GetSpellDiminishCategoryInfo](#c_spelldiminishgetspelldiminishcategoryinfo) |  |  |
-| ✅ | [C_SpellDiminish.IsSystemSupported](#c_spelldiminishissystemsupported) | 1 value |  |
+| ✅ | [C_SpellDiminish.IsSystemSupported](#c_spelldiminishissystemsupported) | 1 value | 1 value |
 | ✅ | [C_SpellDiminish.ShouldTrackSpellDiminishCategory](#c_spelldiminishshouldtrackspelldiminishcategory) |  |  |
 
 ### C_SpellDiminish.GetAllSpellDiminishCategories
@@ -19,6 +19,7 @@ Namespace: `C_SpellDiminish`
 - RequiresSpellDiminishUI (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `SpellDiminishUIDocumentation.lua`
 
 ### C_SpellDiminish.GetSpellDiminishCategoryInfo
@@ -36,6 +37,7 @@ Namespace: `C_SpellDiminish`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpellDiminishUIDocumentation.lua`
 
 ### C_SpellDiminish.ShouldTrackSpellDiminishCategory

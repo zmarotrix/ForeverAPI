@@ -6,29 +6,29 @@ Namespace: `C_Minimap`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_Minimap.CanTrackBattlePets](#c_minimapcantrackbattlepets) | 1 value |  |
+| ✅ | [C_Minimap.CanTrackBattlePets](#c_minimapcantrackbattlepets) | 1 value | 1 value |
 | ✅ | [C_Minimap.ClearAllTracking](#c_minimapclearalltracking) |  |  |
 | ✅ | [C_Minimap.ClearMinimapInsetInfo](#c_minimapclearminimapinsetinfo) |  |  |
 | ✅ | [C_Minimap.GetDefaultTrackingValue](#c_minimapgetdefaulttrackingvalue) |  |  |
-| ✅ | [C_Minimap.GetDrawGroundTextures](#c_minimapgetdrawgroundtextures) | 1 value |  |
-| ✅ | [C_Minimap.GetNumQuestPOIWorldEffects](#c_minimapgetnumquestpoiworldeffects) | 1 value |  |
-| ✅ | [C_Minimap.GetNumTrackingTypes](#c_minimapgetnumtrackingtypes) | 1 value |  |
-| ✅ | [C_Minimap.GetPOITextureCoords](#c_minimapgetpoitexturecoords) | 4 values |  |
+| ✅ | [C_Minimap.GetDrawGroundTextures](#c_minimapgetdrawgroundtextures) | 1 value | 1 value |
+| ✅ | [C_Minimap.GetNumQuestPOIWorldEffects](#c_minimapgetnumquestpoiworldeffects) | 1 value | 1 value |
+| ✅ | [C_Minimap.GetNumTrackingTypes](#c_minimapgetnumtrackingtypes) | 1 value | 1 value |
+| ✅ | [C_Minimap.GetPOITextureCoords](#c_minimapgetpoitexturecoords) | 4 values | 4 values |
 | ✅ | [C_Minimap.GetTrackingFilter](#c_minimapgettrackingfilter) |  |  |
 | ✅ | [C_Minimap.GetTrackingInfo](#c_minimapgettrackinginfo) |  |  |
-| ✅ | [C_Minimap.GetUiMapID](#c_minimapgetuimapid) | 1 value |  |
-| ✅ | [C_Minimap.GetViewRadius](#c_minimapgetviewradius) | 1 value |  |
+| ✅ | [C_Minimap.GetUiMapID](#c_minimapgetuimapid) | 1 value | 1 value |
+| ✅ | [C_Minimap.GetViewRadius](#c_minimapgetviewradius) | 1 value | 1 value |
 | ✅ | [C_Minimap.IsFilteredOut](#c_minimapisfilteredout) |  |  |
 | ✅ | [C_Minimap.IsInsideQuestBlob](#c_minimapisinsidequestblob) |  |  |
-| ✅ | [C_Minimap.IsRotateMinimapIgnored](#c_minimapisrotateminimapignored) | 1 value |  |
-| ✅ | [C_Minimap.IsTrackingAccountCompletedQuests](#c_minimapistrackingaccountcompletedquests) | 1 value |  |
-| ✅ | [C_Minimap.IsTrackingBattlePets](#c_minimapistrackingbattlepets) | 1 value |  |
-| ✅ | [C_Minimap.IsTrackingHiddenQuests](#c_minimapistrackinghiddenquests) | 1 value |  |
+| ✅ | [C_Minimap.IsRotateMinimapIgnored](#c_minimapisrotateminimapignored) | 1 value | 1 value |
+| ✅ | [C_Minimap.IsTrackingAccountCompletedQuests](#c_minimapistrackingaccountcompletedquests) | 1 value | 1 value |
+| ✅ | [C_Minimap.IsTrackingBattlePets](#c_minimapistrackingbattlepets) | 1 value | 1 value |
+| ✅ | [C_Minimap.IsTrackingHiddenQuests](#c_minimapistrackinghiddenquests) | 1 value | 1 value |
 | ✅ | [C_Minimap.SetDrawGroundTextures](#c_minimapsetdrawgroundtextures) |  |  |
 | ✅ | [C_Minimap.SetIgnoreRotateMinimap](#c_minimapsetignorerotateminimap) |  |  |
 | ✅ | [C_Minimap.SetMinimapInsetInfo](#c_minimapsetminimapinsetinfo) |  |  |
 | ✅ | [C_Minimap.SetTracking](#c_minimapsettracking) |  |  |
-| ✅ | [C_Minimap.ShouldUseHybridMinimap](#c_minimapshouldusehybridminimap) | 1 value |  |
+| ✅ | [C_Minimap.ShouldUseHybridMinimap](#c_minimapshouldusehybridminimap) | 1 value | 1 value |
 
 ### C_Minimap.CanTrackBattlePets
 
@@ -36,6 +36,7 @@ Namespace: `C_Minimap`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `MinimapDocumentation.lua`
 
 ### C_Minimap.ClearAllTracking
@@ -66,6 +67,7 @@ Namespace: `C_Minimap`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `MinimapDocumentation.lua`
 
 ### C_Minimap.GetNumQuestPOIWorldEffects
@@ -74,6 +76,7 @@ Namespace: `C_Minimap`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `MinimapDocumentation.lua`
 
 ### C_Minimap.GetNumTrackingTypes
@@ -82,6 +85,7 @@ Namespace: `C_Minimap`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `MinimapDocumentation.lua`
 
 ### C_Minimap.GetPOITextureCoords
@@ -91,6 +95,7 @@ Namespace: `C_Minimap`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 4 values: `number`, `number`, `number`, `number`
+- Called in combat: returned 4 values: `number`, `number`, `number`, `number`
 - Source: client docs `MinimapDocumentation.lua`
 
 ### C_Minimap.GetTrackingFilter
@@ -115,6 +120,7 @@ Namespace: `C_Minimap`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `MinimapDocumentation.lua`
 
 ### C_Minimap.GetViewRadius
@@ -123,6 +129,7 @@ Namespace: `C_Minimap`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `MinimapDocumentation.lua`
 
 ### C_Minimap.IsFilteredOut
@@ -147,6 +154,7 @@ Namespace: `C_Minimap`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `MinimapDocumentation.lua`
 
 ### C_Minimap.IsTrackingAccountCompletedQuests
@@ -155,6 +163,7 @@ Namespace: `C_Minimap`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `MinimapDocumentation.lua`
 
 ### C_Minimap.IsTrackingBattlePets
@@ -163,6 +172,7 @@ Namespace: `C_Minimap`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `MinimapDocumentation.lua`
 
 ### C_Minimap.IsTrackingHiddenQuests
@@ -171,6 +181,7 @@ Namespace: `C_Minimap`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `MinimapDocumentation.lua`
 
 ### C_Minimap.SetDrawGroundTextures
@@ -211,6 +222,7 @@ Namespace: `C_Minimap`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `MinimapDocumentation.lua`
 
 ## Events
@@ -234,14 +246,14 @@ Namespace: `C_Minimap`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 5 times (0 in combat); argument kinds: ``
 
 ### PLAYER_INSIDE_QUEST_BLOB_STATE_CHANGED
 
 - Status: ✅ verified
 - Payload: `questID: number`, `isInside: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 6 times (2 in combat); argument kinds: `n,b`
+- Seen firing 12 times (3 in combat); argument kinds: `n,b`
 
 ## Types
 

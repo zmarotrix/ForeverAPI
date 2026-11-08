@@ -11,7 +11,7 @@ import re
 
 UNIT_TYPES = {"UnitToken", "uiUnit", "UnitTokenRestrictedForAddOns", "UnitTokenVariant", "UnitTokenType"}
 GETTER = re.compile(r"^(Get|Is|Has|Can|Should|Are|Does|Unit|Num)[A-Z0-9]")  # not "Cancel..."
-NEVER = re.compile(r"Reward|Request|Cancel")
+NEVER = re.compile(r"Reward|Request|Cancel|^UnitSet")
 CONTROL_EVENT = "APIPROBE_NOT_A_REAL_EVENT"
 FLAG_SKIP = {"Name", "Type", "Arguments", "Returns", "Documentation", "Payload", "LiteralName", "Fields", "Values"}
 

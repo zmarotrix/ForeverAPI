@@ -4,13 +4,13 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [GetGameTime](#getgametime) | 2 values |  |
-| ✅ | [GetLocalGameTime](#getlocalgametime) | 2 values |  |
-| ✅ | [GetServerTime](#getservertime) | 1 value |  |
-| ✅ | [GetSessionTime](#getsessiontime) | 1 value |  |
-| ✅ | [GetTickTime](#getticktime) | 1 value |  |
-| ✅ | [GetTime](#gettime) | 1 value |  |
-| ✅ | [IsUsingFixedTimeStep](#isusingfixedtimestep) | 1 value |  |
+| ✅ | [GetGameTime](#getgametime) | 2 values | 2 values |
+| ✅ | [GetLocalGameTime](#getlocalgametime) | 2 values | 2 values |
+| ✅ | [GetServerTime](#getservertime) | 1 value | 1 value |
+| ✅ | [GetSessionTime](#getsessiontime) | 1 value | 1 value |
+| ✅ | [GetTickTime](#getticktime) | 1 value | 1 value |
+| ✅ | [GetTime](#gettime) | 1 value | 1 value |
+| ✅ | [IsUsingFixedTimeStep](#isusingfixedtimestep) | 1 value | 1 value |
 
 ### GetGameTime
 
@@ -18,6 +18,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `SystemTimeDocumentation.lua`
 
 ### GetLocalGameTime
@@ -26,6 +27,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `SystemTimeDocumentation.lua`
 
 ### GetServerTime
@@ -34,6 +36,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SystemTimeDocumentation.lua`
 
 ### GetSessionTime
@@ -42,6 +45,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SystemTimeDocumentation.lua`
 
 ### GetTickTime
@@ -50,6 +54,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SystemTimeDocumentation.lua`
 
 ### GetTime
@@ -58,6 +63,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SystemTimeDocumentation.lua`
 
 ### IsUsingFixedTimeStep
@@ -66,4 +72,5 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SystemTimeDocumentation.lua`

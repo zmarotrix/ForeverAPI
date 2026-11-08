@@ -6,8 +6,8 @@ Namespace: `C_CombatText`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_CombatText.GetActiveUnit](#c_combattextgetactiveunit) | 0 values |  |
-| ✅ | [C_CombatText.GetCurrentEventInfo](#c_combattextgetcurrenteventinfo) | 0 values |  |
+| ✅ | [C_CombatText.GetActiveUnit](#c_combattextgetactiveunit) | 0 values | 0 values |
+| ✅ | [C_CombatText.GetCurrentEventInfo](#c_combattextgetcurrenteventinfo) | 0 values | 0 values |
 | ✅ | [C_CombatText.SetActiveUnit](#c_combattextsetactiveunit) |  |  |
 
 ### C_CombatText.GetActiveUnit
@@ -17,6 +17,7 @@ Namespace: `C_CombatText`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CombatTextDocumentation.lua`
 
 ### C_CombatText.GetCurrentEventInfo
@@ -26,6 +27,7 @@ Namespace: `C_CombatText`
 - Status: ✅ verified (function)
 - always returns secret values (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CombatTextDocumentation.lua`
 
 ### C_CombatText.SetActiveUnit

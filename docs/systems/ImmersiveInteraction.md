@@ -6,7 +6,7 @@ Namespace: `C_ImmersiveInteraction`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_ImmersiveInteraction.HasImmersiveInteraction](#c_immersiveinteractionhasimmersiveinteraction) | 1 value |  |
+| ✅ | [C_ImmersiveInteraction.HasImmersiveInteraction](#c_immersiveinteractionhasimmersiveinteraction) | 1 value | 1 value |
 
 ### C_ImmersiveInteraction.HasImmersiveInteraction
 
@@ -14,6 +14,7 @@ Namespace: `C_ImmersiveInteraction`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ImmersiveInteractionManagerDocumentation.lua`
 
 ## Events

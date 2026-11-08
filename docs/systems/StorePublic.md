@@ -8,7 +8,7 @@ Namespace: `C_StorePublic`
 |---|---|---|---|
 | ✅ | [C_StorePublic.DoesGroupHavePurchaseableProducts](#c_storepublicdoesgrouphavepurchaseableproducts) |  |  |
 | ✅ | [C_StorePublic.EventStoreUISetShown](#c_storepubliceventstoreuisetshown) |  |  |
-| ✅ | [C_StorePublic.IsEnabled](#c_storepublicisenabled) | 1 value |  |
+| ✅ | [C_StorePublic.IsEnabled](#c_storepublicisenabled) | 1 value | 1 value |
 
 ### C_StorePublic.DoesGroupHavePurchaseableProducts
 
@@ -32,4 +32,5 @@ Namespace: `C_StorePublic`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `StorePublicUIDocumentation.lua`

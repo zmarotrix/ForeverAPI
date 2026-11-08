@@ -7,8 +7,8 @@
 | ✅ | [GetSpecializationInfoForClassID](#getspecializationinfoforclassid) |  |  |
 | ✅ | [GetSpecializationInfoForSpecID](#getspecializationinfoforspecid) |  |  |
 | ✅ | [GetSpecializationNameForSpecID](#getspecializationnameforspecid) |  |  |
-| ✅ | [GetSpecializationSystem](#getspecializationsystem) | 1 value |  |
-| ✅ | [HasLootSpecializations](#haslootspecializations) | 1 value |  |
+| ✅ | [GetSpecializationSystem](#getspecializationsystem) | 1 value | 1 value |
+| ✅ | [HasLootSpecializations](#haslootspecializations) | 1 value | 1 value |
 
 ### GetSpecializationInfoForClassID
 
@@ -40,6 +40,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SpecializationSharedDocumentation.lua`
 
 ### HasLootSpecializations
@@ -48,6 +49,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpecializationSharedDocumentation.lua`
 
 ## Types

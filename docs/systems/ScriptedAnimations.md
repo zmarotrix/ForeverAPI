@@ -6,7 +6,7 @@ Namespace: `C_ScriptedAnimations`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_ScriptedAnimations.GetAllScriptedAnimationEffects](#c_scriptedanimationsgetallscriptedanimationeffects) | 1 value |  |
+| ✅ | [C_ScriptedAnimations.GetAllScriptedAnimationEffects](#c_scriptedanimationsgetallscriptedanimationeffects) | 1 value | 1 value |
 
 ### C_ScriptedAnimations.GetAllScriptedAnimationEffects
 
@@ -14,6 +14,7 @@ Namespace: `C_ScriptedAnimations`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table}`
+- Called in combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table}`
 - Source: client docs `ScriptedAnimationsDocumentation.lua`
 
 ## Events

@@ -7,8 +7,8 @@ Namespace: `C_ContentTracking`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_ContentTracking.GetBestMapForTrackable](#c_contenttrackinggetbestmapfortrackable) |  |  |
-| ✅ | [C_ContentTracking.GetCollectableSourceTrackingEnabled](#c_contenttrackinggetcollectablesourcetrackingenabled) | 1 value |  |
-| ✅ | [C_ContentTracking.GetCollectableSourceTypes](#c_contenttrackinggetcollectablesourcetypes) | 1 value |  |
+| ✅ | [C_ContentTracking.GetCollectableSourceTrackingEnabled](#c_contenttrackinggetcollectablesourcetrackingenabled) | 1 value | 1 value |
+| ✅ | [C_ContentTracking.GetCollectableSourceTypes](#c_contenttrackinggetcollectablesourcetypes) | 1 value | 1 value |
 | ✅ | [C_ContentTracking.GetCurrentTrackingTarget](#c_contenttrackinggetcurrenttrackingtarget) |  |  |
 | ✅ | [C_ContentTracking.GetEncounterTrackingInfo](#c_contenttrackinggetencountertrackinginfo) |  |  |
 | ✅ | [C_ContentTracking.GetNextWaypointForTrackable](#c_contenttrackinggetnextwaypointfortrackable) |  |  |
@@ -39,6 +39,7 @@ Namespace: `C_ContentTracking`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ContentTrackingDocumentation.lua`
 
 ### C_ContentTracking.GetCollectableSourceTypes
@@ -47,6 +48,7 @@ Namespace: `C_ContentTracking`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{[number]=number,[number]=number}`
+- Called in combat: returned 1 value: `table{[number]=number,[number]=number}`
 - Source: client docs `ContentTrackingDocumentation.lua`
 
 ### C_ContentTracking.GetCurrentTrackingTarget
@@ -190,7 +192,7 @@ Namespace: `C_ContentTracking`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 4 times (0 in combat); argument kinds: ``
 
 ### CONTENT_TRACKING_UPDATE
 

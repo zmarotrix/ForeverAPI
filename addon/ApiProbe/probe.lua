@@ -13,7 +13,7 @@
 -- It never casts, targets, sends or changes a setting; the only calls it makes are getters (Get/Is/Has/Can/...).
 
 local ADDON = ...
-local VERSION = "0.1.3"
+local VERSION = "0.1.4"
 local CHUNK = 1500          -- globals examined per frame while dumping
 local CALLS_PER_FRAME = 20  -- getters called per frame
 local MAX_MEMBERS = 10000   -- members recorded per table (Enum alone has thousands)
@@ -422,7 +422,7 @@ local NEVER = { GetQuestReward = true } -- names that act despite the prefix
 
 local function isGetter(name)
   if NEVER[name] then return false end
-  if name:find("Reward") or name:find("Request") or name:find("Cancel") then return false end
+  if name:find("Reward") or name:find("Request") or name:find("Cancel") or name:find("^UnitSet") then return false end
   for _, p in ipairs(GETTER) do
     if name:find(p) then return true end
   end

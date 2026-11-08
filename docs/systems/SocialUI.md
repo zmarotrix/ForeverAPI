@@ -6,7 +6,7 @@ Namespace: `C_SocialUI`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_SocialUI.IsSystemEnabled](#c_socialuiissystemenabled) | 1 value |  |
+| ✅ | [C_SocialUI.IsSystemEnabled](#c_socialuiissystemenabled) | 1 value | 1 value |
 
 ### C_SocialUI.IsSystemEnabled
 
@@ -14,6 +14,7 @@ Namespace: `C_SocialUI`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SocialUIDocumentation.lua`
 
 ## Events

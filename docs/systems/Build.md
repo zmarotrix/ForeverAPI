@@ -4,17 +4,17 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [GetBuildInfo](#getbuildinfo) | 6 values |  |
+| ✅ | [GetBuildInfo](#getbuildinfo) | 6 values | 6 values |
 | ✅ | [GetBuildOption](#getbuildoption) |  |  |
-| ✅ | [Is64BitClient](#is64bitclient) | 1 value |  |
-| ✅ | [IsBetaBuild](#isbetabuild) | 1 value |  |
-| ✅ | [IsDebugBuild](#isdebugbuild) | 1 value |  |
-| ✅ | [IsLinuxClient](#islinuxclient) | 1 value |  |
-| ✅ | [IsMacClient](#ismacclient) | 1 value |  |
-| ✅ | [IsPublicBuild](#ispublicbuild) | 1 value |  |
-| ✅ | [IsPublicTestClient](#ispublictestclient) | 1 value |  |
-| ✅ | [IsTestBuild](#istestbuild) | 1 value |  |
-| ✅ | [IsWindowsClient](#iswindowsclient) | 1 value |  |
+| ✅ | [Is64BitClient](#is64bitclient) | 1 value | 1 value |
+| ✅ | [IsBetaBuild](#isbetabuild) | 1 value | 1 value |
+| ✅ | [IsDebugBuild](#isdebugbuild) | 1 value | 1 value |
+| ✅ | [IsLinuxClient](#islinuxclient) | 1 value | 1 value |
+| ✅ | [IsMacClient](#ismacclient) | 1 value | 1 value |
+| ✅ | [IsPublicBuild](#ispublicbuild) | 1 value | 1 value |
+| ✅ | [IsPublicTestClient](#ispublictestclient) | 1 value | 1 value |
+| ✅ | [IsTestBuild](#istestbuild) | 1 value | 1 value |
+| ✅ | [IsWindowsClient](#iswindowsclient) | 1 value | 1 value |
 | ✅ | [SupportsClipCursor](#supportsclipcursor) |  |  |
 
 ### GetBuildInfo
@@ -23,6 +23,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 6 values: `string`, `string`, `string`, `number`, `string`, `string`
+- Called in combat: returned 6 values: `string`, `string`, `string`, `number`, `string`, `string`
 - Source: client docs `BuildDocumentation.lua`
 
 ### GetBuildOption
@@ -39,6 +40,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BuildDocumentation.lua`
 
 ### IsBetaBuild
@@ -47,6 +49,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BuildDocumentation.lua`
 
 ### IsDebugBuild
@@ -55,6 +58,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BuildDocumentation.lua`
 
 ### IsLinuxClient
@@ -63,6 +67,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BuildDocumentation.lua`
 
 ### IsMacClient
@@ -71,6 +76,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BuildDocumentation.lua`
 
 ### IsPublicBuild
@@ -79,6 +85,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BuildDocumentation.lua`
 
 ### IsPublicTestClient
@@ -88,6 +95,7 @@
 - Status: ✅ verified (function)
 - Blizzard: Reflects the state of the OnlyBetaAndPTR TOC directive
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BuildDocumentation.lua`
 
 ### IsTestBuild
@@ -96,6 +104,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BuildDocumentation.lua`
 
 ### IsWindowsClient
@@ -104,6 +113,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BuildDocumentation.lua`
 
 ### SupportsClipCursor

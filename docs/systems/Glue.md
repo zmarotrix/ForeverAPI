@@ -6,8 +6,8 @@ Namespace: `C_Glue`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_Glue.IsFirstLoadThisSession](#c_glueisfirstloadthissession) | 1 value |  |
-| ✅ | [C_Glue.IsOnGlueScreen](#c_glueisongluescreen) | 1 value |  |
+| ✅ | [C_Glue.IsFirstLoadThisSession](#c_glueisfirstloadthissession) | 1 value | 1 value |
+| ✅ | [C_Glue.IsOnGlueScreen](#c_glueisongluescreen) | 1 value | 1 value |
 
 ### C_Glue.IsFirstLoadThisSession
 
@@ -15,6 +15,7 @@ Namespace: `C_Glue`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `GlueDocumentation.lua`
 
 ### C_Glue.IsOnGlueScreen
@@ -23,6 +24,7 @@ Namespace: `C_Glue`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `GlueDocumentation.lua`
 
 ## Events

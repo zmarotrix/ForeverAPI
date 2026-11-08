@@ -10,9 +10,9 @@ Namespace: `C_Map`
 | ✅ | [C_Map.ClearUserWaypoint](#c_mapclearuserwaypoint) |  |  |
 | ✅ | [C_Map.CloseWorldMapInteraction](#c_mapcloseworldmapinteraction) |  |  |
 | ✅ | [C_Map.GetAreaInfo](#c_mapgetareainfo) |  |  |
-| ✅ | [C_Map.GetBestMapForUnit](#c_mapgetbestmapforunit) | 1 value |  |
+| ✅ | [C_Map.GetBestMapForUnit](#c_mapgetbestmapforunit) | 1 value | 1 value |
 | ✅ | [C_Map.GetBountySetMaps](#c_mapgetbountysetmaps) |  |  |
-| ✅ | [C_Map.GetFallbackWorldMapID](#c_mapgetfallbackworldmapid) | 1 value |  |
+| ✅ | [C_Map.GetFallbackWorldMapID](#c_mapgetfallbackworldmapid) | 1 value | 1 value |
 | ✅ | [C_Map.GetMapArtBackgroundAtlas](#c_mapgetmapartbackgroundatlas) |  |  |
 | ✅ | [C_Map.GetMapArtHelpTextPosition](#c_mapgetmaparthelptextposition) |  |  |
 | ✅ | [C_Map.GetMapArtID](#c_mapgetmapartid) |  |  |
@@ -34,12 +34,12 @@ Namespace: `C_Map`
 | ✅ | [C_Map.GetMapRectOnMap](#c_mapgetmaprectonmap) |  |  |
 | ✅ | [C_Map.GetMapWorldSize](#c_mapgetmapworldsize) |  |  |
 | ✅ | [C_Map.GetPlayerMapPosition](#c_mapgetplayermapposition) |  |  |
-| ✅ | [C_Map.GetUserWaypoint](#c_mapgetuserwaypoint) | 0 values |  |
+| ✅ | [C_Map.GetUserWaypoint](#c_mapgetuserwaypoint) | 0 values | 0 values |
 | ✅ | [C_Map.GetUserWaypointFromHyperlink](#c_mapgetuserwaypointfromhyperlink) |  |  |
-| ✅ | [C_Map.GetUserWaypointHyperlink](#c_mapgetuserwaypointhyperlink) | 0 values |  |
+| ✅ | [C_Map.GetUserWaypointHyperlink](#c_mapgetuserwaypointhyperlink) | 0 values | 0 values |
 | ✅ | [C_Map.GetUserWaypointPositionForMap](#c_mapgetuserwaypointpositionformap) |  |  |
 | ✅ | [C_Map.GetWorldPosFromMapPos](#c_mapgetworldposfrommappos) |  |  |
-| ✅ | [C_Map.HasUserWaypoint](#c_maphasuserwaypoint) | 1 value |  |
+| ✅ | [C_Map.HasUserWaypoint](#c_maphasuserwaypoint) | 1 value | 1 value |
 | ✅ | [C_Map.IsCityMap](#c_mapiscitymap) |  |  |
 | ✅ | [C_Map.IsMapValidForNavBarDropdown](#c_mapismapvalidfornavbardropdown) |  |  |
 | ✅ | [C_Map.MapHasArt](#c_mapmaphasart) |  |  |
@@ -85,6 +85,7 @@ Namespace: `C_Map`
 - Blizzard: Only works for the player and party members.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetBountySetMaps
@@ -101,6 +102,7 @@ Namespace: `C_Map`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetMapArtBackgroundAtlas
@@ -294,6 +296,7 @@ Namespace: `C_Map`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetUserWaypointFromHyperlink
@@ -312,6 +315,7 @@ Namespace: `C_Map`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.GetUserWaypointPositionForMap
@@ -338,6 +342,7 @@ Namespace: `C_Map`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `MapDocumentation.lua`
 
 ### C_Map.IsCityMap

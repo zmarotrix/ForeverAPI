@@ -5,7 +5,7 @@
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [GetThreatStatusColor](#getthreatstatuscolor) |  |  |
-| ✅ | [IsThreatWarningEnabled](#isthreatwarningenabled) | 1 value |  |
+| ✅ | [IsThreatWarningEnabled](#isthreatwarningenabled) | 1 value | 1 value |
 
 ### GetThreatStatusColor
 
@@ -21,4 +21,5 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ThreatDocumentation.lua`

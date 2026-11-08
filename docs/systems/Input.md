@@ -4,31 +4,31 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [GetCursorCenterPosition](#getcursorcenterposition) | 2 values |  |
-| ✅ | [GetCursorDelta](#getcursordelta) | 2 values |  |
-| ✅ | [GetCursorPosition](#getcursorposition) | 2 values |  |
-| ✅ | [GetMouseButtonClicked](#getmousebuttonclicked) | 1 value |  |
+| ✅ | [GetCursorCenterPosition](#getcursorcenterposition) | 2 values | 2 values |
+| ✅ | [GetCursorDelta](#getcursordelta) | 2 values | 2 values |
+| ✅ | [GetCursorPosition](#getcursorposition) | 2 values | 2 values |
+| ✅ | [GetMouseButtonClicked](#getmousebuttonclicked) | 1 value | 1 value |
 | ✅ | [GetMouseButtonName](#getmousebuttonname) |  |  |
-| ✅ | [GetMouseFoci](#getmousefoci) | 1 value |  |
+| ✅ | [GetMouseFoci](#getmousefoci) | 1 value | 1 value |
 | ✅ | [GetStringFromModifiers](#getstringfrommodifiers) |  |  |
-| ✅ | [IsAltKeyDown](#isaltkeydown) | 1 value |  |
-| ✅ | [IsControlKeyDown](#iscontrolkeydown) | 1 value |  |
-| ✅ | [IsCursorVisible](#iscursorvisible) | 1 value |  |
+| ✅ | [IsAltKeyDown](#isaltkeydown) | 1 value | 1 value |
+| ✅ | [IsControlKeyDown](#iscontrolkeydown) | 1 value | 1 value |
+| ✅ | [IsCursorVisible](#iscursorvisible) | 1 value | 1 value |
 | ✅ | [IsKeyDown](#iskeydown) |  |  |
-| ✅ | [IsLeftAltKeyDown](#isleftaltkeydown) | 1 value |  |
-| ✅ | [IsLeftControlKeyDown](#isleftcontrolkeydown) | 1 value |  |
-| ✅ | [IsLeftMetaKeyDown](#isleftmetakeydown) | 1 value |  |
-| ✅ | [IsLeftShiftKeyDown](#isleftshiftkeydown) | 1 value |  |
-| ✅ | [IsMetaKeyDown](#ismetakeydown) | 1 value |  |
-| ✅ | [IsModifierKeyDown](#ismodifierkeydown) | 1 value |  |
-| ✅ | [IsMouseButtonDown](#ismousebuttondown) | 1 value |  |
-| ✅ | [IsRightAltKeyDown](#isrightaltkeydown) | 1 value |  |
-| ✅ | [IsRightControlKeyDown](#isrightcontrolkeydown) | 1 value |  |
-| ✅ | [IsRightMetaKeyDown](#isrightmetakeydown) | 1 value |  |
-| ✅ | [IsRightShiftKeyDown](#isrightshiftkeydown) | 1 value |  |
-| ✅ | [IsShiftKeyDown](#isshiftkeydown) | 1 value |  |
-| ✅ | [IsUsingGamepad](#isusinggamepad) | 1 value |  |
-| ✅ | [IsUsingMouse](#isusingmouse) | 1 value |  |
+| ✅ | [IsLeftAltKeyDown](#isleftaltkeydown) | 1 value | 1 value |
+| ✅ | [IsLeftControlKeyDown](#isleftcontrolkeydown) | 1 value | 1 value |
+| ✅ | [IsLeftMetaKeyDown](#isleftmetakeydown) | 1 value | 1 value |
+| ✅ | [IsLeftShiftKeyDown](#isleftshiftkeydown) | 1 value | 1 value |
+| ✅ | [IsMetaKeyDown](#ismetakeydown) | 1 value | 1 value |
+| ✅ | [IsModifierKeyDown](#ismodifierkeydown) | 1 value | 1 value |
+| ✅ | [IsMouseButtonDown](#ismousebuttondown) | 1 value | 1 value |
+| ✅ | [IsRightAltKeyDown](#isrightaltkeydown) | 1 value | 1 value |
+| ✅ | [IsRightControlKeyDown](#isrightcontrolkeydown) | 1 value | 1 value |
+| ✅ | [IsRightMetaKeyDown](#isrightmetakeydown) | 1 value | 1 value |
+| ✅ | [IsRightShiftKeyDown](#isrightshiftkeydown) | 1 value | 1 value |
+| ✅ | [IsShiftKeyDown](#isshiftkeydown) | 1 value | 1 value |
+| ✅ | [IsUsingGamepad](#isusinggamepad) | 1 value | 1 value |
+| ✅ | [IsUsingMouse](#isusingmouse) | 1 value | 1 value |
 | ✅ | [MakeModifiers](#makemodifiers) |  |  |
 | ✅ | [SetCursorPosition](#setcursorposition) |  |  |
 | ✅ | [SimulateMouseClick](#simulatemouseclick) |  |  |
@@ -42,6 +42,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `InputDocumentation.lua`
 
 ### GetCursorDelta
@@ -50,6 +51,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `InputDocumentation.lua`
 
 ### GetCursorPosition
@@ -58,6 +60,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `InputDocumentation.lua`
 
 ### GetMouseButtonClicked
@@ -66,6 +69,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `InputDocumentation.lua`
 
 ### GetMouseButtonName
@@ -82,6 +86,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `InputDocumentation.lua`
 
 ### GetStringFromModifiers
@@ -98,6 +103,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `InputDocumentation.lua`
 
 ### IsControlKeyDown
@@ -106,6 +112,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `InputDocumentation.lua`
 
 ### IsCursorVisible
@@ -114,6 +121,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `InputDocumentation.lua`
 
 ### IsKeyDown
@@ -130,6 +138,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `InputDocumentation.lua`
 
 ### IsLeftControlKeyDown
@@ -138,6 +147,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `InputDocumentation.lua`
 
 ### IsLeftMetaKeyDown
@@ -146,6 +156,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `InputDocumentation.lua`
 
 ### IsLeftShiftKeyDown
@@ -154,6 +165,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `InputDocumentation.lua`
 
 ### IsMetaKeyDown
@@ -162,6 +174,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `InputDocumentation.lua`
 
 ### IsModifierKeyDown
@@ -170,6 +183,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `InputDocumentation.lua`
 
 ### IsMouseButtonDown
@@ -179,6 +193,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `InputDocumentation.lua`
 
 ### IsRightAltKeyDown
@@ -187,6 +202,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `InputDocumentation.lua`
 
 ### IsRightControlKeyDown
@@ -195,6 +211,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `InputDocumentation.lua`
 
 ### IsRightMetaKeyDown
@@ -203,6 +220,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `InputDocumentation.lua`
 
 ### IsRightShiftKeyDown
@@ -211,6 +229,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `InputDocumentation.lua`
 
 ### IsShiftKeyDown
@@ -219,6 +238,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `InputDocumentation.lua`
 
 ### IsUsingGamepad
@@ -227,6 +247,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `InputDocumentation.lua`
 
 ### IsUsingMouse
@@ -235,6 +256,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `InputDocumentation.lua`
 
 ### MakeModifiers

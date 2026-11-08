@@ -6,7 +6,7 @@ Namespace: `C_AchievementInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_AchievementInfo.AreGuildAchievementsEnabled](#c_achievementinfoareguildachievementsenabled) | 1 value |  |
+| ✅ | [C_AchievementInfo.AreGuildAchievementsEnabled](#c_achievementinfoareguildachievementsenabled) | 1 value | 1 value |
 | ✅ | [C_AchievementInfo.GetRewardItemID](#c_achievementinfogetrewarditemid) |  |  |
 | ✅ | [C_AchievementInfo.GetSupercedingAchievements](#c_achievementinfogetsupercedingachievements) |  |  |
 | ✅ | [C_AchievementInfo.IsGuildAchievement](#c_achievementinfoisguildachievement) |  |  |
@@ -19,6 +19,7 @@ Namespace: `C_AchievementInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `AchievementInfoDocumentation.lua`
 
 ### C_AchievementInfo.GetRewardItemID
@@ -98,7 +99,7 @@ Namespace: `C_AchievementInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 22 times (20 in combat); argument kinds: ``
+- Seen firing 42 times (40 in combat); argument kinds: ``
 
 ### INSPECT_ACHIEVEMENT_READY
 

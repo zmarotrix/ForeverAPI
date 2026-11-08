@@ -4,7 +4,7 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ⛔ | [IsCollisionEnabled](#iscollisionenabled) | missing |  |
+| ⛔ | [IsCollisionEnabled](#iscollisionenabled) | missing | missing |
 | ⛔ | [ToggleAnimKitDisplay](#toggleanimkitdisplay) |  |  |
 | ⛔ | [ToggleCollision](#togglecollision) |  |  |
 | ⛔ | [ToggleCollisionDisplay](#togglecollisiondisplay) |  |  |
@@ -20,6 +20,7 @@
 
 - Status: ⛔ in Blizzard's docs, not in game
 - Called out of combat: missing at call time
+- Called in combat: missing at call time
 - Source: client docs `DebugToggleDocumentation.lua`
 
 ### ToggleAnimKitDisplay

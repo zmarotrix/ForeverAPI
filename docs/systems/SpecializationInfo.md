@@ -6,30 +6,30 @@ Namespace: `C_SpecializationInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_SpecializationInfo.CanPlayerUsePVPTalentUI](#c_specializationinfocanplayerusepvptalentui) | 2 values |  |
-| ✅ | [C_SpecializationInfo.CanPlayerUseTalentSpecUI](#c_specializationinfocanplayerusetalentspecui) | 2 values |  |
-| ✅ | [C_SpecializationInfo.CanPlayerUseTalentUI](#c_specializationinfocanplayerusetalentui) | 2 values |  |
-| ✅ | [C_SpecializationInfo.GetActiveSpecGroup](#c_specializationinfogetactivespecgroup) | 1 value |  |
-| ✅ | [C_SpecializationInfo.GetAllClassIDs](#c_specializationinfogetallclassids) | 1 value |  |
-| ✅ | [C_SpecializationInfo.GetAllSelectedPvpTalentIDs](#c_specializationinfogetallselectedpvptalentids) | 1 value |  |
+| ✅ | [C_SpecializationInfo.CanPlayerUsePVPTalentUI](#c_specializationinfocanplayerusepvptalentui) | 2 values | 2 values |
+| ✅ | [C_SpecializationInfo.CanPlayerUseTalentSpecUI](#c_specializationinfocanplayerusetalentspecui) | 2 values | 2 values |
+| ✅ | [C_SpecializationInfo.CanPlayerUseTalentUI](#c_specializationinfocanplayerusetalentui) | 2 values | 2 values |
+| ✅ | [C_SpecializationInfo.GetActiveSpecGroup](#c_specializationinfogetactivespecgroup) | 1 value | 1 value |
+| ✅ | [C_SpecializationInfo.GetAllClassIDs](#c_specializationinfogetallclassids) | 1 value | 1 value |
+| ✅ | [C_SpecializationInfo.GetAllSelectedPvpTalentIDs](#c_specializationinfogetallselectedpvptalentids) | 1 value | 1 value |
 | ✅ | [C_SpecializationInfo.GetClassIDFromSpecID](#c_specializationinfogetclassidfromspecid) |  |  |
 | ✅ | [C_SpecializationInfo.GetCombatConfigIDForSpecGroup](#c_specializationinfogetcombatconfigidforspecgroup) |  |  |
 | ✅ | [C_SpecializationInfo.GetInspectSelectedPvpTalent](#c_specializationinfogetinspectselectedpvptalent) |  |  |
-| ✅ | [C_SpecializationInfo.GetInspectSpecialization](#c_specializationinfogetinspectspecialization) | 1 value |  |
+| ✅ | [C_SpecializationInfo.GetInspectSpecialization](#c_specializationinfogetinspectspecialization) | 1 value | 1 value |
 | ✅ | [C_SpecializationInfo.GetNumSpecializationsForClassID](#c_specializationinfogetnumspecializationsforclassid) |  |  |
-| ✅ | [C_SpecializationInfo.GetPvpTalentAlertStatus](#c_specializationinfogetpvptalentalertstatus) | 2 values |  |
+| ✅ | [C_SpecializationInfo.GetPvpTalentAlertStatus](#c_specializationinfogetpvptalentalertstatus) | 2 values | 2 values |
 | ✅ | [C_SpecializationInfo.GetPvpTalentInfo](#c_specializationinfogetpvptalentinfo) |  |  |
 | ✅ | [C_SpecializationInfo.GetPvpTalentSlotInfo](#c_specializationinfogetpvptalentslotinfo) |  |  |
 | ✅ | [C_SpecializationInfo.GetPvpTalentSlotUnlockLevel](#c_specializationinfogetpvptalentslotunlocklevel) |  |  |
 | ✅ | [C_SpecializationInfo.GetPvpTalentUnlockLevel](#c_specializationinfogetpvptalentunlocklevel) |  |  |
 | ✅ | [C_SpecializationInfo.GetSpecIDs](#c_specializationinfogetspecids) |  |  |
-| ✅ | [C_SpecializationInfo.GetSpecialization](#c_specializationinfogetspecialization) | 1 value |  |
+| ✅ | [C_SpecializationInfo.GetSpecialization](#c_specializationinfogetspecialization) | 1 value | 1 value |
 | ✅ | [C_SpecializationInfo.GetSpecializationInfo](#c_specializationinfogetspecializationinfo) |  |  |
 | ✅ | [C_SpecializationInfo.GetSpecializationMasterySpells](#c_specializationinfogetspecializationmasteryspells) |  |  |
 | ✅ | [C_SpecializationInfo.GetSpellsDisplay](#c_specializationinfogetspellsdisplay) |  |  |
 | ✅ | [C_SpecializationInfo.GetTalentInfo](#c_specializationinfogettalentinfo) |  |  |
-| ✅ | [C_SpecializationInfo.HasPlayerEarnedATalentPoint](#c_specializationinfohasplayerearnedatalentpoint) | 1 value |  |
-| ✅ | [C_SpecializationInfo.IsInitialized](#c_specializationinfoisinitialized) | 1 value |  |
+| ✅ | [C_SpecializationInfo.HasPlayerEarnedATalentPoint](#c_specializationinfohasplayerearnedatalentpoint) | 1 value | 1 value |
+| ✅ | [C_SpecializationInfo.IsInitialized](#c_specializationinfoisinitialized) | 1 value | 1 value |
 | ✅ | [C_SpecializationInfo.IsPvpTalentLocked](#c_specializationinfoispvptalentlocked) |  |  |
 | ✅ | [C_SpecializationInfo.IsSpecSelectionEnabled](#c_specializationinfoisspecselectionenabled) |  |  |
 | ✅ | [C_SpecializationInfo.MatchesCurrentSpecSet](#c_specializationinfomatchescurrentspecset) |  |  |
@@ -44,6 +44,7 @@ Namespace: `C_SpecializationInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `boolean`, `string`
+- Called in combat: returned 2 values: `boolean`, `string`
 - Source: client docs `SpecializationInfoDocumentation.lua`
 
 ### C_SpecializationInfo.CanPlayerUseTalentSpecUI
@@ -52,6 +53,7 @@ Namespace: `C_SpecializationInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `boolean`, `string`
+- Called in combat: returned 2 values: `boolean`, `string`
 - Source: client docs `SpecializationInfoDocumentation.lua`
 
 ### C_SpecializationInfo.CanPlayerUseTalentUI
@@ -60,6 +62,7 @@ Namespace: `C_SpecializationInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `boolean`, `string`
+- Called in combat: returned 2 values: `boolean`, `string`
 - Source: client docs `SpecializationInfoDocumentation.lua`
 
 ### C_SpecializationInfo.GetActiveSpecGroup
@@ -69,6 +72,7 @@ Namespace: `C_SpecializationInfo`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SpecializationInfoDocumentation.lua`
 
 ### C_SpecializationInfo.GetAllClassIDs
@@ -77,6 +81,7 @@ Namespace: `C_SpecializationInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number}`
+- Called in combat: returned 1 value: `table{[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number,[number]=number}`
 - Source: client docs `SpecializationInfoDocumentation.lua`
 
 ### C_SpecializationInfo.GetAllSelectedPvpTalentIDs
@@ -85,6 +90,7 @@ Namespace: `C_SpecializationInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `SpecializationInfoDocumentation.lua`
 
 ### C_SpecializationInfo.GetClassIDFromSpecID
@@ -119,6 +125,7 @@ Namespace: `C_SpecializationInfo`
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SpecializationInfoDocumentation.lua`
 
 ### C_SpecializationInfo.GetNumSpecializationsForClassID
@@ -135,6 +142,7 @@ Namespace: `C_SpecializationInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `boolean`, `boolean`
+- Called in combat: returned 2 values: `boolean`, `boolean`
 - Source: client docs `SpecializationInfoDocumentation.lua`
 
 ### C_SpecializationInfo.GetPvpTalentInfo
@@ -184,6 +192,7 @@ Namespace: `C_SpecializationInfo`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SpecializationInfoDocumentation.lua`
 
 ### C_SpecializationInfo.GetSpecializationInfo
@@ -224,6 +233,7 @@ Namespace: `C_SpecializationInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpecializationInfoDocumentation.lua`
 
 ### C_SpecializationInfo.IsInitialized
@@ -232,6 +242,7 @@ Namespace: `C_SpecializationInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SpecializationInfoDocumentation.lua`
 
 ### C_SpecializationInfo.IsPvpTalentLocked
@@ -334,14 +345,14 @@ Namespace: `C_SpecializationInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 5 times (0 in combat); argument kinds: ``
 
 ### PLAYER_TALENT_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 5 times (0 in combat); argument kinds: ``
 
 ### SPEC_INVOLUNTARILY_CHANGED
 

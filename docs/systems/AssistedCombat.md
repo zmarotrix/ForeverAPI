@@ -6,10 +6,10 @@ Namespace: `C_AssistedCombat`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_AssistedCombat.GetActionSpell](#c_assistedcombatgetactionspell) | 1 value |  |
-| ✅ | [C_AssistedCombat.GetNextCastSpell](#c_assistedcombatgetnextcastspell) | 1 value |  |
-| ✅ | [C_AssistedCombat.GetRotationSpells](#c_assistedcombatgetrotationspells) | 1 value |  |
-| ✅ | [C_AssistedCombat.IsAvailable](#c_assistedcombatisavailable) | 2 values |  |
+| ✅ | [C_AssistedCombat.GetActionSpell](#c_assistedcombatgetactionspell) | 1 value | 1 value |
+| ✅ | [C_AssistedCombat.GetNextCastSpell](#c_assistedcombatgetnextcastspell) | 1 value | 1 value |
+| ✅ | [C_AssistedCombat.GetRotationSpells](#c_assistedcombatgetrotationspells) | 1 value | 1 value |
+| ✅ | [C_AssistedCombat.IsAvailable](#c_assistedcombatisavailable) | 2 values | 2 values |
 
 ### C_AssistedCombat.GetActionSpell
 
@@ -17,6 +17,7 @@ Namespace: `C_AssistedCombat`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `AssistedCombatDocumentation.lua`
 
 ### C_AssistedCombat.GetNextCastSpell
@@ -26,6 +27,7 @@ Namespace: `C_AssistedCombat`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `AssistedCombatDocumentation.lua`
 
 ### C_AssistedCombat.GetRotationSpells
@@ -34,6 +36,7 @@ Namespace: `C_AssistedCombat`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `AssistedCombatDocumentation.lua`
 
 ### C_AssistedCombat.IsAvailable
@@ -42,6 +45,7 @@ Namespace: `C_AssistedCombat`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `boolean`, `string`
+- Called in combat: returned 2 values: `boolean`, `string`
 - Source: client docs `AssistedCombatDocumentation.lua`
 
 ## Events

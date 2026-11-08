@@ -51,4 +51,4 @@
 - Status: ✅ verified
 - Payload: `hasTicket: bool`, `numTickets: number?`, `ticketStatus: number?`, `caseIndex: number?`, `waitTimeMinutes: number?`, `waitMessage: cstring?`, `caseTitle: cstring?`, `caseDescription: cstring?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `b,-,-,-,-,-,-,-`
+- Seen firing 4 times (2 in combat); argument kinds: `b,-,-,-,-,-,-,-`

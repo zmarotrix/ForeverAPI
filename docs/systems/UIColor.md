@@ -6,7 +6,7 @@ Namespace: `C_UIColor`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_UIColor.GetColors](#c_uicolorgetcolors) | 1 value |  |
+| ✅ | [C_UIColor.GetColors](#c_uicolorgetcolors) | 1 value | 1 value |
 
 ### C_UIColor.GetColors
 
@@ -14,4 +14,5 @@ Namespace: `C_UIColor`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,...(330)}`
+- Called in combat: returned 1 value: `table{[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,[number]=table,...(330)}`
 - Source: client docs `UIColorDocumentation.lua`

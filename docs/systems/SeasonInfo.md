@@ -6,9 +6,9 @@ Namespace: `C_SeasonInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_SeasonInfo.GetCurrentDisplaySeasonExpansion](#c_seasoninfogetcurrentdisplayseasonexpansion) | 1 value |  |
-| ✅ | [C_SeasonInfo.GetCurrentDisplaySeasonID](#c_seasoninfogetcurrentdisplayseasonid) | 1 value |  |
-| ✅ | [C_SeasonInfo.GetTimeUntilCurrentPVPSeasonEnd](#c_seasoninfogettimeuntilcurrentpvpseasonend) | 1 value |  |
+| ✅ | [C_SeasonInfo.GetCurrentDisplaySeasonExpansion](#c_seasoninfogetcurrentdisplayseasonexpansion) | 1 value | 1 value |
+| ✅ | [C_SeasonInfo.GetCurrentDisplaySeasonID](#c_seasoninfogetcurrentdisplayseasonid) | 1 value | 1 value |
+| ✅ | [C_SeasonInfo.GetTimeUntilCurrentPVPSeasonEnd](#c_seasoninfogettimeuntilcurrentpvpseasonend) | 1 value | 1 value |
 
 ### C_SeasonInfo.GetCurrentDisplaySeasonExpansion
 
@@ -16,6 +16,7 @@ Namespace: `C_SeasonInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SeasonInfoDocumentation.lua`
 
 ### C_SeasonInfo.GetCurrentDisplaySeasonID
@@ -24,6 +25,7 @@ Namespace: `C_SeasonInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SeasonInfoDocumentation.lua`
 
 ### C_SeasonInfo.GetTimeUntilCurrentPVPSeasonEnd
@@ -32,4 +34,5 @@ Namespace: `C_SeasonInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SeasonInfoDocumentation.lua`

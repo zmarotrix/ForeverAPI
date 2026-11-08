@@ -6,10 +6,10 @@ Namespace: `C_DeathRecap`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_DeathRecap.GetRecapEvents](#c_deathrecapgetrecapevents) | 0 values |  |
-| ✅ | [C_DeathRecap.GetRecapLink](#c_deathrecapgetrecaplink) | 1 value |  |
-| ✅ | [C_DeathRecap.GetRecapMaxHealth](#c_deathrecapgetrecapmaxhealth) | 1 value |  |
-| ✅ | [C_DeathRecap.HasRecapEvents](#c_deathrecaphasrecapevents) | 1 value |  |
+| ✅ | [C_DeathRecap.GetRecapEvents](#c_deathrecapgetrecapevents) | 0 values | 0 values |
+| ✅ | [C_DeathRecap.GetRecapLink](#c_deathrecapgetrecaplink) | 1 value | 1 value |
+| ✅ | [C_DeathRecap.GetRecapMaxHealth](#c_deathrecapgetrecapmaxhealth) | 1 value | 1 value |
+| ✅ | [C_DeathRecap.HasRecapEvents](#c_deathrecaphasrecapevents) | 1 value | 1 value |
 
 ### C_DeathRecap.GetRecapEvents
 
@@ -18,6 +18,7 @@ Namespace: `C_DeathRecap`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `DeathRecapDocumentation.lua`
 
 ### C_DeathRecap.GetRecapLink
@@ -27,6 +28,7 @@ Namespace: `C_DeathRecap`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `DeathRecapDocumentation.lua`
 
 ### C_DeathRecap.GetRecapMaxHealth
@@ -37,6 +39,7 @@ Namespace: `C_DeathRecap`
 - Blizzard: Returns the max health for the unit that died in the provided death recap.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `DeathRecapDocumentation.lua`
 
 ### C_DeathRecap.HasRecapEvents
@@ -46,6 +49,7 @@ Namespace: `C_DeathRecap`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `DeathRecapDocumentation.lua`
 
 ## Types

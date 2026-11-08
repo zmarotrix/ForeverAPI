@@ -5,10 +5,10 @@
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [FlashClientIcon](#flashclienticon) |  |  |
-| ✅ | [GetBillingTimeRested](#getbillingtimerested) | 1 value |  |
+| ✅ | [GetBillingTimeRested](#getbillingtimerested) | 1 value | 1 value |
 | ✅ | [GetFileIDFromPath](#getfileidfrompath) |  |  |
-| ✅ | [GetFramerate](#getframerate) | 1 value |  |
-| ✅ | [IsCpuBound](#iscpubound) | 1 value |  |
+| ✅ | [GetFramerate](#getframerate) | 1 value | 1 value |
+| ✅ | [IsCpuBound](#iscpubound) | 1 value | 1 value |
 | ✅ | [PlatformIsHandheld](#platformishandheld) |  |  |
 | ✅ | [ReportBug](#reportbug) |  |  |
 | ✅ | [ReportSuggestion](#reportsuggestion) |  |  |
@@ -31,6 +31,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ClientDocumentation.lua`
 
 ### GetFileIDFromPath
@@ -47,6 +48,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ClientDocumentation.lua`
 
 ### IsCpuBound
@@ -55,6 +57,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `ClientDocumentation.lua`
 
 ### PlatformIsHandheld

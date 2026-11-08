@@ -5,7 +5,7 @@
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [CopyToClipboard](#copytoclipboard) |  |  |
-| ✅ | [GetTimePreciseSec](#gettimeprecisesec) | 1 value |  |
+| ✅ | [GetTimePreciseSec](#gettimeprecisesec) | 1 value | 1 value |
 
 ### CopyToClipboard
 
@@ -22,4 +22,5 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `OsDocumentation.lua`

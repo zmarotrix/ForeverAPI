@@ -7,7 +7,7 @@ Namespace: `C_SplashScreen`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_SplashScreen.AcknowledgeSplash](#c_splashscreenacknowledgesplash) |  |  |
-| ✅ | [C_SplashScreen.CanViewSplashScreen](#c_splashscreencanviewsplashscreen) | 1 value |  |
+| ✅ | [C_SplashScreen.CanViewSplashScreen](#c_splashscreencanviewsplashscreen) | 1 value | 1 value |
 | ✅ | [C_SplashScreen.RequestLatestSplashScreen](#c_splashscreenrequestlatestsplashscreen) |  |  |
 | ✅ | [C_SplashScreen.SendSplashScreenActionLaunchedTelem](#c_splashscreensendsplashscreenactionlaunchedtelem) |  |  |
 | ✅ | [C_SplashScreen.SendSplashScreenCloseTelem](#c_splashscreensendsplashscreenclosetelem) |  |  |
@@ -25,6 +25,7 @@ Namespace: `C_SplashScreen`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SplashScreenDocumentation.lua`
 
 ### C_SplashScreen.RequestLatestSplashScreen
@@ -58,7 +59,7 @@ Namespace: `C_SplashScreen`
 - Status: ✅ verified
 - Payload: `info: SplashScreenInfo?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: `-`
+- Seen firing 4 times (0 in combat); argument kinds: `-`
 
 ## Types
 

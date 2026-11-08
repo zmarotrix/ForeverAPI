@@ -4,11 +4,11 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [GetDefaultScale](#getdefaultscale) | 1 value |  |
-| ✅ | [GetPhysicalScreenSize](#getphysicalscreensize) | 2 values |  |
-| ✅ | [GetScreenDPIScale](#getscreendpiscale) | 1 value |  |
-| ✅ | [GetScreenHeight](#getscreenheight) | 1 value |  |
-| ✅ | [GetScreenWidth](#getscreenwidth) | 1 value |  |
+| ✅ | [GetDefaultScale](#getdefaultscale) | 1 value | 1 value |
+| ✅ | [GetPhysicalScreenSize](#getphysicalscreensize) | 2 values | 2 values |
+| ✅ | [GetScreenDPIScale](#getscreendpiscale) | 1 value | 1 value |
+| ✅ | [GetScreenHeight](#getscreenheight) | 1 value | 1 value |
+| ✅ | [GetScreenWidth](#getscreenwidth) | 1 value | 1 value |
 
 ### GetDefaultScale
 
@@ -16,6 +16,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ScreenDocumentation.lua`
 
 ### GetPhysicalScreenSize
@@ -24,6 +25,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `ScreenDocumentation.lua`
 
 ### GetScreenDPIScale
@@ -32,6 +34,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ScreenDocumentation.lua`
 
 ### GetScreenHeight
@@ -40,6 +43,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ScreenDocumentation.lua`
 
 ### GetScreenWidth
@@ -48,4 +52,5 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ScreenDocumentation.lua`

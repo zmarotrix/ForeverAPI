@@ -6,8 +6,8 @@ Namespace: `C_ArdenwealdGardening`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_ArdenwealdGardening.GetGardenData](#c_ardenwealdgardeninggetgardendata) | 1 value |  |
-| ✅ | [C_ArdenwealdGardening.IsGardenAccessible](#c_ardenwealdgardeningisgardenaccessible) | 1 value |  |
+| ✅ | [C_ArdenwealdGardening.GetGardenData](#c_ardenwealdgardeninggetgardendata) | 1 value | 1 value |
+| ✅ | [C_ArdenwealdGardening.IsGardenAccessible](#c_ardenwealdgardeningisgardenaccessible) | 1 value | 1 value |
 
 ### C_ArdenwealdGardening.GetGardenData
 
@@ -15,6 +15,7 @@ Namespace: `C_ArdenwealdGardening`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{active=number,ready=number,remainingSeconds=number}`
+- Called in combat: returned 1 value: `table{active=number,ready=number,remainingSeconds=number}`
 - Source: client docs `ArdenwealdGardeningDocumentation.lua`
 
 ### C_ArdenwealdGardening.IsGardenAccessible
@@ -23,6 +24,7 @@ Namespace: `C_ArdenwealdGardening`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ArdenwealdGardeningDocumentation.lua`
 
 ## Types

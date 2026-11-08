@@ -9,11 +9,11 @@ Namespace: `C_Commentator`
 | ✅ | [C_Commentator.AddPlayerOverrideName](#c_commentatoraddplayeroverridename) |  |  |
 | ✅ | [C_Commentator.AddTrackedDefensiveAuras](#c_commentatoraddtrackeddefensiveauras) |  |  |
 | ✅ | [C_Commentator.AddTrackedOffensiveAuras](#c_commentatoraddtrackedoffensiveauras) |  |  |
-| ✅ | [C_Commentator.AreTeamsSwapped](#c_commentatorareteamsswapped) | 1 value |  |
+| ✅ | [C_Commentator.AreTeamsSwapped](#c_commentatorareteamsswapped) | 1 value | 1 value |
 | ✅ | [C_Commentator.AssignPlayerToTeam](#c_commentatorassignplayertoteam) |  |  |
 | ✅ | [C_Commentator.AssignPlayersToTeam](#c_commentatorassignplayerstoteam) |  |  |
 | ✅ | [C_Commentator.AssignPlayersToTeamInCurrentInstance](#c_commentatorassignplayerstoteamincurrentinstance) |  |  |
-| ✅ | [C_Commentator.CanUseCommentatorCheats](#c_commentatorcanusecommentatorcheats) | 1 value |  |
+| ✅ | [C_Commentator.CanUseCommentatorCheats](#c_commentatorcanusecommentatorcheats) | 1 value | 1 value |
 | ✅ | [C_Commentator.ClearCameraTarget](#c_commentatorclearcameratarget) |  |  |
 | ✅ | [C_Commentator.ClearFollowTarget](#c_commentatorclearfollowtarget) |  |  |
 | ✅ | [C_Commentator.ClearLookAtTarget](#c_commentatorclearlookattarget) |  |  |
@@ -26,35 +26,35 @@ Namespace: `C_Commentator`
 | ✅ | [C_Commentator.FollowPlayer](#c_commentatorfollowplayer) |  |  |
 | ✅ | [C_Commentator.FollowUnit](#c_commentatorfollowunit) |  |  |
 | ✅ | [C_Commentator.ForceFollowTransition](#c_commentatorforcefollowtransition) |  |  |
-| ✅ | [C_Commentator.GetAdditionalCameraWeight](#c_commentatorgetadditionalcameraweight) | 0 values |  |
-| ✅ | [C_Commentator.GetAdditionalCameraWeightByToken](#c_commentatorgetadditionalcameraweightbytoken) | 0 values |  |
-| ✅ | [C_Commentator.GetAllPlayerOverrideNames](#c_commentatorgetallplayeroverridenames) | 0 values |  |
-| ✅ | [C_Commentator.GetCamera](#c_commentatorgetcamera) | 0 values |  |
-| ✅ | [C_Commentator.GetCameraCollision](#c_commentatorgetcameracollision) | 1 value |  |
-| ✅ | [C_Commentator.GetCameraPosition](#c_commentatorgetcameraposition) | 0 values |  |
-| ✅ | [C_Commentator.GetCombatEventInfo](#c_commentatorgetcombateventinfo) | 0 values |  |
-| ✅ | [C_Commentator.GetCommentatorHistory](#c_commentatorgetcommentatorhistory) | 1 value |  |
-| ✅ | [C_Commentator.GetCommentatorMatchDataState](#c_commentatorgetcommentatormatchdatastate) | 0 values |  |
-| ✅ | [C_Commentator.GetCurrentMapID](#c_commentatorgetcurrentmapid) | 0 values |  |
-| ✅ | [C_Commentator.GetDampeningPercent](#c_commentatorgetdampeningpercent) | 1 value |  |
-| ✅ | [C_Commentator.GetDistanceBeforeForcedHorizontalConvergence](#c_commentatorgetdistancebeforeforcedhorizontalconvergence) | 1 value |  |
-| ✅ | [C_Commentator.GetDurationToForceHorizontalConvergence](#c_commentatorgetdurationtoforcehorizontalconvergence) | 1 value |  |
-| ✅ | [C_Commentator.GetExcludeDistance](#c_commentatorgetexcludedistance) | 1 value |  |
-| ✅ | [C_Commentator.GetHardlockWeight](#c_commentatorgethardlockweight) | 1 value |  |
-| ✅ | [C_Commentator.GetHorizontalAngleThresholdToSmooth](#c_commentatorgethorizontalanglethresholdtosmooth) | 1 value |  |
+| ✅ | [C_Commentator.GetAdditionalCameraWeight](#c_commentatorgetadditionalcameraweight) | 0 values | 0 values |
+| ✅ | [C_Commentator.GetAdditionalCameraWeightByToken](#c_commentatorgetadditionalcameraweightbytoken) | 0 values | 0 values |
+| ✅ | [C_Commentator.GetAllPlayerOverrideNames](#c_commentatorgetallplayeroverridenames) | 0 values | 0 values |
+| ✅ | [C_Commentator.GetCamera](#c_commentatorgetcamera) | 0 values | 0 values |
+| ✅ | [C_Commentator.GetCameraCollision](#c_commentatorgetcameracollision) | 1 value | 1 value |
+| ✅ | [C_Commentator.GetCameraPosition](#c_commentatorgetcameraposition) | 0 values | 0 values |
+| ✅ | [C_Commentator.GetCombatEventInfo](#c_commentatorgetcombateventinfo) | 0 values | 0 values |
+| ✅ | [C_Commentator.GetCommentatorHistory](#c_commentatorgetcommentatorhistory) | 1 value | 1 value |
+| ✅ | [C_Commentator.GetCommentatorMatchDataState](#c_commentatorgetcommentatormatchdatastate) | 0 values | 0 values |
+| ✅ | [C_Commentator.GetCurrentMapID](#c_commentatorgetcurrentmapid) | 0 values | 0 values |
+| ✅ | [C_Commentator.GetDampeningPercent](#c_commentatorgetdampeningpercent) | 1 value | 1 value |
+| ✅ | [C_Commentator.GetDistanceBeforeForcedHorizontalConvergence](#c_commentatorgetdistancebeforeforcedhorizontalconvergence) | 1 value | 1 value |
+| ✅ | [C_Commentator.GetDurationToForceHorizontalConvergence](#c_commentatorgetdurationtoforcehorizontalconvergence) | 1 value | 1 value |
+| ✅ | [C_Commentator.GetExcludeDistance](#c_commentatorgetexcludedistance) | 1 value | 1 value |
+| ✅ | [C_Commentator.GetHardlockWeight](#c_commentatorgethardlockweight) | 1 value | 1 value |
+| ✅ | [C_Commentator.GetHorizontalAngleThresholdToSmooth](#c_commentatorgethorizontalanglethresholdtosmooth) | 1 value | 1 value |
 | ✅ | [C_Commentator.GetIndirectSpellID](#c_commentatorgetindirectspellid) |  |  |
 | ✅ | [C_Commentator.GetInstanceInfo](#c_commentatorgetinstanceinfo) |  |  |
-| ✅ | [C_Commentator.GetLookAtLerpAmount](#c_commentatorgetlookatlerpamount) | 1 value |  |
+| ✅ | [C_Commentator.GetLookAtLerpAmount](#c_commentatorgetlookatlerpamount) | 1 value | 1 value |
 | ✅ | [C_Commentator.GetMapInfo](#c_commentatorgetmapinfo) |  |  |
-| ✅ | [C_Commentator.GetMatchDuration](#c_commentatorgetmatchduration) | 1 value |  |
-| ✅ | [C_Commentator.GetMaxNumPlayersPerTeam](#c_commentatorgetmaxnumplayersperteam) | 1 value |  |
-| ✅ | [C_Commentator.GetMaxNumTeams](#c_commentatorgetmaxnumteams) | 1 value |  |
-| ✅ | [C_Commentator.GetMode](#c_commentatorgetmode) | 1 value |  |
-| ✅ | [C_Commentator.GetMsToHoldForHorizontalMovement](#c_commentatorgetmstoholdforhorizontalmovement) | 1 value |  |
-| ✅ | [C_Commentator.GetMsToHoldForVerticalMovement](#c_commentatorgetmstoholdforverticalmovement) | 1 value |  |
-| ✅ | [C_Commentator.GetMsToSmoothHorizontalChange](#c_commentatorgetmstosmoothhorizontalchange) | 1 value |  |
-| ✅ | [C_Commentator.GetMsToSmoothVerticalChange](#c_commentatorgetmstosmoothverticalchange) | 1 value |  |
-| ✅ | [C_Commentator.GetNumMaps](#c_commentatorgetnummaps) | 1 value |  |
+| ✅ | [C_Commentator.GetMatchDuration](#c_commentatorgetmatchduration) | 1 value | 1 value |
+| ✅ | [C_Commentator.GetMaxNumPlayersPerTeam](#c_commentatorgetmaxnumplayersperteam) | 1 value | 1 value |
+| ✅ | [C_Commentator.GetMaxNumTeams](#c_commentatorgetmaxnumteams) | 1 value | 1 value |
+| ✅ | [C_Commentator.GetMode](#c_commentatorgetmode) | 1 value | 1 value |
+| ✅ | [C_Commentator.GetMsToHoldForHorizontalMovement](#c_commentatorgetmstoholdforhorizontalmovement) | 1 value | 1 value |
+| ✅ | [C_Commentator.GetMsToHoldForVerticalMovement](#c_commentatorgetmstoholdforverticalmovement) | 1 value | 1 value |
+| ✅ | [C_Commentator.GetMsToSmoothHorizontalChange](#c_commentatorgetmstosmoothhorizontalchange) | 1 value | 1 value |
+| ✅ | [C_Commentator.GetMsToSmoothVerticalChange](#c_commentatorgetmstosmoothverticalchange) | 1 value | 1 value |
+| ✅ | [C_Commentator.GetNumMaps](#c_commentatorgetnummaps) | 1 value | 1 value |
 | ✅ | [C_Commentator.GetNumPlayers](#c_commentatorgetnumplayers) |  |  |
 | ✅ | [C_Commentator.GetOrCreateSeries](#c_commentatorgetorcreateseries) |  |  |
 | ✅ | [C_Commentator.GetPlayerAuraInfo](#c_commentatorgetplayeraurainfo) |  |  |
@@ -62,36 +62,36 @@ Namespace: `C_Commentator`
 | ✅ | [C_Commentator.GetPlayerCooldownInfo](#c_commentatorgetplayercooldowninfo) |  |  |
 | ✅ | [C_Commentator.GetPlayerCooldownInfoByUnit](#c_commentatorgetplayercooldowninfobyunit) |  |  |
 | ✅ | [C_Commentator.GetPlayerCrowdControlInfo](#c_commentatorgetplayercrowdcontrolinfo) |  |  |
-| ✅ | [C_Commentator.GetPlayerCrowdControlInfoByUnit](#c_commentatorgetplayercrowdcontrolinfobyunit) | 0 values |  |
+| ✅ | [C_Commentator.GetPlayerCrowdControlInfoByUnit](#c_commentatorgetplayercrowdcontrolinfobyunit) | 0 values | 0 values |
 | ✅ | [C_Commentator.GetPlayerData](#c_commentatorgetplayerdata) |  |  |
 | ✅ | [C_Commentator.GetPlayerFlagInfo](#c_commentatorgetplayerflaginfo) |  |  |
-| ✅ | [C_Commentator.GetPlayerFlagInfoByUnit](#c_commentatorgetplayerflaginfobyunit) | 0 values |  |
+| ✅ | [C_Commentator.GetPlayerFlagInfoByUnit](#c_commentatorgetplayerflaginfobyunit) | 0 values | 0 values |
 | ✅ | [C_Commentator.GetPlayerItemCooldownInfo](#c_commentatorgetplayeritemcooldowninfo) |  |  |
 | ✅ | [C_Commentator.GetPlayerItemCooldownInfoByUnit](#c_commentatorgetplayeritemcooldowninfobyunit) |  |  |
 | ✅ | [C_Commentator.GetPlayerOverrideName](#c_commentatorgetplayeroverridename) |  |  |
 | ✅ | [C_Commentator.GetPlayerSpellCharges](#c_commentatorgetplayerspellcharges) |  |  |
 | ✅ | [C_Commentator.GetPlayerSpellChargesByUnit](#c_commentatorgetplayerspellchargesbyunit) |  |  |
-| ✅ | [C_Commentator.GetPositionLerpAmount](#c_commentatorgetpositionlerpamount) | 1 value |  |
-| ✅ | [C_Commentator.GetSmoothFollowTransitioning](#c_commentatorgetsmoothfollowtransitioning) | 0 values |  |
-| ✅ | [C_Commentator.GetSoftlockWeight](#c_commentatorgetsoftlockweight) | 1 value |  |
-| ✅ | [C_Commentator.GetSpeedFactor](#c_commentatorgetspeedfactor) | 1 value |  |
+| ✅ | [C_Commentator.GetPositionLerpAmount](#c_commentatorgetpositionlerpamount) | 1 value | 1 value |
+| ✅ | [C_Commentator.GetSmoothFollowTransitioning](#c_commentatorgetsmoothfollowtransitioning) | 0 values | 0 values |
+| ✅ | [C_Commentator.GetSoftlockWeight](#c_commentatorgetsoftlockweight) | 1 value | 1 value |
+| ✅ | [C_Commentator.GetSpeedFactor](#c_commentatorgetspeedfactor) | 1 value | 1 value |
 | ✅ | [C_Commentator.GetStartLocation](#c_commentatorgetstartlocation) |  |  |
 | ✅ | [C_Commentator.GetTeamColor](#c_commentatorgetteamcolor) |  |  |
-| ✅ | [C_Commentator.GetTeamColorByUnit](#c_commentatorgetteamcolorbyunit) | 1 value |  |
-| ✅ | [C_Commentator.GetTimeLeftInMatch](#c_commentatorgettimeleftinmatch) | 1 value |  |
+| ✅ | [C_Commentator.GetTeamColorByUnit](#c_commentatorgetteamcolorbyunit) | 1 value | 1 value |
+| ✅ | [C_Commentator.GetTimeLeftInMatch](#c_commentatorgettimeleftinmatch) | 1 value | 1 value |
 | ✅ | [C_Commentator.GetTrackedSpellID](#c_commentatorgettrackedspellid) |  |  |
 | ✅ | [C_Commentator.GetTrackedSpells](#c_commentatorgettrackedspells) |  |  |
 | ✅ | [C_Commentator.GetTrackedSpellsByUnit](#c_commentatorgettrackedspellsbyunit) |  |  |
-| ✅ | [C_Commentator.GetUnitData](#c_commentatorgetunitdata) | 0 values |  |
+| ✅ | [C_Commentator.GetUnitData](#c_commentatorgetunitdata) | 0 values | 0 values |
 | ✅ | [C_Commentator.GetWargameInfo](#c_commentatorgetwargameinfo) |  |  |
-| ✅ | [C_Commentator.HasTrackedAuras](#c_commentatorhastrackedauras) | 0 values |  |
-| ✅ | [C_Commentator.IsSmartCameraLocked](#c_commentatorissmartcameralocked) | 1 value |  |
-| ✅ | [C_Commentator.IsSpectating](#c_commentatorisspectating) | 1 value |  |
+| ✅ | [C_Commentator.HasTrackedAuras](#c_commentatorhastrackedauras) | 0 values | 0 values |
+| ✅ | [C_Commentator.IsSmartCameraLocked](#c_commentatorissmartcameralocked) | 1 value | 1 value |
+| ✅ | [C_Commentator.IsSpectating](#c_commentatorisspectating) | 1 value | 1 value |
 | ✅ | [C_Commentator.IsTrackedDefensiveAura](#c_commentatoristrackeddefensiveaura) |  |  |
 | ✅ | [C_Commentator.IsTrackedOffensiveAura](#c_commentatoristrackedoffensiveaura) |  |  |
 | ✅ | [C_Commentator.IsTrackedSpell](#c_commentatoristrackedspell) |  |  |
 | ✅ | [C_Commentator.IsTrackedSpellByUnit](#c_commentatoristrackedspellbyunit) |  |  |
-| ✅ | [C_Commentator.IsUsingSmartCamera](#c_commentatorisusingsmartcamera) | 1 value |  |
+| ✅ | [C_Commentator.IsUsingSmartCamera](#c_commentatorisusingsmartcamera) | 1 value | 1 value |
 | ✅ | [C_Commentator.LookAtPlayer](#c_commentatorlookatplayer) |  |  |
 | ✅ | [C_Commentator.RemoveAllOverrideNames](#c_commentatorremovealloverridenames) |  |  |
 | ✅ | [C_Commentator.RemovePlayerOverrideName](#c_commentatorremoveplayeroverridename) |  |  |
@@ -183,6 +183,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.AssignPlayerToTeam
@@ -215,6 +216,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.ClearCameraTarget
@@ -324,6 +326,7 @@ Namespace: `C_Commentator`
 - Status: ✅ verified (function)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetAdditionalCameraWeightByToken
@@ -335,6 +338,7 @@ Namespace: `C_Commentator`
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetAllPlayerOverrideNames
@@ -344,6 +348,7 @@ Namespace: `C_Commentator`
 - Status: ✅ verified (function)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetCamera
@@ -354,6 +359,7 @@ Namespace: `C_Commentator`
 - may return nothing (Blizzard's docs; not checked in game)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetCameraCollision
@@ -362,6 +368,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetCameraPosition
@@ -372,6 +379,7 @@ Namespace: `C_Commentator`
 - may return nothing (Blizzard's docs; not checked in game)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetCombatEventInfo
@@ -381,6 +389,7 @@ Namespace: `C_Commentator`
 - Status: ✅ verified (function)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetCommentatorHistory
@@ -389,6 +398,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{overrideNameDirectory=table,series=table,teamDirectory=table}`
+- Called in combat: returned 1 value: `table{overrideNameDirectory=table,series=table,teamDirectory=table}`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetCommentatorMatchDataState
@@ -398,6 +408,7 @@ Namespace: `C_Commentator`
 - Status: ✅ verified (function)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetCurrentMapID
@@ -407,6 +418,7 @@ Namespace: `C_Commentator`
 - Status: ✅ verified (function)
 - RequiresCommentator (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetDampeningPercent
@@ -415,6 +427,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetDistanceBeforeForcedHorizontalConvergence
@@ -423,6 +436,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetDurationToForceHorizontalConvergence
@@ -431,6 +445,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetExcludeDistance
@@ -439,6 +454,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetHardlockWeight
@@ -447,6 +463,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetHorizontalAngleThresholdToSmooth
@@ -455,6 +472,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetIndirectSpellID
@@ -482,6 +500,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetMapInfo
@@ -500,6 +519,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetMaxNumPlayersPerTeam
@@ -508,6 +528,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetMaxNumTeams
@@ -516,6 +537,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetMode
@@ -524,6 +546,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetMsToHoldForHorizontalMovement
@@ -532,6 +555,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetMsToHoldForVerticalMovement
@@ -540,6 +564,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetMsToSmoothHorizontalChange
@@ -548,6 +573,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetMsToSmoothVerticalChange
@@ -556,6 +582,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetNumMaps
@@ -564,6 +591,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetNumPlayers
@@ -643,6 +671,7 @@ Namespace: `C_Commentator`
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetPlayerData
@@ -671,6 +700,7 @@ Namespace: `C_Commentator`
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetPlayerItemCooldownInfo
@@ -728,6 +758,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetSmoothFollowTransitioning
@@ -737,6 +768,7 @@ Namespace: `C_Commentator`
 - Status: ✅ verified (function)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetSoftlockWeight
@@ -745,6 +777,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetSpeedFactor
@@ -753,6 +786,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetStartLocation
@@ -779,6 +813,7 @@ Namespace: `C_Commentator`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `table{GenerateHexColor=function,GenerateHexColorMarkup=function,GenerateHexColorNoAlpha=function,GetHSL=function,GetRGB=function,GetRGBA=function,GetRGBAAsBytes=function,GetRGBAsBytes=function,IsEqualTo=function,IsRGBEqualTo=function,OnLoad=function,SetRGB=function,SetRGBA=function,WrapTextInColorCode=function,b=number,g=number,r=number}`
+- Called in combat: returned 1 value: `table{GenerateHexColor=function,GenerateHexColorMarkup=function,GenerateHexColorNoAlpha=function,GetHSL=function,GetRGB=function,GetRGBA=function,GetRGBAAsBytes=function,GetRGBAsBytes=function,IsEqualTo=function,IsRGBEqualTo=function,OnLoad=function,SetRGB=function,SetRGBA=function,WrapTextInColorCode=function,b=number,g=number,r=number}`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetTimeLeftInMatch
@@ -787,6 +822,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetTrackedSpellID
@@ -824,6 +860,7 @@ Namespace: `C_Commentator`
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.GetWargameInfo
@@ -844,6 +881,7 @@ Namespace: `C_Commentator`
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.IsSmartCameraLocked
@@ -852,6 +890,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.IsSpectating
@@ -860,6 +899,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.IsTrackedDefensiveAura
@@ -904,6 +944,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
 ### C_Commentator.LookAtPlayer

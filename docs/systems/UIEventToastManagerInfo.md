@@ -7,7 +7,7 @@ Namespace: `C_EventToastManager`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_EventToastManager.GetLevelUpDisplayToastsFromLevel](#c_eventtoastmanagergetlevelupdisplaytoastsfromlevel) |  |  |
-| ✅ | [C_EventToastManager.GetNextToastToDisplay](#c_eventtoastmanagergetnexttoasttodisplay) | 0 values |  |
+| ✅ | [C_EventToastManager.GetNextToastToDisplay](#c_eventtoastmanagergetnexttoasttodisplay) | 0 values | 0 values |
 | ✅ | [C_EventToastManager.RemoveCurrentToast](#c_eventtoastmanagerremovecurrenttoast) |  |  |
 
 ### C_EventToastManager.GetLevelUpDisplayToastsFromLevel
@@ -26,6 +26,7 @@ Namespace: `C_EventToastManager`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `UIEventToastManagerDocumentation.lua`
 
 ### C_EventToastManager.RemoveCurrentToast

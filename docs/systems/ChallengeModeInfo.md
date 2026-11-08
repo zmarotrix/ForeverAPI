@@ -9,27 +9,27 @@ Namespace: `C_ChallengeMode`
 | ✅ | [C_ChallengeMode.CanUseKeystoneInCurrentMap](#c_challengemodecanusekeystoneincurrentmap) |  |  |
 | ✅ | [C_ChallengeMode.ClearKeystone](#c_challengemodeclearkeystone) |  |  |
 | ✅ | [C_ChallengeMode.CloseKeystoneFrame](#c_challengemodeclosekeystoneframe) |  |  |
-| ✅ | [C_ChallengeMode.GetActiveChallengeMapID](#c_challengemodegetactivechallengemapid) | 1 value |  |
-| ✅ | [C_ChallengeMode.GetActiveKeystoneInfo](#c_challengemodegetactivekeystoneinfo) | 3 values |  |
+| ✅ | [C_ChallengeMode.GetActiveChallengeMapID](#c_challengemodegetactivechallengemapid) | 1 value | 1 value |
+| ✅ | [C_ChallengeMode.GetActiveKeystoneInfo](#c_challengemodegetactivekeystoneinfo) | 3 values | 3 values |
 | ✅ | [C_ChallengeMode.GetAffixInfo](#c_challengemodegetaffixinfo) |  |  |
-| ✅ | [C_ChallengeMode.GetChallengeCompletionInfo](#c_challengemodegetchallengecompletioninfo) | 1 value |  |
-| ✅ | [C_ChallengeMode.GetDeathCount](#c_challengemodegetdeathcount) | 0 values |  |
+| ✅ | [C_ChallengeMode.GetChallengeCompletionInfo](#c_challengemodegetchallengecompletioninfo) | 1 value | 1 value |
+| ✅ | [C_ChallengeMode.GetDeathCount](#c_challengemodegetdeathcount) | 0 values | 0 values |
 | ✅ | [C_ChallengeMode.GetDungeonScoreRarityColor](#c_challengemodegetdungeonscoreraritycolor) |  |  |
-| ✅ | [C_ChallengeMode.GetGuildLeaders](#c_challengemodegetguildleaders) | 1 value |  |
+| ✅ | [C_ChallengeMode.GetGuildLeaders](#c_challengemodegetguildleaders) | 1 value | 1 value |
 | ✅ | [C_ChallengeMode.GetKeystoneLevelRarityColor](#c_challengemodegetkeystonelevelraritycolor) |  |  |
-| ✅ | [C_ChallengeMode.GetLeaverPenaltyWarningTimeLeft](#c_challengemodegetleaverpenaltywarningtimeleft) | 1 value |  |
-| ✅ | [C_ChallengeMode.GetMapScoreInfo](#c_challengemodegetmapscoreinfo) | 0 values |  |
-| ✅ | [C_ChallengeMode.GetMapTable](#c_challengemodegetmaptable) | 1 value |  |
+| ✅ | [C_ChallengeMode.GetLeaverPenaltyWarningTimeLeft](#c_challengemodegetleaverpenaltywarningtimeleft) | 1 value | 1 value |
+| ✅ | [C_ChallengeMode.GetMapScoreInfo](#c_challengemodegetmapscoreinfo) | 0 values | 0 values |
+| ✅ | [C_ChallengeMode.GetMapTable](#c_challengemodegetmaptable) | 1 value | 1 value |
 | ✅ | [C_ChallengeMode.GetMapUIInfo](#c_challengemodegetmapuiinfo) |  |  |
-| ✅ | [C_ChallengeMode.GetOverallDungeonScore](#c_challengemodegetoveralldungeonscore) | 1 value |  |
+| ✅ | [C_ChallengeMode.GetOverallDungeonScore](#c_challengemodegetoveralldungeonscore) | 1 value | 1 value |
 | ✅ | [C_ChallengeMode.GetPowerLevelDamageHealthMod](#c_challengemodegetpowerleveldamagehealthmod) |  |  |
-| ✅ | [C_ChallengeMode.GetSlottedKeystoneInfo](#c_challengemodegetslottedkeystoneinfo) | 0 values |  |
+| ✅ | [C_ChallengeMode.GetSlottedKeystoneInfo](#c_challengemodegetslottedkeystoneinfo) | 0 values | 0 values |
 | ✅ | [C_ChallengeMode.GetSpecificDungeonOverallScoreRarityColor](#c_challengemodegetspecificdungeonoverallscoreraritycolor) |  |  |
 | ✅ | [C_ChallengeMode.GetSpecificDungeonScoreRarityColor](#c_challengemodegetspecificdungeonscoreraritycolor) |  |  |
-| ✅ | [C_ChallengeMode.GetStartTime](#c_challengemodegetstarttime) | 1 value |  |
-| ✅ | [C_ChallengeMode.HasSlottedKeystone](#c_challengemodehasslottedkeystone) | 1 value |  |
-| ✅ | [C_ChallengeMode.IsChallengeModeActive](#c_challengemodeischallengemodeactive) | 1 value |  |
-| ✅ | [C_ChallengeMode.IsChallengeModeResettable](#c_challengemodeischallengemoderesettable) | 1 value |  |
+| ✅ | [C_ChallengeMode.GetStartTime](#c_challengemodegetstarttime) | 1 value | 1 value |
+| ✅ | [C_ChallengeMode.HasSlottedKeystone](#c_challengemodehasslottedkeystone) | 1 value | 1 value |
+| ✅ | [C_ChallengeMode.IsChallengeModeActive](#c_challengemodeischallengemodeactive) | 1 value | 1 value |
+| ✅ | [C_ChallengeMode.IsChallengeModeResettable](#c_challengemodeischallengemoderesettable) | 1 value | 1 value |
 | ✅ | [C_ChallengeMode.RemoveKeystone](#c_challengemoderemovekeystone) |  |  |
 | ✅ | [C_ChallengeMode.RequestLeaders](#c_challengemoderequestleaders) |  |  |
 | ✅ | [C_ChallengeMode.Reset](#c_challengemodereset) |  |  |
@@ -64,6 +64,7 @@ Namespace: `C_ChallengeMode`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `ChallengeModeInfoDocumentation.lua`
 
 ### C_ChallengeMode.GetActiveKeystoneInfo
@@ -72,6 +73,7 @@ Namespace: `C_ChallengeMode`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 3 values: `number`, `table{}`, `boolean`
+- Called in combat: returned 3 values: `number`, `table{}`, `boolean`
 - Source: client docs `ChallengeModeInfoDocumentation.lua`
 
 ### C_ChallengeMode.GetAffixInfo
@@ -89,6 +91,7 @@ Namespace: `C_ChallengeMode`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{isAffixRecord=boolean,isEligibleForScore=boolean,isMapRecord=boolean,keystoneUpgradeLevels=number,level=number,mapChallengeModeID=number,members=table,onTime=boolean,practiceRun=boolean,time=number}`
+- Called in combat: returned 1 value: `table{isAffixRecord=boolean,isEligibleForScore=boolean,isMapRecord=boolean,keystoneUpgradeLevels=number,level=number,mapChallengeModeID=number,members=table,onTime=boolean,practiceRun=boolean,time=number}`
 - Source: client docs `ChallengeModeInfoDocumentation.lua`
 
 ### C_ChallengeMode.GetDeathCount
@@ -98,6 +101,7 @@ Namespace: `C_ChallengeMode`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ChallengeModeInfoDocumentation.lua`
 
 ### C_ChallengeMode.GetDungeonScoreRarityColor
@@ -116,6 +120,7 @@ Namespace: `C_ChallengeMode`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `ChallengeModeInfoDocumentation.lua`
 
 ### C_ChallengeMode.GetKeystoneLevelRarityColor
@@ -134,6 +139,7 @@ Namespace: `C_ChallengeMode`
 - Status: ✅ verified (function)
 - Blizzard: Returns how much time is left before player is automatically flagged as a leaver (and removed from the group) for exiting a restricted challenge mode instance
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ChallengeModeInfoDocumentation.lua`
 
 ### C_ChallengeMode.GetMapScoreInfo
@@ -143,6 +149,7 @@ Namespace: `C_ChallengeMode`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ChallengeModeInfoDocumentation.lua`
 
 ### C_ChallengeMode.GetMapTable
@@ -151,6 +158,7 @@ Namespace: `C_ChallengeMode`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `ChallengeModeInfoDocumentation.lua`
 
 ### C_ChallengeMode.GetMapUIInfo
@@ -169,6 +177,7 @@ Namespace: `C_ChallengeMode`
 - Status: ✅ verified (function)
 - Blizzard: Gets the overall season mythic+ rating for the player.
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ChallengeModeInfoDocumentation.lua`
 
 ### C_ChallengeMode.GetPowerLevelDamageHealthMod
@@ -187,6 +196,7 @@ Namespace: `C_ChallengeMode`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `ChallengeModeInfoDocumentation.lua`
 
 ### C_ChallengeMode.GetSpecificDungeonOverallScoreRarityColor
@@ -213,6 +223,7 @@ Namespace: `C_ChallengeMode`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ChallengeModeInfoDocumentation.lua`
 
 ### C_ChallengeMode.HasSlottedKeystone
@@ -221,6 +232,7 @@ Namespace: `C_ChallengeMode`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ChallengeModeInfoDocumentation.lua`
 
 ### C_ChallengeMode.IsChallengeModeActive
@@ -229,6 +241,7 @@ Namespace: `C_ChallengeMode`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ChallengeModeInfoDocumentation.lua`
 
 ### C_ChallengeMode.IsChallengeModeResettable
@@ -237,6 +250,7 @@ Namespace: `C_ChallengeMode`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ChallengeModeInfoDocumentation.lua`
 
 ### C_ChallengeMode.RemoveKeystone

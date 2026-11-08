@@ -7,12 +7,12 @@ Namespace: `C_CurrencyInfo`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_CurrencyInfo.CanTransferCurrency](#c_currencyinfocantransfercurrency) |  |  |
-| ✅ | [C_CurrencyInfo.DoesCurrentFilterRequireAccountCurrencyData](#c_currencyinfodoescurrentfilterrequireaccountcurrencydata) | 1 value |  |
+| ✅ | [C_CurrencyInfo.DoesCurrentFilterRequireAccountCurrencyData](#c_currencyinfodoescurrentfilterrequireaccountcurrencydata) | 1 value | 1 value |
 | ✅ | [C_CurrencyInfo.DoesWarModeBonusApply](#c_currencyinfodoeswarmodebonusapply) |  |  |
 | ✅ | [C_CurrencyInfo.ExpandCurrencyList](#c_currencyinfoexpandcurrencylist) |  |  |
 | ✅ | [C_CurrencyInfo.FetchCurrencyDataFromAccountCharacters](#c_currencyinfofetchcurrencydatafromaccountcharacters) |  |  |
 | ✅ | [C_CurrencyInfo.FetchCurrencyTransferTransactions](#c_currencyinfofetchcurrencytransfertransactions) |  |  |
-| ✅ | [C_CurrencyInfo.GetAzeriteCurrencyID](#c_currencyinfogetazeritecurrencyid) | 1 value |  |
+| ✅ | [C_CurrencyInfo.GetAzeriteCurrencyID](#c_currencyinfogetazeritecurrencyid) | 1 value | 1 value |
 | ✅ | [C_CurrencyInfo.GetBackpackCurrencyInfo](#c_currencyinfogetbackpackcurrencyinfo) |  |  |
 | ✅ | [C_CurrencyInfo.GetBasicCurrencyInfo](#c_currencyinfogetbasiccurrencyinfo) |  |  |
 | ✅ | [C_CurrencyInfo.GetCoinIcon](#c_currencyinfogetcoinicon) |  |  |
@@ -21,25 +21,25 @@ Namespace: `C_CurrencyInfo`
 | ✅ | [C_CurrencyInfo.GetCostToTransferCurrency](#c_currencyinfogetcosttotransfercurrency) |  |  |
 | ✅ | [C_CurrencyInfo.GetCurrencyContainerInfo](#c_currencyinfogetcurrencycontainerinfo) |  |  |
 | ✅ | [C_CurrencyInfo.GetCurrencyDescription](#c_currencyinfogetcurrencydescription) |  |  |
-| ✅ | [C_CurrencyInfo.GetCurrencyFilter](#c_currencyinfogetcurrencyfilter) | 1 value |  |
+| ✅ | [C_CurrencyInfo.GetCurrencyFilter](#c_currencyinfogetcurrencyfilter) | 1 value | 1 value |
 | ✅ | [C_CurrencyInfo.GetCurrencyIDFromLink](#c_currencyinfogetcurrencyidfromlink) |  |  |
 | ✅ | [C_CurrencyInfo.GetCurrencyInfo](#c_currencyinfogetcurrencyinfo) |  |  |
 | ✅ | [C_CurrencyInfo.GetCurrencyInfoFromLink](#c_currencyinfogetcurrencyinfofromlink) |  |  |
 | ✅ | [C_CurrencyInfo.GetCurrencyLink](#c_currencyinfogetcurrencylink) |  |  |
 | ✅ | [C_CurrencyInfo.GetCurrencyListInfo](#c_currencyinfogetcurrencylistinfo) |  |  |
 | ✅ | [C_CurrencyInfo.GetCurrencyListLink](#c_currencyinfogetcurrencylistlink) |  |  |
-| ✅ | [C_CurrencyInfo.GetCurrencyListSize](#c_currencyinfogetcurrencylistsize) | 1 value |  |
-| ✅ | [C_CurrencyInfo.GetDragonIslesSuppliesCurrencyID](#c_currencyinfogetdragonislessuppliescurrencyid) | 1 value |  |
+| ✅ | [C_CurrencyInfo.GetCurrencyListSize](#c_currencyinfogetcurrencylistsize) | 1 value | 1 value |
+| ✅ | [C_CurrencyInfo.GetDragonIslesSuppliesCurrencyID](#c_currencyinfogetdragonislessuppliescurrencyid) | 1 value | 1 value |
 | ✅ | [C_CurrencyInfo.GetFactionGrantedByCurrency](#c_currencyinfogetfactiongrantedbycurrency) |  |  |
 | ✅ | [C_CurrencyInfo.GetMaxTransferableAmountFromQuantity](#c_currencyinfogetmaxtransferableamountfromquantity) |  |  |
 | ✅ | [C_CurrencyInfo.GetPlayerCurrencyCategoryInfo](#c_currencyinfogetplayercurrencycategoryinfo) |  |  |
-| ✅ | [C_CurrencyInfo.GetWarResourcesCurrencyID](#c_currencyinfogetwarresourcescurrencyid) | 1 value |  |
-| ✅ | [C_CurrencyInfo.IsAccountCharacterCurrencyDataReady](#c_currencyinfoisaccountcharactercurrencydataready) | 1 value |  |
+| ✅ | [C_CurrencyInfo.GetWarResourcesCurrencyID](#c_currencyinfogetwarresourcescurrencyid) | 1 value | 1 value |
+| ✅ | [C_CurrencyInfo.IsAccountCharacterCurrencyDataReady](#c_currencyinfoisaccountcharactercurrencydataready) | 1 value | 1 value |
 | ✅ | [C_CurrencyInfo.IsAccountTransferableCurrency](#c_currencyinfoisaccounttransferablecurrency) |  |  |
 | ✅ | [C_CurrencyInfo.IsAccountWideCurrency](#c_currencyinfoisaccountwidecurrency) |  |  |
 | ✅ | [C_CurrencyInfo.IsCurrencyContainer](#c_currencyinfoiscurrencycontainer) |  |  |
-| ✅ | [C_CurrencyInfo.IsCurrencyTransferInProgress](#c_currencyinfoiscurrencytransferinprogress) | 1 value |  |
-| ✅ | [C_CurrencyInfo.IsCurrencyTransferTransactionDataReady](#c_currencyinfoiscurrencytransfertransactiondataready) | 1 value |  |
+| ✅ | [C_CurrencyInfo.IsCurrencyTransferInProgress](#c_currencyinfoiscurrencytransferinprogress) | 1 value | 1 value |
+| ✅ | [C_CurrencyInfo.IsCurrencyTransferTransactionDataReady](#c_currencyinfoiscurrencytransfertransactiondataready) | 1 value | 1 value |
 | ✅ | [C_CurrencyInfo.PickupCurrency](#c_currencyinfopickupcurrency) |  |  |
 | ✅ | [C_CurrencyInfo.PlayerHasMaxQuantity](#c_currencyinfoplayerhasmaxquantity) |  |  |
 | ✅ | [C_CurrencyInfo.PlayerHasMaxWeeklyQuantity](#c_currencyinfoplayerhasmaxweeklyquantity) |  |  |
@@ -64,6 +64,7 @@ Namespace: `C_CurrencyInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.DoesWarModeBonusApply
@@ -104,6 +105,7 @@ Namespace: `C_CurrencyInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.GetBackpackCurrencyInfo
@@ -179,6 +181,7 @@ Namespace: `C_CurrencyInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.GetCurrencyIDFromLink
@@ -238,6 +241,7 @@ Namespace: `C_CurrencyInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.GetDragonIslesSuppliesCurrencyID
@@ -246,6 +250,7 @@ Namespace: `C_CurrencyInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.GetFactionGrantedByCurrency
@@ -279,6 +284,7 @@ Namespace: `C_CurrencyInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.IsAccountCharacterCurrencyDataReady
@@ -287,6 +293,7 @@ Namespace: `C_CurrencyInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.IsAccountTransferableCurrency
@@ -319,6 +326,7 @@ Namespace: `C_CurrencyInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.IsCurrencyTransferTransactionDataReady
@@ -327,6 +335,7 @@ Namespace: `C_CurrencyInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.PickupCurrency
@@ -421,7 +430,7 @@ Namespace: `C_CurrencyInfo`
 - Status: ✅ verified
 - Payload: `currencyType: number?`, `quantity: number?`, `quantityChange: number?`, `quantityGainSource: number?`, `destroyReason: number?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: `-,-,-,-,-`
+- Seen firing 5 times (0 in combat); argument kinds: `-,-,-,-,-`
 
 ### CURRENCY_TRANSFER_FAILED
 

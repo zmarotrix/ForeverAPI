@@ -6,7 +6,7 @@ Namespace: `C_Bank`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_Bank.AreAnyBankTypesViewable](#c_bankareanybanktypesviewable) | 1 value |  |
+| ✅ | [C_Bank.AreAnyBankTypesViewable](#c_bankareanybanktypesviewable) | 1 value | 1 value |
 | ✅ | [C_Bank.AutoDepositItemsIntoBank](#c_bankautodeposititemsintobank) |  |  |
 | ✅ | [C_Bank.BankBagTypeAndIDToInvSlot](#c_bankbankbagtypeandidtoinvslot) |  |  |
 | ✅ | [C_Bank.CanDepositMoney](#c_bankcandepositmoney) |  |  |
@@ -29,7 +29,7 @@ Namespace: `C_Bank`
 | ✅ | [C_Bank.HasMaxBankTabs](#c_bankhasmaxbanktabs) |  |  |
 | ✅ | [C_Bank.IsItemAllowedInBankType](#c_bankisitemallowedinbanktype) |  |  |
 | ✅ | [C_Bank.PurchaseBankTab](#c_bankpurchasebanktab) |  |  |
-| ✅ | [C_Bank.ShouldUsePlayerBagsInBank](#c_bankshoulduseplayerbagsinbank) | 1 value |  |
+| ✅ | [C_Bank.ShouldUsePlayerBagsInBank](#c_bankshoulduseplayerbagsinbank) | 1 value | 1 value |
 | ✅ | [C_Bank.UpdateBankTabSettings](#c_bankupdatebanktabsettings) |  |  |
 | ✅ | [C_Bank.WithdrawMoney](#c_bankwithdrawmoney) |  |  |
 
@@ -39,6 +39,7 @@ Namespace: `C_Bank`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BankDocumentation.lua`
 
 ### C_Bank.AutoDepositItemsIntoBank
@@ -222,6 +223,7 @@ Namespace: `C_Bank`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BankDocumentation.lua`
 
 ### C_Bank.UpdateBankTabSettings

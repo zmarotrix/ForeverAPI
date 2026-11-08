@@ -10,8 +10,8 @@ Namespace: `C_AuctionHouse`
 | ✅ | [C_AuctionHouse.CalculateItemDeposit](#c_auctionhousecalculateitemdeposit) |  |  |
 | ✅ | [C_AuctionHouse.CanCancelAuction](#c_auctionhousecancancelauction) |  |  |
 | ✅ | [C_AuctionHouse.CancelAuction](#c_auctionhousecancelauction) |  |  |
-| ✅ | [C_AuctionHouse.CancelCommoditiesPurchase](#c_auctionhousecancelcommoditiespurchase) | 0 values |  |
-| ✅ | [C_AuctionHouse.CancelSell](#c_auctionhousecancelsell) | 0 values |  |
+| ✅ | [C_AuctionHouse.CancelCommoditiesPurchase](#c_auctionhousecancelcommoditiespurchase) | 0 values | 0 values |
+| ✅ | [C_AuctionHouse.CancelSell](#c_auctionhousecancelsell) | 0 values | 0 values |
 | ✅ | [C_AuctionHouse.CloseAuctionHouse](#c_auctionhousecloseauctionhouse) |  |  |
 | ✅ | [C_AuctionHouse.ConfirmCommoditiesPurchase](#c_auctionhouseconfirmcommoditiespurchase) |  |  |
 | ✅ | [C_AuctionHouse.ConfirmPostCommodity](#c_auctionhouseconfirmpostcommodity) |  |  |
@@ -22,13 +22,13 @@ Namespace: `C_AuctionHouse`
 | ✅ | [C_AuctionHouse.GetAvailablePostCount](#c_auctionhousegetavailablepostcount) |  |  |
 | ✅ | [C_AuctionHouse.GetBidInfo](#c_auctionhousegetbidinfo) |  |  |
 | ✅ | [C_AuctionHouse.GetBidType](#c_auctionhousegetbidtype) |  |  |
-| ✅ | [C_AuctionHouse.GetBids](#c_auctionhousegetbids) | 1 value |  |
-| ✅ | [C_AuctionHouse.GetBrowseResults](#c_auctionhousegetbrowseresults) | 1 value |  |
+| ✅ | [C_AuctionHouse.GetBids](#c_auctionhousegetbids) | 1 value | 1 value |
+| ✅ | [C_AuctionHouse.GetBrowseResults](#c_auctionhousegetbrowseresults) | 1 value | 1 value |
 | ✅ | [C_AuctionHouse.GetCancelCost](#c_auctionhousegetcancelcost) |  |  |
 | ✅ | [C_AuctionHouse.GetCommoditySearchResultInfo](#c_auctionhousegetcommoditysearchresultinfo) |  |  |
 | ✅ | [C_AuctionHouse.GetCommoditySearchResultsQuantity](#c_auctionhousegetcommoditysearchresultsquantity) |  |  |
 | ✅ | [C_AuctionHouse.GetExtraBrowseInfo](#c_auctionhousegetextrabrowseinfo) |  |  |
-| ✅ | [C_AuctionHouse.GetFilterGroups](#c_auctionhousegetfiltergroups) | 1 value |  |
+| ✅ | [C_AuctionHouse.GetFilterGroups](#c_auctionhousegetfiltergroups) | 1 value | 1 value |
 | ✅ | [C_AuctionHouse.GetItemCommodityStatus](#c_auctionhousegetitemcommoditystatus) |  |  |
 | ✅ | [C_AuctionHouse.GetItemKeyFromItem](#c_auctionhousegetitemkeyfromitem) |  |  |
 | ✅ | [C_AuctionHouse.GetItemKeyInfo](#c_auctionhousegetitemkeyinfo) |  |  |
@@ -36,40 +36,40 @@ Namespace: `C_AuctionHouse`
 | ✅ | [C_AuctionHouse.GetItemKeySampleLink](#c_auctionhousegetitemkeysamplelink) |  |  |
 | ✅ | [C_AuctionHouse.GetItemSearchResultInfo](#c_auctionhousegetitemsearchresultinfo) |  |  |
 | ✅ | [C_AuctionHouse.GetItemSearchResultsQuantity](#c_auctionhousegetitemsearchresultsquantity) |  |  |
-| ✅ | [C_AuctionHouse.GetMaxBidItemBid](#c_auctionhousegetmaxbiditembid) | 1 value |  |
-| ✅ | [C_AuctionHouse.GetMaxBidItemBuyout](#c_auctionhousegetmaxbiditembuyout) | 1 value |  |
+| ✅ | [C_AuctionHouse.GetMaxBidItemBid](#c_auctionhousegetmaxbiditembid) | 1 value | 1 value |
+| ✅ | [C_AuctionHouse.GetMaxBidItemBuyout](#c_auctionhousegetmaxbiditembuyout) | 1 value | 1 value |
 | ✅ | [C_AuctionHouse.GetMaxCommoditySearchResultPrice](#c_auctionhousegetmaxcommoditysearchresultprice) |  |  |
 | ✅ | [C_AuctionHouse.GetMaxItemSearchResultBid](#c_auctionhousegetmaxitemsearchresultbid) |  |  |
 | ✅ | [C_AuctionHouse.GetMaxItemSearchResultBuyout](#c_auctionhousegetmaxitemsearchresultbuyout) |  |  |
-| ✅ | [C_AuctionHouse.GetMaxOwnedAuctionBid](#c_auctionhousegetmaxownedauctionbid) | 1 value |  |
-| ✅ | [C_AuctionHouse.GetMaxOwnedAuctionBuyout](#c_auctionhousegetmaxownedauctionbuyout) | 1 value |  |
-| ✅ | [C_AuctionHouse.GetNumBidTypes](#c_auctionhousegetnumbidtypes) | 1 value |  |
-| ✅ | [C_AuctionHouse.GetNumBids](#c_auctionhousegetnumbids) | 1 value |  |
+| ✅ | [C_AuctionHouse.GetMaxOwnedAuctionBid](#c_auctionhousegetmaxownedauctionbid) | 1 value | 1 value |
+| ✅ | [C_AuctionHouse.GetMaxOwnedAuctionBuyout](#c_auctionhousegetmaxownedauctionbuyout) | 1 value | 1 value |
+| ✅ | [C_AuctionHouse.GetNumBidTypes](#c_auctionhousegetnumbidtypes) | 1 value | 1 value |
+| ✅ | [C_AuctionHouse.GetNumBids](#c_auctionhousegetnumbids) | 1 value | 1 value |
 | ✅ | [C_AuctionHouse.GetNumCommoditySearchResults](#c_auctionhousegetnumcommoditysearchresults) |  |  |
 | ✅ | [C_AuctionHouse.GetNumItemSearchResults](#c_auctionhousegetnumitemsearchresults) |  |  |
-| ✅ | [C_AuctionHouse.GetNumOwnedAuctionTypes](#c_auctionhousegetnumownedauctiontypes) | 1 value |  |
-| ✅ | [C_AuctionHouse.GetNumOwnedAuctions](#c_auctionhousegetnumownedauctions) | 1 value |  |
-| ✅ | [C_AuctionHouse.GetNumReplicateItems](#c_auctionhousegetnumreplicateitems) | 1 value |  |
+| ✅ | [C_AuctionHouse.GetNumOwnedAuctionTypes](#c_auctionhousegetnumownedauctiontypes) | 1 value | 1 value |
+| ✅ | [C_AuctionHouse.GetNumOwnedAuctions](#c_auctionhousegetnumownedauctions) | 1 value | 1 value |
+| ✅ | [C_AuctionHouse.GetNumReplicateItems](#c_auctionhousegetnumreplicateitems) | 1 value | 1 value |
 | ✅ | [C_AuctionHouse.GetOwnedAuctionInfo](#c_auctionhousegetownedauctioninfo) |  |  |
 | ✅ | [C_AuctionHouse.GetOwnedAuctionType](#c_auctionhousegetownedauctiontype) |  |  |
-| ✅ | [C_AuctionHouse.GetOwnedAuctions](#c_auctionhousegetownedauctions) | 1 value |  |
-| ✅ | [C_AuctionHouse.GetQuoteDurationRemaining](#c_auctionhousegetquotedurationremaining) | 1 value |  |
+| ✅ | [C_AuctionHouse.GetOwnedAuctions](#c_auctionhousegetownedauctions) | 1 value | 1 value |
+| ✅ | [C_AuctionHouse.GetQuoteDurationRemaining](#c_auctionhousegetquotedurationremaining) | 1 value | 1 value |
 | ✅ | [C_AuctionHouse.GetReplicateItemBattlePetInfo](#c_auctionhousegetreplicateitembattlepetinfo) |  |  |
 | ✅ | [C_AuctionHouse.GetReplicateItemInfo](#c_auctionhousegetreplicateiteminfo) |  |  |
 | ✅ | [C_AuctionHouse.GetReplicateItemLink](#c_auctionhousegetreplicateitemlink) |  |  |
 | ✅ | [C_AuctionHouse.GetReplicateItemTimeLeft](#c_auctionhousegetreplicateitemtimeleft) |  |  |
 | ✅ | [C_AuctionHouse.GetTimeLeftBandInfo](#c_auctionhousegettimeleftbandinfo) |  |  |
-| ✅ | [C_AuctionHouse.HasFavorites](#c_auctionhousehasfavorites) | 1 value |  |
-| ✅ | [C_AuctionHouse.HasFullBidResults](#c_auctionhousehasfullbidresults) | 1 value |  |
-| ✅ | [C_AuctionHouse.HasFullBrowseResults](#c_auctionhousehasfullbrowseresults) | 1 value |  |
+| ✅ | [C_AuctionHouse.HasFavorites](#c_auctionhousehasfavorites) | 1 value | 1 value |
+| ✅ | [C_AuctionHouse.HasFullBidResults](#c_auctionhousehasfullbidresults) | 1 value | 1 value |
+| ✅ | [C_AuctionHouse.HasFullBrowseResults](#c_auctionhousehasfullbrowseresults) | 1 value | 1 value |
 | ✅ | [C_AuctionHouse.HasFullCommoditySearchResults](#c_auctionhousehasfullcommoditysearchresults) |  |  |
 | ✅ | [C_AuctionHouse.HasFullItemSearchResults](#c_auctionhousehasfullitemsearchresults) |  |  |
-| ✅ | [C_AuctionHouse.HasFullOwnedAuctionResults](#c_auctionhousehasfullownedauctionresults) | 1 value |  |
-| ✅ | [C_AuctionHouse.HasMaxFavorites](#c_auctionhousehasmaxfavorites) | 1 value |  |
+| ✅ | [C_AuctionHouse.HasFullOwnedAuctionResults](#c_auctionhousehasfullownedauctionresults) | 1 value | 1 value |
+| ✅ | [C_AuctionHouse.HasMaxFavorites](#c_auctionhousehasmaxfavorites) | 1 value | 1 value |
 | ✅ | [C_AuctionHouse.HasSearchResults](#c_auctionhousehassearchresults) |  |  |
 | ✅ | [C_AuctionHouse.IsFavoriteItem](#c_auctionhouseisfavoriteitem) |  |  |
 | ✅ | [C_AuctionHouse.IsSellItemValid](#c_auctionhouseissellitemvalid) |  |  |
-| ✅ | [C_AuctionHouse.IsThrottledMessageSystemReady](#c_auctionhouseisthrottledmessagesystemready) | 1 value |  |
+| ✅ | [C_AuctionHouse.IsThrottledMessageSystemReady](#c_auctionhouseisthrottledmessagesystemready) | 1 value | 1 value |
 | ✅ | [C_AuctionHouse.MakeItemKey](#c_auctionhousemakeitemkey) |  |  |
 | ✅ | [C_AuctionHouse.PlaceBid](#c_auctionhouseplacebid) |  |  |
 | ✅ | [C_AuctionHouse.PostCommodity](#c_auctionhousepostcommodity) |  |  |
@@ -89,7 +89,7 @@ Namespace: `C_AuctionHouse`
 | ✅ | [C_AuctionHouse.SendSearchQuery](#c_auctionhousesendsearchquery) |  |  |
 | ✅ | [C_AuctionHouse.SendSellSearchQuery](#c_auctionhousesendsellsearchquery) |  |  |
 | ✅ | [C_AuctionHouse.SetFavoriteItem](#c_auctionhousesetfavoriteitem) |  |  |
-| ✅ | [C_AuctionHouse.ShouldAutoPopulatePrice](#c_auctionhouseshouldautopopulateprice) | 1 value |  |
+| ✅ | [C_AuctionHouse.ShouldAutoPopulatePrice](#c_auctionhouseshouldautopopulateprice) | 1 value | 1 value |
 | ✅ | [C_AuctionHouse.StartCommoditiesPurchase](#c_auctionhousestartcommoditiespurchase) |  |  |
 | ✅ | [C_AuctionHouse.SupportsCopperValues](#c_auctionhousesupportscoppervalues) |  |  |
 
@@ -132,6 +132,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.CancelSell
@@ -140,6 +141,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.CloseAuctionHouse
@@ -228,6 +230,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.GetBrowseResults
@@ -236,6 +239,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.GetCancelCost
@@ -277,6 +281,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{[number]=table,[number]=table}`
+- Called in combat: returned 1 value: `table{[number]=table,[number]=table}`
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.GetItemCommodityStatus
@@ -343,6 +348,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.GetMaxBidItemBuyout
@@ -351,6 +357,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.GetMaxCommoditySearchResultPrice
@@ -383,6 +390,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.GetMaxOwnedAuctionBuyout
@@ -391,6 +399,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.GetNumBidTypes
@@ -399,6 +408,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.GetNumBids
@@ -407,6 +417,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.GetNumCommoditySearchResults
@@ -431,6 +442,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.GetNumOwnedAuctions
@@ -439,6 +451,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.GetNumReplicateItems
@@ -447,6 +460,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.GetOwnedAuctionInfo
@@ -471,6 +485,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.GetQuoteDurationRemaining
@@ -479,6 +494,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.GetReplicateItemBattlePetInfo
@@ -528,6 +544,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.HasFullBidResults
@@ -536,6 +553,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.HasFullBrowseResults
@@ -544,6 +562,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.HasFullCommoditySearchResults
@@ -568,6 +587,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.HasMaxFavorites
@@ -576,6 +596,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.HasSearchResults
@@ -608,6 +629,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.MakeItemKey
@@ -772,6 +794,7 @@ Namespace: `C_AuctionHouse`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `AuctionHouseDocumentation.lua`
 
 ### C_AuctionHouse.StartCommoditiesPurchase

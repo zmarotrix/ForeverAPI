@@ -6,7 +6,7 @@
 |---|---|---|---|
 | ✅ | [CinematicFinished](#cinematicfinished) |  |  |
 | ✅ | [CinematicStarted](#cinematicstarted) |  |  |
-| ✅ | [GetCurrentCinematicSummary](#getcurrentcinematicsummary) | 1 value |  |
+| ✅ | [GetCurrentCinematicSummary](#getcurrentcinematicsummary) | 1 value | 1 value |
 | ✅ | [InCinematic](#incinematic) |  |  |
 | ✅ | [MouseOverrideCinematicDisable](#mouseoverridecinematicdisable) |  |  |
 | ✅ | [OpeningCinematic](#openingcinematic) |  |  |
@@ -34,6 +34,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `CinematicDocumentation.lua`
 
 ### InCinematic

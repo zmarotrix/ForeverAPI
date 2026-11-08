@@ -11,12 +11,12 @@ Namespace: `C_DateAndTime`
 | ✅ | [C_DateAndTime.AdjustTimeByMonths](#c_dateandtimeadjusttimebymonths) |  |  |
 | ✅ | [C_DateAndTime.CompareCalendarTime](#c_dateandtimecomparecalendartime) |  |  |
 | ✅ | [C_DateAndTime.GetCalendarTimeFromEpoch](#c_dateandtimegetcalendartimefromepoch) |  |  |
-| ✅ | [C_DateAndTime.GetCurrentCalendarTime](#c_dateandtimegetcurrentcalendartime) | 1 value |  |
-| ✅ | [C_DateAndTime.GetSecondsUntilDailyReset](#c_dateandtimegetsecondsuntildailyreset) | 1 value |  |
-| ✅ | [C_DateAndTime.GetSecondsUntilWeeklyReset](#c_dateandtimegetsecondsuntilweeklyreset) | 1 value |  |
-| ✅ | [C_DateAndTime.GetServerTimeLocal](#c_dateandtimegetservertimelocal) | 1 value |  |
-| ✅ | [C_DateAndTime.GetWeeklyResetStartTime](#c_dateandtimegetweeklyresetstarttime) | 1 value |  |
-| ✅ | [C_DateAndTime.IsDayTime](#c_dateandtimeisdaytime) | 1 value |  |
+| ✅ | [C_DateAndTime.GetCurrentCalendarTime](#c_dateandtimegetcurrentcalendartime) | 1 value | 1 value |
+| ✅ | [C_DateAndTime.GetSecondsUntilDailyReset](#c_dateandtimegetsecondsuntildailyreset) | 1 value | 1 value |
+| ✅ | [C_DateAndTime.GetSecondsUntilWeeklyReset](#c_dateandtimegetsecondsuntilweeklyreset) | 1 value | 1 value |
+| ✅ | [C_DateAndTime.GetServerTimeLocal](#c_dateandtimegetservertimelocal) | 1 value | 1 value |
+| ✅ | [C_DateAndTime.GetWeeklyResetStartTime](#c_dateandtimegetweeklyresetstarttime) | 1 value | 1 value |
+| ✅ | [C_DateAndTime.IsDayTime](#c_dateandtimeisdaytime) | 1 value | 1 value |
 
 ### C_DateAndTime.AdjustTimeByDays
 
@@ -65,6 +65,7 @@ Namespace: `C_DateAndTime`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{hour=number,minute=number,month=number,monthDay=number,weekday=number,year=number}`
+- Called in combat: returned 1 value: `table{hour=number,minute=number,month=number,monthDay=number,weekday=number,year=number}`
 - Source: client docs `DateAndTimeDocumentation.lua`
 
 ### C_DateAndTime.GetSecondsUntilDailyReset
@@ -73,6 +74,7 @@ Namespace: `C_DateAndTime`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `DateAndTimeDocumentation.lua`
 
 ### C_DateAndTime.GetSecondsUntilWeeklyReset
@@ -81,6 +83,7 @@ Namespace: `C_DateAndTime`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `DateAndTimeDocumentation.lua`
 
 ### C_DateAndTime.GetServerTimeLocal
@@ -89,6 +92,7 @@ Namespace: `C_DateAndTime`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `DateAndTimeDocumentation.lua`
 
 ### C_DateAndTime.GetWeeklyResetStartTime
@@ -97,6 +101,7 @@ Namespace: `C_DateAndTime`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `DateAndTimeDocumentation.lua`
 
 ### C_DateAndTime.IsDayTime
@@ -105,6 +110,7 @@ Namespace: `C_DateAndTime`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `DateAndTimeDocumentation.lua`
 
 ## Events

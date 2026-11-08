@@ -4,10 +4,10 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [GetAvailableBandwidth](#getavailablebandwidth) | 1 value |  |
-| ✅ | [GetBackgroundLoadingStatus](#getbackgroundloadingstatus) | 1 value |  |
-| ✅ | [GetDownloadedPercentage](#getdownloadedpercentage) | 1 value |  |
-| ✅ | [GetFileStreamingStatus](#getfilestreamingstatus) | 1 value |  |
+| ✅ | [GetAvailableBandwidth](#getavailablebandwidth) | 1 value | 1 value |
+| ✅ | [GetBackgroundLoadingStatus](#getbackgroundloadingstatus) | 1 value | 1 value |
+| ✅ | [GetDownloadedPercentage](#getdownloadedpercentage) | 1 value | 1 value |
+| ✅ | [GetFileStreamingStatus](#getfilestreamingstatus) | 1 value | 1 value |
 
 ### GetAvailableBandwidth
 
@@ -15,6 +15,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `StreamingDocumentation.lua`
 
 ### GetBackgroundLoadingStatus
@@ -23,6 +24,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `StreamingDocumentation.lua`
 
 ### GetDownloadedPercentage
@@ -31,6 +33,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `StreamingDocumentation.lua`
 
 ### GetFileStreamingStatus
@@ -39,4 +42,5 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `StreamingDocumentation.lua`

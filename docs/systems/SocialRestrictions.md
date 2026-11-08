@@ -8,15 +8,15 @@ Namespace: `C_SocialRestrictions`
 |---|---|---|---|
 | ✅ | [C_SocialRestrictions.AcknowledgeAgeVerificationRestriction](#c_socialrestrictionsacknowledgeageverificationrestriction) |  |  |
 | ✅ | [C_SocialRestrictions.AcknowledgeRegionalChatDisabled](#c_socialrestrictionsacknowledgeregionalchatdisabled) |  |  |
-| ✅ | [C_SocialRestrictions.CanReceiveChat](#c_socialrestrictionscanreceivechat) | 1 value |  |
-| ✅ | [C_SocialRestrictions.CanSendChat](#c_socialrestrictionscansendchat) | 1 value |  |
-| ✅ | [C_SocialRestrictions.IsAgeVerificationRestricted](#c_socialrestrictionsisageverificationrestricted) | 1 value |  |
-| ✅ | [C_SocialRestrictions.IsAgeVerificationRestrictedMinor](#c_socialrestrictionsisageverificationrestrictedminor) | protected |  |
-| ✅ | [C_SocialRestrictions.IsChatDisabled](#c_socialrestrictionsischatdisabled) | 1 value |  |
-| ✅ | [C_SocialRestrictions.IsFriendsDisabled](#c_socialrestrictionsisfriendsdisabled) | 1 value |  |
-| ✅ | [C_SocialRestrictions.IsMuted](#c_socialrestrictionsismuted) | 1 value |  |
-| ✅ | [C_SocialRestrictions.IsSilenced](#c_socialrestrictionsissilenced) | 1 value |  |
-| ✅ | [C_SocialRestrictions.IsSquelched](#c_socialrestrictionsissquelched) | 1 value |  |
+| ✅ | [C_SocialRestrictions.CanReceiveChat](#c_socialrestrictionscanreceivechat) | 1 value | 1 value |
+| ✅ | [C_SocialRestrictions.CanSendChat](#c_socialrestrictionscansendchat) | 1 value | 1 value |
+| ✅ | [C_SocialRestrictions.IsAgeVerificationRestricted](#c_socialrestrictionsisageverificationrestricted) | 1 value | 1 value |
+| ✅ | [C_SocialRestrictions.IsAgeVerificationRestrictedMinor](#c_socialrestrictionsisageverificationrestrictedminor) | 💥 forbidden | 💥 forbidden |
+| ✅ | [C_SocialRestrictions.IsChatDisabled](#c_socialrestrictionsischatdisabled) | 1 value | 1 value |
+| ✅ | [C_SocialRestrictions.IsFriendsDisabled](#c_socialrestrictionsisfriendsdisabled) | 1 value | 1 value |
+| ✅ | [C_SocialRestrictions.IsMuted](#c_socialrestrictionsismuted) | 1 value | 1 value |
+| ✅ | [C_SocialRestrictions.IsSilenced](#c_socialrestrictionsissilenced) | 1 value | 1 value |
+| ✅ | [C_SocialRestrictions.IsSquelched](#c_socialrestrictionsissquelched) | 1 value | 1 value |
 | ✅ | [C_SocialRestrictions.SetChatDisabled](#c_socialrestrictionssetchatdisabled) |  |  |
 
 ### C_SocialRestrictions.AcknowledgeAgeVerificationRestriction
@@ -40,6 +40,7 @@ Namespace: `C_SocialRestrictions`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the player meets all conditions that allow them to receive chat messages.
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SocialRestrictionsDocumentation.lua`
 
 ### C_SocialRestrictions.CanSendChat
@@ -49,6 +50,7 @@ Namespace: `C_SocialRestrictions`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the player meets all conditions that allow them to send chat messages.
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SocialRestrictionsDocumentation.lua`
 
 ### C_SocialRestrictions.IsAgeVerificationRestricted
@@ -58,6 +60,7 @@ Namespace: `C_SocialRestrictions`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the account is restricted by the Age Verification feature.
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SocialRestrictionsDocumentation.lua`
 
 ### C_SocialRestrictions.IsAgeVerificationRestrictedMinor
@@ -67,7 +70,8 @@ Namespace: `C_SocialRestrictions`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the Age Verification restriction is because the account belongs to a minor, as opposed to an adult who has not yet verified their age.
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: ⛔ protected: calling it raised ADDON_ACTION_FORBIDDEN
+- Called out of combat: 💥 not called: forbidden
+- Called in combat: 💥 not called: forbidden
 - Source: client docs `SocialRestrictionsDocumentation.lua`
 
 ### C_SocialRestrictions.IsChatDisabled
@@ -76,6 +80,7 @@ Namespace: `C_SocialRestrictions`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SocialRestrictionsDocumentation.lua`
 
 ### C_SocialRestrictions.IsFriendsDisabled
@@ -84,6 +89,7 @@ Namespace: `C_SocialRestrictions`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SocialRestrictionsDocumentation.lua`
 
 ### C_SocialRestrictions.IsMuted
@@ -92,6 +98,7 @@ Namespace: `C_SocialRestrictions`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SocialRestrictionsDocumentation.lua`
 
 ### C_SocialRestrictions.IsSilenced
@@ -100,6 +107,7 @@ Namespace: `C_SocialRestrictions`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SocialRestrictionsDocumentation.lua`
 
 ### C_SocialRestrictions.IsSquelched
@@ -108,6 +116,7 @@ Namespace: `C_SocialRestrictions`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SocialRestrictionsDocumentation.lua`
 
 ### C_SocialRestrictions.SetChatDisabled

@@ -10,9 +10,9 @@
 | ✅ | [CaseAccentInsensitiveParse](#caseaccentinsensitiveparse) |  |  |
 | ✅ | [CreateAbbreviateConfig](#createabbreviateconfig) |  |  |
 | ✅ | [DeclineName](#declinename) |  |  |
-| ⛔ | [GetDefaultAbbreviationBreakpoints](#getdefaultabbreviationbreakpoints) | missing |  |
+| ⛔ | [GetDefaultAbbreviationBreakpoints](#getdefaultabbreviationbreakpoints) | missing | missing |
 | ✅ | [GetNumDeclensionSets](#getnumdeclensionsets) |  |  |
-| ✅ | [IsEuropeanNumbers](#iseuropeannumbers) | 1 value |  |
+| ✅ | [IsEuropeanNumbers](#iseuropeannumbers) | 1 value | 1 value |
 | ✅ | [LocalizedClassList](#localizedclasslist) |  |  |
 | ✅ | [SetEuropeanNumbers](#seteuropeannumbers) |  |  |
 
@@ -73,6 +73,7 @@
 - Namespace: C_StringUtil (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: missing at call time
+- Called in combat: missing at call time
 - Source: client docs `LocalizationDocumentation.lua`
 
 ### GetNumDeclensionSets
@@ -89,6 +90,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `LocalizationDocumentation.lua`
 
 ### LocalizedClassList

@@ -10,13 +10,13 @@
 | ✅ | [Ambiguate](#ambiguate) |  |  |
 | ✅ | [AutoEquipCursorItem](#autoequipcursoritem) |  |  |
 | ✅ | [BeginTrade](#begintrade) |  |  |
-| ✅ | [CanDualWield](#candualwield) | 1 value |  |
-| ✅ | [CanInspect](#caninspect) | 1 value |  |
+| ✅ | [CanDualWield](#candualwield) | 1 value | 1 value |
+| ✅ | [CanInspect](#caninspect) | 1 value | 1 value |
 | ✅ | [CanLootUnit](#canlootunit) |  |  |
-| ✅ | [CanPortGraveyard](#canportgraveyard) | 1 value |  |
-| ✅ | [CancelAreaSpiritHeal](#cancelareaspiritheal) | 0 values |  |
+| ✅ | [CanPortGraveyard](#canportgraveyard) | 1 value | 1 value |
+| ✅ | [CancelAreaSpiritHeal](#cancelareaspiritheal) | 0 values | 0 values |
 | ✅ | [CancelPendingEquip](#cancelpendingequip) |  |  |
-| ✅ | [CancelTrade](#canceltrade) | 0 values |  |
+| ✅ | [CancelTrade](#canceltrade) | 0 values | 0 values |
 | ✅ | [CheckInteractDistance](#checkinteractdistance) |  |  |
 | ✅ | [CheckTalentMasterDist](#checktalentmasterdist) |  |  |
 | ✅ | [ClearPendingBindConversionItem](#clearpendingbindconversionitem) |  |  |
@@ -27,131 +27,131 @@
 | ✅ | [Dismount](#dismount) |  |  |
 | ✅ | [EquipPendingItem](#equippendingitem) |  |  |
 | ✅ | [FollowUnit](#followunit) |  |  |
-| ✅ | [GetAllowLowLevelRaid](#getallowlowlevelraid) | 1 value |  |
-| ✅ | [GetAllowRecentAlliesSeeLocation](#getallowrecentalliesseelocation) | 1 value |  |
-| ✅ | [GetAreaSpiritHealerTime](#getareaspirithealertime) | 1 value |  |
-| ✅ | [GetArmorPenetration](#getarmorpenetration) | 1 value |  |
+| ✅ | [GetAllowLowLevelRaid](#getallowlowlevelraid) | 1 value | 1 value |
+| ✅ | [GetAllowRecentAlliesSeeLocation](#getallowrecentalliesseelocation) | 1 value | 1 value |
+| ✅ | [GetAreaSpiritHealerTime](#getareaspirithealertime) | 1 value | 1 value |
+| ✅ | [GetArmorPenetration](#getarmorpenetration) | 1 value | secret |
 | ✅ | [GetAttackPowerForStat](#getattackpowerforstat) |  |  |
-| ✅ | [GetAutoDeclineGuildInvites](#getautodeclineguildinvites) | 1 value |  |
-| ✅ | [GetAutoDeclineNeighborhoodInvites](#getautodeclineneighborhoodinvites) | 1 value |  |
-| ✅ | [GetAvoidance](#getavoidance) | 1 value |  |
-| ✅ | [GetBindLocation](#getbindlocation) | 1 value |  |
-| ✅ | [GetBlockChance](#getblockchance) | 1 value |  |
-| ✅ | [GetCemeteryPreference](#getcemeterypreference) | 1 value |  |
-| ✅ | [GetCollapsingStarCost](#getcollapsingstarcost) | 1 value |  |
+| ✅ | [GetAutoDeclineGuildInvites](#getautodeclineguildinvites) | 1 value | 1 value |
+| ✅ | [GetAutoDeclineNeighborhoodInvites](#getautodeclineneighborhoodinvites) | 1 value | 1 value |
+| ✅ | [GetAvoidance](#getavoidance) | 1 value | secret |
+| ✅ | [GetBindLocation](#getbindlocation) | 1 value | 1 value |
+| ✅ | [GetBlockChance](#getblockchance) | 1 value | secret |
+| ✅ | [GetCemeteryPreference](#getcemeterypreference) | 1 value | 1 value |
+| ✅ | [GetCollapsingStarCost](#getcollapsingstarcost) | 1 value | 1 value |
 | ✅ | [GetCombatRating](#getcombatrating) |  |  |
 | ✅ | [GetCombatRatingBonus](#getcombatratingbonus) |  |  |
 | ✅ | [GetCombatRatingBonusForCombatRatingValue](#getcombatratingbonusforcombatratingvalue) |  |  |
-| ✅ | [GetCorpseRecoveryDelay](#getcorpserecoverydelay) | 1 value |  |
-| ✅ | [GetCorruption](#getcorruption) | 1 value |  |
-| ✅ | [GetCorruptionResistance](#getcorruptionresistance) | 1 value |  |
-| ✅ | [GetCritChance](#getcritchance) | 1 value |  |
+| ✅ | [GetCorpseRecoveryDelay](#getcorpserecoverydelay) | 1 value | 1 value |
+| ✅ | [GetCorruption](#getcorruption) | 1 value | 1 value |
+| ✅ | [GetCorruptionResistance](#getcorruptionresistance) | 1 value | 1 value |
+| ✅ | [GetCritChance](#getcritchance) | 1 value | secret |
 | ✅ | [GetCritChanceFromStat](#getcritchancefromstat) |  |  |
-| ✅ | [GetCritChanceProvidesParryEffect](#getcritchanceprovidesparryeffect) | 1 value |  |
-| ✅ | [GetDodgeChance](#getdodgechance) | 1 value |  |
-| ✅ | [GetDodgeChanceFromAttribute](#getdodgechancefromattribute) | 1 value |  |
-| ✅ | [GetEvictionTimeRemaining](#getevictiontimeremaining) | 1 value |  |
-| ✅ | [GetExpertise](#getexpertise) | 3 values |  |
-| ✅ | [GetExpertisePercent](#getexpertisepercent) | 3 values |  |
+| ✅ | [GetCritChanceProvidesParryEffect](#getcritchanceprovidesparryeffect) | 1 value | 1 value |
+| ✅ | [GetDodgeChance](#getdodgechance) | 1 value | secret |
+| ✅ | [GetDodgeChanceFromAttribute](#getdodgechancefromattribute) | 1 value | secret |
+| ✅ | [GetEvictionTimeRemaining](#getevictiontimeremaining) | 1 value | 1 value |
+| ✅ | [GetExpertise](#getexpertise) | 3 values | secret |
+| ✅ | [GetExpertisePercent](#getexpertisepercent) | 3 values | secret |
 | ✅ | [GetGlancingBlowChance](#getglancingblowchance) |  |  |
 | ✅ | [GetGlancingBlowPenalty](#getglancingblowpenalty) |  |  |
-| ✅ | [GetHaste](#gethaste) | 1 value |  |
-| ✅ | [GetHealthRegen](#gethealthregen) | 2 values |  |
-| ✅ | [GetHealthRegenFromSpirit](#gethealthregenfromspirit) | 2 values |  |
-| ✅ | [GetHitModifier](#gethitmodifier) | 1 value |  |
-| ✅ | [GetJailersTowerLevel](#getjailerstowerlevel) | 1 value |  |
-| ✅ | [GetLifesteal](#getlifesteal) | 1 value |  |
-| ✅ | [GetLootSpecialization](#getlootspecialization) | 1 value |  |
-| ✅ | [GetManaRegen](#getmanaregen) | 2 values |  |
-| ✅ | [GetManaRegenFromSpirit](#getmanaregenfromspirit) | 2 values |  |
-| ✅ | [GetMastery](#getmastery) | 1 value |  |
-| ✅ | [GetMasteryEffect](#getmasteryeffect) | 2 values |  |
-| ✅ | [GetMaxPlayerLevel](#getmaxplayerlevel) | 1 value |  |
-| ✅ | [GetMeleeHaste](#getmeleehaste) | 1 value |  |
-| ✅ | [GetModResilienceDamageReduction](#getmodresiliencedamagereduction) | 1 value |  |
-| ✅ | [GetMoney](#getmoney) | 1 value |  |
-| ✅ | [GetNormalizedRealmName](#getnormalizedrealmname) | 1 value |  |
-| ✅ | [GetOffhandHitModifier](#getoffhandhitmodifier) | 1 value |  |
-| ✅ | [GetOverrideAPBySpellPower](#getoverrideapbyspellpower) | 1 value |  |
-| ✅ | [GetOverrideSpellPowerByAP](#getoverridespellpowerbyap) | 1 value |  |
-| ✅ | [GetPVPDesired](#getpvpdesired) | 1 value |  |
-| ✅ | [GetPVPGearStatRules](#getpvpgearstatrules) | 1 value |  |
-| ✅ | [GetPVPLifetimeStats](#getpvplifetimestats) | 2 values |  |
-| ✅ | [GetPVPSessionStats](#getpvpsessionstats) | 2 values |  |
-| ✅ | [GetPVPTimer](#getpvptimer) | 1 value |  |
-| ✅ | [GetPVPYesterdayStats](#getpvpyesterdaystats) | 2 values |  |
-| ✅ | [GetParryChance](#getparrychance) | 1 value |  |
-| ✅ | [GetParryChanceFromAttribute](#getparrychancefromattribute) | 1 value |  |
-| ✅ | [GetPetCritChance](#getpetcritchance) | 2 values |  |
-| ✅ | [GetPetDodgeChance](#getpetdodgechance) | 1 value |  |
-| ✅ | [GetPetHitChanceModifier](#getpethitchancemodifier) | 1 value |  |
-| ✅ | [GetPetMeleeHaste](#getpetmeleehaste) | 1 value |  |
-| ✅ | [GetPetSpellBonusDamage](#getpetspellbonusdamage) | 1 value |  |
-| ✅ | [GetPetSpellHitChanceModifier](#getpetspellhitchancemodifier) | 1 value |  |
-| ✅ | [GetPlayerFacing](#getplayerfacing) | 1 value |  |
+| ✅ | [GetHaste](#gethaste) | 1 value | secret |
+| ✅ | [GetHealthRegen](#gethealthregen) | 2 values | 2 values |
+| ✅ | [GetHealthRegenFromSpirit](#gethealthregenfromspirit) | 2 values | 2 values |
+| ✅ | [GetHitModifier](#gethitmodifier) | 1 value | secret |
+| ✅ | [GetJailersTowerLevel](#getjailerstowerlevel) | 1 value | 1 value |
+| ✅ | [GetLifesteal](#getlifesteal) | 1 value | secret |
+| ✅ | [GetLootSpecialization](#getlootspecialization) | 1 value | 1 value |
+| ✅ | [GetManaRegen](#getmanaregen) | 2 values | secret |
+| ✅ | [GetManaRegenFromSpirit](#getmanaregenfromspirit) | 2 values | 2 values |
+| ✅ | [GetMastery](#getmastery) | 1 value | secret |
+| ✅ | [GetMasteryEffect](#getmasteryeffect) | 2 values | secret |
+| ✅ | [GetMaxPlayerLevel](#getmaxplayerlevel) | 1 value | 1 value |
+| ✅ | [GetMeleeHaste](#getmeleehaste) | 1 value | secret |
+| ✅ | [GetModResilienceDamageReduction](#getmodresiliencedamagereduction) | 1 value | secret |
+| ✅ | [GetMoney](#getmoney) | 1 value | 1 value |
+| ✅ | [GetNormalizedRealmName](#getnormalizedrealmname) | 1 value | 1 value |
+| ✅ | [GetOffhandHitModifier](#getoffhandhitmodifier) | 1 value | secret |
+| ✅ | [GetOverrideAPBySpellPower](#getoverrideapbyspellpower) | 1 value | secret |
+| ✅ | [GetOverrideSpellPowerByAP](#getoverridespellpowerbyap) | 1 value | secret |
+| ✅ | [GetPVPDesired](#getpvpdesired) | 1 value | 1 value |
+| ✅ | [GetPVPGearStatRules](#getpvpgearstatrules) | 1 value | 1 value |
+| ✅ | [GetPVPLifetimeStats](#getpvplifetimestats) | 2 values | 2 values |
+| ✅ | [GetPVPSessionStats](#getpvpsessionstats) | 2 values | 2 values |
+| ✅ | [GetPVPTimer](#getpvptimer) | 1 value | 1 value |
+| ✅ | [GetPVPYesterdayStats](#getpvpyesterdaystats) | 2 values | 2 values |
+| ✅ | [GetParryChance](#getparrychance) | 1 value | secret |
+| ✅ | [GetParryChanceFromAttribute](#getparrychancefromattribute) | 1 value | secret |
+| ✅ | [GetPetCritChance](#getpetcritchance) | 2 values | secret |
+| ✅ | [GetPetDodgeChance](#getpetdodgechance) | 1 value | secret |
+| ✅ | [GetPetHitChanceModifier](#getpethitchancemodifier) | 1 value | secret |
+| ✅ | [GetPetMeleeHaste](#getpetmeleehaste) | 1 value | secret |
+| ✅ | [GetPetSpellBonusDamage](#getpetspellbonusdamage) | 1 value | secret |
+| ✅ | [GetPetSpellHitChanceModifier](#getpetspellhitchancemodifier) | 1 value | secret |
+| ✅ | [GetPlayerFacing](#getplayerfacing) | 1 value | 1 value |
 | ✅ | [GetPlayerInfoByGUID](#getplayerinfobyguid) |  |  |
-| ✅ | [GetPowerRegen](#getpowerregen) | 2 values |  |
+| ✅ | [GetPowerRegen](#getpowerregen) | 2 values | secret |
 | ✅ | [GetPowerRegenForPowerType](#getpowerregenforpowertype) |  |  |
-| ✅ | [GetPvpPowerDamage](#getpvppowerdamage) | 1 value |  |
-| ✅ | [GetPvpPowerHealing](#getpvppowerhealing) | 1 value |  |
+| ✅ | [GetPvpPowerDamage](#getpvppowerdamage) | 1 value | secret |
+| ✅ | [GetPvpPowerHealing](#getpvppowerhealing) | 1 value | secret |
 | ✅ | [GetRangedAttackPowerForStat](#getrangedattackpowerforstat) |  |  |
-| ✅ | [GetRangedCritChance](#getrangedcritchance) | 1 value |  |
-| ✅ | [GetRangedHaste](#getrangedhaste) | 2 values |  |
-| ✅ | [GetRangedHitModifier](#getrangedhitmodifier) | 1 value |  |
-| ✅ | [GetReleaseTimeRemaining](#getreleasetimeremaining) | 1 value |  |
-| ✅ | [GetResSicknessDuration](#getressicknessduration) | 1 value |  |
-| ✅ | [GetRestState](#getreststate) | 3 values |  |
-| ✅ | [GetRestrictedAccountData](#getrestrictedaccountdata) | 3 values |  |
+| ✅ | [GetRangedCritChance](#getrangedcritchance) | 1 value | secret |
+| ✅ | [GetRangedHaste](#getrangedhaste) | 2 values | secret |
+| ✅ | [GetRangedHitModifier](#getrangedhitmodifier) | 1 value | secret |
+| ✅ | [GetReleaseTimeRemaining](#getreleasetimeremaining) | 1 value | 1 value |
+| ✅ | [GetResSicknessDuration](#getressicknessduration) | 1 value | 1 value |
+| ✅ | [GetRestState](#getreststate) | 3 values | 3 values |
+| ✅ | [GetRestrictedAccountData](#getrestrictedaccountdata) | 3 values | 3 values |
 | ✅ | [GetRuneCooldown](#getrunecooldown) |  |  |
 | ✅ | [GetRuneCount](#getrunecount) |  |  |
-| ✅ | [GetSheathState](#getsheathstate) | 1 value |  |
-| ✅ | [GetShieldBlock](#getshieldblock) | 1 value |  |
-| ✅ | [GetSpeed](#getspeed) | 1 value |  |
+| ✅ | [GetSheathState](#getsheathstate) | 1 value | 1 value |
+| ✅ | [GetShieldBlock](#getshieldblock) | 1 value | secret |
+| ✅ | [GetSpeed](#getspeed) | 1 value | secret |
 | ✅ | [GetSpellBonusDamage](#getspellbonusdamage) |  |  |
-| ✅ | [GetSpellBonusHealing](#getspellbonushealing) | 1 value |  |
-| ✅ | [GetSpellCritChance](#getspellcritchance) | 1 value |  |
+| ✅ | [GetSpellBonusHealing](#getspellbonushealing) | 1 value | secret |
+| ✅ | [GetSpellCritChance](#getspellcritchance) | 1 value | secret |
 | ✅ | [GetSpellCritChanceFromStat](#getspellcritchancefromstat) |  |  |
-| ✅ | [GetSpellHitModifier](#getspellhitmodifier) | 1 value |  |
-| ✅ | [GetSpellPenetration](#getspellpenetration) | 1 value |  |
-| ✅ | [GetSturdiness](#getsturdiness) | 1 value |  |
-| ✅ | [GetTaxiBenchmarkMode](#gettaxibenchmarkmode) | 1 value |  |
+| ✅ | [GetSpellHitModifier](#getspellhitmodifier) | 1 value | secret |
+| ✅ | [GetSpellPenetration](#getspellpenetration) | 1 value | secret |
+| ✅ | [GetSturdiness](#getsturdiness) | 1 value | secret |
+| ✅ | [GetTaxiBenchmarkMode](#gettaxibenchmarkmode) | 1 value | 1 value |
 | ✅ | [GetVersatilityBonus](#getversatilitybonus) |  |  |
-| ✅ | [GetXPExhaustion](#getxpexhaustion) | 1 value |  |
-| ✅ | [HasAPEffectsSpellPower](#hasapeffectsspellpower) | 1 value |  |
-| ✅ | [HasDualWieldPenalty](#hasdualwieldpenalty) | 1 value |  |
-| ✅ | [HasFullControl](#hasfullcontrol) | 1 value |  |
-| ✅ | [HasIgnoreDualWieldWeapon](#hasignoredualwieldweapon) | 1 value |  |
-| ✅ | [HasKey](#haskey) | 1 value |  |
-| ✅ | [HasNoReleaseAura](#hasnoreleaseaura) | 3 values |  |
-| ✅ | [HasSPEffectsAttackPower](#hasspeffectsattackpower) | 1 value |  |
+| ✅ | [GetXPExhaustion](#getxpexhaustion) | 1 value | 1 value |
+| ✅ | [HasAPEffectsSpellPower](#hasapeffectsspellpower) | 1 value | 1 value |
+| ✅ | [HasDualWieldPenalty](#hasdualwieldpenalty) | 1 value | 1 value |
+| ✅ | [HasFullControl](#hasfullcontrol) | 1 value | 1 value |
+| ✅ | [HasIgnoreDualWieldWeapon](#hasignoredualwieldweapon) | 1 value | 1 value |
+| ✅ | [HasKey](#haskey) | 1 value | 1 value |
+| ✅ | [HasNoReleaseAura](#hasnoreleaseaura) | 3 values | 3 values |
+| ✅ | [HasSPEffectsAttackPower](#hasspeffectsattackpower) | 1 value | 1 value |
 | ✅ | [InitiateTrade](#initiatetrade) |  |  |
-| ✅ | [IsAccountSecured](#isaccountsecured) | 1 value |  |
-| ✅ | [IsAdvancedFlyableArea](#isadvancedflyablearea) | 1 value |  |
-| ✅ | [IsCemeterySelectionAvailable](#iscemeteryselectionavailable) | 1 value |  |
-| ✅ | [IsCharacterNewlyBoosted](#ischaracternewlyboosted) | 1 value |  |
-| ✅ | [IsDrivableArea](#isdrivablearea) | 1 value |  |
-| ✅ | [IsDualWielding](#isdualwielding) | 1 value |  |
-| ✅ | [IsFlyableArea](#isflyablearea) | 1 value |  |
-| ✅ | [IsGuildLeader](#isguildleader) | 1 value |  |
-| ✅ | [IsInGuild](#isinguild) | 1 value |  |
-| ✅ | [IsInJailersTower](#isinjailerstower) | 1 value |  |
-| ✅ | [IsIndoors](#isindoors) | 1 value |  |
-| ✅ | [IsInsane](#isinsane) | 1 value |  |
+| ✅ | [IsAccountSecured](#isaccountsecured) | 1 value | 1 value |
+| ✅ | [IsAdvancedFlyableArea](#isadvancedflyablearea) | 1 value | 1 value |
+| ✅ | [IsCemeterySelectionAvailable](#iscemeteryselectionavailable) | 1 value | 1 value |
+| ✅ | [IsCharacterNewlyBoosted](#ischaracternewlyboosted) | 1 value | 1 value |
+| ✅ | [IsDrivableArea](#isdrivablearea) | 1 value | 1 value |
+| ✅ | [IsDualWielding](#isdualwielding) | 1 value | 1 value |
+| ✅ | [IsFlyableArea](#isflyablearea) | 1 value | 1 value |
+| ✅ | [IsGuildLeader](#isguildleader) | 1 value | 1 value |
+| ✅ | [IsInGuild](#isinguild) | 1 value | 1 value |
+| ✅ | [IsInJailersTower](#isinjailerstower) | 1 value | 1 value |
+| ✅ | [IsIndoors](#isindoors) | 1 value | 1 value |
+| ✅ | [IsInsane](#isinsane) | 1 value | 1 value |
 | ✅ | [IsItemPreferredArmorType](#isitempreferredarmortype) |  |  |
 | ✅ | [IsJailersTowerLayerTimeLocked](#isjailerstowerlayertimelocked) |  |  |
-| ✅ | [IsLoggedIn](#isloggedin) | 1 value |  |
-| ✅ | [IsMounted](#ismounted) | 1 value |  |
-| ✅ | [IsOnGroundFloorInJailersTower](#isongroundfloorinjailerstower) | 1 value |  |
-| ✅ | [IsOutOfBounds](#isoutofbounds) | 1 value |  |
-| ✅ | [IsOutdoors](#isoutdoors) | 1 value |  |
-| ✅ | [IsPVPTimerRunning](#ispvptimerrunning) | 1 value |  |
-| ✅ | [IsPlayerInWorld](#isplayerinworld) | 1 value |  |
-| ✅ | [IsPlayerMoving](#isplayermoving) | 1 value |  |
-| ✅ | [IsRangedWeapon](#israngedweapon) | 1 value |  |
-| ✅ | [IsResting](#isresting) | 1 value |  |
-| ✅ | [IsRestrictedAccount](#isrestrictedaccount) | 1 value |  |
-| ✅ | [IsStealthed](#isstealthed) | 1 value |  |
-| ✅ | [IsXPUserDisabled](#isxpuserdisabled) | 1 value |  |
+| ✅ | [IsLoggedIn](#isloggedin) | 1 value | 1 value |
+| ✅ | [IsMounted](#ismounted) | 1 value | 1 value |
+| ✅ | [IsOnGroundFloorInJailersTower](#isongroundfloorinjailerstower) | 1 value | 1 value |
+| ✅ | [IsOutOfBounds](#isoutofbounds) | 1 value | 1 value |
+| ✅ | [IsOutdoors](#isoutdoors) | 1 value | 1 value |
+| ✅ | [IsPVPTimerRunning](#ispvptimerrunning) | 1 value | 1 value |
+| ✅ | [IsPlayerInWorld](#isplayerinworld) | 1 value | 1 value |
+| ✅ | [IsPlayerMoving](#isplayermoving) | 1 value | 1 value |
+| ✅ | [IsRangedWeapon](#israngedweapon) | 1 value | 1 value |
+| ✅ | [IsResting](#isresting) | 1 value | 1 value |
+| ✅ | [IsRestrictedAccount](#isrestrictedaccount) | 1 value | 1 value |
+| ✅ | [IsStealthed](#isstealthed) | 1 value | 1 value |
+| ✅ | [IsXPUserDisabled](#isxpuserdisabled) | 1 value | 1 value |
 | ✅ | [NoPlayTime](#noplaytime) |  |  |
 | ✅ | [NotifyInspect](#notifyinspect) |  |  |
 | ✅ | [PartialPlayTime](#partialplaytime) |  |  |
@@ -177,10 +177,10 @@
 | ✅ | [SetCemeteryPreference](#setcemeterypreference) |  |  |
 | ✅ | [SetLootSpecialization](#setlootspecialization) |  |  |
 | ✅ | [SetTaxiBenchmarkMode](#settaxibenchmarkmode) |  |  |
-| ✅ | [ShouldDisplayRaidRolesInSocialFrame](#shoulddisplayraidrolesinsocialframe) | 1 value |  |
-| ✅ | [ShouldDisplayStoryModeTooltipInSocialFrame](#shoulddisplaystorymodetooltipinsocialframe) | 1 value |  |
-| ✅ | [ShouldShowIslandsWeeklyPOI](#shouldshowislandsweeklypoi) | 1 value |  |
-| ✅ | [ShouldShowSpecialSplashScreen](#shouldshowspecialsplashscreen) | 1 value |  |
+| ✅ | [ShouldDisplayRaidRolesInSocialFrame](#shoulddisplayraidrolesinsocialframe) | 1 value | 1 value |
+| ✅ | [ShouldDisplayStoryModeTooltipInSocialFrame](#shoulddisplaystorymodetooltipinsocialframe) | 1 value | 1 value |
+| ✅ | [ShouldShowIslandsWeeklyPOI](#shouldshowislandsweeklypoi) | 1 value | 1 value |
+| ✅ | [ShouldShowSpecialSplashScreen](#shouldshowspecialsplashscreen) | 1 value | 1 value |
 | ✅ | [ShowCloak](#showcloak) |  |  |
 | ✅ | [ShowHelm](#showhelm) |  |  |
 | ✅ | [ShowingCloak](#showingcloak) |  |  |
@@ -244,6 +244,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### CanInspect
@@ -253,6 +254,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### CanLootUnit
@@ -270,6 +272,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### CancelAreaSpiritHeal
@@ -278,6 +281,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### CancelPendingEquip
@@ -294,6 +298,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### CheckInteractDistance
@@ -375,6 +380,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetAllowRecentAlliesSeeLocation
@@ -383,6 +389,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetAreaSpiritHealerTime
@@ -391,6 +398,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetArmorPenetration
@@ -400,6 +408,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetAttackPowerForStat
@@ -417,6 +426,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetAutoDeclineNeighborhoodInvites
@@ -425,6 +435,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetAvoidance
@@ -434,6 +445,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetBindLocation
@@ -442,6 +454,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetBlockChance
@@ -451,6 +464,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetCemeteryPreference
@@ -459,6 +473,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetCollapsingStarCost
@@ -467,6 +482,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetCombatRating
@@ -501,6 +517,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetCorruption
@@ -509,6 +526,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetCorruptionResistance
@@ -517,6 +535,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetCritChance
@@ -526,6 +545,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetCritChanceFromStat
@@ -543,6 +563,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetDodgeChance
@@ -552,6 +573,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetDodgeChanceFromAttribute
@@ -561,6 +583,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetEvictionTimeRemaining
@@ -569,6 +592,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetExpertise
@@ -578,6 +602,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 3 values: `number`, `number`, `number`
+- Called in combat: returned 3 values: `secret:number`, `secret:number`, `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetExpertisePercent
@@ -587,6 +612,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 3 values: `number`, `number`, `number`
+- Called in combat: returned 3 values: `secret:number`, `secret:number`, `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetGlancingBlowChance
@@ -616,6 +642,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetHealthRegen
@@ -624,6 +651,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetHealthRegenFromSpirit
@@ -632,6 +660,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetHitModifier
@@ -641,6 +670,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetJailersTowerLevel
@@ -649,6 +679,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetLifesteal
@@ -658,6 +689,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetLootSpecialization
@@ -666,6 +698,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetManaRegen
@@ -675,6 +708,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `secret:number`, `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetManaRegenFromSpirit
@@ -683,6 +717,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetMastery
@@ -692,6 +727,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetMasteryEffect
@@ -701,6 +737,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `secret:number`, `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetMaxPlayerLevel
@@ -709,6 +746,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetMeleeHaste
@@ -718,6 +756,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetModResilienceDamageReduction
@@ -727,6 +766,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetMoney
@@ -735,6 +775,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetNormalizedRealmName
@@ -743,6 +784,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetOffhandHitModifier
@@ -752,6 +794,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetOverrideAPBySpellPower
@@ -761,6 +804,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetOverrideSpellPowerByAP
@@ -770,6 +814,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPVPDesired
@@ -778,6 +823,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPVPGearStatRules
@@ -786,6 +832,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPVPLifetimeStats
@@ -794,6 +841,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPVPSessionStats
@@ -802,6 +850,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPVPTimer
@@ -810,6 +859,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPVPYesterdayStats
@@ -818,6 +868,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetParryChance
@@ -827,6 +878,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetParryChanceFromAttribute
@@ -836,6 +888,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPetCritChance
@@ -845,6 +898,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `secret:number`, `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPetDodgeChance
@@ -854,6 +908,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPetHitChanceModifier
@@ -863,6 +918,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPetMeleeHaste
@@ -872,6 +928,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPetSpellBonusDamage
@@ -881,6 +938,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPetSpellHitChanceModifier
@@ -890,6 +948,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPlayerFacing
@@ -898,6 +957,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPlayerInfoByGUID
@@ -916,6 +976,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `secret:number`, `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPowerRegenForPowerType
@@ -934,6 +995,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPvpPowerHealing
@@ -943,6 +1005,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetRangedAttackPowerForStat
@@ -961,6 +1024,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetRangedHaste
@@ -970,6 +1034,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `secret:number`, `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetRangedHitModifier
@@ -979,6 +1044,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetReleaseTimeRemaining
@@ -987,6 +1053,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetResSicknessDuration
@@ -995,6 +1062,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetRestState
@@ -1004,6 +1072,7 @@
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 3 values: `number`, `string`, `number`
+- Called in combat: returned 3 values: `number`, `string`, `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetRestrictedAccountData
@@ -1012,6 +1081,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 3 values: `number`, `number`, `number`
+- Called in combat: returned 3 values: `number`, `number`, `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetRuneCooldown
@@ -1038,6 +1108,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetShieldBlock
@@ -1047,6 +1118,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetSpeed
@@ -1056,6 +1128,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetSpellBonusDamage
@@ -1074,6 +1147,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetSpellCritChance
@@ -1083,6 +1157,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetSpellCritChanceFromStat
@@ -1101,6 +1176,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetSpellPenetration
@@ -1110,6 +1186,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetSturdiness
@@ -1119,6 +1196,7 @@
 - Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetTaxiBenchmarkMode
@@ -1127,6 +1205,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetVersatilityBonus
@@ -1144,6 +1223,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### HasAPEffectsSpellPower
@@ -1152,6 +1232,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### HasDualWieldPenalty
@@ -1160,6 +1241,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### HasFullControl
@@ -1168,6 +1250,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### HasIgnoreDualWieldWeapon
@@ -1176,6 +1259,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### HasKey
@@ -1184,6 +1268,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### HasNoReleaseAura
@@ -1192,6 +1277,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 3 values: `boolean`, `number`, `boolean`
+- Called in combat: returned 3 values: `boolean`, `number`, `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### HasSPEffectsAttackPower
@@ -1200,6 +1286,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### InitiateTrade
@@ -1216,6 +1303,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsAdvancedFlyableArea
@@ -1224,6 +1312,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsCemeterySelectionAvailable
@@ -1232,6 +1321,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsCharacterNewlyBoosted
@@ -1240,6 +1330,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsDrivableArea
@@ -1248,6 +1339,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsDualWielding
@@ -1256,6 +1348,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsFlyableArea
@@ -1264,6 +1357,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsGuildLeader
@@ -1272,6 +1366,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsInGuild
@@ -1280,6 +1375,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsInJailersTower
@@ -1288,6 +1384,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsIndoors
@@ -1296,6 +1393,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsInsane
@@ -1304,6 +1402,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsItemPreferredArmorType
@@ -1328,6 +1427,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsMounted
@@ -1336,6 +1436,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsOnGroundFloorInJailersTower
@@ -1344,6 +1445,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsOutOfBounds
@@ -1352,6 +1454,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsOutdoors
@@ -1360,6 +1463,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsPVPTimerRunning
@@ -1368,6 +1472,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsPlayerInWorld
@@ -1376,6 +1481,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsPlayerMoving
@@ -1384,6 +1490,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsRangedWeapon
@@ -1392,6 +1499,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsResting
@@ -1400,6 +1508,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsRestrictedAccount
@@ -1408,6 +1517,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsStealthed
@@ -1416,6 +1526,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsXPUserDisabled
@@ -1424,6 +1535,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### NoPlayTime
@@ -1619,6 +1731,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### ShouldDisplayStoryModeTooltipInSocialFrame
@@ -1627,6 +1740,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### ShouldShowIslandsWeeklyPOI
@@ -1635,6 +1749,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### ShouldShowSpecialSplashScreen
@@ -1643,6 +1758,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### ShowCloak
@@ -1748,14 +1864,14 @@
 - Status: ✅ verified
 - Payload: `inCombat: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (0 in combat); argument kinds: `b`
+- Seen firing 16 times (0 in combat); argument kinds: `b`
 
 ### PLAYER_TARGET_DIED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (4 in combat); argument kinds: ``
+- Seen firing 8 times (8 in combat); argument kinds: ``
 
 ## Types
 

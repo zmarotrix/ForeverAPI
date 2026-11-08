@@ -6,7 +6,7 @@ Namespace: `C_WorldSafeLocsUIInternal`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ⛔ | [C_WorldSafeLocsUIInternal.GetWorldSafeLocs](#c_worldsafelocsuiinternalgetworldsafelocs) | missing |  |
+| ⛔ | [C_WorldSafeLocsUIInternal.GetWorldSafeLocs](#c_worldsafelocsuiinternalgetworldsafelocs) | missing | missing |
 
 ### C_WorldSafeLocsUIInternal.GetWorldSafeLocs
 
@@ -14,6 +14,7 @@ Namespace: `C_WorldSafeLocsUIInternal`
 
 - Status: ⛔ in Blizzard's docs, not in game
 - Called out of combat: missing at call time
+- Called in combat: missing at call time
 - Source: client docs `WorldSafeLocsUIInternalDocumentation.lua`
 
 ## Types

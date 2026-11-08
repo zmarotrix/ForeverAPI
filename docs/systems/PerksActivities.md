@@ -8,13 +8,13 @@ Namespace: `C_PerksActivities`
 |---|---|---|---|
 | ✅ | [C_PerksActivities.AddTrackedPerksActivity](#c_perksactivitiesaddtrackedperksactivity) |  |  |
 | ✅ | [C_PerksActivities.ClearPerksActivitiesPendingCompletion](#c_perksactivitiesclearperksactivitiespendingcompletion) |  |  |
-| ✅ | [C_PerksActivities.GetAllPerksActivityTags](#c_perksactivitiesgetallperksactivitytags) | 1 value |  |
-| ✅ | [C_PerksActivities.GetPerksActivitiesInfo](#c_perksactivitiesgetperksactivitiesinfo) | 1 value |  |
-| ✅ | [C_PerksActivities.GetPerksActivitiesPendingCompletion](#c_perksactivitiesgetperksactivitiespendingcompletion) | 1 value |  |
+| ✅ | [C_PerksActivities.GetAllPerksActivityTags](#c_perksactivitiesgetallperksactivitytags) | 1 value | 1 value |
+| ✅ | [C_PerksActivities.GetPerksActivitiesInfo](#c_perksactivitiesgetperksactivitiesinfo) | 1 value | 1 value |
+| ✅ | [C_PerksActivities.GetPerksActivitiesPendingCompletion](#c_perksactivitiesgetperksactivitiespendingcompletion) | 1 value | 1 value |
 | ✅ | [C_PerksActivities.GetPerksActivityChatLink](#c_perksactivitiesgetperksactivitychatlink) |  |  |
 | ✅ | [C_PerksActivities.GetPerksActivityInfo](#c_perksactivitiesgetperksactivityinfo) |  |  |
-| ✅ | [C_PerksActivities.GetPerksUIThemePrefix](#c_perksactivitiesgetperksuithemeprefix) | 1 value |  |
-| ✅ | [C_PerksActivities.GetTrackedPerksActivities](#c_perksactivitiesgettrackedperksactivities) | 1 value |  |
+| ✅ | [C_PerksActivities.GetPerksUIThemePrefix](#c_perksactivitiesgetperksuithemeprefix) | 1 value | 1 value |
+| ✅ | [C_PerksActivities.GetTrackedPerksActivities](#c_perksactivitiesgettrackedperksactivities) | 1 value | 1 value |
 | ✅ | [C_PerksActivities.RemoveTrackedPerksActivity](#c_perksactivitiesremovetrackedperksactivity) |  |  |
 
 ### C_PerksActivities.AddTrackedPerksActivity
@@ -38,6 +38,7 @@ Namespace: `C_PerksActivities`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{tagName=table}`
+- Called in combat: returned 1 value: `table{tagName=table}`
 - Source: client docs `PerksActivitiesDocumentation.lua`
 
 ### C_PerksActivities.GetPerksActivitiesInfo
@@ -46,6 +47,7 @@ Namespace: `C_PerksActivities`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{activePerksMonth=number,activities=table,displayMonthName=string,secondsRemaining=number,thresholds=table}`
+- Called in combat: returned 1 value: `table{activePerksMonth=number,activities=table,displayMonthName=string,secondsRemaining=number,thresholds=table}`
 - Source: client docs `PerksActivitiesDocumentation.lua`
 
 ### C_PerksActivities.GetPerksActivitiesPendingCompletion
@@ -54,6 +56,7 @@ Namespace: `C_PerksActivities`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{pendingIDs=table}`
+- Called in combat: returned 1 value: `table{pendingIDs=table}`
 - Source: client docs `PerksActivitiesDocumentation.lua`
 
 ### C_PerksActivities.GetPerksActivityChatLink
@@ -78,6 +81,7 @@ Namespace: `C_PerksActivities`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `PerksActivitiesDocumentation.lua`
 
 ### C_PerksActivities.GetTrackedPerksActivities
@@ -86,6 +90,7 @@ Namespace: `C_PerksActivities`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{trackedIDs=table}`
+- Called in combat: returned 1 value: `table{trackedIDs=table}`
 - Source: client docs `PerksActivitiesDocumentation.lua`
 
 ### C_PerksActivities.RemoveTrackedPerksActivity

@@ -7,13 +7,13 @@ Namespace: `C_AdventureMap`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | 🆕 | [C_AdventureMap.Close](#c_adventuremapclose) |  |  |
-| ✅ | [C_AdventureMap.GetAdventureMapTextureKit](#c_adventuremapgetadventuremaptexturekit) | 1 value |  |
+| ✅ | [C_AdventureMap.GetAdventureMapTextureKit](#c_adventuremapgetadventuremaptexturekit) | 1 value | 1 value |
 | 🆕 | [C_AdventureMap.GetMapID](#c_adventuremapgetmapid) |  |  |
 | 🆕 | [C_AdventureMap.GetMapInsetDetailTileInfo](#c_adventuremapgetmapinsetdetailtileinfo) |  |  |
 | 🆕 | [C_AdventureMap.GetMapInsetInfo](#c_adventuremapgetmapinsetinfo) |  |  |
-| ✅ | [C_AdventureMap.GetNumMapInsets](#c_adventuremapgetnummapinsets) | 1 value |  |
-| ✅ | [C_AdventureMap.GetNumQuestOffers](#c_adventuremapgetnumquestoffers) | 1 value |  |
-| ✅ | [C_AdventureMap.GetNumZoneChoices](#c_adventuremapgetnumzonechoices) | 1 value |  |
+| ✅ | [C_AdventureMap.GetNumMapInsets](#c_adventuremapgetnummapinsets) | 1 value | 1 value |
+| ✅ | [C_AdventureMap.GetNumQuestOffers](#c_adventuremapgetnumquestoffers) | 1 value | 1 value |
+| ✅ | [C_AdventureMap.GetNumZoneChoices](#c_adventuremapgetnumzonechoices) | 1 value | 1 value |
 | 🆕 | [C_AdventureMap.GetQuestInfo](#c_adventuremapgetquestinfo) |  |  |
 | 🆕 | [C_AdventureMap.GetQuestOfferInfo](#c_adventuremapgetquestofferinfo) |  |  |
 | ✅ | [C_AdventureMap.GetQuestPortraitInfo](#c_adventuremapgetquestportraitinfo) |  |  |
@@ -32,6 +32,7 @@ Namespace: `C_AdventureMap`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `AdventureMapDocumentation.lua`
 
 ### C_AdventureMap.GetMapID
@@ -58,6 +59,7 @@ Namespace: `C_AdventureMap`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `AdventureMapDocumentation.lua`
 
 ### C_AdventureMap.GetNumQuestOffers
@@ -66,6 +68,7 @@ Namespace: `C_AdventureMap`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `AdventureMapDocumentation.lua`
 
 ### C_AdventureMap.GetNumZoneChoices
@@ -74,6 +77,7 @@ Namespace: `C_AdventureMap`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `AdventureMapDocumentation.lua`
 
 ### C_AdventureMap.GetQuestInfo

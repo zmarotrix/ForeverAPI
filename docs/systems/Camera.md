@@ -4,7 +4,7 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [GetCameraFOVDefaults](#getcamerafovdefaults) | 3 values |  |
+| ✅ | [GetCameraFOVDefaults](#getcamerafovdefaults) | 3 values | 3 values |
 | ✅ | [GetUICameraInfo](#getuicamerainfo) |  |  |
 
 ### GetCameraFOVDefaults
@@ -13,6 +13,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 3 values: `number`, `number`, `number`
+- Called in combat: returned 3 values: `number`, `number`, `number`
 - Source: client docs `CameraDocumentation.lua`
 
 ### GetUICameraInfo

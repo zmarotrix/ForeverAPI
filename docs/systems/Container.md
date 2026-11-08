@@ -9,11 +9,11 @@ Namespace: `C_Container`
 | ✅ | [C_Container.CalculateTotalNumberOfFreeBagSlots](#c_containercalculatetotalnumberoffreebagslots) |  |  |
 | ✅ | [C_Container.ContainerIDToInventoryID](#c_containercontaineridtoinventoryid) |  |  |
 | ✅ | [C_Container.ContainerRefundItemPurchase](#c_containercontainerrefunditempurchase) |  |  |
-| ✅ | [C_Container.GetBackpackAutosortDisabled](#c_containergetbackpackautosortdisabled) | 1 value |  |
-| ✅ | [C_Container.GetBackpackSellJunkDisabled](#c_containergetbackpackselljunkdisabled) | 1 value |  |
+| ✅ | [C_Container.GetBackpackAutosortDisabled](#c_containergetbackpackautosortdisabled) | 1 value | 1 value |
+| ✅ | [C_Container.GetBackpackSellJunkDisabled](#c_containergetbackpackselljunkdisabled) | 1 value | 1 value |
 | ✅ | [C_Container.GetBagName](#c_containergetbagname) |  |  |
 | ✅ | [C_Container.GetBagSlotFlag](#c_containergetbagslotflag) |  |  |
-| ✅ | [C_Container.GetBankAutosortDisabled](#c_containergetbankautosortdisabled) | 1 value |  |
+| ✅ | [C_Container.GetBankAutosortDisabled](#c_containergetbankautosortdisabled) | 1 value | 1 value |
 | ✅ | [C_Container.GetContainerFreeSlots](#c_containergetcontainerfreeslots) |  |  |
 | ✅ | [C_Container.GetContainerItemCooldown](#c_containergetcontaineritemcooldown) |  |  |
 | ✅ | [C_Container.GetContainerItemDurability](#c_containergetcontaineritemdurability) |  |  |
@@ -27,10 +27,10 @@ Namespace: `C_Container`
 | ✅ | [C_Container.GetContainerItemQuestInfo](#c_containergetcontaineritemquestinfo) |  |  |
 | ✅ | [C_Container.GetContainerNumFreeSlots](#c_containergetcontainernumfreeslots) |  |  |
 | ✅ | [C_Container.GetContainerNumSlots](#c_containergetcontainernumslots) |  |  |
-| ✅ | [C_Container.GetInsertItemsLeftToRight](#c_containergetinsertitemslefttoright) | 1 value |  |
+| ✅ | [C_Container.GetInsertItemsLeftToRight](#c_containergetinsertitemslefttoright) | 1 value | 1 value |
 | ✅ | [C_Container.GetItemCooldown](#c_containergetitemcooldown) |  |  |
-| ✅ | [C_Container.GetMaxArenaCurrency](#c_containergetmaxarenacurrency) | 1 value |  |
-| ✅ | [C_Container.GetSortBagsRightToLeft](#c_containergetsortbagsrighttoleft) | 1 value |  |
+| ✅ | [C_Container.GetMaxArenaCurrency](#c_containergetmaxarenacurrency) | 1 value | 1 value |
+| ✅ | [C_Container.GetSortBagsRightToLeft](#c_containergetsortbagsrighttoleft) | 1 value | 1 value |
 | ✅ | [C_Container.HasContainerItem](#c_containerhascontaineritem) |  |  |
 | ✅ | [C_Container.IsBattlePayItem](#c_containerisbattlepayitem) |  |  |
 | ✅ | [C_Container.IsContainerFiltered](#c_containeriscontainerfiltered) |  |  |
@@ -84,6 +84,7 @@ Namespace: `C_Container`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.GetBackpackSellJunkDisabled
@@ -92,6 +93,7 @@ Namespace: `C_Container`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.GetBagName
@@ -116,6 +118,7 @@ Namespace: `C_Container`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.GetContainerFreeSlots
@@ -235,6 +238,7 @@ Namespace: `C_Container`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.GetItemCooldown
@@ -252,6 +256,7 @@ Namespace: `C_Container`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.GetSortBagsRightToLeft
@@ -260,6 +265,7 @@ Namespace: `C_Container`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ContainerDocumentation.lua`
 
 ### C_Container.HasContainerItem
@@ -446,13 +452,14 @@ Namespace: `C_Container`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (0 in combat); argument kinds: ``
+- Seen firing 9 times (0 in combat); argument kinds: ``
 
 ### BAG_NEW_ITEMS_UPDATED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### BAG_OPEN
 
@@ -477,21 +484,21 @@ Namespace: `C_Container`
 - Status: ✅ verified
 - Payload: `bagID: BagIndex`
 - fires synchronously (Blizzard's docs)
-- Seen firing 158 times (0 in combat); argument kinds: `n`
+- Seen firing 172 times (1 in combat); argument kinds: `n`
 
 ### BAG_UPDATE_COOLDOWN
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 51 times (47 in combat); argument kinds: ``
+- Seen firing 106 times (95 in combat); argument kinds: ``
 
 ### BAG_UPDATE_DELAYED
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 11 times (0 in combat); argument kinds: ``
+- Seen firing 20 times (1 in combat); argument kinds: ``
 
 ### EQUIP_BIND_REFUNDABLE_CONFIRM
 

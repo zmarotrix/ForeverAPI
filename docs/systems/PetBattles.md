@@ -48,11 +48,11 @@ Namespace: `C_PetBattles`
 | 🆕 | [C_PetBattles.GetTurnTimeInfo](#c_petbattlesgetturntimeinfo) |  |  |
 | 🆕 | [C_PetBattles.GetXP](#c_petbattlesgetxp) |  |  |
 | 🆕 | [C_PetBattles.IsInBattle](#c_petbattlesisinbattle) |  |  |
-| ✅ | [C_PetBattles.IsPlayerNPC](#c_petbattlesisplayernpc) | 1 value |  |
+| ✅ | [C_PetBattles.IsPlayerNPC](#c_petbattlesisplayernpc) | 1 value | 1 value |
 | 🆕 | [C_PetBattles.IsSkipAvailable](#c_petbattlesisskipavailable) |  |  |
 | 🆕 | [C_PetBattles.IsTrapAvailable](#c_petbattlesistrapavailable) |  |  |
 | 🆕 | [C_PetBattles.IsWaitingOnOpponent](#c_petbattlesiswaitingonopponent) |  |  |
-| ✅ | [C_PetBattles.IsWildBattle](#c_petbattlesiswildbattle) | 1 value |  |
+| ✅ | [C_PetBattles.IsWildBattle](#c_petbattlesiswildbattle) | 1 value | 1 value |
 | 🆕 | [C_PetBattles.SetPendingReportBattlePetTarget](#c_petbattlessetpendingreportbattlepettarget) |  |  |
 | 🆕 | [C_PetBattles.SetPendingReportTargetFromUnit](#c_petbattlessetpendingreporttargetfromunit) |  |  |
 | 🆕 | [C_PetBattles.ShouldShowPetSelect](#c_petbattlesshouldshowpetselect) |  |  |
@@ -329,6 +329,7 @@ Namespace: `C_PetBattles`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PetBattlesDocumentation.lua`
 
 ### C_PetBattles.IsSkipAvailable
@@ -355,6 +356,7 @@ Namespace: `C_PetBattles`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PetBattlesDocumentation.lua`
 
 ### C_PetBattles.SetPendingReportBattlePetTarget

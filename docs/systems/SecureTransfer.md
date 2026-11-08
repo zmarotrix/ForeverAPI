@@ -7,18 +7,18 @@ Namespace: `C_SecureTransfer`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ⛔ | [C_SecureTransfer.AcceptTrade](#c_securetransferaccepttrade) |  |  |
-| ⛔ | [C_SecureTransfer.Cancel](#c_securetransfercancel) | missing |  |
+| ⛔ | [C_SecureTransfer.Cancel](#c_securetransfercancel) | missing | missing |
 | ⛔ | [C_SecureTransfer.CompleteHousingPurchase](#c_securetransfercompletehousingpurchase) |  |  |
 | ⛔ | [C_SecureTransfer.CompleteHousingVCPurchase](#c_securetransfercompletehousingvcpurchase) |  |  |
-| ⛔ | [C_SecureTransfer.GetHousingPurchaseCost](#c_securetransfergethousingpurchasecost) | missing |  |
-| ⛔ | [C_SecureTransfer.GetHousingPurchaseQuantity](#c_securetransfergethousingpurchasequantity) | missing |  |
-| ⛔ | [C_SecureTransfer.GetHousingVCPurchaseProductID](#c_securetransfergethousingvcpurchaseproductid) | missing |  |
-| ⛔ | [C_SecureTransfer.GetMailReceiveInfo](#c_securetransfergetmailreceiveinfo) | missing |  |
-| ⛔ | [C_SecureTransfer.GetMailSendInfo](#c_securetransfergetmailsendinfo) | missing |  |
-| ⛔ | [C_SecureTransfer.GetTradePartner](#c_securetransfergettradepartner) | missing |  |
+| ⛔ | [C_SecureTransfer.GetHousingPurchaseCost](#c_securetransfergethousingpurchasecost) | missing | missing |
+| ⛔ | [C_SecureTransfer.GetHousingPurchaseQuantity](#c_securetransfergethousingpurchasequantity) | missing | missing |
+| ⛔ | [C_SecureTransfer.GetHousingVCPurchaseProductID](#c_securetransfergethousingvcpurchaseproductid) | missing | missing |
+| ⛔ | [C_SecureTransfer.GetMailReceiveInfo](#c_securetransfergetmailreceiveinfo) | missing | missing |
+| ⛔ | [C_SecureTransfer.GetMailSendInfo](#c_securetransfergetmailsendinfo) | missing | missing |
+| ⛔ | [C_SecureTransfer.GetTradePartner](#c_securetransfergettradepartner) | missing | missing |
 | ⛔ | [C_SecureTransfer.SendMail](#c_securetransfersendmail) |  |  |
-| ⛔ | [C_SecureTransfer.ShouldShowTradeOfferWarning](#c_securetransfershouldshowtradeofferwarning) | missing |  |
-| ⛔ | [C_SecureTransfer.ShouldShowTradeRMTWarning](#c_securetransfershouldshowtradermtwarning) | missing |  |
+| ⛔ | [C_SecureTransfer.ShouldShowTradeOfferWarning](#c_securetransfershouldshowtradeofferwarning) | missing | missing |
+| ⛔ | [C_SecureTransfer.ShouldShowTradeRMTWarning](#c_securetransfershouldshowtradermtwarning) | missing | missing |
 | ⛔ | [C_SecureTransfer.TakeMailMoney](#c_securetransfertakemailmoney) |  |  |
 
 ### C_SecureTransfer.AcceptTrade
@@ -36,6 +36,7 @@ Namespace: `C_SecureTransfer`
 - Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Called out of combat: missing at call time
+- Called in combat: missing at call time
 - Source: client docs `SecureTransferDocumentation.lua`
 
 ### C_SecureTransfer.CompleteHousingPurchase
@@ -61,6 +62,7 @@ Namespace: `C_SecureTransfer`
 - Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Called out of combat: missing at call time
+- Called in combat: missing at call time
 - Source: client docs `SecureTransferDocumentation.lua`
 
 ### C_SecureTransfer.GetHousingPurchaseQuantity
@@ -70,6 +72,7 @@ Namespace: `C_SecureTransfer`
 - Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Called out of combat: missing at call time
+- Called in combat: missing at call time
 - Source: client docs `SecureTransferDocumentation.lua`
 
 ### C_SecureTransfer.GetHousingVCPurchaseProductID
@@ -79,6 +82,7 @@ Namespace: `C_SecureTransfer`
 - Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Called out of combat: missing at call time
+- Called in combat: missing at call time
 - Source: client docs `SecureTransferDocumentation.lua`
 
 ### C_SecureTransfer.GetMailReceiveInfo
@@ -88,6 +92,7 @@ Namespace: `C_SecureTransfer`
 - Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Called out of combat: missing at call time
+- Called in combat: missing at call time
 - Source: client docs `SecureTransferDocumentation.lua`
 
 ### C_SecureTransfer.GetMailSendInfo
@@ -97,6 +102,7 @@ Namespace: `C_SecureTransfer`
 - Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Called out of combat: missing at call time
+- Called in combat: missing at call time
 - Source: client docs `SecureTransferDocumentation.lua`
 
 ### C_SecureTransfer.GetTradePartner
@@ -106,6 +112,7 @@ Namespace: `C_SecureTransfer`
 - Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Called out of combat: missing at call time
+- Called in combat: missing at call time
 - Source: client docs `SecureTransferDocumentation.lua`
 
 ### C_SecureTransfer.SendMail
@@ -123,6 +130,7 @@ Namespace: `C_SecureTransfer`
 - Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Called out of combat: missing at call time
+- Called in combat: missing at call time
 - Source: client docs `SecureTransferDocumentation.lua`
 
 ### C_SecureTransfer.ShouldShowTradeRMTWarning
@@ -132,6 +140,7 @@ Namespace: `C_SecureTransfer`
 - Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Called out of combat: missing at call time
+- Called in combat: missing at call time
 - Source: client docs `SecureTransferDocumentation.lua`
 
 ### C_SecureTransfer.TakeMailMoney
@@ -149,7 +158,7 @@ Namespace: `C_SecureTransfer`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 7 times (0 in combat); argument kinds: ``
+- Seen firing 12 times (2 in combat); argument kinds: ``
 
 ### SECURE_TRANSFER_CONFIRM_HOUSING_PURCHASE
 

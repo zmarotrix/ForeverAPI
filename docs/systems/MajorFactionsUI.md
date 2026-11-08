@@ -8,11 +8,11 @@ Namespace: `C_MajorFactions`
 |---|---|---|---|
 | ✅ | [C_MajorFactions.GetCurrentRenownLevel](#c_majorfactionsgetcurrentrenownlevel) |  |  |
 | ✅ | [C_MajorFactions.GetMajorFactionData](#c_majorfactionsgetmajorfactiondata) |  |  |
-| ✅ | [C_MajorFactions.GetMajorFactionIDs](#c_majorfactionsgetmajorfactionids) | 1 value |  |
+| ✅ | [C_MajorFactions.GetMajorFactionIDs](#c_majorfactionsgetmajorfactionids) | 1 value | 1 value |
 | ✅ | [C_MajorFactions.GetMajorFactionProgressionInfo](#c_majorfactionsgetmajorfactionprogressioninfo) |  |  |
 | ✅ | [C_MajorFactions.GetMajorFactionRenownInfo](#c_majorfactionsgetmajorfactionrenowninfo) |  |  |
 | ✅ | [C_MajorFactions.GetRenownLevels](#c_majorfactionsgetrenownlevels) |  |  |
-| ✅ | [C_MajorFactions.GetRenownNPCFactionID](#c_majorfactionsgetrenownnpcfactionid) | 1 value |  |
+| ✅ | [C_MajorFactions.GetRenownNPCFactionID](#c_majorfactionsgetrenownnpcfactionid) | 1 value | 1 value |
 | ✅ | [C_MajorFactions.GetRenownRewardsForLevel](#c_majorfactionsgetrenownrewardsforlevel) |  |  |
 | ✅ | [C_MajorFactions.GetTotalReputationForRenownLevel](#c_majorfactionsgettotalreputationforrenownlevel) |  |  |
 | ✅ | [C_MajorFactions.HasMaximumRenown](#c_majorfactionshasmaximumrenown) |  |  |
@@ -44,6 +44,7 @@ Namespace: `C_MajorFactions`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `table{[number]=number,[number]=number}`
+- Called in combat: returned 1 value: `table{[number]=number,[number]=number}`
 - Source: client docs `MajorFactionsDocumentation.lua`
 
 ### C_MajorFactions.GetMajorFactionProgressionInfo
@@ -76,6 +77,7 @@ Namespace: `C_MajorFactions`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `MajorFactionsDocumentation.lua`
 
 ### C_MajorFactions.GetRenownRewardsForLevel

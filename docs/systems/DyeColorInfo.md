@@ -6,8 +6,8 @@ Namespace: `C_DyeColor`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_DyeColor.GetAllDyeColorCategories](#c_dyecolorgetalldyecolorcategories) | 1 value |  |
-| ✅ | [C_DyeColor.GetAllDyeColors](#c_dyecolorgetalldyecolors) | 1 value |  |
+| ✅ | [C_DyeColor.GetAllDyeColorCategories](#c_dyecolorgetalldyecolorcategories) | 1 value | 1 value |
+| ✅ | [C_DyeColor.GetAllDyeColors](#c_dyecolorgetalldyecolors) | 1 value | 1 value |
 | ✅ | [C_DyeColor.GetDyeColorCategoryInfo](#c_dyecolorgetdyecolorcategoryinfo) |  |  |
 | 🆕 | [C_DyeColor.GetDyeColorForItem](#c_dyecolorgetdyecolorforitem) |  |  |
 | 🆕 | [C_DyeColor.GetDyeColorForItemLocation](#c_dyecolorgetdyecolorforitemlocation) |  |  |
@@ -23,6 +23,7 @@ Namespace: `C_DyeColor`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `DyeColorInfoDocumentation.lua`
 
 ### C_DyeColor.GetAllDyeColors
@@ -32,6 +33,7 @@ Namespace: `C_DyeColor`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `DyeColorInfoDocumentation.lua`
 
 ### C_DyeColor.GetDyeColorCategoryInfo

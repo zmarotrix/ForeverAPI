@@ -6,7 +6,7 @@ Namespace: `C_QuestOffer`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_QuestOffer.GetHideRequiredItems](#c_questoffergethiderequireditems) | 1 value |  |
+| ✅ | [C_QuestOffer.GetHideRequiredItems](#c_questoffergethiderequireditems) | 1 value | 1 value |
 | ✅ | [C_QuestOffer.GetQuestOfferMajorFactionReputationRewards](#c_questoffergetquestoffermajorfactionreputationrewards) |  |  |
 | ✅ | [C_QuestOffer.GetQuestRequiredCurrencyInfo](#c_questoffergetquestrequiredcurrencyinfo) |  |  |
 | ✅ | [C_QuestOffer.GetQuestRewardCurrencyInfo](#c_questoffergetquestrewardcurrencyinfo) |  |  |
@@ -17,6 +17,7 @@ Namespace: `C_QuestOffer`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `QuestOfferDocumentation.lua`
 
 ### C_QuestOffer.GetQuestOfferMajorFactionReputationRewards

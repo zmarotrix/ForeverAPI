@@ -8,20 +8,20 @@ Namespace: `C_PerksProgram`
 |---|---|---|---|
 | ✅ | [C_PerksProgram.ClearFrozenPerksVendorItem](#c_perksprogramclearfrozenperksvendoritem) |  |  |
 | ✅ | [C_PerksProgram.CloseInteraction](#c_perksprogramcloseinteraction) |  |  |
-| ✅ | [C_PerksProgram.GetAvailableCategoryIDs](#c_perksprogramgetavailablecategoryids) | 1 value |  |
-| ✅ | [C_PerksProgram.GetAvailableVendorItemIDs](#c_perksprogramgetavailablevendoritemids) | 1 value |  |
+| ✅ | [C_PerksProgram.GetAvailableCategoryIDs](#c_perksprogramgetavailablecategoryids) | 1 value | 1 value |
+| ✅ | [C_PerksProgram.GetAvailableVendorItemIDs](#c_perksprogramgetavailablevendoritemids) | 1 value | 1 value |
 | ✅ | [C_PerksProgram.GetCategoryInfo](#c_perksprogramgetcategoryinfo) |  |  |
-| ✅ | [C_PerksProgram.GetCurrencyAmount](#c_perksprogramgetcurrencyamount) | 1 value |  |
-| ✅ | [C_PerksProgram.GetDraggedPerksVendorItem](#c_perksprogramgetdraggedperksvendoritem) | 1 value |  |
-| ✅ | [C_PerksProgram.GetFrozenPerksVendorItemInfo](#c_perksprogramgetfrozenperksvendoriteminfo) | 0 values |  |
+| ✅ | [C_PerksProgram.GetCurrencyAmount](#c_perksprogramgetcurrencyamount) | 1 value | 1 value |
+| ✅ | [C_PerksProgram.GetDraggedPerksVendorItem](#c_perksprogramgetdraggedperksvendoritem) | 1 value | 1 value |
+| ✅ | [C_PerksProgram.GetFrozenPerksVendorItemInfo](#c_perksprogramgetfrozenperksvendoriteminfo) | 0 values | 0 values |
 | ✅ | [C_PerksProgram.GetPendingChestRewards](#c_perksprogramgetpendingchestrewards) |  |  |
 | ✅ | [C_PerksProgram.GetPerksProgramItemDisplayInfo](#c_perksprogramgetperksprogramitemdisplayinfo) |  |  |
 | ✅ | [C_PerksProgram.GetTimeRemaining](#c_perksprogramgettimeremaining) |  |  |
 | ✅ | [C_PerksProgram.GetVendorItemInfo](#c_perksprogramgetvendoriteminfo) |  |  |
 | ✅ | [C_PerksProgram.GetVendorItemInfoRefundTimeLeft](#c_perksprogramgetvendoriteminforefundtimeleft) |  |  |
-| ✅ | [C_PerksProgram.IsAttackAnimToggleEnabled](#c_perksprogramisattackanimtoggleenabled) | 1 value |  |
+| ✅ | [C_PerksProgram.IsAttackAnimToggleEnabled](#c_perksprogramisattackanimtoggleenabled) | 1 value | 1 value |
 | ✅ | [C_PerksProgram.IsFrozenPerksVendorItem](#c_perksprogramisfrozenperksvendoritem) |  |  |
-| ✅ | [C_PerksProgram.IsMountSpecialAnimToggleEnabled](#c_perksprogramismountspecialanimtoggleenabled) | 1 value |  |
+| ✅ | [C_PerksProgram.IsMountSpecialAnimToggleEnabled](#c_perksprogramismountspecialanimtoggleenabled) | 1 value | 1 value |
 | ✅ | [C_PerksProgram.ItemSelectedTelemetry](#c_perksprogramitemselectedtelemetry) |  |  |
 | ✅ | [C_PerksProgram.PickupPerksVendorItem](#c_perksprogrampickupperksvendoritem) |  |  |
 | ✅ | [C_PerksProgram.RequestCartCheckout](#c_perksprogramrequestcartcheckout) |  |  |
@@ -51,6 +51,7 @@ Namespace: `C_PerksProgram`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `PerksProgramDocumentation.lua`
 
 ### C_PerksProgram.GetAvailableVendorItemIDs
@@ -59,6 +60,7 @@ Namespace: `C_PerksProgram`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `PerksProgramDocumentation.lua`
 
 ### C_PerksProgram.GetCategoryInfo
@@ -75,6 +77,7 @@ Namespace: `C_PerksProgram`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PerksProgramDocumentation.lua`
 
 ### C_PerksProgram.GetDraggedPerksVendorItem
@@ -83,6 +86,7 @@ Namespace: `C_PerksProgram`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PerksProgramDocumentation.lua`
 
 ### C_PerksProgram.GetFrozenPerksVendorItemInfo
@@ -92,6 +96,7 @@ Namespace: `C_PerksProgram`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `PerksProgramDocumentation.lua`
 
 ### C_PerksProgram.GetPendingChestRewards
@@ -139,6 +144,7 @@ Namespace: `C_PerksProgram`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PerksProgramDocumentation.lua`
 
 ### C_PerksProgram.IsFrozenPerksVendorItem
@@ -155,6 +161,7 @@ Namespace: `C_PerksProgram`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PerksProgramDocumentation.lua`
 
 ### C_PerksProgram.ItemSelectedTelemetry

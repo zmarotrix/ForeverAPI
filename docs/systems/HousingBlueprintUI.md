@@ -14,9 +14,9 @@ Namespace: `C_HousingBlueprint`
 | ✅ | [C_HousingBlueprint.ExportRoomBlueprint](#c_housingblueprintexportroomblueprint) |  |  |
 | ✅ | [C_HousingBlueprint.GetBlueprintHyperlink](#c_housingblueprintgetblueprinthyperlink) |  |  |
 | ✅ | [C_HousingBlueprint.GetBlueprintTypeForCode](#c_housingblueprintgetblueprinttypeforcode) |  |  |
-| ✅ | [C_HousingBlueprint.GetExportAvailability](#c_housingblueprintgetexportavailability) | 1 value |  |
-| ✅ | [C_HousingBlueprint.GetFeatureAvailability](#c_housingblueprintgetfeatureavailability) | 1 value |  |
-| ✅ | [C_HousingBlueprint.GetImportAvailability](#c_housingblueprintgetimportavailability) | 1 value |  |
+| ✅ | [C_HousingBlueprint.GetExportAvailability](#c_housingblueprintgetexportavailability) | 1 value | 1 value |
+| ✅ | [C_HousingBlueprint.GetFeatureAvailability](#c_housingblueprintgetfeatureavailability) | 1 value | 1 value |
+| ✅ | [C_HousingBlueprint.GetImportAvailability](#c_housingblueprintgetimportavailability) | 1 value | 1 value |
 | ✅ | [C_HousingBlueprint.ImportBlueprint](#c_housingblueprintimportblueprint) |  |  |
 | ✅ | [C_HousingBlueprint.IsShareCodeValid](#c_housingblueprintissharecodevalid) |  |  |
 | ✅ | [C_HousingBlueprint.RenameBlueprint](#c_housingblueprintrenameblueprint) |  |  |
@@ -105,6 +105,7 @@ Namespace: `C_HousingBlueprint`
 - Status: ✅ verified (function)
 - Blizzard: Returns success if the player can currently export Blueprints, or a specific error type (ex: invalid location or permissions)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `HousingBlueprintUIDocumentation.lua`
 
 ### C_HousingBlueprint.GetFeatureAvailability
@@ -114,6 +115,7 @@ Namespace: `C_HousingBlueprint`
 - Status: ✅ verified (function)
 - Blizzard: Returns success if Blueprints as a feature is currently enabled and available
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `HousingBlueprintUIDocumentation.lua`
 
 ### C_HousingBlueprint.GetImportAvailability
@@ -123,6 +125,7 @@ Namespace: `C_HousingBlueprint`
 - Status: ✅ verified (function)
 - Blizzard: Returns success if the player can currently import Blueprints, or a specific error type (ex: invalid location or permissions)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `HousingBlueprintUIDocumentation.lua`
 
 ### C_HousingBlueprint.ImportBlueprint

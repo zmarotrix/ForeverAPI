@@ -8,21 +8,21 @@ Namespace: `C_Discord`
 |---|---|---|---|
 | ✅ | [C_Discord.Authorize](#c_discordauthorize) |  |  |
 | ✅ | [C_Discord.GetDiscordChannelName](#c_discordgetdiscordchannelname) |  |  |
-| ✅ | [C_Discord.GetDiscordUserID](#c_discordgetdiscorduserid) | protected |  |
+| ✅ | [C_Discord.GetDiscordUserID](#c_discordgetdiscorduserid) | 💥 forbidden | 💥 forbidden |
 | ✅ | [C_Discord.GetDiscordUserName](#c_discordgetdiscordusername) |  |  |
-| ✅ | [C_Discord.GetDisplayNameType](#c_discordgetdisplaynametype) | protected |  |
-| ✅ | [C_Discord.GetGuildLinkStatus](#c_discordgetguildlinkstatus) | protected |  |
+| ✅ | [C_Discord.GetDisplayNameType](#c_discordgetdisplaynametype) | 💥 forbidden | 💥 forbidden |
+| ✅ | [C_Discord.GetGuildLinkStatus](#c_discordgetguildlinkstatus) | 💥 forbidden | 💥 forbidden |
 | ✅ | [C_Discord.GetNumDiscordChannels](#c_discordgetnumdiscordchannels) |  |  |
-| ✅ | [C_Discord.GetNumDiscordServers](#c_discordgetnumdiscordservers) | protected |  |
+| ✅ | [C_Discord.GetNumDiscordServers](#c_discordgetnumdiscordservers) | 💥 forbidden | 💥 forbidden |
 | ✅ | [C_Discord.GetServerLinkableChannels](#c_discordgetserverlinkablechannels) |  |  |
 | ✅ | [C_Discord.GetServerName](#c_discordgetservername) |  |  |
 | ✅ | [C_Discord.GuildLink](#c_discordguildlink) |  |  |
 | ✅ | [C_Discord.GuildUnlink](#c_discordguildunlink) |  |  |
-| ✅ | [C_Discord.IsEnabled](#c_discordisenabled) | 1 value |  |
-| ✅ | [C_Discord.IsGuildChannelLinked](#c_discordisguildchannellinked) | protected |  |
+| ✅ | [C_Discord.IsEnabled](#c_discordisenabled) | 1 value | 1 value |
+| ✅ | [C_Discord.IsGuildChannelLinked](#c_discordisguildchannellinked) | 💥 forbidden | 💥 forbidden |
 | ✅ | [C_Discord.IsGuildSettingSet](#c_discordisguildsettingset) |  |  |
-| ✅ | [C_Discord.IsUserOAuthed](#c_discordisuseroauthed) | protected |  |
-| ✅ | [C_Discord.IsVoiceEnabled](#c_discordisvoiceenabled) | 1 value |  |
+| ✅ | [C_Discord.IsUserOAuthed](#c_discordisuseroauthed) | 💥 forbidden | 💥 forbidden |
+| ✅ | [C_Discord.IsVoiceEnabled](#c_discordisvoiceenabled) | 1 value | 1 value |
 | ✅ | [C_Discord.RefreshAuth](#c_discordrefreshauth) |  |  |
 | ✅ | [C_Discord.SetGuildSetting](#c_discordsetguildsetting) |  |  |
 | ✅ | [C_Discord.UpdateDiscordServers](#c_discordupdatediscordservers) |  |  |
@@ -51,7 +51,8 @@ Namespace: `C_Discord`
 
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: ⛔ protected: calling it raised ADDON_ACTION_FORBIDDEN
+- Called out of combat: 💥 not called: forbidden
+- Called in combat: 💥 not called: forbidden
 - Source: client docs `DiscordDocumentation.lua`
 
 ### C_Discord.GetDiscordUserName
@@ -69,7 +70,8 @@ Namespace: `C_Discord`
 
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: ⛔ protected: calling it raised ADDON_ACTION_FORBIDDEN
+- Called out of combat: 💥 not called: forbidden
+- Called in combat: 💥 not called: forbidden
 - Source: client docs `DiscordDocumentation.lua`
 
 ### C_Discord.GetGuildLinkStatus
@@ -78,7 +80,8 @@ Namespace: `C_Discord`
 
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: ⛔ protected: calling it raised ADDON_ACTION_FORBIDDEN
+- Called out of combat: 💥 not called: forbidden
+- Called in combat: 💥 not called: forbidden
 - Source: client docs `DiscordDocumentation.lua`
 
 ### C_Discord.GetNumDiscordChannels
@@ -96,7 +99,8 @@ Namespace: `C_Discord`
 
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: ⛔ protected: calling it raised ADDON_ACTION_FORBIDDEN
+- Called out of combat: 💥 not called: forbidden
+- Called in combat: 💥 not called: forbidden
 - Source: client docs `DiscordDocumentation.lua`
 
 ### C_Discord.GetServerLinkableChannels
@@ -140,6 +144,7 @@ Namespace: `C_Discord`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `DiscordDocumentation.lua`
 
 ### C_Discord.IsGuildChannelLinked
@@ -148,7 +153,8 @@ Namespace: `C_Discord`
 
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: ⛔ protected: calling it raised ADDON_ACTION_FORBIDDEN
+- Called out of combat: 💥 not called: forbidden
+- Called in combat: 💥 not called: forbidden
 - Source: client docs `DiscordDocumentation.lua`
 
 ### C_Discord.IsGuildSettingSet
@@ -166,7 +172,8 @@ Namespace: `C_Discord`
 
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: ⛔ protected: calling it raised ADDON_ACTION_FORBIDDEN
+- Called out of combat: 💥 not called: forbidden
+- Called in combat: 💥 not called: forbidden
 - Source: client docs `DiscordDocumentation.lua`
 
 ### C_Discord.IsVoiceEnabled
@@ -175,6 +182,7 @@ Namespace: `C_Discord`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `DiscordDocumentation.lua`
 
 ### C_Discord.RefreshAuth

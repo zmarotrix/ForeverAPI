@@ -6,14 +6,14 @@ Namespace: `C_BattleNet`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_BattleNet.AreFriendTagsEnabled](#c_battlenetarefriendtagsenabled) | 1 value |  |
-| ✅ | [C_BattleNet.AreHighResTexturesInstalled](#c_battlenetarehighrestexturesinstalled) | 1 value |  |
-| ✅ | [C_BattleNet.AreRealIDFriendsEnabled](#c_battlenetarerealidfriendsenabled) | 1 value |  |
-| ✅ | [C_BattleNet.AreTitleFriendCustomNamesEnabled](#c_battlenetaretitlefriendcustomnamesenabled) | 1 value |  |
-| ✅ | [C_BattleNet.AreTitleFriendsEnabled](#c_battlenetaretitlefriendsenabled) | 1 value |  |
+| ✅ | [C_BattleNet.AreFriendTagsEnabled](#c_battlenetarefriendtagsenabled) | 1 value | 1 value |
+| ✅ | [C_BattleNet.AreHighResTexturesInstalled](#c_battlenetarehighrestexturesinstalled) | 1 value | 1 value |
+| ✅ | [C_BattleNet.AreRealIDFriendsEnabled](#c_battlenetarerealidfriendsenabled) | 1 value | 1 value |
+| ✅ | [C_BattleNet.AreTitleFriendCustomNamesEnabled](#c_battlenetaretitlefriendcustomnamesenabled) | 1 value | 1 value |
+| ✅ | [C_BattleNet.AreTitleFriendsEnabled](#c_battlenetaretitlefriendsenabled) | 1 value | 1 value |
 | ✅ | [C_BattleNet.BNCheckBattleTagInviteToRecentAlly](#c_battlenetbncheckbattletaginvitetorecentally) |  |  |
 | ✅ | [C_BattleNet.BNCheckTitleFriendInviteToUnit](#c_battlenetbnchecktitlefriendinvitetounit) |  |  |
-| ✅ | [C_BattleNet.CanToggleHighResTexturesWithoutClientReload](#c_battlenetcantogglehighrestextureswithoutclientreload) | 1 value |  |
+| ✅ | [C_BattleNet.CanToggleHighResTexturesWithoutClientReload](#c_battlenetcantogglehighrestextureswithoutclientreload) | 1 value | 1 value |
 | ✅ | [C_BattleNet.GetAccountInfoByGUID](#c_battlenetgetaccountinfobyguid) |  |  |
 | ✅ | [C_BattleNet.GetAccountInfoByID](#c_battlenetgetaccountinfobyid) |  |  |
 | ✅ | [C_BattleNet.GetCustomTitleFriendName](#c_battlenetgetcustomtitlefriendname) |  |  |
@@ -27,8 +27,8 @@ Namespace: `C_BattleNet`
 | ✅ | [C_BattleNet.GetGameAccountInfoByID](#c_battlenetgetgameaccountinfobyid) |  |  |
 | ✅ | [C_BattleNet.InstallHighResTextures](#c_battlenetinstallhighrestextures) |  |  |
 | ✅ | [C_BattleNet.InviteFriend](#c_battlenetinvitefriend) |  |  |
-| ✅ | [C_BattleNet.IsBattleNetFriendsListEnabled](#c_battlenetisbattlenetfriendslistenabled) | 1 value |  |
-| ✅ | [C_BattleNet.IsBattleNetFriendsListSupported](#c_battlenetisbattlenetfriendslistsupported) | 1 value |  |
+| ✅ | [C_BattleNet.IsBattleNetFriendsListEnabled](#c_battlenetisbattlenetfriendslistenabled) | 1 value | 1 value |
+| ✅ | [C_BattleNet.IsBattleNetFriendsListSupported](#c_battlenetisbattlenetfriendslistsupported) | 1 value | 1 value |
 | ✅ | [C_BattleNet.IsFriendTagSupportedForCurrentGameType](#c_battlenetisfriendtagsupportedforcurrentgametype) |  |  |
 | ✅ | [C_BattleNet.SearchFriends](#c_battlenetsearchfriends) |  |  |
 | ✅ | [C_BattleNet.SendGameData](#c_battlenetsendgamedata) |  |  |
@@ -49,6 +49,7 @@ Namespace: `C_BattleNet`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BattleNetDocumentation.lua`
 
 ### C_BattleNet.AreHighResTexturesInstalled
@@ -57,6 +58,7 @@ Namespace: `C_BattleNet`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BattleNetDocumentation.lua`
 
 ### C_BattleNet.AreRealIDFriendsEnabled
@@ -65,6 +67,7 @@ Namespace: `C_BattleNet`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BattleNetDocumentation.lua`
 
 ### C_BattleNet.AreTitleFriendCustomNamesEnabled
@@ -73,6 +76,7 @@ Namespace: `C_BattleNet`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BattleNetDocumentation.lua`
 
 ### C_BattleNet.AreTitleFriendsEnabled
@@ -81,6 +85,7 @@ Namespace: `C_BattleNet`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BattleNetDocumentation.lua`
 
 ### C_BattleNet.BNCheckBattleTagInviteToRecentAlly
@@ -105,6 +110,7 @@ Namespace: `C_BattleNet`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BattleNetDocumentation.lua`
 
 ### C_BattleNet.GetAccountInfoByGUID
@@ -219,6 +225,7 @@ Namespace: `C_BattleNet`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BattleNetDocumentation.lua`
 
 ### C_BattleNet.IsBattleNetFriendsListSupported
@@ -227,6 +234,7 @@ Namespace: `C_BattleNet`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BattleNetDocumentation.lua`
 
 ### C_BattleNet.IsFriendTagSupportedForCurrentGameType

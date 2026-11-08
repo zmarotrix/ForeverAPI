@@ -7,16 +7,16 @@ Namespace: `C_PetInfo`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_PetInfo.CanPetEatItem](#c_petinfocanpeteatitem) |  |  |
-| ✅ | [C_PetInfo.GetPetFoodTypes](#c_petinfogetpetfoodtypes) | 1 value |  |
-| ✅ | [C_PetInfo.GetPetHappiness](#c_petinfogetpethappiness) | 0 values |  |
-| ✅ | [C_PetInfo.GetPetLoyalty](#c_petinfogetpetloyalty) | 0 values |  |
-| ✅ | [C_PetInfo.GetPetTalentTree](#c_petinfogetpettalenttree) | 0 values |  |
+| ✅ | [C_PetInfo.GetPetFoodTypes](#c_petinfogetpetfoodtypes) | 1 value | 1 value |
+| ✅ | [C_PetInfo.GetPetHappiness](#c_petinfogetpethappiness) | 0 values | 0 values |
+| ✅ | [C_PetInfo.GetPetLoyalty](#c_petinfogetpetloyalty) | 0 values | 0 values |
+| ✅ | [C_PetInfo.GetPetTalentTree](#c_petinfogetpettalenttree) | 0 values | 0 values |
 | ✅ | [C_PetInfo.GetPetTamersForMap](#c_petinfogetpettamersformap) |  |  |
-| ✅ | [C_PetInfo.GetPetTrainingPoints](#c_petinfogetpettrainingpoints) | 2 values |  |
-| ✅ | [C_PetInfo.GetPetUIModelSceneID](#c_petinfogetpetuimodelsceneid) | 1 value |  |
+| ✅ | [C_PetInfo.GetPetTrainingPoints](#c_petinfogetpettrainingpoints) | 2 values | 2 values |
+| ✅ | [C_PetInfo.GetPetUIModelSceneID](#c_petinfogetpetuimodelsceneid) | 1 value | 1 value |
 | ✅ | [C_PetInfo.GetSpellForPetAction](#c_petinfogetspellforpetaction) |  |  |
 | ✅ | [C_PetInfo.IsPetActionPassive](#c_petinfoispetactionpassive) |  |  |
-| ✅ | [C_PetInfo.IsPetOrderMoveToPending](#c_petinfoispetordermovetopending) | 1 value |  |
+| ✅ | [C_PetInfo.IsPetOrderMoveToPending](#c_petinfoispetordermovetopending) | 1 value | 1 value |
 | ✅ | [C_PetInfo.PetAbandon](#c_petinfopetabandon) |  |  |
 | ✅ | [C_PetInfo.PetAssistMode](#c_petinfopetassistmode) |  |  |
 | ✅ | [C_PetInfo.PetRename](#c_petinfopetrename) |  |  |
@@ -35,6 +35,7 @@ Namespace: `C_PetInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `PetInfoDocumentation.lua`
 
 ### C_PetInfo.GetPetHappiness
@@ -44,6 +45,7 @@ Namespace: `C_PetInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `PetInfoDocumentation.lua`
 
 ### C_PetInfo.GetPetLoyalty
@@ -53,6 +55,7 @@ Namespace: `C_PetInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `PetInfoDocumentation.lua`
 
 ### C_PetInfo.GetPetTalentTree
@@ -62,6 +65,7 @@ Namespace: `C_PetInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `PetInfoDocumentation.lua`
 
 ### C_PetInfo.GetPetTamersForMap
@@ -78,6 +82,7 @@ Namespace: `C_PetInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `number`, `number`
 - Source: client docs `PetInfoDocumentation.lua`
 
 ### C_PetInfo.GetPetUIModelSceneID
@@ -86,6 +91,7 @@ Namespace: `C_PetInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PetInfoDocumentation.lua`
 
 ### C_PetInfo.GetSpellForPetAction
@@ -110,6 +116,7 @@ Namespace: `C_PetInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PetInfoDocumentation.lua`
 
 ### C_PetInfo.PetAbandon
@@ -208,7 +215,7 @@ Namespace: `C_PetInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 4 times (0 in combat); argument kinds: ``
 
 ## Types
 

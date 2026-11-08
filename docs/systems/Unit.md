@@ -5,36 +5,36 @@
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [CanEjectPassengerFromSeat](#canejectpassengerfromseat) |  |  |
-| ✅ | [CanSwitchVehicleSeat](#canswitchvehicleseat) | 1 value |  |
+| ✅ | [CanSwitchVehicleSeat](#canswitchvehicleseat) | 1 value | 1 value |
 | ✅ | [ClosestGameObjectPosition](#closestgameobjectposition) |  |  |
 | ✅ | [ClosestUnitPosition](#closestunitposition) |  |  |
 | ✅ | [CreateUnitHealPredictionCalculator](#createunithealpredictioncalculator) |  |  |
 | ✅ | [EjectPassengerFromSeat](#ejectpassengerfromseat) |  |  |
 | ✅ | [GetComboPoints](#getcombopoints) |  |  |
-| ✅ | [GetNegativeCorruptionEffectInfo](#getnegativecorruptioneffectinfo) | 1 value |  |
-| ✅ | [GetUnitChargedPowerPoints](#getunitchargedpowerpoints) | 0 values |  |
-| ✅ | [GetUnitEmpowerHoldAtMaxTime](#getunitempowerholdatmaxtime) | 1 value |  |
-| ✅ | [GetUnitEmpowerMinHoldTime](#getunitempowerminholdtime) | 1 value |  |
+| ✅ | [GetNegativeCorruptionEffectInfo](#getnegativecorruptioneffectinfo) | 1 value | 1 value |
+| ✅ | [GetUnitChargedPowerPoints](#getunitchargedpowerpoints) | 0 values | 0 values |
+| ✅ | [GetUnitEmpowerHoldAtMaxTime](#getunitempowerholdatmaxtime) | 1 value | 1 value |
+| ✅ | [GetUnitEmpowerMinHoldTime](#getunitempowerminholdtime) | 1 value | 1 value |
 | ✅ | [GetUnitEmpowerStageDuration](#getunitempowerstageduration) |  |  |
-| ✅ | [GetUnitHealthModifier](#getunithealthmodifier) | 1 value |  |
-| ✅ | [GetUnitMaxHealthModifier](#getunitmaxhealthmodifier) | 1 value |  |
-| ✅ | [GetUnitPowerBarInfo](#getunitpowerbarinfo) | 0 values |  |
+| ✅ | [GetUnitHealthModifier](#getunithealthmodifier) | 1 value | 1 value |
+| ✅ | [GetUnitMaxHealthModifier](#getunitmaxhealthmodifier) | 1 value | 1 value |
+| ✅ | [GetUnitPowerBarInfo](#getunitpowerbarinfo) | 0 values | 0 values |
 | ✅ | [GetUnitPowerBarInfoByID](#getunitpowerbarinfobyid) |  |  |
-| ✅ | [GetUnitPowerBarStrings](#getunitpowerbarstrings) | 3 values |  |
+| ✅ | [GetUnitPowerBarStrings](#getunitpowerbarstrings) | 3 values | 3 values |
 | ✅ | [GetUnitPowerBarStringsByID](#getunitpowerbarstringsbyid) |  |  |
 | ✅ | [GetUnitPowerBarTextureInfo](#getunitpowerbartextureinfo) |  |  |
 | ✅ | [GetUnitPowerBarTextureInfoByID](#getunitpowerbartextureinfobyid) |  |  |
-| ✅ | [GetUnitPowerModifier](#getunitpowermodifier) | 1 value |  |
-| ✅ | [GetUnitSpeed](#getunitspeed) | 4 values |  |
-| ✅ | [GetUnitTotalModifiedMaxHealthPercent](#getunittotalmodifiedmaxhealthpercent) | 1 value |  |
+| ✅ | [GetUnitPowerModifier](#getunitpowermodifier) | 1 value | 1 value |
+| ✅ | [GetUnitSpeed](#getunitspeed) | 4 values | secret |
+| ✅ | [GetUnitTotalModifiedMaxHealthPercent](#getunittotalmodifiedmaxhealthpercent) | 1 value | 1 value |
 | ✅ | [GetVehicleUIIndicator](#getvehicleuiindicator) |  |  |
 | ✅ | [GetVehicleUIIndicatorSeat](#getvehicleuiindicatorseat) |  |  |
-| ✅ | [IsFalling](#isfalling) | 1 value |  |
-| ✅ | [IsFlying](#isflying) | 1 value |  |
+| ✅ | [IsFalling](#isfalling) | 1 value | 1 value |
+| ✅ | [IsFlying](#isflying) | 1 value | 1 value |
 | ✅ | [IsPlayerInGuildFromGUID](#isplayeringuildfromguid) |  |  |
-| ✅ | [IsSubmerged](#issubmerged) | 1 value |  |
-| ✅ | [IsSwimming](#isswimming) | 1 value |  |
-| ✅ | [IsUnitModelReadyForUI](#isunitmodelreadyforui) | 1 value |  |
+| ✅ | [IsSubmerged](#issubmerged) | 1 value | 1 value |
+| ✅ | [IsSwimming](#isswimming) | 1 value | 1 value |
+| ✅ | [IsUnitModelReadyForUI](#isunitmodelreadyforui) | 1 value | 1 value |
 | ✅ | [PlayerIsPVPInactive](#playerispvpinactive) |  |  |
 | ✅ | [PlayerIsSpellTarget](#playerisspelltarget) |  |  |
 | ✅ | [PlayerVehicleHasComboPoints](#playervehiclehascombopoints) |  |  |
@@ -44,183 +44,183 @@
 | ✅ | [SetPortraitTexture](#setportraittexture) |  |  |
 | ✅ | [SetPortraitTextureFromCreatureDisplayID](#setportraittexturefromcreaturedisplayid) |  |  |
 | ✅ | [SetUnitCursorTexture](#setunitcursortexture) |  |  |
-| ✅ | [UnitAffectingCombat](#unitaffectingcombat) | 1 value |  |
-| ✅ | [UnitAlliedRaceInfo](#unitalliedraceinfo) | 2 values |  |
-| ✅ | [UnitArmor](#unitarmor) | 4 values |  |
-| ✅ | [UnitAttackPower](#unitattackpower) | 3 values |  |
-| ✅ | [UnitAttackSpeed](#unitattackspeed) | 3 values |  |
-| ✅ | [UnitBattlePetLevel](#unitbattlepetlevel) | 1 value |  |
-| ✅ | [UnitBattlePetSpeciesID](#unitbattlepetspeciesid) | 1 value |  |
-| ✅ | [UnitBattlePetType](#unitbattlepettype) | 1 value |  |
+| ✅ | [UnitAffectingCombat](#unitaffectingcombat) | 1 value | 1 value |
+| ✅ | [UnitAlliedRaceInfo](#unitalliedraceinfo) | 2 values | 2 values |
+| ✅ | [UnitArmor](#unitarmor) | 4 values | secret |
+| ✅ | [UnitAttackPower](#unitattackpower) | 3 values | secret |
+| ✅ | [UnitAttackSpeed](#unitattackspeed) | 3 values | partly secret |
+| ✅ | [UnitBattlePetLevel](#unitbattlepetlevel) | 1 value | 1 value |
+| ✅ | [UnitBattlePetSpeciesID](#unitbattlepetspeciesid) | 1 value | 1 value |
+| ✅ | [UnitBattlePetType](#unitbattlepettype) | 1 value | 1 value |
 | ✅ | [UnitCanAssist](#unitcanassist) |  |  |
 | ✅ | [UnitCanAttack](#unitcanattack) |  |  |
 | ✅ | [UnitCanCooperate](#unitcancooperate) |  |  |
 | ✅ | [UnitCanPetBattle](#unitcanpetbattle) |  |  |
-| ✅ | [UnitCastingDuration](#unitcastingduration) | 0 values |  |
-| ✅ | [UnitCastingInfo](#unitcastinginfo) | 0 values |  |
-| ✅ | [UnitChannelDuration](#unitchannelduration) | 0 values |  |
-| ✅ | [UnitChannelInfo](#unitchannelinfo) | 0 values |  |
-| ✅ | [UnitChromieTimeID](#unitchromietimeid) | 1 value |  |
-| ✅ | [UnitClass](#unitclass) | 3 values |  |
-| ✅ | [UnitClassBase](#unitclassbase) | 2 values |  |
+| ✅ | [UnitCastingDuration](#unitcastingduration) | 0 values | 0 values |
+| ✅ | [UnitCastingInfo](#unitcastinginfo) | 0 values | 0 values |
+| ✅ | [UnitChannelDuration](#unitchannelduration) | 0 values | 0 values |
+| ✅ | [UnitChannelInfo](#unitchannelinfo) | 0 values | 0 values |
+| ✅ | [UnitChromieTimeID](#unitchromietimeid) | 1 value | 1 value |
+| ✅ | [UnitClass](#unitclass) | 3 values | 3 values |
+| ✅ | [UnitClassBase](#unitclassbase) | 2 values | 2 values |
 | ✅ | [UnitClassFromGUID](#unitclassfromguid) |  |  |
-| ✅ | [UnitClassification](#unitclassification) | 1 value |  |
-| ✅ | [UnitControllingVehicle](#unitcontrollingvehicle) | 1 value |  |
-| ✅ | [UnitCreatureFamily](#unitcreaturefamily) | 0 values |  |
-| ✅ | [UnitCreatureID](#unitcreatureid) | 1 value |  |
-| ✅ | [UnitCreatureType](#unitcreaturetype) | 2 values |  |
-| ✅ | [UnitDamage](#unitdamage) | 7 values |  |
-| ✅ | [UnitDefenseSkill](#unitdefenseskill) | 2 values |  |
+| ✅ | [UnitClassification](#unitclassification) | 1 value | 1 value |
+| ✅ | [UnitControllingVehicle](#unitcontrollingvehicle) | 1 value | 1 value |
+| ✅ | [UnitCreatureFamily](#unitcreaturefamily) | 0 values | 0 values |
+| ✅ | [UnitCreatureID](#unitcreatureid) | 1 value | 1 value |
+| ✅ | [UnitCreatureType](#unitcreaturetype) | 2 values | 2 values |
+| ✅ | [UnitDamage](#unitdamage) | 7 values | secret |
+| ✅ | [UnitDefenseSkill](#unitdefenseskill) | 2 values | secret |
 | ✅ | [UnitDetailedThreatSituation](#unitdetailedthreatsituation) |  |  |
-| ✅ | [UnitDistanceSquared](#unitdistancesquared) | 2 values |  |
+| ✅ | [UnitDistanceSquared](#unitdistancesquared) | 2 values | 2 values |
 | ✅ | [UnitEffectiveLevel](#uniteffectivelevel) |  |  |
-| ✅ | [UnitEmpoweredChannelDuration](#unitempoweredchannelduration) | 0 values |  |
-| ✅ | [UnitEmpoweredStageDurations](#unitempoweredstagedurations) | 0 values |  |
-| ✅ | [UnitEmpoweredStagePercentages](#unitempoweredstagepercentages) | 0 values |  |
-| ✅ | [UnitExists](#unitexists) | 1 value |  |
+| ✅ | [UnitEmpoweredChannelDuration](#unitempoweredchannelduration) | 0 values | 0 values |
+| ✅ | [UnitEmpoweredStageDurations](#unitempoweredstagedurations) | 0 values | 0 values |
+| ✅ | [UnitEmpoweredStagePercentages](#unitempoweredstagepercentages) | 0 values | 0 values |
+| ✅ | [UnitExists](#unitexists) | 1 value | 1 value |
 | ✅ | [UnitFactionGroup](#unitfactiongroup) |  |  |
-| ✅ | [UnitFullName](#unitfullname) | 2 values |  |
-| ✅ | [UnitGUID](#unitguid) | 1 value |  |
+| ✅ | [UnitFullName](#unitfullname) | 2 values | 2 values |
+| ✅ | [UnitGUID](#unitguid) | 1 value | 1 value |
 | ✅ | [UnitGetDetailedHealPrediction](#unitgetdetailedhealprediction) |  |  |
-| ✅ | [UnitGetIncomingHeals](#unitgetincomingheals) | secret |  |
-| ✅ | [UnitGetTotalAbsorbs](#unitgettotalabsorbs) | secret |  |
-| ✅ | [UnitGetTotalHealAbsorbs](#unitgettotalhealabsorbs) | secret |  |
-| ✅ | [UnitGroupRolesAssigned](#unitgrouprolesassigned) | 1 value |  |
-| ✅ | [UnitGroupRolesAssignedEnum](#unitgrouprolesassignedenum) | 1 value |  |
-| ✅ | [UnitHPPerStamina](#unithpperstamina) | 1 value |  |
-| ✅ | [UnitHasEffectivelyTankAura](#unithaseffectivelytankaura) | 1 value |  |
-| ✅ | [UnitHasLootInteraction](#unithaslootinteraction) | 1 value |  |
-| ✅ | [UnitHasMouseoverHighlight](#unithasmouseoverhighlight) | 1 value |  |
+| ✅ | [UnitGetIncomingHeals](#unitgetincomingheals) | secret | secret |
+| ✅ | [UnitGetTotalAbsorbs](#unitgettotalabsorbs) | secret | secret |
+| ✅ | [UnitGetTotalHealAbsorbs](#unitgettotalhealabsorbs) | secret | secret |
+| ✅ | [UnitGroupRolesAssigned](#unitgrouprolesassigned) | 1 value | 1 value |
+| ✅ | [UnitGroupRolesAssignedEnum](#unitgrouprolesassignedenum) | 1 value | 1 value |
+| ✅ | [UnitHPPerStamina](#unithpperstamina) | 1 value | 1 value |
+| ✅ | [UnitHasEffectivelyTankAura](#unithaseffectivelytankaura) | 1 value | 1 value |
+| ✅ | [UnitHasLootInteraction](#unithaslootinteraction) | 1 value | 1 value |
+| ✅ | [UnitHasMouseoverHighlight](#unithasmouseoverhighlight) | 1 value | 1 value |
 | ✅ | [UnitHasPowerType](#unithaspowertype) |  |  |
-| ✅ | [UnitHasRelicSlot](#unithasrelicslot) | 1 value |  |
-| ✅ | [UnitHasVehiclePlayerFrameUI](#unithasvehicleplayerframeui) | 1 value |  |
-| ✅ | [UnitHasVehicleUI](#unithasvehicleui) | 1 value |  |
-| ✅ | [UnitHealth](#unithealth) | secret |  |
-| ✅ | [UnitHealthMax](#unithealthmax) | 1 value |  |
-| ✅ | [UnitHealthMissing](#unithealthmissing) | secret |  |
-| ✅ | [UnitHealthPercent](#unithealthpercent) | secret |  |
-| ✅ | [UnitHonor](#unithonor) | 1 value |  |
-| ✅ | [UnitHonorLevel](#unithonorlevel) | 1 value |  |
-| ✅ | [UnitHonorMax](#unithonormax) | 1 value |  |
-| ✅ | [UnitInAnyGroup](#unitinanygroup) | 1 value |  |
-| ✅ | [UnitInBattleground](#unitinbattleground) | 1 value |  |
-| ✅ | [UnitInOtherParty](#unitinotherparty) | 1 value |  |
-| ✅ | [UnitInParty](#unitinparty) | 1 value |  |
-| ✅ | [UnitInPartyIsAI](#unitinpartyisai) | 1 value |  |
-| ✅ | [UnitInPartyShard](#unitinpartyshard) | 1 value |  |
-| ✅ | [UnitInRaid](#unitinraid) | 1 value |  |
-| ✅ | [UnitInRange](#unitinrange) | secret |  |
-| ✅ | [UnitInSubgroup](#unitinsubgroup) | 1 value |  |
-| ✅ | [UnitInVehicle](#unitinvehicle) | 1 value |  |
-| ✅ | [UnitInVehicleControlSeat](#unitinvehiclecontrolseat) | 1 value |  |
-| ✅ | [UnitInVehicleHidesPetFrame](#unitinvehiclehidespetframe) | 1 value |  |
-| ✅ | [UnitIsAFK](#unitisafk) | 1 value |  |
-| ✅ | [UnitIsBattlePet](#unitisbattlepet) | 1 value |  |
-| ✅ | [UnitIsBattlePetCompanion](#unitisbattlepetcompanion) | 1 value |  |
-| ✅ | [UnitIsBossMob](#unitisbossmob) | 1 value |  |
-| ✅ | [UnitIsCharmed](#unitischarmed) | 1 value |  |
-| ✅ | [UnitIsConnected](#unitisconnected) | 1 value |  |
-| ✅ | [UnitIsControlling](#unitiscontrolling) | 1 value |  |
-| ✅ | [UnitIsCorpse](#unitiscorpse) | 1 value |  |
-| ✅ | [UnitIsDND](#unitisdnd) | 1 value |  |
-| ✅ | [UnitIsDead](#unitisdead) | 1 value |  |
-| ✅ | [UnitIsDeadOrGhost](#unitisdeadorghost) | 1 value |  |
+| ✅ | [UnitHasRelicSlot](#unithasrelicslot) | 1 value | 1 value |
+| ✅ | [UnitHasVehiclePlayerFrameUI](#unithasvehicleplayerframeui) | 1 value | 1 value |
+| ✅ | [UnitHasVehicleUI](#unithasvehicleui) | 1 value | 1 value |
+| ✅ | [UnitHealth](#unithealth) | secret | secret |
+| ✅ | [UnitHealthMax](#unithealthmax) | 1 value | 1 value |
+| ✅ | [UnitHealthMissing](#unithealthmissing) | secret | secret |
+| ✅ | [UnitHealthPercent](#unithealthpercent) | secret | secret |
+| ✅ | [UnitHonor](#unithonor) | 1 value | 1 value |
+| ✅ | [UnitHonorLevel](#unithonorlevel) | 1 value | 1 value |
+| ✅ | [UnitHonorMax](#unithonormax) | 1 value | 1 value |
+| ✅ | [UnitInAnyGroup](#unitinanygroup) | 1 value | 1 value |
+| ✅ | [UnitInBattleground](#unitinbattleground) | 1 value | 1 value |
+| ✅ | [UnitInOtherParty](#unitinotherparty) | 1 value | 1 value |
+| ✅ | [UnitInParty](#unitinparty) | 1 value | 1 value |
+| ✅ | [UnitInPartyIsAI](#unitinpartyisai) | 1 value | 1 value |
+| ✅ | [UnitInPartyShard](#unitinpartyshard) | 1 value | 1 value |
+| ✅ | [UnitInRaid](#unitinraid) | 1 value | 1 value |
+| ✅ | [UnitInRange](#unitinrange) | secret | secret |
+| ✅ | [UnitInSubgroup](#unitinsubgroup) | 1 value | 1 value |
+| ✅ | [UnitInVehicle](#unitinvehicle) | 1 value | 1 value |
+| ✅ | [UnitInVehicleControlSeat](#unitinvehiclecontrolseat) | 1 value | 1 value |
+| ✅ | [UnitInVehicleHidesPetFrame](#unitinvehiclehidespetframe) | 1 value | 1 value |
+| ✅ | [UnitIsAFK](#unitisafk) | 1 value | 1 value |
+| ✅ | [UnitIsBattlePet](#unitisbattlepet) | 1 value | 1 value |
+| ✅ | [UnitIsBattlePetCompanion](#unitisbattlepetcompanion) | 1 value | 1 value |
+| ✅ | [UnitIsBossMob](#unitisbossmob) | 1 value | 1 value |
+| ✅ | [UnitIsCharmed](#unitischarmed) | 1 value | secret |
+| ✅ | [UnitIsConnected](#unitisconnected) | 1 value | 1 value |
+| ✅ | [UnitIsControlling](#unitiscontrolling) | 1 value | 1 value |
+| ✅ | [UnitIsCorpse](#unitiscorpse) | 1 value | 1 value |
+| ✅ | [UnitIsDND](#unitisdnd) | 1 value | 1 value |
+| ✅ | [UnitIsDead](#unitisdead) | 1 value | 1 value |
+| ✅ | [UnitIsDeadOrGhost](#unitisdeadorghost) | 1 value | 1 value |
 | ✅ | [UnitIsEnemy](#unitisenemy) |  |  |
-| ✅ | [UnitIsFeignDeath](#unitisfeigndeath) | 1 value |  |
+| ✅ | [UnitIsFeignDeath](#unitisfeigndeath) | 1 value | 1 value |
 | ✅ | [UnitIsFriend](#unitisfriend) |  |  |
-| ✅ | [UnitIsGameObject](#unitisgameobject) | 1 value |  |
-| ✅ | [UnitIsGhost](#unitisghost) | 1 value |  |
-| ✅ | [UnitIsGroupAssistant](#unitisgroupassistant) | 1 value |  |
-| ✅ | [UnitIsGroupLeader](#unitisgroupleader) | 1 value |  |
-| ✅ | [UnitIsHumanPlayer](#unitishumanplayer) | 1 value |  |
-| ✅ | [UnitIsInInteractRange](#unitisininteractrange) | 1 value |  |
-| ✅ | [UnitIsInMyGuild](#unitisinmyguild) | 1 value |  |
-| ✅ | [UnitIsInteractable](#unitisinteractable) | 1 value |  |
-| ✅ | [UnitIsLieutenant](#unitislieutenant) | 1 value |  |
+| ✅ | [UnitIsGameObject](#unitisgameobject) | 1 value | 1 value |
+| ✅ | [UnitIsGhost](#unitisghost) | 1 value | 1 value |
+| ✅ | [UnitIsGroupAssistant](#unitisgroupassistant) | 1 value | 1 value |
+| ✅ | [UnitIsGroupLeader](#unitisgroupleader) | 1 value | 1 value |
+| ✅ | [UnitIsHumanPlayer](#unitishumanplayer) | 1 value | 1 value |
+| ✅ | [UnitIsInInteractRange](#unitisininteractrange) | 1 value | 1 value |
+| ✅ | [UnitIsInMyGuild](#unitisinmyguild) | 1 value | 1 value |
+| ✅ | [UnitIsInteractable](#unitisinteractable) | 1 value | 1 value |
+| ✅ | [UnitIsLieutenant](#unitislieutenant) | 1 value | 1 value |
 | ✅ | [UnitIsMercenary](#unitismercenary) |  |  |
-| ✅ | [UnitIsMinion](#unitisminion) | 1 value |  |
-| ✅ | [UnitIsNPCAsPlayer](#unitisnpcasplayer) | 1 value |  |
-| ✅ | [UnitIsOtherPlayersBattlePet](#unitisotherplayersbattlepet) | 1 value |  |
-| ✅ | [UnitIsOtherPlayersPet](#unitisotherplayerspet) | 1 value |  |
+| ✅ | [UnitIsMinion](#unitisminion) | 1 value | 1 value |
+| ✅ | [UnitIsNPCAsPlayer](#unitisnpcasplayer) | 1 value | 1 value |
+| ✅ | [UnitIsOtherPlayersBattlePet](#unitisotherplayersbattlepet) | 1 value | 1 value |
+| ✅ | [UnitIsOtherPlayersPet](#unitisotherplayerspet) | 1 value | 1 value |
 | ✅ | [UnitIsOwnerOrControllerOfUnit](#unitisownerorcontrollerofunit) |  |  |
-| ✅ | [UnitIsPVP](#unitispvp) | 1 value |  |
-| ✅ | [UnitIsPVPFreeForAll](#unitispvpfreeforall) | 1 value |  |
-| ✅ | [UnitIsPVPSanctuary](#unitispvpsanctuary) | 1 value |  |
-| ✅ | [UnitIsPlayer](#unitisplayer) | 1 value |  |
-| ✅ | [UnitIsPlayerControlledOrGroupMember](#unitisplayercontrolledorgroupmember) | 1 value |  |
-| ✅ | [UnitIsPossessed](#unitispossessed) | 1 value |  |
-| ✅ | [UnitIsQuestBoss](#unitisquestboss) | 1 value |  |
-| ✅ | [UnitIsRaidOfficer](#unitisraidofficer) | 1 value |  |
+| ✅ | [UnitIsPVP](#unitispvp) | 1 value | 1 value |
+| ✅ | [UnitIsPVPFreeForAll](#unitispvpfreeforall) | 1 value | 1 value |
+| ✅ | [UnitIsPVPSanctuary](#unitispvpsanctuary) | 1 value | 1 value |
+| ✅ | [UnitIsPlayer](#unitisplayer) | 1 value | 1 value |
+| ✅ | [UnitIsPlayerControlledOrGroupMember](#unitisplayercontrolledorgroupmember) | 1 value | 1 value |
+| ✅ | [UnitIsPossessed](#unitispossessed) | 1 value | secret |
+| ✅ | [UnitIsQuestBoss](#unitisquestboss) | 1 value | 1 value |
+| ✅ | [UnitIsRaidOfficer](#unitisraidofficer) | 1 value | 1 value |
 | ✅ | [UnitIsSameServer](#unitissameserver) |  |  |
-| ✅ | [UnitIsTapDenied](#unitistapdenied) | 1 value |  |
-| ✅ | [UnitIsTrivial](#unitistrivial) | 1 value |  |
-| ✅ | [UnitIsUnconscious](#unitisunconscious) | 1 value |  |
+| ✅ | [UnitIsTapDenied](#unitistapdenied) | 1 value | 1 value |
+| ✅ | [UnitIsTrivial](#unitistrivial) | 1 value | 1 value |
+| ✅ | [UnitIsUnconscious](#unitisunconscious) | 1 value | 1 value |
 | ✅ | [UnitIsUnit](#unitisunit) |  |  |
-| ✅ | [UnitIsVisible](#unitisvisible) | 1 value |  |
-| ✅ | [UnitIsWildBattlePet](#unitiswildbattlepet) | 1 value |  |
-| ✅ | [UnitLeadsAnyGroup](#unitleadsanygroup) | 1 value |  |
+| ✅ | [UnitIsVisible](#unitisvisible) | 1 value | 1 value |
+| ✅ | [UnitIsWildBattlePet](#unitiswildbattlepet) | 1 value | 1 value |
+| ✅ | [UnitLeadsAnyGroup](#unitleadsanygroup) | 1 value | 1 value |
 | ✅ | [UnitLevel](#unitlevel) |  |  |
-| ✅ | [UnitName](#unitname) | 2 values |  |
+| ✅ | [UnitName](#unitname) | 2 values | 2 values |
 | ✅ | [UnitNameFromGUID](#unitnamefromguid) |  |  |
-| ✅ | [UnitNameUnmodified](#unitnameunmodified) | 2 values |  |
-| ✅ | [UnitNameplateShowsWidgetsOnly](#unitnameplateshowswidgetsonly) | 1 value |  |
-| ✅ | [UnitNumPowerBarTimers](#unitnumpowerbartimers) | 1 value |  |
-| ✅ | [UnitOnTaxi](#unitontaxi) | 1 value |  |
-| ✅ | [UnitOwnerGUID](#unitownerguid) | 1 value |  |
-| ✅ | [UnitPVPName](#unitpvpname) | 1 value |  |
+| ✅ | [UnitNameUnmodified](#unitnameunmodified) | 2 values | 2 values |
+| ✅ | [UnitNameplateShowsWidgetsOnly](#unitnameplateshowswidgetsonly) | 1 value | 1 value |
+| ✅ | [UnitNumPowerBarTimers](#unitnumpowerbartimers) | 1 value | 1 value |
+| ✅ | [UnitOnTaxi](#unitontaxi) | 1 value | 1 value |
+| ✅ | [UnitOwnerGUID](#unitownerguid) | 1 value | 1 value |
+| ✅ | [UnitPVPName](#unitpvpname) | 1 value | 1 value |
 | ✅ | [UnitPartialPower](#unitpartialpower) |  |  |
 | ✅ | [UnitPercentHealthFromGUID](#unitpercenthealthfromguid) |  |  |
-| ✅ | [UnitPhaseReason](#unitphasereason) | 1 value |  |
-| ✅ | [UnitPlayerControlled](#unitplayercontrolled) | 1 value |  |
-| ✅ | [UnitPlayerOrPetInParty](#unitplayerorpetinparty) | 1 value |  |
-| ✅ | [UnitPlayerOrPetInRaid](#unitplayerorpetinraid) | 1 value |  |
-| ✅ | [UnitPosition](#unitposition) | 4 values |  |
+| ✅ | [UnitPhaseReason](#unitphasereason) | 1 value | 1 value |
+| ✅ | [UnitPlayerControlled](#unitplayercontrolled) | 1 value | 1 value |
+| ✅ | [UnitPlayerOrPetInParty](#unitplayerorpetinparty) | 1 value | 1 value |
+| ✅ | [UnitPlayerOrPetInRaid](#unitplayerorpetinraid) | 1 value | 1 value |
+| ✅ | [UnitPosition](#unitposition) | 4 values | 4 values |
 | ✅ | [UnitPower](#unitpower) |  |  |
-| ✅ | [UnitPowerBarID](#unitpowerbarid) | 1 value |  |
-| ✅ | [UnitPowerBarTimerInfo](#unitpowerbartimerinfo) | 0 values |  |
+| ✅ | [UnitPowerBarID](#unitpowerbarid) | 1 value | 1 value |
+| ✅ | [UnitPowerBarTimerInfo](#unitpowerbartimerinfo) | 0 values | 0 values |
 | ✅ | [UnitPowerDisplayMod](#unitpowerdisplaymod) |  |  |
 | ✅ | [UnitPowerMax](#unitpowermax) |  |  |
 | ✅ | [UnitPowerMissing](#unitpowermissing) |  |  |
 | ✅ | [UnitPowerPercent](#unitpowerpercent) |  |  |
-| ✅ | [UnitPowerType](#unitpowertype) | 5 values |  |
-| ✅ | [UnitPvpClassification](#unitpvpclassification) | 1 value |  |
-| ✅ | [UnitQuestTrivialLevelRange](#unitquesttriviallevelrange) | 1 value |  |
-| ✅ | [UnitQuestTrivialLevelRangeScaling](#unitquesttriviallevelrangescaling) | 1 value |  |
-| ✅ | [UnitRace](#unitrace) | 3 values |  |
-| ✅ | [UnitRangedAttackPower](#unitrangedattackpower) | 3 values |  |
-| ✅ | [UnitRangedDamage](#unitrangeddamage) | 6 values |  |
+| ✅ | [UnitPowerType](#unitpowertype) | 5 values | 5 values |
+| ✅ | [UnitPvpClassification](#unitpvpclassification) | 1 value | 1 value |
+| ✅ | [UnitQuestTrivialLevelRange](#unitquesttriviallevelrange) | 1 value | 1 value |
+| ✅ | [UnitQuestTrivialLevelRangeScaling](#unitquesttriviallevelrangescaling) | 1 value | 1 value |
+| ✅ | [UnitRace](#unitrace) | 3 values | 3 values |
+| ✅ | [UnitRangedAttackPower](#unitrangedattackpower) | 3 values | secret |
+| ✅ | [UnitRangedDamage](#unitrangeddamage) | 6 values | secret |
 | ✅ | [UnitReaction](#unitreaction) |  |  |
-| ✅ | [UnitRealmRelationship](#unitrealmrelationship) | 1 value |  |
+| ✅ | [UnitRealmRelationship](#unitrealmrelationship) | 1 value | 1 value |
 | ✅ | [UnitResistance](#unitresistance) |  |  |
-| ✅ | [UnitSelectionColor](#unitselectioncolor) | 4 values |  |
-| ✅ | [UnitSelectionType](#unitselectiontype) | 1 value |  |
-| ✅ | [UnitSex](#unitsex) | 1 value |  |
-| ✅ | [UnitSexBase](#unitsexbase) | 1 value |  |
-| ✅ | [UnitShouldDisplayName](#unitshoulddisplayname) | 1 value |  |
-| ✅ | [UnitShouldDisplaySpellTargetName](#unitshoulddisplayspelltargetname) | 1 value |  |
-| ✅ | [UnitSpellHaste](#unitspellhaste) | 1 value |  |
-| ✅ | [UnitSpellTargetClass](#unitspelltargetclass) | 1 value |  |
-| ✅ | [UnitSpellTargetName](#unitspelltargetname) | secret |  |
-| ✅ | [UnitStagger](#unitstagger) | 1 value |  |
+| ✅ | [UnitSelectionColor](#unitselectioncolor) | 4 values | 4 values |
+| ✅ | [UnitSelectionType](#unitselectiontype) | 1 value | 1 value |
+| ✅ | [UnitSex](#unitsex) | 1 value | 1 value |
+| ✅ | [UnitSexBase](#unitsexbase) | 1 value | 1 value |
+| ✅ | [UnitShouldDisplayName](#unitshoulddisplayname) | 1 value | 1 value |
+| ✅ | [UnitShouldDisplaySpellTargetName](#unitshoulddisplayspelltargetname) | 1 value | 1 value |
+| ✅ | [UnitSpellHaste](#unitspellhaste) | 1 value | secret |
+| ✅ | [UnitSpellTargetClass](#unitspelltargetclass) | secret | secret |
+| ✅ | [UnitSpellTargetName](#unitspelltargetname) | secret | secret |
+| ✅ | [UnitStagger](#unitstagger) | 1 value | 1 value |
 | ✅ | [UnitStat](#unitstat) |  |  |
 | ✅ | [UnitSwitchToVehicleSeat](#unitswitchtovehicleseat) |  |  |
-| ✅ | [UnitTargetsVehicleInRaidUI](#unittargetsvehicleinraidui) | 1 value |  |
+| ✅ | [UnitTargetsVehicleInRaidUI](#unittargetsvehicleinraidui) | 1 value | 1 value |
 | ✅ | [UnitThreatLeadSituation](#unitthreatleadsituation) |  |  |
 | ✅ | [UnitThreatPercentageOfLead](#unitthreatpercentageoflead) |  |  |
-| ✅ | [UnitThreatSituation](#unitthreatsituation) | 1 value |  |
+| ✅ | [UnitThreatSituation](#unitthreatsituation) | 1 value | 1 value |
 | ✅ | [UnitTokenFromGUID](#unittokenfromguid) |  |  |
-| ✅ | [UnitTreatAsPlayerForDisplay](#unittreatasplayerfordisplay) | 1 value |  |
-| ✅ | [UnitTrialBankedLevels](#unittrialbankedlevels) | 3 values |  |
-| ✅ | [UnitTrialXP](#unittrialxp) | 1 value |  |
-| ✅ | [UnitUsesAmmo](#unitusesammo) | 1 value |  |
-| ✅ | [UnitUsingVehicle](#unitusingvehicle) | 1 value |  |
-| ✅ | [UnitVehicleSeatCount](#unitvehicleseatcount) | 1 value |  |
+| ✅ | [UnitTreatAsPlayerForDisplay](#unittreatasplayerfordisplay) | 1 value | 1 value |
+| ✅ | [UnitTrialBankedLevels](#unittrialbankedlevels) | 3 values | 3 values |
+| ✅ | [UnitTrialXP](#unittrialxp) | 1 value | 1 value |
+| ✅ | [UnitUsesAmmo](#unitusesammo) | 1 value | 1 value |
+| ✅ | [UnitUsingVehicle](#unitusingvehicle) | 1 value | 1 value |
+| ✅ | [UnitVehicleSeatCount](#unitvehicleseatcount) | 1 value | 1 value |
 | ✅ | [UnitVehicleSeatInfo](#unitvehicleseatinfo) |  |  |
-| ✅ | [UnitVehicleSkin](#unitvehicleskin) | 1 value |  |
-| ✅ | [UnitWeaponAttackPower](#unitweaponattackpower) | 3 values |  |
-| ✅ | [UnitWidgetSet](#unitwidgetset) | 0 values |  |
-| ✅ | [UnitXP](#unitxp) | 1 value |  |
-| ✅ | [UnitXPMax](#unitxpmax) | 1 value |  |
+| ✅ | [UnitVehicleSkin](#unitvehicleskin) | 1 value | 1 value |
+| ✅ | [UnitWeaponAttackPower](#unitweaponattackpower) | 3 values | secret |
+| ✅ | [UnitWidgetSet](#unitwidgetset) | 0 values | 0 values |
+| ✅ | [UnitXP](#unitxp) | 1 value | 1 value |
+| ✅ | [UnitXPMax](#unitxpmax) | 1 value | 1 value |
 | ✅ | [WorldLootObjectExists](#worldlootobjectexists) |  |  |
 
 ### CanEjectPassengerFromSeat
@@ -237,6 +237,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### ClosestGameObjectPosition
@@ -289,6 +290,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `UnitDocumentation.lua`
 
 ### GetUnitChargedPowerPoints
@@ -300,6 +302,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit power is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
 ### GetUnitEmpowerHoldAtMaxTime
@@ -310,6 +313,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit spellcasts are restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### GetUnitEmpowerMinHoldTime
@@ -320,6 +324,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit spellcasts are restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### GetUnitEmpowerStageDuration
@@ -338,6 +343,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### GetUnitMaxHealthModifier
@@ -347,6 +353,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### GetUnitPowerBarInfo
@@ -357,6 +364,7 @@
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
 ### GetUnitPowerBarInfoByID
@@ -375,6 +383,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 3 values: `nil`, `nil`, `nil`
+- Called in combat: returned 3 values: `nil`, `nil`, `nil`
 - Source: client docs `UnitDocumentation.lua`
 
 ### GetUnitPowerBarStringsByID
@@ -408,6 +417,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### GetUnitSpeed
@@ -418,6 +428,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 4 values: `number`, `number`, `number`, `number`
+- Called in combat: returned 4 values: `secret:number`, `secret:number`, `secret:number`, `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### GetUnitTotalModifiedMaxHealthPercent
@@ -427,6 +438,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### GetVehicleUIIndicator
@@ -454,6 +466,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### IsFlying
@@ -463,6 +476,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### IsPlayerInGuildFromGUID
@@ -480,6 +494,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### IsSwimming
@@ -489,6 +504,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### IsUnitModelReadyForUI
@@ -498,6 +514,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### PlayerIsPVPInactive
@@ -580,6 +597,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitAlliedRaceInfo
@@ -589,6 +607,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 2 values: `boolean`, `boolean`
+- Called in combat: returned 2 values: `boolean`, `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitArmor
@@ -599,6 +618,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 4 values: `number`, `number`, `number`, `number`
+- Called in combat: returned 4 values: `secret:number`, `secret:number`, `secret:number`, `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitAttackPower
@@ -609,6 +629,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 3 values: `number`, `number`, `number`
+- Called in combat: returned 3 values: `secret:number`, `secret:number`, `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitAttackSpeed
@@ -619,6 +640,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 3 values: `number`, `nil`, `number`
+- Called in combat: returned 3 values: `secret:number`, `nil`, `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitBattlePetLevel
@@ -628,6 +650,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitBattlePetSpeciesID
@@ -637,6 +660,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitBattlePetType
@@ -646,6 +670,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitCanAssist
@@ -689,6 +714,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitCastingInfo
@@ -699,6 +725,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit spellcasts are restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitChannelDuration
@@ -709,6 +736,7 @@
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitChannelInfo
@@ -719,6 +747,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit spellcasts are restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitChromieTimeID
@@ -728,6 +757,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitClass
@@ -739,6 +769,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 3 values: `string`, `string`, `number`
+- Called in combat: returned 3 values: `string`, `string`, `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitClassBase
@@ -750,6 +781,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 2 values: `string`, `number`
+- Called in combat: returned 2 values: `string`, `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitClassFromGUID
@@ -768,6 +800,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitControllingVehicle
@@ -777,6 +810,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitCreatureFamily
@@ -787,6 +821,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitCreatureID
@@ -798,6 +833,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitCreatureType
@@ -808,6 +844,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 2 values: `string`, `number`
+- Called in combat: returned 2 values: `string`, `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitDamage
@@ -818,6 +855,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 7 values: `number`, `number`, `number`, `number`, `number`, `number`, `number`
+- Called in combat: returned 7 values: `secret:number`, `secret:number`, `secret:number`, `secret:number`, `secret:number`, `secret:number`, `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitDefenseSkill
@@ -828,6 +866,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 2 values: `number`, `number`
+- Called in combat: returned 2 values: `secret:number`, `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitDetailedThreatSituation
@@ -847,6 +886,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 2 values: `number`, `boolean`
+- Called in combat: returned 2 values: `number`, `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitEffectiveLevel
@@ -867,6 +907,7 @@
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitEmpoweredStageDurations
@@ -878,6 +919,7 @@
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitEmpoweredStagePercentages
@@ -890,6 +932,7 @@
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitExists
@@ -899,6 +942,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitFactionGroup
@@ -917,6 +961,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 2 values: `string`, `string`
+- Called in combat: returned 2 values: `string`, `string`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitGUID
@@ -927,6 +972,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitGetDetailedHealPrediction
@@ -946,6 +992,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `secret:number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitGetTotalAbsorbs
@@ -956,6 +1003,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `secret:number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitGetTotalHealAbsorbs
@@ -966,6 +1014,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `secret:number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitGroupRolesAssigned
@@ -976,6 +1025,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitGroupRolesAssignedEnum
@@ -986,6 +1036,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitHPPerStamina
@@ -995,6 +1046,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitHasEffectivelyTankAura
@@ -1005,6 +1057,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitHasLootInteraction
@@ -1014,6 +1067,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitHasMouseoverHighlight
@@ -1023,6 +1077,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitHasPowerType
@@ -1040,6 +1095,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitHasVehiclePlayerFrameUI
@@ -1049,6 +1105,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitHasVehicleUI
@@ -1058,6 +1115,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitHealth
@@ -1068,6 +1126,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `secret:number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitHealthMax
@@ -1078,6 +1137,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitHealthMaxRestricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitHealthMissing
@@ -1089,6 +1149,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `secret:number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitHealthPercent
@@ -1102,6 +1163,7 @@
 - always returns secret values (Blizzard's docs; not checked in game)
 - SecretWhenCurveSecret (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `secret:number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitHonor
@@ -1111,6 +1173,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitHonorLevel
@@ -1121,6 +1184,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitHonorMax
@@ -1130,6 +1194,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitInAnyGroup
@@ -1139,6 +1204,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitInBattleground
@@ -1148,6 +1214,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitInOtherParty
@@ -1158,6 +1225,7 @@
 - Blizzard: Checks whether this unit cannot see your party chat because it is in an instance group
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitInParty
@@ -1167,6 +1235,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitInPartyIsAI
@@ -1176,6 +1245,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitInPartyShard
@@ -1185,6 +1255,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitInRaid
@@ -1195,6 +1266,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitInRange
@@ -1205,6 +1277,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 2 values: `secret:boolean`, `secret:boolean`
+- Called in combat: returned 2 values: `secret:boolean`, `secret:boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitInSubgroup
@@ -1214,6 +1287,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitInVehicle
@@ -1223,6 +1297,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitInVehicleControlSeat
@@ -1232,6 +1307,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitInVehicleHidesPetFrame
@@ -1241,6 +1317,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsAFK
@@ -1251,6 +1328,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret during chat lockdown (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsBattlePet
@@ -1260,6 +1338,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsBattlePetCompanion
@@ -1269,6 +1348,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsBossMob
@@ -1278,6 +1358,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsCharmed
@@ -1288,6 +1369,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitPossessionRestricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `secret:boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsConnected
@@ -1297,6 +1379,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsControlling
@@ -1306,6 +1389,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsCorpse
@@ -1315,6 +1399,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsDND
@@ -1325,6 +1410,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret during chat lockdown (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsDead
@@ -1334,6 +1420,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsDeadOrGhost
@@ -1343,6 +1430,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsEnemy
@@ -1360,6 +1448,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsFriend
@@ -1377,6 +1466,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsGhost
@@ -1386,6 +1476,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsGroupAssistant
@@ -1396,6 +1487,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsGroupLeader
@@ -1406,6 +1498,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsHumanPlayer
@@ -1415,6 +1508,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsInInteractRange
@@ -1424,6 +1518,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsInMyGuild
@@ -1433,6 +1528,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsInteractable
@@ -1442,6 +1538,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsLieutenant
@@ -1451,6 +1548,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsMercenary
@@ -1469,6 +1567,7 @@
 - Blizzard: Returns whether the unit is considered a minion of a player, such as a pet, totem, or guardian.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsNPCAsPlayer
@@ -1478,6 +1577,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsOtherPlayersBattlePet
@@ -1487,6 +1587,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsOtherPlayersPet
@@ -1496,6 +1597,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsOwnerOrControllerOfUnit
@@ -1515,6 +1617,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsPVPFreeForAll
@@ -1524,6 +1627,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsPVPSanctuary
@@ -1533,6 +1637,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsPlayer
@@ -1542,6 +1647,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsPlayerControlledOrGroupMember
@@ -1552,6 +1658,7 @@
 - Blizzard: Returns true for 'player', 'pet', 'vehicle', or any of 'partyn', 'partypetn', 'raidn', 'raidpetn'
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsPossessed
@@ -1562,6 +1669,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitPossessionRestricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `secret:boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsQuestBoss
@@ -1571,6 +1679,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsRaidOfficer
@@ -1581,6 +1690,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsSameServer
@@ -1598,6 +1708,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsTrivial
@@ -1607,6 +1718,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsUnconscious
@@ -1616,6 +1728,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsUnit
@@ -1635,6 +1748,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitIsWildBattlePet
@@ -1644,6 +1758,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitLeadsAnyGroup
@@ -1654,6 +1769,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitLevel
@@ -1672,6 +1788,7 @@
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitNameIdentityRestricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 2 values: `string`, `string`
+- Called in combat: returned 2 values: `string`, `string`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitNameFromGUID
@@ -1691,6 +1808,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 2 values: `string`, `string`
+- Called in combat: returned 2 values: `string`, `string`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitNameplateShowsWidgetsOnly
@@ -1700,6 +1818,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitNumPowerBarTimers
@@ -1709,6 +1828,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitOnTaxi
@@ -1718,6 +1838,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitOwnerGUID
@@ -1728,6 +1849,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitPVPName
@@ -1738,6 +1860,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitPartialPower
@@ -1766,6 +1889,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitPlayerControlled
@@ -1775,6 +1899,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitPlayerOrPetInParty
@@ -1784,6 +1909,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitPlayerOrPetInRaid
@@ -1793,6 +1919,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitPosition
@@ -1802,6 +1929,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 4 values: `number`, `number`, `number`, `number`
+- Called in combat: returned 4 values: `number`, `number`, `number`, `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitPower
@@ -1820,6 +1948,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitPowerBarTimerInfo
@@ -1831,6 +1960,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitPowerDisplayMod
@@ -1880,6 +2010,7 @@
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 5 values: `number`, `string`, `nil`, `nil`, `nil`
+- Called in combat: returned 5 values: `number`, `string`, `nil`, `nil`, `nil`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitPvpClassification
@@ -1889,6 +2020,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitQuestTrivialLevelRange
@@ -1898,6 +2030,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitQuestTrivialLevelRangeScaling
@@ -1907,6 +2040,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitRace
@@ -1918,6 +2052,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 3 values: `string`, `string`, `number`
+- Called in combat: returned 3 values: `string`, `string`, `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitRangedAttackPower
@@ -1928,6 +2063,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 3 values: `number`, `number`, `number`
+- Called in combat: returned 3 values: `secret:number`, `secret:number`, `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitRangedDamage
@@ -1938,6 +2074,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 6 values: `number`, `number`, `number`, `number`, `number`, `number`
+- Called in combat: returned 6 values: `secret:number`, `secret:number`, `secret:number`, `secret:number`, `secret:number`, `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitReaction
@@ -1955,6 +2092,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitResistance
@@ -1973,6 +2111,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 4 values: `number`, `number`, `number`, `number`
+- Called in combat: returned 4 values: `number`, `number`, `number`, `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitSelectionType
@@ -1982,6 +2121,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitSex
@@ -1992,6 +2132,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitSexBase
@@ -2002,6 +2143,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitShouldDisplayName
@@ -2011,6 +2153,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitShouldDisplaySpellTargetName
@@ -2021,6 +2164,7 @@
 - Blizzard: If the unit is currently casting a spell, returns whether the target's name should be displayed. Returns false if the unit is not casting a spell or the spell has no target.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitSpellHaste
@@ -2031,6 +2175,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitSpellTargetClass
@@ -2041,7 +2186,8 @@
 - Blizzard: If the unit is currently casting a spell, returns the class of the spell's target unit. Returns nil if the unit is not casting a spell or the spell has no target.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `nil`
+- Called out of combat with "player": returned 1 value: `secret:string`
+- Called in combat: returned 1 value: `secret:string`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitSpellTargetName
@@ -2054,6 +2200,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `secret:string`
+- Called in combat: returned 1 value: `secret:string`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitStagger
@@ -2063,6 +2210,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitStat
@@ -2089,6 +2237,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitThreatLeadSituation
@@ -2118,6 +2267,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitThreatStateRestricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `nil`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitTokenFromGUID
@@ -2136,6 +2286,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitTrialBankedLevels
@@ -2145,6 +2296,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 3 values: `number`, `number`, `number`
+- Called in combat: returned 3 values: `number`, `number`, `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitTrialXP
@@ -2154,6 +2306,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitUsesAmmo
@@ -2163,6 +2316,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitUsingVehicle
@@ -2172,6 +2326,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitVehicleSeatCount
@@ -2181,6 +2336,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitVehicleSeatInfo
@@ -2199,6 +2355,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitWeaponAttackPower
@@ -2209,6 +2366,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 3 values: `number`, `number`, `number`
+- Called in combat: returned 3 values: `secret:number`, `secret:number`, `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitWidgetSet
@@ -2219,6 +2377,7 @@
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitXP
@@ -2228,6 +2387,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### UnitXPMax
@@ -2237,6 +2397,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat with "player": returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
 ### WorldLootObjectExists
@@ -2291,7 +2452,7 @@
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (5 in combat); argument kinds: ``
+- Seen firing 15 times (10 in combat); argument kinds: ``
 
 ### CONFIRM_BINDER
 
@@ -2389,14 +2550,14 @@
 - Payload: `attackerGUID: WOWGUID`, `targetGUID: WOWGUID`
 - secret while unit identity is restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (4 in combat); argument kinds: `s,s`
+- Seen firing 8 times (8 in combat); argument kinds: `s,s`
 
 ### PET_BAR_UPDATE_USABLE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 33 times (29 in combat); argument kinds: ``
+- Seen firing 64 times (57 in combat); argument kinds: ``
 
 ### PET_UI_UPDATE
 
@@ -2415,13 +2576,14 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 8 times (0 in combat); argument kinds: `s`
 
 ### PLAYER_ENTER_COMBAT
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 5 times (5 in combat); argument kinds: ``
+- Seen firing 9 times (9 in combat); argument kinds: ``
 
 ### PLAYER_FARSIGHT_FOCUS_CHANGED
 
@@ -2458,7 +2620,7 @@
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 5 times (4 in combat); argument kinds: ``
+- Seen firing 9 times (8 in combat); argument kinds: ``
 
 ### PLAYER_LEVEL_CHANGED
 
@@ -2501,21 +2663,21 @@
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 8 times (0 in combat); argument kinds: ``
 
 ### PLAYER_REGEN_ENABLED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 8 times (0 in combat); argument kinds: ``
 
 ### PLAYER_SOFT_ENEMY_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 9 times (4 in combat); argument kinds: ``
+- Seen firing 18 times (9 in combat); argument kinds: ``
 
 ### PLAYER_SOFT_FRIEND_CHANGED
 
@@ -2549,49 +2711,49 @@
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 23 times (10 in combat); argument kinds: ``
+- Seen firing 34 times (19 in combat); argument kinds: ``
 
 ### PLAYER_STARTED_MOVING
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 66 times (38 in combat); argument kinds: ``
+- Seen firing 123 times (90 in combat); argument kinds: ``
 
 ### PLAYER_STARTED_TURNING
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 60 times (33 in combat); argument kinds: ``
+- Seen firing 118 times (79 in combat); argument kinds: ``
 
 ### PLAYER_STOPPED_LOOKING
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 23 times (10 in combat); argument kinds: ``
+- Seen firing 34 times (18 in combat); argument kinds: ``
 
 ### PLAYER_STOPPED_MOVING
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 66 times (41 in combat); argument kinds: ``
+- Seen firing 123 times (96 in combat); argument kinds: ``
 
 ### PLAYER_STOPPED_TURNING
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 60 times (36 in combat); argument kinds: ``
+- Seen firing 118 times (84 in combat); argument kinds: ``
 
 ### PLAYER_TARGET_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 27 times (8 in combat); argument kinds: ``
+- Seen firing 51 times (18 in combat); argument kinds: ``
 
 ### PLAYER_TRIAL_XP_UPDATE
 
@@ -2610,14 +2772,14 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 6 times (6 in combat); argument kinds: `s`
+- Seen firing 13 times (13 in combat); argument kinds: `s`
 
 ### PORTRAITS_UPDATED
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### PROVING_GROUNDS_SCORE_UPDATE
 
@@ -2675,7 +2837,7 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 9 times (4 in combat); argument kinds: `s`
+- Seen firing 12 times (7 in combat); argument kinds: `s`
 
 ### UNIT_ARENA_COOLDOWNS_UPDATE
 
@@ -2690,19 +2852,21 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `s`
+- Seen firing 4 times (2 in combat); argument kinds: `s`
 
 ### UNIT_ATTACK_POWER
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: `s`
 
 ### UNIT_ATTACK_SPEED
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 4 times (0 in combat); argument kinds: `s`
 
 ### UNIT_CHEAT_TOGGLE_EVENT
 
@@ -2721,7 +2885,7 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `event: cstring`, `flagText: cstring`, `amount: number`, `schoolMask: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 298 times (298 in combat); argument kinds: `s,s,s,S,n`
+- Seen firing 637 times (636 in combat); argument kinds: `s,s,s,S,n`
 
 ### UNIT_CONNECTION
 
@@ -2741,13 +2905,14 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 8 times (0 in combat); argument kinds: `s`
 
 ### UNIT_DEFENSE
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `s`
+- Seen firing 4 times (2 in combat); argument kinds: `s`
 
 ### UNIT_DIED
 
@@ -2755,13 +2920,14 @@
 - Payload: `unitGUID: WOWGUID`
 - secret while unit identity is restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 12 times (7 in combat); argument kinds: `s`
+- Seen firing 17 times (12 in combat); argument kinds: `s`
 
 ### UNIT_DISPLAYPOWER
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: `s`
 
 ### UNIT_DISTANCE_CHECK_UPDATE
 
@@ -2782,7 +2948,7 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 60 times (36 in combat); argument kinds: `s`
+- Seen firing 114 times (74 in combat); argument kinds: `s`
 
 ### UNIT_FORM_CHANGED
 
@@ -2796,7 +2962,7 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 213 times (186 in combat); argument kinds: `s`
+- Seen firing 483 times (434 in combat); argument kinds: `s`
 
 ### UNIT_HEALTH
 
@@ -2804,7 +2970,7 @@
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 354 times (242 in combat); argument kinds: `s`
+- Seen firing 626 times (491 in combat); argument kinds: `s`
 
 ### UNIT_HEAL_ABSORB_AMOUNT_CHANGED
 
@@ -2817,13 +2983,14 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: `s`
 
 ### UNIT_INVENTORY_CHANGED
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 95 times (0 in combat); argument kinds: `s`
+- Seen firing 103 times (2 in combat); argument kinds: `s`
 
 ### UNIT_IN_RANGE_UPDATE
 
@@ -2845,7 +3012,7 @@
 - Status: ✅ verified
 - Payload: `unitGUID: WOWGUID`, `hasLoot: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 12 times (4 in combat); argument kinds: `s,b`
+- Seen firing 23 times (10 in combat); argument kinds: `s,b`
 
 ### UNIT_MANA
 
@@ -2882,7 +3049,7 @@
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: `s`
+- Seen firing 7 times (0 in combat); argument kinds: `s`
 
 ### UNIT_NAME_UPDATE
 
@@ -2928,7 +3095,7 @@
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 5 times (0 in combat); argument kinds: `s`
+- Seen firing 9 times (0 in combat); argument kinds: `s`
 
 ### UNIT_POWER_BAR_HIDE
 
@@ -2953,7 +3120,7 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `powerType: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1840 times (1518 in combat); argument kinds: `s,s`
+- Seen firing 4328 times (3742 in combat); argument kinds: `s,s`
 
 ### UNIT_POWER_POINT_CHARGE
 
@@ -2967,32 +3134,35 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `powerType: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 288 times (256 in combat); argument kinds: `s,s`
+- Seen firing 634 times (576 in combat); argument kinds: `s,s`
 
 ### UNIT_QUEST_LOG_CHANGED
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (2 in combat); argument kinds: `s`
 
 ### UNIT_RANGEDDAMAGE
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 4 times (0 in combat); argument kinds: `s`
 
 ### UNIT_RANGED_ATTACK_POWER
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `s`
+- Seen firing 4 times (2 in combat); argument kinds: `s`
 
 ### UNIT_RESISTANCES
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: `s`
 
 ### UNIT_SPELLCAST_CHANNEL_START
 
@@ -3049,7 +3219,7 @@
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 445 times (445 in combat); argument kinds: `s,s,n,-`
+- Seen firing 913 times (913 in combat); argument kinds: `s,s,n,-`
 
 ### UNIT_SPELLCAST_FAILED_QUIET
 
@@ -3057,7 +3227,7 @@
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 22 times (22 in combat); argument kinds: `s,s,n,-`
+- Seen firing 48 times (48 in combat); argument kinds: `s,s,n,-`
 
 ### UNIT_SPELLCAST_INTERRUPTED
 
@@ -3098,7 +3268,7 @@
 - Payload: `unitTarget: UnitTokenVariant`, `target: cstring`, `castGUID: WOWGUID`, `spellID: number`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 76 times (68 in combat); argument kinds: `s,s,s,n`
+- Seen firing 156 times (140 in combat); argument kinds: `s,-,s,n` / `s,s,s,n`
 
 ### UNIT_SPELLCAST_START
 
@@ -3106,7 +3276,7 @@
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: `s,s,n,s`
+- Seen firing 11 times (2 in combat); argument kinds: `s,-,n,s` / `s,s,n,s`
 
 ### UNIT_SPELLCAST_STOP
 
@@ -3114,7 +3284,7 @@
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: `s,s,n,s`
+- Seen firing 8 times (0 in combat); argument kinds: `s,s,n,s`
 
 ### UNIT_SPELLCAST_SUCCEEDED
 
@@ -3122,7 +3292,7 @@
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 68 times (60 in combat); argument kinds: `s,s,n,-` / `s,s,n,s`
+- Seen firing 144 times (128 in combat); argument kinds: `s,s,n,-` / `s,s,n,s`
 
 ### UNIT_SPELL_HASTE
 
@@ -3141,7 +3311,7 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 38 times (15 in combat); argument kinds: `s`
+- Seen firing 73 times (35 in combat); argument kinds: `s`
 
 ### UNIT_TARGETABLE_CHANGED
 
@@ -3155,7 +3325,7 @@
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 139 times (134 in combat); argument kinds: `s`
+- Seen firing 267 times (258 in combat); argument kinds: `s`
 
 ### UNIT_THREAT_SITUATION_UPDATE
 
@@ -3163,7 +3333,7 @@
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 15 times (8 in combat); argument kinds: `s`
+- Seen firing 28 times (17 in combat); argument kinds: `s`
 
 ### UPDATE_EXHAUSTION
 
@@ -3176,7 +3346,7 @@
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 58 times (43 in combat); argument kinds: ``
+- Seen firing 121 times (100 in combat); argument kinds: ``
 
 ### UPDATE_STEALTH
 

@@ -25,7 +25,7 @@ Namespace: `C_PetJournal`
 | ✅ | [C_PetJournal.GetNumPetsInJournal](#c_petjournalgetnumpetsinjournal) |  |  |
 | 🆕 | [C_PetJournal.GetNumPetsNeedingFanfare](#c_petjournalgetnumpetsneedingfanfare) |  |  |
 | 🆕 | [C_PetJournal.GetOwnedBattlePetString](#c_petjournalgetownedbattlepetstring) |  |  |
-| ✅ | [C_PetJournal.GetOwnedPetIDs](#c_petjournalgetownedpetids) | 1 value |  |
+| ✅ | [C_PetJournal.GetOwnedPetIDs](#c_petjournalgetownedpetids) | 1 value | 1 value |
 | ✅ | [C_PetJournal.GetPetAbilityInfo](#c_petjournalgetpetabilityinfo) |  |  |
 | 🆕 | [C_PetJournal.GetPetAbilityList](#c_petjournalgetpetabilitylist) |  |  |
 | ✅ | [C_PetJournal.GetPetAbilityListTable](#c_petjournalgetpetabilitylisttable) |  |  |
@@ -42,11 +42,11 @@ Namespace: `C_PetJournal`
 | 🆕 | [C_PetJournal.GetPetStats](#c_petjournalgetpetstats) |  |  |
 | ✅ | [C_PetJournal.GetPetSummonInfo](#c_petjournalgetpetsummoninfo) |  |  |
 | 🆕 | [C_PetJournal.GetPetTeamAverageLevel](#c_petjournalgetpetteamaveragelevel) |  |  |
-| ✅ | [C_PetJournal.GetSearchFilter](#c_petjournalgetsearchfilter) | 1 value |  |
+| ✅ | [C_PetJournal.GetSearchFilter](#c_petjournalgetsearchfilter) | 1 value | 1 value |
 | 🆕 | [C_PetJournal.GetSummonBattlePetCooldown](#c_petjournalgetsummonbattlepetcooldown) |  |  |
 | 🆕 | [C_PetJournal.GetSummonRandomFavoritePetGUID](#c_petjournalgetsummonrandomfavoritepetguid) |  |  |
 | 🆕 | [C_PetJournal.GetSummonedPetGUID](#c_petjournalgetsummonedpetguid) |  |  |
-| ✅ | [C_PetJournal.HasFavoritePets](#c_petjournalhasfavoritepets) | 1 value |  |
+| ✅ | [C_PetJournal.HasFavoritePets](#c_petjournalhasfavoritepets) | 1 value | 1 value |
 | ✅ | [C_PetJournal.IsCurrentlySummoned](#c_petjournaliscurrentlysummoned) |  |  |
 | 🆕 | [C_PetJournal.IsFilterChecked](#c_petjournalisfilterchecked) |  |  |
 | 🆕 | [C_PetJournal.IsFindBattleEnabled](#c_petjournalisfindbattleenabled) |  |  |
@@ -54,7 +54,7 @@ Namespace: `C_PetJournal`
 | 🆕 | [C_PetJournal.IsJournalUnlocked](#c_petjournalisjournalunlocked) |  |  |
 | 🆕 | [C_PetJournal.IsPetSourceChecked](#c_petjournalispetsourcechecked) |  |  |
 | 🆕 | [C_PetJournal.IsPetTypeChecked](#c_petjournalispettypechecked) |  |  |
-| ✅ | [C_PetJournal.IsUsingDefaultFilters](#c_petjournalisusingdefaultfilters) | 1 value |  |
+| ✅ | [C_PetJournal.IsUsingDefaultFilters](#c_petjournalisusingdefaultfilters) | 1 value | 1 value |
 | 🆕 | [C_PetJournal.PetCanBeReleased](#c_petjournalpetcanbereleased) |  |  |
 | 🆕 | [C_PetJournal.PetIsCapturable](#c_petjournalpetiscapturable) |  |  |
 | 🆕 | [C_PetJournal.PetIsFavorite](#c_petjournalpetisfavorite) |  |  |
@@ -221,6 +221,7 @@ Namespace: `C_PetJournal`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{[number]=string,[number]=string,[number]=string,[number]=string,[number]=string}`
+- Called in combat: returned 1 value: `table{[number]=string,[number]=string,[number]=string,[number]=string,[number]=string}`
 - Source: client docs `PetJournalInfoDocumentation.lua`
 
 ### C_PetJournal.GetPetAbilityInfo
@@ -342,6 +343,7 @@ Namespace: `C_PetJournal`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `PetJournalInfoDocumentation.lua`
 
 ### C_PetJournal.GetSummonBattlePetCooldown
@@ -368,6 +370,7 @@ Namespace: `C_PetJournal`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PetJournalInfoDocumentation.lua`
 
 ### C_PetJournal.IsCurrentlySummoned
@@ -420,6 +423,7 @@ Namespace: `C_PetJournal`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PetJournalInfoDocumentation.lua`
 
 ### C_PetJournal.PetCanBeReleased
@@ -670,7 +674,7 @@ Namespace: `C_PetJournal`
 - Payload: none
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 7 times (0 in combat); argument kinds: ``
+- Seen firing 9 times (0 in combat); argument kinds: ``
 
 ### PET_JOURNAL_NEW_BATTLE_SLOT
 
@@ -707,14 +711,14 @@ Namespace: `C_PetJournal`
 - Status: ✅ verified
 - Payload: `trapLevel: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: `n`
+- Seen firing 4 times (0 in combat); argument kinds: `n`
 
 ### UPDATE_SUMMONPETS_ACTION
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 4 times (0 in combat); argument kinds: ``
 
 ## Types
 

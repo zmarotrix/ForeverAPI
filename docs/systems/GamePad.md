@@ -14,17 +14,17 @@ Namespace: `C_GamePad`
 | ✅ | [C_GamePad.ButtonIndexToConfigName](#c_gamepadbuttonindextoconfigname) |  |  |
 | ✅ | [C_GamePad.ClearLedColor](#c_gamepadclearledcolor) |  |  |
 | ✅ | [C_GamePad.DeleteConfig](#c_gamepaddeleteconfig) |  |  |
-| ✅ | [C_GamePad.GetActiveDeviceID](#c_gamepadgetactivedeviceid) | 1 value |  |
-| ✅ | [C_GamePad.GetAllConfigIDs](#c_gamepadgetallconfigids) | 1 value |  |
-| ✅ | [C_GamePad.GetAllDeviceIDs](#c_gamepadgetalldeviceids) | 1 value |  |
-| ✅ | [C_GamePad.GetAllowHoverEventsWithFreeLook](#c_gamepadgetallowhovereventswithfreelook) | 1 value |  |
-| ✅ | [C_GamePad.GetCombinedDeviceID](#c_gamepadgetcombineddeviceid) | 1 value |  |
+| ✅ | [C_GamePad.GetActiveDeviceID](#c_gamepadgetactivedeviceid) | 1 value | 1 value |
+| ✅ | [C_GamePad.GetAllConfigIDs](#c_gamepadgetallconfigids) | 1 value | 1 value |
+| ✅ | [C_GamePad.GetAllDeviceIDs](#c_gamepadgetalldeviceids) | 1 value | 1 value |
+| ✅ | [C_GamePad.GetAllowHoverEventsWithFreeLook](#c_gamepadgetallowhovereventswithfreelook) | 1 value | 1 value |
+| ✅ | [C_GamePad.GetCombinedDeviceID](#c_gamepadgetcombineddeviceid) | 1 value | 1 value |
 | ✅ | [C_GamePad.GetConfig](#c_gamepadgetconfig) |  |  |
-| ✅ | [C_GamePad.GetDeviceMappedState](#c_gamepadgetdevicemappedstate) | 1 value |  |
+| ✅ | [C_GamePad.GetDeviceMappedState](#c_gamepadgetdevicemappedstate) | 1 value | 1 value |
 | ✅ | [C_GamePad.GetDeviceRawState](#c_gamepadgetdevicerawstate) |  |  |
-| ✅ | [C_GamePad.GetLedColor](#c_gamepadgetledcolor) | 1 value |  |
-| ✅ | [C_GamePad.GetPowerLevel](#c_gamepadgetpowerlevel) | 1 value |  |
-| ✅ | [C_GamePad.IsEnabled](#c_gamepadisenabled) | 1 value |  |
+| ✅ | [C_GamePad.GetLedColor](#c_gamepadgetledcolor) | 1 value | 1 value |
+| ✅ | [C_GamePad.GetPowerLevel](#c_gamepadgetpowerlevel) | 1 value | 1 value |
+| ✅ | [C_GamePad.IsEnabled](#c_gamepadisenabled) | 1 value | 1 value |
 | ✅ | [C_GamePad.SetAllowHoverEventsWithFreeLook](#c_gamepadsetallowhovereventswithfreelook) |  |  |
 | ✅ | [C_GamePad.SetConfig](#c_gamepadsetconfig) |  |  |
 | ✅ | [C_GamePad.SetLedColor](#c_gamepadsetledcolor) |  |  |
@@ -103,6 +103,7 @@ Namespace: `C_GamePad`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `GamePadDocumentation.lua`
 
 ### C_GamePad.GetAllConfigIDs
@@ -111,6 +112,7 @@ Namespace: `C_GamePad`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `GamePadDocumentation.lua`
 
 ### C_GamePad.GetAllDeviceIDs
@@ -119,6 +121,7 @@ Namespace: `C_GamePad`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `GamePadDocumentation.lua`
 
 ### C_GamePad.GetAllowHoverEventsWithFreeLook
@@ -127,6 +130,7 @@ Namespace: `C_GamePad`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `GamePadDocumentation.lua`
 
 ### C_GamePad.GetCombinedDeviceID
@@ -135,6 +139,7 @@ Namespace: `C_GamePad`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `GamePadDocumentation.lua`
 
 ### C_GamePad.GetConfig
@@ -152,6 +157,7 @@ Namespace: `C_GamePad`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `GamePadDocumentation.lua`
 
 ### C_GamePad.GetDeviceRawState
@@ -168,6 +174,7 @@ Namespace: `C_GamePad`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{GenerateHexColor=function,GenerateHexColorMarkup=function,GenerateHexColorNoAlpha=function,GetHSL=function,GetRGB=function,GetRGBA=function,GetRGBAAsBytes=function,GetRGBAsBytes=function,IsEqualTo=function,IsRGBEqualTo=function,OnLoad=function,SetRGB=function,SetRGBA=function,WrapTextInColorCode=function,b=number,g=number,r=number}`
+- Called in combat: returned 1 value: `table{GenerateHexColor=function,GenerateHexColorMarkup=function,GenerateHexColorNoAlpha=function,GetHSL=function,GetRGB=function,GetRGBA=function,GetRGBAAsBytes=function,GetRGBAsBytes=function,IsEqualTo=function,IsRGBEqualTo=function,OnLoad=function,SetRGB=function,SetRGBA=function,WrapTextInColorCode=function,b=number,g=number,r=number}`
 - Source: client docs `GamePadDocumentation.lua`
 
 ### C_GamePad.GetPowerLevel
@@ -177,6 +184,7 @@ Namespace: `C_GamePad`
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `GamePadDocumentation.lua`
 
 ### C_GamePad.IsEnabled
@@ -185,6 +193,7 @@ Namespace: `C_GamePad`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `GamePadDocumentation.lua`
 
 ### C_GamePad.SetAllowHoverEventsWithFreeLook
@@ -254,7 +263,7 @@ Namespace: `C_GamePad`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 4 times (0 in combat); argument kinds: ``
 
 ### GAME_PAD_CONNECTED
 

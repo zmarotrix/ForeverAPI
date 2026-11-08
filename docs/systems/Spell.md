@@ -6,7 +6,7 @@ Namespace: `C_Spell`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_Spell.CancelAutoRepeatSpell](#c_spellcancelautorepeatspell) | protected |  |
+| ✅ | [C_Spell.CancelAutoRepeatSpell](#c_spellcancelautorepeatspell) | 💥 forbidden | 💥 forbidden |
 | ✅ | [C_Spell.CancelItemTempEnchantment](#c_spellcancelitemtempenchantment) |  |  |
 | ✅ | [C_Spell.CancelSpellByID](#c_spellcancelspellbyid) |  |  |
 | ✅ | [C_Spell.DoesSpellExist](#c_spelldoesspellexist) |  |  |
@@ -41,12 +41,12 @@ Namespace: `C_Spell`
 | ✅ | [C_Spell.GetSpellMaxCumulativeAuraApplications](#c_spellgetspellmaxcumulativeauraapplications) |  |  |
 | ✅ | [C_Spell.GetSpellName](#c_spellgetspellname) |  |  |
 | ✅ | [C_Spell.GetSpellPowerCost](#c_spellgetspellpowercost) |  |  |
-| ✅ | [C_Spell.GetSpellQueueWindow](#c_spellgetspellqueuewindow) | 1 value |  |
+| ✅ | [C_Spell.GetSpellQueueWindow](#c_spellgetspellqueuewindow) | 1 value | 1 value |
 | ✅ | [C_Spell.GetSpellSkillLineAbilityRank](#c_spellgetspellskilllineabilityrank) |  |  |
 | ✅ | [C_Spell.GetSpellSubtext](#c_spellgetspellsubtext) |  |  |
 | ✅ | [C_Spell.GetSpellTexture](#c_spellgetspelltexture) |  |  |
 | ✅ | [C_Spell.GetSpellTradeSkillLink](#c_spellgetspelltradeskilllink) |  |  |
-| ✅ | [C_Spell.GetTargetSpellID](#c_spellgettargetspellid) | 1 value |  |
+| ✅ | [C_Spell.GetTargetSpellID](#c_spellgettargetspellid) | 1 value | 1 value |
 | ✅ | [C_Spell.GetVisibilityInfo](#c_spellgetvisibilityinfo) |  |  |
 | ✅ | [C_Spell.IsActiveSpell](#c_spellisactivespell) |  |  |
 | ✅ | [C_Spell.IsAutoAttackSpell](#c_spellisautoattackspell) |  |  |
@@ -87,7 +87,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - Blizzard: Cancels the player's active auto repeat spell, if any
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: ⛔ protected: calling it raised ADDON_ACTION_FORBIDDEN
+- Called out of combat: 💥 not called: forbidden
+- Called in combat: 💥 not called: forbidden
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.CancelItemTempEnchantment
@@ -426,6 +427,7 @@ Namespace: `C_Spell`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetSpellSkillLineAbilityRank
@@ -475,6 +477,7 @@ Namespace: `C_Spell`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.GetVisibilityInfo
@@ -776,7 +779,7 @@ Namespace: `C_Spell`
 - Status: ✅ verified
 - Payload: `spellID: number`, `success: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 187 times (0 in combat); argument kinds: `n,b`
+- Seen firing 193 times (0 in combat); argument kinds: `n,b`
 
 ### SPELL_RANGE_CHECK_UPDATE
 

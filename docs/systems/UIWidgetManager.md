@@ -7,7 +7,7 @@ Namespace: `C_UIWidgetManager`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_UIWidgetManager.GetAllWidgetsBySetID](#c_uiwidgetmanagergetallwidgetsbysetid) |  |  |
-| ✅ | [C_UIWidgetManager.GetBelowMinimapWidgetSetID](#c_uiwidgetmanagergetbelowminimapwidgetsetid) | 1 value |  |
+| ✅ | [C_UIWidgetManager.GetBelowMinimapWidgetSetID](#c_uiwidgetmanagergetbelowminimapwidgetsetid) | 1 value | 1 value |
 | ✅ | [C_UIWidgetManager.GetBulletTextListWidgetVisualizationInfo](#c_uiwidgetmanagergetbullettextlistwidgetvisualizationinfo) |  |  |
 | ✅ | [C_UIWidgetManager.GetButtonHeaderWidgetVisualizationInfo](#c_uiwidgetmanagergetbuttonheaderwidgetvisualizationinfo) |  |  |
 | ✅ | [C_UIWidgetManager.GetCaptureBarWidgetVisualizationInfo](#c_uiwidgetmanagergetcapturebarwidgetvisualizationinfo) |  |  |
@@ -23,8 +23,8 @@ Namespace: `C_UIWidgetManager`
 | ✅ | [C_UIWidgetManager.GetIconTextAndCurrenciesWidgetVisualizationInfo](#c_uiwidgetmanagergeticontextandcurrencieswidgetvisualizationinfo) |  |  |
 | ✅ | [C_UIWidgetManager.GetItemDisplayVisualizationInfo](#c_uiwidgetmanagergetitemdisplayvisualizationinfo) |  |  |
 | ✅ | [C_UIWidgetManager.GetMapPinAnimationWidgetVisualizationInfo](#c_uiwidgetmanagergetmappinanimationwidgetvisualizationinfo) |  |  |
-| ✅ | [C_UIWidgetManager.GetObjectiveTrackerWidgetSetID](#c_uiwidgetmanagergetobjectivetrackerwidgetsetid) | 1 value |  |
-| ✅ | [C_UIWidgetManager.GetPowerBarWidgetSetID](#c_uiwidgetmanagergetpowerbarwidgetsetid) | 1 value |  |
+| ✅ | [C_UIWidgetManager.GetObjectiveTrackerWidgetSetID](#c_uiwidgetmanagergetobjectivetrackerwidgetsetid) | 1 value | 1 value |
+| ✅ | [C_UIWidgetManager.GetPowerBarWidgetSetID](#c_uiwidgetmanagergetpowerbarwidgetsetid) | 1 value | 1 value |
 | ✅ | [C_UIWidgetManager.GetPreyHuntProgressWidgetVisualizationInfo](#c_uiwidgetmanagergetpreyhuntprogresswidgetvisualizationinfo) |  |  |
 | ✅ | [C_UIWidgetManager.GetScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo](#c_uiwidgetmanagergetscenarioheadercurrenciesandbackgroundwidgetvisualizationinfo) |  |  |
 | ✅ | [C_UIWidgetManager.GetScenarioHeaderDelvesWidgetVisualizationInfo](#c_uiwidgetmanagergetscenarioheaderdelveswidgetvisualizationinfo) |  |  |
@@ -39,7 +39,7 @@ Namespace: `C_UIWidgetManager`
 | ✅ | [C_UIWidgetManager.GetTextureAndTextRowVisualizationInfo](#c_uiwidgetmanagergettextureandtextrowvisualizationinfo) |  |  |
 | ✅ | [C_UIWidgetManager.GetTextureAndTextVisualizationInfo](#c_uiwidgetmanagergettextureandtextvisualizationinfo) |  |  |
 | ✅ | [C_UIWidgetManager.GetTextureWithAnimationVisualizationInfo](#c_uiwidgetmanagergettexturewithanimationvisualizationinfo) |  |  |
-| ✅ | [C_UIWidgetManager.GetTopCenterWidgetSetID](#c_uiwidgetmanagergettopcenterwidgetsetid) | 1 value |  |
+| ✅ | [C_UIWidgetManager.GetTopCenterWidgetSetID](#c_uiwidgetmanagergettopcenterwidgetsetid) | 1 value | 1 value |
 | ✅ | [C_UIWidgetManager.GetTugOfWarWidgetVisualizationInfo](#c_uiwidgetmanagergettugofwarwidgetvisualizationinfo) |  |  |
 | ✅ | [C_UIWidgetManager.GetUnitPowerBarWidgetVisualizationInfo](#c_uiwidgetmanagergetunitpowerbarwidgetvisualizationinfo) |  |  |
 | ✅ | [C_UIWidgetManager.GetWidgetSetInfo](#c_uiwidgetmanagergetwidgetsetinfo) |  |  |
@@ -63,6 +63,7 @@ Namespace: `C_UIWidgetManager`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
 ### C_UIWidgetManager.GetBulletTextListWidgetVisualizationInfo
@@ -191,6 +192,7 @@ Namespace: `C_UIWidgetManager`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
 ### C_UIWidgetManager.GetPowerBarWidgetSetID
@@ -199,6 +201,7 @@ Namespace: `C_UIWidgetManager`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
 ### C_UIWidgetManager.GetPreyHuntProgressWidgetVisualizationInfo
@@ -319,6 +322,7 @@ Namespace: `C_UIWidgetManager`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
 ### C_UIWidgetManager.GetTugOfWarWidgetVisualizationInfo

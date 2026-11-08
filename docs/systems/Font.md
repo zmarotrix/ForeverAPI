@@ -6,7 +6,7 @@
 |---|---|---|---|
 | ✅ | [CreateFontFamily](#createfontfamily) |  |  |
 | ✅ | [GetFontInfo](#getfontinfo) |  |  |
-| ✅ | [GetFonts](#getfonts) | 1 value |  |
+| ✅ | [GetFonts](#getfonts) | 1 value | 1 value |
 
 ### CreateFontFamily
 
@@ -29,7 +29,8 @@
 `GetFonts() → fontNames: cstring[]`
 
 - Status: ✅ verified (function)
-- Called out of combat: returned 1 value: `table{[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,...(478)}`
+- Called out of combat: returned 1 value: `table{[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,...(477)}`
+- Called in combat: returned 1 value: `table{[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,[number]=string,...(477)}`
 - Source: client docs `FontDocumentation.lua`
 
 ## Types

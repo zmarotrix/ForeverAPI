@@ -9,11 +9,11 @@ Namespace: `C_PhotoSharing`
 | ✅ | [C_PhotoSharing.BeginAuthorizationFlow](#c_photosharingbeginauthorizationflow) |  |  |
 | ✅ | [C_PhotoSharing.ClearAuthorization](#c_photosharingclearauthorization) |  |  |
 | ✅ | [C_PhotoSharing.CompleteAuthorizationFlow](#c_photosharingcompleteauthorizationflow) |  |  |
-| ✅ | [C_PhotoSharing.GetCropRatio](#c_photosharinggetcropratio) | 1 value |  |
-| ✅ | [C_PhotoSharing.GetPhotoSharingAuthURL](#c_photosharinggetphotosharingauthurl) | 1 value |  |
-| ✅ | [C_PhotoSharing.GetStatus](#c_photosharinggetstatus) | 1 value |  |
-| ✅ | [C_PhotoSharing.IsAuthorized](#c_photosharingisauthorized) | 1 value |  |
-| ✅ | [C_PhotoSharing.IsEnabled](#c_photosharingisenabled) | 1 value |  |
+| ✅ | [C_PhotoSharing.GetCropRatio](#c_photosharinggetcropratio) | 1 value | 1 value |
+| ✅ | [C_PhotoSharing.GetPhotoSharingAuthURL](#c_photosharinggetphotosharingauthurl) | 1 value | 1 value |
+| ✅ | [C_PhotoSharing.GetStatus](#c_photosharinggetstatus) | 1 value | 1 value |
+| ✅ | [C_PhotoSharing.IsAuthorized](#c_photosharingisauthorized) | 1 value | 1 value |
+| ✅ | [C_PhotoSharing.IsEnabled](#c_photosharingisenabled) | 1 value | 1 value |
 | ✅ | [C_PhotoSharing.SetScreenshotPreviewTexture](#c_photosharingsetscreenshotpreviewtexture) |  |  |
 | ✅ | [C_PhotoSharing.TakePhoto](#c_photosharingtakephoto) |  |  |
 | ✅ | [C_PhotoSharing.UploadPhotoToService](#c_photosharinguploadphototoservice) |  |  |
@@ -46,6 +46,7 @@ Namespace: `C_PhotoSharing`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PhotoSharingUIDocumentation.lua`
 
 ### C_PhotoSharing.GetPhotoSharingAuthURL
@@ -54,6 +55,7 @@ Namespace: `C_PhotoSharing`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `PhotoSharingUIDocumentation.lua`
 
 ### C_PhotoSharing.GetStatus
@@ -62,6 +64,7 @@ Namespace: `C_PhotoSharing`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `PhotoSharingUIDocumentation.lua`
 
 ### C_PhotoSharing.IsAuthorized
@@ -70,6 +73,7 @@ Namespace: `C_PhotoSharing`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PhotoSharingUIDocumentation.lua`
 
 ### C_PhotoSharing.IsEnabled
@@ -78,6 +82,7 @@ Namespace: `C_PhotoSharing`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `PhotoSharingUIDocumentation.lua`
 
 ### C_PhotoSharing.SetScreenshotPreviewTexture

@@ -6,9 +6,9 @@ Namespace: `C_BlizzCon2026`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_BlizzCon2026.GetExperience](#c_blizzcon2026getexperience) | 1 value |  |
-| ✅ | [C_BlizzCon2026.IsActive](#c_blizzcon2026isactive) | 1 value |  |
-| ✅ | [C_BlizzCon2026.IsColdSwapFeatureEnabled](#c_blizzcon2026iscoldswapfeatureenabled) | 1 value |  |
+| ✅ | [C_BlizzCon2026.GetExperience](#c_blizzcon2026getexperience) | 1 value | 1 value |
+| ✅ | [C_BlizzCon2026.IsActive](#c_blizzcon2026isactive) | 1 value | 1 value |
+| ✅ | [C_BlizzCon2026.IsColdSwapFeatureEnabled](#c_blizzcon2026iscoldswapfeatureenabled) | 1 value | 1 value |
 | ✅ | [C_BlizzCon2026.SetExperience](#c_blizzcon2026setexperience) |  |  |
 
 ### C_BlizzCon2026.GetExperience
@@ -17,6 +17,7 @@ Namespace: `C_BlizzCon2026`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `BlizzCon2026Documentation.lua`
 
 ### C_BlizzCon2026.IsActive
@@ -25,6 +26,7 @@ Namespace: `C_BlizzCon2026`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BlizzCon2026Documentation.lua`
 
 ### C_BlizzCon2026.IsColdSwapFeatureEnabled
@@ -33,6 +35,7 @@ Namespace: `C_BlizzCon2026`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BlizzCon2026Documentation.lua`
 
 ### C_BlizzCon2026.SetExperience

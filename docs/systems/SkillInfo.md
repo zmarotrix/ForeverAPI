@@ -9,8 +9,8 @@ Namespace: `C_SkillInfo`
 | ✅ | [C_SkillInfo.AbandonSkill](#c_skillinfoabandonskill) |  |  |
 | ✅ | [C_SkillInfo.CollapseSkillHeader](#c_skillinfocollapseskillheader) |  |  |
 | ✅ | [C_SkillInfo.ExpandSkillHeader](#c_skillinfoexpandskillheader) |  |  |
-| ✅ | [C_SkillInfo.GetNumSkillLines](#c_skillinfogetnumskilllines) | 1 value |  |
-| ✅ | [C_SkillInfo.GetSelectedSkill](#c_skillinfogetselectedskill) | 1 value |  |
+| ✅ | [C_SkillInfo.GetNumSkillLines](#c_skillinfogetnumskilllines) | 1 value | 1 value |
+| ✅ | [C_SkillInfo.GetSelectedSkill](#c_skillinfogetselectedskill) | 1 value | 1 value |
 | ✅ | [C_SkillInfo.GetSkillLineInfo](#c_skillinfogetskilllineinfo) |  |  |
 | ✅ | [C_SkillInfo.GetSkillLineInfoByID](#c_skillinfogetskilllineinfobyid) |  |  |
 | ✅ | [C_SkillInfo.SetSelectedSkill](#c_skillinfosetselectedskill) |  |  |
@@ -45,6 +45,7 @@ Namespace: `C_SkillInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SkillInfoDocumentation.lua`
 
 ### C_SkillInfo.GetSelectedSkill
@@ -53,6 +54,7 @@ Namespace: `C_SkillInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SkillInfoDocumentation.lua`
 
 ### C_SkillInfo.GetSkillLineInfo
@@ -86,7 +88,7 @@ Namespace: `C_SkillInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 5 times (0 in combat); argument kinds: ``
+- Seen firing 7 times (1 in combat); argument kinds: ``
 
 ## Types
 

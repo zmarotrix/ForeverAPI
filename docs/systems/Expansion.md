@@ -4,30 +4,30 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [CanUpgradeToCurrentExpansion](#canupgradetocurrentexpansion) | 1 value |  |
-| ✅ | [DoesCurrentLocaleSellExpansionLevels](#doescurrentlocalesellexpansionlevels) | 1 value |  |
-| ✅ | [GetAccountExpansionLevel](#getaccountexpansionlevel) | 1 value |  |
-| ✅ | [GetClientDisplayExpansionLevel](#getclientdisplayexpansionlevel) | 1 value |  |
-| ✅ | [GetCreditsDisplayInfo](#getcreditsdisplayinfo) | 1 value |  |
-| ✅ | [GetCurrentRegionName](#getcurrentregionname) | 1 value |  |
+| ✅ | [CanUpgradeToCurrentExpansion](#canupgradetocurrentexpansion) | 1 value | 1 value |
+| ✅ | [DoesCurrentLocaleSellExpansionLevels](#doescurrentlocalesellexpansionlevels) | 1 value | 1 value |
+| ✅ | [GetAccountExpansionLevel](#getaccountexpansionlevel) | 1 value | 1 value |
+| ✅ | [GetClientDisplayExpansionLevel](#getclientdisplayexpansionlevel) | 1 value | 1 value |
+| ✅ | [GetCreditsDisplayInfo](#getcreditsdisplayinfo) | 1 value | 1 value |
+| ✅ | [GetCurrentRegionName](#getcurrentregionname) | 1 value | 1 value |
 | ✅ | [GetExpansionDisplayInfo](#getexpansiondisplayinfo) |  |  |
 | ✅ | [GetExpansionForLevel](#getexpansionforlevel) |  |  |
-| ✅ | [GetExpansionLevel](#getexpansionlevel) | 1 value |  |
-| ✅ | [GetExpansionTrialInfo](#getexpansiontrialinfo) | 2 values |  |
+| ✅ | [GetExpansionLevel](#getexpansionlevel) | 1 value | 1 value |
+| ✅ | [GetExpansionTrialInfo](#getexpansiontrialinfo) | 2 values | 2 values |
 | ✅ | [GetMaxLevelForExpansionLevel](#getmaxlevelforexpansionlevel) |  |  |
-| ✅ | [GetMaxLevelForLatestExpansion](#getmaxlevelforlatestexpansion) | 1 value |  |
-| ✅ | [GetMaxLevelForPlayerExpansion](#getmaxlevelforplayerexpansion) | 1 value |  |
-| ✅ | [GetMaximumExpansionLevel](#getmaximumexpansionlevel) | 1 value |  |
-| ✅ | [GetMinimumExpansionLevel](#getminimumexpansionlevel) | 1 value |  |
-| ✅ | [GetNumExpansions](#getnumexpansions) | 1 value |  |
-| ✅ | [GetServerExpansionLevel](#getserverexpansionlevel) | 1 value |  |
-| ✅ | [GetUpgradeExpansionLevel](#getupgradeexpansionlevel) | 1 value |  |
-| ✅ | [IsDemonHunterAvailable](#isdemonhunteravailable) | 1 value |  |
-| ✅ | [IsExpansionTrial](#isexpansiontrial) | 1 value |  |
-| ✅ | [IsTrialAccount](#istrialaccount) | 1 value |  |
-| ✅ | [IsVeteranTrialAccount](#isveterantrialaccount) | 1 value |  |
+| ✅ | [GetMaxLevelForLatestExpansion](#getmaxlevelforlatestexpansion) | 1 value | 1 value |
+| ✅ | [GetMaxLevelForPlayerExpansion](#getmaxlevelforplayerexpansion) | 1 value | 1 value |
+| ✅ | [GetMaximumExpansionLevel](#getmaximumexpansionlevel) | 1 value | 1 value |
+| ✅ | [GetMinimumExpansionLevel](#getminimumexpansionlevel) | 1 value | 1 value |
+| ✅ | [GetNumExpansions](#getnumexpansions) | 1 value | 1 value |
+| ✅ | [GetServerExpansionLevel](#getserverexpansionlevel) | 1 value | 1 value |
+| ✅ | [GetUpgradeExpansionLevel](#getupgradeexpansionlevel) | 1 value | 1 value |
+| ✅ | [IsDemonHunterAvailable](#isdemonhunteravailable) | 1 value | 1 value |
+| ✅ | [IsExpansionTrial](#isexpansiontrial) | 1 value | 1 value |
+| ✅ | [IsTrialAccount](#istrialaccount) | 1 value | 1 value |
+| ✅ | [IsVeteranTrialAccount](#isveterantrialaccount) | 1 value | 1 value |
 | ✅ | [SendSubscriptionInterstitialResponse](#sendsubscriptioninterstitialresponse) |  |  |
-| ✅ | [ShouldShowExpansionUpgradeBanner](#shouldshowexpansionupgradebanner) | 1 value |  |
+| ✅ | [ShouldShowExpansionUpgradeBanner](#shouldshowexpansionupgradebanner) | 1 value | 1 value |
 
 ### CanUpgradeToCurrentExpansion
 
@@ -35,6 +35,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ExpansionDocumentation.lua`
 
 ### DoesCurrentLocaleSellExpansionLevels
@@ -43,6 +44,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ExpansionDocumentation.lua`
 
 ### GetAccountExpansionLevel
@@ -51,6 +53,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ExpansionDocumentation.lua`
 
 ### GetClientDisplayExpansionLevel
@@ -59,6 +62,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ExpansionDocumentation.lua`
 
 ### GetCreditsDisplayInfo
@@ -67,6 +71,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{[number]=table,[number]=table}`
+- Called in combat: returned 1 value: `table{[number]=table,[number]=table}`
 - Source: client docs `ExpansionDocumentation.lua`
 
 ### GetCurrentRegionName
@@ -75,6 +80,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `string`
+- Called in combat: returned 1 value: `string`
 - Source: client docs `ExpansionDocumentation.lua`
 
 ### GetExpansionDisplayInfo
@@ -100,6 +106,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ExpansionDocumentation.lua`
 
 ### GetExpansionTrialInfo
@@ -108,6 +115,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 2 values: `boolean`, `nil`
+- Called in combat: returned 2 values: `boolean`, `nil`
 - Source: client docs `ExpansionDocumentation.lua`
 
 ### GetMaxLevelForExpansionLevel
@@ -125,6 +133,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ExpansionDocumentation.lua`
 
 ### GetMaxLevelForPlayerExpansion
@@ -133,6 +142,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ExpansionDocumentation.lua`
 
 ### GetMaximumExpansionLevel
@@ -141,6 +151,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ExpansionDocumentation.lua`
 
 ### GetMinimumExpansionLevel
@@ -149,6 +160,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ExpansionDocumentation.lua`
 
 ### GetNumExpansions
@@ -157,6 +169,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ExpansionDocumentation.lua`
 
 ### GetServerExpansionLevel
@@ -165,6 +178,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ExpansionDocumentation.lua`
 
 ### GetUpgradeExpansionLevel
@@ -173,6 +187,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `ExpansionDocumentation.lua`
 
 ### IsDemonHunterAvailable
@@ -181,6 +196,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ExpansionDocumentation.lua`
 
 ### IsExpansionTrial
@@ -189,6 +205,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ExpansionDocumentation.lua`
 
 ### IsTrialAccount
@@ -197,6 +214,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ExpansionDocumentation.lua`
 
 ### IsVeteranTrialAccount
@@ -205,6 +223,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ExpansionDocumentation.lua`
 
 ### SendSubscriptionInterstitialResponse
@@ -222,6 +241,7 @@
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `ExpansionDocumentation.lua`
 
 ## Events

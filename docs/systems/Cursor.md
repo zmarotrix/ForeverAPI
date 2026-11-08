@@ -6,7 +6,7 @@ Namespace: `C_Cursor`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_Cursor.GetCursorItem](#c_cursorgetcursoritem) | 0 values |  |
+| ✅ | [C_Cursor.GetCursorItem](#c_cursorgetcursoritem) | 0 values | 0 values |
 
 ### C_Cursor.GetCursorItem
 
@@ -15,6 +15,7 @@ Namespace: `C_Cursor`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `CursorDocumentation.lua`
 
 ## Events
@@ -30,7 +31,7 @@ Namespace: `C_Cursor`
 - Status: ✅ verified
 - Payload: `isDefault: bool`, `newCursorType: UICursorType`, `oldCursorType: UICursorType`, `oldCursorVirtualID: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 135 times (92 in combat); argument kinds: `b,n,n,n`
+- Seen firing 311 times (246 in combat); argument kinds: `b,n,n,n`
 
 ### MOUNT_CURSOR_CLEAR
 
@@ -44,4 +45,4 @@ Namespace: `C_Cursor`
 - Payload: `anchorType: WorldCursorAnchorType`
 - Blizzard: Sends an update when the mouse enters or leaves something in-world (object, unit, etc) that should display a tooltip
 - fires synchronously (Blizzard's docs)
-- Seen firing 118 times (88 in combat); argument kinds: `n`
+- Seen firing 246 times (203 in combat); argument kinds: `n`

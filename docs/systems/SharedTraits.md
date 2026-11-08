@@ -27,7 +27,7 @@ Namespace: `C_Traits`
 | ✅ | [C_Traits.GetGroupCurrencyInfo](#c_traitsgetgroupcurrencyinfo) |  |  |
 | ✅ | [C_Traits.GetGroupDisplayInfoByTreeID](#c_traitsgetgroupdisplayinfobytreeid) |  |  |
 | ✅ | [C_Traits.GetIncreasedTraitData](#c_traitsgetincreasedtraitdata) |  |  |
-| ✅ | [C_Traits.GetLoadoutSerializationVersion](#c_traitsgetloadoutserializationversion) | 1 value |  |
+| ✅ | [C_Traits.GetLoadoutSerializationVersion](#c_traitsgetloadoutserializationversion) | 1 value | 1 value |
 | ✅ | [C_Traits.GetMaxAvailableTraitCurrency](#c_traitsgetmaxavailabletraitcurrency) |  |  |
 | ✅ | [C_Traits.GetNodeCost](#c_traitsgetnodecost) |  |  |
 | ✅ | [C_Traits.GetNodeInfo](#c_traitsgetnodeinfo) |  |  |
@@ -44,8 +44,8 @@ Namespace: `C_Traits`
 | ✅ | [C_Traits.GetTreeHash](#c_traitsgettreehash) |  |  |
 | ✅ | [C_Traits.GetTreeInfo](#c_traitsgettreeinfo) |  |  |
 | ✅ | [C_Traits.GetTreeNodes](#c_traitsgettreenodes) |  |  |
-| ✅ | [C_Traits.HasValidInspectData](#c_traitshasvalidinspectdata) | 1 value |  |
-| ✅ | [C_Traits.IsReadyForCommit](#c_traitsisreadyforcommit) | 1 value |  |
+| ✅ | [C_Traits.HasValidInspectData](#c_traitshasvalidinspectdata) | 1 value | 1 value |
+| ✅ | [C_Traits.IsReadyForCommit](#c_traitsisreadyforcommit) | 1 value | 1 value |
 | ✅ | [C_Traits.PurchaseAllRanks](#c_traitspurchaseallranks) |  |  |
 | ✅ | [C_Traits.PurchaseRank](#c_traitspurchaserank) |  |  |
 | ✅ | [C_Traits.RefundAllRanks](#c_traitsrefundallranks) |  |  |
@@ -243,6 +243,7 @@ Namespace: `C_Traits`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `SharedTraitsDocumentation.lua`
 
 ### C_Traits.GetMaxAvailableTraitCurrency
@@ -391,6 +392,7 @@ Namespace: `C_Traits`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SharedTraitsDocumentation.lua`
 
 ### C_Traits.IsReadyForCommit
@@ -399,6 +401,7 @@ Namespace: `C_Traits`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SharedTraitsDocumentation.lua`
 
 ### C_Traits.PurchaseAllRanks
@@ -535,7 +538,7 @@ Namespace: `C_Traits`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 4 times (0 in combat); argument kinds: ``
 
 ### TRAIT_CONFIG_UPDATED
 

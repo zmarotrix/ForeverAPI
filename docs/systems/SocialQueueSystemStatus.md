@@ -6,8 +6,8 @@ Namespace: `C_SocialQueue`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_SocialQueue.IsSystemEnabled](#c_socialqueueissystemenabled) | 1 value |  |
-| ✅ | [C_SocialQueue.IsSystemSupported](#c_socialqueueissystemsupported) | 1 value |  |
+| ✅ | [C_SocialQueue.IsSystemEnabled](#c_socialqueueissystemenabled) | 1 value | 1 value |
+| ✅ | [C_SocialQueue.IsSystemSupported](#c_socialqueueissystemsupported) | 1 value | 1 value |
 
 ### C_SocialQueue.IsSystemEnabled
 
@@ -15,6 +15,7 @@ Namespace: `C_SocialQueue`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SocialQueueSystemStatusDocumentation.lua`
 
 ### C_SocialQueue.IsSystemSupported
@@ -23,6 +24,7 @@ Namespace: `C_SocialQueue`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `SocialQueueSystemStatusDocumentation.lua`
 
 ## Events

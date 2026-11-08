@@ -15,7 +15,7 @@ Namespace: `C_EncounterJournal`
 | ✅ | [C_EncounterJournal.GetLootInfoByIndex](#c_encounterjournalgetlootinfobyindex) |  |  |
 | ✅ | [C_EncounterJournal.GetSectionIconFlags](#c_encounterjournalgetsectioniconflags) |  |  |
 | ✅ | [C_EncounterJournal.GetSectionInfo](#c_encounterjournalgetsectioninfo) |  |  |
-| ✅ | [C_EncounterJournal.GetSlotFilter](#c_encounterjournalgetslotfilter) | 1 value |  |
+| ✅ | [C_EncounterJournal.GetSlotFilter](#c_encounterjournalgetslotfilter) | 1 value | 1 value |
 | ✅ | [C_EncounterJournal.InitalizeSelectedTier](#c_encounterjournalinitalizeselectedtier) |  |  |
 | ✅ | [C_EncounterJournal.InstanceHasDifficultyID](#c_encounterjournalinstancehasdifficultyid) |  |  |
 | ✅ | [C_EncounterJournal.InstanceHasLoot](#c_encounterjournalinstancehasloot) |  |  |
@@ -111,6 +111,7 @@ Namespace: `C_EncounterJournal`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `EncounterJournalDocumentation.lua`
 
 ### C_EncounterJournal.InitalizeSelectedTier

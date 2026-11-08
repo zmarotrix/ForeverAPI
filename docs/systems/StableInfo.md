@@ -8,17 +8,17 @@ Namespace: `C_StableInfo`
 |---|---|---|---|
 | ✅ | [C_StableInfo.BuyStableSlot](#c_stableinfobuystableslot) |  |  |
 | ✅ | [C_StableInfo.ClosePetStables](#c_stableinfoclosepetstables) |  |  |
-| ✅ | [C_StableInfo.GetActivePetList](#c_stableinfogetactivepetlist) | 1 value |  |
-| ✅ | [C_StableInfo.GetAvailablePetSpecInfos](#c_stableinfogetavailablepetspecinfos) | 1 value |  |
-| ✅ | [C_StableInfo.GetNextStableSlotCost](#c_stableinfogetnextstableslotcost) | 1 value |  |
-| ✅ | [C_StableInfo.GetNumActivePets](#c_stableinfogetnumactivepets) | 1 value |  |
-| ✅ | [C_StableInfo.GetNumStablePets](#c_stableinfogetnumstablepets) | 1 value |  |
-| ✅ | [C_StableInfo.GetNumStableSlots](#c_stableinfogetnumstableslots) | 1 value |  |
+| ✅ | [C_StableInfo.GetActivePetList](#c_stableinfogetactivepetlist) | 1 value | 1 value |
+| ✅ | [C_StableInfo.GetAvailablePetSpecInfos](#c_stableinfogetavailablepetspecinfos) | 1 value | 1 value |
+| ✅ | [C_StableInfo.GetNextStableSlotCost](#c_stableinfogetnextstableslotcost) | 1 value | 1 value |
+| ✅ | [C_StableInfo.GetNumActivePets](#c_stableinfogetnumactivepets) | 1 value | 1 value |
+| ✅ | [C_StableInfo.GetNumStablePets](#c_stableinfogetnumstablepets) | 1 value | 1 value |
+| ✅ | [C_StableInfo.GetNumStableSlots](#c_stableinfogetnumstableslots) | 1 value | 1 value |
 | ✅ | [C_StableInfo.GetStablePetFoodTypes](#c_stableinfogetstablepetfoodtypes) |  |  |
 | ✅ | [C_StableInfo.GetStablePetInfo](#c_stableinfogetstablepetinfo) |  |  |
-| ✅ | [C_StableInfo.GetStabledPetList](#c_stableinfogetstabledpetlist) | 1 value |  |
-| ✅ | [C_StableInfo.IsAtStableMaster](#c_stableinfoisatstablemaster) | 1 value |  |
-| ✅ | [C_StableInfo.IsBonusPetSlotAvailable](#c_stableinfoisbonuspetslotavailable) | 1 value |  |
+| ✅ | [C_StableInfo.GetStabledPetList](#c_stableinfogetstabledpetlist) | 1 value | 1 value |
+| ✅ | [C_StableInfo.IsAtStableMaster](#c_stableinfoisatstablemaster) | 1 value | 1 value |
+| ✅ | [C_StableInfo.IsBonusPetSlotAvailable](#c_stableinfoisbonuspetslotavailable) | 1 value | 1 value |
 | ✅ | [C_StableInfo.IsPetFavorite](#c_stableinfoispetfavorite) |  |  |
 | ✅ | [C_StableInfo.PickupStablePet](#c_stableinfopickupstablepet) |  |  |
 | ✅ | [C_StableInfo.SetPetFavorite](#c_stableinfosetpetfavorite) |  |  |
@@ -44,6 +44,7 @@ Namespace: `C_StableInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.GetAvailablePetSpecInfos
@@ -52,6 +53,7 @@ Namespace: `C_StableInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{[number]=table}`
+- Called in combat: returned 1 value: `table{[number]=table}`
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.GetNextStableSlotCost
@@ -60,6 +62,7 @@ Namespace: `C_StableInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.GetNumActivePets
@@ -68,6 +71,7 @@ Namespace: `C_StableInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.GetNumStablePets
@@ -76,6 +80,7 @@ Namespace: `C_StableInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.GetNumStableSlots
@@ -84,6 +89,7 @@ Namespace: `C_StableInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.GetStablePetFoodTypes
@@ -108,6 +114,7 @@ Namespace: `C_StableInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `table{}`
+- Called in combat: returned 1 value: `table{}`
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.IsAtStableMaster
@@ -116,6 +123,7 @@ Namespace: `C_StableInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.IsBonusPetSlotAvailable
@@ -124,6 +132,7 @@ Namespace: `C_StableInfo`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.IsPetFavorite

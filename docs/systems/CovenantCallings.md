@@ -6,7 +6,7 @@ Namespace: `C_CovenantCallings`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ✅ | [C_CovenantCallings.AreCallingsUnlocked](#c_covenantcallingsarecallingsunlocked) | 1 value |  |
+| ✅ | [C_CovenantCallings.AreCallingsUnlocked](#c_covenantcallingsarecallingsunlocked) | 1 value | 1 value |
 | ✅ | [C_CovenantCallings.RequestCallings](#c_covenantcallingsrequestcallings) |  |  |
 
 ### C_CovenantCallings.AreCallingsUnlocked
@@ -15,6 +15,7 @@ Namespace: `C_CovenantCallings`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `CovenantCallingsDocumentation.lua`
 
 ### C_CovenantCallings.RequestCallings

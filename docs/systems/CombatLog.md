@@ -7,12 +7,12 @@ Namespace: `C_CombatLog`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_CombatLog.ApplyFilterSettings](#c_combatlogapplyfiltersettings) |  |  |
-| ✅ | [C_CombatLog.AreFilteredEventsEnabled](#c_combatlogarefilteredeventsenabled) | 1 value |  |
+| ✅ | [C_CombatLog.AreFilteredEventsEnabled](#c_combatlogarefilteredeventsenabled) | 1 value | 1 value |
 | ✅ | [C_CombatLog.ClearEntries](#c_combatlogclearentries) |  |  |
 | ✅ | [C_CombatLog.DoesObjectMatchFilter](#c_combatlogdoesobjectmatchfilter) |  |  |
-| ✅ | [C_CombatLog.GetEntryRetentionTime](#c_combatloggetentryretentiontime) | 1 value |  |
-| ✅ | [C_CombatLog.GetMessageLimit](#c_combatloggetmessagelimit) | 1 value |  |
-| ✅ | [C_CombatLog.IsCombatLogRestricted](#c_combatlogiscombatlogrestricted) | 1 value |  |
+| ✅ | [C_CombatLog.GetEntryRetentionTime](#c_combatloggetentryretentiontime) | 1 value | 1 value |
+| ✅ | [C_CombatLog.GetMessageLimit](#c_combatloggetmessagelimit) | 1 value | 1 value |
+| ✅ | [C_CombatLog.IsCombatLogRestricted](#c_combatlogiscombatlogrestricted) | 1 value | 1 value |
 | ✅ | [C_CombatLog.RefilterEntries](#c_combatlogrefilterentries) |  |  |
 | ✅ | [C_CombatLog.SetEntryRetentionTime](#c_combatlogsetentryretentiontime) |  |  |
 | ✅ | [C_CombatLog.SetFilteredEventsEnabled](#c_combatlogsetfilteredeventsenabled) |  |  |
@@ -33,6 +33,7 @@ Namespace: `C_CombatLog`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `CombatLogDocumentation.lua`
 
 ### C_CombatLog.ClearEntries
@@ -56,6 +57,7 @@ Namespace: `C_CombatLog`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CombatLogDocumentation.lua`
 
 ### C_CombatLog.GetMessageLimit
@@ -64,6 +66,7 @@ Namespace: `C_CombatLog`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `CombatLogDocumentation.lua`
 
 ### C_CombatLog.IsCombatLogRestricted
@@ -72,6 +75,7 @@ Namespace: `C_CombatLog`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `CombatLogDocumentation.lua`
 
 ### C_CombatLog.RefilterEntries

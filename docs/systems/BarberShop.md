@@ -7,17 +7,17 @@ Namespace: `C_BarberShopInternal`
 | | Function | Out of combat | In combat |
 |---|---|---|---|
 | ✅ | [C_BarberShop.ApplyCustomizationChoices](#c_barbershopapplycustomizationchoices) |  |  |
-| ✅ | [C_BarberShop.Cancel](#c_barbershopcancel) | 0 values |  |
+| ✅ | [C_BarberShop.Cancel](#c_barbershopcancel) | 0 values | 0 values |
 | ✅ | [C_BarberShop.ClearPreviewChoices](#c_barbershopclearpreviewchoices) |  |  |
-| ✅ | [C_BarberShop.GetAvailableCustomizations](#c_barbershopgetavailablecustomizations) | 0 values |  |
-| ✅ | [C_BarberShop.GetCurrentCameraZoom](#c_barbershopgetcurrentcamerazoom) | 1 value |  |
-| ✅ | [C_BarberShop.GetCurrentCharacterData](#c_barbershopgetcurrentcharacterdata) | 1 value |  |
-| ✅ | [C_BarberShop.GetCurrentCost](#c_barbershopgetcurrentcost) | 1 value |  |
-| ✅ | [C_BarberShop.GetViewingChrModel](#c_barbershopgetviewingchrmodel) | 1 value |  |
-| ✅ | [C_BarberShop.HasAlteredForm](#c_barbershophasalteredform) | 1 value |  |
-| ✅ | [C_BarberShop.HasAnyChanges](#c_barbershophasanychanges) | 1 value |  |
+| ✅ | [C_BarberShop.GetAvailableCustomizations](#c_barbershopgetavailablecustomizations) | 0 values | 0 values |
+| ✅ | [C_BarberShop.GetCurrentCameraZoom](#c_barbershopgetcurrentcamerazoom) | 1 value | 1 value |
+| ✅ | [C_BarberShop.GetCurrentCharacterData](#c_barbershopgetcurrentcharacterdata) | 1 value | 1 value |
+| ✅ | [C_BarberShop.GetCurrentCost](#c_barbershopgetcurrentcost) | 1 value | 1 value |
+| ✅ | [C_BarberShop.GetViewingChrModel](#c_barbershopgetviewingchrmodel) | 1 value | 1 value |
+| ✅ | [C_BarberShop.HasAlteredForm](#c_barbershophasalteredform) | 1 value | 1 value |
+| ✅ | [C_BarberShop.HasAnyChanges](#c_barbershophasanychanges) | 1 value | 1 value |
 | ✅ | [C_BarberShop.HasCustomizationFeature](#c_barbershophascustomizationfeature) |  |  |
-| ✅ | [C_BarberShop.IsViewingAlteredForm](#c_barbershopisviewingalteredform) | 1 value |  |
+| ✅ | [C_BarberShop.IsViewingAlteredForm](#c_barbershopisviewingalteredform) | 1 value | 1 value |
 | ✅ | [C_BarberShop.MarkCustomizationChoiceAsSeen](#c_barbershopmarkcustomizationchoiceasseen) |  |  |
 | ✅ | [C_BarberShop.MarkCustomizationOptionAsSeen](#c_barbershopmarkcustomizationoptionasseen) |  |  |
 | ✅ | [C_BarberShop.PreviewCustomizationChoice](#c_barbershoppreviewcustomizationchoice) |  |  |
@@ -50,6 +50,7 @@ Namespace: `C_BarberShopInternal`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `BarberShopDocumentation.lua`
 
 ### C_BarberShop.ClearPreviewChoices
@@ -67,6 +68,7 @@ Namespace: `C_BarberShopInternal`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 0 values
+- Called in combat: returned 0 values
 - Source: client docs `BarberShopDocumentation.lua`
 
 ### C_BarberShop.GetCurrentCameraZoom
@@ -75,6 +77,7 @@ Namespace: `C_BarberShopInternal`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `BarberShopDocumentation.lua`
 
 ### C_BarberShop.GetCurrentCharacterData
@@ -84,6 +87,7 @@ Namespace: `C_BarberShopInternal`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Called out of combat: returned 1 value: `table{fileName=string,name=string,sex=number}`
+- Called in combat: returned 1 value: `table{fileName=string,name=string,sex=number}`
 - Source: client docs `BarberShopDocumentation.lua`
 
 ### C_BarberShop.GetCurrentCost
@@ -92,6 +96,7 @@ Namespace: `C_BarberShopInternal`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `number`
+- Called in combat: returned 1 value: `number`
 - Source: client docs `BarberShopDocumentation.lua`
 
 ### C_BarberShop.GetViewingChrModel
@@ -100,6 +105,7 @@ Namespace: `C_BarberShopInternal`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `nil`
+- Called in combat: returned 1 value: `nil`
 - Source: client docs `BarberShopDocumentation.lua`
 
 ### C_BarberShop.HasAlteredForm
@@ -108,6 +114,7 @@ Namespace: `C_BarberShopInternal`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BarberShopDocumentation.lua`
 
 ### C_BarberShop.HasAnyChanges
@@ -116,6 +123,7 @@ Namespace: `C_BarberShopInternal`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BarberShopDocumentation.lua`
 
 ### C_BarberShop.HasCustomizationFeature
@@ -132,6 +140,7 @@ Namespace: `C_BarberShopInternal`
 
 - Status: ✅ verified (function)
 - Called out of combat: returned 1 value: `boolean`
+- Called in combat: returned 1 value: `boolean`
 - Source: client docs `BarberShopDocumentation.lua`
 
 ### C_BarberShop.MarkCustomizationChoiceAsSeen

@@ -2458,8 +2458,6 @@ ApiProbeLeads = {
     { nil, "UnitRealmRelationship", "unit" },
     { nil, "UnitSelectionColor", "unit" },
     { nil, "UnitSelectionType", "unit" },
-    { nil, "UnitSetRole", "unit" },
-    { nil, "UnitSetRoleEnum", "unit" },
     { nil, "UnitSex", "unit" },
     { nil, "UnitSexBase", "unit" },
     { nil, "UnitShouldDisplayName", "unit" },
