@@ -13,7 +13,7 @@
 -- It never casts, targets, sends or changes a setting; the only calls it makes are getters (Get/Is/Has/Can/...).
 
 local ADDON = ...
-local VERSION = "0.1.0"
+local VERSION = "0.1.1"
 local CHUNK = 1500          -- globals examined per frame while dumping
 local CALLS_PER_FRAME = 20  -- getters called per frame
 local MAX_MEMBERS = 10000   -- members recorded per table (Enum alone has thousands)
@@ -135,8 +135,8 @@ local FRAME_TYPES = { "Frame", "Button", "CheckButton", "EditBox", "ScrollFrame"
   "ColorSelect", "GameTooltip", "MessageFrame", "ScrollingMessageFrame", "SimpleHTML", "Model", "PlayerModel",
   "DressUpModel", "CinematicModel", "TabardModel", "ModelScene", "MovieFrame", "Browser", "FogOfWarFrame",
   "UnitPositionFrame", "OffScreenFrame", "ArchaeologyDigSiteFrame", "QuestPOIFrame", "ScenarioPOIFrame", "Checkout",
-  "Minimap", "POIFrame", "EventFrame", "EventButton", "EventEditBox", "ItemButton", "DropdownButton", "Blob",
-  "MapScene", "ContainedAlertFrame", "WorldFrame", "TaxiRouteFrame" }
+  "EventFrame", "EventButton", "EventEditBox", "ItemButton", "DropdownButton" }
+-- Only real creatable types: the client prints a LUA_WARNING for an unknown type even inside pcall.
 
 local SCRIPTS = { "OnLoad", "OnShow", "OnHide", "OnEvent", "OnUpdate", "OnSizeChanged", "OnEnter", "OnLeave",
   "OnMouseDown", "OnMouseUp", "OnMouseWheel", "OnClick", "PreClick", "PostClick", "OnDoubleClick", "OnDragStart",

@@ -1,4 +1,4 @@
-# In-game checklist: ApiProbe 0.1.0
+# In-game checklist: ApiProbe 0.1.1
 
 The probe is deployed to `_forever_\Interface\AddOns\ApiProbe`. It's a new add-on folder, so the game needs a
 **full restart** (not `/reload`) before it shows up. It's under **Probes** in the add-on list.
