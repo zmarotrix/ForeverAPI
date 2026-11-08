@@ -6,54 +6,54 @@ Namespace: `C_UIWidgetManager`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_UIWidgetManager.GetAllWidgetsBySetID](#c_uiwidgetmanagergetallwidgetsbysetid) |  |  |
-| ❔ | [C_UIWidgetManager.GetBelowMinimapWidgetSetID](#c_uiwidgetmanagergetbelowminimapwidgetsetid) |  |  |
-| ❔ | [C_UIWidgetManager.GetBulletTextListWidgetVisualizationInfo](#c_uiwidgetmanagergetbullettextlistwidgetvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetButtonHeaderWidgetVisualizationInfo](#c_uiwidgetmanagergetbuttonheaderwidgetvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetCaptureBarWidgetVisualizationInfo](#c_uiwidgetmanagergetcapturebarwidgetvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetCaptureZoneVisualizationInfo](#c_uiwidgetmanagergetcapturezonevisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetDiscreteProgressStepsVisualizationInfo](#c_uiwidgetmanagergetdiscreteprogressstepsvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetDoubleIconAndTextWidgetVisualizationInfo](#c_uiwidgetmanagergetdoubleiconandtextwidgetvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetDoubleStateIconRowVisualizationInfo](#c_uiwidgetmanagergetdoublestateiconrowvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetDoubleStatusBarWidgetVisualizationInfo](#c_uiwidgetmanagergetdoublestatusbarwidgetvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetFillUpFramesWidgetVisualizationInfo](#c_uiwidgetmanagergetfillupframeswidgetvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetHorizontalCurrenciesWidgetVisualizationInfo](#c_uiwidgetmanagergethorizontalcurrencieswidgetvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo](#c_uiwidgetmanagergeticonandtextwidgetvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetIconTextAndBackgroundWidgetVisualizationInfo](#c_uiwidgetmanagergeticontextandbackgroundwidgetvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetIconTextAndCurrenciesWidgetVisualizationInfo](#c_uiwidgetmanagergeticontextandcurrencieswidgetvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetItemDisplayVisualizationInfo](#c_uiwidgetmanagergetitemdisplayvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetMapPinAnimationWidgetVisualizationInfo](#c_uiwidgetmanagergetmappinanimationwidgetvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetObjectiveTrackerWidgetSetID](#c_uiwidgetmanagergetobjectivetrackerwidgetsetid) |  |  |
-| ❔ | [C_UIWidgetManager.GetPowerBarWidgetSetID](#c_uiwidgetmanagergetpowerbarwidgetsetid) |  |  |
-| ❔ | [C_UIWidgetManager.GetPreyHuntProgressWidgetVisualizationInfo](#c_uiwidgetmanagergetpreyhuntprogresswidgetvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo](#c_uiwidgetmanagergetscenarioheadercurrenciesandbackgroundwidgetvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetScenarioHeaderDelvesWidgetVisualizationInfo](#c_uiwidgetmanagergetscenarioheaderdelveswidgetvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetScenarioHeaderTimerWidgetVisualizationInfo](#c_uiwidgetmanagergetscenarioheadertimerwidgetvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetSpacerVisualizationInfo](#c_uiwidgetmanagergetspacervisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetSpellDisplayVisualizationInfo](#c_uiwidgetmanagergetspelldisplayvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetStackedResourceTrackerWidgetVisualizationInfo](#c_uiwidgetmanagergetstackedresourcetrackerwidgetvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetStatusBarWidgetVisualizationInfo](#c_uiwidgetmanagergetstatusbarwidgetvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetTextColumnRowVisualizationInfo](#c_uiwidgetmanagergettextcolumnrowvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetTextWithStateWidgetVisualizationInfo](#c_uiwidgetmanagergettextwithstatewidgetvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetTextWithSubtextWidgetVisualizationInfo](#c_uiwidgetmanagergettextwithsubtextwidgetvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetTextureAndTextRowVisualizationInfo](#c_uiwidgetmanagergettextureandtextrowvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetTextureAndTextVisualizationInfo](#c_uiwidgetmanagergettextureandtextvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetTextureWithAnimationVisualizationInfo](#c_uiwidgetmanagergettexturewithanimationvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetTopCenterWidgetSetID](#c_uiwidgetmanagergettopcenterwidgetsetid) |  |  |
-| ❔ | [C_UIWidgetManager.GetTugOfWarWidgetVisualizationInfo](#c_uiwidgetmanagergettugofwarwidgetvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetUnitPowerBarWidgetVisualizationInfo](#c_uiwidgetmanagergetunitpowerbarwidgetvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetWidgetSetInfo](#c_uiwidgetmanagergetwidgetsetinfo) |  |  |
-| ❔ | [C_UIWidgetManager.GetZoneControlVisualizationInfo](#c_uiwidgetmanagergetzonecontrolvisualizationinfo) |  |  |
-| ❔ | [C_UIWidgetManager.RegisterUnitForWidgetUpdates](#c_uiwidgetmanagerregisterunitforwidgetupdates) |  |  |
-| ❔ | [C_UIWidgetManager.SetProcessingUnit](#c_uiwidgetmanagersetprocessingunit) |  |  |
-| ❔ | [C_UIWidgetManager.SetProcessingUnitGuid](#c_uiwidgetmanagersetprocessingunitguid) |  |  |
-| ❔ | [C_UIWidgetManager.UnregisterUnitForWidgetUpdates](#c_uiwidgetmanagerunregisterunitforwidgetupdates) |  |  |
+| ✅ | [C_UIWidgetManager.GetAllWidgetsBySetID](#c_uiwidgetmanagergetallwidgetsbysetid) |  |  |
+| ✅ | [C_UIWidgetManager.GetBelowMinimapWidgetSetID](#c_uiwidgetmanagergetbelowminimapwidgetsetid) |  |  |
+| ✅ | [C_UIWidgetManager.GetBulletTextListWidgetVisualizationInfo](#c_uiwidgetmanagergetbullettextlistwidgetvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetButtonHeaderWidgetVisualizationInfo](#c_uiwidgetmanagergetbuttonheaderwidgetvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetCaptureBarWidgetVisualizationInfo](#c_uiwidgetmanagergetcapturebarwidgetvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetCaptureZoneVisualizationInfo](#c_uiwidgetmanagergetcapturezonevisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetDiscreteProgressStepsVisualizationInfo](#c_uiwidgetmanagergetdiscreteprogressstepsvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetDoubleIconAndTextWidgetVisualizationInfo](#c_uiwidgetmanagergetdoubleiconandtextwidgetvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetDoubleStateIconRowVisualizationInfo](#c_uiwidgetmanagergetdoublestateiconrowvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetDoubleStatusBarWidgetVisualizationInfo](#c_uiwidgetmanagergetdoublestatusbarwidgetvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetFillUpFramesWidgetVisualizationInfo](#c_uiwidgetmanagergetfillupframeswidgetvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetHorizontalCurrenciesWidgetVisualizationInfo](#c_uiwidgetmanagergethorizontalcurrencieswidgetvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo](#c_uiwidgetmanagergeticonandtextwidgetvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetIconTextAndBackgroundWidgetVisualizationInfo](#c_uiwidgetmanagergeticontextandbackgroundwidgetvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetIconTextAndCurrenciesWidgetVisualizationInfo](#c_uiwidgetmanagergeticontextandcurrencieswidgetvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetItemDisplayVisualizationInfo](#c_uiwidgetmanagergetitemdisplayvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetMapPinAnimationWidgetVisualizationInfo](#c_uiwidgetmanagergetmappinanimationwidgetvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetObjectiveTrackerWidgetSetID](#c_uiwidgetmanagergetobjectivetrackerwidgetsetid) |  |  |
+| ✅ | [C_UIWidgetManager.GetPowerBarWidgetSetID](#c_uiwidgetmanagergetpowerbarwidgetsetid) |  |  |
+| ✅ | [C_UIWidgetManager.GetPreyHuntProgressWidgetVisualizationInfo](#c_uiwidgetmanagergetpreyhuntprogresswidgetvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo](#c_uiwidgetmanagergetscenarioheadercurrenciesandbackgroundwidgetvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetScenarioHeaderDelvesWidgetVisualizationInfo](#c_uiwidgetmanagergetscenarioheaderdelveswidgetvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetScenarioHeaderTimerWidgetVisualizationInfo](#c_uiwidgetmanagergetscenarioheadertimerwidgetvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetSpacerVisualizationInfo](#c_uiwidgetmanagergetspacervisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetSpellDisplayVisualizationInfo](#c_uiwidgetmanagergetspelldisplayvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetStackedResourceTrackerWidgetVisualizationInfo](#c_uiwidgetmanagergetstackedresourcetrackerwidgetvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetStatusBarWidgetVisualizationInfo](#c_uiwidgetmanagergetstatusbarwidgetvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetTextColumnRowVisualizationInfo](#c_uiwidgetmanagergettextcolumnrowvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetTextWithStateWidgetVisualizationInfo](#c_uiwidgetmanagergettextwithstatewidgetvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetTextWithSubtextWidgetVisualizationInfo](#c_uiwidgetmanagergettextwithsubtextwidgetvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetTextureAndTextRowVisualizationInfo](#c_uiwidgetmanagergettextureandtextrowvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetTextureAndTextVisualizationInfo](#c_uiwidgetmanagergettextureandtextvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetTextureWithAnimationVisualizationInfo](#c_uiwidgetmanagergettexturewithanimationvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetTopCenterWidgetSetID](#c_uiwidgetmanagergettopcenterwidgetsetid) |  |  |
+| ✅ | [C_UIWidgetManager.GetTugOfWarWidgetVisualizationInfo](#c_uiwidgetmanagergettugofwarwidgetvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetUnitPowerBarWidgetVisualizationInfo](#c_uiwidgetmanagergetunitpowerbarwidgetvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetWidgetSetInfo](#c_uiwidgetmanagergetwidgetsetinfo) |  |  |
+| ✅ | [C_UIWidgetManager.GetZoneControlVisualizationInfo](#c_uiwidgetmanagergetzonecontrolvisualizationinfo) |  |  |
+| ✅ | [C_UIWidgetManager.RegisterUnitForWidgetUpdates](#c_uiwidgetmanagerregisterunitforwidgetupdates) |  |  |
+| ✅ | [C_UIWidgetManager.SetProcessingUnit](#c_uiwidgetmanagersetprocessingunit) |  |  |
+| ✅ | [C_UIWidgetManager.SetProcessingUnitGuid](#c_uiwidgetmanagersetprocessingunitguid) |  |  |
+| ✅ | [C_UIWidgetManager.UnregisterUnitForWidgetUpdates](#c_uiwidgetmanagerunregisterunitforwidgetupdates) |  |  |
 
 ### C_UIWidgetManager.GetAllWidgetsBySetID
 
 `C_UIWidgetManager.GetAllWidgetsBySetID(setID: number) → widgets: UIWidgetInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -61,14 +61,14 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetBelowMinimapWidgetSetID() → setID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
 ### C_UIWidgetManager.GetBulletTextListWidgetVisualizationInfo
 
 `C_UIWidgetManager.GetBulletTextListWidgetVisualizationInfo(widgetID: number) → widgetInfo: BulletTextListWidgetVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -76,7 +76,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetButtonHeaderWidgetVisualizationInfo(widgetID: number) → widgetInfo: ButtonHeaderWidgetVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -84,7 +84,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetCaptureBarWidgetVisualizationInfo(widgetID: number) → widgetInfo: CaptureBarWidgetVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -92,7 +92,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetCaptureZoneVisualizationInfo(widgetID: number) → widgetInfo: CaptureZoneVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -100,7 +100,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetDiscreteProgressStepsVisualizationInfo(widgetID: number) → widgetInfo: DiscreteProgressStepsVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -108,7 +108,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetDoubleIconAndTextWidgetVisualizationInfo(widgetID: number) → widgetInfo: DoubleIconAndTextWidgetVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -116,7 +116,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetDoubleStateIconRowVisualizationInfo(widgetID: number) → widgetInfo: DoubleStateIconRowVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -124,7 +124,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetDoubleStatusBarWidgetVisualizationInfo(widgetID: number) → widgetInfo: DoubleStatusBarWidgetVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -132,7 +132,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetFillUpFramesWidgetVisualizationInfo(widgetID: number) → widgetInfo: FillUpFramesWidgetVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -140,7 +140,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetHorizontalCurrenciesWidgetVisualizationInfo(widgetID: number) → widgetInfo: HorizontalCurrenciesWidgetVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -148,7 +148,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo(widgetID: number) → widgetInfo: IconAndTextWidgetVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -156,7 +156,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetIconTextAndBackgroundWidgetVisualizationInfo(widgetID: number) → widgetInfo: IconTextAndBackgroundWidgetVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -164,7 +164,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetIconTextAndCurrenciesWidgetVisualizationInfo(widgetID: number) → widgetInfo: IconTextAndCurrenciesWidgetVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -172,7 +172,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetItemDisplayVisualizationInfo(widgetID: number) → widgetInfo: ItemDisplayVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -180,7 +180,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetMapPinAnimationWidgetVisualizationInfo(widgetID: number) → widgetInfo: MapPinAnimationWidgetVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -188,21 +188,21 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetObjectiveTrackerWidgetSetID() → setID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
 ### C_UIWidgetManager.GetPowerBarWidgetSetID
 
 `C_UIWidgetManager.GetPowerBarWidgetSetID() → setID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
 ### C_UIWidgetManager.GetPreyHuntProgressWidgetVisualizationInfo
 
 `C_UIWidgetManager.GetPreyHuntProgressWidgetVisualizationInfo(widgetID: number) → widgetInfo: PreyHuntProgressWidgetVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -210,7 +210,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo(widgetID: number) → widgetInfo: ScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -218,7 +218,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetScenarioHeaderDelvesWidgetVisualizationInfo(widgetID: number) → widgetInfo: ScenarioHeaderDelvesWidgetVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -226,7 +226,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetScenarioHeaderTimerWidgetVisualizationInfo(widgetID: number) → widgetInfo: ScenarioHeaderTimerWidgetVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -234,7 +234,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetSpacerVisualizationInfo(widgetID: number) → widgetInfo: SpacerVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -242,7 +242,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetSpellDisplayVisualizationInfo(widgetID: number) → widgetInfo: SpellDisplayVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -250,7 +250,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetStackedResourceTrackerWidgetVisualizationInfo(widgetID: number) → widgetInfo: StackedResourceTrackerWidgetVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -258,7 +258,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetStatusBarWidgetVisualizationInfo(widgetID: number) → widgetInfo: StatusBarWidgetVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -266,7 +266,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetTextColumnRowVisualizationInfo(widgetID: number) → widgetInfo: TextColumnRowVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -274,7 +274,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetTextWithStateWidgetVisualizationInfo(widgetID: number) → widgetInfo: TextWithStateWidgetVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -282,7 +282,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetTextWithSubtextWidgetVisualizationInfo(widgetID: number) → widgetInfo: TextWithSubtextWidgetVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -290,7 +290,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetTextureAndTextRowVisualizationInfo(widgetID: number) → widgetInfo: TextureAndTextRowVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -298,7 +298,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetTextureAndTextVisualizationInfo(widgetID: number) → widgetInfo: TextureAndTextVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -306,7 +306,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetTextureWithAnimationVisualizationInfo(widgetID: number) → widgetInfo: TextureWithAnimationVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -314,14 +314,14 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetTopCenterWidgetSetID() → setID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
 ### C_UIWidgetManager.GetTugOfWarWidgetVisualizationInfo
 
 `C_UIWidgetManager.GetTugOfWarWidgetVisualizationInfo(widgetID: number) → widgetInfo: TugOfWarWidgetVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -329,7 +329,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetUnitPowerBarWidgetVisualizationInfo(widgetID: number) → widgetInfo: UnitPowerBarWidgetVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -337,7 +337,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetWidgetSetInfo(widgetSetID: number) → widgetSetInfo: UIWidgetSetInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
@@ -346,7 +346,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.GetZoneControlVisualizationInfo(widgetID: number) → widgetInfo: ZoneControlVisualizationInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -354,7 +354,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.RegisterUnitForWidgetUpdates(unitToken: string, isGuid: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -362,7 +362,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.SetProcessingUnit(unit: UnitToken?)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -370,7 +370,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.SetProcessingUnitGuid(unit: WOWGUID?)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -378,7 +378,7 @@ Namespace: `C_UIWidgetManager`
 
 `C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken: string, isGuid: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIWidgetManagerDocumentation.lua`
 
@@ -386,13 +386,13 @@ Namespace: `C_UIWidgetManager`
 
 ### UPDATE_ALL_UI_WIDGETS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### UPDATE_UI_WIDGET
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `widgetInfo: UIWidgetInfo`
 - fires synchronously (Blizzard's docs)
 
@@ -440,7 +440,7 @@ Namespace: `C_UIWidgetManager`
 
 ### CaptureBarWidgetFillDirectionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `RightToLeft` = 0
   - `LeftToRight` = 1
 
@@ -634,13 +634,13 @@ Namespace: `C_UIWidgetManager`
 
 ### IconAndTextShiftTextType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `ShiftText` = 1
 
 ### IconAndTextWidgetState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Hidden` = 0
   - `Shown` = 1
   - `ShownWithDynamicIconFlashing` = 2
@@ -670,7 +670,7 @@ Namespace: `C_UIWidgetManager`
 
 ### IconState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Hidden` = 0
   - `ShowState1` = 1
   - `ShowState2` = 2
@@ -719,7 +719,7 @@ Namespace: `C_UIWidgetManager`
 
 ### ItemDisplayTextDisplayStyle
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `WorldQuestReward` = 0
   - `ItemNameAndInfoText` = 1
   - `ItemNameOnlyCentered` = 2
@@ -727,7 +727,7 @@ Namespace: `C_UIWidgetManager`
 
 ### ItemDisplayTooltipEnabledType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Enabled` = 0
   - `Disabled` = 1
 
@@ -752,7 +752,7 @@ Namespace: `C_UIWidgetManager`
 
 ### MapPinAnimationType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Pulse` = 1
 
@@ -776,7 +776,7 @@ Namespace: `C_UIWidgetManager`
 
 ### PreyHuntProgressState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Cold` = 0
   - `Warm` = 1
   - `Hot` = 2
@@ -889,7 +889,7 @@ Namespace: `C_UIWidgetManager`
 
 ### SpellDisplayIconDisplayType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Buff` = 0
   - `Debuff` = 1
   - `Circular` = 2
@@ -897,13 +897,13 @@ Namespace: `C_UIWidgetManager`
 
 ### SpellDisplayTextShownStateType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Shown` = 0
   - `Hidden` = 1
 
 ### SpellDisplayTint
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Red` = 1
 
@@ -946,7 +946,7 @@ Namespace: `C_UIWidgetManager`
 
 ### StatusBarColorTintValue
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Black` = 1
   - `White` = 2
@@ -959,7 +959,7 @@ Namespace: `C_UIWidgetManager`
 
 ### StatusBarOverrideBarTextShownType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Never` = 0
   - `Always` = 1
   - `OnlyOnMouseover` = 2
@@ -967,7 +967,7 @@ Namespace: `C_UIWidgetManager`
 
 ### StatusBarValueTextType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Hidden` = 0
   - `Percentage` = 1
   - `Value` = 2
@@ -1174,14 +1174,14 @@ Namespace: `C_UIWidgetManager`
 
 ### TugOfWarMarkerArrowShownState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Never` = 0
   - `Always` = 1
   - `FlashOnMove` = 2
 
 ### TugOfWarStyleValue
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `DefaultYellow` = 0
   - `ArchaeologyBrown` = 1
 
@@ -1216,19 +1216,19 @@ Namespace: `C_UIWidgetManager`
 
 ### UIWidgetBlendModeType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Opaque` = 0
   - `Additive` = 1
 
 ### UIWidgetButtonEnabledState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Disabled` = 0
   - `Enabled` = 1
 
 ### UIWidgetButtonIconType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Exit` = 0
   - `Speak` = 1
   - `Undo` = 2
@@ -1251,7 +1251,7 @@ Namespace: `C_UIWidgetManager`
 
 ### UIWidgetFontType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Normal` = 0
   - `Shadow` = 1
   - `Outline` = 2
@@ -1295,13 +1295,13 @@ Namespace: `C_UIWidgetManager`
 
 ### UIWidgetMotionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Instant` = 0
   - `Smooth` = 1
 
 ### UIWidgetOverrideState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Inactive` = 0
   - `Active` = 1
 
@@ -1314,7 +1314,7 @@ Namespace: `C_UIWidgetManager`
 
 ### UIWidgetRewardShownState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Hidden` = 0
   - `ShownEarned` = 1
   - `ShownUnearned` = 2
@@ -1327,7 +1327,7 @@ Namespace: `C_UIWidgetManager`
 
 ### UIWidgetSpellButtonCooldownType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `HideCooldown` = 0
   - `ShowCooldown` = 1
   - `ShowCooldownAndDisableOnCooldown` = 2
@@ -1370,7 +1370,7 @@ Namespace: `C_UIWidgetManager`
 
 ### UIWidgetTextFormatType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `TimeOneLevel` = 1
   - `TimeTwoLevel` = 2
@@ -1378,7 +1378,7 @@ Namespace: `C_UIWidgetManager`
 
 ### UIWidgetTextSizeType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Small12Pt` = 0
   - `Medium16Pt` = 1
   - `Large24Pt` = 2
@@ -1397,7 +1397,7 @@ Namespace: `C_UIWidgetManager`
 
 ### UIWidgetTextureAndTextSizeType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Small` = 0
   - `Medium` = 1
   - `Large` = 2
@@ -1407,7 +1407,7 @@ Namespace: `C_UIWidgetManager`
 
 ### UIWidgetTooltipLocation
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Default` = 0
   - `BottomLeft` = 1
   - `Left` = 2
@@ -1420,7 +1420,7 @@ Namespace: `C_UIWidgetManager`
 
 ### UIWidgetUpdateAnimType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Flash` = 1
   - `FlashAndAnimateNumber` = 2
@@ -1456,19 +1456,19 @@ Namespace: `C_UIWidgetManager`
 
 ### WidgetAnimationType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Fade` = 1
 
 ### WidgetCurrencyClass
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Currency` = 0
   - `Item` = 1
 
 ### WidgetEnabledState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Disabled` = 0
   - `Yellow` = 1
   - `Red` = 2
@@ -1480,13 +1480,13 @@ Namespace: `C_UIWidgetManager`
 
 ### WidgetGlowAnimType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Pulse` = 1
 
 ### WidgetIconSizeType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Small` = 0
   - `Medium` = 1
   - `Large` = 2
@@ -1494,13 +1494,13 @@ Namespace: `C_UIWidgetManager`
 
 ### WidgetIconSourceType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Spell` = 0
   - `Item` = 1
 
 ### WidgetOpacityType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `OneHundred` = 0
   - `Ninety` = 1
   - `Eighty` = 2
@@ -1515,39 +1515,39 @@ Namespace: `C_UIWidgetManager`
 
 ### WidgetShowGlowState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `HideGlow` = 0
   - `ShowGlow` = 1
 
 ### WidgetShownState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Hidden` = 0
   - `Shown` = 1
 
 ### WidgetTextHorizontalAlignmentType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Left` = 0
   - `Center` = 1
   - `Right` = 2
 
 ### WidgetUnitPowerBarFlashMomentType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `FlashWhenMax` = 0
   - `FlashWhenMin` = 1
   - `NeverFlash` = 2
 
 ### ZoneControlActiveState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Inactive` = 0
   - `Active` = 1
 
 ### ZoneControlDangerFlashType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ShowOnGoodStates` = 0
   - `ShowOnBadStates` = 1
   - `ShowOnBoth` = 2
@@ -1555,7 +1555,7 @@ Namespace: `C_UIWidgetManager`
 
 ### ZoneControlFillType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `SingleFillClockwise` = 0
   - `SingleFillCounterClockwise` = 1
   - `DoubleFillClockwise` = 2
@@ -1563,13 +1563,13 @@ Namespace: `C_UIWidgetManager`
 
 ### ZoneControlLeadingEdgeType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `NoLeadingEdge` = 0
   - `UseLeadingEdge` = 1
 
 ### ZoneControlMode
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `BothStatesAreGood` = 0
   - `State1IsGood` = 1
   - `State2IsGood` = 2
@@ -1577,7 +1577,7 @@ Namespace: `C_UIWidgetManager`
 
 ### ZoneControlState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `State1` = 0
   - `State2` = 1
 

@@ -151,7 +151,9 @@ def build(client, dump=None, web=None, framexml=None):
     for name in names:
         d = docs["events"].get(name)
         c = checked.get(name)
-        if c is not None and register_works:
+        if c is not None and c.get("register") in ("forbidden", "blocked"):
+            exists = True  # the client knows it; add-ons just may not register it
+        elif c is not None and register_works:
             exists = c.get("register") == "ok"
         elif c is not None and c.get("valid") is not None:
             exists = bool(c.get("valid"))

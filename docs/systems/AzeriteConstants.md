@@ -4,7 +4,7 @@
 
 ### AzeriteEssenceSlot
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `MainSlot` = 0
   - `PassiveOneSlot` = 1
   - `PassiveTwoSlot` = 2

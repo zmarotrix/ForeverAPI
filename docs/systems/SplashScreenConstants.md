@@ -4,6 +4,6 @@
 
 ### SplashScreenType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `WhatsNew` = 0
   - `SeasonRollOver` = 1

@@ -4,48 +4,48 @@
 
 ### GM_PLAYER_INFO
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `name: cstring`, `info: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### ITEM_RESTORATION_BUTTON_STATUS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PETITION_CLOSED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PETITION_SHOW
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_REPORT_SUBMITTED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `invitedByGUID: WOWGUID`
 - fires synchronously (Blizzard's docs)
 
 ### QUICK_TICKET_SYSTEM_STATUS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### QUICK_TICKET_THROTTLE_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### UPDATE_WEB_TICKET
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `hasTicket: bool`, `numTickets: number?`, `ticketStatus: number?`, `caseIndex: number?`, `waitTimeMinutes: number?`, `waitMessage: cstring?`, `caseTitle: cstring?`, `caseDescription: cstring?`
 - fires synchronously (Blizzard's docs)

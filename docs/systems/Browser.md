@@ -6,55 +6,55 @@ Namespace: `C_Browser`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_Browser.CloseFullscreenBrowser](#c_browserclosefullscreenbrowser) |  |  |
+| ✅ | [C_Browser.CloseFullscreenBrowser](#c_browserclosefullscreenbrowser) |  |  |
 
 ### C_Browser.CloseFullscreenBrowser
 
 `C_Browser.CloseFullscreenBrowser()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `BrowserDocumentation.lua`
 
 ## Events
 
 ### FULLSCREEN_BROWSER_SPINNER_HIDE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### FULLSCREEN_BROWSER_SPINNER_SHOW
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### SIMPLE_BROWSER_POPUP
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `url: string`
 - fires synchronously (Blizzard's docs)
 
 ### SIMPLE_BROWSER_SOCIAL_CALLBACK_INVOKED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `url: string`
 - unique event (Blizzard's docs)
 
 ### SIMPLE_BROWSER_WEB_ERROR
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `errorCode: number`
 - fires synchronously (Blizzard's docs)
 
 ### SIMPLE_BROWSER_WEB_PROXY_FAILED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### SIMPLE_CHECKOUT_CLOSED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)

@@ -4,7 +4,7 @@
 
 ### PlayerChoiceFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `InfiniteRange` = 1
   - `HideWarboardHeader` = 2
   - `KeepOpenAfterChoice` = 4
@@ -17,7 +17,7 @@
 
 ### PlayerChoiceLayout
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Default` = 0
   - `Grid` = 1
   - `List` = 2
@@ -25,7 +25,7 @@
 
 ### PlayerChoiceResponseFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `ShowAnswerDisabled` = 1
   - `ShowArtDesaturated` = 2

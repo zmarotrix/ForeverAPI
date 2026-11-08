@@ -6,18 +6,18 @@ Namespace: `C_ToyBoxInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_ToyBoxInfo.ClearFanfare](#c_toyboxinfoclearfanfare) |  |  |
-| ❔ | [C_ToyBoxInfo.HasAnyToy](#c_toyboxinfohasanytoy) |  |  |
-| ❔ | [C_ToyBoxInfo.IsToySourceValid](#c_toyboxinfoistoysourcevalid) |  |  |
-| ❔ | [C_ToyBoxInfo.IsUsingDefaultFilters](#c_toyboxinfoisusingdefaultfilters) |  |  |
-| ❔ | [C_ToyBoxInfo.NeedsFanfare](#c_toyboxinfoneedsfanfare) |  |  |
-| ❔ | [C_ToyBoxInfo.SetDefaultFilters](#c_toyboxinfosetdefaultfilters) |  |  |
+| ✅ | [C_ToyBoxInfo.ClearFanfare](#c_toyboxinfoclearfanfare) |  |  |
+| ✅ | [C_ToyBoxInfo.HasAnyToy](#c_toyboxinfohasanytoy) |  |  |
+| ✅ | [C_ToyBoxInfo.IsToySourceValid](#c_toyboxinfoistoysourcevalid) |  |  |
+| ✅ | [C_ToyBoxInfo.IsUsingDefaultFilters](#c_toyboxinfoisusingdefaultfilters) |  |  |
+| ✅ | [C_ToyBoxInfo.NeedsFanfare](#c_toyboxinfoneedsfanfare) |  |  |
+| ✅ | [C_ToyBoxInfo.SetDefaultFilters](#c_toyboxinfosetdefaultfilters) |  |  |
 
 ### C_ToyBoxInfo.ClearFanfare
 
 `C_ToyBoxInfo.ClearFanfare(itemID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ToyBoxInfoDocumentation.lua`
 
@@ -25,14 +25,14 @@ Namespace: `C_ToyBoxInfo`
 
 `C_ToyBoxInfo.HasAnyToy() → hasToy: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ToyBoxInfoDocumentation.lua`
 
 ### C_ToyBoxInfo.IsToySourceValid
 
 `C_ToyBoxInfo.IsToySourceValid(source: luaIndex) → isToySourceValid: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ToyBoxInfoDocumentation.lua`
 
@@ -40,14 +40,14 @@ Namespace: `C_ToyBoxInfo`
 
 `C_ToyBoxInfo.IsUsingDefaultFilters() → isUsingDefaultFilters: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ToyBoxInfoDocumentation.lua`
 
 ### C_ToyBoxInfo.NeedsFanfare
 
 `C_ToyBoxInfo.NeedsFanfare(itemID: number) → needsFanfare: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ToyBoxInfoDocumentation.lua`
 
@@ -55,20 +55,21 @@ Namespace: `C_ToyBoxInfo`
 
 `C_ToyBoxInfo.SetDefaultFilters()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ToyBoxInfoDocumentation.lua`
 
 ## Events
 
 ### NEW_TOY_ADDED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `itemID: number`
 - fires synchronously (Blizzard's docs)
 
 ### TOYS_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `itemID: number?`, `isNew: bool?`, `hasFanfare: bool?`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `-,-,-`

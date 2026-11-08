@@ -46,13 +46,13 @@
 
 ### HouseLevelRewardType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Value` = 0
   - `Object` = 1
 
 ### HouseLevelRewardValueType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ExteriorDecor` = 0
   - `InteriorDecor` = 1
   - `Rooms` = 2
@@ -68,7 +68,7 @@
 
 ### HouseVisitType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Unknown` = 0
   - `Friend` = 1
   - `Guild` = 2

@@ -4,7 +4,7 @@
 
 ### GuildErrorType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Success` = 0
   - `UnknownError` = 1
   - `AlreadyInGuild` = 2

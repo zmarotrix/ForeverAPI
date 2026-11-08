@@ -6,199 +6,211 @@ Namespace: `C_System`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_System.GetFrameStack](#c_systemgetframestack) |  |  |
+| ✅ | [C_System.GetFrameStack](#c_systemgetframestack) |  |  |
 
 ### C_System.GetFrameStack
 
 `C_System.GetFrameStack() → objects: ScriptRegion[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `SystemDocumentation.lua`
 
 ## Events
 
 ### CAPTUREFRAMES_FAILED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### CAPTUREFRAMES_SUCCEEDED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### DISABLE_TAXI_BENCHMARK
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### ENABLE_TAXI_BENCHMARK
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### FIRST_FRAME_RENDERED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### GENERIC_ERROR
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `errorMessage: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### GLOBAL_MOUSE_DOWN
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `button: cstring`
 - fires synchronously (Blizzard's docs)
+- Seen firing 42 times (5 in combat); argument kinds: `s`
 
 ### GLOBAL_MOUSE_UP
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `button: cstring`
 - fires synchronously (Blizzard's docs)
+- Seen firing 42 times (6 in combat); argument kinds: `s`
 
 ### GLOBAL_REGION_MOUSE_DOWN
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `region: ScriptRegion`, `button: cstring`
 - fires synchronously (Blizzard's docs)
+- Seen firing 33 times (4 in combat); argument kinds: `-,s` / `t,s`
 
 ### GLOBAL_REGION_MOUSE_UP
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `region: ScriptRegion`, `button: cstring`
 - fires synchronously (Blizzard's docs)
+- Seen firing 42 times (6 in combat); argument kinds: `-,s` / `t,s`
 
 ### INITIAL_HOTFIXES_APPLIED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### LOC_RESULT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `result: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### LOGOUT_CANCEL
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_CAMPING
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_ENTERING_WORLD
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `isInitialLogin: bool`, `isReloadingUi: bool`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `b,b`
 
 ### PLAYER_LEAVING_WORLD
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### PLAYER_LOGIN
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### PLAYER_LOGOUT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### PLAYER_QUITING
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### SEARCH_DB_LOADED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### SHARD_TRANSFER
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### SHARD_TRANSFER_CANCELLED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### SHARD_TRANSFER_IMMINENT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### STREAMING_ICON
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `streamingStatus: number`
 - fires synchronously (Blizzard's docs)
 
 ### SYSMSG
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `string: cstring`, `r: number`, `g: number`, `b: number`
 - fires synchronously (Blizzard's docs)
 
 ### TIME_PLAYED_MSG
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `totalTimePlayed: number`, `timePlayedThisLevel: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `n,n`
 
 ### UI_ERROR_MESSAGE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `errorType: luaIndex`, `message: string`
 - unique event (Blizzard's docs)
+- Seen firing 21 times (21 in combat); argument kinds: `n,s`
 
 ### UI_ERROR_POPUP
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `errorType: luaIndex`, `message: string`
 - unique event (Blizzard's docs)
 
 ### UI_INFO_MESSAGE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `errorType: luaIndex`, `message: string`
 - unique event (Blizzard's docs)
 
 ### VARIABLES_LOADED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### WOW_MOUSE_NOT_FOUND
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)

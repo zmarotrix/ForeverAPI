@@ -6,13 +6,13 @@ Namespace: `C_BehavioralMessaging`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_BehavioralMessaging.SendNotificationReceipt](#c_behavioralmessagingsendnotificationreceipt) |  |  |
+| ✅ | [C_BehavioralMessaging.SendNotificationReceipt](#c_behavioralmessagingsendnotificationreceipt) |  |  |
 
 ### C_BehavioralMessaging.SendNotificationReceipt
 
 `C_BehavioralMessaging.SendNotificationReceipt(dbId: NotificationDbId, openTimeSeconds: number, readTimeSeconds: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `BehavioralMessagingDocumentation.lua`
 
@@ -20,6 +20,6 @@ Namespace: `C_BehavioralMessaging`
 
 ### BEHAVIORAL_NOTIFICATION
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `notificationType: string`, `dbId: NotificationDbId`
 - fires synchronously (Blizzard's docs)

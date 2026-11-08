@@ -6,46 +6,46 @@ Namespace: `C_EncounterTimeline`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_EncounterTimeline.AddEditModeEvents](#c_encountertimelineaddeditmodeevents) |  |  |
-| ❔ | [C_EncounterTimeline.AddScriptEvent](#c_encountertimelineaddscriptevent) |  |  |
-| ❔ | [C_EncounterTimeline.CancelAllScriptEvents](#c_encountertimelinecancelallscriptevents) |  |  |
-| ❔ | [C_EncounterTimeline.CancelEditModeEvents](#c_encountertimelinecanceleditmodeevents) |  |  |
-| ❔ | [C_EncounterTimeline.CancelScriptEvent](#c_encountertimelinecancelscriptevent) |  |  |
-| ❔ | [C_EncounterTimeline.FinishScriptEvent](#c_encountertimelinefinishscriptevent) |  |  |
-| ❔ | [C_EncounterTimeline.GetCurrentTime](#c_encountertimelinegetcurrenttime) |  |  |
-| ❔ | [C_EncounterTimeline.GetEventColor](#c_encountertimelinegeteventcolor) |  |  |
-| ❔ | [C_EncounterTimeline.GetEventCountBySource](#c_encountertimelinegeteventcountbysource) |  |  |
-| ❔ | [C_EncounterTimeline.GetEventHighlightTime](#c_encountertimelinegeteventhighlighttime) |  |  |
-| ❔ | [C_EncounterTimeline.GetEventInfo](#c_encountertimelinegeteventinfo) |  |  |
-| ❔ | [C_EncounterTimeline.GetEventList](#c_encountertimelinegeteventlist) |  |  |
-| ❔ | [C_EncounterTimeline.GetEventState](#c_encountertimelinegeteventstate) |  |  |
-| ❔ | [C_EncounterTimeline.GetEventTimeElapsed](#c_encountertimelinegeteventtimeelapsed) |  |  |
-| ❔ | [C_EncounterTimeline.GetEventTimeRemaining](#c_encountertimelinegeteventtimeremaining) |  |  |
-| ❔ | [C_EncounterTimeline.GetEventTimer](#c_encountertimelinegeteventtimer) |  |  |
-| ❔ | [C_EncounterTimeline.GetEventTrack](#c_encountertimelinegeteventtrack) |  |  |
-| ❔ | [C_EncounterTimeline.GetSortedEventList](#c_encountertimelinegetsortedeventlist) |  |  |
-| ❔ | [C_EncounterTimeline.GetTrackInfo](#c_encountertimelinegettrackinfo) |  |  |
-| ❔ | [C_EncounterTimeline.GetTrackList](#c_encountertimelinegettracklist) |  |  |
-| ❔ | [C_EncounterTimeline.GetTrackMaxEventDuration](#c_encountertimelinegettrackmaxeventduration) |  |  |
-| ❔ | [C_EncounterTimeline.GetTrackType](#c_encountertimelinegettracktype) |  |  |
-| ❔ | [C_EncounterTimeline.GetViewType](#c_encountertimelinegetviewtype) |  |  |
-| ❔ | [C_EncounterTimeline.HasActiveEvents](#c_encountertimelinehasactiveevents) |  |  |
-| ❔ | [C_EncounterTimeline.HasAnyEvents](#c_encountertimelinehasanyevents) |  |  |
-| ❔ | [C_EncounterTimeline.HasPausedEvents](#c_encountertimelinehaspausedevents) |  |  |
-| ❔ | [C_EncounterTimeline.HasVisibleEvents](#c_encountertimelinehasvisibleevents) |  |  |
-| ❔ | [C_EncounterTimeline.IsEventBlocked](#c_encountertimelineiseventblocked) |  |  |
-| ❔ | [C_EncounterTimeline.IsFeatureAvailable](#c_encountertimelineisfeatureavailable) |  |  |
-| ❔ | [C_EncounterTimeline.IsFeatureEnabled](#c_encountertimelineisfeatureenabled) |  |  |
-| ❔ | [C_EncounterTimeline.PauseScriptEvent](#c_encountertimelinepausescriptevent) |  |  |
-| ❔ | [C_EncounterTimeline.ResumeScriptEvent](#c_encountertimelineresumescriptevent) |  |  |
-| ❔ | [C_EncounterTimeline.SetEventIconTextures](#c_encountertimelineseteventicontextures) |  |  |
-| ❔ | [C_EncounterTimeline.SetViewType](#c_encountertimelinesetviewtype) |  |  |
+| ✅ | [C_EncounterTimeline.AddEditModeEvents](#c_encountertimelineaddeditmodeevents) |  |  |
+| ✅ | [C_EncounterTimeline.AddScriptEvent](#c_encountertimelineaddscriptevent) |  |  |
+| ✅ | [C_EncounterTimeline.CancelAllScriptEvents](#c_encountertimelinecancelallscriptevents) |  |  |
+| ✅ | [C_EncounterTimeline.CancelEditModeEvents](#c_encountertimelinecanceleditmodeevents) |  |  |
+| ✅ | [C_EncounterTimeline.CancelScriptEvent](#c_encountertimelinecancelscriptevent) |  |  |
+| ✅ | [C_EncounterTimeline.FinishScriptEvent](#c_encountertimelinefinishscriptevent) |  |  |
+| ✅ | [C_EncounterTimeline.GetCurrentTime](#c_encountertimelinegetcurrenttime) |  |  |
+| ✅ | [C_EncounterTimeline.GetEventColor](#c_encountertimelinegeteventcolor) |  |  |
+| ✅ | [C_EncounterTimeline.GetEventCountBySource](#c_encountertimelinegeteventcountbysource) |  |  |
+| ✅ | [C_EncounterTimeline.GetEventHighlightTime](#c_encountertimelinegeteventhighlighttime) |  |  |
+| ✅ | [C_EncounterTimeline.GetEventInfo](#c_encountertimelinegeteventinfo) |  |  |
+| ✅ | [C_EncounterTimeline.GetEventList](#c_encountertimelinegeteventlist) |  |  |
+| ✅ | [C_EncounterTimeline.GetEventState](#c_encountertimelinegeteventstate) |  |  |
+| ✅ | [C_EncounterTimeline.GetEventTimeElapsed](#c_encountertimelinegeteventtimeelapsed) |  |  |
+| ✅ | [C_EncounterTimeline.GetEventTimeRemaining](#c_encountertimelinegeteventtimeremaining) |  |  |
+| ✅ | [C_EncounterTimeline.GetEventTimer](#c_encountertimelinegeteventtimer) |  |  |
+| ✅ | [C_EncounterTimeline.GetEventTrack](#c_encountertimelinegeteventtrack) |  |  |
+| ✅ | [C_EncounterTimeline.GetSortedEventList](#c_encountertimelinegetsortedeventlist) |  |  |
+| ✅ | [C_EncounterTimeline.GetTrackInfo](#c_encountertimelinegettrackinfo) |  |  |
+| ✅ | [C_EncounterTimeline.GetTrackList](#c_encountertimelinegettracklist) |  |  |
+| ✅ | [C_EncounterTimeline.GetTrackMaxEventDuration](#c_encountertimelinegettrackmaxeventduration) |  |  |
+| ✅ | [C_EncounterTimeline.GetTrackType](#c_encountertimelinegettracktype) |  |  |
+| ✅ | [C_EncounterTimeline.GetViewType](#c_encountertimelinegetviewtype) |  |  |
+| ✅ | [C_EncounterTimeline.HasActiveEvents](#c_encountertimelinehasactiveevents) |  |  |
+| ✅ | [C_EncounterTimeline.HasAnyEvents](#c_encountertimelinehasanyevents) |  |  |
+| ✅ | [C_EncounterTimeline.HasPausedEvents](#c_encountertimelinehaspausedevents) |  |  |
+| ✅ | [C_EncounterTimeline.HasVisibleEvents](#c_encountertimelinehasvisibleevents) |  |  |
+| ✅ | [C_EncounterTimeline.IsEventBlocked](#c_encountertimelineiseventblocked) |  |  |
+| ✅ | [C_EncounterTimeline.IsFeatureAvailable](#c_encountertimelineisfeatureavailable) |  |  |
+| ✅ | [C_EncounterTimeline.IsFeatureEnabled](#c_encountertimelineisfeatureenabled) |  |  |
+| ✅ | [C_EncounterTimeline.PauseScriptEvent](#c_encountertimelinepausescriptevent) |  |  |
+| ✅ | [C_EncounterTimeline.ResumeScriptEvent](#c_encountertimelineresumescriptevent) |  |  |
+| ✅ | [C_EncounterTimeline.SetEventIconTextures](#c_encountertimelineseteventicontextures) |  |  |
+| ✅ | [C_EncounterTimeline.SetViewType](#c_encountertimelinesetviewtype) |  |  |
 
 ### C_EncounterTimeline.AddEditModeEvents
 
 `C_EncounterTimeline.AddEditModeEvents() → loopTimerDuration: Seconds`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Adds a predefined set of events to the timeline for display in Edit Mode.
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
@@ -53,7 +53,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.AddScriptEvent(eventInfo: EncounterTimelineScriptEventRequest) → eventID: EncounterTimelineEventID`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Adds a custom event to the timeline.
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterTimelineDocumentation.lua`
@@ -62,7 +62,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.CancelAllScriptEvents()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Cancels all custom timeline events, removing them from the timeline.
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
@@ -70,7 +70,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.CancelEditModeEvents()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Removes all Edit Mode events from the timeline.
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
@@ -78,7 +78,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.CancelScriptEvent(eventID: EncounterTimelineEventID)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Cancels a custom timeline event, removing it from the timeline.
 - RequiresValidTimelineEvent (Blizzard's docs; not checked in game)
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
@@ -88,7 +88,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.FinishScriptEvent(eventID: EncounterTimelineEventID)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Finishes a custom timeline event, removing it from the timeline.
 - RequiresValidTimelineEvent (Blizzard's docs; not checked in game)
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
@@ -98,7 +98,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.GetCurrentTime() → currentTime: Seconds`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns the current timestamp used for rendering the timeline display.
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
@@ -106,7 +106,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.GetEventColor(eventID: EncounterTimelineEventID, overrideTrigger: EncounterEventColorTrigger?) → color: colorRGBA`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns the current color used to render timeline event.
 - RequiresValidTimelineEvent (Blizzard's docs; not checked in game)
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
@@ -117,7 +117,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.GetEventCountBySource(source: EncounterTimelineEventSource) → count: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns the number of present events in the timeline by their source type.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterTimelineDocumentation.lua`
@@ -126,7 +126,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.GetEventHighlightTime() → highlightTime: Seconds`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns the duration at which timeline events will be highlighted for imminency.
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
@@ -134,7 +134,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.GetEventInfo(eventID: EncounterTimelineEventID) → info: EncounterTimelineEventInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns information about a timeline event. This data is generally expected to be static for the lifetime of an event.
 - RequiresValidTimelineEvent (Blizzard's docs; not checked in game)
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
@@ -145,7 +145,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.GetEventList() → events: EncounterTimelineEventID[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns an unsorted list of event IDs present in the timeline.
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
@@ -153,7 +153,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.GetEventState(eventID: EncounterTimelineEventID) → state: EncounterTimelineEventState`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns the current state of a timeline event.
 - RequiresValidTimelineEvent (Blizzard's docs; not checked in game)
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
@@ -163,7 +163,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.GetEventTimeElapsed(eventID: EncounterTimelineEventID) → timeElapsed: Seconds`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns the elapsed duration of a timeline event.
 - RequiresValidTimelineEvent (Blizzard's docs; not checked in game)
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
@@ -173,7 +173,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.GetEventTimeRemaining(eventID: EncounterTimelineEventID) → timeRemaining: Seconds`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns the remaining duration of a timeline event.
 - RequiresValidTimelineEvent (Blizzard's docs; not checked in game)
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
@@ -183,7 +183,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.GetEventTimer(eventID: EncounterTimelineEventID) → duration: LuaDurationObject?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns a Duration object that tracks the elapsed duration of a timeline event. This object tracks the range [0, duration] of the event and automatically pauses its progression based on event state.
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterTimelineDocumentation.lua`
@@ -192,7 +192,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.GetEventTrack(eventID: EncounterTimelineEventID) → track: EncounterTimelineTrack, trackSortIndex: luaIndex?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns information about the position of an event on the timeline.
 - RequiresValidTimelineEvent (Blizzard's docs; not checked in game)
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
@@ -202,7 +202,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.GetSortedEventList(maxEventCount: number?, maxEventDuration: Seconds?, excludeTerminalStates: bool = True, excludeHiddenEvents: bool = True) → events: EncounterTimelineEventID[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns a sorted list of event IDs present in the timeline from shortest to longest remaining durations, meeting the requirements of the specified filters.
 - `maxEventCount`: Maximum number of sorted events to return.
 - `maxEventDuration`: Maximum duration of sorted events to return.
@@ -215,7 +215,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.GetTrackInfo(track: EncounterTimelineTrack) → trackInfo: EncounterTimelineTrackInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns information for a single timeline track.
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterTimelineDocumentation.lua`
@@ -224,7 +224,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.GetTrackList() → tracks: EncounterTimelineTrackInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns information about all timeline tracks.
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
@@ -232,7 +232,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.GetTrackMaxEventDuration(track: EncounterTimelineTrack) → maxEventDuration: Seconds`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns the maximum permitted event duration on a single timeline track.
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterTimelineDocumentation.lua`
@@ -241,7 +241,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.GetTrackType(track: EncounterTimelineTrack) → trackType: EncounterTimelineTrackType`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns the type of a single timeline track.
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterTimelineDocumentation.lua`
@@ -250,7 +250,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.GetViewType() → viewType: EncounterTimelineViewType`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns the current view type of the timeline.
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
@@ -258,7 +258,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.HasActiveEvents() → hasActiveEvents: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns true if the timeline contains any events in the active state.
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
@@ -266,7 +266,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.HasAnyEvents() → hasAnyEvents: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns true if the timeline contains any events in any state.
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
@@ -274,7 +274,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.HasPausedEvents() → hasPausedEvents: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns true if the timeline contains any events in the paused state.
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
@@ -282,7 +282,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.HasVisibleEvents() → hasVisibleEvents: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns true if the timeline contains any events that are on visible tracks.
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
@@ -290,7 +290,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.IsEventBlocked(eventID: EncounterTimelineEventID) → blocked: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns true if the event is in a 'blocked' state, where the cast for this event may not occur due to encounter conditions not being met.
 - RequiresValidTimelineEvent (Blizzard's docs; not checked in game)
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
@@ -300,7 +300,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.IsFeatureAvailable() → isAvailable: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns true if the encounter timeline feature is available on this client.
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
@@ -308,7 +308,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.IsFeatureEnabled() → isAvailableAndEnabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns true if the encounter timeline feature has been enabled by the player. This function will always return false if the feature is not available.
 - Source: client docs `EncounterTimelineDocumentation.lua`
 
@@ -316,7 +316,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.PauseScriptEvent(eventID: EncounterTimelineEventID)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Pauses a custom timeline event, hiding it from the timeline. A paused event can later be resumed to show it again, or canceled.
 - RequiresValidTimelineEvent (Blizzard's docs; not checked in game)
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
@@ -326,7 +326,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.ResumeScriptEvent(eventID: EncounterTimelineEventID)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Resumes a custom timeline event, showing it on the timeline again if it is currently paused.
 - RequiresValidTimelineEvent (Blizzard's docs; not checked in game)
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
@@ -336,7 +336,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.SetEventIconTextures(eventID: EncounterTimelineEventID, includeIcons: EncounterEventIconmask, textures: SimpleTexture[])`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Updates a given vector of texture objects to reference art assets for icons associated with an event.
 - `includeIcons`: Mask to apply to candidate icons. Any icon bits not present in this set will not be assigned to textures.
 - `textures`: Array of texture objects to update. This will change the assigned atlases and alpha values of the region, applying secret aspects to protect the data.
@@ -348,7 +348,7 @@ Namespace: `C_EncounterTimeline`
 
 `C_EncounterTimeline.SetViewType(viewType: EncounterTimelineViewType)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Changes the view type for the timeline. This adjusts track layouts to be more appropriate for a specific mode and optimizes event processing.
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterTimelineDocumentation.lua`
@@ -357,7 +357,7 @@ Namespace: `C_EncounterTimeline`
 
 ### ENCOUNTER_TIMELINE_EVENT_ADDED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `eventInfo: EncounterTimelineEventInfo`
 - Blizzard: Fired when an event has been added to the timeline.
 - secret during encounter events (Blizzard's docs)
@@ -365,70 +365,71 @@ Namespace: `C_EncounterTimeline`
 
 ### ENCOUNTER_TIMELINE_EVENT_BLOCK_STATE_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `eventID: EncounterTimelineEventID`
 - Blizzard: Fired when an event has transitioned into or out of a 'blocked' status.
 - unique event (Blizzard's docs)
 
 ### ENCOUNTER_TIMELINE_EVENT_COLOR_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `eventID: EncounterTimelineEventID`
 - Blizzard: Fired when an event has met a condition that should trigger a color change.
 - unique event (Blizzard's docs)
 
 ### ENCOUNTER_TIMELINE_EVENT_HIGHLIGHT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `eventID: EncounterTimelineEventID`
 - Blizzard: Fired when an event has met a condition that should trigger its highlight glow animation.
 - unique event (Blizzard's docs)
 
 ### ENCOUNTER_TIMELINE_EVENT_REMOVED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `eventID: EncounterTimelineEventID`
 - Blizzard: Fired when an event has been removed from the timeline. This is guaranteed to fire after an event has transitioned to a 'final' state such as Canceled or Finished, and will be delayed at least one game tick to allow for API queries to still access event data in OnUpdate scripts. This is fired post-removal of the event, and so queries using the supplied event ID will return nil.
 - unique event (Blizzard's docs)
 
 ### ENCOUNTER_TIMELINE_EVENT_STATE_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `eventID: EncounterTimelineEventID`
 - Blizzard: Fired when an event has changed state.
 - unique event (Blizzard's docs)
 
 ### ENCOUNTER_TIMELINE_EVENT_TRACK_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `eventID: EncounterTimelineEventID`
 - Blizzard: Fired when an event has changed track, or has been re-ordered within its existing track.
 - unique event (Blizzard's docs)
 
 ### ENCOUNTER_TIMELINE_LAYOUT_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - Blizzard: Fired when the layout of tracks on the timeline has been updated. This can include changes to the minimum or maximum durations of tracks.
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### ENCOUNTER_TIMELINE_STATE_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - Blizzard: Signaled when conditions controlling the visibility of the encounter timeline are updated.
 - unique event (Blizzard's docs)
 
 ### ENCOUNTER_TIMELINE_VIEW_ACTIVATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `viewType: EncounterTimelineViewType`
 - Blizzard: Fired when a new timeline view is being activated. This is fired after a full layout and timeline data update, allowing the UI to immediately query the API and get usable results.
 - fires synchronously (Blizzard's docs)
 
 ### ENCOUNTER_TIMELINE_VIEW_DEACTIVATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `viewType: EncounterTimelineViewType`
 - Blizzard: Fired when the current timeline view is being deactivated. The UI should clear all stored timeline event data and release all frames back to pools during this event.
 - fires synchronously (Blizzard's docs)

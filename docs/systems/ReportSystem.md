@@ -6,24 +6,24 @@ Namespace: `C_ReportSystem`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_ReportSystem.CanReportPlayer](#c_reportsystemcanreportplayer) |  |  |
-| ❔ | [C_ReportSystem.CanReportPlayerForLanguage](#c_reportsystemcanreportplayerforlanguage) |  |  |
-| ❔ | [C_ReportSystem.GetMajorCategoriesForReportType](#c_reportsystemgetmajorcategoriesforreporttype) |  |  |
-| ❔ | [C_ReportSystem.GetMajorCategoryString](#c_reportsystemgetmajorcategorystring) |  |  |
-| ❔ | [C_ReportSystem.GetMinorCategoriesForReportTypeAndMajorCategory](#c_reportsystemgetminorcategoriesforreporttypeandmajorcategory) |  |  |
-| ❔ | [C_ReportSystem.GetMinorCategoryString](#c_reportsystemgetminorcategorystring) |  |  |
-| ❔ | [C_ReportSystem.ReportServerLag](#c_reportsystemreportserverlag) |  |  |
-| ❔ | [C_ReportSystem.ReportStuckInCombat](#c_reportsystemreportstuckincombat) |  |  |
-| ❔ | [C_ReportSystem.RequiresScreenshotForReportType](#c_reportsystemrequiresscreenshotforreporttype) |  |  |
-| ❔ | [C_ReportSystem.SendReport](#c_reportsystemsendreport) |  |  |
-| ❔ | [C_ReportSystem.SetScreenshotPreviewTexture](#c_reportsystemsetscreenshotpreviewtexture) |  |  |
-| ❔ | [C_ReportSystem.TakeReportScreenshot](#c_reportsystemtakereportscreenshot) |  |  |
+| ✅ | [C_ReportSystem.CanReportPlayer](#c_reportsystemcanreportplayer) |  |  |
+| ✅ | [C_ReportSystem.CanReportPlayerForLanguage](#c_reportsystemcanreportplayerforlanguage) |  |  |
+| ✅ | [C_ReportSystem.GetMajorCategoriesForReportType](#c_reportsystemgetmajorcategoriesforreporttype) |  |  |
+| ✅ | [C_ReportSystem.GetMajorCategoryString](#c_reportsystemgetmajorcategorystring) |  |  |
+| ✅ | [C_ReportSystem.GetMinorCategoriesForReportTypeAndMajorCategory](#c_reportsystemgetminorcategoriesforreporttypeandmajorcategory) |  |  |
+| ✅ | [C_ReportSystem.GetMinorCategoryString](#c_reportsystemgetminorcategorystring) |  |  |
+| ✅ | [C_ReportSystem.ReportServerLag](#c_reportsystemreportserverlag) |  |  |
+| ✅ | [C_ReportSystem.ReportStuckInCombat](#c_reportsystemreportstuckincombat) |  |  |
+| ✅ | [C_ReportSystem.RequiresScreenshotForReportType](#c_reportsystemrequiresscreenshotforreporttype) |  |  |
+| ✅ | [C_ReportSystem.SendReport](#c_reportsystemsendreport) |  |  |
+| ✅ | [C_ReportSystem.SetScreenshotPreviewTexture](#c_reportsystemsetscreenshotpreviewtexture) |  |  |
+| ✅ | [C_ReportSystem.TakeReportScreenshot](#c_reportsystemtakereportscreenshot) |  |  |
 
 ### C_ReportSystem.CanReportPlayer
 
 `C_ReportSystem.CanReportPlayer(playerLocation: PlayerLocation) → canReport: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ReportSystemDocumentation.lua`
 
@@ -31,7 +31,7 @@ Namespace: `C_ReportSystem`
 
 `C_ReportSystem.CanReportPlayerForLanguage(playerLocation: PlayerLocation) → canReport: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ReportSystemDocumentation.lua`
 
@@ -39,7 +39,7 @@ Namespace: `C_ReportSystem`
 
 `C_ReportSystem.GetMajorCategoriesForReportType(reportType: ReportType) → majorCategories: ReportMajorCategory[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ReportSystemDocumentation.lua`
 
@@ -47,7 +47,7 @@ Namespace: `C_ReportSystem`
 
 `C_ReportSystem.GetMajorCategoryString(majorCategory: ReportMajorCategory) → majorCategoryString: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ReportSystemDocumentation.lua`
 
@@ -55,7 +55,7 @@ Namespace: `C_ReportSystem`
 
 `C_ReportSystem.GetMinorCategoriesForReportTypeAndMajorCategory(reportType: ReportType, majorCategory: ReportMajorCategory) → minorCategories: ReportMinorCategory[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ReportSystemDocumentation.lua`
 
@@ -63,7 +63,7 @@ Namespace: `C_ReportSystem`
 
 `C_ReportSystem.GetMinorCategoryString(minorCategory: ReportMinorCategory) → minorCategoryString: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ReportSystemDocumentation.lua`
 
@@ -71,21 +71,21 @@ Namespace: `C_ReportSystem`
 
 `C_ReportSystem.ReportServerLag()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ReportSystemDocumentation.lua`
 
 ### C_ReportSystem.ReportStuckInCombat
 
 `C_ReportSystem.ReportStuckInCombat()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ReportSystemDocumentation.lua`
 
 ### C_ReportSystem.RequiresScreenshotForReportType
 
 `C_ReportSystem.RequiresScreenshotForReportType(reportType: ReportType, majorCategory: ReportMajorCategory) → requiresScreenshot: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ReportSystemDocumentation.lua`
 
@@ -93,7 +93,7 @@ Namespace: `C_ReportSystem`
 
 `C_ReportSystem.SendReport(reportInfo: ReportInfo, playerLocation: PlayerLocation?)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Not allowed to be called by addons
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -103,7 +103,7 @@ Namespace: `C_ReportSystem`
 
 `C_ReportSystem.SetScreenshotPreviewTexture(textureObject: SimpleTexture)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ReportSystemDocumentation.lua`
 
@@ -111,19 +111,19 @@ Namespace: `C_ReportSystem`
 
 `C_ReportSystem.TakeReportScreenshot()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ReportSystemDocumentation.lua`
 
 ## Events
 
 ### REPORT_PLAYER_RESULT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `result: SendReportResult`, `reportType: ReportType`
 - fires synchronously (Blizzard's docs)
 
 ### REPORT_SCREENSHOT_READY
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)

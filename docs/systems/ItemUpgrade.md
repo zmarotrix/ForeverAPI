@@ -6,28 +6,28 @@ Namespace: `C_ItemUpgrade`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_ItemUpgrade.CanUpgradeItem](#c_itemupgradecanupgradeitem) |  |  |
-| ❔ | [C_ItemUpgrade.ClearItemUpgrade](#c_itemupgradeclearitemupgrade) |  |  |
-| ❔ | [C_ItemUpgrade.CloseItemUpgrade](#c_itemupgradecloseitemupgrade) |  |  |
-| ❔ | [C_ItemUpgrade.GetHighWatermarkForItem](#c_itemupgradegethighwatermarkforitem) |  |  |
-| ❔ | [C_ItemUpgrade.GetHighWatermarkForSlot](#c_itemupgradegethighwatermarkforslot) |  |  |
-| ❔ | [C_ItemUpgrade.GetHighWatermarkSlotForItem](#c_itemupgradegethighwatermarkslotforitem) |  |  |
-| ❔ | [C_ItemUpgrade.GetItemHyperlink](#c_itemupgradegetitemhyperlink) |  |  |
-| ❔ | [C_ItemUpgrade.GetItemUpgradeCurrentLevel](#c_itemupgradegetitemupgradecurrentlevel) |  |  |
-| ❔ | [C_ItemUpgrade.GetItemUpgradeEffect](#c_itemupgradegetitemupgradeeffect) |  |  |
-| ❔ | [C_ItemUpgrade.GetItemUpgradeItemInfo](#c_itemupgradegetitemupgradeiteminfo) |  |  |
-| ❔ | [C_ItemUpgrade.GetItemUpgradePvpItemLevelDeltaValues](#c_itemupgradegetitemupgradepvpitemleveldeltavalues) |  |  |
-| ❔ | [C_ItemUpgrade.GetNumItemUpgradeEffects](#c_itemupgradegetnumitemupgradeeffects) |  |  |
-| ❔ | [C_ItemUpgrade.IsItemBound](#c_itemupgradeisitembound) |  |  |
-| ❔ | [C_ItemUpgrade.SetItemUpgradeFromCursorItem](#c_itemupgradesetitemupgradefromcursoritem) |  |  |
-| ❔ | [C_ItemUpgrade.SetItemUpgradeFromLocation](#c_itemupgradesetitemupgradefromlocation) |  |  |
-| ❔ | [C_ItemUpgrade.UpgradeItem](#c_itemupgradeupgradeitem) |  |  |
+| ✅ | [C_ItemUpgrade.CanUpgradeItem](#c_itemupgradecanupgradeitem) |  |  |
+| ✅ | [C_ItemUpgrade.ClearItemUpgrade](#c_itemupgradeclearitemupgrade) |  |  |
+| ✅ | [C_ItemUpgrade.CloseItemUpgrade](#c_itemupgradecloseitemupgrade) |  |  |
+| ✅ | [C_ItemUpgrade.GetHighWatermarkForItem](#c_itemupgradegethighwatermarkforitem) |  |  |
+| ✅ | [C_ItemUpgrade.GetHighWatermarkForSlot](#c_itemupgradegethighwatermarkforslot) |  |  |
+| ✅ | [C_ItemUpgrade.GetHighWatermarkSlotForItem](#c_itemupgradegethighwatermarkslotforitem) |  |  |
+| ✅ | [C_ItemUpgrade.GetItemHyperlink](#c_itemupgradegetitemhyperlink) |  |  |
+| ✅ | [C_ItemUpgrade.GetItemUpgradeCurrentLevel](#c_itemupgradegetitemupgradecurrentlevel) |  |  |
+| ✅ | [C_ItemUpgrade.GetItemUpgradeEffect](#c_itemupgradegetitemupgradeeffect) |  |  |
+| ✅ | [C_ItemUpgrade.GetItemUpgradeItemInfo](#c_itemupgradegetitemupgradeiteminfo) |  |  |
+| ✅ | [C_ItemUpgrade.GetItemUpgradePvpItemLevelDeltaValues](#c_itemupgradegetitemupgradepvpitemleveldeltavalues) |  |  |
+| ✅ | [C_ItemUpgrade.GetNumItemUpgradeEffects](#c_itemupgradegetnumitemupgradeeffects) |  |  |
+| ✅ | [C_ItemUpgrade.IsItemBound](#c_itemupgradeisitembound) |  |  |
+| ✅ | [C_ItemUpgrade.SetItemUpgradeFromCursorItem](#c_itemupgradesetitemupgradefromcursoritem) |  |  |
+| ✅ | [C_ItemUpgrade.SetItemUpgradeFromLocation](#c_itemupgradesetitemupgradefromlocation) |  |  |
+| ✅ | [C_ItemUpgrade.UpgradeItem](#c_itemupgradeupgradeitem) |  |  |
 
 ### C_ItemUpgrade.CanUpgradeItem
 
 `C_ItemUpgrade.CanUpgradeItem(baseItem: ItemLocation) → isValid: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ItemUpgradeDocumentation.lua`
 
@@ -35,21 +35,21 @@ Namespace: `C_ItemUpgrade`
 
 `C_ItemUpgrade.ClearItemUpgrade()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ItemUpgradeDocumentation.lua`
 
 ### C_ItemUpgrade.CloseItemUpgrade
 
 `C_ItemUpgrade.CloseItemUpgrade()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ItemUpgradeDocumentation.lua`
 
 ### C_ItemUpgrade.GetHighWatermarkForItem
 
 `C_ItemUpgrade.GetHighWatermarkForItem(itemInfo: ItemInfo) → characterHighWatermark: number, accountHighWatermark: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - `itemInfo`: Item ID, Link, or Name
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -59,7 +59,7 @@ Namespace: `C_ItemUpgrade`
 
 `C_ItemUpgrade.GetHighWatermarkForSlot(itemRedundancySlot: number) → characterHighWatermark: number, accountHighWatermark: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - `itemRedundancySlot`: Must be an Enum.ItemRedundancySlot value
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -69,7 +69,7 @@ Namespace: `C_ItemUpgrade`
 
 `C_ItemUpgrade.GetHighWatermarkSlotForItem(itemInfo: ItemInfo) → itemRedundancySlot: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - `itemInfo`: Item ID, Link, or Name
 - `itemRedundancySlot`: Enum.ItemRedundancySlot value
 - may return nothing (Blizzard's docs; not checked in game)
@@ -80,7 +80,7 @@ Namespace: `C_ItemUpgrade`
 
 `C_ItemUpgrade.GetItemHyperlink() → link: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Source: client docs `ItemUpgradeDocumentation.lua`
 
@@ -88,7 +88,7 @@ Namespace: `C_ItemUpgrade`
 
 `C_ItemUpgrade.GetItemUpgradeCurrentLevel() → itemLevel: number, isPvpItemLevel: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Source: client docs `ItemUpgradeDocumentation.lua`
 
@@ -96,7 +96,7 @@ Namespace: `C_ItemUpgrade`
 
 `C_ItemUpgrade.GetItemUpgradeEffect(effectIndex: number, numUpgradeLevels: number?) → outBaseEffect: string, outUpgradedEffect: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ItemUpgradeDocumentation.lua`
@@ -105,7 +105,7 @@ Namespace: `C_ItemUpgrade`
 
 `C_ItemUpgrade.GetItemUpgradeItemInfo() → itemInfo: ItemUpgradeItemInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Source: client docs `ItemUpgradeDocumentation.lua`
 
@@ -113,7 +113,7 @@ Namespace: `C_ItemUpgrade`
 
 `C_ItemUpgrade.GetItemUpgradePvpItemLevelDeltaValues(numUpgradeLevels: number) → currentPvPItemLevel: number, upgradedPvPItemLevel: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ItemUpgradeDocumentation.lua`
@@ -122,28 +122,28 @@ Namespace: `C_ItemUpgrade`
 
 `C_ItemUpgrade.GetNumItemUpgradeEffects() → numItemUpgradeEffects: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ItemUpgradeDocumentation.lua`
 
 ### C_ItemUpgrade.IsItemBound
 
 `C_ItemUpgrade.IsItemBound() → isBound: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ItemUpgradeDocumentation.lua`
 
 ### C_ItemUpgrade.SetItemUpgradeFromCursorItem
 
 `C_ItemUpgrade.SetItemUpgradeFromCursorItem()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ItemUpgradeDocumentation.lua`
 
 ### C_ItemUpgrade.SetItemUpgradeFromLocation
 
 `C_ItemUpgrade.SetItemUpgradeFromLocation(itemToSet: ItemLocation)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ItemUpgradeDocumentation.lua`
 
@@ -151,7 +151,7 @@ Namespace: `C_ItemUpgrade`
 
 `C_ItemUpgrade.UpgradeItem(numUpgrades: number = 1)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ItemUpgradeDocumentation.lua`
 
@@ -159,19 +159,19 @@ Namespace: `C_ItemUpgrade`
 
 ### ITEM_UPGRADE_FAILED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### ITEM_UPGRADE_MASTER_SET_ITEM
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### ITEM_UPGRADE_MASTER_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 

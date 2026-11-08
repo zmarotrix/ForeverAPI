@@ -4,7 +4,7 @@
 
 ### TransmogOutfitCostModifiersApplied
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `DebugOnlyFreeDiscountApplied` = 1
   - `VoidRacialDiscountApplied` = 2
   - `OutfitCostModifierApplied` = 4
@@ -12,19 +12,19 @@
 
 ### TransmogOutfitDataConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `EQUIP_TRANSMOG_OUTFIT_MANUAL_SPELL_ID` = 1247613
   - `CLEAR_TRANSMOG_OUTFIT_MANUAL_SPELL_ID` = 1247917
   - `TRANSMOG_OUTFIT_SLOT_NONE` = -1
 
 ### TransmogOutfitDataFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `IsCachedLocally` = 1
 
 ### TransmogOutfitDisplayType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Unassigned` = 0
   - `Assigned` = 1
   - `Equipped` = 2
@@ -33,7 +33,7 @@
 
 ### TransmogOutfitEntryFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `AutomaticallyAwardedOnLogin` = 1
   - `UseOverrideName` = 2
   - `OnlyAvailableDuringEvent` = 4
@@ -43,14 +43,14 @@
 
 ### TransmogOutfitEntrySource
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `StampedSource` = 0
   - `AutomaticallyAwarded` = 1
   - `PlayerPurchased` = 2
 
 ### TransmogOutfitEquipAction
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Equip` = 0
   - `EquipAndLock` = 1
   - `Remove` = 2
@@ -60,14 +60,14 @@
 
 ### TransmogOutfitSetType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Equipped` = 0
   - `Outfit` = 1
   - `CustomSet` = 2
 
 ### TransmogOutfitSlot
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Head` = 0
   - `ShoulderRight` = 1
   - `ShoulderLeft` = 2
@@ -86,7 +86,7 @@
 
 ### TransmogOutfitSlotError
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Ok` = 0
   - `NoItem` = 1
   - `NotSoulbound` = 2
@@ -105,14 +105,14 @@
 
 ### TransmogOutfitSlotFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `CannotBeHidden` = 1
   - `CanHaveIllusions` = 2
   - `IsSecondarySlot` = 4
 
 ### TransmogOutfitSlotOption
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `OneHandedWeapon` = 1
   - `TwoHandedWeapon` = 2
@@ -132,14 +132,14 @@
 
 ### TransmogOutfitSlotOptionFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `IllusionNotAllowed` = 1
   - `DynamicOptionName` = 2
   - `DisablesOffhandSlot` = 4
 
 ### TransmogOutfitSlotOptionSheatheCategory
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Default` = 0
   - `Back` = 1
   - `Side` = 2
@@ -147,19 +147,19 @@
 
 ### TransmogOutfitSlotPosition
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Left` = 0
   - `Right` = 1
   - `Bottom` = 2
 
 ### TransmogOutfitSlotSaveFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `AppearanceIsNotValid` = 1
 
 ### TransmogOutfitSlotWarning
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Ok` = 0
   - `InvalidEquippedDestinationItem` = 1
   - `WrongWeaponCategoryEquipped` = 2
@@ -171,7 +171,7 @@
 
 ### TransmogOutfitTransactionFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `UpdateMetadata` = 1
   - `UpdateOutfitInfo` = 2
   - `CreateOutfitInfo` = 4
@@ -185,7 +185,7 @@
 
 ### TransmogOutfitTransactionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `UpdateMetadata` = 0
   - `UpdateOutfitInfo` = 1
   - `CreateOutfitInfo` = 2
@@ -194,13 +194,13 @@
 
 ### TransmogSettingsUpdateType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `OptOut` = 1
 
 ### TransmogSituation
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `AllSpecs` = 0
   - `Spec` = 1
   - `AllLocations` = 2
@@ -236,7 +236,7 @@
 
 ### TransmogSituationFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `IsPlayerFacing` = 1
   - `SpecUseTalentLoadout` = 2
   - `AllSituation` = 4
@@ -247,12 +247,12 @@
 
 ### TransmogSituationGroupFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `DynamicallyCreatesGroups` = 1
 
 ### TransmogSituationTrigger
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Manual` = 1
   - `TransmogUpdate` = 2
@@ -268,7 +268,7 @@
 
 ### TransmogSituationTriggerFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `CanLockOutfit` = 1
   - `CanChangeLockedOutfit` = 2
   - `IsPlayerFacing` = 4
@@ -277,7 +277,7 @@
 
 ### TransmogSituationTriggerType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Manual` = 1
   - `Automatic` = 2
@@ -285,7 +285,7 @@
 
 ### TransmogTimeOfDayCategory
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Morning` = 0
   - `Midday` = 1
   - `Evening` = 2

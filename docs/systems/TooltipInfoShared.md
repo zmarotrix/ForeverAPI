@@ -21,7 +21,7 @@
 
 ### TooltipDataItemBinding
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Quest` = 0
   - `Account` = 1
   - `BnetAccount` = 2
@@ -36,7 +36,7 @@
 
 ### TooltipDataLineType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Blank` = 1
   - `UnitName` = 2
@@ -92,7 +92,7 @@
 
 ### TooltipDataType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Item` = 0
   - `Spell` = 1
   - `Unit` = 2
@@ -124,7 +124,7 @@
 
 ### TooltipDataUsageRequirementType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `RaceClass` = 0
   - `Faction` = 1
   - `Skill` = 2

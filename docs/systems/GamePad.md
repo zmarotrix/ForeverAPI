@@ -6,37 +6,37 @@ Namespace: `C_GamePad`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_GamePad.AddSDLMapping](#c_gamepadaddsdlmapping) |  |  |
-| ❔ | [C_GamePad.ApplyConfigs](#c_gamepadapplyconfigs) |  |  |
-| ❔ | [C_GamePad.AxisIndexToConfigName](#c_gamepadaxisindextoconfigname) |  |  |
-| ❔ | [C_GamePad.ButtonBindingToIndex](#c_gamepadbuttonbindingtoindex) |  |  |
-| ❔ | [C_GamePad.ButtonIndexToBinding](#c_gamepadbuttonindextobinding) |  |  |
-| ❔ | [C_GamePad.ButtonIndexToConfigName](#c_gamepadbuttonindextoconfigname) |  |  |
-| ❔ | [C_GamePad.ClearLedColor](#c_gamepadclearledcolor) |  |  |
-| ❔ | [C_GamePad.DeleteConfig](#c_gamepaddeleteconfig) |  |  |
-| ❔ | [C_GamePad.GetActiveDeviceID](#c_gamepadgetactivedeviceid) |  |  |
-| ❔ | [C_GamePad.GetAllConfigIDs](#c_gamepadgetallconfigids) |  |  |
-| ❔ | [C_GamePad.GetAllDeviceIDs](#c_gamepadgetalldeviceids) |  |  |
-| ❔ | [C_GamePad.GetAllowHoverEventsWithFreeLook](#c_gamepadgetallowhovereventswithfreelook) |  |  |
-| ❔ | [C_GamePad.GetCombinedDeviceID](#c_gamepadgetcombineddeviceid) |  |  |
-| ❔ | [C_GamePad.GetConfig](#c_gamepadgetconfig) |  |  |
-| ❔ | [C_GamePad.GetDeviceMappedState](#c_gamepadgetdevicemappedstate) |  |  |
-| ❔ | [C_GamePad.GetDeviceRawState](#c_gamepadgetdevicerawstate) |  |  |
-| ❔ | [C_GamePad.GetLedColor](#c_gamepadgetledcolor) |  |  |
-| ❔ | [C_GamePad.GetPowerLevel](#c_gamepadgetpowerlevel) |  |  |
-| ❔ | [C_GamePad.IsEnabled](#c_gamepadisenabled) |  |  |
-| ❔ | [C_GamePad.SetAllowHoverEventsWithFreeLook](#c_gamepadsetallowhovereventswithfreelook) |  |  |
-| ❔ | [C_GamePad.SetConfig](#c_gamepadsetconfig) |  |  |
-| ❔ | [C_GamePad.SetLedColor](#c_gamepadsetledcolor) |  |  |
-| ❔ | [C_GamePad.SetVibration](#c_gamepadsetvibration) |  |  |
-| ❔ | [C_GamePad.StickIndexToConfigName](#c_gamepadstickindextoconfigname) |  |  |
-| ❔ | [C_GamePad.StopVibration](#c_gamepadstopvibration) |  |  |
+| ✅ | [C_GamePad.AddSDLMapping](#c_gamepadaddsdlmapping) |  |  |
+| ✅ | [C_GamePad.ApplyConfigs](#c_gamepadapplyconfigs) |  |  |
+| ✅ | [C_GamePad.AxisIndexToConfigName](#c_gamepadaxisindextoconfigname) |  |  |
+| ✅ | [C_GamePad.ButtonBindingToIndex](#c_gamepadbuttonbindingtoindex) |  |  |
+| ✅ | [C_GamePad.ButtonIndexToBinding](#c_gamepadbuttonindextobinding) |  |  |
+| ✅ | [C_GamePad.ButtonIndexToConfigName](#c_gamepadbuttonindextoconfigname) |  |  |
+| ✅ | [C_GamePad.ClearLedColor](#c_gamepadclearledcolor) |  |  |
+| ✅ | [C_GamePad.DeleteConfig](#c_gamepaddeleteconfig) |  |  |
+| ✅ | [C_GamePad.GetActiveDeviceID](#c_gamepadgetactivedeviceid) |  |  |
+| ✅ | [C_GamePad.GetAllConfigIDs](#c_gamepadgetallconfigids) |  |  |
+| ✅ | [C_GamePad.GetAllDeviceIDs](#c_gamepadgetalldeviceids) |  |  |
+| ✅ | [C_GamePad.GetAllowHoverEventsWithFreeLook](#c_gamepadgetallowhovereventswithfreelook) |  |  |
+| ✅ | [C_GamePad.GetCombinedDeviceID](#c_gamepadgetcombineddeviceid) |  |  |
+| ✅ | [C_GamePad.GetConfig](#c_gamepadgetconfig) |  |  |
+| ✅ | [C_GamePad.GetDeviceMappedState](#c_gamepadgetdevicemappedstate) |  |  |
+| ✅ | [C_GamePad.GetDeviceRawState](#c_gamepadgetdevicerawstate) |  |  |
+| ✅ | [C_GamePad.GetLedColor](#c_gamepadgetledcolor) |  |  |
+| ✅ | [C_GamePad.GetPowerLevel](#c_gamepadgetpowerlevel) |  |  |
+| ✅ | [C_GamePad.IsEnabled](#c_gamepadisenabled) |  |  |
+| ✅ | [C_GamePad.SetAllowHoverEventsWithFreeLook](#c_gamepadsetallowhovereventswithfreelook) |  |  |
+| ✅ | [C_GamePad.SetConfig](#c_gamepadsetconfig) |  |  |
+| ✅ | [C_GamePad.SetLedColor](#c_gamepadsetledcolor) |  |  |
+| ✅ | [C_GamePad.SetVibration](#c_gamepadsetvibration) |  |  |
+| ✅ | [C_GamePad.StickIndexToConfigName](#c_gamepadstickindextoconfigname) |  |  |
+| ✅ | [C_GamePad.StopVibration](#c_gamepadstopvibration) |  |  |
 
 ### C_GamePad.AddSDLMapping
 
 `C_GamePad.AddSDLMapping(platform: ClientPlatformType, mapping: cstring) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GamePadDocumentation.lua`
@@ -45,7 +45,7 @@ Namespace: `C_GamePad`
 
 `C_GamePad.ApplyConfigs()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `GamePadDocumentation.lua`
 
@@ -53,7 +53,7 @@ Namespace: `C_GamePad`
 
 `C_GamePad.AxisIndexToConfigName(axisIndex: number) → configName: cstring?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GamePadDocumentation.lua`
 
@@ -61,7 +61,7 @@ Namespace: `C_GamePad`
 
 `C_GamePad.ButtonBindingToIndex(bindingName: cstring) → buttonIndex: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GamePadDocumentation.lua`
 
@@ -69,7 +69,7 @@ Namespace: `C_GamePad`
 
 `C_GamePad.ButtonIndexToBinding(buttonIndex: number) → bindingName: cstring?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GamePadDocumentation.lua`
 
@@ -77,7 +77,7 @@ Namespace: `C_GamePad`
 
 `C_GamePad.ButtonIndexToConfigName(buttonIndex: number) → configName: cstring?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GamePadDocumentation.lua`
 
@@ -85,14 +85,14 @@ Namespace: `C_GamePad`
 
 `C_GamePad.ClearLedColor()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `GamePadDocumentation.lua`
 
 ### C_GamePad.DeleteConfig
 
 `C_GamePad.DeleteConfig(configID: GamePadConfigID)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GamePadDocumentation.lua`
@@ -101,42 +101,42 @@ Namespace: `C_GamePad`
 
 `C_GamePad.GetActiveDeviceID() → deviceID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `GamePadDocumentation.lua`
 
 ### C_GamePad.GetAllConfigIDs
 
 `C_GamePad.GetAllConfigIDs() → configIDs: GamePadConfigID[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `GamePadDocumentation.lua`
 
 ### C_GamePad.GetAllDeviceIDs
 
 `C_GamePad.GetAllDeviceIDs() → deviceIDs: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `GamePadDocumentation.lua`
 
 ### C_GamePad.GetAllowHoverEventsWithFreeLook
 
 `C_GamePad.GetAllowHoverEventsWithFreeLook() → enabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `GamePadDocumentation.lua`
 
 ### C_GamePad.GetCombinedDeviceID
 
 `C_GamePad.GetCombinedDeviceID() → deviceID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `GamePadDocumentation.lua`
 
 ### C_GamePad.GetConfig
 
 `C_GamePad.GetConfig(configID: GamePadConfigID) → config: GamePadConfig?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GamePadDocumentation.lua`
 
@@ -144,7 +144,7 @@ Namespace: `C_GamePad`
 
 `C_GamePad.GetDeviceMappedState(deviceID: number?) → state: GamePadMappedState?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GamePadDocumentation.lua`
 
@@ -152,7 +152,7 @@ Namespace: `C_GamePad`
 
 `C_GamePad.GetDeviceRawState(deviceID: number) → rawState: GamePadRawState?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GamePadDocumentation.lua`
 
@@ -160,14 +160,14 @@ Namespace: `C_GamePad`
 
 `C_GamePad.GetLedColor() → color: colorRGB`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `GamePadDocumentation.lua`
 
 ### C_GamePad.GetPowerLevel
 
 `C_GamePad.GetPowerLevel(deviceID: number?) → powerLevel: GamePadPowerLevel`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GamePadDocumentation.lua`
 
@@ -175,14 +175,14 @@ Namespace: `C_GamePad`
 
 `C_GamePad.IsEnabled() → enabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `GamePadDocumentation.lua`
 
 ### C_GamePad.SetAllowHoverEventsWithFreeLook
 
 `C_GamePad.SetAllowHoverEventsWithFreeLook(enable: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GamePadDocumentation.lua`
 
@@ -190,7 +190,7 @@ Namespace: `C_GamePad`
 
 `C_GamePad.SetConfig(config: GamePadConfig)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GamePadDocumentation.lua`
@@ -199,7 +199,7 @@ Namespace: `C_GamePad`
 
 `C_GamePad.SetLedColor(color: colorRGB)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GamePadDocumentation.lua`
 
@@ -207,7 +207,7 @@ Namespace: `C_GamePad`
 
 `C_GamePad.SetVibration(vibrationType: cstring, intensity: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GamePadDocumentation.lua`
 
@@ -215,7 +215,7 @@ Namespace: `C_GamePad`
 
 `C_GamePad.StickIndexToConfigName(stickIndex: number) → configName: cstring?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GamePadDocumentation.lua`
 
@@ -223,44 +223,45 @@ Namespace: `C_GamePad`
 
 `C_GamePad.StopVibration()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `GamePadDocumentation.lua`
 
 ## Events
 
 ### GAME_PAD_ACTIVE_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `isActive: bool`
 - fires synchronously (Blizzard's docs)
 
 ### GAME_PAD_ALLOW_HOVER_EVENTS_WITH_FREE_LOOK_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `enabled: bool`
 - fires synchronously (Blizzard's docs)
 
 ### GAME_PAD_CONFIGS_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### GAME_PAD_CONNECTED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### GAME_PAD_DISCONNECTED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### GAME_PAD_POWER_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `powerLevel: GamePadPowerLevel`
 - fires synchronously (Blizzard's docs)
 

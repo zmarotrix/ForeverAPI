@@ -4,7 +4,7 @@
 
 ### MapCanvasPosition
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `BottomLeft` = 1
   - `BottomRight` = 2
@@ -13,13 +13,13 @@
 
 ### MapobjEventTypes
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `PlayAnim` = 0
   - `SetAnimSpeed` = 1
 
 ### UIMapFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `NoHighlight` = 1
   - `ShowOverlays` = 2
   - `ShowTaxiNodes` = 4
@@ -45,12 +45,12 @@
 
 ### UIMapGroupFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ShowIconsAcrossFloors` = 1
 
 ### UIMapSystem
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `World` = 0
   - `Taxi` = 1
   - `Adventure` = 2
@@ -58,7 +58,7 @@
 
 ### UIMapType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Cosmic` = 0
   - `World` = 1
   - `Continent` = 2

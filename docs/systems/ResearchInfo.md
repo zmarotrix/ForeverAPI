@@ -6,13 +6,13 @@ Namespace: `C_ResearchInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_ResearchInfo.GetDigSitesForMap](#c_researchinfogetdigsitesformap) |  |  |
+| ✅ | [C_ResearchInfo.GetDigSitesForMap](#c_researchinfogetdigsitesformap) |  |  |
 
 ### C_ResearchInfo.GetDigSitesForMap
 
 `C_ResearchInfo.GetDigSitesForMap(uiMapID: number) → digSites: DigSiteMapInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ResearchInfoDocumentation.lua`
 
@@ -20,49 +20,49 @@ Namespace: `C_ResearchInfo`
 
 ### ARCHAEOLOGY_CLOSED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### ARCHAEOLOGY_FIND_COMPLETE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `numFindsCompleted: number`, `totalFinds: number`, `researchBranchID: number`
 - fires synchronously (Blizzard's docs)
 
 ### ARCHAEOLOGY_SURVEY_CAST
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `numFindsCompleted: number`, `totalFinds: number`, `researchBranchID: number`, `successfulFind: number`
 - fires synchronously (Blizzard's docs)
 
 ### ARCHAEOLOGY_TOGGLE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### ARTIFACT_DIGSITE_COMPLETE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `researchBranchID: number`
 - fires synchronously (Blizzard's docs)
 
 ### RESEARCH_ARTIFACT_COMPLETE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `name: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### RESEARCH_ARTIFACT_DIG_SITE_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### RESEARCH_ARTIFACT_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 

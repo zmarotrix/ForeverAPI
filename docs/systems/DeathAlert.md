@@ -4,6 +4,6 @@
 
 ### HARDCORE_DEATHS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `memberName: cstring`
 - fires synchronously (Blizzard's docs)

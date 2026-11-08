@@ -4,7 +4,7 @@
 
 ### SpellDiminishCategory
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Root` = 0
   - `Taunt` = 1
   - `Stun` = 2
@@ -16,7 +16,7 @@
 
 ### SpellDiminishRuleset
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `PvE` = 1
   - `PvP` = 2

@@ -6,14 +6,14 @@ Namespace: `C_FogOfWar`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_FogOfWar.GetFogOfWarForMap](#c_fogofwargetfogofwarformap) |  |  |
-| ❔ | [C_FogOfWar.GetFogOfWarInfo](#c_fogofwargetfogofwarinfo) |  |  |
+| ✅ | [C_FogOfWar.GetFogOfWarForMap](#c_fogofwargetfogofwarformap) |  |  |
+| ✅ | [C_FogOfWar.GetFogOfWarInfo](#c_fogofwargetfogofwarinfo) |  |  |
 
 ### C_FogOfWar.GetFogOfWarForMap
 
 `C_FogOfWar.GetFogOfWarForMap(uiMapID: number) → fogOfWarID: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `FogOfWarDocumentation.lua`
 
@@ -21,7 +21,7 @@ Namespace: `C_FogOfWar`
 
 `C_FogOfWar.GetFogOfWarInfo(fogOfWarID: number) → fogOfWarInfo: FogOfWarInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `FogOfWarDocumentation.lua`
 
@@ -29,7 +29,7 @@ Namespace: `C_FogOfWar`
 
 ### FOG_OF_WAR_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
 

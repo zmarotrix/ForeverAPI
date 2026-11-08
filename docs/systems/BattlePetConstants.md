@@ -4,7 +4,7 @@
 
 ### BattlePetAction
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Ability` = 1
   - `SwitchPet` = 2
@@ -13,7 +13,7 @@
 
 ### BattlePetBreedQuality
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Poor` = 0
   - `Common` = 1
   - `Uncommon` = 2
@@ -23,14 +23,14 @@
 
 ### BattlePetOwner
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Weather` = 0
   - `Ally` = 1
   - `Enemy` = 2
 
 ### BattlePetSources
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Drop` = 0
   - `Quest` = 1
   - `Vendor` = 2

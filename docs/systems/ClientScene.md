@@ -6,13 +6,13 @@ Namespace: `C_ClientScene`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_ClientScene.IsSceneTypeActive](#c_clientsceneisscenetypeactive) |  |  |
+| ✅ | [C_ClientScene.IsSceneTypeActive](#c_clientsceneisscenetypeactive) |  |  |
 
 ### C_ClientScene.IsSceneTypeActive
 
 `C_ClientScene.IsSceneTypeActive(desiredSceneType: ClientSceneType?) → isPlaying: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ClientSceneDocumentation.lua`
 
@@ -20,13 +20,13 @@ Namespace: `C_ClientScene`
 
 ### CLIENT_SCENE_CLOSED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### CLIENT_SCENE_OPENED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `sceneType: ClientSceneType`
 - fires synchronously (Blizzard's docs)
 
@@ -34,6 +34,6 @@ Namespace: `C_ClientScene`
 
 ### ClientSceneType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `DefaultSceneType` = 0
   - `MinigameSceneType` = 1

@@ -6,13 +6,13 @@ Namespace: `C_WorldSafeLocsUIInternal`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_WorldSafeLocsUIInternal.GetWorldSafeLocs](#c_worldsafelocsuiinternalgetworldsafelocs) |  |  |
+| ⛔ | [C_WorldSafeLocsUIInternal.GetWorldSafeLocs](#c_worldsafelocsuiinternalgetworldsafelocs) |  |  |
 
 ### C_WorldSafeLocsUIInternal.GetWorldSafeLocs
 
 `C_WorldSafeLocsUIInternal.GetWorldSafeLocs() → worldSafeLocs: WorldSafeLocInfo[]`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - Source: client docs `WorldSafeLocsUIInternalDocumentation.lua`
 
 ## Types

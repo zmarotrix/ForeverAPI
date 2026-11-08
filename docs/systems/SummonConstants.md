@@ -4,6 +4,6 @@
 
 ### SummonReason
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Spell` = 0
   - `Scenario` = 1

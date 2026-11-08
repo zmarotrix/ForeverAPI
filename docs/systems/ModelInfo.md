@@ -6,20 +6,20 @@ Namespace: `C_ModelInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_ModelInfo.AddActiveModelScene](#c_modelinfoaddactivemodelscene) |  |  |
-| ❔ | [C_ModelInfo.AddActiveModelSceneActor](#c_modelinfoaddactivemodelsceneactor) |  |  |
-| ❔ | [C_ModelInfo.ClearActiveModelScene](#c_modelinfoclearactivemodelscene) |  |  |
-| ❔ | [C_ModelInfo.ClearActiveModelSceneActor](#c_modelinfoclearactivemodelsceneactor) |  |  |
-| ❔ | [C_ModelInfo.GetModelSceneActorDisplayInfoByID](#c_modelinfogetmodelsceneactordisplayinfobyid) |  |  |
-| ❔ | [C_ModelInfo.GetModelSceneActorInfoByID](#c_modelinfogetmodelsceneactorinfobyid) |  |  |
-| ❔ | [C_ModelInfo.GetModelSceneCameraInfoByID](#c_modelinfogetmodelscenecamerainfobyid) |  |  |
-| ❔ | [C_ModelInfo.GetModelSceneInfoByID](#c_modelinfogetmodelsceneinfobyid) |  |  |
+| ✅ | [C_ModelInfo.AddActiveModelScene](#c_modelinfoaddactivemodelscene) |  |  |
+| ✅ | [C_ModelInfo.AddActiveModelSceneActor](#c_modelinfoaddactivemodelsceneactor) |  |  |
+| ✅ | [C_ModelInfo.ClearActiveModelScene](#c_modelinfoclearactivemodelscene) |  |  |
+| ✅ | [C_ModelInfo.ClearActiveModelSceneActor](#c_modelinfoclearactivemodelsceneactor) |  |  |
+| ✅ | [C_ModelInfo.GetModelSceneActorDisplayInfoByID](#c_modelinfogetmodelsceneactordisplayinfobyid) |  |  |
+| ✅ | [C_ModelInfo.GetModelSceneActorInfoByID](#c_modelinfogetmodelsceneactorinfobyid) |  |  |
+| ✅ | [C_ModelInfo.GetModelSceneCameraInfoByID](#c_modelinfogetmodelscenecamerainfobyid) |  |  |
+| ✅ | [C_ModelInfo.GetModelSceneInfoByID](#c_modelinfogetmodelsceneinfobyid) |  |  |
 
 ### C_ModelInfo.AddActiveModelScene
 
 `C_ModelInfo.AddActiveModelScene(modelSceneFrame: ModelSceneFrame, modelSceneID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: This function does nothing in public clients
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIModelInfoDocumentation.lua`
@@ -28,7 +28,7 @@ Namespace: `C_ModelInfo`
 
 `C_ModelInfo.AddActiveModelSceneActor(modelSceneFrameActor: ModelSceneFrameActor, modelSceneActorID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: This function does nothing in public clients
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIModelInfoDocumentation.lua`
@@ -37,7 +37,7 @@ Namespace: `C_ModelInfo`
 
 `C_ModelInfo.ClearActiveModelScene(modelSceneFrame: ModelSceneFrame)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: This function does nothing in public clients
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIModelInfoDocumentation.lua`
@@ -46,7 +46,7 @@ Namespace: `C_ModelInfo`
 
 `C_ModelInfo.ClearActiveModelSceneActor(modelSceneFrameActor: ModelSceneFrameActor)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: This function does nothing in public clients
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIModelInfoDocumentation.lua`
@@ -55,7 +55,7 @@ Namespace: `C_ModelInfo`
 
 `C_ModelInfo.GetModelSceneActorDisplayInfoByID(modelActorDisplayID: number) → actorDisplayInfo: UIModelSceneActorDisplayInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIModelInfoDocumentation.lua`
@@ -64,7 +64,7 @@ Namespace: `C_ModelInfo`
 
 `C_ModelInfo.GetModelSceneActorInfoByID(modelActorID: number) → actorInfo: UIModelSceneActorInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIModelInfoDocumentation.lua`
@@ -73,7 +73,7 @@ Namespace: `C_ModelInfo`
 
 `C_ModelInfo.GetModelSceneCameraInfoByID(modelSceneCameraID: number) → modelSceneCameraInfo: UIModelSceneCameraInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIModelInfoDocumentation.lua`
@@ -82,7 +82,7 @@ Namespace: `C_ModelInfo`
 
 `C_ModelInfo.GetModelSceneInfoByID(modelSceneID: number) → modelSceneType: ModelSceneType, modelCameraIDs: number[], modelActorsIDs: number[], flags: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIModelInfoDocumentation.lua`
@@ -91,7 +91,7 @@ Namespace: `C_ModelInfo`
 
 ### UI_MODEL_SCENE_INFO_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
 

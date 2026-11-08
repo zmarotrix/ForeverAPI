@@ -4,7 +4,7 @@
 
 ### LootMethod
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Freeforall` = 0
   - `Roundrobin` = 1
   - `Masterlooter` = 2
@@ -14,13 +14,13 @@
 
 ### LootMethodStyles
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Mainline` = 0
   - `Vanilla` = 1
 
 ### LootSlotType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Item` = 1
   - `Money` = 2

@@ -4,6 +4,6 @@
 
 ### PvPFaction
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Horde` = 0
   - `Alliance` = 1

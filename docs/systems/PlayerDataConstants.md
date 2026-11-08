@@ -4,16 +4,16 @@
 
 ### PlayerDataElementAccountFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Log` = 1
 
 ### PlayerDataElementCharacterFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Log` = 1
 
 ### PlayerDataElementType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Int` = 0
   - `Float` = 1

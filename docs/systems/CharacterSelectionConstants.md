@@ -4,7 +4,7 @@
 
 ### WarbandEventState
 
-- Enumeration — ❔ unverified
+- Enumeration — ⛔ in Blizzard's docs, not in game
   - `None` = 0
   - `DelayingEvent` = 1
   - `SheathingWeapon` = 2
@@ -16,20 +16,20 @@
 
 ### WarbandGroupFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ⛔ in Blizzard's docs, not in game
   - `None` = 0
   - `Collapsed` = 1
 
 ### WarbandPlacementDisplayInfoType
 
-- Enumeration — ❔ unverified
+- Enumeration — ⛔ in Blizzard's docs, not in game
   - `Model` = 0
   - `Creature` = 1
   - `Item` = 2
 
 ### WarbandSceneAnimationEvent
 
-- Enumeration — ❔ unverified
+- Enumeration — ⛔ in Blizzard's docs, not in game
   - `StartingPose` = 0
   - `Idle` = 1
   - `Mouseover` = 2
@@ -43,14 +43,14 @@
 
 ### WarbandSceneAnimationSheatheState
 
-- Enumeration — ❔ unverified
+- Enumeration — ⛔ in Blizzard's docs, not in game
   - `Maintain` = 0
   - `SheatheWeapons` = 1
   - `ShowWeapons` = 2
 
 ### WarbandSceneAnimationStandState
 
-- Enumeration — ❔ unverified
+- Enumeration — ⛔ in Blizzard's docs, not in game
   - `Maintain` = 0
   - `Stand` = 1
   - `SitOnGround` = 2
@@ -63,7 +63,7 @@
 
 ### WarbandSceneAnimationStandStateFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ⛔ in Blizzard's docs, not in game
   - `Maintain` = 1
   - `Stand` = 2
   - `SitOnGround` = 4
@@ -76,7 +76,7 @@
 
 ### WarbandScenePlacementType
 
-- Enumeration — ❔ unverified
+- Enumeration — ⛔ in Blizzard's docs, not in game
   - `Character` = 0
   - `Pet` = 1
   - `Chair` = 2

@@ -6,15 +6,15 @@ Namespace: `C_TaxiMap`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_TaxiMap.GetAllTaxiNodes](#c_taximapgetalltaxinodes) |  |  |
-| ❔ | [C_TaxiMap.GetTaxiNodesForMap](#c_taximapgettaxinodesformap) |  |  |
-| ❔ | [C_TaxiMap.ShouldMapShowTaxiNodes](#c_taximapshouldmapshowtaxinodes) |  |  |
+| ✅ | [C_TaxiMap.GetAllTaxiNodes](#c_taximapgetalltaxinodes) |  |  |
+| ✅ | [C_TaxiMap.GetTaxiNodesForMap](#c_taximapgettaxinodesformap) |  |  |
+| ✅ | [C_TaxiMap.ShouldMapShowTaxiNodes](#c_taximapshouldmapshowtaxinodes) |  |  |
 
 ### C_TaxiMap.GetAllTaxiNodes
 
 `C_TaxiMap.GetAllTaxiNodes(uiMapID: number) → taxiNodes: TaxiNodeInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns information on taxi nodes at the current flight master.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TaxiMapDocumentation.lua`
@@ -23,7 +23,7 @@ Namespace: `C_TaxiMap`
 
 `C_TaxiMap.GetTaxiNodesForMap(uiMapID: number) → mapTaxiNodes: MapTaxiNodeInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns information on taxi nodes for a given map, without considering the current flight master.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TaxiMapDocumentation.lua`
@@ -32,7 +32,7 @@ Namespace: `C_TaxiMap`
 
 `C_TaxiMap.ShouldMapShowTaxiNodes(uiMapID: number) → shouldShowNodes: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TaxiMapDocumentation.lua`
 
@@ -40,19 +40,20 @@ Namespace: `C_TaxiMap`
 
 ### TAXIMAP_CLOSED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### TAXIMAP_OPENED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `system: number`
 - fires synchronously (Blizzard's docs)
 
 ### TAXI_NODE_STATUS_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
@@ -60,14 +61,14 @@ Namespace: `C_TaxiMap`
 
 ### FlightPathFaction
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Neutral` = 0
   - `Horde` = 1
   - `Alliance` = 2
 
 ### FlightPathState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Current` = 0
   - `Reachable` = 1
   - `Unreachable` = 2

@@ -4,13 +4,13 @@
 
 ### ActionBarOrientation
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Horizontal` = 0
   - `Vertical` = 1
 
 ### ActionBarVisibleSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Always` = 0
   - `InCombat` = 1
   - `OutOfCombat` = 2
@@ -18,7 +18,7 @@
 
 ### AuraFrameIconDirection
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Down` = 0
   - `Up` = 1
   - `Left` = 0
@@ -26,7 +26,7 @@
 
 ### AuraFrameIconWrap
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Down` = 0
   - `Up` = 1
   - `Left` = 0
@@ -34,20 +34,20 @@
 
 ### AuraFrameOrientation
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Horizontal` = 0
   - `Vertical` = 1
 
 ### AuraFrameVisibleSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Always` = 0
   - `InCombat` = 1
   - `Hidden` = 2
 
 ### BagsDirection
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Left` = 0
   - `Right` = 1
   - `Up` = 0
@@ -55,46 +55,46 @@
 
 ### BagsOrientation
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Horizontal` = 0
   - `Vertical` = 1
 
 ### CooldownViewerBarContent
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `IconAndName` = 0
   - `IconOnly` = 1
   - `NameOnly` = 2
 
 ### CooldownViewerIconDirection
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Left` = 0
   - `Right` = 1
 
 ### CooldownViewerOrientation
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Horizontal` = 0
   - `Vertical` = 1
 
 ### CooldownViewerVisibleSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Always` = 0
   - `InCombat` = 1
   - `Hidden` = 2
 
 ### DamageMeterNumbers
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Minimal` = 0
   - `Compact` = 1
   - `Complete` = 2
 
 ### DamageMeterStyle
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Default` = 0
   - `Thin` = 1
   - `Bordered` = 2
@@ -102,7 +102,7 @@
 
 ### DamageMeterVisibility
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Always` = 0
   - `InCombat` = 1
   - `Hidden` = 2
@@ -110,7 +110,7 @@
 
 ### EditModeAccountSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ShowGrid` = 0
   - `GridSpacing` = 1
   - `SettingsExpanded` = 2
@@ -152,7 +152,7 @@
 
 ### EditModeActionBarSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Orientation` = 0
   - `NumRows` = 1
   - `NumIcons` = 2
@@ -166,7 +166,7 @@
 
 ### EditModeActionBarSystemIndices
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `MainBar` = 1
   - `Bar2` = 2
   - `Bar3` = 3
@@ -181,12 +181,12 @@
 
 ### EditModeArchaeologyBarSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Size` = 0
 
 ### EditModeAuraFrameSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Orientation` = 0
   - `IconWrap` = 1
   - `IconDirection` = 2
@@ -201,14 +201,14 @@
 
 ### EditModeAuraFrameSystemIndices
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `BuffFrame` = 1
   - `DebuffFrame` = 2
   - `ExternalDefensivesFrame` = 3
 
 ### EditModeBagsSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Orientation` = 0
   - `Direction` = 1
   - `Size` = 2
@@ -216,14 +216,14 @@
 
 ### EditModeCastBarSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `BarSize` = 0
   - `LockToPlayerFrame` = 1
   - `ShowCastTime` = 2
 
 ### EditModeChatFrameSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `WidthHundreds` = 0
   - `WidthTensAndOnes` = 1
   - `HeightHundreds` = 2
@@ -231,7 +231,7 @@
 
 ### EditModeConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `EditModeDefaultGridSpacing` = 100
   - `EditModeMinGridSpacing` = 20
   - `EditModeMaxGridSpacing` = 300
@@ -239,7 +239,7 @@
 
 ### EditModeCooldownViewerSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Orientation` = 0
   - `IconLimit` = 1
   - `IconDirection` = 2
@@ -255,7 +255,7 @@
 
 ### EditModeCooldownViewerSystemIndices
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Essential` = 1
   - `Utility` = 2
   - `BuffIcon` = 3
@@ -263,7 +263,7 @@
 
 ### EditModeDamageMeterSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Visibility` = 0
   - `Style` = 1
   - `Numbers` = 2
@@ -280,12 +280,12 @@
 
 ### EditModeDurabilityFrameSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Size` = 0
 
 ### EditModeEncounterEventsSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Orientation` = 0
   - `IconDirection` = 1
   - `ShowSpellName` = 2
@@ -303,7 +303,7 @@
 
 ### EditModeEncounterEventsSystemIndices
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Timeline` = 1
   - `CriticalWarnings` = 2
   - `MediumWarnings` = 3
@@ -311,7 +311,7 @@
 
 ### EditModeGamepadMainActionBarSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Compact` = 0
   - `ShowEmptyBars` = 1
   - `ShowButtonPrompts` = 2
@@ -320,17 +320,17 @@
 
 ### EditModeGroupFinderSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Size` = 0
 
 ### EditModeLayoutConsts_Mainline
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `EditModeDefaultLayout` = Enum.EditModePresetLayouts.Modern
 
 ### EditModeLayoutType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Preset` = 0
   - `Account` = 1
   - `Character` = 2
@@ -338,23 +338,23 @@
 
 ### EditModeLossOfControlSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Size` = 0
 
 ### EditModeMainActionBarEndCapSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Hidden` = 0
 
 ### EditModeMainActionBarEndCapSystemIndices
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `EndCapLeft` = 1
   - `EndCapRight` = 2
 
 ### EditModeMicroMenuSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Orientation` = 0
   - `Order` = 1
   - `Size` = 2
@@ -362,7 +362,7 @@
 
 ### EditModeMinimapSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `HeaderUnderneath` = 0
   - `RotateMinimap` = 1
   - `Size` = 2
@@ -370,14 +370,14 @@
 
 ### EditModeObjectiveTrackerSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Height` = 0
   - `Opacity` = 1
   - `TextSize` = 2
 
 ### EditModePersonalResourceDisplaySetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `HideHealth` = 0
   - `DeprecatedOnlyShowInCombat` = 1
   - `HidePower` = 2
@@ -396,26 +396,26 @@
 
 ### EditModePresetLayouts
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Modern` = 0
   - `Classic` = 1
   - `Gamepad` = 2
 
 ### EditModeRaidWarningSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
 
 ### EditModeSettingDisplayType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Dropdown` = 0
   - `Checkbox` = 1
   - `Slider` = 2
 
 ### EditModeStatusTrackingBarSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Height` = 0
   - `Width` = 1
   - `TextSize` = 2
@@ -423,13 +423,13 @@
 
 ### EditModeStatusTrackingBarSystemIndices
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `StatusTrackingBar1` = 1
   - `StatusTrackingBar2` = 2
 
 ### EditModeSwingTimerSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Scale` = 0
   - `Opacity` = 1
   - `Visibility` = 2
@@ -440,21 +440,21 @@
 
 ### EditModeSwingTimerSystemIndices
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `MainHand` = 1
   - `OffHand` = 2
   - `Ranged` = 3
 
 ### EditModeSwingTimerVisibility
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Always` = 0
   - `InCombat` = 1
   - `Hidden` = 2
 
 ### EditModeSystem
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ActionBar` = 0
   - `CastBar` = 1
   - `Minimap` = 2
@@ -489,12 +489,12 @@
 
 ### EditModeTimerBarsSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Size` = 0
 
 ### EditModeUnitFrameSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `HidePortrait` = 0
   - `CastBarUnderneath` = 1
   - `BuffsOnTop` = 2
@@ -521,7 +521,7 @@
 
 ### EditModeUnitFrameSystemIndices
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Player` = 1
   - `Target` = 2
   - `Focus` = 3
@@ -533,12 +533,12 @@
 
 ### EditModeVehicleSeatIndicatorSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Size` = 0
 
 ### EncounterEventsIconDirection
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Left` = 0
   - `Right` = 1
   - `Top` = 0
@@ -546,73 +546,73 @@
 
 ### EncounterEventsOrientation
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Horizontal` = 0
   - `Vertical` = 1
 
 ### EncounterEventsTooltipAnchor
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Hidden` = 0
   - `Default` = 1
   - `Cursor` = 2
 
 ### EncounterEventsViewType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Timeline` = 0
   - `Bars` = 1
 
 ### EncounterEventsVisibility
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Always` = 0
   - `InEncounter` = 1
   - `DeprecatedHidden` = 2
 
 ### MicroMenuOrder
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Default` = 0
   - `Reverse` = 1
 
 ### MicroMenuOrientation
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Horizontal` = 0
   - `Vertical` = 1
 
 ### PersonalResourceDisplayVisibleSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Always` = 0
   - `InCombat` = 1
   - `Hidden` = 2
 
 ### RaidAuraOrganizationType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Legacy` = 0
   - `BuffsTopDebuffsBottom` = 1
   - `BuffsRightDebuffsLeft` = 2
 
 ### RaidDispelDisplayType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Disabled` = 0
   - `DispellableByMe` = 1
   - `DisplayAll` = 2
 
 ### RaidDispelOverlayType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Disabled` = 0
   - `UseDebuffColor` = 1
   - `UseBlack` = 2
 
 ### RaidGroupDisplayType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `SeparateGroupsVertical` = 0
   - `SeparateGroupsHorizontal` = 1
   - `CombineGroupsVertical` = 2
@@ -620,20 +620,20 @@
 
 ### SortPlayersBy
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Role` = 0
   - `Group` = 1
   - `Alphabetical` = 2
 
 ### ViewArenaSize
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Two` = 0
   - `Three` = 1
 
 ### ViewRaidSize
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Ten` = 0
   - `TwentyFive` = 1
   - `Forty` = 2

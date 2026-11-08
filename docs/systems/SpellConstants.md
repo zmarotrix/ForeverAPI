@@ -4,7 +4,7 @@
 
 ### ConfirmationPromptUIType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `StaticText` = 0
   - `BonusRoll` = 1
   - `SimpleWarning` = 2
@@ -13,14 +13,14 @@
 
 ### SpellAuraVisibilityType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `RaidInCombat` = 0
   - `RaidOutOfCombat` = 1
   - `EnemyTarget` = 2
 
 ### SpellCooldownConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `GLOBAL_RECOVERY_CATEGORY` = 133
   - `COMBAT_POTION_CATEGORY` = 4
   - `HEALTH_POTION_CATEGORY` = 30

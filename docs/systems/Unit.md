@@ -4,230 +4,230 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [CanEjectPassengerFromSeat](#canejectpassengerfromseat) |  |  |
-| ❔ | [CanSwitchVehicleSeat](#canswitchvehicleseat) |  |  |
-| ❔ | [ClosestGameObjectPosition](#closestgameobjectposition) |  |  |
-| ❔ | [ClosestUnitPosition](#closestunitposition) |  |  |
-| ❔ | [CreateUnitHealPredictionCalculator](#createunithealpredictioncalculator) |  |  |
-| ❔ | [EjectPassengerFromSeat](#ejectpassengerfromseat) |  |  |
-| ❔ | [GetComboPoints](#getcombopoints) |  |  |
-| ❔ | [GetNegativeCorruptionEffectInfo](#getnegativecorruptioneffectinfo) |  |  |
-| ❔ | [GetUnitChargedPowerPoints](#getunitchargedpowerpoints) |  |  |
-| ❔ | [GetUnitEmpowerHoldAtMaxTime](#getunitempowerholdatmaxtime) |  |  |
-| ❔ | [GetUnitEmpowerMinHoldTime](#getunitempowerminholdtime) |  |  |
-| ❔ | [GetUnitEmpowerStageDuration](#getunitempowerstageduration) |  |  |
-| ❔ | [GetUnitHealthModifier](#getunithealthmodifier) |  |  |
-| ❔ | [GetUnitMaxHealthModifier](#getunitmaxhealthmodifier) |  |  |
-| ❔ | [GetUnitPowerBarInfo](#getunitpowerbarinfo) |  |  |
-| ❔ | [GetUnitPowerBarInfoByID](#getunitpowerbarinfobyid) |  |  |
-| ❔ | [GetUnitPowerBarStrings](#getunitpowerbarstrings) |  |  |
-| ❔ | [GetUnitPowerBarStringsByID](#getunitpowerbarstringsbyid) |  |  |
-| ❔ | [GetUnitPowerBarTextureInfo](#getunitpowerbartextureinfo) |  |  |
-| ❔ | [GetUnitPowerBarTextureInfoByID](#getunitpowerbartextureinfobyid) |  |  |
-| ❔ | [GetUnitPowerModifier](#getunitpowermodifier) |  |  |
-| ❔ | [GetUnitSpeed](#getunitspeed) |  |  |
-| ❔ | [GetUnitTotalModifiedMaxHealthPercent](#getunittotalmodifiedmaxhealthpercent) |  |  |
-| ❔ | [GetVehicleUIIndicator](#getvehicleuiindicator) |  |  |
-| ❔ | [GetVehicleUIIndicatorSeat](#getvehicleuiindicatorseat) |  |  |
-| ❔ | [IsFalling](#isfalling) |  |  |
-| ❔ | [IsFlying](#isflying) |  |  |
-| ❔ | [IsPlayerInGuildFromGUID](#isplayeringuildfromguid) |  |  |
-| ❔ | [IsSubmerged](#issubmerged) |  |  |
-| ❔ | [IsSwimming](#isswimming) |  |  |
-| ❔ | [IsUnitModelReadyForUI](#isunitmodelreadyforui) |  |  |
-| ❔ | [PlayerIsPVPInactive](#playerispvpinactive) |  |  |
-| ❔ | [PlayerIsSpellTarget](#playerisspelltarget) |  |  |
-| ❔ | [PlayerVehicleHasComboPoints](#playervehiclehascombopoints) |  |  |
-| ❔ | [RegionalUniqueNamesEnabled](#regionaluniquenamesenabled) |  |  |
-| ❔ | [ReportPlayerIsPVPAFK](#reportplayerispvpafk) |  |  |
-| ❔ | [ResistancePercent](#resistancepercent) |  |  |
-| ❔ | [SetPortraitTexture](#setportraittexture) |  |  |
-| ❔ | [SetPortraitTextureFromCreatureDisplayID](#setportraittexturefromcreaturedisplayid) |  |  |
-| ❔ | [SetUnitCursorTexture](#setunitcursortexture) |  |  |
-| ❔ | [UnitAffectingCombat](#unitaffectingcombat) |  |  |
-| ❔ | [UnitAlliedRaceInfo](#unitalliedraceinfo) |  |  |
-| ❔ | [UnitArmor](#unitarmor) |  |  |
-| ❔ | [UnitAttackPower](#unitattackpower) |  |  |
-| ❔ | [UnitAttackSpeed](#unitattackspeed) |  |  |
-| ❔ | [UnitBattlePetLevel](#unitbattlepetlevel) |  |  |
-| ❔ | [UnitBattlePetSpeciesID](#unitbattlepetspeciesid) |  |  |
-| ❔ | [UnitBattlePetType](#unitbattlepettype) |  |  |
-| ❔ | [UnitCanAssist](#unitcanassist) |  |  |
-| ❔ | [UnitCanAttack](#unitcanattack) |  |  |
-| ❔ | [UnitCanCooperate](#unitcancooperate) |  |  |
-| ❔ | [UnitCanPetBattle](#unitcanpetbattle) |  |  |
-| ❔ | [UnitCastingDuration](#unitcastingduration) |  |  |
-| ❔ | [UnitCastingInfo](#unitcastinginfo) |  |  |
-| ❔ | [UnitChannelDuration](#unitchannelduration) |  |  |
-| ❔ | [UnitChannelInfo](#unitchannelinfo) |  |  |
-| ❔ | [UnitChromieTimeID](#unitchromietimeid) |  |  |
-| ❔ | [UnitClass](#unitclass) |  |  |
-| ❔ | [UnitClassBase](#unitclassbase) |  |  |
-| ❔ | [UnitClassFromGUID](#unitclassfromguid) |  |  |
-| ❔ | [UnitClassification](#unitclassification) |  |  |
-| ❔ | [UnitControllingVehicle](#unitcontrollingvehicle) |  |  |
-| ❔ | [UnitCreatureFamily](#unitcreaturefamily) |  |  |
-| ❔ | [UnitCreatureID](#unitcreatureid) |  |  |
-| ❔ | [UnitCreatureType](#unitcreaturetype) |  |  |
-| ❔ | [UnitDamage](#unitdamage) |  |  |
-| ❔ | [UnitDefenseSkill](#unitdefenseskill) |  |  |
-| ❔ | [UnitDetailedThreatSituation](#unitdetailedthreatsituation) |  |  |
-| ❔ | [UnitDistanceSquared](#unitdistancesquared) |  |  |
-| ❔ | [UnitEffectiveLevel](#uniteffectivelevel) |  |  |
-| ❔ | [UnitEmpoweredChannelDuration](#unitempoweredchannelduration) |  |  |
-| ❔ | [UnitEmpoweredStageDurations](#unitempoweredstagedurations) |  |  |
-| ❔ | [UnitEmpoweredStagePercentages](#unitempoweredstagepercentages) |  |  |
-| ❔ | [UnitExists](#unitexists) |  |  |
-| ❔ | [UnitFactionGroup](#unitfactiongroup) |  |  |
-| ❔ | [UnitFullName](#unitfullname) |  |  |
-| ❔ | [UnitGUID](#unitguid) |  |  |
-| ❔ | [UnitGetDetailedHealPrediction](#unitgetdetailedhealprediction) |  |  |
-| ❔ | [UnitGetIncomingHeals](#unitgetincomingheals) |  |  |
-| ❔ | [UnitGetTotalAbsorbs](#unitgettotalabsorbs) |  |  |
-| ❔ | [UnitGetTotalHealAbsorbs](#unitgettotalhealabsorbs) |  |  |
-| ❔ | [UnitGroupRolesAssigned](#unitgrouprolesassigned) |  |  |
-| ❔ | [UnitGroupRolesAssignedEnum](#unitgrouprolesassignedenum) |  |  |
-| ❔ | [UnitHPPerStamina](#unithpperstamina) |  |  |
-| ❔ | [UnitHasEffectivelyTankAura](#unithaseffectivelytankaura) |  |  |
-| ❔ | [UnitHasLootInteraction](#unithaslootinteraction) |  |  |
-| ❔ | [UnitHasMouseoverHighlight](#unithasmouseoverhighlight) |  |  |
-| ❔ | [UnitHasPowerType](#unithaspowertype) |  |  |
-| ❔ | [UnitHasRelicSlot](#unithasrelicslot) |  |  |
-| ❔ | [UnitHasVehiclePlayerFrameUI](#unithasvehicleplayerframeui) |  |  |
-| ❔ | [UnitHasVehicleUI](#unithasvehicleui) |  |  |
-| ❔ | [UnitHealth](#unithealth) |  |  |
-| ❔ | [UnitHealthMax](#unithealthmax) |  |  |
-| ❔ | [UnitHealthMissing](#unithealthmissing) |  |  |
-| ❔ | [UnitHealthPercent](#unithealthpercent) |  |  |
-| ❔ | [UnitHonor](#unithonor) |  |  |
-| ❔ | [UnitHonorLevel](#unithonorlevel) |  |  |
-| ❔ | [UnitHonorMax](#unithonormax) |  |  |
-| ❔ | [UnitInAnyGroup](#unitinanygroup) |  |  |
-| ❔ | [UnitInBattleground](#unitinbattleground) |  |  |
-| ❔ | [UnitInOtherParty](#unitinotherparty) |  |  |
-| ❔ | [UnitInParty](#unitinparty) |  |  |
-| ❔ | [UnitInPartyIsAI](#unitinpartyisai) |  |  |
-| ❔ | [UnitInPartyShard](#unitinpartyshard) |  |  |
-| ❔ | [UnitInRaid](#unitinraid) |  |  |
-| ❔ | [UnitInRange](#unitinrange) |  |  |
-| ❔ | [UnitInSubgroup](#unitinsubgroup) |  |  |
-| ❔ | [UnitInVehicle](#unitinvehicle) |  |  |
-| ❔ | [UnitInVehicleControlSeat](#unitinvehiclecontrolseat) |  |  |
-| ❔ | [UnitInVehicleHidesPetFrame](#unitinvehiclehidespetframe) |  |  |
-| ❔ | [UnitIsAFK](#unitisafk) |  |  |
-| ❔ | [UnitIsBattlePet](#unitisbattlepet) |  |  |
-| ❔ | [UnitIsBattlePetCompanion](#unitisbattlepetcompanion) |  |  |
-| ❔ | [UnitIsBossMob](#unitisbossmob) |  |  |
-| ❔ | [UnitIsCharmed](#unitischarmed) |  |  |
-| ❔ | [UnitIsConnected](#unitisconnected) |  |  |
-| ❔ | [UnitIsControlling](#unitiscontrolling) |  |  |
-| ❔ | [UnitIsCorpse](#unitiscorpse) |  |  |
-| ❔ | [UnitIsDND](#unitisdnd) |  |  |
-| ❔ | [UnitIsDead](#unitisdead) |  |  |
-| ❔ | [UnitIsDeadOrGhost](#unitisdeadorghost) |  |  |
-| ❔ | [UnitIsEnemy](#unitisenemy) |  |  |
-| ❔ | [UnitIsFeignDeath](#unitisfeigndeath) |  |  |
-| ❔ | [UnitIsFriend](#unitisfriend) |  |  |
-| ❔ | [UnitIsGameObject](#unitisgameobject) |  |  |
-| ❔ | [UnitIsGhost](#unitisghost) |  |  |
-| ❔ | [UnitIsGroupAssistant](#unitisgroupassistant) |  |  |
-| ❔ | [UnitIsGroupLeader](#unitisgroupleader) |  |  |
-| ❔ | [UnitIsHumanPlayer](#unitishumanplayer) |  |  |
-| ❔ | [UnitIsInInteractRange](#unitisininteractrange) |  |  |
-| ❔ | [UnitIsInMyGuild](#unitisinmyguild) |  |  |
-| ❔ | [UnitIsInteractable](#unitisinteractable) |  |  |
-| ❔ | [UnitIsLieutenant](#unitislieutenant) |  |  |
-| ❔ | [UnitIsMercenary](#unitismercenary) |  |  |
-| ❔ | [UnitIsMinion](#unitisminion) |  |  |
-| ❔ | [UnitIsNPCAsPlayer](#unitisnpcasplayer) |  |  |
-| ❔ | [UnitIsOtherPlayersBattlePet](#unitisotherplayersbattlepet) |  |  |
-| ❔ | [UnitIsOtherPlayersPet](#unitisotherplayerspet) |  |  |
-| ❔ | [UnitIsOwnerOrControllerOfUnit](#unitisownerorcontrollerofunit) |  |  |
-| ❔ | [UnitIsPVP](#unitispvp) |  |  |
-| ❔ | [UnitIsPVPFreeForAll](#unitispvpfreeforall) |  |  |
-| ❔ | [UnitIsPVPSanctuary](#unitispvpsanctuary) |  |  |
-| ❔ | [UnitIsPlayer](#unitisplayer) |  |  |
-| ❔ | [UnitIsPlayerControlledOrGroupMember](#unitisplayercontrolledorgroupmember) |  |  |
-| ❔ | [UnitIsPossessed](#unitispossessed) |  |  |
-| ❔ | [UnitIsQuestBoss](#unitisquestboss) |  |  |
-| ❔ | [UnitIsRaidOfficer](#unitisraidofficer) |  |  |
-| ❔ | [UnitIsSameServer](#unitissameserver) |  |  |
-| ❔ | [UnitIsTapDenied](#unitistapdenied) |  |  |
-| ❔ | [UnitIsTrivial](#unitistrivial) |  |  |
-| ❔ | [UnitIsUnconscious](#unitisunconscious) |  |  |
-| ❔ | [UnitIsUnit](#unitisunit) |  |  |
-| ❔ | [UnitIsVisible](#unitisvisible) |  |  |
-| ❔ | [UnitIsWildBattlePet](#unitiswildbattlepet) |  |  |
-| ❔ | [UnitLeadsAnyGroup](#unitleadsanygroup) |  |  |
-| ❔ | [UnitLevel](#unitlevel) |  |  |
-| ❔ | [UnitName](#unitname) |  |  |
-| ❔ | [UnitNameFromGUID](#unitnamefromguid) |  |  |
-| ❔ | [UnitNameUnmodified](#unitnameunmodified) |  |  |
-| ❔ | [UnitNameplateShowsWidgetsOnly](#unitnameplateshowswidgetsonly) |  |  |
-| ❔ | [UnitNumPowerBarTimers](#unitnumpowerbartimers) |  |  |
-| ❔ | [UnitOnTaxi](#unitontaxi) |  |  |
-| ❔ | [UnitOwnerGUID](#unitownerguid) |  |  |
-| ❔ | [UnitPVPName](#unitpvpname) |  |  |
-| ❔ | [UnitPartialPower](#unitpartialpower) |  |  |
-| ❔ | [UnitPercentHealthFromGUID](#unitpercenthealthfromguid) |  |  |
-| ❔ | [UnitPhaseReason](#unitphasereason) |  |  |
-| ❔ | [UnitPlayerControlled](#unitplayercontrolled) |  |  |
-| ❔ | [UnitPlayerOrPetInParty](#unitplayerorpetinparty) |  |  |
-| ❔ | [UnitPlayerOrPetInRaid](#unitplayerorpetinraid) |  |  |
-| ❔ | [UnitPosition](#unitposition) |  |  |
-| ❔ | [UnitPower](#unitpower) |  |  |
-| ❔ | [UnitPowerBarID](#unitpowerbarid) |  |  |
-| ❔ | [UnitPowerBarTimerInfo](#unitpowerbartimerinfo) |  |  |
-| ❔ | [UnitPowerDisplayMod](#unitpowerdisplaymod) |  |  |
-| ❔ | [UnitPowerMax](#unitpowermax) |  |  |
-| ❔ | [UnitPowerMissing](#unitpowermissing) |  |  |
-| ❔ | [UnitPowerPercent](#unitpowerpercent) |  |  |
-| ❔ | [UnitPowerType](#unitpowertype) |  |  |
-| ❔ | [UnitPvpClassification](#unitpvpclassification) |  |  |
-| ❔ | [UnitQuestTrivialLevelRange](#unitquesttriviallevelrange) |  |  |
-| ❔ | [UnitQuestTrivialLevelRangeScaling](#unitquesttriviallevelrangescaling) |  |  |
-| ❔ | [UnitRace](#unitrace) |  |  |
-| ❔ | [UnitRangedAttackPower](#unitrangedattackpower) |  |  |
-| ❔ | [UnitRangedDamage](#unitrangeddamage) |  |  |
-| ❔ | [UnitReaction](#unitreaction) |  |  |
-| ❔ | [UnitRealmRelationship](#unitrealmrelationship) |  |  |
-| ❔ | [UnitResistance](#unitresistance) |  |  |
-| ❔ | [UnitSelectionColor](#unitselectioncolor) |  |  |
-| ❔ | [UnitSelectionType](#unitselectiontype) |  |  |
-| ❔ | [UnitSex](#unitsex) |  |  |
-| ❔ | [UnitSexBase](#unitsexbase) |  |  |
-| ❔ | [UnitShouldDisplayName](#unitshoulddisplayname) |  |  |
-| ❔ | [UnitShouldDisplaySpellTargetName](#unitshoulddisplayspelltargetname) |  |  |
-| ❔ | [UnitSpellHaste](#unitspellhaste) |  |  |
-| ❔ | [UnitSpellTargetClass](#unitspelltargetclass) |  |  |
-| ❔ | [UnitSpellTargetName](#unitspelltargetname) |  |  |
-| ❔ | [UnitStagger](#unitstagger) |  |  |
-| ❔ | [UnitStat](#unitstat) |  |  |
-| ❔ | [UnitSwitchToVehicleSeat](#unitswitchtovehicleseat) |  |  |
-| ❔ | [UnitTargetsVehicleInRaidUI](#unittargetsvehicleinraidui) |  |  |
-| ❔ | [UnitThreatLeadSituation](#unitthreatleadsituation) |  |  |
-| ❔ | [UnitThreatPercentageOfLead](#unitthreatpercentageoflead) |  |  |
-| ❔ | [UnitThreatSituation](#unitthreatsituation) |  |  |
-| ❔ | [UnitTokenFromGUID](#unittokenfromguid) |  |  |
-| ❔ | [UnitTreatAsPlayerForDisplay](#unittreatasplayerfordisplay) |  |  |
-| ❔ | [UnitTrialBankedLevels](#unittrialbankedlevels) |  |  |
-| ❔ | [UnitTrialXP](#unittrialxp) |  |  |
-| ❔ | [UnitUsesAmmo](#unitusesammo) |  |  |
-| ❔ | [UnitUsingVehicle](#unitusingvehicle) |  |  |
-| ❔ | [UnitVehicleSeatCount](#unitvehicleseatcount) |  |  |
-| ❔ | [UnitVehicleSeatInfo](#unitvehicleseatinfo) |  |  |
-| ❔ | [UnitVehicleSkin](#unitvehicleskin) |  |  |
-| ❔ | [UnitWeaponAttackPower](#unitweaponattackpower) |  |  |
-| ❔ | [UnitWidgetSet](#unitwidgetset) |  |  |
-| ❔ | [UnitXP](#unitxp) |  |  |
-| ❔ | [UnitXPMax](#unitxpmax) |  |  |
-| ❔ | [WorldLootObjectExists](#worldlootobjectexists) |  |  |
+| ✅ | [CanEjectPassengerFromSeat](#canejectpassengerfromseat) |  |  |
+| ✅ | [CanSwitchVehicleSeat](#canswitchvehicleseat) |  |  |
+| ✅ | [ClosestGameObjectPosition](#closestgameobjectposition) |  |  |
+| ✅ | [ClosestUnitPosition](#closestunitposition) |  |  |
+| ✅ | [CreateUnitHealPredictionCalculator](#createunithealpredictioncalculator) |  |  |
+| ✅ | [EjectPassengerFromSeat](#ejectpassengerfromseat) |  |  |
+| ✅ | [GetComboPoints](#getcombopoints) |  |  |
+| ✅ | [GetNegativeCorruptionEffectInfo](#getnegativecorruptioneffectinfo) |  |  |
+| ✅ | [GetUnitChargedPowerPoints](#getunitchargedpowerpoints) |  |  |
+| ✅ | [GetUnitEmpowerHoldAtMaxTime](#getunitempowerholdatmaxtime) |  |  |
+| ✅ | [GetUnitEmpowerMinHoldTime](#getunitempowerminholdtime) |  |  |
+| ✅ | [GetUnitEmpowerStageDuration](#getunitempowerstageduration) |  |  |
+| ✅ | [GetUnitHealthModifier](#getunithealthmodifier) |  |  |
+| ✅ | [GetUnitMaxHealthModifier](#getunitmaxhealthmodifier) |  |  |
+| ✅ | [GetUnitPowerBarInfo](#getunitpowerbarinfo) |  |  |
+| ✅ | [GetUnitPowerBarInfoByID](#getunitpowerbarinfobyid) |  |  |
+| ✅ | [GetUnitPowerBarStrings](#getunitpowerbarstrings) |  |  |
+| ✅ | [GetUnitPowerBarStringsByID](#getunitpowerbarstringsbyid) |  |  |
+| ✅ | [GetUnitPowerBarTextureInfo](#getunitpowerbartextureinfo) |  |  |
+| ✅ | [GetUnitPowerBarTextureInfoByID](#getunitpowerbartextureinfobyid) |  |  |
+| ✅ | [GetUnitPowerModifier](#getunitpowermodifier) |  |  |
+| ✅ | [GetUnitSpeed](#getunitspeed) |  |  |
+| ✅ | [GetUnitTotalModifiedMaxHealthPercent](#getunittotalmodifiedmaxhealthpercent) |  |  |
+| ✅ | [GetVehicleUIIndicator](#getvehicleuiindicator) |  |  |
+| ✅ | [GetVehicleUIIndicatorSeat](#getvehicleuiindicatorseat) |  |  |
+| ✅ | [IsFalling](#isfalling) |  |  |
+| ✅ | [IsFlying](#isflying) |  |  |
+| ✅ | [IsPlayerInGuildFromGUID](#isplayeringuildfromguid) |  |  |
+| ✅ | [IsSubmerged](#issubmerged) |  |  |
+| ✅ | [IsSwimming](#isswimming) |  |  |
+| ✅ | [IsUnitModelReadyForUI](#isunitmodelreadyforui) |  |  |
+| ✅ | [PlayerIsPVPInactive](#playerispvpinactive) |  |  |
+| ✅ | [PlayerIsSpellTarget](#playerisspelltarget) |  |  |
+| ✅ | [PlayerVehicleHasComboPoints](#playervehiclehascombopoints) |  |  |
+| ✅ | [RegionalUniqueNamesEnabled](#regionaluniquenamesenabled) |  |  |
+| ✅ | [ReportPlayerIsPVPAFK](#reportplayerispvpafk) |  |  |
+| ✅ | [ResistancePercent](#resistancepercent) |  |  |
+| ✅ | [SetPortraitTexture](#setportraittexture) |  |  |
+| ✅ | [SetPortraitTextureFromCreatureDisplayID](#setportraittexturefromcreaturedisplayid) |  |  |
+| ✅ | [SetUnitCursorTexture](#setunitcursortexture) |  |  |
+| ✅ | [UnitAffectingCombat](#unitaffectingcombat) |  |  |
+| ✅ | [UnitAlliedRaceInfo](#unitalliedraceinfo) |  |  |
+| ✅ | [UnitArmor](#unitarmor) |  |  |
+| ✅ | [UnitAttackPower](#unitattackpower) |  |  |
+| ✅ | [UnitAttackSpeed](#unitattackspeed) |  |  |
+| ✅ | [UnitBattlePetLevel](#unitbattlepetlevel) |  |  |
+| ✅ | [UnitBattlePetSpeciesID](#unitbattlepetspeciesid) |  |  |
+| ✅ | [UnitBattlePetType](#unitbattlepettype) |  |  |
+| ✅ | [UnitCanAssist](#unitcanassist) |  |  |
+| ✅ | [UnitCanAttack](#unitcanattack) |  |  |
+| ✅ | [UnitCanCooperate](#unitcancooperate) |  |  |
+| ✅ | [UnitCanPetBattle](#unitcanpetbattle) |  |  |
+| ✅ | [UnitCastingDuration](#unitcastingduration) |  |  |
+| ✅ | [UnitCastingInfo](#unitcastinginfo) |  |  |
+| ✅ | [UnitChannelDuration](#unitchannelduration) |  |  |
+| ✅ | [UnitChannelInfo](#unitchannelinfo) |  |  |
+| ✅ | [UnitChromieTimeID](#unitchromietimeid) |  |  |
+| ✅ | [UnitClass](#unitclass) |  |  |
+| ✅ | [UnitClassBase](#unitclassbase) |  |  |
+| ✅ | [UnitClassFromGUID](#unitclassfromguid) |  |  |
+| ✅ | [UnitClassification](#unitclassification) |  |  |
+| ✅ | [UnitControllingVehicle](#unitcontrollingvehicle) |  |  |
+| ✅ | [UnitCreatureFamily](#unitcreaturefamily) |  |  |
+| ✅ | [UnitCreatureID](#unitcreatureid) |  |  |
+| ✅ | [UnitCreatureType](#unitcreaturetype) |  |  |
+| ✅ | [UnitDamage](#unitdamage) |  |  |
+| ✅ | [UnitDefenseSkill](#unitdefenseskill) |  |  |
+| ✅ | [UnitDetailedThreatSituation](#unitdetailedthreatsituation) |  |  |
+| ✅ | [UnitDistanceSquared](#unitdistancesquared) |  |  |
+| ✅ | [UnitEffectiveLevel](#uniteffectivelevel) |  |  |
+| ✅ | [UnitEmpoweredChannelDuration](#unitempoweredchannelduration) |  |  |
+| ✅ | [UnitEmpoweredStageDurations](#unitempoweredstagedurations) |  |  |
+| ✅ | [UnitEmpoweredStagePercentages](#unitempoweredstagepercentages) |  |  |
+| ✅ | [UnitExists](#unitexists) |  |  |
+| ✅ | [UnitFactionGroup](#unitfactiongroup) |  |  |
+| ✅ | [UnitFullName](#unitfullname) |  |  |
+| ✅ | [UnitGUID](#unitguid) |  |  |
+| ✅ | [UnitGetDetailedHealPrediction](#unitgetdetailedhealprediction) |  |  |
+| ✅ | [UnitGetIncomingHeals](#unitgetincomingheals) |  |  |
+| ✅ | [UnitGetTotalAbsorbs](#unitgettotalabsorbs) |  |  |
+| ✅ | [UnitGetTotalHealAbsorbs](#unitgettotalhealabsorbs) |  |  |
+| ✅ | [UnitGroupRolesAssigned](#unitgrouprolesassigned) |  |  |
+| ✅ | [UnitGroupRolesAssignedEnum](#unitgrouprolesassignedenum) |  |  |
+| ✅ | [UnitHPPerStamina](#unithpperstamina) |  |  |
+| ✅ | [UnitHasEffectivelyTankAura](#unithaseffectivelytankaura) |  |  |
+| ✅ | [UnitHasLootInteraction](#unithaslootinteraction) |  |  |
+| ✅ | [UnitHasMouseoverHighlight](#unithasmouseoverhighlight) |  |  |
+| ✅ | [UnitHasPowerType](#unithaspowertype) |  |  |
+| ✅ | [UnitHasRelicSlot](#unithasrelicslot) |  |  |
+| ✅ | [UnitHasVehiclePlayerFrameUI](#unithasvehicleplayerframeui) |  |  |
+| ✅ | [UnitHasVehicleUI](#unithasvehicleui) |  |  |
+| ✅ | [UnitHealth](#unithealth) |  |  |
+| ✅ | [UnitHealthMax](#unithealthmax) |  |  |
+| ✅ | [UnitHealthMissing](#unithealthmissing) |  |  |
+| ✅ | [UnitHealthPercent](#unithealthpercent) |  |  |
+| ✅ | [UnitHonor](#unithonor) |  |  |
+| ✅ | [UnitHonorLevel](#unithonorlevel) |  |  |
+| ✅ | [UnitHonorMax](#unithonormax) |  |  |
+| ✅ | [UnitInAnyGroup](#unitinanygroup) |  |  |
+| ✅ | [UnitInBattleground](#unitinbattleground) |  |  |
+| ✅ | [UnitInOtherParty](#unitinotherparty) |  |  |
+| ✅ | [UnitInParty](#unitinparty) |  |  |
+| ✅ | [UnitInPartyIsAI](#unitinpartyisai) |  |  |
+| ✅ | [UnitInPartyShard](#unitinpartyshard) |  |  |
+| ✅ | [UnitInRaid](#unitinraid) |  |  |
+| ✅ | [UnitInRange](#unitinrange) |  |  |
+| ✅ | [UnitInSubgroup](#unitinsubgroup) |  |  |
+| ✅ | [UnitInVehicle](#unitinvehicle) |  |  |
+| ✅ | [UnitInVehicleControlSeat](#unitinvehiclecontrolseat) |  |  |
+| ✅ | [UnitInVehicleHidesPetFrame](#unitinvehiclehidespetframe) |  |  |
+| ✅ | [UnitIsAFK](#unitisafk) |  |  |
+| ✅ | [UnitIsBattlePet](#unitisbattlepet) |  |  |
+| ✅ | [UnitIsBattlePetCompanion](#unitisbattlepetcompanion) |  |  |
+| ✅ | [UnitIsBossMob](#unitisbossmob) |  |  |
+| ✅ | [UnitIsCharmed](#unitischarmed) |  |  |
+| ✅ | [UnitIsConnected](#unitisconnected) |  |  |
+| ✅ | [UnitIsControlling](#unitiscontrolling) |  |  |
+| ✅ | [UnitIsCorpse](#unitiscorpse) |  |  |
+| ✅ | [UnitIsDND](#unitisdnd) |  |  |
+| ✅ | [UnitIsDead](#unitisdead) |  |  |
+| ✅ | [UnitIsDeadOrGhost](#unitisdeadorghost) |  |  |
+| ✅ | [UnitIsEnemy](#unitisenemy) |  |  |
+| ✅ | [UnitIsFeignDeath](#unitisfeigndeath) |  |  |
+| ✅ | [UnitIsFriend](#unitisfriend) |  |  |
+| ✅ | [UnitIsGameObject](#unitisgameobject) |  |  |
+| ✅ | [UnitIsGhost](#unitisghost) |  |  |
+| ✅ | [UnitIsGroupAssistant](#unitisgroupassistant) |  |  |
+| ✅ | [UnitIsGroupLeader](#unitisgroupleader) |  |  |
+| ✅ | [UnitIsHumanPlayer](#unitishumanplayer) |  |  |
+| ✅ | [UnitIsInInteractRange](#unitisininteractrange) |  |  |
+| ✅ | [UnitIsInMyGuild](#unitisinmyguild) |  |  |
+| ✅ | [UnitIsInteractable](#unitisinteractable) |  |  |
+| ✅ | [UnitIsLieutenant](#unitislieutenant) |  |  |
+| ✅ | [UnitIsMercenary](#unitismercenary) |  |  |
+| ✅ | [UnitIsMinion](#unitisminion) |  |  |
+| ✅ | [UnitIsNPCAsPlayer](#unitisnpcasplayer) |  |  |
+| ✅ | [UnitIsOtherPlayersBattlePet](#unitisotherplayersbattlepet) |  |  |
+| ✅ | [UnitIsOtherPlayersPet](#unitisotherplayerspet) |  |  |
+| ✅ | [UnitIsOwnerOrControllerOfUnit](#unitisownerorcontrollerofunit) |  |  |
+| ✅ | [UnitIsPVP](#unitispvp) |  |  |
+| ✅ | [UnitIsPVPFreeForAll](#unitispvpfreeforall) |  |  |
+| ✅ | [UnitIsPVPSanctuary](#unitispvpsanctuary) |  |  |
+| ✅ | [UnitIsPlayer](#unitisplayer) |  |  |
+| ✅ | [UnitIsPlayerControlledOrGroupMember](#unitisplayercontrolledorgroupmember) |  |  |
+| ✅ | [UnitIsPossessed](#unitispossessed) |  |  |
+| ✅ | [UnitIsQuestBoss](#unitisquestboss) |  |  |
+| ✅ | [UnitIsRaidOfficer](#unitisraidofficer) |  |  |
+| ✅ | [UnitIsSameServer](#unitissameserver) |  |  |
+| ✅ | [UnitIsTapDenied](#unitistapdenied) |  |  |
+| ✅ | [UnitIsTrivial](#unitistrivial) |  |  |
+| ✅ | [UnitIsUnconscious](#unitisunconscious) |  |  |
+| ✅ | [UnitIsUnit](#unitisunit) |  |  |
+| ✅ | [UnitIsVisible](#unitisvisible) |  |  |
+| ✅ | [UnitIsWildBattlePet](#unitiswildbattlepet) |  |  |
+| ✅ | [UnitLeadsAnyGroup](#unitleadsanygroup) |  |  |
+| ✅ | [UnitLevel](#unitlevel) |  |  |
+| ✅ | [UnitName](#unitname) |  |  |
+| ✅ | [UnitNameFromGUID](#unitnamefromguid) |  |  |
+| ✅ | [UnitNameUnmodified](#unitnameunmodified) |  |  |
+| ✅ | [UnitNameplateShowsWidgetsOnly](#unitnameplateshowswidgetsonly) |  |  |
+| ✅ | [UnitNumPowerBarTimers](#unitnumpowerbartimers) |  |  |
+| ✅ | [UnitOnTaxi](#unitontaxi) |  |  |
+| ✅ | [UnitOwnerGUID](#unitownerguid) |  |  |
+| ✅ | [UnitPVPName](#unitpvpname) |  |  |
+| ✅ | [UnitPartialPower](#unitpartialpower) |  |  |
+| ✅ | [UnitPercentHealthFromGUID](#unitpercenthealthfromguid) |  |  |
+| ✅ | [UnitPhaseReason](#unitphasereason) |  |  |
+| ✅ | [UnitPlayerControlled](#unitplayercontrolled) |  |  |
+| ✅ | [UnitPlayerOrPetInParty](#unitplayerorpetinparty) |  |  |
+| ✅ | [UnitPlayerOrPetInRaid](#unitplayerorpetinraid) |  |  |
+| ✅ | [UnitPosition](#unitposition) |  |  |
+| ✅ | [UnitPower](#unitpower) |  |  |
+| ✅ | [UnitPowerBarID](#unitpowerbarid) |  |  |
+| ✅ | [UnitPowerBarTimerInfo](#unitpowerbartimerinfo) |  |  |
+| ✅ | [UnitPowerDisplayMod](#unitpowerdisplaymod) |  |  |
+| ✅ | [UnitPowerMax](#unitpowermax) |  |  |
+| ✅ | [UnitPowerMissing](#unitpowermissing) |  |  |
+| ✅ | [UnitPowerPercent](#unitpowerpercent) |  |  |
+| ✅ | [UnitPowerType](#unitpowertype) |  |  |
+| ✅ | [UnitPvpClassification](#unitpvpclassification) |  |  |
+| ✅ | [UnitQuestTrivialLevelRange](#unitquesttriviallevelrange) |  |  |
+| ✅ | [UnitQuestTrivialLevelRangeScaling](#unitquesttriviallevelrangescaling) |  |  |
+| ✅ | [UnitRace](#unitrace) |  |  |
+| ✅ | [UnitRangedAttackPower](#unitrangedattackpower) |  |  |
+| ✅ | [UnitRangedDamage](#unitrangeddamage) |  |  |
+| ✅ | [UnitReaction](#unitreaction) |  |  |
+| ✅ | [UnitRealmRelationship](#unitrealmrelationship) |  |  |
+| ✅ | [UnitResistance](#unitresistance) |  |  |
+| ✅ | [UnitSelectionColor](#unitselectioncolor) |  |  |
+| ✅ | [UnitSelectionType](#unitselectiontype) |  |  |
+| ✅ | [UnitSex](#unitsex) |  |  |
+| ✅ | [UnitSexBase](#unitsexbase) |  |  |
+| ✅ | [UnitShouldDisplayName](#unitshoulddisplayname) |  |  |
+| ✅ | [UnitShouldDisplaySpellTargetName](#unitshoulddisplayspelltargetname) |  |  |
+| ✅ | [UnitSpellHaste](#unitspellhaste) |  |  |
+| ✅ | [UnitSpellTargetClass](#unitspelltargetclass) |  |  |
+| ✅ | [UnitSpellTargetName](#unitspelltargetname) |  |  |
+| ✅ | [UnitStagger](#unitstagger) |  |  |
+| ✅ | [UnitStat](#unitstat) |  |  |
+| ✅ | [UnitSwitchToVehicleSeat](#unitswitchtovehicleseat) |  |  |
+| ✅ | [UnitTargetsVehicleInRaidUI](#unittargetsvehicleinraidui) |  |  |
+| ✅ | [UnitThreatLeadSituation](#unitthreatleadsituation) |  |  |
+| ✅ | [UnitThreatPercentageOfLead](#unitthreatpercentageoflead) |  |  |
+| ✅ | [UnitThreatSituation](#unitthreatsituation) |  |  |
+| ✅ | [UnitTokenFromGUID](#unittokenfromguid) |  |  |
+| ✅ | [UnitTreatAsPlayerForDisplay](#unittreatasplayerfordisplay) |  |  |
+| ✅ | [UnitTrialBankedLevels](#unittrialbankedlevels) |  |  |
+| ✅ | [UnitTrialXP](#unittrialxp) |  |  |
+| ✅ | [UnitUsesAmmo](#unitusesammo) |  |  |
+| ✅ | [UnitUsingVehicle](#unitusingvehicle) |  |  |
+| ✅ | [UnitVehicleSeatCount](#unitvehicleseatcount) |  |  |
+| ✅ | [UnitVehicleSeatInfo](#unitvehicleseatinfo) |  |  |
+| ✅ | [UnitVehicleSkin](#unitvehicleskin) |  |  |
+| ✅ | [UnitWeaponAttackPower](#unitweaponattackpower) |  |  |
+| ✅ | [UnitWidgetSet](#unitwidgetset) |  |  |
+| ✅ | [UnitXP](#unitxp) |  |  |
+| ✅ | [UnitXPMax](#unitxpmax) |  |  |
+| ✅ | [WorldLootObjectExists](#worldlootobjectexists) |  |  |
 
 ### CanEjectPassengerFromSeat
 
 `CanEjectPassengerFromSeat(virtualSeatIndex: luaIndex) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -235,14 +235,14 @@
 
 `CanSwitchVehicleSeat() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `UnitDocumentation.lua`
 
 ### ClosestGameObjectPosition
 
 `ClosestGameObjectPosition(gameObjectID: number) → xPos: number, yPos: number, distance: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
@@ -252,7 +252,7 @@
 
 `ClosestUnitPosition(creatureID: number) → xPos: number, yPos: number, distance: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
@@ -262,14 +262,14 @@
 
 `CreateUnitHealPredictionCalculator() → healPredictionCalculator: UnitHealPredictionCalculator`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `UnitDocumentation.lua`
 
 ### EjectPassengerFromSeat
 
 `EjectPassengerFromSeat(virtualSeatIndex: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -277,7 +277,7 @@
 
 `GetComboPoints(unit: UnitTokenPvPRestrictedForAddOns, target: UnitTokenPvPRestrictedForAddOns) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit power is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -286,14 +286,14 @@
 
 `GetNegativeCorruptionEffectInfo() → corruptionEffects: CorruptionEffectInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `UnitDocumentation.lua`
 
 ### GetUnitChargedPowerPoints
 
 `GetUnitChargedPowerPoints(unit: UnitToken) → pointIndices: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit power is restricted (Blizzard's docs; not checked in game)
@@ -303,7 +303,7 @@
 
 `GetUnitEmpowerHoldAtMaxTime(unit: UnitToken) → holdAtMaxTime: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit spellcasts are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -312,7 +312,7 @@
 
 `GetUnitEmpowerMinHoldTime(unit: UnitToken) → minHoldTime: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit spellcasts are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -321,7 +321,7 @@
 
 `GetUnitEmpowerStageDuration(unit: UnitToken, index: number) → duration: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit spellcasts are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -330,7 +330,7 @@
 
 `GetUnitHealthModifier(unit: UnitToken) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -338,7 +338,7 @@
 
 `GetUnitMaxHealthModifier(unit: UnitToken) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -346,7 +346,7 @@
 
 `GetUnitPowerBarInfo(unitToken: UnitToken) → info: UnitPowerBarInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -355,7 +355,7 @@
 
 `GetUnitPowerBarInfoByID(barID: number) → info: UnitPowerBarInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -364,7 +364,7 @@
 
 `GetUnitPowerBarStrings(unitToken: UnitToken) → name: cstring?, tooltip: cstring?, cost: cstring?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -372,7 +372,7 @@
 
 `GetUnitPowerBarStringsByID(barID: number) → name: cstring?, tooltip: cstring?, cost: cstring?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -380,7 +380,7 @@
 
 `GetUnitPowerBarTextureInfo(unitToken: UnitToken, textureIndex: luaIndex, timerIndex: luaIndex?) → texture: fileID, colorR: number, colorG: number, colorB: number, colorA: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -388,7 +388,7 @@
 
 `GetUnitPowerBarTextureInfoByID(barID: number, textureIndex: luaIndex) → texture: fileID, colorR: number, colorG: number, colorB: number, colorA: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -396,7 +396,7 @@
 
 `GetUnitPowerModifier(unit: UnitToken) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -404,7 +404,7 @@
 
 `GetUnitSpeed(unit: UnitToken) → currentSpeed: number, runSpeed: number, flightSpeed: number, swimSpeed: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -413,7 +413,7 @@
 
 `GetUnitTotalModifiedMaxHealthPercent(unit: UnitToken) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -421,7 +421,7 @@
 
 `GetVehicleUIIndicator(vehicleIndicatorID: number) → backgroundTextureID: fileID, numSeatIndicators: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -430,7 +430,7 @@
 
 `GetVehicleUIIndicatorSeat(vehicleIndicatorID: number, indicatorSeatIndex: luaIndex) → virtualSeatIndex: number, xPos: number, yPos: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -439,7 +439,7 @@
 
 `IsFalling(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -447,7 +447,7 @@
 
 `IsFlying(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -455,7 +455,7 @@
 
 `IsPlayerInGuildFromGUID(playerGUID: WOWGUID) → IsInGuild: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -463,7 +463,7 @@
 
 `IsSubmerged(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -471,7 +471,7 @@
 
 `IsSwimming(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -479,7 +479,7 @@
 
 `IsUnitModelReadyForUI(unitToken: UnitToken) → isReady: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -487,7 +487,7 @@
 
 `PlayerIsPVPInactive(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -495,7 +495,7 @@
 
 `PlayerIsSpellTarget(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: If the unit is currently casting a spell, returns whether spell's target unit is the player. Returns false if the unit is not casting a spell or the spell has no target.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
@@ -505,21 +505,21 @@
 
 `PlayerVehicleHasComboPoints() → vehicleHasComboPoints: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `UnitDocumentation.lua`
 
 ### RegionalUniqueNamesEnabled
 
 `RegionalUniqueNamesEnabled() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `UnitDocumentation.lua`
 
 ### ReportPlayerIsPVPAFK
 
 `ReportPlayerIsPVPAFK(unit: UnitToken)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -528,7 +528,7 @@
 
 `ResistancePercent(resistance: number, casterLevel: number) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -536,7 +536,7 @@
 
 `SetPortraitTexture(textureObject: SimpleTexture, unitToken: UnitToken, disableMasking: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -544,7 +544,7 @@
 
 `SetPortraitTextureFromCreatureDisplayID(textureObject: SimpleTexture, creatureDisplayID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -552,7 +552,7 @@
 
 `SetUnitCursorTexture(textureObject: SimpleTexture, unit: UnitToken, style: CursorStyle?, includeLowPriority: bool?, preferGamepadIcon: bool?) → hasCursor: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -560,7 +560,7 @@
 
 `UnitAffectingCombat(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -568,7 +568,7 @@
 
 `UnitAlliedRaceInfo(unit: UnitToken) → isAlliedRace: bool, hasHeritageArmorUnlocked: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -576,7 +576,7 @@
 
 `UnitArmor(unit: UnitToken) → base: number, effective: number, real: number, bonus: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -585,7 +585,7 @@
 
 `UnitAttackPower(unit: UnitToken) → attackPower: number, posBuff: number, negBuff: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -594,7 +594,7 @@
 
 `UnitAttackSpeed(unit: UnitToken) → attackSpeed: number, offhandAttackSpeed: number?, rangedAttackSpeed: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -603,7 +603,7 @@
 
 `UnitBattlePetLevel(unit: UnitToken) → result: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -611,7 +611,7 @@
 
 `UnitBattlePetSpeciesID(unit: UnitToken) → result: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -619,7 +619,7 @@
 
 `UnitBattlePetType(unit: UnitToken) → result: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -627,7 +627,7 @@
 
 `UnitCanAssist(unit: UnitToken, target: UnitToken, canAssistImmunePC: bool = False, canAssistUninteractable: bool = False) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -635,7 +635,7 @@
 
 `UnitCanAttack(unit: UnitToken, target: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -643,7 +643,7 @@
 
 `UnitCanCooperate(unit: UnitToken, target: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -651,7 +651,7 @@
 
 `UnitCanPetBattle(unit: UnitToken, target: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -659,7 +659,7 @@
 
 `UnitCastingDuration(unit: UnitTokenPvPRestrictedForAddOns) → duration: LuaDurationObject`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
@@ -669,7 +669,7 @@
 
 `UnitCastingInfo(unit: UnitTokenPvPRestrictedForAddOns) → name: cstring, displayName: string, textureID: fileID, startTimeMs: number, endTimeMs: number, isTradeskill: bool, castID: WOWGUID, notInterruptible: bool?, castingSpellID: number, castBarID: UnitCastBarID?, delayTimeMs: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit spellcasts are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -678,7 +678,7 @@
 
 `UnitChannelDuration(unit: UnitTokenPvPRestrictedForAddOns) → duration: LuaDurationObject`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -687,7 +687,7 @@
 
 `UnitChannelInfo(unit: UnitTokenPvPRestrictedForAddOns) → name: cstring, displayName: cstring, textureID: fileID, startTimeMs: number, endTimeMs: number, isTradeskill: bool, notInterruptible: bool?, spellID: number, isEmpowered: bool, numEmpowerStages: number, castBarID: UnitCastBarID?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit spellcasts are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -696,7 +696,7 @@
 
 `UnitChromieTimeID(unit: UnitToken) → ID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -704,7 +704,7 @@
 
 `UnitClass(unit: UnitToken) → className: cstring, classFilename: cstring, classID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
@@ -714,7 +714,7 @@
 
 `UnitClassBase(unit: UnitToken) → classFilename: cstring, classID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
@@ -724,7 +724,7 @@
 
 `UnitClassFromGUID(unitGUID: WOWGUID) → className: cstring, classFilename: cstring, classID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -733,7 +733,7 @@
 
 `UnitClassification(unit: UnitToken) → result: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -741,7 +741,7 @@
 
 `UnitControllingVehicle(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -749,7 +749,7 @@
 
 `UnitCreatureFamily(unit: UnitToken) → name: cstring, id: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -758,7 +758,7 @@
 
 `UnitCreatureID(unit: UnitToken) → creatureID: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresUnitIdentityAccess (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
@@ -768,7 +768,7 @@
 
 `UnitCreatureType(unit: UnitToken) → name: cstring, id: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -777,7 +777,7 @@
 
 `UnitDamage(unit: UnitToken) → minDamage: number, maxDamage: number, offhandMinDamage: number, offhandMaxDamage: number, posBuff: number, negBuff: number, percent: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -786,7 +786,7 @@
 
 `UnitDefenseSkill(unit: UnitToken) → base: number, modifier: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -795,7 +795,7 @@
 
 `UnitDetailedThreatSituation(unit: UnitToken, mobGUID: UnitToken) → isTanking: bool, status: number, scaledPercentage: number, rawPercentage: number, rawThreat: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitThreatValuesRestricted (Blizzard's docs; not checked in game)
@@ -805,7 +805,7 @@
 
 `UnitDistanceSquared(unit: UnitToken) → distance: number, checkedDistance: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -813,7 +813,7 @@
 
 `UnitEffectiveLevel(name: cstring) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -821,7 +821,7 @@
 
 `UnitEmpoweredChannelDuration(unit: UnitToken, includeHoldAtMaxTime: bool = True) → duration: LuaDurationObject`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns a duration object that includes the duration of an empowered cast channel.
 - `includeHoldAtMaxTime`: If true, include the hold-at-max time of the empowered channel in the total duration.
 - may return nothing (Blizzard's docs; not checked in game)
@@ -832,7 +832,7 @@
 
 `UnitEmpoweredStageDurations(unit: UnitToken) → duration: LuaDurationObject[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns a vector of duration objects that measure the time spans for each individual stage in an empowered channel, with hold-at-max time included as the last element.
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -842,7 +842,7 @@
 
 `UnitEmpoweredStagePercentages(unit: UnitToken, includeHoldAtMaxTime: bool = True) → percentages: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns a vector of percentages that describe how much of the total duration of an empowered channel is occupied by a stage.
 - `includeHoldAtMaxTime`: If true, include the hold-at-max time of the empowered channel in the total duration and add a percentage value for it.
 - may return nothing (Blizzard's docs; not checked in game)
@@ -853,7 +853,7 @@
 
 `UnitExists(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -861,7 +861,7 @@
 
 `UnitFactionGroup(unitName: cstring, checkDisplayRace: bool = False) → factionGroupTag: cstring, localized: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -869,7 +869,7 @@
 
 `UnitFullName(unit: UnitToken) → unitName: cstring, unitServer: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -878,7 +878,7 @@
 
 `UnitGUID(unit: UnitTokenPvPRestrictedForAddOns) → result: WOWGUID?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -887,7 +887,7 @@
 
 `UnitGetDetailedHealPrediction(unit: UnitTokenPvPRestrictedForAddOns, healerUnit: UnitTokenPvPRestrictedForAddOns?, healPredictionCalculator: UnitHealPredictionCalculator)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - `healerUnit`: If specified, a unit to evaluate as the 'healer' for incoming heal values. If nil, healer values will be zero.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -896,7 +896,7 @@
 
 `UnitGetIncomingHeals(unit: UnitTokenPvPRestrictedForAddOns, healerGUID: UnitTokenPvPRestrictedForAddOns?) → result: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -905,7 +905,7 @@
 
 `UnitGetTotalAbsorbs(unit: UnitTokenPvPRestrictedForAddOns) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -914,7 +914,7 @@
 
 `UnitGetTotalHealAbsorbs(unit: UnitTokenPvPRestrictedForAddOns) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -923,7 +923,7 @@
 
 `UnitGroupRolesAssigned(unit: UnitToken?) → result: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -932,7 +932,7 @@
 
 `UnitGroupRolesAssignedEnum(unit: UnitToken?) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -941,7 +941,7 @@
 
 `UnitHPPerStamina(unit: UnitToken) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -949,7 +949,7 @@
 
 `UnitHasEffectivelyTankAura(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -958,7 +958,7 @@
 
 `UnitHasLootInteraction(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -966,7 +966,7 @@
 
 `UnitHasMouseoverHighlight(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -974,7 +974,7 @@
 
 `UnitHasPowerType(unitToken: UnitTokenPvPRestrictedForAddOns, powerType: PowerType) → hasPower: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -982,7 +982,7 @@
 
 `UnitHasRelicSlot(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -990,7 +990,7 @@
 
 `UnitHasVehiclePlayerFrameUI(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -998,7 +998,7 @@
 
 `UnitHasVehicleUI(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1006,7 +1006,7 @@
 
 `UnitHealth(unit: UnitTokenPvPRestrictedForAddOns, usePredicted: bool = True) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1015,7 +1015,7 @@
 
 `UnitHealthMax(unit: UnitTokenPvPRestrictedForAddOns) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitHealthMaxRestricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1024,7 +1024,7 @@
 
 `UnitHealthMissing(unit: UnitTokenPvPRestrictedForAddOns, usePredicted: bool = True) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Result of UnitHealthMax() - UnitHealth()
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
@@ -1034,7 +1034,7 @@
 
 `UnitHealthPercent(unit: UnitTokenPvPRestrictedForAddOns, usePredicted: bool = True, curve: LuaCurveObjectBase?) → result: LuaCurveEvaluatedResult`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns percent of health remaining - can be scaled via a curve for display purposes
 - `result`: If no curve is specified, a floating point percentage value. Else, the result of evaluating the curve with the percentage as the input.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -1046,7 +1046,7 @@
 
 `UnitHonor(unit: UnitToken) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1054,7 +1054,7 @@
 
 `UnitHonorLevel(unit: UnitToken) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1063,7 +1063,7 @@
 
 `UnitHonorMax(unit: UnitToken) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1071,7 +1071,7 @@
 
 `UnitInAnyGroup(unit: UnitToken?, partyIndex: luaIndex?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1079,7 +1079,7 @@
 
 `UnitInBattleground(unit: UnitToken?, partyIndex: luaIndex?) → result: luaIndex?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1087,7 +1087,7 @@
 
 `UnitInOtherParty(unit: UnitToken) → inOtherParty: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Checks whether this unit cannot see your party chat because it is in an instance group
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1096,7 +1096,7 @@
 
 `UnitInParty(unit: UnitToken?, partyIndex: luaIndex?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1104,7 +1104,7 @@
 
 `UnitInPartyIsAI(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1112,7 +1112,7 @@
 
 `UnitInPartyShard(unit: UnitToken) → inPartyShard: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1120,7 +1120,7 @@
 
 `UnitInRaid(unit: UnitToken?, partyIndex: luaIndex?) → result: luaIndex?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1129,7 +1129,7 @@
 
 `UnitInRange(unit: UnitToken) → inRange: bool, checkedRange: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1138,7 +1138,7 @@
 
 `UnitInSubgroup(unit: UnitToken?, partyIndex: luaIndex?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1146,7 +1146,7 @@
 
 `UnitInVehicle(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1154,7 +1154,7 @@
 
 `UnitInVehicleControlSeat(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1162,7 +1162,7 @@
 
 `UnitInVehicleHidesPetFrame(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1170,7 +1170,7 @@
 
 `UnitIsAFK(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret during chat lockdown (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1179,7 +1179,7 @@
 
 `UnitIsBattlePet(unit: UnitToken) → result: bool?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1187,7 +1187,7 @@
 
 `UnitIsBattlePetCompanion(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1195,7 +1195,7 @@
 
 `UnitIsBossMob(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1203,7 +1203,7 @@
 
 `UnitIsCharmed(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitPossessionRestricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1212,7 +1212,7 @@
 
 `UnitIsConnected(unit: UnitToken) → isConnected: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1220,7 +1220,7 @@
 
 `UnitIsControlling(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1228,7 +1228,7 @@
 
 `UnitIsCorpse(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1236,7 +1236,7 @@
 
 `UnitIsDND(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret during chat lockdown (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1245,7 +1245,7 @@
 
 `UnitIsDead(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1253,7 +1253,7 @@
 
 `UnitIsDeadOrGhost(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1261,7 +1261,7 @@
 
 `UnitIsEnemy(unit: UnitToken, target: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1269,7 +1269,7 @@
 
 `UnitIsFeignDeath(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1277,7 +1277,7 @@
 
 `UnitIsFriend(unit: UnitToken, target: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1285,7 +1285,7 @@
 
 `UnitIsGameObject(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1293,7 +1293,7 @@
 
 `UnitIsGhost(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1301,7 +1301,7 @@
 
 `UnitIsGroupAssistant(unit: UnitToken) → isAssistant: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1310,7 +1310,7 @@
 
 `UnitIsGroupLeader(unit: UnitToken, partyCategory: luaIndex?) → isLeader: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1319,7 +1319,7 @@
 
 `UnitIsHumanPlayer(unit: UnitToken?, partyIndex: luaIndex?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1327,7 +1327,7 @@
 
 `UnitIsInInteractRange(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1335,7 +1335,7 @@
 
 `UnitIsInMyGuild(unit: cstring) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1343,7 +1343,7 @@
 
 `UnitIsInteractable(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1351,7 +1351,7 @@
 
 `UnitIsLieutenant(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1359,7 +1359,7 @@
 
 `UnitIsMercenary(name: cstring) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1367,7 +1367,7 @@
 
 `UnitIsMinion(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns whether the unit is considered a minion of a player, such as a pet, totem, or guardian.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1376,7 +1376,7 @@
 
 `UnitIsNPCAsPlayer(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1384,7 +1384,7 @@
 
 `UnitIsOtherPlayersBattlePet(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1392,7 +1392,7 @@
 
 `UnitIsOtherPlayersPet(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1400,7 +1400,7 @@
 
 `UnitIsOwnerOrControllerOfUnit(controllingUnit: UnitToken, controlledUnit: UnitToken) → unitIsOwnerOrControllerOfUnit: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1409,7 +1409,7 @@
 
 `UnitIsPVP(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1418,7 +1418,7 @@
 
 `UnitIsPVPFreeForAll(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1426,7 +1426,7 @@
 
 `UnitIsPVPSanctuary(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1434,7 +1434,7 @@
 
 `UnitIsPlayer(unit: UnitToken?, partyIndex: luaIndex?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1442,7 +1442,7 @@
 
 `UnitIsPlayerControlledOrGroupMember(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns true for 'player', 'pet', 'vehicle', or any of 'partyn', 'partypetn', 'raidn', 'raidpetn'
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1451,7 +1451,7 @@
 
 `UnitIsPossessed(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitPossessionRestricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1460,7 +1460,7 @@
 
 `UnitIsQuestBoss(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1468,7 +1468,7 @@
 
 `UnitIsRaidOfficer(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1477,7 +1477,7 @@
 
 `UnitIsSameServer(unitName: cstring) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1485,7 +1485,7 @@
 
 `UnitIsTapDenied(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1493,7 +1493,7 @@
 
 `UnitIsTrivial(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1501,7 +1501,7 @@
 
 `UnitIsUnconscious(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1509,7 +1509,7 @@
 
 `UnitIsUnit(unit1: UnitToken, unit2: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresComparableUnitTokens (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitComparisonRestricted (Blizzard's docs; not checked in game)
@@ -1519,7 +1519,7 @@
 
 `UnitIsVisible(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1527,7 +1527,7 @@
 
 `UnitIsWildBattlePet(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1535,7 +1535,7 @@
 
 `UnitLeadsAnyGroup(unit: UnitToken) → isLeader: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1544,7 +1544,7 @@
 
 `UnitLevel(name: cstring) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1552,7 +1552,7 @@
 
 `UnitName(unit: UnitToken) → unitName: cstring, unitServer: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitNameIdentityRestricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1561,7 +1561,7 @@
 
 `UnitNameFromGUID(unitGUID: WOWGUID) → unitName: cstring, unitServer: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1570,7 +1570,7 @@
 
 `UnitNameUnmodified(unit: UnitToken) → unitName: cstring, unitServer: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1579,7 +1579,7 @@
 
 `UnitNameplateShowsWidgetsOnly(unit: UnitToken) → nameplateShowsWidgetsOnly: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1587,7 +1587,7 @@
 
 `UnitNumPowerBarTimers(unit: UnitToken) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1595,7 +1595,7 @@
 
 `UnitOnTaxi(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1603,7 +1603,7 @@
 
 `UnitOwnerGUID(unit: UnitTokenPvPRestrictedForAddOns) → ownerGUID: WOWGUID`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1612,7 +1612,7 @@
 
 `UnitPVPName(unit: UnitToken) → result: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1621,7 +1621,7 @@
 
 `UnitPartialPower(unitToken: UnitTokenPvPRestrictedForAddOns, powerType: PowerType?, unmodified: bool = False) → partialPower: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit power is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1630,7 +1630,7 @@
 
 `UnitPercentHealthFromGUID(unitGUID: WOWGUID) → percentHealth: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1639,7 +1639,7 @@
 
 `UnitPhaseReason(unit: UnitToken) → reason: PhaseReason?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1648,7 +1648,7 @@
 
 `UnitPlayerControlled(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1656,7 +1656,7 @@
 
 `UnitPlayerOrPetInParty(unit: UnitToken?, partyIndex: luaIndex?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1664,7 +1664,7 @@
 
 `UnitPlayerOrPetInRaid(unit: UnitToken?, partyIndex: luaIndex?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1672,7 +1672,7 @@
 
 `UnitPosition(unit: UnitToken) → positionX: number, positionY: number, positionZ: number, mapID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1680,7 +1680,7 @@
 
 `UnitPower(unitToken: UnitTokenPvPRestrictedForAddOns, powerType: PowerType?, unmodified: bool = False) → power: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit power is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1689,7 +1689,7 @@
 
 `UnitPowerBarID(unitToken: UnitToken) → barID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1697,7 +1697,7 @@
 
 `UnitPowerBarTimerInfo(unit: UnitToken, index: luaIndex = 0) → duration: number, expiration: number, barID: number, auraID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
@@ -1707,7 +1707,7 @@
 
 `UnitPowerDisplayMod(powerType: PowerType) → displayMod: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1715,7 +1715,7 @@
 
 `UnitPowerMax(unitToken: UnitTokenPvPRestrictedForAddOns, powerType: PowerType?, unmodified: bool = False) → maxPower: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitPowerMaxRestricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1724,7 +1724,7 @@
 
 `UnitPowerMissing(unitToken: UnitTokenPvPRestrictedForAddOns, powerType: PowerType?, unmodified: bool = False) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Result of UnitPowerMax() - UnitPower()
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit power is restricted (Blizzard's docs; not checked in game)
@@ -1734,7 +1734,7 @@
 
 `UnitPowerPercent(unitToken: UnitTokenPvPRestrictedForAddOns, powerType: PowerType?, unmodified: bool = False, curve: LuaCurveObjectBase?) → result: LuaCurveEvaluatedResult`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Queries the percent of power remaining, optionally evaluating it against a supplied curve.
 - `result`: If no curve is specified, a floating point percentage value. Else, the result of evaluating the curve with the percentage as the input.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -1746,7 +1746,7 @@
 
 `UnitPowerType(unit: UnitTokenPvPRestrictedForAddOns, index: number = 0) → powerType: PowerType, powerTypeToken: string, rgbX: number, rgbY: number, rgbZ: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1755,7 +1755,7 @@
 
 `UnitPvpClassification(unit: UnitTokenPvPRestrictedForAddOns) → classification: PvPUnitClassification?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1763,7 +1763,7 @@
 
 `UnitQuestTrivialLevelRange(unit: UnitToken) → levelRange: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1771,7 +1771,7 @@
 
 `UnitQuestTrivialLevelRangeScaling(unit: UnitToken) → levelRange: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1779,7 +1779,7 @@
 
 `UnitRace(unit: UnitToken) → localizedRaceName: cstring, englishRaceName: cstring, raceID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
@@ -1789,7 +1789,7 @@
 
 `UnitRangedAttackPower(unit: UnitToken) → attackPower: number, posBuff: number, negBuff: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1798,7 +1798,7 @@
 
 `UnitRangedDamage(unit: UnitToken) → speed: number, minDamage: number, maxDamage: number, posBuff: number, negBuff: number, percent: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1807,7 +1807,7 @@
 
 `UnitReaction(unit: UnitToken, target: UnitToken) → result: luaIndex?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1815,7 +1815,7 @@
 
 `UnitRealmRelationship(unit: UnitToken) → realmRelationship: luaIndex?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1823,7 +1823,7 @@
 
 `UnitResistance(unit: UnitToken, damageClass: Damageclass) → baseResistance: number, realResistance: number, effectiveResistance: number, bonusResistance: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1832,7 +1832,7 @@
 
 `UnitSelectionColor(unit: UnitToken, useExtendedColors: bool = False) → resultR: number, resultG: number, resultB: number, resultA: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1840,7 +1840,7 @@
 
 `UnitSelectionType(unit: UnitToken, useExtendedColors: bool = False) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1848,7 +1848,7 @@
 
 `UnitSex(unit: UnitToken) → sex: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1857,7 +1857,7 @@
 
 `UnitSexBase(unit: UnitToken) → sex: UnitSex?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1866,7 +1866,7 @@
 
 `UnitShouldDisplayName(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1874,7 +1874,7 @@
 
 `UnitShouldDisplaySpellTargetName(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: If the unit is currently casting a spell, returns whether the target's name should be displayed. Returns false if the unit is not casting a spell or the spell has no target.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1883,7 +1883,7 @@
 
 `UnitSpellHaste(unit: UnitToken) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1892,7 +1892,7 @@
 
 `UnitSpellTargetClass(unit: UnitToken) → classFilename: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: If the unit is currently casting a spell, returns the class of the spell's target unit. Returns nil if the unit is not casting a spell or the spell has no target.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
@@ -1902,7 +1902,7 @@
 
 `UnitSpellTargetName(unit: UnitToken) → targetName: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: If the unit is currently casting a spell, returns the name of the spell's target unit. Returns nil if the unit is not casting a spell or the spell has no target.
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -1913,7 +1913,7 @@
 
 `UnitStagger(unit: UnitTokenPvPRestrictedForAddOns) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1921,7 +1921,7 @@
 
 `UnitStat(unit: UnitToken, index: luaIndex) → currentStat: number, effectiveStat: number, statPositiveBuff: number, statNegativeBuff: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1930,7 +1930,7 @@
 
 `UnitSwitchToVehicleSeat(unit: UnitToken, virtualSeatIndex: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1938,7 +1938,7 @@
 
 `UnitTargetsVehicleInRaidUI(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1946,7 +1946,7 @@
 
 `UnitThreatLeadSituation(unit: UnitToken, mobGUID: UnitToken) → result: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns a threat state (0-3; representing none, yellow, orange, red) that indicates how far the provided unit is above the secondmost threat on the provided mob. If the unit is not first on threat, will always return red. Can return nil if the provided mob does not exist.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitThreatStateRestricted (Blizzard's docs; not checked in game)
@@ -1956,7 +1956,7 @@
 
 `UnitThreatPercentageOfLead(unit: UnitToken, mobGUID: UnitToken) → result: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitThreatValuesRestricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1965,7 +1965,7 @@
 
 `UnitThreatSituation(unit: UnitToken, mobGUID: UnitToken?) → result: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitThreatStateRestricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1974,7 +1974,7 @@
 
 `UnitTokenFromGUID(unitGUID: WOWGUID) → unitToken: string?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -1983,7 +1983,7 @@
 
 `UnitTreatAsPlayerForDisplay(unit: UnitToken) → treatAsPlayer: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1991,7 +1991,7 @@
 
 `UnitTrialBankedLevels(unit: UnitToken) → bankedLevels: number, xpIntoCurrentLevel: number, xpForNextLevel: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1999,7 +1999,7 @@
 
 `UnitTrialXP(unit: UnitToken) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2007,7 +2007,7 @@
 
 `UnitUsesAmmo(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2015,7 +2015,7 @@
 
 `UnitUsingVehicle(unit: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2023,7 +2023,7 @@
 
 `UnitVehicleSeatCount(unit: UnitToken) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2031,7 +2031,7 @@
 
 `UnitVehicleSeatInfo(unit: UnitToken, virtualSeatIndex: luaIndex) → controlType: cstring, occupantName: cstring, serverName: cstring, ejectable: bool, canSwitchSeats: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -2040,7 +2040,7 @@
 
 `UnitVehicleSkin(unit: UnitToken?) → result: fileID`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2048,7 +2048,7 @@
 
 `UnitWeaponAttackPower(unit: UnitToken) → mainHandWeaponAttackPower: number, offHandWeaponAttackPower: number, rangedWeaponAttackPower: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -2057,7 +2057,7 @@
 
 `UnitWidgetSet(unit: UnitToken) → uiWidgetSet: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
@@ -2066,7 +2066,7 @@
 
 `UnitXP(unit: UnitToken) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2074,7 +2074,7 @@
 
 `UnitXPMax(unit: UnitToken) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2082,7 +2082,7 @@
 
 `WorldLootObjectExists(unit: UnitToken?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2090,415 +2090,432 @@
 
 ### ACTIVE_PLAYER_SPECIALIZATION_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### ARENA_COOLDOWNS_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### ARENA_CROWD_CONTROL_SPELL_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `spellID: number`
 - SecretWhenLossOfControlInfoRestricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### AUTOFOLLOW_BEGIN
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `name: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### AUTOFOLLOW_END
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### CANCEL_SUMMON
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### COMBO_TARGET_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (2 in combat); argument kinds: ``
 
 ### CONFIRM_BINDER
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `areaName: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### CONFIRM_SUMMON
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `summonReason: number`, `skippingStartExperience: bool`
 - fires synchronously (Blizzard's docs)
 
 ### ECLIPSE_DIRECTION_CHANGE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `direction: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### HEARTHSTONE_BOUND
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### HONOR_XP_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### INCOMING_RESURRECT_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### INCOMING_SUMMON_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### KNOWN_TITLES_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### LOCALPLAYER_PET_RENAMED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### MIRROR_TIMER_PAUSE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `timerName: cstring`, `paused: number`
 - fires synchronously (Blizzard's docs)
 
 ### MIRROR_TIMER_START
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `timerName: cstring`, `value: number`, `maxValue: number`, `scale: number`, `paused: number`, `timerLabel: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### MIRROR_TIMER_STOP
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `timerName: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### NEUTRAL_FACTION_SELECT_RESULT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `success: bool`
 - fires synchronously (Blizzard's docs)
 
 ### OBJECT_ENTERED_AOI
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `guid: WOWGUID`
 - fires synchronously (Blizzard's docs)
 
 ### OBJECT_LEFT_AOI
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `guid: WOWGUID`
 - fires synchronously (Blizzard's docs)
 
 ### PARTY_KILL
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `attackerGUID: WOWGUID`, `targetGUID: WOWGUID`
 - secret while unit identity is restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (1 in combat); argument kinds: `s,s`
 
 ### PET_BAR_UPDATE_USABLE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 9 times (7 in combat); argument kinds: ``
 
 ### PET_UI_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_CAN_GLIDE_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `canGlide: bool`
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_DAMAGE_DONE_MODS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_ENTER_COMBAT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (1 in combat); argument kinds: ``
 
 ### PLAYER_FARSIGHT_FOCUS_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_FLAGS_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_FOCUS_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_IMPULSE_APPLIED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_IS_GLIDING_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `isGliding: bool`
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_LEAVE_COMBAT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (1 in combat); argument kinds: ``
 
 ### PLAYER_LEVEL_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `oldLevel: number`, `newLevel: number`, `real: bool`
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_LEVEL_UP
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `level: number`, `healthDelta: number`, `powerDelta: number`, `numNewTalents: number`, `numNewPvpTalentSlots: number`, `strengthDelta: number`, `agilityDelta: number`, `staminaDelta: number`, `intellectDelta: number`, `spiritDelta: number`
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_MAX_LEVEL_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_MOUNT_DISPLAY_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_PVP_KILLS_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_PVP_RANK_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_REGEN_DISABLED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### PLAYER_REGEN_ENABLED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### PLAYER_SOFT_ENEMY_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (1 in combat); argument kinds: ``
 
 ### PLAYER_SOFT_FRIEND_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_SOFT_INTERACT_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `oldTarget: WOWGUID`, `newTarget: WOWGUID`
 - secret while unit identity is restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_SOFT_TARGET_INTERACTION
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_SPECIALIZATION_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
 
 ### PLAYER_STARTED_LOOKING
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 9 times (3 in combat); argument kinds: ``
 
 ### PLAYER_STARTED_MOVING
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 20 times (6 in combat); argument kinds: ``
 
 ### PLAYER_STARTED_TURNING
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 11 times (2 in combat); argument kinds: ``
 
 ### PLAYER_STOPPED_LOOKING
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 9 times (3 in combat); argument kinds: ``
 
 ### PLAYER_STOPPED_MOVING
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 20 times (7 in combat); argument kinds: ``
 
 ### PLAYER_STOPPED_TURNING
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 11 times (3 in combat); argument kinds: ``
 
 ### PLAYER_TARGET_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 6 times (1 in combat); argument kinds: ``
 
 ### PLAYER_TRIAL_XP_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_UPDATE_RESTING
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_XP_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (2 in combat); argument kinds: `s`
 
 ### PORTRAITS_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
 
 ### PROVING_GROUNDS_SCORE_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `points: number`
 - fires synchronously (Blizzard's docs)
 
 ### PVP_TIMER_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### RUNE_POWER_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `runeIndex: number`, `added: bool?`
 - SecretPayloads (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### RUNE_TYPE_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `runeIndex: number`
 - SecretPayloads (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### SHOW_FACTION_SELECT_UI
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### SPELL_CONFIRMATION_PROMPT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `spellID: number`, `effectValue: number`, `message: cstring`, `duration: number`, `currencyTypesID: number`, `currencyCost: number`, `currentDifficulty: number`, `displayItemID: number`, `itemContext: number`, `treasureContextLevel: number`
 - fires synchronously (Blizzard's docs)
 
 ### SPELL_CONFIRMATION_TIMEOUT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `spellID: number`, `effectValue: number`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_ABSORB_AMOUNT_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_AREA_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 3 times (2 in combat); argument kinds: `s`
 
 ### UNIT_ARENA_COOLDOWNS_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - Blizzard: Only signaled when the active player is a commentator or spectator.
 - fires synchronously (Blizzard's docs)
@@ -2506,176 +2523,185 @@
 
 ### UNIT_ATTACK
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `s`
 
 ### UNIT_ATTACK_POWER
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_ATTACK_SPEED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_CHEAT_TOGGLE_EVENT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_CLASSIFICATION_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_COMBAT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `event: cstring`, `flagText: cstring`, `amount: number`, `schoolMask: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 96 times (96 in combat); argument kinds: `s,s,s,S,n`
 
 ### UNIT_CONNECTION
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `isConnected: bool`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_CTR_OPTIONS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_DAMAGE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_DEFENSE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `s`
 
 ### UNIT_DIED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitGUID: WOWGUID`
 - secret while unit identity is restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (1 in combat); argument kinds: `s`
 
 ### UNIT_DISPLAYPOWER
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_DISTANCE_CHECK_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `isInDistance: bool`
 - SecretPayloads (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_FACTION
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_FLAGS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 13 times (8 in combat); argument kinds: `s`
 
 ### UNIT_FORM_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
 
 ### UNIT_HAPPINESS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 49 times (44 in combat); argument kinds: `s`
 
 ### UNIT_HEALTH
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
+- Seen firing 127 times (75 in combat); argument kinds: `s`
 
 ### UNIT_HEAL_ABSORB_AMOUNT_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_HEAL_PREDICTION
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_INVENTORY_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: `s`
 
 ### UNIT_IN_RANGE_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `isInRange: bool`
 - SecretPayloads (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_LEVEL
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
 
 ### UNIT_LOOT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitGUID: WOWGUID`, `hasLoot: bool`
 - fires synchronously (Blizzard's docs)
+- Seen firing 3 times (1 in combat); argument kinds: `s,b`
 
 ### UNIT_MANA
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_MAXHEALTH
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
 
 ### UNIT_MAXPOWER
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `powerType: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_MAX_HEALTH_MODIFIERS_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `percentMaxHealthAdjusted: number`
 - SecretPayloads (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
@@ -2683,298 +2709,313 @@
 
 ### UNIT_MODEL_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `s`
 
 ### UNIT_NAME_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_OTHER_PARTY_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_PET
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_PET_EXPERIENCE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_PET_TRAINING_POINTS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_PHASE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_PORTRAIT_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `s`
 
 ### UNIT_POWER_BAR_HIDE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_POWER_BAR_SHOW
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_POWER_BAR_TIMER_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - unique event (Blizzard's docs)
 
 ### UNIT_POWER_FREQUENT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `powerType: cstring`
 - fires synchronously (Blizzard's docs)
+- Seen firing 402 times (331 in combat); argument kinds: `s,s`
 
 ### UNIT_POWER_POINT_CHARGE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - secret while unit power is restricted (Blizzard's docs)
 - unique event (Blizzard's docs)
 
 ### UNIT_POWER_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `powerType: cstring`
 - fires synchronously (Blizzard's docs)
+- Seen firing 64 times (58 in combat); argument kinds: `s,s`
 
 ### UNIT_QUEST_LOG_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_RANGEDDAMAGE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_RANGED_ATTACK_POWER
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `s`
 
 ### UNIT_RESISTANCES
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_SPELLCAST_CHANNEL_START
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_SPELLCAST_CHANNEL_STOP
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `interruptedBy: WOWGUID`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_SPELLCAST_CHANNEL_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_SPELLCAST_DELAYED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_SPELLCAST_EMPOWER_START
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_SPELLCAST_EMPOWER_STOP
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `complete: bool`, `interruptedBy: WOWGUID`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_SPELLCAST_EMPOWER_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_SPELLCAST_FAILED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 36 times (36 in combat); argument kinds: `s,s,n,-`
 
 ### UNIT_SPELLCAST_FAILED_QUIET
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 6 times (6 in combat); argument kinds: `s,s,n,-`
 
 ### UNIT_SPELLCAST_INTERRUPTED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `interruptedBy: WOWGUID`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_SPELLCAST_INTERRUPTIBLE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_SPELLCAST_NOT_INTERRUPTIBLE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_SPELLCAST_RETICLE_CLEAR
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_SPELLCAST_RETICLE_TARGET
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_SPELLCAST_SENT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `target: cstring`, `castGUID: WOWGUID`, `spellID: number`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 22 times (20 in combat); argument kinds: `s,s,s,n`
 
 ### UNIT_SPELLCAST_START
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `s,s,n,s`
 
 ### UNIT_SPELLCAST_STOP
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `s,s,n,s`
 
 ### UNIT_SPELLCAST_SUCCEEDED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 14 times (12 in combat); argument kinds: `s,s,n,-` / `s,s,n,s`
 
 ### UNIT_SPELL_HASTE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_STATS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 
 ### UNIT_TARGET
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 9 times (4 in combat); argument kinds: `s`
 
 ### UNIT_TARGETABLE_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - unique event (Blizzard's docs)
 
 ### UNIT_THREAT_LIST_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
+- Seen firing 47 times (46 in combat); argument kinds: `s`
 
 ### UNIT_THREAT_SITUATION_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
+- Seen firing 4 times (2 in combat); argument kinds: `s`
 
 ### UPDATE_EXHAUSTION
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### UPDATE_MOUSEOVER_UNIT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 9 times (5 in combat); argument kinds: ``
 
 ### UPDATE_STEALTH
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### VEHICLE_ANGLE_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `normalizedPitch: number`, `radians: number`
 - fires synchronously (Blizzard's docs)
 
@@ -2989,7 +3030,7 @@
 
 ### PhaseReason
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Phasing` = 0
   - `Sharding` = 1
   - `WarMode` = 2
@@ -2999,7 +3040,7 @@
 
 ### PvPUnitClassification
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `FlagCarrierHorde` = 0
   - `FlagCarrierAlliance` = 1
   - `FlagCarrierNeutral` = 2

@@ -4,13 +4,13 @@
 
 ### ENTITLEMENT_DELIVERED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `entitlementType: WoWEntitlementType`, `textureID: number`, `name: string`, `payloadID: number?`, `showFancyToast: bool`
 - fires synchronously (Blizzard's docs)
 
 ### RAF_ENTITLEMENT_DELIVERED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `entitlementType: WoWEntitlementType`, `textureID: number`, `name: string`, `payloadID: number?`, `showFancyToast: bool`, `rafVersion: RecruitAFriendRewardsVersion`
 - fires synchronously (Blizzard's docs)
 
@@ -18,7 +18,7 @@
 
 ### WoWEntitlementType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Item` = 0
   - `Mount` = 1
   - `Battlepet` = 2

@@ -1,0 +1,115 @@
+# ModelSceneActor
+
+Object type reported: `ModelSceneActor`
+
+Script handlers: none found
+
+## Methods
+
+- ✅ `AddAccessRestrictions(restrictions: ScriptObjectAccessRestriction)` — Adds access restrictions to a script object, preventing it from being used in API calls when enforced. (restricted in some situations; secret arguments: NotAllowed)
+- ✅ `AddForbiddenAspects(aspects: ForbiddenAspect)` — Adds forbidden aspects to a script object, restricting access to various functionalities such as script bindings. (restricted in some situations; secret arguments: NotAllowed)
+- ✅ `AddSecretAspect(aspect: SecretAspect)` (restricted in some situations; secret arguments: AllowedWhenUntainted)
+- ✅ `AttachToMount(rider: ModelSceneFrameActor, animation: AnimationDataEnum, spellKitVisualID: number?) → success: bool` (secret arguments: AllowedWhenUntainted)
+- ✅ `CalculateMountScale(rider: ModelSceneFrameActor) → scale: number` (secret arguments: AllowedWhenUntainted)
+- ✅ `CanBeAccessedInContext() → canAccess: bool` — Returns whether the current Lua execution context has permission to access this object. (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecurity'])
+- ✅ `ClearModel()`
+- ✅ `ClearParentKey()`
+- ✅ `DetachFromMount(rider: ModelSceneFrameActor) → success: bool` (secret arguments: AllowedWhenUntainted)
+- ✅ `Dress()`
+- ✅ `DressPlayerSlot(invSlot: luaIndex)` (secret arguments: AllowedWhenUntainted)
+- ✅ `GetAccessRestrictions() → restrictions: ScriptObjectAccessRestriction` — Returns the mask of all access restrictions applied to this object. (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecurity'])
+- ✅ `GetActiveBoundingBox() → boxBottom: vector3, boxTop: vector3`
+- ✅ `GetAlpha() → alpha: number` (SecretReturnsForAspect: ['Enum.SecretAspect.Alpha'])
+- ✅ `GetAnimation() → animation: AnimationDataEnum`
+- ✅ `GetAnimationBlendOperation() → blendOp: ModelBlendOperation`
+- ✅ `GetAnimationVariation() → variation: number`
+- ✅ `GetAutoDress() → enabled: bool`
+- ✅ `GetDebugName(preferParentKey: bool = False) → debugName: string` (ConstSecretAccessor; secret arguments: AllowedWhenUntainted)
+- ✅ `GetDesaturation() → strength: number`
+- ✅ `GetForbiddenAspects() → aspects: ForbiddenAspect` — Returns the mask of all forbidden aspects applied to this object. (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecurity'])
+- ✅ `GetInheritableForbiddenAspects(path: ScriptObjectPropagationPath) → aspects: ForbiddenAspect` — Returns the mask of all forbidden aspects applied to this object that can propagate to others. (secret arguments: NotAllowed; SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecurity'])
+- ✅ `GetItemTransmogInfo(inventorySlot: luaIndex) → itemTransmogInfo: ItemTransmogInfo` (may return nothing; secret arguments: AllowedWhenUntainted)
+- ✅ `GetItemTransmogInfoList() → infoList: ItemTransmogInfo[]`
+- ✅ `GetMaxBoundingBox() → boxBottom: vector3, boxTop: vector3`
+- ✅ `GetModelFileID() → file: fileID`
+- ✅ `GetModelPath() → path: string`
+- ✅ `GetModelUnitGUID() → guid: WOWGUID`
+- ✅ `GetName() → name: cstring` (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectName'])
+- ✅ `GetObeyHideInTransmogFlag() → enabled: bool`
+- ✅ `GetObjectTable() → objectTable: FrameScriptObject`
+- ✅ `GetObjectType() → objectType: cstring` (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectType'])
+- ✅ `GetParent() → parent: CScriptObject` (SecretReturnsForAspect: ['Enum.SecretAspect.Hierarchy'])
+- ✅ `GetParentKey() → parentKey: cstring`
+- ✅ `GetParticleOverrideScale() → scale: number?`
+- ✅ `GetPaused() → paused: bool, globalPaused: bool`
+- ✅ `GetPitch() → pitch: number`
+- ✅ `GetPosition() → positionX: number, positionY: number, positionZ: number`
+- ✅ `GetRoll() → roll: number`
+- ✅ `GetScale() → scale: number`
+- ✅ `GetSheathed() → sheathed: bool`
+- ✅ `GetSpellVisualKit() → spellVisualKitID: number`
+- ✅ `GetUseTransmogChoices() → enabled: bool`
+- ✅ `GetUseTransmogSkin() → enabled: bool`
+- ✅ `GetYaw() → yaw: number`
+- ✅ `HasAccessConstraints() → hasAccessConstraints: bool` — Returns whether this object has any access constraints that may limit access from some Lua execution contexts. (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecurity'])
+- ✅ `HasAnyAccessRestrictions(restrictions: ScriptObjectAccessRestriction?) → hasAnyAccessRestriction: bool` — Returns true if this object has any of the supplied access restrictions applied. (secret arguments: AllowedWhenUntainted; SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecurity'])
+- ✅ `HasAnyForbiddenAspects(aspects: ForbiddenAspect?) → hasAnyForbiddenAspect: bool` — Returns true if this object has any of the supplied forbidden aspects added. (secret arguments: AllowedWhenUntainted; SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecurity'])
+- ✅ `HasAnySecretAspect() → hasSecretAspect: bool` (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecrets'])
+- ✅ `HasSecretAspect(aspect: SecretAspect) → hasSecretAspect: bool` (ConstSecretAccessor; secret arguments: AllowedWhenUntainted; SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecrets'])
+- ✅ `HasSecretValues() → hasSecretValues: bool` (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecrets'])
+- ✅ `Hide()`
+- ✅ `IsForbidden() → isForbidden: bool` — Returns whether this object has been explicitly marked as forbidden. (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecurity'])
+- ✅ `IsGeoReady() → ready: bool`
+- ✅ `IsLoaded() → isLoaded: bool`
+- ✅ `IsObjectType(objectType: cstring) → isType: bool` (ConstSecretAccessor; secret arguments: AllowedWhenUntainted; SecretReturnsForAspect: ['Enum.SecretAspect.ObjectType'])
+- ✅ `IsPreferringModelCollisionBounds() → preferringCollisionBounds: bool`
+- ✅ `IsPreventingSecretValues() → isPreventingSecretValues: bool` (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecrets'])
+- ✅ `IsShown() → isShown: bool`
+- ✅ `IsSlotAllowed(slot: luaIndex) → allowed: bool` (secret arguments: AllowedWhenUntainted)
+- ✅ `IsSlotVisible(slot: luaIndex) → visible: bool` (secret arguments: AllowedWhenUntainted)
+- ✅ `IsUsingCenterForOrigin() → x: bool, y: bool, z: bool`
+- ✅ `IsVisible() → isVisible: bool`
+- ✅ `PlayAnimationKit(animationKit: number, isLooping: bool = False)` (secret arguments: AllowedWhenUntainted)
+- ✅ `ReleaseFrontEndCharacterDisplays() → success: bool`
+- ✅ `ResetNextHandSlot()`
+- ✅ `SetAlpha(alpha: number)` (secret arguments: AllowedWhenUntainted; SecretArgumentsAddAspect: ['Enum.SecretAspect.Alpha'])
+- ✅ `SetAnimation(animation: AnimationDataEnum, variation: number?, animSpeed: number = 1, animOffsetSeconds: number = 0)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetAnimationBlendOperation(blendOp: ModelBlendOperation)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetAutoDress(enabled: bool = False)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetDesaturation(strength: number)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetForbidden()` (restricted in some situations)
+- ✅ `SetFrontEndLobbyModelFromDefaultCharacterDisplay(characterIndex: number) → success: bool` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetGradientMask(gradientIndex0: number, gradientIndex1: number, gradientIndex2: number, gradientIndex3: number)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetGradientMaskWithDyes(grad0DyeColorID: number?, grad1DyeColorID: number?, grad2DyeColorID: number?)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetItemTransmogInfo(itemTransmogInfo: ItemTransmogInfo, inventorySlot: luaIndex?, ignoreChildItems: bool = False) → result: ItemTryOnReason` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetModelByCreatureDisplayID(creatureDisplayID: number, useActivePlayerCustomizations: bool = False) → success: bool` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetModelByFileID(asset: FileAsset, useMips: bool = False) → success: bool` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetModelByHyperlink(link: cstring) → success: bool` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetModelByPath(asset: FileAsset, useMips: bool = False) → success: bool` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetModelByUnit(unit: UnitToken, sheatheWeapons: bool = False, autoDress: bool = True, hideWeapons: bool = False, usePlayerNativeForm: bool = True, holdBowString: bool = False, customRaceID: number?) → success: bool` (RequiresDeclassifiedUnitIdentity; secret arguments: AllowedWhenUntainted)
+- ✅ `SetModelByUnitCreatureDisplayID(unit: UnitToken) → success: bool` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetObeyHideInTransmogFlag(enabled: bool = False)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetParentKey(parentKey: cstring, clearOtherKeys: bool = False)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetParticleOverrideScale(scale: number?)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetPaused(paused: bool, affectsGlobalPause: bool = True)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetPitch(pitch: number)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetPlayerModelFromGlues(characterIndex: number?, sheatheWeapons: bool = False, autoDress: bool = True, hideWeapons: bool = False, usePlayerNativeForm: bool = True, customRaceID: number?) → success: bool` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetPosition(positionX: number, positionY: number, positionZ: number)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetPreferModelCollisionBounds(preferCollisionBounds: bool)` — If true, will try to use the collision bounds of models for sizing and centering. Will fall back to default model bounds if set to False, or if collision bounds are unavailable. (secret arguments: AllowedWhenUntainted)
+- ✅ `SetRoll(roll: number)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetScale(scale: number)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetSheathed(sheathed: bool = False, hideWeapons: bool = False)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetSheathedCategory(inventorySlots: number, category: TransmogOutfitSlotOptionSheatheCategory)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetShown(show: bool = False)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetSpellVisualKit(spellVisualKitID: number = 0, oneShot: bool = False)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetToDefaults()` — Reset all script accessible values to their default values. If possible, clears secret states. (ChecksForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.SetToDefaults'}, {'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.RemoveSecretAspects'}]; protected: only Blizzard's secure code may call it)
+- ✅ `SetUseCenterForOrigin(x: bool = False, y: bool = False, z: bool = False)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetUseTransmogChoices(enabled: bool = False)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetUseTransmogSkin(enabled: bool = False)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetYaw(yaw: number)` (secret arguments: AllowedWhenUntainted)
+- ✅ `Show()`
+- ✅ `StopAnimationKit()`
+- ✅ `TryOn(linkOrItemModifiedAppearanceID: IDOrLink, handSlotName: cstring?, spellEnchantID: number?) → result: ItemTryOnReason?` (secret arguments: AllowedWhenUntainted)
+- ✅ `Undress()`
+- ✅ `UndressSlot(inventorySlot: luaIndex)` (secret arguments: AllowedWhenUntainted)
+- ✅ `UseUnitSheatheCategory(useCategory: bool)` (secret arguments: AllowedWhenUntainted)

@@ -6,23 +6,23 @@ Namespace: `C_DateAndTime`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_DateAndTime.AdjustTimeByDays](#c_dateandtimeadjusttimebydays) |  |  |
-| ❔ | [C_DateAndTime.AdjustTimeByMinutes](#c_dateandtimeadjusttimebyminutes) |  |  |
-| ❔ | [C_DateAndTime.AdjustTimeByMonths](#c_dateandtimeadjusttimebymonths) |  |  |
-| ❔ | [C_DateAndTime.CompareCalendarTime](#c_dateandtimecomparecalendartime) |  |  |
-| ❔ | [C_DateAndTime.GetCalendarTimeFromEpoch](#c_dateandtimegetcalendartimefromepoch) |  |  |
-| ❔ | [C_DateAndTime.GetCurrentCalendarTime](#c_dateandtimegetcurrentcalendartime) |  |  |
-| ❔ | [C_DateAndTime.GetSecondsUntilDailyReset](#c_dateandtimegetsecondsuntildailyreset) |  |  |
-| ❔ | [C_DateAndTime.GetSecondsUntilWeeklyReset](#c_dateandtimegetsecondsuntilweeklyreset) |  |  |
-| ❔ | [C_DateAndTime.GetServerTimeLocal](#c_dateandtimegetservertimelocal) |  |  |
-| ❔ | [C_DateAndTime.GetWeeklyResetStartTime](#c_dateandtimegetweeklyresetstarttime) |  |  |
-| ❔ | [C_DateAndTime.IsDayTime](#c_dateandtimeisdaytime) |  |  |
+| ✅ | [C_DateAndTime.AdjustTimeByDays](#c_dateandtimeadjusttimebydays) |  |  |
+| ✅ | [C_DateAndTime.AdjustTimeByMinutes](#c_dateandtimeadjusttimebyminutes) |  |  |
+| ✅ | [C_DateAndTime.AdjustTimeByMonths](#c_dateandtimeadjusttimebymonths) |  |  |
+| ✅ | [C_DateAndTime.CompareCalendarTime](#c_dateandtimecomparecalendartime) |  |  |
+| ✅ | [C_DateAndTime.GetCalendarTimeFromEpoch](#c_dateandtimegetcalendartimefromepoch) |  |  |
+| ✅ | [C_DateAndTime.GetCurrentCalendarTime](#c_dateandtimegetcurrentcalendartime) |  |  |
+| ✅ | [C_DateAndTime.GetSecondsUntilDailyReset](#c_dateandtimegetsecondsuntildailyreset) |  |  |
+| ✅ | [C_DateAndTime.GetSecondsUntilWeeklyReset](#c_dateandtimegetsecondsuntilweeklyreset) |  |  |
+| ✅ | [C_DateAndTime.GetServerTimeLocal](#c_dateandtimegetservertimelocal) |  |  |
+| ✅ | [C_DateAndTime.GetWeeklyResetStartTime](#c_dateandtimegetweeklyresetstarttime) |  |  |
+| ✅ | [C_DateAndTime.IsDayTime](#c_dateandtimeisdaytime) |  |  |
 
 ### C_DateAndTime.AdjustTimeByDays
 
 `C_DateAndTime.AdjustTimeByDays(date: CalendarTime, days: number) → newDate: CalendarTime`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DateAndTimeDocumentation.lua`
 
@@ -30,7 +30,7 @@ Namespace: `C_DateAndTime`
 
 `C_DateAndTime.AdjustTimeByMinutes(date: CalendarTime, minutes: number) → newDate: CalendarTime`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DateAndTimeDocumentation.lua`
 
@@ -38,7 +38,7 @@ Namespace: `C_DateAndTime`
 
 `C_DateAndTime.AdjustTimeByMonths(date: CalendarTime, months: number) → newDate: CalendarTime`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DateAndTimeDocumentation.lua`
 
@@ -46,7 +46,7 @@ Namespace: `C_DateAndTime`
 
 `C_DateAndTime.CompareCalendarTime(lhsCalendarTime: CalendarTime, rhsCalendarTime: CalendarTime) → comparison: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - `comparison`: -1 if rhsCalendarTime < lhsCalendarTime, 0 if rhsCalendarTime == lhsCalendarTime, 1 if rhsCalendarTime > lhsCalendarTime
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DateAndTimeDocumentation.lua`
@@ -55,7 +55,7 @@ Namespace: `C_DateAndTime`
 
 `C_DateAndTime.GetCalendarTimeFromEpoch(epoch: BigUInteger) → date: CalendarTime`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DateAndTimeDocumentation.lua`
 
@@ -63,49 +63,49 @@ Namespace: `C_DateAndTime`
 
 `C_DateAndTime.GetCurrentCalendarTime() → date: CalendarTime`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `DateAndTimeDocumentation.lua`
 
 ### C_DateAndTime.GetSecondsUntilDailyReset
 
 `C_DateAndTime.GetSecondsUntilDailyReset() → seconds: time_t`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `DateAndTimeDocumentation.lua`
 
 ### C_DateAndTime.GetSecondsUntilWeeklyReset
 
 `C_DateAndTime.GetSecondsUntilWeeklyReset() → seconds: time_t`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `DateAndTimeDocumentation.lua`
 
 ### C_DateAndTime.GetServerTimeLocal
 
 `C_DateAndTime.GetServerTimeLocal() → serverTimeLocal: time_t`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `DateAndTimeDocumentation.lua`
 
 ### C_DateAndTime.GetWeeklyResetStartTime
 
 `C_DateAndTime.GetWeeklyResetStartTime() → seconds: time_t`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `DateAndTimeDocumentation.lua`
 
 ### C_DateAndTime.IsDayTime
 
 `C_DateAndTime.IsDayTime() → isDayTime: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `DateAndTimeDocumentation.lua`
 
 ## Events
 
 ### DIEL_CYCLE_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `isDayTime: bool`
 - Blizzard: Signaled when the game time transitions between day and night.
 - fires synchronously (Blizzard's docs)
@@ -114,7 +114,7 @@ Namespace: `C_DateAndTime`
 
 ### TimeEventFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `GlueScreenShortcut` = 1
   - `WeeklyReset` = 2
   - `GlobalLaunch` = 4

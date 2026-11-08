@@ -4,7 +4,7 @@
 
 ### AutoCompleteEntryFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `InGroup` = 1
   - `InGuild` = 2
   - `Friend` = 4
@@ -17,7 +17,7 @@
 
 ### AutoCompletePriority
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Other` = 0
   - `Interacted` = 1
   - `InGroup` = 2

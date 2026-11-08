@@ -4,7 +4,7 @@
 
 ### BulkPurchaseResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ResultOk` = 0
   - `ResultInProgress` = 1
   - `ResultPartialSuccess` = 2
@@ -16,7 +16,7 @@
 
 ### BulkPurchaseStatus
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `PlacingOrders` = 0
   - `PurchasesPending` = 1
   - `FetchEntitlements` = 2
@@ -25,7 +25,7 @@
 
 ### BulkRefundResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ResultOk` = 0
   - `ResultFailed` = 1
   - `ResultInvalidRequest` = 2
@@ -35,18 +35,18 @@
 
 ### CanRedeemTokenForBalanceResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Ok` = 0
   - `FailureCap` = 1
 
 ### LoginTicketLicenses
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `GmLicense` = 11486
 
 ### PurchaseResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Ok` = 0
   - `ErrorRiskDenied` = 1
   - `ErrorOrderFailed` = 2
@@ -122,7 +122,7 @@
 
 ### SimpleOrderStatus
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Invalid` = 0
   - `Creating` = 1
   - `InProgress` = 2
@@ -131,7 +131,7 @@
 
 ### VasTransactionPurchaseResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ⛔ in Blizzard's docs, not in game
   - `None` = 0
   - `VasPurchaseDisabled` = 1
   - `NoneCharacter` = 2

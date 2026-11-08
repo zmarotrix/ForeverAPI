@@ -4,7 +4,7 @@
 
 ### DamageMeterCombineSessionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `ChallengeMode` = 1
   - `Arena` = 2
@@ -12,7 +12,7 @@
 
 ### DamageMeterOverrideType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Ignore` = 0
   - `AllowFriendlyFire` = 1
   - `RedirectSourceToOwner` = 2
@@ -21,21 +21,21 @@
 
 ### DamageMeterSessionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Overall` = 0
   - `Current` = 1
   - `Expired` = 2
 
 ### DamageMeterSourceDisplayType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Ally` = 1
   - `Enemy` = 2
 
 ### DamageMeterSpellDetailsDisplayType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `SpellCasted` = 0
   - `UnitSpecificSpellCasted` = 1
   - `SpellAffected` = 2
@@ -44,7 +44,7 @@
 
 ### DamageMeterStorageType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Damage` = 0
   - `HealingAndAbsorbs` = 1
   - `Absorbs` = 2
@@ -57,7 +57,7 @@
 
 ### DamageMeterType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `DamageDone` = 0
   - `Dps` = 1
   - `HealingDone` = 2

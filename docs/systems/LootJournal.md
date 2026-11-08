@@ -6,14 +6,14 @@ Namespace: `C_LootJournal`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_LootJournal.GetItemSetItems](#c_lootjournalgetitemsetitems) |  |  |
-| ❔ | [C_LootJournal.GetItemSets](#c_lootjournalgetitemsets) |  |  |
+| ✅ | [C_LootJournal.GetItemSetItems](#c_lootjournalgetitemsetitems) |  |  |
+| ✅ | [C_LootJournal.GetItemSets](#c_lootjournalgetitemsets) |  |  |
 
 ### C_LootJournal.GetItemSetItems
 
 `C_LootJournal.GetItemSetItems(setID: number) → items: LootJournalItemInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `LootJournalDocumentation.lua`
@@ -22,7 +22,7 @@ Namespace: `C_LootJournal`
 
 `C_LootJournal.GetItemSets(classID: number?, specID: number?) → itemSets: LootJournalItemSetInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `LootJournalDocumentation.lua`
@@ -31,7 +31,7 @@ Namespace: `C_LootJournal`
 
 ### LOOT_JOURNAL_ITEM_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
 

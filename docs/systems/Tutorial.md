@@ -6,23 +6,23 @@ Namespace: `C_Tutorial`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_Tutorial.AbandonTutorialArea](#c_tutorialabandontutorialarea) |  |  |
-| ❔ | [C_Tutorial.GetCombatEventInfo](#c_tutorialgetcombateventinfo) |  |  |
-| ❔ | [C_Tutorial.ReturnToTutorialArea](#c_tutorialreturntotutorialarea) |  |  |
-| ❔ | [C_Tutorial.SendTutorialStartButtonTelem](#c_tutorialsendtutorialstartbuttontelem) |  |  |
+| ✅ | [C_Tutorial.AbandonTutorialArea](#c_tutorialabandontutorialarea) |  |  |
+| ✅ | [C_Tutorial.GetCombatEventInfo](#c_tutorialgetcombateventinfo) |  |  |
+| ✅ | [C_Tutorial.ReturnToTutorialArea](#c_tutorialreturntotutorialarea) |  |  |
+| ✅ | [C_Tutorial.SendTutorialStartButtonTelem](#c_tutorialsendtutorialstartbuttontelem) |  |  |
 
 ### C_Tutorial.AbandonTutorialArea
 
 `C_Tutorial.AbandonTutorialArea()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `TutorialDocumentation.lua`
 
 ### C_Tutorial.GetCombatEventInfo
 
 `C_Tutorial.GetCombatEventInfo()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequireNPERestricted (Blizzard's docs; not checked in game)
 - Source: client docs `TutorialDocumentation.lua`
 
@@ -30,14 +30,14 @@ Namespace: `C_Tutorial`
 
 `C_Tutorial.ReturnToTutorialArea()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `TutorialDocumentation.lua`
 
 ### C_Tutorial.SendTutorialStartButtonTelem
 
 `C_Tutorial.SendTutorialStartButtonTelem(skipTutorial: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TutorialDocumentation.lua`
@@ -46,38 +46,38 @@ Namespace: `C_Tutorial`
 
 ### LEAVING_TUTORIAL_AREA
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### NPE_TUTORIAL_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### TUTORIAL_COMBAT_EVENT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - RequireNPERestricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### TUTORIAL_HIGHLIGHT_SPELL
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `spellID: number`, `tutorialGlobalStringTag: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### TUTORIAL_TRIGGER
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `tutorialIndex: number`, `forceShow: bool`
 - fires synchronously (Blizzard's docs)
 
 ### TUTORIAL_UNHIGHLIGHT_SPELL
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
@@ -85,7 +85,7 @@ Namespace: `C_Tutorial`
 
 ### FrameTutorialAccount
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `HudRevampBagChanges` = 1
   - `PerksProgramActivitiesIntro` = 2
   - `EditModeManager` = 3

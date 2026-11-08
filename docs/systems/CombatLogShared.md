@@ -8,6 +8,6 @@
 
 ### CombatLogMessageOrder
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Newest` = 0
   - `Oldest` = 1

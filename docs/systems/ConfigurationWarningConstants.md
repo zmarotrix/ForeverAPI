@@ -4,7 +4,7 @@
 
 ### ConfigurationWarning
 
-- Enumeration — ❔ unverified
+- Enumeration — ⛔ in Blizzard's docs, not in game
   - `ShaderModelWillBeOutdated` = 0
   - `ShaderModelIsOutdated` = 1
   - `ConsoleDeviceSseOutdated` = 2

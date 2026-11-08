@@ -6,14 +6,14 @@ Namespace: `C_UserFeedback`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_UserFeedback.SubmitBug](#c_userfeedbacksubmitbug) |  |  |
-| ❔ | [C_UserFeedback.SubmitSuggestion](#c_userfeedbacksubmitsuggestion) |  |  |
+| ✅ | [C_UserFeedback.SubmitBug](#c_userfeedbacksubmitbug) |  |  |
+| ✅ | [C_UserFeedback.SubmitSuggestion](#c_userfeedbacksubmitsuggestion) |  |  |
 
 ### C_UserFeedback.SubmitBug
 
 `C_UserFeedback.SubmitBug(bugInfo: cstring, suppressNotification: bool = False) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UserFeedbackDocumentation.lua`
 
@@ -21,6 +21,6 @@ Namespace: `C_UserFeedback`
 
 `C_UserFeedback.SubmitSuggestion(suggestion: cstring) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UserFeedbackDocumentation.lua`

@@ -4,14 +4,14 @@
 
 ### AddOnEnableState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Some` = 1
   - `All` = 2
 
 ### AddOnSecurityStatus
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Secure` = 0
   - `Insecure` = 1
   - `Banned` = 2

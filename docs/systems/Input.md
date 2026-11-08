@@ -4,71 +4,71 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [GetCursorCenterPosition](#getcursorcenterposition) |  |  |
-| ❔ | [GetCursorDelta](#getcursordelta) |  |  |
-| ❔ | [GetCursorPosition](#getcursorposition) |  |  |
-| ❔ | [GetMouseButtonClicked](#getmousebuttonclicked) |  |  |
-| ❔ | [GetMouseButtonName](#getmousebuttonname) |  |  |
-| ❔ | [GetMouseFoci](#getmousefoci) |  |  |
-| ❔ | [GetStringFromModifiers](#getstringfrommodifiers) |  |  |
-| ❔ | [IsAltKeyDown](#isaltkeydown) |  |  |
-| ❔ | [IsControlKeyDown](#iscontrolkeydown) |  |  |
-| ❔ | [IsCursorVisible](#iscursorvisible) |  |  |
-| ❔ | [IsKeyDown](#iskeydown) |  |  |
-| ❔ | [IsLeftAltKeyDown](#isleftaltkeydown) |  |  |
-| ❔ | [IsLeftControlKeyDown](#isleftcontrolkeydown) |  |  |
-| ❔ | [IsLeftMetaKeyDown](#isleftmetakeydown) |  |  |
-| ❔ | [IsLeftShiftKeyDown](#isleftshiftkeydown) |  |  |
-| ❔ | [IsMetaKeyDown](#ismetakeydown) |  |  |
-| ❔ | [IsModifierKeyDown](#ismodifierkeydown) |  |  |
-| ❔ | [IsMouseButtonDown](#ismousebuttondown) |  |  |
-| ❔ | [IsRightAltKeyDown](#isrightaltkeydown) |  |  |
-| ❔ | [IsRightControlKeyDown](#isrightcontrolkeydown) |  |  |
-| ❔ | [IsRightMetaKeyDown](#isrightmetakeydown) |  |  |
-| ❔ | [IsRightShiftKeyDown](#isrightshiftkeydown) |  |  |
-| ❔ | [IsShiftKeyDown](#isshiftkeydown) |  |  |
-| ❔ | [IsUsingGamepad](#isusinggamepad) |  |  |
-| ❔ | [IsUsingMouse](#isusingmouse) |  |  |
-| ❔ | [MakeModifiers](#makemodifiers) |  |  |
-| ❔ | [SetCursorPosition](#setcursorposition) |  |  |
-| ❔ | [SimulateMouseClick](#simulatemouseclick) |  |  |
-| ❔ | [SimulateMouseDown](#simulatemousedown) |  |  |
-| ❔ | [SimulateMouseUp](#simulatemouseup) |  |  |
-| ❔ | [SimulateMouseWheel](#simulatemousewheel) |  |  |
+| ✅ | [GetCursorCenterPosition](#getcursorcenterposition) |  |  |
+| ✅ | [GetCursorDelta](#getcursordelta) |  |  |
+| ✅ | [GetCursorPosition](#getcursorposition) |  |  |
+| ✅ | [GetMouseButtonClicked](#getmousebuttonclicked) |  |  |
+| ✅ | [GetMouseButtonName](#getmousebuttonname) |  |  |
+| ✅ | [GetMouseFoci](#getmousefoci) |  |  |
+| ✅ | [GetStringFromModifiers](#getstringfrommodifiers) |  |  |
+| ✅ | [IsAltKeyDown](#isaltkeydown) |  |  |
+| ✅ | [IsControlKeyDown](#iscontrolkeydown) |  |  |
+| ✅ | [IsCursorVisible](#iscursorvisible) |  |  |
+| ✅ | [IsKeyDown](#iskeydown) |  |  |
+| ✅ | [IsLeftAltKeyDown](#isleftaltkeydown) |  |  |
+| ✅ | [IsLeftControlKeyDown](#isleftcontrolkeydown) |  |  |
+| ✅ | [IsLeftMetaKeyDown](#isleftmetakeydown) |  |  |
+| ✅ | [IsLeftShiftKeyDown](#isleftshiftkeydown) |  |  |
+| ✅ | [IsMetaKeyDown](#ismetakeydown) |  |  |
+| ✅ | [IsModifierKeyDown](#ismodifierkeydown) |  |  |
+| ✅ | [IsMouseButtonDown](#ismousebuttondown) |  |  |
+| ✅ | [IsRightAltKeyDown](#isrightaltkeydown) |  |  |
+| ✅ | [IsRightControlKeyDown](#isrightcontrolkeydown) |  |  |
+| ✅ | [IsRightMetaKeyDown](#isrightmetakeydown) |  |  |
+| ✅ | [IsRightShiftKeyDown](#isrightshiftkeydown) |  |  |
+| ✅ | [IsShiftKeyDown](#isshiftkeydown) |  |  |
+| ✅ | [IsUsingGamepad](#isusinggamepad) |  |  |
+| ✅ | [IsUsingMouse](#isusingmouse) |  |  |
+| ✅ | [MakeModifiers](#makemodifiers) |  |  |
+| ✅ | [SetCursorPosition](#setcursorposition) |  |  |
+| ✅ | [SimulateMouseClick](#simulatemouseclick) |  |  |
+| ✅ | [SimulateMouseDown](#simulatemousedown) |  |  |
+| ✅ | [SimulateMouseUp](#simulatemouseup) |  |  |
+| ✅ | [SimulateMouseWheel](#simulatemousewheel) |  |  |
 
 ### GetCursorCenterPosition
 
 `GetCursorCenterPosition() → posX: number, posY: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### GetCursorDelta
 
 `GetCursorDelta() → deltaX: number, deltaY: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### GetCursorPosition
 
 `GetCursorPosition() → posX: number, posY: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### GetMouseButtonClicked
 
 `GetMouseButtonClicked() → buttonName: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### GetMouseButtonName
 
 `GetMouseButtonName(button: mouseButton) → buttonName: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `InputDocumentation.lua`
 
@@ -76,14 +76,14 @@
 
 `GetMouseFoci() → region: ScriptRegion[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### GetStringFromModifiers
 
 `GetStringFromModifiers(modifiers: number) → modifierString: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `InputDocumentation.lua`
 
@@ -91,28 +91,28 @@
 
 `IsAltKeyDown() → down: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### IsControlKeyDown
 
 `IsControlKeyDown() → down: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### IsCursorVisible
 
 `IsCursorVisible() → visible: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### IsKeyDown
 
 `IsKeyDown(keyOrMouseName: cstring, excludeBindingState: bool = False) → down: bool?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `InputDocumentation.lua`
 
@@ -120,49 +120,49 @@
 
 `IsLeftAltKeyDown() → down: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### IsLeftControlKeyDown
 
 `IsLeftControlKeyDown() → down: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### IsLeftMetaKeyDown
 
 `IsLeftMetaKeyDown() → down: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### IsLeftShiftKeyDown
 
 `IsLeftShiftKeyDown() → down: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### IsMetaKeyDown
 
 `IsMetaKeyDown() → down: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### IsModifierKeyDown
 
 `IsModifierKeyDown() → down: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### IsMouseButtonDown
 
 `IsMouseButtonDown(button: mouseButton?) → down: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `InputDocumentation.lua`
 
@@ -170,63 +170,63 @@
 
 `IsRightAltKeyDown() → down: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### IsRightControlKeyDown
 
 `IsRightControlKeyDown() → down: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### IsRightMetaKeyDown
 
 `IsRightMetaKeyDown() → down: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### IsRightShiftKeyDown
 
 `IsRightShiftKeyDown() → down: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### IsShiftKeyDown
 
 `IsShiftKeyDown() → down: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### IsUsingGamepad
 
 `IsUsingGamepad() → down: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### IsUsingMouse
 
 `IsUsingMouse() → down: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### MakeModifiers
 
 `MakeModifiers() → modifiers: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputDocumentation.lua`
 
 ### SetCursorPosition
 
 `SetCursorPosition(xPosition: uiUnit, yPosition: uiUnit)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Insecure code can only call this once in response to gamepad input hardware events.
 - RequiresLimitedInput (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -236,7 +236,7 @@
 
 `SimulateMouseClick(button: mouseButton)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Effectively the same as SimulateMouseDown plus SimulateMouseUp and consumes limited input for both.
 - MouseFocusValidForLimitedInput (Blizzard's docs; not checked in game)
 - RequiresLimitedInput (Blizzard's docs; not checked in game)
@@ -247,7 +247,7 @@
 
 `SimulateMouseDown(button: mouseButton)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Insecure code can only call this once in response to gamepad input hardware events.
 - MouseFocusValidForLimitedInput (Blizzard's docs; not checked in game)
 - RequiresLimitedInput (Blizzard's docs; not checked in game)
@@ -258,7 +258,7 @@
 
 `SimulateMouseUp(button: mouseButton)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Insecure code can only call this once in response to gamepad input hardware events.
 - MouseFocusValidForLimitedInput (Blizzard's docs; not checked in game)
 - RequiresLimitedInput (Blizzard's docs; not checked in game)
@@ -269,7 +269,7 @@
 
 `SimulateMouseWheel(delta: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Insecure code can only call this once in response to gamepad input hardware events.
 - MouseFocusValidForLimitedInput (Blizzard's docs; not checked in game)
 - RequiresLimitedInput (Blizzard's docs; not checked in game)
@@ -280,6 +280,6 @@
 
 ### INPUT_DEVICE_INTERFACE_TRANSITION
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `newMode: InputDeviceInterfaceType`, `oldMode: InputDeviceInterfaceType`
 - fires synchronously (Blizzard's docs)

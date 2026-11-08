@@ -4,7 +4,7 @@
 
 ### TimerunningConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `TIMERUNNING_SEASON_NONE` = 0
   - `TIMERUNNING_SEASON_PANDARIA` = 1
   - `TIMERUNNING_SEASON_LEGION` = 2

@@ -35,7 +35,7 @@
 
 ### CharCustomizationConstants
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `CHAR_CUSTOMIZE_CUSTOM_DISPLAY_OPTION_FIRST` = CustomOptionTattoo
   - `CHAR_CUSTOMIZE_CUSTOM_DISPLAY_OPTION_LAST` = CustomOptionTattooColor
   - `NUM_CUSTOM_DISPLAY` = Constants.CharCustomizationConstants.CHAR_CUSTOMIZE_CUSTOM_DISPLAY_OPTION_LAST - Constants.CharCustomizationConstants.CHAR_CUSTOMIZE_CUSTOM_DISPLAY_OPTION_FIRST + 1
@@ -55,7 +55,7 @@
 
 ### CharCustomizationType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Skin` = 0
   - `Face` = 1
   - `Hair` = 2
@@ -68,20 +68,20 @@
 
 ### ChrCustomizationCategoryFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `UndressModel` = 1
   - `Subcategory` = 2
 
 ### ChrCustomizationOptionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Dropdown` = 0
   - `Checkbox` = 1
   - `Slider` = 2
 
 ### ChrModelFeatureFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Summons` = 1
   - `Forms` = 2
@@ -93,6 +93,6 @@
 
 ### NewCharGear
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Start` = 0
   - `Preview` = 1

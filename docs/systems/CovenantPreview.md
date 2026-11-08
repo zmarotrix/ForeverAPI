@@ -6,21 +6,21 @@ Namespace: `C_CovenantPreview`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_CovenantPreview.CloseFromUI](#c_covenantpreviewclosefromui) |  |  |
-| ❔ | [C_CovenantPreview.GetCovenantInfoForPlayerChoiceResponseID](#c_covenantpreviewgetcovenantinfoforplayerchoiceresponseid) |  |  |
+| ✅ | [C_CovenantPreview.CloseFromUI](#c_covenantpreviewclosefromui) |  |  |
+| ✅ | [C_CovenantPreview.GetCovenantInfoForPlayerChoiceResponseID](#c_covenantpreviewgetcovenantinfoforplayerchoiceresponseid) |  |  |
 
 ### C_CovenantPreview.CloseFromUI
 
 `C_CovenantPreview.CloseFromUI()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CovenantPreviewDocumentation.lua`
 
 ### C_CovenantPreview.GetCovenantInfoForPlayerChoiceResponseID
 
 `C_CovenantPreview.GetCovenantInfoForPlayerChoiceResponseID(playerChoiceResponseID: number) → previewInfo: CovenantPreviewInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CovenantPreviewDocumentation.lua`
@@ -29,13 +29,13 @@ Namespace: `C_CovenantPreview`
 
 ### COVENANT_PREVIEW_CLOSE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### COVENANT_PREVIEW_OPEN
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `previewInfo: CovenantPreviewInfo`
 - fires synchronously (Blizzard's docs)
 

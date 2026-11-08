@@ -4,7 +4,7 @@
 
 ### QuestClassification
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Important` = 0
   - `Legendary` = 1
   - `Campaign` = 2

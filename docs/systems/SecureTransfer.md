@@ -6,26 +6,26 @@ Namespace: `C_SecureTransfer`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_SecureTransfer.AcceptTrade](#c_securetransferaccepttrade) |  |  |
-| ❔ | [C_SecureTransfer.Cancel](#c_securetransfercancel) |  |  |
-| ❔ | [C_SecureTransfer.CompleteHousingPurchase](#c_securetransfercompletehousingpurchase) |  |  |
-| ❔ | [C_SecureTransfer.CompleteHousingVCPurchase](#c_securetransfercompletehousingvcpurchase) |  |  |
-| ❔ | [C_SecureTransfer.GetHousingPurchaseCost](#c_securetransfergethousingpurchasecost) |  |  |
-| ❔ | [C_SecureTransfer.GetHousingPurchaseQuantity](#c_securetransfergethousingpurchasequantity) |  |  |
-| ❔ | [C_SecureTransfer.GetHousingVCPurchaseProductID](#c_securetransfergethousingvcpurchaseproductid) |  |  |
-| ❔ | [C_SecureTransfer.GetMailReceiveInfo](#c_securetransfergetmailreceiveinfo) |  |  |
-| ❔ | [C_SecureTransfer.GetMailSendInfo](#c_securetransfergetmailsendinfo) |  |  |
-| ❔ | [C_SecureTransfer.GetTradePartner](#c_securetransfergettradepartner) |  |  |
-| ❔ | [C_SecureTransfer.SendMail](#c_securetransfersendmail) |  |  |
-| ❔ | [C_SecureTransfer.ShouldShowTradeOfferWarning](#c_securetransfershouldshowtradeofferwarning) |  |  |
-| ❔ | [C_SecureTransfer.ShouldShowTradeRMTWarning](#c_securetransfershouldshowtradermtwarning) |  |  |
-| ❔ | [C_SecureTransfer.TakeMailMoney](#c_securetransfertakemailmoney) |  |  |
+| ⛔ | [C_SecureTransfer.AcceptTrade](#c_securetransferaccepttrade) |  |  |
+| ⛔ | [C_SecureTransfer.Cancel](#c_securetransfercancel) |  |  |
+| ⛔ | [C_SecureTransfer.CompleteHousingPurchase](#c_securetransfercompletehousingpurchase) |  |  |
+| ⛔ | [C_SecureTransfer.CompleteHousingVCPurchase](#c_securetransfercompletehousingvcpurchase) |  |  |
+| ⛔ | [C_SecureTransfer.GetHousingPurchaseCost](#c_securetransfergethousingpurchasecost) |  |  |
+| ⛔ | [C_SecureTransfer.GetHousingPurchaseQuantity](#c_securetransfergethousingpurchasequantity) |  |  |
+| ⛔ | [C_SecureTransfer.GetHousingVCPurchaseProductID](#c_securetransfergethousingvcpurchaseproductid) |  |  |
+| ⛔ | [C_SecureTransfer.GetMailReceiveInfo](#c_securetransfergetmailreceiveinfo) |  |  |
+| ⛔ | [C_SecureTransfer.GetMailSendInfo](#c_securetransfergetmailsendinfo) |  |  |
+| ⛔ | [C_SecureTransfer.GetTradePartner](#c_securetransfergettradepartner) |  |  |
+| ⛔ | [C_SecureTransfer.SendMail](#c_securetransfersendmail) |  |  |
+| ⛔ | [C_SecureTransfer.ShouldShowTradeOfferWarning](#c_securetransfershouldshowtradeofferwarning) |  |  |
+| ⛔ | [C_SecureTransfer.ShouldShowTradeRMTWarning](#c_securetransfershouldshowtradermtwarning) |  |  |
+| ⛔ | [C_SecureTransfer.TakeMailMoney](#c_securetransfertakemailmoney) |  |  |
 
 ### C_SecureTransfer.AcceptTrade
 
 `C_SecureTransfer.AcceptTrade()`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `SecureTransferDocumentation.lua`
 
@@ -33,7 +33,7 @@ Namespace: `C_SecureTransfer`
 
 `C_SecureTransfer.Cancel()`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `SecureTransferDocumentation.lua`
 
@@ -41,7 +41,7 @@ Namespace: `C_SecureTransfer`
 
 `C_SecureTransfer.CompleteHousingPurchase()`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `SecureTransferDocumentation.lua`
 
@@ -49,7 +49,7 @@ Namespace: `C_SecureTransfer`
 
 `C_SecureTransfer.CompleteHousingVCPurchase()`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `SecureTransferDocumentation.lua`
 
@@ -57,7 +57,7 @@ Namespace: `C_SecureTransfer`
 
 `C_SecureTransfer.GetHousingPurchaseCost() → totalCost: number`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `SecureTransferDocumentation.lua`
 
@@ -65,7 +65,7 @@ Namespace: `C_SecureTransfer`
 
 `C_SecureTransfer.GetHousingPurchaseQuantity() → quantity: number`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `SecureTransferDocumentation.lua`
 
@@ -73,7 +73,7 @@ Namespace: `C_SecureTransfer`
 
 `C_SecureTransfer.GetHousingVCPurchaseProductID() → productID: number`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `SecureTransferDocumentation.lua`
 
@@ -81,7 +81,7 @@ Namespace: `C_SecureTransfer`
 
 `C_SecureTransfer.GetMailReceiveInfo() → mailInfo: MailReceiveInfo`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `SecureTransferDocumentation.lua`
 
@@ -89,7 +89,7 @@ Namespace: `C_SecureTransfer`
 
 `C_SecureTransfer.GetMailSendInfo() → mailInfo: MailSendInfo`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `SecureTransferDocumentation.lua`
 
@@ -97,7 +97,7 @@ Namespace: `C_SecureTransfer`
 
 `C_SecureTransfer.GetTradePartner() → name: string?`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `SecureTransferDocumentation.lua`
 
@@ -105,7 +105,7 @@ Namespace: `C_SecureTransfer`
 
 `C_SecureTransfer.SendMail()`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `SecureTransferDocumentation.lua`
 
@@ -113,7 +113,7 @@ Namespace: `C_SecureTransfer`
 
 `C_SecureTransfer.ShouldShowTradeOfferWarning() → shouldShow: bool`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `SecureTransferDocumentation.lua`
 
@@ -121,7 +121,7 @@ Namespace: `C_SecureTransfer`
 
 `C_SecureTransfer.ShouldShowTradeRMTWarning() → shouldShow: bool`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `SecureTransferDocumentation.lua`
 
@@ -129,7 +129,7 @@ Namespace: `C_SecureTransfer`
 
 `C_SecureTransfer.TakeMailMoney()`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `SecureTransferDocumentation.lua`
 
@@ -137,37 +137,38 @@ Namespace: `C_SecureTransfer`
 
 ### SECURE_TRANSFER_CANCEL
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### SECURE_TRANSFER_CONFIRM_HOUSING_PURCHASE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### SECURE_TRANSFER_CONFIRM_SEND_MAIL
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### SECURE_TRANSFER_CONFIRM_TAKE_MAIL_MONEY
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### SECURE_TRANSFER_CONFIRM_TRADE_ACCEPT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### SECURE_TRANSFER_HOUSING_CURRENCY_PURCHASE_CONFIRMATION
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 

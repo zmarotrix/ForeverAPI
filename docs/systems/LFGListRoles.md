@@ -6,15 +6,15 @@ Namespace: `C_LFGListRoles`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_LFGListRoles.GetRoles](#c_lfglistrolesgetroles) |  |  |
-| ❔ | [C_LFGListRoles.GetSavedRoles](#c_lfglistrolesgetsavedroles) |  |  |
-| ❔ | [C_LFGListRoles.SetRoles](#c_lfglistrolessetroles) |  |  |
+| ✅ | [C_LFGListRoles.GetRoles](#c_lfglistrolesgetroles) |  |  |
+| ✅ | [C_LFGListRoles.GetSavedRoles](#c_lfglistrolesgetsavedroles) |  |  |
+| ✅ | [C_LFGListRoles.SetRoles](#c_lfglistrolessetroles) |  |  |
 
 ### C_LFGListRoles.GetRoles
 
 `C_LFGListRoles.GetRoles() → roles: LFGRoles`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Source: client docs `LFGListRolesDocumentation.lua`
 
@@ -22,7 +22,7 @@ Namespace: `C_LFGListRoles`
 
 `C_LFGListRoles.GetSavedRoles() → roles: LFGRoles`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Source: client docs `LFGListRolesDocumentation.lua`
 
@@ -30,7 +30,7 @@ Namespace: `C_LFGListRoles`
 
 `C_LFGListRoles.SetRoles(roles: LFGRoles, limitToClassRoles: bool = False) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `LFGListRolesDocumentation.lua`
 
@@ -38,6 +38,6 @@ Namespace: `C_LFGListRoles`
 
 ### LFG_LIST_ROLE_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)

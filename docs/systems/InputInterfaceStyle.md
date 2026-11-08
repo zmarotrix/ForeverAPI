@@ -6,11 +6,11 @@ Namespace: `C_InputInterfaceStyle`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_InputInterfaceStyle.GetCurrentStyle](#c_inputinterfacestylegetcurrentstyle) |  |  |
+| ✅ | [C_InputInterfaceStyle.GetCurrentStyle](#c_inputinterfacestylegetcurrentstyle) |  |  |
 
 ### C_InputInterfaceStyle.GetCurrentStyle
 
 `C_InputInterfaceStyle.GetCurrentStyle() → style: InputDeviceInterfaceType`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `InputInterfaceStyleDocumentation.lua`

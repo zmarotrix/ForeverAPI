@@ -4,11 +4,11 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [GetSecondsUntilParentalControlsKick](#getsecondsuntilparentalcontrolskick) |  |  |
+| ✅ | [GetSecondsUntilParentalControlsKick](#getsecondsuntilparentalcontrolskick) |  |  |
 
 ### GetSecondsUntilParentalControlsKick
 
 `GetSecondsUntilParentalControlsKick() → remaining: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ParentalControlsDocumentation.lua`

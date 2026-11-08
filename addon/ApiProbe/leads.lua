@@ -4490,6 +4490,10 @@ ApiProbeLeads = {
     ["securecopy"] = true,
     ["settablesecurity"] = true,
   },
+  -- calls that crashed the client (sources/crashers.json, from the game's crash logs): never called again
+  crashers = {
+    ["C_Housing.GetMaxHouseLevel"] = true,
+  },
   -- getter-named globals Blizzard's own Lua UI code defines: UI helpers, not client API, so not called
   uiGetters = {
     ["AreAllBagsOpen"] = true,

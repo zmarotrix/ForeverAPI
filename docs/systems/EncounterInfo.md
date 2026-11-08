@@ -4,63 +4,65 @@
 
 ### BOSS_KILL
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `encounterID: number`, `encounterName: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### DISABLE_LOW_LEVEL_RAID
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### ENABLE_LOW_LEVEL_RAID
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### ENCOUNTER_END
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `encounterID: number`, `encounterName: cstring`, `difficultyID: number`, `groupSize: number`, `success: number`, `encounterUnitStatus: EncounterUnitStatus[]`
 - fires synchronously (Blizzard's docs)
 
 ### ENCOUNTER_START
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `encounterID: number`, `encounterName: cstring`, `difficultyID: number`, `groupSize: number`
 - fires synchronously (Blizzard's docs)
 
 ### INSTANCE_LOCK_START
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### INSTANCE_LOCK_STOP
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### INSTANCE_LOCK_WARNING
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### RAID_TARGET_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### UPDATE_INSTANCE_INFO
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ## Types
 

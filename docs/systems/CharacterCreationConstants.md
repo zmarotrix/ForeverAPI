@@ -4,13 +4,13 @@
 
 ### CharCreateAnimTurnType
 
-- Enumeration — ❔ unverified
+- Enumeration — ⛔ in Blizzard's docs, not in game
   - `Normal` = 0
   - `Torso` = 1
 
 ### CharSectionCondition
 
-- Enumeration — ❔ unverified
+- Enumeration — ⛔ in Blizzard's docs, not in game
   - `AlliedRace` = 0
   - `HeritageArmor` = 1
   - `ConditionalAppeareance` = 2
@@ -18,7 +18,7 @@
 
 ### RestrictionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ⛔ in Blizzard's docs, not in game
   - `Invalid` = 0
   - `ServerExpansion` = 1
   - `AccountExpansion` = 2

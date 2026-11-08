@@ -6,102 +6,102 @@ Namespace: `C_Calendar`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_Calendar.AddEvent](#c_calendaraddevent) |  |  |
-| ❔ | [C_Calendar.AreNamesReady](#c_calendararenamesready) |  |  |
-| ❔ | [C_Calendar.CanAddEvent](#c_calendarcanaddevent) |  |  |
-| ❔ | [C_Calendar.CanSendInvite](#c_calendarcansendinvite) |  |  |
-| ❔ | [C_Calendar.CloseEvent](#c_calendarcloseevent) |  |  |
-| ❔ | [C_Calendar.ContextMenuEventCanComplain](#c_calendarcontextmenueventcancomplain) |  |  |
-| ❔ | [C_Calendar.ContextMenuEventCanEdit](#c_calendarcontextmenueventcanedit) |  |  |
-| ❔ | [C_Calendar.ContextMenuEventCanRemove](#c_calendarcontextmenueventcanremove) |  |  |
-| ❔ | [C_Calendar.ContextMenuEventClipboard](#c_calendarcontextmenueventclipboard) |  |  |
-| ❔ | [C_Calendar.ContextMenuEventCopy](#c_calendarcontextmenueventcopy) |  |  |
-| ❔ | [C_Calendar.ContextMenuEventGetCalendarType](#c_calendarcontextmenueventgetcalendartype) |  |  |
-| ❔ | [C_Calendar.ContextMenuEventPaste](#c_calendarcontextmenueventpaste) |  |  |
-| ❔ | [C_Calendar.ContextMenuEventRemove](#c_calendarcontextmenueventremove) |  |  |
-| ❔ | [C_Calendar.ContextMenuEventSignUp](#c_calendarcontextmenueventsignup) |  |  |
-| ❔ | [C_Calendar.ContextMenuGetEventIndex](#c_calendarcontextmenugeteventindex) |  |  |
-| ❔ | [C_Calendar.ContextMenuInviteAvailable](#c_calendarcontextmenuinviteavailable) |  |  |
-| ❔ | [C_Calendar.ContextMenuInviteDecline](#c_calendarcontextmenuinvitedecline) |  |  |
-| ❔ | [C_Calendar.ContextMenuInviteRemove](#c_calendarcontextmenuinviteremove) |  |  |
-| ❔ | [C_Calendar.ContextMenuInviteTentative](#c_calendarcontextmenuinvitetentative) |  |  |
-| ❔ | [C_Calendar.ContextMenuSelectEvent](#c_calendarcontextmenuselectevent) |  |  |
-| ❔ | [C_Calendar.CreateCommunitySignUpEvent](#c_calendarcreatecommunitysignupevent) |  |  |
-| ❔ | [C_Calendar.CreateGuildAnnouncementEvent](#c_calendarcreateguildannouncementevent) |  |  |
-| ❔ | [C_Calendar.CreateGuildSignUpEvent](#c_calendarcreateguildsignupevent) |  |  |
-| ❔ | [C_Calendar.CreatePlayerEvent](#c_calendarcreateplayerevent) |  |  |
-| ❔ | [C_Calendar.EventAvailable](#c_calendareventavailable) |  |  |
-| ❔ | [C_Calendar.EventCanEdit](#c_calendareventcanedit) |  |  |
-| ❔ | [C_Calendar.EventClearAutoApprove](#c_calendareventclearautoapprove) |  |  |
-| ❔ | [C_Calendar.EventClearLocked](#c_calendareventclearlocked) |  |  |
-| ❔ | [C_Calendar.EventClearModerator](#c_calendareventclearmoderator) |  |  |
-| ❔ | [C_Calendar.EventDecline](#c_calendareventdecline) |  |  |
-| ❔ | [C_Calendar.EventGetCalendarType](#c_calendareventgetcalendartype) |  |  |
-| ❔ | [C_Calendar.EventGetClubId](#c_calendareventgetclubid) |  |  |
-| ❔ | [C_Calendar.EventGetInvite](#c_calendareventgetinvite) |  |  |
-| ❔ | [C_Calendar.EventGetInviteResponseTime](#c_calendareventgetinviteresponsetime) |  |  |
-| ❔ | [C_Calendar.EventGetInviteSortCriterion](#c_calendareventgetinvitesortcriterion) |  |  |
-| ❔ | [C_Calendar.EventGetSelectedInvite](#c_calendareventgetselectedinvite) |  |  |
-| ❔ | [C_Calendar.EventGetStatusOptions](#c_calendareventgetstatusoptions) |  |  |
-| ❔ | [C_Calendar.EventGetTextures](#c_calendareventgettextures) |  |  |
-| ❔ | [C_Calendar.EventGetTypes](#c_calendareventgettypes) |  |  |
-| ❔ | [C_Calendar.EventGetTypesDisplayOrdered](#c_calendareventgettypesdisplayordered) |  |  |
-| ❔ | [C_Calendar.EventHasPendingInvite](#c_calendareventhaspendinginvite) |  |  |
-| ❔ | [C_Calendar.EventHaveSettingsChanged](#c_calendareventhavesettingschanged) |  |  |
-| ❔ | [C_Calendar.EventInvite](#c_calendareventinvite) |  |  |
-| ❔ | [C_Calendar.EventRemoveInvite](#c_calendareventremoveinvite) |  |  |
-| ❔ | [C_Calendar.EventRemoveInviteByGuid](#c_calendareventremoveinvitebyguid) |  |  |
-| ❔ | [C_Calendar.EventSelectInvite](#c_calendareventselectinvite) |  |  |
-| ❔ | [C_Calendar.EventSetAutoApprove](#c_calendareventsetautoapprove) |  |  |
-| ❔ | [C_Calendar.EventSetClubId](#c_calendareventsetclubid) |  |  |
-| ❔ | [C_Calendar.EventSetDate](#c_calendareventsetdate) |  |  |
-| ❔ | [C_Calendar.EventSetDescription](#c_calendareventsetdescription) |  |  |
-| ❔ | [C_Calendar.EventSetInviteStatus](#c_calendareventsetinvitestatus) |  |  |
-| ❔ | [C_Calendar.EventSetLocked](#c_calendareventsetlocked) |  |  |
-| ❔ | [C_Calendar.EventSetModerator](#c_calendareventsetmoderator) |  |  |
-| ❔ | [C_Calendar.EventSetTextureID](#c_calendareventsettextureid) |  |  |
-| ❔ | [C_Calendar.EventSetTime](#c_calendareventsettime) |  |  |
-| ❔ | [C_Calendar.EventSetTitle](#c_calendareventsettitle) |  |  |
-| ❔ | [C_Calendar.EventSetType](#c_calendareventsettype) |  |  |
-| ❔ | [C_Calendar.EventSignUp](#c_calendareventsignup) |  |  |
-| ❔ | [C_Calendar.EventSortInvites](#c_calendareventsortinvites) |  |  |
-| ❔ | [C_Calendar.EventTentative](#c_calendareventtentative) |  |  |
-| ❔ | [C_Calendar.GetClubCalendarEvents](#c_calendargetclubcalendarevents) |  |  |
-| ❔ | [C_Calendar.GetDayEvent](#c_calendargetdayevent) |  |  |
-| ❔ | [C_Calendar.GetDefaultGuildFilter](#c_calendargetdefaultguildfilter) |  |  |
-| ❔ | [C_Calendar.GetEventIndex](#c_calendargeteventindex) |  |  |
-| ❔ | [C_Calendar.GetEventIndexInfo](#c_calendargeteventindexinfo) |  |  |
-| ❔ | [C_Calendar.GetEventInfo](#c_calendargeteventinfo) |  |  |
-| ❔ | [C_Calendar.GetFirstPendingInvite](#c_calendargetfirstpendinginvite) |  |  |
-| ❔ | [C_Calendar.GetGuildEventInfo](#c_calendargetguildeventinfo) |  |  |
-| ❔ | [C_Calendar.GetGuildEventSelectionInfo](#c_calendargetguildeventselectioninfo) |  |  |
-| ❔ | [C_Calendar.GetHolidayInfo](#c_calendargetholidayinfo) |  |  |
-| ❔ | [C_Calendar.GetMaxCreateDate](#c_calendargetmaxcreatedate) |  |  |
-| ❔ | [C_Calendar.GetMinDate](#c_calendargetmindate) |  |  |
-| ❔ | [C_Calendar.GetMonthInfo](#c_calendargetmonthinfo) |  |  |
-| ❔ | [C_Calendar.GetNextClubId](#c_calendargetnextclubid) |  |  |
-| ❔ | [C_Calendar.GetNumDayEvents](#c_calendargetnumdayevents) |  |  |
-| ❔ | [C_Calendar.GetNumGuildEvents](#c_calendargetnumguildevents) |  |  |
-| ❔ | [C_Calendar.GetNumInvites](#c_calendargetnuminvites) |  |  |
-| ❔ | [C_Calendar.GetNumPendingInvites](#c_calendargetnumpendinginvites) |  |  |
-| ❔ | [C_Calendar.GetRaidInfo](#c_calendargetraidinfo) |  |  |
-| ❔ | [C_Calendar.IsActionPending](#c_calendarisactionpending) |  |  |
-| ❔ | [C_Calendar.IsEventOpen](#c_calendariseventopen) |  |  |
-| ❔ | [C_Calendar.MassInviteCommunity](#c_calendarmassinvitecommunity) |  |  |
-| ❔ | [C_Calendar.MassInviteGuild](#c_calendarmassinviteguild) |  |  |
-| ❔ | [C_Calendar.OpenCalendar](#c_calendaropencalendar) |  |  |
-| ❔ | [C_Calendar.OpenEvent](#c_calendaropenevent) |  |  |
-| ❔ | [C_Calendar.RemoveEvent](#c_calendarremoveevent) |  |  |
-| ❔ | [C_Calendar.SetAbsMonth](#c_calendarsetabsmonth) |  |  |
-| ❔ | [C_Calendar.SetMonth](#c_calendarsetmonth) |  |  |
-| ❔ | [C_Calendar.SetNextClubId](#c_calendarsetnextclubid) |  |  |
-| ❔ | [C_Calendar.UpdateEvent](#c_calendarupdateevent) |  |  |
+| ✅ | [C_Calendar.AddEvent](#c_calendaraddevent) |  |  |
+| ✅ | [C_Calendar.AreNamesReady](#c_calendararenamesready) |  |  |
+| ✅ | [C_Calendar.CanAddEvent](#c_calendarcanaddevent) |  |  |
+| ✅ | [C_Calendar.CanSendInvite](#c_calendarcansendinvite) |  |  |
+| ✅ | [C_Calendar.CloseEvent](#c_calendarcloseevent) |  |  |
+| ✅ | [C_Calendar.ContextMenuEventCanComplain](#c_calendarcontextmenueventcancomplain) |  |  |
+| ✅ | [C_Calendar.ContextMenuEventCanEdit](#c_calendarcontextmenueventcanedit) |  |  |
+| ✅ | [C_Calendar.ContextMenuEventCanRemove](#c_calendarcontextmenueventcanremove) |  |  |
+| ✅ | [C_Calendar.ContextMenuEventClipboard](#c_calendarcontextmenueventclipboard) |  |  |
+| ✅ | [C_Calendar.ContextMenuEventCopy](#c_calendarcontextmenueventcopy) |  |  |
+| ✅ | [C_Calendar.ContextMenuEventGetCalendarType](#c_calendarcontextmenueventgetcalendartype) |  |  |
+| ✅ | [C_Calendar.ContextMenuEventPaste](#c_calendarcontextmenueventpaste) |  |  |
+| ✅ | [C_Calendar.ContextMenuEventRemove](#c_calendarcontextmenueventremove) |  |  |
+| ✅ | [C_Calendar.ContextMenuEventSignUp](#c_calendarcontextmenueventsignup) |  |  |
+| ✅ | [C_Calendar.ContextMenuGetEventIndex](#c_calendarcontextmenugeteventindex) |  |  |
+| ✅ | [C_Calendar.ContextMenuInviteAvailable](#c_calendarcontextmenuinviteavailable) |  |  |
+| ✅ | [C_Calendar.ContextMenuInviteDecline](#c_calendarcontextmenuinvitedecline) |  |  |
+| ✅ | [C_Calendar.ContextMenuInviteRemove](#c_calendarcontextmenuinviteremove) |  |  |
+| ✅ | [C_Calendar.ContextMenuInviteTentative](#c_calendarcontextmenuinvitetentative) |  |  |
+| ✅ | [C_Calendar.ContextMenuSelectEvent](#c_calendarcontextmenuselectevent) |  |  |
+| ✅ | [C_Calendar.CreateCommunitySignUpEvent](#c_calendarcreatecommunitysignupevent) |  |  |
+| ✅ | [C_Calendar.CreateGuildAnnouncementEvent](#c_calendarcreateguildannouncementevent) |  |  |
+| ✅ | [C_Calendar.CreateGuildSignUpEvent](#c_calendarcreateguildsignupevent) |  |  |
+| ✅ | [C_Calendar.CreatePlayerEvent](#c_calendarcreateplayerevent) |  |  |
+| ✅ | [C_Calendar.EventAvailable](#c_calendareventavailable) |  |  |
+| ✅ | [C_Calendar.EventCanEdit](#c_calendareventcanedit) |  |  |
+| ✅ | [C_Calendar.EventClearAutoApprove](#c_calendareventclearautoapprove) |  |  |
+| ✅ | [C_Calendar.EventClearLocked](#c_calendareventclearlocked) |  |  |
+| ✅ | [C_Calendar.EventClearModerator](#c_calendareventclearmoderator) |  |  |
+| ✅ | [C_Calendar.EventDecline](#c_calendareventdecline) |  |  |
+| ✅ | [C_Calendar.EventGetCalendarType](#c_calendareventgetcalendartype) |  |  |
+| ✅ | [C_Calendar.EventGetClubId](#c_calendareventgetclubid) |  |  |
+| ✅ | [C_Calendar.EventGetInvite](#c_calendareventgetinvite) |  |  |
+| ✅ | [C_Calendar.EventGetInviteResponseTime](#c_calendareventgetinviteresponsetime) |  |  |
+| ✅ | [C_Calendar.EventGetInviteSortCriterion](#c_calendareventgetinvitesortcriterion) |  |  |
+| ✅ | [C_Calendar.EventGetSelectedInvite](#c_calendareventgetselectedinvite) |  |  |
+| ✅ | [C_Calendar.EventGetStatusOptions](#c_calendareventgetstatusoptions) |  |  |
+| ✅ | [C_Calendar.EventGetTextures](#c_calendareventgettextures) |  |  |
+| ✅ | [C_Calendar.EventGetTypes](#c_calendareventgettypes) |  |  |
+| ✅ | [C_Calendar.EventGetTypesDisplayOrdered](#c_calendareventgettypesdisplayordered) |  |  |
+| ✅ | [C_Calendar.EventHasPendingInvite](#c_calendareventhaspendinginvite) |  |  |
+| ✅ | [C_Calendar.EventHaveSettingsChanged](#c_calendareventhavesettingschanged) |  |  |
+| ✅ | [C_Calendar.EventInvite](#c_calendareventinvite) |  |  |
+| ✅ | [C_Calendar.EventRemoveInvite](#c_calendareventremoveinvite) |  |  |
+| ✅ | [C_Calendar.EventRemoveInviteByGuid](#c_calendareventremoveinvitebyguid) |  |  |
+| ✅ | [C_Calendar.EventSelectInvite](#c_calendareventselectinvite) |  |  |
+| ✅ | [C_Calendar.EventSetAutoApprove](#c_calendareventsetautoapprove) |  |  |
+| ✅ | [C_Calendar.EventSetClubId](#c_calendareventsetclubid) |  |  |
+| ✅ | [C_Calendar.EventSetDate](#c_calendareventsetdate) |  |  |
+| ✅ | [C_Calendar.EventSetDescription](#c_calendareventsetdescription) |  |  |
+| ✅ | [C_Calendar.EventSetInviteStatus](#c_calendareventsetinvitestatus) |  |  |
+| ✅ | [C_Calendar.EventSetLocked](#c_calendareventsetlocked) |  |  |
+| ✅ | [C_Calendar.EventSetModerator](#c_calendareventsetmoderator) |  |  |
+| ✅ | [C_Calendar.EventSetTextureID](#c_calendareventsettextureid) |  |  |
+| ✅ | [C_Calendar.EventSetTime](#c_calendareventsettime) |  |  |
+| ✅ | [C_Calendar.EventSetTitle](#c_calendareventsettitle) |  |  |
+| ✅ | [C_Calendar.EventSetType](#c_calendareventsettype) |  |  |
+| ✅ | [C_Calendar.EventSignUp](#c_calendareventsignup) |  |  |
+| ✅ | [C_Calendar.EventSortInvites](#c_calendareventsortinvites) |  |  |
+| ✅ | [C_Calendar.EventTentative](#c_calendareventtentative) |  |  |
+| ✅ | [C_Calendar.GetClubCalendarEvents](#c_calendargetclubcalendarevents) |  |  |
+| ✅ | [C_Calendar.GetDayEvent](#c_calendargetdayevent) |  |  |
+| ✅ | [C_Calendar.GetDefaultGuildFilter](#c_calendargetdefaultguildfilter) |  |  |
+| ✅ | [C_Calendar.GetEventIndex](#c_calendargeteventindex) |  |  |
+| ✅ | [C_Calendar.GetEventIndexInfo](#c_calendargeteventindexinfo) |  |  |
+| ✅ | [C_Calendar.GetEventInfo](#c_calendargeteventinfo) |  |  |
+| ✅ | [C_Calendar.GetFirstPendingInvite](#c_calendargetfirstpendinginvite) |  |  |
+| ✅ | [C_Calendar.GetGuildEventInfo](#c_calendargetguildeventinfo) |  |  |
+| ✅ | [C_Calendar.GetGuildEventSelectionInfo](#c_calendargetguildeventselectioninfo) |  |  |
+| ✅ | [C_Calendar.GetHolidayInfo](#c_calendargetholidayinfo) |  |  |
+| ✅ | [C_Calendar.GetMaxCreateDate](#c_calendargetmaxcreatedate) |  |  |
+| ✅ | [C_Calendar.GetMinDate](#c_calendargetmindate) |  |  |
+| ✅ | [C_Calendar.GetMonthInfo](#c_calendargetmonthinfo) |  |  |
+| ✅ | [C_Calendar.GetNextClubId](#c_calendargetnextclubid) |  |  |
+| ✅ | [C_Calendar.GetNumDayEvents](#c_calendargetnumdayevents) |  |  |
+| ✅ | [C_Calendar.GetNumGuildEvents](#c_calendargetnumguildevents) |  |  |
+| ✅ | [C_Calendar.GetNumInvites](#c_calendargetnuminvites) |  |  |
+| ✅ | [C_Calendar.GetNumPendingInvites](#c_calendargetnumpendinginvites) |  |  |
+| ✅ | [C_Calendar.GetRaidInfo](#c_calendargetraidinfo) |  |  |
+| ✅ | [C_Calendar.IsActionPending](#c_calendarisactionpending) |  |  |
+| ✅ | [C_Calendar.IsEventOpen](#c_calendariseventopen) |  |  |
+| ✅ | [C_Calendar.MassInviteCommunity](#c_calendarmassinvitecommunity) |  |  |
+| ✅ | [C_Calendar.MassInviteGuild](#c_calendarmassinviteguild) |  |  |
+| ✅ | [C_Calendar.OpenCalendar](#c_calendaropencalendar) |  |  |
+| ✅ | [C_Calendar.OpenEvent](#c_calendaropenevent) |  |  |
+| ✅ | [C_Calendar.RemoveEvent](#c_calendarremoveevent) |  |  |
+| ✅ | [C_Calendar.SetAbsMonth](#c_calendarsetabsmonth) |  |  |
+| ✅ | [C_Calendar.SetMonth](#c_calendarsetmonth) |  |  |
+| ✅ | [C_Calendar.SetNextClubId](#c_calendarsetnextclubid) |  |  |
+| ✅ | [C_Calendar.UpdateEvent](#c_calendarupdateevent) |  |  |
 
 ### C_Calendar.AddEvent
 
 `C_Calendar.AddEvent()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -109,35 +109,35 @@ Namespace: `C_Calendar`
 
 `C_Calendar.AreNamesReady() → ready: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.CanAddEvent
 
 `C_Calendar.CanAddEvent() → canAddEvent: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.CanSendInvite
 
 `C_Calendar.CanSendInvite() → canSendInvite: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.CloseEvent
 
 `C_Calendar.CloseEvent()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.ContextMenuEventCanComplain
 
 `C_Calendar.ContextMenuEventCanComplain(offsetMonths: number, monthDay: luaIndex, eventIndex: luaIndex) → canComplain: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -145,7 +145,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.ContextMenuEventCanEdit(offsetMonths: number, monthDay: luaIndex, eventIndex: luaIndex) → canEdit: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -153,7 +153,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.ContextMenuEventCanRemove(offsetMonths: number, monthDay: luaIndex, eventIndex: luaIndex) → canRemove: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -161,28 +161,28 @@ Namespace: `C_Calendar`
 
 `C_Calendar.ContextMenuEventClipboard() → exists: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.ContextMenuEventCopy
 
 `C_Calendar.ContextMenuEventCopy()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.ContextMenuEventGetCalendarType
 
 `C_Calendar.ContextMenuEventGetCalendarType() → calendarType: string?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.ContextMenuEventPaste
 
 `C_Calendar.ContextMenuEventPaste(offsetMonths: number, monthDay: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -190,21 +190,21 @@ Namespace: `C_Calendar`
 
 `C_Calendar.ContextMenuEventRemove()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.ContextMenuEventSignUp
 
 `C_Calendar.ContextMenuEventSignUp()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.ContextMenuGetEventIndex
 
 `C_Calendar.ContextMenuGetEventIndex() → info: CalendarEventIndexInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -212,35 +212,35 @@ Namespace: `C_Calendar`
 
 `C_Calendar.ContextMenuInviteAvailable()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.ContextMenuInviteDecline
 
 `C_Calendar.ContextMenuInviteDecline()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.ContextMenuInviteRemove
 
 `C_Calendar.ContextMenuInviteRemove()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.ContextMenuInviteTentative
 
 `C_Calendar.ContextMenuInviteTentative()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.ContextMenuSelectEvent
 
 `C_Calendar.ContextMenuSelectEvent(offsetMonths: number, monthDay: luaIndex, eventIndex: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -248,63 +248,63 @@ Namespace: `C_Calendar`
 
 `C_Calendar.CreateCommunitySignUpEvent()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.CreateGuildAnnouncementEvent
 
 `C_Calendar.CreateGuildAnnouncementEvent()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.CreateGuildSignUpEvent
 
 `C_Calendar.CreateGuildSignUpEvent()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.CreatePlayerEvent
 
 `C_Calendar.CreatePlayerEvent()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.EventAvailable
 
 `C_Calendar.EventAvailable()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.EventCanEdit
 
 `C_Calendar.EventCanEdit() → canEdit: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.EventClearAutoApprove
 
 `C_Calendar.EventClearAutoApprove()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.EventClearLocked
 
 `C_Calendar.EventClearLocked()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.EventClearModerator
 
 `C_Calendar.EventClearModerator(inviteIndex: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -312,28 +312,28 @@ Namespace: `C_Calendar`
 
 `C_Calendar.EventDecline()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.EventGetCalendarType
 
 `C_Calendar.EventGetCalendarType() → calendarType: string?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.EventGetClubId
 
 `C_Calendar.EventGetClubId() → info: ClubId?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.EventGetInvite
 
 `C_Calendar.EventGetInvite(eventIndex: luaIndex) → info: CalendarEventInviteInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret during chat lockdown (Blizzard's docs; not checked in game)
@@ -343,7 +343,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.EventGetInviteResponseTime(eventIndex: luaIndex) → time: CalendarTime`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret during chat lockdown (Blizzard's docs; not checked in game)
@@ -353,21 +353,21 @@ Namespace: `C_Calendar`
 
 `C_Calendar.EventGetInviteSortCriterion() → criterion: string, reverse: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.EventGetSelectedInvite
 
 `C_Calendar.EventGetSelectedInvite() → inviteIndex: luaIndex?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.EventGetStatusOptions
 
 `C_Calendar.EventGetStatusOptions(eventIndex: luaIndex) → options: CalendarEventStatusOption[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -375,7 +375,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.EventGetTextures(eventType: CalendarEventType) → textures: CalendarEventTextureInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -383,35 +383,35 @@ Namespace: `C_Calendar`
 
 `C_Calendar.EventGetTypes() → types: string[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.EventGetTypesDisplayOrdered
 
 `C_Calendar.EventGetTypesDisplayOrdered() → infos: CalendarEventTypeDisplayInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.EventHasPendingInvite
 
 `C_Calendar.EventHasPendingInvite() → hasPendingInvite: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.EventHaveSettingsChanged
 
 `C_Calendar.EventHaveSettingsChanged() → haveSettingsChanged: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.EventInvite
 
 `C_Calendar.EventInvite(name: cstring)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -419,7 +419,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.EventRemoveInvite(inviteIndex: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -427,7 +427,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.EventRemoveInviteByGuid(guid: WOWGUID)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -435,7 +435,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.EventSelectInvite(inviteIndex: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -443,14 +443,14 @@ Namespace: `C_Calendar`
 
 `C_Calendar.EventSetAutoApprove()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.EventSetClubId
 
 `C_Calendar.EventSetClubId(clubId: ClubId?)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -458,7 +458,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.EventSetDate(month: luaIndex, monthDay: luaIndex, year: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -466,7 +466,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.EventSetDescription(description: cstring)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -474,7 +474,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.EventSetInviteStatus(eventIndex: luaIndex, status: CalendarStatus)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -482,14 +482,14 @@ Namespace: `C_Calendar`
 
 `C_Calendar.EventSetLocked()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.EventSetModerator
 
 `C_Calendar.EventSetModerator(inviteIndex: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -497,7 +497,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.EventSetTextureID(textureIndex: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -505,7 +505,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.EventSetTime(hour: number, minute: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -513,7 +513,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.EventSetTitle(title: cstring)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -521,7 +521,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.EventSetType(typeIndex: CalendarEventType)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -529,14 +529,14 @@ Namespace: `C_Calendar`
 
 `C_Calendar.EventSignUp()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.EventSortInvites
 
 `C_Calendar.EventSortInvites(criterion: cstring, reverse: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -544,14 +544,14 @@ Namespace: `C_Calendar`
 
 `C_Calendar.EventTentative()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.GetClubCalendarEvents
 
 `C_Calendar.GetClubCalendarEvents(clubId: ClubId, startTime: CalendarTime, endTime: CalendarTime) → events: CalendarDayEvent[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret during chat lockdown (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
@@ -560,7 +560,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.GetDayEvent(monthOffset: number, monthDay: luaIndex, index: luaIndex) → event: CalendarDayEvent`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret during chat lockdown (Blizzard's docs; not checked in game)
@@ -570,14 +570,14 @@ Namespace: `C_Calendar`
 
 `C_Calendar.GetDefaultGuildFilter() → info: CalendarGuildFilterInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.GetEventIndex
 
 `C_Calendar.GetEventIndex() → info: CalendarEventIndexInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -585,7 +585,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.GetEventIndexInfo(eventID: CalendarEventID, monthOffset: number?, monthDay: number?) → eventIndexInfo: CalendarEventIndexInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -593,7 +593,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.GetEventInfo() → info: CalendarEventInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -601,7 +601,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.GetFirstPendingInvite(offsetMonths: number, monthDay: luaIndex) → firstPendingInvite: luaIndex?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -609,7 +609,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.GetGuildEventInfo(index: luaIndex) → info: CalendarGuildEventInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
@@ -618,7 +618,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.GetGuildEventSelectionInfo(index: luaIndex) → info: CalendarEventIndexInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
@@ -627,7 +627,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.GetHolidayInfo(monthOffset: number, monthDay: luaIndex, index: luaIndex) → event: CalendarHolidayInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
@@ -636,21 +636,21 @@ Namespace: `C_Calendar`
 
 `C_Calendar.GetMaxCreateDate() → maxCreateDate: CalendarTime`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.GetMinDate
 
 `C_Calendar.GetMinDate() → minDate: CalendarTime`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.GetMonthInfo
 
 `C_Calendar.GetMonthInfo(offsetMonths: number = 0) → monthInfo: CalendarMonthInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -658,14 +658,14 @@ Namespace: `C_Calendar`
 
 `C_Calendar.GetNextClubId() → clubId: ClubId?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.GetNumDayEvents
 
 `C_Calendar.GetNumDayEvents(offsetMonths: number, monthDay: luaIndex) → numDayEvents: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -673,28 +673,28 @@ Namespace: `C_Calendar`
 
 `C_Calendar.GetNumGuildEvents() → numGuildEvents: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.GetNumInvites
 
 `C_Calendar.GetNumInvites() → num: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.GetNumPendingInvites
 
 `C_Calendar.GetNumPendingInvites() → num: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.GetRaidInfo
 
 `C_Calendar.GetRaidInfo(offsetMonths: number, monthDay: luaIndex, eventIndex: luaIndex) → info: CalendarRaidInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
@@ -703,21 +703,21 @@ Namespace: `C_Calendar`
 
 `C_Calendar.IsActionPending() → actionPending: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.IsEventOpen
 
 `C_Calendar.IsEventOpen() → isOpen: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.MassInviteCommunity
 
 `C_Calendar.MassInviteCommunity(clubId: ClubId, minLevel: number, maxLevel: number, maxRankOrder: luaIndex?)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -725,7 +725,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.MassInviteGuild(minLevel: number, maxLevel: number, maxRankOrder: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -733,14 +733,14 @@ Namespace: `C_Calendar`
 
 `C_Calendar.OpenCalendar()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.OpenEvent
 
 `C_Calendar.OpenEvent(offsetMonths: number, monthDay: luaIndex, index: luaIndex) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -748,14 +748,14 @@ Namespace: `C_Calendar`
 
 `C_Calendar.RemoveEvent()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CalendarDocumentation.lua`
 
 ### C_Calendar.SetAbsMonth
 
 `C_Calendar.SetAbsMonth(month: luaIndex, year: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -763,7 +763,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.SetMonth(offsetMonths: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -771,7 +771,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.SetNextClubId(clubId: ClubId?)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -779,7 +779,7 @@ Namespace: `C_Calendar`
 
 `C_Calendar.UpdateEvent()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `CalendarDocumentation.lua`
 
@@ -787,80 +787,81 @@ Namespace: `C_Calendar`
 
 ### CALENDAR_ACTION_PENDING
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `pending: bool`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `b`
 
 ### CALENDAR_CLOSE_EVENT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### CALENDAR_EVENT_ALARM
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `title: cstring`, `hour: number`, `minute: number`
 - fires synchronously (Blizzard's docs)
 
 ### CALENDAR_NEW_EVENT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `isCopy: bool`
 - fires synchronously (Blizzard's docs)
 
 ### CALENDAR_OPEN_EVENT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `calendarType: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### CALENDAR_UPDATE_ERROR
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `errorReason: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### CALENDAR_UPDATE_ERROR_WITH_COUNT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `errorReason: cstring`, `count: number`
 - fires synchronously (Blizzard's docs)
 
 ### CALENDAR_UPDATE_ERROR_WITH_PLAYER_NAME
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `errorReason: cstring`, `playerName: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### CALENDAR_UPDATE_EVENT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### CALENDAR_UPDATE_EVENT_LIST
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
 
 ### CALENDAR_UPDATE_GUILD_EVENTS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### CALENDAR_UPDATE_INVITE_LIST
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `hasCompleteList: bool?`
 - fires synchronously (Blizzard's docs)
 
 ### CALENDAR_UPDATE_PENDING_INVITES
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 

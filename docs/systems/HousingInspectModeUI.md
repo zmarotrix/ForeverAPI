@@ -6,17 +6,17 @@ Namespace: `C_HousingInspectMode`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_HousingInspectMode.EnterInspectMode](#c_housinginspectmodeenterinspectmode) |  |  |
-| ❔ | [C_HousingInspectMode.ExitInspectMode](#c_housinginspectmodeexitinspectmode) |  |  |
-| ❔ | [C_HousingInspectMode.GetHoveredDecorGUID](#c_housinginspectmodegethovereddecorguid) |  |  |
-| ❔ | [C_HousingInspectMode.IsHoveringDecor](#c_housinginspectmodeishoveringdecor) |  |  |
-| ❔ | [C_HousingInspectMode.IsInInspectMode](#c_housinginspectmodeisininspectmode) |  |  |
+| ✅ | [C_HousingInspectMode.EnterInspectMode](#c_housinginspectmodeenterinspectmode) |  |  |
+| ✅ | [C_HousingInspectMode.ExitInspectMode](#c_housinginspectmodeexitinspectmode) |  |  |
+| ✅ | [C_HousingInspectMode.GetHoveredDecorGUID](#c_housinginspectmodegethovereddecorguid) |  |  |
+| ✅ | [C_HousingInspectMode.IsHoveringDecor](#c_housinginspectmodeishoveringdecor) |  |  |
+| ✅ | [C_HousingInspectMode.IsInInspectMode](#c_housinginspectmodeisininspectmode) |  |  |
 
 ### C_HousingInspectMode.EnterInspectMode
 
 `C_HousingInspectMode.EnterInspectMode()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Enters inspect mode, enabling decor inspection
 - Source: client docs `HousingInspectModeUIDocumentation.lua`
 
@@ -24,7 +24,7 @@ Namespace: `C_HousingInspectMode`
 
 `C_HousingInspectMode.ExitInspectMode()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Exits inspect mode, disabling decor inspection
 - Source: client docs `HousingInspectModeUIDocumentation.lua`
 
@@ -32,7 +32,7 @@ Namespace: `C_HousingInspectMode`
 
 `C_HousingInspectMode.GetHoveredDecorGUID() → decorGUID: WOWGUID`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns the GUID of the decor instance currently being hovered, if there is one
 - Source: client docs `HousingInspectModeUIDocumentation.lua`
 
@@ -40,7 +40,7 @@ Namespace: `C_HousingInspectMode`
 
 `C_HousingInspectMode.IsHoveringDecor() → isHoveringDecor: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns true if a decor instance is currently being hovered in inspect mode
 - Source: client docs `HousingInspectModeUIDocumentation.lua`
 
@@ -48,7 +48,7 @@ Namespace: `C_HousingInspectMode`
 
 `C_HousingInspectMode.IsInInspectMode() → isInInspectMode: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns true if the player is currently in inspect mode
 - Source: client docs `HousingInspectModeUIDocumentation.lua`
 
@@ -56,12 +56,12 @@ Namespace: `C_HousingInspectMode`
 
 ### HOUSING_INSPECT_MODE_DECOR_HOVERED_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### HOUSING_INSPECT_MODE_STATE_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)

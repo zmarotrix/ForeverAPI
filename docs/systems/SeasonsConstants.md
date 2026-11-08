@@ -4,7 +4,7 @@
 
 ### SeasonID
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `NoSeason` = 0
   - `SeasonOfMastery` = 1
   - `SeasonOfDiscovery` = 2

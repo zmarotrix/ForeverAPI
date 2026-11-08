@@ -4,6 +4,6 @@
 
 ### ClientPlatformType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Windows` = 0
   - `Macintosh` = 1

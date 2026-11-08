@@ -4,7 +4,7 @@
 
 ### AbbreviationDataError
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `InvalidBreakpoint` = 1
   - `InvalidSignificandDivisor` = 2
   - `InvalidFractionDivisor` = 4
@@ -12,7 +12,7 @@
 
 ### NamePartType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Firstname` = 0
   - `Surname` = 1
   - `Combined` = 2

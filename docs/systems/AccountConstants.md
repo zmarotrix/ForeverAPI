@@ -4,7 +4,7 @@
 
 ### AccountData
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Config` = 0
   - `Config2` = 1
   - `Bindings` = 2
@@ -28,7 +28,7 @@
 
 ### AccountDataUpdateStatus
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Success` = 0
   - `Failed` = 1
   - `Corrupt` = 2
@@ -36,7 +36,7 @@
 
 ### AccountExportResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Success` = 0
   - `UnknownError` = 1
   - `Cancelled` = 2
@@ -54,20 +54,20 @@
 
 ### AccountGetListRequestType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Battlepets` = 1
 
 ### AccountSequenceCacheType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Invalid` = 0
   - `Local` = 1
   - `HouseDecor` = 2
 
 ### AccountTransType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ProxyForwarder` = 0
   - `Purchase` = 1
   - `Distribution` = 2
@@ -138,7 +138,7 @@
 
 ### BnetAccountFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `BattlePetTrainer` = 1
   - `RafVeteranNotified` = 2
@@ -165,25 +165,25 @@
 
 ### ChallengeModeHistoryFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `ConfirmedLeaver` = 1
 
 ### ChallengeModeHistoryResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Successful` = 0
   - `Leaver` = 1
 
 ### ChallengeModeHistoryStatus
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Normal` = 0
   - `Leaver` = 1
 
 ### DisableAccountProfilesFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Document` = 1
   - `SharedCollections` = 2
@@ -194,7 +194,7 @@
 
 ### ItemCollectionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Toy` = 1
   - `Heirloom` = 2
@@ -212,7 +212,7 @@
 
 ### SdToggleUsageLocation
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `BeforeLogin` = 0
   - `CharacterCreation` = 1
   - `BarberShop` = 2

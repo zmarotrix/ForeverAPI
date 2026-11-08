@@ -6,22 +6,22 @@ Namespace: `C_EncodingUtil`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_EncodingUtil.CompressString](#c_encodingutilcompressstring) |  |  |
-| ❔ | [C_EncodingUtil.DecodeBase64](#c_encodingutildecodebase64) |  |  |
-| ❔ | [C_EncodingUtil.DecodeHex](#c_encodingutildecodehex) |  |  |
-| ❔ | [C_EncodingUtil.DecompressString](#c_encodingutildecompressstring) |  |  |
-| ❔ | [C_EncodingUtil.DeserializeCBOR](#c_encodingutildeserializecbor) |  |  |
-| ❔ | [C_EncodingUtil.DeserializeJSON](#c_encodingutildeserializejson) |  |  |
-| ❔ | [C_EncodingUtil.EncodeBase64](#c_encodingutilencodebase64) |  |  |
-| ❔ | [C_EncodingUtil.EncodeHex](#c_encodingutilencodehex) |  |  |
-| ❔ | [C_EncodingUtil.SerializeCBOR](#c_encodingutilserializecbor) |  |  |
-| ❔ | [C_EncodingUtil.SerializeJSON](#c_encodingutilserializejson) |  |  |
+| ✅ | [C_EncodingUtil.CompressString](#c_encodingutilcompressstring) |  |  |
+| ✅ | [C_EncodingUtil.DecodeBase64](#c_encodingutildecodebase64) |  |  |
+| ✅ | [C_EncodingUtil.DecodeHex](#c_encodingutildecodehex) |  |  |
+| ✅ | [C_EncodingUtil.DecompressString](#c_encodingutildecompressstring) |  |  |
+| ✅ | [C_EncodingUtil.DeserializeCBOR](#c_encodingutildeserializecbor) |  |  |
+| ✅ | [C_EncodingUtil.DeserializeJSON](#c_encodingutildeserializejson) |  |  |
+| ✅ | [C_EncodingUtil.EncodeBase64](#c_encodingutilencodebase64) |  |  |
+| ✅ | [C_EncodingUtil.EncodeHex](#c_encodingutilencodehex) |  |  |
+| ✅ | [C_EncodingUtil.SerializeCBOR](#c_encodingutilserializecbor) |  |  |
+| ✅ | [C_EncodingUtil.SerializeJSON](#c_encodingutilserializejson) |  |  |
 
 ### C_EncodingUtil.CompressString
 
 `C_EncodingUtil.CompressString(source: stringView, method: CompressionMethod = Deflate, level: CompressionLevel = Default) → output: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncodingUtilDocumentation.lua`
@@ -30,7 +30,7 @@ Namespace: `C_EncodingUtil`
 
 `C_EncodingUtil.DecodeBase64(source: stringView, variant: Base64Variant = Standard) → output: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncodingUtilDocumentation.lua`
@@ -39,7 +39,7 @@ Namespace: `C_EncodingUtil`
 
 `C_EncodingUtil.DecodeHex(source: string) → output: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncodingUtilDocumentation.lua`
@@ -48,7 +48,7 @@ Namespace: `C_EncodingUtil`
 
 `C_EncodingUtil.DecompressString(source: stringView, method: CompressionMethod = Deflate) → output: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncodingUtilDocumentation.lua`
@@ -57,7 +57,7 @@ Namespace: `C_EncodingUtil`
 
 `C_EncodingUtil.DeserializeCBOR(source: stringView) → value: LuaValueVariant?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncodingUtilDocumentation.lua`
 
@@ -65,7 +65,7 @@ Namespace: `C_EncodingUtil`
 
 `C_EncodingUtil.DeserializeJSON(source: string) → value: LuaValueVariant?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncodingUtilDocumentation.lua`
 
@@ -73,7 +73,7 @@ Namespace: `C_EncodingUtil`
 
 `C_EncodingUtil.EncodeBase64(source: stringView, variant: Base64Variant = Standard) → output: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncodingUtilDocumentation.lua`
@@ -82,7 +82,7 @@ Namespace: `C_EncodingUtil`
 
 `C_EncodingUtil.EncodeHex(source: stringView) → output: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncodingUtilDocumentation.lua`
@@ -91,7 +91,7 @@ Namespace: `C_EncodingUtil`
 
 `C_EncodingUtil.SerializeCBOR(value: LuaValueVariant?, options: CBORSerializationOptions?) → output: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncodingUtilDocumentation.lua`
 
@@ -99,7 +99,7 @@ Namespace: `C_EncodingUtil`
 
 `C_EncodingUtil.SerializeJSON(value: LuaValueVariant?, options: JSONSerializationOptions?) → output: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncodingUtilDocumentation.lua`
 
@@ -107,7 +107,7 @@ Namespace: `C_EncodingUtil`
 
 ### Base64Variant
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Standard` = 0
   - `StandardUrlSafe` = 1
 
@@ -118,14 +118,14 @@ Namespace: `C_EncodingUtil`
 
 ### CompressionLevel
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Default` = 0
   - `OptimizeForSpeed` = 1
   - `OptimizeForSize` = 2
 
 ### CompressionMethod
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Deflate` = 0
   - `Zlib` = 1
   - `Gzip` = 2

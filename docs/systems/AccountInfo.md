@@ -6,15 +6,15 @@ Namespace: `C_AccountInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_AccountInfo.GetIDFromBattleNetAccountGUID](#c_accountinfogetidfrombattlenetaccountguid) |  |  |
-| ❔ | [C_AccountInfo.IsGUIDBattleNetAccountType](#c_accountinfoisguidbattlenetaccounttype) |  |  |
-| ❔ | [C_AccountInfo.IsGUIDRelatedToLocalAccount](#c_accountinfoisguidrelatedtolocalaccount) |  |  |
+| ✅ | [C_AccountInfo.GetIDFromBattleNetAccountGUID](#c_accountinfogetidfrombattlenetaccountguid) |  |  |
+| ✅ | [C_AccountInfo.IsGUIDBattleNetAccountType](#c_accountinfoisguidbattlenetaccounttype) |  |  |
+| ✅ | [C_AccountInfo.IsGUIDRelatedToLocalAccount](#c_accountinfoisguidrelatedtolocalaccount) |  |  |
 
 ### C_AccountInfo.GetIDFromBattleNetAccountGUID
 
 `C_AccountInfo.GetIDFromBattleNetAccountGUID(battleNetAccountGUID: WOWGUID) → battleNetAccountID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AccountInfoDocumentation.lua`
 
@@ -22,7 +22,7 @@ Namespace: `C_AccountInfo`
 
 `C_AccountInfo.IsGUIDBattleNetAccountType(guid: WOWGUID) → isBNet: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AccountInfoDocumentation.lua`
 
@@ -30,6 +30,6 @@ Namespace: `C_AccountInfo`
 
 `C_AccountInfo.IsGUIDRelatedToLocalAccount(guid: WOWGUID) → isLocalUser: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AccountInfoDocumentation.lua`

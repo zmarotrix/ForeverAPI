@@ -6,22 +6,22 @@ Namespace: `C_EncounterWarnings`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_EncounterWarnings.GetColorForSeverity](#c_encounterwarningsgetcolorforseverity) |  |  |
-| ❔ | [C_EncounterWarnings.GetEditModeWarningInfo](#c_encounterwarningsgeteditmodewarninginfo) |  |  |
-| ❔ | [C_EncounterWarnings.GetPlayCustomSoundsWhenHidden](#c_encounterwarningsgetplaycustomsoundswhenhidden) |  |  |
-| ❔ | [C_EncounterWarnings.GetSoundKitForSeverity](#c_encounterwarningsgetsoundkitforseverity) |  |  |
-| ❔ | [C_EncounterWarnings.GetWarningsShown](#c_encounterwarningsgetwarningsshown) |  |  |
-| ❔ | [C_EncounterWarnings.IsFeatureAvailable](#c_encounterwarningsisfeatureavailable) |  |  |
-| ❔ | [C_EncounterWarnings.IsFeatureEnabled](#c_encounterwarningsisfeatureenabled) |  |  |
-| ❔ | [C_EncounterWarnings.PlaySound](#c_encounterwarningsplaysound) |  |  |
-| ❔ | [C_EncounterWarnings.SetPlayCustomSoundsWhenHidden](#c_encounterwarningssetplaycustomsoundswhenhidden) |  |  |
-| ❔ | [C_EncounterWarnings.SetWarningsShown](#c_encounterwarningssetwarningsshown) |  |  |
+| ✅ | [C_EncounterWarnings.GetColorForSeverity](#c_encounterwarningsgetcolorforseverity) |  |  |
+| ✅ | [C_EncounterWarnings.GetEditModeWarningInfo](#c_encounterwarningsgeteditmodewarninginfo) |  |  |
+| ✅ | [C_EncounterWarnings.GetPlayCustomSoundsWhenHidden](#c_encounterwarningsgetplaycustomsoundswhenhidden) |  |  |
+| ✅ | [C_EncounterWarnings.GetSoundKitForSeverity](#c_encounterwarningsgetsoundkitforseverity) |  |  |
+| ✅ | [C_EncounterWarnings.GetWarningsShown](#c_encounterwarningsgetwarningsshown) |  |  |
+| ✅ | [C_EncounterWarnings.IsFeatureAvailable](#c_encounterwarningsisfeatureavailable) |  |  |
+| ✅ | [C_EncounterWarnings.IsFeatureEnabled](#c_encounterwarningsisfeatureenabled) |  |  |
+| ✅ | [C_EncounterWarnings.PlaySound](#c_encounterwarningsplaysound) |  |  |
+| ✅ | [C_EncounterWarnings.SetPlayCustomSoundsWhenHidden](#c_encounterwarningssetplaycustomsoundswhenhidden) |  |  |
+| ✅ | [C_EncounterWarnings.SetWarningsShown](#c_encounterwarningssetwarningsshown) |  |  |
 
 ### C_EncounterWarnings.GetColorForSeverity
 
 `C_EncounterWarnings.GetColorForSeverity(severity: EncounterEventSeverity) → color: colorRGBA`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterWarningsDocumentation.lua`
 
@@ -29,7 +29,7 @@ Namespace: `C_EncounterWarnings`
 
 `C_EncounterWarnings.GetEditModeWarningInfo(severity: EncounterEventSeverity) → warningInfo: EncounterWarningInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterWarningsDocumentation.lua`
 
@@ -37,7 +37,7 @@ Namespace: `C_EncounterWarnings`
 
 `C_EncounterWarnings.GetPlayCustomSoundsWhenHidden() → play: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns true if custom sound alerts are allowed to play for hidden warning messages.
 - Source: client docs `EncounterWarningsDocumentation.lua`
 
@@ -45,7 +45,7 @@ Namespace: `C_EncounterWarnings`
 
 `C_EncounterWarnings.GetSoundKitForSeverity(severity: EncounterEventSeverity) → soundKitID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterWarningsDocumentation.lua`
 
@@ -53,7 +53,7 @@ Namespace: `C_EncounterWarnings`
 
 `C_EncounterWarnings.GetWarningsShown() → shown: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns true if text messages for encounter events are allowed to be shown.
 - Source: client docs `EncounterWarningsDocumentation.lua`
 
@@ -61,21 +61,21 @@ Namespace: `C_EncounterWarnings`
 
 `C_EncounterWarnings.IsFeatureAvailable() → isAvailable: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `EncounterWarningsDocumentation.lua`
 
 ### C_EncounterWarnings.IsFeatureEnabled
 
 `C_EncounterWarnings.IsFeatureEnabled() → isAvailableAndEnabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `EncounterWarningsDocumentation.lua`
 
 ### C_EncounterWarnings.PlaySound
 
 `C_EncounterWarnings.PlaySound(severity: EncounterEventSeverity) → soundHandle: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterWarningsDocumentation.lua`
@@ -84,7 +84,7 @@ Namespace: `C_EncounterWarnings`
 
 `C_EncounterWarnings.SetPlayCustomSoundsWhenHidden(play: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Controls whether custom sound alerts for encounter events are allowed to play for warning messages that are hidden.
 - `play`: If true, allow playing custom sound alerts. Note that sound alerts will not be played if the encounter warnings feature has been disabled.
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
@@ -94,7 +94,7 @@ Namespace: `C_EncounterWarnings`
 
 `C_EncounterWarnings.SetWarningsShown(shown: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Controls whether text messages for encounter events are allowed to be shown.
 - `shown`: If false, hides all warning messages in the default UI.
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
@@ -104,7 +104,7 @@ Namespace: `C_EncounterWarnings`
 
 ### ENCOUNTER_WARNING
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `encounterWarningInfo: EncounterWarningInfo`
 - fires synchronously (Blizzard's docs)
 

@@ -4,19 +4,19 @@
 
 ### EncounterTimelineEventConstants
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `ENCOUNTER_TIMELINE_INVALID_EVENT` = 0
   - `ENCOUNTER_TIMELINE_RESERVED_EVENT_COUNT` = 40
 
 ### EncounterTimelineEventSortDirection
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Descending` = 0
   - `Ascending` = 1
 
 ### EncounterTimelineEventSource
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
 - Blizzard: Enumeration of all encounter timeline event sources.
   - `Encounter` = 0
   - `Script` = 1
@@ -24,7 +24,7 @@
 
 ### EncounterTimelineEventState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
 - Blizzard: Enumeration of all encounter timeline event states.
   - `Active` = 0
   - `Paused` = 1
@@ -33,7 +33,7 @@
 
 ### EncounterTimelineIconMasks
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `EncounterTimelineTankAlertIcons` = TankRole
   - `EncounterTimelineHealerAlertIcons` = HealerRole
   - `EncounterTimelineDamageAlertIcons` = DpsRole
@@ -47,7 +47,7 @@
 
 ### EncounterTimelineIconSet
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `TankAlert` = 1
   - `HealerAlert` = 2
   - `DamageAlert` = 3
@@ -57,7 +57,7 @@
 
 ### EncounterTimelineTrack
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
 - Blizzard: Enumeration of all encounter timeline tracks., Tracks are not permitted to overlap (but may have a zero duration span), and are contiguously ordered from shortest maximum duration to longest.
   - `Queued` = 0
   - `Short` = 1
@@ -67,7 +67,7 @@
 
 ### EncounterTimelineTrackType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
 - Blizzard: Enumeration of all encounter timeline track types. Track types infer behavioral aspects of the track, for example whether or not we associate sort orders to events in the track.
   - `Hidden` = 0
   - `Sorted` = 1
@@ -75,7 +75,7 @@
 
 ### EncounterTimelineViewType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
 - Blizzard: Enumeration of view types for the timeline., View types control layout parameters for the timeline such as maximum track durations and event counts, and optimize event processing for expected display behaviors.
   - `None` = 0
   - `Timeline` = 1

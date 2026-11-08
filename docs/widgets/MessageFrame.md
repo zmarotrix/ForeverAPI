@@ -1,0 +1,259 @@
+# MessageFrame
+
+Object type reported: `MessageFrame`
+
+Script handlers: `OnLoad`, `OnShow`, `OnHide`, `OnEvent`, `OnUpdate`, `OnSizeChanged`, `OnEnter`, `OnLeave`, `OnMouseDown`, `OnMouseUp`, `OnMouseWheel`, `OnDragStart`, `OnDragStop`, `OnReceiveDrag`, `OnKeyDown`, `OnKeyUp`, `OnChar`, `OnAttributeChanged`, `OnEnable`, `OnDisable`, `OnHyperlinkClick`, `OnHyperlinkEnter`, `OnHyperlinkLeave`, `OnGamePadButtonDown`, `OnGamePadButtonUp`, `OnGamePadStick`
+
+## Methods
+
+- ✅ `AbortDrag()`
+- ✅ `AddAccessRestrictions(restrictions: ScriptObjectAccessRestriction)` — Adds access restrictions to a script object, preventing it from being used in API calls when enforced. (restricted in some situations; secret arguments: NotAllowed)
+- ✅ `AddForbiddenAspects(aspects: ForbiddenAspect)` — Adds forbidden aspects to a script object, restricting access to various functionalities such as script bindings. (restricted in some situations; secret arguments: NotAllowed)
+- ✅ `AddMessage(text: cstring, colorR: number, colorG: number, colorB: number, a: SingleColorValue?, messageID: number?)` (secret arguments: AllowedWhenUntainted)
+- ✅ `AddRoleset(roleset: string)` — Adds a roleset tag to this frame without removing existing ones. (protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted)
+- ✅ `AddSecretAspect(aspect: SecretAspect)` (restricted in some situations; secret arguments: AllowedWhenUntainted)
+- ✅ `AdjustPointsOffset(x: uiUnit, y: uiUnit)` (protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted)
+- ✅ `CanBeAccessedInContext() → canAccess: bool` — Returns whether the current Lua execution context has permission to access this object. (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecurity'])
+- ✅ `CanChangeAttribute() → canChangeAttributes: bool` (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecurity'])
+- ✅ `CanChangeProtectedState() → canChange: bool` (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecurity'])
+- ✅ `CanPropagateMouseClicks() → canPropagate: bool`
+- ✅ `CanPropagateMouseMotion() → canPropagate: bool`
+- ✅ `Clear()`
+- ✅ `ClearAllPoints()` — Clears all points and immediately invalidates the rect. (Prior to 11.2.0, this would only invalidate rect immediately for AnchoringRestricted regions.) (protected: only Blizzard's secure code may call it)
+- ✅ `ClearAlphaGradient()`
+- ✅ `ClearAttribute(attributeName: cstring) → cleared: bool` (protected: only Blizzard's secure code may call it; secret arguments: NotAllowed; SecretReturnsForAspect: ['Enum.SecretAspect.Attributes'])
+- ✅ `ClearAttributes()` (protected: only Blizzard's secure code may call it)
+- ✅ `ClearParentKey()`
+- ✅ `ClearPoint(point: FramePoint)` (protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted)
+- ✅ `ClearPointsOffset()` (protected: only Blizzard's secure code may call it)
+- ✅ `ClearScripts()` — Remove all script handlers set through Scripts in XML or SetScript in Lua (ChecksForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.ScriptBindings'}])
+- ✅ `CollapsesLayout() → collapsesLayout: bool`
+- ✅ `CreateAnimationGroup(name: cstring?, templateName: cstring?) → group: SimpleAnimGroup` (secret arguments: NotAllowed)
+- ✅ `CreateFontString(name: cstring?, drawLayer: DrawLayer?, templateName: cstring?) → line: SimpleFontString` (secret arguments: NotAllowed)
+- ✅ `CreateLine(name: cstring?, drawLayer: DrawLayer?, templateName: cstring?, subLevel: number?) → line: SimpleLine` (secret arguments: NotAllowed)
+- ✅ `CreateMaskTexture(name: cstring?, drawLayer: DrawLayer?, templateName: cstring?, subLevel: number?) → maskTexture: SimpleMaskTexture` (secret arguments: NotAllowed)
+- ✅ `CreateTexture(name: cstring?, drawLayer: DrawLayer?, templateName: cstring?, subLevel: number?) → texture: SimpleTexture` (secret arguments: NotAllowed)
+- ✅ `CreateVectorGraphics(name: cstring?, drawLayer: DrawLayer?, templateName: cstring?, subLevel: number?) → vectorGraphics: SimpleVectorGraphics` (secret arguments: NotAllowed)
+- ✅ `DesaturateHierarchy(desaturation: number, excludeRoot: bool = False)` (secret arguments: NotAllowed)
+- ✅ `DisableDrawLayer(layer: DrawLayer)` (secret arguments: AllowedWhenUntainted)
+- ✅ `DoesClipChildren() → clipsChildren: bool`
+- ✅ `DoesHyperlinkPropagateToParent() → canPropagate: bool` — Returns whether hyperlink events (ex. OnHyperlinkEnter, OnHyperlinkLeave, OnHyperlinkClick) are propagated to this frame's parent.
+- ✅ `EnableDrawLayer(layer: DrawLayer)` (secret arguments: AllowedWhenUntainted)
+- ✅ `EnableGamePadButton(enable: bool = False)` (protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `EnableGamePadStick(enable: bool = False)` (protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `EnableKeyboard(enable: bool = False)` (protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `EnableMouse(enable: bool = False)` (protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `EnableMouseMotion(enable: bool = False)` (protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `EnableMouseWheel(enable: bool = False)` (protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `ExecuteAttribute(attributeName: cstring, arguments: cstring?) → success: bool, returns: cstring?` (secret arguments: AllowedWhenUntainted; SecretReturnsForAspect: ['Enum.SecretAspect.Attributes'])
+- ✅ `FocusEnter(fromMouseMotion: bool = True)` (ChecksForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.ScriptedInput'}]; protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `FocusExit(fromMouseMotion: bool = True)` (ChecksForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.ScriptedInput'}]; protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `GetAccessRestrictions() → restrictions: ScriptObjectAccessRestriction` — Returns the mask of all access restrictions applied to this object. (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecurity'])
+- ✅ `GetAlpha() → alpha: SingleColorValue` (SecretReturnsForAspect: ['Enum.SecretAspect.Alpha'])
+- ✅ `GetAnimationGroups() → groups: SimpleAnimGroup`
+- ✅ `GetAttribute(attributeName: cstring) → value: cstring` (ConstSecretAccessor; secret arguments: AllowedWhenUntainted; SecretReturnsForAspect: ['Enum.SecretAspect.Attributes'])
+- ✅ `GetBottom() → bottom: uiUnit` (may return nothing; SecretWhenAnchoringSecret)
+- ✅ `GetBoundsRect() → left: uiUnit, bottom: uiUnit, width: uiUnit, height: uiUnit`
+- ✅ `GetCenter() → x: uiUnit, y: uiUnit` (may return nothing; SecretWhenAnchoringSecret)
+- ✅ `GetChildren() → children: SimpleFrame` (SecretReturnsForAspect: ['Enum.SecretAspect.Hierarchy'])
+- ✅ `GetClampRectInsets() → left: uiUnit, right: uiUnit, top: uiUnit, bottom: uiUnit`
+- ✅ `GetDebugName(preferParentKey: bool = False) → debugName: string` (ConstSecretAccessor; secret arguments: AllowedWhenUntainted)
+- ✅ `GetDontSavePosition() → dontSave: bool`
+- ✅ `GetEffectiveAlpha() → effectiveAlpha: SingleColorValue` (RequiresScriptObjectAlphaAccess; SecretReturnsForAspect: ['Enum.SecretAspect.Alpha'])
+- ✅ `GetEffectiveScale() → effectiveScale: number` (SecretReturnsForAspect: ['Enum.SecretAspect.Scale'])
+- ✅ `GetEffectivelyFlattensRenderLayers() → flatten: bool`
+- ✅ `GetFadeDuration() → fadeDurationSeconds: number`
+- ✅ `GetFadePower() → fadePower: number`
+- ✅ `GetFading() → isFading: bool`
+- ✅ `GetFlattensRenderLayers() → flatten: bool`
+- ✅ `GetFont() → fontFile: cstring, height: uiFontHeight, flags: TBFFlags`
+- ✅ `GetFontObject() → font: SimpleFont`
+- ✅ `GetFontStringByID(messageID: number) → fontString: SimpleFontString` (ConstSecretAccessor; secret arguments: AllowedWhenUntainted)
+- ✅ `GetForbiddenAspects() → aspects: ForbiddenAspect` — Returns the mask of all forbidden aspects applied to this object. (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecurity'])
+- ✅ `GetFrameLevel() → frameLevel: number` (SecretReturnsForAspect: ['Enum.SecretAspect.FrameLevel'])
+- ✅ `GetFrameStrata() → strata: FrameStrata` (SecretReturnsForAspect: ['Enum.SecretAspect.FrameStrata'])
+- ✅ `GetHeight(ignoreRect: bool = False) → height: uiUnit` (ConstSecretAccessor; secret arguments: AllowedWhenUntainted; SecretWhenAnchoringSecret)
+- ✅ `GetHighestFrameLevel(iterateAllChildren: bool = False) → frameLevel: number` — Returns the highest framelevel of the frame and its first order children, or all children if iterateAllChildren is true. (ConstSecretAccessor; secret arguments: AllowedWhenUntainted)
+- ✅ `GetHitRectInsets() → left: uiUnit, right: uiUnit, top: uiUnit, bottom: uiUnit`
+- ✅ `GetHyperlinksEnabled() → enabled: bool`
+- ✅ `GetID() → id: number` (SecretReturnsForAspect: ['Enum.SecretAspect.ID'])
+- ✅ `GetIndentedWordWrap() → wordWrap: bool`
+- ✅ `GetInheritableForbiddenAspects(path: ScriptObjectPropagationPath) → aspects: ForbiddenAspect` — Returns the mask of all forbidden aspects applied to this object that can propagate to others. (secret arguments: NotAllowed; SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecurity'])
+- ✅ `GetInsertMode() → mode: InsertMode`
+- ✅ `GetJustifyH() → justifyH: JustifyHorizontal`
+- ✅ `GetJustifyV() → justifyV: JustifyVertical`
+- ✅ `GetLeft() → left: uiUnit` (may return nothing; SecretWhenAnchoringSecret)
+- ✅ `GetName() → name: cstring` (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectName'])
+- ✅ `GetNumChildren() → numChildren: number` (SecretReturnsForAspect: ['Enum.SecretAspect.Hierarchy'])
+- ✅ `GetNumPoints() → numPoints: number`
+- ✅ `GetNumRegions() → numRegions: number` (SecretReturnsForAspect: ['Enum.SecretAspect.Hierarchy'])
+- ✅ `GetObjectTable() → objectTable: FrameScriptObject`
+- ✅ `GetObjectType() → objectType: cstring` (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectType'])
+- ✅ `GetOnUpdateMode() → onUpdateMode: OnUpdateMode` — Returns the currently configured OnUpdate script execution mode.
+- ✅ `GetParent() → parent: CScriptObject` (SecretReturnsForAspect: ['Enum.SecretAspect.Hierarchy'])
+- ✅ `GetParentKey() → parentKey: cstring`
+- ✅ `GetPoint(anchorIndex: luaIndex = 0, resolveCollapsed: bool = False) → point: FramePoint, relativeTo: ScriptRegion, relativePoint: FramePoint, offsetX: uiUnit, offsetY: uiUnit` (ConstSecretAccessor; may return nothing; secret arguments: AllowedWhenUntainted; SecretWhenAnchoringSecret)
+- ✅ `GetPointByName(point: FramePoint, resolveCollapsed: bool = False) → point: FramePoint, relativeTo: ScriptRegion, relativePoint: FramePoint, offsetX: uiUnit, offsetY: uiUnit` (ConstSecretAccessor; may return nothing; secret arguments: AllowedWhenUntainted; SecretWhenAnchoringSecret)
+- ✅ `GetPropagateKeyboardInput() → propagate: bool`
+- ✅ `GetRaisedFrameLevel() → frameLevel: number`
+- ✅ `GetRect() → left: uiUnit, bottom: uiUnit, width: uiUnit, height: uiUnit` (may return nothing; SecretWhenAnchoringSecret)
+- ✅ `GetRegions() → regions: SimpleRegion` (SecretReturnsForAspect: ['Enum.SecretAspect.Hierarchy'])
+- ✅ `GetResizeBounds() → minWidth: uiUnit, minHeight: uiUnit, maxWidth: uiUnit, maxHeight: uiUnit`
+- ✅ `GetRight() → right: uiUnit` (may return nothing; SecretWhenAnchoringSecret)
+- ✅ `GetRolesetNames() → rolesets: string[]` — Returns the roleset tags assigned to this frame. Returns a list containing 'roleless' if none are assigned.
+- ✅ `GetRoundLayoutToNearestPixel() → enabled: bool`
+- ✅ `GetScale() → frameScale: number` (SecretReturnsForAspect: ['Enum.SecretAspect.Scale'])
+- ✅ `GetScaledRect() → left: uiUnit, bottom: uiUnit, width: uiUnit, height: uiUnit` (may return nothing; SecretWhenAnchoringSecret)
+- ✅ `GetScript(scriptTypeName: ScriptTypeName, bindingType: ScriptBindingType = Extrinsic) → script: LuaFunctionReference` (ChecksForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.ScriptBindings'}]; ConstSecretAccessor; RequiresSupportedScript; secret arguments: AllowedWhenUntainted)
+- ✅ `GetShadowColor() → colorR: number, colorG: number, colorB: number, colorA: number`
+- ✅ `GetShadowOffset() → offsetX: number, offsetY: number`
+- ✅ `GetSize(ignoreRect: bool = False) → width: uiUnit, height: uiUnit` (ConstSecretAccessor; secret arguments: AllowedWhenUntainted; SecretWhenAnchoringSecret)
+- ✅ `GetSourceLocation() → location: string` (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectDebug'])
+- ✅ `GetSpacing() → spacing: uiUnit`
+- ✅ `GetTextColor() → colorR: number, colorG: number, colorB: number, colorA: number`
+- ✅ `GetTimeVisible() → timeVisibleSeconds: number`
+- ✅ `GetTop() → top: uiUnit` (may return nothing; SecretWhenAnchoringSecret)
+- ✅ `GetWidth(ignoreRect: bool = False) → width: uiUnit` (ConstSecretAccessor; secret arguments: AllowedWhenUntainted; SecretWhenAnchoringSecret)
+- ✅ `GetWindow() → window: SimpleWindow`
+- ✅ `HasAccessConstraints() → hasAccessConstraints: bool` — Returns whether this object has any access constraints that may limit access from some Lua execution contexts. (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecurity'])
+- ✅ `HasAlphaGradient() → hasAlphaGradient: bool`
+- ✅ `HasAnyAccessRestrictions(restrictions: ScriptObjectAccessRestriction?) → hasAnyAccessRestriction: bool` — Returns true if this object has any of the supplied access restrictions applied. (secret arguments: AllowedWhenUntainted; SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecurity'])
+- ✅ `HasAnyForbiddenAspects(aspects: ForbiddenAspect?) → hasAnyForbiddenAspect: bool` — Returns true if this object has any of the supplied forbidden aspects added. (secret arguments: AllowedWhenUntainted; SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecurity'])
+- ✅ `HasAnySecretAspect() → hasSecretAspect: bool` (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecrets'])
+- ✅ `HasFixedFrameLevel() → isFixed: bool`
+- ✅ `HasFixedFrameStrata() → isFixed: bool`
+- ✅ `HasMessageByID(messageID: number) → hasMessage: bool` (secret arguments: AllowedWhenUntainted)
+- ✅ `HasScript(scriptName: cstring) → hasScript: bool` (ConstSecretAccessor; secret arguments: AllowedWhenUntainted; SecretReturnsForAspect: ['Enum.SecretAspect.ObjectType'])
+- ✅ `HasSecretAspect(aspect: SecretAspect) → hasSecretAspect: bool` (ConstSecretAccessor; secret arguments: AllowedWhenUntainted; SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecrets'])
+- ✅ `HasSecretValues() → hasSecretValues: bool` (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecrets'])
+- ✅ `Hide()` (protected: only Blizzard's secure code may call it)
+- ✅ `HookScript(scriptTypeName: ScriptTypeName, script: LuaFunctionReference, bindingType: ScriptBindingType = Extrinsic) → success: bool` (ChecksForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.ScriptBindings'}]; RequiresAssignableScript; secret arguments: AllowedWhenUntainted)
+- ✅ `InterceptStartDrag(delegate: SimpleFrame) → success: bool` (secret arguments: AllowedWhenUntainted)
+- ✅ `Intersects(region: ScriptRegion) → intersects: bool` (secret arguments: AllowedWhenUntainted; SecretWhenAnchoringSecret)
+- ✅ `IsAnchoringRestricted() → isRestricted: bool` (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecurity'])
+- ✅ `IsAnchoringSecret() → isSecret: bool` (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecrets'])
+- ✅ `IsClampedToScreen() → clampedToScreen: bool`
+- ✅ `IsCollapsed() → isCollapsed: bool`
+- ✅ `IsDragging() → isDragging: bool`
+- ✅ `IsDrawLayerEnabled(layer: DrawLayer) → isEnabled: bool` (ConstSecretAccessor; secret arguments: AllowedWhenUntainted)
+- ✅ `IsEventRegistered(eventName: cstring) → isRegistered: bool, units: UnitTokenType?` (ChecksForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.EventRegistrations'}]; ConstSecretAccessor; secret arguments: AllowedWhenUntainted)
+- ✅ `IsForbidden() → isForbidden: bool` — Returns whether this object has been explicitly marked as forbidden. (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecurity'])
+- ✅ `IsFrameBuffer() → isFrameBuffer: bool`
+- ✅ `IsGamePadButtonEnabled() → enabled: bool`
+- ✅ `IsGamePadStickEnabled() → enabled: bool`
+- ✅ `IsHighlightLocked() → locked: bool`
+- ✅ `IsIgnoringChildrenForBounds() → ignore: bool`
+- ✅ `IsIgnoringParentAlpha() → ignore: bool`
+- ✅ `IsIgnoringParentScale() → ignore: bool`
+- ✅ `IsKeyboardEnabled() → enabled: bool`
+- ✅ `IsMouseClickEnabled() → enabled: bool`
+- ✅ `IsMouseEnabled() → enabled: bool`
+- ✅ `IsMouseMotionEnabled() → enabled: bool`
+- ✅ `IsMouseMotionFocus() → isMouseMotionFocus: bool` (ChecksForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.QueryFocus'}])
+- ✅ `IsMouseOver(offsetTop: uiUnit = 0, offsetBottom: uiUnit = 0, offsetLeft: uiUnit = 0, offsetRight: uiUnit = 0) → isMouseOver: bool` (ConstSecretAccessor; secret arguments: AllowedWhenUntainted; SecretWhenAnchoringSecret)
+- ✅ `IsMouseWheelEnabled() → enabled: bool`
+- ✅ `IsMovable() → isMovable: bool`
+- ✅ `IsObjectLoaded() → isLoaded: bool`
+- ✅ `IsObjectType(objectType: cstring) → isType: bool` (ConstSecretAccessor; secret arguments: AllowedWhenUntainted; SecretReturnsForAspect: ['Enum.SecretAspect.ObjectType'])
+- ✅ `IsPreventingSecretValues() → isPreventingSecretValues: bool` (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecrets'])
+- ✅ `IsProtected() → isProtected: bool, isProtectedExplicitly: bool` (SecretReturnsForAspect: ['Enum.SecretAspect.ObjectSecurity'])
+- ✅ `IsRectValid() → isValid: bool`
+- ✅ `IsResizable() → resizable: bool`
+- ✅ `IsRolesetFiltered() → isRolesetFiltered: bool` — Returns whether this frame is hidden because of its rolesets being filtered.
+- ✅ `IsShown() → isShown: bool` (SecretReturnsForAspect: ['Enum.SecretAspect.Shown'])
+- ✅ `IsToplevel() → isTopLevel: bool` (SecretReturnsForAspect: ['Enum.SecretAspect.Toplevel'])
+- ✅ `IsUserPlaced() → isUserPlaced: bool`
+- ✅ `IsUsingParentLevel() → usingParentLevel: bool`
+- ✅ `IsVisible() → isVisible: bool` (SecretReturnsForAspect: ['Enum.SecretAspect.Shown'])
+- ✅ `LockHighlight()`
+- ✅ `Lower()` (protected: only Blizzard's secure code may call it)
+- ✅ `MouseDown(button: cstring = LeftButton)` (ChecksForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.ScriptedInput'}]; protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `MouseUp(button: cstring = LeftButton)` (ChecksForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.ScriptedInput'}]; protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `Raise()` (protected: only Blizzard's secure code may call it)
+- ✅ `RegisterAllEvents()` (AddsForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.EventRegistrations'}]; ChecksForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.EventRegistrations'}])
+- ✅ `RegisterEvent(eventName: cstring) → registered: bool` (AddsForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.EventRegistrations'}]; ChecksForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.EventRegistrations'}]; secret arguments: AllowedWhenUntainted)
+- ✅ `RegisterEventCallback(eventName: cstring, cb: FrameEventCallbackType) → registered: bool` (AddsForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.EventRegistrations'}]; ChecksForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.EventRegistrations'}]; secret arguments: AllowedWhenUntainted)
+- ✅ `RegisterForDrag(buttons: MouseButton)` (secret arguments: AllowedWhenUntainted)
+- ✅ `RegisterUnitEvent(eventName: cstring, units: UnitTokenType) → registered: bool` (AddsForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.EventRegistrations'}]; ChecksForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.EventRegistrations'}]; secret arguments: AllowedWhenUntainted)
+- ✅ `RegisterUnitEventCallback(eventName: cstring, cb: FrameEventCallbackType, units: UnitTokenType) → registered: bool` (AddsForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.EventRegistrations'}]; ChecksForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.EventRegistrations'}]; secret arguments: AllowedWhenUntainted)
+- ✅ `RemoveRoleset(roleset: string)` — Removes a roleset tag from this frame. (protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted)
+- ✅ `ResetMessageFadeByID(messageID: number)` (secret arguments: AllowedWhenUntainted)
+- ✅ `ResizeToBoundsRect()` (protected: only Blizzard's secure code may call it)
+- ✅ `RotateTextures(radians: number, x: number = 0.5, y: number = 0.5)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetAllPoints(relativeTo: ScriptRegion, doResize: bool = True)` (CheckAllowInheritForbiddenLayoutAspects; protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted)
+- ✅ `SetAlpha(alpha: SingleColorValue)` (secret arguments: AllowedWhenTainted; SecretArgumentsAddAspect: ['Enum.SecretAspect.Alpha'])
+- ✅ `SetAlphaFromBoolean(value: bool, alphaIfTrue: SingleColorValue = 255, alphaIfFalse: SingleColorValue = 0)` (secret arguments: AllowedWhenTainted; SecretArgumentsAddAspect: ['Enum.SecretAspect.Alpha'])
+- ✅ `SetAlphaGradient(index: number, gradient: vector2)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetAttribute(attributeName: cstring, value: cstring)` (secret arguments: AllowedWhenUntainted; SecretReturnsForAspect: ['Enum.SecretAspect.Attributes'])
+- ✅ `SetAttributeNoHandler(attributeName: cstring, value: cstring)` (secret arguments: AllowedWhenUntainted; SecretReturnsForAspect: ['Enum.SecretAspect.Attributes'])
+- ✅ `SetClampRectInsets(left: uiUnit, right: uiUnit, top: uiUnit, bottom: uiUnit)` (protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted)
+- ✅ `SetClampedToScreen(clampedToScreen: bool)` (protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `SetClipsChildren(clipsChildren: bool)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetCollapsesLayout(collapsesLayout: bool)` (protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `SetDontSavePosition(dontSave: bool)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetDrawLayerEnabled(layer: DrawLayer, isEnabled: bool = False)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetFadeDuration(fadeDurationSeconds: number)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetFadePower(fadePower: number)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetFading(fading: bool)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetFixedFrameLevel(isFixed: bool)` (protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted)
+- ✅ `SetFixedFrameStrata(isFixed: bool)` (protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted)
+- ✅ `SetFlattensRenderLayers(flatten: bool)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetFont(fontFile: cstring, height: uiFontHeight, flags: TBFFlags)` (RequiresValidFontAsset; RequiresValidFontHeight; secret arguments: AllowedWhenUntainted)
+- ✅ `SetFontObject(font: SimpleFont)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetForbidden()` (restricted in some situations)
+- ✅ `SetFrameLevel(frameLevel: number)` (protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted; SecretArgumentsAddAspect: ['Enum.SecretAspect.FrameLevel'])
+- ✅ `SetFrameStrata(strata: FrameStrata)` (protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted; SecretArgumentsAddAspect: ['Enum.SecretAspect.FrameStrata'])
+- ✅ `SetHeight(height: uiUnit)` (protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted)
+- ✅ `SetHighlightLocked(locked: bool)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetHitRectInsets(left: uiUnit, right: uiUnit, top: uiUnit, bottom: uiUnit)` (protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `SetHyperlinkPropagateToParent(canPropagate: bool)` — Enables or disables propagating hyperlink events (ex. OnHyperlinkEnter, OnHyperlinkLeave, OnHyperlinkClick) to this frame's parent. (ChecksForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.UntrustedScriptExecution'}]; secret arguments: AllowedWhenUntainted)
+- ✅ `SetHyperlinksEnabled(enabled: bool = False)` (protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `SetID(id: number)` (protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenTainted; SecretArgumentsAddAspect: ['Enum.SecretAspect.ID'])
+- ✅ `SetIgnoreParentAlpha(ignore: bool)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetIgnoreParentScale(ignore: bool)` (protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `SetIgnoringChildrenForBounds(ignore: bool)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetIndentedWordWrap(wordWrap: bool)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetInsertMode(mode: InsertMode)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetIsFrameBuffer(isFrameBuffer: bool)` (secret arguments: NotAllowed)
+- ✅ `SetJustifyH(justifyH: JustifyHorizontal)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetJustifyV(justifyV: JustifyVertical)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetMouseClickEnabled(enabled: bool = False)` (protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `SetMouseMotionEnabled(enabled: bool = False)` (protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `SetMovable(movable: bool)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetOnUpdateMode(onUpdateMode: OnUpdateMode)` — Changes when OnUpdate scripts are executed for this object. (secret arguments: AllowedWhenUntainted)
+- ✅ `SetParent(parent: SimpleFrame?)` (CheckAllowChangeParent; protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `SetParentKey(parentKey: cstring, clearOtherKeys: bool = False)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetPassThroughButtons(buttons: MouseButton)` (restricted in some situations; protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `SetPoint(point: FramePoint, relativeTo: ScriptRegion, relativePoint: FramePoint, offsetX: uiUnit, offsetY: uiUnit)` (CheckAllowInheritForbiddenLayoutAspects; protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted)
+- ✅ `SetPointsOffset(x: uiUnit, y: uiUnit)` (protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted)
+- ✅ `SetPropagateKeyboardInput(propagate: bool)` (restricted in some situations; secret arguments: AllowedWhenUntainted)
+- ✅ `SetPropagateMouseClicks(propagate: bool)` (restricted in some situations; protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `SetPropagateMouseMotion(propagate: bool)` (restricted in some situations; protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `SetResizable(resizable: bool)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetResizeBounds(minWidth: uiUnit, minHeight: uiUnit, maxWidth: uiUnit?, maxHeight: uiUnit?)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetRolesets(rolesetsString: cstring?)` — Sets the roleset tags for this frame, used by the UI mode system to gate visibility. Supports comma-separated names to assign multiple rolesets. Pass nil to clear. (protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted)
+- ✅ `SetRoundLayoutToNearestPixel(enabled: bool)` (protected: only Blizzard's secure code may call it; secret arguments: NotAllowed)
+- ✅ `SetScale(scale: number)` (protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted; SecretArgumentsAddAspect: ['Enum.SecretAspect.Scale'])
+- ✅ `SetScript(scriptTypeName: ScriptTypeName, script: LuaFunctionReference?)` (ChecksForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.ScriptBindings'}]; RequiresAssignableScript; secret arguments: AllowedWhenUntainted)
+- ✅ `SetShadowColor(colorR: number, colorG: number, colorB: number, a: SingleColorValue?)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetShadowOffset(offsetX: number, offsetY: number)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetShown(shown: bool = False)` (protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted; SecretArgumentsAddAspect: ['Enum.SecretAspect.Shown'])
+- ✅ `SetSize(x: uiUnit, y: uiUnit)` (protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted)
+- ✅ `SetSpacing(spacing: uiUnit)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetTextColor(colorR: number, colorG: number, colorB: number, a: SingleColorValue?)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetTimeVisible(timeVisibleSeconds: number)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetToDefaults()` — Reset all script accessible values to their default values. If possible, clears secret states. (ChecksForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.SetToDefaults'}, {'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.RemoveSecretAspects'}]; protected: only Blizzard's secure code may call it)
+- ✅ `SetToplevel(topLevel: bool)` (protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted; SecretArgumentsAddAspect: ['Enum.SecretAspect.Toplevel'])
+- ✅ `SetUserPlaced(userPlaced: bool)` (secret arguments: AllowedWhenUntainted)
+- ✅ `SetUsingParentLevel(usingParentLevel: bool)` (protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted)
+- ✅ `SetWidth(width: uiUnit)` (protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted)
+- ✅ `SetWindow(window: SimpleWindow?)` (secret arguments: AllowedWhenUntainted)
+- ✅ `ShouldButtonPassThrough(button: MouseButton) → shouldPassThrough: bool` (secret arguments: AllowedWhenUntainted)
+- ✅ `Show()` (protected: only Blizzard's secure code may call it)
+- ✅ `StartMoving(alwaysStartFromMouse: bool = False)` (protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted)
+- ✅ `StartSizing(resizePoint: FramePoint?, alwaysStartFromMouse: bool = False)` (protected: only Blizzard's secure code may call it; secret arguments: AllowedWhenUntainted)
+- ✅ `StopAnimating()`
+- ✅ `StopMovingOrSizing()` (protected: only Blizzard's secure code may call it)
+- ✅ `UnlockHighlight()`
+- ✅ `UnregisterAllEvents()` (AddsForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.EventRegistrations'}]; ChecksForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.EventRegistrations'}])
+- ✅ `UnregisterEvent(eventName: cstring) → registered: bool` (AddsForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.EventRegistrations'}]; ChecksForbiddenAspects: [{'Argument': 'self', 'Aspect': 'Enum.ForbiddenAspect.EventRegistrations'}]; secret arguments: AllowedWhenUntainted)

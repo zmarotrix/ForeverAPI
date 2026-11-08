@@ -4,7 +4,7 @@
 
 ### ItemTryOnReason
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Success` = 0
   - `WrongRace` = 1
   - `NotEquippable` = 2
@@ -12,12 +12,12 @@
 
 ### ModelSceneSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `AlignLightToOrbitDelta` = 1
 
 ### ModelSceneType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `MountJournal` = 0
   - `PetJournalCard` = 1
   - `ShopCard` = 2
@@ -41,7 +41,7 @@
 
 ### UIModelSceneActorFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Deprecated1` = 1
   - `UseCenterForOriginX` = 2
   - `UseCenterForOriginY` = 4

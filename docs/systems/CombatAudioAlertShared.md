@@ -4,14 +4,14 @@
 
 ### CombatAudioAlertCastState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Off` = 0
   - `OnCastStart` = 1
   - `OnCastEnd` = 2
 
 ### CombatAudioAlertCategory
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `General` = 0
   - `PlayerHealth` = 1
   - `TargetHealth` = 2
@@ -25,13 +25,13 @@
 
 ### CombatAudioAlertDebuffSelfAlertValues
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Off` = 0
   - `DispelType` = 1
 
 ### CombatAudioAlertPartyPercentValues
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Off` = 0
   - `Under100Percent` = 1
   - `Under90Percent` = 2
@@ -46,7 +46,7 @@
 
 ### CombatAudioAlertPercentValues
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Off` = 0
   - `Every10Percent` = 1
   - `Every20Percent` = 2
@@ -56,7 +56,7 @@
 
 ### CombatAudioAlertPlayerCastFormatValues
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `CastingSpellname` = 0
   - `CastSpellname` = 1
   - `Casting` = 2
@@ -65,13 +65,13 @@
 
 ### CombatAudioAlertPlayerDebuffFormatValues
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Full` = 0
   - `NoSpellname` = 1
 
 ### CombatAudioAlertPlayerHealthFormatValues
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `HealthFull` = 0
   - `HealthNoPercent` = 1
   - `HealthNoPercentDiv10` = 2
@@ -81,7 +81,7 @@
 
 ### CombatAudioAlertPlayerResourceFormatValues
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ResourceFull` = 0
   - `ResourceNoPercent` = 1
   - `ResourceNoPercentDiv10` = 2
@@ -91,7 +91,7 @@
 
 ### CombatAudioAlertPulsePercentValues
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Off` = 0
   - `Under90Percent` = 1
   - `Under80Percent` = 2
@@ -105,7 +105,7 @@
 
 ### CombatAudioAlertSayIfTargetedType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Aggro` = 1
   - `Targeted` = 2
@@ -113,7 +113,7 @@
 
 ### CombatAudioAlertSpecSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Resource1Percent` = 0
   - `Resource1Format` = 1
   - `Resource1Voice` = 2
@@ -126,7 +126,7 @@
 
 ### CombatAudioAlertTargetCastFormatValues
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `TargetCastingSpellname` = 0
   - `TargetCastSpellname` = 1
   - `CastingSpellname` = 2
@@ -137,13 +137,13 @@
 
 ### CombatAudioAlertTargetDeathBehavior
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Default` = 0
   - `SayTargetDead` = 1
 
 ### CombatAudioAlertTargetHealthFormatValues
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `NoHealthFull` = 0
   - `NoHealthNoPercent` = 1
   - `NoHealthNoPercentDiv10` = 2
@@ -156,7 +156,7 @@
 
 ### CombatAudioAlertThrottle
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Sample` = 0
   - `PlayerHealth` = 1
   - `TargetHealth` = 2
@@ -171,12 +171,12 @@
 
 ### CombatAudioAlertType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Health` = 0
   - `Cast` = 1
 
 ### CombatAudioAlertUnit
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Player` = 0
   - `Target` = 1

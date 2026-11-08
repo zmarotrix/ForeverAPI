@@ -4,14 +4,14 @@
 
 ### VignetteObjectiveType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Defeat` = 1
   - `DefeatShowRemainingHealth` = 2
 
 ### VignetteType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Normal` = 0
   - `PvPBounty` = 1
   - `Torghast` = 2

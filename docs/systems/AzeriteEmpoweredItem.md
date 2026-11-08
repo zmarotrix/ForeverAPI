@@ -6,30 +6,30 @@ Namespace: `C_AzeriteEmpoweredItem`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_AzeriteEmpoweredItem.CanSelectPower](#c_azeriteempowereditemcanselectpower) |  |  |
-| ❔ | [C_AzeriteEmpoweredItem.ConfirmAzeriteEmpoweredItemRespec](#c_azeriteempowereditemconfirmazeriteempowereditemrespec) |  |  |
-| ❔ | [C_AzeriteEmpoweredItem.GetAllTierInfo](#c_azeriteempowereditemgetalltierinfo) |  |  |
-| ❔ | [C_AzeriteEmpoweredItem.GetAllTierInfoByItemID](#c_azeriteempowereditemgetalltierinfobyitemid) |  |  |
-| ❔ | [C_AzeriteEmpoweredItem.GetAzeriteEmpoweredItemRespecCost](#c_azeriteempowereditemgetazeriteempowereditemrespeccost) |  |  |
-| ❔ | [C_AzeriteEmpoweredItem.GetPowerInfo](#c_azeriteempowereditemgetpowerinfo) |  |  |
-| ❔ | [C_AzeriteEmpoweredItem.GetPowerText](#c_azeriteempowereditemgetpowertext) |  |  |
-| ❔ | [C_AzeriteEmpoweredItem.GetSpecsForPower](#c_azeriteempowereditemgetspecsforpower) |  |  |
-| ❔ | [C_AzeriteEmpoweredItem.HasAnyUnselectedPowers](#c_azeriteempowereditemhasanyunselectedpowers) |  |  |
-| ❔ | [C_AzeriteEmpoweredItem.HasBeenViewed](#c_azeriteempowereditemhasbeenviewed) |  |  |
-| ❔ | [C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItem](#c_azeriteempowereditemisazeriteempowereditem) |  |  |
-| ❔ | [C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItemByID](#c_azeriteempowereditemisazeriteempowereditembyid) |  |  |
-| ❔ | [C_AzeriteEmpoweredItem.IsAzeritePreviewSourceDisplayable](#c_azeriteempowereditemisazeritepreviewsourcedisplayable) |  |  |
-| ❔ | [C_AzeriteEmpoweredItem.IsHeartOfAzerothEquipped](#c_azeriteempowereditemisheartofazerothequipped) |  |  |
-| ❔ | [C_AzeriteEmpoweredItem.IsPowerAvailableForSpec](#c_azeriteempowereditemispoweravailableforspec) |  |  |
-| ❔ | [C_AzeriteEmpoweredItem.IsPowerSelected](#c_azeriteempowereditemispowerselected) |  |  |
-| ❔ | [C_AzeriteEmpoweredItem.SelectPower](#c_azeriteempowereditemselectpower) |  |  |
-| ❔ | [C_AzeriteEmpoweredItem.SetHasBeenViewed](#c_azeriteempowereditemsethasbeenviewed) |  |  |
+| ✅ | [C_AzeriteEmpoweredItem.CanSelectPower](#c_azeriteempowereditemcanselectpower) |  |  |
+| ✅ | [C_AzeriteEmpoweredItem.ConfirmAzeriteEmpoweredItemRespec](#c_azeriteempowereditemconfirmazeriteempowereditemrespec) |  |  |
+| ✅ | [C_AzeriteEmpoweredItem.GetAllTierInfo](#c_azeriteempowereditemgetalltierinfo) |  |  |
+| ✅ | [C_AzeriteEmpoweredItem.GetAllTierInfoByItemID](#c_azeriteempowereditemgetalltierinfobyitemid) |  |  |
+| ✅ | [C_AzeriteEmpoweredItem.GetAzeriteEmpoweredItemRespecCost](#c_azeriteempowereditemgetazeriteempowereditemrespeccost) |  |  |
+| ✅ | [C_AzeriteEmpoweredItem.GetPowerInfo](#c_azeriteempowereditemgetpowerinfo) |  |  |
+| ✅ | [C_AzeriteEmpoweredItem.GetPowerText](#c_azeriteempowereditemgetpowertext) |  |  |
+| ✅ | [C_AzeriteEmpoweredItem.GetSpecsForPower](#c_azeriteempowereditemgetspecsforpower) |  |  |
+| ✅ | [C_AzeriteEmpoweredItem.HasAnyUnselectedPowers](#c_azeriteempowereditemhasanyunselectedpowers) |  |  |
+| ✅ | [C_AzeriteEmpoweredItem.HasBeenViewed](#c_azeriteempowereditemhasbeenviewed) |  |  |
+| ✅ | [C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItem](#c_azeriteempowereditemisazeriteempowereditem) |  |  |
+| ✅ | [C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItemByID](#c_azeriteempowereditemisazeriteempowereditembyid) |  |  |
+| ✅ | [C_AzeriteEmpoweredItem.IsAzeritePreviewSourceDisplayable](#c_azeriteempowereditemisazeritepreviewsourcedisplayable) |  |  |
+| ✅ | [C_AzeriteEmpoweredItem.IsHeartOfAzerothEquipped](#c_azeriteempowereditemisheartofazerothequipped) |  |  |
+| ✅ | [C_AzeriteEmpoweredItem.IsPowerAvailableForSpec](#c_azeriteempowereditemispoweravailableforspec) |  |  |
+| ✅ | [C_AzeriteEmpoweredItem.IsPowerSelected](#c_azeriteempowereditemispowerselected) |  |  |
+| ✅ | [C_AzeriteEmpoweredItem.SelectPower](#c_azeriteempowereditemselectpower) |  |  |
+| ✅ | [C_AzeriteEmpoweredItem.SetHasBeenViewed](#c_azeriteempowereditemsethasbeenviewed) |  |  |
 
 ### C_AzeriteEmpoweredItem.CanSelectPower
 
 `C_AzeriteEmpoweredItem.CanSelectPower(azeriteEmpoweredItemLocation: AzeriteEmpoweredItemLocation, powerID: number) → canSelect: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AzeriteEmpoweredItemDocumentation.lua`
 
@@ -37,7 +37,7 @@ Namespace: `C_AzeriteEmpoweredItem`
 
 `C_AzeriteEmpoweredItem.ConfirmAzeriteEmpoweredItemRespec(azeriteEmpoweredItemLocation: AzeriteEmpoweredItemLocation)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AzeriteEmpoweredItemDocumentation.lua`
 
@@ -45,7 +45,7 @@ Namespace: `C_AzeriteEmpoweredItem`
 
 `C_AzeriteEmpoweredItem.GetAllTierInfo(azeriteEmpoweredItemLocation: AzeriteEmpoweredItemLocation) → tierInfo: AzeriteEmpoweredItemTierInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AzeriteEmpoweredItemDocumentation.lua`
 
@@ -53,7 +53,7 @@ Namespace: `C_AzeriteEmpoweredItem`
 
 `C_AzeriteEmpoweredItem.GetAllTierInfoByItemID(itemInfo: ItemInfo, classID: number?) → tierInfo: AzeriteEmpoweredItemTierInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - `classID`: Specify a class ID to get tier information about that class, otherwise uses the player's class if left nil
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AzeriteEmpoweredItemDocumentation.lua`
@@ -62,14 +62,14 @@ Namespace: `C_AzeriteEmpoweredItem`
 
 `C_AzeriteEmpoweredItem.GetAzeriteEmpoweredItemRespecCost() → cost: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `AzeriteEmpoweredItemDocumentation.lua`
 
 ### C_AzeriteEmpoweredItem.GetPowerInfo
 
 `C_AzeriteEmpoweredItem.GetPowerInfo(powerID: number) → powerInfo: AzeriteEmpoweredItemPowerInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AzeriteEmpoweredItemDocumentation.lua`
@@ -78,7 +78,7 @@ Namespace: `C_AzeriteEmpoweredItem`
 
 `C_AzeriteEmpoweredItem.GetPowerText(azeriteEmpoweredItemLocation: AzeriteEmpoweredItemLocation, powerID: number, level: AzeritePowerLevel) → powerText: AzeriteEmpoweredItemPowerText`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AzeriteEmpoweredItemDocumentation.lua`
@@ -87,7 +87,7 @@ Namespace: `C_AzeriteEmpoweredItem`
 
 `C_AzeriteEmpoweredItem.GetSpecsForPower(powerID: number) → specInfo: AzeriteSpecInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AzeriteEmpoweredItemDocumentation.lua`
@@ -96,7 +96,7 @@ Namespace: `C_AzeriteEmpoweredItem`
 
 `C_AzeriteEmpoweredItem.HasAnyUnselectedPowers(azeriteEmpoweredItemLocation: AzeriteEmpoweredItemLocation) → hasAnyUnselectedPowers: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AzeriteEmpoweredItemDocumentation.lua`
 
@@ -104,7 +104,7 @@ Namespace: `C_AzeriteEmpoweredItem`
 
 `C_AzeriteEmpoweredItem.HasBeenViewed(azeriteEmpoweredItemLocation: AzeriteEmpoweredItemLocation) → hasBeenViewed: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AzeriteEmpoweredItemDocumentation.lua`
 
@@ -112,7 +112,7 @@ Namespace: `C_AzeriteEmpoweredItem`
 
 `C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItem(itemLocation: ItemLocation) → isAzeriteEmpoweredItem: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AzeriteEmpoweredItemDocumentation.lua`
 
@@ -120,7 +120,7 @@ Namespace: `C_AzeriteEmpoweredItem`
 
 `C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItemByID(itemInfo: ItemInfo) → isAzeriteEmpoweredItem: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AzeriteEmpoweredItemDocumentation.lua`
 
@@ -128,7 +128,7 @@ Namespace: `C_AzeriteEmpoweredItem`
 
 `C_AzeriteEmpoweredItem.IsAzeritePreviewSourceDisplayable(itemInfo: ItemInfo, classID: number?) → isAzeritePreviewSourceDisplayable: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - `classID`: Specify a class ID to determine if its displayable for that class, otherwise uses the player's class if left nil
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AzeriteEmpoweredItemDocumentation.lua`
@@ -137,14 +137,14 @@ Namespace: `C_AzeriteEmpoweredItem`
 
 `C_AzeriteEmpoweredItem.IsHeartOfAzerothEquipped() → isHeartOfAzerothEquipped: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `AzeriteEmpoweredItemDocumentation.lua`
 
 ### C_AzeriteEmpoweredItem.IsPowerAvailableForSpec
 
 `C_AzeriteEmpoweredItem.IsPowerAvailableForSpec(powerID: number, specID: number) → isPowerAvailableForSpec: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AzeriteEmpoweredItemDocumentation.lua`
 
@@ -152,7 +152,7 @@ Namespace: `C_AzeriteEmpoweredItem`
 
 `C_AzeriteEmpoweredItem.IsPowerSelected(azeriteEmpoweredItemLocation: AzeriteEmpoweredItemLocation, powerID: number) → isSelected: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AzeriteEmpoweredItemDocumentation.lua`
 
@@ -160,7 +160,7 @@ Namespace: `C_AzeriteEmpoweredItem`
 
 `C_AzeriteEmpoweredItem.SelectPower(azeriteEmpoweredItemLocation: AzeriteEmpoweredItemLocation, powerID: number) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AzeriteEmpoweredItemDocumentation.lua`
 
@@ -168,7 +168,7 @@ Namespace: `C_AzeriteEmpoweredItem`
 
 `C_AzeriteEmpoweredItem.SetHasBeenViewed(azeriteEmpoweredItemLocation: AzeriteEmpoweredItemLocation)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AzeriteEmpoweredItemDocumentation.lua`
 
@@ -176,13 +176,13 @@ Namespace: `C_AzeriteEmpoweredItem`
 
 ### AZERITE_EMPOWERED_ITEM_EQUIPPED_STATUS_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `isHeartEquipped: bool`
 - fires synchronously (Blizzard's docs)
 
 ### AZERITE_EMPOWERED_ITEM_SELECTION_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `azeriteEmpoweredItemLocation: AzeriteEmpoweredItemLocation`
 - fires synchronously (Blizzard's docs)
 
@@ -208,7 +208,7 @@ Namespace: `C_AzeriteEmpoweredItem`
 
 ### AzeritePowerLevel
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Base` = 0
   - `Upgraded` = 1
   - `Downgraded` = 2

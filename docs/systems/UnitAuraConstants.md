@@ -4,13 +4,13 @@
 
 ### UnitAuraSoundTrigger
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Added` = 0
   - `ApplicationsIncreased` = 1
   - `Removed` = 2
 
 ### UnitAuraUIConstants
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `HIDDEN_GROUP_BUFF_LIST_SIZE` = 128
   - `GROUP_BUFF_VISUAL_ALERT_LIST_SIZE` = 128

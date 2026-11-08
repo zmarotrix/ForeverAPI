@@ -21,6 +21,6 @@
 
 ### UITextureSliceMode
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Stretched` = 0
   - `Tiled` = 1

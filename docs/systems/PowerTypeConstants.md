@@ -4,13 +4,13 @@
 
 ### BalanceType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = -1
   - `Eclipse` = 0
 
 ### PowerType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Mana` = 0
   - `Rage` = 1
   - `Focus` = 2
@@ -44,14 +44,14 @@
 
 ### PowerTypeSign
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = -1
   - `Positive` = 0
   - `Negative` = 1
 
 ### PowerTypeSlot
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Slot_0` = 0
   - `Slot_1` = 1
   - `Slot_2` = 2

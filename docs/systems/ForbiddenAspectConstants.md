@@ -4,7 +4,7 @@
 
 ### ForbiddenAspect
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `SetToDefaults` = 1
   - `ScriptBindings` = 2
   - `UntrustedScriptExecution` = 4

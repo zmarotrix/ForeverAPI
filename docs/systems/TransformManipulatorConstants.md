@@ -4,14 +4,14 @@
 
 ### TransformManipulatorAxis
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `X` = 1
   - `Y` = 2
   - `Z` = 4
 
 ### TransformManipulatorControlState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Default` = 0
   - `Hidden` = 1
   - `Dimmed` = 2
@@ -22,13 +22,13 @@
 
 ### TransformManipulatorDirection
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Positive` = 0
   - `Negative` = 1
 
 ### TransformManipulatorEvent
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Start` = 0
   - `Change` = 1
   - `Complete` = 2
@@ -39,7 +39,7 @@
 
 ### TransformManipulatorMode
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Translate` = 0
   - `Rotate` = 1
   - `Scale` = 2

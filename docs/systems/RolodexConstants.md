@@ -4,13 +4,13 @@
 
 ### RolodexContactMigrationResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ContactAdded` = 0
   - `ContactUpdated` = 1
 
 ### RolodexContextLevelType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Difficulty` = 1
   - `KeystoneLevel` = 2
@@ -18,13 +18,13 @@
 
 ### RolodexDbFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `PromotedFromContact` = 1
 
 ### RolodexType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `PartyMember` = 1
   - `RaidMember` = 2
@@ -50,6 +50,6 @@
 
 ### RolodexTypeFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `HiddenFromHistory` = 1

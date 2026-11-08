@@ -6,13 +6,13 @@ Namespace: `C_SystemVisibilityManager`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_SystemVisibilityManager.IsSystemVisible](#c_systemvisibilitymanagerissystemvisible) |  |  |
+| ✅ | [C_SystemVisibilityManager.IsSystemVisible](#c_systemvisibilitymanagerissystemvisible) |  |  |
 
 ### C_SystemVisibilityManager.IsSystemVisible
 
 `C_SystemVisibilityManager.IsSystemVisible(system: UISystemType) → visible: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UISystemVisibilityManagerDocumentation.lua`
 
@@ -20,7 +20,7 @@ Namespace: `C_SystemVisibilityManager`
 
 ### SYSTEM_VISIBILITY_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
 
@@ -28,5 +28,5 @@ Namespace: `C_SystemVisibilityManager`
 
 ### UISystemType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `InGameNavigation` = 0

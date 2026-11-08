@@ -15,6 +15,7 @@ import glob
 import gzip
 import json
 import os
+import re
 import shutil
 import sys
 
@@ -104,6 +105,9 @@ def cmd_extract():
         lines.append("    { %s, %s%s }," % (_lua_str(ns) if ns else "nil", _lua_str(name), ", \"unit\"" if arg else ""))
     lines += ["  },", "  documented = {"]
     lines += ["    [%s] = true," % _lua_str(n) for n in documented]
+    lines += ["  },", "  -- calls that crashed the client (sources/crashers.json, from the game's crash logs): never called again",
+              "  crashers = {"]
+    lines += ["    [%s] = true," % _lua_str(k) for k in sorted(cmd_crashes())]
     lines += ["  },", "  -- getter-named globals Blizzard's own Lua UI code defines: UI helpers, not client API, so not called",
               "  uiGetters = {"]
     lines += ["    [%s] = true," % _lua_str(n) for n in sorted(leads.get("defined", {})) if model.GETTER.match(n)]
@@ -114,6 +118,28 @@ def cmd_extract():
           % (version, len(client["systems"]), len(docs["functions"]), len(events),
              len(set(leads["events"]) - set(docs["events"])), len(plan)))
     return client
+
+
+CRASHERS = os.path.join(ROOT, "sources", "crashers.json")
+_CRASH_KEY = re.compile(r'callKey\s*=\s*"([^"]+)"')
+
+
+def cmd_crashes():
+    """Read the client's crash logs; any crash inside ApiProbe's call loop names its call in the local `callKey`.
+    Those names go to sources/crashers.json, and extract puts them in leads.lua so the probe never calls them again."""
+    known = _load_json(CRASHERS) if os.path.exists(CRASHERS) else {}
+    for path in sorted(glob.glob(os.path.join(GAME, "Errors", "*.txt"))):
+        with open(path, encoding="utf-8", errors="replace") as f:
+            text = f.read()
+        if "ApiProbe/probe.lua" not in text:
+            continue
+        for key in _CRASH_KEY.findall(text):
+            if key not in known:
+                known[key] = {"log": os.path.basename(path)}
+                print("crasher:", key, "from", os.path.basename(path))
+    with open(CRASHERS, "w", encoding="utf-8") as f:
+        json.dump(known, f, indent=1, sort_keys=True)
+    return known
 
 
 def cmd_deploy():

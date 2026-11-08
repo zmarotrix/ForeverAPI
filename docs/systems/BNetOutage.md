@@ -4,14 +4,14 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [ClearOutage](#clearoutage) |  |  |
-| ❔ | [OutageDetected](#outagedetected) |  |  |
+| ✅ | [ClearOutage](#clearoutage) |  |  |
+| ✅ | [OutageDetected](#outagedetected) |  |  |
 
 ### ClearOutage
 
 `ClearOutage()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `BNetOutageDocumentation.lua`
 
@@ -19,6 +19,6 @@
 
 `OutageDetected()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `BNetOutageDocumentation.lua`

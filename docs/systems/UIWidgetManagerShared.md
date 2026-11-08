@@ -4,14 +4,14 @@
 
 ### MapIconUIWidgetSetType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Tooltip` = 0
   - `BehindIcon` = 1
   - `AdventureMapDetails` = 2
 
 ### SpellDisplayBorderColor
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Black` = 1
   - `White` = 2
@@ -24,18 +24,18 @@
 
 ### UIWidgetFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `UniversalWidget` = 1
 
 ### UIWidgetHorizontalDirection
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `LeftToRight` = 0
   - `RightToLeft` = 1
 
 ### UIWidgetLayoutDirection
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Default` = 0
   - `Vertical` = 1
   - `Horizontal` = 2
@@ -44,14 +44,14 @@
 
 ### UIWidgetModelSceneLayer
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Front` = 1
   - `Back` = 2
 
 ### UIWidgetScale
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `OneHundred` = 0
   - `Ninty` = 1
   - `Eighty` = 2
@@ -71,14 +71,14 @@
 
 ### UIWidgetSetLayoutDirection
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Vertical` = 0
   - `Horizontal` = 1
   - `Overlap` = 2
 
 ### UIWidgetVisualizationType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `IconAndText` = 0
   - `CaptureBar` = 1
   - `StatusBar` = 2

@@ -6,65 +6,65 @@ Namespace: `C_Traits`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_Traits.CanEditConfig](#c_traitscaneditconfig) |  |  |
-| ❔ | [C_Traits.CanPurchaseRank](#c_traitscanpurchaserank) |  |  |
-| ❔ | [C_Traits.CanRefundRank](#c_traitscanrefundrank) |  |  |
-| ❔ | [C_Traits.CascadeRepurchaseRanks](#c_traitscascaderepurchaseranks) |  |  |
-| ❔ | [C_Traits.ClearCascadeRepurchaseHistory](#c_traitsclearcascaderepurchasehistory) |  |  |
-| ❔ | [C_Traits.CloseTraitSystemInteraction](#c_traitsclosetraitsysteminteraction) |  |  |
-| ❔ | [C_Traits.CommitConfig](#c_traitscommitconfig) |  |  |
-| ❔ | [C_Traits.ConfigHasStagedChanges](#c_traitsconfighasstagedchanges) |  |  |
-| ❔ | [C_Traits.GenerateImportString](#c_traitsgenerateimportstring) |  |  |
-| ❔ | [C_Traits.GenerateInspectImportString](#c_traitsgenerateinspectimportstring) |  |  |
-| ❔ | [C_Traits.GetConditionInfo](#c_traitsgetconditioninfo) |  |  |
-| ❔ | [C_Traits.GetConfigIDBySystemID](#c_traitsgetconfigidbysystemid) |  |  |
-| ❔ | [C_Traits.GetConfigIDByTreeID](#c_traitsgetconfigidbytreeid) |  |  |
-| ❔ | [C_Traits.GetConfigInfo](#c_traitsgetconfiginfo) |  |  |
-| ❔ | [C_Traits.GetConfigVariationID](#c_traitsgetconfigvariationid) |  |  |
-| ❔ | [C_Traits.GetConfigsByType](#c_traitsgetconfigsbytype) |  |  |
-| ❔ | [C_Traits.GetDefinitionInfo](#c_traitsgetdefinitioninfo) |  |  |
-| ❔ | [C_Traits.GetEntryInfo](#c_traitsgetentryinfo) |  |  |
-| ❔ | [C_Traits.GetGroupCurrencyInfo](#c_traitsgetgroupcurrencyinfo) |  |  |
-| ❔ | [C_Traits.GetGroupDisplayInfoByTreeID](#c_traitsgetgroupdisplayinfobytreeid) |  |  |
-| ❔ | [C_Traits.GetIncreasedTraitData](#c_traitsgetincreasedtraitdata) |  |  |
-| ❔ | [C_Traits.GetLoadoutSerializationVersion](#c_traitsgetloadoutserializationversion) |  |  |
-| ❔ | [C_Traits.GetMaxAvailableTraitCurrency](#c_traitsgetmaxavailabletraitcurrency) |  |  |
-| ❔ | [C_Traits.GetNodeCost](#c_traitsgetnodecost) |  |  |
-| ❔ | [C_Traits.GetNodeInfo](#c_traitsgetnodeinfo) |  |  |
-| ❔ | [C_Traits.GetStagedChanges](#c_traitsgetstagedchanges) |  |  |
-| ❔ | [C_Traits.GetStagedChangesCost](#c_traitsgetstagedchangescost) |  |  |
-| ❔ | [C_Traits.GetSubTreeInfo](#c_traitsgetsubtreeinfo) |  |  |
-| ❔ | [C_Traits.GetSystemIDByTreeID](#c_traitsgetsystemidbytreeid) |  |  |
-| ❔ | [C_Traits.GetTraitCurrencyForAchievement](#c_traitsgettraitcurrencyforachievement) |  |  |
-| ❔ | [C_Traits.GetTraitCurrencyInfo](#c_traitsgettraitcurrencyinfo) |  |  |
-| ❔ | [C_Traits.GetTraitDescription](#c_traitsgettraitdescription) |  |  |
-| ❔ | [C_Traits.GetTraitSystemFlags](#c_traitsgettraitsystemflags) |  |  |
-| ❔ | [C_Traits.GetTraitSystemWidgetSetID](#c_traitsgettraitsystemwidgetsetid) |  |  |
-| ❔ | [C_Traits.GetTreeCurrencyInfo](#c_traitsgettreecurrencyinfo) |  |  |
-| ❔ | [C_Traits.GetTreeHash](#c_traitsgettreehash) |  |  |
-| ❔ | [C_Traits.GetTreeInfo](#c_traitsgettreeinfo) |  |  |
-| ❔ | [C_Traits.GetTreeNodes](#c_traitsgettreenodes) |  |  |
-| ❔ | [C_Traits.HasValidInspectData](#c_traitshasvalidinspectdata) |  |  |
-| ❔ | [C_Traits.IsReadyForCommit](#c_traitsisreadyforcommit) |  |  |
-| ❔ | [C_Traits.PurchaseAllRanks](#c_traitspurchaseallranks) |  |  |
-| ❔ | [C_Traits.PurchaseRank](#c_traitspurchaserank) |  |  |
-| ❔ | [C_Traits.RefundAllRanks](#c_traitsrefundallranks) |  |  |
-| ❔ | [C_Traits.RefundRank](#c_traitsrefundrank) |  |  |
-| ❔ | [C_Traits.ResetTree](#c_traitsresettree) |  |  |
-| ❔ | [C_Traits.ResetTreeByCurrency](#c_traitsresettreebycurrency) |  |  |
-| ❔ | [C_Traits.RollbackConfig](#c_traitsrollbackconfig) |  |  |
-| ❔ | [C_Traits.SetSelection](#c_traitssetselection) |  |  |
-| ❔ | [C_Traits.StageConfig](#c_traitsstageconfig) |  |  |
-| ❔ | [C_Traits.TalentTestUnlearnSpells](#c_traitstalenttestunlearnspells) |  |  |
-| ❔ | [C_Traits.TryPurchaseAllRanks](#c_traitstrypurchaseallranks) |  |  |
-| ❔ | [C_Traits.TryPurchaseToNode](#c_traitstrypurchasetonode) |  |  |
-| ❔ | [C_Traits.TryRefundToNode](#c_traitstryrefundtonode) |  |  |
+| ✅ | [C_Traits.CanEditConfig](#c_traitscaneditconfig) |  |  |
+| ✅ | [C_Traits.CanPurchaseRank](#c_traitscanpurchaserank) |  |  |
+| ✅ | [C_Traits.CanRefundRank](#c_traitscanrefundrank) |  |  |
+| ✅ | [C_Traits.CascadeRepurchaseRanks](#c_traitscascaderepurchaseranks) |  |  |
+| ✅ | [C_Traits.ClearCascadeRepurchaseHistory](#c_traitsclearcascaderepurchasehistory) |  |  |
+| ✅ | [C_Traits.CloseTraitSystemInteraction](#c_traitsclosetraitsysteminteraction) |  |  |
+| ✅ | [C_Traits.CommitConfig](#c_traitscommitconfig) |  |  |
+| ✅ | [C_Traits.ConfigHasStagedChanges](#c_traitsconfighasstagedchanges) |  |  |
+| ✅ | [C_Traits.GenerateImportString](#c_traitsgenerateimportstring) |  |  |
+| ✅ | [C_Traits.GenerateInspectImportString](#c_traitsgenerateinspectimportstring) |  |  |
+| ✅ | [C_Traits.GetConditionInfo](#c_traitsgetconditioninfo) |  |  |
+| ✅ | [C_Traits.GetConfigIDBySystemID](#c_traitsgetconfigidbysystemid) |  |  |
+| ✅ | [C_Traits.GetConfigIDByTreeID](#c_traitsgetconfigidbytreeid) |  |  |
+| ✅ | [C_Traits.GetConfigInfo](#c_traitsgetconfiginfo) |  |  |
+| ✅ | [C_Traits.GetConfigVariationID](#c_traitsgetconfigvariationid) |  |  |
+| ✅ | [C_Traits.GetConfigsByType](#c_traitsgetconfigsbytype) |  |  |
+| ✅ | [C_Traits.GetDefinitionInfo](#c_traitsgetdefinitioninfo) |  |  |
+| ✅ | [C_Traits.GetEntryInfo](#c_traitsgetentryinfo) |  |  |
+| ✅ | [C_Traits.GetGroupCurrencyInfo](#c_traitsgetgroupcurrencyinfo) |  |  |
+| ✅ | [C_Traits.GetGroupDisplayInfoByTreeID](#c_traitsgetgroupdisplayinfobytreeid) |  |  |
+| ✅ | [C_Traits.GetIncreasedTraitData](#c_traitsgetincreasedtraitdata) |  |  |
+| ✅ | [C_Traits.GetLoadoutSerializationVersion](#c_traitsgetloadoutserializationversion) |  |  |
+| ✅ | [C_Traits.GetMaxAvailableTraitCurrency](#c_traitsgetmaxavailabletraitcurrency) |  |  |
+| ✅ | [C_Traits.GetNodeCost](#c_traitsgetnodecost) |  |  |
+| ✅ | [C_Traits.GetNodeInfo](#c_traitsgetnodeinfo) |  |  |
+| ✅ | [C_Traits.GetStagedChanges](#c_traitsgetstagedchanges) |  |  |
+| ✅ | [C_Traits.GetStagedChangesCost](#c_traitsgetstagedchangescost) |  |  |
+| ✅ | [C_Traits.GetSubTreeInfo](#c_traitsgetsubtreeinfo) |  |  |
+| ✅ | [C_Traits.GetSystemIDByTreeID](#c_traitsgetsystemidbytreeid) |  |  |
+| ✅ | [C_Traits.GetTraitCurrencyForAchievement](#c_traitsgettraitcurrencyforachievement) |  |  |
+| ✅ | [C_Traits.GetTraitCurrencyInfo](#c_traitsgettraitcurrencyinfo) |  |  |
+| ✅ | [C_Traits.GetTraitDescription](#c_traitsgettraitdescription) |  |  |
+| ✅ | [C_Traits.GetTraitSystemFlags](#c_traitsgettraitsystemflags) |  |  |
+| ✅ | [C_Traits.GetTraitSystemWidgetSetID](#c_traitsgettraitsystemwidgetsetid) |  |  |
+| ✅ | [C_Traits.GetTreeCurrencyInfo](#c_traitsgettreecurrencyinfo) |  |  |
+| ✅ | [C_Traits.GetTreeHash](#c_traitsgettreehash) |  |  |
+| ✅ | [C_Traits.GetTreeInfo](#c_traitsgettreeinfo) |  |  |
+| ✅ | [C_Traits.GetTreeNodes](#c_traitsgettreenodes) |  |  |
+| ✅ | [C_Traits.HasValidInspectData](#c_traitshasvalidinspectdata) |  |  |
+| ✅ | [C_Traits.IsReadyForCommit](#c_traitsisreadyforcommit) |  |  |
+| ✅ | [C_Traits.PurchaseAllRanks](#c_traitspurchaseallranks) |  |  |
+| ✅ | [C_Traits.PurchaseRank](#c_traitspurchaserank) |  |  |
+| ✅ | [C_Traits.RefundAllRanks](#c_traitsrefundallranks) |  |  |
+| ✅ | [C_Traits.RefundRank](#c_traitsrefundrank) |  |  |
+| ✅ | [C_Traits.ResetTree](#c_traitsresettree) |  |  |
+| ✅ | [C_Traits.ResetTreeByCurrency](#c_traitsresettreebycurrency) |  |  |
+| ✅ | [C_Traits.RollbackConfig](#c_traitsrollbackconfig) |  |  |
+| ✅ | [C_Traits.SetSelection](#c_traitssetselection) |  |  |
+| ✅ | [C_Traits.StageConfig](#c_traitsstageconfig) |  |  |
+| ✅ | [C_Traits.TalentTestUnlearnSpells](#c_traitstalenttestunlearnspells) |  |  |
+| ✅ | [C_Traits.TryPurchaseAllRanks](#c_traitstrypurchaseallranks) |  |  |
+| ✅ | [C_Traits.TryPurchaseToNode](#c_traitstrypurchasetonode) |  |  |
+| ✅ | [C_Traits.TryRefundToNode](#c_traitstryrefundtonode) |  |  |
 
 ### C_Traits.CanEditConfig
 
 `C_Traits.CanEditConfig(configID: number) → canEdit: bool, errorMessage: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns whether the player can make changes to the specified talent config.
 - `errorMessage`: If canEdit is false, this will be filled out with text explaining why the player can not make changes.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -74,7 +74,7 @@ Namespace: `C_Traits`
 
 `C_Traits.CanPurchaseRank(configID: number, nodeID: number, nodeEntryID: number) → canPurchase: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -82,7 +82,7 @@ Namespace: `C_Traits`
 
 `C_Traits.CanRefundRank(configID: number, nodeID: number) → canRefund: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -90,7 +90,7 @@ Namespace: `C_Traits`
 
 `C_Traits.CascadeRepurchaseRanks(configID: number, nodeID: number, entryID: number?) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -98,7 +98,7 @@ Namespace: `C_Traits`
 
 `C_Traits.ClearCascadeRepurchaseHistory(configID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -106,14 +106,14 @@ Namespace: `C_Traits`
 
 `C_Traits.CloseTraitSystemInteraction()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
 ### C_Traits.CommitConfig
 
 `C_Traits.CommitConfig(configID: number) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -121,7 +121,7 @@ Namespace: `C_Traits`
 
 `C_Traits.ConfigHasStagedChanges(configID: number) → hasChanges: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -129,7 +129,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GenerateImportString(configID: number) → importString: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -137,7 +137,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GenerateInspectImportString(target: cstring) → importString: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -145,7 +145,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetConditionInfo(configID: number, condID: number) → condInfo: TraitCondInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
@@ -154,7 +154,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetConfigIDBySystemID(systemID: number) → configID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
@@ -163,7 +163,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetConfigIDByTreeID(treeID: number) → configID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
@@ -172,7 +172,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetConfigInfo(configID: number) → configInfo: TraitConfigInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
@@ -181,7 +181,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetConfigVariationID(systemID: number) → variationID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
@@ -190,7 +190,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetConfigsByType(configType: TraitConfigType) → configIDs: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -198,7 +198,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetDefinitionInfo(definitionID: number) → definitionInfo: TraitDefinitionInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
@@ -207,7 +207,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetEntryInfo(configID: number, entryID: number) → entryInfo: TraitEntryInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
@@ -216,7 +216,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetGroupCurrencyInfo(configID: number, groupIDs: number[]) → groupCurrencyInfos: GroupCurrencyInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -224,7 +224,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetGroupDisplayInfoByTreeID(treeID: number) → displayInfos: TraitGroupDisplayInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -232,7 +232,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetIncreasedTraitData(nodeID: number, entryID: number) → itemName: IncreasedTraitData[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
@@ -241,14 +241,14 @@ Namespace: `C_Traits`
 
 `C_Traits.GetLoadoutSerializationVersion() → serializationVersion: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
 ### C_Traits.GetMaxAvailableTraitCurrency
 
 `C_Traits.GetMaxAvailableTraitCurrency(traitCurrencyID: number, limitBySourcedMax: bool) → maxAvailable: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -256,7 +256,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetNodeCost(configID: number, nodeID: number) → costs: TraitCurrencyCost[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -264,7 +264,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetNodeInfo(configID: number, nodeID: number) → nodeInfo: TraitNodeInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
@@ -273,7 +273,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetStagedChanges(configID: number) → nodeIDsWithPurchases: number[], nodeIDsWithRefunds: number[], nodeIDsWithSelectionSwaps: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns IDs of Trait Nodes with pending changes, grouped by the type of change; Returns nothing if there are no pending changes
 - `nodeIDsWithSelectionSwaps`: Selection nodes that had a previously committed selected entry, and now have a different selected entry pending
 - may return nothing (Blizzard's docs; not checked in game)
@@ -284,7 +284,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetStagedChangesCost(configID: number) → costs: TraitCurrencyCost[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -292,7 +292,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetSubTreeInfo(configID: number, subTreeID: number) → subTreeInfo: TraitSubTreeInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
@@ -301,7 +301,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetSystemIDByTreeID(treeID: number) → systemID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
@@ -310,7 +310,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetTraitCurrencyForAchievement(traitCurrencyID: number, achievementID: number) → amount: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -318,7 +318,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetTraitCurrencyInfo(traitCurrencyID: number) → flags: number, type: number, currencyTypesID: number?, icon: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -326,7 +326,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetTraitDescription(entryID: number, rank: number) → description: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
@@ -335,7 +335,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetTraitSystemFlags(configID: number) → flags: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
@@ -344,7 +344,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetTraitSystemWidgetSetID(configID: number) → uiWidgetSetID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
@@ -353,7 +353,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetTreeCurrencyInfo(configID: number, treeID: number, excludeStagedChanges: bool) → treeCurrencyInfo: TreeCurrencyInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -361,7 +361,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetTreeHash(treeID: number) → result: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -369,7 +369,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetTreeInfo(configID: number, treeID: number) → treeInfo: TraitTreeInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
@@ -378,7 +378,7 @@ Namespace: `C_Traits`
 
 `C_Traits.GetTreeNodes(treeID: number) → nodeIDs: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns a list of nodeIDs, sorted ascending, for a given treeID. Contains nodes for all class specializations.
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -388,21 +388,21 @@ Namespace: `C_Traits`
 
 `C_Traits.HasValidInspectData() → hasValidInspectData: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
 ### C_Traits.IsReadyForCommit
 
 `C_Traits.IsReadyForCommit() → isReadyForCommit: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
 ### C_Traits.PurchaseAllRanks
 
 `C_Traits.PurchaseAllRanks(configID: number, nodeID: number, ignoreCost: bool) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -410,7 +410,7 @@ Namespace: `C_Traits`
 
 `C_Traits.PurchaseRank(configID: number, nodeID: number) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -418,7 +418,7 @@ Namespace: `C_Traits`
 
 `C_Traits.RefundAllRanks(configID: number, nodeID: number) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -426,7 +426,7 @@ Namespace: `C_Traits`
 
 `C_Traits.RefundRank(configID: number, nodeID: number, clearEdges: bool?) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -434,7 +434,7 @@ Namespace: `C_Traits`
 
 `C_Traits.ResetTree(configID: number, treeID: number) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -442,7 +442,7 @@ Namespace: `C_Traits`
 
 `C_Traits.ResetTreeByCurrency(configID: number, treeID: number, traitCurrencyID: number) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -450,7 +450,7 @@ Namespace: `C_Traits`
 
 `C_Traits.RollbackConfig(configID: number) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -458,7 +458,7 @@ Namespace: `C_Traits`
 
 `C_Traits.SetSelection(configID: number, nodeID: number, nodeEntryID: number?, clearEdges: bool?) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -466,7 +466,7 @@ Namespace: `C_Traits`
 
 `C_Traits.StageConfig(configID: number) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -474,14 +474,14 @@ Namespace: `C_Traits`
 
 `C_Traits.TalentTestUnlearnSpells()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
 ### C_Traits.TryPurchaseAllRanks
 
 `C_Traits.TryPurchaseAllRanks(configID: number, nodeID: number) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -489,7 +489,7 @@ Namespace: `C_Traits`
 
 `C_Traits.TryPurchaseToNode(configID: number, nodeID: number) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -497,7 +497,7 @@ Namespace: `C_Traits`
 
 `C_Traits.TryRefundToNode(configID: number, nodeID: number, entryID: number) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SharedTraitsDocumentation.lua`
 
@@ -505,91 +505,92 @@ Namespace: `C_Traits`
 
 ### CONFIG_COMMIT_FAILED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `configID: number`
 - fires synchronously (Blizzard's docs)
 
 ### TRAIT_COND_INFO_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `condID: number`
 - fires synchronously (Blizzard's docs)
 
 ### TRAIT_CONFIG_CREATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `configInfo: TraitConfigInfo`
 - fires synchronously (Blizzard's docs)
 
 ### TRAIT_CONFIG_DELETED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `configID: number`
 - fires synchronously (Blizzard's docs)
 
 ### TRAIT_CONFIG_LIST_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### TRAIT_CONFIG_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `configID: number`
 - fires synchronously (Blizzard's docs)
 
 ### TRAIT_NODE_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `nodeID: number`
 - fires synchronously (Blizzard's docs)
 
 ### TRAIT_NODE_CHANGED_PARTIAL
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `ID: number`, `info: TraitNodeInfoPartial`
 - fires synchronously (Blizzard's docs)
 
 ### TRAIT_NODE_ENTRY_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `nodeEntryID: number`
 - fires synchronously (Blizzard's docs)
 
 ### TRAIT_SUB_TREE_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `subTreeID: number`
 - fires synchronously (Blizzard's docs)
 
 ### TRAIT_SYSTEM_INTERACTION_STARTED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `treeID: number`
 - fires synchronously (Blizzard's docs)
 
 ### TRAIT_SYSTEM_NPC_CLOSED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### TRAIT_TREE_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `treeID: number`
 - fires synchronously (Blizzard's docs)
 
 ### TRAIT_TREE_CURRENCY_INFO_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `treeID: number`
 - fires synchronously (Blizzard's docs)
 
 ### TRY_PURCHASE_TO_NODE_PARTIAL_SUCCESS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `nodeFinishedOn: number`
 - fires synchronously (Blizzard's docs)
 

@@ -4,7 +4,7 @@
 
 ### EvictionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Outsider` = 0
   - `OutsiderParty` = 1
   - `JoinParty` = 2

@@ -4,7 +4,7 @@
 
 ### HousingCatalogConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `HOUSING_CATALOG_FEATURED_CATEGORY_ID` = 17
   - `HOUSING_CATALOG_ALL_CATEGORY_ID` = 18
   - `HOUSING_CATALOG_DECOR_MODELSCENEID_DEFAULT` = 1317
@@ -18,7 +18,7 @@
 
 ### HousingCatalogEntryModelScenePresets
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `DecorDefault` = 1317
   - `DecorTiny` = 1333
   - `DecorSmall` = 1334
@@ -32,7 +32,7 @@
 
 ### HousingCatalogEntrySize
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Tiny` = 65
   - `Small` = 66
@@ -42,7 +42,7 @@
 
 ### HousingCatalogEntryType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Invalid` = 0
   - `Decor` = 1
   - `Room` = 2
@@ -72,6 +72,6 @@
 
 ### HousingCatalogSortType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `DateAdded` = 0
   - `Alphabetical` = 1

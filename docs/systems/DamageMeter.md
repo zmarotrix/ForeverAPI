@@ -6,20 +6,20 @@ Namespace: `C_DamageMeter`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_DamageMeter.GetAvailableCombatSessions](#c_damagemetergetavailablecombatsessions) |  |  |
-| ❔ | [C_DamageMeter.GetCombatSessionFromID](#c_damagemetergetcombatsessionfromid) |  |  |
-| ❔ | [C_DamageMeter.GetCombatSessionFromType](#c_damagemetergetcombatsessionfromtype) |  |  |
-| ❔ | [C_DamageMeter.GetCombatSessionSourceFromID](#c_damagemetergetcombatsessionsourcefromid) |  |  |
-| ❔ | [C_DamageMeter.GetCombatSessionSourceFromType](#c_damagemetergetcombatsessionsourcefromtype) |  |  |
-| ❔ | [C_DamageMeter.GetSessionDurationSeconds](#c_damagemetergetsessiondurationseconds) |  |  |
-| ❔ | [C_DamageMeter.IsDamageMeterAvailable](#c_damagemeterisdamagemeteravailable) |  |  |
-| ❔ | [C_DamageMeter.ResetAllCombatSessions](#c_damagemeterresetallcombatsessions) |  |  |
+| ✅ | [C_DamageMeter.GetAvailableCombatSessions](#c_damagemetergetavailablecombatsessions) |  |  |
+| ✅ | [C_DamageMeter.GetCombatSessionFromID](#c_damagemetergetcombatsessionfromid) |  |  |
+| ✅ | [C_DamageMeter.GetCombatSessionFromType](#c_damagemetergetcombatsessionfromtype) |  |  |
+| ✅ | [C_DamageMeter.GetCombatSessionSourceFromID](#c_damagemetergetcombatsessionsourcefromid) |  |  |
+| ✅ | [C_DamageMeter.GetCombatSessionSourceFromType](#c_damagemetergetcombatsessionsourcefromtype) |  |  |
+| ✅ | [C_DamageMeter.GetSessionDurationSeconds](#c_damagemetergetsessiondurationseconds) |  |  |
+| ✅ | [C_DamageMeter.IsDamageMeterAvailable](#c_damagemeterisdamagemeteravailable) |  |  |
+| ✅ | [C_DamageMeter.ResetAllCombatSessions](#c_damagemeterresetallcombatsessions) |  |  |
 
 ### C_DamageMeter.GetAvailableCombatSessions
 
 `C_DamageMeter.GetAvailableCombatSessions() → availableSessions: DamageMeterAvailableCombatSession[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns a list of combat sessions currently being tracked.
 - Source: client docs `DamageMeterDocumentation.lua`
 
@@ -27,7 +27,7 @@ Namespace: `C_DamageMeter`
 
 `C_DamageMeter.GetCombatSessionFromID(sessionID: number, type: DamageMeterType) → session: DamageMeterCombatSession`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns the data for the player's combat session with the specified ID.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - returns secrets in combat (Blizzard's docs; not checked in game)
@@ -37,7 +37,7 @@ Namespace: `C_DamageMeter`
 
 `C_DamageMeter.GetCombatSessionFromType(sessionType: DamageMeterSessionType, type: DamageMeterType) → session: DamageMeterCombatSession`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns the data for the player's current combat session.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - returns secrets in combat (Blizzard's docs; not checked in game)
@@ -47,7 +47,7 @@ Namespace: `C_DamageMeter`
 
 `C_DamageMeter.GetCombatSessionSourceFromID(sessionID: number, type: DamageMeterType, sourceGUID: WOWGUID?, sourceCreatureID: number?) → sessionSource: DamageMeterCombatSessionSource`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns the data for a single source (unit) in the player's current combat session with the specified ID.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - returns secrets in combat (Blizzard's docs; not checked in game)
@@ -57,7 +57,7 @@ Namespace: `C_DamageMeter`
 
 `C_DamageMeter.GetCombatSessionSourceFromType(sessionType: DamageMeterSessionType, type: DamageMeterType, sourceGUID: WOWGUID?, sourceCreatureID: number?) → sessionSource: DamageMeterCombatSessionSource`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns the data for a single source (unit) in the player's current combat session.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - returns secrets in combat (Blizzard's docs; not checked in game)
@@ -67,7 +67,7 @@ Namespace: `C_DamageMeter`
 
 `C_DamageMeter.GetSessionDurationSeconds(sessionType: DamageMeterSessionType) → durationSeconds: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns the amount of time a combat session has lasted
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DamageMeterDocumentation.lua`
@@ -76,7 +76,7 @@ Namespace: `C_DamageMeter`
 
 `C_DamageMeter.IsDamageMeterAvailable() → isAvailable: bool, failureReason: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns whether the player can enable and use the Damage Meter.
 - Source: client docs `DamageMeterDocumentation.lua`
 
@@ -84,7 +84,7 @@ Namespace: `C_DamageMeter`
 
 `C_DamageMeter.ResetAllCombatSessions()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Clears the data for all the player's combat sessions.
 - Source: client docs `DamageMeterDocumentation.lua`
 
@@ -92,19 +92,21 @@ Namespace: `C_DamageMeter`
 
 ### DAMAGE_METER_COMBAT_SESSION_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `type: DamageMeterType`, `sessionID: number`
 - unique event (Blizzard's docs)
+- Seen firing 182 times (182 in combat); argument kinds: `n,n`
 
 ### DAMAGE_METER_CURRENT_SESSION_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
+- Seen firing 1 times (1 in combat); argument kinds: ``
 
 ### DAMAGE_METER_RESET
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
 

@@ -4,12 +4,12 @@
 
 ### LFGConstsExposed
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `GROUP_FINDER_MAX_ACTIVITY_CAPACITY` = 16
 
 ### LFGEntryGeneralPlaystyle
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Learning` = 1
   - `FunRelaxed` = 2
@@ -18,7 +18,7 @@
 
 ### LFGEntryPlaystyle
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Standard` = 1
   - `Casual` = 2
@@ -26,7 +26,7 @@
 
 ### LFGEntryVoiceMode
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Legacy` = 1
   - `Discord` = 2
@@ -34,7 +34,7 @@
 
 ### LFGListDisplayType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `RoleCount` = 0
   - `RoleEnumerate` = 1
   - `ClassEnumerate` = 2
@@ -44,7 +44,7 @@
 
 ### LFGListFilter
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Recommended` = 1
   - `NotRecommended` = 2
   - `PvE` = 4
@@ -56,7 +56,7 @@
 
 ### LFGRole
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Tank` = 0
   - `Healer` = 1
   - `Damage` = 2
@@ -70,7 +70,7 @@
 
 ### LFGSlotInvalidReason
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `ExpansionTooLow` = 1
   - `LevelTooLow` = 2
@@ -94,13 +94,13 @@
 
 ### LFG_ROLEConstants
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `LFG_ROLE_NO_ROLE` = -1
   - `LFG_ROLE_ANY` = Enum.LFGRoleMeta.NumValues
 
 ### PremadeGroupFinderStyle
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Disabled` = 0
   - `Mainline` = 1
   - `Vanilla` = 2

@@ -6,14 +6,14 @@ Namespace: `C_AlliedRaces`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_AlliedRaces.GetAllRacialAbilitiesFromID](#c_alliedracesgetallracialabilitiesfromid) |  |  |
-| ❔ | [C_AlliedRaces.GetRaceInfoByID](#c_alliedracesgetraceinfobyid) |  |  |
+| ✅ | [C_AlliedRaces.GetAllRacialAbilitiesFromID](#c_alliedracesgetallracialabilitiesfromid) |  |  |
+| ✅ | [C_AlliedRaces.GetRaceInfoByID](#c_alliedracesgetraceinfobyid) |  |  |
 
 ### C_AlliedRaces.GetAllRacialAbilitiesFromID
 
 `C_AlliedRaces.GetAllRacialAbilitiesFromID(raceID: number) → allDisplayInfo: AlliedRaceRacialAbility[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AlliedRacesFrameDocumentation.lua`
@@ -22,7 +22,7 @@ Namespace: `C_AlliedRaces`
 
 `C_AlliedRaces.GetRaceInfoByID(raceID: number) → info: AlliedRaceInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AlliedRacesFrameDocumentation.lua`
@@ -31,13 +31,13 @@ Namespace: `C_AlliedRaces`
 
 ### ALLIED_RACE_CLOSE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### ALLIED_RACE_OPEN
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `raceID: number`
 - fires synchronously (Blizzard's docs)
 

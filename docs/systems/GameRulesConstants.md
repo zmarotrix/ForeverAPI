@@ -4,7 +4,7 @@
 
 ### EventRealmQueues
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `PlunderstormSolo` = 1
   - `PlunderstormDuo` = 2
@@ -13,14 +13,14 @@
 
 ### GameRuleFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `AllowClient` = 1
   - `RequiresDefault` = 2
 
 ### GameRuleType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Int` = 0
   - `Float` = 1
   - `Bool` = 2

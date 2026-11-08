@@ -4,7 +4,7 @@
 
 ### ChannelPlayerFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ChannelPlayerNone` = 0
   - `ChannelPlayerOwner` = 1
   - `ChannelPlayerModerator` = 2
@@ -23,7 +23,7 @@
 
 ### ChatChannelRuleset
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Mentor` = 1
   - `Disabled` = 2
@@ -36,7 +36,7 @@
 
 ### ChatChannelType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Custom` = 1
   - `PrivateParty` = 2
@@ -48,14 +48,14 @@
 
 ### ChatFrameConstants
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `MaxChatWindows` = 10
   - `MaxChatChannels` = 20
   - `MaxCharacterNameBytes` = FULLNAME_MAX_CHAR
 
 ### ChatToxityFilterOptOut
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `FilterAll` = 0
   - `ExcludeFilterFriend` = 1
   - `ExcludeFilterGuild` = 2
@@ -63,7 +63,7 @@
 
 ### ChatWhisperTargetStatus
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `CanWhisper` = 0
   - `CanWhisperGuild` = 1
   - `Offline` = 2
@@ -71,7 +71,7 @@
 
 ### ExcludedCensorSources
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Friends` = 1
   - `Guild` = 2
@@ -85,14 +85,14 @@
 
 ### LanguageFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `IsExotic` = 1
   - `HiddenFromPlayer` = 2
   - `HideLanguageNameInChat` = 4
 
 ### PermanentChatChannelType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Zone` = 1
   - `Communities` = 2
@@ -100,7 +100,7 @@
 
 ### RegisterAddonMessagePrefixResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Success` = 0
   - `DuplicatePrefix` = 1
   - `InvalidPrefix` = 2
@@ -108,7 +108,7 @@
 
 ### SendAddonMessageResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Success` = 0
   - `InvalidPrefix` = 1
   - `InvalidMessage` = 2
@@ -125,7 +125,7 @@
 
 ### TTSConstants
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `TTSRateMin` = -10
   - `TTSRateMax` = 10
   - `TTSRateDefault` = 0
@@ -135,7 +135,7 @@
 
 ### TtsBoolSetting
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `PlaySoundSeparatingChatLineBreaks` = 0
   - `AddCharacterNameToSpeech` = 1
   - `PlayActivitySoundWhenNotFocused` = 2
@@ -144,6 +144,6 @@
 
 ### TtsVoiceType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Standard` = 0
   - `Alternate` = 1

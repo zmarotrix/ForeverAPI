@@ -6,29 +6,29 @@ Namespace: `C_Trainer`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_Trainer.GetCategorizeTrainerUI](#c_trainergetcategorizetrainerui) |  |  |
-| ❔ | [C_Trainer.GetTrainerType](#c_trainergettrainertype) |  |  |
-| ❔ | [C_Trainer.SetCategorizeTrainerUI](#c_trainersetcategorizetrainerui) |  |  |
+| ✅ | [C_Trainer.GetCategorizeTrainerUI](#c_trainergetcategorizetrainerui) |  |  |
+| ✅ | [C_Trainer.GetTrainerType](#c_trainergettrainertype) |  |  |
+| ✅ | [C_Trainer.SetCategorizeTrainerUI](#c_trainersetcategorizetrainerui) |  |  |
 
 ### C_Trainer.GetCategorizeTrainerUI
 
 `C_Trainer.GetCategorizeTrainerUI() → value: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `TrainerDocumentation.lua`
 
 ### C_Trainer.GetTrainerType
 
 `C_Trainer.GetTrainerType() → trainerType: TrainerType`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `TrainerDocumentation.lua`
 
 ### C_Trainer.SetCategorizeTrainerUI
 
 `C_Trainer.SetCategorizeTrainerUI(value: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TrainerDocumentation.lua`
 
@@ -36,30 +36,30 @@ Namespace: `C_Trainer`
 
 ### TRAINER_CLOSED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### TRAINER_DESCRIPTION_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### TRAINER_SERVICE_INFO_NAME_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
 
 ### TRAINER_SHOW
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### TRAINER_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)

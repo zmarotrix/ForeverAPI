@@ -6,16 +6,16 @@ Namespace: `C_ConsoleScriptCollection`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_ConsoleScriptCollection.GetCollectionDataByID](#c_consolescriptcollectiongetcollectiondatabyid) |  |  |
-| ❔ | [C_ConsoleScriptCollection.GetCollectionDataByTag](#c_consolescriptcollectiongetcollectiondatabytag) |  |  |
-| ❔ | [C_ConsoleScriptCollection.GetElements](#c_consolescriptcollectiongetelements) |  |  |
-| ❔ | [C_ConsoleScriptCollection.GetScriptData](#c_consolescriptcollectiongetscriptdata) |  |  |
+| ✅ | [C_ConsoleScriptCollection.GetCollectionDataByID](#c_consolescriptcollectiongetcollectiondatabyid) |  |  |
+| ✅ | [C_ConsoleScriptCollection.GetCollectionDataByTag](#c_consolescriptcollectiongetcollectiondatabytag) |  |  |
+| ✅ | [C_ConsoleScriptCollection.GetElements](#c_consolescriptcollectiongetelements) |  |  |
+| ✅ | [C_ConsoleScriptCollection.GetScriptData](#c_consolescriptcollectiongetscriptdata) |  |  |
 
 ### C_ConsoleScriptCollection.GetCollectionDataByID
 
 `C_ConsoleScriptCollection.GetCollectionDataByID(collectionID: number) → data: ConsoleScriptCollectionData?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ConsoleScriptCollectionDocumentation.lua`
 
@@ -23,7 +23,7 @@ Namespace: `C_ConsoleScriptCollection`
 
 `C_ConsoleScriptCollection.GetCollectionDataByTag(collectionTag: string) → data: ConsoleScriptCollectionData?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ConsoleScriptCollectionDocumentation.lua`
 
@@ -31,7 +31,7 @@ Namespace: `C_ConsoleScriptCollection`
 
 `C_ConsoleScriptCollection.GetElements(collectionID: number) → elementIDs: ConsoleScriptCollectionElementData[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ConsoleScriptCollectionDocumentation.lua`
 
@@ -39,7 +39,7 @@ Namespace: `C_ConsoleScriptCollection`
 
 `C_ConsoleScriptCollection.GetScriptData(consoleScriptID: number) → data: ConsoleScriptData`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ConsoleScriptCollectionDocumentation.lua`
 

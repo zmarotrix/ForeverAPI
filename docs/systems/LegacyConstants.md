@@ -4,7 +4,7 @@
 
 ### LegacyConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `LEGACY_REWARD_TRACK_FACTION_ID` = 2802
   - `LEGACY_POINTS_TRAIT_CURRENCY_ID` = 4225
   - `LEGACY_TREE_PROFESSIONS_ID` = 1187

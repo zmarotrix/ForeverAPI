@@ -6,19 +6,19 @@ Namespace: `C_ColorUtil`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_ColorUtil.ConvertHSLToHSV](#c_colorutilconverthsltohsv) |  |  |
-| ❔ | [C_ColorUtil.ConvertHSVToHSL](#c_colorutilconverthsvtohsl) |  |  |
-| ❔ | [C_ColorUtil.ConvertHSVToRGB](#c_colorutilconverthsvtorgb) |  |  |
-| ❔ | [C_ColorUtil.ConvertRGBToHSV](#c_colorutilconvertrgbtohsv) |  |  |
-| ❔ | [C_ColorUtil.GenerateTextColorCode](#c_colorutilgeneratetextcolorcode) |  |  |
-| ❔ | [C_ColorUtil.WrapTextInColor](#c_colorutilwraptextincolor) |  |  |
-| ❔ | [C_ColorUtil.WrapTextInColorCode](#c_colorutilwraptextincolorcode) |  |  |
+| ✅ | [C_ColorUtil.ConvertHSLToHSV](#c_colorutilconverthsltohsv) |  |  |
+| ✅ | [C_ColorUtil.ConvertHSVToHSL](#c_colorutilconverthsvtohsl) |  |  |
+| ✅ | [C_ColorUtil.ConvertHSVToRGB](#c_colorutilconverthsvtorgb) |  |  |
+| ✅ | [C_ColorUtil.ConvertRGBToHSV](#c_colorutilconvertrgbtohsv) |  |  |
+| ✅ | [C_ColorUtil.GenerateTextColorCode](#c_colorutilgeneratetextcolorcode) |  |  |
+| ✅ | [C_ColorUtil.WrapTextInColor](#c_colorutilwraptextincolor) |  |  |
+| ✅ | [C_ColorUtil.WrapTextInColorCode](#c_colorutilwraptextincolorcode) |  |  |
 
 ### C_ColorUtil.ConvertHSLToHSV
 
 `C_ColorUtil.ConvertHSLToHSV(hslH: number, hslS: number, hslL: number) → hsvH: number, hsvS: number, hsvV: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Converts an unpacked HSL color to HSV.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ColorUtilDocumentation.lua`
@@ -27,7 +27,7 @@ Namespace: `C_ColorUtil`
 
 `C_ColorUtil.ConvertHSVToHSL(hsvH: number, hsvS: number, hsvV: number) → hslH: number, hslS: number, hslL: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Converts an unpacked HSV color to HSL.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ColorUtilDocumentation.lua`
@@ -36,7 +36,7 @@ Namespace: `C_ColorUtil`
 
 `C_ColorUtil.ConvertHSVToRGB(hsvH: number, hsvS: number, hsvV: number) → rgbR: number, rgbG: number, rgbB: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Converts an unpacked HSV color to RGB.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ColorUtilDocumentation.lua`
@@ -45,7 +45,7 @@ Namespace: `C_ColorUtil`
 
 `C_ColorUtil.ConvertRGBToHSV(rgbR: number, rgbG: number, rgbB: number) → hsvH: number, hsvS: number, hsvV: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Converts an unpacked RGB color to HSV. For achromatic inputs, the returned hue will be -1.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ColorUtilDocumentation.lua`
@@ -54,7 +54,7 @@ Namespace: `C_ColorUtil`
 
 `C_ColorUtil.GenerateTextColorCode(color: colorRGB) → textColorCode: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Generates a hex color code suitable for use in text color code markup.
 - `color`: Color to generate a hex color code from.
 - `textColorCode`: Hex representation of the color formatted as an 8-byte ARGB string, with alpha forced to 255.
@@ -65,7 +65,7 @@ Namespace: `C_ColorUtil`
 
 `C_ColorUtil.WrapTextInColor(text: cstring, color: colorRGB) → coloredText: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Wraps a given string with color code markup.
 - `text`: Text to be wrapped in color markup.
 - `color`: Color to apply to the text.
@@ -77,7 +77,7 @@ Namespace: `C_ColorUtil`
 
 `C_ColorUtil.WrapTextInColorCode(text: cstring, textColorCode: cstring) → coloredText: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Wraps a given string with color code markup.
 - `text`: Text to be wrapped in color markup.
 - `textColorCode`: Color to apply to the text, formatted as an 8-byte ARGB string as returned by GenerateTextColorCode.

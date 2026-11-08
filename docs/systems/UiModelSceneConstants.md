@@ -4,13 +4,13 @@
 
 ### UIModelSceneContext
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = -1
   - `PerksProgram` = 0
 
 ### UIModelSceneFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `SheatheWeapon` = 1
   - `HideWeapon` = 2
   - `Autodress` = 4

@@ -6,13 +6,13 @@ Namespace: `C_ModifiedInstance`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_ModifiedInstance.GetModifiedInstanceInfoFromMapID](#c_modifiedinstancegetmodifiedinstanceinfofrommapid) |  |  |
+| ✅ | [C_ModifiedInstance.GetModifiedInstanceInfoFromMapID](#c_modifiedinstancegetmodifiedinstanceinfofrommapid) |  |  |
 
 ### C_ModifiedInstance.GetModifiedInstanceInfoFromMapID
 
 `C_ModifiedInstance.GetModifiedInstanceInfoFromMapID(mapID: number) → info: ModifiedInstanceInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIModifiedInstanceDocumentation.lua`

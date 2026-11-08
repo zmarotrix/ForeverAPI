@@ -6,57 +6,57 @@ Namespace: `C_ChatInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_ChatInfo.AreOutgoingAddonChatMessagesRestricted](#c_chatinfoareoutgoingaddonchatmessagesrestricted) |  |  |
-| ❔ | [C_ChatInfo.CanPlayerSpeakLanguage](#c_chatinfocanplayerspeaklanguage) |  |  |
-| ❔ | [C_ChatInfo.CancelEmote](#c_chatinfocancelemote) |  |  |
-| ❔ | [C_ChatInfo.DropCautionaryChatMessage](#c_chatinfodropcautionarychatmessage) |  |  |
-| ❔ | [C_ChatInfo.GetChannelInfoFromIdentifier](#c_chatinfogetchannelinfofromidentifier) |  |  |
-| ❔ | [C_ChatInfo.GetChannelRosterInfo](#c_chatinfogetchannelrosterinfo) |  |  |
-| ❔ | [C_ChatInfo.GetChannelRuleset](#c_chatinfogetchannelruleset) |  |  |
-| ❔ | [C_ChatInfo.GetChannelRulesetForChannelID](#c_chatinfogetchannelrulesetforchannelid) |  |  |
-| ❔ | [C_ChatInfo.GetChannelShortcut](#c_chatinfogetchannelshortcut) |  |  |
-| ❔ | [C_ChatInfo.GetChannelShortcutForChannelID](#c_chatinfogetchannelshortcutforchannelid) |  |  |
-| ❔ | [C_ChatInfo.GetChatLineSenderGUID](#c_chatinfogetchatlinesenderguid) |  |  |
-| ❔ | [C_ChatInfo.GetChatLineSenderName](#c_chatinfogetchatlinesendername) |  |  |
-| ❔ | [C_ChatInfo.GetChatLineText](#c_chatinfogetchatlinetext) |  |  |
-| ❔ | [C_ChatInfo.GetChatTypeName](#c_chatinfogetchattypename) |  |  |
-| ❔ | [C_ChatInfo.GetClubStreamIDs](#c_chatinfogetclubstreamids) |  |  |
-| ❔ | [C_ChatInfo.GetColorForChatType](#c_chatinfogetcolorforchattype) |  |  |
-| ❔ | [C_ChatInfo.GetGeneralChannelID](#c_chatinfogetgeneralchannelid) |  |  |
-| ❔ | [C_ChatInfo.GetGeneralChannelLocalID](#c_chatinfogetgeneralchannellocalid) |  |  |
-| ❔ | [C_ChatInfo.GetMentorChannelID](#c_chatinfogetmentorchannelid) |  |  |
-| ❔ | [C_ChatInfo.GetNumActiveChannels](#c_chatinfogetnumactivechannels) |  |  |
-| ❔ | [C_ChatInfo.GetNumReservedChatWindows](#c_chatinfogetnumreservedchatwindows) |  |  |
-| ❔ | [C_ChatInfo.GetRegisteredAddonMessagePrefixes](#c_chatinfogetregisteredaddonmessageprefixes) |  |  |
-| ❔ | [C_ChatInfo.InChatMessagingLockdown](#c_chatinfoinchatmessaginglockdown) |  |  |
-| ❔ | [C_ChatInfo.IsAddonMessagePrefixRegistered](#c_chatinfoisaddonmessageprefixregistered) |  |  |
-| ❔ | [C_ChatInfo.IsChannelRegional](#c_chatinfoischannelregional) |  |  |
-| ❔ | [C_ChatInfo.IsChannelRegionalForChannelID](#c_chatinfoischannelregionalforchannelid) |  |  |
-| ❔ | [C_ChatInfo.IsChatLineCensored](#c_chatinfoischatlinecensored) |  |  |
-| ❔ | [C_ChatInfo.IsLoggingChat](#c_chatinfoisloggingchat) |  |  |
-| ❔ | [C_ChatInfo.IsLoggingCombat](#c_chatinfoisloggingcombat) |  |  |
-| ❔ | [C_ChatInfo.IsPartyChannelType](#c_chatinfoispartychanneltype) |  |  |
-| ❔ | [C_ChatInfo.IsRegionalServiceAvailable](#c_chatinfoisregionalserviceavailable) |  |  |
-| ❔ | [C_ChatInfo.IsTimerunningPlayer](#c_chatinfoistimerunningplayer) |  |  |
-| ❔ | [C_ChatInfo.IsValidChatLine](#c_chatinfoisvalidchatline) |  |  |
-| ❔ | [C_ChatInfo.IsValidCombatFilterName](#c_chatinfoisvalidcombatfiltername) |  |  |
-| ❔ | [C_ChatInfo.PerformEmote](#c_chatinfoperformemote) |  |  |
-| ❔ | [C_ChatInfo.RegisterAddonMessagePrefix](#c_chatinforegisteraddonmessageprefix) |  |  |
-| ❔ | [C_ChatInfo.ReplaceIconAndGroupExpressions](#c_chatinforeplaceiconandgroupexpressions) |  |  |
-| ❔ | [C_ChatInfo.RequestCanLocalWhisperTarget](#c_chatinforequestcanlocalwhispertarget) |  |  |
-| ❔ | [C_ChatInfo.ResetDefaultZoneChannels](#c_chatinforesetdefaultzonechannels) |  |  |
-| ❔ | [C_ChatInfo.SendAddonMessage](#c_chatinfosendaddonmessage) |  |  |
-| ❔ | [C_ChatInfo.SendAddonMessageLogged](#c_chatinfosendaddonmessagelogged) |  |  |
-| ❔ | [C_ChatInfo.SendCautionaryChatMessage](#c_chatinfosendcautionarychatmessage) |  |  |
-| ❔ | [C_ChatInfo.SendChatMessage](#c_chatinfosendchatmessage) |  |  |
-| ❔ | [C_ChatInfo.SwapChatChannelsByChannelIndex](#c_chatinfoswapchatchannelsbychannelindex) |  |  |
-| ❔ | [C_ChatInfo.UncensorChatLine](#c_chatinfouncensorchatline) |  |  |
+| ✅ | [C_ChatInfo.AreOutgoingAddonChatMessagesRestricted](#c_chatinfoareoutgoingaddonchatmessagesrestricted) |  |  |
+| ✅ | [C_ChatInfo.CanPlayerSpeakLanguage](#c_chatinfocanplayerspeaklanguage) |  |  |
+| ✅ | [C_ChatInfo.CancelEmote](#c_chatinfocancelemote) |  |  |
+| ✅ | [C_ChatInfo.DropCautionaryChatMessage](#c_chatinfodropcautionarychatmessage) |  |  |
+| ✅ | [C_ChatInfo.GetChannelInfoFromIdentifier](#c_chatinfogetchannelinfofromidentifier) |  |  |
+| ✅ | [C_ChatInfo.GetChannelRosterInfo](#c_chatinfogetchannelrosterinfo) |  |  |
+| ✅ | [C_ChatInfo.GetChannelRuleset](#c_chatinfogetchannelruleset) |  |  |
+| ✅ | [C_ChatInfo.GetChannelRulesetForChannelID](#c_chatinfogetchannelrulesetforchannelid) |  |  |
+| ✅ | [C_ChatInfo.GetChannelShortcut](#c_chatinfogetchannelshortcut) |  |  |
+| ✅ | [C_ChatInfo.GetChannelShortcutForChannelID](#c_chatinfogetchannelshortcutforchannelid) |  |  |
+| ✅ | [C_ChatInfo.GetChatLineSenderGUID](#c_chatinfogetchatlinesenderguid) |  |  |
+| ✅ | [C_ChatInfo.GetChatLineSenderName](#c_chatinfogetchatlinesendername) |  |  |
+| ✅ | [C_ChatInfo.GetChatLineText](#c_chatinfogetchatlinetext) |  |  |
+| ✅ | [C_ChatInfo.GetChatTypeName](#c_chatinfogetchattypename) |  |  |
+| ✅ | [C_ChatInfo.GetClubStreamIDs](#c_chatinfogetclubstreamids) |  |  |
+| ✅ | [C_ChatInfo.GetColorForChatType](#c_chatinfogetcolorforchattype) |  |  |
+| ✅ | [C_ChatInfo.GetGeneralChannelID](#c_chatinfogetgeneralchannelid) |  |  |
+| ✅ | [C_ChatInfo.GetGeneralChannelLocalID](#c_chatinfogetgeneralchannellocalid) |  |  |
+| ✅ | [C_ChatInfo.GetMentorChannelID](#c_chatinfogetmentorchannelid) |  |  |
+| ✅ | [C_ChatInfo.GetNumActiveChannels](#c_chatinfogetnumactivechannels) |  |  |
+| ✅ | [C_ChatInfo.GetNumReservedChatWindows](#c_chatinfogetnumreservedchatwindows) |  |  |
+| ✅ | [C_ChatInfo.GetRegisteredAddonMessagePrefixes](#c_chatinfogetregisteredaddonmessageprefixes) |  |  |
+| ✅ | [C_ChatInfo.InChatMessagingLockdown](#c_chatinfoinchatmessaginglockdown) |  |  |
+| ✅ | [C_ChatInfo.IsAddonMessagePrefixRegistered](#c_chatinfoisaddonmessageprefixregistered) |  |  |
+| ✅ | [C_ChatInfo.IsChannelRegional](#c_chatinfoischannelregional) |  |  |
+| ✅ | [C_ChatInfo.IsChannelRegionalForChannelID](#c_chatinfoischannelregionalforchannelid) |  |  |
+| ✅ | [C_ChatInfo.IsChatLineCensored](#c_chatinfoischatlinecensored) |  |  |
+| ✅ | [C_ChatInfo.IsLoggingChat](#c_chatinfoisloggingchat) |  |  |
+| ✅ | [C_ChatInfo.IsLoggingCombat](#c_chatinfoisloggingcombat) |  |  |
+| ✅ | [C_ChatInfo.IsPartyChannelType](#c_chatinfoispartychanneltype) |  |  |
+| ✅ | [C_ChatInfo.IsRegionalServiceAvailable](#c_chatinfoisregionalserviceavailable) |  |  |
+| ✅ | [C_ChatInfo.IsTimerunningPlayer](#c_chatinfoistimerunningplayer) |  |  |
+| ✅ | [C_ChatInfo.IsValidChatLine](#c_chatinfoisvalidchatline) |  |  |
+| ✅ | [C_ChatInfo.IsValidCombatFilterName](#c_chatinfoisvalidcombatfiltername) |  |  |
+| ✅ | [C_ChatInfo.PerformEmote](#c_chatinfoperformemote) |  |  |
+| ✅ | [C_ChatInfo.RegisterAddonMessagePrefix](#c_chatinforegisteraddonmessageprefix) |  |  |
+| ✅ | [C_ChatInfo.ReplaceIconAndGroupExpressions](#c_chatinforeplaceiconandgroupexpressions) |  |  |
+| ✅ | [C_ChatInfo.RequestCanLocalWhisperTarget](#c_chatinforequestcanlocalwhispertarget) |  |  |
+| ✅ | [C_ChatInfo.ResetDefaultZoneChannels](#c_chatinforesetdefaultzonechannels) |  |  |
+| ✅ | [C_ChatInfo.SendAddonMessage](#c_chatinfosendaddonmessage) |  |  |
+| ✅ | [C_ChatInfo.SendAddonMessageLogged](#c_chatinfosendaddonmessagelogged) |  |  |
+| ✅ | [C_ChatInfo.SendCautionaryChatMessage](#c_chatinfosendcautionarychatmessage) |  |  |
+| ✅ | [C_ChatInfo.SendChatMessage](#c_chatinfosendchatmessage) |  |  |
+| ✅ | [C_ChatInfo.SwapChatChannelsByChannelIndex](#c_chatinfoswapchatchannelsbychannelindex) |  |  |
+| ✅ | [C_ChatInfo.UncensorChatLine](#c_chatinfouncensorchatline) |  |  |
 
 ### C_ChatInfo.AreOutgoingAddonChatMessagesRestricted
 
 `C_ChatInfo.AreOutgoingAddonChatMessagesRestricted() → isRestricted: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns false if addons are allowed to send outgoing chat messages. This is controlled on a realm-by-realm basis (tournament realms allow it), and the ability for addons to receive comms is controlled separately.
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -64,7 +64,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.CanPlayerSpeakLanguage(languageId: number) → canSpeakLanguage: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -72,14 +72,14 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.CancelEmote()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ChatInfoDocumentation.lua`
 
 ### C_ChatInfo.DropCautionaryChatMessage
 
 `C_ChatInfo.DropCautionaryChatMessage(confirmNumber: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -87,7 +87,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.GetChannelInfoFromIdentifier(channelIdentifier: cstring) → info: ChatChannelInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
@@ -96,7 +96,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.GetChannelRosterInfo(channelIndex: luaIndex, rosterIndex: luaIndex) → name: string, owner: bool, moderator: bool, guid: WOWGUID`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
@@ -105,7 +105,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.GetChannelRuleset(channelIndex: luaIndex) → ruleset: ChatChannelRuleset`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -113,7 +113,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.GetChannelRulesetForChannelID(channelID: number) → ruleset: ChatChannelRuleset`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -121,7 +121,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.GetChannelShortcut(channelIndex: luaIndex) → shortcut: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -129,7 +129,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.GetChannelShortcutForChannelID(channelID: number) → shortcut: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -137,7 +137,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.GetChatLineSenderGUID(chatLine: number) → guid: WOWGUID`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret during chat lockdown (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
@@ -146,7 +146,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.GetChatLineSenderName(chatLine: number) → name: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret during chat lockdown (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
@@ -155,7 +155,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.GetChatLineText(chatLine: number) → text: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret during chat lockdown (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
@@ -164,7 +164,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.GetChatTypeName(typeID: number) → name: string?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -172,7 +172,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.GetClubStreamIDs(clubID: ClubId) → ids: ClubStreamId[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -180,7 +180,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.GetColorForChatType(chatType: cstring) → color: colorRGB?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -188,49 +188,49 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.GetGeneralChannelID() → channelID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ChatInfoDocumentation.lua`
 
 ### C_ChatInfo.GetGeneralChannelLocalID
 
 `C_ChatInfo.GetGeneralChannelLocalID() → localID: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ChatInfoDocumentation.lua`
 
 ### C_ChatInfo.GetMentorChannelID
 
 `C_ChatInfo.GetMentorChannelID() → channelID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ChatInfoDocumentation.lua`
 
 ### C_ChatInfo.GetNumActiveChannels
 
 `C_ChatInfo.GetNumActiveChannels() → numChannels: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ChatInfoDocumentation.lua`
 
 ### C_ChatInfo.GetNumReservedChatWindows
 
 `C_ChatInfo.GetNumReservedChatWindows() → numReserved: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ChatInfoDocumentation.lua`
 
 ### C_ChatInfo.GetRegisteredAddonMessagePrefixes
 
 `C_ChatInfo.GetRegisteredAddonMessagePrefixes() → registeredPrefixes: cstring[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ChatInfoDocumentation.lua`
 
 ### C_ChatInfo.InChatMessagingLockdown
 
 `C_ChatInfo.InChatMessagingLockdown() → isRestricted: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns true if API security restrictions regarding chat messaging are in effect.
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -238,7 +238,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.IsAddonMessagePrefixRegistered(prefix: cstring) → isRegistered: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -246,7 +246,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.IsChannelRegional(channelIndex: luaIndex) → isRegional: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -254,7 +254,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.IsChannelRegionalForChannelID(channelID: number) → isRegional: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -262,7 +262,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.IsChatLineCensored(chatLine: number) → isCensored: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -270,21 +270,21 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.IsLoggingChat() → enabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ChatInfoDocumentation.lua`
 
 ### C_ChatInfo.IsLoggingCombat
 
 `C_ChatInfo.IsLoggingCombat() → enabled: bool, advanced: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ChatInfoDocumentation.lua`
 
 ### C_ChatInfo.IsPartyChannelType
 
 `C_ChatInfo.IsPartyChannelType(channelType: ChatChannelType) → isPartyChannelType: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -292,14 +292,14 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.IsRegionalServiceAvailable() → available: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ChatInfoDocumentation.lua`
 
 ### C_ChatInfo.IsTimerunningPlayer
 
 `C_ChatInfo.IsTimerunningPlayer(playerGUID: WOWGUID) → isTimerunning: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -307,7 +307,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.IsValidChatLine(chatLine: number?) → isValid: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -315,7 +315,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.IsValidCombatFilterName(name: cstring) → isApproved: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -323,7 +323,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.PerformEmote(emoteName: cstring, targetName: cstring?, suppressMoveError: bool = False) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
@@ -332,7 +332,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.RegisterAddonMessagePrefix(prefix: cstring) → result: RegisterAddonMessagePrefixResult`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Registers interest in addon messages with this prefix, cannot be an empty string.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
@@ -341,7 +341,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.ReplaceIconAndGroupExpressions(input: string, noIconReplacement: bool?, noGroupReplacement: bool?) → output: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -349,7 +349,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.RequestCanLocalWhisperTarget(whisperTarget: WOWGUID)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -357,14 +357,14 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.ResetDefaultZoneChannels()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ChatInfoDocumentation.lua`
 
 ### C_ChatInfo.SendAddonMessage
 
 `C_ChatInfo.SendAddonMessage(prefix: cstring, message: cstring, chatType: cstring?, target: cstring?) → result: SendAddonMessageResult`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Sends a text payload to other clients specified by chatChannel and target which are registered to listen for prefix.
 - `chatType`: ChatType, defaults to SLASH_CMD_PARTY.
 - `target`: Only applies for targeted channels
@@ -375,7 +375,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.SendAddonMessageLogged(prefix: cstring, message: cstring, chatType: cstring?, target: cstring?) → result: SendAddonMessageResult?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Sends a text payload to other clients specified by chatChannel and target which are registered to listen for prefix. Intended for plain text payloads; logged and throttled.
 - `chatType`: ChatType, defaults to SLASH_CMD_PARTY.
 - `target`: Only applies for targeted channels
@@ -386,7 +386,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.SendCautionaryChatMessage(confirmNumber: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -394,7 +394,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.SendChatMessage(message: cstring, chatType: SendChatMessageType?, languageID: number?, target: cstring?)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - `chatType`: Chat type string ('SAY', 'EMOTE', etc.). Defaults to 'SAY' if not specified.
 - `languageID`: Language to send the message in.
 - `target`: Name of the player to send a message to. Only applies to chat types that support targeted messages.
@@ -407,7 +407,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.SwapChatChannelsByChannelIndex(firstChannelIndex: luaIndex, secondChannelIndex: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -415,7 +415,7 @@ Namespace: `C_ChatInfo`
 
 `C_ChatInfo.UncensorChatLine(chatLine: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatInfoDocumentation.lua`
 
@@ -423,662 +423,671 @@ Namespace: `C_ChatInfo`
 
 ### ALTERNATIVE_DEFAULT_LANGUAGE_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### BN_CHAT_MSG_ADDON
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `prefix: cstring`, `text: cstring`, `channel: cstring`, `senderID: number`
 - fires synchronously (Blizzard's docs)
 
 ### CAN_LOCAL_WHISPER_TARGET_RESPONSE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `whisperTarget: WOWGUID`, `status: ChatWhisperTargetStatus`
 - unique event (Blizzard's docs)
 
 ### CAN_PLAYER_SPEAK_LANGUAGE_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `languageId: number`, `canSpeakLanguage: bool`
 - unique event (Blizzard's docs)
 
 ### CAUTIONARY_CHANNEL_MESSAGE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `confirmNumber: number`
 - fires synchronously (Blizzard's docs)
 
 ### CAUTIONARY_CHAT_MESSAGE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `chatLineID: number`, `confirmNumber: number`
 - fires synchronously (Blizzard's docs)
 
 ### CHANNEL_COUNT_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `displayIndex: number`, `count: number`
 - fires synchronously (Blizzard's docs)
 
 ### CHANNEL_FLAGS_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `displayIndex: number`
 - fires synchronously (Blizzard's docs)
 
 ### CHANNEL_INVITE_REQUEST
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `channelID: cstring`, `name: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### CHANNEL_LEFT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `chatChannelID: number`, `name: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### CHANNEL_PASSWORD_REQUEST
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `channelID: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### CHANNEL_ROSTER_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `displayIndex: number`, `count: number`
 - fires synchronously (Blizzard's docs)
 
 ### CHANNEL_UI_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_COMBAT_MSG_ARENA_POINTS_GAIN
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_LOGGING_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `whichLog: number`, `isEnabled: bool`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_ACHIEVEMENT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_ADDON
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `prefix: cstring`, `text: cstring`, `channel: cstring`, `sender: cstring`, `target: cstring`, `zoneChannelID: number`, `localID: number`, `name: cstring`, `instanceID: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 16 times (2 in combat); argument kinds: `s,s,s,s,s,n,n,s,n`
 
 ### CHAT_MSG_ADDON_LOGGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `prefix: cstring`, `text: cstring`, `channel: cstring`, `sender: cstring`, `target: cstring`, `zoneChannelID: number`, `localID: number`, `name: cstring`, `instanceID: number`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_AFK
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_BG_SYSTEM_ALLIANCE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_BG_SYSTEM_HORDE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_BG_SYSTEM_NEUTRAL
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_BN
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_BN_INLINE_TOAST_ALERT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_BN_INLINE_TOAST_BROADCAST
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_BN_INLINE_TOAST_BROADCAST_INFORM
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_BN_INLINE_TOAST_CONVERSATION
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_BN_WHISPER
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_BN_WHISPER_INFORM
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_BN_WHISPER_PLAYER_OFFLINE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_CHANNEL
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_CHANNEL_JOIN
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_CHANNEL_LEAVE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_CHANNEL_LEAVE_PREVENTED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `channelName: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_CHANNEL_LIST
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_CHANNEL_NOTICE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_CHANNEL_NOTICE_USER
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_COLLECTED_APPEARANCE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_COMBAT_FACTION_CHANGE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_COMBAT_HONOR_GAIN
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_COMBAT_MISC_INFO
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_COMBAT_XP_GAIN
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (1 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t`
 
 ### CHAT_MSG_COMMUNITIES_CHANNEL
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_CURRENCY
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_DND
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_EMOTE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_FILTERED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_GUILD
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_GUILD_ACHIEVEMENT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_GUILD_DISCORD
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_GUILD_ITEM_LOOTED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_IGNORED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_INSTANCE_CHAT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_INSTANCE_CHAT_LEADER
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_LOOT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t`
 
 ### CHAT_MSG_MONEY
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_MONSTER_EMOTE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_MONSTER_PARTY
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_MONSTER_SAY
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_MONSTER_WHISPER
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_MONSTER_YELL
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_OFFICER
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_OPENING
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_PARTY
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_PARTY_LEADER
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_PET_BATTLE_COMBAT_LOG
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_PET_BATTLE_INFO
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_PET_INFO
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_PING
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_RAID
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_RAID_BOSS_EMOTE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_RAID_BOSS_WHISPER
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_RAID_LEADER
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_RAID_WARNING
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_RESTRICTED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_SAY
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_SKILL
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t`
 
 ### CHAT_MSG_SYSTEM
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t`
 
 ### CHAT_MSG_TARGETICONS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_TEXT_EMOTE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_TRADESKILLS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_VOICE_TEXT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_WHISPER
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_WHISPER_INFORM
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_MSG_YELL
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `languageName: cstring`, `channelName: cstring`, `playerName2: cstring`, `specialFlags: cstring`, `zoneChannelID: number`, `channelIndex: number`, `channelBaseName: cstring`, `languageID: number`, `lineID: number`, `guid: WOWGUID`, `bnSenderID: number`, `isMobile: bool`, `isSubtitle: bool`, `hideSenderInLetterbox: bool`, `suppressRaidIcons: bool`, `discordInfo: DiscordChatInfo`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_REGIONAL_SEND_FAILED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_REGIONAL_STATUS_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `isServiceAvailable: bool`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_SERVER_DISCONNECTED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `isInitialMessage: bool?`
 - fires synchronously (Blizzard's docs)
 
 ### CHAT_SERVER_RECONNECTED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### CLEAR_BOSS_EMOTES
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### DAILY_RESET_INSTANCE_WELCOME
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `mapname: cstring`, `timeLeft: number`
 - fires synchronously (Blizzard's docs)
 
 ### INSTANCE_RESET_WARNING
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `warningMessage: cstring`, `timeLeft: number`
 - fires synchronously (Blizzard's docs)
 
 ### LANGUAGE_LIST_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### NOTIFY_CHAT_SUPPRESSED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### QUEST_BOSS_EMOTE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `displayTime: number`, `enableBossEmoteWarningSound: bool`
 - fires synchronously (Blizzard's docs)
 
 ### RAID_BOSS_EMOTE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `displayTime: number`, `enableBossEmoteWarningSound: bool`
 - fires synchronously (Blizzard's docs)
 
 ### RAID_BOSS_WHISPER
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `text: cstring`, `playerName: cstring`, `displayTime: number`, `enableBossEmoteWarningSound: bool`
 - fires synchronously (Blizzard's docs)
 
 ### RAID_INSTANCE_WELCOME
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `mapname: cstring`, `timeLeft: number`, `locked: number`, `extended: number`
 - fires synchronously (Blizzard's docs)
 
 ### UPDATE_CHAT_COLOR
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `name: cstring`, `r: number`, `g: number`, `b: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 94 times (0 in combat); argument kinds: `s,n,n,n`
 
 ### UPDATE_CHAT_COLOR_NAME_BY_CLASS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `name: cstring`, `colorNameByClass: bool`
 - fires synchronously (Blizzard's docs)
+- Seen firing 94 times (0 in combat); argument kinds: `s,b`
 
 ### UPDATE_CHAT_WINDOWS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### UPDATE_FLOATING_CHAT_WINDOWS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ## Types
 

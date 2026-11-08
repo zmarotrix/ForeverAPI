@@ -4,21 +4,22 @@
 
 ### InventoryConstants
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `NumBagSlots` = NUM_BAG_SLOTS
   - `NumCharacterBankSlots` = NUM_CHARACTERBANK_SLOTS
   - `NumReagentBagSlots` = NUM_REAGENTBAG_SLOTS
   - `NumAccountBankSlots` = NUM_ACCOUNTBANK_SLOTS
   - `MAX_TRANSACTION_BANK_TABS` = 0
+- ⚠️ `MAX_TRANSACTION_BANK_TABS`: docs say 0, game has 9
 
 ### ItemConsts_Mainline
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `HWM_SQUISH_ERA_PLAYER_DATA_ACCOUNT_ELEMENT_ID` = 212
 
 ### ItemGemSubclass
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Intellect` = 0
   - `Agility` = 1
   - `Strength` = 2
@@ -34,7 +35,7 @@
 
 ### ItemRedundancySlot
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Head` = 0
   - `Neck` = 1
   - `Shoulder` = 2

@@ -102,7 +102,7 @@
 
 ### CraftingReagentItemFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `TooltipShowsAsStatModifications` = 1
 
 ### CraftingReagentSlotInfo
@@ -217,7 +217,7 @@
 
 ### RecipeRequirementType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `SpellFocus` = 0
   - `Totem` = 1
   - `Area` = 2
@@ -275,21 +275,21 @@
 
 ### TradeskillOrderDuration
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Short` = 1
   - `Medium` = 2
   - `Long` = 3
 
 ### TradeskillOrderRecipient
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Public` = 1
   - `Guild` = 2
   - `Private` = 3
 
 ### TradeskillOrderStatus
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Unclaimed` = 1
   - `Started` = 2
   - `Completed` = 3
@@ -297,7 +297,7 @@
 
 ### TradeskillRecipeType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Item` = 1
   - `Salvage` = 2
   - `Enchant` = 3
@@ -305,7 +305,7 @@
 
 ### TradeskillRelativeDifficulty
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Optimal` = 0
   - `Medium` = 1
   - `Easy` = 2
@@ -313,7 +313,7 @@
 
 ### TradeskillSlotDataType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Reagent` = 1
   - `ModifiedReagent` = 2
   - `Currency` = 3

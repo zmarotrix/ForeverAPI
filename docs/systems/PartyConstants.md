@@ -4,7 +4,7 @@
 
 ### AvgItemLevelCategories
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Base` = 0
   - `EquippedBase` = 1
   - `EquippedEffective` = 2
@@ -14,12 +14,12 @@
 
 ### PartyCountdownConstants
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `MaxCountdownSeconds` = 3600
 
 ### PartyRequestJoinRelation
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Friend` = 1
   - `Guild` = 2
@@ -28,7 +28,7 @@
 
 ### RestrictPingsTo
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Lead` = 1
   - `Assist` = 2

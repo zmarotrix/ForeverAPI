@@ -4,14 +4,14 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [GetGameMessageInfo](#getgamemessageinfo) |  |  |
-| ❔ | [NotWhileDeadError](#notwhiledeaderror) |  |  |
+| ✅ | [GetGameMessageInfo](#getgamemessageinfo) |  |  |
+| ✅ | [NotWhileDeadError](#notwhiledeaderror) |  |  |
 
 ### GetGameMessageInfo
 
 `GetGameMessageInfo(gameErrorIndex: luaIndex) → errorName: cstring, soundKitID: number?, voiceID: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GameErrorDocumentation.lua`
@@ -20,5 +20,5 @@
 
 `NotWhileDeadError()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `GameErrorDocumentation.lua`

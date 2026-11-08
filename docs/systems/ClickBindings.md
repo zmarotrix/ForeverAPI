@@ -6,21 +6,23 @@ Namespace: `C_ClickBindings`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_ClickBindings.CanSpellBeClickBound](#c_clickbindingscanspellbeclickbound) |  |  |
-| ❔ | [C_ClickBindings.ExecuteBinding](#c_clickbindingsexecutebinding) |  |  |
-| ❔ | [C_ClickBindings.GetBindingType](#c_clickbindingsgetbindingtype) |  |  |
-| ❔ | [C_ClickBindings.GetEffectiveInteractionButton](#c_clickbindingsgeteffectiveinteractionbutton) |  |  |
-| ❔ | [C_ClickBindings.GetProfileInfo](#c_clickbindingsgetprofileinfo) |  |  |
-| ❔ | [C_ClickBindings.GetTutorialShown](#c_clickbindingsgettutorialshown) |  |  |
-| ❔ | [C_ClickBindings.ResetCurrentProfile](#c_clickbindingsresetcurrentprofile) |  |  |
-| ❔ | [C_ClickBindings.SetProfileByInfo](#c_clickbindingssetprofilebyinfo) |  |  |
-| ❔ | [C_ClickBindings.SetTutorialShown](#c_clickbindingssettutorialshown) |  |  |
+| ✅ | [C_ClickBindings.CanSpellBeClickBound](#c_clickbindingscanspellbeclickbound) |  |  |
+| ✅ | [C_ClickBindings.ExecuteBinding](#c_clickbindingsexecutebinding) |  |  |
+| ✅ | [C_ClickBindings.GetBindingType](#c_clickbindingsgetbindingtype) |  |  |
+| ✅ | [C_ClickBindings.GetEffectiveInteractionButton](#c_clickbindingsgeteffectiveinteractionbutton) |  |  |
+| ✅ | [C_ClickBindings.GetProfileInfo](#c_clickbindingsgetprofileinfo) |  |  |
+| 🆕 | [C_ClickBindings.GetStringFromModifiers](#c_clickbindingsgetstringfrommodifiers) |  |  |
+| ✅ | [C_ClickBindings.GetTutorialShown](#c_clickbindingsgettutorialshown) |  |  |
+| 🆕 | [C_ClickBindings.MakeModifiers](#c_clickbindingsmakemodifiers) |  |  |
+| ✅ | [C_ClickBindings.ResetCurrentProfile](#c_clickbindingsresetcurrentprofile) |  |  |
+| ✅ | [C_ClickBindings.SetProfileByInfo](#c_clickbindingssetprofilebyinfo) |  |  |
+| ✅ | [C_ClickBindings.SetTutorialShown](#c_clickbindingssettutorialshown) |  |  |
 
 ### C_ClickBindings.CanSpellBeClickBound
 
 `C_ClickBindings.CanSpellBeClickBound(spellID: SpellIdentifier) → canBeBound: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - `spellID`: Base spellID for spell, spellID for PetAction
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - Source: client docs `ClickBindingsDocumentation.lua`
@@ -29,7 +31,7 @@ Namespace: `C_ClickBindings`
 
 `C_ClickBindings.ExecuteBinding(targetToken: cstring, button: cstring, modifiers: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ClickBindingsDocumentation.lua`
@@ -38,7 +40,7 @@ Namespace: `C_ClickBindings`
 
 `C_ClickBindings.GetBindingType(button: cstring, modifiers: number) → type: ClickBindingType`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ClickBindingsDocumentation.lua`
 
@@ -46,7 +48,7 @@ Namespace: `C_ClickBindings`
 
 `C_ClickBindings.GetEffectiveInteractionButton(button: cstring, modifiers: number) → effectiveButton: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ClickBindingsDocumentation.lua`
 
@@ -54,21 +56,33 @@ Namespace: `C_ClickBindings`
 
 `C_ClickBindings.GetProfileInfo() → infoVec: ClickBindingInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ClickBindingsDocumentation.lua`
+
+### C_ClickBindings.GetStringFromModifiers
+
+`C_ClickBindings.GetStringFromModifiers(...)`
+
+- Status: 🆕 in game, not in Blizzard's docs (function)
 
 ### C_ClickBindings.GetTutorialShown
 
 `C_ClickBindings.GetTutorialShown() → tutorialShown: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ClickBindingsDocumentation.lua`
+
+### C_ClickBindings.MakeModifiers
+
+`C_ClickBindings.MakeModifiers(...)`
+
+- Status: 🆕 in game, not in Blizzard's docs (function)
 
 ### C_ClickBindings.ResetCurrentProfile
 
 `C_ClickBindings.ResetCurrentProfile()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `ClickBindingsDocumentation.lua`
 
@@ -76,7 +90,7 @@ Namespace: `C_ClickBindings`
 
 `C_ClickBindings.SetProfileByInfo(infoVec: ClickBindingInfo[])`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ClickBindingsDocumentation.lua`
@@ -85,13 +99,13 @@ Namespace: `C_ClickBindings`
 
 `C_ClickBindings.SetTutorialShown()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ClickBindingsDocumentation.lua`
 
 ## Events
 
 ### CLICKBINDINGS_SET_HIGHLIGHTS_SHOWN
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `showHighlights: bool`
 - fires synchronously (Blizzard's docs)

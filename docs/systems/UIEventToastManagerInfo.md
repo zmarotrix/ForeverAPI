@@ -6,15 +6,15 @@ Namespace: `C_EventToastManager`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_EventToastManager.GetLevelUpDisplayToastsFromLevel](#c_eventtoastmanagergetlevelupdisplaytoastsfromlevel) |  |  |
-| ❔ | [C_EventToastManager.GetNextToastToDisplay](#c_eventtoastmanagergetnexttoasttodisplay) |  |  |
-| ❔ | [C_EventToastManager.RemoveCurrentToast](#c_eventtoastmanagerremovecurrenttoast) |  |  |
+| ✅ | [C_EventToastManager.GetLevelUpDisplayToastsFromLevel](#c_eventtoastmanagergetlevelupdisplaytoastsfromlevel) |  |  |
+| ✅ | [C_EventToastManager.GetNextToastToDisplay](#c_eventtoastmanagergetnexttoasttodisplay) |  |  |
+| ✅ | [C_EventToastManager.RemoveCurrentToast](#c_eventtoastmanagerremovecurrenttoast) |  |  |
 
 ### C_EventToastManager.GetLevelUpDisplayToastsFromLevel
 
 `C_EventToastManager.GetLevelUpDisplayToastsFromLevel(level: number) → toastInfo: EventToastInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIEventToastManagerDocumentation.lua`
@@ -23,7 +23,7 @@ Namespace: `C_EventToastManager`
 
 `C_EventToastManager.GetNextToastToDisplay() → toastInfo: EventToastInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Source: client docs `UIEventToastManagerDocumentation.lua`
 
@@ -31,20 +31,20 @@ Namespace: `C_EventToastManager`
 
 `C_EventToastManager.RemoveCurrentToast()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `UIEventToastManagerDocumentation.lua`
 
 ## Events
 
 ### DISPLAY_EVENT_TOASTS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### DISPLAY_EVENT_TOAST_LINK
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `link: string`
 - fires synchronously (Blizzard's docs)
 

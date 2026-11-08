@@ -4,6 +4,6 @@
 
 ### ModelBlendOperation
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Anim` = 1

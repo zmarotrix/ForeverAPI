@@ -4,23 +4,23 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [AbbreviateLargeNumbers](#abbreviatelargenumbers) |  |  |
-| ❔ | [AbbreviateNumbers](#abbreviatenumbers) |  |  |
-| ❔ | [BreakUpLargeNumbers](#breakuplargenumbers) |  |  |
-| ❔ | [CaseAccentInsensitiveParse](#caseaccentinsensitiveparse) |  |  |
-| ❔ | [CreateAbbreviateConfig](#createabbreviateconfig) |  |  |
-| ❔ | [DeclineName](#declinename) |  |  |
-| ❔ | [GetDefaultAbbreviationBreakpoints](#getdefaultabbreviationbreakpoints) |  |  |
-| ❔ | [GetNumDeclensionSets](#getnumdeclensionsets) |  |  |
-| ❔ | [IsEuropeanNumbers](#iseuropeannumbers) |  |  |
-| ❔ | [LocalizedClassList](#localizedclasslist) |  |  |
-| ❔ | [SetEuropeanNumbers](#seteuropeannumbers) |  |  |
+| ✅ | [AbbreviateLargeNumbers](#abbreviatelargenumbers) |  |  |
+| ✅ | [AbbreviateNumbers](#abbreviatenumbers) |  |  |
+| ✅ | [BreakUpLargeNumbers](#breakuplargenumbers) |  |  |
+| ✅ | [CaseAccentInsensitiveParse](#caseaccentinsensitiveparse) |  |  |
+| ✅ | [CreateAbbreviateConfig](#createabbreviateconfig) |  |  |
+| ✅ | [DeclineName](#declinename) |  |  |
+| ⛔ | [GetDefaultAbbreviationBreakpoints](#getdefaultabbreviationbreakpoints) |  |  |
+| ✅ | [GetNumDeclensionSets](#getnumdeclensionsets) |  |  |
+| ✅ | [IsEuropeanNumbers](#iseuropeannumbers) |  |  |
+| ✅ | [LocalizedClassList](#localizedclasslist) |  |  |
+| ✅ | [SetEuropeanNumbers](#seteuropeannumbers) |  |  |
 
 ### AbbreviateLargeNumbers
 
 `AbbreviateLargeNumbers(number: number, options: NumberAbbrevOptions?) → result: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - Source: client docs `LocalizationDocumentation.lua`
 
@@ -28,7 +28,7 @@
 
 `AbbreviateNumbers(number: number, options: NumberAbbrevOptions?) → result: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - Source: client docs `LocalizationDocumentation.lua`
 
@@ -36,7 +36,7 @@
 
 `BreakUpLargeNumbers(largeNumber: number, natural: bool = False) → result: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - Source: client docs `LocalizationDocumentation.lua`
 
@@ -44,7 +44,7 @@
 
 `CaseAccentInsensitiveParse(name: cstring) → result: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `LocalizationDocumentation.lua`
 
@@ -52,7 +52,7 @@
 
 `CreateAbbreviateConfig(data: NumberAbbreviationBreakpoint[]) → config: AbbreviateConfig`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresRestrictedAbbreviationBreakpoints (Blizzard's docs; not checked in game)
 - secret arguments: NotAllowed (Blizzard's docs; not checked in game)
 - Source: client docs `LocalizationDocumentation.lua`
@@ -61,7 +61,7 @@
 
 `DeclineName(name: cstring, gender: UnitSex?, declensionSet: luaIndex, namePartType: NamePartType?) → declinedNames: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `LocalizationDocumentation.lua`
 
@@ -69,7 +69,7 @@
 
 `GetDefaultAbbreviationBreakpoints(locale: WowLocale?) → breakpoints: NumberAbbreviationBreakpoint[]`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - Namespace: C_StringUtil (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `LocalizationDocumentation.lua`
@@ -78,7 +78,7 @@
 
 `GetNumDeclensionSets(name: cstring, gender: UnitSex?, namePartType: NamePartType?) → numDeclensionSets: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `LocalizationDocumentation.lua`
 
@@ -86,14 +86,14 @@
 
 `IsEuropeanNumbers() → enabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `LocalizationDocumentation.lua`
 
 ### LocalizedClassList
 
 `LocalizedClassList(isFemale: bool = False) → result: LuaValueVariant`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `LocalizationDocumentation.lua`
 
@@ -101,7 +101,7 @@
 
 `SetEuropeanNumbers(enabled: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `LocalizationDocumentation.lua`
 

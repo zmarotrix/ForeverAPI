@@ -6,19 +6,19 @@ Namespace: `C_MerchantFrame`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_MerchantFrame.GetBuybackItemID](#c_merchantframegetbuybackitemid) |  |  |
-| ❔ | [C_MerchantFrame.GetItemInfo](#c_merchantframegetiteminfo) |  |  |
-| ❔ | [C_MerchantFrame.GetMerchantCurrencies](#c_merchantframegetmerchantcurrencies) |  |  |
-| ❔ | [C_MerchantFrame.GetNumJunkItems](#c_merchantframegetnumjunkitems) |  |  |
-| ❔ | [C_MerchantFrame.IsMerchantItemRefundable](#c_merchantframeismerchantitemrefundable) |  |  |
-| ❔ | [C_MerchantFrame.IsSellAllJunkEnabled](#c_merchantframeissellalljunkenabled) |  |  |
-| ❔ | [C_MerchantFrame.SellAllJunkItems](#c_merchantframesellalljunkitems) |  |  |
+| ✅ | [C_MerchantFrame.GetBuybackItemID](#c_merchantframegetbuybackitemid) |  |  |
+| ✅ | [C_MerchantFrame.GetItemInfo](#c_merchantframegetiteminfo) |  |  |
+| ✅ | [C_MerchantFrame.GetMerchantCurrencies](#c_merchantframegetmerchantcurrencies) |  |  |
+| ✅ | [C_MerchantFrame.GetNumJunkItems](#c_merchantframegetnumjunkitems) |  |  |
+| ✅ | [C_MerchantFrame.IsMerchantItemRefundable](#c_merchantframeismerchantitemrefundable) |  |  |
+| ✅ | [C_MerchantFrame.IsSellAllJunkEnabled](#c_merchantframeissellalljunkenabled) |  |  |
+| ✅ | [C_MerchantFrame.SellAllJunkItems](#c_merchantframesellalljunkitems) |  |  |
 
 ### C_MerchantFrame.GetBuybackItemID
 
 `C_MerchantFrame.GetBuybackItemID(buybackSlotIndex: luaIndex) → buybackItemID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `MerchantFrameDocumentation.lua`
@@ -27,7 +27,7 @@ Namespace: `C_MerchantFrame`
 
 `C_MerchantFrame.GetItemInfo(index: luaIndex) → info: MerchantItemInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `MerchantFrameDocumentation.lua`
@@ -36,7 +36,7 @@ Namespace: `C_MerchantFrame`
 
 `C_MerchantFrame.GetMerchantCurrencies() → currencies: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Source: client docs `MerchantFrameDocumentation.lua`
 
@@ -44,14 +44,14 @@ Namespace: `C_MerchantFrame`
 
 `C_MerchantFrame.GetNumJunkItems() → numJunkItems: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `MerchantFrameDocumentation.lua`
 
 ### C_MerchantFrame.IsMerchantItemRefundable
 
 `C_MerchantFrame.IsMerchantItemRefundable(index: luaIndex) → refundable: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `MerchantFrameDocumentation.lua`
 
@@ -59,39 +59,39 @@ Namespace: `C_MerchantFrame`
 
 `C_MerchantFrame.IsSellAllJunkEnabled() → enabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `MerchantFrameDocumentation.lua`
 
 ### C_MerchantFrame.SellAllJunkItems
 
 `C_MerchantFrame.SellAllJunkItems()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `MerchantFrameDocumentation.lua`
 
 ## Events
 
 ### MERCHANT_CLOSED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### MERCHANT_FILTER_ITEM_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `itemID: number`
 - fires synchronously (Blizzard's docs)
 
 ### MERCHANT_SHOW
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### MERCHANT_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 

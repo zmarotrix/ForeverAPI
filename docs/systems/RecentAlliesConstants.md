@@ -4,12 +4,12 @@
 
 ### RecentAlliesConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `PIN_EXPIRATION_WARNING_DAYS` = 5
 
 ### RecentAlliesInteractionCategoryFilter
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Professions` = 0
   - `PvP` = 1
   - `Raiding` = 2
@@ -19,6 +19,6 @@
 
 ### RecentAllyPinResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Success` = 0
   - `ServerError` = 1

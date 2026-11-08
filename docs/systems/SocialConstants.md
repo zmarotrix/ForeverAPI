@@ -4,7 +4,7 @@
 
 ### SocialWhoOrigin
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Unknown` = 0
   - `Social` = 1
   - `Chat` = 2

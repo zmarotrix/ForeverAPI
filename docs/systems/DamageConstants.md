@@ -4,7 +4,7 @@
 
 ### Causeofdeath
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `PlayerPvP` = 1
   - `PlayerDuel` = 2
@@ -18,7 +18,7 @@
 
 ### CauseofdeathFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `NoneNeeded` = 0
   - `PlayerNameNeeded` = 1
   - `CreatureNameNeeded` = 2
@@ -26,7 +26,7 @@
 
 ### Damageclass
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Physical` = 0
   - `Holy` = 1
   - `Fire` = 2
@@ -76,19 +76,19 @@
 
 ### DamageclassType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Physical` = 0
   - `Magical` = 1
 
 ### EnvironmentalDamageFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `OneTime` = 1
   - `DmgIsPct` = 2
 
 ### Environmentaldamagetype
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Fatigue` = 0
   - `Drowning` = 1
   - `Falling` = 2

@@ -6,24 +6,24 @@ Namespace: `C_LootHistory`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_LootHistory.GetAllEncounterInfos](#c_loothistorygetallencounterinfos) |  |  |
-| ❔ | [C_LootHistory.GetInfoForEncounter](#c_loothistorygetinfoforencounter) |  |  |
-| ❔ | [C_LootHistory.GetLootHistoryTime](#c_loothistorygetloothistorytime) |  |  |
-| ❔ | [C_LootHistory.GetSortedDropsForEncounter](#c_loothistorygetsorteddropsforencounter) |  |  |
-| ❔ | [C_LootHistory.GetSortedInfoForDrop](#c_loothistorygetsortedinfofordrop) |  |  |
+| ✅ | [C_LootHistory.GetAllEncounterInfos](#c_loothistorygetallencounterinfos) |  |  |
+| ✅ | [C_LootHistory.GetInfoForEncounter](#c_loothistorygetinfoforencounter) |  |  |
+| ✅ | [C_LootHistory.GetLootHistoryTime](#c_loothistorygetloothistorytime) |  |  |
+| ✅ | [C_LootHistory.GetSortedDropsForEncounter](#c_loothistorygetsorteddropsforencounter) |  |  |
+| ✅ | [C_LootHistory.GetSortedInfoForDrop](#c_loothistorygetsortedinfofordrop) |  |  |
 
 ### C_LootHistory.GetAllEncounterInfos
 
 `C_LootHistory.GetAllEncounterInfos() → infos: EncounterLootInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `LootHistoryDocumentation.lua`
 
 ### C_LootHistory.GetInfoForEncounter
 
 `C_LootHistory.GetInfoForEncounter(encounterID: number) → info: EncounterLootInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `LootHistoryDocumentation.lua`
 
@@ -31,14 +31,14 @@ Namespace: `C_LootHistory`
 
 `C_LootHistory.GetLootHistoryTime() → time: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `LootHistoryDocumentation.lua`
 
 ### C_LootHistory.GetSortedDropsForEncounter
 
 `C_LootHistory.GetSortedDropsForEncounter(encounterID: number) → drops: EncounterLootDropInfo[]?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `LootHistoryDocumentation.lua`
 
@@ -46,7 +46,7 @@ Namespace: `C_LootHistory`
 
 `C_LootHistory.GetSortedInfoForDrop(encounterID: number, lootListKey: number) → info: EncounterLootDropInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `LootHistoryDocumentation.lua`
 
@@ -54,31 +54,31 @@ Namespace: `C_LootHistory`
 
 ### LOOT_HISTORY_CLEAR_HISTORY
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### LOOT_HISTORY_GO_TO_ENCOUNTER
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `encounterID: number`
 - unique event (Blizzard's docs)
 
 ### LOOT_HISTORY_ONE_HUNDRED_ROLL
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `encounterID: number`, `lootListKey: number`
 - fires synchronously (Blizzard's docs)
 
 ### LOOT_HISTORY_UPDATE_DROP
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `encounterID: number`, `lootListKey: number`
 - unique event (Blizzard's docs)
 
 ### LOOT_HISTORY_UPDATE_ENCOUNTER
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `encounterID: number`
 - unique event (Blizzard's docs)
 
@@ -111,7 +111,7 @@ Namespace: `C_LootHistory`
 
 ### EncounterLootDropRollState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `NeedMainSpec` = 0
   - `NeedOffSpec` = 1
   - `Transmog` = 2

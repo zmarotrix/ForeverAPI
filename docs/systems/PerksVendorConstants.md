@@ -16,7 +16,7 @@
 
 ### PerksVendorCategoryType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Transmog` = 1
   - `Mount` = 2
   - `Pet` = 3

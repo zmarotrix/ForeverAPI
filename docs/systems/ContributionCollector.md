@@ -6,37 +6,37 @@ Namespace: `C_ContributionCollector`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_ContributionCollector.Close](#c_contributioncollectorclose) |  |  |
-| ❔ | [C_ContributionCollector.Contribute](#c_contributioncollectorcontribute) |  |  |
-| ❔ | [C_ContributionCollector.GetActive](#c_contributioncollectorgetactive) |  |  |
-| ❔ | [C_ContributionCollector.GetAtlases](#c_contributioncollectorgetatlases) |  |  |
-| ❔ | [C_ContributionCollector.GetBuffs](#c_contributioncollectorgetbuffs) |  |  |
-| ❔ | [C_ContributionCollector.GetContributionAppearance](#c_contributioncollectorgetcontributionappearance) |  |  |
-| ❔ | [C_ContributionCollector.GetContributionCollectorsForMap](#c_contributioncollectorgetcontributioncollectorsformap) |  |  |
-| ❔ | [C_ContributionCollector.GetContributionResult](#c_contributioncollectorgetcontributionresult) |  |  |
-| ❔ | [C_ContributionCollector.GetDescription](#c_contributioncollectorgetdescription) |  |  |
-| ❔ | [C_ContributionCollector.GetManagedContributionsForCreatureID](#c_contributioncollectorgetmanagedcontributionsforcreatureid) |  |  |
-| ❔ | [C_ContributionCollector.GetName](#c_contributioncollectorgetname) |  |  |
-| ❔ | [C_ContributionCollector.GetOrderIndex](#c_contributioncollectorgetorderindex) |  |  |
-| ❔ | [C_ContributionCollector.GetRequiredContributionCurrency](#c_contributioncollectorgetrequiredcontributioncurrency) |  |  |
-| ❔ | [C_ContributionCollector.GetRequiredContributionItem](#c_contributioncollectorgetrequiredcontributionitem) |  |  |
-| ❔ | [C_ContributionCollector.GetRewardQuestID](#c_contributioncollectorgetrewardquestid) |  |  |
-| ❔ | [C_ContributionCollector.GetState](#c_contributioncollectorgetstate) |  |  |
-| ❔ | [C_ContributionCollector.HasPendingContribution](#c_contributioncollectorhaspendingcontribution) |  |  |
-| ❔ | [C_ContributionCollector.IsAwaitingRewardQuestData](#c_contributioncollectorisawaitingrewardquestdata) |  |  |
+| ✅ | [C_ContributionCollector.Close](#c_contributioncollectorclose) |  |  |
+| ✅ | [C_ContributionCollector.Contribute](#c_contributioncollectorcontribute) |  |  |
+| ✅ | [C_ContributionCollector.GetActive](#c_contributioncollectorgetactive) |  |  |
+| ✅ | [C_ContributionCollector.GetAtlases](#c_contributioncollectorgetatlases) |  |  |
+| ✅ | [C_ContributionCollector.GetBuffs](#c_contributioncollectorgetbuffs) |  |  |
+| ✅ | [C_ContributionCollector.GetContributionAppearance](#c_contributioncollectorgetcontributionappearance) |  |  |
+| ✅ | [C_ContributionCollector.GetContributionCollectorsForMap](#c_contributioncollectorgetcontributioncollectorsformap) |  |  |
+| ✅ | [C_ContributionCollector.GetContributionResult](#c_contributioncollectorgetcontributionresult) |  |  |
+| ✅ | [C_ContributionCollector.GetDescription](#c_contributioncollectorgetdescription) |  |  |
+| ✅ | [C_ContributionCollector.GetManagedContributionsForCreatureID](#c_contributioncollectorgetmanagedcontributionsforcreatureid) |  |  |
+| ✅ | [C_ContributionCollector.GetName](#c_contributioncollectorgetname) |  |  |
+| ✅ | [C_ContributionCollector.GetOrderIndex](#c_contributioncollectorgetorderindex) |  |  |
+| ✅ | [C_ContributionCollector.GetRequiredContributionCurrency](#c_contributioncollectorgetrequiredcontributioncurrency) |  |  |
+| ✅ | [C_ContributionCollector.GetRequiredContributionItem](#c_contributioncollectorgetrequiredcontributionitem) |  |  |
+| ✅ | [C_ContributionCollector.GetRewardQuestID](#c_contributioncollectorgetrewardquestid) |  |  |
+| ✅ | [C_ContributionCollector.GetState](#c_contributioncollectorgetstate) |  |  |
+| ✅ | [C_ContributionCollector.HasPendingContribution](#c_contributioncollectorhaspendingcontribution) |  |  |
+| ✅ | [C_ContributionCollector.IsAwaitingRewardQuestData](#c_contributioncollectorisawaitingrewardquestdata) |  |  |
 
 ### C_ContributionCollector.Close
 
 `C_ContributionCollector.Close()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ContributionCollectorDocumentation.lua`
 
 ### C_ContributionCollector.Contribute
 
 `C_ContributionCollector.Contribute(contributionID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContributionCollectorDocumentation.lua`
 
@@ -44,14 +44,14 @@ Namespace: `C_ContributionCollector`
 
 `C_ContributionCollector.GetActive() → contributionID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ContributionCollectorDocumentation.lua`
 
 ### C_ContributionCollector.GetAtlases
 
 `C_ContributionCollector.GetAtlases(contributionID: number) → atlasName: textureAtlas[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContributionCollectorDocumentation.lua`
 
@@ -59,7 +59,7 @@ Namespace: `C_ContributionCollector`
 
 `C_ContributionCollector.GetBuffs(contributionID: number) → spellID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContributionCollectorDocumentation.lua`
 
@@ -67,7 +67,7 @@ Namespace: `C_ContributionCollector`
 
 `C_ContributionCollector.GetContributionAppearance(contributionID: number, contributionState: ContributionState) → appearance: ContributionAppearance?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContributionCollectorDocumentation.lua`
 
@@ -75,7 +75,7 @@ Namespace: `C_ContributionCollector`
 
 `C_ContributionCollector.GetContributionCollectorsForMap(uiMapID: number) → contributionCollectors: ContributionMapInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContributionCollectorDocumentation.lua`
 
@@ -83,7 +83,7 @@ Namespace: `C_ContributionCollector`
 
 `C_ContributionCollector.GetContributionResult(contributionID: number) → result: ContributionResult`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContributionCollectorDocumentation.lua`
 
@@ -91,7 +91,7 @@ Namespace: `C_ContributionCollector`
 
 `C_ContributionCollector.GetDescription(contributionID: number) → description: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContributionCollectorDocumentation.lua`
 
@@ -99,7 +99,7 @@ Namespace: `C_ContributionCollector`
 
 `C_ContributionCollector.GetManagedContributionsForCreatureID(creatureID: number) → contributionID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContributionCollectorDocumentation.lua`
 
@@ -107,7 +107,7 @@ Namespace: `C_ContributionCollector`
 
 `C_ContributionCollector.GetName(contributionID: number) → name: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContributionCollectorDocumentation.lua`
 
@@ -115,7 +115,7 @@ Namespace: `C_ContributionCollector`
 
 `C_ContributionCollector.GetOrderIndex(contributionID: number) → orderIndex: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContributionCollectorDocumentation.lua`
 
@@ -123,7 +123,7 @@ Namespace: `C_ContributionCollector`
 
 `C_ContributionCollector.GetRequiredContributionCurrency(contributionID: number) → currencyID: number, currencyAmount: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContributionCollectorDocumentation.lua`
@@ -132,7 +132,7 @@ Namespace: `C_ContributionCollector`
 
 `C_ContributionCollector.GetRequiredContributionItem(contributionID: number) → itemID: number, itemCount: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContributionCollectorDocumentation.lua`
@@ -141,7 +141,7 @@ Namespace: `C_ContributionCollector`
 
 `C_ContributionCollector.GetRewardQuestID(contributionID: number) → questID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContributionCollectorDocumentation.lua`
 
@@ -149,7 +149,7 @@ Namespace: `C_ContributionCollector`
 
 `C_ContributionCollector.GetState(contributionID: number) → contributionState: ContributionState, contributionPercentageComplete: number, timeOfNextStateChange: time_t?, startTime: time_t`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContributionCollectorDocumentation.lua`
 
@@ -157,7 +157,7 @@ Namespace: `C_ContributionCollector`
 
 `C_ContributionCollector.HasPendingContribution(contributionID: number) → hasPending: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContributionCollectorDocumentation.lua`
 
@@ -165,7 +165,7 @@ Namespace: `C_ContributionCollector`
 
 `C_ContributionCollector.IsAwaitingRewardQuestData(contributionID: number) → awaitingData: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContributionCollectorDocumentation.lua`
 
@@ -173,25 +173,25 @@ Namespace: `C_ContributionCollector`
 
 ### CONTRIBUTION_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `state: ContributionState`, `result: ContributionResult`, `name: string`, `contributionID: number`
 - fires synchronously (Blizzard's docs)
 
 ### CONTRIBUTION_COLLECTOR_PENDING
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `contributionID: number`, `isPending: bool`, `result: number`
 - fires synchronously (Blizzard's docs)
 
 ### CONTRIBUTION_COLLECTOR_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
 
 ### CONTRIBUTION_COLLECTOR_UPDATE_SINGLE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `contributionID: number`
 - fires synchronously (Blizzard's docs)
 
@@ -219,7 +219,7 @@ Namespace: `C_ContributionCollector`
 
 ### ContributionResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Success` = 0
   - `MustBeNearNpc` = 1
   - `IncorrectState` = 2

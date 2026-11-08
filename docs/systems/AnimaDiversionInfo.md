@@ -6,26 +6,26 @@ Namespace: `C_AnimaDiversion`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_AnimaDiversion.CloseUI](#c_animadiversioncloseui) |  |  |
-| ❔ | [C_AnimaDiversion.GetAnimaDiversionNodes](#c_animadiversiongetanimadiversionnodes) |  |  |
-| ❔ | [C_AnimaDiversion.GetOriginPosition](#c_animadiversiongetoriginposition) |  |  |
-| ❔ | [C_AnimaDiversion.GetReinforceProgress](#c_animadiversiongetreinforceprogress) |  |  |
-| ❔ | [C_AnimaDiversion.GetTextureKit](#c_animadiversiongettexturekit) |  |  |
-| ❔ | [C_AnimaDiversion.OpenAnimaDiversionUI](#c_animadiversionopenanimadiversionui) |  |  |
-| ❔ | [C_AnimaDiversion.SelectAnimaNode](#c_animadiversionselectanimanode) |  |  |
+| ✅ | [C_AnimaDiversion.CloseUI](#c_animadiversioncloseui) |  |  |
+| ✅ | [C_AnimaDiversion.GetAnimaDiversionNodes](#c_animadiversiongetanimadiversionnodes) |  |  |
+| ✅ | [C_AnimaDiversion.GetOriginPosition](#c_animadiversiongetoriginposition) |  |  |
+| ✅ | [C_AnimaDiversion.GetReinforceProgress](#c_animadiversiongetreinforceprogress) |  |  |
+| ✅ | [C_AnimaDiversion.GetTextureKit](#c_animadiversiongettexturekit) |  |  |
+| ✅ | [C_AnimaDiversion.OpenAnimaDiversionUI](#c_animadiversionopenanimadiversionui) |  |  |
+| ✅ | [C_AnimaDiversion.SelectAnimaNode](#c_animadiversionselectanimanode) |  |  |
 
 ### C_AnimaDiversion.CloseUI
 
 `C_AnimaDiversion.CloseUI()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `AnimaDiversionUIDocumentation.lua`
 
 ### C_AnimaDiversion.GetAnimaDiversionNodes
 
 `C_AnimaDiversion.GetAnimaDiversionNodes() → animaNodes: AnimaDiversionNodeInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Source: client docs `AnimaDiversionUIDocumentation.lua`
 
@@ -33,35 +33,35 @@ Namespace: `C_AnimaDiversion`
 
 `C_AnimaDiversion.GetOriginPosition() → normalizedPosition: vector2?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `AnimaDiversionUIDocumentation.lua`
 
 ### C_AnimaDiversion.GetReinforceProgress
 
 `C_AnimaDiversion.GetReinforceProgress() → progress: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `AnimaDiversionUIDocumentation.lua`
 
 ### C_AnimaDiversion.GetTextureKit
 
 `C_AnimaDiversion.GetTextureKit() → textureKit: textureKit`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `AnimaDiversionUIDocumentation.lua`
 
 ### C_AnimaDiversion.OpenAnimaDiversionUI
 
 `C_AnimaDiversion.OpenAnimaDiversionUI()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `AnimaDiversionUIDocumentation.lua`
 
 ### C_AnimaDiversion.SelectAnimaNode
 
 `C_AnimaDiversion.SelectAnimaNode(talentID: number, temporary: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AnimaDiversionUIDocumentation.lua`
@@ -70,19 +70,19 @@ Namespace: `C_AnimaDiversion`
 
 ### ANIMA_DIVERSION_CLOSE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### ANIMA_DIVERSION_OPEN
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `info: AnimaDiversionFrameInfo`
 - fires synchronously (Blizzard's docs)
 
 ### ANIMA_DIVERSION_TALENT_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
@@ -115,7 +115,7 @@ Namespace: `C_AnimaDiversion`
 
 ### AnimaDiversionNodeState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Unavailable` = 0
   - `Available` = 1
   - `SelectedTemporary` = 2

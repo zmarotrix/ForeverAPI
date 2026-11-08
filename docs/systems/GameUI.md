@@ -4,14 +4,14 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [SetInWorldUIVisibility](#setinworlduivisibility) |  |  |
-| ❔ | [SetUIVisibility](#setuivisibility) |  |  |
+| ✅ | [SetInWorldUIVisibility](#setinworlduivisibility) |  |  |
+| ✅ | [SetUIVisibility](#setuivisibility) |  |  |
 
 ### SetInWorldUIVisibility
 
 `SetInWorldUIVisibility(visible: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GameUIDocumentation.lua`
 
@@ -19,6 +19,6 @@
 
 `SetUIVisibility(visible: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GameUIDocumentation.lua`

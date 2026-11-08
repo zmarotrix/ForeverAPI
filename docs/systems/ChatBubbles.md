@@ -6,12 +6,12 @@ Namespace: `C_ChatBubbles`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_ChatBubbles.GetAllChatBubbles](#c_chatbubblesgetallchatbubbles) |  |  |
+| ✅ | [C_ChatBubbles.GetAllChatBubbles](#c_chatbubblesgetallchatbubbles) |  |  |
 
 ### C_ChatBubbles.GetAllChatBubbles
 
 `C_ChatBubbles.GetAllChatBubbles(includeForbidden: bool = False) → chatBubbles: ChatBubbleFrame[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChatBubblesDocumentation.lua`

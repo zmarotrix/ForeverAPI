@@ -4,12 +4,12 @@
 
 ### PetBattleConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `SUMMON_RANDOM_FAVORITE_BATTLEPET_SPELL_ID` = 243819
 
 ### PetBattleQueueStatus
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Queued` = 1
   - `QueuedUpdate` = 2
@@ -35,14 +35,14 @@
 
 ### PetbattleSlot
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Slot_0` = 0
   - `Slot_1` = 1
   - `Slot_2` = 2
 
 ### PetbattleState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Created` = 0
   - `WaitingPreBattle` = 1
   - `RoundInProgress` = 2

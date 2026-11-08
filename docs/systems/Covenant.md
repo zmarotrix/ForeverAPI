@@ -6,22 +6,22 @@ Namespace: `C_Covenants`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_Covenants.GetActiveCovenantID](#c_covenantsgetactivecovenantid) |  |  |
-| ❔ | [C_Covenants.GetCovenantData](#c_covenantsgetcovenantdata) |  |  |
-| ❔ | [C_Covenants.GetCovenantIDs](#c_covenantsgetcovenantids) |  |  |
+| ✅ | [C_Covenants.GetActiveCovenantID](#c_covenantsgetactivecovenantid) |  |  |
+| ✅ | [C_Covenants.GetCovenantData](#c_covenantsgetcovenantdata) |  |  |
+| ✅ | [C_Covenants.GetCovenantIDs](#c_covenantsgetcovenantids) |  |  |
 
 ### C_Covenants.GetActiveCovenantID
 
 `C_Covenants.GetActiveCovenantID() → covenantID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CovenantsDocumentation.lua`
 
 ### C_Covenants.GetCovenantData
 
 `C_Covenants.GetCovenantData(covenantID: number) → data: CovenantData?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CovenantsDocumentation.lua`
 
@@ -29,14 +29,14 @@ Namespace: `C_Covenants`
 
 `C_Covenants.GetCovenantIDs() → covenantID: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CovenantsDocumentation.lua`
 
 ## Events
 
 ### COVENANT_CHOSEN
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `covenantID: number`
 - fires synchronously (Blizzard's docs)
 

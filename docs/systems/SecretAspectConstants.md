@@ -4,7 +4,7 @@
 
 ### SecretAspect
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ObjectDebug` = 1
   - `ObjectName` = 1
   - `ObjectType` = 1

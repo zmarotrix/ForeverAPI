@@ -6,21 +6,21 @@ Namespace: `C_QuestInfoSystem`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_QuestInfoSystem.GetQuestClassification](#c_questinfosystemgetquestclassification) |  |  |
-| ❔ | [C_QuestInfoSystem.GetQuestHasShortExpirationWarning](#c_questinfosystemgetquesthasshortexpirationwarning) |  |  |
-| ❔ | [C_QuestInfoSystem.GetQuestLogRewardFavor](#c_questinfosystemgetquestlogrewardfavor) |  |  |
-| ❔ | [C_QuestInfoSystem.GetQuestRewardCurrencies](#c_questinfosystemgetquestrewardcurrencies) |  |  |
-| ❔ | [C_QuestInfoSystem.GetQuestRewardSpellInfo](#c_questinfosystemgetquestrewardspellinfo) |  |  |
-| ❔ | [C_QuestInfoSystem.GetQuestRewardSpells](#c_questinfosystemgetquestrewardspells) |  |  |
-| ❔ | [C_QuestInfoSystem.GetQuestShouldToastCompletion](#c_questinfosystemgetquestshouldtoastcompletion) |  |  |
-| ❔ | [C_QuestInfoSystem.HasQuestRewardCurrencies](#c_questinfosystemhasquestrewardcurrencies) |  |  |
-| ❔ | [C_QuestInfoSystem.HasQuestRewardSpells](#c_questinfosystemhasquestrewardspells) |  |  |
+| ✅ | [C_QuestInfoSystem.GetQuestClassification](#c_questinfosystemgetquestclassification) |  |  |
+| ✅ | [C_QuestInfoSystem.GetQuestHasShortExpirationWarning](#c_questinfosystemgetquesthasshortexpirationwarning) |  |  |
+| ✅ | [C_QuestInfoSystem.GetQuestLogRewardFavor](#c_questinfosystemgetquestlogrewardfavor) |  |  |
+| ✅ | [C_QuestInfoSystem.GetQuestRewardCurrencies](#c_questinfosystemgetquestrewardcurrencies) |  |  |
+| ✅ | [C_QuestInfoSystem.GetQuestRewardSpellInfo](#c_questinfosystemgetquestrewardspellinfo) |  |  |
+| ✅ | [C_QuestInfoSystem.GetQuestRewardSpells](#c_questinfosystemgetquestrewardspells) |  |  |
+| ✅ | [C_QuestInfoSystem.GetQuestShouldToastCompletion](#c_questinfosystemgetquestshouldtoastcompletion) |  |  |
+| ✅ | [C_QuestInfoSystem.HasQuestRewardCurrencies](#c_questinfosystemhasquestrewardcurrencies) |  |  |
+| ✅ | [C_QuestInfoSystem.HasQuestRewardSpells](#c_questinfosystemhasquestrewardspells) |  |  |
 
 ### C_QuestInfoSystem.GetQuestClassification
 
 `C_QuestInfoSystem.GetQuestClassification(questID: number?, questInfoID: number?) → classification: QuestClassification`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `QuestInfoSystemDocumentation.lua`
 
@@ -28,7 +28,7 @@ Namespace: `C_QuestInfoSystem`
 
 `C_QuestInfoSystem.GetQuestHasShortExpirationWarning(questID: number?) → hasShortExpirationWarning: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `QuestInfoSystemDocumentation.lua`
 
@@ -36,7 +36,7 @@ Namespace: `C_QuestInfoSystem`
 
 `C_QuestInfoSystem.GetQuestLogRewardFavor(questID: number?, clampFavorToCycleCap: bool?) → amount: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `QuestInfoSystemDocumentation.lua`
 
@@ -44,7 +44,7 @@ Namespace: `C_QuestInfoSystem`
 
 `C_QuestInfoSystem.GetQuestRewardCurrencies(questID: number?) → questRewardCurrencyInfo: QuestRewardCurrencyInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `QuestInfoSystemDocumentation.lua`
@@ -53,7 +53,7 @@ Namespace: `C_QuestInfoSystem`
 
 `C_QuestInfoSystem.GetQuestRewardSpellInfo(questID: number?, spellID: number) → info: QuestRewardSpellInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `QuestInfoSystemDocumentation.lua`
 
@@ -61,7 +61,7 @@ Namespace: `C_QuestInfoSystem`
 
 `C_QuestInfoSystem.GetQuestRewardSpells(questID: number?) → spellIDs: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `QuestInfoSystemDocumentation.lua`
@@ -70,7 +70,7 @@ Namespace: `C_QuestInfoSystem`
 
 `C_QuestInfoSystem.GetQuestShouldToastCompletion(questID: number?) → shouldToast: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `QuestInfoSystemDocumentation.lua`
 
@@ -78,7 +78,7 @@ Namespace: `C_QuestInfoSystem`
 
 `C_QuestInfoSystem.HasQuestRewardCurrencies(questID: number?) → hasQuestRewardCurrencies: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `QuestInfoSystemDocumentation.lua`
 
@@ -86,6 +86,6 @@ Namespace: `C_QuestInfoSystem`
 
 `C_QuestInfoSystem.HasQuestRewardSpells(questID: number?) → hasRewardSpells: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `QuestInfoSystemDocumentation.lua`

@@ -4,7 +4,7 @@
 
 ### FragmentID
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `MirrorState` = 0
   - `AuthMirrorState` = 1
   - `EntityPosition` = 2

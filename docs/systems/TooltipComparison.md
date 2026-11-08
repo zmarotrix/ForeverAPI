@@ -6,15 +6,15 @@ Namespace: `C_TooltipComparison`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_TooltipComparison.CompareItem](#c_tooltipcomparisoncompareitem) |  |  |
-| ❔ | [C_TooltipComparison.GetItemComparisonDelta](#c_tooltipcomparisongetitemcomparisondelta) |  |  |
-| ❔ | [C_TooltipComparison.GetItemComparisonInfo](#c_tooltipcomparisongetitemcomparisoninfo) |  |  |
+| ✅ | [C_TooltipComparison.CompareItem](#c_tooltipcomparisoncompareitem) |  |  |
+| ✅ | [C_TooltipComparison.GetItemComparisonDelta](#c_tooltipcomparisongetitemcomparisondelta) |  |  |
+| ✅ | [C_TooltipComparison.GetItemComparisonInfo](#c_tooltipcomparisongetitemcomparisoninfo) |  |  |
 
 ### C_TooltipComparison.CompareItem
 
 `C_TooltipComparison.CompareItem(comparisonItem: TooltipComparisonItem, tooltip: Tooltip, anchorFrame: SimpleFrame?)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - protected: only Blizzard's secure code may call it (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TooltipComparisonDocumentation.lua`
@@ -23,7 +23,7 @@ Namespace: `C_TooltipComparison`
 
 `C_TooltipComparison.GetItemComparisonDelta(comparisonItem: TooltipComparisonItem, equippedItem: TooltipComparisonItem, pairedItem: TooltipComparisonItem?, addPairedStats: bool?) → lines: string[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - `addPairedStats`: Whether the paired item's stats are added or subtracted
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -33,7 +33,7 @@ Namespace: `C_TooltipComparison`
 
 `C_TooltipComparison.GetItemComparisonInfo(comparisonItem: TooltipComparisonItem) → info: TooltipItemComparisonInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TooltipComparisonDocumentation.lua`
@@ -42,7 +42,7 @@ Namespace: `C_TooltipComparison`
 
 ### TOOLTIP_SHOW_ITEM_COMPARISON
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - Payload: `comparisonItem: TooltipComparisonItem`, `tooltip: Tooltip`, `anchorFrame: SimpleFrame?`
 - CallbackEvent (Blizzard's docs)
 
@@ -50,7 +50,7 @@ Namespace: `C_TooltipComparison`
 
 ### TooltipComparisonMethod
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Single` = 0
   - `WithBothHands` = 1
   - `WithBagMainHandItem` = 2

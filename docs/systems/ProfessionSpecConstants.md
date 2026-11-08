@@ -18,27 +18,27 @@
 
 ### ProfTraitPerkNodeFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `UnlocksSubpath` = 1
   - `IsMajorBonus` = 2
 
 ### ProfessionsSpecPathState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Locked` = 0
   - `Progressing` = 1
   - `Completed` = 2
 
 ### ProfessionsSpecPerkState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Unearned` = 0
   - `Pending` = 1
   - `Earned` = 2
 
 ### ProfessionsSpecTabState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Locked` = 0
   - `Unlocked` = 1
   - `Unlockable` = 2

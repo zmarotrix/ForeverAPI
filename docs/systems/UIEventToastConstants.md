@@ -4,7 +4,7 @@
 
 ### EventToastDisplayType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `NormalSingleLine` = 0
   - `NormalBlockText` = 1
   - `NormalTitleAndSubTitle` = 2
@@ -24,7 +24,7 @@
 
 ### EventToastEventType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `LevelUp` = 0
   - `LevelUpSpell` = 1
   - `LevelUpDungeon` = 2
@@ -56,5 +56,5 @@
 
 ### EventToastFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `DisableRightClickDismiss` = 1

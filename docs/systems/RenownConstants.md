@@ -4,7 +4,7 @@
 
 ### RenownRewardDisplayType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Item` = 1
   - `Spell` = 2
@@ -18,7 +18,7 @@
 
 ### RenownRewardsFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Milestone` = 1
   - `Capstone` = 2
   - `Hidden` = 4

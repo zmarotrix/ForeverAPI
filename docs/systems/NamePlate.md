@@ -6,16 +6,16 @@ Namespace: `C_NamePlate`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_NamePlate.GetNamePlateForUnit](#c_nameplategetnameplateforunit) |  |  |
-| ❔ | [C_NamePlate.GetNamePlateSize](#c_nameplategetnameplatesize) |  |  |
-| ❔ | [C_NamePlate.GetNamePlates](#c_nameplategetnameplates) |  |  |
-| ❔ | [C_NamePlate.SetNamePlateSize](#c_nameplatesetnameplatesize) |  |  |
+| ✅ | [C_NamePlate.GetNamePlateForUnit](#c_nameplategetnameplateforunit) |  |  |
+| ✅ | [C_NamePlate.GetNamePlateSize](#c_nameplategetnameplatesize) |  |  |
+| ✅ | [C_NamePlate.GetNamePlates](#c_nameplategetnameplates) |  |  |
+| ✅ | [C_NamePlate.SetNamePlateSize](#c_nameplatesetnameplatesize) |  |  |
 
 ### C_NamePlate.GetNamePlateForUnit
 
 `C_NamePlate.GetNamePlateForUnit(unitToken: UnitTokenNamePlate, includeForbidden: bool = False) → nameplate: NamePlateFrame`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `NamePlateDocumentation.lua`
 
@@ -23,21 +23,21 @@ Namespace: `C_NamePlate`
 
 `C_NamePlate.GetNamePlateSize() → width: uiUnit, height: uiUnit`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `NamePlateDocumentation.lua`
 
 ### C_NamePlate.GetNamePlates
 
 `C_NamePlate.GetNamePlates() → nameplates: NamePlateFrame[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `NamePlateDocumentation.lua`
 
 ### C_NamePlate.SetNamePlateSize
 
 `C_NamePlate.SetNamePlateSize(width: uiUnit, height: uiUnit)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `NamePlateDocumentation.lua`

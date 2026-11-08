@@ -4,7 +4,7 @@
 
 ### HouseEditingContext
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Decor` = 1
   - `Room` = 2
@@ -12,7 +12,7 @@
 
 ### HouseEditorMode
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `BasicDecor` = 1
   - `ExpertDecor` = 2
@@ -23,7 +23,7 @@
 
 ### HouseExteriorWMODataFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `UnlockedByDefault` = 1
   - `AllowedInHordeNeighborhoods` = 2
@@ -32,7 +32,7 @@
 
 ### HouseFinderSuggestionReason
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Owner` = 1
   - `CharterInvite` = 2
@@ -45,7 +45,7 @@
 
 ### HouseOwnerError
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Faction` = 1
   - `Guild` = 2
@@ -53,13 +53,13 @@
 
 ### HousingBlueprintFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `AutomaticBackup` = 1
 
 ### HousingBlueprintType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `House` = 1
   - `Room` = 2
@@ -68,24 +68,28 @@
 
 ### HousingBudgetType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `RoomPlacement` = 0
   - `DecorPlacement` = 1
   - `PetDecor` = 2
 
 ### HousingConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `NeighborhoodNameMaxCharacters` = 0
   - `NeighborhoodNameMinCharacters` = 0
   - `BlueprintNameMaxCharacters` = 0
   - `BlueprintNameMinCharacters` = 0
   - `HOUSING_BLUEPRINTS_MAX_PER_BNET_ACCOUNT` = 50
   - `HOUSING_BLUEPRINTS_MAX_BACKUPS_PER_BNET_ACCOUNT` = 10
+- ⚠️ `NeighborhoodNameMaxCharacters`: docs say 0, game has 50
+- ⚠️ `NeighborhoodNameMinCharacters`: docs say 0, game has 3
+- ⚠️ `BlueprintNameMaxCharacters`: docs say 0, game has 50
+- ⚠️ `BlueprintNameMinCharacters`: docs say 0, game has 3
 
 ### HousingDecorTheme
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Folk` = 1
   - `Rugged` = 2
@@ -95,21 +99,21 @@
 
 ### HousingFixtureDecorAction
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
 - Blizzard: Kinds of actions that can be taken to deal with decor attached to an Exterior Fixture that is being removed or swapped
   - `Store` = 0
   - `Detach` = 1
 
 ### HousingFixtureFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `IsDefaultFixture` = 1
   - `UnlockedByDefault` = 2
 
 ### HousingFixtureSize
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Any` = 1
   - `Small` = 2
@@ -118,7 +122,7 @@
 
 ### HousingFixtureType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Base` = 9
   - `Roof` = 10
@@ -131,14 +135,14 @@
 
 ### HousingHouseScope
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Interior` = 1
   - `Exterior` = 2
 
 ### HousingLayoutRestriction
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `RoomNotFound` = 1
   - `NotInsideHouse` = 2
@@ -152,13 +156,13 @@
 
 ### HousingPetBehaviorType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Stationary` = 0
   - `Wander` = 1
 
 ### HousingPlotOwnerType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Stranger` = 1
   - `Friend` = 2
@@ -166,7 +170,7 @@
 
 ### HousingResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Success` = 0
   - `AccountBanned` = 1
   - `ActionLockedByCombat` = 2
@@ -283,44 +287,44 @@
 
 ### HousingRoomComponentCeilingType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Flat` = 0
   - `Vaulted` = 1
 
 ### HousingRoomComponentDoorType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Doorway` = 1
   - `Threshold` = 2
 
 ### HousingRoomComponentFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `HiddenInLayoutMode` = 1
 
 ### HousingRoomComponentFloorType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Floor` = 0
 
 ### HousingRoomComponentOptionFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `IsDefault` = 1
 
 ### HousingRoomComponentOptionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Cosmetic` = 0
   - `DoorwayWall` = 1
   - `Doorway` = 2
 
 ### HousingRoomComponentStairType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `StartToEnd` = 1
   - `StartToMiddle` = 2
@@ -329,13 +333,13 @@
 
 ### HousingRoomComponentTextureFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `UnlockedByDefault` = 1
 
 ### HousingRoomComponentType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Wall` = 1
   - `Floor` = 2
@@ -347,7 +351,7 @@
 
 ### HousingRoomFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `BaseRoom` = 1
   - `HasStairs` = 2
@@ -356,27 +360,27 @@
 
 ### HousingThemeFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `UnlockedByDefault` = 1
   - `ShowInStyleSelector` = 2
 
 ### HousingThrottleType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `General` = 0
   - `Decoration` = 1
 
 ### NeighborhoodFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `PoolParent` = 1
   - `OpenToPublic` = 2
 
 ### NeighborhoodInviteResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Success` = 0
   - `DbError` = 1
   - `RpcFailure` = 2
@@ -392,7 +396,7 @@
 
 ### NeighborhoodMapFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `AlliancePurchasable` = 1
   - `HordePurchasable` = 2
@@ -400,12 +404,12 @@
 
 ### RetroactiveDecorRewardFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `AllCriteriaRequired` = 1
 
 ### RoomConnectionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `All` = 1

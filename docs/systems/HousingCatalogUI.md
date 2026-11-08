@@ -6,46 +6,55 @@ Namespace: `C_HousingCatalog`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_HousingCatalog.CreateCatalogSearcher](#c_housingcatalogcreatecatalogsearcher) |  |  |
-| ❔ | [C_HousingCatalog.DeletePreviewCartDecor](#c_housingcatalogdeletepreviewcartdecor) |  |  |
-| ❔ | [C_HousingCatalog.DestroyEntry](#c_housingcatalogdestroyentry) |  |  |
-| ❔ | [C_HousingCatalog.GetAllFilterTagGroups](#c_housingcataloggetallfiltertaggroups) |  |  |
-| ❔ | [C_HousingCatalog.GetAllVariantInfosForEntry](#c_housingcataloggetallvariantinfosforentry) |  |  |
-| ❔ | [C_HousingCatalog.GetBundleInfo](#c_housingcataloggetbundleinfo) |  |  |
-| ❔ | [C_HousingCatalog.GetCartSizeLimit](#c_housingcataloggetcartsizelimit) |  |  |
-| ❔ | [C_HousingCatalog.GetCatalogCategoryAndSubcategoryNames](#c_housingcataloggetcatalogcategoryandsubcategorynames) |  |  |
-| ❔ | [C_HousingCatalog.GetCatalogCategoryInfo](#c_housingcataloggetcatalogcategoryinfo) |  |  |
-| ❔ | [C_HousingCatalog.GetCatalogEntryInfo](#c_housingcataloggetcatalogentryinfo) |  |  |
-| ❔ | [C_HousingCatalog.GetCatalogEntryInfoByItem](#c_housingcataloggetcatalogentryinfobyitem) |  |  |
-| ❔ | [C_HousingCatalog.GetCatalogEntryInfoByRecordID](#c_housingcataloggetcatalogentryinfobyrecordid) |  |  |
-| ❔ | [C_HousingCatalog.GetCatalogEntryRefundTimeStampByRecordID](#c_housingcataloggetcatalogentryrefundtimestampbyrecordid) |  |  |
-| ❔ | [C_HousingCatalog.GetCatalogEntryVariantInfo](#c_housingcataloggetcatalogentryvariantinfo) |  |  |
-| ❔ | [C_HousingCatalog.GetCatalogSubcategoryInfo](#c_housingcataloggetcatalogsubcategoryinfo) |  |  |
-| ❔ | [C_HousingCatalog.GetDecorMaxOwnedCount](#c_housingcataloggetdecormaxownedcount) |  |  |
-| ❔ | [C_HousingCatalog.GetDecorTotalOwnedCount](#c_housingcataloggetdecortotalownedcount) |  |  |
-| ❔ | [C_HousingCatalog.GetDestroyableInstanceCount](#c_housingcataloggetdestroyableinstancecount) |  |  |
-| ❔ | [C_HousingCatalog.GetFeaturedBundles](#c_housingcataloggetfeaturedbundles) |  |  |
-| ❔ | [C_HousingCatalog.GetFeaturedSmallProducts](#c_housingcataloggetfeaturedsmallproducts) |  |  |
-| ❔ | [C_HousingCatalog.GetMarketInfoForDecor](#c_housingcataloggetmarketinfofordecor) |  |  |
-| ❔ | [C_HousingCatalog.HasFeaturedEntries](#c_housingcataloghasfeaturedentries) |  |  |
-| ❔ | [C_HousingCatalog.HousingMarketActionAddToCart](#c_housingcataloghousingmarketactionaddtocart) |  |  |
-| ❔ | [C_HousingCatalog.HousingMarketActionClearCart](#c_housingcataloghousingmarketactionclearcart) |  |  |
-| ❔ | [C_HousingCatalog.HousingMarketActionRemoveFromCart](#c_housingcataloghousingmarketactionremovefromcart) |  |  |
-| ❔ | [C_HousingCatalog.HousingMarketActionViewBundle](#c_housingcataloghousingmarketactionviewbundle) |  |  |
-| ❔ | [C_HousingCatalog.HousingMarketActionViewInStore](#c_housingcataloghousingmarketactionviewinstore) |  |  |
-| ❔ | [C_HousingCatalog.IsPreviewCartItemShown](#c_housingcatalogispreviewcartitemshown) |  |  |
-| ❔ | [C_HousingCatalog.PromotePreviewDecor](#c_housingcatalogpromotepreviewdecor) |  |  |
-| ❔ | [C_HousingCatalog.RequestHousingMarketInfoRefresh](#c_housingcatalogrequesthousingmarketinforefresh) |  |  |
-| ❔ | [C_HousingCatalog.RequestHousingMarketRefundInfo](#c_housingcatalogrequesthousingmarketrefundinfo) |  |  |
-| ❔ | [C_HousingCatalog.SearchCatalogCategories](#c_housingcatalogsearchcatalogcategories) |  |  |
-| ❔ | [C_HousingCatalog.SearchCatalogSubcategories](#c_housingcatalogsearchcatalogsubcategories) |  |  |
-| ❔ | [C_HousingCatalog.SetPreviewCartItemShown](#c_housingcatalogsetpreviewcartitemshown) |  |  |
+| 🆕 | [C_HousingCatalog.CanDestroyEntry](#c_housingcatalogcandestroyentry) |  |  |
+| ✅ | [C_HousingCatalog.CreateCatalogSearcher](#c_housingcatalogcreatecatalogsearcher) |  |  |
+| ✅ | [C_HousingCatalog.DeletePreviewCartDecor](#c_housingcatalogdeletepreviewcartdecor) |  |  |
+| ✅ | [C_HousingCatalog.DestroyEntry](#c_housingcatalogdestroyentry) |  |  |
+| ✅ | [C_HousingCatalog.GetAllFilterTagGroups](#c_housingcataloggetallfiltertaggroups) |  |  |
+| ✅ | [C_HousingCatalog.GetAllVariantInfosForEntry](#c_housingcataloggetallvariantinfosforentry) |  |  |
+| ✅ | [C_HousingCatalog.GetBundleInfo](#c_housingcataloggetbundleinfo) |  |  |
+| ✅ | [C_HousingCatalog.GetCartSizeLimit](#c_housingcataloggetcartsizelimit) |  |  |
+| ✅ | [C_HousingCatalog.GetCatalogCategoryAndSubcategoryNames](#c_housingcataloggetcatalogcategoryandsubcategorynames) |  |  |
+| ✅ | [C_HousingCatalog.GetCatalogCategoryInfo](#c_housingcataloggetcatalogcategoryinfo) |  |  |
+| 🆕 | [C_HousingCatalog.GetCatalogEntryDebugInfoForID](#c_housingcataloggetcatalogentrydebuginfoforid) |  |  |
+| ✅ | [C_HousingCatalog.GetCatalogEntryInfo](#c_housingcataloggetcatalogentryinfo) |  |  |
+| ✅ | [C_HousingCatalog.GetCatalogEntryInfoByItem](#c_housingcataloggetcatalogentryinfobyitem) |  |  |
+| ✅ | [C_HousingCatalog.GetCatalogEntryInfoByRecordID](#c_housingcataloggetcatalogentryinfobyrecordid) |  |  |
+| ✅ | [C_HousingCatalog.GetCatalogEntryRefundTimeStampByRecordID](#c_housingcataloggetcatalogentryrefundtimestampbyrecordid) |  |  |
+| ✅ | [C_HousingCatalog.GetCatalogEntryVariantInfo](#c_housingcataloggetcatalogentryvariantinfo) |  |  |
+| ✅ | [C_HousingCatalog.GetCatalogSubcategoryInfo](#c_housingcataloggetcatalogsubcategoryinfo) |  |  |
+| ✅ | [C_HousingCatalog.GetDecorMaxOwnedCount](#c_housingcataloggetdecormaxownedcount) |  |  |
+| ✅ | [C_HousingCatalog.GetDecorTotalOwnedCount](#c_housingcataloggetdecortotalownedcount) |  |  |
+| ✅ | [C_HousingCatalog.GetDestroyableInstanceCount](#c_housingcataloggetdestroyableinstancecount) |  |  |
+| ✅ | [C_HousingCatalog.GetFeaturedBundles](#c_housingcataloggetfeaturedbundles) |  |  |
+| 🆕 | [C_HousingCatalog.GetFeaturedDecor](#c_housingcataloggetfeatureddecor) |  |  |
+| ✅ | [C_HousingCatalog.GetFeaturedSmallProducts](#c_housingcataloggetfeaturedsmallproducts) |  |  |
+| ✅ | [C_HousingCatalog.GetMarketInfoForDecor](#c_housingcataloggetmarketinfofordecor) |  |  |
+| ✅ | [C_HousingCatalog.HasFeaturedEntries](#c_housingcataloghasfeaturedentries) |  |  |
+| ✅ | [C_HousingCatalog.HousingMarketActionAddToCart](#c_housingcataloghousingmarketactionaddtocart) |  |  |
+| ✅ | [C_HousingCatalog.HousingMarketActionClearCart](#c_housingcataloghousingmarketactionclearcart) |  |  |
+| ✅ | [C_HousingCatalog.HousingMarketActionRemoveFromCart](#c_housingcataloghousingmarketactionremovefromcart) |  |  |
+| ✅ | [C_HousingCatalog.HousingMarketActionViewBundle](#c_housingcataloghousingmarketactionviewbundle) |  |  |
+| ✅ | [C_HousingCatalog.HousingMarketActionViewInStore](#c_housingcataloghousingmarketactionviewinstore) |  |  |
+| ✅ | [C_HousingCatalog.IsPreviewCartItemShown](#c_housingcatalogispreviewcartitemshown) |  |  |
+| ✅ | [C_HousingCatalog.PromotePreviewDecor](#c_housingcatalogpromotepreviewdecor) |  |  |
+| ✅ | [C_HousingCatalog.RequestHousingMarketInfoRefresh](#c_housingcatalogrequesthousingmarketinforefresh) |  |  |
+| ✅ | [C_HousingCatalog.RequestHousingMarketRefundInfo](#c_housingcatalogrequesthousingmarketrefundinfo) |  |  |
+| ✅ | [C_HousingCatalog.SearchCatalogCategories](#c_housingcatalogsearchcatalogcategories) |  |  |
+| ✅ | [C_HousingCatalog.SearchCatalogSubcategories](#c_housingcatalogsearchcatalogsubcategories) |  |  |
+| ✅ | [C_HousingCatalog.SetPreviewCartItemShown](#c_housingcatalogsetpreviewcartitemshown) |  |  |
+
+### C_HousingCatalog.CanDestroyEntry
+
+`C_HousingCatalog.CanDestroyEntry(...)`
+
+- Status: 🆕 in game, not in Blizzard's docs (function)
 
 ### C_HousingCatalog.CreateCatalogSearcher
 
 `C_HousingCatalog.CreateCatalogSearcher() → searcher: HousingCatalogSearcher`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Creates a new instance of a HousingCatalog searcher; This can be used to asynchronously search/filter the HousingCatalog without affecting/being restricted by the filter state of other Housing Catalog UI displays
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
@@ -53,7 +62,7 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.DeletePreviewCartDecor(decorGUID: WOWGUID)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
@@ -61,7 +70,7 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.DestroyEntry(entryVariantID: HousingCatalogEntryVariantID, destroyAll: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Attempt to delete the entry from storage
 - `destroyAll`: If true, deletes all entries within the stack; If false, will only delete one
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -71,14 +80,14 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.GetAllFilterTagGroups() → filterTagGroups: HousingCatalogFilterTagGroupInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
 ### C_HousingCatalog.GetAllVariantInfosForEntry
 
 `C_HousingCatalog.GetAllVariantInfosForEntry(entryID: HousingCatalogEntryID) → variantInfos: HousingCatalogEntryVariantInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns variant info for all variants of a given catalog entry; Variants represent different visual modifications of the same base entry (ex: dyed versions)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
@@ -87,7 +96,7 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.GetBundleInfo(bundleCatalogShopProductID: number) → bundleInfo: HousingBundleInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
@@ -95,14 +104,14 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.GetCartSizeLimit() → cartSizeLimit: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
 ### C_HousingCatalog.GetCatalogCategoryAndSubcategoryNames
 
 `C_HousingCatalog.GetCatalogCategoryAndSubcategoryNames(subcategoryID: number) → categoryName: string, subcategoryName: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: If found, returns the names of the parent category and the specified subcategory
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -112,15 +121,21 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.GetCatalogCategoryInfo(categoryID: number) → info: HousingCatalogCategoryInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
+
+### C_HousingCatalog.GetCatalogEntryDebugInfoForID
+
+`C_HousingCatalog.GetCatalogEntryDebugInfoForID(...)`
+
+- Status: 🆕 in game, not in Blizzard's docs (function)
 
 ### C_HousingCatalog.GetCatalogEntryInfo
 
 `C_HousingCatalog.GetCatalogEntryInfo(entryID: HousingCatalogEntryID) → info: HousingCatalogEntryInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
@@ -128,7 +143,7 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.GetCatalogEntryInfoByItem(itemInfo: ItemInfo) → info: HousingCatalogEntryInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - `itemInfo`: ItemID, name, or link of an item that grants/corresponds to a particular type of housing catalog object (ex: decor)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
@@ -137,7 +152,7 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.GetCatalogEntryInfoByRecordID(entryType: HousingCatalogEntryType, recordID: number) → info: HousingCatalogEntryInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
@@ -145,7 +160,7 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.GetCatalogEntryRefundTimeStampByRecordID(entryType: HousingCatalogEntryType, recordID: number) → refundTimeStamp: time_t?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
@@ -153,7 +168,7 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.GetCatalogEntryVariantInfo(entryVariantID: HousingCatalogEntryVariantID) → info: HousingCatalogEntryVariantInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
@@ -161,7 +176,7 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.GetCatalogSubcategoryInfo(subcategoryID: number) → info: HousingCatalogSubcategoryInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
@@ -169,7 +184,7 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.GetDecorMaxOwnedCount() → maxOwnedCount: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns the maximum total number of decor that can be in storage/in the house chest; Note that not all decor entries in storage count towards this limit (see GetDecorTotalOwnedCount)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
@@ -177,7 +192,7 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.GetDecorTotalOwnedCount() → totalOwnedCount: number, exemptDecorCount: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - `totalOwnedCount`: The total number of owned decor in storage, including both exempt and non-exempt decor
 - `exemptDecorCount`: The number of decor that do not count against the max storage limit
 - Source: client docs `HousingCatalogUIDocumentation.lua`
@@ -186,7 +201,7 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.GetDestroyableInstanceCount(entryVariantID: HousingCatalogEntryVariantID) → destroyableInstanceCount: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns the number of instances that can be to be destroyed in storage; These instances count towards the max storage limit
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
@@ -195,21 +210,27 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.GetFeaturedBundles() → bundleInfos: HousingBundleInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
+
+### C_HousingCatalog.GetFeaturedDecor
+
+`C_HousingCatalog.GetFeaturedDecor(...)`
+
+- Status: 🆕 in game, not in Blizzard's docs (function)
 
 ### C_HousingCatalog.GetFeaturedSmallProducts
 
 `C_HousingCatalog.GetFeaturedSmallProducts() → infos: HousingFeaturedSmallProductInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
 ### C_HousingCatalog.GetMarketInfoForDecor
 
 `C_HousingCatalog.GetMarketInfoForDecor(decorID: number) → marketInfo: HousingMarketInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns market info for a specific decor. This is decor-only for now but should be extended to support entry type and recordID generically
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
@@ -218,14 +239,14 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.HasFeaturedEntries() → hasEntries: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
 ### C_HousingCatalog.HousingMarketActionAddToCart
 
 `C_HousingCatalog.HousingMarketActionAddToCart(productID: number, withPreview: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
@@ -234,7 +255,7 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.HousingMarketActionClearCart()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
@@ -242,7 +263,7 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.HousingMarketActionRemoveFromCart(productID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
@@ -251,7 +272,7 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.HousingMarketActionViewBundle(productID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
@@ -260,7 +281,7 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.HousingMarketActionViewInStore(productID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
@@ -269,7 +290,7 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.IsPreviewCartItemShown(decorGUID: WOWGUID) → isShown: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
@@ -277,7 +298,7 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.PromotePreviewDecor(decorID: number, previewDecorGUID: WOWGUID) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
@@ -285,21 +306,21 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.RequestHousingMarketInfoRefresh()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
 ### C_HousingCatalog.RequestHousingMarketRefundInfo
 
 `C_HousingCatalog.RequestHousingMarketRefundInfo()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
 ### C_HousingCatalog.SearchCatalogCategories
 
 `C_HousingCatalog.SearchCatalogCategories(searchParams: HousingCategorySearchInfo) → categoryIDs: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
@@ -307,7 +328,7 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.SearchCatalogSubcategories(searchParams: HousingCategorySearchInfo) → subcategoryIDs: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
@@ -315,7 +336,7 @@ Namespace: `C_HousingCatalog`
 
 `C_HousingCatalog.SetPreviewCartItemShown(decorGUID: WOWGUID, shown: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingCatalogUIDocumentation.lua`
 
@@ -323,49 +344,49 @@ Namespace: `C_HousingCatalog`
 
 ### HOUSING_CATALOG_CATEGORY_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `categoryID: number`
 - unique event (Blizzard's docs)
 
 ### HOUSING_CATALOG_SUBCATEGORY_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `subcategoryID: number`
 - unique event (Blizzard's docs)
 
 ### HOUSING_DECOR_ADD_TO_PREVIEW_LIST
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `previewItemData: HousingPreviewItemData`
 - fires synchronously (Blizzard's docs)
 
 ### HOUSING_DECOR_PREVIEW_LIST_REMOVE_FROM_WORLD
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `decorGUID: WOWGUID`
 - fires synchronously (Blizzard's docs)
 
 ### HOUSING_DECOR_PREVIEW_LIST_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### HOUSING_REFUND_LIST_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### HOUSING_STORAGE_ENTRY_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `entryVariantID: HousingCatalogEntryVariantID`
 - unique event (Blizzard's docs)
 
 ### HOUSING_STORAGE_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
 

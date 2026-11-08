@@ -4,7 +4,7 @@
 
 ### WorldElapsedTimerTypes
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `ChallengeMode` = 1
   - `ProvingGround` = 2

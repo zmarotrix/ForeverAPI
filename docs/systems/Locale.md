@@ -4,17 +4,17 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [GetAvailableLocaleInfo](#getavailablelocaleinfo) |  |  |
-| ❔ | [GetAvailableLocales](#getavailablelocales) |  |  |
-| ❔ | [GetCurrentRegion](#getcurrentregion) |  |  |
-| ❔ | [GetLocale](#getlocale) |  |  |
-| ❔ | [GetOSLocale](#getoslocale) |  |  |
+| ✅ | [GetAvailableLocaleInfo](#getavailablelocaleinfo) |  |  |
+| ✅ | [GetAvailableLocales](#getavailablelocales) |  |  |
+| ✅ | [GetCurrentRegion](#getcurrentregion) |  |  |
+| ✅ | [GetLocale](#getlocale) |  |  |
+| ✅ | [GetOSLocale](#getoslocale) |  |  |
 
 ### GetAvailableLocaleInfo
 
 `GetAvailableLocaleInfo(ignoreLocaleRestrictions: bool = False) → localeInfos: LocaleInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `LocaleDocumentation.lua`
 
@@ -22,7 +22,7 @@
 
 `GetAvailableLocales(ignoreLocaleRestrictions: bool = False) → localeName: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `LocaleDocumentation.lua`
 
@@ -30,21 +30,21 @@
 
 `GetCurrentRegion() → region: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `LocaleDocumentation.lua`
 
 ### GetLocale
 
 `GetLocale() → localeName: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `LocaleDocumentation.lua`
 
 ### GetOSLocale
 
 `GetOSLocale() → localeName: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `LocaleDocumentation.lua`
 
 ## Types

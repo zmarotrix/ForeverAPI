@@ -4,13 +4,13 @@
 
 ### CustomAuraButtonDispelTypeStealableFilter
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Stealable` = 0
   - `NotStealable` = 1
 
 ### CustomAuraButtonDispelTypeTextureStyle
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Border` = 0
   - `BorderWithIcon` = 1
   - `Icon` = 2
@@ -19,6 +19,6 @@
 
 ### CustomAuraButtonUpdateMode
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Assignment` = 0
   - `Update` = 1

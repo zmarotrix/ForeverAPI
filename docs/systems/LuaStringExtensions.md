@@ -6,18 +6,18 @@ Namespace: `string`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [string.contains](#stringcontains) |  |  |
-| ❔ | [string.endswith](#stringendswith) |  |  |
-| ❔ | [string.ltrim](#stringltrim) |  |  |
-| ❔ | [string.rtrim](#stringrtrim) |  |  |
-| ❔ | [string.startswith](#stringstartswith) |  |  |
-| ❔ | [string.trim](#stringtrim) |  |  |
+| ✅ | [string.contains](#stringcontains) |  |  |
+| ✅ | [string.endswith](#stringendswith) |  |  |
+| ✅ | [string.ltrim](#stringltrim) |  |  |
+| ✅ | [string.rtrim](#stringrtrim) |  |  |
+| ✅ | [string.startswith](#stringstartswith) |  |  |
+| ✅ | [string.trim](#stringtrim) |  |  |
 
 ### string.contains
 
 `string.contains(str: stringView, substring: stringView) → contains: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns true if a string contains the specified literal substring.
 - `str`: The string to search.
 - `substring`: The literal substring for which to search.
@@ -29,7 +29,7 @@ Namespace: `string`
 
 `string.endswith(str: stringView, suffix: stringView) → endsWith: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns true if a string ends with the specified suffix.
 - `str`: The string to inspect.
 - `suffix`: The suffix for which to search.
@@ -41,7 +41,7 @@ Namespace: `string`
 
 `string.ltrim(str: stringView, characters: stringView =  \r\n\t) → trimmed: stringView`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns a string with all bytes in the specified character set removed from the start.
 - `str`: The string to trim.
 - `characters`: The set of bytes to remove.
@@ -53,7 +53,7 @@ Namespace: `string`
 
 `string.rtrim(str: stringView, characters: stringView =  \r\n\t) → trimmed: stringView`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns a string with all bytes in the specified character set removed from the end.
 - `str`: The string to trim.
 - `characters`: The set of bytes to remove.
@@ -65,7 +65,7 @@ Namespace: `string`
 
 `string.startswith(str: stringView, prefix: stringView) → startsWith: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns true if a string starts with the specified prefix.
 - `str`: The string to inspect.
 - `prefix`: The prefix for which to search.
@@ -77,7 +77,7 @@ Namespace: `string`
 
 `string.trim(str: stringView, characters: stringView =  \r\n\t) → trimmed: stringView`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns a string with all bytes in the specified character set removed from both ends.
 - `str`: The string to trim.
 - `characters`: The set of bytes to remove.

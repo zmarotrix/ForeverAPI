@@ -4,7 +4,7 @@
 
 ### BagFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `DontFindStack` = 1
   - `AlreadyOwner` = 2
   - `AlreadyBound` = 4
@@ -35,7 +35,7 @@
 
 ### BagSlotFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `DisableAutoSort` = 1
   - `ClassEquipment` = 2
   - `ClassConsumables` = 4

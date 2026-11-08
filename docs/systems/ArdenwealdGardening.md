@@ -6,21 +6,21 @@ Namespace: `C_ArdenwealdGardening`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_ArdenwealdGardening.GetGardenData](#c_ardenwealdgardeninggetgardendata) |  |  |
-| ❔ | [C_ArdenwealdGardening.IsGardenAccessible](#c_ardenwealdgardeningisgardenaccessible) |  |  |
+| ✅ | [C_ArdenwealdGardening.GetGardenData](#c_ardenwealdgardeninggetgardendata) |  |  |
+| ✅ | [C_ArdenwealdGardening.IsGardenAccessible](#c_ardenwealdgardeningisgardenaccessible) |  |  |
 
 ### C_ArdenwealdGardening.GetGardenData
 
 `C_ArdenwealdGardening.GetGardenData() → data: ArdenwealdGardenData`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ArdenwealdGardeningDocumentation.lua`
 
 ### C_ArdenwealdGardening.IsGardenAccessible
 
 `C_ArdenwealdGardening.IsGardenAccessible() → accessible: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ArdenwealdGardeningDocumentation.lua`
 
 ## Types

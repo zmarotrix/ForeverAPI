@@ -6,14 +6,14 @@ Namespace: `C_XMLUtil`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_XMLUtil.GetTemplateInfo](#c_xmlutilgettemplateinfo) |  |  |
-| ❔ | [C_XMLUtil.GetTemplates](#c_xmlutilgettemplates) |  |  |
+| ✅ | [C_XMLUtil.GetTemplateInfo](#c_xmlutilgettemplateinfo) |  |  |
+| ✅ | [C_XMLUtil.GetTemplates](#c_xmlutilgettemplates) |  |  |
 
 ### C_XMLUtil.GetTemplateInfo
 
 `C_XMLUtil.GetTemplateInfo(name: cstring) → info: XMLTemplateInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `XMLUtilDocumentation.lua`
@@ -22,7 +22,7 @@ Namespace: `C_XMLUtil`
 
 `C_XMLUtil.GetTemplates() → templates: XMLTemplateListInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `XMLUtilDocumentation.lua`
 
 ## Types

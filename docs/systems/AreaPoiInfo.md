@@ -6,20 +6,20 @@ Namespace: `C_AreaPoiInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_AreaPoiInfo.GetAreaPOIForMap](#c_areapoiinfogetareapoiformap) |  |  |
-| ❔ | [C_AreaPoiInfo.GetAreaPOIInfo](#c_areapoiinfogetareapoiinfo) |  |  |
-| ❔ | [C_AreaPoiInfo.GetAreaPOISecondsLeft](#c_areapoiinfogetareapoisecondsleft) |  |  |
-| ❔ | [C_AreaPoiInfo.GetDelvesForMap](#c_areapoiinfogetdelvesformap) |  |  |
-| ❔ | [C_AreaPoiInfo.GetDragonridingRacesForMap](#c_areapoiinfogetdragonridingracesformap) |  |  |
-| ❔ | [C_AreaPoiInfo.GetEventsForMap](#c_areapoiinfogeteventsformap) |  |  |
-| ❔ | [C_AreaPoiInfo.GetQuestHubsForMap](#c_areapoiinfogetquesthubsformap) |  |  |
-| ❔ | [C_AreaPoiInfo.IsAreaPOITimed](#c_areapoiinfoisareapoitimed) |  |  |
+| ✅ | [C_AreaPoiInfo.GetAreaPOIForMap](#c_areapoiinfogetareapoiformap) |  |  |
+| ✅ | [C_AreaPoiInfo.GetAreaPOIInfo](#c_areapoiinfogetareapoiinfo) |  |  |
+| ✅ | [C_AreaPoiInfo.GetAreaPOISecondsLeft](#c_areapoiinfogetareapoisecondsleft) |  |  |
+| ✅ | [C_AreaPoiInfo.GetDelvesForMap](#c_areapoiinfogetdelvesformap) |  |  |
+| ✅ | [C_AreaPoiInfo.GetDragonridingRacesForMap](#c_areapoiinfogetdragonridingracesformap) |  |  |
+| ✅ | [C_AreaPoiInfo.GetEventsForMap](#c_areapoiinfogeteventsformap) |  |  |
+| ✅ | [C_AreaPoiInfo.GetQuestHubsForMap](#c_areapoiinfogetquesthubsformap) |  |  |
+| ✅ | [C_AreaPoiInfo.IsAreaPOITimed](#c_areapoiinfoisareapoitimed) |  |  |
 
 ### C_AreaPoiInfo.GetAreaPOIForMap
 
 `C_AreaPoiInfo.GetAreaPOIForMap(uiMapID: number) → areaPoiIDs: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AreaPoiInfoDocumentation.lua`
 
@@ -27,7 +27,7 @@ Namespace: `C_AreaPoiInfo`
 
 `C_AreaPoiInfo.GetAreaPOIInfo(uiMapID: number?, areaPoiID: number) → poiInfo: AreaPOIInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AreaPoiInfoDocumentation.lua`
@@ -36,7 +36,7 @@ Namespace: `C_AreaPoiInfo`
 
 `C_AreaPoiInfo.GetAreaPOISecondsLeft(areaPoiID: number) → secondsLeft: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns the number of seconds until the POI expires.
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -46,7 +46,7 @@ Namespace: `C_AreaPoiInfo`
 
 `C_AreaPoiInfo.GetDelvesForMap(uiMapID: number) → areaPoiIDs: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns all area POIInfos flagged as delves for the given map.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AreaPoiInfoDocumentation.lua`
@@ -55,7 +55,7 @@ Namespace: `C_AreaPoiInfo`
 
 `C_AreaPoiInfo.GetDragonridingRacesForMap(uiMapID: number) → areaPoiIDs: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns all area POIInfos flagged as dragonriding races for the given map.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AreaPoiInfoDocumentation.lua`
@@ -64,7 +64,7 @@ Namespace: `C_AreaPoiInfo`
 
 `C_AreaPoiInfo.GetEventsForMap(uiMapID: number) → areaPoiIDs: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns all area POIInfos flagged as events for the given map.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AreaPoiInfoDocumentation.lua`
@@ -73,7 +73,7 @@ Namespace: `C_AreaPoiInfo`
 
 `C_AreaPoiInfo.GetQuestHubsForMap(uiMapID: number) → areaPoiIDs: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns all area POIInfos flagged as quest hubs for the given map.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AreaPoiInfoDocumentation.lua`
@@ -82,7 +82,7 @@ Namespace: `C_AreaPoiInfo`
 
 `C_AreaPoiInfo.IsAreaPOITimed(areaPoiID: number) → isTimed: bool, hideTimerInTooltip: bool?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: This statically determines if the POI is timed, GetAreaPOITimeLeft retrieves the value from the server and may return nothing for long intervals
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AreaPoiInfoDocumentation.lua`
@@ -91,7 +91,7 @@ Namespace: `C_AreaPoiInfo`
 
 ### AREA_POIS_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
 

@@ -4,12 +4,12 @@
 
 ### TALKINGHEAD_CLOSE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### TALKINGHEAD_REQUESTED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)

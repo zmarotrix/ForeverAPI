@@ -4,7 +4,7 @@
 
 ### BreakType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Character` = 0
   - `Word` = 1
   - `Sentence` = 2
@@ -24,7 +24,7 @@
 
 ### CollationStrength
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Primary` = 0
   - `Secondary` = 1
   - `Tertiary` = 2
@@ -33,7 +33,7 @@
 
 ### CurrencyNameStyle
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Symbol` = 0
   - `NarrowSymbol` = 1
   - `Long` = 2
@@ -49,7 +49,7 @@
 
 ### DateTimeStyle
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Short` = 1
   - `Medium` = 2
@@ -58,7 +58,7 @@
 
 ### LocaleTransform
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Canonicalize` = 0
   - `AddLikelySubtags` = 1
   - `RemoveLikelySubtags` = 2
@@ -70,7 +70,7 @@
 
 ### NormalizationForm
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Nfc` = 0
   - `Nfd` = 1
   - `Nfkc` = 2
@@ -78,7 +78,7 @@
 
 ### NumberStyle
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Decimal` = 0
   - `Integer` = 1
   - `Percent` = 2
@@ -86,6 +86,6 @@
 
 ### PluralType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Cardinal` = 0
   - `Ordinal` = 1

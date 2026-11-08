@@ -4,13 +4,13 @@
 
 ### ContentTrackingConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `MaxTrackedCollectableSources` = 15
   - `MaxTrackedAchievements` = 10
 
 ### ContentTrackingError
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Untrackable` = 0
   - `MaxTracked` = 1
   - `AlreadyTracked` = 2
@@ -28,21 +28,21 @@
 
 ### ContentTrackingResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Success` = 0
   - `DataPending` = 1
   - `Failure` = 2
 
 ### ContentTrackingStopType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Invalidated` = 0
   - `Collected` = 1
   - `Manual` = 2
 
 ### ContentTrackingTargetType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `JournalEncounter` = 0
   - `Vendor` = 1
   - `Achievement` = 2
@@ -51,7 +51,7 @@
 
 ### ContentTrackingType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Appearance` = 0
   - `Mount` = 1
   - `Achievement` = 2

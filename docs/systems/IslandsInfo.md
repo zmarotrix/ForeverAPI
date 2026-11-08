@@ -4,6 +4,6 @@
 
 ### ISLAND_AZERITE_GAIN
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `amount: number`, `gainedByPlayer: bool`, `factionIndex: number`, `gainedBy: WOWGUID`, `gainedFrom: WOWGUID`
 - fires synchronously (Blizzard's docs)

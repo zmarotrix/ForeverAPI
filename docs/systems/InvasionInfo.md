@@ -6,16 +6,16 @@ Namespace: `C_InvasionInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_InvasionInfo.AreInvasionsAvailable](#c_invasioninfoareinvasionsavailable) |  |  |
-| ❔ | [C_InvasionInfo.GetInvasionForUiMapID](#c_invasioninfogetinvasionforuimapid) |  |  |
-| ❔ | [C_InvasionInfo.GetInvasionInfo](#c_invasioninfogetinvasioninfo) |  |  |
-| ❔ | [C_InvasionInfo.GetInvasionTimeLeft](#c_invasioninfogetinvasiontimeleft) |  |  |
+| ✅ | [C_InvasionInfo.AreInvasionsAvailable](#c_invasioninfoareinvasionsavailable) |  |  |
+| ✅ | [C_InvasionInfo.GetInvasionForUiMapID](#c_invasioninfogetinvasionforuimapid) |  |  |
+| ✅ | [C_InvasionInfo.GetInvasionInfo](#c_invasioninfogetinvasioninfo) |  |  |
+| ✅ | [C_InvasionInfo.GetInvasionTimeLeft](#c_invasioninfogetinvasiontimeleft) |  |  |
 
 ### C_InvasionInfo.AreInvasionsAvailable
 
 `C_InvasionInfo.AreInvasionsAvailable() → areInvasionsAvailable: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns true if invasions are active in the same physical area as the player.
 - Source: client docs `InvasionInfoDocumentation.lua`
 
@@ -23,7 +23,7 @@ Namespace: `C_InvasionInfo`
 
 `C_InvasionInfo.GetInvasionForUiMapID(uiMapID: number) → invasionID: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `InvasionInfoDocumentation.lua`
 
@@ -31,7 +31,7 @@ Namespace: `C_InvasionInfo`
 
 `C_InvasionInfo.GetInvasionInfo(invasionID: number) → invasionInfo: InvasionMapInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `InvasionInfoDocumentation.lua`
@@ -40,7 +40,7 @@ Namespace: `C_InvasionInfo`
 
 `C_InvasionInfo.GetInvasionTimeLeft(invasionID: number) → timeLeftMinutes: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `InvasionInfoDocumentation.lua`
 

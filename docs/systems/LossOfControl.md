@@ -6,17 +6,17 @@ Namespace: `C_LossOfControl`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_LossOfControl.GetActiveLossOfControlData](#c_lossofcontrolgetactivelossofcontroldata) |  |  |
-| ❔ | [C_LossOfControl.GetActiveLossOfControlDataByUnit](#c_lossofcontrolgetactivelossofcontroldatabyunit) |  |  |
-| ❔ | [C_LossOfControl.GetActiveLossOfControlDataCount](#c_lossofcontrolgetactivelossofcontroldatacount) |  |  |
-| ❔ | [C_LossOfControl.GetActiveLossOfControlDataCountByUnit](#c_lossofcontrolgetactivelossofcontroldatacountbyunit) |  |  |
-| ❔ | [C_LossOfControl.GetActiveLossOfControlDuration](#c_lossofcontrolgetactivelossofcontrolduration) |  |  |
+| ✅ | [C_LossOfControl.GetActiveLossOfControlData](#c_lossofcontrolgetactivelossofcontroldata) |  |  |
+| ✅ | [C_LossOfControl.GetActiveLossOfControlDataByUnit](#c_lossofcontrolgetactivelossofcontroldatabyunit) |  |  |
+| ✅ | [C_LossOfControl.GetActiveLossOfControlDataCount](#c_lossofcontrolgetactivelossofcontroldatacount) |  |  |
+| ✅ | [C_LossOfControl.GetActiveLossOfControlDataCountByUnit](#c_lossofcontrolgetactivelossofcontroldatacountbyunit) |  |  |
+| ✅ | [C_LossOfControl.GetActiveLossOfControlDuration](#c_lossofcontrolgetactivelossofcontrolduration) |  |  |
 
 ### C_LossOfControl.GetActiveLossOfControlData
 
 `C_LossOfControl.GetActiveLossOfControlData(index: luaIndex) → event: LossOfControlData?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenLossOfControlRestricted (Blizzard's docs; not checked in game)
 - Source: client docs `LossOfControlDocumentation.lua`
@@ -25,7 +25,7 @@ Namespace: `C_LossOfControl`
 
 `C_LossOfControl.GetActiveLossOfControlDataByUnit(unitToken: UnitToken, index: luaIndex) → event: LossOfControlData?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenLossOfControlRestricted (Blizzard's docs; not checked in game)
 - Source: client docs `LossOfControlDocumentation.lua`
@@ -34,14 +34,14 @@ Namespace: `C_LossOfControl`
 
 `C_LossOfControl.GetActiveLossOfControlDataCount() → count: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `LossOfControlDocumentation.lua`
 
 ### C_LossOfControl.GetActiveLossOfControlDataCountByUnit
 
 `C_LossOfControl.GetActiveLossOfControlDataCountByUnit(unitToken: UnitToken) → count: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `LossOfControlDocumentation.lua`
 
@@ -49,7 +49,7 @@ Namespace: `C_LossOfControl`
 
 `C_LossOfControl.GetActiveLossOfControlDuration(unitToken: UnitToken, index: luaIndex) → duration: LuaDurationObject?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `LossOfControlDocumentation.lua`
 
@@ -57,39 +57,39 @@ Namespace: `C_LossOfControl`
 
 ### LOSS_OF_CONTROL_ADDED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `effectIndex: luaIndex`
 - fires synchronously (Blizzard's docs)
 
 ### LOSS_OF_CONTROL_COMMENTATOR_ADDED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `victim: WOWGUID`, `effectIndex: luaIndex`
 - fires synchronously (Blizzard's docs)
 
 ### LOSS_OF_CONTROL_COMMENTATOR_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `victim: WOWGUID`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
 
 ### LOSS_OF_CONTROL_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
 
 ### PLAYER_CONTROL_GAINED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_CONTROL_LOST
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 

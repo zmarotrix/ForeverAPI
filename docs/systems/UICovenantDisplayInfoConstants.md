@@ -4,7 +4,7 @@
 
 ### UICovenantDisplayInfoFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `DisplayCovenantAsJourney` = 1
   - `UseJourneyRewardTrack` = 2
   - `UseJourneyUnlockToastText` = 4

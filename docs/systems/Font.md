@@ -4,15 +4,15 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [CreateFontFamily](#createfontfamily) |  |  |
-| ❔ | [GetFontInfo](#getfontinfo) |  |  |
-| ❔ | [GetFonts](#getfonts) |  |  |
+| ✅ | [CreateFontFamily](#createfontfamily) |  |  |
+| ✅ | [GetFontInfo](#getfontinfo) |  |  |
+| ✅ | [GetFonts](#getfonts) |  |  |
 
 ### CreateFontFamily
 
 `CreateFontFamily(name: cstring, members: CreateFontFamilyMemberInfo[]) → fontFamily: SimpleFont`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `FontDocumentation.lua`
 
@@ -20,7 +20,7 @@
 
 `GetFontInfo(fontObject: SimpleFont) → info: FontScriptInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `FontDocumentation.lua`
 
@@ -28,7 +28,7 @@
 
 `GetFonts() → fontNames: cstring[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `FontDocumentation.lua`
 
 ## Types

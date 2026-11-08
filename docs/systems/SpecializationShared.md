@@ -4,17 +4,17 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [GetSpecializationInfoForClassID](#getspecializationinfoforclassid) |  |  |
-| ❔ | [GetSpecializationInfoForSpecID](#getspecializationinfoforspecid) |  |  |
-| ❔ | [GetSpecializationNameForSpecID](#getspecializationnameforspecid) |  |  |
-| ❔ | [GetSpecializationSystem](#getspecializationsystem) |  |  |
-| ❔ | [HasLootSpecializations](#haslootspecializations) |  |  |
+| ✅ | [GetSpecializationInfoForClassID](#getspecializationinfoforclassid) |  |  |
+| ✅ | [GetSpecializationInfoForSpecID](#getspecializationinfoforspecid) |  |  |
+| ✅ | [GetSpecializationNameForSpecID](#getspecializationnameforspecid) |  |  |
+| ✅ | [GetSpecializationSystem](#getspecializationsystem) |  |  |
+| ✅ | [HasLootSpecializations](#haslootspecializations) |  |  |
 
 ### GetSpecializationInfoForClassID
 
 `GetSpecializationInfoForClassID(classID: number, index: luaIndex, gender: UnitSex?) → id: number, name: cstring, description: string, icon: fileID, role: cstring, recommended: bool, allowedForBoost: bool, masterySpell1: number?, masterySpell2: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SpecializationSharedDocumentation.lua`
 
@@ -22,7 +22,7 @@
 
 `GetSpecializationInfoForSpecID(specID: number, gender: UnitSex?) → id: number, name: cstring, description: string, icon: fileID, role: cstring, recommended: bool, allowedForBoost: bool, masterySpell1: number?, masterySpell2: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SpecializationSharedDocumentation.lua`
 
@@ -30,7 +30,7 @@
 
 `GetSpecializationNameForSpecID(specID: number, gender: UnitSex?) → name: cstring?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SpecializationSharedDocumentation.lua`
 
@@ -38,14 +38,14 @@
 
 `GetSpecializationSystem() → system: SpecializationSystem`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `SpecializationSharedDocumentation.lua`
 
 ### HasLootSpecializations
 
 `HasLootSpecializations() → hasLootSpecializations: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `SpecializationSharedDocumentation.lua`
 
 ## Types
@@ -65,6 +65,6 @@
 
 ### SpecializationSystem
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `TalentTab` = 0
   - `ChrSpecialization` = 1

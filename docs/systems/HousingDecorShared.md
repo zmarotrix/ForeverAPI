@@ -32,7 +32,7 @@
 
 ### HousingDecorPlacementRestriction
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `TooFarAway` = 1
   - `OutsideRoomBounds` = 2
   - `OutsidePlotBounds` = 4

@@ -4,15 +4,15 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [ClassicExpansionAtLeast](#classicexpansionatleast) |  |  |
-| ❔ | [ClassicExpansionAtMost](#classicexpansionatmost) |  |  |
-| ❔ | [GetClassicExpansionLevel](#getclassicexpansionlevel) |  |  |
+| ✅ | [ClassicExpansionAtLeast](#classicexpansionatleast) |  |  |
+| ✅ | [ClassicExpansionAtMost](#classicexpansionatmost) |  |  |
+| ✅ | [GetClassicExpansionLevel](#getclassicexpansionlevel) |  |  |
 
 ### ClassicExpansionAtLeast
 
 `ClassicExpansionAtLeast(expansionLevel: number) → isAtLeast: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ExpansionInfoDocumentation.lua`
 
@@ -20,7 +20,7 @@
 
 `ClassicExpansionAtMost(expansionLevel: number) → isAtMost: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ExpansionInfoDocumentation.lua`
 
@@ -28,5 +28,5 @@
 
 `GetClassicExpansionLevel() → expansionLevel: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ExpansionInfoDocumentation.lua`

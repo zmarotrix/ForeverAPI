@@ -6,18 +6,18 @@ Namespace: `C_Flyout`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_Flyout.FlyoutHasSpell](#c_flyoutflyouthasspell) |  |  |
-| ❔ | [C_Flyout.GetFlyoutID](#c_flyoutgetflyoutid) |  |  |
-| ❔ | [C_Flyout.GetFlyoutInfo](#c_flyoutgetflyoutinfo) |  |  |
-| ❔ | [C_Flyout.GetFlyoutSlotInfo](#c_flyoutgetflyoutslotinfo) |  |  |
-| ❔ | [C_Flyout.GetFlyoutTexture](#c_flyoutgetflyouttexture) |  |  |
-| ❔ | [C_Flyout.GetNumFlyouts](#c_flyoutgetnumflyouts) |  |  |
+| ✅ | [C_Flyout.FlyoutHasSpell](#c_flyoutflyouthasspell) |  |  |
+| ✅ | [C_Flyout.GetFlyoutID](#c_flyoutgetflyoutid) |  |  |
+| ✅ | [C_Flyout.GetFlyoutInfo](#c_flyoutgetflyoutinfo) |  |  |
+| ✅ | [C_Flyout.GetFlyoutSlotInfo](#c_flyoutgetflyoutslotinfo) |  |  |
+| ✅ | [C_Flyout.GetFlyoutTexture](#c_flyoutgetflyouttexture) |  |  |
+| ✅ | [C_Flyout.GetNumFlyouts](#c_flyoutgetnumflyouts) |  |  |
 
 ### C_Flyout.FlyoutHasSpell
 
 `C_Flyout.FlyoutHasSpell(flyoutID: number, spellID: number) → hasSpell: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - Source: client docs `FlyoutDocumentation.lua`
@@ -26,7 +26,7 @@ Namespace: `C_Flyout`
 
 `C_Flyout.GetFlyoutID(index: luaIndex) → flyoutID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - Source: client docs `FlyoutDocumentation.lua`
@@ -35,7 +35,7 @@ Namespace: `C_Flyout`
 
 `C_Flyout.GetFlyoutInfo(flyoutID: number) → info: FlyoutInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - Source: client docs `FlyoutDocumentation.lua`
@@ -44,7 +44,7 @@ Namespace: `C_Flyout`
 
 `C_Flyout.GetFlyoutSlotInfo(flyoutID: number, slotIndex: luaIndex) → slotInfo: FlyoutSlotInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - Source: client docs `FlyoutDocumentation.lua`
@@ -53,7 +53,7 @@ Namespace: `C_Flyout`
 
 `C_Flyout.GetFlyoutTexture(flyoutID: number) → textureID: fileID`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - Source: client docs `FlyoutDocumentation.lua`
@@ -62,7 +62,7 @@ Namespace: `C_Flyout`
 
 `C_Flyout.GetNumFlyouts() → numFlyouts: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `FlyoutDocumentation.lua`
 
 ## Types

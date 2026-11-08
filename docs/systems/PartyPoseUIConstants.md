@@ -4,5 +4,5 @@
 
 ### PartyPoseFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `HideLeaveInstanceButton` = 1

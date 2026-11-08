@@ -6,16 +6,16 @@ Namespace: `C_TradeInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_TradeInfo.AddTradeMoney](#c_tradeinfoaddtrademoney) |  |  |
-| ❔ | [C_TradeInfo.PickupTradeMoney](#c_tradeinfopickuptrademoney) |  |  |
-| ❔ | [C_TradeInfo.SetTradeMoney](#c_tradeinfosettrademoney) |  |  |
-| ❔ | [C_TradeInfo.ShouldShowTradeOfferWarning](#c_tradeinfoshouldshowtradeofferwarning) |  |  |
+| ✅ | [C_TradeInfo.AddTradeMoney](#c_tradeinfoaddtrademoney) |  |  |
+| ✅ | [C_TradeInfo.PickupTradeMoney](#c_tradeinfopickuptrademoney) |  |  |
+| ✅ | [C_TradeInfo.SetTradeMoney](#c_tradeinfosettrademoney) |  |  |
+| ✅ | [C_TradeInfo.ShouldShowTradeOfferWarning](#c_tradeinfoshouldshowtradeofferwarning) |  |  |
 
 ### C_TradeInfo.AddTradeMoney
 
 `C_TradeInfo.AddTradeMoney()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Adds any cursor-held money to the current trade offer.
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `TradeInfoDocumentation.lua`
@@ -24,7 +24,7 @@ Namespace: `C_TradeInfo`
 
 `C_TradeInfo.PickupTradeMoney(amount: WOWMONEY)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TradeInfoDocumentation.lua`
@@ -33,7 +33,7 @@ Namespace: `C_TradeInfo`
 
 `C_TradeInfo.SetTradeMoney(amount: WOWMONEY)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Sets the amount of money in the current trade offer.
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -43,97 +43,97 @@ Namespace: `C_TradeInfo`
 
 `C_TradeInfo.ShouldShowTradeOfferWarning() → shouldShow: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `TradeInfoDocumentation.lua`
 
 ## Events
 
 ### PLAYER_TRADE_CURRENCY
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_TRADE_MONEY
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### TRADE_ACCEPT_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `playerAccepted: number`, `targetAccepted: number`
 - fires synchronously (Blizzard's docs)
 
 ### TRADE_CLOSED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### TRADE_CURRENCY_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### TRADE_MONEY_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### TRADE_PLAYER_ITEM_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `tradeSlotIndex: number`
 - fires synchronously (Blizzard's docs)
 
 ### TRADE_POTENTIAL_BIND_ENCHANT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `canBecomeBoundForTrade: bool`
 - fires synchronously (Blizzard's docs)
 
 ### TRADE_POTENTIAL_REMOVE_TRANSMOG
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `itemLink: cstring`, `tradeSlotIndex: number`
 - fires synchronously (Blizzard's docs)
 
 ### TRADE_REQUEST
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `name: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### TRADE_REQUEST_CANCEL
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### TRADE_SHOW
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### TRADE_TARGET_ITEM_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `tradeSlotIndex: number`
 - fires synchronously (Blizzard's docs)
 
 ### TRADE_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### TRADE_UPDATE_WARNINGS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)

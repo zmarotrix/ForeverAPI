@@ -1,0 +1,6 @@
+{
+ "C_Housing.GetMaxHouseLevel": {
+  "log": "2026-11-07_19.18.51_Crash_20784.txt",
+  "note": "ACCESS_VIOLATION reading 0x0. The log predates callKey; the call was found by rebuilding the plan (index 508)."
+ }
+}

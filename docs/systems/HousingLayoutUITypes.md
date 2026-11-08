@@ -11,7 +11,7 @@
 
 ### HousingLayoutCameraDirection
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Up` = 1
   - `Down` = 2
@@ -20,13 +20,13 @@
 
 ### HousingLayoutPinType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Door` = 0
   - `Room` = 1
 
 ### HousingLayoutStairDirection
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Up` = 0
   - `Down` = 1
 

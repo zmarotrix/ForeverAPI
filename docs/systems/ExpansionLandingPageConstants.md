@@ -4,6 +4,6 @@
 
 ### ExpansionLandingPageType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Midnight` = 1

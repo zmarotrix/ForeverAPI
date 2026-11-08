@@ -6,28 +6,28 @@ Namespace: `C_RecruitAFriend`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_RecruitAFriend.CanSummonFriend](#c_recruitafriendcansummonfriend) |  |  |
-| ❔ | [C_RecruitAFriend.ClaimActivityReward](#c_recruitafriendclaimactivityreward) |  |  |
-| ❔ | [C_RecruitAFriend.ClaimNextReward](#c_recruitafriendclaimnextreward) |  |  |
-| ❔ | [C_RecruitAFriend.GenerateRecruitmentLink](#c_recruitafriendgeneraterecruitmentlink) |  |  |
-| ❔ | [C_RecruitAFriend.GetRAFInfo](#c_recruitafriendgetrafinfo) |  |  |
-| ❔ | [C_RecruitAFriend.GetRAFSystemInfo](#c_recruitafriendgetrafsysteminfo) |  |  |
-| ❔ | [C_RecruitAFriend.GetRecruitActivityRequirementsText](#c_recruitafriendgetrecruitactivityrequirementstext) |  |  |
-| ❔ | [C_RecruitAFriend.GetRecruitInfo](#c_recruitafriendgetrecruitinfo) |  |  |
-| ❔ | [C_RecruitAFriend.GetSummonFriendCooldown](#c_recruitafriendgetsummonfriendcooldown) |  |  |
-| ❔ | [C_RecruitAFriend.IsRecruitAFriendLinked](#c_recruitafriendisrecruitafriendlinked) |  |  |
-| ❔ | [C_RecruitAFriend.IsRecruitingEnabled](#c_recruitafriendisrecruitingenabled) |  |  |
-| ❔ | [C_RecruitAFriend.IsSystemEnabled](#c_recruitafriendissystemenabled) |  |  |
-| ❔ | [C_RecruitAFriend.IsSystemSupported](#c_recruitafriendissystemsupported) |  |  |
-| ❔ | [C_RecruitAFriend.RemoveRAFRecruit](#c_recruitafriendremoverafrecruit) |  |  |
-| ❔ | [C_RecruitAFriend.RequestUpdatedRecruitmentInfo](#c_recruitafriendrequestupdatedrecruitmentinfo) |  |  |
-| ❔ | [C_RecruitAFriend.SummonFriend](#c_recruitafriendsummonfriend) |  |  |
+| ✅ | [C_RecruitAFriend.CanSummonFriend](#c_recruitafriendcansummonfriend) |  |  |
+| ✅ | [C_RecruitAFriend.ClaimActivityReward](#c_recruitafriendclaimactivityreward) |  |  |
+| ✅ | [C_RecruitAFriend.ClaimNextReward](#c_recruitafriendclaimnextreward) |  |  |
+| ✅ | [C_RecruitAFriend.GenerateRecruitmentLink](#c_recruitafriendgeneraterecruitmentlink) |  |  |
+| ✅ | [C_RecruitAFriend.GetRAFInfo](#c_recruitafriendgetrafinfo) |  |  |
+| ✅ | [C_RecruitAFriend.GetRAFSystemInfo](#c_recruitafriendgetrafsysteminfo) |  |  |
+| ✅ | [C_RecruitAFriend.GetRecruitActivityRequirementsText](#c_recruitafriendgetrecruitactivityrequirementstext) |  |  |
+| ✅ | [C_RecruitAFriend.GetRecruitInfo](#c_recruitafriendgetrecruitinfo) |  |  |
+| ✅ | [C_RecruitAFriend.GetSummonFriendCooldown](#c_recruitafriendgetsummonfriendcooldown) |  |  |
+| ✅ | [C_RecruitAFriend.IsRecruitAFriendLinked](#c_recruitafriendisrecruitafriendlinked) |  |  |
+| ✅ | [C_RecruitAFriend.IsRecruitingEnabled](#c_recruitafriendisrecruitingenabled) |  |  |
+| ✅ | [C_RecruitAFriend.IsSystemEnabled](#c_recruitafriendissystemenabled) |  |  |
+| ✅ | [C_RecruitAFriend.IsSystemSupported](#c_recruitafriendissystemsupported) |  |  |
+| ✅ | [C_RecruitAFriend.RemoveRAFRecruit](#c_recruitafriendremoverafrecruit) |  |  |
+| ✅ | [C_RecruitAFriend.RequestUpdatedRecruitmentInfo](#c_recruitafriendrequestupdatedrecruitmentinfo) |  |  |
+| ✅ | [C_RecruitAFriend.SummonFriend](#c_recruitafriendsummonfriend) |  |  |
 
 ### C_RecruitAFriend.CanSummonFriend
 
 `C_RecruitAFriend.CanSummonFriend(guid: WOWGUID) → canSummon: bool, reason: RecruitAFriendFailure`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `RecruitAFriendDocumentation.lua`
@@ -36,7 +36,7 @@ Namespace: `C_RecruitAFriend`
 
 `C_RecruitAFriend.ClaimActivityReward(activityID: number, acceptanceID: RecruitAcceptanceID) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `RecruitAFriendDocumentation.lua`
@@ -45,7 +45,7 @@ Namespace: `C_RecruitAFriend`
 
 `C_RecruitAFriend.ClaimNextReward(rafVersion: RecruitAFriendRewardsVersion?) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `RecruitAFriendDocumentation.lua`
@@ -54,7 +54,7 @@ Namespace: `C_RecruitAFriend`
 
 `C_RecruitAFriend.GenerateRecruitmentLink() → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `RecruitAFriendDocumentation.lua`
 
@@ -62,21 +62,21 @@ Namespace: `C_RecruitAFriend`
 
 `C_RecruitAFriend.GetRAFInfo() → info: RafInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `RecruitAFriendDocumentation.lua`
 
 ### C_RecruitAFriend.GetRAFSystemInfo
 
 `C_RecruitAFriend.GetRAFSystemInfo() → systemInfo: RafSystemInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `RecruitAFriendDocumentation.lua`
 
 ### C_RecruitAFriend.GetRecruitActivityRequirementsText
 
 `C_RecruitAFriend.GetRecruitActivityRequirementsText(activityID: number, acceptanceID: RecruitAcceptanceID) → requirementsText: string[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `RecruitAFriendDocumentation.lua`
 
@@ -84,21 +84,21 @@ Namespace: `C_RecruitAFriend`
 
 `C_RecruitAFriend.GetRecruitInfo() → active: bool, faction: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `RecruitAFriendDocumentation.lua`
 
 ### C_RecruitAFriend.GetSummonFriendCooldown
 
 `C_RecruitAFriend.GetSummonFriendCooldown() → startTimeSeconds: number, durationSeconds: number, enableCooldownTimer: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `RecruitAFriendDocumentation.lua`
 
 ### C_RecruitAFriend.IsRecruitAFriendLinked
 
 `C_RecruitAFriend.IsRecruitAFriendLinked(guid: WOWGUID) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `RecruitAFriendDocumentation.lua`
 
@@ -106,28 +106,28 @@ Namespace: `C_RecruitAFriend`
 
 `C_RecruitAFriend.IsRecruitingEnabled() → enabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `RecruitAFriendDocumentation.lua`
 
 ### C_RecruitAFriend.IsSystemEnabled
 
 `C_RecruitAFriend.IsSystemEnabled() → isSystemEnabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `RecruitAFriendDocumentation.lua`
 
 ### C_RecruitAFriend.IsSystemSupported
 
 `C_RecruitAFriend.IsSystemSupported() → isSystemSupported: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `RecruitAFriendDocumentation.lua`
 
 ### C_RecruitAFriend.RemoveRAFRecruit
 
 `C_RecruitAFriend.RemoveRAFRecruit(wowAccountGUID: WOWGUID) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `RecruitAFriendDocumentation.lua`
@@ -136,7 +136,7 @@ Namespace: `C_RecruitAFriend`
 
 `C_RecruitAFriend.RequestUpdatedRecruitmentInfo() → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `RecruitAFriendDocumentation.lua`
 
@@ -144,7 +144,7 @@ Namespace: `C_RecruitAFriend`
 
 `C_RecruitAFriend.SummonFriend(target: WOWGUID, name: cstring)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `RecruitAFriendDocumentation.lua`
 
@@ -152,31 +152,31 @@ Namespace: `C_RecruitAFriend`
 
 ### RAF_INFO_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `info: RafInfo`
 - fires synchronously (Blizzard's docs)
 
 ### RAF_RECRUITING_ENABLED_STATUS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `enabled: bool`
 - fires synchronously (Blizzard's docs)
 
 ### RAF_REWARD_CLAIM_FAILED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### RAF_SYSTEM_ENABLED_STATUS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `enabled: bool`
 - fires synchronously (Blizzard's docs)
 
 ### RAF_SYSTEM_INFO_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `systemInfo: RafSystemInfo`
 - fires synchronously (Blizzard's docs)
 
@@ -250,14 +250,14 @@ Namespace: `C_RecruitAFriend`
 
 ### RafRecruitActivityState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Incomplete` = 0
   - `Complete` = 1
   - `RewardClaimed` = 2
 
 ### RafRecruitSubStatus
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Trial` = 0
   - `Active` = 1
   - `Inactive` = 2
@@ -299,7 +299,7 @@ Namespace: `C_RecruitAFriend`
 
 ### RafRewardType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Pet` = 0
   - `Mount` = 1
   - `Appearance` = 2

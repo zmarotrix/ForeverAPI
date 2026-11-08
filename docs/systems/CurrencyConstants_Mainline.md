@@ -4,7 +4,7 @@
 
 ### CurrencyDestroyReason
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Cheat` = 0
   - `Spell` = 1
   - `VersionUpdate` = 2

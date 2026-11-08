@@ -4,19 +4,19 @@
 
 ### BankTabFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `AllowMissingBag` = 1
 
 ### BankType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Character` = 0
   - `Guild` = 1
   - `Account` = 2
 
 ### BonusStatIndex
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Mana` = 0
   - `Health` = 1
   - `Endurance` = 2
@@ -162,7 +162,7 @@
 
 ### ITEM_WEAPON_SUBCLASSConstants
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `ITEM_WEAPON_SUBCLASS_NONE` = -1
   - `ITEM_WEAPON_SUBCLASS_MASK` = 0
   - `ITEM_WEAPON_SUBCLASS_IS2HWEAPON_MASK` = 0
@@ -170,15 +170,22 @@
   - `ITEM_WEAPON_SUBCLASS_ISRANGEDWEAPON_MASK` = 0
   - `ITEM_WEAPON_SUBCLASS_ISTWOHANDEDRANGEDWEAPON_MASK` = 0
   - `ITEM_WEAPON_SUBCLASS_ISMAINHANDWEAPON_NONRANGED_MASK` = 0
+- ⚠️ `ITEM_WEAPON_SUBCLASS_MASK`: docs say 0, game has 2097151
+- ⚠️ `ITEM_WEAPON_SUBCLASS_IS2HWEAPON_MASK`: docs say 0, game has 1049954
+- ⚠️ `ITEM_WEAPON_SUBCLASS_USES2HANDS_MASK`: docs say 0, game has 1312110
+- ⚠️ `ITEM_WEAPON_SUBCLASS_ISRANGEDWEAPON_MASK`: docs say 0, game has 851980
+- ⚠️ `ITEM_WEAPON_SUBCLASS_ISTWOHANDEDRANGEDWEAPON_MASK`: docs say 0, game has 262156
+- ⚠️ `ITEM_WEAPON_SUBCLASS_ISMAINHANDWEAPON_NONRANGED_MASK`: docs say 0, game has 1091571
 
 ### ITEM_WEAPON_SUBCLASSConstants_PostMists
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `ITEM_WEAPON_SUBCLASS_ISTITANSGRIPWEAPON_MASK` = 0
+- ⚠️ `ITEM_WEAPON_SUBCLASS_ISTITANSGRIPWEAPON_MASK`: docs say 0, game has 1378
 
 ### InventoryType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `IndexNonEquipType` = 0
   - `IndexHeadType` = 1
   - `IndexNeckType` = 2
@@ -217,7 +224,7 @@
 
 ### ItemArmorSubclass
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Generic` = 0
   - `Cloth` = 1
   - `Leather` = 2
@@ -233,7 +240,7 @@
 
 ### ItemBind
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `OnAcquire` = 1
   - `OnEquip` = 2
@@ -247,7 +254,7 @@
 
 ### ItemClass
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Consumable` = 0
   - `Container` = 1
   - `Weapon` = 2
@@ -272,7 +279,7 @@
 
 ### ItemConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `NUM_ITEM_ENCHANTMENT_SOCKETS` = 3
   - `MAX_LOOT_OBJECT_ITEMS` = 31
   - `INVALID_BANK_TAB_SLOT` = 255
@@ -288,10 +295,12 @@
   - `CASTER_WEAPON_SPELL_POWER_MULT_WITH_FLAG` = 2
   - `CASTER_WEAPON_SPELL_HEALING_MULT_WITH_FLAG` = 3.76
   - `CASTER_WEAPON_SPELL_HEALING_DAMAGE_MULT_WITH_FLAG` = 1.253
+- ⚠️ `CASTER_WEAPON_SPELL_HEALING_MULT_WITH_FLAG`: docs say 3.76, game has 3.7599999904633
+- ⚠️ `CASTER_WEAPON_SPELL_HEALING_DAMAGE_MULT_WITH_FLAG`: docs say 1.253, game has 1.2530000209808
 
 ### ItemConsumableSubclass
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Generic` = 0
   - `Potion` = 1
   - `Elixir` = 2
@@ -311,7 +320,7 @@
 
 ### ItemContainerSubclass
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Bag` = 0
   - `Soul` = 1
   - `Herb` = 2
@@ -327,12 +336,12 @@
 
 ### ItemConversionFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `UseInputItemStats` = 1
 
 ### ItemDiscoverySource
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Unknown` = -1
   - `ItemCreated` = 1
   - `SpellVisualKit` = 2
@@ -349,7 +358,7 @@
 
 ### ItemEnchantType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Permanent` = 1
   - `Temporary` = 2
@@ -357,7 +366,7 @@
 
 ### ItemGemColor
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Meta` = 1
   - `Red` = 2
   - `Yellow` = 4
@@ -392,7 +401,7 @@
 
 ### ItemHousingSubclass
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Decor` = 0
   - `Dye` = 1
   - `Room` = 2
@@ -402,7 +411,7 @@
 
 ### ItemMiscellaneousSubclass
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Junk` = 0
   - `Reagent` = 1
   - `CompanionPet` = 2
@@ -413,7 +422,7 @@
 
 ### ItemProfessionSubclass
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Blacksmithing` = 0
   - `Leatherworking` = 1
   - `Alchemy` = 2
@@ -431,7 +440,7 @@
 
 ### ItemQuiverSubclass
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ObsoleteQuiver` = 0
   - `ObsoleteBolts` = 1
   - `Quiver` = 2
@@ -439,14 +448,14 @@
 
 ### ItemReagentSubclass
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Reagent` = 0
   - `Keystone` = 1
   - `ContextToken` = 2
 
 ### ItemRecipeSubclass
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Book` = 0
   - `Leatherworking` = 1
   - `Tailoring` = 2
@@ -462,7 +471,7 @@
 
 ### ItemSocketType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Meta` = 1
   - `Red` = 2
@@ -497,14 +506,14 @@
 
 ### ItemSubclassDisplay
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `HideSubclassInTooltips` = 1
   - `HideSubclassInAuction` = 2
   - `ShowItemCount` = 4
 
 ### ItemSubclassFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `WeaponsubclassCanparry` = 1
   - `WeaponsubclassSetfingerseq` = 2
   - `WeaponsubclassIsunarmed` = 4
@@ -519,7 +528,7 @@
 
 ### ItemWeaponSubclass
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Axe1H` = 0
   - `Axe2H` = 1
   - `Bows` = 2
@@ -544,7 +553,7 @@
 
 ### Itemclassfilterflags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Consumable` = 1
   - `Container` = 2
   - `Weapon` = 4
@@ -566,14 +575,14 @@
 
 ### Itemsetflags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Legacy` = 1
   - `UseItemHistorySetSlots` = 2
   - `RequiresPvPTalentsActive` = 4
 
 ### SleevesGeoRange
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Default` = 1
   - `Flared` = 2
@@ -582,7 +591,7 @@
 
 ### SlotRegion
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Invalid` = 0
   - `PlayerEquip` = 1
   - `PlayerBags` = 2
@@ -592,7 +601,7 @@
 
 ### SlotRegionMask
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Invalid` = 1
   - `PlayerEquip` = 2
   - `PlayerBags` = 4
@@ -602,7 +611,7 @@
 
 ### SubcontainerType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Bag` = 0
   - `Equipped` = 1
   - `Bankgeneric` = 2
@@ -647,7 +656,7 @@
 
 ### UIItemInteractionFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `DisplayWithInset` = 1
   - `ConfirmationHasDelay` = 2
   - `ConversionMode` = 4
@@ -657,7 +666,7 @@
 
 ### UIItemInteractionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `CastSpell` = 1
   - `CleanseCorruption` = 2
@@ -666,7 +675,7 @@
 
 ### WeaponSlot
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `MainHand` = 0
   - `OffHand` = 1
   - `Ranged` = 2

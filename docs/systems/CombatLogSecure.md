@@ -6,21 +6,21 @@ Namespace: `C_CombatLogSecure`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_CombatLogSecure.AddEventFilter](#c_combatlogsecureaddeventfilter) |  |  |
-| ❔ | [C_CombatLogSecure.ClearEventFilters](#c_combatlogsecurecleareventfilters) |  |  |
-| ❔ | [C_CombatLogSecure.CreateCombatLogMessage](#c_combatlogsecurecreatecombatlogmessage) |  |  |
-| ❔ | [C_CombatLogSecure.GetCurrentEntryInfo](#c_combatlogsecuregetcurrententryinfo) |  |  |
-| ❔ | [C_CombatLogSecure.GetCurrentEventInfo](#c_combatlogsecuregetcurrenteventinfo) |  |  |
-| ❔ | [C_CombatLogSecure.GetEntryCount](#c_combatlogsecuregetentrycount) |  |  |
-| ❔ | [C_CombatLogSecure.SeekToNewestEntry](#c_combatlogsecureseektonewestentry) |  |  |
-| ❔ | [C_CombatLogSecure.SeekToPreviousEntry](#c_combatlogsecureseektopreviousentry) |  |  |
-| ❔ | [C_CombatLogSecure.ShouldShowCurrentEntry](#c_combatlogsecureshouldshowcurrententry) |  |  |
+| ⛔ | [C_CombatLogSecure.AddEventFilter](#c_combatlogsecureaddeventfilter) |  |  |
+| ⛔ | [C_CombatLogSecure.ClearEventFilters](#c_combatlogsecurecleareventfilters) |  |  |
+| ⛔ | [C_CombatLogSecure.CreateCombatLogMessage](#c_combatlogsecurecreatecombatlogmessage) |  |  |
+| ⛔ | [C_CombatLogSecure.GetCurrentEntryInfo](#c_combatlogsecuregetcurrententryinfo) |  |  |
+| ⛔ | [C_CombatLogSecure.GetCurrentEventInfo](#c_combatlogsecuregetcurrenteventinfo) |  |  |
+| ⛔ | [C_CombatLogSecure.GetEntryCount](#c_combatlogsecuregetentrycount) |  |  |
+| ⛔ | [C_CombatLogSecure.SeekToNewestEntry](#c_combatlogsecureseektonewestentry) |  |  |
+| ⛔ | [C_CombatLogSecure.SeekToPreviousEntry](#c_combatlogsecureseektopreviousentry) |  |  |
+| ⛔ | [C_CombatLogSecure.ShouldShowCurrentEntry](#c_combatlogsecureshouldshowcurrententry) |  |  |
 
 ### C_CombatLogSecure.AddEventFilter
 
 `C_CombatLogSecure.AddEventFilter()`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `CombatLogSecureDocumentation.lua`
 
@@ -28,7 +28,7 @@ Namespace: `C_CombatLogSecure`
 
 `C_CombatLogSecure.ClearEventFilters()`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `CombatLogSecureDocumentation.lua`
 
@@ -36,7 +36,7 @@ Namespace: `C_CombatLogSecure`
 
 `C_CombatLogSecure.CreateCombatLogMessage(message: string, colorR: number, colorG: number, colorB: number, order: CombatLogMessageOrder)`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CombatLogSecureDocumentation.lua`
@@ -45,7 +45,7 @@ Namespace: `C_CombatLogSecure`
 
 `C_CombatLogSecure.GetCurrentEntryInfo()`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `CombatLogSecureDocumentation.lua`
 
@@ -53,7 +53,7 @@ Namespace: `C_CombatLogSecure`
 
 `C_CombatLogSecure.GetCurrentEventInfo()`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `CombatLogSecureDocumentation.lua`
 
@@ -61,7 +61,7 @@ Namespace: `C_CombatLogSecure`
 
 `C_CombatLogSecure.GetEntryCount(ignoreFilter: bool = False) → count: number`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CombatLogSecureDocumentation.lua`
@@ -70,7 +70,7 @@ Namespace: `C_CombatLogSecure`
 
 `C_CombatLogSecure.SeekToNewestEntry(ignoreFilter: bool = False) → isValidEntry: bool`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CombatLogSecureDocumentation.lua`
@@ -79,7 +79,7 @@ Namespace: `C_CombatLogSecure`
 
 `C_CombatLogSecure.SeekToPreviousEntry(ignoreFilter: bool = False) → isValidEntry: bool`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CombatLogSecureDocumentation.lua`
@@ -88,7 +88,7 @@ Namespace: `C_CombatLogSecure`
 
 `C_CombatLogSecure.ShouldShowCurrentEntry() → shouldShow: bool`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `CombatLogSecureDocumentation.lua`
 
@@ -96,20 +96,21 @@ Namespace: `C_CombatLogSecure`
 
 ### COMBAT_LOG_APPLY_FILTER_SETTINGS
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - Payload: `filterSettings: LuaValueVariant`
 - CallbackEvent (Blizzard's docs)
 - restricted in some situations (Blizzard's docs)
 
 ### COMBAT_LOG_MESSAGE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `message: string`, `colorR: number`, `colorG: number`, `colorB: number`, `order: CombatLogMessageOrder`
 - fires synchronously (Blizzard's docs)
+- Seen firing 300 times (0 in combat); argument kinds: `s,n,n,n,n`
 
 ### COMBAT_LOG_REFILTER_ENTRIES
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - Payload: none
 - CallbackEvent (Blizzard's docs)
 - restricted in some situations (Blizzard's docs)

@@ -4,7 +4,7 @@
 
 ### WarbandSceneFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `DoNotInclude` = 1
   - `HiddenUntilCollected` = 2
   - `CannotBeSaved` = 4

@@ -4,13 +4,13 @@
 
 ### PingMode
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `KeyDown` = 0
   - `ClickDrag` = 1
 
 ### PingResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Success` = 0
   - `FailedGeneric` = 1
   - `FailedSpamming` = 2
@@ -23,14 +23,14 @@
 
 ### PingSetTargetState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Ok` = 0
   - `Failed` = 1
   - `FailedSilent` = 2
 
 ### PingSubjectType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Attack` = 0
   - `Warning` = 1
   - `Assist` = 2
@@ -44,19 +44,19 @@
 
 ### PingTargetOption
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `All` = 0
   - `Environment` = 1
   - `Units` = 2
 
 ### PingTargetType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Unit` = 0
   - `Point` = 1
   - `Action` = 2
 
 ### PingTypeFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `DefaultPing` = 1

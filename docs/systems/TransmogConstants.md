@@ -4,14 +4,14 @@
 
 ### Transmog
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `NoTransmogID` = 0
   - `MainHandTransmogIsIndividualWeapon` = -1
   - `MainHandTransmogIsPairedWeapon` = 0
 
 ### TransmogSlot
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Head` = 0
   - `Shoulder` = 1
   - `Back` = 2

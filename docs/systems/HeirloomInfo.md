@@ -6,41 +6,41 @@ Namespace: `C_HeirloomInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_HeirloomInfo.AreAllCollectionFiltersChecked](#c_heirloominfoareallcollectionfilterschecked) |  |  |
-| ❔ | [C_HeirloomInfo.AreAllSourceFiltersChecked](#c_heirloominfoareallsourcefilterschecked) |  |  |
-| ❔ | [C_HeirloomInfo.HeirloomsAvailable](#c_heirloominfoheirloomsavailable) |  |  |
-| ❔ | [C_HeirloomInfo.IsHeirloomSourceValid](#c_heirloominfoisheirloomsourcevalid) |  |  |
-| ❔ | [C_HeirloomInfo.IsUsingDefaultFilters](#c_heirloominfoisusingdefaultfilters) |  |  |
-| ❔ | [C_HeirloomInfo.SetAllCollectionFilters](#c_heirloominfosetallcollectionfilters) |  |  |
-| ❔ | [C_HeirloomInfo.SetAllSourceFilters](#c_heirloominfosetallsourcefilters) |  |  |
-| ❔ | [C_HeirloomInfo.SetDefaultFilters](#c_heirloominfosetdefaultfilters) |  |  |
+| ✅ | [C_HeirloomInfo.AreAllCollectionFiltersChecked](#c_heirloominfoareallcollectionfilterschecked) |  |  |
+| ✅ | [C_HeirloomInfo.AreAllSourceFiltersChecked](#c_heirloominfoareallsourcefilterschecked) |  |  |
+| ✅ | [C_HeirloomInfo.HeirloomsAvailable](#c_heirloominfoheirloomsavailable) |  |  |
+| ✅ | [C_HeirloomInfo.IsHeirloomSourceValid](#c_heirloominfoisheirloomsourcevalid) |  |  |
+| ✅ | [C_HeirloomInfo.IsUsingDefaultFilters](#c_heirloominfoisusingdefaultfilters) |  |  |
+| ✅ | [C_HeirloomInfo.SetAllCollectionFilters](#c_heirloominfosetallcollectionfilters) |  |  |
+| ✅ | [C_HeirloomInfo.SetAllSourceFilters](#c_heirloominfosetallsourcefilters) |  |  |
+| ✅ | [C_HeirloomInfo.SetDefaultFilters](#c_heirloominfosetdefaultfilters) |  |  |
 
 ### C_HeirloomInfo.AreAllCollectionFiltersChecked
 
 `C_HeirloomInfo.AreAllCollectionFiltersChecked() → areAllCollectionFiltersChecked: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HeirloomInfoDocumentation.lua`
 
 ### C_HeirloomInfo.AreAllSourceFiltersChecked
 
 `C_HeirloomInfo.AreAllSourceFiltersChecked() → areAllSourceFiltersChecked: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HeirloomInfoDocumentation.lua`
 
 ### C_HeirloomInfo.HeirloomsAvailable
 
 `C_HeirloomInfo.HeirloomsAvailable() → areHeirloomsAvailable: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HeirloomInfoDocumentation.lua`
 
 ### C_HeirloomInfo.IsHeirloomSourceValid
 
 `C_HeirloomInfo.IsHeirloomSourceValid(source: luaIndex) → isHeirloomSourceValid: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HeirloomInfoDocumentation.lua`
 
@@ -48,14 +48,14 @@ Namespace: `C_HeirloomInfo`
 
 `C_HeirloomInfo.IsUsingDefaultFilters() → isUsingDefaultFilters: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HeirloomInfoDocumentation.lua`
 
 ### C_HeirloomInfo.SetAllCollectionFilters
 
 `C_HeirloomInfo.SetAllCollectionFilters(checked: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HeirloomInfoDocumentation.lua`
 
@@ -63,7 +63,7 @@ Namespace: `C_HeirloomInfo`
 
 `C_HeirloomInfo.SetAllSourceFilters(checked: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HeirloomInfoDocumentation.lua`
 
@@ -71,20 +71,20 @@ Namespace: `C_HeirloomInfo`
 
 `C_HeirloomInfo.SetDefaultFilters()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HeirloomInfoDocumentation.lua`
 
 ## Events
 
 ### HEIRLOOMS_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `itemID: number?`, `updateReason: cstring?`, `hideUntilLearned: bool?`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
 
 ### HEIRLOOM_UPGRADE_TARGETING_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `pendingHeirloomUpgradeSpellcast: bool`
 - fires synchronously (Blizzard's docs)

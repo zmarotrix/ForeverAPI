@@ -4,7 +4,7 @@
 
 ### CalendarCommandType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Create` = 0
   - `Invite` = 1
   - `Rsvp` = 2
@@ -20,7 +20,7 @@
 
 ### CalendarErrorType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Success` = 0
   - `CommunityEventsExceeded` = 1
   - `EventsExceeded` = 2
@@ -75,7 +75,7 @@
 
 ### CalendarEventBits
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Player` = 1
   - `GuildDeprecated` = 2
   - `System` = 4
@@ -94,7 +94,7 @@
 
 ### CalendarEventRepeatOptions
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Never` = 0
   - `Weekly` = 1
   - `Biweekly` = 2
@@ -102,7 +102,7 @@
 
 ### CalendarEventType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Raid` = 0
   - `Dungeon` = 1
   - `PvP` = 2
@@ -112,7 +112,7 @@
 
 ### CalendarFilterFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `WeeklyHoliday` = 1
   - `Darkmoon` = 2
   - `Battleground` = 4
@@ -121,26 +121,26 @@
 
 ### CalendarGetEventType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Get` = 0
   - `Add` = 1
   - `Copy` = 2
 
 ### CalendarGetEventTypeConstants
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `DEFAULT_CALENDAR_GET_EVENT_TYPE` = Enum.CalendarGetEventType.Get
 
 ### CalendarHolidayFilterType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Weekly` = 0
   - `Darkmoon` = 1
   - `Battleground` = 2
 
 ### CalendarInviteBits
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `PendingInvite` = 1
   - `Moderator` = 2
@@ -149,7 +149,7 @@
 
 ### CalendarInviteSortType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Name` = 0
   - `Level` = 1
   - `Class` = 2
@@ -159,20 +159,20 @@
 
 ### CalendarInviteType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Normal` = 0
   - `Signup` = 1
 
 ### CalendarModeratorStatus
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Moderator` = 1
   - `Creator` = 2
 
 ### CalendarStatus
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Invited` = 0
   - `Available` = 1
   - `Declined` = 2
@@ -185,13 +185,13 @@
 
 ### CalendarTexturesType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Dungeons` = 0
   - `Raid` = 1
 
 ### CalendarType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Player` = 0
   - `Community` = 1
   - `RaidLockout` = 2
@@ -203,7 +203,7 @@
 
 ### CalendarWebActionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Accept` = 0
   - `Decline` = 1
   - `Remove` = 2
@@ -214,13 +214,13 @@
 
 ### HolidayCalendarFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Alliance` = 1
   - `Horde` = 2
 
 ### HolidayFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `IsRegionwide` = 1
   - `DontShowInCalendar` = 2
   - `DontDisplayEnd` = 4

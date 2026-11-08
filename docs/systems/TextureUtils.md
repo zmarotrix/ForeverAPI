@@ -6,23 +6,23 @@ Namespace: `C_Texture`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_Texture.ClearTitleIconTexture](#c_texturecleartitleicontexture) |  |  |
-| ❔ | [C_Texture.GetAtlasElementID](#c_texturegetatlaselementid) |  |  |
-| ❔ | [C_Texture.GetAtlasElements](#c_texturegetatlaselements) |  |  |
-| ❔ | [C_Texture.GetAtlasExists](#c_texturegetatlasexists) |  |  |
-| ❔ | [C_Texture.GetAtlasID](#c_texturegetatlasid) |  |  |
-| ❔ | [C_Texture.GetAtlasInfo](#c_texturegetatlasinfo) |  |  |
-| ❔ | [C_Texture.GetFilenameFromFileDataID](#c_texturegetfilenamefromfiledataid) |  |  |
-| ❔ | [C_Texture.GetTitleIconTexture](#c_texturegettitleicontexture) |  |  |
-| ❔ | [C_Texture.IsTitleIconTextureReady](#c_textureistitleicontextureready) |  |  |
-| ❔ | [C_Texture.SetTitleIconTexture](#c_texturesettitleicontexture) |  |  |
-| ❔ | [C_Texture.SetURLTexture](#c_textureseturltexture) |  |  |
+| ✅ | [C_Texture.ClearTitleIconTexture](#c_texturecleartitleicontexture) |  |  |
+| ✅ | [C_Texture.GetAtlasElementID](#c_texturegetatlaselementid) |  |  |
+| ✅ | [C_Texture.GetAtlasElements](#c_texturegetatlaselements) |  |  |
+| ✅ | [C_Texture.GetAtlasExists](#c_texturegetatlasexists) |  |  |
+| ✅ | [C_Texture.GetAtlasID](#c_texturegetatlasid) |  |  |
+| ✅ | [C_Texture.GetAtlasInfo](#c_texturegetatlasinfo) |  |  |
+| ✅ | [C_Texture.GetFilenameFromFileDataID](#c_texturegetfilenamefromfiledataid) |  |  |
+| ✅ | [C_Texture.GetTitleIconTexture](#c_texturegettitleicontexture) |  |  |
+| ✅ | [C_Texture.IsTitleIconTextureReady](#c_textureistitleicontextureready) |  |  |
+| ✅ | [C_Texture.SetTitleIconTexture](#c_texturesettitleicontexture) |  |  |
+| ✅ | [C_Texture.SetURLTexture](#c_textureseturltexture) |  |  |
 
 ### C_Texture.ClearTitleIconTexture
 
 `C_Texture.ClearTitleIconTexture(texture: SimpleTexture)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TextureUtilsDocumentation.lua`
 
@@ -30,7 +30,7 @@ Namespace: `C_Texture`
 
 `C_Texture.GetAtlasElementID(atlas: textureAtlas) → elementID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TextureUtilsDocumentation.lua`
 
@@ -38,14 +38,14 @@ Namespace: `C_Texture`
 
 `C_Texture.GetAtlasElements() → atlases: textureAtlas[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `TextureUtilsDocumentation.lua`
 
 ### C_Texture.GetAtlasExists
 
 `C_Texture.GetAtlasExists(atlas: textureAtlas) → atlasExists: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TextureUtilsDocumentation.lua`
 
@@ -53,7 +53,7 @@ Namespace: `C_Texture`
 
 `C_Texture.GetAtlasID(atlas: textureAtlas) → atlasID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TextureUtilsDocumentation.lua`
 
@@ -61,7 +61,7 @@ Namespace: `C_Texture`
 
 `C_Texture.GetAtlasInfo(atlas: textureAtlas) → info: AtlasInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TextureUtilsDocumentation.lua`
@@ -70,7 +70,7 @@ Namespace: `C_Texture`
 
 `C_Texture.GetFilenameFromFileDataID(fileDataID: number) → filename: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TextureUtilsDocumentation.lua`
 
@@ -78,7 +78,7 @@ Namespace: `C_Texture`
 
 `C_Texture.GetTitleIconTexture(titleID: string, version: TitleIconVersion, callback: GetTitleIconTextureCallback, subIcon: string?)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TextureUtilsDocumentation.lua`
 
@@ -86,7 +86,7 @@ Namespace: `C_Texture`
 
 `C_Texture.IsTitleIconTextureReady(titleID: string, version: TitleIconVersion, subIcon: string?) → ready: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TextureUtilsDocumentation.lua`
 
@@ -94,7 +94,7 @@ Namespace: `C_Texture`
 
 `C_Texture.SetTitleIconTexture(texture: SimpleTexture, titleID: string, version: TitleIconVersion, subIcon: string?)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TextureUtilsDocumentation.lua`
 
@@ -102,7 +102,7 @@ Namespace: `C_Texture`
 
 `C_Texture.SetURLTexture(texture: SimpleTexture, url: cstring)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TextureUtilsDocumentation.lua`
@@ -111,7 +111,7 @@ Namespace: `C_Texture`
 
 ### URL_TEXTURE_REQUEST_RESULT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `texture: SimpleTexture`, `result: UrlTextureResult`
 - fires synchronously (Blizzard's docs)
 
@@ -140,14 +140,14 @@ Namespace: `C_Texture`
 
 ### TitleIconVersion
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Small` = 0
   - `Medium` = 1
   - `Large` = 2
 
 ### UrlTextureResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Found` = 1
   - `NotFound` = 2
   - `Requested` = 3

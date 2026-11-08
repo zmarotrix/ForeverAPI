@@ -4,7 +4,7 @@
 
 ### SurveyDeliveryFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `EncounterSucccessOnly` = 1
   - `PvPRatedOnly` = 2
@@ -14,7 +14,7 @@
 
 ### SurveyDeliveryMoment
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Login` = 0
   - `ProfessionTable` = 1
   - `QuestTurnIn` = 2

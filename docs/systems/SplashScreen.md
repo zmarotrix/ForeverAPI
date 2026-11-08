@@ -6,31 +6,31 @@ Namespace: `C_SplashScreen`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_SplashScreen.AcknowledgeSplash](#c_splashscreenacknowledgesplash) |  |  |
-| ❔ | [C_SplashScreen.CanViewSplashScreen](#c_splashscreencanviewsplashscreen) |  |  |
-| ❔ | [C_SplashScreen.RequestLatestSplashScreen](#c_splashscreenrequestlatestsplashscreen) |  |  |
-| ❔ | [C_SplashScreen.SendSplashScreenActionLaunchedTelem](#c_splashscreensendsplashscreenactionlaunchedtelem) |  |  |
-| ❔ | [C_SplashScreen.SendSplashScreenCloseTelem](#c_splashscreensendsplashscreenclosetelem) |  |  |
+| ✅ | [C_SplashScreen.AcknowledgeSplash](#c_splashscreenacknowledgesplash) |  |  |
+| ✅ | [C_SplashScreen.CanViewSplashScreen](#c_splashscreencanviewsplashscreen) |  |  |
+| ✅ | [C_SplashScreen.RequestLatestSplashScreen](#c_splashscreenrequestlatestsplashscreen) |  |  |
+| ✅ | [C_SplashScreen.SendSplashScreenActionLaunchedTelem](#c_splashscreensendsplashscreenactionlaunchedtelem) |  |  |
+| ✅ | [C_SplashScreen.SendSplashScreenCloseTelem](#c_splashscreensendsplashscreenclosetelem) |  |  |
 
 ### C_SplashScreen.AcknowledgeSplash
 
 `C_SplashScreen.AcknowledgeSplash()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `SplashScreenDocumentation.lua`
 
 ### C_SplashScreen.CanViewSplashScreen
 
 `C_SplashScreen.CanViewSplashScreen() → canView: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `SplashScreenDocumentation.lua`
 
 ### C_SplashScreen.RequestLatestSplashScreen
 
 `C_SplashScreen.RequestLatestSplashScreen(fromGameMenu: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SplashScreenDocumentation.lua`
 
@@ -38,7 +38,7 @@ Namespace: `C_SplashScreen`
 
 `C_SplashScreen.SendSplashScreenActionLaunchedTelem()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `SplashScreenDocumentation.lua`
 
@@ -46,7 +46,7 @@ Namespace: `C_SplashScreen`
 
 `C_SplashScreen.SendSplashScreenCloseTelem()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `SplashScreenDocumentation.lua`
 
@@ -54,9 +54,10 @@ Namespace: `C_SplashScreen`
 
 ### OPEN_SPLASH_SCREEN
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `info: SplashScreenInfo?`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `-`
 
 ## Types
 

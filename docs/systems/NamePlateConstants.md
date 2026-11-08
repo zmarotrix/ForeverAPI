@@ -4,7 +4,7 @@
 
 ### NamePlateCastBarDisplay
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `SpellName` = 1
   - `SpellIcon` = 2
@@ -14,7 +14,7 @@
 
 ### NamePlateEnemyNpcAuraDisplay
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Buffs` = 1
   - `Debuffs` = 2
@@ -22,7 +22,7 @@
 
 ### NamePlateEnemyPlayerAuraDisplay
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Buffs` = 1
   - `Debuffs` = 2
@@ -30,7 +30,7 @@
 
 ### NamePlateFriendlyPlayerAuraDisplay
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Buffs` = 1
   - `Debuffs` = 2
@@ -38,7 +38,7 @@
 
 ### NamePlateInfoDisplay
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `CurrentHealthPercent` = 1
   - `CurrentHealthValue` = 2
@@ -46,7 +46,7 @@
 
 ### NamePlateSimplifiedType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Minion` = 1
   - `MinusMob` = 2
@@ -55,7 +55,7 @@
 
 ### NamePlateSize
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Small` = 1
   - `Medium` = 2
   - `Large` = 3
@@ -64,14 +64,14 @@
 
 ### NamePlateStackType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Enemy` = 1
   - `Friendly` = 2
 
 ### NamePlateStyle
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Modern` = 0
   - `Thin` = 1
   - `Block` = 2
@@ -82,7 +82,7 @@
 
 ### NamePlateThreatDisplay
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Progressive` = 1
   - `Flash` = 2
@@ -90,6 +90,6 @@
 
 ### NamePlateType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Friendly` = 0
   - `Enemy` = 1

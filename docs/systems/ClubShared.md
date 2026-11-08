@@ -4,7 +4,7 @@
 
 ### ClubRoleIdentifier
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Owner` = 1
   - `Leader` = 2
   - `Moderator` = 3

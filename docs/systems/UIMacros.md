@@ -6,16 +6,16 @@ Namespace: `C_Macro`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_Macro.GetMacroName](#c_macrogetmacroname) |  |  |
-| ❔ | [C_Macro.GetSelectedMacroIcon](#c_macrogetselectedmacroicon) |  |  |
-| ❔ | [C_Macro.RunMacroText](#c_macrorunmacrotext) |  |  |
-| ❔ | [C_Macro.SetMacroExecuteLineCallback](#c_macrosetmacroexecutelinecallback) |  |  |
+| ✅ | [C_Macro.GetMacroName](#c_macrogetmacroname) |  |  |
+| ✅ | [C_Macro.GetSelectedMacroIcon](#c_macrogetselectedmacroicon) |  |  |
+| ✅ | [C_Macro.RunMacroText](#c_macrorunmacrotext) |  |  |
+| ⛔ | [C_Macro.SetMacroExecuteLineCallback](#c_macrosetmacroexecutelinecallback) |  |  |
 
 ### C_Macro.GetMacroName
 
 `C_Macro.GetMacroName(macroId: luaIndex) → name: cstring?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIMacrosDocumentation.lua`
 
@@ -23,7 +23,7 @@ Namespace: `C_Macro`
 
 `C_Macro.GetSelectedMacroIcon(macroId: luaIndex) → textureNum: fileID`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIMacrosDocumentation.lua`
 
@@ -31,7 +31,7 @@ Namespace: `C_Macro`
 
 `C_Macro.RunMacroText(text: cstring, button: cstring)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIMacrosDocumentation.lua`
@@ -40,7 +40,7 @@ Namespace: `C_Macro`
 
 `C_Macro.SetMacroExecuteLineCallback(cb: MacroExecuteLineCallback)`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIMacrosDocumentation.lua`
@@ -49,9 +49,10 @@ Namespace: `C_Macro`
 
 ### UPDATE_MACROS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ## Types
 

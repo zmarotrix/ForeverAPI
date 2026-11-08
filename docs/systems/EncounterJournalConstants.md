@@ -4,7 +4,7 @@
 
 ### JournalEncounterFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Obsolete` = 1
   - `LimitDifficulties` = 2
   - `AllianceOnly` = 4
@@ -15,7 +15,7 @@
 
 ### JournalEncounterIconFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Tank` = 1
   - `Dps` = 2
   - `Healer` = 4
@@ -33,7 +33,7 @@
 
 ### JournalEncounterItemFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Obsolete` = 1
   - `LimitDifficulties` = 2
   - `DisplayAsPerPlayerLoot` = 4
@@ -42,12 +42,12 @@
 
 ### JournalEncounterLocFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Primary` = 1
 
 ### JournalEncounterSecTypes
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Generic` = 0
   - `Creature` = 1
   - `Ability` = 2
@@ -55,20 +55,20 @@
 
 ### JournalEncounterSectionFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `StartExpanded` = 1
   - `LimitDifficulties` = 2
 
 ### JournalInstanceFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Timewalker` = 1
   - `HideUserSelectableDifficulty` = 2
   - `DoNotDisplayInstance` = 4
 
 ### JournalLinkTypes
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Instance` = 0
   - `Encounter` = 1
   - `Section` = 2

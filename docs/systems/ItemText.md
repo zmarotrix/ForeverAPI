@@ -4,24 +4,24 @@
 
 ### ITEM_TEXT_BEGIN
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### ITEM_TEXT_CLOSED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### ITEM_TEXT_READY
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### ITEM_TEXT_TRANSLATION
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `delay: number`
 - fires synchronously (Blizzard's docs)

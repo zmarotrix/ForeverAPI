@@ -4,14 +4,14 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [GetThreatStatusColor](#getthreatstatuscolor) |  |  |
-| ❔ | [IsThreatWarningEnabled](#isthreatwarningenabled) |  |  |
+| ✅ | [GetThreatStatusColor](#getthreatstatuscolor) |  |  |
+| ✅ | [IsThreatWarningEnabled](#isthreatwarningenabled) |  |  |
 
 ### GetThreatStatusColor
 
 `GetThreatStatusColor(gameErrorIndex: number) → colorR: number, colorG: number, colorB: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ThreatDocumentation.lua`
 
@@ -19,5 +19,5 @@
 
 `IsThreatWarningEnabled() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ThreatDocumentation.lua`

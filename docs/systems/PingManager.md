@@ -6,32 +6,32 @@ Namespace: `C_Ping`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_Ping.GetCooldownInfo](#c_pinggetcooldowninfo) |  |  |
-| ❔ | [C_Ping.GetDefaultPingOptions](#c_pinggetdefaultpingoptions) |  |  |
-| ❔ | [C_Ping.GetTextureKitForType](#c_pinggettexturekitfortype) |  |  |
-| ❔ | [C_Ping.IsPingSystemEnabled](#c_pingispingsystemenabled) |  |  |
-| ❔ | [C_Ping.SendMacroPing](#c_pingsendmacroping) |  |  |
-| ❔ | [C_Ping.TogglePingListener](#c_pingtogglepinglistener) |  |  |
+| ✅ | [C_Ping.GetCooldownInfo](#c_pinggetcooldowninfo) |  |  |
+| ✅ | [C_Ping.GetDefaultPingOptions](#c_pinggetdefaultpingoptions) |  |  |
+| ✅ | [C_Ping.GetTextureKitForType](#c_pinggettexturekitfortype) |  |  |
+| ✅ | [C_Ping.IsPingSystemEnabled](#c_pingispingsystemenabled) |  |  |
+| ✅ | [C_Ping.SendMacroPing](#c_pingsendmacroping) |  |  |
+| ✅ | [C_Ping.TogglePingListener](#c_pingtogglepinglistener) |  |  |
 
 ### C_Ping.GetCooldownInfo
 
 `C_Ping.GetCooldownInfo() → cooldownInfo: PingCooldownInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PingManagerDocumentation.lua`
 
 ### C_Ping.GetDefaultPingOptions
 
 `C_Ping.GetDefaultPingOptions() → pingTypes: PingTypeInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PingManagerDocumentation.lua`
 
 ### C_Ping.GetTextureKitForType
 
 `C_Ping.GetTextureKitForType(type: PingSubjectType) → uiTextureKitID: textureKit`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PingManagerDocumentation.lua`
 
@@ -39,14 +39,14 @@ Namespace: `C_Ping`
 
 `C_Ping.IsPingSystemEnabled() → isEnabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PingManagerDocumentation.lua`
 
 ### C_Ping.SendMacroPing
 
 `C_Ping.SendMacroPing(macroInfo: PingMacroInfo)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PingManagerDocumentation.lua`
@@ -55,7 +55,7 @@ Namespace: `C_Ping`
 
 `C_Ping.TogglePingListener(down: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PingManagerDocumentation.lua`
@@ -64,7 +64,7 @@ Namespace: `C_Ping`
 
 ### PING_SYSTEM_ERROR
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `error: cstring`
 - fires synchronously (Blizzard's docs)
 

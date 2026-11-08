@@ -6,30 +6,30 @@ Namespace: `C_ContentTracking`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_ContentTracking.GetBestMapForTrackable](#c_contenttrackinggetbestmapfortrackable) |  |  |
-| ❔ | [C_ContentTracking.GetCollectableSourceTrackingEnabled](#c_contenttrackinggetcollectablesourcetrackingenabled) |  |  |
-| ❔ | [C_ContentTracking.GetCollectableSourceTypes](#c_contenttrackinggetcollectablesourcetypes) |  |  |
-| ❔ | [C_ContentTracking.GetCurrentTrackingTarget](#c_contenttrackinggetcurrenttrackingtarget) |  |  |
-| ❔ | [C_ContentTracking.GetEncounterTrackingInfo](#c_contenttrackinggetencountertrackinginfo) |  |  |
-| ❔ | [C_ContentTracking.GetNextWaypointForTrackable](#c_contenttrackinggetnextwaypointfortrackable) |  |  |
-| ❔ | [C_ContentTracking.GetObjectiveText](#c_contenttrackinggetobjectivetext) |  |  |
-| ❔ | [C_ContentTracking.GetTitle](#c_contenttrackinggettitle) |  |  |
-| ❔ | [C_ContentTracking.GetTrackablesOnMap](#c_contenttrackinggettrackablesonmap) |  |  |
-| ❔ | [C_ContentTracking.GetTrackedIDs](#c_contenttrackinggettrackedids) |  |  |
-| ❔ | [C_ContentTracking.GetVendorTrackingInfo](#c_contenttrackinggetvendortrackinginfo) |  |  |
-| ❔ | [C_ContentTracking.GetWaypointText](#c_contenttrackinggetwaypointtext) |  |  |
-| ❔ | [C_ContentTracking.IsNavigable](#c_contenttrackingisnavigable) |  |  |
-| ❔ | [C_ContentTracking.IsTrackable](#c_contenttrackingistrackable) |  |  |
-| ❔ | [C_ContentTracking.IsTracking](#c_contenttrackingistracking) |  |  |
-| ❔ | [C_ContentTracking.StartTracking](#c_contenttrackingstarttracking) |  |  |
-| ❔ | [C_ContentTracking.StopTracking](#c_contenttrackingstoptracking) |  |  |
-| ❔ | [C_ContentTracking.ToggleTracking](#c_contenttrackingtoggletracking) |  |  |
+| ✅ | [C_ContentTracking.GetBestMapForTrackable](#c_contenttrackinggetbestmapfortrackable) |  |  |
+| ✅ | [C_ContentTracking.GetCollectableSourceTrackingEnabled](#c_contenttrackinggetcollectablesourcetrackingenabled) |  |  |
+| ✅ | [C_ContentTracking.GetCollectableSourceTypes](#c_contenttrackinggetcollectablesourcetypes) |  |  |
+| ✅ | [C_ContentTracking.GetCurrentTrackingTarget](#c_contenttrackinggetcurrenttrackingtarget) |  |  |
+| ✅ | [C_ContentTracking.GetEncounterTrackingInfo](#c_contenttrackinggetencountertrackinginfo) |  |  |
+| ✅ | [C_ContentTracking.GetNextWaypointForTrackable](#c_contenttrackinggetnextwaypointfortrackable) |  |  |
+| ✅ | [C_ContentTracking.GetObjectiveText](#c_contenttrackinggetobjectivetext) |  |  |
+| ✅ | [C_ContentTracking.GetTitle](#c_contenttrackinggettitle) |  |  |
+| ✅ | [C_ContentTracking.GetTrackablesOnMap](#c_contenttrackinggettrackablesonmap) |  |  |
+| ✅ | [C_ContentTracking.GetTrackedIDs](#c_contenttrackinggettrackedids) |  |  |
+| ✅ | [C_ContentTracking.GetVendorTrackingInfo](#c_contenttrackinggetvendortrackinginfo) |  |  |
+| ✅ | [C_ContentTracking.GetWaypointText](#c_contenttrackinggetwaypointtext) |  |  |
+| ✅ | [C_ContentTracking.IsNavigable](#c_contenttrackingisnavigable) |  |  |
+| ✅ | [C_ContentTracking.IsTrackable](#c_contenttrackingistrackable) |  |  |
+| ✅ | [C_ContentTracking.IsTracking](#c_contenttrackingistracking) |  |  |
+| ✅ | [C_ContentTracking.StartTracking](#c_contenttrackingstarttracking) |  |  |
+| ✅ | [C_ContentTracking.StopTracking](#c_contenttrackingstoptracking) |  |  |
+| ✅ | [C_ContentTracking.ToggleTracking](#c_contenttrackingtoggletracking) |  |  |
 
 ### C_ContentTracking.GetBestMapForTrackable
 
 `C_ContentTracking.GetBestMapForTrackable(trackableType: ContentTrackingType, trackableID: number, ignoreWaypoint: bool = False) → result: ContentTrackingResult, mapID: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContentTrackingDocumentation.lua`
 
@@ -37,21 +37,21 @@ Namespace: `C_ContentTracking`
 
 `C_ContentTracking.GetCollectableSourceTrackingEnabled() → isEnabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ContentTrackingDocumentation.lua`
 
 ### C_ContentTracking.GetCollectableSourceTypes
 
 `C_ContentTracking.GetCollectableSourceTypes() → collectableSourceTypes: ContentTrackingType[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ContentTrackingDocumentation.lua`
 
 ### C_ContentTracking.GetCurrentTrackingTarget
 
 `C_ContentTracking.GetCurrentTrackingTarget(type: ContentTrackingType, id: number) → targetType: ContentTrackingTargetType, targetID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContentTrackingDocumentation.lua`
@@ -60,7 +60,7 @@ Namespace: `C_ContentTracking`
 
 `C_ContentTracking.GetEncounterTrackingInfo(journalEncounterID: number) → trackingInfo: EncounterTrackingInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContentTrackingDocumentation.lua`
@@ -69,7 +69,7 @@ Namespace: `C_ContentTracking`
 
 `C_ContentTracking.GetNextWaypointForTrackable(trackableType: ContentTrackingType, trackableID: number, uiMapID: number) → result: ContentTrackingResult, mapInfo: ContentTrackingMapInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContentTrackingDocumentation.lua`
 
@@ -77,7 +77,7 @@ Namespace: `C_ContentTracking`
 
 `C_ContentTracking.GetObjectiveText(targetType: ContentTrackingTargetType, targetID: number, includeHyperlinks: bool = True) → objectiveText: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContentTrackingDocumentation.lua`
@@ -86,7 +86,7 @@ Namespace: `C_ContentTracking`
 
 `C_ContentTracking.GetTitle(trackableType: ContentTrackingType, trackableID: number) → title: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContentTrackingDocumentation.lua`
@@ -95,7 +95,7 @@ Namespace: `C_ContentTracking`
 
 `C_ContentTracking.GetTrackablesOnMap(trackableType: ContentTrackingType, uiMapID: number) → result: ContentTrackingResult, trackableMapInfos: ContentTrackingMapInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContentTrackingDocumentation.lua`
 
@@ -103,7 +103,7 @@ Namespace: `C_ContentTracking`
 
 `C_ContentTracking.GetTrackedIDs(trackableType: ContentTrackingType) → entryIDs: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContentTrackingDocumentation.lua`
 
@@ -111,7 +111,7 @@ Namespace: `C_ContentTracking`
 
 `C_ContentTracking.GetVendorTrackingInfo(collectableEntryID: number) → vendorTrackingInfo: VendorTrackingInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContentTrackingDocumentation.lua`
@@ -120,7 +120,7 @@ Namespace: `C_ContentTracking`
 
 `C_ContentTracking.GetWaypointText(trackableType: ContentTrackingType, trackableID: number) → waypointText: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContentTrackingDocumentation.lua`
@@ -129,7 +129,7 @@ Namespace: `C_ContentTracking`
 
 `C_ContentTracking.IsNavigable(trackableType: ContentTrackingType, trackableID: number) → result: ContentTrackingResult, isNavigable: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: If successful, returns if the trackable is either on your current map, or if we're able to determine a route to that map from your location via waypoints.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContentTrackingDocumentation.lua`
@@ -138,7 +138,7 @@ Namespace: `C_ContentTracking`
 
 `C_ContentTracking.IsTrackable(type: ContentTrackingType, id: number) → isTrackable: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContentTrackingDocumentation.lua`
 
@@ -146,7 +146,7 @@ Namespace: `C_ContentTracking`
 
 `C_ContentTracking.IsTracking(type: ContentTrackingType, id: number) → isTracking: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContentTrackingDocumentation.lua`
 
@@ -154,7 +154,7 @@ Namespace: `C_ContentTracking`
 
 `C_ContentTracking.StartTracking(type: ContentTrackingType, id: number) → error: ContentTrackingError?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContentTrackingDocumentation.lua`
 
@@ -162,7 +162,7 @@ Namespace: `C_ContentTracking`
 
 `C_ContentTracking.StopTracking(type: ContentTrackingType, id: number, stopType: ContentTrackingStopType)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContentTrackingDocumentation.lua`
 
@@ -170,7 +170,7 @@ Namespace: `C_ContentTracking`
 
 `C_ContentTracking.ToggleTracking(type: ContentTrackingType, id: number, stopType: ContentTrackingStopType) → error: ContentTrackingError?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ContentTrackingDocumentation.lua`
 
@@ -178,30 +178,31 @@ Namespace: `C_ContentTracking`
 
 ### CONTENT_TRACKING_IS_ENABLED_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `isEnabled: bool`
 - fires synchronously (Blizzard's docs)
 
 ### CONTENT_TRACKING_LIST_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### CONTENT_TRACKING_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `type: ContentTrackingType`, `id: number`, `isTracked: bool`
 - fires synchronously (Blizzard's docs)
 
 ### TRACKABLE_INFO_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `type: ContentTrackingType`, `id: number`
 - fires synchronously (Blizzard's docs)
 
 ### TRACKING_TARGET_INFO_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `targetType: ContentTrackingTargetType`, `targetID: number`
 - fires synchronously (Blizzard's docs)

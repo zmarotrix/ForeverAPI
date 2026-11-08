@@ -4,7 +4,7 @@
 
 ### BagIndex
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Accountbanktab` = -3
   - `Characterbanktab` = -2
   - `Keyring` = -1

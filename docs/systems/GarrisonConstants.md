@@ -4,12 +4,12 @@
 
 ### ContributionAppearanceFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `TooltipUseTimeRemaining` = 0
 
 ### ContributionState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Building` = 1
   - `Active` = 2
@@ -18,7 +18,7 @@
 
 ### CovenantSkill
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Kyrian` = 2730
   - `Venthyr` = 2731
   - `NightFae` = 2732
@@ -26,7 +26,7 @@
 
 ### CovenantType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Kyrian` = 1
   - `Venthyr` = 2
@@ -35,7 +35,7 @@
 
 ### FollowerAbilityCastResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Success` = 0
   - `Failure` = 1
   - `NoPendingCast` = 2
@@ -54,7 +54,7 @@
 
 ### GarrAutoBoardIndex
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = -1
   - `AllyLeftBack` = 0
   - `AllyRightBack` = 1
@@ -72,7 +72,7 @@
 
 ### GarrAutoCombatSpellTutorialFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Single` = 1
   - `Column` = 2
@@ -81,7 +81,7 @@
 
 ### GarrAutoCombatTutorial
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `SelectMission` = 1
   - `PlaceCompanion` = 2
   - `HealCompanion` = 4
@@ -96,7 +96,7 @@
 
 ### GarrAutoCombatantRole
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Melee` = 1
   - `RangedPhysical` = 2
@@ -106,7 +106,7 @@
 
 ### GarrAutoEventFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `AutoAttack` = 1
   - `Passive` = 2
@@ -114,7 +114,7 @@
 
 ### GarrAutoMissionEventType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `MeleeDamage` = 0
   - `RangeDamage` = 1
   - `SpellMeleeDamage` = 2
@@ -128,7 +128,7 @@
 
 ### GarrAutoPreviewTargetType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Damage` = 1
   - `Heal` = 2
@@ -137,7 +137,7 @@
 
 ### GarrFollowerMissionCompleteState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Alive` = 0
   - `KilledByMissionFailure` = 1
   - `SavedByPreventDeath` = 2
@@ -145,7 +145,7 @@
 
 ### GarrFollowerQuality
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Common` = 1
   - `Uncommon` = 2
@@ -156,7 +156,7 @@
 
 ### GarrTalentCostType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Initial` = 0
   - `Respec` = 1
   - `MakePermanent` = 2
@@ -164,7 +164,7 @@
 
 ### GarrTalentFeatureSubtype
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Generic` = 0
   - `Bastion` = 1
   - `Revendreth` = 2
@@ -173,7 +173,7 @@
 
 ### GarrTalentFeatureType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Generic` = 0
   - `AnimaDiversion` = 1
   - `TravelPortals` = 2
@@ -186,26 +186,26 @@
 
 ### GarrTalentResearchCostSource
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Talent` = 0
   - `Tree` = 1
 
 ### GarrTalentSocketType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Spell` = 1
   - `Conduit` = 2
 
 ### GarrTalentTreeType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Tiers` = 0
   - `Classic` = 1
 
 ### GarrTalentType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Standard` = 0
   - `Minor` = 1
   - `Major` = 2
@@ -213,7 +213,7 @@
 
 ### GarrTalentUI
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Generic` = 0
   - `CovenantSanctum` = 1
   - `SoulBinds` = 2
@@ -221,7 +221,7 @@
 
 ### GarrisonTalentAvailability
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Available` = 0
   - `Unavailable` = 1
   - `UnavailableAnotherIsResearching` = 2

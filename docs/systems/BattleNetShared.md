@@ -4,14 +4,14 @@
 
 ### BattleNetFriendLevel
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `BattleTag` = 1
   - `RealID` = 2
   - `Title` = 3
 
 ### BattleNetFriendTag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Professions` = 0
   - `PvP` = 1
   - `Raiding` = 2

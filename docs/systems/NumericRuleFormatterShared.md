@@ -23,7 +23,7 @@
 
 ### NumericRuleFormatRounding
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Nearest` = 0
   - `Up` = 1
   - `Down` = 2

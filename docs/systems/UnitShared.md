@@ -4,12 +4,12 @@
 
 ### UnitEventConstants
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `MAX_UNIT_TOKENS_IN_EVENT` = 4
 
 ### UnitTokenType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Player` = 1
   - `Pet` = 2

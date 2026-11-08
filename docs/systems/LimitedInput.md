@@ -6,13 +6,13 @@ Namespace: `C_LimitedInput`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_LimitedInput.LimitedInputAllowed](#c_limitedinputlimitedinputallowed) |  |  |
+| ✅ | [C_LimitedInput.LimitedInputAllowed](#c_limitedinputlimitedinputallowed) |  |  |
 
 ### C_LimitedInput.LimitedInputAllowed
 
 `C_LimitedInput.LimitedInputAllowed(type: LimitedInputType) → allowed: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `LimitedInputDocumentation.lua`
 
@@ -20,7 +20,7 @@ Namespace: `C_LimitedInput`
 
 ### LimitedInputType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `MouseMove` = 0
   - `MouseDown` = 1
   - `MouseUp` = 2

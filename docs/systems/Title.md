@@ -4,31 +4,31 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [GetCurrentTitle](#getcurrenttitle) |  |  |
-| ❔ | [GetNumTitles](#getnumtitles) |  |  |
-| ❔ | [GetTitleName](#gettitlename) |  |  |
-| ❔ | [IsTitleKnown](#istitleknown) |  |  |
-| ❔ | [SetCurrentTitle](#setcurrenttitle) |  |  |
+| ✅ | [GetCurrentTitle](#getcurrenttitle) |  |  |
+| ✅ | [GetNumTitles](#getnumtitles) |  |  |
+| ✅ | [GetTitleName](#gettitlename) |  |  |
+| ✅ | [IsTitleKnown](#istitleknown) |  |  |
+| ✅ | [SetCurrentTitle](#setcurrenttitle) |  |  |
 
 ### GetCurrentTitle
 
 `GetCurrentTitle() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `TitleDocumentation.lua`
 
 ### GetNumTitles
 
 `GetNumTitles() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `TitleDocumentation.lua`
 
 ### GetTitleName
 
 `GetTitleName(titleMaskID: number) → titleString: string, playerTitle: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TitleDocumentation.lua`
 
@@ -36,7 +36,7 @@
 
 `IsTitleKnown(titleMaskID: number) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TitleDocumentation.lua`
 
@@ -44,6 +44,6 @@
 
 `SetCurrentTitle(titleMaskID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TitleDocumentation.lua`

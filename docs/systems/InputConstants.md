@@ -4,7 +4,7 @@
 
 ### InputContext
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Keyboard` = 1
   - `Mouse` = 2
@@ -12,6 +12,6 @@
 
 ### InputDeviceInterfaceType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Mkb` = 0
   - `Gamepad` = 1

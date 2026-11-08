@@ -4,14 +4,14 @@
 
 ### EncounterEventCastState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Casting` = 1
   - `NotCasting` = 2
   - `Expired` = 3
 
 ### EncounterEventIconmask
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `DeadlyEffect` = 1
   - `EnrageEffect` = 2
   - `BleedEffect` = 4
@@ -25,7 +25,7 @@
 
 ### EncounterEventSeverity
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Low` = 0
   - `Medium` = 1
   - `High` = 2

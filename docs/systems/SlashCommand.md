@@ -4,20 +4,20 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [AreDangerousScriptsAllowed](#aredangerousscriptsallowed) |  |  |
-| ❔ | [SetAllowDangerousScripts](#setallowdangerousscripts) |  |  |
+| ✅ | [AreDangerousScriptsAllowed](#aredangerousscriptsallowed) |  |  |
+| ✅ | [SetAllowDangerousScripts](#setallowdangerousscripts) |  |  |
 
 ### AreDangerousScriptsAllowed
 
 `AreDangerousScriptsAllowed() → allowed: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `SlashCommandDocumentation.lua`
 
 ### SetAllowDangerousScripts
 
 `SetAllowDangerousScripts(allowed: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SlashCommandDocumentation.lua`

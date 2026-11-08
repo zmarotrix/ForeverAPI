@@ -4,7 +4,7 @@
 
 ### SpellBookItemType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Spell` = 1
   - `FutureSpell` = 2
@@ -13,7 +13,7 @@
 
 ### SpellBookSkillLineIndex
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `General` = 1
   - `Class` = 2
   - `MainSpec` = 3
@@ -21,6 +21,6 @@
 
 ### SpellBookSpellBank
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Player` = 0
   - `Pet` = 1

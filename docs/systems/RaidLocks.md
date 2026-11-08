@@ -6,16 +6,16 @@ Namespace: `C_RaidLocks`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_RaidLocks.GetRedirectedDifficultyID](#c_raidlocksgetredirecteddifficultyid) |  |  |
-| ❔ | [C_RaidLocks.IsEncounterComplete](#c_raidlocksisencountercomplete) |  |  |
-| ❔ | [C_RaidLocks.IsRaidLockExtendFeatureEnabled](#c_raidlocksisraidlockextendfeatureenabled) |  |  |
-| ❔ | [C_RaidLocks.IsRaidLockExtendFeatureSupported](#c_raidlocksisraidlockextendfeaturesupported) |  |  |
+| ✅ | [C_RaidLocks.GetRedirectedDifficultyID](#c_raidlocksgetredirecteddifficultyid) |  |  |
+| ✅ | [C_RaidLocks.IsEncounterComplete](#c_raidlocksisencountercomplete) |  |  |
+| ✅ | [C_RaidLocks.IsRaidLockExtendFeatureEnabled](#c_raidlocksisraidlockextendfeatureenabled) |  |  |
+| ✅ | [C_RaidLocks.IsRaidLockExtendFeatureSupported](#c_raidlocksisraidlockextendfeaturesupported) |  |  |
 
 ### C_RaidLocks.GetRedirectedDifficultyID
 
 `C_RaidLocks.GetRedirectedDifficultyID(mapID: number, difficultyID: number) → redirectedDifficultyID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `RaidLocksDocumentation.lua`
 
@@ -23,7 +23,7 @@ Namespace: `C_RaidLocks`
 
 `C_RaidLocks.IsEncounterComplete(mapID: number, encounterID: number, difficultyID: number?) → encounterIsComplete: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `RaidLocksDocumentation.lua`
 
@@ -31,12 +31,12 @@ Namespace: `C_RaidLocks`
 
 `C_RaidLocks.IsRaidLockExtendFeatureEnabled() → raidLockExtendFeatureEnabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `RaidLocksDocumentation.lua`
 
 ### C_RaidLocks.IsRaidLockExtendFeatureSupported
 
 `C_RaidLocks.IsRaidLockExtendFeatureSupported() → raidLockExtendFeatureSupported: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `RaidLocksDocumentation.lua`

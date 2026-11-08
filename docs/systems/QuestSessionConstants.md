@@ -4,7 +4,7 @@
 
 ### QuestSessionCommand
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Start` = 1
   - `Stop` = 2
@@ -12,7 +12,7 @@
 
 ### QuestSessionResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Ok` = 0
   - `NotInParty` = 1
   - `InvalidOwner` = 2

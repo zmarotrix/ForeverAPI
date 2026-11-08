@@ -4,7 +4,7 @@
 
 ### CAAConstants
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `CAAEnabledDefault` = False
   - `CAAVoiceDefault` = 0
   - `CAASayCombatStartDefault` = True
@@ -46,3 +46,8 @@
   - `CAAFrequencyDefault` = 0
   - `CAASampleTextThrottleTime` = 1
   - `CAASamePercentThrottleTime` = 10
+- ⚠️ `CAAEnabledDefault`: docs say False, game has false
+- ⚠️ `CAASayCombatStartDefault`: docs say True, game has true
+- ⚠️ `CAASayCombatEndDefault`: docs say True, game has true
+- ⚠️ `CAATargetNameDefault`: docs say True, game has true
+- ⚠️ `CAASayYourDebuffsDefault`: docs say True, game has true

@@ -4,7 +4,7 @@
 
 ### ItemQuality
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Poor` = 0
   - `Common` = 1
   - `Uncommon` = 2

@@ -6,20 +6,20 @@ Namespace: `C_WorldLootObject`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_WorldLootObject.DoesSlotMatchInventoryType](#c_worldlootobjectdoesslotmatchinventorytype) |  |  |
-| ❔ | [C_WorldLootObject.GetWorldLootObjectDistanceSquared](#c_worldlootobjectgetworldlootobjectdistancesquared) |  |  |
-| ❔ | [C_WorldLootObject.GetWorldLootObjectInfo](#c_worldlootobjectgetworldlootobjectinfo) |  |  |
-| ❔ | [C_WorldLootObject.GetWorldLootObjectInfoByGUID](#c_worldlootobjectgetworldlootobjectinfobyguid) |  |  |
-| ❔ | [C_WorldLootObject.IsWorldLootObject](#c_worldlootobjectisworldlootobject) |  |  |
-| ❔ | [C_WorldLootObject.IsWorldLootObjectByGUID](#c_worldlootobjectisworldlootobjectbyguid) |  |  |
-| ❔ | [C_WorldLootObject.IsWorldLootObjectInRange](#c_worldlootobjectisworldlootobjectinrange) |  |  |
-| ❔ | [C_WorldLootObject.OnWorldLootObjectClick](#c_worldlootobjectonworldlootobjectclick) |  |  |
+| ✅ | [C_WorldLootObject.DoesSlotMatchInventoryType](#c_worldlootobjectdoesslotmatchinventorytype) |  |  |
+| ✅ | [C_WorldLootObject.GetWorldLootObjectDistanceSquared](#c_worldlootobjectgetworldlootobjectdistancesquared) |  |  |
+| ✅ | [C_WorldLootObject.GetWorldLootObjectInfo](#c_worldlootobjectgetworldlootobjectinfo) |  |  |
+| ✅ | [C_WorldLootObject.GetWorldLootObjectInfoByGUID](#c_worldlootobjectgetworldlootobjectinfobyguid) |  |  |
+| ✅ | [C_WorldLootObject.IsWorldLootObject](#c_worldlootobjectisworldlootobject) |  |  |
+| ✅ | [C_WorldLootObject.IsWorldLootObjectByGUID](#c_worldlootobjectisworldlootobjectbyguid) |  |  |
+| ✅ | [C_WorldLootObject.IsWorldLootObjectInRange](#c_worldlootobjectisworldlootobjectinrange) |  |  |
+| ✅ | [C_WorldLootObject.OnWorldLootObjectClick](#c_worldlootobjectonworldlootobjectclick) |  |  |
 
 ### C_WorldLootObject.DoesSlotMatchInventoryType
 
 `C_WorldLootObject.DoesSlotMatchInventoryType(slot: number, inventoryType: InventoryType) → matches: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `WorldLootObjectDocumentation.lua`
 
@@ -27,7 +27,7 @@ Namespace: `C_WorldLootObject`
 
 `C_WorldLootObject.GetWorldLootObjectDistanceSquared(unitToken: UnitToken) → distanceSquared: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `WorldLootObjectDocumentation.lua`
 
@@ -35,7 +35,7 @@ Namespace: `C_WorldLootObject`
 
 `C_WorldLootObject.GetWorldLootObjectInfo(unitToken: UnitToken) → info: WorldLootObjectInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `WorldLootObjectDocumentation.lua`
@@ -44,7 +44,7 @@ Namespace: `C_WorldLootObject`
 
 `C_WorldLootObject.GetWorldLootObjectInfoByGUID(objectGUID: WOWGUID) → info: WorldLootObjectInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `WorldLootObjectDocumentation.lua`
@@ -53,7 +53,7 @@ Namespace: `C_WorldLootObject`
 
 `C_WorldLootObject.IsWorldLootObject(unitToken: UnitToken) → isWorldLootObject: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `WorldLootObjectDocumentation.lua`
 
@@ -61,7 +61,7 @@ Namespace: `C_WorldLootObject`
 
 `C_WorldLootObject.IsWorldLootObjectByGUID(guid: WOWGUID) → isWorldLootObject: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `WorldLootObjectDocumentation.lua`
 
@@ -69,7 +69,7 @@ Namespace: `C_WorldLootObject`
 
 `C_WorldLootObject.IsWorldLootObjectInRange(unitToken: UnitToken) → isWorldLootObjectInRange: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `WorldLootObjectDocumentation.lua`
 
@@ -77,7 +77,7 @@ Namespace: `C_WorldLootObject`
 
 `C_WorldLootObject.OnWorldLootObjectClick(unitToken: UnitToken, isLeftClick: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `WorldLootObjectDocumentation.lua`
 
@@ -85,7 +85,7 @@ Namespace: `C_WorldLootObject`
 
 ### WORLD_LOOT_OBJECT_INFO_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `guid: WOWGUID`
 - fires synchronously (Blizzard's docs)
 

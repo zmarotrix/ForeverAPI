@@ -4,19 +4,19 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [CinematicFinished](#cinematicfinished) |  |  |
-| ❔ | [CinematicStarted](#cinematicstarted) |  |  |
-| ❔ | [GetCurrentCinematicSummary](#getcurrentcinematicsummary) |  |  |
-| ❔ | [InCinematic](#incinematic) |  |  |
-| ❔ | [MouseOverrideCinematicDisable](#mouseoverridecinematicdisable) |  |  |
-| ❔ | [OpeningCinematic](#openingcinematic) |  |  |
-| ❔ | [StopCinematic](#stopcinematic) |  |  |
+| ✅ | [CinematicFinished](#cinematicfinished) |  |  |
+| ✅ | [CinematicStarted](#cinematicstarted) |  |  |
+| ✅ | [GetCurrentCinematicSummary](#getcurrentcinematicsummary) |  |  |
+| ✅ | [InCinematic](#incinematic) |  |  |
+| ✅ | [MouseOverrideCinematicDisable](#mouseoverridecinematicdisable) |  |  |
+| ✅ | [OpeningCinematic](#openingcinematic) |  |  |
+| ✅ | [StopCinematic](#stopcinematic) |  |  |
 
 ### CinematicFinished
 
 `CinematicFinished(movieType: CinematicType, userCanceled: bool = False, didError: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CinematicDocumentation.lua`
 
@@ -24,7 +24,7 @@
 
 `CinematicStarted(movieType: CinematicType, movieID: number, canCancel: bool = True)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CinematicDocumentation.lua`
 
@@ -32,21 +32,21 @@
 
 `GetCurrentCinematicSummary() → summary: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CinematicDocumentation.lua`
 
 ### InCinematic
 
 `InCinematic() → inCinematic: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CinematicDocumentation.lua`
 
 ### MouseOverrideCinematicDisable
 
 `MouseOverrideCinematicDisable(doOverride: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CinematicDocumentation.lua`
 
@@ -54,50 +54,50 @@
 
 `OpeningCinematic()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CinematicDocumentation.lua`
 
 ### StopCinematic
 
 `StopCinematic()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CinematicDocumentation.lua`
 
 ## Events
 
 ### CINEMATIC_START
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `canBeCancelled: bool`, `forcedAspectRatio: CameraModeAspectRatio`
 - fires synchronously (Blizzard's docs)
 
 ### CINEMATIC_STOP
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### HIDE_SUBTITLE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PLAY_MOVIE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `movieID: number`
 - fires synchronously (Blizzard's docs)
 
 ### SHOW_SUBTITLE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `subtitle: cstring`, `sender: cstring?`
 - fires synchronously (Blizzard's docs)
 
 ### STOP_MOVIE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)

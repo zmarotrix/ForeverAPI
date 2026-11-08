@@ -12,13 +12,13 @@
 
 ### ClickBindingInteraction
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Target` = 1
   - `OpenContextMenu` = 2
 
 ### ClickBindingType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Spell` = 1
   - `Macro` = 2

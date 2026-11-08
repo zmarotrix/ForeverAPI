@@ -67,6 +67,10 @@ def flags_text(flags):
 def call_text(rec):
     if not rec:
         return None
+    if rec.get("skipped"):
+        return "💥 not called: %s" % rec["skipped"]
+    if rec.get("forbidden"):
+        return "⛔ protected: calling it raised ADDON_ACTION_FORBIDDEN"
     if rec.get("missing"):
         return "missing at call time"
     if "error" in rec:
@@ -206,8 +210,8 @@ def render(model, out, generated):
     for e in sorted(events.values(), key=lambda e: e["key"]):
         live = e.get("live") or {}
         sigs = live.get("sigs") or {}
-        lines.append("| %s | `%s` | %s | %s | %s |" % (
-            SHORT[e["status"]], e["key"], live.get("n", ""), " / ".join("`%s`" % s for s in sigs) if sigs else "",
+        lines.append("| %s | `%s`%s | %s | %s | %s |" % (
+            SHORT[e["status"]], e["key"], " (protected)" if (e.get("check") or {}).get("register") in ("forbidden", "blocked") else "", live.get("n", ""), " / ".join("`%s`" % s for s in sigs) if sigs else "",
             "[%s](%s)" % (e["system"], page_path(e["system"])) if e.get("system") else (
                 "used in `%s`" % e["used_by"] if e.get("used_by") else "")))
     write(os.path.join(out, "events.md"), lines)
@@ -343,6 +347,10 @@ def render(model, out, generated):
 def _cell(rec):
     if not rec:
         return ""
+    if rec.get("skipped"):
+        return "💥 " + rec["skipped"]
+    if rec.get("forbidden"):
+        return "protected"
     if rec.get("missing"):
         return "missing"
     if "error" in rec:
@@ -387,6 +395,9 @@ def event_block(e):
         lines.append("- Blizzard: %s" % e["doc"])
     for t in flags_text(e.get("flags")):
         lines.append("- %s (Blizzard's docs)" % t)
+    reg = (e.get("check") or {}).get("register")
+    if reg in ("forbidden", "blocked"):
+        lines.append("- ⛔ Add-ons may not register it: RegisterEvent raised ADDON_ACTION_FORBIDDEN")
     live = e.get("live")
     if live:
         lines.append("- Seen firing %s times (%s in combat); argument kinds: %s" % (

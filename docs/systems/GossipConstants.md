@@ -4,7 +4,7 @@
 
 ### GossipNpcOption
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Vendor` = 1
   - `Taxinode` = 2
@@ -79,12 +79,12 @@
 
 ### GossipNpcOptionDisplayFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ForceInteractionOnSingleChoice` = 1
 
 ### GossipOptionRecFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `QuestLabelPrepend` = 1
   - `HideOptionIDFromClient` = 2
   - `PlayMovieLabelPrepend` = 4

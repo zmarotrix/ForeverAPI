@@ -4,7 +4,7 @@
 
 ### AccountCurrencyTransferResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Success` = 0
   - `InvalidCharacter` = 1
   - `CharacterLoggedIn` = 2
@@ -19,7 +19,7 @@
 
 ### CurrencyConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `PLAYER_CURRENCY_CLIENT_FLAGS` = Enum.PlayerCurrencyFlagsDbFlags.InBackpack + Enum.PlayerCurrencyFlagsDbFlags.UnusedInUI
   - `MAX_CURRENCY_QUANTITY` = 100000000
   - `CONQUEST_ARENA_AND_BG_META_CURRENCY_ID` = 483
@@ -57,21 +57,21 @@
 
 ### CurrencyConversionResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `NoConversion` = 0
   - `Conversion` = 1
   - `SkippedAccountCurrency` = 2
 
 ### CurrencyFilterType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `DiscoveredOnly` = 1
   - `DiscoveredAndAllAccountTransferable` = 2
 
 ### CurrencyFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `CurrencyTradable` = 1
   - `CurrencyAppearsInLootWindow` = 2
   - `CurrencyComputedWeeklyMaximum` = 4
@@ -107,7 +107,7 @@
 
 ### CurrencyFlagsB
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `CurrencyBUseTotalEarnedForEarned` = 1
   - `CurrencyBShowQuestXPGainInTooltip` = 2
   - `CurrencyBNoNotificationMailOnOfflineProgress` = 4
@@ -123,7 +123,7 @@
 
 ### CurrencyGainFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `BonusAward` = 1
   - `DroppedFromDeath` = 2
@@ -132,7 +132,7 @@
 
 ### CurrencyTokenCategoryFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `FlagSortLast` = 1
   - `FlagPlayerItemAssignment` = 2
   - `Hidden` = 4
@@ -141,13 +141,13 @@
 
 ### CurrencyWeeksFromStartOption
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `DebugLogging` = 1
   - `IgnoreTimeBeforeStart` = 2
 
 ### LinkedCurrencyFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `IgnoreAdd` = 1
   - `IgnoreSubtract` = 2
   - `SuppressChatLog` = 4
@@ -155,13 +155,13 @@
 
 ### PlayerCurrencyFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Incremented` = 1
   - `Loading` = 2
 
 ### PlayerCurrencyFlagsDbFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `IgnoreMaxQtyOnload` = 1
   - `Reuse1` = 2
   - `InBackpack` = 4

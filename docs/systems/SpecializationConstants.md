@@ -4,7 +4,7 @@
 
 ### ChrSpecializationFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `IsCaster` = 1
   - `IsRanged` = 2
   - `IsMelee` = 4
@@ -17,11 +17,11 @@
 
 ### SpecGroup
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Primary` = 0
   - `Secondary` = 1
 
 ### SpecializationSpellsFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `DevOnly` = 1

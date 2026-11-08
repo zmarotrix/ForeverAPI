@@ -4,36 +4,36 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [AssistUnit](#assistunit) |  |  |
-| ❔ | [AttackTarget](#attacktarget) |  |  |
-| ❔ | [ClearFocus](#clearfocus) |  |  |
-| ❔ | [ClearTarget](#cleartarget) |  |  |
-| ❔ | [FocusUnit](#focusunit) |  |  |
-| ❔ | [IsTargetLoose](#istargetloose) |  |  |
-| ❔ | [SetPreferredGamepadInteractTarget](#setpreferredgamepadinteracttarget) |  |  |
-| ❔ | [TargetDirectionEnemy](#targetdirectionenemy) |  |  |
-| ❔ | [TargetDirectionFinished](#targetdirectionfinished) |  |  |
-| ❔ | [TargetDirectionFriend](#targetdirectionfriend) |  |  |
-| ❔ | [TargetLastEnemy](#targetlastenemy) |  |  |
-| ❔ | [TargetLastFriend](#targetlastfriend) |  |  |
-| ❔ | [TargetLastTarget](#targetlasttarget) |  |  |
-| ❔ | [TargetNearest](#targetnearest) |  |  |
-| ❔ | [TargetNearestEnemy](#targetnearestenemy) |  |  |
-| ❔ | [TargetNearestEnemyPlayer](#targetnearestenemyplayer) |  |  |
-| ❔ | [TargetNearestFriend](#targetnearestfriend) |  |  |
-| ❔ | [TargetNearestFriendPlayer](#targetnearestfriendplayer) |  |  |
-| ❔ | [TargetNearestPartyMember](#targetnearestpartymember) |  |  |
-| ❔ | [TargetNearestRaidMember](#targetnearestraidmember) |  |  |
-| ❔ | [TargetPriorityHighlightEnd](#targetpriorityhighlightend) |  |  |
-| ❔ | [TargetPriorityHighlightStart](#targetpriorityhighlightstart) |  |  |
-| ❔ | [TargetToggle](#targettoggle) |  |  |
-| ❔ | [TargetUnit](#targetunit) |  |  |
+| ✅ | [AssistUnit](#assistunit) |  |  |
+| ✅ | [AttackTarget](#attacktarget) |  |  |
+| ✅ | [ClearFocus](#clearfocus) |  |  |
+| ✅ | [ClearTarget](#cleartarget) |  |  |
+| ✅ | [FocusUnit](#focusunit) |  |  |
+| ✅ | [IsTargetLoose](#istargetloose) |  |  |
+| ✅ | [SetPreferredGamepadInteractTarget](#setpreferredgamepadinteracttarget) |  |  |
+| ✅ | [TargetDirectionEnemy](#targetdirectionenemy) |  |  |
+| ✅ | [TargetDirectionFinished](#targetdirectionfinished) |  |  |
+| ✅ | [TargetDirectionFriend](#targetdirectionfriend) |  |  |
+| ✅ | [TargetLastEnemy](#targetlastenemy) |  |  |
+| ✅ | [TargetLastFriend](#targetlastfriend) |  |  |
+| ✅ | [TargetLastTarget](#targetlasttarget) |  |  |
+| ✅ | [TargetNearest](#targetnearest) |  |  |
+| ✅ | [TargetNearestEnemy](#targetnearestenemy) |  |  |
+| ✅ | [TargetNearestEnemyPlayer](#targetnearestenemyplayer) |  |  |
+| ✅ | [TargetNearestFriend](#targetnearestfriend) |  |  |
+| ✅ | [TargetNearestFriendPlayer](#targetnearestfriendplayer) |  |  |
+| ✅ | [TargetNearestPartyMember](#targetnearestpartymember) |  |  |
+| ✅ | [TargetNearestRaidMember](#targetnearestraidmember) |  |  |
+| ✅ | [TargetPriorityHighlightEnd](#targetpriorityhighlightend) |  |  |
+| ✅ | [TargetPriorityHighlightStart](#targetpriorityhighlightstart) |  |  |
+| ✅ | [TargetToggle](#targettoggle) |  |  |
+| ✅ | [TargetUnit](#targetunit) |  |  |
 
 ### AssistUnit
 
 `AssistUnit(name: cstring = , exactMatch: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TargetScriptDocumentation.lua`
@@ -42,28 +42,28 @@
 
 `AttackTarget()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `TargetScriptDocumentation.lua`
 
 ### ClearFocus
 
 `ClearFocus()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `TargetScriptDocumentation.lua`
 
 ### ClearTarget
 
 `ClearTarget() → willMakeChange: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `TargetScriptDocumentation.lua`
 
 ### FocusUnit
 
 `FocusUnit(name: cstring = )`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TargetScriptDocumentation.lua`
@@ -72,14 +72,14 @@
 
 `IsTargetLoose() → isTargetLoose: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `TargetScriptDocumentation.lua`
 
 ### SetPreferredGamepadInteractTarget
 
 `SetPreferredGamepadInteractTarget(unit: UnitToken?)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TargetScriptDocumentation.lua`
@@ -88,7 +88,7 @@
 
 `TargetDirectionEnemy(facing: number, coneAngle: number?)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TargetScriptDocumentation.lua`
 
@@ -96,14 +96,14 @@
 
 `TargetDirectionFinished()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `TargetScriptDocumentation.lua`
 
 ### TargetDirectionFriend
 
 `TargetDirectionFriend(facing: number, coneAngle: number?)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TargetScriptDocumentation.lua`
 
@@ -111,28 +111,28 @@
 
 `TargetLastEnemy()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `TargetScriptDocumentation.lua`
 
 ### TargetLastFriend
 
 `TargetLastFriend()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `TargetScriptDocumentation.lua`
 
 ### TargetLastTarget
 
 `TargetLastTarget()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `TargetScriptDocumentation.lua`
 
 ### TargetNearest
 
 `TargetNearest(reverse: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TargetScriptDocumentation.lua`
 
@@ -140,7 +140,7 @@
 
 `TargetNearestEnemy(reverse: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TargetScriptDocumentation.lua`
 
@@ -148,7 +148,7 @@
 
 `TargetNearestEnemyPlayer(reverse: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TargetScriptDocumentation.lua`
 
@@ -156,7 +156,7 @@
 
 `TargetNearestFriend(reverse: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TargetScriptDocumentation.lua`
 
@@ -164,7 +164,7 @@
 
 `TargetNearestFriendPlayer(reverse: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TargetScriptDocumentation.lua`
 
@@ -172,7 +172,7 @@
 
 `TargetNearestPartyMember(reverse: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TargetScriptDocumentation.lua`
 
@@ -180,7 +180,7 @@
 
 `TargetNearestRaidMember(reverse: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TargetScriptDocumentation.lua`
 
@@ -188,14 +188,14 @@
 
 `TargetPriorityHighlightEnd()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `TargetScriptDocumentation.lua`
 
 ### TargetPriorityHighlightStart
 
 `TargetPriorityHighlightStart(useStartDelay: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TargetScriptDocumentation.lua`
 
@@ -203,7 +203,7 @@
 
 `TargetToggle()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `TargetScriptDocumentation.lua`
 
@@ -211,7 +211,7 @@
 
 `TargetUnit(name: cstring = , exactMatch: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `TargetScriptDocumentation.lua`

@@ -1,3 +1,1576 @@
 # Global functions Blizzard's docs don't list
 
 In the game (the dump saw them) but in no generated doc file and not written in Blizzard's Lua UI code: Forever additions or legacy client APIs. Signatures come only from what the probe saw: its no-argument call often answers with a `Usage:` error. Blizzard's own Lua helpers are in [ui-functions](ui-functions.md).
+
+## A
+
+- `AcceptBattlefieldPort`: function; used in `Blizzard_LFGUtil/Mainline/PVPHelper.lua`
+- `AcceptDuel`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `AcceptGroup`: function; used in `Blizzard_FrameXML/QuestSession.lua`
+- `AcceptProposal`: function; used in `Blizzard_QueueStatusFrame/Mainline/QueueStatusFrame.lua`
+- `AcceptQuest`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `AcceptSpellConfirmationPrompt`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `AcceptTrade`: function
+- `AcknowledgeAutoAcceptQuest`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `AcknowledgeSurvey`: function
+- `AddAutoQuestPopUp`: function; used in `Blizzard_ObjectiveTracker/Blizzard_AutoQuestPopUpTracker.lua`
+- `AddChatWindowChannel`: function; used in `Blizzard_ChatFrameBase/Shared/ChatFrame.lua`
+- `AddChatWindowMessages`: function; used in `Blizzard_ChatFrameBase/Shared/ChatFrame.lua`
+- `AntiAliasingSupported`: function; used in `Blizzard_SettingsDefinitions_Shared/Graphics.lua`
+- `ArchaeologyGetIconInfo`: function
+- `ArchaeologyMapUpdateAll`: function
+- `ArcheologyGetVisibleBlobID`: function
+- `AreTalentsLocked`: function
+- `AscendStop`: function
+- `AttachGlyphToSpell`: function; used in `Blizzard_ActionBar/Shared/SpellFlyout.lua`
+- `AutoChooseCurrentGraphicsSetting`: function
+- `AutoLootMailItem`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `AutoStoreGuildBankItem`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+## B
+
+- `BNAcceptFriendInvite`: function; used in `Blizzard_FriendsFrame/Mainline/FriendRequestsListTemplates.lua`
+- `BNCheckBattleTagInviteToGuildMember`: function; used in `Blizzard_UnitPopupShared/UnitPopupSharedButtonMixins.lua`
+- `BNCheckBattleTagInviteToUnit`: function; used in `Blizzard_UnitPopupShared/UnitPopupSharedButtonMixins.lua`
+- `BNConnected`: function; used in `Blizzard_FriendsFrame/Camelot/FriendsFrame.lua`
+- `BNDeclineFriendInvite`: function; used in `Blizzard_FriendsFrame/Camelot/FriendsFrame.lua`
+- `BNFeaturesEnabled`: function; used in `Blizzard_FriendsFrame/Camelot/FriendsFrame.lua`
+- `BNFeaturesEnabledAndConnected`: function; used in `Blizzard_AddFriend/AddFriendTemplates.lua`
+- `BNGetBlockedInfo`: function; used in `Blizzard_FriendsFrame/Camelot/FriendsFrame.lua`
+- `BNGetDisplayName`: function; used in `Blizzard_UIPanels_Game/Shared/ItemRefHandlersShared.lua`
+- `BNGetFOFInfo`: function; used in `Blizzard_FriendsFrame/Mainline/FriendsFriendsFrame.lua`
+- `BNGetFriendIndex`: function; used in `Blizzard_FriendsFrame/Camelot/FriendsFrame.lua`
+- `BNGetInfo`: function; used in `Blizzard_AddFriend/AddFriendTemplates.lua`
+- `BNGetNumBlocked`: function; used in `Blizzard_FriendsFrame/Camelot/FriendsFrame.lua`
+- `BNGetNumFOF`: function; used in `Blizzard_FriendsFrame/Mainline/FriendsFriendsFrame.lua`
+- `BNGetNumFriendInvites`: function; used in `Blizzard_ChatFrameBase/Mainline/ChatFrameOverrides.lua`
+- `BNGetNumFriends`: function; used in `Blizzard_FriendsFrame/Camelot/FriendsFrame.lua`
+- `BNGetSelectedBlock`: function; used in `Blizzard_FriendsFrame/Camelot/FriendsFrame.lua`
+- `BNGetSelectedFriend`: function
+- `BNIsBlocked`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `BNIsFriend`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `BNIsSelf`: function; used in `Blizzard_UIPanels_Game/Shared/ItemRefHandlersShared.lua`
+- `BNRemoveFriend`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `BNRequestFOFInfo`: function; used in `Blizzard_FriendsFrame/Mainline/FriendsFriendsFrame.lua`
+- `BNRequestInviteFriend`: function; used in `Blizzard_FriendsFrame/Camelot/FriendsFrame.lua`
+- `BNSendFriendInvite`: function; used in `Blizzard_AddFriend/AddFriendTemplates.lua`
+- `BNSendFriendInviteByID`: function; used in `Blizzard_FriendsFrame/Mainline/FriendsFriendsFrame.lua`
+- `BNSetFriendFavoriteFlag`: function; used in `Blizzard_UnitPopup/Mainline/UnitPopupButtons.lua`
+- `BNSetFriendNote`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `BNSetSelectedBlock`: function; used in `Blizzard_FriendsFrame/Camelot/FriendsFrame.lua`
+- `BNSetSelectedFriend`: function; used in `Blizzard_FriendsFrame/Camelot/FriendsFrame.lua`
+- `BNSummonFriendByIndex`: function; used in `Blizzard_FriendsFrame/Camelot/FriendsFrame.lua`
+- `BNTokenFindName`: function
+- `BattlefieldMgrEntryInviteResponse`: function; used in `Blizzard_QueueStatusFrame/Mainline/QueueStatusFrame.lua`
+- `BattlefieldMgrExitRequest`: function; used in `Blizzard_QueueStatusFrame/Mainline/QueueStatusFrame.lua`
+- `BattlefieldMgrQueueInviteResponse`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `BattlefieldMgrQueueRequest`: function
+- `Blizzard_CombatLog_BitToBraceCode`: function
+- `BuyGuildBankTab`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `BuyGuildCharter`: function; used in `Blizzard_UIPanels_Game/Mainline/GuildRegistrarFrame.lua`
+- `BuyMerchantItem`: function; used in `Blizzard_ActionBar/WoWLabs/ActionButtonOverrides.lua`
+- `BuyTrainerService`: function; used in `Blizzard_TrainerUI/Mainline/Blizzard_TrainerUI.lua`
+- `BuybackItem`: function; used in `Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua`
+## C
+
+- `CallCompanion`: function
+- `CameraOrSelectOrMoveStart`: function; used in `Blizzard_CompactRaidFrames/Mainline/Blizzard_CompactRaidFrameManager.lua`
+- `CameraOrSelectOrMoveStop`: function; used in `Blizzard_CompactRaidFrames/Mainline/Blizzard_CompactRaidFrameManager.lua`
+- `CameraZoomIn`: function; used in `Blizzard_GamepadTargeting/TargetLogic.lua`
+- `CameraZoomOut`: function; used in `Blizzard_GamepadTargeting/TargetLogic.lua`
+- `CanAffordMerchantItem`: function; used in `Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua`
+- `CanAutoSetGamePadCursorControl`: function; used in `Blizzard_GameMenu/Shared/GameMenuFrame.lua`
+- `CanCancelScene`: function; used in `Blizzard_FrameXML/Shared/CinematicFrame.lua`
+- `CanComplainInboxItem`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `CanEditGuildBankTabInfo`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `CanEditGuildEvent`: function; used in `Blizzard_Calendar/Mainline/Blizzard_Calendar.lua`
+- `CanEditGuildInfo`: function; used in `Blizzard_Communities/GuildInfo.lua`
+- `CanEditGuildTabInfo`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `CanEditMOTD`: function; used in `Blizzard_Communities/GuildInfo.lua`
+- `CanEditPublicNote`: function; used in `Blizzard_Communities/GuildRoster.lua`
+- `CanExitVehicle`: function; used in `Blizzard_ActionBar/Shared/PossessActionBar.lua`
+- `CanGamePadControlCursor`: function
+- `CanGuildBankRepair`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `CanGuildDemote`: function; used in `Blizzard_Communities/GuildRoster.lua`
+- `CanGuildInvite`: function; used in `Blizzard_Communities/CommunitiesFrame.lua`
+- `CanGuildPromote`: function; used in `Blizzard_Communities/GuildRoster.lua`
+- `CanGuildRemove`: function; used in `Blizzard_Communities/GuildRoster.lua`
+- `CanHearthAndResurrectFromArea`: function; used in `Blizzard_QueueStatusFrame/Mainline/QueueStatusFrame.lua`
+- `CanInitiateWarGame`: function
+- `CanItemBeSocketedToArtifact`: function
+- `CanJoinBattlefieldAsGroup`: function
+- `CanMerchantRepair`: function; used in `Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua`
+- `CanPartyLFGBackfill`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `CanReplaceGuildMaster`: function; used in `Blizzard_Communities/GuildNews.lua`
+- `CanResetTutorials`: function
+- `CanScanResearchSite`: function; used in `Blizzard_FrameXML/ArchaeologyProgressBar.lua`
+- `CanShowAchievementUI`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `CanSignPetition`: function; used in `Blizzard_UIPanels_Game/Mainline/PetitionFrame.lua`
+- `CanSolveArtifact`: function; used in `Blizzard_ArchaeologyUI/Blizzard_ArchaeologyUI.lua`
+- `CanSwitchVehicleSeats`: function
+- `CanViewGuildRecipes`: function; used in `Blizzard_Communities/CommunitiesMemberList.lua`
+- `CanWithdrawGuildBankMoney`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `CancelDuel`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `CancelMasterLootRoll`: function
+- `CancelPetPossess`: function; used in `Blizzard_ActionBar/Shared/PossessActionBar.lua`
+- `CancelScene`: function; used in `Blizzard_FrameXML/Shared/CinematicFrame.lua`
+- `CancelShapeshiftForm`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `CancelSpellByName`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `CancelTradeAccept`: function; used in `Blizzard_UIPanels_Game/Mainline/TradeFrame.lua`
+- `CancelUnitBuff`: function; used in `Blizzard_BuffFrame/BuffFrame.lua`
+- `CannotBeResurrected`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefsUtil.lua`
+- `CastPetAction`: function; used in `Blizzard_ActionBar/Shared/PetActionBar.lua`
+- `CastShapeshiftForm`: function; used in `Blizzard_ActionBar/Shared/StanceBar.lua`
+- `CastSpell`: function; used in `Blizzard_UIPanels_Game/Cata/SpellBookFrame.lua`
+- `CastSpellByID`: function; used in `Blizzard_ActionBar/Shared/MultiCastActionBarFrame.lua`
+- `CastSpellByName`: function; used in `Blizzard_ActionBar/Shared/SpellFlyout.lua`
+- `CenterCamera`: function
+- `ChangeChatColor`: function; used in `Blizzard_ChatFrameBase/Shared/ChatFrameUtil.lua`
+- `ChannelBan`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `ChannelInvite`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `ChannelKick`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `ChannelModerator`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `ChannelSetAllSilent`: function
+- `ChannelSetPartyMemberSilent`: function
+- `ChannelToggleAnnouncements`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `ChannelUnban`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `ChannelUnmoderator`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `ChatEdit_ActivateChat`: function
+- `ChatEdit_AddHistory`: function
+- `ChatEdit_ChooseBoxForSend`: function
+- `ChatEdit_ClearChat`: function
+- `ChatEdit_DeactivateChat`: function
+- `ChatEdit_DoesCurrentChannelTargetMatch`: function
+- `ChatEdit_ExtractChannel`: function
+- `ChatEdit_ExtractTellTarget`: function
+- `ChatEdit_FocusActiveWindow`: function
+- `ChatEdit_GetActiveChatType`: function
+- `ChatEdit_GetActiveWindow`: function
+- `ChatEdit_GetChannelTarget`: function
+- `ChatEdit_GetLastActiveWindow`: function
+- `ChatEdit_GetLastTellTarget`: function
+- `ChatEdit_GetLastToldTarget`: function
+- `ChatEdit_GetNextTellTarget`: function
+- `ChatEdit_HandleChatType`: function
+- `ChatEdit_HasStickyFocus`: function
+- `ChatEdit_InsertLink`: function
+- `ChatEdit_LinkItem`: function
+- `ChatEdit_ParseText`: function
+- `ChatEdit_ResetChatType`: function
+- `ChatEdit_ResetChatTypeToSticky`: function
+- `ChatEdit_SendText`: function
+- `ChatEdit_SetDeactivated`: function
+- `ChatEdit_SetLastActiveWindow`: function
+- `ChatEdit_SetLastTellTarget`: function
+- `ChatEdit_SetLastToldTarget`: function
+- `ChatEdit_TryInsertChatLink`: function
+- `ChatEdit_TryInsertQuestLinkForQuestID`: function
+- `ChatEdit_UpdateHeader`: function
+- `ChatFrame_AddCommunitiesChannel`: function
+- `ChatFrame_AddMessage`: function
+- `ChatFrame_AddMessageEventFilter`: function
+- `ChatFrame_AddMessageGroup`: function
+- `ChatFrame_AddPrivateMessageTarget`: function
+- `ChatFrame_AddSingleMessageType`: function
+- `ChatFrame_CanAddChannel`: function
+- `ChatFrame_CanChatGroupPerformExpressionExpansion`: function
+- `ChatFrame_ChatPageDown`: function
+- `ChatFrame_ChatPageUp`: function
+- `ChatFrame_ClearChatFocusOverride`: function
+- `ChatFrame_ContainsChannel`: function
+- `ChatFrame_ContainsMessageGroup`: function
+- `ChatFrame_DisplayChatHelp`: function
+- `ChatFrame_DisplayGMOTD`: function
+- `ChatFrame_DisplayGameTime`: function
+- `ChatFrame_DisplayHelpText`: function
+- `ChatFrame_DisplayHelpTextSimple`: function
+- `ChatFrame_DisplayMacroHelpText`: function
+- `ChatFrame_DisplaySystemMessage`: function
+- `ChatFrame_DisplaySystemMessageInCurrent`: function
+- `ChatFrame_DisplaySystemMessageInPrimary`: function
+- `ChatFrame_DisplayTimePlayed`: function
+- `ChatFrame_DisplayUsageError`: function
+- `ChatFrame_ExcludePrivateMessageTarget`: function
+- `ChatFrame_GetChatFocusOverride`: function
+- `ChatFrame_GetCommunitiesChannelLocalID`: function
+- `ChatFrame_GetCommunityAndStreamFromChannel`: function
+- `ChatFrame_GetCommunityAndStreamName`: function
+- `ChatFrame_GetDefaultChatTarget`: function
+- `ChatFrame_GetFullChannelInfo`: function
+- `ChatFrame_GetMobileEmbeddedTexture`: function
+- `ChatFrame_OpenChat`: function
+- `ChatFrame_ReceiveAllPrivateMessages`: function
+- `ChatFrame_RegisterForChannels`: function
+- `ChatFrame_RegisterForMessages`: function
+- `ChatFrame_RemoveAllChannels`: function
+- `ChatFrame_RemoveAllMessageGroups`: function
+- `ChatFrame_RemoveChannel`: function
+- `ChatFrame_RemoveCommunitiesChannel`: function
+- `ChatFrame_RemoveExcludePrivateMessageTarget`: function
+- `ChatFrame_RemoveMessageEventFilter`: function
+- `ChatFrame_RemoveMessageGroup`: function
+- `ChatFrame_RemovePrivateMessageTarget`: function
+- `ChatFrame_ReplyTell`: function
+- `ChatFrame_ReplyTell2`: function
+- `ChatFrame_ResolveChannelName`: function
+- `ChatFrame_ResolvePrefixedChannelName`: function
+- `ChatFrame_ScrollDown`: function
+- `ChatFrame_ScrollToBottom`: function
+- `ChatFrame_ScrollUp`: function
+- `ChatFrame_SendTell`: function
+- `ChatFrame_SendTellWithMessage`: function
+- `ChatFrame_SetChatFocusOverride`: function
+- `ChatFrame_TimeBreakDown`: function
+- `ChatFrame_TruncateToMaxLength`: function
+- `ChatFrame_UnregisterAllMessageGroups`: function
+- `ChatFrame_UpdateChatFrames`: function
+- `ChatFrame_UpdateColorByID`: function
+- `ChatFrame_UpdateDefaultChatTarget`: function
+- `Chat_AddSystemMessage`: function
+- `Chat_GetChannelColor`: function
+- `Chat_GetChannelShortcutName`: function
+- `Chat_GetChatCategory`: function
+- `Chat_GetChatFrame`: function
+- `Chat_GetColoredChatName`: function
+- `Chat_GetCommunitiesChannel`: function
+- `Chat_GetCommunitiesChannelColor`: function
+- `Chat_GetCommunitiesChannelName`: function
+- `Chat_ShouldColorChatByClass`: function
+- `CheckInbox`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `Clamp`: function; used in `Blizzard_AccountStore/Blizzard_AccountStoreItemDisplay.lua`
+- `ClearAchievementComparisonUnit`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `ClearAchievementSearchString`: function
+- `ClearAllLFGDungeons`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `ClearAutoAcceptQuestSound`: function
+- `ClearBattlemaster`: function; used in `Blizzard_PVPUI/Mainline/Blizzard_PVPUI.lua`
+- `ClearFailedPVPTalentIDs`: function
+- `ClearFailedTalentIDs`: function
+- `ClearInspectPlayer`: function; used in `Blizzard_InspectUI/Camelot/Blizzard_InspectUI.lua`
+- `ClearOverrideBindings`: function; used in `Blizzard_RestrictedAddOnEnvironment/RestrictedFrames.lua`
+- `ClearPartyAssignment`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `ClearSendMail`: function
+- `ClearTutorials`: function
+- `ClickSendMailItemButton`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `ClickTargetTradeButton`: function
+- `ClickTradeButton`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `ClickWorldMapActionButton`: function; used in `Blizzard_UIPanels_Game/Mainline/WorldMapActionButton.lua`
+- `CloseGuildBankFrame`: function; used in `Blizzard_GuildBankUI/Blizzard_GuildBankUI_Bootstrap.lua`
+- `CloseGuildRegistrar`: function
+- `CloseGuildRoster`: function
+- `CloseItemText`: function; used in `Blizzard_UIPanels_Game/Mainline/ItemTextFrame.lua`
+- `CloseLoot`: function; used in `Blizzard_UIPanels_Game/Mainline/LootFrame.lua`
+- `CloseMail`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `CloseMerchant`: function; used in `Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua`
+- `ClosePetition`: function
+- `CloseQuest`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `CloseResearch`: function; used in `Blizzard_ArchaeologyUI/Blizzard_ArchaeologyUI.lua`
+- `CloseTabardCreation`: function; used in `Blizzard_UIPanels_Game/Mainline/TabardFrame.lua`
+- `CloseTaxiMap`: function; used in `Blizzard_FlightMap/Blizzard_FlightMap.lua`
+- `CloseTrade`: function; used in `Blizzard_UIPanels_Game/Mainline/TradeFrame.lua`
+- `CloseTrainer`: function; used in `Blizzard_TrainerUI/Blizzard_TrainerUI_Bootstrap.lua`
+- `CollapseGuildTradeSkillHeader`: function
+- `CollapseQuestHeader`: function; used in `Blizzard_UIPanels_Game/Cata/QuestLogFrame.lua`
+- `CollapseWarGameHeader`: function; used in `Blizzard_UIPanels_Game/Cata/PVPFrame.lua`
+- `CombatLogClearEntries`: function
+- `CombatLogGetRetentionTime`: function
+- `CombatLogSetRetentionTime`: function
+- `CombatLog_Color_HighlightColorArray`: function
+- `CombatLog_Object_IsA`: function
+- `CombatLog_String_DamageResultString`: function
+- `CombatLog_String_GetIcon`: function
+- `CombatLog_String_PowerType`: function
+- `CombatLog_String_SchoolString`: function
+- `CombatTextSetActiveUnit`: function
+- `CompactUnitFrame_GetHealthValues`: function
+- `CompleteLFGReadyCheck`: function
+- `CompleteLFGRoleCheck`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `CompleteQuest`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `ConfirmAcceptQuest`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `ConfirmBNRequestInviteFriend`: function; used in `Blizzard_FrameXML/QuestSession.lua`
+- `ConfirmLootRoll`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `ConfirmLootSlot`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `ContainerFrameUtil_ConvertFilterFlagsToList`: function
+- `ContainerFrameUtil_EnumerateBagFrames`: function
+- `ContainerFrameUtil_EnumerateBagGearFilters`: function
+- `ContainerFrameUtil_EnumerateContainerFrames`: function
+- `CountTable`: function
+- `CreateActorPool`: function; used in `Blizzard_SharedXML/ModelSceneMixin.lua`
+- `CreateFont`: function; used in `Blizzard_SharedXML/FontableFrameMixin.lua`
+- `CreateFontStringPool`: function; used in `Blizzard_CombatText/Shared/CombatText.lua`
+- `CreateFontStringPoolCollection`: function; used in `Blizzard_OrderHallUI/Blizzard_OrderHallTalents.lua`
+- `CreateFrame`: function; used in `Blizzard_AccountStore/Blizzard_AccountStoreItemDisplay.lua`
+- `CreateFramePool`: function; used in `Blizzard_AccountStore/Blizzard_AccountStoreItemRack.lua`
+- `CreateFramePoolCollection`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `CreateMacro`: function; used in `Blizzard_MacroUI/Blizzard_MacroIconSelector.lua`
+- `CreateMaskTexturePool`: function
+- `CreateNewRaidProfile`: function
+- `CreateObjectPool`: function; used in `Blizzard_EditMode/Shared/EditModeUtil.lua`
+- `CreateTexturePool`: function; used in `Blizzard_AdventureMap/Blizzard_AdventureMapInset.lua`
+## D
+
+- `DeathRecap_GetEvents`: function
+- `DeathRecap_HasEvents`: function
+- `DeclineChannelInvite`: function; used in `Blizzard_Game/Shared/EventImplementation.lua`
+- `DeclineGroup`: function; used in `Blizzard_FrameXML/QuestSession.lua`
+- `DeclineQuest`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `DeclineSpellConfirmationPrompt`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `DeleteGMTicket`: function
+- `DeleteInboxItem`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `DeleteMacro`: function; used in `Blizzard_MacroUI/Blizzard_MacroUI.lua`
+- `DeleteRaidProfile`: function
+- `DepositGuildBankMoney`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `DescendStop`: function; used in `Blizzard_GamepadActionBars/MainActionBarFrame.lua`
+- `DetectWowMouse`: function
+- `DismissCompanion`: function
+- `DisplayChannelOwner`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `DoMasterLootRoll`: function; used in `Blizzard_UIPanels_Game/Mainline/GroupLootFrame.lua`
+- `DoesTemplateExist`: function
+- `DungeonAppearsInRandomLFD`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+## E
+
+- `EJ_ClearSearch`: function
+- `EJ_EndSearch`: function
+- `EJ_GetContentTuningID`: function
+- `EJ_GetCreatureInfo`: function
+- `EJ_GetCurrentTier`: function
+- `EJ_GetDifficulty`: function
+- `EJ_GetEncounterInfo`: function
+- `EJ_GetEncounterInfoByIndex`: function
+- `EJ_GetInstanceByIndex`: function
+- `EJ_GetInstanceForMap`: function
+- `EJ_GetInstanceInfo`: function
+- `EJ_GetInvTypeSortOrder`: function
+- `EJ_GetLootFilter`: function
+- `EJ_GetMapEncounter`: function
+- `EJ_GetNumEncountersForLootByIndex`: function
+- `EJ_GetNumLoot`: function
+- `EJ_GetNumSearchResults`: function
+- `EJ_GetNumTiers`: function
+- `EJ_GetSearchProgress`: function
+- `EJ_GetSearchResult`: function
+- `EJ_GetSearchSize`: function
+- `EJ_GetSectionPath`: function
+- `EJ_GetTierInfo`: function
+- `EJ_HandleLinkPath`: function
+- `EJ_InstanceIsRaid`: function
+- `EJ_IsLootListOutOfDate`: function
+- `EJ_IsSearchFinished`: function
+- `EJ_IsValidInstanceDifficulty`: function
+- `EJ_ResetLootFilter`: function
+- `EJ_SelectEncounter`: function
+- `EJ_SelectInstance`: function
+- `EJ_SelectTier`: function
+- `EJ_SetDifficulty`: function
+- `EJ_SetLootFilter`: function
+- `EJ_SetSearch`: function
+- `EditMacro`: function; used in `Blizzard_MacroUI/Blizzard_MacroIconSelector.lua`
+- `EnumerateFrames`: function
+- `EnumerateServerChannels`: function
+- `ExpandGuildTradeSkillHeader`: function
+- `ExpandQuestHeader`: function; used in `Blizzard_UIPanels_Game/Cata/QuestLogFrame.lua`
+- `ExpandWarGameHeader`: function; used in `Blizzard_UIPanels_Game/Cata/PVPFrame.lua`
+## F
+
+- `FindSpellBookSlotBySpellID`: function
+- `FlagTutorial`: function; used in `Blizzard_FrameXML/Mainline/TutorialFrame.lua`
+- `FlipCameraYaw`: function; used in `Blizzard_GamepadTargeting/TargetLogic.lua`
+- `FlyoutHasSpell`: function; used in `Blizzard_ActionBar/Shared/ActionButton.lua`
+- `ForfeitDuel`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+## G
+
+- `GMEuropaBugsEnabled`: function
+- `GMEuropaComplaintsEnabled`: function
+- `GMEuropaSuggestionsEnabled`: function
+- `GMEuropaTicketsEnabled`: function
+- `GMItemRestorationButtonEnabled`: function
+- `GMQuickTicketSystemEnabled`: function
+- `GMQuickTicketSystemThrottled`: function
+- `GMReportLag`: function
+- `GMRequestPlayerInfo`: function
+- `GMResponseResolve`: function
+- `GMSurveyAnswer`: function
+- `GMSurveyAnswerSubmit`: function
+- `GMSurveyCommentSubmit`: function
+- `GMSurveyNumAnswers`: function
+- `GMSurveyQuestion`: function
+- `GMSurveySubmit`: function
+- `GetAchievementCategory`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `GetAchievementComparisonInfo`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `GetAchievementCriteriaInfo`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `GetAchievementCriteriaInfoByID`: function
+- `GetAchievementGuildRep`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `GetAchievementInfo`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `GetAchievementLink`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `GetAchievementNumCriteria`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `GetAchievementNumRewards`: function
+- `GetAchievementReward`: function
+- `GetAchievementSearchProgress`: function; used in `Blizzard_AchievementUI/Mainline/Blizzard_AchievementUI.lua`
+- `GetAchievementSearchSize`: function; used in `Blizzard_AchievementUI/Mainline/Blizzard_AchievementUI.lua`
+- `GetActionBarToggles`: function; used in `Blizzard_SettingsDefinitions_Frame/ActionBars.lua`
+- `GetActionInfo`: function; used in `Blizzard_ActionBar/Mainline/AssistedCombatManager.lua`
+- `GetActiveArtifactByRace`: function
+- `GetActiveLevel`: function
+- `GetActiveLootRollIDs`: function; used in `Blizzard_Game/Vanilla/EventImplementation.lua`
+- `GetActiveQuestID`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `GetActiveTitle`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `GetAlternativeDefaultLanguage`: function; used in `Blizzard_ChatFrameBase/Mainline/ChatFrameOverrides.lua`
+- `GetArchaeologyInfo`: function; used in `Blizzard_ArchaeologyUI/Blizzard_ArchaeologyUI.lua`
+- `GetArchaeologyRaceInfo`: function; used in `Blizzard_ArchaeologyUI/Blizzard_ArchaeologyUI.lua`
+- `GetArchaeologyRaceInfoByID`: function; used in `Blizzard_FrameXML/ArchaeologyProgressBar.lua`
+- `GetArenaOpponentSpec`: function; used in `Blizzard_Deprecated_ArenaUI/Deprecated_ArenaUI.lua`
+- `GetArtifactInfoByRace`: function; used in `Blizzard_ArchaeologyUI/Blizzard_ArchaeologyUI.lua`
+- `GetArtifactProgress`: function; used in `Blizzard_ArchaeologyUI/Blizzard_ArchaeologyUI.lua`
+- `GetAutoQuestPopUp`: function; used in `Blizzard_ObjectiveTracker/Blizzard_AutoQuestPopUpTracker.lua`
+- `GetAvailableLevel`: function
+- `GetAvailableQuestInfo`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `GetAvailableTitle`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `GetAverageItemLevel`: function; used in `Blizzard_GroupFinder/Mainline/LFGList.lua`
+- `GetBattlefieldArenaFaction`: function; used in `Blizzard_FrameXML/Timer.lua`
+- `GetBattlefieldEstimatedWaitTime`: function; used in `Blizzard_QueueStatusFrame/Mainline/QueueStatusFrame.lua`
+- `GetBattlefieldInstanceExpiration`: function; used in `Blizzard_LFGUtil/Mainline/PVPHelper.lua`
+- `GetBattlefieldInstanceRunTime`: function
+- `GetBattlefieldMapIconScale`: function
+- `GetBattlefieldPortExpiration`: function; used in `Blizzard_UIPanels_Game/Cata/PVPFrame.lua`
+- `GetBattlefieldStatus`: function; used in `Blizzard_FrameXMLUtil/PVPUtil.lua`
+- `GetBattlefieldTeamInfo`: function
+- `GetBattlefieldTimeWaited`: function; used in `Blizzard_QueueStatusFrame/Mainline/QueueStatusFrame.lua`
+- `GetBattlefieldWinner`: function; used in `Blizzard_ChatFrame/Mainline/BattlegroundChatFilters.lua`
+- `GetBattlegroundPoints`: function
+- `GetBestFlexRaidChoice`: function
+- `GetBestRFChoice`: function; used in `Blizzard_GroupFinder/Shared/RaidFinder.lua`
+- `GetBinding`: function; used in `Blizzard_PTRFeedback/Blizzard_PTRFeedback.lua`
+- `GetBindingAction`: function; used in `Blizzard_FrameXML/Mainline/CoinPickupFrame.lua`
+- `GetBindingFromClick`: function; used in `Blizzard_BarbershopUI/Mainline/Blizzard_BarberShopUI.lua`
+- `GetBindingKey`: function; used in `Blizzard_ActionBar/Shared/ActionButton.lua`
+- `GetBindingText`: function; used in `Blizzard_ActionBar/Shared/ActionButton.lua`
+- `GetButtonMetatable`: function; used in `Blizzard_RestrictedAddOnEnvironment/RestrictedFrames.lua`
+- `GetBuybackItemInfo`: function; used in `Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua`
+- `GetBuybackItemLink`: function; used in `Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua`
+- `GetCallPetSpellInfo`: function; used in `Blizzard_ActionBar/Shared/SpellFlyout.lua`
+- `GetCameraZoom`: function
+- `GetCategoryAchievementPoints`: function; used in `Blizzard_Collections/Classic/Blizzard_PetCollection.lua`
+- `GetCategoryInfo`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `GetCategoryList`: function; used in `Blizzard_AchievementUI/Mainline/Blizzard_AchievementUI.lua`
+- `GetCategoryNumAchievements`: function; used in `Blizzard_AchievementUI/Mainline/Blizzard_AchievementUI.lua`
+- `GetChannelDisplayInfo`: function; used in `Blizzard_Channels/Classic/ChannelFrame.lua`
+- `GetChannelList`: function; used in `Blizzard_ChatFrame/Mainline/ChatConfigFrame.lua`
+- `GetChannelName`: function; used in `Blizzard_AchievementUI/Mainline/Blizzard_AchievementUI.lua`
+- `GetChatTimestampFormat`: function
+- `GetChatTypeIndex`: function; used in `Blizzard_ChatFrameBase/Shared/ChatTypeInfoColors.lua`
+- `GetChatWindowChannels`: function; used in `Blizzard_ChatFrameBase/Mainline/ChatFrameOverrides.lua`
+- `GetChatWindowInfo`: function; used in `Blizzard_ChatFrameBase/Mainline/FloatingChatFrame.lua`
+- `GetChatWindowMessages`: function; used in `Blizzard_ChatFrameBase/Mainline/ChatFrameOverrides.lua`
+- `GetChatWindowSavedDimensions`: function; used in `Blizzard_ChatFrameBase/Mainline/FloatingChatFrame.lua`
+- `GetChatWindowSavedPosition`: function; used in `Blizzard_ChatFrameBase/Mainline/FloatingChatFrame.lua`
+- `GetClassInfo`: function; used in `Blizzard_ClassMenu/Blizzard_ClassMenu.lua`
+- `GetClickFrame`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `GetCompanionInfo`: function; used in `Blizzard_DelvesCompanionConfiguration/Blizzard_DelvesCompanionConfiguration.lua`
+- `GetComparisonAchievementPoints`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `GetComparisonCategoryNumAchievements`: function; used in `Blizzard_AchievementUI/Mainline/Blizzard_AchievementUI.lua`
+- `GetComparisonStatistic`: function; used in `Blizzard_AchievementUI/Mainline/Blizzard_AchievementUI.lua`
+- `GetCriteriaSpell`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestInfo.lua`
+- `GetCurrentArenaSeason`: function; used in `Blizzard_InspectUI/Camelot/InspectPVPFrame.lua`
+- `GetCurrentBindingSet`: function; used in `Blizzard_ClickBindingUI/Blizzard_ClickBindingUI.lua`
+- `GetCurrentCombatTextEventInfo`: function
+- `GetCurrentEnvironment`: function; used in `Blizzard_CatalogShopRefundFlow/Blizzard_CatalogShopRefundFlow_Outbound.lua`
+- `GetCurrentGlyphNameForSpell`: function; used in `Blizzard_ActionBar/Shared/SpellFlyout.lua`
+- `GetCurrentGraphicsAPI`: function; used in `Blizzard_SettingsDefinitions_Shared/Graphics.lua`
+- `GetCurrentGraphicsSetting`: function
+- `GetCurrentGuildBankTab`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `GetCurrentKeyBoardFocus`: function; used in `Blizzard_Game/Mainline/EventImplementation.lua`
+- `GetCurrentLevelFeatures`: function
+- `GetCurrentScaledResolution`: function
+- `GetDailyQuestsCompleted`: function
+- `GetDeathRecapLink`: function
+- `GetDefaultLanguage`: function; used in `Blizzard_ChatFrameBase/Mainline/ChatFrameEditBoxOverrides.lua`
+- `GetDemotionRank`: function
+- `GetDungeonForRandomSlot`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `GetEditBoxMetatable`: function; used in `Blizzard_SharedXML/Shared/InputBox/InputBoxTemplates.lua`
+- `GetEquipmentNameFromSpell`: function; used in `Blizzard_GarrisonTemplates/Blizzard_GarrisonSharedTemplates.lua`
+- `GetFailedPVPTalentIDs`: function
+- `GetFailedTalentIDs`: function
+- `GetFilteredAchievementID`: function; used in `Blizzard_AchievementUI/Mainline/Blizzard_AchievementUI.lua`
+- `GetFlexRaidDungeonInfo`: function
+- `GetFlyoutID`: function
+- `GetFlyoutInfo`: function; used in `Blizzard_ActionBar/Shared/SpellFlyout.lua`
+- `GetFlyoutSlotInfo`: function; used in `Blizzard_ActionBar/Shared/SpellFlyout.lua`
+- `GetFollowerTypeIDFromSpell`: function; used in `Blizzard_Game/Mainline/EventImplementation.lua`
+- `GetFontStringMetatable`: function; used in `Blizzard_SharedXML/SecureUtil.lua`
+- `GetFrameMetatable`: function; used in `Blizzard_FrameXML/SecureTemplates.lua`
+- `GetFramesRegisteredForEvent`: function
+- `GetGMStatus`: function; used in `Blizzard_HelpFrame/HelpFrame.lua`
+- `GetGMTicket`: function
+- `GetGlobalEnvironment`: function; used in `Blizzard_AuraContainer/Blizzard_AuraContainerShared.lua`
+- `GetGraphicsAPIs`: function; used in `Blizzard_SettingsDefinitions_Shared/Graphics.lua`
+- `GetGraphicsCVarValueForQualityLevel`: function; used in `Blizzard_SettingsDefinitions_Shared/Graphics.lua`
+- `GetGreetingText`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `GetGroupMemberCounts`: function; used in `Blizzard_FrameXMLUtil/PartyUtil.lua`
+- `GetGuildAchievementMemberInfo`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `GetGuildAchievementMembers`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `GetGuildAchievementNumMembers`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `GetGuildBankBonusDepositMoney`: function
+- `GetGuildBankItemInfo`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `GetGuildBankItemLink`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `GetGuildBankMoney`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `GetGuildBankMoneyTransaction`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `GetGuildBankTabCost`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `GetGuildBankTabInfo`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `GetGuildBankTabPermissions`: function; used in `Blizzard_GuildControlUI/Blizzard_GuildControlUI.lua`
+- `GetGuildBankText`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `GetGuildBankTransaction`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `GetGuildBankWithdrawGoldLimit`: function; used in `Blizzard_GuildControlUI/Blizzard_GuildControlUI.lua`
+- `GetGuildBankWithdrawMoney`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `GetGuildCategoryList`: function; used in `Blizzard_AchievementUI/Mainline/Blizzard_AchievementUI.lua`
+- `GetGuildChallengeInfo`: function; used in `Blizzard_Communities/GuildInfo.lua`
+- `GetGuildCharterCost`: function; used in `Blizzard_UIPanels_Game/Mainline/GuildRegistrarFrame.lua`
+- `GetGuildEventInfo`: function; used in `Blizzard_Communities/GuildInfo.lua`
+- `GetGuildFactionGroup`: function; used in `Blizzard_Communities/GuildNews.lua`
+- `GetGuildInfo`: function; used in `Blizzard_FrameXML/InstanceDifficulty.lua`
+- `GetGuildInfoText`: function
+- `GetGuildLogoInfo`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `GetGuildMemberRecipes`: function
+- `GetGuildNewsFilters`: function; used in `Blizzard_Communities/GuildNews.lua`
+- `GetGuildNewsMemberName`: function
+- `GetGuildNewsSort`: function
+- `GetGuildPerkInfo`: function; used in `Blizzard_Communities/GuildPerks.lua`
+- `GetGuildRecipeInfoPostQuery`: function; used in `Blizzard_Professions/Blizzard_ProfessionsGuildMemberList.lua`
+- `GetGuildRecipeMember`: function; used in `Blizzard_Professions/Blizzard_ProfessionsGuildMemberList.lua`
+- `GetGuildRenameRequired`: function; used in `Blizzard_Communities/CommunitiesFrame.lua`
+- `GetGuildRewardInfo`: function; used in `Blizzard_Communities/GuildRewards.lua`
+- `GetGuildRosterInfo`: function
+- `GetGuildRosterLargestAchievementPoints`: function
+- `GetGuildRosterLastOnline`: function
+- `GetGuildRosterMOTD`: function
+- `GetGuildRosterSelection`: function
+- `GetGuildRosterShowOffline`: function
+- `GetGuildTabardFiles`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `GetGuildTradeSkillInfo`: function
+- `GetHomePartyInfo`: function
+- `GetInboxHeaderInfo`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `GetInboxInvoiceInfo`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `GetInboxItem`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `GetInboxItemLink`: function
+- `GetInboxNumItems`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `GetInboxText`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `GetInspectArenaData`: function; used in `Blizzard_InspectUI/Mainline/InspectPVPFrame.lua`
+- `GetInspectHonorData`: function; used in `Blizzard_InspectUI/Camelot/InspectPVPFrame.lua`
+- `GetInspectSpecialization`: function
+- `GetInspectTalent`: function
+- `GetInventoryAlertStatus`: function; used in `Blizzard_DurabilityFrame/DurabilityFrame.lua`
+- `GetInventoryItemBroken`: function; used in `Blizzard_UIPanels_Game/Camelot/PaperDollFrame.lua`
+- `GetInventoryItemCooldown`: function; used in `Blizzard_CooldownViewer/CooldownViewer.lua`
+- `GetInventoryItemCount`: function; used in `Blizzard_FrameXML/Mainline/EquipmentManager.lua`
+- `GetInventoryItemDurability`: function; used in `Blizzard_FrameXML/Mainline/EquipmentManager.lua`
+- `GetInventoryItemEquippedUnusable`: function; used in `Blizzard_UIPanels_Game/Camelot/PaperDollFrame.lua`
+- `GetInventoryItemID`: function; used in `Blizzard_ActionBar/WoWLabs/ActionButtonOverrides.lua`
+- `GetInventoryItemLink`: function; used in `Blizzard_ChatFrameBase/Shared/ChatFrameUtil.lua`
+- `GetInventoryItemQuality`: function; used in `Blizzard_ActionBar/WoWLabs/ActionButtonOverrides.lua`
+- `GetInventoryItemTexture`: function; used in `Blizzard_AuraContainer/Blizzard_AuraContainerUtil.lua`
+- `GetInventoryItemsForSlot`: function; used in `Blizzard_BoostTutorial/Blizzard_TutorialLogic.lua`
+- `GetInventorySlotInfo`: function
+- `GetInviteConfirmationInfo`: function; used in `Blizzard_FrameXML/QuestSession.lua`
+- `GetItemLevelColor`: function; used in `Blizzard_UIPanels_Game/Camelot/PaperDollFrame.lua`
+- `GetJournalInfoForSpellConfirmation`: function; used in `Blizzard_UIPanels_Game/Mainline/GroupLootFrame.lua`
+- `GetKeysArray`: function; used in `Blizzard_AuraContainer/Blizzard_AuraContainer.lua`
+- `GetLFDChoiceCollapseState`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `GetLFDChoiceEnabledState`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `GetLFDChoiceOrder`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `GetLFDLockInfo`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `GetLFDLockPlayerCount`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `GetLFDRoleLockInfo`: function; used in `Blizzard_LFGUtil/Shared/LFGRole.lua`
+- `GetLFDRoleRestrictions`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `GetLFGBootProposal`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `GetLFGCategoryForID`: function; used in `Blizzard_FrameXMLUtil/PartyUtil.lua`
+- `GetLFGCompletionReward`: function; used in `Blizzard_FrameXML/Mainline/AlertFrames.lua`
+- `GetLFGCompletionRewardItem`: function; used in `Blizzard_FrameXML/Mainline/AlertFrames.lua`
+- `GetLFGCompletionRewardItemLink`: function; used in `Blizzard_FrameXML/Mainline/AlertFrames.lua`
+- `GetLFGDeserterExpiration`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `GetLFGDungeonEncounterInfo`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `GetLFGDungeonInfo`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `GetLFGDungeonNumEncounters`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `GetLFGDungeonRewardCapBarInfo`: function
+- `GetLFGDungeonRewardCapInfo`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `GetLFGDungeonRewardInfo`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `GetLFGDungeonRewardLink`: function
+- `GetLFGDungeonRewards`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `GetLFGDungeonShortageRewardInfo`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `GetLFGDungeonShortageRewardLink`: function
+- `GetLFGInfoServer`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `GetLFGInviteRoleAvailability`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `GetLFGInviteRoleRestrictions`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `GetLFGProposal`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `GetLFGProposalEncounter`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `GetLFGProposalMember`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `GetLFGQueueStats`: function; used in `Blizzard_QueueStatusFrame/Mainline/QueueStatusFrame.lua`
+- `GetLFGQueuedList`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `GetLFGRandomCooldownExpiration`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `GetLFGRandomDungeonInfo`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `GetLFGReadyCheckUpdate`: function; used in `Blizzard_GroupFinder/Shared/LFGReadyCheck.lua`
+- `GetLFGReadyCheckUpdateBattlegroundInfo`: function; used in `Blizzard_GroupFinder/Shared/LFGReadyCheck.lua`
+- `GetLFGRoleShortageRewards`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `GetLFGRoleUpdate`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `GetLFGRoleUpdateBattlegroundInfo`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `GetLFGRoleUpdateMember`: function
+- `GetLFGRoleUpdateSlot`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `GetLFGRoles`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `GetLFGSuspendedPlayers`: function; used in `Blizzard_QueueStatusFrame/Mainline/QueueStatusFrame.lua`
+- `GetLFRChoiceOrder`: function
+- `GetLanguageByIndex`: function; used in `Blizzard_ChatFrameBase/Mainline/ChatFrameMenuButton.lua`
+- `GetLatestCompletedAchievements`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `GetLatestCompletedComparisonAchievements`: function
+- `GetLatestThreeSenders`: function; used in `Blizzard_Minimap/Mainline/Minimap.lua`
+- `GetLatestUpdatedComparisonStats`: function
+- `GetLatestUpdatedStats`: function
+- `GetLooseMacroIcons`: function; used in `Blizzard_FrameXMLBase/IconDataProvider.lua`
+- `GetLooseMacroItemIcons`: function; used in `Blizzard_FrameXMLBase/IconDataProvider.lua`
+- `GetLootInfo`: function
+- `GetLootRollItemInfo`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `GetLootRollItemLink`: function
+- `GetLootRollTimeLeft`: function; used in `Blizzard_Game/Vanilla/EventImplementation.lua`
+- `GetLootSlotInfo`: function; used in `Blizzard_Game/Classic/EventImplementation.lua`
+- `GetLootSlotLink`: function; used in `Blizzard_UIPanels_Game/Mainline/LootFrame.lua`
+- `GetLootSlotType`: function; used in `Blizzard_UIPanels_Game/Mainline/LootFrame.lua`
+- `GetLootSourceInfo`: function
+- `GetLootThreshold`: function; used in `Blizzard_UnitPopupShared/UnitPopupSharedButtonMixins.lua`
+- `GetMacroBody`: function
+- `GetMacroIcons`: function; used in `Blizzard_FrameXMLBase/IconDataProvider.lua`
+- `GetMacroIndexByName`: function
+- `GetMacroInfo`: function; used in `Blizzard_ClickBindingUI/Blizzard_ClickBindingUI.lua`
+- `GetMacroItem`: function
+- `GetMacroItemIcons`: function; used in `Blizzard_FrameXMLBase/IconDataProvider.lua`
+- `GetMacroSpell`: function; used in `Blizzard_ActionBar/WoWLabs/ActionButtonOverrides.lua`
+- `GetMasterLootCandidate`: function; used in `Blizzard_UIPanels_Game/Mainline/GroupLootFrame.lua`
+- `GetMaxBattlefieldID`: function; used in `Blizzard_FrameXMLUtil/PVPUtil.lua`
+- `GetMaxNumCUFProfiles`: function
+- `GetMaxRenderScale`: function; used in `Blizzard_SettingsDefinitions_Shared/Graphics.lua`
+- `GetMaxRewardCurrencies`: function; used in `Blizzard_UIPanels_Game/Vanilla/QuestInfo.lua`
+- `GetMaxSpellStartRecoveryOffset`: function
+- `GetMaxTalentTier`: function
+- `GetMerchantFilter`: function; used in `Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua`
+- `GetMerchantItemCostInfo`: function; used in `Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua`
+- `GetMerchantItemCostItem`: function; used in `Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua`
+- `GetMerchantItemID`: function; used in `Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua`
+- `GetMerchantItemLink`: function; used in `Blizzard_ActionBar/WoWLabs/ActionButtonOverrides.lua`
+- `GetMerchantItemMaxStack`: function; used in `Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua`
+- `GetMerchantNumItems`: function; used in `Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua`
+- `GetMinRenderScale`: function; used in `Blizzard_SettingsDefinitions_Shared/Graphics.lua`
+- `GetModifiedClick`: function; used in `Blizzard_ClickBindingUI/Blizzard_ClickBindingUI.lua`
+- `GetModifiedClickAction`: function
+- `GetMonitorAspectRatio`: function
+- `GetMonitorCount`: function; used in `Blizzard_SettingsDefinitions_Shared/Graphics.lua`
+- `GetMonitorName`: function; used in `Blizzard_SettingsDefinitions_Shared/Graphics.lua`
+- `GetMultiCastTotemSpells`: function; used in `Blizzard_ActionBar/Shared/MultiCastActionBarFrame.lua`
+- `GetNextAchievement`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `GetNextCompleatedTutorial`: function; used in `Blizzard_FrameXML/Mainline/TutorialFrame.lua`
+- `GetNextPendingInviteConfirmation`: function; used in `Blizzard_LFGUtil/Mainline/LFGUtil.lua`
+- `GetNumActiveQuests`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `GetNumArchaeologyRaces`: function; used in `Blizzard_ArchaeologyUI/Blizzard_ArchaeologyUI.lua`
+- `GetNumArenaOpponentSpecs`: function; used in `Blizzard_Deprecated_ArenaUI/Deprecated_ArenaUI.lua`
+- `GetNumArenaOpponents`: function; used in `Blizzard_UnitFrame/Mainline/CompactArenaFrame.lua`
+- `GetNumArtifactsByRace`: function; used in `Blizzard_ArchaeologyUI/Blizzard_ArchaeologyUI.lua`
+- `GetNumAutoQuestPopUps`: function; used in `Blizzard_ObjectiveTracker/Blizzard_AutoQuestPopUpTracker.lua`
+- `GetNumAvailableQuests`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `GetNumBattlefieldFlagPositions`: function; used in `Blizzard_SharedMapDataProviders/BattlefieldFlagDataProvider.lua`
+- `GetNumBattlefieldScores`: function; used in `Blizzard_PVPMatch/PVPMatchUtil.lua`
+- `GetNumBattlefieldVehicles`: function
+- `GetNumBattlegroundTypes`: function; used in `Blizzard_PVPUI/Mainline/Blizzard_PVPUI.lua`
+- `GetNumBindings`: function; used in `Blizzard_PTRFeedback/Blizzard_PTRFeedback.lua`
+- `GetNumBuybackItems`: function; used in `Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua`
+- `GetNumChannelMembers`: function
+- `GetNumClasses`: function; used in `Blizzard_Collections/Classic/Blizzard_HeirloomCollection.lua`
+- `GetNumCompanions`: function
+- `GetNumComparisonCompletedAchievements`: function
+- `GetNumCompletedAchievements`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `GetNumDisplayChannels`: function; used in `Blizzard_Channels/Classic/ChannelList.lua`
+- `GetNumDungeonForRandomSlot`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `GetNumFilteredAchievements`: function; used in `Blizzard_AchievementUI/Mainline/Blizzard_AchievementUI.lua`
+- `GetNumFlexRaidDungeons`: function
+- `GetNumFlyouts`: function
+- `GetNumGroupChannels`: function; used in `Blizzard_Channels/Classic/ChannelList.lua`
+- `GetNumGroupMembers`: function; used in `Blizzard_Calendar/Mainline/Blizzard_Calendar.lua`
+- `GetNumGuildBankMoneyTransactions`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `GetNumGuildBankTabs`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `GetNumGuildBankTransactions`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `GetNumGuildChallenges`: function; used in `Blizzard_Communities/GuildInfo.lua`
+- `GetNumGuildEvents`: function; used in `Blizzard_Communities/GuildInfo.lua`
+- `GetNumGuildMembers`: function; used in `Blizzard_Calendar/Mainline/Blizzard_Calendar.lua`
+- `GetNumGuildNews`: function; used in `Blizzard_Communities/GuildNews.lua`
+- `GetNumGuildPerks`: function; used in `Blizzard_Communities/CommunitiesFrame.lua`
+- `GetNumGuildRewards`: function; used in `Blizzard_Communities/GuildRewards.lua`
+- `GetNumGuildTradeSkill`: function
+- `GetNumLanguages`: function; used in `Blizzard_ChatFrameBase/Mainline/ChatFrameMenuButton.lua`
+- `GetNumLootItems`: function; used in `Blizzard_UIPanels_Game/Mainline/LootFrame.lua`
+- `GetNumMacros`: function; used in `Blizzard_MacroUI/Blizzard_MacroIconSelector.lua`
+- `GetNumMembersInRank`: function; used in `Blizzard_GuildControlUI/Blizzard_GuildControlUI.lua`
+- `GetNumModifiedClickActions`: function
+- `GetNumPetitionNames`: function; used in `Blizzard_UIPanels_Game/Mainline/PetitionFrame.lua`
+- `GetNumQuestChoices`: function; used in `Blizzard_BoostTutorial/Blizzard_TutorialLogic.lua`
+- `GetNumQuestCurrencies`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `GetNumQuestItemDrops`: function; used in `Blizzard_SharedMapDataProviders/QuestDataProvider.lua`
+- `GetNumQuestItems`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `GetNumQuestLeaderBoards`: function; used in `Blizzard_ObjectiveTracker/Blizzard_QuestObjectiveTracker.lua`
+- `GetNumQuestLogChoices`: function; used in `Blizzard_BoostTutorial/Blizzard_TutorialLogic.lua`
+- `GetNumQuestLogRewardFactions`: function
+- `GetNumQuestLogRewards`: function; used in `Blizzard_AdventureMap/AM_QuestDialog.lua`
+- `GetNumQuestLogTasks`: function
+- `GetNumQuestRewards`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestInfo.lua`
+- `GetNumRFDungeons`: function; used in `Blizzard_GroupFinder/Shared/RaidFinder.lua`
+- `GetNumRaidProfiles`: function
+- `GetNumRandomDungeons`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `GetNumRandomScenarios`: function; used in `Blizzard_GroupFinder/Shared/ScenarioFinder_Shared.lua`
+- `GetNumRoutes`: function; used in `Blizzard_FlightMap/FM_FlightPathDataProvider.lua`
+- `GetNumSavedInstances`: function; used in `Blizzard_ChatFrameBase/Mainline/ChatFrameOverrides.lua`
+- `GetNumSavedWorldBosses`: function; used in `Blizzard_ChatFrameBase/Mainline/ChatFrameOverrides.lua`
+- `GetNumScenarios`: function
+- `GetNumShapeshiftForms`: function; used in `Blizzard_ActionBar/Mainline/AssistedCombatManager.lua`
+- `GetNumSpecGroups`: function; used in `Blizzard_FrameXMLBase/Mainline/IconDataProviderOverrides.lua`
+- `GetNumSpecializations`: function; used in `Blizzard_FrameXML/Mainline/TalentFrameBase.lua`
+- `GetNumSubgroupMembers`: function; used in `Blizzard_CompactRaidFrames/Blizzard_CompactRaidFrameContainer.lua`
+- `GetNumTrainerServices`: function; used in `Blizzard_TrainerUI/Mainline/Blizzard_TrainerUI.lua`
+- `GetNumTreasurePickerItems`: function
+- `GetNumUnspentPvpTalents`: function
+- `GetNumUnspentTalents`: function; used in `Blizzard_FrameXML/Mainline/TalentFrameBase.lua`
+- `GetNumWarGameTypes`: function; used in `Blizzard_UIPanels_Game/Cata/PVPFrame.lua`
+- `GetObjectiveText`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestInfo.lua`
+- `GetOptOutOfLoot`: function; used in `Blizzard_UnitPopupShared/UnitPopupSharedButtonMixins.lua`
+- `GetPVPRoles`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `GetPartyAssignment`: function; used in `Blizzard_FrameXML/SecureTemplates.lua`
+- `GetPartyLFGBackfillInfo`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `GetPartyLFGID`: function; used in `Blizzard_FrameXMLUtil/PartyUtil.lua`
+- `GetPendingGlyphName`: function; used in `Blizzard_ActionBar/Shared/SpellFlyout.lua`
+- `GetPendingInviteConfirmations`: function
+- `GetPersonalRatedInfo`: function; used in `Blizzard_PVPUI/Mainline/Blizzard_PVPUI.lua`
+- `GetPetActionCooldown`: function; used in `Blizzard_ActionBar/Shared/PetActionBar.lua`
+- `GetPetActionInfo`: function; used in `Blizzard_ActionBar/Shared/ActionButtonUtil.lua`
+- `GetPetActionSlotUsable`: function; used in `Blizzard_ActionBar/Shared/PetActionBar.lua`
+- `GetPetActionsUsable`: function
+- `GetPetExperience`: function; used in `Blizzard_StatusTrackingBar/Camelot/PetExpBar.lua`
+- `GetPetIcon`: function; used in `Blizzard_PlayerSpells/Camelot/SpellBook/Blizzard_SpellBookFrame.lua`
+- `GetPetTimeRemaining`: function
+- `GetPetitionInfo`: function; used in `Blizzard_UIPanels_Game/Mainline/PetitionFrame.lua`
+- `GetPetitionNameInfo`: function; used in `Blizzard_UIPanels_Game/Mainline/PetitionFrame.lua`
+- `GetPlayerTradeCurrency`: function
+- `GetPlayerTradeMoney`: function; used in `Blizzard_MoneyFrame/Shared/MoneyFrame.lua`
+- `GetPossessInfo`: function; used in `Blizzard_ActionBar/Shared/ActionButtonUtil.lua`
+- `GetPrevCompleatedTutorial`: function; used in `Blizzard_FrameXML/Mainline/TutorialFrame.lua`
+- `GetPreviousAchievement`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `GetPreviousArenaSeason`: function
+- `GetPrimarySpecialization`: function
+- `GetProfessionInfo`: function; used in `Blizzard_ArchaeologyUI/Blizzard_ArchaeologyUI.lua`
+- `GetProfessions`: function; used in `Blizzard_ArchaeologyUI/Blizzard_ArchaeologyUI.lua`
+- `GetProgressText`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `GetPromotionRank`: function
+- `GetPvpTalentInfoByID`: function; used in `Blizzard_FrameXMLBase/Mainline/IconDataProviderOverrides.lua`
+- `GetPvpTalentInfoBySpecialization`: function
+- `GetPvpTalentLink`: function; used in `Blizzard_FrameXML/Mainline/TalentFrameBase.lua`
+- `GetQuestBackgroundMaterial`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `GetQuestCurrencyID`: function; used in `Blizzard_UIPanels_Game/Vanilla/QuestInfo.lua`
+- `GetQuestExpansion`: function
+- `GetQuestFactionGroup`: function; used in `Blizzard_FrameXMLUtil/Mainline/QuestUtils.lua`
+- `GetQuestID`: function; used in `Blizzard_BoostTutorial/Blizzard_TutorialLogic.lua`
+- `GetQuestItemInfo`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `GetQuestItemInfoLootType`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestInfo.lua`
+- `GetQuestItemLink`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestInfo.lua`
+- `GetQuestLink`: function; used in `Blizzard_ChatFrameBase/Shared/ChatFrameUtil.lua`
+- `GetQuestLogChoiceInfo`: function; used in `Blizzard_BoostTutorial/Blizzard_TutorialLogic.lua`
+- `GetQuestLogChoiceInfoLootType`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestInfo.lua`
+- `GetQuestLogCompletionText`: function; used in `Blizzard_FrameXMLUtil/Mainline/ReputationUtil.lua`
+- `GetQuestLogCriteriaSpell`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestInfo.lua`
+- `GetQuestLogItemDrop`: function; used in `Blizzard_SharedMapDataProviders/QuestDataProvider.lua`
+- `GetQuestLogItemLink`: function; used in `Blizzard_FrameXML/PVPUITemplates.lua`
+- `GetQuestLogLeaderBoard`: function; used in `Blizzard_ObjectiveTracker/Blizzard_QuestObjectiveTracker.lua`
+- `GetQuestLogPortraitTurnIn`: function
+- `GetQuestLogQuestText`: function; used in `Blizzard_GameTooltip/Mainline/GameTooltip.lua`
+- `GetQuestLogQuestType`: function
+- `GetQuestLogRewardArtifactXP`: function; used in `Blizzard_AdventureMap/AM_QuestDialog.lua`
+- `GetQuestLogRewardFactionInfo`: function
+- `GetQuestLogRewardHonor`: function; used in `Blizzard_FrameXMLUtil/Mainline/QuestUtils.lua`
+- `GetQuestLogRewardInfo`: function; used in `Blizzard_AdventureMap/AM_QuestDialog.lua`
+- `GetQuestLogRewardMoney`: function; used in `Blizzard_AdventureMap/AM_QuestDialog.lua`
+- `GetQuestLogRewardSkillPoints`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestInfo.lua`
+- `GetQuestLogRewardTitle`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestInfo.lua`
+- `GetQuestLogRewardXP`: function; used in `Blizzard_AdventureMap/AM_QuestDialog.lua`
+- `GetQuestLogSpecialItemCooldown`: function; used in `Blizzard_ObjectiveTracker/Blizzard_ObjectiveTrackerShared.lua`
+- `GetQuestLogSpecialItemInfo`: function; used in `Blizzard_FrameXMLUtil/Mainline/QuestUtils.lua`
+- `GetQuestLogTimeLeft`: function; used in `Blizzard_UIPanels_Game/Cata/QuestLogFrame.lua`
+- `GetQuestMoneyToGet`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `GetQuestObjectiveInfo`: function; used in `Blizzard_CovenantCallings/CovenantCallings.lua`
+- `GetQuestPOIBlobCount`: function; used in `Blizzard_BoostTutorial/Blizzard_TutorialLogic.lua`
+- `GetQuestPOILeaderBoard`: function; used in `Blizzard_SharedMapDataProviders/QuestBlobDataProvider.lua`
+- `GetQuestPOIs`: function
+- `GetQuestPortraitGiver`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `GetQuestPortraitTurnIn`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `GetQuestProgressBarPercent`: function; used in `Blizzard_ObjectiveTracker/Blizzard_BonusObjectiveTracker.lua`
+- `GetQuestResetTime`: function
+- `GetQuestReward`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `GetQuestSortIndex`: function
+- `GetQuestText`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestInfo.lua`
+- `GetQuestUiMapID`: function; used in `Blizzard_BoostTutorial/Blizzard_TutorialQuestManager.lua`
+- `GetRFDungeonInfo`: function; used in `Blizzard_GroupFinder/Shared/RaidFinder.lua`
+- `GetRaidProfileFlattenedOptions`: function
+- `GetRaidProfileName`: function
+- `GetRaidProfileOption`: function
+- `GetRaidProfileSavedPosition`: function
+- `GetRaidRosterInfo`: function; used in `Blizzard_CompactRaidFrames/Blizzard_CompactRaidFrameContainer.lua`
+- `GetRandomDungeonBestChoice`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `GetRandomScenarioBestChoice`: function; used in `Blizzard_GroupFinder/Shared/ScenarioFinder_Shared.lua`
+- `GetRandomScenarioInfo`: function; used in `Blizzard_GroupFinder/Shared/ScenarioFinder_Shared.lua`
+- `GetRatedBattleGroundInfo`: function; used in `Blizzard_UIPanels_Game/Cata/PVPFrame.lua`
+- `GetReadyCheckStatus`: function; used in `Blizzard_RaidFrame/Mainline/RaidFrameSocialView.lua`
+- `GetReadyCheckTimeLeft`: function; used in `Blizzard_UnitFrame/Shared/CompactUnitFrame.lua`
+- `GetRepairAllCost`: function; used in `Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua`
+- `GetRewardArtifactXP`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestInfo.lua`
+- `GetRewardHonor`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestInfo.lua`
+- `GetRewardMoney`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestInfo.lua`
+- `GetRewardNumSkillUps`: function
+- `GetRewardPackArtifactPower`: function; used in `Blizzard_FrameXML/PVPHonorSystem.lua`
+- `GetRewardPackCurrencies`: function; used in `Blizzard_FrameXML/PVPHonorSystem.lua`
+- `GetRewardPackItems`: function; used in `Blizzard_FrameXML/PVPHonorSystem.lua`
+- `GetRewardPackMoney`: function; used in `Blizzard_FrameXML/PVPHonorSystem.lua`
+- `GetRewardPackTitle`: function; used in `Blizzard_FrameXML/PVPHonorSystem.lua`
+- `GetRewardPackTitleName`: function; used in `Blizzard_FrameXML/PVPHonorSystem.lua`
+- `GetRewardSkillLineID`: function
+- `GetRewardSkillPoints`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestInfo.lua`
+- `GetRewardText`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestInfo.lua`
+- `GetRewardTitle`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestInfo.lua`
+- `GetRewardXP`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestInfo.lua`
+- `GetRunningMacro`: function
+- `GetRunningMacroButton`: function
+- `GetSavedInstanceChatLink`: function; used in `Blizzard_RaidFrame/Mainline/RaidFrame.lua`
+- `GetSavedInstanceEncounterInfo`: function
+- `GetSavedInstanceInfo`: function; used in `Blizzard_GroupFinder_VanillaStyle/Blizzard_LFGVanilla_Listing.lua`
+- `GetSavedWorldBossInfo`: function; used in `Blizzard_RaidFrame/Mainline/RaidFrame.lua`
+- `GetScenariosChoiceOrder`: function; used in `Blizzard_GroupFinder/Mainline/ScenarioFinder.lua`
+- `GetSchoolString`: function
+- `GetSelectedArtifactInfo`: function; used in `Blizzard_ArchaeologyUI/Blizzard_ArchaeologyUI.lua`
+- `GetSelectedDisplayChannel`: function
+- `GetSelectedWarGameType`: function; used in `Blizzard_UIPanels_Game/Cata/PVPFrame.lua`
+- `GetSendMailCOD`: function; used in `Blizzard_MoneyFrame/Shared/MoneyFrame.lua`
+- `GetSendMailItem`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `GetSendMailItemLink`: function
+- `GetSendMailMoney`: function; used in `Blizzard_MoneyFrame/Shared/MoneyFrame.lua`
+- `GetSendMailPrice`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `GetShapeshiftForm`: function; used in `Blizzard_UIPanels_Game/Camelot/PaperDollFrameStats.lua`
+- `GetShapeshiftFormCooldown`: function; used in `Blizzard_ActionBar/Shared/StanceBar.lua`
+- `GetShapeshiftFormID`: function; used in `Blizzard_NewPlayerExperience/Blizzard_TutorialLogic.lua`
+- `GetShapeshiftFormInfo`: function; used in `Blizzard_ActionBar/Shared/ActionButtonUtil.lua`
+- `GetSoundEntryCount`: function; used in `Blizzard_CustomizationUI/Blizzard_CustomizationAudioInterface.lua`
+- `GetSpecializationInfoByID`: function; used in `Blizzard_Communities/ClubFinder.lua`
+- `GetSpecializationRole`: function; used in `Blizzard_SharedXML/UnitUtil.lua`
+- `GetSpecializationRoleByID`: function
+- `GetSpecializationRoleEnum`: function; used in `Blizzard_EncounterJournal/Mainline/Blizzard_EncounterJournal.lua`
+- `GetSpecializationRoleEnumByID`: function; used in `Blizzard_Commentator/Mainline/Blizzard_CommentatorUnitFrame.lua`
+- `GetSpecializationSpells`: function
+- `GetSpecsForSpell`: function
+- `GetSpellBaseCooldown`: function
+- `GetSpellConfirmationPromptsInfo`: function; used in `Blizzard_Game/Mainline/EventImplementation.lua`
+- `GetSpellQueueWindow`: function
+- `GetSpellsForCharacterUpgradeTier`: function
+- `GetStatistic`: function; used in `Blizzard_AchievementUI/Mainline/Blizzard_AchievementUI.lua`
+- `GetStatisticsCategoryList`: function; used in `Blizzard_AchievementUI/Mainline/Blizzard_AchievementUI.lua`
+- `GetSuggestedGroupSize`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestInfo.lua`
+- `GetTabardCreationCost`: function; used in `Blizzard_UIPanels_Game/Mainline/TabardFrame.lua`
+- `GetTabardInfo`: function
+- `GetTalentInfoByID`: function
+- `GetTalentInfoBySpecialization`: function
+- `GetTalentLink`: function
+- `GetTalentTierInfo`: function; used in `Blizzard_FrameXML/Mainline/TalentFrameBase.lua`
+- `GetTargetTradeCurrency`: function
+- `GetTargetTradeMoney`: function; used in `Blizzard_MoneyFrame/Shared/MoneyFrame.lua`
+- `GetTaskInfo`: function; used in `Blizzard_ObjectiveTracker/Blizzard_BonusObjectiveTracker.lua`
+- `GetTaskPOIs`: function
+- `GetTasksTable`: function; used in `Blizzard_ObjectiveTracker/Blizzard_BonusObjectiveTracker.lua`
+- `GetTaxiMapID`: function; used in `Blizzard_FlightMap/Blizzard_FlightMap.lua`
+- `GetText`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `GetTextureMetatable`: function; used in `Blizzard_UnitFrame/Shared/UnitFrameUtil.lua`
+- `GetTitleText`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `GetTotalAchievementPoints`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `GetTradePlayerItemInfo`: function; used in `Blizzard_UIPanels_Game/Mainline/TradeFrame.lua`
+- `GetTradePlayerItemLink`: function; used in `Blizzard_UIPanels_Game/Mainline/TradeFrame.lua`
+- `GetTradeTargetItemInfo`: function; used in `Blizzard_UIPanels_Game/Mainline/TradeFrame.lua`
+- `GetTradeTargetItemLink`: function; used in `Blizzard_UIPanels_Game/Mainline/TradeFrame.lua`
+- `GetTrainerGreetingText`: function
+- `GetTrainerSelectionIndex`: function; used in `Blizzard_TrainerUI/Mainline/Blizzard_TrainerUI.lua`
+- `GetTrainerServiceAbilityReq`: function; used in `Blizzard_TrainerUI/Mainline/Blizzard_TrainerUI.lua`
+- `GetTrainerServiceCost`: function; used in `Blizzard_TrainerUI/Mainline/Blizzard_TrainerUI.lua`
+- `GetTrainerServiceDescription`: function
+- `GetTrainerServiceIcon`: function
+- `GetTrainerServiceInfo`: function; used in `Blizzard_TrainerUI/Mainline/Blizzard_TrainerUI.lua`
+- `GetTrainerServiceItemLink`: function
+- `GetTrainerServiceLevelReq`: function
+- `GetTrainerServiceNumAbilityReq`: function; used in `Blizzard_TrainerUI/Mainline/Blizzard_TrainerUI.lua`
+- `GetTrainerServiceSkillLine`: function; used in `Blizzard_TrainerUI/Mainline/Blizzard_TrainerUI.lua`
+- `GetTrainerServiceSkillReq`: function; used in `Blizzard_TrainerUI/Mainline/Blizzard_TrainerUI.lua`
+- `GetTrainerServiceStepIndex`: function; used in `Blizzard_TrainerUI/Mainline/Blizzard_TrainerUI.lua`
+- `GetTrainerServiceTypeFilter`: function; used in `Blizzard_TrainerUI/Mainline/Blizzard_TrainerUI.lua`
+- `GetTrainerTradeskillRankValues`: function; used in `Blizzard_TrainerUI/Mainline/Blizzard_TrainerUI.lua`
+- `GetTreasurePickerItemInfo`: function
+- `GetTutorialsEnabled`: function; used in `Blizzard_NewPlayerExperience/Blizzard_NewPlayerExperience_Bootstrap.lua`
+- `GetValuesArray`: function; used in `Blizzard_FrameXMLBase/IconDataProvider.lua`
+- `GetVideoCaps`: function
+- `GetWarGameQueueStatus`: function
+- `GetWarGameTypeInfo`: function; used in `Blizzard_UIPanels_Game/Cata/PVPFrame.lua`
+- `GetWebTicket`: function; used in `Blizzard_HelpFrame/HelpFrame.lua`
+- `GetWorldElapsedTime`: function; used in `Blizzard_FrameXML/Mists/WorldStateFrame.lua`
+- `GetWorldElapsedTimers`: function; used in `Blizzard_FrameXML/Mists/WorldStateFrame.lua`
+- `GetWorldMapActionButtonSpellInfo`: function; used in `Blizzard_SharedMapDataProviders/WorldQuestDataProvider.lua`
+- `GetWorldPVPQueueStatus`: function; used in `Blizzard_QueueStatusFrame/Mainline/QueueStatusFrame.lua`
+- `GiveMasterLoot`: function; used in `Blizzard_UIPanels_Game/Mainline/GroupLootFrame.lua`
+- `GroupHasOfflineMember`: function; used in `Blizzard_GroupFinder/Mainline/LFGList.lua`
+- `GuildControlAddRank`: function; used in `Blizzard_GuildControlUI/Blizzard_GuildControlUI.lua`
+- `GuildControlDelRank`: function; used in `Blizzard_GuildControlUI/Blizzard_GuildControlUI.lua`
+- `GuildControlGetAllowedShifts`: function; used in `Blizzard_GuildControlUI/Blizzard_GuildControlUI.lua`
+- `GuildControlGetNumRanks`: function; used in `Blizzard_Calendar/Mainline/Blizzard_Calendar.lua`
+- `GuildControlGetRank`: function
+- `GuildControlGetRankName`: function; used in `Blizzard_Calendar/Mainline/Blizzard_Calendar.lua`
+- `GuildControlSaveRank`: function
+- `GuildControlSetRank`: function; used in `Blizzard_GuildControlUI/Blizzard_GuildControlUI.lua`
+- `GuildControlSetRankFlag`: function; used in `Blizzard_GuildControlUI/Blizzard_GuildControlUI.lua`
+- `GuildControlShiftRankDown`: function; used in `Blizzard_GuildControlUI/Blizzard_GuildControlUI.lua`
+- `GuildControlShiftRankUp`: function; used in `Blizzard_GuildControlUI/Blizzard_GuildControlUI.lua`
+- `GuildDemote`: function
+- `GuildDisband`: function
+- `GuildInfo`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `GuildInvite`: function
+- `GuildLeave`: function
+- `GuildMasterAbsent`: function
+- `GuildNewsSetSticky`: function; used in `Blizzard_Communities/GuildNews.lua`
+- `GuildNewsSort`: function; used in `Blizzard_Communities/GuildNews.lua`
+- `GuildPromote`: function
+- `GuildSetLeader`: function
+- `GuildSetMOTD`: function
+- `GuildUninvite`: function
+## H
+
+- `HandleAtlasMemberCommand`: function; used in `Blizzard_DebugTools/Blizzard_TextureInfoGenerator.lua`
+- `HasArtifactEquipped`: function; used in `Blizzard_StatusTrackingBar/Mainline/ArtifactBar.lua`
+- `HasAttachedGlyph`: function; used in `Blizzard_ActionBar/Shared/SpellFlyout.lua`
+- `HasCompletedAnyAchievement`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `HasInboxItem`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `HasLFGRestrictions`: function; used in `Blizzard_CompactRaidFrames/Mainline/Blizzard_CompactRaidFrameManager.lua`
+- `HasLoadedCUFProfiles`: function
+- `HasNewMail`: function; used in `Blizzard_Minimap/Mainline/Minimap.lua`
+- `HasPendingGlyphCast`: function; used in `Blizzard_ActionBar/Shared/SpellFlyout.lua`
+- `HasPetUI`: function; used in `Blizzard_FrameXML/PetHappiness.lua`
+- `HasSendMailItem`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `HasWandEquipped`: function
+- `HaveQuestData`: function; used in `Blizzard_CovenantCallings/CovenantCallings.lua`
+- `HaveQuestRewardData`: function; used in `Blizzard_AnimaDiversionUI/AnimaDiversionDataProvider.lua`
+- `HearthAndResurrectFromArea`: function; used in `Blizzard_QueueStatusFrame/Mainline/QueueStatusFrame.lua`
+- `HideRepairCursor`: function; used in `Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua`
+## I
+
+- `InCombatLockdown`: function; used in `Blizzard_AddOnPerformance/AddOnPerformance.lua`
+- `InGuildParty`: function; used in `Blizzard_FrameXML/InstanceDifficulty.lua`
+- `InRepairMode`: function; used in `Blizzard_SharedXMLGame/Tooltip/TooltipDataRules.lua`
+- `InboxItemCanDelete`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `InitializeEnumerateContainerFrames`: function; used in `Blizzard_UIPanels_Game/Mainline/ContainerFrame.lua`
+- `InputScrollFrame_OnTabPressed`: function
+- `IsAchievementEligible`: function; used in `Blizzard_ObjectiveTracker/Blizzard_AchievementObjectiveTracker.lua`
+- `IsActiveBattlefieldArena`: function; used in `Blizzard_FrameXML/Timer.lua`
+- `IsActiveQuestTrivial`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `IsAllowedToUserTeleport`: function; used in `Blizzard_LFGUtil/Shared/LFGUtilShared.lua`
+- `IsArenaSkirmish`: function; used in `Blizzard_PVPMatch/PVPMatchResults.lua`
+- `IsArtifactCompletionHistoryAvailable`: function; used in `Blizzard_ArchaeologyUI/Blizzard_ArchaeologyUI.lua`
+- `IsAvailableQuestTrivial`: function
+- `IsBNLogin`: function
+- `IsBindingForGamePad`: function; used in `Blizzard_ActionBar/Shared/ActionButton.lua`
+- `IsBreadcrumbQuest`: function
+- `IsCastingGlyph`: function; used in `Blizzard_PlayerSpells/SpellBook/Blizzard_SpellBookItem.lua`
+- `IsChatAFK`: function
+- `IsChatChannelRaid`: function; used in `Blizzard_Channels/Classic/VoiceChatPrompt.lua`
+- `IsChatDND`: function
+- `IsCurrentQuestFailed`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestInfo.lua`
+- `IsDisplayChannelModerator`: function; used in `Blizzard_Channels/Mainline/ChannelList.lua`
+- `IsDisplayChannelOwner`: function; used in `Blizzard_UnitPopupShared/UnitPopupSharedButtonMixins.lua`
+- `IsEveryoneAssistant`: function; used in `Blizzard_CompactRaidFrames/Mainline/Blizzard_CompactRaidFrameManager.lua`
+- `IsFishingLoot`: function; used in `Blizzard_UIPanels_Game/Mainline/LootFrame.lua`
+- `IsGMClient`: function; used in `Blizzard_BattlefieldMap/Classic/Blizzard_BattlefieldMap.lua`
+- `IsGamePadCursorControlEnabled`: function
+- `IsGamePadFreelookEnabled`: function
+- `IsGraphicsCVarValueSupported`: function; used in `Blizzard_SettingsDefinitions_Shared/Graphics.lua`
+- `IsGraphicsSettingValueSupported`: function; used in `Blizzard_SettingsDefinitions_Shared/Graphics.lua`
+- `IsGuildMember`: function; used in `Blizzard_QuickJoin/QuickJoinToast.lua`
+- `IsGuildRankAssignmentAllowed`: function
+- `IsInActiveWorldPVP`: function; used in `Blizzard_SharedMapDataProviders/GroupMembersDataProvider.lua`
+- `IsInAuthenticatedRank`: function
+- `IsInCinematicScene`: function; used in `Blizzard_FrameXML/Shared/CinematicFrame.lua`
+- `IsInGlobalEnvironment`: function
+- `IsInGroup`: function; used in `Blizzard_Calendar/Mainline/Blizzard_Calendar.lua`
+- `IsInGuildGroup`: function
+- `IsInLFGDungeon`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `IsInRaid`: function; used in `Blizzard_Calendar/Mainline/Blizzard_Calendar.lua`
+- `IsInScenarioGroup`: function
+- `IsInventoryItemLocked`: function; used in `Blizzard_FrameXML/Mainline/EquipmentManager.lua`
+- `IsInventoryItemProfessionBag`: function; used in `Blizzard_UIPanels_Game/Mainline/ContainerFrame.lua`
+- `IsLFGComplete`: function; used in `Blizzard_LFGUtil/Shared/LFGUtilShared.lua`
+- `IsLFGDungeonJoinable`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `IsMasterLooter`: function
+- `IsModifiedClick`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `IsMouselooking`: function
+- `IsOutlineModeSupported`: function
+- `IsPartyLFG`: function; used in `Blizzard_LFGUtil/Shared/LFGUtilShared.lua`
+- `IsPartyWorldPVP`: function; used in `Blizzard_FrameXMLUtil/PartyUtil.lua`
+- `IsPendingGlyphRemoval`: function; used in `Blizzard_ActionBar/Shared/SpellFlyout.lua`
+- `IsPetActive`: function; used in `Blizzard_GamepadActionBars/ActionBarEditFrame.lua`
+- `IsPetAttackAction`: function; used in `Blizzard_ActionBar/Shared/PetActionBar.lua`
+- `IsPetAttackActive`: function
+- `IsPlayerNeutral`: function
+- `IsQuestCompletable`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `IsQuestIDValidSpellTarget`: function; used in `Blizzard_SharedMapDataProviders/WorldQuestDataProvider.lua`
+- `IsQuestItemHidden`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `IsQuestLogSpecialItemInRange`: function; used in `Blizzard_ObjectiveTracker/Blizzard_ObjectiveTrackerShared.lua`
+- `IsQuestSequenced`: function; used in `Blizzard_ObjectiveTracker/Blizzard_QuestObjectiveTracker.lua`
+- `IsSelectedSpellBookItem`: function; used in `Blizzard_ProfessionsBook/Blizzard_ProfessionsBook.lua`
+- `IsServerControlledBackfill`: function; used in `Blizzard_QueueStatusFrame/Mainline/QueueStatusFrame.lua`
+- `IsSpecializationActivateSpell`: function; used in `Blizzard_PlayerSpells/Mainline/ClassSpecializations/Blizzard_ClassSpecializationsFrame.lua`
+- `IsSpellClassOrSpec`: function
+- `IsSpellValidForPendingGlyph`: function; used in `Blizzard_ActionBar/Shared/SpellFlyout.lua`
+- `IsStoryQuest`: function
+- `IsTradeskillTrainer`: function; used in `Blizzard_TrainerUI/Mainline/Blizzard_TrainerUI.lua`
+- `IsTutorialFlagged`: function; used in `Blizzard_FrameXML/Mainline/TutorialFrame.lua`
+- `IsUsingVehicleControls`: function
+- `IsVehicleAimAngleAdjustable`: function
+- `IsVehicleAimPowerAdjustable`: function
+- `IsWargame`: function
+- `ItemAddedToArtifact`: function; used in `Blizzard_ArchaeologyUI/Blizzard_ArchaeologyUI.lua`
+- `ItemCanTargetGarrisonFollowerAbility`: function; used in `Blizzard_GarrisonTemplates/Blizzard_GarrisonSharedTemplates.lua`
+- `ItemTextGetCreator`: function; used in `Blizzard_UIPanels_Game/Mainline/ItemTextFrame.lua`
+- `ItemTextGetItem`: function; used in `Blizzard_UIPanels_Game/Mainline/ItemTextFrame.lua`
+- `ItemTextGetMaterial`: function; used in `Blizzard_UIPanels_Game/Mainline/ItemTextFrame.lua`
+- `ItemTextGetPage`: function; used in `Blizzard_UIPanels_Game/Mainline/ItemTextFrame.lua`
+- `ItemTextGetText`: function; used in `Blizzard_UIPanels_Game/Mainline/ItemTextFrame.lua`
+- `ItemTextHasNextPage`: function; used in `Blizzard_UIPanels_Game/Mainline/ItemTextFrame.lua`
+- `ItemTextIsFullPage`: function; used in `Blizzard_UIPanels_Game/Mainline/ItemTextFrame.lua`
+- `ItemTextNextPage`: function; used in `Blizzard_UIPanels_Game/Mainline/ItemTextFrame.lua`
+- `ItemTextPrevPage`: function; used in `Blizzard_UIPanels_Game/Mainline/ItemTextFrame.lua`
+## J
+
+- `JoinArena`: function; used in `Blizzard_PVPUI/Mainline/Blizzard_PVPUI.lua`
+- `JoinChannelByName`: function
+- `JoinLFG`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `JoinPermanentChannel`: function; used in `Blizzard_Channels/Classic/ChannelFrame.lua`
+- `JoinRatedBattlefield`: function; used in `Blizzard_PVPUI/Mainline/Blizzard_PVPUI.lua`
+- `JoinRatedSoloShuffle`: function; used in `Blizzard_PVPUI/Mainline/Blizzard_PVPUI.lua`
+- `JoinSingleLFG`: function; used in `Blizzard_GroupFinder/Shared/RaidFinder.lua`
+- `JoinSkirmish`: function; used in `Blizzard_PVPUI/Mainline/Blizzard_PVPUI.lua`
+- `JoinTemporaryChannel`: function
+- `JumpOrAscendStart`: function
+## L
+
+- `LFGTeleport`: function; used in `Blizzard_LFGUtil/Mainline/LFGUtil.lua`
+- `LearnPvpTalent`: function; used in `Blizzard_FrameXML/Mainline/TalentFrameBase.lua`
+- `LearnPvpTalents`: function
+- `LearnTalent`: function
+- `LearnTalents`: function
+- `LeaveBattlefield`: function; used in `Blizzard_LFGUtil/Mainline/LFGUtil.lua`
+- `LeaveChannelByLocalID`: function; used in `Blizzard_ChatFrame/Mainline/ChatConfigFrame.lua`
+- `LeaveChannelByName`: function; used in `Blizzard_Channels/Classic/ChannelList.lua`
+- `LeaveLFG`: function; used in `Blizzard_GroupFinder/Shared/ScenarioFinder_Shared.lua`
+- `LeaveSingleLFG`: function
+- `Lerp`: function; used in `Blizzard_AzeriteUI/AzeriteEmpoweredItemChannelMixin.lua`
+- `ListChannelByName`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `ListChannels`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `LoadBindings`: function; used in `Blizzard_QuickKeybind/QuickKeybind.lua`
+- `LoggingChat`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `LoggingCombat`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `LootMoneyNotify`: function; used in `Blizzard_UIPanels_Game/Mainline/GroupLootFrame.lua`
+- `LootSlot`: function; used in `Blizzard_UIPanels_Game/Mainline/LootFrame.lua`
+- `LootSlotHasItem`: function
+## M
+
+- `MouselookStart`: function
+- `MouselookStop`: function
+- `MoveAndSteerStart`: function
+- `MoveAndSteerStop`: function
+- `MoveBackwardStart`: function
+- `MoveBackwardStop`: function
+- `MoveForwardStart`: function
+- `MoveForwardStop`: function; used in `Blizzard_FrameXML/DestinyFrame.lua`
+- `MoveViewDownStart`: function
+- `MoveViewDownStop`: function
+- `MoveViewInStart`: function
+- `MoveViewInStop`: function
+- `MoveViewLeftStart`: function
+- `MoveViewLeftStop`: function
+- `MoveViewOutStart`: function
+- `MoveViewOutStop`: function
+- `MoveViewRightStart`: function
+- `MoveViewRightStop`: function
+- `MoveViewUpStart`: function
+- `MoveViewUpStop`: function
+- `MultiSampleAntiAliasingSupported`: function; used in `Blizzard_SettingsDefinitions_Shared/Graphics.lua`
+- `MuteSoundFile`: function
+## N
+
+- `NeutralPlayerSelectFaction`: function
+- `NextView`: function
+- `NumTaxiNodes`: function; used in `Blizzard_UIPanels_Game/Shared/TaxiFrame.lua`
+## O
+
+- `OfferPetition`: function
+- `OpenTrainer`: function
+## P
+
+- `PartyLFGStartBackfill`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `PetAggressiveMode`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `PetAttack`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `PetCanBeAbandoned`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `PetCanBeDismissed`: function; used in `Blizzard_UnitPopupShared/UnitPopupSharedButtonMixins.lua`
+- `PetDefensiveAssistMode`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `PetDefensiveMode`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `PetDismiss`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `PetFollow`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `PetHasActionBar`: function; used in `Blizzard_ActionBar/Shared/PetActionBar.lua`
+- `PetHasSpellbook`: function; used in `Blizzard_PlayerSpells/SpellBook/Blizzard_SpellBookCategory.lua`
+- `PetMoveTo`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `PetPassiveMode`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `PetStopAttack`: function
+- `PetUsesPetFrame`: function; used in `Blizzard_UnitFrame/Mainline/PetFrame.lua`
+- `PetWait`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `PickupAction`: function; used in `Blizzard_ActionBar/Shared/ActionButton.lua`
+- `PickupBagFromSlot`: function; used in `Blizzard_MainMenuBarBagButtons/Shared/MainMenuBarBagButtons.lua`
+- `PickupCompanion`: function; used in `Blizzard_RestrictedAddOnEnvironment/SecureHandlers.lua`
+- `PickupGuildBankItem`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `PickupGuildBankMoney`: function; used in `Blizzard_MoneyFrame/Shared/MoneyFrame.lua`
+- `PickupInventoryItem`: function; used in `Blizzard_ActionBar/WoWLabs/ActionButtonOverrides.lua`
+- `PickupMacro`: function; used in `Blizzard_MacroUI/Blizzard_MacroUI.lua`
+- `PickupMerchantItem`: function; used in `Blizzard_RestrictedAddOnEnvironment/SecureHandlers.lua`
+- `PickupPetAction`: function; used in `Blizzard_ActionBar/Shared/PetActionBar.lua`
+- `PickupPetSpell`: function
+- `PickupPvpTalent`: function; used in `Blizzard_FrameXML/Mainline/TalentFrameBase.lua`
+- `PickupTalent`: function
+- `PitchDownStart`: function
+- `PitchDownStop`: function
+- `PitchUpStart`: function
+- `PitchUpStop`: function
+- `PlaceAction`: function; used in `Blizzard_ActionBar/Shared/ActionButton.lua`
+- `PlayAutoAcceptQuestSound`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `PlayMusic`: function
+- `PlaySound`: function; used in `Blizzard_AccountStore/Blizzard_AccountStore.lua`
+- `PlaySoundFile`: function
+- `PlayerHasToy`: function; used in `Blizzard_Collections/Classic/Blizzard_ToyBox.lua`
+- `PrevView`: function
+- `ProcessExceptionClient`: function; used in `Blizzard_MapCanvas/MapCanvas_DataProviderBase.lua`
+- `ProcessQuestLogRewardFactions`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestInfo.lua`
+- `PutItemInBackpack`: function; used in `Blizzard_FrameXML/Mainline/EquipmentManager.lua`
+- `PutItemInBag`: function; used in `Blizzard_FrameXML/Mainline/EquipmentManager.lua`
+## Q
+
+- `QueryGuildBankLog`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `QueryGuildBankTab`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `QueryGuildBankText`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `QueryGuildEventLog`: function
+- `QueryGuildNews`: function; used in `Blizzard_Communities/GuildNews.lua`
+- `QueryGuildRecipes`: function; used in `Blizzard_Communities/CommunitiesFrame.lua`
+- `QuestChooseRewardError`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `QuestFlagsPVP`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `QuestGetAutoAccept`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `QuestGetAutoLaunched`: function
+- `QuestHasPOIInfo`: function
+- `QuestIsDaily`: function
+- `QuestIsFromAdventureMap`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `QuestIsFromAreaTrigger`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `QuestIsWeekly`: function
+- `QuestLogPushQuest`: function; used in `Blizzard_FrameXMLUtil/Mainline/QuestUtils.lua`
+- `QuestLogRewardHasTreasurePicker`: function
+- `QuestLogShouldShowPortrait`: function; used in `Blizzard_UIPanels_Game/Cata/QuestLogFrame.lua`
+- `QuestMapUpdateAllQuests`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestMapFrame.lua`
+- `QuestPOIUpdateIcons`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestMapFrame.lua`
+## R
+
+- `RaidProfileExists`: function
+- `RaidProfileHasUnsavedChanges`: function
+- `RedockChatWindows`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `RefreshLFGList`: function
+- `RegisterStaticConstants`: function; used in `Blizzard_FrameXMLBase/Constants.lua`
+- `RejectProposal`: function; used in `Blizzard_QueueStatusFrame/Mainline/QueueStatusFrame.lua`
+- `ReleaseAction`: function; used in `Blizzard_FrameXML/SecureTemplates.lua`
+- `RemoveAutoQuestPopUp`: function; used in `Blizzard_ObjectiveTracker/Blizzard_AutoQuestPopUpTracker.lua`
+- `RemoveChatWindowChannel`: function; used in `Blizzard_ChatFrameBase/Shared/ChatFrame.lua`
+- `RemoveChatWindowMessages`: function; used in `Blizzard_ChatFrameBase/Shared/ChatFrame.lua`
+- `RemoveItemFromArtifact`: function; used in `Blizzard_ArchaeologyUI/Blizzard_ArchaeologyUI.lua`
+- `RemovePvpTalent`: function
+- `RemoveTalent`: function
+- `RenamePetition`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `RepairAllItems`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `ReplaceGuildMaster`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `RequestBattlefieldScoreData`: function; used in `Blizzard_PVPMatch/Camelot/PVPMatchScoreboard.lua`
+- `RequestBattlegroundInstanceInfo`: function; used in `Blizzard_UIPanels_Game/Cata/PVPFrame.lua`
+- `RequestBottomLeftActionBar`: function; used in `Blizzard_NewPlayerExperience/Blizzard_TutorialServices.lua`
+- `RequestGuildChallengeInfo`: function; used in `Blizzard_Communities/GuildInfo.lua`
+- `RequestGuildPartyState`: function; used in `Blizzard_FrameXML/InstanceDifficulty.lua`
+- `RequestGuildRewards`: function; used in `Blizzard_Communities/GuildRewards.lua`
+- `RequestLFDPartyLockInfo`: function; used in `Blizzard_GroupFinder/Mainline/QueueUpdater.lua`
+- `RequestLFDPlayerLockInfo`: function; used in `Blizzard_GroupFinder/Mainline/QueueUpdater.lua`
+- `RequestPVPOptionsEnabled`: function; used in `Blizzard_PVPUI/Mainline/Blizzard_PVPUI.lua`
+- `RequestPVPRewards`: function; used in `Blizzard_PVPUI/Mainline/Blizzard_PVPUI.lua`
+- `RequestRaidInfo`: function; used in `Blizzard_EncounterJournal/Mainline/Blizzard_EncounterJournal.lua`
+- `RequestRandomBattlegroundInstanceInfo`: function; used in `Blizzard_PVPUI/Mainline/Blizzard_PVPUI.lua`
+- `RequestRatedInfo`: function; used in `Blizzard_PVPUI/Mainline/Blizzard_PVPUI.lua`
+- `RequeueSkirmish`: function; used in `Blizzard_PVPMatch/PVPMatchResults.lua`
+- `ResetChatColors`: function
+- `ResetChatWindows`: function; used in `Blizzard_ChatFrameBase/Mainline/FloatingChatFrame.lua`
+- `ResetSetMerchantFilter`: function; used in `Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua`
+- `ResetTutorials`: function; used in `Blizzard_SettingsDefinitions_Frame/Mainline/InterfaceOverrides.lua`
+- `ResetView`: function
+- `RespondMailLockSendItem`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `RespondToInviteConfirmation`: function; used in `Blizzard_FrameXML/QuestSession.lua`
+- `RestoreRaidProfileFromCopy`: function
+- `ReturnInboxItem`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `RollOnLoot`: function; used in `Blizzard_UIPanels_Game/Mainline/GroupLootFrame.lua`
+- `Round`: function; used in `Blizzard_CustomizationUI/Blizzard_CustomizationOptionTemplates.lua`
+- `RoundToSignificantDigits`: function; used in `Blizzard_CatalogShopSharedUtil/Blizzard_CatalogShop_SharedUtil.lua`
+- `RunBinding`: function; used in `Blizzard_BarbershopUI/Mainline/Blizzard_BarberShopUI.lua`
+- `RunMacro`: function; used in `Blizzard_FrameXML/SecureTemplates.lua`
+## S
+
+- `Saturate`: function; used in `Blizzard_CombatLogProcessor/Blizzard_CombatLogProcessor.lua`
+- `SaveBindings`: function; used in `Blizzard_ClickBindingUI/Blizzard_ClickBindingUI.lua`
+- `SaveRaidProfileCopy`: function
+- `SaveView`: function
+- `SearchLFGGetEncounterResults`: function
+- `SearchLFGGetJoinedID`: function
+- `SearchLFGGetNumResults`: function
+- `SearchLFGGetPartyResults`: function
+- `SearchLFGGetResults`: function
+- `SearchLFGJoin`: function
+- `SearchLFGLeave`: function
+- `SearchLFGSort`: function
+- `SecureCmdOptionParse`: function; used in `Blizzard_ChatFrameBase/Mainline/SlashCommandsOverrides.lua`
+- `SelectActiveQuest`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `SelectAvailableQuest`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua`
+- `SelectTrainerService`: function; used in `Blizzard_TrainerUI/Mainline/Blizzard_TrainerUI.lua`
+- `SendMail`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `SendSystemMessage`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `SetAchievementComparisonUnit`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `SetAchievementSearchString`: function; used in `Blizzard_AchievementUI/Mainline/Blizzard_AchievementUI.lua`
+- `SetActionBarToggles`: function; used in `Blizzard_Kiosk/BlizzCon2026/Game.lua`
+- `SetBattlefieldScoreFaction`: function; used in `Blizzard_PVPMatch/Camelot/PVPMatchResults.lua`
+- `SetBinding`: function; used in `Blizzard_Commentator/Classic/Blizzard_Commentator.lua`
+- `SetBindingClick`: function
+- `SetBindingItem`: function
+- `SetBindingMacro`: function
+- `SetBindingSpell`: function
+- `SetChannelOwner`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `SetChannelPassword`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `SetChatColorNameByClass`: function; used in `Blizzard_ChatFrame/Mainline/ChatConfigFrame.lua`
+- `SetChatWindowAlpha`: function; used in `Blizzard_ChatFrameBase/Mainline/FloatingChatFrame.lua`
+- `SetChatWindowColor`: function; used in `Blizzard_ChatFrameBase/Mainline/FloatingChatFrame.lua`
+- `SetChatWindowDocked`: function; used in `Blizzard_ChatFrameBase/Mainline/FloatingChatFrame.lua`
+- `SetChatWindowLocked`: function; used in `Blizzard_ChatFrameBase/Mainline/FloatingChatFrame.lua`
+- `SetChatWindowName`: function; used in `Blizzard_ChatFrameBase/Mainline/FloatingChatFrame.lua`
+- `SetChatWindowSavedDimensions`: function; used in `Blizzard_ChatFrameBase/Mainline/FloatingChatFrame.lua`
+- `SetChatWindowSavedPosition`: function; used in `Blizzard_ChatFrameBase/Mainline/FloatingChatFrame.lua`
+- `SetChatWindowShown`: function; used in `Blizzard_ChatFrameBase/Mainline/FloatingChatFrame.lua`
+- `SetChatWindowSize`: function; used in `Blizzard_ChatFrameBase/Mainline/FloatingChatFrame.lua`
+- `SetChatWindowUninteractable`: function; used in `Blizzard_ChatFrameBase/Mainline/FloatingChatFrame.lua`
+- `SetCurrentGraphicsSetting`: function
+- `SetCurrentGuildBankTab`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `SetFocusedAchievement`: function; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
+- `SetGamePadCursorControl`: function; used in `Blizzard_GameMenu/Shared/GameMenuFrame.lua`
+- `SetGamePadFreeLook`: function
+- `SetGuildBankTabInfo`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `SetGuildBankTabItemWithdraw`: function; used in `Blizzard_GuildControlUI/Blizzard_GuildControlUI.lua`
+- `SetGuildBankTabPermissions`: function; used in `Blizzard_GuildControlUI/Blizzard_GuildControlUI.lua`
+- `SetGuildBankText`: function
+- `SetGuildBankWithdrawGoldLimit`: function
+- `SetGuildInfoText`: function
+- `SetGuildMemberRank`: function
+- `SetGuildNewsFilter`: function; used in `Blizzard_Communities/GuildNews.lua`
+- `SetGuildRosterSelection`: function
+- `SetGuildRosterShowOffline`: function
+- `SetGuildTradeSkillCategoryFilter`: function
+- `SetGuildTradeSkillItemNameFilter`: function
+- `SetLFGBootVote`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `SetLFGComment`: function
+- `SetLFGDungeon`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `SetLFGDungeonEnabled`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `SetLFGHeaderCollapsed`: function; used in `Blizzard_GroupFinder/Shared/LFGFrame.lua`
+- `SetLFGRoles`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `SetLootPortrait`: function
+- `SetLootThreshold`: function; used in `Blizzard_UnitPopupShared/UnitPopupSharedButtonMixins.lua`
+- `SetMacroItem`: function
+- `SetMacroSpell`: function
+- `SetMerchantFilter`: function; used in `Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua`
+- `SetModifiedClick`: function; used in `Blizzard_ClickBindingUI/Blizzard_ClickBindingUI.lua`
+- `SetMouselookOverrideBinding`: function
+- `SetMoveEnabled`: function
+- `SetMultiCastSpell`: function; used in `Blizzard_ActionBar/Shared/MultiCastActionBarFrame.lua`
+- `SetOptOutOfLoot`: function; used in `Blizzard_UnitPopupShared/UnitPopupSharedButtonMixins.lua`
+- `SetOverrideBinding`: function; used in `Blizzard_GamepadSharedUtility/InputBindingStack/InputActionBinding.lua`
+- `SetOverrideBindingClick`: function; used in `Blizzard_GamepadSharedUtility/InputBindingStack/InputButtonBinding.lua`
+- `SetOverrideBindingItem`: function; used in `Blizzard_RestrictedAddOnEnvironment/RestrictedFrames.lua`
+- `SetOverrideBindingMacro`: function; used in `Blizzard_RestrictedAddOnEnvironment/RestrictedFrames.lua`
+- `SetOverrideBindingSpell`: function; used in `Blizzard_RestrictedAddOnEnvironment/RestrictedFrames.lua`
+- `SetPOIIconOverlapDistance`: function
+- `SetPOIIconOverlapPushDistance`: function
+- `SetPVPRoles`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `SetPartyAssignment`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `SetRaidProfileOption`: function
+- `SetRaidProfileSavedPosition`: function
+- `SetRaidSubgroup`: function; used in `Blizzard_RaidFrame/Mainline/RaidFrameSocialView.lua`
+- `SetSavedInstanceExtend`: function; used in `Blizzard_RaidFrame/Mainline/RaidFrame.lua`
+- `SetSelectedArtifact`: function; used in `Blizzard_ArchaeologyUI/Blizzard_ArchaeologyUI.lua`
+- `SetSelectedDisplayChannel`: function; used in `Blizzard_Channels/Classic/ChannelList.lua`
+- `SetSelectedScreenResolutionIndex`: function
+- `SetSelectedWarGameType`: function; used in `Blizzard_UIPanels_Game/Cata/PVPFrame.lua`
+- `SetSendMailCOD`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `SetSendMailMoney`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `SetSendMailShowing`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `SetSpellbookPetAction`: function
+- `SetTaxiMap`: function; used in `Blizzard_UIPanels_Game/Shared/TaxiFrame.lua`
+- `SetTradeCurrency`: function
+- `SetTrainerServiceTypeFilter`: function; used in `Blizzard_TrainerUI/Mainline/Blizzard_TrainerUI.lua`
+- `SetTurnEnabled`: function
+- `SetView`: function
+- `SetupFullscreenScale`: function
+- `ShowBuybackSellCursor`: function; used in `Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua`
+- `ShowQuestComplete`: function; used in `Blizzard_ObjectiveTracker/Blizzard_AutoQuestPopUpTracker.lua`
+- `ShowQuestOffer`: function; used in `Blizzard_ObjectiveTracker/Blizzard_AutoQuestPopUpTracker.lua`
+- `ShowRepairCursor`: function; used in `Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua`
+- `Sign`: function; used in `Blizzard_SharedXML/SortUtil.lua`
+- `SignPetition`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `SocketInventoryItem`: function; used in `Blizzard_UIPanels_Game/Camelot/PaperDollFrame.lua`
+- `SocketItemToArtifact`: function; used in `Blizzard_ArchaeologyUI/Blizzard_ArchaeologyUI.lua`
+- `SolveArtifact`: function
+- `SortBGList`: function; used in `Blizzard_UIPanels_Game/Cata/PVPFrame.lua`
+- `SortBattlefieldScoreData`: function; used in `Blizzard_PVPMatch/Camelot/PVPMatchResults.lua`
+- `SortGuildRoster`: function
+- `SortGuildTradeSkill`: function
+- `SortQuestSortTypes`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestMapFrame.lua`
+- `SortQuests`: function; used in `Blizzard_UIPanels_Game/Mainline/QuestMapFrame.lua`
+- `Sound_ChatSystem_GetInputDriverNameByIndex`: function
+- `Sound_ChatSystem_GetNumInputDrivers`: function
+- `Sound_ChatSystem_GetNumOutputDrivers`: function
+- `Sound_ChatSystem_GetOutputDriverNameByIndex`: function
+- `Sound_GameSystem_GetInputDriverNameByIndex`: function
+- `Sound_GameSystem_GetNumInputDrivers`: function
+- `Sound_GameSystem_GetNumOutputDrivers`: function
+- `Sound_GameSystem_GetOutputDriverNameByIndex`: function
+- `Sound_GameSystem_RestartSoundSystem`: function
+- `SpellCanTargetGarrisonFollower`: function; used in `Blizzard_Game/Mainline/EventImplementation.lua`
+- `SpellCanTargetGarrisonFollowerAbility`: function; used in `Blizzard_Game/Mainline/EventImplementation.lua`
+- `SpellCanTargetGarrisonMission`: function; used in `Blizzard_Game/Mainline/EventImplementation.lua`
+- `SpellCanTargetItem`: function; used in `Blizzard_FrameXML/SecureTemplates.lua`
+- `SpellCanTargetItemID`: function; used in `Blizzard_Collections/Classic/Blizzard_HeirloomCollection.lua`
+- `SpellCanTargetQuest`: function; used in `Blizzard_SharedMapDataProviders/WorldQuestDataProvider.lua`
+- `SpellCanTargetUnit`: function
+- `SpellCancelQueuedSpell`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `SpellIsTargeting`: function; used in `Blizzard_Collections/Classic/Blizzard_PetCollection.lua`
+- `SpellStopCasting`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `SpellStopTargeting`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `SpellTargetItem`: function; used in `Blizzard_FrameXML/SecureTemplates.lua`
+- `SpellTargetUnit`: function; used in `Blizzard_FrameXML/SecureTemplates.lua`
+- `SplitGuildBankItem`: function; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`
+- `StartAutoRun`: function
+- `StartDuel`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `StartSoloShuffleWarGameByName`: function; used in `Blizzard_ChatFrameBase/Mainline/SlashCommandsOverrides.lua`
+- `StartSpectatorSoloShuffleWarGame`: function; used in `Blizzard_ChatFrameBase/Mainline/SlashCommandsOverrides.lua`
+- `StartSpectatorWarGame`: function; used in `Blizzard_ChatFrameBase/Mainline/SlashCommandsOverrides.lua`
+- `StartWarGame`: function; used in `Blizzard_UIPanels_Game/Cata/PVPFrame.lua`
+- `StartWarGameByName`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `StopAutoRun`: function; used in `Blizzard_FullscreenBrowser/Blizzard_FullscreenBrowserSpinner.lua`
+- `StopMacro`: function; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
+- `StopMusic`: function
+- `StopSound`: function; used in `Blizzard_AnimaDiversionUI/Blizzard_AnimaDiversionUI.lua`
+- `StoreSecureReference`: function; used in `Blizzard_GroupFinder/Mainline/LFGList.lua`
+- `StrafeLeftStart`: function
+- `StrafeLeftStop`: function
+- `StrafeRightStart`: function
+- `StrafeRightStop`: function
+- `SubmitRequiredGuildRename`: function
+- `SubstituteChatMessageBeforeSend`: function
+- `SummonRandomCritter`: function
+- `SurrenderArena`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+- `SwapRaidSubgroup`: function; used in `Blizzard_RaidFrame/Mainline/RaidFrameSocialView.lua`
+- `SwapToGlobalEnvironment`: function; used in `Blizzard_AuraContainer/Blizzard_AuraContainerFrameProviders.lua`
+- `SwitchAchievementSearchTab`: function; used in `Blizzard_AchievementUI/Mainline/Blizzard_AchievementUI.lua`
+## T
+
+- `TableIsEmpty`: function; used in `Blizzard_AccountStore/Blizzard_AccountStoreCardTemplates.lua`
+- `TakeInboxItem`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `TakeInboxMoney`: function; used in `Blizzard_MailFrame/MailFrame.lua`
+- `TakeInboxTextItem`: function
+- `TakeTaxiNode`: function; used in `Blizzard_FlightMap/FM_FlightPathDataProvider.lua`
+- `TargetSpellReplacesBonusTree`: function
+- `TaxiGetDestX`: function
+- `TaxiGetDestY`: function
+- `TaxiGetNodeSlot`: function; used in `Blizzard_FlightMap/FM_FlightPathDataProvider.lua`
+- `TaxiGetSrcX`: function
+- `TaxiGetSrcY`: function
+- `TaxiIsDirectFlight`: function; used in `Blizzard_UIPanels_Game/Shared/TaxiFrame.lua`
+- `TaxiNodeCost`: function; used in `Blizzard_FlightMap/FM_FlightPathDataProvider.lua`
+- `TaxiNodeGetType`: function; used in `Blizzard_UIPanels_Game/Shared/TaxiFrame.lua`
+- `TaxiNodeName`: function; used in `Blizzard_UIPanels_Game/Shared/TaxiFrame.lua`
+- `TaxiNodePosition`: function; used in `Blizzard_UIPanels_Game/Shared/TaxiFrame.lua`
+- `TaxiRequestEarlyLanding`: function; used in `Blizzard_ActionBar/Shared/PossessActionBar.lua`
+- `ToggleAutoRun`: function
+- `TogglePetAutocast`: function; used in `Blizzard_ActionBar/Shared/PetActionBar.lua`
+- `ToggleRun`: function
+- `ToggleWindowed`: function
+- `TriggerTutorial`: function; used in `Blizzard_FrameXML/Mainline/TutorialFrame.lua`
+- `TurnInGuildCharter`: function
+- `TurnLeftStart`: function
+- `TurnLeftStop`: function
+- `TurnOrActionStart`: function
+- `TurnOrActionStop`: function
+- `TurnRightStart`: function
+- `TurnRightStop`: function
+## U
+
+- `UnitHasIncomingResurrection`: function; used in `Blizzard_UnitFrame/Shared/CompactUnitFrame.lua`
+- `UnitHasLFGDeserter`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `UnitHasLFGRandomCooldown`: function; used in `Blizzard_GroupFinder/Mainline/LFDFrame.lua`
+- `UnlearnSpecialization`: function
+- `UnmuteSoundFile`: function
+- `UpdateInventoryAlertStatus`: function
+- `UpdateWarGamesList`: function; used in `Blizzard_UIPanels_Game/Cata/PVPFrame.lua`
+- `UseAction`: function; used in `Blizzard_FrameXML/SecureTemplates.lua`
+- `UseInventoryItem`: function; used in `Blizzard_ChatFrameBase/Shared/ChatFrameUtil.lua`
+- `UseQuestLogSpecialItem`: function; used in `Blizzard_ObjectiveTracker/Blizzard_ObjectiveTrackerShared.lua`
+- `UseToy`: function; used in `Blizzard_Collections/Classic/Blizzard_ToyBox.lua`
+- `UseToyByName`: function; used in `Blizzard_ChatFrameBase/Mainline/SlashCommandsOverrides.lua`
+- `UseWorldMapActionButtonSpellOnQuest`: function; used in `Blizzard_SharedMapDataProviders/WorldQuestDataProvider.lua`
+## V
+
+- `VehicleAimDecrement`: function
+- `VehicleAimDownStart`: function
+- `VehicleAimDownStop`: function
+- `VehicleAimGetNormPower`: function
+- `VehicleAimIncrement`: function
+- `VehicleAimRequestAngle`: function
+- `VehicleAimSetNormPower`: function
+- `VehicleAimUpStart`: function
+- `VehicleAimUpStop`: function
+- `VehicleExit`: function; used in `Blizzard_ActionBar/Shared/PossessActionBar.lua`
+- `VehicleNextSeat`: function
+- `VehiclePrevSeat`: function
+- `ViewGuildRecipes`: function
+## W
+
+- `WarGameRespond`: function; used in `Blizzard_LFGUtil/Mainline/PVPHelper.lua`
+- `WithdrawGuildBankMoney`: function; used in `Blizzard_StaticPopup_Game/GameDialogDefs.lua`
+## A
+
+- `abs`: function
+- `addframetext`: function
+- `assert`: function
+## C
+
+- `ceil`: function
+- `collectgarbage`: function
+## D
+
+- `date`: function
+- `debuglocals`: function
+- `debugstack`: function
+- `deg`: function
+- `difftime`: function
+## E
+
+- `error`: function
+- `exp`: function
+## F
+
+- `fastrandom`: function
+- `floor`: function
+- `forceinsecure`: function
+- `foreach`: function
+- `foreachi`: function
+- `format`: function
+- `frexp`: function
+## G
+
+- `gcinfo`: function
+- `geterrorhandler`: function
+- `getfenv`: function
+- `getmetatable`: function
+- `getn`: function
+- `gmatch`: function
+- `gsub`: function
+## H
+
+- `hooksecurefunc`: function
+## I
+
+- `import`: function
+- `ipairs`: function
+- `issecure`: function
+- `issecurevalue`: function
+- `issecurevariable`: function
+## L
+
+- `ldexp`: function
+- `loadstring`: function
+- `log`: function
+- `log10`: function
+## M
+
+- `max`: function
+- `min`: function
+- `mod`: function
+## N
+
+- `newproxy`: function
+- `next`: function
+## P
+
+- `pairs`: function
+- `pcall`: function
+- `pcallwithenv`: function
+## R
+
+- `rad`: function
+- `random`: function
+- `rawequal`: function
+- `rawget`: function
+- `rawset`: function
+## S
+
+- `securecall`: function
+- `securecallfunction`: function
+- `secureexecuterange`: function
+- `select`: function
+- `setfenv`: function
+- `setmetatable`: function
+- `setsecurehookforbidden`: function
+- `sort`: function
+- `sqrt`: function
+- `strbyte`: function
+- `strchar`: function
+- `strcmputf8i`: function
+- `strconcat`: function
+- `strfind`: function
+- `strjoin`: function
+- `strlen`: function
+- `strlenutf8`: function
+- `strlower`: function
+- `strmatch`: function
+- `strrep`: function
+- `strrev`: function
+- `strsplit`: function
+- `strsplittable`: function
+- `strsub`: function
+- `strtrim`: function
+- `strupper`: function
+## T
+
+- `tContains`: function
+- `tDeleteItem`: function
+- `tIndexOf`: function
+- `tUnorderedRemove`: function
+- `time`: function
+- `tinsert`: function
+- `tonumber`: function
+- `tostring`: function
+- `tremove`: function
+- `type`: function
+## U
+
+- `unpack`: function
+## W
+
+- `wipe`: function
+## X
+
+- `xpcall`: function

@@ -6,15 +6,15 @@ Namespace: `C_CombatText`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_CombatText.GetActiveUnit](#c_combattextgetactiveunit) |  |  |
-| ❔ | [C_CombatText.GetCurrentEventInfo](#c_combattextgetcurrenteventinfo) |  |  |
-| ❔ | [C_CombatText.SetActiveUnit](#c_combattextsetactiveunit) |  |  |
+| ✅ | [C_CombatText.GetActiveUnit](#c_combattextgetactiveunit) |  |  |
+| ✅ | [C_CombatText.GetCurrentEventInfo](#c_combattextgetcurrenteventinfo) |  |  |
+| ✅ | [C_CombatText.SetActiveUnit](#c_combattextsetactiveunit) |  |  |
 
 ### C_CombatText.GetActiveUnit
 
 `C_CombatText.GetActiveUnit() → unitTarget: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Source: client docs `CombatTextDocumentation.lua`
 
@@ -22,7 +22,7 @@ Namespace: `C_CombatText`
 
 `C_CombatText.GetCurrentEventInfo()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - always returns secret values (Blizzard's docs; not checked in game)
 - Source: client docs `CombatTextDocumentation.lua`
 
@@ -30,7 +30,7 @@ Namespace: `C_CombatText`
 
 `C_CombatText.SetActiveUnit(unitToken: UnitToken)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresDeclassifiedUnitIdentity (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CombatTextDocumentation.lua`
@@ -39,6 +39,6 @@ Namespace: `C_CombatText`
 
 ### COMBAT_TEXT_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `combatTextType: cstring`
 - fires synchronously (Blizzard's docs)

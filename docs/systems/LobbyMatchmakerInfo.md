@@ -6,27 +6,27 @@ Namespace: `C_LobbyMatchmakerInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_LobbyMatchmakerInfo.AbandonQueue](#c_lobbymatchmakerinfoabandonqueue) |  |  |
-| ❔ | [C_LobbyMatchmakerInfo.EnterQueue](#c_lobbymatchmakerinfoenterqueue) |  |  |
-| ❔ | [C_LobbyMatchmakerInfo.GetCurrQueuePlaylistEntry](#c_lobbymatchmakerinfogetcurrqueueplaylistentry) |  |  |
-| ❔ | [C_LobbyMatchmakerInfo.GetCurrQueueState](#c_lobbymatchmakerinfogetcurrqueuestate) |  |  |
-| ❔ | [C_LobbyMatchmakerInfo.GetQueueFromMainlineEnabled](#c_lobbymatchmakerinfogetqueuefrommainlineenabled) |  |  |
-| ❔ | [C_LobbyMatchmakerInfo.GetQueueStartTime](#c_lobbymatchmakerinfogetqueuestarttime) |  |  |
-| ❔ | [C_LobbyMatchmakerInfo.IsInQueue](#c_lobbymatchmakerinfoisinqueue) |  |  |
-| ❔ | [C_LobbyMatchmakerInfo.RespondToQueuePop](#c_lobbymatchmakerinforespondtoqueuepop) |  |  |
+| ✅ | [C_LobbyMatchmakerInfo.AbandonQueue](#c_lobbymatchmakerinfoabandonqueue) |  |  |
+| ✅ | [C_LobbyMatchmakerInfo.EnterQueue](#c_lobbymatchmakerinfoenterqueue) |  |  |
+| ✅ | [C_LobbyMatchmakerInfo.GetCurrQueuePlaylistEntry](#c_lobbymatchmakerinfogetcurrqueueplaylistentry) |  |  |
+| ✅ | [C_LobbyMatchmakerInfo.GetCurrQueueState](#c_lobbymatchmakerinfogetcurrqueuestate) |  |  |
+| ✅ | [C_LobbyMatchmakerInfo.GetQueueFromMainlineEnabled](#c_lobbymatchmakerinfogetqueuefrommainlineenabled) |  |  |
+| ✅ | [C_LobbyMatchmakerInfo.GetQueueStartTime](#c_lobbymatchmakerinfogetqueuestarttime) |  |  |
+| ✅ | [C_LobbyMatchmakerInfo.IsInQueue](#c_lobbymatchmakerinfoisinqueue) |  |  |
+| ✅ | [C_LobbyMatchmakerInfo.RespondToQueuePop](#c_lobbymatchmakerinforespondtoqueuepop) |  |  |
 
 ### C_LobbyMatchmakerInfo.AbandonQueue
 
 `C_LobbyMatchmakerInfo.AbandonQueue()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `LobbyMatchmakerInfoDocumentation.lua`
 
 ### C_LobbyMatchmakerInfo.EnterQueue
 
 `C_LobbyMatchmakerInfo.EnterQueue(playlistEntry: PartyPlaylistEntry)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `LobbyMatchmakerInfoDocumentation.lua`
 
@@ -34,42 +34,42 @@ Namespace: `C_LobbyMatchmakerInfo`
 
 `C_LobbyMatchmakerInfo.GetCurrQueuePlaylistEntry() → playlistEntry: PartyPlaylistEntry`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `LobbyMatchmakerInfoDocumentation.lua`
 
 ### C_LobbyMatchmakerInfo.GetCurrQueueState
 
 `C_LobbyMatchmakerInfo.GetCurrQueueState() → queueState: PlunderstormQueueState`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `LobbyMatchmakerInfoDocumentation.lua`
 
 ### C_LobbyMatchmakerInfo.GetQueueFromMainlineEnabled
 
 `C_LobbyMatchmakerInfo.GetQueueFromMainlineEnabled() → queueFromMainlineEnabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `LobbyMatchmakerInfoDocumentation.lua`
 
 ### C_LobbyMatchmakerInfo.GetQueueStartTime
 
 `C_LobbyMatchmakerInfo.GetQueueStartTime() → queueStartTime: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `LobbyMatchmakerInfoDocumentation.lua`
 
 ### C_LobbyMatchmakerInfo.IsInQueue
 
 `C_LobbyMatchmakerInfo.IsInQueue() → isInQueue: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `LobbyMatchmakerInfoDocumentation.lua`
 
 ### C_LobbyMatchmakerInfo.RespondToQueuePop
 
 `C_LobbyMatchmakerInfo.RespondToQueuePop(acceptQueue: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `LobbyMatchmakerInfoDocumentation.lua`
 
@@ -77,31 +77,31 @@ Namespace: `C_LobbyMatchmakerInfo`
 
 ### LOBBY_MATCHMAKER_QUEUE_ABANDONED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### LOBBY_MATCHMAKER_QUEUE_ERROR
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### LOBBY_MATCHMAKER_QUEUE_EXPIRED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### LOBBY_MATCHMAKER_QUEUE_POPPED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### LOBBY_MATCHMAKER_QUEUE_STATUS_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
@@ -117,7 +117,7 @@ Namespace: `C_LobbyMatchmakerInfo`
 
 ### PlunderstormQueueState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Queued` = 1
   - `Proposed` = 2

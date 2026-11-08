@@ -4,22 +4,22 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [CalculateStringEditDistance](#calculatestringeditdistance) |  |  |
-| ❔ | [ConsoleEcho](#consoleecho) |  |  |
-| ❔ | [ConsoleExec](#consoleexec) |  |  |
-| ❔ | [ConsoleGetAllCommands](#consolegetallcommands) |  |  |
-| ❔ | [ConsoleGetColorFromType](#consolegetcolorfromtype) |  |  |
-| ❔ | [ConsoleGetFontHeight](#consolegetfontheight) |  |  |
-| ❔ | [ConsoleIsActive](#consoleisactive) |  |  |
-| ❔ | [ConsolePrintAllMatchingCommands](#consoleprintallmatchingcommands) |  |  |
-| ❔ | [ConsoleSetFontHeight](#consolesetfontheight) |  |  |
-| ❔ | [SetConsoleKey](#setconsolekey) |  |  |
+| ✅ | [CalculateStringEditDistance](#calculatestringeditdistance) |  |  |
+| ✅ | [ConsoleEcho](#consoleecho) |  |  |
+| ✅ | [ConsoleExec](#consoleexec) |  |  |
+| ✅ | [ConsoleGetAllCommands](#consolegetallcommands) |  |  |
+| ✅ | [ConsoleGetColorFromType](#consolegetcolorfromtype) |  |  |
+| ✅ | [ConsoleGetFontHeight](#consolegetfontheight) |  |  |
+| ✅ | [ConsoleIsActive](#consoleisactive) |  |  |
+| ✅ | [ConsolePrintAllMatchingCommands](#consoleprintallmatchingcommands) |  |  |
+| ✅ | [ConsoleSetFontHeight](#consolesetfontheight) |  |  |
+| ✅ | [SetConsoleKey](#setconsolekey) |  |  |
 
 ### CalculateStringEditDistance
 
 `CalculateStringEditDistance(firstString: stringView, secondString: stringView) → distance: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ConsoleDocumentation.lua`
 
@@ -27,7 +27,7 @@
 
 `ConsoleEcho(command: cstring, addToHistory: bool = False, prefix: cstring?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ConsoleDocumentation.lua`
 
@@ -35,7 +35,7 @@
 
 `ConsoleExec(command: cstring, addToHistory: bool = False) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ConsoleDocumentation.lua`
 
@@ -43,14 +43,14 @@
 
 `ConsoleGetAllCommands() → commands: ConsoleCommandInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ConsoleDocumentation.lua`
 
 ### ConsoleGetColorFromType
 
 `ConsoleGetColorFromType(colorType: ConsoleColorType) → color: colorRGB`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ConsoleDocumentation.lua`
 
@@ -58,21 +58,21 @@
 
 `ConsoleGetFontHeight() → fontHeightInPixels: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ConsoleDocumentation.lua`
 
 ### ConsoleIsActive
 
 `ConsoleIsActive() → consoleIsActive: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ConsoleDocumentation.lua`
 
 ### ConsolePrintAllMatchingCommands
 
 `ConsolePrintAllMatchingCommands(partialCommandText: cstring)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ConsoleDocumentation.lua`
 
@@ -80,7 +80,7 @@
 
 `ConsoleSetFontHeight(fontHeightInPixels: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ConsoleDocumentation.lua`
 
@@ -88,7 +88,7 @@
 
 `SetConsoleKey(keystring: cstring)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ConsoleDocumentation.lua`
 
@@ -96,43 +96,45 @@
 
 ### CONSOLE_CLEAR
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
 
 ### CONSOLE_COLORS_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
 
 ### CONSOLE_FONT_SIZE_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
 
 ### CONSOLE_LOG
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `message: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### CONSOLE_MESSAGE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `message: cstring`, `colorType: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 58 times (0 in combat); argument kinds: `s,n`
 
 ### CVAR_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `eventName: cstring`, `value: cstring`
 - fires synchronously (Blizzard's docs)
+- Seen firing 9 times (0 in combat); argument kinds: `s,s`
 
 ### TOGGLE_CONSOLE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `showConsole: bool?`
 - fires synchronously (Blizzard's docs)
 
@@ -140,7 +142,7 @@
 
 ### ConsoleCategory
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Debug` = 0
   - `Graphics` = 1
   - `Console` = 2
@@ -155,7 +157,7 @@
 
 ### ConsoleColorType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `DefaultColor` = 0
   - `InputColor` = 1
   - `EchoColor` = 2
@@ -181,7 +183,7 @@
 
 ### ConsoleCommandType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Cvar` = 0
   - `Command` = 1
   - `Macro` = 2

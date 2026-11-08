@@ -4,7 +4,7 @@
 
 ### RafLinkType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Recruit` = 1
   - `Friend` = 2
@@ -12,7 +12,7 @@
 
 ### RecruitAFriendFailure
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Success` = 0
   - `NotLinked` = 1
   - `NotNow` = 2
@@ -27,7 +27,7 @@
 
 ### RecruitAFriendRewardsVersion
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `InvalidVersion` = 0
   - `UnusedVersionOne` = 1
   - `VersionTwo` = 2

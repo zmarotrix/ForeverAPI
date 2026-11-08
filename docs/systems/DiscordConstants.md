@@ -4,14 +4,15 @@
 
 ### DiscordAccountType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Normal` = 0
   - `Provisional` = 1
 
 ### DiscordChannelID
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `InvalidDiscordID` = 0
+- ⚠️ `InvalidDiscordID`: docs say 0, game has 0x0000000000000000
 
 ### DiscordChatInfo
 
@@ -33,37 +34,42 @@
 
 ### DiscordDisplayNameType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Default` = 0
   - `LastOnline` = 1
   - `GlobalName` = 2
 
 ### DiscordGuildID
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `InvalidDiscordID` = 0
+- ⚠️ `InvalidDiscordID`: docs say 0, game has 0x0000000000000000
 
 ### DiscordGuildSettings
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `SeparateStream` = 1
 
 ### DiscordID
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `InvalidDiscordID` = 0
+- ⚠️ `InvalidDiscordID`: docs say 0, game has 0x0000000000000000
 
 ### DiscordLobbyID
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `InvalidDiscordID` = 0
+- ⚠️ `InvalidDiscordID`: docs say 0, game has 0x0000000000000000
 
 ### DiscordMemberID
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `InvalidDiscordID` = 0
+- ⚠️ `InvalidDiscordID`: docs say 0, game has 0x0000000000000000
 
 ### DiscordMessageID
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `InvalidDiscordID` = 0
+- ⚠️ `InvalidDiscordID`: docs say 0, game has 0x0000000000000000

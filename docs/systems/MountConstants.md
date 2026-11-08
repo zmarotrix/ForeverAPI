@@ -4,13 +4,13 @@
 
 ### MountDynamicFlightConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `TRAIT_SYSTEM_ID` = 1
   - `TREE_ID` = 672
 
 ### MountType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Ground` = 0
   - `Flying` = 1
   - `Aquatic` = 2
@@ -19,7 +19,7 @@
 
 ### MountTypeFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `IsFlyingMount` = 1
   - `IsAquaticMount` = 2
   - `IsDragonRidingMount` = 4

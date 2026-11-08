@@ -4,7 +4,7 @@
 
 ### GamePadPowerLevel
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Critical` = 0
   - `Low` = 1
   - `Medium` = 2

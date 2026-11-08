@@ -4,13 +4,13 @@
 
 ### AuctionHouseCommoditySortOrder
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `UnitPrice` = 0
   - `Quantity` = 1
 
 ### AuctionHouseError
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `NotEnoughMoney` = 0
   - `HigherBid` = 1
   - `BidIncrement` = 2
@@ -41,7 +41,7 @@
 
 ### AuctionHouseExtraColumn
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Ilvl` = 1
   - `Slots` = 2
@@ -50,7 +50,7 @@
 
 ### AuctionHouseFilter
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `UncollectedOnly` = 1
   - `UsableOnly` = 2
@@ -68,13 +68,13 @@
 
 ### AuctionHouseItemSortOrder
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Bid` = 0
   - `Buyout` = 1
 
 ### AuctionHouseNotification
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `BidPlaced` = 0
   - `AuctionRemoved` = 1
   - `AuctionWon` = 2
@@ -84,7 +84,7 @@
 
 ### AuctionHouseSortOrder
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Price` = 0
   - `Name` = 1
   - `Level` = 2
@@ -94,7 +94,7 @@
 
 ### AuctionHouseTimeLeftBand
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Short` = 0
   - `Medium` = 1
   - `Long` = 2

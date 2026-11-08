@@ -4,7 +4,7 @@
 
 ### LogPriority
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Fatal` = 1
   - `Error` = 2
   - `Warning` = 3

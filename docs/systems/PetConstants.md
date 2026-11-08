@@ -4,7 +4,7 @@
 
 ### PetActionbuttonType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Spell` = 1
   - `Slot1Obsolete` = 2
@@ -36,7 +36,7 @@
 
 ### PetConsts_Camelot
 
-- Constants — ❔ unverified
+- Constants — ⛔ in Blizzard's docs, not in game
   - `PET_XP_LEVEL_MODIFIER` = 0.25
   - `NUM_PET_SLOTS_THAT_NEED_LEARNED_SPELL` = 1
   - `MAX_SUMMONABLE_HUNTER_PETS` = Constants.PetConsts.NUM_PET_SLOTS_THAT_NEED_LEARNED_SPELL

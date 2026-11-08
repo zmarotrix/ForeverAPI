@@ -6,26 +6,26 @@ Namespace: `C_WarbandScene`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_WarbandScene.GetRandomEntryID](#c_warbandscenegetrandomentryid) |  |  |
-| ❔ | [C_WarbandScene.GetWarbandSceneEntry](#c_warbandscenegetwarbandsceneentry) |  |  |
-| ❔ | [C_WarbandScene.HasWarbandScene](#c_warbandscenehaswarbandscene) |  |  |
-| ❔ | [C_WarbandScene.IsFavorite](#c_warbandsceneisfavorite) |  |  |
-| ❔ | [C_WarbandScene.SearchWarbandSceneEntries](#c_warbandscenesearchwarbandsceneentries) |  |  |
-| ❔ | [C_WarbandScene.SetFavorite](#c_warbandscenesetfavorite) |  |  |
-| ❔ | [C_WarbandScene.WarbandScenesAvailable](#c_warbandscenewarbandscenesavailable) |  |  |
+| ✅ | [C_WarbandScene.GetRandomEntryID](#c_warbandscenegetrandomentryid) |  |  |
+| ✅ | [C_WarbandScene.GetWarbandSceneEntry](#c_warbandscenegetwarbandsceneentry) |  |  |
+| ✅ | [C_WarbandScene.HasWarbandScene](#c_warbandscenehaswarbandscene) |  |  |
+| ✅ | [C_WarbandScene.IsFavorite](#c_warbandsceneisfavorite) |  |  |
+| ✅ | [C_WarbandScene.SearchWarbandSceneEntries](#c_warbandscenesearchwarbandsceneentries) |  |  |
+| ✅ | [C_WarbandScene.SetFavorite](#c_warbandscenesetfavorite) |  |  |
+| ✅ | [C_WarbandScene.WarbandScenesAvailable](#c_warbandscenewarbandscenesavailable) |  |  |
 
 ### C_WarbandScene.GetRandomEntryID
 
 `C_WarbandScene.GetRandomEntryID() → warbandSceneID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `WarbandSceneInfoDocumentation.lua`
 
 ### C_WarbandScene.GetWarbandSceneEntry
 
 `C_WarbandScene.GetWarbandSceneEntry(warbandSceneID: number) → warbandSceneEntry: WarbandSceneEntry`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `WarbandSceneInfoDocumentation.lua`
@@ -34,7 +34,7 @@ Namespace: `C_WarbandScene`
 
 `C_WarbandScene.HasWarbandScene(warbandSceneID: number) → owned: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `WarbandSceneInfoDocumentation.lua`
 
@@ -42,7 +42,7 @@ Namespace: `C_WarbandScene`
 
 `C_WarbandScene.IsFavorite(warbandSceneID: number) → favorite: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `WarbandSceneInfoDocumentation.lua`
 
@@ -50,7 +50,7 @@ Namespace: `C_WarbandScene`
 
 `C_WarbandScene.SearchWarbandSceneEntries(searchParams: WarbandSceneSearchInfo) → matchingEntryIDs: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `WarbandSceneInfoDocumentation.lua`
 
@@ -58,7 +58,7 @@ Namespace: `C_WarbandScene`
 
 `C_WarbandScene.SetFavorite(warbandSceneID: number, favorite: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `WarbandSceneInfoDocumentation.lua`
 
@@ -66,20 +66,20 @@ Namespace: `C_WarbandScene`
 
 `C_WarbandScene.WarbandScenesAvailable() → areWarbandScenesAvailable: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `WarbandSceneInfoDocumentation.lua`
 
 ## Events
 
 ### NEW_WARBAND_SCENE_ADDED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `warbandScenID: number`
 - fires synchronously (Blizzard's docs)
 
 ### WARBAND_SCENE_FAVORITES_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 

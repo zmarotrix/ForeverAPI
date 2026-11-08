@@ -6,23 +6,23 @@ Namespace: `C_ChromieTime`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_ChromieTime.CloseUI](#c_chromietimecloseui) |  |  |
-| ❔ | [C_ChromieTime.GetChromieTimeExpansionOption](#c_chromietimegetchromietimeexpansionoption) |  |  |
-| ❔ | [C_ChromieTime.GetChromieTimeExpansionOptions](#c_chromietimegetchromietimeexpansionoptions) |  |  |
-| ❔ | [C_ChromieTime.SelectChromieTimeOption](#c_chromietimeselectchromietimeoption) |  |  |
+| ✅ | [C_ChromieTime.CloseUI](#c_chromietimecloseui) |  |  |
+| ✅ | [C_ChromieTime.GetChromieTimeExpansionOption](#c_chromietimegetchromietimeexpansionoption) |  |  |
+| ✅ | [C_ChromieTime.GetChromieTimeExpansionOptions](#c_chromietimegetchromietimeexpansionoptions) |  |  |
+| ✅ | [C_ChromieTime.SelectChromieTimeOption](#c_chromietimeselectchromietimeoption) |  |  |
 
 ### C_ChromieTime.CloseUI
 
 `C_ChromieTime.CloseUI()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ChromieTimeUIDocumentation.lua`
 
 ### C_ChromieTime.GetChromieTimeExpansionOption
 
 `C_ChromieTime.GetChromieTimeExpansionOption(expansionRecID: number) → info: ChromieTimeExpansionInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChromieTimeUIDocumentation.lua`
 
@@ -30,14 +30,14 @@ Namespace: `C_ChromieTime`
 
 `C_ChromieTime.GetChromieTimeExpansionOptions() → expansionOptions: ChromieTimeExpansionInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ChromieTimeUIDocumentation.lua`
 
 ### C_ChromieTime.SelectChromieTimeOption
 
 `C_ChromieTime.SelectChromieTimeOption(chromieTimeExpansionInfoId: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ChromieTimeUIDocumentation.lua`
 

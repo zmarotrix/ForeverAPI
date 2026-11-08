@@ -4,7 +4,7 @@
 
 ### LogicLogicop
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `And` = 1
   - `Or` = 2
@@ -12,7 +12,7 @@
 
 ### LogicMathop
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Plus` = 1
   - `Minus` = 2
@@ -22,7 +22,7 @@
 
 ### LogicRelop
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Equal` = 1
   - `Notequal` = 2

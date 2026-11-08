@@ -4,19 +4,19 @@
 
 ### CooldownSetLinkedSpellFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `UseAsTooltip` = 1
 
 ### CooldownSetSpellFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `HideAura` = 1
   - `HideByDefault` = 2
   - `SelectHighestLevelLinkedSpell` = 4
 
 ### CooldownViewerAddAlertStatus
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Success` = 0
   - `InvalidAlertType` = 1
   - `InvalidEventType` = 2
@@ -24,7 +24,7 @@
 
 ### CooldownViewerAlertEventType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Available` = 1
   - `PandemicTime` = 2
   - `OnCooldown` = 3
@@ -34,13 +34,13 @@
 
 ### CooldownViewerAlertType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Sound` = 1
   - `Visual` = 2
 
 ### CooldownViewerCategory
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Essential` = 0
   - `Utility` = 1
   - `TrackedBuff` = 2
@@ -53,7 +53,7 @@
 
 ### CooldownViewerSound
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `TextToSpeech` = 0
   - `AnimalsCat` = 1
   - `AnimalsChicken` = 2
@@ -151,7 +151,7 @@
 
 ### CooldownViewerUIConstants
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `COOLDOWN_VIEWER_LINKED_SPELLS_SIZE` = 4
   - `COOLDOWN_VIEWER_CATEGORY_SET_SIZE` = 16
   - `COOLDOWN_VIEWER_SPEC_AGNOSTIC_PARENT_ID` = 0
@@ -161,10 +161,10 @@
 
 ### GroupBuffItemFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `HideByDefault` = 1
 
 ### GroupBuffUIConstants
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `GROUP_BUFF_ITEM_LIST_SIZE` = 16

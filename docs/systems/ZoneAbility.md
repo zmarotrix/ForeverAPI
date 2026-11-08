@@ -6,21 +6,21 @@ Namespace: `C_ZoneAbility`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_ZoneAbility.GetActiveAbilities](#c_zoneabilitygetactiveabilities) |  |  |
-| ❔ | [C_ZoneAbility.GetZoneAbilityIcon](#c_zoneabilitygetzoneabilityicon) |  |  |
+| ✅ | [C_ZoneAbility.GetActiveAbilities](#c_zoneabilitygetactiveabilities) |  |  |
+| ✅ | [C_ZoneAbility.GetZoneAbilityIcon](#c_zoneabilitygetzoneabilityicon) |  |  |
 
 ### C_ZoneAbility.GetActiveAbilities
 
 `C_ZoneAbility.GetActiveAbilities() → zoneAbilities: ZoneAbilityInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ZoneAbilityDocumentation.lua`
 
 ### C_ZoneAbility.GetZoneAbilityIcon
 
 `C_ZoneAbility.GetZoneAbilityIcon(zoneAbilitySpellID: number) → zoneAbilityIconID: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ZoneAbilityDocumentation.lua`
 

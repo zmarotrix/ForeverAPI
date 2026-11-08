@@ -4,21 +4,21 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [CanBeRaidTarget](#canberaidtarget) |  |  |
-| ❔ | [ClearRaidMarker](#clearraidmarker) |  |  |
-| ❔ | [GetNextAvailableRaidTargetMarkerIndex](#getnextavailableraidtargetmarkerindex) |  |  |
-| ❔ | [GetRaidTargetIndex](#getraidtargetindex) |  |  |
-| ❔ | [IsRaidMarkerActive](#israidmarkeractive) |  |  |
-| ❔ | [IsRaidMarkerSystemEnabled](#israidmarkersystemenabled) |  |  |
-| ❔ | [PlaceRaidMarker](#placeraidmarker) |  |  |
-| ❔ | [RemoveRaidTargets](#removeraidtargets) |  |  |
-| ❔ | [SetRaidTarget](#setraidtarget) |  |  |
+| ✅ | [CanBeRaidTarget](#canberaidtarget) |  |  |
+| ✅ | [ClearRaidMarker](#clearraidmarker) |  |  |
+| ✅ | [GetNextAvailableRaidTargetMarkerIndex](#getnextavailableraidtargetmarkerindex) |  |  |
+| ✅ | [GetRaidTargetIndex](#getraidtargetindex) |  |  |
+| ✅ | [IsRaidMarkerActive](#israidmarkeractive) |  |  |
+| ✅ | [IsRaidMarkerSystemEnabled](#israidmarkersystemenabled) |  |  |
+| ✅ | [PlaceRaidMarker](#placeraidmarker) |  |  |
+| ✅ | [RemoveRaidTargets](#removeraidtargets) |  |  |
+| ✅ | [SetRaidTarget](#setraidtarget) |  |  |
 
 ### CanBeRaidTarget
 
 `CanBeRaidTarget(target: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `RaidMarkersDocumentation.lua`
 
@@ -26,7 +26,7 @@
 
 `ClearRaidMarker(raidMarkerIndex: luaIndex = MAX_RAID_MARKERS)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `RaidMarkersDocumentation.lua`
@@ -35,7 +35,7 @@
 
 `GetNextAvailableRaidTargetMarkerIndex(startIndex: luaIndex, reverseSearch: bool = False, wrapSearch: bool = False, treatDeadNonFriendlyAsAvailable: bool = False) → nextAvailableRaidTargetMarkerIndex: luaIndex`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret during chat lockdown (Blizzard's docs; not checked in game)
 - Source: client docs `RaidMarkersDocumentation.lua`
@@ -44,7 +44,7 @@
 
 `GetRaidTargetIndex(target: UnitToken) → result: luaIndex?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
 - Source: client docs `RaidMarkersDocumentation.lua`
@@ -53,7 +53,7 @@
 
 `IsRaidMarkerActive(index: luaIndex) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret during chat lockdown (Blizzard's docs; not checked in game)
 - Source: client docs `RaidMarkersDocumentation.lua`
@@ -62,14 +62,14 @@
 
 `IsRaidMarkerSystemEnabled() → enabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `RaidMarkersDocumentation.lua`
 
 ### PlaceRaidMarker
 
 `PlaceRaidMarker(index: luaIndex, token: cstring?)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `RaidMarkersDocumentation.lua`
@@ -78,7 +78,7 @@
 
 `RemoveRaidTargets()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Removes all assigned raid target markers.
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `RaidMarkersDocumentation.lua`
@@ -87,7 +87,7 @@
 
 `SetRaidTarget(target: UnitToken, userIndex: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `RaidMarkersDocumentation.lua`

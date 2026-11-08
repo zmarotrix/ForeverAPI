@@ -4,223 +4,223 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [AcceptAreaSpiritHeal](#acceptareaspiritheal) |  |  |
-| ❔ | [AcceptGuild](#acceptguild) |  |  |
-| ❔ | [AcceptResurrect](#acceptresurrect) |  |  |
-| ❔ | [Ambiguate](#ambiguate) |  |  |
-| ❔ | [AutoEquipCursorItem](#autoequipcursoritem) |  |  |
-| ❔ | [BeginTrade](#begintrade) |  |  |
-| ❔ | [CanDualWield](#candualwield) |  |  |
-| ❔ | [CanInspect](#caninspect) |  |  |
-| ❔ | [CanLootUnit](#canlootunit) |  |  |
-| ❔ | [CanPortGraveyard](#canportgraveyard) |  |  |
-| ❔ | [CancelAreaSpiritHeal](#cancelareaspiritheal) |  |  |
-| ❔ | [CancelPendingEquip](#cancelpendingequip) |  |  |
-| ❔ | [CancelTrade](#canceltrade) |  |  |
-| ❔ | [CheckInteractDistance](#checkinteractdistance) |  |  |
-| ❔ | [CheckTalentMasterDist](#checktalentmasterdist) |  |  |
-| ❔ | [ClearPendingBindConversionItem](#clearpendingbindconversionitem) |  |  |
-| ❔ | [ConfirmTalentWipe](#confirmtalentwipe) |  |  |
-| ❔ | [ConvertItemToBindToAccount](#convertitemtobindtoaccount) |  |  |
-| ❔ | [DeclineGuild](#declineguild) |  |  |
-| ❔ | [DeclineResurrect](#declineresurrect) |  |  |
-| ❔ | [Dismount](#dismount) |  |  |
-| ❔ | [EquipPendingItem](#equippendingitem) |  |  |
-| ❔ | [FollowUnit](#followunit) |  |  |
-| ❔ | [GetAllowLowLevelRaid](#getallowlowlevelraid) |  |  |
-| ❔ | [GetAllowRecentAlliesSeeLocation](#getallowrecentalliesseelocation) |  |  |
-| ❔ | [GetAreaSpiritHealerTime](#getareaspirithealertime) |  |  |
-| ❔ | [GetArmorPenetration](#getarmorpenetration) |  |  |
-| ❔ | [GetAttackPowerForStat](#getattackpowerforstat) |  |  |
-| ❔ | [GetAutoDeclineGuildInvites](#getautodeclineguildinvites) |  |  |
-| ❔ | [GetAutoDeclineNeighborhoodInvites](#getautodeclineneighborhoodinvites) |  |  |
-| ❔ | [GetAvoidance](#getavoidance) |  |  |
-| ❔ | [GetBindLocation](#getbindlocation) |  |  |
-| ❔ | [GetBlockChance](#getblockchance) |  |  |
-| ❔ | [GetCemeteryPreference](#getcemeterypreference) |  |  |
-| ❔ | [GetCollapsingStarCost](#getcollapsingstarcost) |  |  |
-| ❔ | [GetCombatRating](#getcombatrating) |  |  |
-| ❔ | [GetCombatRatingBonus](#getcombatratingbonus) |  |  |
-| ❔ | [GetCombatRatingBonusForCombatRatingValue](#getcombatratingbonusforcombatratingvalue) |  |  |
-| ❔ | [GetCorpseRecoveryDelay](#getcorpserecoverydelay) |  |  |
-| ❔ | [GetCorruption](#getcorruption) |  |  |
-| ❔ | [GetCorruptionResistance](#getcorruptionresistance) |  |  |
-| ❔ | [GetCritChance](#getcritchance) |  |  |
-| ❔ | [GetCritChanceFromStat](#getcritchancefromstat) |  |  |
-| ❔ | [GetCritChanceProvidesParryEffect](#getcritchanceprovidesparryeffect) |  |  |
-| ❔ | [GetDodgeChance](#getdodgechance) |  |  |
-| ❔ | [GetDodgeChanceFromAttribute](#getdodgechancefromattribute) |  |  |
-| ❔ | [GetEvictionTimeRemaining](#getevictiontimeremaining) |  |  |
-| ❔ | [GetExpertise](#getexpertise) |  |  |
-| ❔ | [GetExpertisePercent](#getexpertisepercent) |  |  |
-| ❔ | [GetGlancingBlowChance](#getglancingblowchance) |  |  |
-| ❔ | [GetGlancingBlowPenalty](#getglancingblowpenalty) |  |  |
-| ❔ | [GetHaste](#gethaste) |  |  |
-| ❔ | [GetHealthRegen](#gethealthregen) |  |  |
-| ❔ | [GetHealthRegenFromSpirit](#gethealthregenfromspirit) |  |  |
-| ❔ | [GetHitModifier](#gethitmodifier) |  |  |
-| ❔ | [GetJailersTowerLevel](#getjailerstowerlevel) |  |  |
-| ❔ | [GetLifesteal](#getlifesteal) |  |  |
-| ❔ | [GetLootSpecialization](#getlootspecialization) |  |  |
-| ❔ | [GetManaRegen](#getmanaregen) |  |  |
-| ❔ | [GetManaRegenFromSpirit](#getmanaregenfromspirit) |  |  |
-| ❔ | [GetMastery](#getmastery) |  |  |
-| ❔ | [GetMasteryEffect](#getmasteryeffect) |  |  |
-| ❔ | [GetMaxPlayerLevel](#getmaxplayerlevel) |  |  |
-| ❔ | [GetMeleeHaste](#getmeleehaste) |  |  |
-| ❔ | [GetModResilienceDamageReduction](#getmodresiliencedamagereduction) |  |  |
-| ❔ | [GetMoney](#getmoney) |  |  |
-| ❔ | [GetNormalizedRealmName](#getnormalizedrealmname) |  |  |
-| ❔ | [GetOffhandHitModifier](#getoffhandhitmodifier) |  |  |
-| ❔ | [GetOverrideAPBySpellPower](#getoverrideapbyspellpower) |  |  |
-| ❔ | [GetOverrideSpellPowerByAP](#getoverridespellpowerbyap) |  |  |
-| ❔ | [GetPVPDesired](#getpvpdesired) |  |  |
-| ❔ | [GetPVPGearStatRules](#getpvpgearstatrules) |  |  |
-| ❔ | [GetPVPLifetimeStats](#getpvplifetimestats) |  |  |
-| ❔ | [GetPVPSessionStats](#getpvpsessionstats) |  |  |
-| ❔ | [GetPVPTimer](#getpvptimer) |  |  |
-| ❔ | [GetPVPYesterdayStats](#getpvpyesterdaystats) |  |  |
-| ❔ | [GetParryChance](#getparrychance) |  |  |
-| ❔ | [GetParryChanceFromAttribute](#getparrychancefromattribute) |  |  |
-| ❔ | [GetPetCritChance](#getpetcritchance) |  |  |
-| ❔ | [GetPetDodgeChance](#getpetdodgechance) |  |  |
-| ❔ | [GetPetHitChanceModifier](#getpethitchancemodifier) |  |  |
-| ❔ | [GetPetMeleeHaste](#getpetmeleehaste) |  |  |
-| ❔ | [GetPetSpellBonusDamage](#getpetspellbonusdamage) |  |  |
-| ❔ | [GetPetSpellHitChanceModifier](#getpetspellhitchancemodifier) |  |  |
-| ❔ | [GetPlayerFacing](#getplayerfacing) |  |  |
-| ❔ | [GetPlayerInfoByGUID](#getplayerinfobyguid) |  |  |
-| ❔ | [GetPowerRegen](#getpowerregen) |  |  |
-| ❔ | [GetPowerRegenForPowerType](#getpowerregenforpowertype) |  |  |
-| ❔ | [GetPvpPowerDamage](#getpvppowerdamage) |  |  |
-| ❔ | [GetPvpPowerHealing](#getpvppowerhealing) |  |  |
-| ❔ | [GetRangedAttackPowerForStat](#getrangedattackpowerforstat) |  |  |
-| ❔ | [GetRangedCritChance](#getrangedcritchance) |  |  |
-| ❔ | [GetRangedHaste](#getrangedhaste) |  |  |
-| ❔ | [GetRangedHitModifier](#getrangedhitmodifier) |  |  |
-| ❔ | [GetReleaseTimeRemaining](#getreleasetimeremaining) |  |  |
-| ❔ | [GetResSicknessDuration](#getressicknessduration) |  |  |
-| ❔ | [GetRestState](#getreststate) |  |  |
-| ❔ | [GetRestrictedAccountData](#getrestrictedaccountdata) |  |  |
-| ❔ | [GetRuneCooldown](#getrunecooldown) |  |  |
-| ❔ | [GetRuneCount](#getrunecount) |  |  |
-| ❔ | [GetSheathState](#getsheathstate) |  |  |
-| ❔ | [GetShieldBlock](#getshieldblock) |  |  |
-| ❔ | [GetSpeed](#getspeed) |  |  |
-| ❔ | [GetSpellBonusDamage](#getspellbonusdamage) |  |  |
-| ❔ | [GetSpellBonusHealing](#getspellbonushealing) |  |  |
-| ❔ | [GetSpellCritChance](#getspellcritchance) |  |  |
-| ❔ | [GetSpellCritChanceFromStat](#getspellcritchancefromstat) |  |  |
-| ❔ | [GetSpellHitModifier](#getspellhitmodifier) |  |  |
-| ❔ | [GetSpellPenetration](#getspellpenetration) |  |  |
-| ❔ | [GetSturdiness](#getsturdiness) |  |  |
-| ❔ | [GetTaxiBenchmarkMode](#gettaxibenchmarkmode) |  |  |
-| ❔ | [GetVersatilityBonus](#getversatilitybonus) |  |  |
-| ❔ | [GetXPExhaustion](#getxpexhaustion) |  |  |
-| ❔ | [HasAPEffectsSpellPower](#hasapeffectsspellpower) |  |  |
-| ❔ | [HasDualWieldPenalty](#hasdualwieldpenalty) |  |  |
-| ❔ | [HasFullControl](#hasfullcontrol) |  |  |
-| ❔ | [HasIgnoreDualWieldWeapon](#hasignoredualwieldweapon) |  |  |
-| ❔ | [HasKey](#haskey) |  |  |
-| ❔ | [HasNoReleaseAura](#hasnoreleaseaura) |  |  |
-| ❔ | [HasSPEffectsAttackPower](#hasspeffectsattackpower) |  |  |
-| ❔ | [InitiateTrade](#initiatetrade) |  |  |
-| ❔ | [IsAccountSecured](#isaccountsecured) |  |  |
-| ❔ | [IsAdvancedFlyableArea](#isadvancedflyablearea) |  |  |
-| ❔ | [IsCemeterySelectionAvailable](#iscemeteryselectionavailable) |  |  |
-| ❔ | [IsCharacterNewlyBoosted](#ischaracternewlyboosted) |  |  |
-| ❔ | [IsDrivableArea](#isdrivablearea) |  |  |
-| ❔ | [IsDualWielding](#isdualwielding) |  |  |
-| ❔ | [IsFlyableArea](#isflyablearea) |  |  |
-| ❔ | [IsGuildLeader](#isguildleader) |  |  |
-| ❔ | [IsInGuild](#isinguild) |  |  |
-| ❔ | [IsInJailersTower](#isinjailerstower) |  |  |
-| ❔ | [IsIndoors](#isindoors) |  |  |
-| ❔ | [IsInsane](#isinsane) |  |  |
-| ❔ | [IsItemPreferredArmorType](#isitempreferredarmortype) |  |  |
-| ❔ | [IsJailersTowerLayerTimeLocked](#isjailerstowerlayertimelocked) |  |  |
-| ❔ | [IsLoggedIn](#isloggedin) |  |  |
-| ❔ | [IsMounted](#ismounted) |  |  |
-| ❔ | [IsOnGroundFloorInJailersTower](#isongroundfloorinjailerstower) |  |  |
-| ❔ | [IsOutOfBounds](#isoutofbounds) |  |  |
-| ❔ | [IsOutdoors](#isoutdoors) |  |  |
-| ❔ | [IsPVPTimerRunning](#ispvptimerrunning) |  |  |
-| ❔ | [IsPlayerInWorld](#isplayerinworld) |  |  |
-| ❔ | [IsPlayerMoving](#isplayermoving) |  |  |
-| ❔ | [IsRangedWeapon](#israngedweapon) |  |  |
-| ❔ | [IsResting](#isresting) |  |  |
-| ❔ | [IsRestrictedAccount](#isrestrictedaccount) |  |  |
-| ❔ | [IsStealthed](#isstealthed) |  |  |
-| ❔ | [IsXPUserDisabled](#isxpuserdisabled) |  |  |
-| ❔ | [NoPlayTime](#noplaytime) |  |  |
-| ❔ | [NotifyInspect](#notifyinspect) |  |  |
-| ❔ | [PartialPlayTime](#partialplaytime) |  |  |
-| ❔ | [PlayerCanTeleport](#playercanteleport) |  |  |
-| ❔ | [PlayerEffectiveAttackPower](#playereffectiveattackpower) |  |  |
-| ❔ | [PlayerGetTimerunningSeasonID](#playergettimerunningseasonid) |  |  |
-| ❔ | [PlayerIsInCombat](#playerisincombat) |  |  |
-| ❔ | [PlayerIsTimerunning](#playeristimerunning) |  |  |
-| ❔ | [PortGraveyard](#portgraveyard) |  |  |
-| ❔ | [RandomRoll](#randomroll) |  |  |
-| ❔ | [ReagentsFromBankAllowed](#reagentsfrombankallowed) |  |  |
-| ❔ | [RepopMe](#repopme) |  |  |
-| ❔ | [RequestTimePlayed](#requesttimeplayed) |  |  |
-| ❔ | [RespondInstanceLock](#respondinstancelock) |  |  |
-| ❔ | [ResurrectGetOfferer](#resurrectgetofferer) |  |  |
-| ❔ | [ResurrectHasSickness](#resurrecthassickness) |  |  |
-| ❔ | [ResurrectHasTimer](#resurrecthastimer) |  |  |
-| ❔ | [RetrieveCorpse](#retrievecorpse) |  |  |
-| ❔ | [SetAllowLowLevelRaid](#setallowlowlevelraid) |  |  |
-| ❔ | [SetAllowRecentAlliesSeeLocation](#setallowrecentalliesseelocation) |  |  |
-| ❔ | [SetAutoDeclineGuildInvites](#setautodeclineguildinvites) |  |  |
-| ❔ | [SetAutoDeclineNeighborhoodInvites](#setautodeclineneighborhoodinvites) |  |  |
-| ❔ | [SetCemeteryPreference](#setcemeterypreference) |  |  |
-| ❔ | [SetLootSpecialization](#setlootspecialization) |  |  |
-| ❔ | [SetTaxiBenchmarkMode](#settaxibenchmarkmode) |  |  |
-| ❔ | [ShouldDisplayRaidRolesInSocialFrame](#shoulddisplayraidrolesinsocialframe) |  |  |
-| ❔ | [ShouldDisplayStoryModeTooltipInSocialFrame](#shoulddisplaystorymodetooltipinsocialframe) |  |  |
-| ❔ | [ShouldShowIslandsWeeklyPOI](#shouldshowislandsweeklypoi) |  |  |
-| ❔ | [ShouldShowSpecialSplashScreen](#shouldshowspecialsplashscreen) |  |  |
-| ❔ | [ShowCloak](#showcloak) |  |  |
-| ❔ | [ShowHelm](#showhelm) |  |  |
-| ❔ | [ShowingCloak](#showingcloak) |  |  |
-| ❔ | [ShowingHelm](#showinghelm) |  |  |
-| ❔ | [SitStandOrDescendStart](#sitstandordescendstart) |  |  |
-| ❔ | [SplashFrameCanBeShown](#splashframecanbeshown) |  |  |
-| ❔ | [StartAttack](#startattack) |  |  |
-| ❔ | [StopAttack](#stopattack) |  |  |
-| ❔ | [Stuck](#stuck) |  |  |
-| ❔ | [TimeoutResurrect](#timeoutresurrect) |  |  |
-| ❔ | [ToggleSelfHighlight](#toggleselfhighlight) |  |  |
-| ❔ | [ToggleSheath](#togglesheath) |  |  |
-| ❔ | [ToggleSit](#togglesit) |  |  |
+| ✅ | [AcceptAreaSpiritHeal](#acceptareaspiritheal) |  |  |
+| ✅ | [AcceptGuild](#acceptguild) |  |  |
+| ✅ | [AcceptResurrect](#acceptresurrect) |  |  |
+| ✅ | [Ambiguate](#ambiguate) |  |  |
+| ✅ | [AutoEquipCursorItem](#autoequipcursoritem) |  |  |
+| ✅ | [BeginTrade](#begintrade) |  |  |
+| ✅ | [CanDualWield](#candualwield) |  |  |
+| ✅ | [CanInspect](#caninspect) |  |  |
+| ✅ | [CanLootUnit](#canlootunit) |  |  |
+| ✅ | [CanPortGraveyard](#canportgraveyard) |  |  |
+| ✅ | [CancelAreaSpiritHeal](#cancelareaspiritheal) |  |  |
+| ✅ | [CancelPendingEquip](#cancelpendingequip) |  |  |
+| ✅ | [CancelTrade](#canceltrade) |  |  |
+| ✅ | [CheckInteractDistance](#checkinteractdistance) |  |  |
+| ✅ | [CheckTalentMasterDist](#checktalentmasterdist) |  |  |
+| ✅ | [ClearPendingBindConversionItem](#clearpendingbindconversionitem) |  |  |
+| ✅ | [ConfirmTalentWipe](#confirmtalentwipe) |  |  |
+| ✅ | [ConvertItemToBindToAccount](#convertitemtobindtoaccount) |  |  |
+| ✅ | [DeclineGuild](#declineguild) |  |  |
+| ✅ | [DeclineResurrect](#declineresurrect) |  |  |
+| ✅ | [Dismount](#dismount) |  |  |
+| ✅ | [EquipPendingItem](#equippendingitem) |  |  |
+| ✅ | [FollowUnit](#followunit) |  |  |
+| ✅ | [GetAllowLowLevelRaid](#getallowlowlevelraid) |  |  |
+| ✅ | [GetAllowRecentAlliesSeeLocation](#getallowrecentalliesseelocation) |  |  |
+| ✅ | [GetAreaSpiritHealerTime](#getareaspirithealertime) |  |  |
+| ✅ | [GetArmorPenetration](#getarmorpenetration) |  |  |
+| ✅ | [GetAttackPowerForStat](#getattackpowerforstat) |  |  |
+| ✅ | [GetAutoDeclineGuildInvites](#getautodeclineguildinvites) |  |  |
+| ✅ | [GetAutoDeclineNeighborhoodInvites](#getautodeclineneighborhoodinvites) |  |  |
+| ✅ | [GetAvoidance](#getavoidance) |  |  |
+| ✅ | [GetBindLocation](#getbindlocation) |  |  |
+| ✅ | [GetBlockChance](#getblockchance) |  |  |
+| ✅ | [GetCemeteryPreference](#getcemeterypreference) |  |  |
+| ✅ | [GetCollapsingStarCost](#getcollapsingstarcost) |  |  |
+| ✅ | [GetCombatRating](#getcombatrating) |  |  |
+| ✅ | [GetCombatRatingBonus](#getcombatratingbonus) |  |  |
+| ✅ | [GetCombatRatingBonusForCombatRatingValue](#getcombatratingbonusforcombatratingvalue) |  |  |
+| ✅ | [GetCorpseRecoveryDelay](#getcorpserecoverydelay) |  |  |
+| ✅ | [GetCorruption](#getcorruption) |  |  |
+| ✅ | [GetCorruptionResistance](#getcorruptionresistance) |  |  |
+| ✅ | [GetCritChance](#getcritchance) |  |  |
+| ✅ | [GetCritChanceFromStat](#getcritchancefromstat) |  |  |
+| ✅ | [GetCritChanceProvidesParryEffect](#getcritchanceprovidesparryeffect) |  |  |
+| ✅ | [GetDodgeChance](#getdodgechance) |  |  |
+| ✅ | [GetDodgeChanceFromAttribute](#getdodgechancefromattribute) |  |  |
+| ✅ | [GetEvictionTimeRemaining](#getevictiontimeremaining) |  |  |
+| ✅ | [GetExpertise](#getexpertise) |  |  |
+| ✅ | [GetExpertisePercent](#getexpertisepercent) |  |  |
+| ✅ | [GetGlancingBlowChance](#getglancingblowchance) |  |  |
+| ✅ | [GetGlancingBlowPenalty](#getglancingblowpenalty) |  |  |
+| ✅ | [GetHaste](#gethaste) |  |  |
+| ✅ | [GetHealthRegen](#gethealthregen) |  |  |
+| ✅ | [GetHealthRegenFromSpirit](#gethealthregenfromspirit) |  |  |
+| ✅ | [GetHitModifier](#gethitmodifier) |  |  |
+| ✅ | [GetJailersTowerLevel](#getjailerstowerlevel) |  |  |
+| ✅ | [GetLifesteal](#getlifesteal) |  |  |
+| ✅ | [GetLootSpecialization](#getlootspecialization) |  |  |
+| ✅ | [GetManaRegen](#getmanaregen) |  |  |
+| ✅ | [GetManaRegenFromSpirit](#getmanaregenfromspirit) |  |  |
+| ✅ | [GetMastery](#getmastery) |  |  |
+| ✅ | [GetMasteryEffect](#getmasteryeffect) |  |  |
+| ✅ | [GetMaxPlayerLevel](#getmaxplayerlevel) |  |  |
+| ✅ | [GetMeleeHaste](#getmeleehaste) |  |  |
+| ✅ | [GetModResilienceDamageReduction](#getmodresiliencedamagereduction) |  |  |
+| ✅ | [GetMoney](#getmoney) |  |  |
+| ✅ | [GetNormalizedRealmName](#getnormalizedrealmname) |  |  |
+| ✅ | [GetOffhandHitModifier](#getoffhandhitmodifier) |  |  |
+| ✅ | [GetOverrideAPBySpellPower](#getoverrideapbyspellpower) |  |  |
+| ✅ | [GetOverrideSpellPowerByAP](#getoverridespellpowerbyap) |  |  |
+| ✅ | [GetPVPDesired](#getpvpdesired) |  |  |
+| ✅ | [GetPVPGearStatRules](#getpvpgearstatrules) |  |  |
+| ✅ | [GetPVPLifetimeStats](#getpvplifetimestats) |  |  |
+| ✅ | [GetPVPSessionStats](#getpvpsessionstats) |  |  |
+| ✅ | [GetPVPTimer](#getpvptimer) |  |  |
+| ✅ | [GetPVPYesterdayStats](#getpvpyesterdaystats) |  |  |
+| ✅ | [GetParryChance](#getparrychance) |  |  |
+| ✅ | [GetParryChanceFromAttribute](#getparrychancefromattribute) |  |  |
+| ✅ | [GetPetCritChance](#getpetcritchance) |  |  |
+| ✅ | [GetPetDodgeChance](#getpetdodgechance) |  |  |
+| ✅ | [GetPetHitChanceModifier](#getpethitchancemodifier) |  |  |
+| ✅ | [GetPetMeleeHaste](#getpetmeleehaste) |  |  |
+| ✅ | [GetPetSpellBonusDamage](#getpetspellbonusdamage) |  |  |
+| ✅ | [GetPetSpellHitChanceModifier](#getpetspellhitchancemodifier) |  |  |
+| ✅ | [GetPlayerFacing](#getplayerfacing) |  |  |
+| ✅ | [GetPlayerInfoByGUID](#getplayerinfobyguid) |  |  |
+| ✅ | [GetPowerRegen](#getpowerregen) |  |  |
+| ✅ | [GetPowerRegenForPowerType](#getpowerregenforpowertype) |  |  |
+| ✅ | [GetPvpPowerDamage](#getpvppowerdamage) |  |  |
+| ✅ | [GetPvpPowerHealing](#getpvppowerhealing) |  |  |
+| ✅ | [GetRangedAttackPowerForStat](#getrangedattackpowerforstat) |  |  |
+| ✅ | [GetRangedCritChance](#getrangedcritchance) |  |  |
+| ✅ | [GetRangedHaste](#getrangedhaste) |  |  |
+| ✅ | [GetRangedHitModifier](#getrangedhitmodifier) |  |  |
+| ✅ | [GetReleaseTimeRemaining](#getreleasetimeremaining) |  |  |
+| ✅ | [GetResSicknessDuration](#getressicknessduration) |  |  |
+| ✅ | [GetRestState](#getreststate) |  |  |
+| ✅ | [GetRestrictedAccountData](#getrestrictedaccountdata) |  |  |
+| ✅ | [GetRuneCooldown](#getrunecooldown) |  |  |
+| ✅ | [GetRuneCount](#getrunecount) |  |  |
+| ✅ | [GetSheathState](#getsheathstate) |  |  |
+| ✅ | [GetShieldBlock](#getshieldblock) |  |  |
+| ✅ | [GetSpeed](#getspeed) |  |  |
+| ✅ | [GetSpellBonusDamage](#getspellbonusdamage) |  |  |
+| ✅ | [GetSpellBonusHealing](#getspellbonushealing) |  |  |
+| ✅ | [GetSpellCritChance](#getspellcritchance) |  |  |
+| ✅ | [GetSpellCritChanceFromStat](#getspellcritchancefromstat) |  |  |
+| ✅ | [GetSpellHitModifier](#getspellhitmodifier) |  |  |
+| ✅ | [GetSpellPenetration](#getspellpenetration) |  |  |
+| ✅ | [GetSturdiness](#getsturdiness) |  |  |
+| ✅ | [GetTaxiBenchmarkMode](#gettaxibenchmarkmode) |  |  |
+| ✅ | [GetVersatilityBonus](#getversatilitybonus) |  |  |
+| ✅ | [GetXPExhaustion](#getxpexhaustion) |  |  |
+| ✅ | [HasAPEffectsSpellPower](#hasapeffectsspellpower) |  |  |
+| ✅ | [HasDualWieldPenalty](#hasdualwieldpenalty) |  |  |
+| ✅ | [HasFullControl](#hasfullcontrol) |  |  |
+| ✅ | [HasIgnoreDualWieldWeapon](#hasignoredualwieldweapon) |  |  |
+| ✅ | [HasKey](#haskey) |  |  |
+| ✅ | [HasNoReleaseAura](#hasnoreleaseaura) |  |  |
+| ✅ | [HasSPEffectsAttackPower](#hasspeffectsattackpower) |  |  |
+| ✅ | [InitiateTrade](#initiatetrade) |  |  |
+| ✅ | [IsAccountSecured](#isaccountsecured) |  |  |
+| ✅ | [IsAdvancedFlyableArea](#isadvancedflyablearea) |  |  |
+| ✅ | [IsCemeterySelectionAvailable](#iscemeteryselectionavailable) |  |  |
+| ✅ | [IsCharacterNewlyBoosted](#ischaracternewlyboosted) |  |  |
+| ✅ | [IsDrivableArea](#isdrivablearea) |  |  |
+| ✅ | [IsDualWielding](#isdualwielding) |  |  |
+| ✅ | [IsFlyableArea](#isflyablearea) |  |  |
+| ✅ | [IsGuildLeader](#isguildleader) |  |  |
+| ✅ | [IsInGuild](#isinguild) |  |  |
+| ✅ | [IsInJailersTower](#isinjailerstower) |  |  |
+| ✅ | [IsIndoors](#isindoors) |  |  |
+| ✅ | [IsInsane](#isinsane) |  |  |
+| ✅ | [IsItemPreferredArmorType](#isitempreferredarmortype) |  |  |
+| ✅ | [IsJailersTowerLayerTimeLocked](#isjailerstowerlayertimelocked) |  |  |
+| ✅ | [IsLoggedIn](#isloggedin) |  |  |
+| ✅ | [IsMounted](#ismounted) |  |  |
+| ✅ | [IsOnGroundFloorInJailersTower](#isongroundfloorinjailerstower) |  |  |
+| ✅ | [IsOutOfBounds](#isoutofbounds) |  |  |
+| ✅ | [IsOutdoors](#isoutdoors) |  |  |
+| ✅ | [IsPVPTimerRunning](#ispvptimerrunning) |  |  |
+| ✅ | [IsPlayerInWorld](#isplayerinworld) |  |  |
+| ✅ | [IsPlayerMoving](#isplayermoving) |  |  |
+| ✅ | [IsRangedWeapon](#israngedweapon) |  |  |
+| ✅ | [IsResting](#isresting) |  |  |
+| ✅ | [IsRestrictedAccount](#isrestrictedaccount) |  |  |
+| ✅ | [IsStealthed](#isstealthed) |  |  |
+| ✅ | [IsXPUserDisabled](#isxpuserdisabled) |  |  |
+| ✅ | [NoPlayTime](#noplaytime) |  |  |
+| ✅ | [NotifyInspect](#notifyinspect) |  |  |
+| ✅ | [PartialPlayTime](#partialplaytime) |  |  |
+| ✅ | [PlayerCanTeleport](#playercanteleport) |  |  |
+| ✅ | [PlayerEffectiveAttackPower](#playereffectiveattackpower) |  |  |
+| ✅ | [PlayerGetTimerunningSeasonID](#playergettimerunningseasonid) |  |  |
+| ✅ | [PlayerIsInCombat](#playerisincombat) |  |  |
+| ✅ | [PlayerIsTimerunning](#playeristimerunning) |  |  |
+| ✅ | [PortGraveyard](#portgraveyard) |  |  |
+| ✅ | [RandomRoll](#randomroll) |  |  |
+| ✅ | [ReagentsFromBankAllowed](#reagentsfrombankallowed) |  |  |
+| ✅ | [RepopMe](#repopme) |  |  |
+| ✅ | [RequestTimePlayed](#requesttimeplayed) |  |  |
+| ✅ | [RespondInstanceLock](#respondinstancelock) |  |  |
+| ✅ | [ResurrectGetOfferer](#resurrectgetofferer) |  |  |
+| ✅ | [ResurrectHasSickness](#resurrecthassickness) |  |  |
+| ✅ | [ResurrectHasTimer](#resurrecthastimer) |  |  |
+| ✅ | [RetrieveCorpse](#retrievecorpse) |  |  |
+| ✅ | [SetAllowLowLevelRaid](#setallowlowlevelraid) |  |  |
+| ✅ | [SetAllowRecentAlliesSeeLocation](#setallowrecentalliesseelocation) |  |  |
+| ✅ | [SetAutoDeclineGuildInvites](#setautodeclineguildinvites) |  |  |
+| ✅ | [SetAutoDeclineNeighborhoodInvites](#setautodeclineneighborhoodinvites) |  |  |
+| ✅ | [SetCemeteryPreference](#setcemeterypreference) |  |  |
+| ✅ | [SetLootSpecialization](#setlootspecialization) |  |  |
+| ✅ | [SetTaxiBenchmarkMode](#settaxibenchmarkmode) |  |  |
+| ✅ | [ShouldDisplayRaidRolesInSocialFrame](#shoulddisplayraidrolesinsocialframe) |  |  |
+| ✅ | [ShouldDisplayStoryModeTooltipInSocialFrame](#shoulddisplaystorymodetooltipinsocialframe) |  |  |
+| ✅ | [ShouldShowIslandsWeeklyPOI](#shouldshowislandsweeklypoi) |  |  |
+| ✅ | [ShouldShowSpecialSplashScreen](#shouldshowspecialsplashscreen) |  |  |
+| ✅ | [ShowCloak](#showcloak) |  |  |
+| ✅ | [ShowHelm](#showhelm) |  |  |
+| ✅ | [ShowingCloak](#showingcloak) |  |  |
+| ✅ | [ShowingHelm](#showinghelm) |  |  |
+| ✅ | [SitStandOrDescendStart](#sitstandordescendstart) |  |  |
+| ✅ | [SplashFrameCanBeShown](#splashframecanbeshown) |  |  |
+| ✅ | [StartAttack](#startattack) |  |  |
+| ✅ | [StopAttack](#stopattack) |  |  |
+| ✅ | [Stuck](#stuck) |  |  |
+| ✅ | [TimeoutResurrect](#timeoutresurrect) |  |  |
+| ✅ | [ToggleSelfHighlight](#toggleselfhighlight) |  |  |
+| ✅ | [ToggleSheath](#togglesheath) |  |  |
+| ✅ | [ToggleSit](#togglesit) |  |  |
 
 ### AcceptAreaSpiritHeal
 
 `AcceptAreaSpiritHeal()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### AcceptGuild
 
 `AcceptGuild()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### AcceptResurrect
 
 `AcceptResurrect()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### Ambiguate
 
 `Ambiguate(fullName: cstring, context: cstring) → result: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -228,28 +228,28 @@
 
 `AutoEquipCursorItem()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### BeginTrade
 
 `BeginTrade()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### CanDualWield
 
 `CanDualWield() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### CanInspect
 
 `CanInspect(targetGUID: UnitToken) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -257,7 +257,7 @@
 
 `CanLootUnit(targetUnit: WOWGUID) → hasLoot: bool, canLoot: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
@@ -266,21 +266,21 @@
 
 `CanPortGraveyard() → canPortGraveyard: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### CancelAreaSpiritHeal
 
 `CancelAreaSpiritHeal()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### CancelPendingEquip
 
 `CancelPendingEquip(index: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -288,14 +288,14 @@
 
 `CancelTrade()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### CheckInteractDistance
 
 `CheckInteractDistance(unitGUID: UnitToken, distIndex: luaIndex) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -303,56 +303,56 @@
 
 `CheckTalentMasterDist() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### ClearPendingBindConversionItem
 
 `ClearPendingBindConversionItem()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### ConfirmTalentWipe
 
 `ConfirmTalentWipe()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### ConvertItemToBindToAccount
 
 `ConvertItemToBindToAccount()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### DeclineGuild
 
 `DeclineGuild()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### DeclineResurrect
 
 `DeclineResurrect()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### Dismount
 
 `Dismount()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### EquipPendingItem
 
 `EquipPendingItem(index: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -360,7 +360,7 @@
 
 `FollowUnit(name: cstring = 0, exactMatch: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -368,28 +368,28 @@
 
 `GetAllowLowLevelRaid() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetAllowRecentAlliesSeeLocation
 
 `GetAllowRecentAlliesSeeLocation() → allowRecentAlliesSeeLocation: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetAreaSpiritHealerTime
 
 `GetAreaSpiritHealerTime() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetArmorPenetration
 
 `GetArmorPenetration() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -397,7 +397,7 @@
 
 `GetAttackPowerForStat(stat: luaIndex, value: number) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
@@ -406,21 +406,21 @@
 
 `GetAutoDeclineGuildInvites() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetAutoDeclineNeighborhoodInvites
 
 `GetAutoDeclineNeighborhoodInvites() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetAvoidance
 
 `GetAvoidance() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -428,14 +428,14 @@
 
 `GetBindLocation() → result: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetBlockChance
 
 `GetBlockChance() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -443,21 +443,21 @@
 
 `GetCemeteryPreference() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetCollapsingStarCost
 
 `GetCollapsingStarCost() → cost: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetCombatRating
 
 `GetCombatRating(ratingIndex: luaIndex) → result: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
@@ -466,7 +466,7 @@
 
 `GetCombatRatingBonus(ratingIndex: luaIndex) → result: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
@@ -475,7 +475,7 @@
 
 `GetCombatRatingBonusForCombatRatingValue(ratingIndex: luaIndex, value: number) → result: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -483,28 +483,28 @@
 
 `GetCorpseRecoveryDelay() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetCorruption
 
 `GetCorruption() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetCorruptionResistance
 
 `GetCorruptionResistance() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetCritChance
 
 `GetCritChance() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -512,7 +512,7 @@
 
 `GetCritChanceFromStat(stat: luaIndex, value: number) → critChance: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
@@ -521,14 +521,14 @@
 
 `GetCritChanceProvidesParryEffect() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetDodgeChance
 
 `GetDodgeChance() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -536,7 +536,7 @@
 
 `GetDodgeChanceFromAttribute() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -544,14 +544,14 @@
 
 `GetEvictionTimeRemaining() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetExpertise
 
 `GetExpertise() → mainhandExpertise: number, offhandExpertise: number, rangedExpertise: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -559,7 +559,7 @@
 
 `GetExpertisePercent() → mainhandExpertisePercent: number, offhandExpertisePercent: number, rangedExpertisePercent: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -567,7 +567,7 @@
 
 `GetGlancingBlowChance(playerWeaponSkill: number?, targetDefenseSkill: number) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: If no playerWeaponSkill value is provided, uses the skill value for the player's main hand weapon/shapeshift form.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
@@ -577,7 +577,7 @@
 
 `GetGlancingBlowPenalty(playerWeaponSkill: number?, targetDefenseSkill: number) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: If no playerWeaponSkill value is provided, uses the skill value for the player's main hand weapon/shapeshift form.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
@@ -587,7 +587,7 @@
 
 `GetHaste() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -595,21 +595,21 @@
 
 `GetHealthRegen() → healthRegen: number, combatHealthRegen: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetHealthRegenFromSpirit
 
 `GetHealthRegenFromSpirit() → healthRegen: number, combatHealthRegen: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetHitModifier
 
 `GetHitModifier() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -617,14 +617,14 @@
 
 `GetJailersTowerLevel() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetLifesteal
 
 `GetLifesteal() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -632,14 +632,14 @@
 
 `GetLootSpecialization() → specializationID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetManaRegen
 
 `GetManaRegen() → baseManaRegen: number, castingManaRegen: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -647,14 +647,14 @@
 
 `GetManaRegenFromSpirit() → powerRegen: number, combatPowerRegen: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetMastery
 
 `GetMastery() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -662,7 +662,7 @@
 
 `GetMasteryEffect() → masteryEffect: number, bonusCoefficient: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -670,14 +670,14 @@
 
 `GetMaxPlayerLevel() → maxPlayerLevel: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetMeleeHaste
 
 `GetMeleeHaste() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -685,7 +685,7 @@
 
 `GetModResilienceDamageReduction() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -693,21 +693,21 @@
 
 `GetMoney() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetNormalizedRealmName
 
 `GetNormalizedRealmName() → result: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetOffhandHitModifier
 
 `GetOffhandHitModifier() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -715,7 +715,7 @@
 
 `GetOverrideAPBySpellPower() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -723,7 +723,7 @@
 
 `GetOverrideSpellPowerByAP() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -731,49 +731,49 @@
 
 `GetPVPDesired() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPVPGearStatRules
 
 `GetPVPGearStatRules() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPVPLifetimeStats
 
 `GetPVPLifetimeStats() → lifetimeHonorableKills: number, lifetimeMaxPVPRank: PvPRanks`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPVPSessionStats
 
 `GetPVPSessionStats() → honorableKills: number, dishonorableKills: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPVPTimer
 
 `GetPVPTimer() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPVPYesterdayStats
 
 `GetPVPYesterdayStats() → honorableKills: number, dishonorableKills: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetParryChance
 
 `GetParryChance() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -781,7 +781,7 @@
 
 `GetParryChanceFromAttribute() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -789,7 +789,7 @@
 
 `GetPetCritChance() → meleeCrit: number, spellCrit: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -797,7 +797,7 @@
 
 `GetPetDodgeChance() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -805,7 +805,7 @@
 
 `GetPetHitChanceModifier() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -813,7 +813,7 @@
 
 `GetPetMeleeHaste() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -821,7 +821,7 @@
 
 `GetPetSpellBonusDamage() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -829,7 +829,7 @@
 
 `GetPetSpellHitChanceModifier() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -837,14 +837,14 @@
 
 `GetPlayerFacing() → result: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetPlayerInfoByGUID
 
 `GetPlayerInfoByGUID(guid: WOWGUID) → localizedClass: cstring, englishClass: cstring, localizedRace: cstring, englishRace: cstring, sex: number, name: string, realmName: cstring, level: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
@@ -853,7 +853,7 @@
 
 `GetPowerRegen() → basePowerRegen: number, castingPowerRegen: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -861,7 +861,7 @@
 
 `GetPowerRegenForPowerType(powerType: number) → basePowerRegen: number, castingPowerRegen: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
@@ -870,7 +870,7 @@
 
 `GetPvpPowerDamage() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -878,7 +878,7 @@
 
 `GetPvpPowerHealing() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -886,7 +886,7 @@
 
 `GetRangedAttackPowerForStat(stat: luaIndex, value: number) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
@@ -895,7 +895,7 @@
 
 `GetRangedCritChance() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -903,7 +903,7 @@
 
 `GetRangedHaste() → result: number, quiverHaste: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -911,7 +911,7 @@
 
 `GetRangedHitModifier() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -919,21 +919,21 @@
 
 `GetReleaseTimeRemaining() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetResSicknessDuration
 
 `GetResSicknessDuration() → result: string?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetRestState
 
 `GetRestState() → exhaustionID: number, name: cstring, factor: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -941,14 +941,14 @@
 
 `GetRestrictedAccountData() → maxLevel: number, maxMoney: WOWMONEY, professionCap: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetRuneCooldown
 
 `GetRuneCooldown(runeIndex: luaIndex) → startTime: number, duration: number, isRuneReady: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
@@ -957,7 +957,7 @@
 
 `GetRuneCount(runeIndex: luaIndex) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
@@ -966,14 +966,14 @@
 
 `GetSheathState() → result: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetShieldBlock
 
 `GetShieldBlock() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -981,7 +981,7 @@
 
 `GetSpeed() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -989,7 +989,7 @@
 
 `GetSpellBonusDamage(school: luaIndex) → result: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
@@ -998,7 +998,7 @@
 
 `GetSpellBonusHealing() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1006,7 +1006,7 @@
 
 `GetSpellCritChance() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1014,7 +1014,7 @@
 
 `GetSpellCritChanceFromStat(stat: luaIndex, value: number) → spellCritChance: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
@@ -1023,7 +1023,7 @@
 
 `GetSpellHitModifier() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1031,7 +1031,7 @@
 
 `GetSpellPenetration() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1039,7 +1039,7 @@
 
 `GetSturdiness() → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1047,14 +1047,14 @@
 
 `GetTaxiBenchmarkMode() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### GetVersatilityBonus
 
 `GetVersatilityBonus(combatRating: luaIndex) → result: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
@@ -1063,63 +1063,63 @@
 
 `GetXPExhaustion() → result: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### HasAPEffectsSpellPower
 
 `HasAPEffectsSpellPower() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### HasDualWieldPenalty
 
 `HasDualWieldPenalty() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### HasFullControl
 
 `HasFullControl() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### HasIgnoreDualWieldWeapon
 
 `HasIgnoreDualWieldWeapon() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### HasKey
 
 `HasKey() → hasKey: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### HasNoReleaseAura
 
 `HasNoReleaseAura() → hasCannotReleaseEffect: bool, longestDuration: number, hasUntilCancelledDuration: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### HasSPEffectsAttackPower
 
 `HasSPEffectsAttackPower() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### InitiateTrade
 
 `InitiateTrade(guid: UnitToken)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1127,91 +1127,91 @@
 
 `IsAccountSecured() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsAdvancedFlyableArea
 
 `IsAdvancedFlyableArea() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsCemeterySelectionAvailable
 
 `IsCemeterySelectionAvailable() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsCharacterNewlyBoosted
 
 `IsCharacterNewlyBoosted() → newlyBoosted: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsDrivableArea
 
 `IsDrivableArea() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsDualWielding
 
 `IsDualWielding() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsFlyableArea
 
 `IsFlyableArea() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsGuildLeader
 
 `IsGuildLeader() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsInGuild
 
 `IsInGuild() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsInJailersTower
 
 `IsInJailersTower() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsIndoors
 
 `IsIndoors() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsInsane
 
 `IsInsane() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsItemPreferredArmorType
 
 `IsItemPreferredArmorType(itemLocation: ItemLocation) → isItemPreferredArmorType: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1219,7 +1219,7 @@
 
 `IsJailersTowerLayerTimeLocked(layerLevel: number) → result: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1227,105 +1227,105 @@
 
 `IsLoggedIn() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsMounted
 
 `IsMounted() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsOnGroundFloorInJailersTower
 
 `IsOnGroundFloorInJailersTower() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsOutOfBounds
 
 `IsOutOfBounds() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsOutdoors
 
 `IsOutdoors() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsPVPTimerRunning
 
 `IsPVPTimerRunning() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsPlayerInWorld
 
 `IsPlayerInWorld() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsPlayerMoving
 
 `IsPlayerMoving() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsRangedWeapon
 
 `IsRangedWeapon() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsResting
 
 `IsResting() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsRestrictedAccount
 
 `IsRestrictedAccount() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsStealthed
 
 `IsStealthed() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### IsXPUserDisabled
 
 `IsXPUserDisabled() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### NoPlayTime
 
 `NoPlayTime() → result: bool?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### NotifyInspect
 
 `NotifyInspect(targetGUID: UnitToken)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1333,21 +1333,21 @@
 
 `PartialPlayTime() → result: bool?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### PlayerCanTeleport
 
 `PlayerCanTeleport() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### PlayerEffectiveAttackPower
 
 `PlayerEffectiveAttackPower() → mainHandAttackPower: number, offHandAttackPower: number, rangedAttackPower: number, baseAttackPower: number, baseRangedAttackPower: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
@@ -1356,35 +1356,35 @@
 
 `PlayerGetTimerunningSeasonID() → timerunningSeasonID: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### PlayerIsInCombat
 
 `PlayerIsInCombat() → playerIsInCombat: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### PlayerIsTimerunning
 
 `PlayerIsTimerunning() → playerIsTimerunning: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### PortGraveyard
 
 `PortGraveyard()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### RandomRoll
 
 `RandomRoll(min: number, max: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1392,28 +1392,28 @@
 
 `ReagentsFromBankAllowed() → allowed: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### RepopMe
 
 `RepopMe()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### RequestTimePlayed
 
 `RequestTimePlayed()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### RespondInstanceLock
 
 `RespondInstanceLock(acceptLock: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1421,35 +1421,35 @@
 
 `ResurrectGetOfferer() → name: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### ResurrectHasSickness
 
 `ResurrectHasSickness() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### ResurrectHasTimer
 
 `ResurrectHasTimer() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### RetrieveCorpse
 
 `RetrieveCorpse()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### SetAllowLowLevelRaid
 
 `SetAllowLowLevelRaid(allow: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1457,7 +1457,7 @@
 
 `SetAllowRecentAlliesSeeLocation(allowRecentAlliesSeeLocation: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1465,7 +1465,7 @@
 
 `SetAutoDeclineGuildInvites(allow: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1473,7 +1473,7 @@
 
 `SetAutoDeclineNeighborhoodInvites(allow: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1481,7 +1481,7 @@
 
 `SetCemeteryPreference(cemetaryID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1489,7 +1489,7 @@
 
 `SetLootSpecialization(specializationID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1497,7 +1497,7 @@
 
 `SetTaxiBenchmarkMode(enable: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1505,35 +1505,35 @@
 
 `ShouldDisplayRaidRolesInSocialFrame() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### ShouldDisplayStoryModeTooltipInSocialFrame
 
 `ShouldDisplayStoryModeTooltipInSocialFrame() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### ShouldShowIslandsWeeklyPOI
 
 `ShouldShowIslandsWeeklyPOI() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### ShouldShowSpecialSplashScreen
 
 `ShouldShowSpecialSplashScreen() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### ShowCloak
 
 `ShowCloak(show: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1541,7 +1541,7 @@
 
 `ShowHelm(show: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1549,21 +1549,21 @@
 
 `ShowingCloak() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### ShowingHelm
 
 `ShowingHelm() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### SitStandOrDescendStart
 
 `SitStandOrDescendStart()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1571,14 +1571,14 @@
 
 `SplashFrameCanBeShown() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### StartAttack
 
 `StartAttack(name: cstring = 0, exactMatch: bool = False)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1586,42 +1586,42 @@
 
 `StopAttack()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### Stuck
 
 `Stuck()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### TimeoutResurrect
 
 `TimeoutResurrect()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### ToggleSelfHighlight
 
 `ToggleSelfHighlight() → enabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### ToggleSheath
 
 `ToggleSheath()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
 ### ToggleSit
 
 `ToggleSit()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerScriptDocumentation.lua`
 
@@ -1629,15 +1629,17 @@
 
 ### PLAYER_IN_COMBAT_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `inCombat: bool`
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: `b`
 
 ### PLAYER_TARGET_DIED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (1 in combat); argument kinds: ``
 
 ## Types
 

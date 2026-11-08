@@ -4,5 +4,5 @@
 
 ### TalentConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `NumTalentColumns` = Constants.TalentConsts.NUM_TALENT_COLUMNS

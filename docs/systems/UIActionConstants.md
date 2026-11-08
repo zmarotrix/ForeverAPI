@@ -4,6 +4,6 @@
 
 ### UIActionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `DefaultAction` = 0
   - `UpdateMapSystem` = 1

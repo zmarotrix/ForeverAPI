@@ -6,22 +6,22 @@ Namespace: `C_AuraContainerUtil`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_AuraContainerUtil.ProcessAuraTooltipBackdropOptions](#c_auracontainerutilprocessauratooltipbackdropoptions) |  |  |
-| ❔ | [C_AuraContainerUtil.ProcessAuraTooltipNineSliceOptions](#c_auracontainerutilprocessauratooltipninesliceoptions) |  |  |
-| ❔ | [C_AuraContainerUtil.ProcessAuraTooltipTextureSliceOptions](#c_auracontainerutilprocessauratooltiptexturesliceoptions) |  |  |
-| ❔ | [C_AuraContainerUtil.ProcessCustomAuraButtonApplicationBarOptions](#c_auracontainerutilprocesscustomaurabuttonapplicationbaroptions) |  |  |
-| ❔ | [C_AuraContainerUtil.ProcessCustomAuraButtonApplicationCountOptions](#c_auracontainerutilprocesscustomaurabuttonapplicationcountoptions) |  |  |
-| ❔ | [C_AuraContainerUtil.ProcessCustomAuraButtonCasterNameOptions](#c_auracontainerutilprocesscustomaurabuttoncasternameoptions) |  |  |
-| ❔ | [C_AuraContainerUtil.ProcessCustomAuraButtonDispelTypeTextOptions](#c_auracontainerutilprocesscustomaurabuttondispeltypetextoptions) |  |  |
-| ❔ | [C_AuraContainerUtil.ProcessCustomAuraButtonDispelTypeTextureOptions](#c_auracontainerutilprocesscustomaurabuttondispeltypetextureoptions) |  |  |
-| ❔ | [C_AuraContainerUtil.ProcessCustomAuraButtonDurationBarOptions](#c_auracontainerutilprocesscustomaurabuttondurationbaroptions) |  |  |
-| ❔ | [C_AuraContainerUtil.ProcessCustomAuraButtonDurationTextOptions](#c_auracontainerutilprocesscustomaurabuttondurationtextoptions) |  |  |
+| ✅ | [C_AuraContainerUtil.ProcessAuraTooltipBackdropOptions](#c_auracontainerutilprocessauratooltipbackdropoptions) |  |  |
+| ✅ | [C_AuraContainerUtil.ProcessAuraTooltipNineSliceOptions](#c_auracontainerutilprocessauratooltipninesliceoptions) |  |  |
+| ✅ | [C_AuraContainerUtil.ProcessAuraTooltipTextureSliceOptions](#c_auracontainerutilprocessauratooltiptexturesliceoptions) |  |  |
+| ✅ | [C_AuraContainerUtil.ProcessCustomAuraButtonApplicationBarOptions](#c_auracontainerutilprocesscustomaurabuttonapplicationbaroptions) |  |  |
+| ✅ | [C_AuraContainerUtil.ProcessCustomAuraButtonApplicationCountOptions](#c_auracontainerutilprocesscustomaurabuttonapplicationcountoptions) |  |  |
+| ✅ | [C_AuraContainerUtil.ProcessCustomAuraButtonCasterNameOptions](#c_auracontainerutilprocesscustomaurabuttoncasternameoptions) |  |  |
+| ✅ | [C_AuraContainerUtil.ProcessCustomAuraButtonDispelTypeTextOptions](#c_auracontainerutilprocesscustomaurabuttondispeltypetextoptions) |  |  |
+| ✅ | [C_AuraContainerUtil.ProcessCustomAuraButtonDispelTypeTextureOptions](#c_auracontainerutilprocesscustomaurabuttondispeltypetextureoptions) |  |  |
+| ✅ | [C_AuraContainerUtil.ProcessCustomAuraButtonDurationBarOptions](#c_auracontainerutilprocesscustomaurabuttondurationbaroptions) |  |  |
+| ✅ | [C_AuraContainerUtil.ProcessCustomAuraButtonDurationTextOptions](#c_auracontainerutilprocesscustomaurabuttondurationtextoptions) |  |  |
 
 ### C_AuraContainerUtil.ProcessAuraTooltipBackdropOptions
 
 `C_AuraContainerUtil.ProcessAuraTooltipBackdropOptions(options: AuraContainerTooltipBackdropOptions) → result: AuraContainerTooltipBackdropOptions`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AuraContainerUtilDocumentation.lua`
 
@@ -29,7 +29,7 @@ Namespace: `C_AuraContainerUtil`
 
 `C_AuraContainerUtil.ProcessAuraTooltipNineSliceOptions(options: AuraContainerTooltipNineSliceOptions) → result: AuraContainerTooltipNineSliceOptions`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AuraContainerUtilDocumentation.lua`
 
@@ -37,7 +37,7 @@ Namespace: `C_AuraContainerUtil`
 
 `C_AuraContainerUtil.ProcessAuraTooltipTextureSliceOptions(options: AuraContainerTooltipTextureSliceOptions) → result: AuraContainerTooltipTextureSliceOptions`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AuraContainerUtilDocumentation.lua`
 
@@ -45,7 +45,7 @@ Namespace: `C_AuraContainerUtil`
 
 `C_AuraContainerUtil.ProcessCustomAuraButtonApplicationBarOptions(options: CustomAuraButtonApplicationBarOptions) → result: CustomAuraButtonApplicationBarOptions`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AuraContainerUtilDocumentation.lua`
 
@@ -53,7 +53,7 @@ Namespace: `C_AuraContainerUtil`
 
 `C_AuraContainerUtil.ProcessCustomAuraButtonApplicationCountOptions(options: CustomAuraButtonApplicationCountOptions?) → result: CustomAuraButtonApplicationCountOptions`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AuraContainerUtilDocumentation.lua`
 
@@ -61,7 +61,7 @@ Namespace: `C_AuraContainerUtil`
 
 `C_AuraContainerUtil.ProcessCustomAuraButtonCasterNameOptions(options: CustomAuraButtonCasterNameOptions?) → result: CustomAuraButtonCasterNameOptions`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AuraContainerUtilDocumentation.lua`
 
@@ -69,7 +69,7 @@ Namespace: `C_AuraContainerUtil`
 
 `C_AuraContainerUtil.ProcessCustomAuraButtonDispelTypeTextOptions(options: CustomAuraButtonDispelTypeTextOptions?) → result: CustomAuraButtonDispelTypeTextOptions`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AuraContainerUtilDocumentation.lua`
 
@@ -77,7 +77,7 @@ Namespace: `C_AuraContainerUtil`
 
 `C_AuraContainerUtil.ProcessCustomAuraButtonDispelTypeTextureOptions(options: CustomAuraButtonDispelTypeTextureOptions?) → result: CustomAuraButtonDispelTypeTextureOptions`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AuraContainerUtilDocumentation.lua`
 
@@ -85,7 +85,7 @@ Namespace: `C_AuraContainerUtil`
 
 `C_AuraContainerUtil.ProcessCustomAuraButtonDurationBarOptions(options: CustomAuraButtonDurationBarOptions?) → result: CustomAuraButtonDurationBarOptions`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AuraContainerUtilDocumentation.lua`
 
@@ -93,7 +93,7 @@ Namespace: `C_AuraContainerUtil`
 
 `C_AuraContainerUtil.ProcessCustomAuraButtonDurationTextOptions(options: CustomAuraButtonDurationTextOptions?) → result: CustomAuraButtonDurationTextOptions`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `AuraContainerUtilDocumentation.lua`
 

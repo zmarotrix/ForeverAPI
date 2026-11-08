@@ -4,7 +4,7 @@
 
 ### VisualAlertType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `MarchingAnts` = 1
   - `MarchingAntsCyan` = 2
   - `MarchingAntsRed` = 3

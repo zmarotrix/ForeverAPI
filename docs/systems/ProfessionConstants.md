@@ -4,14 +4,14 @@
 
 ### CraftingOrderDuration
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Short` = 0
   - `Medium` = 1
   - `Long` = 2
 
 ### CraftingOrderFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `IsRecraft` = 1
   - `HasNoneReagents` = 2
@@ -21,14 +21,14 @@
 
 ### CraftingOrderItemFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `NpcProvided` = 1
   - `HasEnchantmentData` = 2
 
 ### CraftingOrderItemType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Item` = 0
   - `Recraft` = 1
   - `CraftedResult` = 2
@@ -38,7 +38,7 @@
 
 ### CraftingOrderReagentSource
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Any` = 0
   - `Customer` = 1
   - `Crafter` = 2
@@ -46,7 +46,7 @@
 
 ### CraftingOrderResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Ok` = 0
   - `Aborted` = 1
   - `AlreadyClaimed` = 2
@@ -99,7 +99,7 @@
 
 ### CraftingOrderSortType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ItemName` = 0
   - `AveTip` = 1
   - `MaxTip` = 2
@@ -111,7 +111,7 @@
 
 ### CraftingOrderState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Creating` = 1
   - `Created` = 2
@@ -131,7 +131,7 @@
 
 ### CraftingOrderType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Public` = 0
   - `Guild` = 1
   - `Personal` = 2
@@ -139,7 +139,7 @@
 
 ### CraftingReagentType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Modifying` = 0
   - `Basic` = 1
   - `Finishing` = 2
@@ -147,18 +147,18 @@
 
 ### ItemRecraftFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Invalid` = 1
 
 ### NpcCraftingOrderSetFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `AllowMultiple` = 1
   - `AllowDuplicate` = 2
 
 ### Profession
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `FirstAid` = 0
   - `Blacksmithing` = 1
   - `Leatherworking` = 2
@@ -177,13 +177,13 @@
 
 ### ProfessionActionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Craft` = 0
   - `Gather` = 1
 
 ### ProfessionConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `NUM_PRIMARY_PROFESSIONS` = 2
   - `CLASSIC_PROFESSION_PARENT_TIER_INDEX` = 4
   - `RUNEFORGING_SKILL_LINE_ID` = 960
@@ -193,10 +193,12 @@
   - `PUBLIC_CRAFTING_ORDER_STALE_THRESHOLD` = 0
   - `CRAFTING_ORDER_ITEM_RETENTION` = 30
   - `CRAFTING_ORDER_CURRENCY_WALLET_ITEM_ID` = 262724
+- ⚠️ `CRAFTING_ORDER_CLAIM_DURATION`: docs say 0, game has 1800
+- ⚠️ `PUBLIC_CRAFTING_ORDER_STALE_THRESHOLD`: docs say 0, game has 14400
 
 ### ProfessionEffect
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Skill` = 0
   - `StatInspiration` = 1
   - `StatResourcefulness` = 2
@@ -231,7 +233,7 @@
 
 ### ProfessionRating
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Inspiration` = 0
   - `Resourcefulness` = 1
   - `Finesse` = 2
@@ -244,13 +246,13 @@
 
 ### ProfessionRatingType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Craft` = 0
   - `Gather` = 1
 
 ### RcoCloseReason
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Fulfill` = 0
   - `Expire` = 1
   - `Cancel` = 2
@@ -261,7 +263,7 @@
 
 ### SkinningState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Reserved` = 1
   - `Skinning` = 2

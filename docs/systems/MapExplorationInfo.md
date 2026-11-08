@@ -6,14 +6,14 @@ Namespace: `C_MapExplorationInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_MapExplorationInfo.GetExploredAreaIDsAtPosition](#c_mapexplorationinfogetexploredareaidsatposition) |  |  |
-| ❔ | [C_MapExplorationInfo.GetExploredMapTextures](#c_mapexplorationinfogetexploredmaptextures) |  |  |
+| ✅ | [C_MapExplorationInfo.GetExploredAreaIDsAtPosition](#c_mapexplorationinfogetexploredareaidsatposition) |  |  |
+| ✅ | [C_MapExplorationInfo.GetExploredMapTextures](#c_mapexplorationinfogetexploredmaptextures) |  |  |
 
 ### C_MapExplorationInfo.GetExploredAreaIDsAtPosition
 
 `C_MapExplorationInfo.GetExploredAreaIDsAtPosition(uiMapID: number, normalizedPosition: vector2) → areaID: number[]?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `MapExplorationDocumentation.lua`
 
@@ -21,7 +21,7 @@ Namespace: `C_MapExplorationInfo`
 
 `C_MapExplorationInfo.GetExploredMapTextures(uiMapID: number) → overlayInfo: UiMapExplorationInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `MapExplorationDocumentation.lua`
@@ -30,7 +30,7 @@ Namespace: `C_MapExplorationInfo`
 
 ### MAP_EXPLORATION_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 

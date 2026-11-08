@@ -6,88 +6,89 @@ Namespace: `C_Housing`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_Housing.AcceptNeighborhoodOwnership](#c_housingacceptneighborhoodownership) |  |  |
-| ❔ | [C_Housing.CanEditCharter](#c_housingcaneditcharter) |  |  |
-| ❔ | [C_Housing.CanTakeReportScreenshot](#c_housingcantakereportscreenshot) |  |  |
-| ❔ | [C_Housing.CreateGuildNeighborhood](#c_housingcreateguildneighborhood) |  |  |
-| ❔ | [C_Housing.CreateNeighborhoodCharter](#c_housingcreateneighborhoodcharter) |  |  |
-| ❔ | [C_Housing.DeclineNeighborhoodOwnership](#c_housingdeclineneighborhoodownership) |  |  |
-| ❔ | [C_Housing.DoesFactionMatchNeighborhood](#c_housingdoesfactionmatchneighborhood) |  |  |
-| ❔ | [C_Housing.EditNeighborhoodCharter](#c_housingeditneighborhoodcharter) |  |  |
-| ❔ | [C_Housing.GetCurrentHouseInfo](#c_housinggetcurrenthouseinfo) |  |  |
-| ❔ | [C_Housing.GetCurrentHouseLevelFavor](#c_housinggetcurrenthouselevelfavor) |  |  |
-| ❔ | [C_Housing.GetCurrentHouseRefundAmount](#c_housinggetcurrenthouserefundamount) |  |  |
-| ❔ | [C_Housing.GetCurrentNeighborhoodGUID](#c_housinggetcurrentneighborhoodguid) |  |  |
-| ❔ | [C_Housing.GetHouseLevelFavorForLevel](#c_housinggethouselevelfavorforlevel) |  |  |
-| ❔ | [C_Housing.GetHouseLevelRewardsForLevel](#c_housinggethouselevelrewardsforlevel) |  |  |
-| ❔ | [C_Housing.GetHousingAccessFlags](#c_housinggethousingaccessflags) |  |  |
-| ❔ | [C_Housing.GetMaxHouseLevel](#c_housinggetmaxhouselevel) |  |  |
-| ❔ | [C_Housing.GetNeighborhoodTextureSuffix](#c_housinggetneighborhoodtexturesuffix) |  |  |
-| ❔ | [C_Housing.GetOthersOwnedHouses](#c_housinggetothersownedhouses) |  |  |
-| ❔ | [C_Housing.GetPlayerOwnedHouses](#c_housinggetplayerownedhouses) |  |  |
-| ❔ | [C_Housing.GetTrackedHouseGuid](#c_housinggettrackedhouseguid) |  |  |
-| ❔ | [C_Housing.GetUIMapIDForNeighborhood](#c_housinggetuimapidforneighborhood) |  |  |
-| ❔ | [C_Housing.GetVisitCooldownInfo](#c_housinggetvisitcooldowninfo) |  |  |
-| ❔ | [C_Housing.HasHousingExpansionAccess](#c_housinghashousingexpansionaccess) |  |  |
-| ❔ | [C_Housing.HouseFinderDeclineNeighborhoodInvitation](#c_housinghousefinderdeclineneighborhoodinvitation) |  |  |
-| ❔ | [C_Housing.HouseFinderIgnoreNeighborhood](#c_housinghousefinderignoreneighborhood) |  |  |
-| ❔ | [C_Housing.HouseFinderRequestNeighborhoods](#c_housinghousefinderrequestneighborhoods) |  |  |
-| ❔ | [C_Housing.HouseFinderRequestReservationAndPort](#c_housinghousefinderrequestreservationandport) |  |  |
-| ❔ | [C_Housing.IsHousingMarketCartFullRemoveEnabled](#c_housingishousingmarketcartfullremoveenabled) |  |  |
-| ❔ | [C_Housing.IsHousingMarketEnabled](#c_housingishousingmarketenabled) |  |  |
-| ❔ | [C_Housing.IsHousingMarketShopEnabled](#c_housingishousingmarketshopenabled) |  |  |
-| ❔ | [C_Housing.IsHousingServiceEnabled](#c_housingishousingserviceenabled) |  |  |
-| ❔ | [C_Housing.IsInsideHouse](#c_housingisinsidehouse) |  |  |
-| ❔ | [C_Housing.IsInsideHouseOrPlot](#c_housingisinsidehouseorplot) |  |  |
-| ❔ | [C_Housing.IsInsideOwnedHouse](#c_housingisinsideownedhouse) |  |  |
-| ❔ | [C_Housing.IsInsideOwnedHouseOrPlot](#c_housingisinsideownedhouseorplot) |  |  |
-| ❔ | [C_Housing.IsInsideOwnedPlot](#c_housingisinsideownedplot) |  |  |
-| ❔ | [C_Housing.IsInsidePlot](#c_housingisinsideplot) |  |  |
-| ❔ | [C_Housing.IsOnNeighborhoodMap](#c_housingisonneighborhoodmap) |  |  |
-| ❔ | [C_Housing.LeaveHouse](#c_housingleavehouse) |  |  |
-| ❔ | [C_Housing.OnCharterConfirmationAccepted](#c_housingoncharterconfirmationaccepted) |  |  |
-| ❔ | [C_Housing.OnCharterConfirmationClosed](#c_housingoncharterconfirmationclosed) |  |  |
-| ❔ | [C_Housing.OnCreateCharterNeighborhoodClosed](#c_housingoncreatecharterneighborhoodclosed) |  |  |
-| ❔ | [C_Housing.OnCreateGuildNeighborhoodClosed](#c_housingoncreateguildneighborhoodclosed) |  |  |
-| ❔ | [C_Housing.OnHouseFinderClickPlot](#c_housingonhousefinderclickplot) |  |  |
-| ❔ | [C_Housing.OnRequestSignatureClicked](#c_housingonrequestsignatureclicked) |  |  |
-| ❔ | [C_Housing.OnSignCharterClicked](#c_housingonsigncharterclicked) |  |  |
-| ❔ | [C_Housing.RelinquishHouse](#c_housingrelinquishhouse) |  |  |
-| ❔ | [C_Housing.RequestCurrentHouseInfo](#c_housingrequestcurrenthouseinfo) |  |  |
-| ❔ | [C_Housing.RequestHouseFinderNeighborhoodData](#c_housingrequesthousefinderneighborhooddata) |  |  |
-| ❔ | [C_Housing.RequestPlayerCharacterList](#c_housingrequestplayercharacterlist) |  |  |
-| ❔ | [C_Housing.ResetHouse](#c_housingresethouse) |  |  |
-| ❔ | [C_Housing.ReturnAfterVisitingHouse](#c_housingreturnaftervisitinghouse) |  |  |
-| ❔ | [C_Housing.SaveHouseSettings](#c_housingsavehousesettings) |  |  |
-| ❔ | [C_Housing.SearchBNetFriendNeighborhoods](#c_housingsearchbnetfriendneighborhoods) |  |  |
-| ❔ | [C_Housing.SearchBNetFriendNeighborhoodsByID](#c_housingsearchbnetfriendneighborhoodsbyid) |  |  |
-| ❔ | [C_Housing.SetTrackedHouseGuid](#c_housingsettrackedhouseguid) |  |  |
-| ❔ | [C_Housing.StartTutorial](#c_housingstarttutorial) |  |  |
-| ❔ | [C_Housing.TeleportHome](#c_housingteleporthome) |  |  |
-| ❔ | [C_Housing.TryRenameNeighborhood](#c_housingtryrenameneighborhood) |  |  |
-| ❔ | [C_Housing.ValidateCreateGuildNeighborhoodSize](#c_housingvalidatecreateguildneighborhoodsize) |  |  |
-| ❔ | [C_Housing.ValidateNeighborhoodName](#c_housingvalidateneighborhoodname) |  |  |
-| ❔ | [C_Housing.VisitHouse](#c_housingvisithouse) |  |  |
+| ✅ | [C_Housing.AcceptNeighborhoodOwnership](#c_housingacceptneighborhoodownership) |  |  |
+| ✅ | [C_Housing.CanEditCharter](#c_housingcaneditcharter) |  |  |
+| ✅ | [C_Housing.CanTakeReportScreenshot](#c_housingcantakereportscreenshot) |  |  |
+| ✅ | [C_Housing.CreateGuildNeighborhood](#c_housingcreateguildneighborhood) |  |  |
+| ✅ | [C_Housing.CreateNeighborhoodCharter](#c_housingcreateneighborhoodcharter) |  |  |
+| ✅ | [C_Housing.DeclineNeighborhoodOwnership](#c_housingdeclineneighborhoodownership) |  |  |
+| ✅ | [C_Housing.DoesFactionMatchNeighborhood](#c_housingdoesfactionmatchneighborhood) |  |  |
+| ✅ | [C_Housing.EditNeighborhoodCharter](#c_housingeditneighborhoodcharter) |  |  |
+| ✅ | [C_Housing.GetCurrentHouseInfo](#c_housinggetcurrenthouseinfo) |  |  |
+| ✅ | [C_Housing.GetCurrentHouseLevelFavor](#c_housinggetcurrenthouselevelfavor) |  |  |
+| ✅ | [C_Housing.GetCurrentHouseRefundAmount](#c_housinggetcurrenthouserefundamount) |  |  |
+| ✅ | [C_Housing.GetCurrentNeighborhoodGUID](#c_housinggetcurrentneighborhoodguid) |  |  |
+| ✅ | [C_Housing.GetHouseLevelFavorForLevel](#c_housinggethouselevelfavorforlevel) |  |  |
+| ✅ | [C_Housing.GetHouseLevelRewardsForLevel](#c_housinggethouselevelrewardsforlevel) |  |  |
+| ✅ | [C_Housing.GetHousingAccessFlags](#c_housinggethousingaccessflags) |  |  |
+| ✅ | [C_Housing.GetMaxHouseLevel](#c_housinggetmaxhouselevel) |  |  |
+| ✅ | [C_Housing.GetNeighborhoodTextureSuffix](#c_housinggetneighborhoodtexturesuffix) |  |  |
+| ✅ | [C_Housing.GetOthersOwnedHouses](#c_housinggetothersownedhouses) |  |  |
+| ✅ | [C_Housing.GetPlayerOwnedHouses](#c_housinggetplayerownedhouses) |  |  |
+| ✅ | [C_Housing.GetTrackedHouseGuid](#c_housinggettrackedhouseguid) |  |  |
+| ✅ | [C_Housing.GetUIMapIDForNeighborhood](#c_housinggetuimapidforneighborhood) |  |  |
+| ✅ | [C_Housing.GetVisitCooldownInfo](#c_housinggetvisitcooldowninfo) |  |  |
+| ✅ | [C_Housing.HasHousingExpansionAccess](#c_housinghashousingexpansionaccess) |  |  |
+| ✅ | [C_Housing.HouseFinderDeclineNeighborhoodInvitation](#c_housinghousefinderdeclineneighborhoodinvitation) |  |  |
+| ✅ | [C_Housing.HouseFinderIgnoreNeighborhood](#c_housinghousefinderignoreneighborhood) |  |  |
+| ✅ | [C_Housing.HouseFinderRequestNeighborhoods](#c_housinghousefinderrequestneighborhoods) |  |  |
+| ✅ | [C_Housing.HouseFinderRequestReservationAndPort](#c_housinghousefinderrequestreservationandport) |  |  |
+| ✅ | [C_Housing.IsHousingMarketCartFullRemoveEnabled](#c_housingishousingmarketcartfullremoveenabled) |  |  |
+| ✅ | [C_Housing.IsHousingMarketEnabled](#c_housingishousingmarketenabled) |  |  |
+| ✅ | [C_Housing.IsHousingMarketShopEnabled](#c_housingishousingmarketshopenabled) |  |  |
+| ✅ | [C_Housing.IsHousingServiceEnabled](#c_housingishousingserviceenabled) |  |  |
+| ✅ | [C_Housing.IsInsideHouse](#c_housingisinsidehouse) |  |  |
+| ✅ | [C_Housing.IsInsideHouseOrPlot](#c_housingisinsidehouseorplot) |  |  |
+| 🆕 | [C_Housing.IsInsideOwnHouse](#c_housingisinsideownhouse) |  |  |
+| ✅ | [C_Housing.IsInsideOwnedHouse](#c_housingisinsideownedhouse) |  |  |
+| ✅ | [C_Housing.IsInsideOwnedHouseOrPlot](#c_housingisinsideownedhouseorplot) |  |  |
+| ✅ | [C_Housing.IsInsideOwnedPlot](#c_housingisinsideownedplot) |  |  |
+| ✅ | [C_Housing.IsInsidePlot](#c_housingisinsideplot) |  |  |
+| ✅ | [C_Housing.IsOnNeighborhoodMap](#c_housingisonneighborhoodmap) |  |  |
+| ✅ | [C_Housing.LeaveHouse](#c_housingleavehouse) |  |  |
+| ✅ | [C_Housing.OnCharterConfirmationAccepted](#c_housingoncharterconfirmationaccepted) |  |  |
+| ✅ | [C_Housing.OnCharterConfirmationClosed](#c_housingoncharterconfirmationclosed) |  |  |
+| ✅ | [C_Housing.OnCreateCharterNeighborhoodClosed](#c_housingoncreatecharterneighborhoodclosed) |  |  |
+| ✅ | [C_Housing.OnCreateGuildNeighborhoodClosed](#c_housingoncreateguildneighborhoodclosed) |  |  |
+| ✅ | [C_Housing.OnHouseFinderClickPlot](#c_housingonhousefinderclickplot) |  |  |
+| ✅ | [C_Housing.OnRequestSignatureClicked](#c_housingonrequestsignatureclicked) |  |  |
+| ✅ | [C_Housing.OnSignCharterClicked](#c_housingonsigncharterclicked) |  |  |
+| ✅ | [C_Housing.RelinquishHouse](#c_housingrelinquishhouse) |  |  |
+| ✅ | [C_Housing.RequestCurrentHouseInfo](#c_housingrequestcurrenthouseinfo) |  |  |
+| ✅ | [C_Housing.RequestHouseFinderNeighborhoodData](#c_housingrequesthousefinderneighborhooddata) |  |  |
+| ✅ | [C_Housing.RequestPlayerCharacterList](#c_housingrequestplayercharacterlist) |  |  |
+| ✅ | [C_Housing.ResetHouse](#c_housingresethouse) |  |  |
+| ✅ | [C_Housing.ReturnAfterVisitingHouse](#c_housingreturnaftervisitinghouse) |  |  |
+| ✅ | [C_Housing.SaveHouseSettings](#c_housingsavehousesettings) |  |  |
+| ✅ | [C_Housing.SearchBNetFriendNeighborhoods](#c_housingsearchbnetfriendneighborhoods) |  |  |
+| ✅ | [C_Housing.SearchBNetFriendNeighborhoodsByID](#c_housingsearchbnetfriendneighborhoodsbyid) |  |  |
+| ✅ | [C_Housing.SetTrackedHouseGuid](#c_housingsettrackedhouseguid) |  |  |
+| ✅ | [C_Housing.StartTutorial](#c_housingstarttutorial) |  |  |
+| ✅ | [C_Housing.TeleportHome](#c_housingteleporthome) |  |  |
+| ✅ | [C_Housing.TryRenameNeighborhood](#c_housingtryrenameneighborhood) |  |  |
+| ✅ | [C_Housing.ValidateCreateGuildNeighborhoodSize](#c_housingvalidatecreateguildneighborhoodsize) |  |  |
+| ✅ | [C_Housing.ValidateNeighborhoodName](#c_housingvalidateneighborhoodname) |  |  |
+| ✅ | [C_Housing.VisitHouse](#c_housingvisithouse) |  |  |
 
 ### C_Housing.AcceptNeighborhoodOwnership
 
 `C_Housing.AcceptNeighborhoodOwnership()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.CanEditCharter
 
 `C_Housing.CanEditCharter() → canEditCharter: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.CanTakeReportScreenshot
 
 `C_Housing.CanTakeReportScreenshot(plotIndex: number) → reason: InvalidPlotScreenshotReason`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -95,7 +96,7 @@ Namespace: `C_Housing`
 
 `C_Housing.CreateGuildNeighborhood(neighborhoodName: cstring)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -103,7 +104,7 @@ Namespace: `C_Housing`
 
 `C_Housing.CreateNeighborhoodCharter(neighborhoodName: cstring)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -111,14 +112,14 @@ Namespace: `C_Housing`
 
 `C_Housing.DeclineNeighborhoodOwnership()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.DoesFactionMatchNeighborhood
 
 `C_Housing.DoesFactionMatchNeighborhood(neighborhoodGUID: WOWGUID) → factionMatches: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -126,7 +127,7 @@ Namespace: `C_Housing`
 
 `C_Housing.EditNeighborhoodCharter(neighborhoodName: cstring)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -134,14 +135,14 @@ Namespace: `C_Housing`
 
 `C_Housing.GetCurrentHouseInfo() → houseInfo: HouseInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.GetCurrentHouseLevelFavor
 
 `C_Housing.GetCurrentHouseLevelFavor(houseGuid: WOWGUID)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -149,21 +150,21 @@ Namespace: `C_Housing`
 
 `C_Housing.GetCurrentHouseRefundAmount() → refundAmount: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.GetCurrentNeighborhoodGUID
 
 `C_Housing.GetCurrentNeighborhoodGUID() → neighborhoodGUID: WOWGUID?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.GetHouseLevelFavorForLevel
 
 `C_Housing.GetHouseLevelFavorForLevel(level: number) → houseFavor: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -171,7 +172,7 @@ Namespace: `C_Housing`
 
 `C_Housing.GetHouseLevelRewardsForLevel(level: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -179,21 +180,21 @@ Namespace: `C_Housing`
 
 `C_Housing.GetHousingAccessFlags() → accessFlags: HouseSettingFlags`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.GetMaxHouseLevel
 
 `C_Housing.GetMaxHouseLevel() → level: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.GetNeighborhoodTextureSuffix
 
 `C_Housing.GetNeighborhoodTextureSuffix(neighborhoodGUID: WOWGUID) → neighborhoodTextureSuffix: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -201,7 +202,7 @@ Namespace: `C_Housing`
 
 `C_Housing.GetOthersOwnedHouses(playerGUID: WOWGUID?, bnetID: number?, isInPlayersGuild: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -209,21 +210,21 @@ Namespace: `C_Housing`
 
 `C_Housing.GetPlayerOwnedHouses()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.GetTrackedHouseGuid
 
 `C_Housing.GetTrackedHouseGuid() → trackedHouse: WOWGUID?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.GetUIMapIDForNeighborhood
 
 `C_Housing.GetUIMapIDForNeighborhood(neighborhoodGuid: WOWGUID) → uiMapID: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -231,7 +232,7 @@ Namespace: `C_Housing`
 
 `C_Housing.GetVisitCooldownInfo() → spellCooldownInfo: SpellCooldownInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -239,21 +240,21 @@ Namespace: `C_Housing`
 
 `C_Housing.HasHousingExpansionAccess() → hasAccess: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.HouseFinderDeclineNeighborhoodInvitation
 
 `C_Housing.HouseFinderDeclineNeighborhoodInvitation()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.HouseFinderIgnoreNeighborhood
 
 `C_Housing.HouseFinderIgnoreNeighborhood(neighborhoodGuid: WOWGUID)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -261,14 +262,14 @@ Namespace: `C_Housing`
 
 `C_Housing.HouseFinderRequestNeighborhoods()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.HouseFinderRequestReservationAndPort
 
 `C_Housing.HouseFinderRequestReservationAndPort(neighborhoodGuid: WOWGUID, plotID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -276,119 +277,125 @@ Namespace: `C_Housing`
 
 `C_Housing.IsHousingMarketCartFullRemoveEnabled() → isHousingMarketCartFullRemoveEnabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.IsHousingMarketEnabled
 
 `C_Housing.IsHousingMarketEnabled() → isHousingMarketEnabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.IsHousingMarketShopEnabled
 
 `C_Housing.IsHousingMarketShopEnabled() → isHousingMarketShopEnabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.IsHousingServiceEnabled
 
 `C_Housing.IsHousingServiceEnabled() → isAvailable: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.IsInsideHouse
 
 `C_Housing.IsInsideHouse() → isInside: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.IsInsideHouseOrPlot
 
 `C_Housing.IsInsideHouseOrPlot() → isInside: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
+
+### C_Housing.IsInsideOwnHouse
+
+`C_Housing.IsInsideOwnHouse(...)`
+
+- Status: 🆕 in game, not in Blizzard's docs (function)
 
 ### C_Housing.IsInsideOwnedHouse
 
 `C_Housing.IsInsideOwnedHouse() → isInsideOwnedHouse: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.IsInsideOwnedHouseOrPlot
 
 `C_Housing.IsInsideOwnedHouseOrPlot() → isInsideOwnedHouseOrPlot: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.IsInsideOwnedPlot
 
 `C_Housing.IsInsideOwnedPlot() → isInside: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.IsInsidePlot
 
 `C_Housing.IsInsidePlot() → isInside: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.IsOnNeighborhoodMap
 
 `C_Housing.IsOnNeighborhoodMap() → isOnNeighborhoodMap: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.LeaveHouse
 
 `C_Housing.LeaveHouse()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.OnCharterConfirmationAccepted
 
 `C_Housing.OnCharterConfirmationAccepted()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.OnCharterConfirmationClosed
 
 `C_Housing.OnCharterConfirmationClosed()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.OnCreateCharterNeighborhoodClosed
 
 `C_Housing.OnCreateCharterNeighborhoodClosed()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.OnCreateGuildNeighborhoodClosed
 
 `C_Housing.OnCreateGuildNeighborhoodClosed()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.OnHouseFinderClickPlot
 
 `C_Housing.OnHouseFinderClickPlot(plotID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -396,14 +403,14 @@ Namespace: `C_Housing`
 
 `C_Housing.OnRequestSignatureClicked()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.OnSignCharterClicked
 
 `C_Housing.OnSignCharterClicked(charterOwnerGUID: WOWGUID)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -411,7 +418,7 @@ Namespace: `C_Housing`
 
 `C_Housing.RelinquishHouse(houseGuid: WOWGUID)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -419,14 +426,14 @@ Namespace: `C_Housing`
 
 `C_Housing.RequestCurrentHouseInfo()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.RequestHouseFinderNeighborhoodData
 
 `C_Housing.RequestHouseFinderNeighborhoodData(neighborhoodGuid: WOWGUID, neighborhoodName: cstring)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -434,14 +441,14 @@ Namespace: `C_Housing`
 
 `C_Housing.RequestPlayerCharacterList()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.ResetHouse
 
 `C_Housing.ResetHouse(resetScope: HousingHouseScope)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Resets all contents of the house, based on the provided scope; API restricted to ensure this can't be triggered without the player getting ample notice and confirmation
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -451,7 +458,7 @@ Namespace: `C_Housing`
 
 `C_Housing.ReturnAfterVisitingHouse()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -459,7 +466,7 @@ Namespace: `C_Housing`
 
 `C_Housing.SaveHouseSettings(playerGUID: WOWGUID, accessFlags: HouseSettingFlags)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -467,7 +474,7 @@ Namespace: `C_Housing`
 
 `C_Housing.SearchBNetFriendNeighborhoods(bnetName: cstring) → isValidBnetFriend: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -475,7 +482,7 @@ Namespace: `C_Housing`
 
 `C_Housing.SearchBNetFriendNeighborhoodsByID(bnetID: number) → isValidBnetFriend: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -483,7 +490,7 @@ Namespace: `C_Housing`
 
 `C_Housing.SetTrackedHouseGuid(trackedHouse: WOWGUID?)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -491,14 +498,14 @@ Namespace: `C_Housing`
 
 `C_Housing.StartTutorial()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.TeleportHome
 
 `C_Housing.TeleportHome(neighborhoodGUID: WOWGUID, houseGUID: WOWGUID, plotID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
@@ -507,7 +514,7 @@ Namespace: `C_Housing`
 
 `C_Housing.TryRenameNeighborhood(neighborhoodName: cstring)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -515,14 +522,14 @@ Namespace: `C_Housing`
 
 `C_Housing.ValidateCreateGuildNeighborhoodSize()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `HousingUIDocumentation.lua`
 
 ### C_Housing.ValidateNeighborhoodName
 
 `C_Housing.ValidateNeighborhoodName(neighborhoodName: cstring)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
 
@@ -530,7 +537,7 @@ Namespace: `C_Housing`
 
 `C_Housing.VisitHouse(neighborhoodGUID: WOWGUID, houseGUID: WOWGUID, plotID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `HousingUIDocumentation.lua`
@@ -539,235 +546,235 @@ Namespace: `C_Housing`
 
 ### ADD_NEIGHBORHOOD_CHARTER_SIGNATURE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `signature: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### B_NET_NEIGHBORHOOD_LIST_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `result: HousingResult`, `neighborhoodInfos: NeighborhoodInfo[]?`
 - fires synchronously (Blizzard's docs)
 
 ### CLOSE_CHARTER_CONFIRMATION_UI
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### CLOSE_CREATE_CHARTER_NEIGHBORHOOD_UI
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### CLOSE_CREATE_GUILD_NEIGHBORHOOD_UI
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### CREATE_NEIGHBORHOOD_RESULT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `result: HousingResult`, `neighborhoodName: cstring?`
 - fires synchronously (Blizzard's docs)
 
 ### CURRENT_HOUSE_INFO_RECIEVED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `houseInfo: HouseInfo`
 - fires synchronously (Blizzard's docs)
 
 ### CURRENT_HOUSE_INFO_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `houseInfo: HouseInfo`
 - fires synchronously (Blizzard's docs)
 
 ### DECLINE_NEIGHBORHOOD_INVITATION_RESPONSE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `success: bool`
 - fires synchronously (Blizzard's docs)
 
 ### FORCE_REFRESH_HOUSE_FINDER
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### HOUSE_FINDER_NEIGHBORHOOD_DATA_RECIEVED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `neighborhoodPlots: NeighborhoodPlotMapInfo[]`
 - fires synchronously (Blizzard's docs)
 
 ### HOUSE_INFO_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### HOUSE_LEVEL_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `newHouseLevelInfo: HouseLevelInfo?`
 - fires synchronously (Blizzard's docs)
 
 ### HOUSE_LEVEL_FAVOR_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `houseLevelFavor: HouseLevelFavor`
 - fires synchronously (Blizzard's docs)
 
 ### HOUSE_PLOT_ENTERED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### HOUSE_PLOT_EXITED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### HOUSE_RESERVATION_RESPONSE_RECIEVED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `result: HousingResult`
 - fires synchronously (Blizzard's docs)
 
 ### HOUSE_RESET_COMPLETED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### HOUSE_RESET_FAILED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `result: HousingResult`
 - fires synchronously (Blizzard's docs)
 
 ### HOUSING_MARKET_AVAILABILITY_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### HOUSING_SERVICES_AVAILABILITY_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### IGNORE_NEIGHBORHOOD_RESPONSE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `success: bool`, `neighborhoodGuid: WOWGUID`
 - fires synchronously (Blizzard's docs)
 
 ### MOVE_OUT_RESERVATION_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### NEIGHBORHOOD_GUILD_SIZE_VALIDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `approved: bool`
 - fires synchronously (Blizzard's docs)
 
 ### NEIGHBORHOOD_LIST_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `result: HousingResult`, `neighborhoodInfos: NeighborhoodInfo[]?`
 - fires synchronously (Blizzard's docs)
 
 ### NEIGHBORHOOD_NAME_VALIDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `approved: bool`
 - fires synchronously (Blizzard's docs)
 
 ### NEW_HOUSING_ITEM_ACQUIRED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `itemType: HousingItemToastType`, `itemName: cstring`, `icon: fileID?`
 - fires synchronously (Blizzard's docs)
 
 ### OPEN_CHARTER_CONFIRMATION_UI
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `neighborhoodName: string`, `locationName: string`
 - fires synchronously (Blizzard's docs)
 
 ### OPEN_CREATE_CHARTER_NEIGHBORHOOD_UI
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `locationName: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### OPEN_CREATE_GUILD_NEIGHBORHOOD_UI
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `locationName: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### OPEN_NEIGHBORHOOD_CHARTER
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `neighborhoodInfo: NeighborhoodInfo`, `signatures: string[]`, `requiredSignatures: number`
 - fires synchronously (Blizzard's docs)
 
 ### OPEN_NEIGHBORHOOD_CHARTER_SIGNATURE_REQUEST
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `neighborhoodInfo: NeighborhoodInfo`
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_CHARACTER_LIST_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `characterInfos: HouseOwnerCharacterInfo[]`, `ownerListIndex: number`
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_HOUSE_LIST_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `houseInfos: HouseInfo[]`
 - fires synchronously (Blizzard's docs)
 
 ### RECEIVED_HOUSE_LEVEL_REWARDS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `level: number`, `rewards: HouseLevelReward[]`
 - fires synchronously (Blizzard's docs)
 
 ### REMOVE_NEIGHBORHOOD_CHARTER_SIGNATURE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `signature: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### SHOW_NEIGHBORHOOD_OWNERSHIP_TRANSFER_DIALOG
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `neighborhoodName: cstring`, `cosmeticOwnerName: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### TRACKED_HOUSE_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `trackedHouse: WOWGUID?`
 - fires synchronously (Blizzard's docs)
 
 ### VIEW_HOUSES_LIST_RECIEVED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `houseInfos: HouseInfo[]`
 - fires synchronously (Blizzard's docs)
 
@@ -775,7 +782,7 @@ Namespace: `C_Housing`
 
 ### CreateNeighborhoodErrorType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Profanity` = 1
   - `UndersizedGuild` = 2
@@ -783,7 +790,7 @@ Namespace: `C_Housing`
 
 ### HousingItemToastType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Room` = 0
   - `Fixture` = 1
   - `Customization` = 2

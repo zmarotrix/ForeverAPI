@@ -6,20 +6,20 @@ Namespace: `C_CreatureInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_CreatureInfo.GetClassInfo](#c_creatureinfogetclassinfo) |  |  |
-| ❔ | [C_CreatureInfo.GetCreatureFamilyIDs](#c_creatureinfogetcreaturefamilyids) |  |  |
-| ❔ | [C_CreatureInfo.GetCreatureFamilyInfo](#c_creatureinfogetcreaturefamilyinfo) |  |  |
-| ❔ | [C_CreatureInfo.GetCreatureID](#c_creatureinfogetcreatureid) |  |  |
-| ❔ | [C_CreatureInfo.GetCreatureTypeIDs](#c_creatureinfogetcreaturetypeids) |  |  |
-| ❔ | [C_CreatureInfo.GetCreatureTypeInfo](#c_creatureinfogetcreaturetypeinfo) |  |  |
-| ❔ | [C_CreatureInfo.GetFactionInfo](#c_creatureinfogetfactioninfo) |  |  |
-| ❔ | [C_CreatureInfo.GetRaceInfo](#c_creatureinfogetraceinfo) |  |  |
+| ✅ | [C_CreatureInfo.GetClassInfo](#c_creatureinfogetclassinfo) |  |  |
+| ✅ | [C_CreatureInfo.GetCreatureFamilyIDs](#c_creatureinfogetcreaturefamilyids) |  |  |
+| ✅ | [C_CreatureInfo.GetCreatureFamilyInfo](#c_creatureinfogetcreaturefamilyinfo) |  |  |
+| ✅ | [C_CreatureInfo.GetCreatureID](#c_creatureinfogetcreatureid) |  |  |
+| ✅ | [C_CreatureInfo.GetCreatureTypeIDs](#c_creatureinfogetcreaturetypeids) |  |  |
+| ✅ | [C_CreatureInfo.GetCreatureTypeInfo](#c_creatureinfogetcreaturetypeinfo) |  |  |
+| ✅ | [C_CreatureInfo.GetFactionInfo](#c_creatureinfogetfactioninfo) |  |  |
+| ✅ | [C_CreatureInfo.GetRaceInfo](#c_creatureinfogetraceinfo) |  |  |
 
 ### C_CreatureInfo.GetClassInfo
 
 `C_CreatureInfo.GetClassInfo(classID: number) → classInfo: ClassInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CreatureInfoDocumentation.lua`
 
@@ -27,14 +27,14 @@ Namespace: `C_CreatureInfo`
 
 `C_CreatureInfo.GetCreatureFamilyIDs() → creatureFamilyIDs: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CreatureInfoDocumentation.lua`
 
 ### C_CreatureInfo.GetCreatureFamilyInfo
 
 `C_CreatureInfo.GetCreatureFamilyInfo(creatureFamilyID: number) → creatureFamilyInfo: CreatureFamilyInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CreatureInfoDocumentation.lua`
 
@@ -42,7 +42,7 @@ Namespace: `C_CreatureInfo`
 
 `C_CreatureInfo.GetCreatureID(creatureGUID: WOWGUID) → creatureID: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CreatureInfoDocumentation.lua`
 
@@ -50,14 +50,14 @@ Namespace: `C_CreatureInfo`
 
 `C_CreatureInfo.GetCreatureTypeIDs() → creatureTypeIDs: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CreatureInfoDocumentation.lua`
 
 ### C_CreatureInfo.GetCreatureTypeInfo
 
 `C_CreatureInfo.GetCreatureTypeInfo(creatureTypeID: number) → creatureTypeInfo: CreatureTypeInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CreatureInfoDocumentation.lua`
 
@@ -65,7 +65,7 @@ Namespace: `C_CreatureInfo`
 
 `C_CreatureInfo.GetFactionInfo(raceID: number) → factionInfo: FactionInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CreatureInfoDocumentation.lua`
 
@@ -73,7 +73,7 @@ Namespace: `C_CreatureInfo`
 
 `C_CreatureInfo.GetRaceInfo(raceID: number) → raceInfo: RaceInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CreatureInfoDocumentation.lua`
 

@@ -4,7 +4,7 @@
 
 ### PvPRanks
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `RankNone` = 0
   - `RankPariah` = 1
   - `RankOutlaw` = 2
@@ -27,6 +27,6 @@
 
 ### PvpInfoConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `MaxPlayersPerInstance` = 80
   - `MAX_PVP_LOCK_LIST_MAP` = 2

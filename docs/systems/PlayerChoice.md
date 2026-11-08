@@ -6,19 +6,19 @@ Namespace: `C_PlayerChoice`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_PlayerChoice.GetCurrentPlayerChoiceInfo](#c_playerchoicegetcurrentplayerchoiceinfo) |  |  |
-| ❔ | [C_PlayerChoice.GetNumRerolls](#c_playerchoicegetnumrerolls) |  |  |
-| ❔ | [C_PlayerChoice.GetRemainingTime](#c_playerchoicegetremainingtime) |  |  |
-| ❔ | [C_PlayerChoice.IsWaitingForPlayerChoiceResponse](#c_playerchoiceiswaitingforplayerchoiceresponse) |  |  |
-| ❔ | [C_PlayerChoice.OnUIClosed](#c_playerchoiceonuiclosed) |  |  |
-| ❔ | [C_PlayerChoice.RequestRerollPlayerChoice](#c_playerchoicerequestrerollplayerchoice) |  |  |
-| ❔ | [C_PlayerChoice.SendPlayerChoiceResponse](#c_playerchoicesendplayerchoiceresponse) |  |  |
+| ✅ | [C_PlayerChoice.GetCurrentPlayerChoiceInfo](#c_playerchoicegetcurrentplayerchoiceinfo) |  |  |
+| ✅ | [C_PlayerChoice.GetNumRerolls](#c_playerchoicegetnumrerolls) |  |  |
+| ✅ | [C_PlayerChoice.GetRemainingTime](#c_playerchoicegetremainingtime) |  |  |
+| ✅ | [C_PlayerChoice.IsWaitingForPlayerChoiceResponse](#c_playerchoiceiswaitingforplayerchoiceresponse) |  |  |
+| ✅ | [C_PlayerChoice.OnUIClosed](#c_playerchoiceonuiclosed) |  |  |
+| ✅ | [C_PlayerChoice.RequestRerollPlayerChoice](#c_playerchoicerequestrerollplayerchoice) |  |  |
+| ✅ | [C_PlayerChoice.SendPlayerChoiceResponse](#c_playerchoicesendplayerchoiceresponse) |  |  |
 
 ### C_PlayerChoice.GetCurrentPlayerChoiceInfo
 
 `C_PlayerChoice.GetCurrentPlayerChoiceInfo() → choiceInfo: PlayerChoiceInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerChoiceDocumentation.lua`
 
@@ -26,42 +26,42 @@ Namespace: `C_PlayerChoice`
 
 `C_PlayerChoice.GetNumRerolls() → numRerolls: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerChoiceDocumentation.lua`
 
 ### C_PlayerChoice.GetRemainingTime
 
 `C_PlayerChoice.GetRemainingTime() → remainingTime: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerChoiceDocumentation.lua`
 
 ### C_PlayerChoice.IsWaitingForPlayerChoiceResponse
 
 `C_PlayerChoice.IsWaitingForPlayerChoiceResponse() → isWaitingForResponse: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerChoiceDocumentation.lua`
 
 ### C_PlayerChoice.OnUIClosed
 
 `C_PlayerChoice.OnUIClosed()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerChoiceDocumentation.lua`
 
 ### C_PlayerChoice.RequestRerollPlayerChoice
 
 `C_PlayerChoice.RequestRerollPlayerChoice()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PlayerChoiceDocumentation.lua`
 
 ### C_PlayerChoice.SendPlayerChoiceResponse
 
 `C_PlayerChoice.SendPlayerChoiceResponse(responseID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PlayerChoiceDocumentation.lua`
 
@@ -69,13 +69,13 @@ Namespace: `C_PlayerChoice`
 
 ### PLAYER_CHOICE_CLOSE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_CHOICE_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
 
@@ -144,7 +144,7 @@ Namespace: `C_PlayerChoice`
 
 ### PlayerChoiceRarity
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Common` = 0
   - `Uncommon` = 1
   - `Rare` = 2

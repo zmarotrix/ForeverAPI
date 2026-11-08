@@ -4,12 +4,12 @@
 
 ### LootConsts_Camelot
 
-- Constants — ❔ unverified
+- Constants — ⛔ in Blizzard's docs, not in game
   - `MasterLootQualityThreshold` = 4
 
 ### LootRollDisabledReason
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `NotAllowed` = 1
   - `UniqueRestriction` = 2
@@ -21,7 +21,7 @@
 
 ### LootRollType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Pass` = 0
   - `Need` = 1
   - `Greed` = 2

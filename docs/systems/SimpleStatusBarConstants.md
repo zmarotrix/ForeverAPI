@@ -4,7 +4,7 @@
 
 ### StatusBarFillStyle
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Standard` = 0
   - `StandardNoRangeFill` = 1
   - `Center` = 2
@@ -12,18 +12,18 @@
 
 ### StatusBarInterpolation
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Immediate` = 0
   - `ExponentialEaseOut` = 1
 
 ### StatusBarRenderMode
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Linear` = 0
   - `Radial` = 1
 
 ### StatusBarTimerDirection
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ElapsedTime` = 0
   - `RemainingTime` = 1

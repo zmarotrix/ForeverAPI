@@ -4,7 +4,7 @@
 
 ### ArrowCalloutDirection
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Up` = 0
   - `Down` = 1
   - `Left` = 2
@@ -12,7 +12,7 @@
 
 ### ArrowCalloutType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Generic` = 1
   - `WorldLootObject` = 2

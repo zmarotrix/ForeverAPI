@@ -6,43 +6,43 @@ Namespace: `C_ItemInteraction`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_ItemInteraction.ClearPendingItem](#c_iteminteractionclearpendingitem) |  |  |
-| ❔ | [C_ItemInteraction.CloseUI](#c_iteminteractioncloseui) |  |  |
-| ❔ | [C_ItemInteraction.GetChargeInfo](#c_iteminteractiongetchargeinfo) |  |  |
-| ❔ | [C_ItemInteraction.GetItemConversionCurrencyCost](#c_iteminteractiongetitemconversioncurrencycost) |  |  |
-| ❔ | [C_ItemInteraction.GetItemInteractionInfo](#c_iteminteractiongetiteminteractioninfo) |  |  |
-| ❔ | [C_ItemInteraction.GetItemInteractionSpellId](#c_iteminteractiongetiteminteractionspellid) |  |  |
-| ❔ | [C_ItemInteraction.InitializeFrame](#c_iteminteractioninitializeframe) |  |  |
-| ❔ | [C_ItemInteraction.PerformItemInteraction](#c_iteminteractionperformiteminteraction) |  |  |
-| ❔ | [C_ItemInteraction.Reset](#c_iteminteractionreset) |  |  |
-| ❔ | [C_ItemInteraction.SetPendingItem](#c_iteminteractionsetpendingitem) |  |  |
+| ✅ | [C_ItemInteraction.ClearPendingItem](#c_iteminteractionclearpendingitem) |  |  |
+| ✅ | [C_ItemInteraction.CloseUI](#c_iteminteractioncloseui) |  |  |
+| ✅ | [C_ItemInteraction.GetChargeInfo](#c_iteminteractiongetchargeinfo) |  |  |
+| ✅ | [C_ItemInteraction.GetItemConversionCurrencyCost](#c_iteminteractiongetitemconversioncurrencycost) |  |  |
+| ✅ | [C_ItemInteraction.GetItemInteractionInfo](#c_iteminteractiongetiteminteractioninfo) |  |  |
+| ✅ | [C_ItemInteraction.GetItemInteractionSpellId](#c_iteminteractiongetiteminteractionspellid) |  |  |
+| ✅ | [C_ItemInteraction.InitializeFrame](#c_iteminteractioninitializeframe) |  |  |
+| ✅ | [C_ItemInteraction.PerformItemInteraction](#c_iteminteractionperformiteminteraction) |  |  |
+| ✅ | [C_ItemInteraction.Reset](#c_iteminteractionreset) |  |  |
+| ✅ | [C_ItemInteraction.SetPendingItem](#c_iteminteractionsetpendingitem) |  |  |
 
 ### C_ItemInteraction.ClearPendingItem
 
 `C_ItemInteraction.ClearPendingItem()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ItemInteractionUIDocumentation.lua`
 
 ### C_ItemInteraction.CloseUI
 
 `C_ItemInteraction.CloseUI()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ItemInteractionUIDocumentation.lua`
 
 ### C_ItemInteraction.GetChargeInfo
 
 `C_ItemInteraction.GetChargeInfo() → chargeInfo: ItemInteractionChargeInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ItemInteractionUIDocumentation.lua`
 
 ### C_ItemInteraction.GetItemConversionCurrencyCost
 
 `C_ItemInteraction.GetItemConversionCurrencyCost(item: ItemLocation) → conversionCost: ConversionCurrencyCost`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ItemInteractionUIDocumentation.lua`
 
@@ -50,28 +50,28 @@ Namespace: `C_ItemInteraction`
 
 `C_ItemInteraction.GetItemInteractionInfo() → info: ItemInteractionFrameInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ItemInteractionUIDocumentation.lua`
 
 ### C_ItemInteraction.GetItemInteractionSpellId
 
 `C_ItemInteraction.GetItemInteractionSpellId() → spellId: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ItemInteractionUIDocumentation.lua`
 
 ### C_ItemInteraction.InitializeFrame
 
 `C_ItemInteraction.InitializeFrame()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ItemInteractionUIDocumentation.lua`
 
 ### C_ItemInteraction.PerformItemInteraction
 
 `C_ItemInteraction.PerformItemInteraction()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `ItemInteractionUIDocumentation.lua`
 
@@ -79,14 +79,14 @@ Namespace: `C_ItemInteraction`
 
 `C_ItemInteraction.Reset()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ItemInteractionUIDocumentation.lua`
 
 ### C_ItemInteraction.SetPendingItem
 
 `C_ItemInteraction.SetPendingItem(item: ItemLocation?) → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `ItemInteractionUIDocumentation.lua`
 
@@ -94,13 +94,13 @@ Namespace: `C_ItemInteraction`
 
 ### ITEM_INTERACTION_CHARGE_INFO_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### ITEM_INTERACTION_ITEM_SELECTION_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `itemLocation: ItemLocation?`
 - fires synchronously (Blizzard's docs)
 

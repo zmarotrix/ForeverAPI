@@ -4,14 +4,14 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [CopyToClipboard](#copytoclipboard) |  |  |
-| ❔ | [GetTimePreciseSec](#gettimeprecisesec) |  |  |
+| ✅ | [CopyToClipboard](#copytoclipboard) |  |  |
+| ✅ | [GetTimePreciseSec](#gettimeprecisesec) |  |  |
 
 ### CopyToClipboard
 
 `CopyToClipboard(text: cstring, removeMarkup: bool = False) → length: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `OsDocumentation.lua`
@@ -20,5 +20,5 @@
 
 `GetTimePreciseSec() → time: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `OsDocumentation.lua`

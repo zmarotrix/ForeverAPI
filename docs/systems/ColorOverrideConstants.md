@@ -4,7 +4,7 @@
 
 ### ColorOverride
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ItemQualityPoor` = 0
   - `ItemQualityCommon` = 1
   - `ItemQualityUncommon` = 2

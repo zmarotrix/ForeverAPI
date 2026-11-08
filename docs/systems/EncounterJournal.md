@@ -6,34 +6,34 @@ Namespace: `C_EncounterJournal`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_EncounterJournal.GetBaseDifficultyID](#c_encounterjournalgetbasedifficultyid) |  |  |
-| ❔ | [C_EncounterJournal.GetDungeonEntrancesForMap](#c_encounterjournalgetdungeonentrancesformap) |  |  |
-| ❔ | [C_EncounterJournal.GetEncounterJournalLink](#c_encounterjournalgetencounterjournallink) |  |  |
-| ❔ | [C_EncounterJournal.GetEncountersOnMap](#c_encounterjournalgetencountersonmap) |  |  |
-| ❔ | [C_EncounterJournal.GetInstanceForGameMap](#c_encounterjournalgetinstanceforgamemap) |  |  |
-| ❔ | [C_EncounterJournal.GetLootInfo](#c_encounterjournalgetlootinfo) |  |  |
-| ❔ | [C_EncounterJournal.GetLootInfoByIndex](#c_encounterjournalgetlootinfobyindex) |  |  |
-| ❔ | [C_EncounterJournal.GetSectionIconFlags](#c_encounterjournalgetsectioniconflags) |  |  |
-| ❔ | [C_EncounterJournal.GetSectionInfo](#c_encounterjournalgetsectioninfo) |  |  |
-| ❔ | [C_EncounterJournal.GetSlotFilter](#c_encounterjournalgetslotfilter) |  |  |
-| ❔ | [C_EncounterJournal.InitalizeSelectedTier](#c_encounterjournalinitalizeselectedtier) |  |  |
-| ❔ | [C_EncounterJournal.InstanceHasDifficultyID](#c_encounterjournalinstancehasdifficultyid) |  |  |
-| ❔ | [C_EncounterJournal.InstanceHasLoot](#c_encounterjournalinstancehasloot) |  |  |
-| ❔ | [C_EncounterJournal.IsEncounterComplete](#c_encounterjournalisencountercomplete) |  |  |
-| ❔ | [C_EncounterJournal.OnClose](#c_encounterjournalonclose) |  |  |
-| ❔ | [C_EncounterJournal.OnOpen](#c_encounterjournalonopen) |  |  |
-| ❔ | [C_EncounterJournal.ResetSlotFilter](#c_encounterjournalresetslotfilter) |  |  |
-| ❔ | [C_EncounterJournal.SetPreviewMythicPlusLevel](#c_encounterjournalsetpreviewmythicpluslevel) |  |  |
-| ❔ | [C_EncounterJournal.SetPreviewPvpTier](#c_encounterjournalsetpreviewpvptier) |  |  |
-| ❔ | [C_EncounterJournal.SetSlotFilter](#c_encounterjournalsetslotfilter) |  |  |
-| ❔ | [C_EncounterJournal.SetTab](#c_encounterjournalsettab) |  |  |
-| ❔ | [C_EncounterJournal.StartArathiRPE](#c_encounterjournalstartarathirpe) |  |  |
+| ✅ | [C_EncounterJournal.GetBaseDifficultyID](#c_encounterjournalgetbasedifficultyid) |  |  |
+| ✅ | [C_EncounterJournal.GetDungeonEntrancesForMap](#c_encounterjournalgetdungeonentrancesformap) |  |  |
+| ✅ | [C_EncounterJournal.GetEncounterJournalLink](#c_encounterjournalgetencounterjournallink) |  |  |
+| ✅ | [C_EncounterJournal.GetEncountersOnMap](#c_encounterjournalgetencountersonmap) |  |  |
+| ✅ | [C_EncounterJournal.GetInstanceForGameMap](#c_encounterjournalgetinstanceforgamemap) |  |  |
+| ✅ | [C_EncounterJournal.GetLootInfo](#c_encounterjournalgetlootinfo) |  |  |
+| ✅ | [C_EncounterJournal.GetLootInfoByIndex](#c_encounterjournalgetlootinfobyindex) |  |  |
+| ✅ | [C_EncounterJournal.GetSectionIconFlags](#c_encounterjournalgetsectioniconflags) |  |  |
+| ✅ | [C_EncounterJournal.GetSectionInfo](#c_encounterjournalgetsectioninfo) |  |  |
+| ✅ | [C_EncounterJournal.GetSlotFilter](#c_encounterjournalgetslotfilter) |  |  |
+| ✅ | [C_EncounterJournal.InitalizeSelectedTier](#c_encounterjournalinitalizeselectedtier) |  |  |
+| ✅ | [C_EncounterJournal.InstanceHasDifficultyID](#c_encounterjournalinstancehasdifficultyid) |  |  |
+| ✅ | [C_EncounterJournal.InstanceHasLoot](#c_encounterjournalinstancehasloot) |  |  |
+| ✅ | [C_EncounterJournal.IsEncounterComplete](#c_encounterjournalisencountercomplete) |  |  |
+| ✅ | [C_EncounterJournal.OnClose](#c_encounterjournalonclose) |  |  |
+| ✅ | [C_EncounterJournal.OnOpen](#c_encounterjournalonopen) |  |  |
+| ✅ | [C_EncounterJournal.ResetSlotFilter](#c_encounterjournalresetslotfilter) |  |  |
+| ✅ | [C_EncounterJournal.SetPreviewMythicPlusLevel](#c_encounterjournalsetpreviewmythicpluslevel) |  |  |
+| ✅ | [C_EncounterJournal.SetPreviewPvpTier](#c_encounterjournalsetpreviewpvptier) |  |  |
+| ✅ | [C_EncounterJournal.SetSlotFilter](#c_encounterjournalsetslotfilter) |  |  |
+| ✅ | [C_EncounterJournal.SetTab](#c_encounterjournalsettab) |  |  |
+| ✅ | [C_EncounterJournal.StartArathiRPE](#c_encounterjournalstartarathirpe) |  |  |
 
 ### C_EncounterJournal.GetBaseDifficultyID
 
 `C_EncounterJournal.GetBaseDifficultyID(difficultyID: number) → baseDifficultyID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterJournalDocumentation.lua`
 
@@ -41,7 +41,7 @@ Namespace: `C_EncounterJournal`
 
 `C_EncounterJournal.GetDungeonEntrancesForMap(uiMapID: number) → dungeonEntrances: DungeonEntranceMapInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterJournalDocumentation.lua`
 
@@ -49,7 +49,7 @@ Namespace: `C_EncounterJournal`
 
 `C_EncounterJournal.GetEncounterJournalLink(linkType: JournalLinkTypes, ID: number, displayText: string, difficultyID: number) → link: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterJournalDocumentation.lua`
 
@@ -57,7 +57,7 @@ Namespace: `C_EncounterJournal`
 
 `C_EncounterJournal.GetEncountersOnMap(uiMapID: number) → encounters: EncounterJournalMapEncounterInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterJournalDocumentation.lua`
 
@@ -65,7 +65,7 @@ Namespace: `C_EncounterJournal`
 
 `C_EncounterJournal.GetInstanceForGameMap(mapID: number) → journalInstanceID: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: GameMap as opposed to UIMap since we use a mapID not a uiMapID.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterJournalDocumentation.lua`
@@ -74,7 +74,7 @@ Namespace: `C_EncounterJournal`
 
 `C_EncounterJournal.GetLootInfo(id: number) → itemInfo: EncounterJournalItemInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterJournalDocumentation.lua`
 
@@ -82,7 +82,7 @@ Namespace: `C_EncounterJournal`
 
 `C_EncounterJournal.GetLootInfoByIndex(index: luaIndex, encounterIndex: luaIndex?) → itemInfo: EncounterJournalItemInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterJournalDocumentation.lua`
@@ -91,7 +91,7 @@ Namespace: `C_EncounterJournal`
 
 `C_EncounterJournal.GetSectionIconFlags(sectionID: number) → iconFlags: number[]?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Represents the icon indices for this EJ section.  An icon index can be used to arrive at texture coordinates for specific encounter types, e.g.: EncounterJournal_SetFlagIcon
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterJournalDocumentation.lua`
@@ -100,7 +100,7 @@ Namespace: `C_EncounterJournal`
 
 `C_EncounterJournal.GetSectionInfo(sectionID: number) → info: EncounterJournalSectionInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterJournalDocumentation.lua`
@@ -109,21 +109,21 @@ Namespace: `C_EncounterJournal`
 
 `C_EncounterJournal.GetSlotFilter() → filter: ItemSlotFilterType`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `EncounterJournalDocumentation.lua`
 
 ### C_EncounterJournal.InitalizeSelectedTier
 
 `C_EncounterJournal.InitalizeSelectedTier()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `EncounterJournalDocumentation.lua`
 
 ### C_EncounterJournal.InstanceHasDifficultyID
 
 `C_EncounterJournal.InstanceHasDifficultyID(difficultyID: number) → hasDifficultyID: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterJournalDocumentation.lua`
 
@@ -131,7 +131,7 @@ Namespace: `C_EncounterJournal`
 
 `C_EncounterJournal.InstanceHasLoot(instanceID: number?) → hasLoot: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterJournalDocumentation.lua`
 
@@ -139,7 +139,7 @@ Namespace: `C_EncounterJournal`
 
 `C_EncounterJournal.IsEncounterComplete(journalEncounterID: number) → isEncounterComplete: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterJournalDocumentation.lua`
 
@@ -147,7 +147,7 @@ Namespace: `C_EncounterJournal`
 
 `C_EncounterJournal.OnClose()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterJournalDocumentation.lua`
 
@@ -155,7 +155,7 @@ Namespace: `C_EncounterJournal`
 
 `C_EncounterJournal.OnOpen()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterJournalDocumentation.lua`
 
@@ -163,14 +163,14 @@ Namespace: `C_EncounterJournal`
 
 `C_EncounterJournal.ResetSlotFilter()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `EncounterJournalDocumentation.lua`
 
 ### C_EncounterJournal.SetPreviewMythicPlusLevel
 
 `C_EncounterJournal.SetPreviewMythicPlusLevel(level: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterJournalDocumentation.lua`
 
@@ -178,7 +178,7 @@ Namespace: `C_EncounterJournal`
 
 `C_EncounterJournal.SetPreviewPvpTier(tier: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterJournalDocumentation.lua`
 
@@ -186,7 +186,7 @@ Namespace: `C_EncounterJournal`
 
 `C_EncounterJournal.SetSlotFilter(filterSlot: ItemSlotFilterType)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterJournalDocumentation.lua`
 
@@ -194,7 +194,7 @@ Namespace: `C_EncounterJournal`
 
 `C_EncounterJournal.SetTab(tabIdx: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EncounterJournalDocumentation.lua`
@@ -203,27 +203,27 @@ Namespace: `C_EncounterJournal`
 
 `C_EncounterJournal.StartArathiRPE()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `EncounterJournalDocumentation.lua`
 
 ## Events
 
 ### EJ_DIFFICULTY_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `difficultyID: number`
 - fires synchronously (Blizzard's docs)
 
 ### EJ_LOOT_DATA_RECIEVED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `itemID: number?`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
 
 ### SHOW_JOURNEYS_UI
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `factionID: number`
 - Blizzard: Signaled when the UI needs to display the journeys dashboard at a specific faction.
 - fires synchronously (Blizzard's docs)
@@ -284,7 +284,7 @@ Namespace: `C_EncounterJournal`
 
 ### ItemSlotFilterType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Head` = 0
   - `Neck` = 1
   - `Shoulder` = 2

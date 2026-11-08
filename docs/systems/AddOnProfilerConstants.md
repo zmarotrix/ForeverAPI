@@ -4,14 +4,14 @@
 
 ### AddOnPerformanceMessageType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `SpecificAddOnChatWarning` = 0
   - `SpecificAddOnErrorDialog` = 1
   - `OverallAddOnErrorDialog` = 2
 
 ### AddOnProfilerMetric
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `SessionAverageTime` = 0
   - `RecentAverageTime` = 1
   - `EncounterAverageTime` = 2

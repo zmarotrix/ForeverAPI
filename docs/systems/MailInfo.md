@@ -6,24 +6,24 @@ Namespace: `C_Mail`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_Mail.CanCheckInbox](#c_mailcancheckinbox) |  |  |
-| ❔ | [C_Mail.GetCraftingOrderMailInfo](#c_mailgetcraftingordermailinfo) |  |  |
-| ❔ | [C_Mail.HasInboxMoney](#c_mailhasinboxmoney) |  |  |
-| ❔ | [C_Mail.IsCommandPending](#c_mailiscommandpending) |  |  |
-| ❔ | [C_Mail.SetOpeningAll](#c_mailsetopeningall) |  |  |
+| ✅ | [C_Mail.CanCheckInbox](#c_mailcancheckinbox) |  |  |
+| ✅ | [C_Mail.GetCraftingOrderMailInfo](#c_mailgetcraftingordermailinfo) |  |  |
+| ✅ | [C_Mail.HasInboxMoney](#c_mailhasinboxmoney) |  |  |
+| ✅ | [C_Mail.IsCommandPending](#c_mailiscommandpending) |  |  |
+| ✅ | [C_Mail.SetOpeningAll](#c_mailsetopeningall) |  |  |
 
 ### C_Mail.CanCheckInbox
 
 `C_Mail.CanCheckInbox() → canCheckInbox: bool, secondsUntilAllowed: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `MailInfoDocumentation.lua`
 
 ### C_Mail.GetCraftingOrderMailInfo
 
 `C_Mail.GetCraftingOrderMailInfo(inboxIndex: luaIndex) → info: CraftingOrderMailInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `MailInfoDocumentation.lua`
 
@@ -31,7 +31,7 @@ Namespace: `C_Mail`
 
 `C_Mail.HasInboxMoney(inboxIndex: luaIndex) → inboxItemHasMoneyAttached: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `MailInfoDocumentation.lua`
 
@@ -39,14 +39,14 @@ Namespace: `C_Mail`
 
 `C_Mail.IsCommandPending() → isCommandPending: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `MailInfoDocumentation.lua`
 
 ### C_Mail.SetOpeningAll
 
 `C_Mail.SetOpeningAll(openingAll: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `MailInfoDocumentation.lua`
 
@@ -54,86 +54,87 @@ Namespace: `C_Mail`
 
 ### CLOSE_INBOX_ITEM
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `mailIndex: luaIndex`
 - fires synchronously (Blizzard's docs)
 
 ### MAIL_CLOSED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### MAIL_FAILED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `itemID: number?`
 - fires synchronously (Blizzard's docs)
 
 ### MAIL_INBOX_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
 
 ### MAIL_LOCK_SEND_ITEMS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `attachSlot: luaIndex`, `itemLink: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### MAIL_OPEN_ALL_CANCELED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### MAIL_SEND_INFO_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
 
 ### MAIL_SEND_SUCCESS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### MAIL_SHOW
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### MAIL_SUCCESS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `itemID: number?`
 - fires synchronously (Blizzard's docs)
 
 ### MAIL_UNLOCK_SEND_ITEMS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### SEND_MAIL_COD_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### SEND_MAIL_MONEY_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### UPDATE_PENDING_MAIL
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``

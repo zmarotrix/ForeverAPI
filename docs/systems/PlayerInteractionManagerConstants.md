@@ -4,7 +4,7 @@
 
 ### PlayerInteractionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `TradePartner` = 1
   - `Item` = 2

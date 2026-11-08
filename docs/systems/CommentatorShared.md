@@ -4,7 +4,7 @@
 
 ### TrackedSpellCategory
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Offensive` = 1
   - `Defensive` = 2

@@ -4,7 +4,7 @@
 
 ### CameraModeAspectRatio
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Default` = 0
   - `LegacyLetterbox` = 1
   - `HighDefinition_16_X_9` = 2

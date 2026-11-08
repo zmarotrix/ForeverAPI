@@ -6,16 +6,16 @@ Namespace: `C_DeathRecap`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_DeathRecap.GetRecapEvents](#c_deathrecapgetrecapevents) |  |  |
-| ❔ | [C_DeathRecap.GetRecapLink](#c_deathrecapgetrecaplink) |  |  |
-| ❔ | [C_DeathRecap.GetRecapMaxHealth](#c_deathrecapgetrecapmaxhealth) |  |  |
-| ❔ | [C_DeathRecap.HasRecapEvents](#c_deathrecaphasrecapevents) |  |  |
+| ✅ | [C_DeathRecap.GetRecapEvents](#c_deathrecapgetrecapevents) |  |  |
+| ✅ | [C_DeathRecap.GetRecapLink](#c_deathrecapgetrecaplink) |  |  |
+| ✅ | [C_DeathRecap.GetRecapMaxHealth](#c_deathrecapgetrecapmaxhealth) |  |  |
+| ✅ | [C_DeathRecap.HasRecapEvents](#c_deathrecaphasrecapevents) |  |  |
 
 ### C_DeathRecap.GetRecapEvents
 
 `C_DeathRecap.GetRecapEvents(recapID: number?) → events: DeathRecapEventInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DeathRecapDocumentation.lua`
 
@@ -23,7 +23,7 @@ Namespace: `C_DeathRecap`
 
 `C_DeathRecap.GetRecapLink(recapID: number?) → link: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DeathRecapDocumentation.lua`
 
@@ -31,7 +31,7 @@ Namespace: `C_DeathRecap`
 
 `C_DeathRecap.GetRecapMaxHealth(recapID: number?) → maxHealth: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Returns the max health for the unit that died in the provided death recap.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DeathRecapDocumentation.lua`
@@ -40,7 +40,7 @@ Namespace: `C_DeathRecap`
 
 `C_DeathRecap.HasRecapEvents(recapID: number?) → hasEvents: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DeathRecapDocumentation.lua`
 

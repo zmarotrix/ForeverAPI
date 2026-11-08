@@ -6,73 +6,74 @@ Namespace: `C_GuildBank`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_GuildBank.IsGuildBankEnabled](#c_guildbankisguildbankenabled) |  |  |
+| ✅ | [C_GuildBank.IsGuildBankEnabled](#c_guildbankisguildbankenabled) |  |  |
 
 ### C_GuildBank.IsGuildBankEnabled
 
 `C_GuildBank.IsGuildBankEnabled() → enabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `GuildBankDocumentation.lua`
 
 ## Events
 
 ### GUILDBANKBAGSLOTS_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### GUILDBANKFRAME_CLOSED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### GUILDBANKFRAME_OPENED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### GUILDBANKLOG_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### GUILDBANK_ITEM_LOCK_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### GUILDBANK_TEXT_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `guildBankTab: luaIndex`
 - fires synchronously (Blizzard's docs)
 
 ### GUILDBANK_UPDATE_MONEY
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### GUILDBANK_UPDATE_TABS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### GUILDBANK_UPDATE_TEXT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `guildBankTab: number`
 - fires synchronously (Blizzard's docs)
 
 ### GUILDBANK_UPDATE_WITHDRAWMONEY
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``

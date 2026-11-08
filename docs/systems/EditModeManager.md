@@ -6,24 +6,24 @@ Namespace: `C_EditMode`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_EditMode.ConvertLayoutInfoToString](#c_editmodeconvertlayoutinfotostring) |  |  |
-| ❔ | [C_EditMode.ConvertStringToLayoutInfo](#c_editmodeconvertstringtolayoutinfo) |  |  |
-| ❔ | [C_EditMode.GetAccountSettings](#c_editmodegetaccountsettings) |  |  |
-| ❔ | [C_EditMode.GetEditModeDefaultLayout](#c_editmodegeteditmodedefaultlayout) |  |  |
-| ❔ | [C_EditMode.GetLayouts](#c_editmodegetlayouts) |  |  |
-| ❔ | [C_EditMode.IsValidLayoutName](#c_editmodeisvalidlayoutname) |  |  |
-| ❔ | [C_EditMode.OnEditModeExit](#c_editmodeoneditmodeexit) |  |  |
-| ❔ | [C_EditMode.OnLayoutAdded](#c_editmodeonlayoutadded) |  |  |
-| ❔ | [C_EditMode.OnLayoutDeleted](#c_editmodeonlayoutdeleted) |  |  |
-| ❔ | [C_EditMode.SaveLayouts](#c_editmodesavelayouts) |  |  |
-| ❔ | [C_EditMode.SetAccountSetting](#c_editmodesetaccountsetting) |  |  |
-| ❔ | [C_EditMode.SetActiveLayout](#c_editmodesetactivelayout) |  |  |
+| ✅ | [C_EditMode.ConvertLayoutInfoToString](#c_editmodeconvertlayoutinfotostring) |  |  |
+| ✅ | [C_EditMode.ConvertStringToLayoutInfo](#c_editmodeconvertstringtolayoutinfo) |  |  |
+| ✅ | [C_EditMode.GetAccountSettings](#c_editmodegetaccountsettings) |  |  |
+| ✅ | [C_EditMode.GetEditModeDefaultLayout](#c_editmodegeteditmodedefaultlayout) |  |  |
+| ✅ | [C_EditMode.GetLayouts](#c_editmodegetlayouts) |  |  |
+| ✅ | [C_EditMode.IsValidLayoutName](#c_editmodeisvalidlayoutname) |  |  |
+| ✅ | [C_EditMode.OnEditModeExit](#c_editmodeoneditmodeexit) |  |  |
+| ✅ | [C_EditMode.OnLayoutAdded](#c_editmodeonlayoutadded) |  |  |
+| ✅ | [C_EditMode.OnLayoutDeleted](#c_editmodeonlayoutdeleted) |  |  |
+| ✅ | [C_EditMode.SaveLayouts](#c_editmodesavelayouts) |  |  |
+| ✅ | [C_EditMode.SetAccountSetting](#c_editmodesetaccountsetting) |  |  |
+| ✅ | [C_EditMode.SetActiveLayout](#c_editmodesetactivelayout) |  |  |
 
 ### C_EditMode.ConvertLayoutInfoToString
 
 `C_EditMode.ConvertLayoutInfoToString(layoutInfo: EditModeLayoutInfo) → layoutInfoAsString: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EditModeManagerDocumentation.lua`
 
@@ -31,7 +31,7 @@ Namespace: `C_EditMode`
 
 `C_EditMode.ConvertStringToLayoutInfo(layoutInfoAsString: string) → layoutInfo: EditModeLayoutInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EditModeManagerDocumentation.lua`
@@ -40,28 +40,28 @@ Namespace: `C_EditMode`
 
 `C_EditMode.GetAccountSettings() → accountSettings: EditModeSettingInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `EditModeManagerDocumentation.lua`
 
 ### C_EditMode.GetEditModeDefaultLayout
 
 `C_EditMode.GetEditModeDefaultLayout() → defaultLayout: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `EditModeManagerDocumentation.lua`
 
 ### C_EditMode.GetLayouts
 
 `C_EditMode.GetLayouts() → layoutInfo: EditModeLayouts`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `EditModeManagerDocumentation.lua`
 
 ### C_EditMode.IsValidLayoutName
 
 `C_EditMode.IsValidLayoutName(name: cstring) → isApproved: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EditModeManagerDocumentation.lua`
 
@@ -69,14 +69,14 @@ Namespace: `C_EditMode`
 
 `C_EditMode.OnEditModeExit()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `EditModeManagerDocumentation.lua`
 
 ### C_EditMode.OnLayoutAdded
 
 `C_EditMode.OnLayoutAdded(addedLayoutIndex: luaIndex, activateNewLayout: bool, isLayoutImported: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EditModeManagerDocumentation.lua`
 
@@ -84,7 +84,7 @@ Namespace: `C_EditMode`
 
 `C_EditMode.OnLayoutDeleted(deletedLayoutIndex: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EditModeManagerDocumentation.lua`
 
@@ -92,7 +92,7 @@ Namespace: `C_EditMode`
 
 `C_EditMode.SaveLayouts(saveInfo: EditModeLayouts)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EditModeManagerDocumentation.lua`
 
@@ -100,7 +100,7 @@ Namespace: `C_EditMode`
 
 `C_EditMode.SetAccountSetting(setting: EditModeAccountSetting, value: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EditModeManagerDocumentation.lua`
 
@@ -108,7 +108,7 @@ Namespace: `C_EditMode`
 
 `C_EditMode.SetActiveLayout(activeLayout: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `EditModeManagerDocumentation.lua`
 
@@ -116,9 +116,10 @@ Namespace: `C_EditMode`
 
 ### EDIT_MODE_LAYOUTS_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `layoutInfo: EditModeLayouts`, `reconcileLayouts: bool`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `t,b`
 
 ## Types
 

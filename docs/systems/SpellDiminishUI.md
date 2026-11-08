@@ -6,16 +6,16 @@ Namespace: `C_SpellDiminish`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_SpellDiminish.GetAllSpellDiminishCategories](#c_spelldiminishgetallspelldiminishcategories) |  |  |
-| ❔ | [C_SpellDiminish.GetSpellDiminishCategoryInfo](#c_spelldiminishgetspelldiminishcategoryinfo) |  |  |
-| ❔ | [C_SpellDiminish.IsSystemSupported](#c_spelldiminishissystemsupported) |  |  |
-| ❔ | [C_SpellDiminish.ShouldTrackSpellDiminishCategory](#c_spelldiminishshouldtrackspelldiminishcategory) |  |  |
+| ✅ | [C_SpellDiminish.GetAllSpellDiminishCategories](#c_spelldiminishgetallspelldiminishcategories) |  |  |
+| ✅ | [C_SpellDiminish.GetSpellDiminishCategoryInfo](#c_spelldiminishgetspelldiminishcategoryinfo) |  |  |
+| ✅ | [C_SpellDiminish.IsSystemSupported](#c_spelldiminishissystemsupported) |  |  |
+| ✅ | [C_SpellDiminish.ShouldTrackSpellDiminishCategory](#c_spelldiminishshouldtrackspelldiminishcategory) |  |  |
 
 ### C_SpellDiminish.GetAllSpellDiminishCategories
 
 `C_SpellDiminish.GetAllSpellDiminishCategories(ruleset: SpellDiminishRuleset?) → categories: SpellDiminishCategoryInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresSpellDiminishUI (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SpellDiminishUIDocumentation.lua`
@@ -24,7 +24,7 @@ Namespace: `C_SpellDiminish`
 
 `C_SpellDiminish.GetSpellDiminishCategoryInfo(category: SpellDiminishCategory) → categoryInfo: SpellDiminishCategoryInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresSpellDiminishUI (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SpellDiminishUIDocumentation.lua`
@@ -33,14 +33,14 @@ Namespace: `C_SpellDiminish`
 
 `C_SpellDiminish.IsSystemSupported() → isSystemSupported: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `SpellDiminishUIDocumentation.lua`
 
 ### C_SpellDiminish.ShouldTrackSpellDiminishCategory
 
 `C_SpellDiminish.ShouldTrackSpellDiminishCategory(category: SpellDiminishCategory, ruleset: SpellDiminishRuleset) → isTracked: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresSpellDiminishUI (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
@@ -50,7 +50,7 @@ Namespace: `C_SpellDiminish`
 
 ### UNIT_SPELL_DIMINISH_CATEGORY_STATE_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `trackerInfo: SpellDiminishTrackerInfo`
 - SecretPayloads (Blizzard's docs)
 - fires synchronously (Blizzard's docs)

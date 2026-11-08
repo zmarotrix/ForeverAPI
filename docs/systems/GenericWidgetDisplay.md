@@ -6,28 +6,28 @@ Namespace: `C_GenericWidgetDisplay`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_GenericWidgetDisplay.Acknowledge](#c_genericwidgetdisplayacknowledge) |  |  |
-| ❔ | [C_GenericWidgetDisplay.Close](#c_genericwidgetdisplayclose) |  |  |
+| ✅ | [C_GenericWidgetDisplay.Acknowledge](#c_genericwidgetdisplayacknowledge) |  |  |
+| ✅ | [C_GenericWidgetDisplay.Close](#c_genericwidgetdisplayclose) |  |  |
 
 ### C_GenericWidgetDisplay.Acknowledge
 
 `C_GenericWidgetDisplay.Acknowledge()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `UIGenericWidgetDisplayDocumentation.lua`
 
 ### C_GenericWidgetDisplay.Close
 
 `C_GenericWidgetDisplay.Close()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `UIGenericWidgetDisplayDocumentation.lua`
 
 ## Events
 
 ### GENERIC_WIDGET_DISPLAY_SHOW
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `info: GenericWidgetDisplayFrameInfo`
 - fires synchronously (Blizzard's docs)
 

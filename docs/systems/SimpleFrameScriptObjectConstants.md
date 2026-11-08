@@ -4,7 +4,7 @@
 
 ### OnUpdateMode
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Disabled` = 0
   - `RunWhenVisible` = 1
   - `RunWhenVisibleOnce` = 2
@@ -13,30 +13,30 @@
 
 ### ScriptBindingType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Postcall` = 2
   - `Precall` = 0
   - `Extrinsic` = 1
 
 ### ScriptObjectAccessRestriction
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `DenyTaintedAccessWhenAurasAreSecret` = 1
 
 ### ScriptObjectMetatable
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Public` = 0
   - `Forbidden` = 1
 
 ### ScriptObjectPartition
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Public` = 0
   - `Forbidden` = 1
 
 ### ScriptObjectPropagationPath
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Hierarchy` = 0
   - `Layout` = 1

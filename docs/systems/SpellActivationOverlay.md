@@ -6,13 +6,13 @@ Namespace: `C_SpellActivationOverlay`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_SpellActivationOverlay.IsSpellOverlayed](#c_spellactivationoverlayisspelloverlayed) |  |  |
+| ✅ | [C_SpellActivationOverlay.IsSpellOverlayed](#c_spellactivationoverlayisspelloverlayed) |  |  |
 
 ### C_SpellActivationOverlay.IsSpellOverlayed
 
 `C_SpellActivationOverlay.IsSpellOverlayed(spellID: number) → isSpellOverlayed: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SpellActivationOverlayDocumentation.lua`
 
@@ -20,24 +20,25 @@ Namespace: `C_SpellActivationOverlay`
 
 ### SPELL_ACTIVATION_OVERLAY_GLOW_HIDE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `spellID: number`
 - fires synchronously (Blizzard's docs)
 
 ### SPELL_ACTIVATION_OVERLAY_GLOW_SHOW
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `spellID: number`
 - fires synchronously (Blizzard's docs)
 
 ### SPELL_ACTIVATION_OVERLAY_HIDE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `spellID: number?`
 - fires synchronously (Blizzard's docs)
+- Seen firing 36 times (6 in combat); argument kinds: `-`
 
 ### SPELL_ACTIVATION_OVERLAY_SHOW
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `spellID: number`, `overlayFileDataID: number`, `locationType: ScreenLocationType`, `scale: number`, `r: number`, `g: number`, `b: number`
 - fires synchronously (Blizzard's docs)

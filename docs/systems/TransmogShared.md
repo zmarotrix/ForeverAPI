@@ -4,7 +4,7 @@
 
 ### TransmogCollectionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Head` = 1
   - `Shoulder` = 2
@@ -38,7 +38,7 @@
 
 ### TransmogIllusionFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `HideUntilCollected` = 1
   - `PlayerConditionGrantsOnLogin` = 2
   - `AllowedRangedShieldsHoldables` = 4
@@ -46,20 +46,20 @@
 
 ### TransmogModification
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Main` = 0
   - `Secondary` = 1
 
 ### TransmogSearchType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Items` = 1
   - `BaseSets` = 2
   - `UsableSets` = 3
 
 ### TransmogSource
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `JournalEncounter` = 1
   - `Quest` = 2
@@ -74,13 +74,13 @@
 
 ### TransmogType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Appearance` = 0
   - `Illusion` = 1
 
 ### TransmogUseErrorType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `PlayerCondition` = 1
   - `Skill` = 2

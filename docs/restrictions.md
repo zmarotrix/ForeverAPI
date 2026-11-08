@@ -15,7 +15,14 @@ Getters whose every return was secret even out of combat.
 
 ## Blocked actions
 
-None recorded.
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
+- ADDON_ACTION_FORBIDDEN: `UNKNOWN()` during `None`
 
 ## Documented restriction flags
 

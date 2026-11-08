@@ -53,7 +53,7 @@
 
 ### HousingBlueprintContentType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `HouseType` = 1
   - `Room` = 2
@@ -82,7 +82,7 @@
 
 ### HousingBlueprintUnmetRequirementFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `InsufficientBudget` = 1
   - `MissingRoom` = 2
   - `MissingFixture` = 4

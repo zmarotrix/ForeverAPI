@@ -22,7 +22,7 @@
 
 ### DurationTextBindingProperty
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `RemainingDuration` = 0
   - `RemainingPercent` = 1
   - `ElapsedDuration` = 2

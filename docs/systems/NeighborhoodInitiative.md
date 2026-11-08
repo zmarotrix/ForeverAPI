@@ -6,32 +6,32 @@ Namespace: `C_NeighborhoodInitiative`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_NeighborhoodInitiative.AddTrackedInitiativeTask](#c_neighborhoodinitiativeaddtrackedinitiativetask) |  |  |
-| ❔ | [C_NeighborhoodInitiative.GetActiveNeighborhood](#c_neighborhoodinitiativegetactiveneighborhood) |  |  |
-| ❔ | [C_NeighborhoodInitiative.GetAvailableHouseXP](#c_neighborhoodinitiativegetavailablehousexp) |  |  |
-| ❔ | [C_NeighborhoodInitiative.GetInitiativeActivityLogInfo](#c_neighborhoodinitiativegetinitiativeactivityloginfo) |  |  |
-| ❔ | [C_NeighborhoodInitiative.GetInitiativeTaskChatLink](#c_neighborhoodinitiativegetinitiativetaskchatlink) |  |  |
-| ❔ | [C_NeighborhoodInitiative.GetInitiativeTaskInfo](#c_neighborhoodinitiativegetinitiativetaskinfo) |  |  |
-| ❔ | [C_NeighborhoodInitiative.GetInitiativeTaskRewardScaling](#c_neighborhoodinitiativegetinitiativetaskrewardscaling) |  |  |
-| ❔ | [C_NeighborhoodInitiative.GetNeighborhoodInitiativeInfo](#c_neighborhoodinitiativegetneighborhoodinitiativeinfo) |  |  |
-| ❔ | [C_NeighborhoodInitiative.GetRequiredLevel](#c_neighborhoodinitiativegetrequiredlevel) |  |  |
-| ❔ | [C_NeighborhoodInitiative.GetTrackedInitiativeTasks](#c_neighborhoodinitiativegettrackedinitiativetasks) |  |  |
-| ❔ | [C_NeighborhoodInitiative.IsInitiativeEnabled](#c_neighborhoodinitiativeisinitiativeenabled) |  |  |
-| ❔ | [C_NeighborhoodInitiative.IsPlayerInNeighborhoodGroup](#c_neighborhoodinitiativeisplayerinneighborhoodgroup) |  |  |
-| ❔ | [C_NeighborhoodInitiative.IsViewingActiveNeighborhood](#c_neighborhoodinitiativeisviewingactiveneighborhood) |  |  |
-| ❔ | [C_NeighborhoodInitiative.PlayerHasInitiativeAccess](#c_neighborhoodinitiativeplayerhasinitiativeaccess) |  |  |
-| ❔ | [C_NeighborhoodInitiative.PlayerMeetsRequiredLevel](#c_neighborhoodinitiativeplayermeetsrequiredlevel) |  |  |
-| ❔ | [C_NeighborhoodInitiative.RemoveTrackedInitiativeTask](#c_neighborhoodinitiativeremovetrackedinitiativetask) |  |  |
-| ❔ | [C_NeighborhoodInitiative.RequestInitiativeActivityLog](#c_neighborhoodinitiativerequestinitiativeactivitylog) |  |  |
-| ❔ | [C_NeighborhoodInitiative.RequestNeighborhoodInitiativeInfo](#c_neighborhoodinitiativerequestneighborhoodinitiativeinfo) |  |  |
-| ❔ | [C_NeighborhoodInitiative.SetActiveNeighborhood](#c_neighborhoodinitiativesetactiveneighborhood) |  |  |
-| ❔ | [C_NeighborhoodInitiative.SetViewingNeighborhood](#c_neighborhoodinitiativesetviewingneighborhood) |  |  |
+| ✅ | [C_NeighborhoodInitiative.AddTrackedInitiativeTask](#c_neighborhoodinitiativeaddtrackedinitiativetask) |  |  |
+| ✅ | [C_NeighborhoodInitiative.GetActiveNeighborhood](#c_neighborhoodinitiativegetactiveneighborhood) |  |  |
+| ✅ | [C_NeighborhoodInitiative.GetAvailableHouseXP](#c_neighborhoodinitiativegetavailablehousexp) |  |  |
+| ✅ | [C_NeighborhoodInitiative.GetInitiativeActivityLogInfo](#c_neighborhoodinitiativegetinitiativeactivityloginfo) |  |  |
+| ✅ | [C_NeighborhoodInitiative.GetInitiativeTaskChatLink](#c_neighborhoodinitiativegetinitiativetaskchatlink) |  |  |
+| ✅ | [C_NeighborhoodInitiative.GetInitiativeTaskInfo](#c_neighborhoodinitiativegetinitiativetaskinfo) |  |  |
+| ✅ | [C_NeighborhoodInitiative.GetInitiativeTaskRewardScaling](#c_neighborhoodinitiativegetinitiativetaskrewardscaling) |  |  |
+| ✅ | [C_NeighborhoodInitiative.GetNeighborhoodInitiativeInfo](#c_neighborhoodinitiativegetneighborhoodinitiativeinfo) |  |  |
+| ✅ | [C_NeighborhoodInitiative.GetRequiredLevel](#c_neighborhoodinitiativegetrequiredlevel) |  |  |
+| ✅ | [C_NeighborhoodInitiative.GetTrackedInitiativeTasks](#c_neighborhoodinitiativegettrackedinitiativetasks) |  |  |
+| ✅ | [C_NeighborhoodInitiative.IsInitiativeEnabled](#c_neighborhoodinitiativeisinitiativeenabled) |  |  |
+| ✅ | [C_NeighborhoodInitiative.IsPlayerInNeighborhoodGroup](#c_neighborhoodinitiativeisplayerinneighborhoodgroup) |  |  |
+| ✅ | [C_NeighborhoodInitiative.IsViewingActiveNeighborhood](#c_neighborhoodinitiativeisviewingactiveneighborhood) |  |  |
+| ✅ | [C_NeighborhoodInitiative.PlayerHasInitiativeAccess](#c_neighborhoodinitiativeplayerhasinitiativeaccess) |  |  |
+| ✅ | [C_NeighborhoodInitiative.PlayerMeetsRequiredLevel](#c_neighborhoodinitiativeplayermeetsrequiredlevel) |  |  |
+| ✅ | [C_NeighborhoodInitiative.RemoveTrackedInitiativeTask](#c_neighborhoodinitiativeremovetrackedinitiativetask) |  |  |
+| ✅ | [C_NeighborhoodInitiative.RequestInitiativeActivityLog](#c_neighborhoodinitiativerequestinitiativeactivitylog) |  |  |
+| ✅ | [C_NeighborhoodInitiative.RequestNeighborhoodInitiativeInfo](#c_neighborhoodinitiativerequestneighborhoodinitiativeinfo) |  |  |
+| ✅ | [C_NeighborhoodInitiative.SetActiveNeighborhood](#c_neighborhoodinitiativesetactiveneighborhood) |  |  |
+| ✅ | [C_NeighborhoodInitiative.SetViewingNeighborhood](#c_neighborhoodinitiativesetviewingneighborhood) |  |  |
 
 ### C_NeighborhoodInitiative.AddTrackedInitiativeTask
 
 `C_NeighborhoodInitiative.AddTrackedInitiativeTask(initiativeTaskID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `NeighborhoodInitiativeDocumentation.lua`
 
@@ -39,28 +39,28 @@ Namespace: `C_NeighborhoodInitiative`
 
 `C_NeighborhoodInitiative.GetActiveNeighborhood() → neighborhoodGUID: WOWGUID`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `NeighborhoodInitiativeDocumentation.lua`
 
 ### C_NeighborhoodInitiative.GetAvailableHouseXP
 
 `C_NeighborhoodInitiative.GetAvailableHouseXP() → availabeXP: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `NeighborhoodInitiativeDocumentation.lua`
 
 ### C_NeighborhoodInitiative.GetInitiativeActivityLogInfo
 
 `C_NeighborhoodInitiative.GetInitiativeActivityLogInfo() → info: InitiativeActivityLogInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `NeighborhoodInitiativeDocumentation.lua`
 
 ### C_NeighborhoodInitiative.GetInitiativeTaskChatLink
 
 `C_NeighborhoodInitiative.GetInitiativeTaskChatLink(initiativeTaskID: number) → link: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `NeighborhoodInitiativeDocumentation.lua`
 
@@ -68,7 +68,7 @@ Namespace: `C_NeighborhoodInitiative`
 
 `C_NeighborhoodInitiative.GetInitiativeTaskInfo(initiativeTaskID: number) → info: InitiativeTaskInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `NeighborhoodInitiativeDocumentation.lua`
 
@@ -76,7 +76,7 @@ Namespace: `C_NeighborhoodInitiative`
 
 `C_NeighborhoodInitiative.GetInitiativeTaskRewardScaling(taskID: number, numItems: number) → scaledAmount: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `NeighborhoodInitiativeDocumentation.lua`
 
@@ -84,63 +84,63 @@ Namespace: `C_NeighborhoodInitiative`
 
 `C_NeighborhoodInitiative.GetNeighborhoodInitiativeInfo() → info: NeighborhoodInitiativeInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `NeighborhoodInitiativeDocumentation.lua`
 
 ### C_NeighborhoodInitiative.GetRequiredLevel
 
 `C_NeighborhoodInitiative.GetRequiredLevel() → reqLevel: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `NeighborhoodInitiativeDocumentation.lua`
 
 ### C_NeighborhoodInitiative.GetTrackedInitiativeTasks
 
 `C_NeighborhoodInitiative.GetTrackedInitiativeTasks() → trackedInitiativeTasks: InitiativeTasksTracked`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `NeighborhoodInitiativeDocumentation.lua`
 
 ### C_NeighborhoodInitiative.IsInitiativeEnabled
 
 `C_NeighborhoodInitiative.IsInitiativeEnabled() → enabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `NeighborhoodInitiativeDocumentation.lua`
 
 ### C_NeighborhoodInitiative.IsPlayerInNeighborhoodGroup
 
 `C_NeighborhoodInitiative.IsPlayerInNeighborhoodGroup() → inValidGroup: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `NeighborhoodInitiativeDocumentation.lua`
 
 ### C_NeighborhoodInitiative.IsViewingActiveNeighborhood
 
 `C_NeighborhoodInitiative.IsViewingActiveNeighborhood() → isViewingActiveNeighborhood: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `NeighborhoodInitiativeDocumentation.lua`
 
 ### C_NeighborhoodInitiative.PlayerHasInitiativeAccess
 
 `C_NeighborhoodInitiative.PlayerHasInitiativeAccess() → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `NeighborhoodInitiativeDocumentation.lua`
 
 ### C_NeighborhoodInitiative.PlayerMeetsRequiredLevel
 
 `C_NeighborhoodInitiative.PlayerMeetsRequiredLevel() → success: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `NeighborhoodInitiativeDocumentation.lua`
 
 ### C_NeighborhoodInitiative.RemoveTrackedInitiativeTask
 
 `C_NeighborhoodInitiative.RemoveTrackedInitiativeTask(initiativeTaskID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `NeighborhoodInitiativeDocumentation.lua`
 
@@ -148,21 +148,21 @@ Namespace: `C_NeighborhoodInitiative`
 
 `C_NeighborhoodInitiative.RequestInitiativeActivityLog()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `NeighborhoodInitiativeDocumentation.lua`
 
 ### C_NeighborhoodInitiative.RequestNeighborhoodInitiativeInfo
 
 `C_NeighborhoodInitiative.RequestNeighborhoodInitiativeInfo()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `NeighborhoodInitiativeDocumentation.lua`
 
 ### C_NeighborhoodInitiative.SetActiveNeighborhood
 
 `C_NeighborhoodInitiative.SetActiveNeighborhood(neighborhoodGUID: WOWGUID)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `NeighborhoodInitiativeDocumentation.lua`
 
@@ -170,7 +170,7 @@ Namespace: `C_NeighborhoodInitiative`
 
 `C_NeighborhoodInitiative.SetViewingNeighborhood(neighborhoodGUID: WOWGUID)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `NeighborhoodInitiativeDocumentation.lua`
 
@@ -178,37 +178,37 @@ Namespace: `C_NeighborhoodInitiative`
 
 ### INITIATIVE_ACTIVITY_LOG_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### INITIATIVE_COMPLETED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `initiativeTitle: string`
 - fires synchronously (Blizzard's docs)
 
 ### INITIATIVE_TASKS_TRACKED_LIST_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `initiativeTaskID: number`, `added: bool`
 - fires synchronously (Blizzard's docs)
 
 ### INITIATIVE_TASKS_TRACKED_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
 
 ### INITIATIVE_TASK_COMPLETED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `taskName: string`
 - fires synchronously (Blizzard's docs)
 
 ### NEIGHBORHOOD_INITIATIVE_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 

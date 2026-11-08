@@ -6,16 +6,16 @@ Namespace: `C_Timer`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_Timer.After](#c_timerafter) |  |  |
-| ❔ | [C_Timer.NewTicker](#c_timernewticker) |  |  |
-| ❔ | [C_Timer.NewTimedSignalMap](#c_timernewtimedsignalmap) |  |  |
-| ❔ | [C_Timer.NewTimer](#c_timernewtimer) |  |  |
+| ✅ | [C_Timer.After](#c_timerafter) |  |  |
+| ✅ | [C_Timer.NewTicker](#c_timernewticker) |  |  |
+| ✅ | [C_Timer.NewTimedSignalMap](#c_timernewtimedsignalmap) |  |  |
+| ✅ | [C_Timer.NewTimer](#c_timernewtimer) |  |  |
 
 ### C_Timer.After
 
 `C_Timer.After(seconds: number, callback: TimerCallback)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UITimerDocumentation.lua`
 
@@ -23,7 +23,7 @@ Namespace: `C_Timer`
 
 `C_Timer.NewTicker(seconds: number, callback: TickerCallback, iterations: number?) → cbObject: TickerCallback`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UITimerDocumentation.lua`
 
@@ -31,7 +31,7 @@ Namespace: `C_Timer`
 
 `C_Timer.NewTimedSignalMap(callback: TimedSignalMapCallback) → signalMap: TimedSignalMap`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Creates a new timed signal map that invokes the supplied callback with each key as it becomes due.
 - `callback`: Callback to execute when each entry becomes due.
 - `signalMap`: The newly created timed signal map.
@@ -42,7 +42,7 @@ Namespace: `C_Timer`
 
 `C_Timer.NewTimer(seconds: number, callback: TickerCallback) → cbObject: TickerCallback`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UITimerDocumentation.lua`
 

@@ -4,13 +4,13 @@
 
 ### UnitAuraSortDirection
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Normal` = 0
   - `Reverse` = 1
 
 ### UnitAuraSortRule
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Unsorted` = 0
   - `Default` = 1
   - `BigDefensive` = 2

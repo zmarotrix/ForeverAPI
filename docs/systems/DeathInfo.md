@@ -6,17 +6,17 @@ Namespace: `C_DeathInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_DeathInfo.GetCorpseMapPosition](#c_deathinfogetcorpsemapposition) |  |  |
-| ❔ | [C_DeathInfo.GetDeathReleasePosition](#c_deathinfogetdeathreleaseposition) |  |  |
-| ❔ | [C_DeathInfo.GetGraveyardsForMap](#c_deathinfogetgraveyardsformap) |  |  |
-| ❔ | [C_DeathInfo.GetSelfResurrectOptions](#c_deathinfogetselfresurrectoptions) |  |  |
-| ❔ | [C_DeathInfo.UseSelfResurrectOption](#c_deathinfouseselfresurrectoption) |  |  |
+| ✅ | [C_DeathInfo.GetCorpseMapPosition](#c_deathinfogetcorpsemapposition) |  |  |
+| ✅ | [C_DeathInfo.GetDeathReleasePosition](#c_deathinfogetdeathreleaseposition) |  |  |
+| ✅ | [C_DeathInfo.GetGraveyardsForMap](#c_deathinfogetgraveyardsformap) |  |  |
+| ✅ | [C_DeathInfo.GetSelfResurrectOptions](#c_deathinfogetselfresurrectoptions) |  |  |
+| ✅ | [C_DeathInfo.UseSelfResurrectOption](#c_deathinfouseselfresurrectoption) |  |  |
 
 ### C_DeathInfo.GetCorpseMapPosition
 
 `C_DeathInfo.GetCorpseMapPosition(uiMapID: number) → position: vector2?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DeathInfoDocumentation.lua`
 
@@ -24,7 +24,7 @@ Namespace: `C_DeathInfo`
 
 `C_DeathInfo.GetDeathReleasePosition(uiMapID: number) → position: vector2?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DeathInfoDocumentation.lua`
 
@@ -32,7 +32,7 @@ Namespace: `C_DeathInfo`
 
 `C_DeathInfo.GetGraveyardsForMap(uiMapID: number) → graveyards: GraveyardMapInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DeathInfoDocumentation.lua`
 
@@ -40,7 +40,7 @@ Namespace: `C_DeathInfo`
 
 `C_DeathInfo.GetSelfResurrectOptions() → options: SelfResurrectOption[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Source: client docs `DeathInfoDocumentation.lua`
 
@@ -48,7 +48,7 @@ Namespace: `C_DeathInfo`
 
 `C_DeathInfo.UseSelfResurrectOption(optionType: SelfResurrectOptionType, id: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DeathInfoDocumentation.lua`
 
@@ -56,85 +56,85 @@ Namespace: `C_DeathInfo`
 
 ### AREA_SPIRIT_HEALER_IN_RANGE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### AREA_SPIRIT_HEALER_OUT_OF_RANGE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### CEMETERY_PREFERENCE_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### CONFIRM_XP_LOSS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### CORPSE_IN_INSTANCE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### CORPSE_IN_RANGE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### CORPSE_OUT_OF_RANGE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_ALIVE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_DEAD
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_SKINNED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `hasFreeRepop: number`
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_UNGHOST
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### REQUEST_CEMETERY_LIST_RESPONSE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `isGossipTriggered: bool`
 - fires synchronously (Blizzard's docs)
 
 ### RESURRECT_REQUEST
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `inviter: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### SELF_RES_SPELL_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
@@ -162,6 +162,6 @@ Namespace: `C_DeathInfo`
 
 ### SelfResurrectOptionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Spell` = 0
   - `Item` = 1

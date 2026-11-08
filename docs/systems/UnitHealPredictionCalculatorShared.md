@@ -4,7 +4,7 @@
 
 ### UnitDamageAbsorbClampMode
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `MissingHealth` = 0
   - `MissingHealthWithoutIncomingHeals` = 1
   - `MaximumHealth` = 2
@@ -17,7 +17,7 @@
 
 ### UnitHealAbsorbClampMode
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `CurrentHealth` = 0
   - `MaximumHealth` = 1
 
@@ -29,7 +29,7 @@
 
 ### UnitHealAbsorbMode
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ReducedByIncomingHeals` = 0
   - `Total` = 1
 
@@ -45,7 +45,7 @@
 
 ### UnitIncomingHealClampMode
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `MissingHealth` = 0
   - `MaximumHealth` = 1
 
@@ -59,6 +59,6 @@
 
 ### UnitMaximumHealthMode
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Default` = 0
   - `WithAbsorbs` = 1

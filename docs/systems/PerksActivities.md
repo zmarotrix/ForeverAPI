@@ -6,22 +6,22 @@ Namespace: `C_PerksActivities`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_PerksActivities.AddTrackedPerksActivity](#c_perksactivitiesaddtrackedperksactivity) |  |  |
-| ❔ | [C_PerksActivities.ClearPerksActivitiesPendingCompletion](#c_perksactivitiesclearperksactivitiespendingcompletion) |  |  |
-| ❔ | [C_PerksActivities.GetAllPerksActivityTags](#c_perksactivitiesgetallperksactivitytags) |  |  |
-| ❔ | [C_PerksActivities.GetPerksActivitiesInfo](#c_perksactivitiesgetperksactivitiesinfo) |  |  |
-| ❔ | [C_PerksActivities.GetPerksActivitiesPendingCompletion](#c_perksactivitiesgetperksactivitiespendingcompletion) |  |  |
-| ❔ | [C_PerksActivities.GetPerksActivityChatLink](#c_perksactivitiesgetperksactivitychatlink) |  |  |
-| ❔ | [C_PerksActivities.GetPerksActivityInfo](#c_perksactivitiesgetperksactivityinfo) |  |  |
-| ❔ | [C_PerksActivities.GetPerksUIThemePrefix](#c_perksactivitiesgetperksuithemeprefix) |  |  |
-| ❔ | [C_PerksActivities.GetTrackedPerksActivities](#c_perksactivitiesgettrackedperksactivities) |  |  |
-| ❔ | [C_PerksActivities.RemoveTrackedPerksActivity](#c_perksactivitiesremovetrackedperksactivity) |  |  |
+| ✅ | [C_PerksActivities.AddTrackedPerksActivity](#c_perksactivitiesaddtrackedperksactivity) |  |  |
+| ✅ | [C_PerksActivities.ClearPerksActivitiesPendingCompletion](#c_perksactivitiesclearperksactivitiespendingcompletion) |  |  |
+| ✅ | [C_PerksActivities.GetAllPerksActivityTags](#c_perksactivitiesgetallperksactivitytags) |  |  |
+| ✅ | [C_PerksActivities.GetPerksActivitiesInfo](#c_perksactivitiesgetperksactivitiesinfo) |  |  |
+| ✅ | [C_PerksActivities.GetPerksActivitiesPendingCompletion](#c_perksactivitiesgetperksactivitiespendingcompletion) |  |  |
+| ✅ | [C_PerksActivities.GetPerksActivityChatLink](#c_perksactivitiesgetperksactivitychatlink) |  |  |
+| ✅ | [C_PerksActivities.GetPerksActivityInfo](#c_perksactivitiesgetperksactivityinfo) |  |  |
+| ✅ | [C_PerksActivities.GetPerksUIThemePrefix](#c_perksactivitiesgetperksuithemeprefix) |  |  |
+| ✅ | [C_PerksActivities.GetTrackedPerksActivities](#c_perksactivitiesgettrackedperksactivities) |  |  |
+| ✅ | [C_PerksActivities.RemoveTrackedPerksActivity](#c_perksactivitiesremovetrackedperksactivity) |  |  |
 
 ### C_PerksActivities.AddTrackedPerksActivity
 
 `C_PerksActivities.AddTrackedPerksActivity(perksActivityID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PerksActivitiesDocumentation.lua`
 
@@ -29,35 +29,35 @@ Namespace: `C_PerksActivities`
 
 `C_PerksActivities.ClearPerksActivitiesPendingCompletion()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PerksActivitiesDocumentation.lua`
 
 ### C_PerksActivities.GetAllPerksActivityTags
 
 `C_PerksActivities.GetAllPerksActivityTags() → tags: PerksActivityTags`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PerksActivitiesDocumentation.lua`
 
 ### C_PerksActivities.GetPerksActivitiesInfo
 
 `C_PerksActivities.GetPerksActivitiesInfo() → info: PerksActivitiesInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PerksActivitiesDocumentation.lua`
 
 ### C_PerksActivities.GetPerksActivitiesPendingCompletion
 
 `C_PerksActivities.GetPerksActivitiesPendingCompletion() → pending: PerksActivitiesPending`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PerksActivitiesDocumentation.lua`
 
 ### C_PerksActivities.GetPerksActivityChatLink
 
 `C_PerksActivities.GetPerksActivityChatLink(perksActivityID: number) → link: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PerksActivitiesDocumentation.lua`
 
@@ -65,7 +65,7 @@ Namespace: `C_PerksActivities`
 
 `C_PerksActivities.GetPerksActivityInfo(perksActivityID: number) → info: PerksActivityInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PerksActivitiesDocumentation.lua`
 
@@ -73,21 +73,21 @@ Namespace: `C_PerksActivities`
 
 `C_PerksActivities.GetPerksUIThemePrefix() → kitPrefix: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PerksActivitiesDocumentation.lua`
 
 ### C_PerksActivities.GetTrackedPerksActivities
 
 `C_PerksActivities.GetTrackedPerksActivities() → trackedPerksActivities: PerksActivitiesTracked`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `PerksActivitiesDocumentation.lua`
 
 ### C_PerksActivities.RemoveTrackedPerksActivity
 
 `C_PerksActivities.RemoveTrackedPerksActivity(perksActivityID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `PerksActivitiesDocumentation.lua`
 
@@ -95,25 +95,25 @@ Namespace: `C_PerksActivities`
 
 ### PERKS_ACTIVITIES_TRACKED_LIST_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `perksActivityID: number`, `added: bool`
 - fires synchronously (Blizzard's docs)
 
 ### PERKS_ACTIVITIES_TRACKED_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
 
 ### PERKS_ACTIVITIES_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
 
 ### PERKS_ACTIVITY_COMPLETED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `perksActivityID: number`
 - fires synchronously (Blizzard's docs)
 

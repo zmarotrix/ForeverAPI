@@ -6,85 +6,85 @@ Namespace: `C_StableInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_StableInfo.BuyStableSlot](#c_stableinfobuystableslot) |  |  |
-| ❔ | [C_StableInfo.ClosePetStables](#c_stableinfoclosepetstables) |  |  |
-| ❔ | [C_StableInfo.GetActivePetList](#c_stableinfogetactivepetlist) |  |  |
-| ❔ | [C_StableInfo.GetAvailablePetSpecInfos](#c_stableinfogetavailablepetspecinfos) |  |  |
-| ❔ | [C_StableInfo.GetNextStableSlotCost](#c_stableinfogetnextstableslotcost) |  |  |
-| ❔ | [C_StableInfo.GetNumActivePets](#c_stableinfogetnumactivepets) |  |  |
-| ❔ | [C_StableInfo.GetNumStablePets](#c_stableinfogetnumstablepets) |  |  |
-| ❔ | [C_StableInfo.GetNumStableSlots](#c_stableinfogetnumstableslots) |  |  |
-| ❔ | [C_StableInfo.GetStablePetFoodTypes](#c_stableinfogetstablepetfoodtypes) |  |  |
-| ❔ | [C_StableInfo.GetStablePetInfo](#c_stableinfogetstablepetinfo) |  |  |
-| ❔ | [C_StableInfo.GetStabledPetList](#c_stableinfogetstabledpetlist) |  |  |
-| ❔ | [C_StableInfo.IsAtStableMaster](#c_stableinfoisatstablemaster) |  |  |
-| ❔ | [C_StableInfo.IsBonusPetSlotAvailable](#c_stableinfoisbonuspetslotavailable) |  |  |
-| ❔ | [C_StableInfo.IsPetFavorite](#c_stableinfoispetfavorite) |  |  |
-| ❔ | [C_StableInfo.PickupStablePet](#c_stableinfopickupstablepet) |  |  |
-| ❔ | [C_StableInfo.SetPetFavorite](#c_stableinfosetpetfavorite) |  |  |
-| ❔ | [C_StableInfo.SetPetSlot](#c_stableinfosetpetslot) |  |  |
+| ✅ | [C_StableInfo.BuyStableSlot](#c_stableinfobuystableslot) |  |  |
+| ✅ | [C_StableInfo.ClosePetStables](#c_stableinfoclosepetstables) |  |  |
+| ✅ | [C_StableInfo.GetActivePetList](#c_stableinfogetactivepetlist) |  |  |
+| ✅ | [C_StableInfo.GetAvailablePetSpecInfos](#c_stableinfogetavailablepetspecinfos) |  |  |
+| ✅ | [C_StableInfo.GetNextStableSlotCost](#c_stableinfogetnextstableslotcost) |  |  |
+| ✅ | [C_StableInfo.GetNumActivePets](#c_stableinfogetnumactivepets) |  |  |
+| ✅ | [C_StableInfo.GetNumStablePets](#c_stableinfogetnumstablepets) |  |  |
+| ✅ | [C_StableInfo.GetNumStableSlots](#c_stableinfogetnumstableslots) |  |  |
+| ✅ | [C_StableInfo.GetStablePetFoodTypes](#c_stableinfogetstablepetfoodtypes) |  |  |
+| ✅ | [C_StableInfo.GetStablePetInfo](#c_stableinfogetstablepetinfo) |  |  |
+| ✅ | [C_StableInfo.GetStabledPetList](#c_stableinfogetstabledpetlist) |  |  |
+| ✅ | [C_StableInfo.IsAtStableMaster](#c_stableinfoisatstablemaster) |  |  |
+| ✅ | [C_StableInfo.IsBonusPetSlotAvailable](#c_stableinfoisbonuspetslotavailable) |  |  |
+| ✅ | [C_StableInfo.IsPetFavorite](#c_stableinfoispetfavorite) |  |  |
+| ✅ | [C_StableInfo.PickupStablePet](#c_stableinfopickupstablepet) |  |  |
+| ✅ | [C_StableInfo.SetPetFavorite](#c_stableinfosetpetfavorite) |  |  |
+| ✅ | [C_StableInfo.SetPetSlot](#c_stableinfosetpetslot) |  |  |
 
 ### C_StableInfo.BuyStableSlot
 
 `C_StableInfo.BuyStableSlot()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.ClosePetStables
 
 `C_StableInfo.ClosePetStables()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.GetActivePetList
 
 `C_StableInfo.GetActivePetList() → activePets: PetInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.GetAvailablePetSpecInfos
 
 `C_StableInfo.GetAvailablePetSpecInfos() → petSpecInfos: PetSpecInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.GetNextStableSlotCost
 
 `C_StableInfo.GetNextStableSlotCost() → cost: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.GetNumActivePets
 
 `C_StableInfo.GetNumActivePets() → numActivePets: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.GetNumStablePets
 
 `C_StableInfo.GetNumStablePets() → numStablePets: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.GetNumStableSlots
 
 `C_StableInfo.GetNumStableSlots() → numSlots: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.GetStablePetFoodTypes
 
 `C_StableInfo.GetStablePetFoodTypes(index: luaIndex) → foodTypes: string[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `StableInfoDocumentation.lua`
 
@@ -92,7 +92,7 @@ Namespace: `C_StableInfo`
 
 `C_StableInfo.GetStablePetInfo(index: luaIndex) → petInfo: PetInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `StableInfoDocumentation.lua`
 
@@ -100,28 +100,28 @@ Namespace: `C_StableInfo`
 
 `C_StableInfo.GetStabledPetList() → stabledPets: PetInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.IsAtStableMaster
 
 `C_StableInfo.IsAtStableMaster() → isAtStableMaster: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.IsBonusPetSlotAvailable
 
 `C_StableInfo.IsBonusPetSlotAvailable() → isAvailable: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `StableInfoDocumentation.lua`
 
 ### C_StableInfo.IsPetFavorite
 
 `C_StableInfo.IsPetFavorite(slot: luaIndex) → isFavorite: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `StableInfoDocumentation.lua`
 
@@ -129,7 +129,7 @@ Namespace: `C_StableInfo`
 
 `C_StableInfo.PickupStablePet(index: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `StableInfoDocumentation.lua`
 
@@ -137,7 +137,7 @@ Namespace: `C_StableInfo`
 
 `C_StableInfo.SetPetFavorite(slot: luaIndex, isFavorite: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `StableInfoDocumentation.lua`
 
@@ -145,7 +145,7 @@ Namespace: `C_StableInfo`
 
 `C_StableInfo.SetPetSlot(index: luaIndex, slot: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `StableInfoDocumentation.lua`
 
@@ -153,31 +153,31 @@ Namespace: `C_StableInfo`
 
 ### PET_INFO_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
 
 ### PET_STABLE_CLOSED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PET_STABLE_FAVORITES_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PET_STABLE_SHOW
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PET_STABLE_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 

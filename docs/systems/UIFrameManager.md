@@ -6,13 +6,13 @@ Namespace: `C_FrameManager`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_FrameManager.GetFrameVisibilityState](#c_framemanagergetframevisibilitystate) |  |  |
+| ✅ | [C_FrameManager.GetFrameVisibilityState](#c_framemanagergetframevisibilitystate) |  |  |
 
 ### C_FrameManager.GetFrameVisibilityState
 
 `C_FrameManager.GetFrameVisibilityState(frameType: UIFrameType) → shouldShow: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `UIFrameManagerDocumentation.lua`
 
@@ -20,13 +20,13 @@ Namespace: `C_FrameManager`
 
 ### FRAME_MANAGER_UPDATE_ALL
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### FRAME_MANAGER_UPDATE_FRAME
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `type: UIFrameType`, `show: bool`
 - fires synchronously (Blizzard's docs)
 
@@ -34,6 +34,6 @@ Namespace: `C_FrameManager`
 
 ### UIFrameType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `JailersTowerBuffs` = 0
   - `InterruptTutorial` = 1

@@ -4,73 +4,73 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [ClearCursor](#clearcursor) |  |  |
-| ❔ | [ClearCursorHoveredItem](#clearcursorhovereditem) |  |  |
-| ❔ | [CursorHasItem](#cursorhasitem) |  |  |
-| ❔ | [CursorHasMacro](#cursorhasmacro) |  |  |
-| ❔ | [CursorHasMoney](#cursorhasmoney) |  |  |
-| ❔ | [CursorHasSpell](#cursorhasspell) |  |  |
-| ❔ | [DeleteCursorItem](#deletecursoritem) |  |  |
-| ❔ | [DropCursorMoney](#dropcursormoney) |  |  |
-| ❔ | [EquipCursorItem](#equipcursoritem) |  |  |
-| ❔ | [GetCursorInfo](#getcursorinfo) |  |  |
-| ❔ | [GetCursorMoney](#getcursormoney) |  |  |
-| ❔ | [PickupPlayerMoney](#pickupplayermoney) |  |  |
-| ❔ | [ResetCursor](#resetcursor) |  |  |
-| ❔ | [SellCursorItem](#sellcursoritem) |  |  |
-| ❔ | [SetCursor](#setcursor) |  |  |
-| ❔ | [SetCursorByMode](#setcursorbymode) |  |  |
-| ❔ | [SetCursorHoveredItem](#setcursorhovereditem) |  |  |
-| ❔ | [SetCursorHoveredItemTradeItem](#setcursorhovereditemtradeitem) |  |  |
-| ❔ | [SetCursorVirtualItem](#setcursorvirtualitem) |  |  |
+| ✅ | [ClearCursor](#clearcursor) |  |  |
+| ✅ | [ClearCursorHoveredItem](#clearcursorhovereditem) |  |  |
+| ✅ | [CursorHasItem](#cursorhasitem) |  |  |
+| ✅ | [CursorHasMacro](#cursorhasmacro) |  |  |
+| ✅ | [CursorHasMoney](#cursorhasmoney) |  |  |
+| ✅ | [CursorHasSpell](#cursorhasspell) |  |  |
+| ✅ | [DeleteCursorItem](#deletecursoritem) |  |  |
+| ✅ | [DropCursorMoney](#dropcursormoney) |  |  |
+| ✅ | [EquipCursorItem](#equipcursoritem) |  |  |
+| ✅ | [GetCursorInfo](#getcursorinfo) |  |  |
+| ✅ | [GetCursorMoney](#getcursormoney) |  |  |
+| ✅ | [PickupPlayerMoney](#pickupplayermoney) |  |  |
+| ✅ | [ResetCursor](#resetcursor) |  |  |
+| ✅ | [SellCursorItem](#sellcursoritem) |  |  |
+| ✅ | [SetCursor](#setcursor) |  |  |
+| ✅ | [SetCursorByMode](#setcursorbymode) |  |  |
+| ✅ | [SetCursorHoveredItem](#setcursorhovereditem) |  |  |
+| ✅ | [SetCursorHoveredItemTradeItem](#setcursorhovereditemtradeitem) |  |  |
+| ✅ | [SetCursorVirtualItem](#setcursorvirtualitem) |  |  |
 
 ### ClearCursor
 
 `ClearCursor()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `GameCursorDocumentation.lua`
 
 ### ClearCursorHoveredItem
 
 `ClearCursorHoveredItem()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `GameCursorDocumentation.lua`
 
 ### CursorHasItem
 
 `CursorHasItem() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `GameCursorDocumentation.lua`
 
 ### CursorHasMacro
 
 `CursorHasMacro() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `GameCursorDocumentation.lua`
 
 ### CursorHasMoney
 
 `CursorHasMoney() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `GameCursorDocumentation.lua`
 
 ### CursorHasSpell
 
 `CursorHasSpell() → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `GameCursorDocumentation.lua`
 
 ### DeleteCursorItem
 
 `DeleteCursorItem()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `GameCursorDocumentation.lua`
 
@@ -78,7 +78,7 @@
 
 `DropCursorMoney()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `GameCursorDocumentation.lua`
 
@@ -86,7 +86,7 @@
 
 `EquipCursorItem(slot: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GameCursorDocumentation.lua`
 
@@ -94,21 +94,21 @@
 
 `GetCursorInfo()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `GameCursorDocumentation.lua`
 
 ### GetCursorMoney
 
 `GetCursorMoney() → amount: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `GameCursorDocumentation.lua`
 
 ### PickupPlayerMoney
 
 `PickupPlayerMoney(amount: WOWMONEY)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GameCursorDocumentation.lua`
@@ -117,21 +117,21 @@
 
 `ResetCursor()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `GameCursorDocumentation.lua`
 
 ### SellCursorItem
 
 `SellCursorItem()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `GameCursorDocumentation.lua`
 
 ### SetCursor
 
 `SetCursor(name: cstring?) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GameCursorDocumentation.lua`
 
@@ -139,7 +139,7 @@
 
 `SetCursorByMode(mode: Cursormode) → result: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GameCursorDocumentation.lua`
 
@@ -147,7 +147,7 @@
 
 `SetCursorHoveredItem(item: ItemLocation)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GameCursorDocumentation.lua`
 
@@ -155,7 +155,7 @@
 
 `SetCursorHoveredItemTradeItem(enabled: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GameCursorDocumentation.lua`
 
@@ -163,6 +163,6 @@
 
 `SetCursorVirtualItem(itemInfo: ItemInfo, cursorType: UICursorType)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `GameCursorDocumentation.lua`

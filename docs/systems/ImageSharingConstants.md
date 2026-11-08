@@ -4,7 +4,7 @@
 
 ### ImageSharingResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Failure` = 0
   - `Success` = 1
   - `NotConfigured` = 2
@@ -23,7 +23,7 @@
 
 ### PhotoSharingStatus
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Disabled` = 0
   - `NotConfigured` = 1
   - `Configured` = 2
@@ -36,7 +36,7 @@
 
 ### PhotoSharingUploadStatus
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Disabled` = 0
   - `Failed` = 1
   - `Success` = 2

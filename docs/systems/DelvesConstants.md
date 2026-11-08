@@ -4,7 +4,7 @@
 
 ### CompanionConfigSlotTypes
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Role` = 0
   - `Utility` = 1
   - `Combat` = 2
@@ -12,7 +12,7 @@
 
 ### CurioRarity
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Common` = 1
   - `Uncommon` = 2
   - `Rare` = 3
@@ -30,7 +30,7 @@
 
 ### DelvesConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `DELVES_MIN_PLAYER_LEVEL_CONTENT_TUNING_ID` = 2677
   - `DELVES_NORMAL_KEY_CURRENCY_ID` = 3028
   - `DELVES_COMPANION_INFO_SELECTION_CHARACTER_DATA_ELEMENT_ID` = 13
@@ -40,12 +40,12 @@
 
 ### PlayerCompanionInfoFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `IgnoreSeasonInScenarios` = 1
 
 ### TieredEntranceConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `TIERED_ENTRANCE_TIER_SCORE_VALUE_TIER_LEVEL` = 1
   - `TIERED_ENTRANCE_TIER_SCORE_VALUE_MAP_ID` = 3
   - `TIERED_ENTRANCE_TIER_SCORE_VALUE_PLAYER_CONDITION_ID` = 6
@@ -53,14 +53,14 @@
 
 ### TieredEntranceTierFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `IsLFG` = 1
   - `DisableTraitSystem` = 2
 
 ### TieredEntranceType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Invalid` = 0
   - `Delve` = 1
   - `Sites` = 2
@@ -71,7 +71,7 @@
 
 ### WorldTierDifficulty
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Normal` = 1
   - `Heroic` = 2
   - `Mythic` = 3

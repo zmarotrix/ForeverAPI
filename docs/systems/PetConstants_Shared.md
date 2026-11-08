@@ -4,7 +4,7 @@
 
 ### PetActionFeedback
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Success` = 0
   - `Dead` = 1
   - `InvalidTarget` = 2
@@ -13,7 +13,7 @@
 
 ### PetMode
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Passive` = 0
   - `Defensive` = 1
   - `Aggressive` = 2
@@ -21,7 +21,7 @@
 
 ### PetOrders
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Wait` = 0
   - `Follow` = 1
   - `Attack` = 2
@@ -30,7 +30,7 @@
 
 ### PetOverride
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `AICombatControl` = 1
   - `AICombatPassive` = 2
@@ -38,7 +38,7 @@
 
 ### Pettameresult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Ok` = 0
   - `Invalidcreature` = 1
   - `Toomany` = 2
@@ -58,7 +58,7 @@
 
 ### StableResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `MaxSlots` = 0
   - `InsufficientFunds` = 1
   - `NotStableMaster` = 2
@@ -79,7 +79,7 @@
 
 ### UnitMirrorPetFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Renameable` = 1
   - `Dismissable` = 2
   - `RecentlyTamed` = 4

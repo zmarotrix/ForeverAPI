@@ -6,14 +6,14 @@ Namespace: `C_WowSurvey`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_WowSurvey.OpenSurvey](#c_wowsurveyopensurvey) |  |  |
-| ❔ | [C_WowSurvey.TriggerSurveyServe](#c_wowsurveytriggersurveyserve) |  |  |
+| ✅ | [C_WowSurvey.OpenSurvey](#c_wowsurveyopensurvey) |  |  |
+| ✅ | [C_WowSurvey.TriggerSurveyServe](#c_wowsurveytriggersurveyserve) |  |  |
 
 ### C_WowSurvey.OpenSurvey
 
 `C_WowSurvey.OpenSurvey()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `WowSurveyDocumentation.lua`
 
@@ -21,7 +21,7 @@ Namespace: `C_WowSurvey`
 
 `C_WowSurvey.TriggerSurveyServe(deliveryMoment: SurveyDeliveryMoment)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `WowSurveyDocumentation.lua`
 
@@ -29,6 +29,6 @@ Namespace: `C_WowSurvey`
 
 ### SURVEY_DELIVERED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)

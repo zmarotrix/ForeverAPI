@@ -4,7 +4,7 @@
 
 ### AddSoulbindConduitReason
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Cheat` = 1
   - `SpellEffect` = 2
@@ -12,12 +12,12 @@
 
 ### SoulbindConduitFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `VisibleToGetallsoulbindconduitScript` = 1
 
 ### SoulbindConduitInstallResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Success` = 0
   - `InvalidItem` = 1
   - `InvalidConduit` = 2
@@ -28,13 +28,13 @@
 
 ### SoulbindConduitTransactionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Install` = 0
   - `Uninstall` = 1
 
 ### SoulbindConduitType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Finesse` = 0
   - `Potency` = 1
   - `Endurance` = 2
@@ -42,7 +42,7 @@
 
 ### SoulbindNodeState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Unavailable` = 0
   - `Unselected` = 1
   - `Selectable` = 2

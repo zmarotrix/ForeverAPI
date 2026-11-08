@@ -4,7 +4,7 @@
 
 ### MinimapTrackingFilter
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Unfiltered` = 0
   - `Auctioneer` = 1
   - `Banker` = 2

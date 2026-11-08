@@ -4,12 +4,12 @@
 
 ### CallingStates
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `QuestOffer` = 0
   - `QuestActive` = 1
   - `QuestCompleted` = 2
 
 ### Callings
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `MaxCallings` = 3

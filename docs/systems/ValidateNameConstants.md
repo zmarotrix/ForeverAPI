@@ -4,7 +4,7 @@
 
 ### ScrubStringFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `TruncateNewLines` = 1
   - `AllowBarCodes` = 2
@@ -12,7 +12,7 @@
 
 ### ValidateNameResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Success` = 0
   - `Failure` = 1
   - `NoName` = 2

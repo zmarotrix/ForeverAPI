@@ -4,7 +4,7 @@
 
 ### CinematicType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `GlueMovie` = 0
   - `GameMovie` = 1
   - `GameClientScene` = 2

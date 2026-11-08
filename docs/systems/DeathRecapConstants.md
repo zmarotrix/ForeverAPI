@@ -4,5 +4,5 @@
 
 ### DeathRecapConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `SWING_DAMAGE_SPELL_ID` = 88163

@@ -6,26 +6,26 @@ Namespace: `C_MajorFactions`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_MajorFactions.GetCurrentRenownLevel](#c_majorfactionsgetcurrentrenownlevel) |  |  |
-| ❔ | [C_MajorFactions.GetMajorFactionData](#c_majorfactionsgetmajorfactiondata) |  |  |
-| ❔ | [C_MajorFactions.GetMajorFactionIDs](#c_majorfactionsgetmajorfactionids) |  |  |
-| ❔ | [C_MajorFactions.GetMajorFactionProgressionInfo](#c_majorfactionsgetmajorfactionprogressioninfo) |  |  |
-| ❔ | [C_MajorFactions.GetMajorFactionRenownInfo](#c_majorfactionsgetmajorfactionrenowninfo) |  |  |
-| ❔ | [C_MajorFactions.GetRenownLevels](#c_majorfactionsgetrenownlevels) |  |  |
-| ❔ | [C_MajorFactions.GetRenownNPCFactionID](#c_majorfactionsgetrenownnpcfactionid) |  |  |
-| ❔ | [C_MajorFactions.GetRenownRewardsForLevel](#c_majorfactionsgetrenownrewardsforlevel) |  |  |
-| ❔ | [C_MajorFactions.GetTotalReputationForRenownLevel](#c_majorfactionsgettotalreputationforrenownlevel) |  |  |
-| ❔ | [C_MajorFactions.HasMaximumRenown](#c_majorfactionshasmaximumrenown) |  |  |
-| ❔ | [C_MajorFactions.IsMajorFactionHiddenFromExpansionPage](#c_majorfactionsismajorfactionhiddenfromexpansionpage) |  |  |
-| ❔ | [C_MajorFactions.IsWeeklyRenownCapped](#c_majorfactionsisweeklyrenowncapped) |  |  |
-| ❔ | [C_MajorFactions.ShouldDisplayMajorFactionAsJourney](#c_majorfactionsshoulddisplaymajorfactionasjourney) |  |  |
-| ❔ | [C_MajorFactions.ShouldUseJourneyRewardTrack](#c_majorfactionsshouldusejourneyrewardtrack) |  |  |
+| ✅ | [C_MajorFactions.GetCurrentRenownLevel](#c_majorfactionsgetcurrentrenownlevel) |  |  |
+| ✅ | [C_MajorFactions.GetMajorFactionData](#c_majorfactionsgetmajorfactiondata) |  |  |
+| ✅ | [C_MajorFactions.GetMajorFactionIDs](#c_majorfactionsgetmajorfactionids) |  |  |
+| ✅ | [C_MajorFactions.GetMajorFactionProgressionInfo](#c_majorfactionsgetmajorfactionprogressioninfo) |  |  |
+| ✅ | [C_MajorFactions.GetMajorFactionRenownInfo](#c_majorfactionsgetmajorfactionrenowninfo) |  |  |
+| ✅ | [C_MajorFactions.GetRenownLevels](#c_majorfactionsgetrenownlevels) |  |  |
+| ✅ | [C_MajorFactions.GetRenownNPCFactionID](#c_majorfactionsgetrenownnpcfactionid) |  |  |
+| ✅ | [C_MajorFactions.GetRenownRewardsForLevel](#c_majorfactionsgetrenownrewardsforlevel) |  |  |
+| ✅ | [C_MajorFactions.GetTotalReputationForRenownLevel](#c_majorfactionsgettotalreputationforrenownlevel) |  |  |
+| ✅ | [C_MajorFactions.HasMaximumRenown](#c_majorfactionshasmaximumrenown) |  |  |
+| ✅ | [C_MajorFactions.IsMajorFactionHiddenFromExpansionPage](#c_majorfactionsismajorfactionhiddenfromexpansionpage) |  |  |
+| ✅ | [C_MajorFactions.IsWeeklyRenownCapped](#c_majorfactionsisweeklyrenowncapped) |  |  |
+| ✅ | [C_MajorFactions.ShouldDisplayMajorFactionAsJourney](#c_majorfactionsshoulddisplaymajorfactionasjourney) |  |  |
+| ✅ | [C_MajorFactions.ShouldUseJourneyRewardTrack](#c_majorfactionsshouldusejourneyrewardtrack) |  |  |
 
 ### C_MajorFactions.GetCurrentRenownLevel
 
 `C_MajorFactions.GetCurrentRenownLevel(majorFactionID: number) → level: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `MajorFactionsDocumentation.lua`
 
@@ -33,7 +33,7 @@ Namespace: `C_MajorFactions`
 
 `C_MajorFactions.GetMajorFactionData(majorFactionID: number) → data: MajorFactionData?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `MajorFactionsDocumentation.lua`
 
@@ -41,7 +41,7 @@ Namespace: `C_MajorFactions`
 
 `C_MajorFactions.GetMajorFactionIDs(expansionID: number?) → majorFactionIDs: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `MajorFactionsDocumentation.lua`
 
@@ -49,7 +49,7 @@ Namespace: `C_MajorFactions`
 
 `C_MajorFactions.GetMajorFactionProgressionInfo(majorFactionID: number) → data: MajorFactionProgressionInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `MajorFactionsDocumentation.lua`
 
@@ -57,7 +57,7 @@ Namespace: `C_MajorFactions`
 
 `C_MajorFactions.GetMajorFactionRenownInfo(majorFactionID: number) → data: MajorFactionRenownInfo?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `MajorFactionsDocumentation.lua`
 
@@ -65,7 +65,7 @@ Namespace: `C_MajorFactions`
 
 `C_MajorFactions.GetRenownLevels(majorFactionID: number) → levels: MajorFactionRenownLevelInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `MajorFactionsDocumentation.lua`
 
@@ -73,14 +73,14 @@ Namespace: `C_MajorFactions`
 
 `C_MajorFactions.GetRenownNPCFactionID() → renownNPCFactionID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `MajorFactionsDocumentation.lua`
 
 ### C_MajorFactions.GetRenownRewardsForLevel
 
 `C_MajorFactions.GetRenownRewardsForLevel(majorFactionID: number, renownLevel: number) → rewards: MajorFactionRenownRewardInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `MajorFactionsDocumentation.lua`
 
@@ -88,7 +88,7 @@ Namespace: `C_MajorFactions`
 
 `C_MajorFactions.GetTotalReputationForRenownLevel(majorFactionID: number, renownLevel: number) → totalReputation: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `MajorFactionsDocumentation.lua`
 
@@ -96,7 +96,7 @@ Namespace: `C_MajorFactions`
 
 `C_MajorFactions.HasMaximumRenown(majorFactionID: number) → hasMaxRenown: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `MajorFactionsDocumentation.lua`
 
@@ -104,7 +104,7 @@ Namespace: `C_MajorFactions`
 
 `C_MajorFactions.IsMajorFactionHiddenFromExpansionPage(majorFactionID: number) → isHidden: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `MajorFactionsDocumentation.lua`
 
@@ -112,7 +112,7 @@ Namespace: `C_MajorFactions`
 
 `C_MajorFactions.IsWeeklyRenownCapped(majorFactionID: number) → isWeeklyCapped: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `MajorFactionsDocumentation.lua`
 
@@ -120,7 +120,7 @@ Namespace: `C_MajorFactions`
 
 `C_MajorFactions.ShouldDisplayMajorFactionAsJourney(majorFactionID: number) → shouldDisplayMajorFactionAsJourney: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `MajorFactionsDocumentation.lua`
 
@@ -128,7 +128,7 @@ Namespace: `C_MajorFactions`
 
 `C_MajorFactions.ShouldUseJourneyRewardTrack(majorFactionID: number) → shouldUseJourneyRewardTrack: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `MajorFactionsDocumentation.lua`
 
@@ -136,25 +136,25 @@ Namespace: `C_MajorFactions`
 
 ### MAJOR_FACTION_INTERACTION_ENDED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### MAJOR_FACTION_INTERACTION_STARTED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### MAJOR_FACTION_RENOWN_LEVEL_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `majorFactionID: number`, `newRenownLevel: number`, `oldRenownLevel: number`
 - fires synchronously (Blizzard's docs)
 
 ### MAJOR_FACTION_UNLOCKED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `majorFactionID: number`
 - fires synchronously (Blizzard's docs)
 

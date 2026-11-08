@@ -6,20 +6,20 @@ Namespace: `C_SocialUI`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_SocialUI.IsSystemEnabled](#c_socialuiissystemenabled) |  |  |
+| ✅ | [C_SocialUI.IsSystemEnabled](#c_socialuiissystemenabled) |  |  |
 
 ### C_SocialUI.IsSystemEnabled
 
 `C_SocialUI.IsSystemEnabled() → isSocialUISystemEnabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `SocialUIDocumentation.lua`
 
 ## Events
 
 ### SOCIAL_UI_SYSTEM_STATUS_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
@@ -27,7 +27,7 @@ Namespace: `C_SocialUI`
 
 ### SocialSystemType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Friends` = 0
   - `QuickJoin` = 1
   - `RaidList` = 2
@@ -36,14 +36,14 @@ Namespace: `C_SocialUI`
 
 ### SocialUIBlockType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Ignore` = 1
   - `BattleNetInviteBlock` = 2
 
 ### SocialUIPresenceType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Unknown` = 0
   - `Online` = 1
   - `Offline` = 2

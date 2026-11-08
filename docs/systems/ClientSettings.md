@@ -4,7 +4,7 @@
 
 ### ClientSettingsConfigFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ClientSettingsConfigDebug` = 1
   - `ClientSettingsConfigInternal` = 2
   - `ClientSettingsConfigPerf` = 4

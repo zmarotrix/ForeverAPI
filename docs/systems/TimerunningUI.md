@@ -6,19 +6,19 @@ Namespace: `C_TimerunningUI`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_TimerunningUI.GetActiveTimerunningSeasonID](#c_timerunninguigetactivetimerunningseasonid) |  |  |
+| ✅ | [C_TimerunningUI.GetActiveTimerunningSeasonID](#c_timerunninguigetactivetimerunningseasonid) |  |  |
 
 ### C_TimerunningUI.GetActiveTimerunningSeasonID
 
 `C_TimerunningUI.GetActiveTimerunningSeasonID() → activeTimerunningSeasonID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `TimerunningUIDocumentation.lua`
 
 ## Events
 
 ### REMIX_END_OF_EVENT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)

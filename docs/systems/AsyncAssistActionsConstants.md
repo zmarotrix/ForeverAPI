@@ -4,7 +4,7 @@
 
 ### AssistActionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `LoungingPlayer` = 1
   - `GraveMarker` = 2

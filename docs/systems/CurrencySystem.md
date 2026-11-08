@@ -6,55 +6,55 @@ Namespace: `C_CurrencyInfo`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_CurrencyInfo.CanTransferCurrency](#c_currencyinfocantransfercurrency) |  |  |
-| ❔ | [C_CurrencyInfo.DoesCurrentFilterRequireAccountCurrencyData](#c_currencyinfodoescurrentfilterrequireaccountcurrencydata) |  |  |
-| ❔ | [C_CurrencyInfo.DoesWarModeBonusApply](#c_currencyinfodoeswarmodebonusapply) |  |  |
-| ❔ | [C_CurrencyInfo.ExpandCurrencyList](#c_currencyinfoexpandcurrencylist) |  |  |
-| ❔ | [C_CurrencyInfo.FetchCurrencyDataFromAccountCharacters](#c_currencyinfofetchcurrencydatafromaccountcharacters) |  |  |
-| ❔ | [C_CurrencyInfo.FetchCurrencyTransferTransactions](#c_currencyinfofetchcurrencytransfertransactions) |  |  |
-| ❔ | [C_CurrencyInfo.GetAzeriteCurrencyID](#c_currencyinfogetazeritecurrencyid) |  |  |
-| ❔ | [C_CurrencyInfo.GetBackpackCurrencyInfo](#c_currencyinfogetbackpackcurrencyinfo) |  |  |
-| ❔ | [C_CurrencyInfo.GetBasicCurrencyInfo](#c_currencyinfogetbasiccurrencyinfo) |  |  |
-| ❔ | [C_CurrencyInfo.GetCoinIcon](#c_currencyinfogetcoinicon) |  |  |
-| ❔ | [C_CurrencyInfo.GetCoinText](#c_currencyinfogetcointext) |  |  |
-| ❔ | [C_CurrencyInfo.GetCoinTextureString](#c_currencyinfogetcointexturestring) |  |  |
-| ❔ | [C_CurrencyInfo.GetCostToTransferCurrency](#c_currencyinfogetcosttotransfercurrency) |  |  |
-| ❔ | [C_CurrencyInfo.GetCurrencyContainerInfo](#c_currencyinfogetcurrencycontainerinfo) |  |  |
-| ❔ | [C_CurrencyInfo.GetCurrencyDescription](#c_currencyinfogetcurrencydescription) |  |  |
-| ❔ | [C_CurrencyInfo.GetCurrencyFilter](#c_currencyinfogetcurrencyfilter) |  |  |
-| ❔ | [C_CurrencyInfo.GetCurrencyIDFromLink](#c_currencyinfogetcurrencyidfromlink) |  |  |
-| ❔ | [C_CurrencyInfo.GetCurrencyInfo](#c_currencyinfogetcurrencyinfo) |  |  |
-| ❔ | [C_CurrencyInfo.GetCurrencyInfoFromLink](#c_currencyinfogetcurrencyinfofromlink) |  |  |
-| ❔ | [C_CurrencyInfo.GetCurrencyLink](#c_currencyinfogetcurrencylink) |  |  |
-| ❔ | [C_CurrencyInfo.GetCurrencyListInfo](#c_currencyinfogetcurrencylistinfo) |  |  |
-| ❔ | [C_CurrencyInfo.GetCurrencyListLink](#c_currencyinfogetcurrencylistlink) |  |  |
-| ❔ | [C_CurrencyInfo.GetCurrencyListSize](#c_currencyinfogetcurrencylistsize) |  |  |
-| ❔ | [C_CurrencyInfo.GetDragonIslesSuppliesCurrencyID](#c_currencyinfogetdragonislessuppliescurrencyid) |  |  |
-| ❔ | [C_CurrencyInfo.GetFactionGrantedByCurrency](#c_currencyinfogetfactiongrantedbycurrency) |  |  |
-| ❔ | [C_CurrencyInfo.GetMaxTransferableAmountFromQuantity](#c_currencyinfogetmaxtransferableamountfromquantity) |  |  |
-| ❔ | [C_CurrencyInfo.GetPlayerCurrencyCategoryInfo](#c_currencyinfogetplayercurrencycategoryinfo) |  |  |
-| ❔ | [C_CurrencyInfo.GetWarResourcesCurrencyID](#c_currencyinfogetwarresourcescurrencyid) |  |  |
-| ❔ | [C_CurrencyInfo.IsAccountCharacterCurrencyDataReady](#c_currencyinfoisaccountcharactercurrencydataready) |  |  |
-| ❔ | [C_CurrencyInfo.IsAccountTransferableCurrency](#c_currencyinfoisaccounttransferablecurrency) |  |  |
-| ❔ | [C_CurrencyInfo.IsAccountWideCurrency](#c_currencyinfoisaccountwidecurrency) |  |  |
-| ❔ | [C_CurrencyInfo.IsCurrencyContainer](#c_currencyinfoiscurrencycontainer) |  |  |
-| ❔ | [C_CurrencyInfo.IsCurrencyTransferInProgress](#c_currencyinfoiscurrencytransferinprogress) |  |  |
-| ❔ | [C_CurrencyInfo.IsCurrencyTransferTransactionDataReady](#c_currencyinfoiscurrencytransfertransactiondataready) |  |  |
-| ❔ | [C_CurrencyInfo.PickupCurrency](#c_currencyinfopickupcurrency) |  |  |
-| ❔ | [C_CurrencyInfo.PlayerHasMaxQuantity](#c_currencyinfoplayerhasmaxquantity) |  |  |
-| ❔ | [C_CurrencyInfo.PlayerHasMaxWeeklyQuantity](#c_currencyinfoplayerhasmaxweeklyquantity) |  |  |
-| ❔ | [C_CurrencyInfo.RequestCurrencyDataForAccountCharacters](#c_currencyinforequestcurrencydataforaccountcharacters) |  |  |
-| ❔ | [C_CurrencyInfo.RequestCurrencyFromAccountCharacter](#c_currencyinforequestcurrencyfromaccountcharacter) |  |  |
-| ❔ | [C_CurrencyInfo.SetCurrencyBackpack](#c_currencyinfosetcurrencybackpack) |  |  |
-| ❔ | [C_CurrencyInfo.SetCurrencyBackpackByID](#c_currencyinfosetcurrencybackpackbyid) |  |  |
-| ❔ | [C_CurrencyInfo.SetCurrencyFilter](#c_currencyinfosetcurrencyfilter) |  |  |
-| ❔ | [C_CurrencyInfo.SetCurrencyUnused](#c_currencyinfosetcurrencyunused) |  |  |
+| ✅ | [C_CurrencyInfo.CanTransferCurrency](#c_currencyinfocantransfercurrency) |  |  |
+| ✅ | [C_CurrencyInfo.DoesCurrentFilterRequireAccountCurrencyData](#c_currencyinfodoescurrentfilterrequireaccountcurrencydata) |  |  |
+| ✅ | [C_CurrencyInfo.DoesWarModeBonusApply](#c_currencyinfodoeswarmodebonusapply) |  |  |
+| ✅ | [C_CurrencyInfo.ExpandCurrencyList](#c_currencyinfoexpandcurrencylist) |  |  |
+| ✅ | [C_CurrencyInfo.FetchCurrencyDataFromAccountCharacters](#c_currencyinfofetchcurrencydatafromaccountcharacters) |  |  |
+| ✅ | [C_CurrencyInfo.FetchCurrencyTransferTransactions](#c_currencyinfofetchcurrencytransfertransactions) |  |  |
+| ✅ | [C_CurrencyInfo.GetAzeriteCurrencyID](#c_currencyinfogetazeritecurrencyid) |  |  |
+| ✅ | [C_CurrencyInfo.GetBackpackCurrencyInfo](#c_currencyinfogetbackpackcurrencyinfo) |  |  |
+| ✅ | [C_CurrencyInfo.GetBasicCurrencyInfo](#c_currencyinfogetbasiccurrencyinfo) |  |  |
+| ✅ | [C_CurrencyInfo.GetCoinIcon](#c_currencyinfogetcoinicon) |  |  |
+| ✅ | [C_CurrencyInfo.GetCoinText](#c_currencyinfogetcointext) |  |  |
+| ✅ | [C_CurrencyInfo.GetCoinTextureString](#c_currencyinfogetcointexturestring) |  |  |
+| ✅ | [C_CurrencyInfo.GetCostToTransferCurrency](#c_currencyinfogetcosttotransfercurrency) |  |  |
+| ✅ | [C_CurrencyInfo.GetCurrencyContainerInfo](#c_currencyinfogetcurrencycontainerinfo) |  |  |
+| ✅ | [C_CurrencyInfo.GetCurrencyDescription](#c_currencyinfogetcurrencydescription) |  |  |
+| ✅ | [C_CurrencyInfo.GetCurrencyFilter](#c_currencyinfogetcurrencyfilter) |  |  |
+| ✅ | [C_CurrencyInfo.GetCurrencyIDFromLink](#c_currencyinfogetcurrencyidfromlink) |  |  |
+| ✅ | [C_CurrencyInfo.GetCurrencyInfo](#c_currencyinfogetcurrencyinfo) |  |  |
+| ✅ | [C_CurrencyInfo.GetCurrencyInfoFromLink](#c_currencyinfogetcurrencyinfofromlink) |  |  |
+| ✅ | [C_CurrencyInfo.GetCurrencyLink](#c_currencyinfogetcurrencylink) |  |  |
+| ✅ | [C_CurrencyInfo.GetCurrencyListInfo](#c_currencyinfogetcurrencylistinfo) |  |  |
+| ✅ | [C_CurrencyInfo.GetCurrencyListLink](#c_currencyinfogetcurrencylistlink) |  |  |
+| ✅ | [C_CurrencyInfo.GetCurrencyListSize](#c_currencyinfogetcurrencylistsize) |  |  |
+| ✅ | [C_CurrencyInfo.GetDragonIslesSuppliesCurrencyID](#c_currencyinfogetdragonislessuppliescurrencyid) |  |  |
+| ✅ | [C_CurrencyInfo.GetFactionGrantedByCurrency](#c_currencyinfogetfactiongrantedbycurrency) |  |  |
+| ✅ | [C_CurrencyInfo.GetMaxTransferableAmountFromQuantity](#c_currencyinfogetmaxtransferableamountfromquantity) |  |  |
+| ✅ | [C_CurrencyInfo.GetPlayerCurrencyCategoryInfo](#c_currencyinfogetplayercurrencycategoryinfo) |  |  |
+| ✅ | [C_CurrencyInfo.GetWarResourcesCurrencyID](#c_currencyinfogetwarresourcescurrencyid) |  |  |
+| ✅ | [C_CurrencyInfo.IsAccountCharacterCurrencyDataReady](#c_currencyinfoisaccountcharactercurrencydataready) |  |  |
+| ✅ | [C_CurrencyInfo.IsAccountTransferableCurrency](#c_currencyinfoisaccounttransferablecurrency) |  |  |
+| ✅ | [C_CurrencyInfo.IsAccountWideCurrency](#c_currencyinfoisaccountwidecurrency) |  |  |
+| ✅ | [C_CurrencyInfo.IsCurrencyContainer](#c_currencyinfoiscurrencycontainer) |  |  |
+| ✅ | [C_CurrencyInfo.IsCurrencyTransferInProgress](#c_currencyinfoiscurrencytransferinprogress) |  |  |
+| ✅ | [C_CurrencyInfo.IsCurrencyTransferTransactionDataReady](#c_currencyinfoiscurrencytransfertransactiondataready) |  |  |
+| ✅ | [C_CurrencyInfo.PickupCurrency](#c_currencyinfopickupcurrency) |  |  |
+| ✅ | [C_CurrencyInfo.PlayerHasMaxQuantity](#c_currencyinfoplayerhasmaxquantity) |  |  |
+| ✅ | [C_CurrencyInfo.PlayerHasMaxWeeklyQuantity](#c_currencyinfoplayerhasmaxweeklyquantity) |  |  |
+| ✅ | [C_CurrencyInfo.RequestCurrencyDataForAccountCharacters](#c_currencyinforequestcurrencydataforaccountcharacters) |  |  |
+| ✅ | [C_CurrencyInfo.RequestCurrencyFromAccountCharacter](#c_currencyinforequestcurrencyfromaccountcharacter) |  |  |
+| ✅ | [C_CurrencyInfo.SetCurrencyBackpack](#c_currencyinfosetcurrencybackpack) |  |  |
+| ✅ | [C_CurrencyInfo.SetCurrencyBackpackByID](#c_currencyinfosetcurrencybackpackbyid) |  |  |
+| ✅ | [C_CurrencyInfo.SetCurrencyFilter](#c_currencyinfosetcurrencyfilter) |  |  |
+| ✅ | [C_CurrencyInfo.SetCurrencyUnused](#c_currencyinfosetcurrencyunused) |  |  |
 
 ### C_CurrencyInfo.CanTransferCurrency
 
 `C_CurrencyInfo.CanTransferCurrency(currencyID: number) → canTransferCurrency: bool, failureReason: AccountCurrencyTransferResult?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -62,14 +62,14 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.DoesCurrentFilterRequireAccountCurrencyData() → doesCurrentFilterRequireAccountCurrencyData: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.DoesWarModeBonusApply
 
 `C_CurrencyInfo.DoesWarModeBonusApply(currencyID: number) → warModeApplies: bool?, limitOncePerTooltip: bool?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -77,7 +77,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.ExpandCurrencyList(index: luaIndex, expand: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -85,7 +85,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.FetchCurrencyDataFromAccountCharacters(currencyID: number) → accountCurrencyData: CharacterCurrencyData[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
@@ -94,21 +94,21 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.FetchCurrencyTransferTransactions() → currencyTransferTransactions: CurrencyTransferTransaction[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.GetAzeriteCurrencyID
 
 `C_CurrencyInfo.GetAzeriteCurrencyID() → azeriteCurrencyID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.GetBackpackCurrencyInfo
 
 `C_CurrencyInfo.GetBackpackCurrencyInfo(index: luaIndex) → info: BackpackCurrencyInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
@@ -117,7 +117,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.GetBasicCurrencyInfo(currencyType: number, quantity: number?) → info: CurrencyDisplayInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
@@ -126,7 +126,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.GetCoinIcon(amount: WOWMONEY) → result: fileID`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -134,7 +134,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.GetCoinText(amount: WOWMONEY, separator: cstring = , ) → result: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -142,7 +142,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.GetCoinTextureString(amount: WOWMONEY, fontHeight: number = 14) → result: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -150,7 +150,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.GetCostToTransferCurrency(currencyID: number, quantity: number) → totalQuantityConsumed: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -158,7 +158,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.GetCurrencyContainerInfo(currencyType: number, quantity: number) → info: CurrencyDisplayInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
@@ -167,7 +167,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.GetCurrencyDescription(type: number) → description: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -175,14 +175,14 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.GetCurrencyFilter() → filterType: CurrencyFilterType`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.GetCurrencyIDFromLink
 
 `C_CurrencyInfo.GetCurrencyIDFromLink(currencyLink: cstring) → currencyID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -190,7 +190,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.GetCurrencyInfo(type: number) → info: CurrencyInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
@@ -199,7 +199,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.GetCurrencyInfoFromLink(link: string) → info: CurrencyInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
@@ -208,7 +208,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.GetCurrencyLink(type: number, amount: number?) → link: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -216,7 +216,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.GetCurrencyListInfo(index: luaIndex) → info: CurrencyInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
@@ -225,7 +225,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.GetCurrencyListLink(index: luaIndex) → link: cstring`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -233,21 +233,21 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.GetCurrencyListSize() → currencyListSize: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.GetDragonIslesSuppliesCurrencyID
 
 `C_CurrencyInfo.GetDragonIslesSuppliesCurrencyID() → dragonIslesSuppliesCurrencyID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.GetFactionGrantedByCurrency
 
 `C_CurrencyInfo.GetFactionGrantedByCurrency(currencyID: number) → factionID: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Blizzard: Gets the faction ID for currency that is immediately converted into reputation with that faction instead.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
@@ -256,7 +256,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.GetMaxTransferableAmountFromQuantity(currencyID: number, requestedQuantity: number) → maxTransferableAmount: number?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -264,7 +264,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.GetPlayerCurrencyCategoryInfo(categoryID: number, includeAccountWide: bool = True) → info: PlayerCurrencyCategoryInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -272,21 +272,21 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.GetWarResourcesCurrencyID() → warResourceCurrencyID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.IsAccountCharacterCurrencyDataReady
 
 `C_CurrencyInfo.IsAccountCharacterCurrencyDataReady() → isReady: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.IsAccountTransferableCurrency
 
 `C_CurrencyInfo.IsAccountTransferableCurrency(currencyID: number) → isAccountTransferableCurrency: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -294,7 +294,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.IsAccountWideCurrency(currencyID: number) → isAccountWideCurrency: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -302,7 +302,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.IsCurrencyContainer(currencyID: number, quantity: number) → isCurrencyContainer: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -310,21 +310,21 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.IsCurrencyTransferInProgress() → currencyTransferInProgress: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.IsCurrencyTransferTransactionDataReady
 
 `C_CurrencyInfo.IsCurrencyTransferTransactionDataReady() → isReady: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.PickupCurrency
 
 `C_CurrencyInfo.PickupCurrency(type: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -332,7 +332,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.PlayerHasMaxQuantity(currencyID: number) → hasMaxQuantity: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -340,7 +340,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.PlayerHasMaxWeeklyQuantity(currencyID: number) → hasMaxWeeklyQuantity: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -348,14 +348,14 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.RequestCurrencyDataForAccountCharacters()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
 ### C_CurrencyInfo.RequestCurrencyFromAccountCharacter
 
 `C_CurrencyInfo.RequestCurrencyFromAccountCharacter(sourceCharacterGUID: WOWGUID, currencyID: number, quantity: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
@@ -364,7 +364,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.SetCurrencyBackpack(index: luaIndex, backpack: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -372,7 +372,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.SetCurrencyBackpackByID(currencyType: number, backpack: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -380,7 +380,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.SetCurrencyFilter(filterType: CurrencyFilterType)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
@@ -389,7 +389,7 @@ Namespace: `C_CurrencyInfo`
 
 `C_CurrencyInfo.SetCurrencyUnused(index: luaIndex, unused: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `CurrencyInfoDocumentation.lua`
 
@@ -397,49 +397,50 @@ Namespace: `C_CurrencyInfo`
 
 ### ACCOUNT_CHARACTER_CURRENCY_DATA_RECEIVED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### ACCOUNT_MONEY
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### CURRENCY_DISPLAY_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `currencyType: number?`, `quantity: number?`, `quantityChange: number?`, `quantityGainSource: number?`, `destroyReason: number?`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `-,-,-,-,-`
 
 ### CURRENCY_TRANSFER_FAILED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `failureReason: AccountCurrencyTransferResult`
 - fires synchronously (Blizzard's docs)
 
 ### CURRENCY_TRANSFER_INITIATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### CURRENCY_TRANSFER_LOG_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### CURRENCY_TRANSFER_SUCCESS
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### PLAYER_MONEY
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 

@@ -4,7 +4,7 @@
 
 ### TooltipSide
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Left` = 0
   - `Right` = 1
   - `Top` = 2
@@ -12,7 +12,7 @@
 
 ### TooltipTextureAnchor
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `LeftTop` = 0
   - `LeftCenter` = 1
   - `LeftBottom` = 2
@@ -23,6 +23,6 @@
 
 ### TooltipTextureRelativeRegion
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `LeftLine` = 0
   - `RightLine` = 1

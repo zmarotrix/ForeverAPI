@@ -4,7 +4,7 @@
 
 ### SuperTrackingMapPinType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `AreaPOI` = 0
   - `QuestOffer` = 1
   - `TaxiNode` = 2
@@ -13,7 +13,7 @@
 
 ### SuperTrackingType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Quest` = 0
   - `UserWaypoint` = 1
   - `Corpse` = 2

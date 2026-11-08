@@ -4,13 +4,13 @@
 
 ### CursorStyle
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Mouse` = 0
   - `Crosshair` = 1
 
 ### Cursormode
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `NoCursor` = 0
   - `PointCursor` = 1
   - `CastCursor` = 2
@@ -107,7 +107,7 @@
 
 ### UICursorType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Default` = 0
   - `Item` = 1
   - `Money` = 2
@@ -133,7 +133,7 @@
 
 ### WoWClientCursorSize
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Standard` = 0
   - `Medium` = 1
   - `Large` = 2
@@ -142,7 +142,7 @@
 
 ### WorldCursorAnchorType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Default` = 1
   - `Cursor` = 2

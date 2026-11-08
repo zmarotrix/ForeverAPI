@@ -4,18 +4,18 @@
 
 ### ACTIVATE_GLYPH
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `spellID: number`
 - fires synchronously (Blizzard's docs)
 
 ### CANCEL_GLYPH_CAST
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### USE_GLYPH
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `spellID: number`
 - fires synchronously (Blizzard's docs)

@@ -4,12 +4,12 @@
 
 ### SpellBookSpellIDs
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `SPELL_ID_DISMISS_PET` = 2641
 
 ### UnitPowerSpellIDs
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `VOID_METAMORPHOSIS_SPELL_ID` = 1217607
   - `DARK_HEART_SPELL_ID` = 1225789
   - `SILENCE_THE_WHISPERS_SPELL_ID` = 1227702

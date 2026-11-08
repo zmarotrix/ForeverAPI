@@ -4,75 +4,75 @@
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [IsCollisionEnabled](#iscollisionenabled) |  |  |
-| ❔ | [ToggleAnimKitDisplay](#toggleanimkitdisplay) |  |  |
-| ❔ | [ToggleCollision](#togglecollision) |  |  |
-| ❔ | [ToggleCollisionDisplay](#togglecollisiondisplay) |  |  |
-| ❔ | [ToggleDebugAIDisplay](#toggledebugaidisplay) |  |  |
-| ❔ | [ToggleGravity](#togglegravity) |  |  |
-| ❔ | [TogglePlayerBounds](#toggleplayerbounds) |  |  |
-| ❔ | [TogglePortals](#toggleportals) |  |  |
-| ❔ | [ToggleTris](#toggletris) |  |  |
+| ⛔ | [IsCollisionEnabled](#iscollisionenabled) |  |  |
+| ⛔ | [ToggleAnimKitDisplay](#toggleanimkitdisplay) |  |  |
+| ⛔ | [ToggleCollision](#togglecollision) |  |  |
+| ⛔ | [ToggleCollisionDisplay](#togglecollisiondisplay) |  |  |
+| ⛔ | [ToggleDebugAIDisplay](#toggledebugaidisplay) |  |  |
+| ⛔ | [ToggleGravity](#togglegravity) |  |  |
+| ⛔ | [TogglePlayerBounds](#toggleplayerbounds) |  |  |
+| ⛔ | [TogglePortals](#toggleportals) |  |  |
+| ⛔ | [ToggleTris](#toggletris) |  |  |
 
 ### IsCollisionEnabled
 
 `IsCollisionEnabled() → result: bool`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - Source: client docs `DebugToggleDocumentation.lua`
 
 ### ToggleAnimKitDisplay
 
 `ToggleAnimKitDisplay()`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - Source: client docs `DebugToggleDocumentation.lua`
 
 ### ToggleCollision
 
 `ToggleCollision()`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - Source: client docs `DebugToggleDocumentation.lua`
 
 ### ToggleCollisionDisplay
 
 `ToggleCollisionDisplay()`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - Source: client docs `DebugToggleDocumentation.lua`
 
 ### ToggleDebugAIDisplay
 
 `ToggleDebugAIDisplay()`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - Source: client docs `DebugToggleDocumentation.lua`
 
 ### ToggleGravity
 
 `ToggleGravity()`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - Source: client docs `DebugToggleDocumentation.lua`
 
 ### TogglePlayerBounds
 
 `TogglePlayerBounds()`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - Source: client docs `DebugToggleDocumentation.lua`
 
 ### TogglePortals
 
 `TogglePortals()`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - Source: client docs `DebugToggleDocumentation.lua`
 
 ### ToggleTris
 
 `ToggleTris()`
 
-- Status: ❔ unverified
+- Status: ⛔ in Blizzard's docs, not in game
 - Source: client docs `DebugToggleDocumentation.lua`

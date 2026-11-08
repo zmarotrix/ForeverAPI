@@ -4,7 +4,7 @@
 
 ### NodeOpFailureReason
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `MissingEdgeConnection` = 1
   - `RequiredForEdge` = 2
@@ -35,7 +35,7 @@
 
 ### RespecType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Talents` = 0
   - `Glyphs` = 1
   - `SetPrimarySpecialization` = 2
@@ -45,12 +45,12 @@
 
 ### SharedStringFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `InternalOnly` = 1
 
 ### TraitCombatConfigFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ActiveForSpec` = 1
   - `StarterBuild` = 2
   - `SharedActionBars` = 4
@@ -58,14 +58,14 @@
 
 ### TraitCondFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `IsGate` = 1
   - `IsAlwaysMet` = 2
   - `IsSufficient` = 4
 
 ### TraitConditionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Available` = 0
   - `Visible` = 1
   - `Granted` = 2
@@ -75,7 +75,7 @@
 
 ### TraitConfigDbState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Ready` = 0
   - `Created` = 1
   - `Removed` = 2
@@ -83,7 +83,7 @@
 
 ### TraitConfigType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Invalid` = 0
   - `Combat` = 1
   - `Profession` = 2
@@ -92,7 +92,7 @@
 
 ### TraitConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `MAX_COMBAT_TRAIT_CONFIGS` = 40
   - `COMMIT_COMBAT_TRAIT_CONFIG_CHANGES_SPELL_ID` = 384255
   - `INSPECT_TRAIT_CONFIG_ID` = -1
@@ -101,7 +101,7 @@
 
 ### TraitCurrencyFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ShowQuantityAsSpent` = 1
   - `TraitSourcedShowMax` = 2
   - `UseClassIcon` = 4
@@ -109,7 +109,7 @@
 
 ### TraitCurrencyType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Gold` = 0
   - `CurrencyTypesBased` = 1
   - `TraitSourced` = 2
@@ -117,7 +117,7 @@
 
 ### TraitDefinitionSubType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `DragonflightRed` = 0
   - `DragonflightBlue` = 1
   - `DragonflightGreen` = 2
@@ -126,7 +126,7 @@
 
 ### TraitEdgeType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `VisualOnly` = 0
   - `DeprecatedRankConnection` = 1
   - `SufficientForAvailability` = 2
@@ -136,13 +136,13 @@
 
 ### TraitEdgeVisualStyle
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Straight` = 1
 
 ### TraitNodeEntryType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `SpendHex` = 0
   - `SpendSquare` = 1
   - `SpendCircle` = 2
@@ -161,7 +161,7 @@
 
 ### TraitNodeFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `ShowMultipleIcons` = 1
   - `NeverPurchasable` = 2
   - `TestPositionLocked` = 4
@@ -174,12 +174,12 @@
 
 ### TraitNodeGroupFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `AvailableByDefault` = 1
 
 ### TraitNodeType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Single` = 0
   - `Tiered` = 1
   - `Selection` = 2
@@ -187,14 +187,14 @@
 
 ### TraitPointsOperationType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = -1
   - `Set` = 0
   - `Multiply` = 1
 
 ### TraitSystemFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `AllowMultipleLoadoutsPerTree` = 1
   - `ShowSpendConfirmation` = 2
   - `AllowEditInCombat` = 4
@@ -202,19 +202,19 @@
 
 ### TraitSystemVariationType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Spec` = 1
 
 ### TraitTreeFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `CannotRefund` = 1
   - `HideSingleRankNumbers` = 2
 
 ### TraitVendorResetFailureReason
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `DataError` = 1
   - `ClassPointDeficit` = 2

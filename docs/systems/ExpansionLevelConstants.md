@@ -4,7 +4,7 @@
 
 ### ExpansionLevel
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `BurningCrusade` = 1
   - `Northrend` = 2

@@ -6,33 +6,33 @@ Namespace: `C_Discord`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_Discord.Authorize](#c_discordauthorize) |  |  |
-| ❔ | [C_Discord.GetDiscordChannelName](#c_discordgetdiscordchannelname) |  |  |
-| ❔ | [C_Discord.GetDiscordUserID](#c_discordgetdiscorduserid) |  |  |
-| ❔ | [C_Discord.GetDiscordUserName](#c_discordgetdiscordusername) |  |  |
-| ❔ | [C_Discord.GetDisplayNameType](#c_discordgetdisplaynametype) |  |  |
-| ❔ | [C_Discord.GetGuildLinkStatus](#c_discordgetguildlinkstatus) |  |  |
-| ❔ | [C_Discord.GetNumDiscordChannels](#c_discordgetnumdiscordchannels) |  |  |
-| ❔ | [C_Discord.GetNumDiscordServers](#c_discordgetnumdiscordservers) |  |  |
-| ❔ | [C_Discord.GetServerLinkableChannels](#c_discordgetserverlinkablechannels) |  |  |
-| ❔ | [C_Discord.GetServerName](#c_discordgetservername) |  |  |
-| ❔ | [C_Discord.GuildLink](#c_discordguildlink) |  |  |
-| ❔ | [C_Discord.GuildUnlink](#c_discordguildunlink) |  |  |
-| ❔ | [C_Discord.IsEnabled](#c_discordisenabled) |  |  |
-| ❔ | [C_Discord.IsGuildChannelLinked](#c_discordisguildchannellinked) |  |  |
-| ❔ | [C_Discord.IsGuildSettingSet](#c_discordisguildsettingset) |  |  |
-| ❔ | [C_Discord.IsUserOAuthed](#c_discordisuseroauthed) |  |  |
-| ❔ | [C_Discord.IsVoiceEnabled](#c_discordisvoiceenabled) |  |  |
-| ❔ | [C_Discord.RefreshAuth](#c_discordrefreshauth) |  |  |
-| ❔ | [C_Discord.SetGuildSetting](#c_discordsetguildsetting) |  |  |
-| ❔ | [C_Discord.UpdateDiscordServers](#c_discordupdatediscordservers) |  |  |
-| ❔ | [C_Discord.UpdateGuildLobby](#c_discordupdateguildlobby) |  |  |
+| ✅ | [C_Discord.Authorize](#c_discordauthorize) |  |  |
+| ✅ | [C_Discord.GetDiscordChannelName](#c_discordgetdiscordchannelname) |  |  |
+| ✅ | [C_Discord.GetDiscordUserID](#c_discordgetdiscorduserid) |  |  |
+| ✅ | [C_Discord.GetDiscordUserName](#c_discordgetdiscordusername) |  |  |
+| ✅ | [C_Discord.GetDisplayNameType](#c_discordgetdisplaynametype) |  |  |
+| ✅ | [C_Discord.GetGuildLinkStatus](#c_discordgetguildlinkstatus) |  |  |
+| ✅ | [C_Discord.GetNumDiscordChannels](#c_discordgetnumdiscordchannels) |  |  |
+| ✅ | [C_Discord.GetNumDiscordServers](#c_discordgetnumdiscordservers) |  |  |
+| ✅ | [C_Discord.GetServerLinkableChannels](#c_discordgetserverlinkablechannels) |  |  |
+| ✅ | [C_Discord.GetServerName](#c_discordgetservername) |  |  |
+| ✅ | [C_Discord.GuildLink](#c_discordguildlink) |  |  |
+| ✅ | [C_Discord.GuildUnlink](#c_discordguildunlink) |  |  |
+| ✅ | [C_Discord.IsEnabled](#c_discordisenabled) |  |  |
+| ✅ | [C_Discord.IsGuildChannelLinked](#c_discordisguildchannellinked) |  |  |
+| ✅ | [C_Discord.IsGuildSettingSet](#c_discordisguildsettingset) |  |  |
+| ✅ | [C_Discord.IsUserOAuthed](#c_discordisuseroauthed) |  |  |
+| ✅ | [C_Discord.IsVoiceEnabled](#c_discordisvoiceenabled) |  |  |
+| ✅ | [C_Discord.RefreshAuth](#c_discordrefreshauth) |  |  |
+| ✅ | [C_Discord.SetGuildSetting](#c_discordsetguildsetting) |  |  |
+| ✅ | [C_Discord.UpdateDiscordServers](#c_discordupdatediscordservers) |  |  |
+| ✅ | [C_Discord.UpdateGuildLobby](#c_discordupdateguildlobby) |  |  |
 
 ### C_Discord.Authorize
 
 `C_Discord.Authorize()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `DiscordDocumentation.lua`
 
@@ -40,7 +40,7 @@ Namespace: `C_Discord`
 
 `C_Discord.GetDiscordChannelName(serverIndex: luaIndex, channelIndex: luaIndex) → name: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DiscordDocumentation.lua`
@@ -49,7 +49,7 @@ Namespace: `C_Discord`
 
 `C_Discord.GetDiscordUserID() → userID: DiscordMemberOpaqueID`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `DiscordDocumentation.lua`
 
@@ -57,7 +57,7 @@ Namespace: `C_Discord`
 
 `C_Discord.GetDiscordUserName(userID: DiscordMemberOpaqueID) → userName: KStringDiscordUserName`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DiscordDocumentation.lua`
@@ -66,7 +66,7 @@ Namespace: `C_Discord`
 
 `C_Discord.GetDisplayNameType() → type: DiscordDisplayNameType`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `DiscordDocumentation.lua`
 
@@ -74,7 +74,7 @@ Namespace: `C_Discord`
 
 `C_Discord.GetGuildLinkStatus() → isFullyLinked: bool, linkedChannelName: string, linkedServerName: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `DiscordDocumentation.lua`
 
@@ -82,7 +82,7 @@ Namespace: `C_Discord`
 
 `C_Discord.GetNumDiscordChannels(serverIndex: luaIndex) → count: number, valid: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DiscordDocumentation.lua`
@@ -91,7 +91,7 @@ Namespace: `C_Discord`
 
 `C_Discord.GetNumDiscordServers() → count: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `DiscordDocumentation.lua`
 
@@ -99,7 +99,7 @@ Namespace: `C_Discord`
 
 `C_Discord.GetServerLinkableChannels(index: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DiscordDocumentation.lua`
@@ -108,7 +108,7 @@ Namespace: `C_Discord`
 
 `C_Discord.GetServerName(index: luaIndex) → name: string`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DiscordDocumentation.lua`
@@ -117,7 +117,7 @@ Namespace: `C_Discord`
 
 `C_Discord.GuildLink(serverIndex: luaIndex, channelIndex: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DiscordDocumentation.lua`
@@ -126,7 +126,7 @@ Namespace: `C_Discord`
 
 `C_Discord.GuildUnlink()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `DiscordDocumentation.lua`
 
@@ -134,14 +134,14 @@ Namespace: `C_Discord`
 
 `C_Discord.IsEnabled() → enabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `DiscordDocumentation.lua`
 
 ### C_Discord.IsGuildChannelLinked
 
 `C_Discord.IsGuildChannelLinked() → isLinked: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `DiscordDocumentation.lua`
 
@@ -149,7 +149,7 @@ Namespace: `C_Discord`
 
 `C_Discord.IsGuildSettingSet(setting: DiscordGuildSettings) → isSet: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DiscordDocumentation.lua`
@@ -158,7 +158,7 @@ Namespace: `C_Discord`
 
 `C_Discord.IsUserOAuthed() → hasOAuth: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `DiscordDocumentation.lua`
 
@@ -166,14 +166,14 @@ Namespace: `C_Discord`
 
 `C_Discord.IsVoiceEnabled() → enabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `DiscordDocumentation.lua`
 
 ### C_Discord.RefreshAuth
 
 `C_Discord.RefreshAuth()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `DiscordDocumentation.lua`
 
@@ -181,7 +181,7 @@ Namespace: `C_Discord`
 
 `C_Discord.SetGuildSetting(setting: DiscordGuildSettings, set: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `DiscordDocumentation.lua`
@@ -190,7 +190,7 @@ Namespace: `C_Discord`
 
 `C_Discord.UpdateDiscordServers()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `DiscordDocumentation.lua`
 
@@ -198,7 +198,7 @@ Namespace: `C_Discord`
 
 `C_Discord.UpdateGuildLobby()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - Source: client docs `DiscordDocumentation.lua`
 
@@ -206,36 +206,36 @@ Namespace: `C_Discord`
 
 ### DISCORD_GUILD_ACHIEVEMENT
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `achievementID: number`
 - fires synchronously (Blizzard's docs)
 
 ### DISCORD_GUILD_LOBBY_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### DISCORD_GUILD_SETTINGS_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### DISCORD_LINK_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### DISCORD_SERVER_LIST_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### DISCORD_STATUS_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)

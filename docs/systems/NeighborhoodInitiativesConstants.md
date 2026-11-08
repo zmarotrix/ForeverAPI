@@ -4,17 +4,17 @@
 
 ### InitiativeMilestoneFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `FinalMilestone` = 1
 
 ### InitiativeRewardFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `PermanentWorldState` = 1
 
 ### NeighborhoodInitiativeChestResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `NiSuccess` = 0
   - `NiUnspecifiedFailure` = 1
   - `NiNoHouseFound` = 2
@@ -24,27 +24,27 @@
 
 ### NeighborhoodInitiativeFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Disabled` = 1
   - `NoAbandon` = 2
   - `NoRepeat` = 4
 
 ### NeighborhoodInitiativeNeighborhoodTypes
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `NiNeighborhoodTypeSingleton` = 0
   - `NiNeighborhoodTypePool` = 1
 
 ### NeighborhoodInitiativeTaskType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Single` = 0
   - `RepeatableFinite` = 1
   - `RepeatableInfinite` = 2
 
 ### NeighborhoodInitiativeUpdateStatus
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Started` = 0
   - `MilestoneCompleted` = 1
   - `Completed` = 2
@@ -52,7 +52,7 @@
 
 ### NeighborhoodInitiativesCompletionStates
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `NiCompletionStateNotCompleted` = 0
   - `NiCompletionStatePlayerCompleted` = 1
   - `NiCompletionStateSystemAbandoned` = 2

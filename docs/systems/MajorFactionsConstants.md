@@ -4,14 +4,14 @@
 
 ### MajorFactionFeatureAbility
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Generic` = 0
   - `Fishing` = 1
   - `Hunts` = 2
 
 ### MajorFactionType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `DragonscaleExpedition` = 1
   - `MaruukCentaur` = 2
@@ -20,7 +20,7 @@
 
 ### MajorFactionsConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `WORLD_STATE_RENOWN_CAP_10_0` = 19735
   - `WORLD_STATE_RAPID_RENOWN_CAP_10_0` = 20851
   - `PVP_RANK_POINTS_FACTION_ID` = 2800

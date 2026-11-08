@@ -6,20 +6,20 @@ Namespace: `C_SocialQueue`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_SocialQueue.GetAllGroups](#c_socialqueuegetallgroups) |  |  |
-| ❔ | [C_SocialQueue.GetConfig](#c_socialqueuegetconfig) |  |  |
-| ❔ | [C_SocialQueue.GetGroupForPlayer](#c_socialqueuegetgroupforplayer) |  |  |
-| ❔ | [C_SocialQueue.GetGroupInfo](#c_socialqueuegetgroupinfo) |  |  |
-| ❔ | [C_SocialQueue.GetGroupMembers](#c_socialqueuegetgroupmembers) |  |  |
-| ❔ | [C_SocialQueue.GetGroupQueues](#c_socialqueuegetgroupqueues) |  |  |
-| ❔ | [C_SocialQueue.RequestToJoin](#c_socialqueuerequesttojoin) |  |  |
-| ❔ | [C_SocialQueue.SignalToastDisplayed](#c_socialqueuesignaltoastdisplayed) |  |  |
+| ✅ | [C_SocialQueue.GetAllGroups](#c_socialqueuegetallgroups) |  |  |
+| ✅ | [C_SocialQueue.GetConfig](#c_socialqueuegetconfig) |  |  |
+| ✅ | [C_SocialQueue.GetGroupForPlayer](#c_socialqueuegetgroupforplayer) |  |  |
+| ✅ | [C_SocialQueue.GetGroupInfo](#c_socialqueuegetgroupinfo) |  |  |
+| ✅ | [C_SocialQueue.GetGroupMembers](#c_socialqueuegetgroupmembers) |  |  |
+| ✅ | [C_SocialQueue.GetGroupQueues](#c_socialqueuegetgroupqueues) |  |  |
+| ✅ | [C_SocialQueue.RequestToJoin](#c_socialqueuerequesttojoin) |  |  |
+| ✅ | [C_SocialQueue.SignalToastDisplayed](#c_socialqueuesignaltoastdisplayed) |  |  |
 
 ### C_SocialQueue.GetAllGroups
 
 `C_SocialQueue.GetAllGroups(allowNonJoinable: bool = False, allowNonQueuedGroups: bool = False) → groupGUIDs: WOWGUID[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SocialQueueDocumentation.lua`
 
@@ -27,7 +27,7 @@ Namespace: `C_SocialQueue`
 
 `C_SocialQueue.GetConfig() → config: SocialQueueConfig`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - Source: client docs `SocialQueueDocumentation.lua`
 
@@ -35,7 +35,7 @@ Namespace: `C_SocialQueue`
 
 `C_SocialQueue.GetGroupForPlayer(playerGUID: WOWGUID) → groupGUID: WOWGUID, isSoloQueueParty: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SocialQueueDocumentation.lua`
@@ -44,7 +44,7 @@ Namespace: `C_SocialQueue`
 
 `C_SocialQueue.GetGroupInfo(groupGUID: WOWGUID) → canJoin: bool, numQueues: number, needTank: bool, needHealer: bool, needDamage: bool, isSoloQueueParty: bool, questSessionActive: bool, leaderGUID: WOWGUID`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SocialQueueDocumentation.lua`
@@ -53,7 +53,7 @@ Namespace: `C_SocialQueue`
 
 `C_SocialQueue.GetGroupMembers(groupGUID: WOWGUID) → groupMembers: SocialQueuePlayerInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SocialQueueDocumentation.lua`
@@ -62,7 +62,7 @@ Namespace: `C_SocialQueue`
 
 `C_SocialQueue.GetGroupQueues(groupGUID: WOWGUID) → queues: SocialQueueGroupQueueInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SocialQueueDocumentation.lua`
@@ -71,7 +71,7 @@ Namespace: `C_SocialQueue`
 
 `C_SocialQueue.RequestToJoin(groupGUID: WOWGUID, applyAsTank: bool = False, applyAsHealer: bool = False, applyAsDamage: bool = False) → requestSuccessful: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SocialQueueDocumentation.lua`
 
@@ -79,7 +79,7 @@ Namespace: `C_SocialQueue`
 
 `C_SocialQueue.SignalToastDisplayed(groupGUID: WOWGUID, priority: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `SocialQueueDocumentation.lua`
 
@@ -87,13 +87,13 @@ Namespace: `C_SocialQueue`
 
 ### SOCIAL_QUEUE_CONFIG_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### SOCIAL_QUEUE_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `groupGUID: WOWGUID`, `numAddedItems: number?`
 - fires synchronously (Blizzard's docs)
 

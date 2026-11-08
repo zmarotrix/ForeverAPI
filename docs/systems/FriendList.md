@@ -6,44 +6,44 @@ Namespace: `C_FriendList`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_FriendList.AddFriend](#c_friendlistaddfriend) |  |  |
-| ❔ | [C_FriendList.AddIgnore](#c_friendlistaddignore) |  |  |
-| ❔ | [C_FriendList.AddOrDelIgnore](#c_friendlistaddordelignore) |  |  |
-| ❔ | [C_FriendList.AddOrRemoveFriend](#c_friendlistaddorremovefriend) |  |  |
-| ❔ | [C_FriendList.DelIgnore](#c_friendlistdelignore) |  |  |
-| ❔ | [C_FriendList.DelIgnoreByIndex](#c_friendlistdelignorebyindex) |  |  |
-| ❔ | [C_FriendList.GetFriendInfo](#c_friendlistgetfriendinfo) |  |  |
-| ❔ | [C_FriendList.GetFriendInfoByIndex](#c_friendlistgetfriendinfobyindex) |  |  |
-| ❔ | [C_FriendList.GetIgnoreName](#c_friendlistgetignorename) |  |  |
-| ❔ | [C_FriendList.GetNumFriends](#c_friendlistgetnumfriends) |  |  |
-| ❔ | [C_FriendList.GetNumIgnores](#c_friendlistgetnumignores) |  |  |
-| ❔ | [C_FriendList.GetNumOnlineFriends](#c_friendlistgetnumonlinefriends) |  |  |
-| ❔ | [C_FriendList.GetNumWhoResults](#c_friendlistgetnumwhoresults) |  |  |
-| ❔ | [C_FriendList.GetSelectedFriend](#c_friendlistgetselectedfriend) |  |  |
-| ❔ | [C_FriendList.GetSelectedIgnore](#c_friendlistgetselectedignore) |  |  |
-| ❔ | [C_FriendList.GetWhoInfo](#c_friendlistgetwhoinfo) |  |  |
-| ❔ | [C_FriendList.GetWhoRaceFilters](#c_friendlistgetwhoracefilters) |  |  |
-| ❔ | [C_FriendList.IsFriend](#c_friendlistisfriend) |  |  |
-| ❔ | [C_FriendList.IsIgnored](#c_friendlistisignored) |  |  |
-| ❔ | [C_FriendList.IsIgnoredByGuid](#c_friendlistisignoredbyguid) |  |  |
-| ❔ | [C_FriendList.IsLegacyFriendSystemEnabled](#c_friendlistislegacyfriendsystemenabled) |  |  |
-| ❔ | [C_FriendList.IsOnIgnoredList](#c_friendlistisonignoredlist) |  |  |
-| ❔ | [C_FriendList.RemoveFriend](#c_friendlistremovefriend) |  |  |
-| ❔ | [C_FriendList.RemoveFriendByIndex](#c_friendlistremovefriendbyindex) |  |  |
-| ❔ | [C_FriendList.SendWho](#c_friendlistsendwho) |  |  |
-| ❔ | [C_FriendList.SetFriendNotes](#c_friendlistsetfriendnotes) |  |  |
-| ❔ | [C_FriendList.SetFriendNotesByIndex](#c_friendlistsetfriendnotesbyindex) |  |  |
-| ❔ | [C_FriendList.SetSelectedFriend](#c_friendlistsetselectedfriend) |  |  |
-| ❔ | [C_FriendList.SetSelectedIgnore](#c_friendlistsetselectedignore) |  |  |
-| ❔ | [C_FriendList.SetWhoToUi](#c_friendlistsetwhotoui) |  |  |
-| ❔ | [C_FriendList.ShowFriends](#c_friendlistshowfriends) |  |  |
-| ❔ | [C_FriendList.SortWho](#c_friendlistsortwho) |  |  |
+| ✅ | [C_FriendList.AddFriend](#c_friendlistaddfriend) |  |  |
+| ✅ | [C_FriendList.AddIgnore](#c_friendlistaddignore) |  |  |
+| ✅ | [C_FriendList.AddOrDelIgnore](#c_friendlistaddordelignore) |  |  |
+| ✅ | [C_FriendList.AddOrRemoveFriend](#c_friendlistaddorremovefriend) |  |  |
+| ✅ | [C_FriendList.DelIgnore](#c_friendlistdelignore) |  |  |
+| ✅ | [C_FriendList.DelIgnoreByIndex](#c_friendlistdelignorebyindex) |  |  |
+| ✅ | [C_FriendList.GetFriendInfo](#c_friendlistgetfriendinfo) |  |  |
+| ✅ | [C_FriendList.GetFriendInfoByIndex](#c_friendlistgetfriendinfobyindex) |  |  |
+| ✅ | [C_FriendList.GetIgnoreName](#c_friendlistgetignorename) |  |  |
+| ✅ | [C_FriendList.GetNumFriends](#c_friendlistgetnumfriends) |  |  |
+| ✅ | [C_FriendList.GetNumIgnores](#c_friendlistgetnumignores) |  |  |
+| ✅ | [C_FriendList.GetNumOnlineFriends](#c_friendlistgetnumonlinefriends) |  |  |
+| ✅ | [C_FriendList.GetNumWhoResults](#c_friendlistgetnumwhoresults) |  |  |
+| ✅ | [C_FriendList.GetSelectedFriend](#c_friendlistgetselectedfriend) |  |  |
+| ✅ | [C_FriendList.GetSelectedIgnore](#c_friendlistgetselectedignore) |  |  |
+| ✅ | [C_FriendList.GetWhoInfo](#c_friendlistgetwhoinfo) |  |  |
+| ✅ | [C_FriendList.GetWhoRaceFilters](#c_friendlistgetwhoracefilters) |  |  |
+| ✅ | [C_FriendList.IsFriend](#c_friendlistisfriend) |  |  |
+| ✅ | [C_FriendList.IsIgnored](#c_friendlistisignored) |  |  |
+| ✅ | [C_FriendList.IsIgnoredByGuid](#c_friendlistisignoredbyguid) |  |  |
+| ✅ | [C_FriendList.IsLegacyFriendSystemEnabled](#c_friendlistislegacyfriendsystemenabled) |  |  |
+| ✅ | [C_FriendList.IsOnIgnoredList](#c_friendlistisonignoredlist) |  |  |
+| ✅ | [C_FriendList.RemoveFriend](#c_friendlistremovefriend) |  |  |
+| ✅ | [C_FriendList.RemoveFriendByIndex](#c_friendlistremovefriendbyindex) |  |  |
+| ✅ | [C_FriendList.SendWho](#c_friendlistsendwho) |  |  |
+| ✅ | [C_FriendList.SetFriendNotes](#c_friendlistsetfriendnotes) |  |  |
+| ✅ | [C_FriendList.SetFriendNotesByIndex](#c_friendlistsetfriendnotesbyindex) |  |  |
+| ✅ | [C_FriendList.SetSelectedFriend](#c_friendlistsetselectedfriend) |  |  |
+| ✅ | [C_FriendList.SetSelectedIgnore](#c_friendlistsetselectedignore) |  |  |
+| ✅ | [C_FriendList.SetWhoToUi](#c_friendlistsetwhotoui) |  |  |
+| ✅ | [C_FriendList.ShowFriends](#c_friendlistshowfriends) |  |  |
+| ✅ | [C_FriendList.SortWho](#c_friendlistsortwho) |  |  |
 
 ### C_FriendList.AddFriend
 
 `C_FriendList.AddFriend(name: cstring, notes: cstring?)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -53,7 +53,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.AddIgnore(name: cstring) → added: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
@@ -62,7 +62,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.AddOrDelIgnore(name: cstring)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
@@ -71,7 +71,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.AddOrRemoveFriend(name: cstring, notes: cstring)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -81,7 +81,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.DelIgnore(name: cstring) → removed: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
@@ -90,7 +90,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.DelIgnoreByIndex(index: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
@@ -99,7 +99,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.GetFriendInfo(name: cstring) → info: FriendInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -109,7 +109,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.GetFriendInfoByIndex(index: luaIndex) → info: FriendInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -119,7 +119,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.GetIgnoreName(index: luaIndex) → name: string?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
@@ -128,7 +128,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.GetNumFriends() → numFriends: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
 
@@ -136,7 +136,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.GetNumIgnores() → numIgnores: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
 
@@ -144,7 +144,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.GetNumOnlineFriends() → numOnline: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
 
@@ -152,7 +152,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.GetNumWhoResults() → numWhos: number, totalNumWhos: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
 
@@ -160,7 +160,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.GetSelectedFriend() → index: luaIndex?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
 
@@ -168,7 +168,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.GetSelectedIgnore() → index: luaIndex?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
 
@@ -176,7 +176,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.GetWhoInfo(index: luaIndex) → info: WhoInfo`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -186,7 +186,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.GetWhoRaceFilters() → filters: WhoFilter[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
 
@@ -194,7 +194,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.IsFriend(guid: WOWGUID) → isFriend: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
@@ -203,7 +203,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.IsIgnored(token: cstring) → isIgnored: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
@@ -212,7 +212,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.IsIgnoredByGuid(guid: WOWGUID) → isIgnored: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
@@ -221,7 +221,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.IsLegacyFriendSystemEnabled() → isLegacyFriendSystemEnabled: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
 
@@ -229,7 +229,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.IsOnIgnoredList(token: cstring) → isIgnored: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
@@ -238,7 +238,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.RemoveFriend(name: cstring) → removed: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
@@ -247,7 +247,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.RemoveFriendByIndex(index: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
@@ -256,7 +256,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.SendWho(filter: cstring, origin: number?, filters: SendWhoFilters?)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
@@ -266,7 +266,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.SetFriendNotes(name: cstring, notes: cstring) → found: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
@@ -275,7 +275,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.SetFriendNotesByIndex(index: luaIndex, notes: cstring)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
@@ -284,7 +284,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.SetSelectedFriend(index: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
@@ -293,7 +293,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.SetSelectedIgnore(index: luaIndex)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
@@ -302,7 +302,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.SetWhoToUi(whoToUi: bool)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
@@ -311,7 +311,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.ShowFriends()`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
 
@@ -319,7 +319,7 @@ Namespace: `C_FriendList`
 
 `C_FriendList.SortWho(sorting: cstring, ascending: bool?)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - RequiresFriendList (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `FriendListDocumentation.lua`
@@ -328,163 +328,164 @@ Namespace: `C_FriendList`
 
 ### BATTLE_NET_FRIEND_TAG_ENABLED_STATUS_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### BATTLE_NET_TITLE_FRIEND_CUSTOM_NAME_ENABLED_STATUS_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### BN_BLOCK_FAILED_TOO_MANY
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `blockType: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### BN_BLOCK_LIST_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### BN_CHAT_WHISPER_UNDELIVERABLE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `senderID: number`
 - fires synchronously (Blizzard's docs)
 
 ### BN_CONNECTED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `suppressNotification: bool`
 - fires synchronously (Blizzard's docs)
 
 ### BN_CUSTOM_MESSAGE_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `id: number?`
 - fires synchronously (Blizzard's docs)
 
 ### BN_CUSTOM_MESSAGE_LOADED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### BN_DISCONNECTED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `result: bool`, `suppressNotification: bool`
 - fires synchronously (Blizzard's docs)
 
 ### BN_FRIEND_ACCOUNT_OFFLINE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `friendId: number`, `isCompanionApp: bool`
 - fires synchronously (Blizzard's docs)
 
 ### BN_FRIEND_ACCOUNT_ONLINE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `friendId: number`, `isCompanionApp: bool`
 - fires synchronously (Blizzard's docs)
 
 ### BN_FRIEND_INFO_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `friendIndex: luaIndex?`
 - fires synchronously (Blizzard's docs)
+- Seen firing 15 times (6 in combat); argument kinds: `-` / `n`
 
 ### BN_FRIEND_INVITE_ADDED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `accountID: number`
 - fires synchronously (Blizzard's docs)
 
 ### BN_FRIEND_INVITE_LIST_INITIALIZED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `listSize: number`
 - fires synchronously (Blizzard's docs)
 
 ### BN_FRIEND_INVITE_REMOVED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### BN_FRIEND_LIST_SIZE_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `accountID: number?`
 - fires synchronously (Blizzard's docs)
 
 ### BN_INFO_CHANGED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### BN_REQUEST_FOF_SUCCEEDED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### CONFIRM_BATTLE_NET_FRIEND_INVITE_SHOW
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `name: cstring`, `friendLevel: BattleNetFriendLevel`
 - fires synchronously (Blizzard's docs)
 
 ### FRIENDLIST_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### IGNORELIST_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### LEGACY_FRIEND_SYSTEM_STATUS_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### MUTELIST_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### NEW_MATCHMAKING_PARTY_INVITE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### REJECTED_MATCHMAKING_PARTY_INVITE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `name: cstring`
 - fires synchronously (Blizzard's docs)
 
 ### SOCIAL_UI_FRIENDS_LIST_SYSTEM_STATUS_UPDATED
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
 ### WHO_LIST_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 

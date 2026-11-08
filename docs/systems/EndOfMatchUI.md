@@ -6,20 +6,20 @@ Namespace: `C_EndOfMatchUI`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_EndOfMatchUI.GetEndOfMatchDetails](#c_endofmatchuigetendofmatchdetails) |  |  |
+| ✅ | [C_EndOfMatchUI.GetEndOfMatchDetails](#c_endofmatchuigetendofmatchdetails) |  |  |
 
 ### C_EndOfMatchUI.GetEndOfMatchDetails
 
 `C_EndOfMatchUI.GetEndOfMatchDetails() → matchDetails: MatchDetails?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `EndOfMatchUIDocumentation.lua`
 
 ## Events
 
 ### SHOW_END_OF_MATCH_UI
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
@@ -27,7 +27,7 @@ Namespace: `C_EndOfMatchUI`
 
 ### EndOfMatchType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Plunderstorm` = 1
 
@@ -39,7 +39,7 @@ Namespace: `C_EndOfMatchUI`
 
 ### MatchDetailType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Placement` = 0
   - `Kills` = 1
   - `PlunderAcquired` = 2

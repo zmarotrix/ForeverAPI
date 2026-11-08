@@ -13,7 +13,7 @@
 -- It never casts, targets, sends or changes a setting; the only calls it makes are getters (Get/Is/Has/Can/...).
 
 local ADDON = ...
-local VERSION = "0.1.1"
+local VERSION = "0.1.2"
 local CHUNK = 1500          -- globals examined per frame while dumping
 local CALLS_PER_FRAME = 20  -- getters called per frame
 local MAX_MEMBERS = 10000   -- members recorded per table (Enum alone has thousands)
@@ -228,6 +228,16 @@ end
 
 local CONTROL_EVENT = "APIPROBE_NOT_A_REAL_EVENT"
 
+-- What the probe is doing right now, so ADDON_ACTION_FORBIDDEN (which fires inside the call) can name it.
+local currentCall, forbiddenHit
+
+-- Names that must never be touched again: learned in game (db.skip, kept across sessions) or from crash logs
+-- (leads.crashers, written by tools/apidoc.py extract).
+local function skipped(key)
+  if leads.crashers and leads.crashers[key] then return "crashed the client" end
+  if db.skip and db.skip[key] then return db.skip[key] end
+end
+
 local function checkEvents(names)
   local out = {}
   local CreateFrame = rawget(G, "CreateFrame")
@@ -237,8 +247,15 @@ local function checkEvents(names)
   local isValid = utils and utils.IsEventValid
   local function one(name)
     local rec = {}
+    local why = skipped("event:" .. name)
+    if why then
+      out[name] = { register = why }
+      return
+    end
+    currentCall, forbiddenHit = "event:" .. name, nil
     local ok, err = pcall(f.RegisterEvent, f, name)
-    rec.register = ok and "ok" or errText(err)
+    currentCall = nil
+    rec.register = forbiddenHit and "forbidden" or ok and "ok" or errText(err)
     if ok then pcall(f.UnregisterEvent, f, name) end
     if isValid then
       local vok, v = pcall(isValid, name)
@@ -434,7 +451,6 @@ local function shape(v)
   return "table{" .. table.concat(keys, ",") .. "}"
 end
 
-local currentCall
 local function capture(ok, ...)
   if not ok then return { error = errText((...)) } end
   local n = select("#", ...)
@@ -523,16 +539,22 @@ local function stepCalls()
       fn = rawget(G, c.fn)
     end
     local rec
-    if type(fn) ~= "function" then
+    -- a string local, so a client crash log's Lua stack names the call (crash logs print locals)
+    local callKey = c.key
+    local why = skipped(callKey)
+    if why then
+      rec = { skipped = why }
+    elseif type(fn) ~= "function" then
       rec = { missing = true }
     else
-      currentCall = c.key
+      currentCall, forbiddenHit = callKey, nil
       if c.arg == "unit" then
         rec = capture(pcall(fn, "player"))
       else
         rec = capture(pcall(fn))
       end
       currentCall = nil
+      if forbiddenHit then rec.forbidden = true end
     end
     rec.from = c.from
     rec.arg = c.arg
@@ -624,6 +646,12 @@ frame:SetScript("OnEvent", function(_, event, a1, a2)
   elseif event == "ADDON_ACTION_BLOCKED" or event == "ADDON_ACTION_FORBIDDEN" then
     if a1 == ADDON then
       db.blocked[#db.blocked + 1] = { event = event, fn = tostring(a2), during = currentCall, at = now(), combat = inCombat() }
+      if currentCall then
+        -- never again: each one costs Maro a popup
+        forbiddenHit = true
+        db.skip = db.skip or {}
+        db.skip[currentCall] = event == "ADDON_ACTION_FORBIDDEN" and "forbidden" or "blocked"
+      end
     end
   end
 end)
@@ -669,7 +697,8 @@ SlashCmdList.APIPROBE = function(msg)
     if db.live.on then pcall(live.RegisterAllEvents, live) else live:UnregisterAllEvents() end
     say("live events " .. (db.live.on and "on." or "off."))
   elseif msg == "reset" then
-    ApiProbeDB = {}
+    local skip = db.skip -- what this client forbids or crashes on stays known
+    ApiProbeDB = { skip = skip }
     db = ApiProbeDB
     db.blocked, db.live = {}, { on = true, events = {}, since = now(), build = buildKey() }
     dumping, running = nil, nil

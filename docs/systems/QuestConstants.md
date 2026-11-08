@@ -4,7 +4,7 @@
 
 ### CombinedQuestLogStatus
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Available` = 0
   - `Complete` = 1
   - `CompleteDaily` = 2
@@ -16,14 +16,14 @@
 
 ### CombinedQuestStatus
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Invalid` = 0
   - `Completed` = 1
   - `NotCompleted` = 2
 
 ### QuestCompleteSpellType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `LegacyBehavior` = 0
   - `Follower` = 1
   - `Tradeskill` = 2
@@ -39,7 +39,7 @@
 
 ### QuestInfoLuaConsts
 
-- Constants — ❔ unverified
+- Constants — ⛔ in Blizzard's docs, not in game
   - `QUEST_INFO_ELITE_ID` = 1
   - `QUEST_INFO_DUNGEON_ID` = 81
   - `QUEST_INFO_PVP_ID` = 41
@@ -47,12 +47,12 @@
 
 ### QuestLogConstsMainlineCamelot
 
-- Constants — ❔ unverified
+- Constants — ⛔ in Blizzard's docs, not in game
   - `MAXIMUM_NUM_QUESTS_LOG_CAN_ACCEPT` = 40
 
 ### QuestRepeatability
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `Daily` = 1
   - `Weekly` = 2
@@ -61,14 +61,14 @@
 
 ### QuestRewardContextFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `FirstCompletionBonus` = 1
   - `RepeatCompletionBonus` = 2
 
 ### QuestTagType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Tag` = 0
   - `Profession` = 1
   - `Normal` = 2
@@ -92,21 +92,21 @@
 
 ### QuestTreasurePickerType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Visible` = 0
   - `Hidden` = 1
   - `Select` = 2
 
 ### QuestWatchConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `MAX_QUEST_WATCHES` = 25
   - `MAX_WORLD_QUEST_WATCHES_AUTOMATIC` = 1
   - `MAX_WORLD_QUEST_WATCHES_MANUAL` = 5
 
 ### RelativeContentDifficulty
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Trivial` = 0
   - `Easy` = 1
   - `Fair` = 2

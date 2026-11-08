@@ -6,20 +6,20 @@ Namespace: `C_ScriptedAnimations`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_ScriptedAnimations.GetAllScriptedAnimationEffects](#c_scriptedanimationsgetallscriptedanimationeffects) |  |  |
+| ✅ | [C_ScriptedAnimations.GetAllScriptedAnimationEffects](#c_scriptedanimationsgetallscriptedanimationeffects) |  |  |
 
 ### C_ScriptedAnimations.GetAllScriptedAnimationEffects
 
 `C_ScriptedAnimations.GetAllScriptedAnimationEffects() → scriptedAnimationEffects: ScriptedAnimationEffect[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `ScriptedAnimationsDocumentation.lua`
 
 ## Events
 
 ### SCRIPTED_ANIMATIONS_UPDATE
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
 
@@ -27,7 +27,7 @@ Namespace: `C_ScriptedAnimations`
 
 ### ScriptedAnimationBehavior
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `None` = 0
   - `TargetShake` = 1
   - `TargetKnockBack` = 2
@@ -68,12 +68,12 @@ Namespace: `C_ScriptedAnimations`
 
 ### ScriptedAnimationFlags
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `UseTargetAsSource` = 1
 
 ### ScriptedAnimationTrajectory
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `AtSource` = 0
   - `AtTarget` = 1
   - `Straight` = 2

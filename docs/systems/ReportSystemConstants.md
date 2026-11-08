@@ -4,14 +4,14 @@
 
 ### ReportEvidenceType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Invalid` = 0
   - `HouseScreenshot` = 1
   - `HouseLayoutJson` = 2
 
 ### ReportMajorCategory
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `InappropriateCommunication` = 0
   - `GameplaySabotage` = 1
   - `Cheating` = 2
@@ -21,7 +21,7 @@
 
 ### ReportMinorCategory
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `TextChat` = 1
   - `Boosting` = 2
   - `Spam` = 4
@@ -46,20 +46,20 @@
 
 ### ReportSubComplaintTypes
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Inappropriate` = 0
   - `Advertising` = 1
 
 ### ReportThrottleType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Invalid` = 0
   - `General` = 1
   - `Expensive` = 2
 
 ### ReportType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Chat` = 0
   - `InWorld` = 1
   - `ClubFinderPosting` = 2
@@ -85,14 +85,14 @@
 
 ### ScreenshotSource
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Automatic` = 0
   - `PlayerReport` = 1
   - `Cheat` = 2
 
 ### SendReportResult
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Success` = 0
   - `GeneralError` = 1
   - `TooManyReports` = 2

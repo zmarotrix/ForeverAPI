@@ -4,13 +4,13 @@
 
 ### CombatLogMessageLimits
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `CombatLogDefaultMessageLimit` = 300
   - `CombatLogMaximumMessageLimit` = 1000
 
 ### CombatLogObject
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Empty` = 0
   - `AffiliationMine` = 1
   - `AffiliationParty` = 2
@@ -34,16 +34,17 @@
 
 ### CombatLogObjectMasks
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `COMBATLOG_OBJECT_AFFILIATION_MASK` = 15
   - `COMBATLOG_OBJECT_REACTION_MASK` = 240
   - `COMBATLOG_OBJECT_CONTROL_MASK` = 768
   - `COMBATLOG_OBJECT_TYPE_MASK` = 64512
   - `COMBATLOG_OBJECT_SPECIAL_MASK` = 4294901760
+- ⚠️ `COMBATLOG_OBJECT_SPECIAL_MASK`: docs say 4294901760, game has -65536
 
 ### CombatLogObjectTarget
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Raidtarget1` = 1
   - `Raidtarget2` = 2
   - `Raidtarget3` = 4
@@ -56,6 +57,7 @@
 
 ### CombatLogObjectTargetMasks
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `COMBATLOG_OBJECT_RAID_TARGET_MASK` = 255
   - `COMBATLOG_OBJECT_RAID_MASK` = 4294967295
+- ⚠️ `COMBATLOG_OBJECT_RAID_MASK`: docs say 4294967295, game has -1

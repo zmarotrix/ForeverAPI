@@ -4,15 +4,16 @@
 
 ### RaidMarkerConsts
 
-- Constants — ❔ unverified
+- Constants — ✅ verified
   - `MAX_RAID_TARGETS_USER` = 8
   - `MAX_RAID_TARGETS_RESTRICTED` = 8
   - `MAX_VALID_RAID_TARGETS` = 0
   - `MAX_RAID_MARKERS` = 8
+- ⚠️ `MAX_VALID_RAID_TARGETS`: docs say 0, game has 16
 
 ### RaidMarkerSpellids
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `RaidMarker_0` = 84996
   - `RaidMarker_1` = 84997
   - `RaidMarker_2` = 84998

@@ -46,7 +46,7 @@
 
 ### RuneforgePowerFilter
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `All` = 0
   - `Relevant` = 1
   - `Available` = 2
@@ -54,7 +54,7 @@
 
 ### RuneforgePowerState
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Available` = 0
   - `Unavailable` = 1
   - `Invalid` = 2

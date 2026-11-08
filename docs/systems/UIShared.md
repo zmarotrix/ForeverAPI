@@ -13,7 +13,7 @@
 
 ### FontStringScaleAnimationMode
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `FontSize` = 0
   - `Vertex` = 1
 

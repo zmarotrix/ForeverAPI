@@ -4,6 +4,6 @@
 
 ### ModelLightType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `Directional` = 0
   - `Point` = 1

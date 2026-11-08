@@ -4,7 +4,7 @@
 
 ### TrainerType
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `General` = 0
   - `TalentsObsolete` = 1
   - `Tradeskills` = 2

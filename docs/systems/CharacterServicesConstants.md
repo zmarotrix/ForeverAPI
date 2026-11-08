@@ -4,13 +4,13 @@
 
 ### CharacterServiceInfoFlag
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `RestrictToRecommendedSpecs` = 1
   - `AllowMaxLevelBoost` = 2
 
 ### NoRPEReason
 
-- Enumeration — ❔ unverified
+- Enumeration — ✅ verified
   - `HasRPE` = 0
   - `LowLevel` = 1
   - `Timerunner` = 2

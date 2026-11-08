@@ -6,13 +6,13 @@ Namespace: `C_LoreText`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_LoreText.RequestLoreTextForCampaignID](#c_loretextrequestloretextforcampaignid) |  |  |
+| ✅ | [C_LoreText.RequestLoreTextForCampaignID](#c_loretextrequestloretextforcampaignid) |  |  |
 
 ### C_LoreText.RequestLoreTextForCampaignID
 
 `C_LoreText.RequestLoreTextForCampaignID(campaignID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `LoreTextDocumentation.lua`
 
@@ -20,7 +20,7 @@ Namespace: `C_LoreText`
 
 ### LORE_TEXT_UPDATED_CAMPAIGN
 
-- Status: ❔ unverified
+- Status: ✅ verified
 - Payload: `campaignID: number`, `textEntries: LoreTextEntry[]`
 - fires synchronously (Blizzard's docs)
 

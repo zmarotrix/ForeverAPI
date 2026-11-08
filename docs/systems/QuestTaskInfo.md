@@ -6,24 +6,24 @@ Namespace: `C_TaskQuest`
 
 | | Function | Out of combat | In combat |
 |---|---|---|---|
-| ❔ | [C_TaskQuest.DoesMapShowTaskQuestObjectives](#c_taskquestdoesmapshowtaskquestobjectives) |  |  |
-| ❔ | [C_TaskQuest.GetQuestInfoByQuestID](#c_taskquestgetquestinfobyquestid) |  |  |
-| ❔ | [C_TaskQuest.GetQuestLocation](#c_taskquestgetquestlocation) |  |  |
-| ❔ | [C_TaskQuest.GetQuestProgressBarInfo](#c_taskquestgetquestprogressbarinfo) |  |  |
-| ❔ | [C_TaskQuest.GetQuestTimeLeftMinutes](#c_taskquestgetquesttimeleftminutes) |  |  |
-| ❔ | [C_TaskQuest.GetQuestTimeLeftSeconds](#c_taskquestgetquesttimeleftseconds) |  |  |
-| ❔ | [C_TaskQuest.GetQuestUIWidgetSetByType](#c_taskquestgetquestuiwidgetsetbytype) |  |  |
-| ❔ | [C_TaskQuest.GetQuestZoneID](#c_taskquestgetquestzoneid) |  |  |
-| ❔ | [C_TaskQuest.GetQuestsOnMap](#c_taskquestgetquestsonmap) |  |  |
-| ❔ | [C_TaskQuest.GetThreatQuests](#c_taskquestgetthreatquests) |  |  |
-| ❔ | [C_TaskQuest.IsActive](#c_taskquestisactive) |  |  |
-| ❔ | [C_TaskQuest.RequestPreloadRewardData](#c_taskquestrequestpreloadrewarddata) |  |  |
+| ✅ | [C_TaskQuest.DoesMapShowTaskQuestObjectives](#c_taskquestdoesmapshowtaskquestobjectives) |  |  |
+| ✅ | [C_TaskQuest.GetQuestInfoByQuestID](#c_taskquestgetquestinfobyquestid) |  |  |
+| ✅ | [C_TaskQuest.GetQuestLocation](#c_taskquestgetquestlocation) |  |  |
+| ✅ | [C_TaskQuest.GetQuestProgressBarInfo](#c_taskquestgetquestprogressbarinfo) |  |  |
+| ✅ | [C_TaskQuest.GetQuestTimeLeftMinutes](#c_taskquestgetquesttimeleftminutes) |  |  |
+| ✅ | [C_TaskQuest.GetQuestTimeLeftSeconds](#c_taskquestgetquesttimeleftseconds) |  |  |
+| ✅ | [C_TaskQuest.GetQuestUIWidgetSetByType](#c_taskquestgetquestuiwidgetsetbytype) |  |  |
+| ✅ | [C_TaskQuest.GetQuestZoneID](#c_taskquestgetquestzoneid) |  |  |
+| ✅ | [C_TaskQuest.GetQuestsOnMap](#c_taskquestgetquestsonmap) |  |  |
+| ✅ | [C_TaskQuest.GetThreatQuests](#c_taskquestgetthreatquests) |  |  |
+| ✅ | [C_TaskQuest.IsActive](#c_taskquestisactive) |  |  |
+| ✅ | [C_TaskQuest.RequestPreloadRewardData](#c_taskquestrequestpreloadrewarddata) |  |  |
 
 ### C_TaskQuest.DoesMapShowTaskQuestObjectives
 
 `C_TaskQuest.DoesMapShowTaskQuestObjectives(uiMapID: number) → showsTaskQuestObjectives: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `QuestTaskInfoDocumentation.lua`
 
@@ -31,7 +31,7 @@ Namespace: `C_TaskQuest`
 
 `C_TaskQuest.GetQuestInfoByQuestID(questID: number) → questTitle: cstring, factionID: number?, capped: bool?, displayAsObjective: bool?`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `QuestTaskInfoDocumentation.lua`
@@ -40,7 +40,7 @@ Namespace: `C_TaskQuest`
 
 `C_TaskQuest.GetQuestLocation(questID: number, uiMapID: number) → locationX: number, locationY: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `QuestTaskInfoDocumentation.lua`
@@ -49,7 +49,7 @@ Namespace: `C_TaskQuest`
 
 `C_TaskQuest.GetQuestProgressBarInfo(questID: number) → progress: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `QuestTaskInfoDocumentation.lua`
@@ -58,7 +58,7 @@ Namespace: `C_TaskQuest`
 
 `C_TaskQuest.GetQuestTimeLeftMinutes(questID: number) → minutesLeft: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `QuestTaskInfoDocumentation.lua`
@@ -67,7 +67,7 @@ Namespace: `C_TaskQuest`
 
 `C_TaskQuest.GetQuestTimeLeftSeconds(questID: number) → secondsLeft: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `QuestTaskInfoDocumentation.lua`
@@ -76,7 +76,7 @@ Namespace: `C_TaskQuest`
 
 `C_TaskQuest.GetQuestUIWidgetSetByType(questID: number, type: MapIconUIWidgetSetType) → widgetSet: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `QuestTaskInfoDocumentation.lua`
@@ -85,7 +85,7 @@ Namespace: `C_TaskQuest`
 
 `C_TaskQuest.GetQuestZoneID(questID: number) → uiMapID: number`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `QuestTaskInfoDocumentation.lua`
@@ -94,7 +94,7 @@ Namespace: `C_TaskQuest`
 
 `C_TaskQuest.GetQuestsOnMap(uiMapID: number) → taskPOIs: QuestPOIMapInfo[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `QuestTaskInfoDocumentation.lua`
@@ -103,14 +103,14 @@ Namespace: `C_TaskQuest`
 
 `C_TaskQuest.GetThreatQuests() → quests: number[]`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - Source: client docs `QuestTaskInfoDocumentation.lua`
 
 ### C_TaskQuest.IsActive
 
 `C_TaskQuest.IsActive(questID: number) → active: bool`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `QuestTaskInfoDocumentation.lua`
 
@@ -118,6 +118,6 @@ Namespace: `C_TaskQuest`
 
 `C_TaskQuest.RequestPreloadRewardData(questID: number)`
 
-- Status: ❔ unverified
+- Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - Source: client docs `QuestTaskInfoDocumentation.lua`
