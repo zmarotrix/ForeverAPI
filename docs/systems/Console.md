@@ -123,14 +123,14 @@
 - Status: ✅ verified
 - Payload: `message: cstring`, `colorType: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1098 times (22 in combat); argument kinds: `s,n`
+- Seen firing 2481 times (215 in combat); argument kinds: `s,n`
 
 ### CVAR_UPDATE
 
 - Status: ✅ verified
 - Payload: `eventName: cstring`, `value: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 233 times (3 in combat); argument kinds: `s,s`
+- Seen firing 512 times (12 in combat); argument kinds: `s,s`
 
 ### TOGGLE_CONSOLE
 

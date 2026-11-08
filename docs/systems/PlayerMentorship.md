@@ -65,7 +65,7 @@ Namespace: `C_PlayerMentorship`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 27 times (0 in combat); argument kinds: ``
+- Seen firing 61 times (0 in combat); argument kinds: ``
 
 ### NEWCOMER_GRADUATION
 

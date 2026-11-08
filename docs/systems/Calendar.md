@@ -824,7 +824,7 @@ Namespace: `C_Calendar`
 - Status: ✅ verified
 - Payload: `pending: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 28 times (0 in combat); argument kinds: `b`
+- Seen firing 62 times (0 in combat); argument kinds: `b`
 
 ### CALENDAR_CLOSE_EVENT
 

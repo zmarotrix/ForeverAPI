@@ -45,12 +45,14 @@ Namespace: `C_EventToastManager`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (1 in combat); argument kinds: ``
 
 ### DISPLAY_EVENT_TOAST_LINK
 
 - Status: ✅ verified
 - Payload: `link: string`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (1 in combat); argument kinds: `s`
 
 ## Types
 

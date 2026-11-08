@@ -118,4 +118,4 @@ Namespace: `C_WowTokenUI`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 17 times (6 in combat); argument kinds: ``
+- Seen firing 31 times (12 in combat); argument kinds: ``

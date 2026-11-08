@@ -38,14 +38,14 @@
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 15 times (6 in combat); argument kinds: ``
+- Seen firing 29 times (12 in combat); argument kinds: ``
 
 ### QUICK_TICKET_THROTTLE_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 9 times (3 in combat); argument kinds: ``
+- Seen firing 16 times (7 in combat); argument kinds: ``
 
 ### UPDATE_WEB_TICKET
 

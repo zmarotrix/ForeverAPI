@@ -658,7 +658,7 @@ Namespace: `C_PetJournal`
 - Status: ✅ verified
 - Payload: `companionType: cstring?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 17 times (0 in combat); argument kinds: `-` / `s`
+- Seen firing 69 times (0 in combat); argument kinds: `-` / `s`
 
 ### NEW_PET_ADDED
 
@@ -684,7 +684,7 @@ Namespace: `C_PetJournal`
 - Payload: none
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 46 times (0 in combat); argument kinds: ``
+- Seen firing 99 times (6 in combat); argument kinds: ``
 
 ### PET_JOURNAL_NEW_BATTLE_SLOT
 
@@ -721,14 +721,14 @@ Namespace: `C_PetJournal`
 - Status: ✅ verified
 - Payload: `trapLevel: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 17 times (0 in combat); argument kinds: `n`
+- Seen firing 35 times (3 in combat); argument kinds: `n`
 
 ### UPDATE_SUMMONPETS_ACTION
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 17 times (0 in combat); argument kinds: ``
+- Seen firing 35 times (3 in combat); argument kinds: ``
 
 ## Types
 

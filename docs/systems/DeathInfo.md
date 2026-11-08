@@ -86,6 +86,7 @@ Namespace: `C_DeathInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### CORPSE_IN_INSTANCE
 
@@ -98,25 +99,28 @@ Namespace: `C_DeathInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### CORPSE_OUT_OF_RANGE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### PLAYER_ALIVE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 13 times (0 in combat); argument kinds: ``
+- Seen firing 32 times (0 in combat); argument kinds: ``
 
 ### PLAYER_DEAD
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 3 times (2 in combat); argument kinds: ``
 
 ### PLAYER_SKINNED
 
@@ -129,13 +133,14 @@ Namespace: `C_DeathInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### REQUEST_CEMETERY_LIST_RESPONSE
 
 - Status: ✅ verified
 - Payload: `isGossipTriggered: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 17 times (0 in combat); argument kinds: `b`
+- Seen firing 97 times (1 in combat); argument kinds: `b`
 
 ### RESURRECT_REQUEST
 

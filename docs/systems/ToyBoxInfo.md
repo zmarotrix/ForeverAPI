@@ -78,4 +78,4 @@ Namespace: `C_ToyBoxInfo`
 - Payload: `itemID: number?`, `isNew: bool?`, `hasFanfare: bool?`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 78 times (0 in combat); argument kinds: `-,-,-` / `n,b,b`
+- Seen firing 132 times (3 in combat); argument kinds: `-,-,-` / `n,b,b`

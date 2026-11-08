@@ -240,6 +240,7 @@ Namespace: `C_PaperDollInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 39 times (26 in combat); argument kinds: ``
 
 ### DISABLE_XP_GAIN
 
@@ -264,12 +265,14 @@ Namespace: `C_PaperDollInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### INSPECT_READY
 
 - Status: ✅ verified
 - Payload: `inspecteeGUID: WOWGUID`
 - fires synchronously (Blizzard's docs)
+- Seen firing 8 times (0 in combat); argument kinds: `s`
 
 ### LIFESTEAL_UPDATE
 
@@ -294,13 +297,14 @@ Namespace: `C_PaperDollInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 18 times (6 in combat); argument kinds: ``
 
 ### PLAYER_EQUIPMENT_CHANGED
 
 - Status: ✅ verified
 - Payload: `equipmentSlot: number`, `hasCurrent: bool`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `n,b`
 
 ### PROFESSION_EQUIPMENT_CHANGED
 
@@ -337,7 +341,7 @@ Namespace: `C_PaperDollInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 87 times (0 in combat); argument kinds: ``
+- Seen firing 373 times (166 in combat); argument kinds: ``
 
 ### UPDATE_INVENTORY_ALERTS
 
@@ -351,13 +355,14 @@ Namespace: `C_PaperDollInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 168 times (42 in combat); argument kinds: ``
+- Seen firing 638 times (283 in combat); argument kinds: ``
 
 ### WEAPON_SLOT_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ## Types
 

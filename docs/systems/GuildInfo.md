@@ -420,7 +420,7 @@ Namespace: `C_GuildInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 15 times (0 in combat); argument kinds: ``
+- Seen firing 33 times (3 in combat); argument kinds: ``
 
 ### GUILD_EVENT_LOG_UPDATE
 
@@ -472,14 +472,14 @@ Namespace: `C_GuildInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 117 times (19 in combat); argument kinds: ``
+- Seen firing 492 times (95 in combat); argument kinds: ``
 
 ### GUILD_RANKS_UPDATE_ACTIVE_PLAYER
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 13 times (0 in combat); argument kinds: ``
+- Seen firing 29 times (0 in combat); argument kinds: ``
 
 ### GUILD_RECIPE_KNOWN_BY_MEMBERS
 
@@ -528,7 +528,7 @@ Namespace: `C_GuildInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 4 times (0 in combat); argument kinds: ``
 
 ### GUILD_REWARDS_LIST_UPDATE
 
@@ -541,14 +541,14 @@ Namespace: `C_GuildInfo`
 - Status: ✅ verified
 - Payload: `canRequestRosterUpdate: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 320 times (59 in combat); argument kinds: `b`
+- Seen firing 1220 times (202 in combat); argument kinds: `b`
 
 ### GUILD_TRADESKILL_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 192 times (36 in combat); argument kinds: ``
+- Seen firing 681 times (133 in combat); argument kinds: ``
 
 ### OPEN_TABARD_FRAME
 
@@ -561,7 +561,7 @@ Namespace: `C_GuildInfo`
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 37 times (0 in combat); argument kinds: `s`
+- Seen firing 106 times (1 in combat); argument kinds: `s`
 
 ### REQUESTED_GUILD_RENAME_RESULT
 
@@ -580,7 +580,7 @@ Namespace: `C_GuildInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 13 times (0 in combat); argument kinds: ``
+- Seen firing 29 times (0 in combat); argument kinds: ``
 
 ### TABARD_SAVE_PENDING
 

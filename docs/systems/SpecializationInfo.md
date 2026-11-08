@@ -318,7 +318,7 @@ Namespace: `C_SpecializationInfo`
 - Status: ✅ verified
 - Payload: `curr: number`, `prev: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: `n,n`
+- Seen firing 4 times (1 in combat); argument kinds: `n,n`
 
 ### CONFIRM_PET_UNLEARN
 
@@ -355,14 +355,14 @@ Namespace: `C_SpecializationInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 30 times (0 in combat); argument kinds: ``
+- Seen firing 66 times (2 in combat); argument kinds: ``
 
 ### PLAYER_TALENT_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 30 times (0 in combat); argument kinds: ``
+- Seen firing 65 times (1 in combat); argument kinds: ``
 
 ### SPEC_INVOLUNTARILY_CHANGED
 

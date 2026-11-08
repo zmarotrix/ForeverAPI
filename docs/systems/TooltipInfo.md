@@ -956,4 +956,4 @@ Lua Taint: ApiProbe`
 - Payload: `dataInstanceID: number?`
 - Blizzard: Sends an update to the UI that a sparse or cache lookup has resolved
 - unique event (Blizzard's docs)
-- Seen firing 153 times (26 in combat); argument kinds: `n`
+- Seen firing 214 times (37 in combat); argument kinds: `n`

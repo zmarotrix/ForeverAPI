@@ -61,21 +61,21 @@ Namespace: `C_TradeInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 10 times (4 in combat); argument kinds: ``
+- Seen firing 32 times (4 in combat); argument kinds: ``
 
 ### TRADE_ACCEPT_UPDATE
 
 - Status: ✅ verified
 - Payload: `playerAccepted: number`, `targetAccepted: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 5 times (2 in combat); argument kinds: `n,n`
+- Seen firing 17 times (2 in combat); argument kinds: `n,n`
 
 ### TRADE_CLOSED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (2 in combat); argument kinds: ``
+- Seen firing 27 times (2 in combat); argument kinds: ``
 
 ### TRADE_CURRENCY_CHANGED
 
@@ -94,7 +94,7 @@ Namespace: `C_TradeInfo`
 - Status: ✅ verified
 - Payload: `tradeSlotIndex: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 5 times (0 in combat); argument kinds: `n`
+- Seen firing 13 times (0 in combat); argument kinds: `n`
 
 ### TRADE_POTENTIAL_BIND_ENCHANT
 
@@ -125,14 +125,14 @@ Namespace: `C_TradeInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (1 in combat); argument kinds: ``
+- Seen firing 12 times (1 in combat); argument kinds: ``
 
 ### TRADE_TARGET_ITEM_CHANGED
 
 - Status: ✅ verified
 - Payload: `tradeSlotIndex: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 55 times (13 in combat); argument kinds: `n`
+- Seen firing 171 times (13 in combat); argument kinds: `n`
 
 ### TRADE_UPDATE
 

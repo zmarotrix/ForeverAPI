@@ -104,7 +104,7 @@ function GetAreaSpiritHealerTime() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetArmorPenetration() end
 
@@ -128,7 +128,7 @@ function GetAutoDeclineNeighborhoodInvites() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetAvoidance() end
 
@@ -140,7 +140,7 @@ function GetBindLocation() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetBlockChance() end
 
@@ -192,7 +192,7 @@ function GetCorruptionResistance() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetCritChance() end
 
@@ -212,7 +212,7 @@ function GetCritChanceProvidesParryEffect() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetDodgeChance() end
 
@@ -220,7 +220,7 @@ function GetDodgeChance() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetDodgeChanceFromAttribute() end
 
@@ -232,7 +232,7 @@ function GetEvictionTimeRemaining() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number mainhandExpertise
 ---@return number offhandExpertise
 ---@return number rangedExpertise
@@ -242,7 +242,7 @@ function GetExpertise() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number mainhandExpertisePercent
 ---@return number offhandExpertisePercent
 ---@return number rangedExpertisePercent
@@ -272,7 +272,7 @@ function GetGlancingBlowPenalty(playerWeaponSkill, targetDefenseSkill) end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetHaste() end
 
@@ -290,7 +290,7 @@ function GetHealthRegenFromSpirit() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetHitModifier() end
 
@@ -302,7 +302,7 @@ function GetJailersTowerLevel() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetLifesteal() end
 
@@ -314,7 +314,7 @@ function GetLootSpecialization() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number baseManaRegen
 ---@return number castingManaRegen
 function GetManaRegen() end
@@ -328,7 +328,7 @@ function GetManaRegenFromSpirit() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetMastery() end
 
@@ -336,7 +336,7 @@ function GetMastery() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number masteryEffect
 ---@return number bonusCoefficient
 function GetMasteryEffect() end
@@ -349,7 +349,7 @@ function GetMaxPlayerLevel() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetMeleeHaste() end
 
@@ -357,7 +357,7 @@ function GetMeleeHaste() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetModResilienceDamageReduction() end
 
@@ -373,7 +373,7 @@ function GetNormalizedRealmName() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetOffhandHitModifier() end
 
@@ -381,7 +381,7 @@ function GetOffhandHitModifier() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetOverrideAPBySpellPower() end
 
@@ -389,7 +389,7 @@ function GetOverrideAPBySpellPower() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetOverrideSpellPowerByAP() end
 
@@ -424,7 +424,7 @@ function GetPVPYesterdayStats() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetParryChance() end
 
@@ -432,7 +432,7 @@ function GetParryChance() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetParryChanceFromAttribute() end
 
@@ -440,7 +440,7 @@ function GetParryChanceFromAttribute() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number meleeCrit
 ---@return number spellCrit
 function GetPetCritChance() end
@@ -449,7 +449,7 @@ function GetPetCritChance() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetPetDodgeChance() end
 
@@ -457,7 +457,7 @@ function GetPetDodgeChance() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetPetHitChanceModifier() end
 
@@ -465,7 +465,7 @@ function GetPetHitChanceModifier() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetPetMeleeHaste() end
 
@@ -473,7 +473,7 @@ function GetPetMeleeHaste() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetPetSpellBonusDamage() end
 
@@ -481,7 +481,7 @@ function GetPetSpellBonusDamage() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetPetSpellHitChanceModifier() end
 
@@ -505,7 +505,7 @@ function GetPlayerInfoByGUID(guid) end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number basePowerRegen
 ---@return number castingPowerRegen
 function GetPowerRegen() end
@@ -522,7 +522,7 @@ function GetPowerRegenForPowerType(powerType) end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetPvpPowerDamage() end
 
@@ -530,7 +530,7 @@ function GetPvpPowerDamage() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetPvpPowerHealing() end
 
@@ -546,7 +546,7 @@ function GetRangedAttackPowerForStat(stat, value) end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetRangedCritChance() end
 
@@ -554,7 +554,7 @@ function GetRangedCritChance() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 ---@return number quiverHaste
 function GetRangedHaste() end
@@ -563,7 +563,7 @@ function GetRangedHaste() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetRangedHitModifier() end
 
@@ -607,7 +607,7 @@ function GetSheathState() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetShieldBlock() end
 
@@ -615,7 +615,7 @@ function GetShieldBlock() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetSpeed() end
 
@@ -632,7 +632,7 @@ function GetSpellBonusDamage(school) end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetSpellBonusHealing() end
 
@@ -640,7 +640,7 @@ function GetSpellBonusHealing() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetSpellCritChance() end
 
@@ -656,7 +656,7 @@ function GetSpellCritChanceFromStat(stat, value) end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetSpellHitModifier() end
 
@@ -664,7 +664,7 @@ function GetSpellHitModifier() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetSpellPenetration() end
 
@@ -672,7 +672,7 @@ function GetSpellPenetration() end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@return number result
 function GetSturdiness() end
 

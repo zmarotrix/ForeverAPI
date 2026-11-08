@@ -59,7 +59,7 @@ function GetUnitChargedPowerPoints(unit) end
 ---
 ---**Secret when**: unit spell cast restricted.
 ---
----Seen secret: none/idle (nameplate: enemy npc), none/idle (party).
+---Seen secret: none/combat (nameplate: enemy npc), none/combat (nameplate: enemy player), none/combat (nameplate: friendly player), none/combat (party), none/combat (target: enemy npc), none/combat (target: enemy player), none/combat (target: friendly npc), none/combat (target: friendly player), none/combat (targettarget: enemy npc), none/combat (targettarget: friendly npc), none/idle (nameplate: enemy npc), none/idle (nameplate: enemy player), none/idle (nameplate: friendly player), none/idle (party), none/idle (target: enemy npc), none/idle (target: enemy player), none/idle (target: friendly npc), none/idle (target: friendly player), none/idle (targettarget: enemy npc), none/idle (targettarget: enemy player), none/idle (targettarget: friendly npc), party/boss (nameplate: enemy npc), party/boss (party), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/combat (nameplate: enemy npc), party/combat (party), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (target: friendly player), party/combat (targettarget: friendly npc), party/idle (nameplate: enemy npc), party/idle (nameplate: friendly player), party/idle (party), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (target: friendly player), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc), party/idle (targettarget: friendly player).
 ---@param unit UnitToken
 ---@return number holdAtMaxTime
 function GetUnitEmpowerHoldAtMaxTime(unit) end
@@ -68,7 +68,7 @@ function GetUnitEmpowerHoldAtMaxTime(unit) end
 ---
 ---**Secret when**: unit spell cast restricted.
 ---
----Seen secret: none/idle (nameplate: enemy npc), none/idle (party).
+---Seen secret: none/combat (nameplate: enemy npc), none/combat (nameplate: enemy player), none/combat (nameplate: friendly player), none/combat (party), none/combat (target: enemy npc), none/combat (target: enemy player), none/combat (target: friendly npc), none/combat (target: friendly player), none/combat (targettarget: enemy npc), none/combat (targettarget: friendly npc), none/idle (nameplate: enemy npc), none/idle (nameplate: enemy player), none/idle (nameplate: friendly player), none/idle (party), none/idle (target: enemy npc), none/idle (target: enemy player), none/idle (target: friendly npc), none/idle (target: friendly player), none/idle (targettarget: enemy npc), none/idle (targettarget: enemy player), none/idle (targettarget: friendly npc), party/boss (nameplate: enemy npc), party/boss (party), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/combat (nameplate: enemy npc), party/combat (party), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (target: friendly player), party/combat (targettarget: friendly npc), party/idle (nameplate: enemy npc), party/idle (nameplate: friendly player), party/idle (party), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (target: friendly player), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc), party/idle (targettarget: friendly player).
 ---@param unit UnitToken
 ---@return number minHoldTime
 function GetUnitEmpowerMinHoldTime(unit) end
@@ -145,7 +145,7 @@ function GetUnitPowerModifier(unit) end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, none/combat (nameplate: enemy npc), none/combat (nameplate: enemy player), none/combat (nameplate: friendly player), none/combat (party), none/combat (player), none/combat (target: enemy npc), none/combat (target: enemy player), none/combat (target: friendly npc), none/combat (target: friendly player), none/combat (targettarget: enemy npc), none/combat (targettarget: friendly npc), none/combat (targettarget: friendly player), party/boss (nameplate: enemy npc), party/boss (party), party/boss (player), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (party), party/combat (player), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (target: friendly player), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player).
 ---@param unit UnitToken
 ---@return number currentSpeed
 ---@return number runSpeed
@@ -271,7 +271,7 @@ function UnitAlliedRaceInfo(unit) end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, none/combat (nameplate: enemy npc), none/combat (nameplate: enemy player), none/combat (nameplate: friendly player), none/combat (party), none/combat (player), none/combat (target: enemy npc), none/combat (target: enemy player), none/combat (target: friendly npc), none/combat (target: friendly player), none/combat (targettarget: enemy npc), none/combat (targettarget: friendly npc), none/combat (targettarget: friendly player), party/boss (nameplate: enemy npc), party/boss (party), party/boss (player), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (party), party/combat (player), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (target: friendly player), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player).
 ---@param unit UnitToken
 ---@return number base
 ---@return number effective
@@ -283,7 +283,7 @@ function UnitArmor(unit) end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, none/combat (nameplate: enemy npc), none/combat (nameplate: enemy player), none/combat (nameplate: friendly player), none/combat (party), none/combat (player), none/combat (target: enemy npc), none/combat (target: enemy player), none/combat (target: friendly npc), none/combat (target: friendly player), none/combat (targettarget: enemy npc), none/combat (targettarget: friendly npc), none/combat (targettarget: friendly player), party/boss (nameplate: enemy npc), party/boss (party), party/boss (player), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (party), party/combat (player), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (target: friendly player), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player).
 ---@param unit UnitToken
 ---@return number attackPower
 ---@return number posBuff
@@ -294,7 +294,7 @@ function UnitAttackPower(unit) end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, none/combat (nameplate: enemy npc), none/combat (nameplate: enemy player), none/combat (nameplate: friendly player), none/combat (party), none/combat (player), none/combat (target: enemy npc), none/combat (target: enemy player), none/combat (target: friendly npc), none/combat (target: friendly player), none/combat (targettarget: enemy npc), none/combat (targettarget: friendly npc), none/combat (targettarget: friendly player), party/boss (nameplate: enemy npc), party/boss (party), party/boss (player), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (party), party/combat (player), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (target: friendly player), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player).
 ---@param unit UnitToken
 ---@return number attackSpeed
 ---@return number? offhandAttackSpeed
@@ -352,6 +352,8 @@ function UnitCastingDuration(unit) end
 ---Verified in game.
 ---
 ---**Secret when**: unit spell cast restricted.
+---
+---Seen secret: none/combat (nameplate: friendly player), party/boss (party).
 ---@param unit UnitToken
 ---@return string name
 ---@return string displayName
@@ -396,6 +398,8 @@ function UnitChromieTimeID(unit) end
 ---Verified in game.
 ---
 ---**Secret when**: unit identity restricted.
+---
+---Seen secret: party/boss (nameplate: enemy npc), party/boss (target: enemy npc), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc).
 ---@param unit UnitToken
 ---@return string className
 ---@return string classFilename
@@ -405,6 +409,8 @@ function UnitClass(unit) end
 ---Verified in game.
 ---
 ---**Secret when**: unit identity restricted.
+---
+---Seen secret: party/boss (nameplate: enemy npc), party/boss (target: enemy npc), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc).
 ---@param unit UnitToken
 ---@return string classFilename
 ---@return number classID
@@ -430,6 +436,8 @@ function UnitControllingVehicle(unit) end
 ---Verified in game.
 ---
 ---**Secret when**: unit identity restricted.
+---
+---Seen secret: party/boss (targettarget: friendly npc), party/combat (targettarget: friendly npc), party/idle (targettarget: friendly npc).
 ---@param unit UnitToken
 ---@return string name
 ---@return number id
@@ -445,6 +453,8 @@ function UnitCreatureID(unit) end
 ---Verified in game.
 ---
 ---**Secret when**: unit identity restricted.
+---
+---Seen secret: party/boss (nameplate: enemy npc), party/boss (target: enemy npc), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc).
 ---@param unit UnitToken
 ---@return string name
 ---@return number id
@@ -454,7 +464,7 @@ function UnitCreatureType(unit) end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, none/combat (nameplate: enemy npc), none/combat (nameplate: enemy player), none/combat (nameplate: friendly player), none/combat (party), none/combat (player), none/combat (target: enemy npc), none/combat (target: enemy player), none/combat (target: friendly npc), none/combat (target: friendly player), none/combat (targettarget: enemy npc), none/combat (targettarget: friendly npc), none/combat (targettarget: friendly player), party/boss (nameplate: enemy npc), party/boss (party), party/boss (player), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (party), party/combat (player), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (target: friendly player), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player).
 ---@param unit UnitToken
 ---@return number minDamage
 ---@return number maxDamage
@@ -469,7 +479,7 @@ function UnitDamage(unit) end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, none/combat (nameplate: enemy npc), none/combat (nameplate: enemy player), none/combat (nameplate: friendly player), none/combat (party), none/combat (player), none/combat (target: enemy npc), none/combat (target: enemy player), none/combat (target: friendly npc), none/combat (target: friendly player), none/combat (targettarget: enemy npc), none/combat (targettarget: friendly npc), none/combat (targettarget: friendly player), party/boss (nameplate: enemy npc), party/boss (party), party/boss (player), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (party), party/combat (player), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (target: friendly player), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player).
 ---@param unit UnitToken
 ---@return number base
 ---@return number modifier
@@ -536,6 +546,8 @@ function UnitFactionGroup(unitName, checkDisplayRace) end
 ---Verified in game.
 ---
 ---**Secret when**: unit identity restricted.
+---
+---Seen secret: party/boss (nameplate: enemy npc), party/boss (target: enemy npc), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc).
 ---@param unit UnitToken
 ---@return string unitName
 ---@return string unitServer
@@ -544,6 +556,8 @@ function UnitFullName(unit) end
 ---Verified in game.
 ---
 ---**Secret when**: unit identity restricted.
+---
+---Seen secret: party/boss (nameplate: enemy npc), party/boss (target: enemy npc), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc).
 ---@param unit UnitToken
 ---@return string? result
 function UnitGUID(unit) end
@@ -558,7 +572,7 @@ function UnitGetDetailedHealPrediction(unit, healerUnit, healPredictionCalculato
 ---
 ---**Always secret** return: you can show it (FontString:SetText, StatusBar colours) but not compare or do math on it.
 ---
----Seen secret: in combat, none/idle (party), none/idle (player), out of combat.
+---Seen secret: in combat, none/combat (nameplate: friendly player), none/combat (player), none/combat (target: friendly npc), none/combat (targettarget: friendly npc), none/combat (targettarget: friendly player), none/idle (focus: friendly player), none/idle (party), none/idle (player), none/idle (target: friendly npc), none/idle (target: friendly player), none/idle (targettarget: friendly npc), none/idle (targettarget: friendly player), out of combat, party/boss (party), party/boss (player), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (party), party/combat (player), party/combat (target: friendly npc), party/combat (target: friendly player), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: friendly player), party/idle (player), party/idle (target: friendly npc), party/idle (target: friendly player), party/idle (targettarget: friendly npc), party/idle (targettarget: friendly player).
 ---@param unit UnitToken
 ---@param healerGUID? UnitToken
 ---@return number? result
@@ -568,7 +582,7 @@ function UnitGetIncomingHeals(unit, healerGUID) end
 ---
 ---**Always secret** return: you can show it (FontString:SetText, StatusBar colours) but not compare or do math on it.
 ---
----Seen secret: in combat, none/idle (nameplate: enemy npc), none/idle (party), none/idle (player), out of combat.
+---Seen secret: in combat, none/combat (nameplate: enemy npc), none/combat (nameplate: enemy player), none/combat (nameplate: friendly player), none/combat (party), none/combat (player), none/combat (target: enemy npc), none/combat (target: enemy player), none/combat (target: friendly npc), none/combat (target: friendly player), none/combat (targettarget: enemy npc), none/combat (targettarget: friendly npc), none/combat (targettarget: friendly player), none/idle (focus: friendly player), none/idle (nameplate: enemy npc), none/idle (nameplate: enemy player), none/idle (nameplate: friendly player), none/idle (party), none/idle (player), none/idle (target: enemy npc), none/idle (target: enemy player), none/idle (target: friendly npc), none/idle (target: friendly player), none/idle (targettarget: enemy npc), none/idle (targettarget: enemy player), none/idle (targettarget: friendly npc), none/idle (targettarget: friendly player), out of combat, party/boss (nameplate: enemy npc), party/boss (party), party/boss (player), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (party), party/combat (player), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (target: friendly player), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (nameplate: friendly player), party/idle (party), party/idle (player), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (target: friendly player), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc), party/idle (targettarget: friendly player).
 ---@param unit UnitToken
 ---@return number result
 function UnitGetTotalAbsorbs(unit) end
@@ -577,7 +591,7 @@ function UnitGetTotalAbsorbs(unit) end
 ---
 ---**Always secret** return: you can show it (FontString:SetText, StatusBar colours) but not compare or do math on it.
 ---
----Seen secret: in combat, none/idle (nameplate: enemy npc), none/idle (party), none/idle (player), out of combat.
+---Seen secret: in combat, none/combat (nameplate: enemy npc), none/combat (nameplate: enemy player), none/combat (nameplate: friendly player), none/combat (party), none/combat (player), none/combat (target: enemy npc), none/combat (target: enemy player), none/combat (target: friendly npc), none/combat (target: friendly player), none/combat (targettarget: enemy npc), none/combat (targettarget: friendly npc), none/combat (targettarget: friendly player), none/idle (focus: friendly player), none/idle (nameplate: enemy npc), none/idle (nameplate: enemy player), none/idle (nameplate: friendly player), none/idle (party), none/idle (player), none/idle (target: enemy npc), none/idle (target: enemy player), none/idle (target: friendly npc), none/idle (target: friendly player), none/idle (targettarget: enemy npc), none/idle (targettarget: enemy player), none/idle (targettarget: friendly npc), none/idle (targettarget: friendly player), out of combat, party/boss (nameplate: enemy npc), party/boss (party), party/boss (player), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (party), party/combat (player), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (target: friendly player), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (nameplate: friendly player), party/idle (party), party/idle (player), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (target: friendly player), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc), party/idle (targettarget: friendly player).
 ---@param unit UnitToken
 ---@return number result
 function UnitGetTotalHealAbsorbs(unit) end
@@ -643,7 +657,7 @@ function UnitHasVehicleUI(unit) end
 ---
 ---**Always secret** return: you can show it (FontString:SetText, StatusBar colours) but not compare or do math on it.
 ---
----Seen secret: in combat, none/idle (nameplate: enemy npc), none/idle (party), none/idle (player), out of combat.
+---Seen secret: in combat, none/combat (nameplate: enemy npc), none/combat (nameplate: enemy player), none/combat (nameplate: friendly player), none/combat (party), none/combat (player), none/combat (target: enemy npc), none/combat (target: enemy player), none/combat (target: friendly npc), none/combat (target: friendly player), none/combat (targettarget: enemy npc), none/combat (targettarget: friendly npc), none/combat (targettarget: friendly player), none/idle (focus: friendly player), none/idle (nameplate: enemy npc), none/idle (nameplate: enemy player), none/idle (nameplate: friendly player), none/idle (party), none/idle (player), none/idle (target: enemy npc), none/idle (target: enemy player), none/idle (target: friendly npc), none/idle (target: friendly player), none/idle (targettarget: enemy npc), none/idle (targettarget: enemy player), none/idle (targettarget: friendly npc), none/idle (targettarget: friendly player), out of combat, party/boss (nameplate: enemy npc), party/boss (party), party/boss (player), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (party), party/combat (player), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (target: friendly player), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (nameplate: friendly player), party/idle (party), party/idle (player), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (target: friendly player), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc), party/idle (targettarget: friendly player).
 ---@param unit UnitToken
 ---@param usePredicted? boolean Default: true.
 ---@return number result
@@ -653,7 +667,7 @@ function UnitHealth(unit, usePredicted) end
 ---
 ---**Secret when**: unit health max restricted.
 ---
----Seen secret: none/idle (nameplate: enemy npc), none/idle (party).
+---Seen secret: none/combat (nameplate: enemy npc), none/combat (nameplate: enemy player), none/combat (nameplate: friendly player), none/combat (party), none/combat (target: enemy npc), none/combat (target: enemy player), none/combat (target: friendly npc), none/combat (target: friendly player), none/combat (targettarget: enemy npc), none/combat (targettarget: friendly npc), none/idle (nameplate: enemy npc), none/idle (nameplate: enemy player), none/idle (nameplate: friendly player), none/idle (party), none/idle (target: enemy npc), none/idle (target: enemy player), none/idle (target: friendly npc), none/idle (target: friendly player), none/idle (targettarget: enemy npc), none/idle (targettarget: enemy player), none/idle (targettarget: friendly npc), party/boss (nameplate: enemy npc), party/boss (party), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (party), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (target: friendly player), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (nameplate: friendly player), party/idle (party), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (target: friendly player), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc), party/idle (targettarget: friendly player).
 ---@param unit UnitToken
 ---@return number result
 function UnitHealthMax(unit) end
@@ -664,7 +678,7 @@ function UnitHealthMax(unit) end
 ---
 ---**Always secret** return: you can show it (FontString:SetText, StatusBar colours) but not compare or do math on it.
 ---
----Seen secret: in combat, none/idle (nameplate: enemy npc), none/idle (party), none/idle (player), out of combat.
+---Seen secret: in combat, none/combat (nameplate: enemy npc), none/combat (nameplate: enemy player), none/combat (nameplate: friendly player), none/combat (party), none/combat (player), none/combat (target: enemy npc), none/combat (target: enemy player), none/combat (target: friendly npc), none/combat (target: friendly player), none/combat (targettarget: enemy npc), none/combat (targettarget: friendly npc), none/combat (targettarget: friendly player), none/idle (focus: friendly player), none/idle (nameplate: enemy npc), none/idle (nameplate: enemy player), none/idle (nameplate: friendly player), none/idle (party), none/idle (player), none/idle (target: enemy npc), none/idle (target: enemy player), none/idle (target: friendly npc), none/idle (target: friendly player), none/idle (targettarget: enemy npc), none/idle (targettarget: enemy player), none/idle (targettarget: friendly npc), none/idle (targettarget: friendly player), out of combat, party/boss (nameplate: enemy npc), party/boss (party), party/boss (player), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (party), party/combat (player), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (target: friendly player), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (nameplate: friendly player), party/idle (party), party/idle (player), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (target: friendly player), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc), party/idle (targettarget: friendly player).
 ---@param unit UnitToken
 ---@param usePredicted? boolean Default: true.
 ---@return number result
@@ -678,7 +692,7 @@ function UnitHealthMissing(unit, usePredicted) end
 ---
 ---**Secret when**: curve secret.
 ---
----Seen secret: in combat, none/idle (nameplate: enemy npc), none/idle (party), none/idle (player), out of combat.
+---Seen secret: in combat, none/combat (nameplate: enemy npc), none/combat (nameplate: enemy player), none/combat (nameplate: friendly player), none/combat (party), none/combat (player), none/combat (target: enemy npc), none/combat (target: enemy player), none/combat (target: friendly npc), none/combat (target: friendly player), none/combat (targettarget: enemy npc), none/combat (targettarget: friendly npc), none/combat (targettarget: friendly player), none/idle (focus: friendly player), none/idle (nameplate: enemy npc), none/idle (nameplate: enemy player), none/idle (nameplate: friendly player), none/idle (party), none/idle (player), none/idle (target: enemy npc), none/idle (target: enemy player), none/idle (target: friendly npc), none/idle (target: friendly player), none/idle (targettarget: enemy npc), none/idle (targettarget: enemy player), none/idle (targettarget: friendly npc), none/idle (targettarget: friendly player), out of combat, party/boss (nameplate: enemy npc), party/boss (party), party/boss (player), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (party), party/combat (player), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (target: friendly player), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (nameplate: friendly player), party/idle (party), party/idle (player), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (target: friendly player), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc), party/idle (targettarget: friendly player).
 ---@param unit UnitToken
 ---@param usePredicted? boolean Default: true.
 ---@param curve? LuaCurveObjectBase
@@ -693,6 +707,8 @@ function UnitHonor(unit) end
 ---Verified in game.
 ---
 ---**Secret when**: unit identity restricted.
+---
+---Seen secret: party/boss (nameplate: enemy npc), party/boss (target: enemy npc), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc).
 ---@param unit UnitToken
 ---@return number result
 function UnitHonorLevel(unit) end
@@ -749,7 +765,7 @@ function UnitInRaid(unit, partyIndex) end
 ---
 ---**Always secret** return: you can show it (FontString:SetText, StatusBar colours) but not compare or do math on it.
 ---
----Seen secret: in combat, none/idle (nameplate: enemy npc), none/idle (party), none/idle (player), out of combat.
+---Seen secret: in combat, none/combat (nameplate: enemy npc), none/combat (nameplate: enemy player), none/combat (nameplate: friendly player), none/combat (party), none/combat (player), none/combat (target: enemy npc), none/combat (target: enemy player), none/combat (target: friendly npc), none/combat (target: friendly player), none/combat (targettarget: enemy npc), none/combat (targettarget: friendly npc), none/combat (targettarget: friendly player), none/idle (focus: friendly player), none/idle (nameplate: enemy npc), none/idle (nameplate: enemy player), none/idle (nameplate: friendly player), none/idle (party), none/idle (player), none/idle (target: enemy npc), none/idle (target: enemy player), none/idle (target: friendly npc), none/idle (target: friendly player), none/idle (targettarget: enemy npc), none/idle (targettarget: enemy player), none/idle (targettarget: friendly npc), none/idle (targettarget: friendly player), out of combat, party/boss (nameplate: enemy npc), party/boss (party), party/boss (player), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (party), party/combat (player), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (target: friendly player), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (nameplate: friendly player), party/idle (party), party/idle (player), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (target: friendly player), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc), party/idle (targettarget: friendly player).
 ---@param unit UnitToken
 ---@return boolean inRange
 ---@return boolean checkedRange
@@ -777,6 +793,8 @@ function UnitInVehicleControlSeat(unit) end
 function UnitInVehicleHidesPetFrame(unit) end
 
 ---Verified in game.
+---
+---Seen secret: party/boss (nameplate: enemy npc), party/boss (party), party/boss (player), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player).
 ---@param unit UnitToken
 ---@return boolean result
 function UnitIsAFK(unit) end
@@ -800,7 +818,7 @@ function UnitIsBossMob(unit) end
 ---
 ---**Secret when**: unit possession restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@param unit? UnitToken
 ---@return boolean result
 function UnitIsCharmed(unit) end
@@ -821,6 +839,8 @@ function UnitIsControlling(unit) end
 function UnitIsCorpse(unit) end
 
 ---Verified in game.
+---
+---Seen secret: party/boss (nameplate: enemy npc), party/boss (party), party/boss (player), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player).
 ---@param unit UnitToken
 ---@return boolean result
 function UnitIsDND(unit) end
@@ -865,6 +885,8 @@ function UnitIsGhost(unit) end
 ---Verified in game.
 ---
 ---**Secret when**: unit identity restricted.
+---
+---Seen secret: party/boss (nameplate: enemy npc), party/boss (target: enemy npc), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc).
 ---@param unit UnitToken
 ---@return boolean isAssistant
 function UnitIsGroupAssistant(unit) end
@@ -872,6 +894,8 @@ function UnitIsGroupAssistant(unit) end
 ---Verified in game.
 ---
 ---**Secret when**: unit identity restricted.
+---
+---Seen secret: party/boss (nameplate: enemy npc), party/boss (target: enemy npc), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc).
 ---@param unit UnitToken
 ---@param partyCategory? integer
 ---@return boolean isLeader
@@ -941,6 +965,8 @@ function UnitIsOwnerOrControllerOfUnit(controllingUnit, controlledUnit) end
 ---Verified in game.
 ---
 ---**Secret when**: unit identity restricted.
+---
+---Seen secret: party/boss (nameplate: enemy npc), party/boss (target: enemy npc), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc).
 ---@param unit UnitToken
 ---@return boolean result
 function UnitIsPVP(unit) end
@@ -972,7 +998,7 @@ function UnitIsPlayerControlledOrGroupMember(unit) end
 ---
 ---**Secret when**: unit possession restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, party/boss (getters), party/combat (getters).
 ---@param unit? UnitToken
 ---@return boolean result
 function UnitIsPossessed(unit) end
@@ -1030,6 +1056,8 @@ function UnitIsWildBattlePet(unit) end
 ---Verified in game.
 ---
 ---**Secret when**: unit identity restricted.
+---
+---Seen secret: party/boss (nameplate: enemy npc), party/boss (target: enemy npc), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc).
 ---@param unit UnitToken
 ---@return boolean isLeader
 function UnitLeadsAnyGroup(unit) end
@@ -1042,6 +1070,8 @@ function UnitLevel(name) end
 ---Verified in game.
 ---
 ---**Secret when**: unit name identity restricted.
+---
+---Seen secret: party/boss (nameplate: enemy npc), party/boss (target: enemy npc), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc).
 ---@param unit UnitToken
 ---@return string unitName
 ---@return string unitServer
@@ -1058,6 +1088,8 @@ function UnitNameFromGUID(unitGUID) end
 ---Verified in game.
 ---
 ---**Secret when**: unit identity restricted.
+---
+---Seen secret: party/boss (nameplate: enemy npc), party/boss (target: enemy npc), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc).
 ---@param unit UnitToken
 ---@return string unitName
 ---@return string unitServer
@@ -1081,6 +1113,8 @@ function UnitOnTaxi(unit) end
 ---Verified in game.
 ---
 ---**Secret when**: unit identity restricted.
+---
+---Seen secret: party/boss (targettarget: friendly npc), party/combat (target: friendly npc), party/combat (targettarget: friendly npc), party/idle (target: friendly npc), party/idle (targettarget: friendly npc).
 ---@param unit UnitToken
 ---@return string ownerGUID
 function UnitOwnerGUID(unit) end
@@ -1088,6 +1122,8 @@ function UnitOwnerGUID(unit) end
 ---Verified in game.
 ---
 ---**Secret when**: unit identity restricted.
+---
+---Seen secret: party/boss (nameplate: enemy npc), party/boss (target: enemy npc), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc).
 ---@param unit UnitToken
 ---@return string result
 function UnitPVPName(unit) end
@@ -1240,6 +1276,8 @@ function UnitQuestTrivialLevelRangeScaling(unit) end
 ---Verified in game.
 ---
 ---**Secret when**: unit identity restricted.
+---
+---Seen secret: party/boss (targettarget: friendly player), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly player).
 ---@param unit UnitToken
 ---@return string localizedRaceName
 ---@return string englishRaceName
@@ -1250,7 +1288,7 @@ function UnitRace(unit) end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, none/combat (nameplate: enemy npc), none/combat (nameplate: enemy player), none/combat (nameplate: friendly player), none/combat (party), none/combat (player), none/combat (target: enemy npc), none/combat (target: enemy player), none/combat (target: friendly npc), none/combat (target: friendly player), none/combat (targettarget: enemy npc), none/combat (targettarget: friendly npc), none/combat (targettarget: friendly player), party/boss (nameplate: enemy npc), party/boss (party), party/boss (player), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (party), party/combat (player), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (target: friendly player), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player).
 ---@param unit UnitToken
 ---@return number attackPower
 ---@return number posBuff
@@ -1261,7 +1299,7 @@ function UnitRangedAttackPower(unit) end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, none/combat (nameplate: enemy npc), none/combat (nameplate: enemy player), none/combat (nameplate: friendly player), none/combat (party), none/combat (player), none/combat (target: enemy npc), none/combat (target: enemy player), none/combat (target: friendly npc), none/combat (target: friendly player), none/combat (targettarget: enemy npc), none/combat (targettarget: friendly npc), none/combat (targettarget: friendly player), party/boss (nameplate: enemy npc), party/boss (party), party/boss (player), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (party), party/combat (player), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (target: friendly player), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player).
 ---@param unit UnitToken
 ---@return number speed
 ---@return number minDamage
@@ -1311,6 +1349,8 @@ function UnitSelectionType(unit, useExtendedColors) end
 ---Verified in game.
 ---
 ---**Secret when**: unit identity restricted.
+---
+---Seen secret: party/boss (nameplate: enemy npc), party/boss (target: enemy npc), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc).
 ---@param unit UnitToken
 ---@return number? sex
 function UnitSex(unit) end
@@ -1318,6 +1358,8 @@ function UnitSex(unit) end
 ---Verified in game.
 ---
 ---**Secret when**: unit identity restricted.
+---
+---Seen secret: party/boss (nameplate: enemy npc), party/boss (target: enemy npc), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc).
 ---@param unit UnitToken
 ---@return Enum.UnitSex? sex
 function UnitSexBase(unit) end
@@ -1338,7 +1380,7 @@ function UnitShouldDisplaySpellTargetName(unit) end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, none/combat (nameplate: enemy npc), none/combat (nameplate: enemy player), none/combat (nameplate: friendly player), none/combat (party), none/combat (player), none/combat (target: enemy npc), none/combat (target: enemy player), none/combat (target: friendly npc), none/combat (target: friendly player), none/combat (targettarget: enemy npc), none/combat (targettarget: friendly npc), none/combat (targettarget: friendly player), party/boss (nameplate: enemy npc), party/boss (party), party/boss (player), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (party), party/combat (player), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (target: friendly player), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player).
 ---@param unit UnitToken
 ---@return number result
 function UnitSpellHaste(unit) end
@@ -1348,6 +1390,8 @@ function UnitSpellHaste(unit) end
 ---Verified in game.
 ---
 ---**Always secret** return: you can show it (FontString:SetText, StatusBar colours) but not compare or do math on it.
+---
+---Seen secret: none/combat (nameplate: friendly player), none/combat (target: friendly player), party/boss (nameplate: enemy npc), party/boss (party), party/boss (target: friendly player), party/combat (target: friendly player), party/combat (targettarget: enemy npc).
 ---@param unit UnitToken
 ---@return string classFilename
 function UnitSpellTargetClass(unit) end
@@ -1357,13 +1401,15 @@ function UnitSpellTargetClass(unit) end
 ---Verified in game.
 ---
 ---**Always secret** return: you can show it (FontString:SetText, StatusBar colours) but not compare or do math on it.
+---
+---Seen secret: none/combat (nameplate: friendly player), none/combat (target: friendly player), none/idle (focus: friendly player), party/boss (nameplate: enemy npc), party/boss (party), party/boss (target: friendly player), party/combat (target: friendly player), party/combat (targettarget: enemy npc).
 ---@param unit UnitToken
 ---@return string targetName
 function UnitSpellTargetName(unit) end
 
 ---Verified in game.
 ---
----Seen secret: none/idle (nameplate: enemy npc), none/idle (party).
+---Seen secret: none/combat (nameplate: enemy npc), none/combat (nameplate: enemy player), none/combat (nameplate: friendly player), none/combat (party), none/combat (target: enemy npc), none/combat (target: enemy player), none/combat (target: friendly npc), none/combat (target: friendly player), none/combat (targettarget: enemy npc), none/combat (targettarget: friendly npc), none/idle (nameplate: enemy npc), none/idle (nameplate: enemy player), none/idle (nameplate: friendly player), none/idle (party), none/idle (target: enemy npc), none/idle (target: enemy player), none/idle (target: friendly npc), none/idle (target: friendly player), none/idle (targettarget: enemy npc), none/idle (targettarget: enemy player), none/idle (targettarget: friendly npc), party/boss (nameplate: enemy npc), party/boss (party), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/combat (nameplate: enemy npc), party/combat (party), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (target: friendly player), party/combat (targettarget: friendly npc), party/idle (nameplate: enemy npc), party/idle (nameplate: friendly player), party/idle (party), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (target: friendly player), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc), party/idle (targettarget: friendly player).
 ---@param unit UnitToken
 ---@return number result
 function UnitStagger(unit) end
@@ -1477,7 +1523,7 @@ function UnitVehicleSkin(unit) end
 ---
 ---**Secret when**: unit stats restricted.
 ---
----Seen secret: in combat.
+---Seen secret: in combat, none/combat (nameplate: enemy npc), none/combat (nameplate: enemy player), none/combat (nameplate: friendly player), none/combat (party), none/combat (player), none/combat (target: enemy npc), none/combat (target: enemy player), none/combat (target: friendly npc), none/combat (target: friendly player), none/combat (targettarget: enemy npc), none/combat (targettarget: friendly npc), none/combat (targettarget: friendly player), party/boss (nameplate: enemy npc), party/boss (party), party/boss (player), party/boss (target: enemy npc), party/boss (target: friendly player), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (party), party/combat (player), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (target: friendly player), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player).
 ---@param unit UnitToken
 ---@return number mainHandWeaponAttackPower
 ---@return number offHandWeaponAttackPower

@@ -70,6 +70,7 @@ Namespace: `C_LossOfControl`
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `effectIndex: luaIndex`
 - fires synchronously (Blizzard's docs)
+- Seen firing 161 times (160 in combat); argument kinds: `s,n`
 
 ### LOSS_OF_CONTROL_COMMENTATOR_ADDED
 
@@ -90,20 +91,21 @@ Namespace: `C_LossOfControl`
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
+- Seen firing 586 times (571 in combat); argument kinds: `s`
 
 ### PLAYER_CONTROL_GAINED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 8 times (2 in combat); argument kinds: ``
 
 ### PLAYER_CONTROL_LOST
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 8 times (2 in combat); argument kinds: ``
 
 ## Types
 

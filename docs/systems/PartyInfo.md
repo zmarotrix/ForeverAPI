@@ -590,6 +590,7 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 3 times (1 in combat); argument kinds: ``
 
 ### GROUP_JOINED
 
@@ -610,7 +611,7 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 62 times (4 in combat); argument kinds: ``
+- Seen firing 223 times (21 in combat); argument kinds: ``
 
 ### INSTANCE_ABANDON_VOTE_FINISHED
 
@@ -647,7 +648,7 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 11 times (0 in combat); argument kinds: ``
 
 ### INVITE_TO_PARTY_CONFIRMATION
 
@@ -706,28 +707,28 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 16 times (0 in combat); argument kinds: `s`
+- Seen firing 44 times (0 in combat); argument kinds: `s`
 
 ### PARTY_MEMBER_ENABLE
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 31 times (0 in combat); argument kinds: `s`
+- Seen firing 102 times (1 in combat); argument kinds: `s`
 
 ### PLAYER_DIFFICULTY_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 95 times (3 in combat); argument kinds: ``
+- Seen firing 289 times (22 in combat); argument kinds: ``
 
 ### PLAYER_ROLES_ASSIGNED
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 62 times (4 in combat); argument kinds: ``
+- Seen firing 223 times (21 in combat); argument kinds: ``
 
 ### RAID_ROSTER_UPDATE
 

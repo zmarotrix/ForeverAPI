@@ -1878,14 +1878,14 @@
 - Status: ✅ verified
 - Payload: `inCombat: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 98 times (0 in combat); argument kinds: `b`
+- Seen firing 378 times (0 in combat); argument kinds: `b`
 
 ### PLAYER_TARGET_DIED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 78 times (78 in combat); argument kinds: ``
+- Seen firing 336 times (335 in combat); argument kinds: ``
 
 ## Types
 

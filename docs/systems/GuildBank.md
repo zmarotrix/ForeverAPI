@@ -78,4 +78,4 @@ Namespace: `C_GuildBank`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 27 times (0 in combat); argument kinds: ``
+- Seen firing 61 times (3 in combat); argument kinds: ``

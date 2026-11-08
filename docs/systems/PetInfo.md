@@ -177,6 +177,7 @@ Namespace: `C_PetInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 88 times (1 in combat); argument kinds: ``
 
 ### PET_DISMISS_START
 
@@ -219,7 +220,7 @@ Namespace: `C_PetInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 27 times (0 in combat); argument kinds: ``
+- Seen firing 61 times (0 in combat); argument kinds: ``
 
 ## Types
 

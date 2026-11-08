@@ -995,14 +995,14 @@ Namespace: `C_QuestLog`
 - Status: ✅ verified
 - Payload: `requestRequired: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 22 times (0 in combat); argument kinds: `b`
+- Seen firing 138 times (5 in combat); argument kinds: `b`
 
 ### QUEST_ACCEPTED
 
 - Status: ✅ verified
 - Payload: `questId: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `n`
+- Seen firing 27 times (1 in combat); argument kinds: `n`
 
 ### QUEST_AUTOCOMPLETE
 
@@ -1015,20 +1015,21 @@ Namespace: `C_QuestLog`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 16 times (0 in combat); argument kinds: ``
 
 ### QUEST_DATA_LOAD_RESULT
 
 - Status: ✅ verified
 - Payload: `questID: number`, `success: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 415 times (0 in combat); argument kinds: `n,b`
+- Seen firing 918 times (12 in combat); argument kinds: `n,b`
 
 ### QUEST_DETAIL
 
 - Status: ✅ verified
 - Payload: `questStartItemID: number?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `n`
+- Seen firing 36 times (1 in combat); argument kinds: `n`
 
 ### QUEST_LOG_CRITERIA_UPDATE
 
@@ -1041,26 +1042,28 @@ Namespace: `C_QuestLog`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 104 times (1 in combat); argument kinds: ``
+- Seen firing 625 times (68 in combat); argument kinds: ``
 
 ### QUEST_POI_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 25 times (1 in combat); argument kinds: ``
 
 ### QUEST_REMOVED
 
 - Status: ✅ verified
 - Payload: `questID: number`, `wasReplayQuest: bool`
 - fires synchronously (Blizzard's docs)
+- Seen firing 16 times (0 in combat); argument kinds: `n,b`
 
 ### QUEST_TURNED_IN
 
 - Status: ✅ verified
 - Payload: `questID: number`, `xpReward: number`, `moneyReward: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 14 times (0 in combat); argument kinds: `n,n,n`
 
 ### QUEST_WATCH_LIST_CHANGED
 
@@ -1068,14 +1071,14 @@ Namespace: `C_QuestLog`
 - Payload: `questID: number?`, `added: bool?`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 44 times (2 in combat); argument kinds: `-,-` / `n,b`
+- Seen firing 217 times (7 in combat); argument kinds: `-,-` / `n,b`
 
 ### QUEST_WATCH_UPDATE
 
 - Status: ✅ verified
 - Payload: `questID: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (1 in combat); argument kinds: `n`
+- Seen firing 56 times (45 in combat); argument kinds: `n`
 
 ### TASK_PROGRESS_UPDATE
 
@@ -1088,7 +1091,7 @@ Namespace: `C_QuestLog`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 14 times (1 in combat); argument kinds: ``
+- Seen firing 69 times (2 in combat); argument kinds: ``
 
 ### WAYPOINT_UPDATE
 

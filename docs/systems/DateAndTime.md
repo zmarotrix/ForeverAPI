@@ -121,7 +121,7 @@ Namespace: `C_DateAndTime`
 - Payload: `isDayTime: bool`
 - Blizzard: Signaled when the game time transitions between day and night.
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `b`
+- Seen firing 3 times (0 in combat); argument kinds: `b`
 
 ## Types
 

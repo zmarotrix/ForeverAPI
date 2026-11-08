@@ -213,7 +213,7 @@ Namespace: `C_SuperTrack`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 7 times (0 in combat); argument kinds: ``
 
 ### SUPER_TRACKING_PATH_UPDATED
 

@@ -127,7 +127,7 @@ Namespace: `C_VideoOptions`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 34 times (0 in combat); argument kinds: ``
+- Seen firing 70 times (0 in combat); argument kinds: ``
 
 ### GLUE_SCREENSHOT_FAILED
 
