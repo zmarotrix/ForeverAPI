@@ -70,8 +70,8 @@ Namespace: `C_SocialRestrictions`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if the Age Verification restriction is because the account belongs to a minor, as opposed to an adult who has not yet verified their age.
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: 💥 not called: forbidden
-- Called in combat: 💥 not called: forbidden
+- Called out of combat: not called: forbidden
+- Called in combat: not called: forbidden
 - Source: client docs `SocialRestrictionsDocumentation.lua`
 
 ### C_SocialRestrictions.IsChatDisabled

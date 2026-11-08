@@ -55,7 +55,12 @@ Constants = { Things = { MAX = 4 } }
 C_RestrictedActions = { IsAddOnRestrictionActive = function(t) return COMBAT and t == 0 end }
 C_UnitAuras = { GetUnitAuraInstanceIDs = function(unit) return { 1, 2 } end,
   GetAuraDataByIndex = function() if COMBAT then return { name = SECRET, spellId = SECRET } end return { name = "x", spellId = 1 } end,
+  GetBuffDataByIndex = function(...) C_UnitAuras_GetBuffDataByIndex_args = select("#", ...) .. ":" .. tostring((...)) .. ":" .. tostring((select(2, ...))) return nil end,
   GetHooked = function() end, GetCrashy = function() error("must never be called") end, GetSecretKeyed = function() return { [SECRET] = 1 } end }
+C_Item = { GetItemNameByID = function(id) if id ~= 6948 then error("wrong sample") end return "Hearthstone" end }
+C_UnitAuras_GetBuffDataByIndex_args = nil
+C_QuestLog = { GetNumQuestLogEntries = function() return 0 end, GetInfo = function() end,
+  GetTitleForQuestID = function() error("must never be called without a quest") end }
 C_ForeverOnly = { GetSomething = function() return 1, "a", nil end }
 C_EventUtils = { IsEventValid = function(e) return VALID[e] == true end }
 VALID = { PLAYER_LOGIN = true, ADDON_LOADED = true, PLAYER_REGEN_DISABLED = true, ADDON_ACTION_BLOCKED = true,
@@ -128,7 +133,9 @@ ApiProbeLeads = { build = "1.60.1.70862",
   events = { "UNIT_AURA", "NOT_IN_FOREVER_EVENT", "FOREVER_ONLY_EVENT", "PROTECTED_EVENT" },
   crashers = { ["C_UnitAuras.GetCrashy"] = true },
   calls = { { "C_UnitAuras", "GetUnitAuraInstanceIDs", "unit" }, { "C_UnitAuras", "GetAuraDataByIndex" },
-            { "C_UnitAuras", "GetSecretKeyed" }, { "C_UnitAuras", "GetCrashy" }, { nil, "CancelShapeshiftForm" }, { "C_Missing", "GetNothing" }, { nil, "UnitHealth", "unit" } },
+            { "C_UnitAuras", "GetSecretKeyed" }, { "C_UnitAuras", "GetCrashy" }, { nil, "CancelShapeshiftForm" },
+            { "C_Item", "GetItemNameByID", { "item" } }, { "C_UnitAuras", "GetBuffDataByIndex", { "unit", "n:1", "nil" } },
+            { "C_QuestLog", "GetTitleForQuestID", { "quest" } }, { "C_Missing", "GetNothing" }, { nil, "UnitHealth", "unit" } },
   documented = { UnitHealth = true },
   uiGetters = { GetUIThing = true },
 }
@@ -215,6 +222,10 @@ def main():
     check("live: event counted", live["FOREVER_ONLY_EVENT"]["n"] == 1)
     check("live: secret argument marked S", "s,S" in live["UNIT_AURA"]["sigs"], live["UNIT_AURA"])
     check("Cancel* never called, even if leads list it", "CancelLogout" not in out and "UnitSetRole" not in out and out["CancelShapeshiftForm"].get("skipped") == "not a getter", out.get("CancelShapeshiftForm"))
+    check("sample argument passed", out["C_Item.GetItemNameByID"].get(1) == "string" and out["C_Item.GetItemNameByID"].get("arg") == "item", out.get("C_Item.GetItemNameByID"))
+    check("sample values never stored", "Hearthstone" not in sv)
+    check("trailing nil keeps its place", lua.eval("C_UnitAuras_GetBuffDataByIndex_args") == "3:player:1", lua.eval("C_UnitAuras_GetBuffDataByIndex_args"))
+    check("no sample, no call", out["C_QuestLog.GetTitleForQuestID"].get("skipped") == "no sample for quest", out.get("C_QuestLog.GetTitleForQuestID"))
     check("crash-listed call skipped", out["C_UnitAuras.GetCrashy"].get("skipped") == "crashed the client", out.get("C_UnitAuras.GetCrashy"))
     check("forbidden event recorded", d["events"]["PROTECTED_EVENT"]["register"] == "forbidden", d["events"].get("PROTECTED_EVENT"))
     check("forbidden event remembered", db["skip"]["event:PROTECTED_EVENT"] == "forbidden")
@@ -243,7 +254,7 @@ def main():
         apidoc.cmd_build()
         with open(os.path.join(tmp, "docs", "index.md"), encoding="utf-8") as f:
             index = f.read()
-        check("build: index names the dump", "ApiProbe 0.1.4 on 1.60.1.70862" in index)
+        check("build: index names the dump", "ApiProbe 0.2.0 on 1.60.1.70862" in index)
         with open(os.path.join(tmp, "docs", "systems", "UnitAuras.md"), encoding="utf-8") as f:
             page = f.read()
         check("build: documented function verified", "✅ | [C_UnitAuras.GetUnitAuraInstanceIDs]" in page)

@@ -68,7 +68,7 @@ def call_text(rec):
     if not rec:
         return None
     if rec.get("skipped"):
-        return "💥 not called: %s" % rec["skipped"]
+        return ("💥 " if "crash" in rec["skipped"] else "") + "not called: %s" % rec["skipped"]
     if rec.get("forbidden"):
         return "⛔ protected: calling it raised ADDON_ACTION_FORBIDDEN"
     if rec.get("missing"):
@@ -101,7 +101,8 @@ def fn_block(f):
         lines.append("- %s (Blizzard's docs; not checked in game)" % t)
     o, c = call_text(f.get("outside")), call_text(f.get("combat"))
     if o:
-        lines.append("- Called out of combat%s: %s" % (' with "player"' if f["outside"].get("arg") == "unit" else "", o))
+        arg = f["outside"].get("arg")
+        lines.append("- Called out of combat%s: %s" % ((" with `%s`" % ("player" if arg == "unit" else arg)) if arg else "", o))
     if c:
         lines.append("- Called in combat: %s" % c)
     if f.get("web"):

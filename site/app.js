@@ -99,6 +99,18 @@
     var verb = VERB[first] || (/(s|sh|ch|x)$/.test(first) ? first + "es" : /[^aeiou]y$/.test(first) ? first.slice(0, -1) + "ies" : first + "s");
     return verb + " " + rest + ".";
   }
+  var SAMPLE_WORDS = { unit: '"player"', guid: "your GUID", spell: "a spell from your spellbook", item: "Hearthstone (6948)",
+    itemloc: "your first equipped item", map: "your current map", quest: "the first quest in your log", "class": "your class",
+    race: "your race", club: "your guild", playerloc: "you", nil: "nil", "b:false": "false" };
+  function argText(arg) {
+    if (!arg) return "no arguments";
+    return String(arg).split(",").map(function (d) {
+      if (SAMPLE_WORDS[d]) return SAMPLE_WORDS[d];
+      if (/^n:/.test(d)) return d.slice(2);
+      if (/^s:/.test(d)) return '"' + d.slice(2) + '"';
+      return d;
+    }).join(", ");
+  }
   function allSecret(r) { return !!(r && r.returns && r.returns.length && r.returns.every(function (v) { return /^secret/.test(v); })); }
   function anySecret(r) { return !!(r && (r.returns || []).some(function (v) { return /^secret/.test(v); })); }
   function refused(r) { return !!(r && (r.forbidden || /forbidden|blocked/.test(r.skipped || ""))); }
@@ -117,8 +129,10 @@
       if (anySecret(c) && !anySecret(o)) return ["secret", "Works out of combat. In combat the result is " + (allSecret(c) ? "" : "partly ") + "secret: show it with a widget that accepts secrets, but don't compare or calculate with it."];
       return ["ok", "Worked in and out of combat with no restrictions seen."];
     }
+    if (o && o.skipped) return ["plain", "Not called: " + o.skipped + " on the probe's character. Exists in game."];
+    if (o && o.error != null && o.arg && o.arg !== "unit") return ["plain", "Errored with the probe's sample arguments (" + argText(o.arg) + "), so only its existence is confirmed; the error below says why."];
     if (o && /Usage|bad argument|Invalid/.test(o.error || "")) return ["plain", "Needs arguments. The probe called it with none, so only its existence is confirmed; the error below says what it expects."];
-    if (o && o.error != null) return ["warn", "Errored when the probe called it with " + (o.arg === "unit" ? '"player"' : "no arguments") + "."];
+    if (o && o.error != null) return ["warn", "Errored when the probe called it with " + argText(o.arg) + "."];
     if (fl.IsProtectedFunction) return ["bad", "Protected, says Blizzard's docs: add-ons can't call it. Not tested in game."];
     if (f.s === "unverified") return ["plain", "Not checked in game yet."];
     return ["plain", "Exists in game. The probe didn't call it (it needs arguments or isn't a getter), so its behaviour is untested."];
@@ -181,7 +195,8 @@
     }
     var kv = "";
     if (f.fl) kv += "<div>Blizzard flags</div><div><div class=\"flags\">" + flagPills(f.fl) + '</div><div class="note">From the client docs; the call results below are what the game did.</div></div>';
-    if (f.o) kv += "<div>Out of combat" + (f.o.arg === "unit" ? ' <span class="note">("player")</span>' : "") + "</div><div>" + callCell(f.o, true) + "</div>";
+    if (f.o && f.o.arg) kv += "<div>Called with</div><div>" + esc(argText(f.o.arg)) + ' <span class="note">(sample arguments)</span></div>';
+    if (f.o) kv += "<div>Out of combat</div><div>" + callCell(f.o, true) + "</div>";
     if (f.c) kv += "<div>In combat</div><div>" + callCell(f.c, true) + (same(f.c.returns, f.o && f.o.returns) && !f.c.error === !(f.o && f.o.error) ? ' <span class="note">(same)</span>' : "") + "</div>";
     if (f.rep) kv += '<div>Warning</div><div><span class="pill p-warn">replaced by the add-on ' + esc(f.rep) + "</span></div>";
     if (f.w) kv += "<div>Web lead</div><div>" + esc(f.w.text || "") + ' <a href="' + esc(f.w.url || "#") + '">' + esc(f.w.site || "source") + '</a> <span class="note">(unverified)</span></div>';

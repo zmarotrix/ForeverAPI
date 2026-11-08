@@ -90,7 +90,7 @@ Namespace: `C_PlayerInfo`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `PlayerInfoDocumentation.lua`
 
@@ -164,7 +164,7 @@ Namespace: `C_PlayerInfo`
 - Blizzard: Returns the players mythic+ rating summary which includes the runs they've completed as well as their current season m+ rating
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `table{currentSeasonScore=number,runs=table}`
+- Called out of combat with `player`: returned 1 value: `table{currentSeasonScore=number,runs=table}`
 - Called in combat: returned 1 value: `table{currentSeasonScore=number,runs=table}`
 - Source: client docs `PlayerInfoDocumentation.lua`
 

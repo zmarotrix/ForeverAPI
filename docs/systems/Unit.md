@@ -301,7 +301,7 @@
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit power is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 0 values
+- Called out of combat with `player`: returned 0 values
 - Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
@@ -312,7 +312,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit spellcasts are restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -323,7 +323,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit spellcasts are restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -342,7 +342,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -352,7 +352,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -363,7 +363,7 @@
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 0 values
+- Called out of combat with `player`: returned 0 values
 - Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
@@ -382,7 +382,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 3 values: `nil`, `nil`, `nil`
+- Called out of combat with `player`: returned 3 values: `nil`, `nil`, `nil`
 - Called in combat: returned 3 values: `nil`, `nil`, `nil`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -416,7 +416,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -427,7 +427,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 4 values: `number`, `number`, `number`, `number`
+- Called out of combat with `player`: returned 4 values: `number`, `number`, `number`, `number`
 - Called in combat: returned 4 values: `secret:number`, `secret:number`, `secret:number`, `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -437,7 +437,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -513,7 +513,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -596,7 +596,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -606,7 +606,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 2 values: `boolean`, `boolean`
+- Called out of combat with `player`: returned 2 values: `boolean`, `boolean`
 - Called in combat: returned 2 values: `boolean`, `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -617,7 +617,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 4 values: `number`, `number`, `number`, `number`
+- Called out of combat with `player`: returned 4 values: `number`, `number`, `number`, `number`
 - Called in combat: returned 4 values: `secret:number`, `secret:number`, `secret:number`, `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -628,7 +628,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 3 values: `number`, `number`, `number`
+- Called out of combat with `player`: returned 3 values: `number`, `number`, `number`
 - Called in combat: returned 3 values: `secret:number`, `secret:number`, `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -639,7 +639,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 3 values: `number`, `nil`, `number`
+- Called out of combat with `player`: returned 3 values: `number`, `nil`, `number`
 - Called in combat: returned 3 values: `secret:number`, `nil`, `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -649,7 +649,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -659,7 +659,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `nil`
+- Called out of combat with `player`: returned 1 value: `nil`
 - Called in combat: returned 1 value: `nil`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -669,7 +669,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `nil`
+- Called out of combat with `player`: returned 1 value: `nil`
 - Called in combat: returned 1 value: `nil`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -713,7 +713,7 @@
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 0 values
+- Called out of combat with `player`: returned 0 values
 - Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
@@ -724,7 +724,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit spellcasts are restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 0 values
+- Called out of combat with `player`: returned 0 values
 - Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
@@ -735,7 +735,7 @@
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 0 values
+- Called out of combat with `player`: returned 0 values
 - Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
@@ -746,7 +746,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit spellcasts are restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 0 values
+- Called out of combat with `player`: returned 0 values
 - Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
@@ -756,7 +756,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -768,7 +768,7 @@
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 3 values: `string`, `string`, `number`
+- Called out of combat with `player`: returned 3 values: `string`, `string`, `number`
 - Called in combat: returned 3 values: `string`, `string`, `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -780,7 +780,7 @@
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 2 values: `string`, `number`
+- Called out of combat with `player`: returned 2 values: `string`, `number`
 - Called in combat: returned 2 values: `string`, `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -799,7 +799,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `string`
+- Called out of combat with `player`: returned 1 value: `string`
 - Called in combat: returned 1 value: `string`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -809,7 +809,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -820,7 +820,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 0 values
+- Called out of combat with `player`: returned 0 values
 - Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
@@ -832,7 +832,7 @@
 - RequiresUnitIdentityAccess (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `nil`
+- Called out of combat with `player`: returned 1 value: `nil`
 - Called in combat: returned 1 value: `nil`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -843,7 +843,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 2 values: `string`, `number`
+- Called out of combat with `player`: returned 2 values: `string`, `number`
 - Called in combat: returned 2 values: `string`, `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -854,7 +854,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 7 values: `number`, `number`, `number`, `number`, `number`, `number`, `number`
+- Called out of combat with `player`: returned 7 values: `number`, `number`, `number`, `number`, `number`, `number`, `number`
 - Called in combat: returned 7 values: `secret:number`, `secret:number`, `secret:number`, `secret:number`, `secret:number`, `secret:number`, `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -865,7 +865,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 2 values: `number`, `number`
+- Called out of combat with `player`: returned 2 values: `number`, `number`
 - Called in combat: returned 2 values: `secret:number`, `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -885,7 +885,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 2 values: `number`, `boolean`
+- Called out of combat with `player`: returned 2 values: `number`, `boolean`
 - Called in combat: returned 2 values: `number`, `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -906,7 +906,7 @@
 - `includeHoldAtMaxTime`: If true, include the hold-at-max time of the empowered channel in the total duration.
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 0 values
+- Called out of combat with `player`: returned 0 values
 - Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
@@ -918,7 +918,7 @@
 - Blizzard: Returns a vector of duration objects that measure the time spans for each individual stage in an empowered channel, with hold-at-max time included as the last element.
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 0 values
+- Called out of combat with `player`: returned 0 values
 - Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
@@ -931,7 +931,7 @@
 - `includeHoldAtMaxTime`: If true, include the hold-at-max time of the empowered channel in the total duration and add a percentage value for it.
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 0 values
+- Called out of combat with `player`: returned 0 values
 - Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
@@ -960,7 +960,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 2 values: `string`, `string`
+- Called out of combat with `player`: returned 2 values: `string`, `string`
 - Called in combat: returned 2 values: `string`, `string`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -971,7 +971,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `string`
+- Called out of combat with `player`: returned 1 value: `string`
 - Called in combat: returned 1 value: `string`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -991,7 +991,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `secret:number`
+- Called out of combat with `player`: returned 1 value: `secret:number`
 - Called in combat: returned 1 value: `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1002,7 +1002,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `secret:number`
+- Called out of combat with `player`: returned 1 value: `secret:number`
 - Called in combat: returned 1 value: `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1013,7 +1013,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `secret:number`
+- Called out of combat with `player`: returned 1 value: `secret:number`
 - Called in combat: returned 1 value: `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1045,7 +1045,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1066,7 +1066,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1076,7 +1076,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1094,7 +1094,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1125,7 +1125,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `secret:number`
+- Called out of combat with `player`: returned 1 value: `secret:number`
 - Called in combat: returned 1 value: `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1136,7 +1136,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitHealthMaxRestricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1148,7 +1148,7 @@
 - Blizzard: Result of UnitHealthMax() - UnitHealth()
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `secret:number`
+- Called out of combat with `player`: returned 1 value: `secret:number`
 - Called in combat: returned 1 value: `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1162,7 +1162,7 @@
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
 - SecretWhenCurveSecret (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `secret:number`
+- Called out of combat with `player`: returned 1 value: `secret:number`
 - Called in combat: returned 1 value: `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1172,7 +1172,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1183,7 +1183,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1193,7 +1193,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1224,7 +1224,7 @@
 - Status: ✅ verified (function)
 - Blizzard: Checks whether this unit cannot see your party chat because it is in an instance group
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1254,7 +1254,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1276,7 +1276,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 2 values: `secret:boolean`, `secret:boolean`
+- Called out of combat with `player`: returned 2 values: `secret:boolean`, `secret:boolean`
 - Called in combat: returned 2 values: `secret:boolean`, `secret:boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1296,7 +1296,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1327,7 +1327,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret during chat lockdown (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1337,7 +1337,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `nil`
+- Called out of combat with `player`: returned 1 value: `nil`
 - Called in combat: returned 1 value: `nil`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1347,7 +1347,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1357,7 +1357,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1378,7 +1378,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1388,7 +1388,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1409,7 +1409,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret during chat lockdown (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1419,7 +1419,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1429,7 +1429,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1447,7 +1447,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1475,7 +1475,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1486,7 +1486,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1497,7 +1497,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1517,7 +1517,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1527,7 +1527,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1547,7 +1547,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1566,7 +1566,7 @@
 - Status: ✅ verified (function)
 - Blizzard: Returns whether the unit is considered a minion of a player, such as a pet, totem, or guardian.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1616,7 +1616,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1626,7 +1626,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1657,7 +1657,7 @@
 - Status: ✅ verified (function)
 - Blizzard: Returns true for 'player', 'pet', 'vehicle', or any of 'partyn', 'partypetn', 'raidn', 'raidpetn'
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1678,7 +1678,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1707,7 +1707,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1717,7 +1717,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1727,7 +1727,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1757,7 +1757,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1768,7 +1768,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1787,7 +1787,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenTainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitNameIdentityRestricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 2 values: `string`, `string`
+- Called out of combat with `player`: returned 2 values: `string`, `string`
 - Called in combat: returned 2 values: `string`, `string`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1807,7 +1807,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 2 values: `string`, `string`
+- Called out of combat with `player`: returned 2 values: `string`, `string`
 - Called in combat: returned 2 values: `string`, `string`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1817,7 +1817,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1827,7 +1827,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1837,7 +1837,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1848,7 +1848,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `nil`
+- Called out of combat with `player`: returned 1 value: `nil`
 - Called in combat: returned 1 value: `nil`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1859,7 +1859,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `string`
+- Called out of combat with `player`: returned 1 value: `string`
 - Called in combat: returned 1 value: `string`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1888,7 +1888,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `nil`
+- Called out of combat with `player`: returned 1 value: `nil`
 - Called in combat: returned 1 value: `nil`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1928,7 +1928,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 4 values: `number`, `number`, `number`, `number`
+- Called out of combat with `player`: returned 4 values: `number`, `number`, `number`, `number`
 - Called in combat: returned 4 values: `number`, `number`, `number`, `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1947,7 +1947,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -1959,7 +1959,7 @@
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 0 values
+- Called out of combat with `player`: returned 0 values
 - Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2009,7 +2009,7 @@
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 5 values: `number`, `string`, `nil`, `nil`, `nil`
+- Called out of combat with `player`: returned 5 values: `number`, `string`, `nil`, `nil`, `nil`
 - Called in combat: returned 5 values: `number`, `string`, `nil`, `nil`, `nil`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2019,7 +2019,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `nil`
+- Called out of combat with `player`: returned 1 value: `nil`
 - Called in combat: returned 1 value: `nil`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2029,7 +2029,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2039,7 +2039,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2051,7 +2051,7 @@
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 3 values: `string`, `string`, `number`
+- Called out of combat with `player`: returned 3 values: `string`, `string`, `number`
 - Called in combat: returned 3 values: `string`, `string`, `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2062,7 +2062,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 3 values: `number`, `number`, `number`
+- Called out of combat with `player`: returned 3 values: `number`, `number`, `number`
 - Called in combat: returned 3 values: `secret:number`, `secret:number`, `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2073,7 +2073,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 6 values: `number`, `number`, `number`, `number`, `number`, `number`
+- Called out of combat with `player`: returned 6 values: `number`, `number`, `number`, `number`, `number`, `number`
 - Called in combat: returned 6 values: `secret:number`, `secret:number`, `secret:number`, `secret:number`, `secret:number`, `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2091,7 +2091,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2110,7 +2110,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 4 values: `number`, `number`, `number`, `number`
+- Called out of combat with `player`: returned 4 values: `number`, `number`, `number`, `number`
 - Called in combat: returned 4 values: `number`, `number`, `number`, `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2120,7 +2120,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2131,7 +2131,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2142,7 +2142,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2152,7 +2152,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2163,7 +2163,7 @@
 - Status: ✅ verified (function)
 - Blizzard: If the unit is currently casting a spell, returns whether the target's name should be displayed. Returns false if the unit is not casting a spell or the spell has no target.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2174,7 +2174,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2186,7 +2186,7 @@
 - Blizzard: If the unit is currently casting a spell, returns the class of the spell's target unit. Returns nil if the unit is not casting a spell or the spell has no target.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `secret:string`
+- Called out of combat with `player`: returned 1 value: `secret:string`
 - Called in combat: returned 1 value: `secret:string`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2199,7 +2199,7 @@
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `secret:string`
+- Called out of combat with `player`: returned 1 value: `secret:string`
 - Called in combat: returned 1 value: `secret:string`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2209,7 +2209,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2266,7 +2266,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenUnitThreatStateRestricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `nil`
+- Called out of combat with `player`: returned 1 value: `nil`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2285,7 +2285,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2295,7 +2295,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 3 values: `number`, `number`, `number`
+- Called out of combat with `player`: returned 3 values: `number`, `number`, `number`
 - Called in combat: returned 3 values: `number`, `number`, `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2305,7 +2305,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2315,7 +2315,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2325,7 +2325,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2335,7 +2335,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2365,7 +2365,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit stats are restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 3 values: `number`, `number`, `number`
+- Called out of combat with `player`: returned 3 values: `number`, `number`, `number`
 - Called in combat: returned 3 values: `secret:number`, `secret:number`, `secret:number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2376,7 +2376,7 @@
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 0 values
+- Called out of combat with `player`: returned 0 values
 - Called in combat: returned 0 values
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2386,7 +2386,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 
@@ -2396,7 +2396,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `UnitDocumentation.lua`
 

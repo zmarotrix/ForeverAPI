@@ -104,7 +104,11 @@ def cmd_extract():
     lines += ["    %s," % _lua_str(e) for e in events]
     lines += ["  },", "  calls = {"]
     for ns, name, arg in plan:
-        lines.append("    { %s, %s%s }," % (_lua_str(ns) if ns else "nil", _lua_str(name), ", \"unit\"" if arg else ""))
+        if isinstance(arg, list):
+            extra = ", { %s }" % ", ".join(_lua_str(x) for x in arg)
+        else:
+            extra = ", \"unit\"" if arg else ""
+        lines.append("    { %s, %s%s }," % (_lua_str(ns) if ns else "nil", _lua_str(name), extra))
     lines += ["  },", "  documented = {"]
     lines += ["    [%s] = true," % _lua_str(n) for n in documented]
     lines += ["  },", "  -- calls that crashed the client (sources/crashers.json, from the game's crash logs): never called again",

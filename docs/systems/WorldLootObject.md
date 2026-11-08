@@ -29,7 +29,7 @@ Namespace: `C_WorldLootObject`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `nil`
+- Called out of combat with `player`: returned 1 value: `nil`
 - Called in combat: returned 1 value: `nil`
 - Source: client docs `WorldLootObjectDocumentation.lua`
 
@@ -40,7 +40,7 @@ Namespace: `C_WorldLootObject`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 0 values
+- Called out of combat with `player`: returned 0 values
 - Called in combat: returned 0 values
 - Source: client docs `WorldLootObjectDocumentation.lua`
 
@@ -59,7 +59,7 @@ Namespace: `C_WorldLootObject`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `WorldLootObjectDocumentation.lua`
 
@@ -77,7 +77,7 @@ Namespace: `C_WorldLootObject`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `WorldLootObjectDocumentation.lua`
 

@@ -13,7 +13,7 @@
 -- It never casts, targets, sends or changes a setting; the only calls it makes are getters (Get/Is/Has/Can/...).
 
 local ADDON = ...
-local VERSION = "0.1.4"
+local VERSION = "0.2.0"
 local CHUNK = 1500          -- globals examined per frame while dumping
 local CALLS_PER_FRAME = 20  -- getters called per frame
 local MAX_MEMBERS = 10000   -- members recorded per table (Enum alone has thousands)
@@ -511,13 +511,79 @@ local function phaseRecord(phase)
   return p
 end
 
+-- Sample arguments, read from the player's own state when a run starts. Only their kinds reach the SavedVariables:
+-- a result records the descriptor ("spell", "n:1"), never the value it stood for.
+local function plain(v) if v ~= nil and not isSecret(v) then return v end end
+local function try(f, ...) local ok, v = pcall(f, ...) if ok then return plain(v) end end
+local SAMPLERS = {
+  unit = function() return "player" end,
+  guid = function() return rawget(G, "UnitGUID") and try(UnitGUID, "player") end,
+  item = function() return 6948 end, -- Hearthstone: every character has heard of it
+  spell = function()
+    local book, bank = rawget(G, "C_SpellBook"), rawget(G, "Enum") and Enum.SpellBookSpellBank
+    if book and book.GetSpellBookItemInfo and bank then
+      for i = 1, 30 do
+        local info = try(book.GetSpellBookItemInfo, i, bank.Player)
+        if type(info) == "table" and plain(info.spellID) and not info.isPassive then return info.spellID end
+      end
+    end
+    return 6603 -- Auto Attack
+  end,
+  itemloc = function()
+    local L = rawget(G, "ItemLocation")
+    if not (L and L.CreateFromEquipmentSlot and rawget(G, "GetInventoryItemID")) then return end
+    for slot = 1, 19 do
+      if try(GetInventoryItemID, "player", slot) then return try(L.CreateFromEquipmentSlot, L, slot) end
+    end
+  end,
+  map = function() local M = rawget(G, "C_Map") return M and M.GetBestMapForUnit and try(M.GetBestMapForUnit, "player") end,
+  quest = function()
+    local Q = rawget(G, "C_QuestLog")
+    if not (Q and Q.GetNumQuestLogEntries and Q.GetInfo) then return end
+    for i = 1, (try(Q.GetNumQuestLogEntries) or 0) do
+      local info = try(Q.GetInfo, i)
+      if type(info) == "table" and not info.isHeader and plain(info.questID) then return info.questID end
+    end
+  end,
+  class = function() local ok, _, _, id = pcall(UnitClass, "player") return ok and plain(id) end,
+  race = function() local ok, _, _, id = pcall(UnitRace, "player") return ok and plain(id) end,
+  club = function() local C = rawget(G, "C_Club") return C and C.GetGuildClubId and try(C.GetGuildClubId) end,
+  playerloc = function() local P = rawget(G, "PlayerLocation") return P and P.CreateFromUnit and try(P.CreateFromUnit, P, "player") end,
+}
+
+local function readSamples()
+  local out = {}
+  for name, f in pairs(SAMPLERS) do
+    local ok, v = pcall(f)
+    if ok and v ~= nil then out[name] = v end
+  end
+  return out
+end
+
+-- descriptors -> values, n; or nil, the descriptor that had no sample
+local function resolve(args, samples)
+  local vals = {}
+  for i, d in ipairs(args) do
+    if d == "nil" then vals[i] = nil
+    elseif d:sub(1, 2) == "n:" then vals[i] = tonumber(d:sub(3))
+    elseif d:sub(1, 2) == "s:" then vals[i] = d:sub(3)
+    elseif d == "b:false" then vals[i] = false
+    elseif samples[d] ~= nil then vals[i] = samples[d]
+    else return nil, d end
+  end
+  return vals, #args
+end
+
 local function startCalls(phase)
   if running then return end
   if not db.dump then say("run /apiprobe dump first.") return end
   local p = phaseRecord(phase)
   p.started = p.started or now()
   p.restrictions = restrictionState()
-  running = { phase = phase, plan = buildPlan(), i = p.next or 1, p = p }
+  local samples = readSamples()
+  p.samples = {}
+  for k in pairs(SAMPLERS) do p.samples[k] = samples[k] ~= nil end -- which samples existed, not their values
+  running = { phase = phase, plan = buildPlan(), i = p.next or 1, p = p, samples = samples }
   say(("calling %d getters (%s)..."):format(#running.plan - running.i + 1, phase))
 end
 
@@ -550,17 +616,26 @@ local function stepCalls()
     elseif type(fn) ~= "function" then
       rec = { missing = true }
     else
-      currentCall, forbiddenHit = callKey, nil
-      if c.arg == "unit" then
-        rec = capture(pcall(fn, "player"))
-      else
-        rec = capture(pcall(fn))
+      local vals, n = nil, 0
+      if type(c.arg) == "table" then
+        vals, n = resolve(c.arg, job.samples)
+        if not vals then rec = { skipped = "no sample for " .. tostring(n) } end
       end
-      currentCall = nil
-      if forbiddenHit then rec.forbidden = true end
+      if not rec then
+        currentCall, forbiddenHit = callKey, nil
+        if c.arg == "unit" then
+          rec = capture(pcall(fn, "player"))
+        elseif vals then
+          rec = capture(pcall(fn, unpack(vals, 1, n)))
+        else
+          rec = capture(pcall(fn))
+        end
+        currentCall = nil
+        if forbiddenHit then rec.forbidden = true end
+      end
     end
     rec.from = c.from
-    rec.arg = c.arg
+    rec.arg = type(c.arg) == "table" and table.concat(c.arg, ",") or c.arg
     p.results[c.key] = rec
   end
   job.i = last + 1

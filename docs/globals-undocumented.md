@@ -115,7 +115,7 @@ In the game (the dump saw them) but in no generated doc file and not written in 
 - `CancelScene`: function; returned 0 values; used in `Blizzard_FrameXML/Shared/CinematicFrame.lua`
 - `CancelShapeshiftForm`: function; returned 0 values; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
 - `CancelSpellByName`: function; error: `Usage: CancelSpellByName(name)`; used in `Blizzard_ChatFrameBase/Shared/SlashCommands.lua`
-- `CancelTradeAccept`: function; 💥 not called: blocked; used in `Blizzard_UIPanels_Game/Mainline/TradeFrame.lua`
+- `CancelTradeAccept`: function; not called: blocked; used in `Blizzard_UIPanels_Game/Mainline/TradeFrame.lua`
 - `CancelUnitBuff`: function; error: `Usage: CancelUnitBuff("unit", [index][, "filter"])`; used in `Blizzard_BuffFrame/BuffFrame.lua`
 - `CannotBeResurrected`: function; returned 1 value: `boolean`; used in `Blizzard_StaticPopup_Game/GameDialogDefsUtil.lua`
 - `CastPetAction`: function; used in `Blizzard_ActionBar/Shared/PetActionBar.lua`
@@ -525,7 +525,7 @@ In the game (the dump saw them) but in no generated doc file and not written in 
 - `GetGuildEventInfo`: function; error: `Usage: GetGuildEventInfo(index)`; used in `Blizzard_Communities/GuildInfo.lua`
 - `GetGuildFactionGroup`: function; returned 1 value: `number`; used in `Blizzard_Communities/GuildNews.lua`
 - `GetGuildInfo`: function; error: `Usage: GetGuildInfo("unit")`; used in `Blizzard_FrameXML/InstanceDifficulty.lua`
-- `GetGuildInfoText`: function; 💥 not called: blocked
+- `GetGuildInfoText`: function; not called: blocked
 - `GetGuildLogoInfo`: function; returned 0 values; used in `Blizzard_AchievementUI/Cata/Blizzard_AchievementUI.lua`
 - `GetGuildMemberRecipes`: function; error: `Usage: GetGuildMemberRecipes(name, skillLineID)`
 - `GetGuildNewsFilters`: function; returned 9 values: `boolean`, `boolean`, `boolean`, `boolean`, `boolean`, `boolean`, `boolean`, `boolean`, `boolean`; used in `Blizzard_Communities/GuildNews.lua`
@@ -539,7 +539,7 @@ In the game (the dump saw them) but in no generated doc file and not written in 
 - `GetGuildRosterInfo`: function; error: `Usage: GetGuildRosterInfo(index)`
 - `GetGuildRosterLargestAchievementPoints`: function; returned 1 value: `number`
 - `GetGuildRosterLastOnline`: function; error: `Usage: GetGuildRosterLastOnline(index)`
-- `GetGuildRosterMOTD`: function; 💥 not called: blocked
+- `GetGuildRosterMOTD`: function; not called: blocked
 - `GetGuildRosterSelection`: function; returned 1 value: `number`
 - `GetGuildRosterShowOffline`: function; returned 1 value: `boolean`
 - `GetGuildTabardFiles`: function; returned 0 values; used in `Blizzard_GuildBankUI/Mainline/Blizzard_GuildBankUI.lua`

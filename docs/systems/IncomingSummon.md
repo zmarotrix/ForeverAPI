@@ -15,7 +15,7 @@ Namespace: `C_IncomingSummon`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `IncomingSummonDocumentation.lua`
 

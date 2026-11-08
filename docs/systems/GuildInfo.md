@@ -130,8 +130,8 @@ Namespace: `C_GuildInfo`
 
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: 💥 not called: blocked
-- Called in combat: 💥 not called: blocked
+- Called out of combat: not called: blocked
+- Called in combat: not called: blocked
 - Source: client docs `GuildInfoDocumentation.lua`
 
 ### C_GuildInfo.GetMOTD
@@ -140,8 +140,8 @@ Namespace: `C_GuildInfo`
 
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: 💥 not called: blocked
-- Called in combat: 💥 not called: blocked
+- Called out of combat: not called: blocked
+- Called in combat: not called: blocked
 - Source: client docs `GuildInfoDocumentation.lua`
 
 ### C_GuildInfo.GetPreferredPlaySettings

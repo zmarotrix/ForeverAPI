@@ -206,7 +206,7 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if queries for maximum unit health will produce secret values.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`
 
@@ -217,7 +217,7 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if queries for unit identity (such as name or GUID) will produce secret values.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`
 
@@ -228,7 +228,7 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if queries for unit power will produce secret values.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`
 
@@ -239,7 +239,7 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if queries for maximum unit power will produce secret values.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`
 
@@ -259,7 +259,7 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if queries for spell casting information for a specific unit will generally produce secret values.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`
 
@@ -280,7 +280,7 @@ Namespace: `C_Secrets`
 - Status: ✅ verified (function)
 - Blizzard: Returns true if queries for unit threat status will produce secret values.
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `SecretPredicateAPIDocumentation.lua`
 

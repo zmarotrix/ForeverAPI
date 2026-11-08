@@ -261,7 +261,7 @@ Namespace: `C_PvP`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `userdata`
+- Called out of combat with `player`: returned 1 value: `userdata`
 - Called in combat: returned 1 value: `userdata`
 - Source: client docs `PvpInfoDocumentation.lua`
 
@@ -273,7 +273,7 @@ Namespace: `C_PvP`
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - SecretWhenLossOfControlInfoRestricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 0 values
+- Called out of combat with `player`: returned 0 values
 - Called in combat: returned 0 values
 - Source: client docs `PvpInfoDocumentation.lua`
 

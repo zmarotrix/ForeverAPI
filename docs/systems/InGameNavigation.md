@@ -38,8 +38,8 @@ Namespace: `C_Navigation`
 
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: 💥 not called: forbidden
-- Called in combat: 💥 not called: forbidden
+- Called out of combat: not called: forbidden
+- Called in combat: not called: forbidden
 - Source: client docs `InGameNavigationDocumentation.lua`
 
 ### C_Navigation.GetNextWaypointForMap

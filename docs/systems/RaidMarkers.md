@@ -20,7 +20,7 @@
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `boolean`
+- Called out of combat with `player`: returned 1 value: `boolean`
 - Called in combat: returned 1 value: `boolean`
 - Source: client docs `RaidMarkersDocumentation.lua`
 
@@ -49,7 +49,7 @@
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - always returns secret values (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `nil`
+- Called out of combat with `player`: returned 1 value: `nil`
 - Called in combat: returned 1 value: `nil`
 - Source: client docs `RaidMarkersDocumentation.lua`
 

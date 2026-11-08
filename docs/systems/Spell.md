@@ -87,8 +87,8 @@ Namespace: `C_Spell`
 - Status: ✅ verified (function)
 - Blizzard: Cancels the player's active auto repeat spell, if any
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: 💥 not called: forbidden
-- Called in combat: 💥 not called: forbidden
+- Called out of combat: not called: forbidden
+- Called in combat: not called: forbidden
 - Source: client docs `SpellDocumentation.lua`
 
 ### C_Spell.CancelItemTempEnchantment

@@ -69,8 +69,41 @@ def documented(client):
     return {"functions": fns, "events": events, "tables": tables, "objects": objects}
 
 
+# Sample arguments. Each is a descriptor the probe resolves in game from the player's own state (probe.lua SAMPLES):
+#   unit guid spell item itemloc map quest class race club playerloc   (live values)
+#   n:<number>  s:<text>  b:false  nil                                    (literals)
+# An argument with no safe sample leaves the function untested rather than guessed at.
+SAMPLE_BY_TYPE = {
+    "WOWGUID": "guid", "SpellIdentifier": "spell", "ItemInfo": "item", "ItemLocation": "itemloc",
+    "PlayerLocation": "playerloc", "ClubId": "club", "AuraFilters": "s:HELPFUL", "luaIndex": "n:1",
+    "BagIndex": "n:0", "bool": "b:false", "uiAddon": "s:ApiProbe",
+}
+SAMPLE_BY_NAME = {
+    "uimapid": "map", "mapid": "map", "questid": "quest", "itemid": "item", "spellid": "spell", "classid": "class",
+    "raceid": "race", "index": "n:1", "slot": "n:1", "slotindex": "n:1", "bagindex": "n:0", "containerindex": "n:0",
+    "bagid": "n:0", "level": "n:10", "factionid": "n:72", "unitguid": "guid", "guid": "guid",
+}
+
+
+def arg_sample(a, tables):
+    t, name = a.get("Type"), str(a.get("Name") or "").lower()
+    if t in UNIT_TYPES or name in ("unit", "unittoken"):
+        return "unit"
+    if name in SAMPLE_BY_NAME and t in ("number", "luaIndex", "WOWGUID", "BagIndex"):
+        return SAMPLE_BY_NAME[name]
+    if t in SAMPLE_BY_TYPE:
+        return SAMPLE_BY_TYPE[t]
+    enum = tables.get(t)
+    if enum and enum.get("kind") == "Enumeration":
+        values = [f.get("EnumValue") for f in enum["fields"] if isinstance(f.get("EnumValue"), (int, float))]
+        if values:
+            return "n:%s" % int(min(values))
+    return None
+
+
 def call_plan(docs):
-    """Documented getters the probe may call with no arguments, or with "player" as the only argument."""
+    """Documented getters the probe may call: (namespace, name, args) where args is None (no arguments),
+    "unit" ("player" only) or a list of sample descriptors, one per argument up to the last required one."""
     plan = []
     for key, f in docs["functions"].items():
         flags = f["flags"]
@@ -82,7 +115,19 @@ def call_plan(docs):
         elif len(required) == 1 and (required[0].get("Type") in UNIT_TYPES or required[0].get("Name") == "unit"):
             arg = "unit"
         else:
-            continue
+            last = max(i for i, a in enumerate(f["args"]) if not a.get("Nilable") and "Default" not in a)
+            arg = []
+            for a in f["args"][:last + 1]:
+                if a.get("Nilable") or "Default" in a:
+                    arg.append("nil")
+                    continue
+                s = arg_sample(a, docs["tables"])
+                if s is None:
+                    arg = None
+                    break
+                arg.append(s)
+            if arg is None:
+                continue
         plan.append((f["namespace"], f["name"], arg))
     return sorted(plan, key=lambda c: ((c[0] or ""), c[1]))
 

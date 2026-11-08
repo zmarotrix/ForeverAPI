@@ -51,8 +51,8 @@ Namespace: `C_Discord`
 
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: 💥 not called: forbidden
-- Called in combat: 💥 not called: forbidden
+- Called out of combat: not called: forbidden
+- Called in combat: not called: forbidden
 - Source: client docs `DiscordDocumentation.lua`
 
 ### C_Discord.GetDiscordUserName
@@ -70,8 +70,8 @@ Namespace: `C_Discord`
 
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: 💥 not called: forbidden
-- Called in combat: 💥 not called: forbidden
+- Called out of combat: not called: forbidden
+- Called in combat: not called: forbidden
 - Source: client docs `DiscordDocumentation.lua`
 
 ### C_Discord.GetGuildLinkStatus
@@ -80,8 +80,8 @@ Namespace: `C_Discord`
 
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: 💥 not called: forbidden
-- Called in combat: 💥 not called: forbidden
+- Called out of combat: not called: forbidden
+- Called in combat: not called: forbidden
 - Source: client docs `DiscordDocumentation.lua`
 
 ### C_Discord.GetNumDiscordChannels
@@ -99,8 +99,8 @@ Namespace: `C_Discord`
 
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: 💥 not called: forbidden
-- Called in combat: 💥 not called: forbidden
+- Called out of combat: not called: forbidden
+- Called in combat: not called: forbidden
 - Source: client docs `DiscordDocumentation.lua`
 
 ### C_Discord.GetServerLinkableChannels
@@ -153,8 +153,8 @@ Namespace: `C_Discord`
 
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: 💥 not called: forbidden
-- Called in combat: 💥 not called: forbidden
+- Called out of combat: not called: forbidden
+- Called in combat: not called: forbidden
 - Source: client docs `DiscordDocumentation.lua`
 
 ### C_Discord.IsGuildSettingSet
@@ -172,8 +172,8 @@ Namespace: `C_Discord`
 
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: 💥 not called: forbidden
-- Called in combat: 💥 not called: forbidden
+- Called out of combat: not called: forbidden
+- Called in combat: not called: forbidden
 - Source: client docs `DiscordDocumentation.lua`
 
 ### C_Discord.IsVoiceEnabled

@@ -45,7 +45,7 @@
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 3 values: `boolean`, `boolean`, `boolean`
+- Called out of combat with `player`: returned 3 values: `boolean`, `boolean`, `boolean`
 - Called in combat: returned 3 values: `boolean`, `boolean`, `boolean`
 - Source: client docs `UnitRoleDocumentation.lua`
 
@@ -56,8 +56,8 @@
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": 💥 not called: blocked
-- Called in combat: 💥 not called: blocked
+- Called out of combat with `player`: not called: blocked
+- Called in combat: not called: blocked
 - Source: client docs `UnitRoleDocumentation.lua`
 
 ### UnitSetRoleEnum
@@ -67,8 +67,8 @@
 - Status: ✅ verified (function)
 - restricted in some situations (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": 💥 not called: blocked
-- Called in combat: 💥 not called: blocked
+- Called out of combat with `player`: not called: blocked
+- Called in combat: not called: blocked
 - Source: client docs `UnitRoleDocumentation.lua`
 
 ## Events

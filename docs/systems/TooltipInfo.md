@@ -744,7 +744,7 @@ Namespace: `C_TooltipInfo`
 - Status: ✅ verified (function)
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `table{dataInstanceID=number,guid=string,healthGUID=string,lines=table,type=number}`
+- Called out of combat with `player`: returned 1 value: `table{dataInstanceID=number,guid=string,healthGUID=string,lines=table,type=number}`
 - Called in combat: returned 1 value: `table{dataInstanceID=number,guid=string,healthGUID=string,lines=table,type=number}`
 - Source: client docs `TooltipInfoDocumentation.lua`
 

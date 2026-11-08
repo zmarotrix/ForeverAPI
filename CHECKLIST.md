@@ -1,4 +1,4 @@
-# In-game checklist: ApiProbe 0.1.2
+# In-game checklist: ApiProbe 0.2.0
 
 The probe is deployed to `_forever_\Interface\AddOns\ApiProbe`. It's a new add-on folder, so the game needs a
 **full restart** (not `/reload`) before it shows up. It's under **Probes** in the add-on list.
@@ -21,3 +21,17 @@ The probe is deployed to `_forever_\Interface\AddOns\ApiProbe`. It's a new add-o
 
 Worth reporting back: a red "blocked-action reports" line in `/apiprobe` status, any Lua error naming
 ApiProbe, and roughly how big `WTF\Account\<account>\SavedVariables\ApiProbe.lua` came out.
+
+## 0.2.0: getters with sample arguments
+
+0.2.0 also calls about 890 documented getters that need arguments, using samples it reads from your own character:
+your GUID, Hearthstone (6948), a spell from your spellbook, your first equipped item, your current map, the first quest
+in your log, your class, race and guild. Index arguments get 1 and enum arguments their first value. Only the
+kind of sample is saved, never its value.
+
+1. `/reload` (no restart needed). Have at least one quest in your log and something equipped, so those samples exist.
+2. `/apiprobe calls`, wait for "outside calls done" and "armed".
+3. Fight a mob until "combat calls done".
+4. `/reload`, then tell me "import".
+
+If the client crashes, don't worry: tell me, and I'll read the crash log, put that call on the skip list and redeploy.

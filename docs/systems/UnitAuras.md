@@ -232,7 +232,7 @@ Namespace: `C_UnitAuras`
 - Status: ✅ verified (function)
 - RequiresUnitAuraAccess (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `nil`
+- Called out of combat with `player`: returned 1 value: `nil`
 - Called in combat: error: `GetAuraSlots(): Auras cannot be accessed when secret while tainted by 'ApiProbe'
 Lua Taint: ApiProbe`
 - Source: client docs `UnitAuraDocumentation.lua`

@@ -45,7 +45,7 @@ Namespace: `C_LossOfControl`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `number`
+- Called out of combat with `player`: returned 1 value: `number`
 - Called in combat: returned 1 value: `number`
 - Source: client docs `LossOfControlDocumentation.lua`
 

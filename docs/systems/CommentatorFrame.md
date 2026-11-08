@@ -337,7 +337,7 @@ Namespace: `C_Commentator`
 - may return nothing (Blizzard's docs; not checked in game)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 0 values
+- Called out of combat with `player`: returned 0 values
 - Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
@@ -670,7 +670,7 @@ Namespace: `C_Commentator`
 - may return nothing (Blizzard's docs; not checked in game)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 0 values
+- Called out of combat with `player`: returned 0 values
 - Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
@@ -699,7 +699,7 @@ Namespace: `C_Commentator`
 - Status: ✅ verified (function)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 0 values
+- Called out of combat with `player`: returned 0 values
 - Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
@@ -812,7 +812,7 @@ Namespace: `C_Commentator`
 
 - Status: ✅ verified (function)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 1 value: `table{GenerateHexColor=function,GenerateHexColorMarkup=function,GenerateHexColorNoAlpha=function,GetHSL=function,GetRGB=function,GetRGBA=function,GetRGBAAsBytes=function,GetRGBAsBytes=function,IsEqualTo=function,IsRGBEqualTo=function,OnLoad=function,SetRGB=function,SetRGBA=function,WrapTextInColorCode=function,b=number,g=number,r=number}`
+- Called out of combat with `player`: returned 1 value: `table{GenerateHexColor=function,GenerateHexColorMarkup=function,GenerateHexColorNoAlpha=function,GetHSL=function,GetRGB=function,GetRGBA=function,GetRGBAAsBytes=function,GetRGBAsBytes=function,IsEqualTo=function,IsRGBEqualTo=function,OnLoad=function,SetRGB=function,SetRGBA=function,WrapTextInColorCode=function,b=number,g=number,r=number}`
 - Called in combat: returned 1 value: `table{GenerateHexColor=function,GenerateHexColorMarkup=function,GenerateHexColorNoAlpha=function,GetHSL=function,GetRGB=function,GetRGBA=function,GetRGBAAsBytes=function,GetRGBAsBytes=function,IsEqualTo=function,IsRGBEqualTo=function,OnLoad=function,SetRGB=function,SetRGBA=function,WrapTextInColorCode=function,b=number,g=number,r=number}`
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
@@ -859,7 +859,7 @@ Namespace: `C_Commentator`
 - Status: ✅ verified (function)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 0 values
+- Called out of combat with `player`: returned 0 values
 - Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 
@@ -880,7 +880,7 @@ Namespace: `C_Commentator`
 - Status: ✅ verified (function)
 - RequiresActiveCommentator (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 0 values
+- Called out of combat with `player`: returned 0 values
 - Called in combat: returned 0 values
 - Source: client docs `CommentatorFrameDocumentation.lua`
 

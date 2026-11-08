@@ -101,7 +101,7 @@ Namespace: `C_ScenarioInfo`
 - may return nothing (Blizzard's docs; not checked in game)
 - secret arguments: AllowedWhenUntainted (Blizzard's docs; not checked in game)
 - secret while unit identity is restricted (Blizzard's docs; not checked in game)
-- Called out of combat with "player": returned 0 values
+- Called out of combat with `player`: returned 0 values
 - Called in combat: returned 0 values
 - Source: client docs `ScenarioInfoDocumentation.lua`
 

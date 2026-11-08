@@ -23,8 +23,8 @@
 `CancelLogout()`
 
 - Status: ✅ verified (function)
-- Called out of combat: 💥 not called: blocked
-- Called in combat: 💥 not called: blocked
+- Called out of combat: not called: blocked
+- Called in combat: not called: blocked
 - Source: client docs `ConnectionDocumentation.lua`
 
 ### ForceLogout

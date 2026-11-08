@@ -105,8 +105,8 @@ Namespace: `C_HousingDecor`
 - Status: ✅ verified (function)
 - Blizzard: Placed Decor List APIs currently restricted due to being potentially very expensive operations, may be reworked & opened up in the future
 - restricted in some situations (Blizzard's docs; not checked in game)
-- Called out of combat: 💥 not called: forbidden
-- Called in combat: 💥 not called: forbidden
+- Called out of combat: not called: forbidden
+- Called in combat: not called: forbidden
 - Source: client docs `HousingDecorUIDocumentation.lua`
 
 ### C_HousingDecor.GetAllSpentPlacementBudgets
