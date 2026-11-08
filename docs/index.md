@@ -1,6 +1,6 @@
 # WoW Forever add-on API
 
-Generated 2026-11-07 19:51 by `tools/apidoc.py build`. Do not edit by hand.
+Generated 2026-11-07 19:58 by `tools/apidoc.py build`. Do not edit by hand.
 
 - Client docs: Blizzard_APIDocumentationGenerated from client 1.60.1.70862
 - Game dump: ApiProbe 0.1.2 on 1.60.1.70862 (interface 16001), enUS

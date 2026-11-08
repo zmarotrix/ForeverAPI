@@ -1,6 +1,52 @@
 {
+ "C_HouseEditor.": {
+  "note": "whole namespace: two housing calls crashed at the same instruction (housing system missing in Forever); skipped as a family to save crash-per-call"
+ },
+ "C_HouseExterior.": {
+  "note": "whole namespace: two housing calls crashed at the same instruction (housing system missing in Forever); skipped as a family to save crash-per-call"
+ },
+ "C_Housing.": {
+  "note": "whole namespace: two housing calls crashed at the same instruction (housing system missing in Forever); skipped as a family to save crash-per-call"
+ },
+ "C_Housing.GetHouseLevelFavorForLevel": {
+  "log": "2026-11-07_19.57.13_Crash_64900.txt",
+  "note": "ACCESS_VIOLATION reading 0x0 at 0x00007ff71ceb75a6, same instruction as GetMaxHouseLevel; called with n:1."
+ },
  "C_Housing.GetMaxHouseLevel": {
   "log": "2026-11-07_19.18.51_Crash_20784.txt",
   "note": "ACCESS_VIOLATION reading 0x0. The log predates callKey; the call was found by rebuilding the plan (index 508)."
+ },
+ "C_HousingBasicMode.": {
+  "note": "whole namespace: two housing calls crashed at the same instruction (housing system missing in Forever); skipped as a family to save crash-per-call"
+ },
+ "C_HousingBlueprint.": {
+  "note": "whole namespace: two housing calls crashed at the same instruction (housing system missing in Forever); skipped as a family to save crash-per-call"
+ },
+ "C_HousingCatalog.": {
+  "note": "whole namespace: two housing calls crashed at the same instruction (housing system missing in Forever); skipped as a family to save crash-per-call"
+ },
+ "C_HousingCleanupMode.": {
+  "note": "whole namespace: two housing calls crashed at the same instruction (housing system missing in Forever); skipped as a family to save crash-per-call"
+ },
+ "C_HousingCustomizeMode.": {
+  "note": "whole namespace: two housing calls crashed at the same instruction (housing system missing in Forever); skipped as a family to save crash-per-call"
+ },
+ "C_HousingDecor.": {
+  "note": "whole namespace: two housing calls crashed at the same instruction (housing system missing in Forever); skipped as a family to save crash-per-call"
+ },
+ "C_HousingExpertMode.": {
+  "note": "whole namespace: two housing calls crashed at the same instruction (housing system missing in Forever); skipped as a family to save crash-per-call"
+ },
+ "C_HousingInspectMode.": {
+  "note": "whole namespace: two housing calls crashed at the same instruction (housing system missing in Forever); skipped as a family to save crash-per-call"
+ },
+ "C_HousingLayout.": {
+  "note": "whole namespace: two housing calls crashed at the same instruction (housing system missing in Forever); skipped as a family to save crash-per-call"
+ },
+ "C_HousingNeighborhood.": {
+  "note": "whole namespace: two housing calls crashed at the same instruction (housing system missing in Forever); skipped as a family to save crash-per-call"
+ },
+ "C_NeighborhoodInitiative.": {
+  "note": "whole namespace: two housing calls crashed at the same instruction (housing system missing in Forever); skipped as a family to save crash-per-call"
  }
 }

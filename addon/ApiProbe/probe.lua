@@ -13,7 +13,7 @@
 -- It never casts, targets, sends or changes a setting; the only calls it makes are getters (Get/Is/Has/Can/...).
 
 local ADDON = ...
-local VERSION = "0.2.0"
+local VERSION = "0.2.1"
 local CHUNK = 1500          -- globals examined per frame while dumping
 local CALLS_PER_FRAME = 20  -- getters called per frame
 local MAX_MEMBERS = 10000   -- members recorded per table (Enum alone has thousands)
@@ -235,6 +235,9 @@ local currentCall, forbiddenHit
 -- (leads.crashers, written by tools/apidoc.py extract).
 local function skipped(key)
   if leads.crashers and leads.crashers[key] then return "crashed the client" end
+  -- a key ending in "." skips a whole namespace (the housing family crashes at one shared instruction)
+  local ns = type(key) == "string" and key:match("^([%w_]+)%.")
+  if ns and leads.crashers and leads.crashers[ns .. "."] then return "crashed the client (whole namespace skipped)" end
   if db.skip and db.skip[key] then return db.skip[key] end
 end
 

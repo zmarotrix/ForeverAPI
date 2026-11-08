@@ -5358,7 +5358,22 @@ ApiProbeLeads = {
   },
   -- calls that crashed the client (sources/crashers.json, from the game's crash logs): never called again
   crashers = {
+    ["C_HouseEditor."] = true,
+    ["C_HouseExterior."] = true,
+    ["C_Housing."] = true,
+    ["C_Housing.GetHouseLevelFavorForLevel"] = true,
     ["C_Housing.GetMaxHouseLevel"] = true,
+    ["C_HousingBasicMode."] = true,
+    ["C_HousingBlueprint."] = true,
+    ["C_HousingCatalog."] = true,
+    ["C_HousingCleanupMode."] = true,
+    ["C_HousingCustomizeMode."] = true,
+    ["C_HousingDecor."] = true,
+    ["C_HousingExpertMode."] = true,
+    ["C_HousingInspectMode."] = true,
+    ["C_HousingLayout."] = true,
+    ["C_HousingNeighborhood."] = true,
+    ["C_NeighborhoodInitiative."] = true,
   },
   -- getter-named globals Blizzard's own Lua UI code defines: UI helpers, not client API, so not called
   uiGetters = {

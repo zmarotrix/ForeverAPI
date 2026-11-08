@@ -118,6 +118,7 @@
   function verdict(f) {
     var o = f.o, c = f.c, fl = f.fl || {};
     if (f.s === "not-in-game") return ["bad", "Not in this client. Don't use it."];
+    if (/whole namespace/.test(((o || {}).skipped || ""))) return ["bad", "Not called: other functions in this namespace crashed the client (Forever's housing system is missing). Treat the whole namespace as unusable."];
     if (/crash/.test(((o || {}).skipped || "") + ((c || {}).skipped || ""))) return ["bad", "Crashed the client when called with no arguments. Avoid it until someone tests it with real arguments."];
     if (refused(o)) return ["bad", "Add-ons can't call this: the client refused the probe's call."];
     if (refused(c)) return ["warn", "Works out of combat; blocked in combat. Call it out of combat only."];
