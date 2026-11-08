@@ -624,7 +624,7 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified
 - Payload: `cancelledCast: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1731 times (1520 in combat); argument kinds: `b`
+- Seen firing 7537 times (6903 in combat); argument kinds: `b`
 
 ### LEARNED_SPELL_IN_SKILL_LINE
 
@@ -649,7 +649,7 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 40 times (0 in combat); argument kinds: ``
+- Seen firing 83 times (2 in combat); argument kinds: ``
 
 ### SPELL_FLYOUT_UPDATE
 
@@ -657,7 +657,7 @@ Namespace: `C_SpellBook`
 - Payload: `flyoutID: number?`, `spellID: number?`, `isLearned: bool?`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 32 times (0 in combat); argument kinds: `n,n,b`
+- Seen firing 52 times (0 in combat); argument kinds: `n,n,b`
 
 ### SPELL_PUSHED_TO_ACTIONBAR
 
@@ -677,28 +677,28 @@ Namespace: `C_SpellBook`
 - Payload: none
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 17 times (0 in combat); argument kinds: ``
+- Seen firing 36 times (4 in combat); argument kinds: ``
 
 ### SPELL_UPDATE_COOLDOWN
 
 - Status: ✅ verified
 - Payload: `spellID: number?`, `baseSpellID: number?`, `category: number?`, `startRecoveryCategory: number?`, `itemID: number?`
 - unique event (Blizzard's docs)
-- Seen firing 628 times (417 in combat); argument kinds: `-,-,-,-,-` / `n,-,-,-,-` / `n,-,n,n,-` / `n,-,n,n,n`
+- Seen firing 2167 times (1609 in combat); argument kinds: `-,-,-,-,-` / `n,-,-,-,-` / `n,-,n,n,-` / `n,-,n,n,n`
 
 ### SPELL_UPDATE_ICON
 
 - Status: ✅ verified
 - Payload: `spellID: number?`
 - unique event (Blizzard's docs)
-- Seen firing 21 times (0 in combat); argument kinds: `n`
+- Seen firing 55 times (2 in combat); argument kinds: `n`
 
 ### SPELL_UPDATE_USABLE
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 8072 times (3484 in combat); argument kinds: ``
+- Seen firing 20311 times (9860 in combat); argument kinds: ``
 
 ### SPELL_UPDATE_USES
 
@@ -723,28 +723,28 @@ Namespace: `C_SpellBook`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 533 times (403 in combat); argument kinds: ``
+- Seen firing 1895 times (1540 in combat); argument kinds: ``
 
 ### UPDATE_SHAPESHIFT_FORM
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 52 times (0 in combat); argument kinds: ``
+- Seen firing 153 times (6 in combat); argument kinds: ``
 
 ### UPDATE_SHAPESHIFT_FORMS
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 8 times (0 in combat); argument kinds: ``
+- Seen firing 13 times (0 in combat); argument kinds: ``
 
 ### UPDATE_SHAPESHIFT_USABLE
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 7 times (0 in combat); argument kinds: ``
+- Seen firing 20 times (2 in combat); argument kinds: ``
 
 ## Types
 

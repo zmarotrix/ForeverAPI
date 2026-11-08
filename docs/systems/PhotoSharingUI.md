@@ -121,6 +121,7 @@ Namespace: `C_PhotoSharing`
 - Status: ✅ verified
 - Payload: `showNotification: bool`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `b`
 
 ### PHOTO_SHARING_PHOTO_UPLOAD_STATUS
 

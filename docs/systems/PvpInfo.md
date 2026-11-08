@@ -1130,7 +1130,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: `unitToken: cstring`, `updateReason: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 180 times (0 in combat); argument kinds: `s,s`
+- Seen firing 330 times (0 in combat); argument kinds: `s,s`
 
 ### ARENA_PREP_OPPONENT_SPECIALIZATIONS
 
@@ -1143,7 +1143,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### BATTLEFIELDS_CLOSED
 
@@ -1252,7 +1252,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 18 times (0 in combat); argument kinds: ``
+- Seen firing 27 times (0 in combat); argument kinds: ``
 
 ### PVP_MATCH_ACTIVE
 
@@ -1313,7 +1313,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 18 times (0 in combat); argument kinds: ``
+- Seen firing 27 times (0 in combat); argument kinds: ``
 
 ### PVP_TYPES_ENABLED
 
@@ -1380,7 +1380,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: `warModeEnabled: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `b`
+- Seen firing 17 times (6 in combat); argument kinds: `b`
 
 ### WORLD_PVP_QUEUE
 

@@ -74,7 +74,7 @@
 - Status: ✅ verified
 - Payload: `changedName: cstring`, `fromName: cstring`, `oldRole: cstring`, `newRole: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `s,s,s,s`
+- Seen firing 3 times (0 in combat); argument kinds: `s,s,s,s`
 
 ### ROLE_POLL_BEGIN
 

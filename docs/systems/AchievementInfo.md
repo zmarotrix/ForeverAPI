@@ -99,7 +99,7 @@ Namespace: `C_AchievementInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 102 times (87 in combat); argument kinds: ``
+- Seen firing 535 times (419 in combat); argument kinds: ``
 
 ### INSPECT_ACHIEVEMENT_READY
 
@@ -112,7 +112,7 @@ Namespace: `C_AchievementInfo`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 6 times (1 in combat); argument kinds: ``
 
 ### RECEIVED_ACHIEVEMENT_MEMBER_LIST
 

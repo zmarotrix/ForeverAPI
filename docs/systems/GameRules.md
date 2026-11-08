@@ -324,7 +324,7 @@ Namespace: `C_GameRules`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 17 times (6 in combat); argument kinds: ``
 
 ### GAME_MODE_DISPLAY_MODE_TOGGLE_DISABLED
 
@@ -337,7 +337,7 @@ Namespace: `C_GameRules`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 17 times (6 in combat); argument kinds: ``
 
 ### SETTINGS_HEADER_TEXT_UPDATE
 

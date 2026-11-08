@@ -96,12 +96,14 @@ Namespace: `C_LossOfControl`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### PLAYER_CONTROL_LOST
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ## Types
 

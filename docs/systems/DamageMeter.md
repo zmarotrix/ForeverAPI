@@ -105,21 +105,21 @@ Namespace: `C_DamageMeter`
 - Status: ✅ verified
 - Payload: `type: DamageMeterType`, `sessionID: number`
 - unique event (Blizzard's docs)
-- Seen firing 2950 times (2950 in combat); argument kinds: `n,n`
+- Seen firing 17918 times (17826 in combat); argument kinds: `n,n`
 
 ### DAMAGE_METER_CURRENT_SESSION_UPDATED
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 18 times (18 in combat); argument kinds: ``
+- Seen firing 49 times (41 in combat); argument kinds: ``
 
 ### DAMAGE_METER_RESET
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 6 times (0 in combat); argument kinds: ``
 
 ## Types
 

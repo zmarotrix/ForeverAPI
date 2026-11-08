@@ -146,4 +146,4 @@ Namespace: `C_Mail`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 20 times (0 in combat); argument kinds: ``
+- Seen firing 29 times (0 in combat); argument kinds: ``

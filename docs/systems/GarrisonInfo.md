@@ -1798,7 +1798,7 @@ Namespace: `C_Garrison`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 28 times (0 in combat); argument kinds: ``
+- Seen firing 53 times (0 in combat); argument kinds: ``
 
 ### GARRISON_INVASION_AVAILABLE
 
@@ -1818,7 +1818,7 @@ Namespace: `C_Garrison`
 - Payload: none
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 19 times (0 in combat); argument kinds: ``
+- Seen firing 32 times (0 in combat); argument kinds: ``
 
 ### GARRISON_MISSION_AREA_BONUS_ADDED
 
@@ -2041,7 +2041,7 @@ Namespace: `C_Garrison`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 21 times (0 in combat); argument kinds: ``
+- Seen firing 36 times (0 in combat); argument kinds: ``
 
 ### GARRISON_UPGRADEABLE_RESULT
 

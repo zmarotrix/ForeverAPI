@@ -132,6 +132,7 @@ Namespace: `C_Transmog`
 - Status: ✅ verified
 - Payload: `itemModifiedAppearanceID: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: `n`
 
 ### TRANSMOG_COLLECTION_SOURCE_REMOVED
 
@@ -145,7 +146,7 @@ Namespace: `C_Transmog`
 - Payload: `collectionIndex: luaIndex?`, `modID: number?`, `itemAppearanceID: number?`, `reason: cstring?`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `-,-,-,-`
+- Seen firing 4 times (0 in combat); argument kinds: `-,-,-,-`
 
 ### TRANSMOG_COSMETIC_COLLECTION_SOURCE_ADDED
 
@@ -158,7 +159,7 @@ Namespace: `C_Transmog`
 - Status: ✅ verified
 - Payload: `searchType: TransmogSearchType`, `collectionType: TransmogCollectionType?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 72 times (0 in combat); argument kinds: `n,-`
+- Seen firing 108 times (0 in combat); argument kinds: `n,-`
 
 ### TRANSMOG_SETS_UPDATE_FAVORITE
 

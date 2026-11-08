@@ -90,7 +90,7 @@ Namespace: `C_SkillInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 23 times (2 in combat); argument kinds: ``
+- Seen firing 42 times (12 in combat); argument kinds: ``
 
 ## Types
 

@@ -971,7 +971,7 @@ Namespace: `C_Club`
 - Status: ✅ verified
 - Payload: `clubId: ClubId`
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `n`
+- Seen firing 3 times (0 in combat); argument kinds: `n`
 
 ### CLUB_ERROR
 
@@ -984,6 +984,7 @@ Namespace: `C_Club`
 - Status: ✅ verified
 - Payload: `clubId: ClubId`
 - fires synchronously (Blizzard's docs)
+- Seen firing 3 times (0 in combat); argument kinds: `n`
 
 ### CLUB_INVITATION_ADDED_FOR_SELF
 
@@ -1002,7 +1003,7 @@ Namespace: `C_Club`
 - Status: ✅ verified
 - Payload: `clubId: ClubId`
 - unique event (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `n`
+- Seen firing 3 times (0 in combat); argument kinds: `n`
 
 ### CLUB_MEMBER_ADDED
 
@@ -1040,13 +1041,14 @@ Namespace: `C_Club`
 - Status: ✅ verified
 - Payload: `clubId: ClubId`, `streamId: ClubStreamId`, `messageId: ClubMessageIdentifier`
 - fires synchronously (Blizzard's docs)
-- Seen firing 38 times (9 in combat); argument kinds: `n,n,t`
+- Seen firing 79 times (16 in combat); argument kinds: `n,n,t`
 
 ### CLUB_MESSAGE_HISTORY_RECEIVED
 
 - Status: ✅ verified
 - Payload: `clubId: ClubId`, `streamId: ClubStreamId`, `downloadedRange: ClubMessageRange`, `contiguousRange: ClubMessageRange`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `n,n,t,t`
 
 ### CLUB_MESSAGE_UPDATED
 
@@ -1077,7 +1079,7 @@ Namespace: `C_Club`
 - Status: ✅ verified
 - Payload: `clubId: ClubId`
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `n`
+- Seen firing 3 times (0 in combat); argument kinds: `n`
 
 ### CLUB_STREAM_ADDED
 
@@ -1098,7 +1100,7 @@ Namespace: `C_Club`
 - Status: ✅ verified
 - Payload: `clubId: ClubId`, `streamId: ClubStreamId`
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: `n,n`
+- Seen firing 6 times (0 in combat); argument kinds: `n,n`
 
 ### CLUB_STREAM_UNSUBSCRIBED
 
@@ -1136,13 +1138,14 @@ Namespace: `C_Club`
 - Status: ✅ verified
 - Payload: `clubId: ClubId`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `n`
 
 ### INITIAL_CLUBS_LOADED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 18 times (0 in combat); argument kinds: ``
+- Seen firing 41 times (6 in combat); argument kinds: ``
 
 ### STREAM_VIEW_MARKER_UPDATED
 
@@ -1150,7 +1153,7 @@ Namespace: `C_Club`
 - Payload: `clubId: ClubId`, `streamId: ClubStreamId`, `lastReadTime: BigUInteger?`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 23 times (4 in combat); argument kinds: `n,n,-` / `n,n,n`
+- Seen firing 75 times (14 in combat); argument kinds: `n,n,-` / `n,n,n`
 
 ## Types
 

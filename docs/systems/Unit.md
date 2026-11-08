@@ -2508,14 +2508,14 @@
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### COMBO_TARGET_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 34 times (21 in combat); argument kinds: ``
+- Seen firing 46 times (30 in combat); argument kinds: ``
 
 ### CONFIRM_BINDER
 
@@ -2554,6 +2554,7 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 4 times (0 in combat); argument kinds: `s`
 
 ### INCOMING_SUMMON_CHANGED
 
@@ -2584,12 +2585,14 @@
 - Status: ✅ verified
 - Payload: `timerName: cstring`, `value: number`, `maxValue: number`, `scale: number`, `paused: number`, `timerLabel: cstring`
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: `s,n,n,n,n,s`
 
 ### MIRROR_TIMER_STOP
 
 - Status: ✅ verified
 - Payload: `timerName: cstring`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `s`
 
 ### NEUTRAL_FACTION_SELECT_RESULT
 
@@ -2615,14 +2618,14 @@
 - Payload: `attackerGUID: WOWGUID`, `targetGUID: WOWGUID`
 - secret while unit identity is restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 18 times (18 in combat); argument kinds: `S,S` / `s,s`
+- Seen firing 123 times (122 in combat); argument kinds: `S,S` / `s,s`
 
 ### PET_BAR_UPDATE_USABLE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 164 times (128 in combat); argument kinds: ``
+- Seen firing 474 times (421 in combat); argument kinds: ``
 
 ### PET_UI_UPDATE
 
@@ -2641,14 +2644,14 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 89 times (18 in combat); argument kinds: `s`
+- Seen firing 300 times (85 in combat); argument kinds: `s`
 
 ### PLAYER_ENTER_COMBAT
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 26 times (25 in combat); argument kinds: ``
+- Seen firing 551 times (527 in combat); argument kinds: ``
 
 ### PLAYER_FARSIGHT_FOCUS_CHANGED
 
@@ -2661,7 +2664,7 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 7 times (0 in combat); argument kinds: `s`
+- Seen firing 14 times (0 in combat); argument kinds: `s`
 
 ### PLAYER_FOCUS_CHANGED
 
@@ -2686,7 +2689,7 @@
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 26 times (23 in combat); argument kinds: ``
+- Seen firing 553 times (532 in combat); argument kinds: ``
 
 ### PLAYER_LEVEL_CHANGED
 
@@ -2711,6 +2714,7 @@
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 4 times (0 in combat); argument kinds: ``
 
 ### PLAYER_PVP_KILLS_CHANGED
 
@@ -2729,28 +2733,28 @@
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 18 times (0 in combat); argument kinds: ``
+- Seen firing 49 times (0 in combat); argument kinds: ``
 
 ### PLAYER_REGEN_ENABLED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 18 times (0 in combat); argument kinds: ``
+- Seen firing 49 times (0 in combat); argument kinds: ``
 
 ### PLAYER_SOFT_ENEMY_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 69 times (32 in combat); argument kinds: ``
+- Seen firing 887 times (780 in combat); argument kinds: ``
 
 ### PLAYER_SOFT_FRIEND_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 27 times (0 in combat); argument kinds: ``
+- Seen firing 79 times (8 in combat); argument kinds: ``
 
 ### PLAYER_SOFT_INTERACT_CHANGED
 
@@ -2771,56 +2775,56 @@
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 6 times (0 in combat); argument kinds: `s`
+- Seen firing 11 times (0 in combat); argument kinds: `s`
 
 ### PLAYER_STARTED_LOOKING
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 142 times (39 in combat); argument kinds: ``
+- Seen firing 485 times (289 in combat); argument kinds: ``
 
 ### PLAYER_STARTED_MOVING
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 447 times (201 in combat); argument kinds: ``
+- Seen firing 1475 times (902 in combat); argument kinds: ``
 
 ### PLAYER_STARTED_TURNING
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 458 times (151 in combat); argument kinds: ``
+- Seen firing 1704 times (986 in combat); argument kinds: ``
 
 ### PLAYER_STOPPED_LOOKING
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 142 times (37 in combat); argument kinds: ``
+- Seen firing 485 times (284 in combat); argument kinds: ``
 
 ### PLAYER_STOPPED_MOVING
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 447 times (213 in combat); argument kinds: ``
+- Seen firing 1475 times (928 in combat); argument kinds: ``
 
 ### PLAYER_STOPPED_TURNING
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 458 times (163 in combat); argument kinds: ``
+- Seen firing 1704 times (1008 in combat); argument kinds: ``
 
 ### PLAYER_TARGET_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 140 times (49 in combat); argument kinds: ``
+- Seen firing 862 times (659 in combat); argument kinds: ``
 
 ### PLAYER_TRIAL_XP_UPDATE
 
@@ -2839,14 +2843,14 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 27 times (27 in combat); argument kinds: `s`
+- Seen firing 31 times (27 in combat); argument kinds: `s`
 
 ### PORTRAITS_UPDATED
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 31 times (0 in combat); argument kinds: ``
+- Seen firing 101 times (28 in combat); argument kinds: ``
 
 ### PROVING_GROUNDS_SCORE_UPDATE
 
@@ -2859,7 +2863,7 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (0 in combat); argument kinds: `s`
+- Seen firing 13 times (0 in combat); argument kinds: `s`
 
 ### RUNE_POWER_UPDATE
 
@@ -2898,13 +2902,14 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 629 times (615 in combat); argument kinds: `s`
 
 ### UNIT_AREA_CHANGED
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 64 times (16 in combat); argument kinds: `s`
+- Seen firing 88 times (16 in combat); argument kinds: `s`
 
 ### UNIT_ARENA_COOLDOWNS_UPDATE
 
@@ -2919,21 +2924,21 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 7 times (4 in combat); argument kinds: `s`
+- Seen firing 18 times (15 in combat); argument kinds: `s`
 
 ### UNIT_ATTACK_POWER
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 18 times (0 in combat); argument kinds: `s`
+- Seen firing 48 times (2 in combat); argument kinds: `s`
 
 ### UNIT_ATTACK_SPEED
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 44 times (0 in combat); argument kinds: `s`
+- Seen firing 125 times (19 in combat); argument kinds: `s`
 
 ### UNIT_CHEAT_TOGGLE_EVENT
 
@@ -2946,13 +2951,14 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (1 in combat); argument kinds: `s`
 
 ### UNIT_COMBAT
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `event: cstring`, `flagText: cstring`, `amount: number`, `schoolMask: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1526 times (1490 in combat); argument kinds: `s,s,s,S,n`
+- Seen firing 7432 times (7315 in combat); argument kinds: `s,s,s,S,n`
 
 ### UNIT_CONNECTION
 
@@ -2965,21 +2971,21 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 5 times (0 in combat); argument kinds: `s`
+- Seen firing 9 times (0 in combat); argument kinds: `s`
 
 ### UNIT_DAMAGE
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 104 times (0 in combat); argument kinds: `s`
+- Seen firing 260 times (8 in combat); argument kinds: `s`
 
 ### UNIT_DEFENSE
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 7 times (4 in combat); argument kinds: `s`
+- Seen firing 18 times (15 in combat); argument kinds: `s`
 
 ### UNIT_DIED
 
@@ -2987,14 +2993,14 @@
 - Payload: `unitGUID: WOWGUID`
 - secret while unit identity is restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 45 times (27 in combat); argument kinds: `S` / `s`
+- Seen firing 158 times (131 in combat); argument kinds: `S` / `s`
 
 ### UNIT_DISPLAYPOWER
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 24 times (0 in combat); argument kinds: `s`
+- Seen firing 73 times (17 in combat); argument kinds: `s`
 
 ### UNIT_DISTANCE_CHECK_UPDATE
 
@@ -3008,14 +3014,14 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 21 times (0 in combat); argument kinds: `s`
+- Seen firing 27 times (0 in combat); argument kinds: `s`
 
 ### UNIT_FLAGS
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 262 times (154 in combat); argument kinds: `s`
+- Seen firing 1410 times (997 in combat); argument kinds: `s`
 
 ### UNIT_FORM_CHANGED
 
@@ -3029,7 +3035,7 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1349 times (1004 in combat); argument kinds: `s`
+- Seen firing 8083 times (6559 in combat); argument kinds: `s`
 
 ### UNIT_HEALTH
 
@@ -3037,7 +3043,7 @@
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 1678 times (1188 in combat); argument kinds: `s`
+- Seen firing 6727 times (5826 in combat); argument kinds: `s`
 
 ### UNIT_HEAL_ABSORB_AMOUNT_CHANGED
 
@@ -3050,14 +3056,14 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 34 times (5 in combat); argument kinds: `s`
+- Seen firing 302 times (210 in combat); argument kinds: `s`
 
 ### UNIT_INVENTORY_CHANGED
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 765 times (6 in combat); argument kinds: `s`
+- Seen firing 1256 times (15 in combat); argument kinds: `s`
 
 ### UNIT_IN_RANGE_UPDATE
 
@@ -3072,14 +3078,14 @@
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 5 times (0 in combat); argument kinds: `s`
+- Seen firing 12 times (1 in combat); argument kinds: `s`
 
 ### UNIT_LOOT
 
 - Status: ✅ verified
 - Payload: `unitGUID: WOWGUID`, `hasLoot: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 45 times (20 in combat); argument kinds: `s,b`
+- Seen firing 125 times (78 in combat); argument kinds: `s,b`
 
 ### UNIT_MANA
 
@@ -3093,14 +3099,14 @@
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 20 times (0 in combat); argument kinds: `s`
+- Seen firing 133 times (38 in combat); argument kinds: `s`
 
 ### UNIT_MAXPOWER
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `powerType: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 11 times (0 in combat); argument kinds: `s,s`
+- Seen firing 32 times (7 in combat); argument kinds: `s,s`
 
 ### UNIT_MAX_HEALTH_MODIFIERS_CHANGED
 
@@ -3109,7 +3115,7 @@
 - SecretPayloads (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: `s,S`
+- Seen firing 41 times (17 in combat); argument kinds: `s,S`
 
 ### UNIT_MODEL_CHANGED
 
@@ -3117,21 +3123,21 @@
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 56 times (0 in combat); argument kinds: `s`
+- Seen firing 166 times (40 in combat); argument kinds: `s`
 
 ### UNIT_NAME_UPDATE
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: `s`
+- Seen firing 5 times (1 in combat); argument kinds: `s`
 
 ### UNIT_OTHER_PARTY_CHANGED
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 7 times (0 in combat); argument kinds: `s`
+- Seen firing 12 times (0 in combat); argument kinds: `s`
 
 ### UNIT_PET
 
@@ -3156,7 +3162,7 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 22 times (0 in combat); argument kinds: `s`
+- Seen firing 43 times (0 in combat); argument kinds: `s`
 
 ### UNIT_PORTRAIT_UPDATE
 
@@ -3164,7 +3170,7 @@
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 83 times (0 in combat); argument kinds: `s`
+- Seen firing 264 times (71 in combat); argument kinds: `s`
 
 ### UNIT_POWER_BAR_HIDE
 
@@ -3189,7 +3195,7 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `powerType: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 13297 times (8695 in combat); argument kinds: `s,s`
+- Seen firing 38080 times (25426 in combat); argument kinds: `s,s`
 
 ### UNIT_POWER_POINT_CHARGE
 
@@ -3203,35 +3209,35 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `powerType: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1720 times (1284 in combat); argument kinds: `s,s`
+- Seen firing 9294 times (7603 in combat); argument kinds: `s,s`
 
 ### UNIT_QUEST_LOG_CHANGED
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 5 times (3 in combat); argument kinds: `s`
+- Seen firing 121 times (90 in combat); argument kinds: `s`
 
 ### UNIT_RANGEDDAMAGE
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 36 times (0 in combat); argument kinds: `s`
+- Seen firing 94 times (4 in combat); argument kinds: `s`
 
 ### UNIT_RANGED_ATTACK_POWER
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 7 times (4 in combat); argument kinds: `s`
+- Seen firing 18 times (15 in combat); argument kinds: `s`
 
 ### UNIT_RESISTANCES
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 29 times (2 in combat); argument kinds: `s`
+- Seen firing 197 times (116 in combat); argument kinds: `s`
 
 ### UNIT_SPELLCAST_CHANNEL_START
 
@@ -3260,6 +3266,7 @@
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
+- Seen firing 16 times (14 in combat); argument kinds: `s,S,S,s`
 
 ### UNIT_SPELLCAST_EMPOWER_START
 
@@ -3288,7 +3295,7 @@
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 1976 times (1959 in combat); argument kinds: `s,s,n,-`
+- Seen firing 7536 times (7448 in combat); argument kinds: `s,S,S,s` / `s,s,n,-`
 
 ### UNIT_SPELLCAST_FAILED_QUIET
 
@@ -3296,7 +3303,7 @@
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 110 times (106 in combat); argument kinds: `s,s,n,-`
+- Seen firing 1283 times (1246 in combat); argument kinds: `s,s,n,-`
 
 ### UNIT_SPELLCAST_INTERRUPTED
 
@@ -3304,7 +3311,7 @@
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `interruptedBy: WOWGUID`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (2 in combat); argument kinds: `s,s,n,-,-`
+- Seen firing 128 times (104 in combat); argument kinds: `s,S,S,-,s` / `s,s,n,-,-` / `s,s,n,-,s`
 
 ### UNIT_SPELLCAST_INTERRUPTIBLE
 
@@ -3338,7 +3345,7 @@
 - Payload: `unitTarget: UnitTokenVariant`, `target: cstring`, `castGUID: WOWGUID`, `spellID: number`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 360 times (304 in combat); argument kinds: `s,-,s,n` / `s,S,s,n` / `s,s,s,n`
+- Seen firing 1721 times (1564 in combat); argument kinds: `s,-,s,n` / `s,S,s,n` / `s,s,s,n`
 
 ### UNIT_SPELLCAST_START
 
@@ -3346,7 +3353,7 @@
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 32 times (7 in combat); argument kinds: `s,-,n,s` / `s,S,S,s` / `s,s,n,s`
+- Seen firing 543 times (489 in combat); argument kinds: `s,-,S,s` / `s,-,n,s` / `s,S,S,s` / `s,s,n,s`
 
 ### UNIT_SPELLCAST_STOP
 
@@ -3354,7 +3361,7 @@
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 25 times (3 in combat); argument kinds: `s,S,S,s` / `s,s,n,s`
+- Seen firing 502 times (461 in combat); argument kinds: `s,S,S,s` / `s,s,n,s`
 
 ### UNIT_SPELLCAST_SUCCEEDED
 
@@ -3362,7 +3369,7 @@
 - Payload: `unitTarget: UnitTokenVariant`, `castGUID: WOWGUID`, `spellID: number`, `castBarID: UnitCastBarID?`
 - secret while unit spellcasts are restricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 340 times (279 in combat); argument kinds: `s,S,S,s` / `s,s,n,-` / `s,s,n,s`
+- Seen firing 1615 times (1460 in combat); argument kinds: `s,S,S,s` / `s,s,n,-` / `s,s,n,s`
 
 ### UNIT_SPELL_HASTE
 
@@ -3381,7 +3388,7 @@
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 211 times (105 in combat); argument kinds: `s`
+- Seen firing 2309 times (1794 in combat); argument kinds: `s`
 
 ### UNIT_TARGETABLE_CHANGED
 
@@ -3395,7 +3402,7 @@
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 617 times (583 in combat); argument kinds: `s`
+- Seen firing 2900 times (2805 in combat); argument kinds: `s`
 
 ### UNIT_THREAT_SITUATION_UPDATE
 
@@ -3403,27 +3410,28 @@
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 75 times (41 in combat); argument kinds: `s`
+- Seen firing 708 times (640 in combat); argument kinds: `s`
 
 ### UPDATE_EXHAUSTION
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 25 times (0 in combat); argument kinds: ``
+- Seen firing 30 times (0 in combat); argument kinds: ``
 
 ### UPDATE_MOUSEOVER_UNIT
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 637 times (173 in combat); argument kinds: ``
+- Seen firing 2935 times (1952 in combat); argument kinds: ``
 
 ### UPDATE_STEALTH
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### VEHICLE_ANGLE_UPDATE
 

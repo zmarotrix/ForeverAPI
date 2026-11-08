@@ -47,6 +47,18 @@ returned out of and in combat, plus events (filter by seen firing or protected),
 their methods, undocumented globals, CVars and a restrictions page. Type names in signatures link to their
 definitions. The page source lives in `tools/site_src/`; `tools/website.py` writes the data file.
 
+## Use without Claude
+
+Two double-click files in this folder:
+
+- **update-docs.bat**: after you `/reload` or log out, reads what the API add-ons collected, rebuilds `docs/` and the
+  website, and opens it.
+- **refresh-addons.bat**: after a client patch, or after the game crashed with an API add-on running. It re-reads
+  Blizzard's docs and the crash logs (any call that crashed goes on the skip list) and copies fresh add-ons into
+  the game. Restart the game afterwards.
+
+Both need Python 3 on PATH. Nothing else is needed for them (the stub tests need `lupa`).
+
 ## Use
 
 ```

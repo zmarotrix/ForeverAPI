@@ -44,6 +44,7 @@ local m = getmetatable(CreateFrame("Frame")).__index
 function m:SetFontObject() end
 function m:SetValue(v) if issecretvalue(v) then error("SetValue: secret values are not allowed") end end
 function m:SetAlphaFromBoolean(b) end
+function m:SetShown(b) if issecretvalue(b) then error("SetShown: no secrets") end end
 function m:SetText(t) if issecretvalue(t) then error("SetText: can't take a secret") end end
 function m:SetWidth(w) end
 C_RestrictedActions.IsAddOnRestrictionActive = function(t) return (COMBAT and t == 0) or (INSTANCE ~= "none" and t == 1) end
@@ -58,7 +59,7 @@ ApiProbeLeads = { build = "1.60.1.70862", events = {},
 }
 ApiWidgetsPlan = { build = "1.60.1.70862", setters = {
   { "StatusBar", "SetValue", { "Sn" } }, { "Texture", "SetAlphaFromBoolean", { "Sb" } },
-  { "FontString", "SetText", { "Sn" } }, { "Frame", "SetWidth", { "Sn" } } } }
+  { "FontString", "SetText", { "Sn" } }, { "Frame", "SetWidth", { "Sn" } }, { "Frame", "SetShown", { "Sb" } } } }
 """
 
 passed = failed = 0
@@ -164,6 +165,7 @@ def main():
     check("widgets: combat run done", c.get("done") is True, c)
     check("widgets: secret refused by SetValue", "not allowed" in str(o["setters"]["StatusBar:SetValue"].get("secret")), o["setters"]["StatusBar:SetValue"])
     check("widgets: plain control ok", o["setters"]["StatusBar:SetValue"].get("plain") == "ok")
+    check("widgets: true/false control call is plain", o["setters"]["Frame:SetShown"].get("plain") == "ok" and "no secrets" in str(o["setters"]["Frame:SetShown"].get("secret")), o["setters"].get("Frame:SetShown"))
     check("widgets: secret boolean accepted", o["setters"]["Texture:SetAlphaFromBoolean"].get("secret") == "ok")
     check("widgets: arithmetic on a secret errors in the stub", o["ops"]["s + 1"] != "ok")
 

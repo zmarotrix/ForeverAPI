@@ -255,7 +255,7 @@ Namespace: `C_LFGInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 46 times (2 in combat); argument kinds: ``
+- Seen firing 76 times (2 in combat); argument kinds: ``
 
 ### LFG_ENABLED_STATE_CHANGED
 
@@ -274,7 +274,7 @@ Namespace: `C_LFGInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 24 times (0 in combat); argument kinds: ``
+- Seen firing 39 times (0 in combat); argument kinds: ``
 
 ### LFG_OFFER_CONTINUE
 
@@ -401,7 +401,7 @@ Namespace: `C_LFGInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 24 times (0 in combat); argument kinds: ``
+- Seen firing 39 times (0 in combat); argument kinds: ``
 
 ### SHOW_LFG_EXPAND_SEARCH_PROMPT
 

@@ -38,7 +38,7 @@ Namespace: `C_SwingTimer`
 - Status: ✅ verified
 - Payload: `swingDuration: number`, `swingType: PlayerSwingType`
 - fires synchronously (Blizzard's docs)
-- Seen firing 305 times (305 in combat); argument kinds: `n,n`
+- Seen firing 629 times (624 in combat); argument kinds: `n,n`
 
 ### PLAYER_SWING_RANGE_UPDATE
 

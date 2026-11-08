@@ -799,7 +799,7 @@ Namespace: `C_LFGList`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 18 times (0 in combat); argument kinds: ``
+- Seen firing 27 times (0 in combat); argument kinds: ``
 
 ### LFG_LIST_CENSORED_ACTIVE_ENTRY_UPDATE
 
@@ -854,7 +854,7 @@ Namespace: `C_LFGList`
 - Status: ✅ verified
 - Payload: `searchResultID: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 7 times (0 in combat); argument kinds: `n`
+- Seen firing 15 times (0 in combat); argument kinds: `n`
 
 ### LFG_LIST_SHOW_SEARCH
 

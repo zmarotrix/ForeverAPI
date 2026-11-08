@@ -57,6 +57,7 @@ Namespace: `C_WowTokenUI`
 - Status: ✅ verified
 - Payload: `result: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `n`
 
 ### TOKEN_MARKET_PRICE_UPDATED
 
@@ -117,4 +118,4 @@ Namespace: `C_WowTokenUI`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 17 times (6 in combat); argument kinds: ``

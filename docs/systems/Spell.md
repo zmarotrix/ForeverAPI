@@ -871,7 +871,7 @@ Namespace: `C_Spell`
 - Status: ✅ verified
 - Payload: `successful: bool`, `enchantedItem: ItemLocation?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 17 times (0 in combat); argument kinds: `b,-`
+- Seen firing 23 times (0 in combat); argument kinds: `b,-`
 
 ### ENCHANT_SPELL_SELECTED
 
@@ -884,7 +884,7 @@ Namespace: `C_Spell`
 - Status: ✅ verified
 - Payload: `spellID: number`, `success: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 417 times (0 in combat); argument kinds: `n,b`
+- Seen firing 616 times (0 in combat); argument kinds: `n,b`
 
 ### SPELL_RANGE_CHECK_UPDATE
 
@@ -898,6 +898,7 @@ Namespace: `C_Spell`
 - Status: ✅ verified
 - Payload: `spellID: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 140 times (0 in combat); argument kinds: `n`
 
 ### UPDATE_SPELL_TARGET_ITEM_CONTEXT
 

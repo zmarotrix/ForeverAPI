@@ -173,7 +173,7 @@ Namespace: `C_ScenarioInfo`
 - Status: ✅ verified
 - Payload: `newStep: bool?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `-`
+- Seen firing 6 times (0 in combat); argument kinds: `-`
 
 ## Types
 

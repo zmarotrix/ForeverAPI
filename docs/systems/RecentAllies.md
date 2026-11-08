@@ -181,14 +181,14 @@ Namespace: `C_RecentAllies`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 6 times (0 in combat); argument kinds: ``
+- Seen firing 7 times (0 in combat); argument kinds: ``
 
 ### RECENT_ALLIES_DATA_READY
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### RECENT_ALLIES_SYSTEM_STATUS_UPDATED
 

@@ -583,7 +583,7 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified
 - Payload: `category: number`, `partyGUID: WOWGUID`
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: `n,s`
+- Seen firing 5 times (0 in combat); argument kinds: `n,s`
 
 ### GROUP_INVITE_CONFIRMATION
 
@@ -596,21 +596,21 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified
 - Payload: `category: number`, `partyGUID: WOWGUID`
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: `n,s`
+- Seen firing 5 times (0 in combat); argument kinds: `n,s`
 
 ### GROUP_LEFT
 
 - Status: ✅ verified
 - Payload: `category: number`, `partyGUID: WOWGUID`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `n,s`
+- Seen firing 2 times (0 in combat); argument kinds: `n,s`
 
 ### GROUP_ROSTER_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 31 times (4 in combat); argument kinds: ``
+- Seen firing 62 times (4 in combat); argument kinds: ``
 
 ### INSTANCE_ABANDON_VOTE_FINISHED
 
@@ -647,7 +647,7 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 4 times (0 in combat); argument kinds: ``
 
 ### INVITE_TO_PARTY_CONFIRMATION
 
@@ -685,49 +685,49 @@ Namespace: `C_PartyInfo`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 5 times (0 in combat); argument kinds: ``
 
 ### PARTY_LFG_RESTRICTED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 5 times (0 in combat); argument kinds: ``
 
 ### PARTY_LOOT_METHOD_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 5 times (0 in combat); argument kinds: ``
 
 ### PARTY_MEMBER_DISABLE
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (0 in combat); argument kinds: `s`
+- Seen firing 16 times (0 in combat); argument kinds: `s`
 
 ### PARTY_MEMBER_ENABLE
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 13 times (0 in combat); argument kinds: `s`
+- Seen firing 31 times (0 in combat); argument kinds: `s`
 
 ### PLAYER_DIFFICULTY_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 54 times (3 in combat); argument kinds: ``
+- Seen firing 95 times (3 in combat); argument kinds: ``
 
 ### PLAYER_ROLES_ASSIGNED
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 31 times (4 in combat); argument kinds: ``
+- Seen firing 62 times (4 in combat); argument kinds: ``
 
 ### RAID_ROSTER_UPDATE
 

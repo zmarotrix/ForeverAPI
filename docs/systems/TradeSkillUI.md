@@ -1293,7 +1293,7 @@ Namespace: `C_TradeSkillUI`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 18 times (0 in combat); argument kinds: ``
+- Seen firing 27 times (0 in combat); argument kinds: ``
 
 ### TRADE_SKILL_CRAFTING_REAGENT_BONUS_TEXT_UPDATED
 

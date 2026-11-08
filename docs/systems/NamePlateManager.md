@@ -80,14 +80,14 @@ Namespace: `C_NamePlateManager`
 - Status: ✅ verified
 - Payload: `namePlateFrame: NamePlateFrame`
 - fires synchronously (Blizzard's docs)
-- Seen firing 36 times (2 in combat); argument kinds: `t`
+- Seen firing 67 times (15 in combat); argument kinds: `t`
 
 ### NAME_PLATE_UNIT_ADDED
 
 - Status: ✅ verified
 - Payload: `unitToken: UnitTokenType`
 - fires synchronously (Blizzard's docs)
-- Seen firing 262 times (46 in combat); argument kinds: `s`
+- Seen firing 1099 times (570 in combat); argument kinds: `s`
 
 ### NAME_PLATE_UNIT_BEHIND_CAMERA_CHANGED
 
@@ -100,4 +100,4 @@ Namespace: `C_NamePlateManager`
 - Status: ✅ verified
 - Payload: `unitToken: UnitTokenType`
 - fires synchronously (Blizzard's docs)
-- Seen firing 262 times (57 in combat); argument kinds: `s`
+- Seen firing 1099 times (642 in combat); argument kinds: `s`

@@ -302,20 +302,27 @@ def widget_plan(docs, dump_widgets):
             if not fnames or len(fnames & set(methods)) < 0.8 * len(fnames):
                 continue
             for name, f in sorted(obj["functions"].items()):
-                if not name.startswith("Set") or name in seen or name not in methods:
-                    continue
-                req = [a for a in f["args"] if not a.get("Nilable")]  # defaulted args still take a value
-                if not req or any(a.get("Type") not in FILLER for a in req):
+                # one test per documented method: StatusBar:SetValue and Slider:SetValue are different methods
+                if not name.startswith("Set") or (sysname, name) in seen or name not in methods:
                     continue
                 kinds, placed = [], False
-                for a in req:
+                for a in f["args"]:
                     if not placed and a.get("Type") in SECRET_SLOT:
                         kinds.append(SECRET_SLOT[a["Type"]])
                         placed = True
-                    else:
+                    elif a.get("Type") in FILLER and not a.get("Nilable"):
                         kinds.append(FILLER[a["Type"]])
+                    elif a.get("Nilable") or "Default" in a:
+                        kinds.append("nil")  # optional or defaulted: let the default apply
+                    else:
+                        kinds = None
+                        break
+                if not kinds:
+                    continue
+                while kinds and kinds[-1] == "nil":
+                    kinds.pop()
                 if placed:
-                    seen.add(name)
+                    seen.add((sysname, name))
                     plan.append((wtype, name, kinds))
     # the ones add-ons reach for first, which take text rather than numbers
     for wtype, name, kinds in TEXT_SETTERS:

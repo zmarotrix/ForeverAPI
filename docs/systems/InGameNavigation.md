@@ -91,14 +91,14 @@ Namespace: `C_Navigation`
 - Status: ✅ verified
 - Payload: `region: ScriptRegion`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `t`
+- Seen firing 3 times (0 in combat); argument kinds: `t`
 
 ### NAVIGATION_FRAME_DESTROYED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 18 times (0 in combat); argument kinds: ``
+- Seen firing 27 times (0 in combat); argument kinds: ``
 
 ## Types
 

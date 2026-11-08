@@ -256,7 +256,7 @@ Namespace: `C_Minimap`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 24 times (0 in combat); argument kinds: ``
+- Seen firing 46 times (0 in combat); argument kinds: ``
 
 ### PLAYER_INSIDE_QUEST_BLOB_STATE_CHANGED
 

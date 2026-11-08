@@ -49,19 +49,21 @@ Namespace: `C_TaxiMap`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 18 times (0 in combat); argument kinds: ``
+- Seen firing 29 times (0 in combat); argument kinds: ``
 
 ### TAXIMAP_OPENED
 
 - Status: ✅ verified
 - Payload: `system: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `n`
 
 ### TAXI_NODE_STATUS_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ## Types
 

@@ -56,7 +56,7 @@ Namespace: `C_Macro`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 24 times (0 in combat); argument kinds: ``
+- Seen firing 34 times (0 in combat); argument kinds: ``
 
 ## Types
 

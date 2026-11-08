@@ -1,16 +1,16 @@
 # WoW Forever add-on API
 
-Generated 2026-11-07 20:48 by `tools/apidoc.py build`. Do not edit by hand.
+Generated 2026-11-07 21:00 by `tools/apidoc.py build`. Do not edit by hand.
 
 - Client docs: Blizzard_APIDocumentationGenerated from client 1.60.1.70862
-- Game dump: ApiProbe 0.2.1 on 1.60.1.70862 (interface 16001), enUS
+- Game dump: ApiProbe 0.2.2 on 1.60.1.70862 (interface 16001), enUS
 
 Statuses: ✅ verified; 🆕 in game, not in Blizzard's docs; ⛔ in Blizzard's docs, not in game; ❔ unverified
 
 | | Functions | Events | Enums and constants |
 |---|---|---|---|
 | ✅ verified | 5066 | 1807 | 948 |
-| 🆕 in game, not in Blizzard's docs | 5960 | 126 | 1034 |
+| 🆕 in game, not in Blizzard's docs | 5919 | 126 | 1034 |
 | ⛔ in Blizzard's docs, not in game | 78 | 136 | 18 |
 | ❔ unverified | 0 | 0 | 0 |
 
@@ -611,19 +611,20 @@ Globals written by add-ons when the dump ran (not API):
 - CouncilProbe: 2
 - Dimension: 12
 - ForeverAutoQuest: 5
-- ForeverDungeonJournal: 23
+- ForeverDungeonJournal: 22
 - Guise: 14
 - Mercy: 7
 - Muster: 6
 - NKThreat: 44
 - NorgannonDB: 1
 - NorgannonDBCollector: 5
-- NorgannonDB_Core: 150
-- Oracle: 10
+- NorgannonDB_Core: 151
+- Oracle: 8
 - RecruitProbe: 2
 - Retrospect: 9
 - RoleplayProbe: 2
 - Scrap: 7
+- Scrap_Config: 1
 - SpeedyAutoLoot: 4
 - TurnIn: 5
 - WhatsTraining: 19

@@ -824,7 +824,7 @@ Namespace: `C_Calendar`
 - Status: ✅ verified
 - Payload: `pending: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 18 times (0 in combat); argument kinds: `b`
+- Seen firing 28 times (0 in combat); argument kinds: `b`
 
 ### CALENDAR_CLOSE_EVENT
 
@@ -880,6 +880,7 @@ Namespace: `C_Calendar`
 - Payload: none
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### CALENDAR_UPDATE_GUILD_EVENTS
 
@@ -898,6 +899,7 @@ Namespace: `C_Calendar`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ## Types
 

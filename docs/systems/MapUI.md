@@ -441,20 +441,21 @@ Namespace: `C_Map`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 36 times (0 in combat); argument kinds: ``
+- Seen firing 72 times (5 in combat); argument kinds: ``
 
 ### PLAYER_MAP_CHANGED
 
 - Status: ✅ verified
 - Payload: `oldMapID: number`, `newMapID: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 6 times (0 in combat); argument kinds: `n,n`
+- Seen firing 11 times (0 in combat); argument kinds: `n,n`
 
 ### USER_WAYPOINT_UPDATED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### WORLD_MAP_OPEN
 
@@ -467,21 +468,21 @@ Namespace: `C_Map`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 9 times (4 in combat); argument kinds: ``
+- Seen firing 43 times (4 in combat); argument kinds: ``
 
 ### ZONE_CHANGED_INDOORS
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 6 times (0 in combat); argument kinds: ``
+- Seen firing 26 times (3 in combat); argument kinds: ``
 
 ### ZONE_CHANGED_NEW_AREA
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (0 in combat); argument kinds: ``
+- Seen firing 17 times (0 in combat); argument kinds: ``
 
 ## Types
 

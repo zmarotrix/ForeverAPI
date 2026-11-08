@@ -104,7 +104,7 @@ Namespace: `C_AreaPoiInfo`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 60 times (4 in combat); argument kinds: ``
+- Seen firing 175 times (12 in combat); argument kinds: ``
 
 ## Types
 

@@ -110,7 +110,7 @@ Namespace: `C_DeathInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (0 in combat); argument kinds: ``
+- Seen firing 13 times (0 in combat); argument kinds: ``
 
 ### PLAYER_DEAD
 
@@ -135,7 +135,7 @@ Namespace: `C_DeathInfo`
 - Status: ✅ verified
 - Payload: `isGossipTriggered: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (0 in combat); argument kinds: `b`
+- Seen firing 17 times (0 in combat); argument kinds: `b`
 
 ### RESURRECT_REQUEST
 

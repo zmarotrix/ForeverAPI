@@ -86,7 +86,7 @@ Namespace: `C_PlayerChoice`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 9 times (0 in combat); argument kinds: ``
+- Seen firing 19 times (0 in combat); argument kinds: ``
 
 ## Types
 

@@ -13,7 +13,7 @@
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### PETITION_CLOSED
 
@@ -38,13 +38,14 @@
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 15 times (6 in combat); argument kinds: ``
 
 ### QUICK_TICKET_THROTTLE_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 9 times (3 in combat); argument kinds: ``
 
 ### UPDATE_WEB_TICKET
 

@@ -82,6 +82,16 @@ window.GUIDES = [
     "<p>Forever runs on Blizzard's newer client, which hides some combat information from add-ons. Instead of a number or a string, a getter hands back a <b>secret value</b>.</p>" +
     "<p>Your code can hold a secret and pass it on, but not look inside it. Comparing it, doing arithmetic on it, turning it into text or joining it to a string raises an error. <code>issecretvalue(v)</code> tells you whether a value is secret, and is the only safe test.</p>" +
     "<p>Some widget methods accept secrets and draw them for you, so a health bar can still show health. <a href=\"#/secrets\">Secrets in widgets</a> lists which ones this client accepts, as tested by the API widgets add-on.</p>" +
+    "<p>What API widgets saw on Forever (add-on code, out of combat):</p><ul>" +
+    "<li><b>Allowed on a secret:</b> <code>issecretvalue</code>, <code>type</code> (says \"number\"), <code>select</code>, storing it in a table as a value, " +
+    "<code>tostring</code>, <code>tonumber</code>, <code>..</code> and <code>string.format</code>: those give back another secret.</li>" +
+    "<li><b>Refused:</b> arithmetic, comparing (even <code>s == s</code>), <code>math.floor</code> / <code>math.max</code>, <code>not</code>, <code>if b then</code>, " +
+    "and using it as a table key. The error names the add-on whose code tainted the call.</li>" +
+    "<li><b>Widgets that draw a secret for you:</b> <code>FontString:SetText</code> and <code>SetFormattedText</code>, <code>GameTooltip:AddLine</code> / <code>SetText</code>, " +
+    "<code>SetAlpha</code>, <code>SetAlphaFromBoolean</code>, <code>SetVertexColor</code>, <code>SetColorTexture</code>, <code>SetTexCoord</code>, <code>SetRotation</code>, " +
+    "<code>SetDesaturation</code>, <code>SetRadialProgressBarPercent</code>, <code>StatusBar:SetStatusBarColor</code>, cooldown colours. See <a href=\"#/secrets\">the full list</a>.</li>" +
+    "<li><b>Widgets that refuse one</b> (\"only allowed during untainted execution\"): sizes and scale (<code>SetWidth</code>, <code>SetHeight</code>, <code>SetScale</code>), " +
+    "<code>EditBox:SetText</code>, <code>Cooldown:SetCooldown</code>, <code>Slider:SetValue</code>, animation timings.</li></ul>" +
     "<p>What the probe saw on Forever:</p><ul>" +
     "<li><a href=\"#/restrictions\">Always secret</a>, even out of combat: <a href=\"#/fn/UnitHealth\">UnitHealth</a>, UnitHealthMissing, UnitHealthPercent, UnitGetIncomingHeals, UnitGetTotalAbsorbs, UnitInRange and others.</li>" +
     "<li>Secret only in combat: character stats such as <a href=\"#/fn/GetCritChance\">GetCritChance</a>, GetHaste, GetMastery, UnitArmor, UnitAttackPower, UnitDamage, GetUnitSpeed.</li>" +

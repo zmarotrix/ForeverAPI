@@ -8,7 +8,7 @@
 -- Stores ok or the error text for each, never a value.
 
 local ADDON = ...
-local VERSION = "0.1.0"
+local VERSION = "0.1.1"
 local PER_FRAME = 15
 
 ApiWidgetsDB = ApiWidgetsDB or {}
@@ -121,8 +121,12 @@ end
 local function args(kinds, sec, plainRun)
   local vals = {}
   for i, k in ipairs(kinds) do
-    if k == "Sn" then vals[i] = plainRun and 1 or sec.number
-    elseif k == "Sb" then vals[i] = plainRun and false or sec.boolean
+    -- (not "plainRun and false or secret": false would fall through to the secret)
+    if k == "Sn" then
+      if plainRun then vals[i] = 1 else vals[i] = sec.number end
+    elseif k == "Sb" then
+      if plainRun then vals[i] = false else vals[i] = sec.boolean end
+    elseif k == "nil" then vals[i] = nil
     elseif k:sub(1, 2) == "n:" then vals[i] = tonumber(k:sub(3))
     elseif k == "b:false" then vals[i] = false
     elseif k:sub(1, 2) == "s:" then vals[i] = k:sub(3)

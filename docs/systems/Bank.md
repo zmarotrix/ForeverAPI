@@ -299,7 +299,7 @@ Namespace: `C_Bank`
 - Status: ✅ verified
 - Payload: `slot: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 7 times (0 in combat); argument kinds: `n`
+- Seen firing 12 times (0 in combat); argument kinds: `n`
 
 ### PLAYER_ACCOUNT_BANK_TAB_SLOTS_CHANGED
 
