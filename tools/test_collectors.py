@@ -44,6 +44,8 @@ local m = getmetatable(CreateFrame("Frame")).__index
 function m:SetFontObject() end
 function m:SetValue(v) if issecretvalue(v) then error("SetValue: secret values are not allowed") end end
 function m:SetAlphaFromBoolean(b) end
+function m:SetScale() if COMBAT then Fire("ADDON_ACTION_BLOCKED", "ApiWidgets", "UNKNOWN()") end end
+function m:SetToplevel() if COMBAT then Fire("ADDON_ACTION_BLOCKED", "ApiWidgets", "UNKNOWN()") end end
 function m:SetShown(b) if issecretvalue(b) then error("SetShown: no secrets") end end
 function m:SetText(t) if issecretvalue(t) then error("SetText: can't take a secret") end end
 function m:SetWidth(w) end
@@ -59,7 +61,8 @@ ApiProbeLeads = { build = "1.60.1.70862", events = {},
 }
 ApiWidgetsPlan = { build = "1.60.1.70862", setters = {
   { "StatusBar", "SetValue", { "Sn" } }, { "Texture", "SetAlphaFromBoolean", { "Sb" } },
-  { "FontString", "SetText", { "Sn" } }, { "Frame", "SetWidth", { "Sn" } }, { "Frame", "SetShown", { "Sb" } } } }
+  { "FontString", "SetText", { "Sn" } }, { "Frame", "SetWidth", { "Sn" } }, { "Frame", "SetShown", { "Sb" } }, { "Frame", "SetScale", { "Sn" }, "protected" },
+  { "Frame", "SetToplevel", { "Sb" } } } }
 """
 
 passed = failed = 0
@@ -166,6 +169,12 @@ def main():
     check("widgets: secret refused by SetValue", "not allowed" in str(o["setters"]["StatusBar:SetValue"].get("secret")), o["setters"]["StatusBar:SetValue"])
     check("widgets: plain control ok", o["setters"]["StatusBar:SetValue"].get("plain") == "ok")
     check("widgets: true/false control call is plain", o["setters"]["Frame:SetShown"].get("plain") == "ok" and "no secrets" in str(o["setters"]["Frame:SetShown"].get("secret")), o["setters"].get("Frame:SetShown"))
+    cs = c.get("setters", {})
+    check("widgets: protected setter skipped in combat", "protected in combat" in str(cs.get("Frame:SetScale", {}).get("plain")), cs.get("Frame:SetScale"))
+    check("widgets: protected setter still tried out of combat", o["setters"]["Frame:SetScale"].get("plain") == "ok")
+    check("widgets: a block the docs missed is recorded", cs.get("Frame:SetToplevel", {}).get("blocked") == "blocked", cs.get("Frame:SetToplevel"))
+    wdb = parse_assignments(svs["ApiWidgetsDB"])["ApiWidgetsDB"]
+    check("widgets: and never made again", wdb.get("skip", {}).get("Frame:SetToplevel") == "blocked in combat", wdb.get("skip"))
     check("widgets: secret boolean accepted", o["setters"]["Texture:SetAlphaFromBoolean"].get("secret") == "ok")
     check("widgets: arithmetic on a secret errors in the stub", o["ops"]["s + 1"] != "ok")
 

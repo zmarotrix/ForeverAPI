@@ -8,7 +8,7 @@
 -- Stores ok or the error text for each, never a value.
 
 local ADDON = ...
-local VERSION = "0.1.1"
+local VERSION = "0.1.2"
 local PER_FRAME = 15
 
 ApiWidgetsDB = ApiWidgetsDB or {}
@@ -139,7 +139,7 @@ end
 -- Runs
 -------------------------------------------------------------------------------------------
 
-local job
+local job, currentCall, blockedHit
 
 local function start(phase)
   if job then return end
@@ -164,14 +164,22 @@ local function step()
     local callKey = entry[1] .. ":" .. entry[2]
     local obj = object(entry[1])
     local rec
-    if not obj then
+    local skip = db.skip[callKey]
+    if skip then
+      rec = { plain = "skipped: " .. skip .. " when tried before" }
+    elseif entry[4] == "protected" and inCombat() then
+      -- pcall doesn't stop ADDON_ACTION_BLOCKED: the client still blames the add-on (and may show a popup)
+      rec = { plain = "skipped: protected in combat (Blizzard's docs)" }
+    elseif not obj then
       rec = { plain = "no " .. entry[1] .. " object" }
     elseif type(obj[entry[2]]) ~= "function" then
       rec = { plain = "no such method" }
     else
       local fn = obj[entry[2]]
       local pv, pn = args(entry[3], sec, true)
+      currentCall, blockedHit = callKey, nil
       rec = { plain = result(pcall(fn, obj, unpack(pv, 1, pn))) }
+      currentCall = nil
       local needs = false
       for _, k in ipairs(entry[3]) do
         if (k == "Sn" and sec.number == nil) or (k == "Sb" and sec.boolean == nil) then needs = true end
@@ -179,9 +187,14 @@ local function step()
       if needs then
         rec.secret = "no secret of that kind available"
       else
-        local sv, sn = args(entry[3], sec, false)
-        rec.secret = result(pcall(fn, obj, unpack(sv, 1, sn)))
+        if not blockedHit then
+          local sv, sn = args(entry[3], sec, false)
+          currentCall = callKey
+          rec.secret = result(pcall(fn, obj, unpack(sv, 1, sn)))
+          currentCall = nil
+        end
       end
+      if blockedHit then rec.blocked = blockedHit end
     end
     run.setters[callKey] = rec
   end
@@ -199,8 +212,16 @@ frame:SetScript("OnEvent", function(_, event, a1)
   if event == "ADDON_LOADED" and a1 == ADDON then
     db = ApiWidgetsDB
     if db.build ~= buildKey() or db.probe ~= VERSION or db.plan ~= plan.build then
-      ApiWidgetsDB = { build = buildKey(), probe = VERSION, plan = plan.build, runs = {} }
+      local skip = db.build == buildKey() and db.skip or nil
+      ApiWidgetsDB = { build = buildKey(), probe = VERSION, plan = plan.build, runs = {}, skip = skip }
       db = ApiWidgetsDB
+    end
+    db.skip = db.skip or {}
+  elseif event == "ADDON_ACTION_BLOCKED" or event == "ADDON_ACTION_FORBIDDEN" then
+    -- fires inside the call: name it, and never make that call again
+    if a1 == ADDON and currentCall and db then
+      blockedHit = event == "ADDON_ACTION_FORBIDDEN" and "forbidden" or "blocked"
+      db.skip[currentCall] = blockedHit .. (inCombat() and " in combat" or "")
     end
   elseif event == "PLAYER_LOGIN" then
     if not (db.runs.outside and db.runs.outside.done) then
@@ -216,6 +237,8 @@ end)
 frame:RegisterEvent("ADDON_LOADED")
 frame:RegisterEvent("PLAYER_LOGIN")
 frame:RegisterEvent("PLAYER_REGEN_DISABLED")
+frame:RegisterEvent("ADDON_ACTION_BLOCKED")
+frame:RegisterEvent("ADDON_ACTION_FORBIDDEN")
 
 SLASH_APIWIDGETS1 = "/apiwidgets"
 SlashCmdList.APIWIDGETS = function(msg)

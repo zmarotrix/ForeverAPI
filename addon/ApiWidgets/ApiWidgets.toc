@@ -3,7 +3,7 @@
 ## Category: Probes
 ## Notes: Background collector for ForeverAPI. Once per client build, tests what add-on code can do with a secret value: Lua operations and widget setters, out of combat and in your first fight. Stores only ok / error. /apiwidgets
 ## Author: Maro
-## Version: 0.1.1
+## Version: 0.1.2
 ## X-License: All Rights Reserved
 ## SavedVariables: ApiWidgetsDB
 

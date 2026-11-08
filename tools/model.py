@@ -323,11 +323,13 @@ def widget_plan(docs, dump_widgets):
                     kinds.pop()
                 if placed:
                     seen.add((sysname, name))
-                    plan.append((wtype, name, kinds))
+                    # Blizzard marks these protected or restricted: blocked for add-ons in combat
+                    flags = f.get("flags") or {}
+                    plan.append((wtype, name, kinds, bool(flags.get("IsProtectedFunction") or flags.get("HasRestrictions"))))
     # the ones add-ons reach for first, which take text rather than numbers
     for wtype, name, kinds in TEXT_SETTERS:
         if name in (((dump_widgets or {}).get(wtype) or {}).get("methods") or {}) and (wtype, name) not in {(p[0], p[1]) for p in plan}:
-            plan.append((wtype, name, kinds))
+            plan.append((wtype, name, kinds, name == "SetCooldown"))
     return plan
 
 
