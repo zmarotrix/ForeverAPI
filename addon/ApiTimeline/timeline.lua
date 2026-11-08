@@ -7,7 +7,7 @@
 -- argument is a unit token such as "player" or "target", that token. Never any other argument value.
 
 local ADDON = ...
-local VERSION = "0.1.0"
+local VERSION = "0.2.0"
 local BEFORE = 1.0        -- seconds kept before a trigger
 local AFTER = 4.0         -- seconds recorded after it
 local MAX_EVENTS = 250    -- per trace
@@ -43,7 +43,9 @@ local UNIT_PREFIX = { player = true, target = true, focus = true, mouseover = tr
   party = true, raid = true, nameplate = true, boss = true, arena = true, partypet = true, raidpet = true }
 
 local ring, ringNext = {}, 1
-local capture -- { kind, t0, events }
+local captures = {} -- open traces: { kind, t0, events }, several can overlap
+local open = {}     -- kind -> its open trace
+local inGroup      -- last known IsInGroup(), for joined/left without relying on GROUP_JOINED
 
 local function kinds(...)
   local n = select("#", ...)
@@ -71,9 +73,8 @@ end
 
 local function now() return GetTimePreciseSec and GetTimePreciseSec() or GetTime() end
 
-local function finish()
-  local c = capture
-  capture = nil
+local function finish(c)
+  open[c.kind] = nil
   local list = db.traces[c.kind] or {}
   db.traces[c.kind] = list
   list[#list + 1] = { at = GetServerTime(), zoneType = c.zoneType, events = c.events, truncated = c.truncated }
@@ -82,23 +83,33 @@ end
 local function onEvent(event, ...)
   local t = now()
   local entry = { t, event, kinds(...), unitOf((...)) }
-  if capture then
-    if t - capture.t0 > AFTER then
-      finish()
-    elseif #capture.events < MAX_EVENTS then
-      capture.events[#capture.events + 1] = { math.floor((t - capture.t0) * 1000 + 0.5), event, entry[3], entry[4] }
+  for i = #captures, 1, -1 do
+    local c = captures[i]
+    if t - c.t0 > AFTER then
+      table.remove(captures, i)
+      finish(c)
+    elseif #c.events < MAX_EVENTS then
+      c.events[#c.events + 1] = { math.floor((t - c.t0) * 1000 + 0.5), event, entry[3], entry[4] }
     else
-      capture.truncated = true
+      c.truncated = true
     end
   end
   ring[ringNext] = entry
   ringNext = ringNext % RING + 1
 
   local trig = TRIGGERS[event]
-  if trig and not capture then
+  -- joining or leaving a group, seen from the roster itself (GROUP_JOINED doesn't fire for every way in)
+  if event == "GROUP_ROSTER_UPDATE" or event == "PLAYER_ENTERING_WORLD" then
+    local now_in = IsInGroup() and true or false
+    if event == "GROUP_ROSTER_UPDATE" and inGroup ~= nil and now_in ~= inGroup then
+      trig = now_in and "group joined" or "group left"
+    end
+    inGroup = now_in
+  end
+  if trig then
     if event == "UNIT_SPELLCAST_START" and (...) ~= "player" then trig = nil end
     local kind = type(trig) == "function" and trig(...) or trig
-    if kind and #(db.traces[kind] or {}) < KEEP then
+    if kind and not open[kind] and #(db.traces[kind] or {}) < KEEP then
       local events = {}
       -- the second before: walk the ring buffer oldest first
       for i = 0, RING - 1 do
@@ -109,7 +120,9 @@ local function onEvent(event, ...)
       end
       events[#events + 1] = { 0, event, entry[3], entry[4], trigger = true }
       local _, zoneType = IsInInstance()
-      capture = { kind = kind, t0 = t, events = events, zoneType = zoneType }
+      local c = { kind = kind, t0 = t, events = events, zoneType = zoneType }
+      captures[#captures + 1] = c
+      open[kind] = c
     end
   end
 end
@@ -118,16 +131,20 @@ local frame = CreateFrame("Frame")
 frame:SetScript("OnEvent", function(_, event, ...)
   if event == "ADDON_LOADED" and ... == ADDON then
     db = ApiTimelineDB
-    if db.build ~= buildKey() or db.probe ~= VERSION then
+    if db.build ~= buildKey() or not db.traces then -- a new add-on version keeps what it recorded
       ApiTimelineDB = { build = buildKey(), probe = VERSION, traces = {} }
       db = ApiTimelineDB
     end
+    db.probe = VERSION
   end
   if db then onEvent(event, ...) end
 end)
 -- an open capture also closes on a quiet timer, so a trace ends even when nothing else fires
 frame:SetScript("OnUpdate", function()
-  if capture and now() - capture.t0 > AFTER then finish() end
+  local t = now()
+  for i = #captures, 1, -1 do
+    if t - captures[i].t0 > AFTER then finish(table.remove(captures, i)) end
+  end
 end)
 frame:RegisterAllEvents()
 
