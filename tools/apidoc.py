@@ -3,7 +3,7 @@
     python tools/apidoc.py extract     read Blizzard's docs and UI code out of the client, write leads.lua for the probe
     python tools/apidoc.py deploy      copy addon/ApiProbe into the game's AddOns folder
     python tools/apidoc.py import      read the probe's SavedVariables into dumps/<build>/<time>.json
-    python tools/apidoc.py build       merge client docs + latest dump + web leads into docs/
+    python tools/apidoc.py build       merge client docs + latest dump + web leads into docs/ and the website site/
     python tools/apidoc.py diff A B    compare two dumps (or two client-doc extracts), write docs/changes/
     python tools/apidoc.py all         extract, import (if there's a dump), build
 
@@ -26,6 +26,7 @@ import clientdocs  # noqa: E402
 import diff as differ  # noqa: E402
 import model  # noqa: E402
 import render  # noqa: E402
+import website  # noqa: E402
 from luatable import parse_assignments  # noqa: E402
 
 ROOT = os.path.dirname(HERE)
@@ -36,6 +37,7 @@ CLIENT_DIR = os.path.join(ROOT, "sources", "client-docs")
 WEB_DIR = os.path.join(ROOT, "sources", "web")
 DUMPS = os.path.join(ROOT, "dumps")
 DOCS = os.path.join(ROOT, "docs")
+SITE = os.path.join(ROOT, "site")
 
 
 def _rel(p):
@@ -221,6 +223,8 @@ def cmd_build():
     m = model.build(client, dump, web, framexml)
     stamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
     render.render(m, DOCS, stamp)
+    page = website.write(m, SITE, stamp)
+    print("website: %s" % page)
     print("docs written to %s (client %s, dump %s)" % (_rel(DOCS), client["version"],
                                                        _rel(dump_path) if dump_path else "none"))
 

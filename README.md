@@ -32,7 +32,16 @@ sources/client-docs/  docs and UI-code leads per client build (gzipped JSON)
 sources/web/          web leads you add by hand (format below)
 dumps/<build>/        each imported in-game dump (gzipped JSON); diffs compare these
 docs/                 the generated docs: index.md, systems/, events.md, enums.md, widgets/, cvars.md, api.json
+site/                 the generated website (open site/index.html; source in tools/site_src/)
 ```
+
+## Website
+
+`build` also writes `site/`: open `site/index.html` straight from disk in any browser (no server needed). It has a
+search box (press `/`), a page per system with every function's signature, Blizzard's flags and what the game
+returned out of and in combat, plus events (filter by seen firing or protected), enums and structures, widgets with
+their methods, undocumented globals, CVars and a restrictions page. Type names in signatures link to their
+definitions. The page source lives in `tools/site_src/`; `tools/website.py` writes the data file.
 
 ## Use
 
