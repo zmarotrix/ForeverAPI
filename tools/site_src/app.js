@@ -504,6 +504,105 @@
     main.innerHTML = h;
   }
 
+  // ------------------------------------------------------------ background collectors
+  function shapeOf(r) {
+    if (!r) return "—";
+    if (r.skipped) return "skipped";
+    if (r.forbidden) return "refused";
+    if (r.missing) return "missing";
+    if (r.error != null) return "error";
+    var rets = r.returns || [];
+    if (rets.length && rets.every(function (v) { return /^secret/.test(v); })) return "secret";
+    if (rets.some(function (v) { return /^secret/.test(v); })) return "partly secret";
+    return "plain";
+  }
+  function waiting(what) {
+    return '<div class="callout">Nothing yet. ' + what + " Import with <code>python tools/apidoc.py import</code> then <code>build</code>.</div>";
+  }
+
+  function viewSituations() {
+    var w = A.watch;
+    var h = "<h1>Situations</h1><p class=\"lede\">Collected in the background by the API watch add-on. The first time it sees a situation it calls the no-argument getters; the first time it sees a kind of unit there, the unit getters. Rows show only what differs from the probe's baseline: the same getter on <code>\"player\"</code>, out of combat in the open world.</p>";
+    if (!w) { main.innerHTML = h + waiting("Play with API watch enabled: a dungeon, a boss, a group, some targets."); return; }
+    var tr = w.transitions || [];
+    h += "<h2>Restriction switches <span class=\"muted\">(" + tr.length + ')</span></h2><p class="muted">Every time <code>C_RestrictedActions.IsAddOnRestrictionActive</code> changed, and where you were.</p>';
+    h += '<div class="tablewrap"><table><tr><th>When</th><th>Situation</th><th>Active restrictions</th><th>After event</th></tr>' + tr.map(function (t) {
+      return "<tr><td>" + esc(new Date(t.at * 1000).toLocaleString()) + '</td><td class="mono">' + esc(t.situation) + '</td><td class="mono">' + esc(t.on) + '</td><td class="mono">' + esc(t.reason) + "</td></tr>";
+    }).join("") + "</table></div>";
+    keys(w.situations).sort(sortStr).forEach(function (sit) {
+      h += "<h2>" + esc(sit) + "</h2>";
+      var runs = w.situations[sit];
+      keys(runs).sort(sortStr).forEach(function (label) {
+        var r = runs[label], res = r.res || {}, ks = keys(res);
+        var changed = ks.filter(function (k) {
+          var base = A.F[k] && A.F[k].o;
+          var a = shapeOf(base), b = shapeOf(res[k]);
+          if (label === "getters") return base && a !== b && b !== "skipped";
+          return b !== "skipped" && (b === "secret" || b === "partly secret" || b === "error" || b === "refused") && a !== b;
+        }).sort(sortStr);
+        h += "<details" + (changed.length ? " open" : "") + "><summary><b>" + esc(label) + "</b>" + (r.token ? " <code>" + esc(r.token) + "</code>" : "") + " · " + ks.length + " calls · " +
+          (r.done ? "done" : "partial: " + esc(r.partial || "")) + " · <b>" + changed.length + "</b> differ from the baseline</summary>";
+        if (changed.length) {
+          h += '<div class="tablewrap"><table><tr><th>Function</th><th>Baseline (player, open world)</th><th>Here</th></tr>' + changed.map(function (k) {
+            return '<tr><td class="mono"><a href="#/fn/' + enc(k) + '">' + esc(k) + "</a></td><td>" + callCell(A.F[k] && A.F[k].o, true) + "</td><td>" + callCell(res[k], true) + "</td></tr>";
+          }).join("") + "</table></div>";
+        }
+        h += "</details>";
+      });
+    });
+    main.innerHTML = h;
+  }
+
+  function viewTimelines() {
+    var t = A.timeline;
+    var h = '<h1>Event timelines</h1><p class="lede">Collected in the background by the API timeline add-on: the events that fired in the second before each moment and the four seconds after it, in order. Times are milliseconds from the moment; argument kinds are n number, s string, b boolean, t table, S secret, - nil.</p>';
+    if (!t || !keys(t).length) { main.innerHTML = h + waiting("Play with API timeline enabled; it fills in as you log in, zone, fight, loot, visit vendors and so on."); return; }
+    keys(t).sort(sortStr).forEach(function (kind) {
+      h += "<h2>" + esc(kind) + ' <span class="muted">(' + t[kind].length + " recorded)</span></h2>";
+      t[kind].forEach(function (trace, i) {
+        var evs = trace.events || [];
+        h += "<details" + (i === 0 ? " open" : "") + "><summary>" + esc(new Date(trace.at * 1000).toLocaleString()) + " · " + esc(trace.zoneType || "") + " · " + evs.length + " events" + (trace.truncated ? " (cut short)" : "") + "</summary>";
+        h += '<div class="tablewrap"><table><tr><th>ms</th><th>Event</th><th>Arguments</th><th>Unit</th></tr>' + evs.map(function (e) {
+          return "<tr" + (e[4] ? ' class="trig"' : "") + '><td class="mono">' + esc(e[0]) + '</td><td class="mono">' + (A.E[e[1]] ? '<a href="#/event/' + enc(e[1]) + '">' + esc(e[1]) + "</a>" : esc(e[1])) +
+            '</td><td class="mono">' + esc(e[2] || "") + '</td><td class="mono">' + esc(e[3] || "") + "</td></tr>";
+        }).join("") + "</table></div></details>";
+      });
+    });
+    main.innerHTML = h;
+  }
+
+  function viewSecrets() {
+    var s = A.secrets;
+    var h = '<h1>Secrets in widgets</h1><p class="lede">Tested in the background by the API widgets add-on, once per client build: what add-on code may do with a secret value. The secret comes from <code>UnitHealth("player")</code> (a number) and <code>UnitInRange("player")</code> (true/false), which this client always keeps secret. Each widget setter is called twice on a hidden frame: with plain values as a control, then with the secret.</p>';
+    if (!s || !keys(s).length) { main.innerHTML = h + waiting("Enable API widgets and log in; it runs by itself after 10 seconds, and again in your next fight."); return; }
+    var o = s.outside || {}, c = s.combat || {};
+    function cell(v) {
+      if (v == null) return '<span class="muted">—</span>';
+      if (/^ok/.test(v)) return '<span class="pill s-verified">' + esc(v) + "</span>";
+      return '<span class="err">' + esc(v) + "</span>";
+    }
+    h += '<h2>Lua operations on a secret</h2><div class="tablewrap"><table><tr><th>Operation</th><th>Out of combat</th><th>In combat</th></tr>' +
+      keys(o.ops || {}).map(function (k) { return '<tr><td class="mono">' + esc(k) + "</td><td>" + cell((o.ops || {})[k]) + "</td><td>" + cell((c.ops || {})[k]) + "</td></tr>"; }).join("") + "</table></div>";
+    var setters = keys(o.setters || {}).sort(sortStr);
+    var acc = setters.filter(function (k) { return /^ok/.test(o.setters[k].secret || ""); });
+    h += "<h2>Widget setters <span class=\"muted\">(" + acc.length + " of " + setters.length + ' accept a secret)</span></h2>' + filterBar("sx", [["yes", "accepts a secret"], ["no", "refuses"]]) + '<div id="sxl"></div>';
+    main.innerHTML = h;
+    wireFilter("sx", function (q, f) {
+      var items = setters.filter(function (k) {
+        var r = o.setters[k], ok = /^ok/.test(r.secret || "");
+        return (!q || k.toLowerCase().indexOf(q) >= 0) && (!f || (f === "yes") === ok);
+      });
+      bigList("sxl", items, function (k) {
+        var r = o.setters[k], rc = (c.setters || {})[k] || {};
+        var parts = k.split(":"), wt = parts[0], m = parts[1];
+        var sys = A.W[wt] && A.W[wt].m && A.W[wt].m[m], d = sys && A.O[sys] && A.O[sys][m];
+        var claim = d && d.fl && d.fl.SecretArguments;
+        return '<tr><td class="mono"><a href="#/widget/' + enc(wt) + '">' + esc(wt) + "</a>:" + esc(m) + "</td><td>" + cell(r.plain) + "</td><td>" + cell(r.secret) + "</td><td>" + cell(rc.secret) +
+          '</td><td class="mono muted">' + esc(claim || "") + "</td></tr>";
+      }, "<tr><th>Setter</th><th>Plain control</th><th>Secret, out of combat</th><th>Secret, in combat</th><th>Blizzard's docs say</th></tr>", 400);
+    });
+  }
+
   function viewGuide(id) {
     var g = GUIDES.filter(function (x) { return x.id === id; })[0];
     if (!g) return notFound(id);
@@ -548,6 +647,9 @@
     else if (view === "restrictions") viewRestrictions();
     else if (view === "cvars") viewCVars(arg);
     else if (view === "lua") viewLua();
+    else if (view === "situations") viewSituations();
+    else if (view === "timelines") viewTimelines();
+    else if (view === "secrets") viewSecrets();
     else if (view === "guide") viewGuide(arg);
     else if (view === "glossary") viewGlossary(arg);
     else notFound(location.hash);

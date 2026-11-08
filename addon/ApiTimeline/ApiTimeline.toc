@@ -1,0 +1,10 @@
+## Interface: 16001
+## Title: |cff9ec8ffAPI|r timeline
+## Category: Probes
+## Notes: Background collector for ForeverAPI. Records the order events fire in around everyday moments (login, zoning, combat, boss pulls, loot, vendors, quests, death, level-up, groups). Stores event names and argument kinds only. /apitimeline
+## Author: Maro
+## Version: 0.1.0
+## X-License: All Rights Reserved
+## SavedVariables: ApiTimelineDB
+
+timeline.lua

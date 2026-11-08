@@ -35,3 +35,22 @@ kind of sample is saved, never its value.
 4. `/reload`, then tell me "import".
 
 If the client crashes, don't worry: tell me, and I'll read the crash log, put that call on the skip list and redeploy.
+
+## Background collectors (new add-on folders: restart the game once)
+
+Three more add-ons under **Probes**, all on by default, all quiet. Leave them on while you play normally, and
+`/reload` or log out now and then so their files get written. Then tell me "import".
+
+- **API watch** (`/apiwatch`): the first time it sees a situation (open world, dungeon, raid, battleground; idle, in
+  combat, in a boss fight) it runs the getters there, and the first time it sees a kind of unit (an enemy or friendly
+  target, a party or raid member, a nameplate, a boss) it runs the unit getters on it. It also logs every time
+  add-on restrictions switch on or off. **Most useful: a dungeon run with a group, including the bosses.**
+  It skips everything that crashed the client or that the probe saw refused, so it shouldn't pop up any
+  "blocked" messages; if one does, it remembers and never repeats that call.
+- **API timeline** (`/apitimeline`): records which events fire, in what order, around login, zoning, combat, boss
+  pulls, loot, vendors, mail, bank, quests, death, level-up, groups, trades, flights and casts. Three of each.
+- **API widgets** (`/apiwidgets`): once, 10 seconds after login, tests which widget setters accept a secret value;
+  again in your next fight. Takes a few seconds; nothing shows on screen.
+
+None of them stores names, chat, values or anything about your character: only event names, types, "ok" or error
+text. ApiProbe itself can stay off now unless you want another `/apiprobe calls` run.

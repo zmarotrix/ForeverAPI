@@ -10,7 +10,7 @@ window.GLOSSARY = {
   "luaIndex": ["a position, counting from 1", "Lua lists start at 1, so the first item is index 1."],
   "WOWGUID": ["a unique ID string", "For example Player-6933-0015C614 or Creature-0-...; stable for a player, per spawn for creatures."],
   "UnitToken": ["a unit, such as \"player\" or \"target\"", "Unit tokens name whoever is in that slot right now: player, target, focus, mouseover, pet, party1-4, raid1-40, nameplate1-40, boss1-5, arena1-5, and \"target\" chains like targettarget."],
-  "uiUnit": ["a unit, such as \"player\" or \"target\"", "Same as UnitToken."],
+  "uiUnit": ["a size or position in UI units (a number)", "Not a unit token: widths, heights, offsets and cursor positions use it."],
   "UnitTokenVariant": ["a unit, such as \"player\" or \"target\"", "A unit token; some APIs also accept variants like \"party1pet\"."],
   "UnitTokenType": ["a unit, such as \"player\" or \"target\"", ""],
   "UnitTokenRestrictedForAddOns": ["a unit, such as \"player\"", "A unit token that may be refused to add-on code in restricted situations (combat, encounters)."],
@@ -81,7 +81,7 @@ window.GUIDES = [
   { id: "secrets", title: "Secret values", html:
     "<p>Forever runs on Blizzard's newer client, which hides some combat information from add-ons. Instead of a number or a string, a getter hands back a <b>secret value</b>.</p>" +
     "<p>Your code can hold a secret and pass it on, but not look inside it. Comparing it, doing arithmetic on it, turning it into text or joining it to a string raises an error. <code>issecretvalue(v)</code> tells you whether a value is secret, and is the only safe test.</p>" +
-    "<p>Some widget methods accept secrets and draw them for you, so a health bar can still show health. Blizzard's docs mark which ones; the probe hasn't tested widget methods yet.</p>" +
+    "<p>Some widget methods accept secrets and draw them for you, so a health bar can still show health. <a href=\"#/secrets\">Secrets in widgets</a> lists which ones this client accepts, as tested by the API widgets add-on.</p>" +
     "<p>What the probe saw on Forever:</p><ul>" +
     "<li><a href=\"#/restrictions\">Always secret</a>, even out of combat: <a href=\"#/fn/UnitHealth\">UnitHealth</a>, UnitHealthMissing, UnitHealthPercent, UnitGetIncomingHeals, UnitGetTotalAbsorbs, UnitInRange and others.</li>" +
     "<li>Secret only in combat: character stats such as <a href=\"#/fn/GetCritChance\">GetCritChance</a>, GetHaste, GetMastery, UnitArmor, UnitAttackPower, UnitDamage, GetUnitSpeed.</li>" +

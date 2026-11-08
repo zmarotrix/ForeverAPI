@@ -97,7 +97,21 @@ def compact(model):
         "libs": {lib: sorted(map(str, m)) for lib, m in (model.get("tables") or {}).items()
                  if lib in ("string", "table", "math", "bit", "coroutine", "debug", "os") and isinstance(m, dict)},
         "F": F, "E": E, "T": T, "O": O, "W": W, "C": C,
+        "watch": _watch(model.get("watch")), "timeline": (model.get("timeline") or {}).get("traces"),
+        "secrets": (model.get("secret_tests") or {}).get("runs"),
     }
+
+
+def _watch(w):
+    if not w:
+        return None
+    sits = {}
+    for name, s in (w.get("situations") or {}).items():
+        sits[name] = {label: {k: v for k, v in {"token": r.get("token"), "done": r.get("done"), "partial": r.get("partial"),
+                                                 "res": {key: _call(rec) for key, rec in (r.get("results") or {}).items()}}.items()
+                              if v not in (None, "", {}, [])}
+                      for label, r in (s.get("runs") or {}).items()}
+    return {"situations": sits, "transitions": w.get("transitions") or [], "skip": w.get("skip") or {}}
 
 
 def write(model, out, generated):

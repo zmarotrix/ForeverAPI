@@ -9,7 +9,7 @@ Statuses:
 
 import re
 
-UNIT_TYPES = {"UnitToken", "uiUnit", "UnitTokenRestrictedForAddOns", "UnitTokenVariant", "UnitTokenType"}
+UNIT_TYPES = {"UnitToken", "UnitTokenRestrictedForAddOns", "UnitTokenVariant", "UnitTokenType"}  # not uiUnit: a UI length
 GETTER = re.compile(r"^(Get|Is|Has|Can|Should|Are|Does|Unit|Num)[A-Z0-9]")  # not "Cancel..."
 NEVER = re.compile(r"Reward|Request|Cancel|^UnitSet")
 CONTROL_EVENT = "APIPROBE_NOT_A_REAL_EVENT"
@@ -277,3 +277,53 @@ def _num(v):
     if isinstance(v, float) and v.is_integer():
         v = int(v)
     return str(v)
+
+
+# Widget types worth testing secrets on: the plain UI widgets an add-on draws with (not models, movies or map blobs).
+WIDGET_ORDER = ["Texture", "FontString", "Line", "MaskTexture", "Frame", "StatusBar", "Cooldown", "Slider", "Button",
+                "CheckButton", "EditBox", "ScrollFrame", "ColorSelect", "MessageFrame", "ScrollingMessageFrame",
+                "SimpleHTML", "GameTooltip", "Font", "AnimationGroup", "Animation", "Alpha", "Translation", "Scale",
+                "Rotation", "Path", "FlipBook", "TextureCoordTranslation", "VertexColor", "LineScale", "LineTranslation"]
+SECRET_SLOT = {"number": "Sn", "normalizedValue": "Sn", "SingleColorValue": "Sn", "uiUnit": "Sn", "bool": "Sb"}
+FILLER = {"number": "n:1", "normalizedValue": "n:0.5", "SingleColorValue": "n:1", "uiUnit": "n:10", "bool": "b:false"}
+
+
+def widget_plan(docs, dump_widgets):
+    """[(widget type, method, [arg kinds])]: every documented setter taking only numbers / true-false (plus the odd
+    unit), tested once on the first plain widget type that has it. The first number or bool slot gets the secret."""
+    plan, seen = [], set()
+    for wtype in WIDGET_ORDER:
+        methods = ((dump_widgets or {}).get(wtype) or {}).get("methods") or {}
+        if not methods:
+            continue
+        for sysname, obj in docs["objects"].items():
+            fnames = set(obj["functions"])
+            # most of the doc group must exist on this widget (a few groups document one or two extras)
+            if not fnames or len(fnames & set(methods)) < 0.8 * len(fnames):
+                continue
+            for name, f in sorted(obj["functions"].items()):
+                if not name.startswith("Set") or name in seen or name not in methods:
+                    continue
+                req = [a for a in f["args"] if not a.get("Nilable")]  # defaulted args still take a value
+                if not req or any(a.get("Type") not in FILLER for a in req):
+                    continue
+                kinds, placed = [], False
+                for a in req:
+                    if not placed and a.get("Type") in SECRET_SLOT:
+                        kinds.append(SECRET_SLOT[a["Type"]])
+                        placed = True
+                    else:
+                        kinds.append(FILLER[a["Type"]])
+                if placed:
+                    seen.add(name)
+                    plan.append((wtype, name, kinds))
+    # the ones add-ons reach for first, which take text rather than numbers
+    for wtype, name, kinds in TEXT_SETTERS:
+        if name in (((dump_widgets or {}).get(wtype) or {}).get("methods") or {}) and (wtype, name) not in {(p[0], p[1]) for p in plan}:
+            plan.append((wtype, name, kinds))
+    return plan
+
+
+TEXT_SETTERS = [("FontString", "SetText", ["Sn"]), ("FontString", "SetFormattedText", ["s:%d", "Sn"]),
+                ("EditBox", "SetText", ["Sn"]), ("EditBox", "SetNumber", ["Sn"]), ("GameTooltip", "AddLine", ["Sn"]),
+                ("GameTooltip", "SetText", ["Sn"]), ("Cooldown", "SetCooldown", ["n:0", "Sn"])]

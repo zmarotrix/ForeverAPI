@@ -146,3 +146,8 @@ a.gl { text-decoration: underline dotted; text-underline-offset: 2px; }
 .prose { max-width: 760px; }
 .prose li { margin: 4px 0; }
 @media (max-width: 860px) { .plain { grid-template-columns: 1fr; } }
+
+details { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; margin: 8px 0; }
+details > summary { cursor: pointer; font-size: 14px; }
+details[open] > summary { margin-bottom: 8px; }
+tr.trig td { background: var(--accent-soft); font-weight: 600; }
