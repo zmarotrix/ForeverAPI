@@ -326,7 +326,7 @@ def render(model, out, generated):
               "are leads until a probe call shows them; see [restrictions](restrictions.md) for what the probe saw.", "",
               "## Pages", "", "- [Events](events.md)", "- [Enums and constants](enums.md)", "- [Widgets](widgets.md)",
               "- [Undocumented global functions](globals-undocumented.md)", "- [Restrictions seen in game](restrictions.md)",
-              "- [CVars](cvars.md)", "- [Lua environment](lua.md)", "- [Changes between dumps](changes/)", "",
+              "- [CVars](cvars.md)", "- [Lua environment](lua.md)", "- [Moved from classic](relocated.md)", "- [Reported quirks, checked](checks.md)", "- [Changes between dumps](changes/)", "",
               "## Systems", "", "| System | Namespace | ✅ | 🆕 | ⛔ | ❔ |", "|---|---|---|---|---|---|"]
     for name, p in sorted(pages.items()):
         if name.startswith("_"):

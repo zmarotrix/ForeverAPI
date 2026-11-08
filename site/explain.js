@@ -95,7 +95,13 @@ window.GUIDES = [
     "<p>What the probe saw on Forever:</p><ul>" +
     "<li><a href=\"#/restrictions\">Always secret</a>, even out of combat: <a href=\"#/fn/UnitHealth\">UnitHealth</a>, UnitHealthMissing, UnitHealthPercent, UnitGetIncomingHeals, UnitGetTotalAbsorbs, UnitInRange and others.</li>" +
     "<li>Secret only in combat: character stats such as <a href=\"#/fn/GetCritChance\">GetCritChance</a>, GetHaste, GetMastery, UnitArmor, UnitAttackPower, UnitDamage, GetUnitSpeed.</li>" +
-    "<li>Plain at all times: <a href=\"#/fn/UnitName\">UnitName</a>, <a href=\"#/fn/C_ChatInfo.AreOutgoingAddonChatMessagesRestricted\">C_ChatInfo.AreOutgoingAddonChatMessagesRestricted</a>, GetBuildInfo.</li></ul>" },
+    "<li>Plain at all times: <a href=\"#/fn/UnitName\">UnitName</a>, <a href=\"#/fn/C_ChatInfo.AreOutgoingAddonChatMessagesRestricted\">C_ChatInfo.AreOutgoingAddonChatMessagesRestricted</a>, GetBuildInfo.</li></ul>" +
+    "<p>Reported by testers, being checked by the API checks add-on (answers on <a href=\"#/checks\">Reported quirks</a>):</p><ul>" +
+    "<li><a href=\"#/event/UNIT_SPELLCAST_SENT\">UNIT_SPELLCAST_SENT</a>'s <code>target</code> is secret on a self-cast. Blizzard marks it <code>ConditionalSecret</code>; " +
+    "the probe's event counter saw it secret in most casts. API checks records which kind of cast (no target, yourself, friend, enemy) gives a secret.</li>" +
+    "<li><a href=\"#/fn/UnitIsUnit\">UnitIsUnit</a> against an enemy unit returns a secret answer. Blizzard flags it <code>SecretWhenUnitComparisonRestricted</code>. " +
+    "That breaks the usual \"is this nameplate my target?\" check; API checks tests target, player and enemy nameplates.</li>" +
+    "<li><code>UnitHealth(\"pet\")</code> is secret. UnitHealth was secret for every unit the probe tried; API checks adds the pet, in and out of combat.</li></ul>" },
   { id: "combat", title: "Combat on Forever", html:
     "<p>What changed when the probe ran its getters during a fight in the open world (a boss fight, Mythic+ or PvP may restrict more; not tested yet):</p><ul>" +
     "<li>About 55 stat getters went secret. See <a href=\"#/restrictions\">Restrictions</a>.</li>" +

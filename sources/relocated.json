@@ -1,0 +1,536 @@
+{
+ "_about": "Hand-written entries for the relocated-API table (tools/relocated.py). Only what Blizzard's own transition guide and deprecation shims in the client don't cover. 'old' is the classic 1.15 call, 'new' the Forever replacement(s); the tool checks every name against the in-game dump, so a wrong name here shows up as not-in-game. 'classic' is the classic signature, 'change' how arguments and returns differ, in plain words.",
+ "entries": [
+  {
+   "old": "GetSpellInfo",
+   "new": [
+    "C_Spell.GetSpellInfo"
+   ],
+   "classic": "name, rank, icon, castTime, minRange, maxRange, spellID, originalIcon = GetSpellInfo(spellID | name)",
+   "change": "Returns one SpellInfo table (name, iconID, originalIconID, castTime, minRange, maxRange, spellID) instead of eight values, and no rank. For just the name or icon, C_Spell.GetSpellName / C_Spell.GetSpellTexture are cheaper. Rank text: C_Spell.GetSpellSubtext."
+  },
+  {
+   "old": "GetSpellCooldown",
+   "new": [
+    "C_Spell.GetSpellCooldown"
+   ],
+   "classic": "start, duration, enabled, modRate = GetSpellCooldown(spellID | name)",
+   "change": "Returns one SpellCooldownInfo table (startTime, duration, isEnabled, modRate) instead of four values. The spell book form moved to C_SpellBook.GetSpellBookItemCooldown(index, spellBank)."
+  },
+  {
+   "old": "GetItemInfo",
+   "new": [
+    "C_Item.GetItemInfo"
+   ],
+   "classic": "name, link, quality, itemLevel, minLevel, type, subType, stackCount, equipLoc, texture, sellPrice, classID, subclassID, bindType, expansionID, setID, isCraftingReagent = GetItemInfo(item)",
+   "change": "Same returns in the same order, plus an 18th (itemDescription). Same argument (item ID, name or link). Still returns nothing until the item is cached: wait for ITEM_DATA_LOAD_RESULT / GET_ITEM_INFO_RECEIVED, or use C_Item.GetItemInfoInstant for the fields that need no cache."
+  },
+  {
+   "old": "GetItemInfoInstant",
+   "new": [
+    "C_Item.GetItemInfoInstant"
+   ],
+   "change": "Same arguments and returns."
+  },
+  {
+   "old": "GetItemStats",
+   "new": [
+    "C_Item.GetItemStats"
+   ],
+   "classic": "stats = GetItemStats(itemLink [, statTable])",
+   "change": "Takes only the link; the optional table to fill is gone, it always returns a new table."
+  },
+  {
+   "old": "GetItemCooldown",
+   "new": [
+    "C_Container.GetItemCooldown",
+    "C_Item.GetItemCooldown"
+   ],
+   "classic": "start, duration, enable = GetItemCooldown(itemID)",
+   "change": "C_Container.GetItemCooldown(itemID) is the drop-in: same three returns, enable is still a number. C_Item.GetItemCooldown takes any item (ID, name, link) and returns enable as true/false."
+  },
+  {
+   "old": "GetItemCount",
+   "new": [
+    "C_Item.GetItemCount"
+   ],
+   "change": "Same arguments (item, includeBank, includeUses, includeReagentBank) and return."
+  },
+  {
+   "old": "GetItemIcon",
+   "new": [
+    "C_Item.GetItemIconByID"
+   ],
+   "change": "Same argument and return."
+  },
+  {
+   "old": "GetItemQualityColor",
+   "new": [
+    "C_Item.GetItemQualityColor"
+   ],
+   "change": "Same argument and returns (r, g, b, hex)."
+  },
+  {
+   "old": "IsEquippedItem",
+   "new": [
+    "C_Item.IsEquippedItem"
+   ],
+   "change": "Same argument and return."
+  },
+  {
+   "old": "GetContainerNumSlots",
+   "new": [
+    "C_Container.GetContainerNumSlots"
+   ],
+   "change": "Same argument and return."
+  },
+  {
+   "old": "GetContainerItemInfo",
+   "new": [
+    "C_Container.GetContainerItemInfo"
+   ],
+   "classic": "texture, count, locked, quality, readable, lootable, link, filtered, noValue, itemID, isBound = GetContainerItemInfo(bag, slot)",
+   "change": "Returns one ContainerItemInfo table (iconFileID, stackCount, isLocked, quality, isReadable, hasLoot, hyperlink, isFiltered, hasNoValue, itemID, isBound) instead of eleven values."
+  },
+  {
+   "old": "GetContainerItemLink",
+   "new": [
+    "C_Container.GetContainerItemLink"
+   ],
+   "change": "Same arguments and return."
+  },
+  {
+   "old": "GetContainerItemID",
+   "new": [
+    "C_Container.GetContainerItemID"
+   ],
+   "change": "Same arguments and return."
+  },
+  {
+   "old": "GetContainerNumFreeSlots",
+   "new": [
+    "C_Container.GetContainerNumFreeSlots"
+   ],
+   "change": "Same argument and returns."
+  },
+  {
+   "old": "UseContainerItem",
+   "new": [
+    "C_Container.UseContainerItem"
+   ],
+   "change": "Same arguments. Protected in combat for some items, as before."
+  },
+  {
+   "old": "PickupContainerItem",
+   "new": [
+    "C_Container.PickupContainerItem"
+   ],
+   "change": "Same arguments."
+  },
+  {
+   "old": "GetZonePVPInfo",
+   "new": [
+    "C_PvP.GetZonePVPInfo"
+   ],
+   "change": "Same returns (pvpType, isSubZonePvP, factionName)."
+  },
+  {
+   "old": "UnitAura",
+   "new": [
+    "C_UnitAuras.GetAuraDataByIndex"
+   ],
+   "classic": "name, icon, count, debuffType, duration, expirationTime, source, isStealable, nameplateShowPersonal, spellId, ... = UnitAura(unit, index [, filter])",
+   "change": "Returns one AuraData table instead of a list of values; AuraUtil.UnpackAuraData(aura) turns it back into the old list. Classic shims it (Deprecated_1_15_8.lua), Forever doesn't load that shim. In combat, aura reads from add-on code may error or return secrets: see the secrets guide."
+  },
+  {
+   "old": "UnitBuff",
+   "new": [
+    "C_UnitAuras.GetBuffDataByIndex"
+   ],
+   "change": "Returns one AuraData table; AuraUtil.UnpackAuraData(aura) gives the old list. Same in-combat caveats as UnitAura."
+  },
+  {
+   "old": "UnitDebuff",
+   "new": [
+    "C_UnitAuras.GetDebuffDataByIndex"
+   ],
+   "change": "Returns one AuraData table; AuraUtil.UnpackAuraData(aura) gives the old list. Same in-combat caveats as UnitAura."
+  },
+  {
+   "old": "UnitCharacterPoints",
+   "new": [
+    "GetNumUnspentTalents",
+    "C_ClassTalents.HasUnspentTalentPoints"
+   ],
+   "classic": "talentPoints = UnitCharacterPoints(\"player\")",
+   "change": "No direct replacement. GetNumUnspentTalents() returns the player's unspent talent points (no unit argument); C_ClassTalents.HasUnspentTalentPoints() only says whether there are any. Check the result in game before relying on it.",
+   "confidence": "closest"
+  },
+  {
+   "old": "UnitMaxHealth",
+   "new": [
+    "UnitHealthMax"
+   ],
+   "change": "UnitMaxHealth was never a Blizzard function: the classic (and Forever) name is UnitHealthMax. It still exists, but for party, raid and enemy units it can return a secret value.",
+   "confidence": "name mix-up"
+  },
+  {
+   "old": "math.randomseed",
+   "new": [],
+   "change": "Removed from the add-on Lua environment: add-ons can't seed the random generator. math.random and the global random / fastrandom still work.",
+   "confidence": "removed"
+  },
+  {
+   "old": "GetAddOnMetadata",
+   "new": [
+    "C_AddOns.GetAddOnMetadata"
+   ],
+   "change": "Same arguments and return."
+  },
+  {
+   "old": "GetNumAddOns",
+   "new": [
+    "C_AddOns.GetNumAddOns"
+   ],
+   "change": "Same return."
+  },
+  {
+   "old": "GetAddOnInfo",
+   "new": [
+    "C_AddOns.GetAddOnInfo"
+   ],
+   "change": "Same argument; returns name, title, notes, loadable, reason, security, updateAvailable."
+  },
+  {
+   "old": "IsAddOnLoaded",
+   "new": [
+    "C_AddOns.IsAddOnLoaded"
+   ],
+   "change": "Same argument; returns loadedOrLoading, loaded."
+  },
+  {
+   "old": "LoadAddOn",
+   "new": [
+    "C_AddOns.LoadAddOn"
+   ],
+   "change": "Same argument and returns."
+  },
+  {
+   "old": "EnableAddOn",
+   "new": [
+    "C_AddOns.EnableAddOn"
+   ],
+   "change": "Same arguments."
+  },
+  {
+   "old": "DisableAddOn",
+   "new": [
+    "C_AddOns.DisableAddOn"
+   ],
+   "change": "Same arguments."
+  },
+  {
+   "old": "GetMouseFocus",
+   "new": [
+    "GetMouseFoci"
+   ],
+   "change": "Returns a list of every frame under the cursor; the old single answer is GetMouseFoci()[1]."
+  },
+  {
+   "old": "IsAddonMessagePrefixRegistered",
+   "new": [
+    "C_ChatInfo.IsAddonMessagePrefixRegistered"
+   ],
+   "change": "Same argument and return."
+  },
+  {
+   "old": "RegisterAddonMessagePrefix",
+   "new": [
+    "C_ChatInfo.RegisterAddonMessagePrefix"
+   ],
+   "change": "Same argument; returns a result code (Enum.RegisterAddonMessagePrefixResult) instead of true/false."
+  },
+  {
+   "old": "SendAddonMessage",
+   "new": [
+    "C_ChatInfo.SendAddonMessage"
+   ],
+   "change": "Same arguments; returns a result code (Enum.SendAddonMessageResult)."
+  },
+  {
+   "old": "GetQuestLogTitle",
+   "new": [
+    "C_QuestLog.GetInfo"
+   ],
+   "classic": "title, level, suggestedGroup, isHeader, isCollapsed, isComplete, frequency, questID, ... = GetQuestLogTitle(index)",
+   "change": "Returns one QuestInfo table instead of a list of values."
+  },
+  {
+   "old": "GetNumQuestLogEntries",
+   "new": [
+    "C_QuestLog.GetNumQuestLogEntries"
+   ],
+   "change": "Same returns (entries, quests)."
+  },
+  {
+   "old": "IsQuestFlaggedCompleted",
+   "new": [
+    "C_QuestLog.IsQuestFlaggedCompleted"
+   ],
+   "change": "Same argument and return."
+  },
+  {
+   "old": "GetQuestsCompleted",
+   "new": [
+    "C_QuestLog.GetAllCompletedQuestIDs"
+   ],
+   "change": "Returns a list of quest IDs instead of a table keyed by quest ID."
+  },
+  {
+   "old": "GetMapInfo",
+   "new": [
+    "C_Map.GetMapInfo"
+   ],
+   "change": "Takes a uiMapID and returns a UiMapDetails table."
+  },
+  {
+   "old": "GetFactionInfo",
+   "new": [
+    "C_Reputation.GetFactionDataByIndex"
+   ],
+   "change": "Returns one FactionData table instead of a list of values."
+  },
+  {
+   "old": "GetFactionInfoByID",
+   "new": [
+    "C_Reputation.GetFactionDataByID"
+   ],
+   "change": "Returns one FactionData table instead of a list of values."
+  },
+  {
+   "old": "GetNumFactions",
+   "new": [
+    "C_Reputation.GetNumFactions"
+   ],
+   "change": "Same return."
+  },
+  {
+   "old": "ExpandFactionHeader",
+   "new": [
+    "C_Reputation.ExpandFactionHeader"
+   ],
+   "change": "Same argument."
+  },
+  {
+   "old": "CollapseFactionHeader",
+   "new": [
+    "C_Reputation.CollapseFactionHeader"
+   ],
+   "change": "Same argument."
+  },
+  {
+   "old": "GetWatchedFactionInfo",
+   "new": [
+    "C_Reputation.GetWatchedFactionData"
+   ],
+   "change": "Returns one FactionData table (or nil) instead of a list of values."
+  },
+  {
+   "old": "GetGossipAvailableQuests",
+   "new": [
+    "C_GossipInfo.GetAvailableQuests"
+   ],
+   "change": "Returns a list of GossipQuestUIInfo tables instead of a flat list of values per quest."
+  },
+  {
+   "old": "GetGossipActiveQuests",
+   "new": [
+    "C_GossipInfo.GetActiveQuests"
+   ],
+   "change": "Returns a list of GossipQuestUIInfo tables instead of a flat list of values per quest."
+  },
+  {
+   "old": "SelectGossipAvailableQuest",
+   "new": [
+    "C_GossipInfo.SelectAvailableQuest"
+   ],
+   "change": "Takes the quest ID instead of the list index."
+  },
+  {
+   "old": "SelectGossipActiveQuest",
+   "new": [
+    "C_GossipInfo.SelectActiveQuest"
+   ],
+   "change": "Takes the quest ID instead of the list index."
+  },
+  {
+   "old": "GetNumGossipAvailableQuests",
+   "new": [
+    "C_GossipInfo.GetNumAvailableQuests"
+   ],
+   "change": "Same return."
+  },
+  {
+   "old": "GetNumGossipActiveQuests",
+   "new": [
+    "C_GossipInfo.GetNumActiveQuests"
+   ],
+   "change": "Same return."
+  },
+  {
+   "old": "GetGossipOptions",
+   "new": [
+    "C_GossipInfo.GetOptions"
+   ],
+   "change": "Returns a list of GossipOptionUIInfo tables."
+  },
+  {
+   "old": "SelectGossipOption",
+   "new": [
+    "C_GossipInfo.SelectOption"
+   ],
+   "change": "Takes the option's gossipOptionID (from GetOptions) instead of its index."
+  },
+  {
+   "old": "SelectQuestLogEntry",
+   "new": [
+    "C_QuestLog.SetSelectedQuest"
+   ],
+   "change": "Takes a quest ID instead of a log index."
+  },
+  {
+   "old": "GetQuestLogSelection",
+   "new": [
+    "C_QuestLog.GetSelectedQuest"
+   ],
+   "change": "Returns a quest ID instead of a log index."
+  },
+  {
+   "old": "GetQuestLogIndexByID",
+   "new": [
+    "C_QuestLog.GetLogIndexForQuestID"
+   ],
+   "change": "Same argument and return."
+  },
+  {
+   "old": "GetQuestIDFromLogIndex",
+   "new": [
+    "C_QuestLog.GetQuestIDForLogIndex"
+   ],
+   "change": "Same argument and return."
+  },
+  {
+   "old": "GetNumQuestWatches",
+   "new": [
+    "C_QuestLog.GetNumQuestWatches"
+   ],
+   "change": "Same return."
+  },
+  {
+   "old": "GetQuestIndexForWatch",
+   "new": [
+    "C_QuestLog.GetQuestIDForQuestWatchIndex"
+   ],
+   "change": "Returns a quest ID instead of a log index."
+  },
+  {
+   "old": "AddQuestWatch",
+   "new": [
+    "C_QuestLog.AddQuestWatch"
+   ],
+   "change": "Takes a quest ID instead of a log index."
+  },
+  {
+   "old": "RemoveQuestWatch",
+   "new": [
+    "C_QuestLog.RemoveQuestWatch"
+   ],
+   "change": "Takes a quest ID instead of a log index."
+  },
+  {
+   "old": "GetQuestTagInfo",
+   "new": [
+    "C_QuestLog.GetQuestTagInfo"
+   ],
+   "change": "Returns one QuestTagInfo table (or nil)."
+  },
+  {
+   "old": "SetAbandonQuest",
+   "new": [
+    "C_QuestLog.SetAbandonQuest"
+   ],
+   "change": "Uses the selected quest (C_QuestLog.SetSelectedQuest) as before."
+  },
+  {
+   "old": "AbandonQuest",
+   "new": [
+    "C_QuestLog.AbandonQuest"
+   ],
+   "change": "Same: abandons the quest set with SetAbandonQuest."
+  },
+  {
+   "old": "GetAbandonQuestName",
+   "new": [
+    "C_QuestLog.GetTitleForQuestID",
+    "C_QuestLog.GetAbandonQuest"
+   ],
+   "change": "C_QuestLog.GetAbandonQuest() gives the quest ID; its title comes from C_QuestLog.GetTitleForQuestID."
+  },
+  {
+   "old": "GetAbandonQuestItems",
+   "new": [
+    "C_QuestLog.GetAbandonQuestItems"
+   ],
+   "change": "Same return."
+  },
+  {
+   "old": "GetQuestObjectives",
+   "new": [
+    "C_QuestLog.GetQuestObjectives"
+   ],
+   "change": "Takes a quest ID; returns a list of QuestObjectiveInfo tables."
+  },
+  {
+   "old": "GetQuestTimers",
+   "new": [
+    "C_QuestLog.GetTimeAllowed"
+   ],
+   "change": "Per quest: C_QuestLog.GetTimeAllowed(questID) returns totalTime, elapsedTime."
+  },
+  {
+   "old": "GetNumSkillLines",
+   "new": [
+    "C_SkillInfo.GetNumSkillLines"
+   ],
+   "change": "Same return. Check in game before relying on the order matching the old skill list."
+  },
+  {
+   "old": "GetSkillLineInfo",
+   "new": [
+    "C_SkillInfo.GetSkillLineInfo"
+   ],
+   "change": "Check the return shape in Blizzard's docs: the C_SkillInfo version may return a table."
+  },
+  {
+   "old": "ExpandSkillHeader",
+   "new": [
+    "C_SkillInfo.ExpandSkillHeader"
+   ],
+   "change": "Same argument, if it exists: the table says whether it's in game."
+  },
+  {
+   "old": "GetTrackedAchievements",
+   "new": [
+    "C_ContentTracking.GetTrackedIDs"
+   ],
+   "change": "Takes the tracking type (Enum.ContentTrackingType.Achievement) and returns a list."
+  },
+  {
+   "old": "RemoveTrackedAchievement",
+   "new": [
+    "C_ContentTracking.StopTracking"
+   ],
+   "change": "Takes the tracking type, the achievement ID and a stop type (Enum.ContentTrackingStopType.Manual)."
+  }
+ ]
+}

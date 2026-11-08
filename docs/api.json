@@ -366,6 +366,7 @@
 "started": 1794103283
 }
 },
+"checks": null,
 "client_version": "1.60.1.70862",
 "cvars": {
 "AIBrain": {
@@ -385868,6 +385869,7 @@ false,
 "locale": "enUS",
 "lua": "Lua 5.1",
 "probe": "0.2.2",
+"project_id": "18",
 "reason": "login",
 "toc": 16001,
 "version": "1.60.1"
@@ -415767,6 +415769,8868 @@ false,
 }
 }
 },
+"relocated": [
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 4
+},
+"change": "Returns one QuestInfo table instead of a list of values.",
+"classic": "title, level, suggestedGroup, isHeader, isCollapsed, isComplete, frequency, questID, ... = GetQuestLogTitle(index)",
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_QuestLog.GetInfo",
+"sig": "info? = C_QuestLog.GetInfo(questLogIndex)"
+}
+],
+"old": "GetQuestLogTitle",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"change": "Same argument.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Reputation.ExpandFactionHeader",
+"sig": "nothing = C_Reputation.ExpandFactionHeader(factionSortIndex)"
+}
+],
+"old": "ExpandFactionHeader",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"change": "Returns one FactionData table instead of a list of values.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Reputation.GetFactionDataByIndex",
+"sig": "factionData? = C_Reputation.GetFactionDataByIndex(factionSortIndex)"
+}
+],
+"old": "GetFactionInfo",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"change": "Same return.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Reputation.GetNumFactions",
+"sig": "numFactions = C_Reputation.GetNumFactions()"
+}
+],
+"old": "GetNumFactions",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"change": "Same returns (entries, quests).",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_QuestLog.GetNumQuestLogEntries",
+"sig": "numShownEntries, numQuests = C_QuestLog.GetNumQuestLogEntries()"
+}
+],
+"old": "GetNumQuestLogEntries",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"change": "Check the return shape in Blizzard's docs: the C_SkillInfo version may return a table.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SkillInfo.GetSkillLineInfo",
+"sig": "skillLineAttributes? = C_SkillInfo.GetSkillLineInfo(index)"
+}
+],
+"old": "GetSkillLineInfo",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"change": "Returns one SpellInfo table (name, iconID, originalIconID, castTime, minRange, maxRange, spellID) instead of eight values, and no rank. For just the name or icon, C_Spell.GetSpellName / C_Spell.GetSpellTexture are cheaper. Rank text: C_Spell.GetSpellSubtext.",
+"classic": "name, rank, icon, castTime, minRange, maxRange, spellID, originalIcon = GetSpellInfo(spellID | name)",
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.GetSpellInfo",
+"sig": "spellInfo = C_Spell.GetSpellInfo(spellIdentifier)"
+}
+],
+"old": "GetSpellInfo",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"change": "Takes the tracking type, the achievement ID and a stop type (Enum.ContentTrackingStopType.Manual).",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ContentTracking.StopTracking",
+"sig": "nothing = C_ContentTracking.StopTracking(type, id, stopType)"
+}
+],
+"old": "RemoveTrackedAchievement",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Same: abandons the quest set with SetAbandonQuest.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_QuestLog.AbandonQuest",
+"sig": "nothing = C_QuestLog.AbandonQuest()"
+}
+],
+"old": "AbandonQuest",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Same argument, if it exists: the table says whether it's in game.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SkillInfo.ExpandSkillHeader",
+"sig": "nothing = C_SkillInfo.ExpandSkillHeader(index)"
+}
+],
+"old": "ExpandSkillHeader",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Same return.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_QuestLog.GetAbandonQuestItems",
+"sig": "itemIDs = C_QuestLog.GetAbandonQuestItems()"
+}
+],
+"old": "GetAbandonQuestItems",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "C_QuestLog.GetAbandonQuest() gives the quest ID; its title comes from C_QuestLog.GetTitleForQuestID.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_QuestLog.GetTitleForQuestID",
+"sig": "title? = C_QuestLog.GetTitleForQuestID(questID)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_QuestLog.GetAbandonQuest",
+"sig": "questID = C_QuestLog.GetAbandonQuest()"
+}
+],
+"old": "GetAbandonQuestName",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Returns one ContainerItemInfo table (iconFileID, stackCount, isLocked, quality, isReadable, hasLoot, hyperlink, isFiltered, hasNoValue, itemID, isBound) instead of eleven values.",
+"classic": "texture, count, locked, quality, readable, lootable, link, filtered, noValue, itemID, isBound = GetContainerItemInfo(bag, slot)",
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Container.GetContainerItemInfo",
+"sig": "containerInfo = C_Container.GetContainerItemInfo(containerIndex, slotIndex)"
+}
+],
+"old": "GetContainerItemInfo",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Same argument and return.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Container.GetContainerNumSlots",
+"sig": "numSlots = C_Container.GetContainerNumSlots(containerIndex)"
+}
+],
+"old": "GetContainerNumSlots",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Returns one FactionData table instead of a list of values.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Reputation.GetFactionDataByID",
+"sig": "factionData? = C_Reputation.GetFactionDataByID(factionID)"
+}
+],
+"old": "GetFactionInfoByID",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Returns a list of GossipQuestUIInfo tables instead of a flat list of values per quest.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_GossipInfo.GetActiveQuests",
+"sig": "info = C_GossipInfo.GetActiveQuests()"
+}
+],
+"old": "GetGossipActiveQuests",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Returns a list of GossipQuestUIInfo tables instead of a flat list of values per quest.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_GossipInfo.GetAvailableQuests",
+"sig": "info = C_GossipInfo.GetAvailableQuests()"
+}
+],
+"old": "GetGossipAvailableQuests",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "C_Container.GetItemCooldown(itemID) is the drop-in: same three returns, enable is still a number. C_Item.GetItemCooldown takes any item (ID, name, link) and returns enable as true/false.",
+"classic": "start, duration, enable = GetItemCooldown(itemID)",
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Container.GetItemCooldown",
+"sig": "startTime, duration, enable = C_Container.GetItemCooldown(itemID)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Item.GetItemCooldown",
+"sig": "startTimeSeconds, durationSeconds, enableCooldownTimer = C_Item.GetItemCooldown(itemInfo)"
+}
+],
+"old": "GetItemCooldown",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Returns a list of every frame under the cursor; the old single answer is GetMouseFoci()[1].",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "GetMouseFoci",
+"sig": "region = GetMouseFoci()"
+}
+],
+"old": "GetMouseFocus",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Same return.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_GossipInfo.GetNumActiveQuests",
+"sig": "numQuests = C_GossipInfo.GetNumActiveQuests()"
+}
+],
+"old": "GetNumGossipActiveQuests",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Same return.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_GossipInfo.GetNumAvailableQuests",
+"sig": "numQuests = C_GossipInfo.GetNumAvailableQuests()"
+}
+],
+"old": "GetNumGossipAvailableQuests",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Same return.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_QuestLog.GetNumQuestWatches",
+"sig": "numQuestWatches = C_QuestLog.GetNumQuestWatches()"
+}
+],
+"old": "GetNumQuestWatches",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Same return. Check in game before relying on the order matching the old skill list.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SkillInfo.GetNumSkillLines",
+"sig": "numSkillLines = C_SkillInfo.GetNumSkillLines()"
+}
+],
+"old": "GetNumSkillLines",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Same argument and return.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_QuestLog.GetQuestIDForLogIndex",
+"sig": "questID? = C_QuestLog.GetQuestIDForLogIndex(questLogIndex)"
+}
+],
+"old": "GetQuestIDFromLogIndex",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Returns a quest ID instead of a log index.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_QuestLog.GetQuestIDForQuestWatchIndex",
+"sig": "questID? = C_QuestLog.GetQuestIDForQuestWatchIndex(questWatchIndex)"
+}
+],
+"old": "GetQuestIndexForWatch",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Same argument and return.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_QuestLog.GetLogIndexForQuestID",
+"sig": "questLogIndex? = C_QuestLog.GetLogIndexForQuestID(questID)"
+}
+],
+"old": "GetQuestLogIndexByID",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Returns a quest ID instead of a log index.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_QuestLog.GetSelectedQuest",
+"sig": "questID = C_QuestLog.GetSelectedQuest()"
+}
+],
+"old": "GetQuestLogSelection",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Takes a quest ID; returns a list of QuestObjectiveInfo tables.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_QuestLog.GetQuestObjectives",
+"sig": "objectives = C_QuestLog.GetQuestObjectives(questID)"
+}
+],
+"old": "GetQuestObjectives",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Returns a list of quest IDs instead of a table keyed by quest ID.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_QuestLog.GetAllCompletedQuestIDs",
+"sig": "quests = C_QuestLog.GetAllCompletedQuestIDs()"
+}
+],
+"old": "GetQuestsCompleted",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Returns one QuestTagInfo table (or nil).",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_QuestLog.GetQuestTagInfo",
+"sig": "info? = C_QuestLog.GetQuestTagInfo(questID)"
+}
+],
+"old": "GetQuestTagInfo",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Per quest: C_QuestLog.GetTimeAllowed(questID) returns totalTime, elapsedTime.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_QuestLog.GetTimeAllowed",
+"sig": "totalTime, elapsedTime = C_QuestLog.GetTimeAllowed(questID)"
+}
+],
+"old": "GetQuestTimers",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": null,
+"classic": null,
+"confidence": "lead",
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_StableInfo.GetStablePetFoodTypes",
+"sig": "foodTypes = C_StableInfo.GetStablePetFoodTypes(index)"
+}
+],
+"old": "GetStablePetFoodTypes",
+"sources": [
+"same-name"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Takes the tracking type (Enum.ContentTrackingType.Achievement) and returns a list.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ContentTracking.GetTrackedIDs",
+"sig": "entryIDs = C_ContentTracking.GetTrackedIDs(trackableType)"
+}
+],
+"old": "GetTrackedAchievements",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Same argument; returns a result code (Enum.RegisterAddonMessagePrefixResult) instead of true/false.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ChatInfo.RegisterAddonMessagePrefix",
+"sig": "result = C_ChatInfo.RegisterAddonMessagePrefix(prefix)"
+}
+],
+"old": "RegisterAddonMessagePrefix",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Takes a quest ID instead of a log index.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_QuestLog.RemoveQuestWatch",
+"sig": "wasRemoved = C_QuestLog.RemoveQuestWatch(questID)"
+}
+],
+"old": "RemoveQuestWatch",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Takes the quest ID instead of the list index.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_GossipInfo.SelectActiveQuest",
+"sig": "nothing = C_GossipInfo.SelectActiveQuest(optionID)"
+}
+],
+"old": "SelectGossipActiveQuest",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Takes the quest ID instead of the list index.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_GossipInfo.SelectAvailableQuest",
+"sig": "nothing = C_GossipInfo.SelectAvailableQuest(optionID)"
+}
+],
+"old": "SelectGossipAvailableQuest",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Takes a quest ID instead of a log index.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_QuestLog.SetSelectedQuest",
+"sig": "nothing = C_QuestLog.SetSelectedQuest(questID)"
+}
+],
+"old": "SelectQuestLogEntry",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Uses the selected quest (C_QuestLog.SetSelectedQuest) as before.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_QuestLog.SetAbandonQuest",
+"sig": "nothing = C_QuestLog.SetAbandonQuest()"
+}
+],
+"old": "SetAbandonQuest",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": "Returns one AuraData table instead of a list of values; AuraUtil.UnpackAuraData(aura) turns it back into the old list. Classic shims it (Deprecated_1_15_8.lua), Forever doesn't load that shim. In combat, aura reads from add-on code may error or return secrets: see the secrets guide.",
+"classic": "name, icon, count, debuffType, duration, expirationTime, source, isStealable, nameplateShowPersonal, spellId, ... = UnitAura(unit, index [, filter])",
+"confidence": null,
+"file": "Blizzard_Deprecated/Classic/Deprecated_1_15_8.lua",
+"gate": "classic",
+"new": [
+{
+"flags": [
+"secret in combat"
+],
+"in_game": "yes",
+"name": "C_UnitAuras.GetAuraDataByIndex",
+"sig": "aura? = C_UnitAuras.GetAuraDataByIndex(unit, index, filter?)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "AuraUtil.UnpackAuraData",
+"sig": null
+}
+],
+"old": "UnitAura",
+"sources": [
+"curated",
+"classic shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Takes a quest ID instead of a log index.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_QuestLog.AddQuestWatch",
+"sig": "wasWatched = C_QuestLog.AddQuestWatch(questID)"
+}
+],
+"old": "AddQuestWatch",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Moved as is.",
+"classic": null,
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.GetDeadlyDebuffInfo",
+"sig": "deadlyDebuffInfo = C_Spell.GetDeadlyDebuffInfo(spellIdentifier)"
+}
+],
+"old": "C_SpellBook.GetDeadlyDebuffInfo",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Moved as is.",
+"classic": null,
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.GetOverrideSpell",
+"sig": "overrideSpellID = C_Spell.GetOverrideSpell(spellIdentifier, spec?, onlyKnown?, ignoreOverrideSpellID?)"
+}
+],
+"old": "C_SpellBook.GetOverrideSpell",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Moved as is.",
+"classic": null,
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.GetSpellInfo",
+"sig": "spellInfo = C_Spell.GetSpellInfo(spellIdentifier)"
+}
+],
+"old": "C_SpellBook.GetSpellInfo",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Moved as is.",
+"classic": null,
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.GetSpellLink",
+"sig": "spellLink = C_Spell.GetSpellLink(spellIdentifier, glyphID?)"
+}
+],
+"old": "C_SpellBook.GetSpellLinkFromSpellID",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Moved as is.",
+"classic": null,
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.IsSpellDisabled",
+"sig": "disabled = C_Spell.IsSpellDisabled(spellIdentifier)"
+}
+],
+"old": "C_SpellBook.IsSpellDisabled",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": "CastingInfo()",
+"confidence": null,
+"file": "Blizzard_DeprecatedUnitScript/Classic/Deprecated_UnitScriptOverrides.lua",
+"gate": "classic",
+"new": [
+{
+"flags": [
+"secret in combat"
+],
+"in_game": "yes",
+"name": "UnitCastingInfo",
+"sig": "name, displayName, textureID, startTimeMs, endTimeMs, isTradeskill, castID, notInterruptible?, castingSpellID, castBarID?, delayTimeMs = UnitCastingInfo(unit)"
+}
+],
+"old": "CastingInfo",
+"sources": [
+"classic shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": "ChannelInfo()",
+"confidence": null,
+"file": "Blizzard_DeprecatedUnitScript/Classic/Deprecated_UnitScriptOverrides.lua",
+"gate": "classic",
+"new": [
+{
+"flags": [
+"secret in combat"
+],
+"in_game": "yes",
+"name": "UnitChannelInfo",
+"sig": "name, displayName, textureID, startTimeMs, endTimeMs, isTradeskill, notInterruptible?, spellID, isEmpowered, numEmpowerStages, castBarID? = UnitChannelInfo(unit)"
+}
+],
+"old": "ChannelInfo",
+"sources": [
+"classic shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same argument.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Reputation.CollapseFactionHeader",
+"sig": "nothing = C_Reputation.CollapseFactionHeader(factionSortIndex)"
+}
+],
+"old": "CollapseFactionHeader",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "no",
+"name": "C_CombatLog.AddEventFilter",
+"sig": null
+}
+],
+"old": "CombatLogAddFilter",
+"sources": [
+"shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "no",
+"name": "C_CombatLog.GetCurrentEntryInfo",
+"sig": null
+}
+],
+"old": "CombatLogGetCurrentEntry",
+"sources": [
+"shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "no",
+"name": "C_CombatLog.GetCurrentEventInfo",
+"sig": null
+}
+],
+"old": "CombatLogGetCurrentEventInfo",
+"sources": [
+"shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "no",
+"name": "C_CombatLog.GetEntryCount",
+"sig": null
+}
+],
+"old": "CombatLogGetNumEntries",
+"sources": [
+"shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "no",
+"name": "C_CombatLog.ClearEventFilters",
+"sig": null
+}
+],
+"old": "CombatLogResetFilter",
+"sources": [
+"shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "no",
+"name": "C_CombatLog.ShouldShowCurrentEntry",
+"sig": null
+}
+],
+"old": "CombatLogShowCurrentEntry",
+"sources": [
+"shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same arguments.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_AddOns.DisableAddOn",
+"sig": "nothing = C_AddOns.DisableAddOn(name, character?)"
+}
+],
+"old": "DisableAddOn",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.SetSpellAutoCastEnabled(spellIdentifier, bool)`. Blizzard: Enable/Disable auto cast functions have been merged into single Set Enabled functions.",
+"classic": "DisableSpellAutocast(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.SetSpellAutoCastEnabled",
+"sig": "nothing = C_Spell.SetSpellAutoCastEnabled(spellIdentifier, enabled)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.SetSpellBookItemAutoCastEnabled",
+"sig": "nothing = C_SpellBook.SetSpellBookItemAutoCastEnabled(spellBookItemSlotIndex, spellBookItemSpellBank, enabled)"
+}
+],
+"old": "DisableSpellAutocast",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.DoesSpellExist(spellIdentifier)`.",
+"classic": "DoesSpellExist(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.DoesSpellExist",
+"sig": "spellExists = C_Spell.DoesSpellExist(spellIdentifier)"
+}
+],
+"old": "DoesSpellExist",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same arguments.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_AddOns.EnableAddOn",
+"sig": "nothing = C_AddOns.EnableAddOn(name, character?)"
+}
+],
+"old": "EnableAddOn",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.SetSpellAutoCastEnabled(spellIdentifier, bool)`. Blizzard: Enable/Disable auto cast functions have been merged into single Set Enabled functions.",
+"classic": "EnableSpellAutocast(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.SetSpellAutoCastEnabled",
+"sig": "nothing = C_Spell.SetSpellAutoCastEnabled(spellIdentifier, enabled)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.SetSpellBookItemAutoCastEnabled",
+"sig": "nothing = C_SpellBook.SetSpellBookItemAutoCastEnabled(spellBookItemSlotIndex, spellBookItemSpellBank, enabled)"
+}
+],
+"old": "EnableSpellAutocast",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Standard.lua",
+"gate": "classic, standard",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpecializationInfo.GetActiveSpecGroup",
+"sig": "groupIndex = C_SpecializationInfo.GetActiveSpecGroup(isInspect?, isPet?)"
+}
+],
+"old": "GetActiveSpecGroup",
+"sources": [
+"classic shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Cata.lua",
+"gate": "classic, standard",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpecializationInfo.GetActiveSpecGroup",
+"sig": "groupIndex = C_SpecializationInfo.GetActiveSpecGroup(isInspect?, isPet?)"
+}
+],
+"old": "GetActiveTalentGroup",
+"sources": [
+"classic shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same argument; returns name, title, notes, loadable, reason, security, updateAvailable.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_AddOns.GetAddOnInfo",
+"sig": "name, title, notes, loadable, reason, security = C_AddOns.GetAddOnInfo(name)"
+}
+],
+"old": "GetAddOnInfo",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same arguments and return.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_AddOns.GetAddOnMetadata",
+"sig": "value = C_AddOns.GetAddOnMetadata(name, variable)"
+}
+],
+"old": "GetAddOnMetadata",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same arguments and return.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Container.GetContainerItemID",
+"sig": "containerID = C_Container.GetContainerItemID(containerIndex, slotIndex)"
+}
+],
+"old": "GetContainerItemID",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same arguments and return.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Container.GetContainerItemLink",
+"sig": "itemLink = C_Container.GetContainerItemLink(containerIndex, slotIndex)"
+}
+],
+"old": "GetContainerItemLink",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same argument and returns.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Container.GetContainerNumFreeSlots",
+"sig": "numFreeSlots, bagFamily? = C_Container.GetContainerNumFreeSlots(bagIndex)"
+}
+],
+"old": "GetContainerNumFreeSlots",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Returns a list of GossipOptionUIInfo tables.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_GossipInfo.GetOptions",
+"sig": "info = C_GossipInfo.GetOptions()"
+}
+],
+"old": "GetGossipOptions",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same arguments (item, includeBank, includeUses, includeReagentBank) and return.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Item.GetItemCount",
+"sig": "count = C_Item.GetItemCount(itemInfo, includeBank?, includeUses?, includeReagentBank?, includeAccountBank?)"
+}
+],
+"old": "GetItemCount",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same argument and return.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Item.GetItemIconByID",
+"sig": "icon? = C_Item.GetItemIconByID(itemInfo)"
+}
+],
+"old": "GetItemIcon",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same returns in the same order, plus an 18th (itemDescription). Same argument (item ID, name or link). Still returns nothing until the item is cached: wait for ITEM_DATA_LOAD_RESULT / GET_ITEM_INFO_RECEIVED, or use C_Item.GetItemInfoInstant for the fields that need no cache.",
+"classic": "name, link, quality, itemLevel, minLevel, type, subType, stackCount, equipLoc, texture, sellPrice, classID, subclassID, bindType, expansionID, setID, isCraftingReagent = GetItemInfo(item)",
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Item.GetItemInfo",
+"sig": "itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expansionID, setID?, isCraftingReagent, itemDescription = C_Item.GetItemInfo(itemInfo)"
+}
+],
+"old": "GetItemInfo",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same arguments and returns.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Item.GetItemInfoInstant",
+"sig": "itemID, itemType, itemSubType, itemEquipLoc, icon, classID, subClassID = C_Item.GetItemInfoInstant(itemInfo)"
+}
+],
+"old": "GetItemInfoInstant",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same argument and returns (r, g, b, hex).",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Item.GetItemQualityColor",
+"sig": "colorRGBR, colorRGBG, colorRGBB, qualityString = C_Item.GetItemQualityColor(quality)"
+}
+],
+"old": "GetItemQualityColor",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Takes only the link; the optional table to fill is gone, it always returns a new table.",
+"classic": "stats = GetItemStats(itemLink [, statTable])",
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Item.GetItemStats",
+"sig": "statTable = C_Item.GetItemStats(itemLink)"
+}
+],
+"old": "GetItemStats",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Takes a uiMapID and returns a UiMapDetails table.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Map.GetMapInfo",
+"sig": "info = C_Map.GetMapInfo(uiMapID)"
+}
+],
+"old": "GetMapInfo",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same return.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_AddOns.GetNumAddOns",
+"sig": "numAddOns = C_AddOns.GetNumAddOns()"
+}
+],
+"old": "GetNumAddOns",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Standard.lua",
+"gate": "classic, standard",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpecializationInfo.GetNumSpecializationsForClassID",
+"sig": "specCount = C_SpecializationInfo.GetNumSpecializationsForClassID(classID)"
+}
+],
+"old": "GetNumSpecializationsForClassID",
+"sources": [
+"classic shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_SpellBook.GetNumSpellBookSkillLines()`.",
+"classic": "GetNumSpellTabs()",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.GetNumSpellBookSkillLines",
+"sig": "numSpellBookSkillLines = C_SpellBook.GetNumSpellBookSkillLines()"
+}
+],
+"old": "GetNumSpellTabs",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Cata.lua",
+"gate": "classic, standard",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpecializationInfo.GetSpecialization",
+"sig": "specializationIndex = C_SpecializationInfo.GetSpecialization(isInspect?, isPet?, specGroupIndex?)"
+}
+],
+"old": "GetPrimaryTalentTree",
+"sources": [
+"classic shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Standard.lua",
+"gate": "classic, standard",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpecializationInfo.GetSpecialization",
+"sig": "specializationIndex = C_SpecializationInfo.GetSpecialization(isInspect?, isPet?, specGroupIndex?)"
+}
+],
+"old": "GetSpecialization",
+"sources": [
+"classic shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Standard.lua",
+"gate": "classic, standard",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpecializationInfo.GetSpecializationInfo",
+"sig": "specId?, name?, description?, icon?, role?, primaryStat?, pointsSpent?, background?, previewPointsSpent?, isUnlocked? = C_SpecializationInfo.GetSpecializationInfo(specializationIndex, isInspect?, isPet?, inspectTarget?, sex?, groupIndex?, classID?)"
+}
+],
+"old": "GetSpecializationInfo",
+"sources": [
+"classic shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetSpecializationMasterySpells(specIndex, isInspect, isPet)",
+"confidence": null,
+"file": "Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Standard.lua",
+"gate": "classic, standard",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpecializationInfo.GetSpecializationMasterySpells",
+"sig": "spellIDs = C_SpecializationInfo.GetSpecializationMasterySpells(specializationIndex, isInspect?, isPet?)"
+}
+],
+"old": "GetSpecializationMasterySpells",
+"sources": [
+"classic shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.GetSpellAutoCast(spellIdentifier)`.",
+"classic": "GetSpellAutocast(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.GetSpellAutoCast",
+"sig": "autoCastAllowed, autoCastEnabled = C_Spell.GetSpellAutoCast(spellIdentifier)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.GetSpellBookItemAutoCast",
+"sig": "autoCastAllowed, autoCastEnabled = C_SpellBook.GetSpellBookItemAutoCast(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "GetSpellAutocast",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.GetSpellLevelLearned(spellIdentifier)`. Blizzard: GetSpellAvailableLevel and GetSpellLevelLearned have been unified.",
+"classic": "GetSpellAvailableLevel(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.GetSpellLevelLearned",
+"sig": "levelLearned = C_Spell.GetSpellLevelLearned(spellIdentifier)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.GetSpellBookItemLevelLearned",
+"sig": "levelLearned = C_SpellBook.GetSpellBookItemLevelLearned(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "GetSpellAvailableLevel",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_SpellBook.GetSpellBookItemType(index, spellBank)`. spellBank is Enum.SpellBookSpellBank.Player or .Pet instead of the \"spell\" / \"pet\" book type. Blizzard: C_SpellBook.GetSpellBookItemType is the direct replacement for just the type info that the old GetSpellBookItemInfo returned (+spellID as a new bonus 3rd return value).",
+"classic": "GetSpellBookItemInfo(index, bookType)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.GetSpellBookItemType",
+"sig": "itemType, actionID, spellID? = C_SpellBook.GetSpellBookItemType(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "GetSpellBookItemInfo",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_SpellBook.GetSpellBookItemName(index, spellBank)`. spellBank is Enum.SpellBookSpellBank.Player or .Pet instead of the \"spell\" / \"pet\" book type.",
+"classic": "GetSpellBookItemName(index, bookType)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.GetSpellBookItemName",
+"sig": "name, subName = C_SpellBook.GetSpellBookItemName(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "GetSpellBookItemName",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_SpellBook.GetSpellBookItemTexture(index, spellBank)`. spellBank is Enum.SpellBookSpellBank.Player or .Pet instead of the \"spell\" / \"pet\" book type.",
+"classic": "GetSpellBookItemTexture(index, bookType)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.GetSpellBookItemTexture",
+"sig": "iconID = C_SpellBook.GetSpellBookItemTexture(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "GetSpellBookItemTexture",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.GetSpellCharges(spellIdentifier)`. Blizzard: Both return new SpellChargeInfo table (see SpellSharedDocumentation.lua).",
+"classic": "GetSpellCharges(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [
+"secret in combat"
+],
+"in_game": "yes",
+"name": "C_Spell.GetSpellCharges",
+"sig": "chargeInfo = C_Spell.GetSpellCharges(spellIdentifier)"
+},
+{
+"flags": [
+"secret in combat"
+],
+"in_game": "yes",
+"name": "C_SpellBook.GetSpellBookItemCharges",
+"sig": "chargeInfo = C_SpellBook.GetSpellBookItemCharges(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "GetSpellCharges",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Returns one SpellCooldownInfo table (startTime, duration, isEnabled, modRate) instead of four values. The spell book form moved to C_SpellBook.GetSpellBookItemCooldown(index, spellBank).",
+"classic": "start, duration, enabled, modRate = GetSpellCooldown(spellID | name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [
+"secret in combat"
+],
+"in_game": "yes",
+"name": "C_Spell.GetSpellCooldown",
+"sig": "spellCooldownInfo = C_Spell.GetSpellCooldown(spellIdentifier)"
+},
+{
+"flags": [
+"secret in combat"
+],
+"in_game": "yes",
+"name": "C_SpellBook.GetSpellBookItemCooldown",
+"sig": "spellCooldownInfo = C_SpellBook.GetSpellBookItemCooldown(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "GetSpellCooldown",
+"sources": [
+"curated",
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.GetSpellCastCount(spellIdentifier)`.",
+"classic": "GetSpellCount(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [
+"secret in combat"
+],
+"in_game": "yes",
+"name": "C_Spell.GetSpellCastCount",
+"sig": "castCount = C_Spell.GetSpellCastCount(spellIdentifier)"
+},
+{
+"flags": [
+"secret in combat"
+],
+"in_game": "yes",
+"name": "C_SpellBook.GetSpellBookItemCastCount",
+"sig": "castCount = C_SpellBook.GetSpellBookItemCastCount(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "GetSpellCount",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.GetSpellDescription(spellIdentifier)`.",
+"classic": "GetSpellDescription(spellID)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.GetSpellDescription",
+"sig": "description = C_Spell.GetSpellDescription(spellIdentifier)"
+}
+],
+"old": "GetSpellDescription",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.GetSpellLevelLearned(spellIdentifier)`.",
+"classic": "GetSpellLevelLearned(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.GetSpellLevelLearned",
+"sig": "levelLearned = C_Spell.GetSpellLevelLearned(spellIdentifier)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.GetSpellBookItemLevelLearned",
+"sig": "levelLearned = C_SpellBook.GetSpellBookItemLevelLearned(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "GetSpellLevelLearned",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.GetSpellLink(spellIdentifier)`.",
+"classic": "GetSpellLink(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.GetSpellLink",
+"sig": "spellLink = C_Spell.GetSpellLink(spellIdentifier, glyphID?)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.GetSpellBookItemLink",
+"sig": "spellLink = C_SpellBook.GetSpellBookItemLink(spellBookItemSlotIndex, spellBookItemSpellBank, glyphID?)"
+}
+],
+"old": "GetSpellLink",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.GetSpellLossOfControlCooldown(spellIdentifier)`.",
+"classic": "GetSpellLossOfControlCooldown(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.GetSpellLossOfControlCooldown",
+"sig": null
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.GetSpellBookItemLossOfControlCooldown",
+"sig": null
+}
+],
+"old": "GetSpellLossOfControlCooldown",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.GetSpellPowerCost(spellIdentifier)`. Blizzard: Both return array of new SpellPowerCostInfo tables (see SpellSharedDocumentation.lua) which matches old return table structure.",
+"classic": "GetSpellPowerCost(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.GetSpellPowerCost",
+"sig": "powerCosts = C_Spell.GetSpellPowerCost(spellIdentifier)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.GetSpellBookItemPowerCost",
+"sig": "powerCosts = C_SpellBook.GetSpellBookItemPowerCost(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "GetSpellPowerCost",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.GetSpellSkillLineAbilityRank(spellIdentifier)`.",
+"classic": "GetSpellRank(spellID)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.GetSpellSkillLineAbilityRank",
+"sig": "rank = C_Spell.GetSpellSkillLineAbilityRank(spellIdentifier)"
+}
+],
+"old": "GetSpellRank",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.GetSpellSubtext(spellIdentifier)`.",
+"classic": "GetSpellSubtext(spellID)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.GetSpellSubtext",
+"sig": "subtext = C_Spell.GetSpellSubtext(spellIdentifier)"
+}
+],
+"old": "GetSpellSubtext",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_SpellBook.GetSpellBookSkillLineInfo(index)`. Blizzard: Returns new SpellBookSkillLineInfo table.",
+"classic": "GetSpellTabInfo(index)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.GetSpellBookSkillLineInfo",
+"sig": "skillLineInfo = C_SpellBook.GetSpellBookSkillLineInfo(skillLineIndex)"
+}
+],
+"old": "GetSpellTabInfo",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.GetSpellTexture(spellIdentifier)`.",
+"classic": "GetSpellTexture(spellID)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.GetSpellTexture",
+"sig": "iconID, originalIconID, conditionalIconID? = C_Spell.GetSpellTexture(spellIdentifier)"
+}
+],
+"old": "GetSpellTexture",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.GetSpellTradeSkillLink(spellIdentifier)`.",
+"classic": "GetSpellTradeSkillLink(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.GetSpellTradeSkillLink",
+"sig": "spellLink = C_Spell.GetSpellTradeSkillLink(spellIdentifier)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.GetSpellBookItemTradeSkillLink",
+"sig": "spellLink = C_SpellBook.GetSpellBookItemTradeSkillLink(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "GetSpellTradeSkillLink",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetTalentInfo(tabIndex, talentIndex, isInspect, isPet, groupIndex)",
+"confidence": null,
+"file": "Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Cata.lua",
+"gate": "classic, standard",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpecializationInfo.GetTalentInfo",
+"sig": "result? = C_SpecializationInfo.GetTalentInfo(query)"
+}
+],
+"old": "GetTalentInfo",
+"sources": [
+"classic shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetTalentTabInfo(specializationIndex, isInspect, isPet, groupIndex)",
+"confidence": null,
+"file": "Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Cata.lua",
+"gate": "classic, standard",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpecializationInfo.GetSpecializationInfo",
+"sig": "specId?, name?, description?, icon?, role?, primaryStat?, pointsSpent?, background?, previewPointsSpent?, isUnlocked? = C_SpecializationInfo.GetSpecializationInfo(specializationIndex, isInspect?, isPet?, inspectTarget?, sex?, groupIndex?, classID?)"
+}
+],
+"old": "GetTalentTabInfo",
+"sources": [
+"classic shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetTalentTreeMasterySpells(specIndex, isInspect, isPet)",
+"confidence": null,
+"file": "Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Cata.lua",
+"gate": "classic, standard",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpecializationInfo.GetSpecializationMasterySpells",
+"sig": "spellIDs = C_SpecializationInfo.GetSpecializationMasterySpells(specializationIndex, isInspect?, isPet?)"
+}
+],
+"old": "GetTalentTreeMasterySpells",
+"sources": [
+"classic shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Returns one FactionData table (or nil) instead of a list of values.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Reputation.GetWatchedFactionData",
+"sig": "watchedFactionData? = C_Reputation.GetWatchedFactionData()"
+}
+],
+"old": "GetWatchedFactionInfo",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same returns (pvpType, isSubZonePvP, factionName).",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_PvP.GetZonePVPInfo",
+"sig": "pvpType, isSubZonePvP, factionName? = C_PvP.GetZonePVPInfo()"
+}
+],
+"old": "GetZonePVPInfo",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_SpellBook.HasPetSpells()`.",
+"classic": "HasPetSpells()",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.HasPetSpells",
+"sig": "numPetSpells, petNameToken = C_SpellBook.HasPetSpells()"
+}
+],
+"old": "HasPetSpells",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same argument; returns loadedOrLoading, loaded.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_AddOns.IsAddOnLoaded",
+"sig": "loadedOrLoading, loaded = C_AddOns.IsAddOnLoaded(name)"
+}
+],
+"old": "IsAddOnLoaded",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same argument and return.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ChatInfo.IsAddonMessagePrefixRegistered",
+"sig": "isRegistered = C_ChatInfo.IsAddonMessagePrefixRegistered(prefix)"
+}
+],
+"old": "IsAddonMessagePrefixRegistered",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.IsAutoAttackSpell(spellIdentifier)`.",
+"classic": "IsAttackSpell(spellName)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.IsAutoAttackSpell",
+"sig": "isAutoAttack = C_Spell.IsAutoAttackSpell(spellIdentifier)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.IsAutoAttackSpellBookItem",
+"sig": "isAutoAttack = C_SpellBook.IsAutoAttackSpellBookItem(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "IsAttackSpell",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.IsAutoRepeatSpell(spellIdentifier)`.",
+"classic": "IsAutoRepeatSpell(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.IsAutoRepeatSpell",
+"sig": "isAutoRepeat = C_Spell.IsAutoRepeatSpell(spellIdentifier)"
+}
+],
+"old": "IsAutoRepeatSpell",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.IsCurrentSpell(spellIdentifier)`.",
+"classic": "IsCurrentSpell(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.IsCurrentSpell",
+"sig": "isCurrentSpell = C_Spell.IsCurrentSpell(spellIdentifier)"
+}
+],
+"old": "IsCurrentSpell",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same argument and return.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Item.IsEquippedItem",
+"sig": "result = C_Item.IsEquippedItem(itemInfo)"
+}
+],
+"old": "IsEquippedItem",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.IsSpellHarmful(spellIdentifier)`.",
+"classic": "IsHarmfulSpell(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.IsSpellHarmful",
+"sig": "isHarmful = C_Spell.IsSpellHarmful(spellIdentifier)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.IsSpellBookItemHarmful",
+"sig": "isHarmful = C_SpellBook.IsSpellBookItemHarmful(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "IsHarmfulSpell",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.IsSpellHelpful(spellIdentifier)`.",
+"classic": "IsHelpfulSpell(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.IsSpellHelpful",
+"sig": "isHelpful = C_Spell.IsSpellHelpful(spellIdentifier)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.IsSpellBookItemHelpful",
+"sig": "isHelpful = C_SpellBook.IsSpellBookItemHelpful(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "IsHelpfulSpell",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.IsSpellPassive(spellIdentifier)`.",
+"classic": "IsPassiveSpell(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.IsSpellPassive",
+"sig": "isPassive = C_Spell.IsSpellPassive(spellIdentifier)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.IsSpellBookItemPassive",
+"sig": "isPassive = C_SpellBook.IsSpellBookItemPassive(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "IsPassiveSpell",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.IsPressHoldReleaseSpell(spellIdentifier)`.",
+"classic": "IsPressHoldReleaseSpell(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.IsPressHoldReleaseSpell",
+"sig": "isPressHoldRelease = C_Spell.IsPressHoldReleaseSpell(spellIdentifier)"
+}
+],
+"old": "IsPressHoldReleaseSpell",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.IsPvPTalentSpell(spellIdentifier)`.",
+"classic": "IsPvpTalentSpell(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.IsPvPTalentSpell",
+"sig": "isAutoRepeat = C_Spell.IsPvPTalentSpell(spellIdentifier)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.IsPvPTalentSpellBookItem",
+"sig": "isPvPTalent = C_SpellBook.IsPvPTalentSpellBookItem(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "IsPvpTalentSpell",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same argument and return.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_QuestLog.IsQuestFlaggedCompleted",
+"sig": "isCompleted = C_QuestLog.IsQuestFlaggedCompleted(questID)"
+}
+],
+"old": "IsQuestFlaggedCompleted",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.IsSpellInRange(spellIdentifier)`.",
+"classic": "IsSpellInRange(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.IsSpellInRange",
+"sig": "inRange? = C_Spell.IsSpellInRange(spellIdentifier, targetUnit?)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.IsSpellBookItemInRange",
+"sig": "inRange? = C_SpellBook.IsSpellBookItemInRange(spellBookItemSlotIndex, spellBookItemSpellBank, targetUnit?)"
+}
+],
+"old": "IsSpellInRange",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.IsClassTalentSpell(spellIdentifier)`.",
+"classic": "IsTalentSpell(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.IsClassTalentSpell",
+"sig": "isAutoRepeat = C_Spell.IsClassTalentSpell(spellIdentifier)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.IsClassTalentSpellBookItem",
+"sig": "isClassTalent = C_SpellBook.IsClassTalentSpellBookItem(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "IsTalentSpell",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.IsSpellUsable(spellIdentifier)`.",
+"classic": "IsUsableSpell(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.IsSpellUsable",
+"sig": "isUsable, insufficientPower = C_Spell.IsSpellUsable(spellIdentifier)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.IsSpellBookItemUsable",
+"sig": "isUsable, insufficientPower = C_SpellBook.IsSpellBookItemUsable(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "IsUsableSpell",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same argument and returns.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_AddOns.LoadAddOn",
+"sig": "loaded?, value? = C_AddOns.LoadAddOn(name)"
+}
+],
+"old": "LoadAddOn",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Removed from the add-on Lua environment: add-ons can't seed the random generator. math.random and the global random / fastrandom still work.",
+"classic": null,
+"confidence": "removed",
+"file": null,
+"gate": null,
+"new": [],
+"old": "math.randomseed",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same arguments.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Container.PickupContainerItem",
+"sig": "nothing = C_Container.PickupContainerItem(containerIndex, slotIndex)"
+}
+],
+"old": "PickupContainerItem",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.PickupSpell(spellIdentifier)`.",
+"classic": "PickupSpell(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.PickupSpell",
+"sig": "nothing = C_Spell.PickupSpell(spellIdentifier)"
+}
+],
+"old": "PickupSpell",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_SpellBook.PickupSpellBookItem(index, spellBank)`. spellBank is Enum.SpellBookSpellBank.Player or .Pet instead of the \"spell\" / \"pet\" book type.",
+"classic": "PickupSpellBookItem(index, bookType)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.PickupSpellBookItem",
+"sig": "nothing = C_SpellBook.PickupSpellBookItem(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "PickupSpellBookItem",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": "searcher.OldGetAllSearchItems(self)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_5.lua",
+"gate": "mainline",
+"new": [],
+"old": "searcher.OldGetAllSearchItems",
+"sources": [
+"shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": "searcher.OldGetCatalogSearchResults(self)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_5.lua",
+"gate": "mainline",
+"new": [],
+"old": "searcher.OldGetCatalogSearchResults",
+"sources": [
+"shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same arguments; returns a result code (Enum.SendAddonMessageResult).",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ChatInfo.SendAddonMessage",
+"sig": "result = C_ChatInfo.SendAddonMessage(prefix, message, chatType?, target?)"
+}
+],
+"old": "SendAddonMessage",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Cata.lua",
+"gate": "classic, standard",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpecializationInfo.SetActiveSpecGroup",
+"sig": "nothing = C_SpecializationInfo.SetActiveSpecGroup(groupIndex)"
+}
+],
+"old": "SetActiveTalentGroup",
+"sources": [
+"classic shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.SpellHasRange(spellIdentifier)`.",
+"classic": "SpellHasRange(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.SpellHasRange",
+"sig": "hasRange = C_Spell.SpellHasRange(spellIdentifier)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.SpellBookItemHasRange",
+"sig": "hasRange = C_SpellBook.SpellBookItemHasRange(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "SpellHasRange",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Now `C_Spell.ToggleSpellAutoCast(spellIdentifier)`.",
+"classic": "ToggleSpellAutocast(spellID/name)",
+"confidence": null,
+"file": "Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.ToggleSpellAutoCast",
+"sig": "nothing = C_Spell.ToggleSpellAutoCast(spellIdentifier)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.ToggleSpellBookItemAutoCast",
+"sig": "nothing = C_SpellBook.ToggleSpellBookItemAutoCast(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "ToggleSpellAutocast",
+"sources": [
+"guide"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Returns one AuraData table; AuraUtil.UnpackAuraData(aura) gives the old list. Same in-combat caveats as UnitAura.",
+"classic": "UnitBuff(unitToken, index, filter)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Classic/Deprecated_1_15_8.lua",
+"gate": "classic",
+"new": [
+{
+"flags": [
+"secret in combat"
+],
+"in_game": "yes",
+"name": "C_UnitAuras.GetBuffDataByIndex",
+"sig": "aura? = C_UnitAuras.GetBuffDataByIndex(unit, index, filter?)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "AuraUtil.UnpackAuraData",
+"sig": null
+}
+],
+"old": "UnitBuff",
+"sources": [
+"curated",
+"classic shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "No direct replacement. GetNumUnspentTalents() returns the player's unspent talent points (no unit argument); C_ClassTalents.HasUnspentTalentPoints() only says whether there are any. Check the result in game before relying on it.",
+"classic": "talentPoints = UnitCharacterPoints(\"player\")",
+"confidence": "closest",
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "GetNumUnspentTalents",
+"sig": null
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ClassTalents.HasUnspentTalentPoints",
+"sig": "hasUnspentPoints, numClassPoints, numSpecPoints = C_ClassTalents.HasUnspentTalentPoints()"
+}
+],
+"old": "UnitCharacterPoints",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Returns one AuraData table; AuraUtil.UnpackAuraData(aura) gives the old list. Same in-combat caveats as UnitAura.",
+"classic": "UnitDebuff(unitToken, index, filter)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Classic/Deprecated_1_15_8.lua",
+"gate": "classic",
+"new": [
+{
+"flags": [
+"secret in combat"
+],
+"in_game": "yes",
+"name": "C_UnitAuras.GetDebuffDataByIndex",
+"sig": "aura? = C_UnitAuras.GetDebuffDataByIndex(unit, index, filter?)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "AuraUtil.UnpackAuraData",
+"sig": null
+}
+],
+"old": "UnitDebuff",
+"sources": [
+"curated",
+"classic shim"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "UnitMaxHealth was never a Blizzard function: the classic (and Forever) name is UnitHealthMax. It still exists, but for party, raid and enemy units it can return a secret value.",
+"classic": null,
+"confidence": "name mix-up",
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [
+"secret in combat"
+],
+"in_game": "yes",
+"name": "UnitHealthMax",
+"sig": "result = UnitHealthMax(unit)"
+}
+],
+"old": "UnitMaxHealth",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": "Same arguments. Protected in combat for some items, as before.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Container.UseContainerItem",
+"sig": "nothing = C_Container.UseContainerItem(containerIndex, slotIndex, unitToken?, bankType?, reagentBankOpen?)"
+}
+],
+"old": "UseContainerItem",
+"sources": [
+"curated"
+],
+"where": "missing"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_5.lua",
+"gate": "mainline",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "Enum.HousingCatalogEntrySubtype.Unowned",
+"sig": null
+}
+],
+"old": "variantID.entrySubtype",
+"sources": [
+"shim"
+],
+"where": "missing"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 16
+},
+"change": null,
+"classic": "IsSpellKnown(spellID, isPet)",
+"confidence": null,
+"file": "Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.IsSpellInSpellBook",
+"sig": "isInSpellBook = C_SpellBook.IsSpellInSpellBook(spellID, spellBank?, includeOverrides?)"
+}
+],
+"old": "IsSpellKnown",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 12
+},
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.GetActiveWindow",
+"sig": null
+}
+],
+"old": "ChatEdit_GetActiveWindow",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 11
+},
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.InsertLink",
+"sig": null
+}
+],
+"old": "ChatEdit_InsertLink",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.OpenChat",
+"sig": null
+}
+],
+"old": "ChatFrame_OpenChat",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"change": null,
+"classic": "SendChatMessage(message, chatType, languageID, target)",
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatInfo.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ChatInfo.SendChatMessage",
+"sig": "nothing = C_ChatInfo.SendChatMessage(message, chatType?, languageID?, target?)"
+}
+],
+"old": "SendChatMessage",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.AddMessageEventFilter",
+"sig": null
+}
+],
+"old": "ChatFrame_AddMessageEventFilter",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.RemoveMessageEventFilter",
+"sig": null
+}
+],
+"old": "ChatFrame_RemoveMessageEventFilter",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"change": null,
+"classic": "IsPlayerSpell(spellID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.IsSpellKnown",
+"sig": "isKnown = C_SpellBook.IsSpellKnown(spellID, spellBank?)"
+}
+],
+"old": "IsPlayerSpell",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "ActionHasRange(actionID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.HasRangeRequirements",
+"sig": "hasRangeRequirements = C_ActionBar.HasRangeRequirements(actionID)"
+}
+],
+"old": "ActionHasRange",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "CombatLogUtil.GetRaidTargetBraceCode",
+"sig": null
+}
+],
+"old": "Blizzard_CombatLog_BitToBraceCode",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "BNGetFriendInviteInfo(inviteIndex)",
+"confidence": null,
+"file": "Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_BattleNet.GetFriendInviteInfo",
+"sig": "inviteInfo? = C_BattleNet.GetFriendInviteInfo(inviteIndex)"
+}
+],
+"old": "BNGetFriendInviteInfo",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "BNInviteFriend(gameAccountID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_BattleNet.InviteFriend",
+"sig": "nothing = C_BattleNet.InviteFriend(gameAccountID)"
+}
+],
+"old": "BNInviteFriend",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "BNSendGameData(gameAccountID, prefix, data)",
+"confidence": null,
+"file": "Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_BattleNet.SendGameData",
+"sig": "result = C_BattleNet.SendGameData(gameAccountID, prefix, data)"
+}
+],
+"old": "BNSendGameData",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "BNSendVerifiedBattleTagInvite()",
+"confidence": null,
+"file": "Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_BattleNet.SendVerifiedBattleNetFriendInvite",
+"sig": "nothing = C_BattleNet.SendVerifiedBattleNetFriendInvite()"
+}
+],
+"old": "BNSendVerifiedBattleTagInvite",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "BNSendWhisper(bnetAccountID, text)",
+"confidence": null,
+"file": "Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_BattleNet.SendWhisper",
+"sig": "success = C_BattleNet.SendWhisper(bnetAccountID, text)"
+}
+],
+"old": "BNSendWhisper",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "BNSetBlocked(bnetAccountID, block)",
+"confidence": null,
+"file": "Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_BattleNet.SetBlocked",
+"sig": "nothing = C_BattleNet.SetBlocked(bnetAccountID, block)"
+}
+],
+"old": "BNSetBlocked",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "BNSetCustomMessage(text)",
+"confidence": null,
+"file": "Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_BattleNet.SetCustomMessage",
+"sig": "success = C_BattleNet.SetCustomMessage(text)"
+}
+],
+"old": "BNSetCustomMessage",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_ActionBar.GetActionLossOfControlCooldown(actionID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [
+"secret in combat"
+],
+"in_game": "yes",
+"name": "C_ActionBar.GetActionLossOfControlCooldownInfo",
+"sig": "lossOfControlInfo = C_ActionBar.GetActionLossOfControlCooldownInfo(actionID)"
+}
+],
+"old": "C_ActionBar.GetActionLossOfControlCooldown",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_ClickBindings.GetStringFromModifiers(modifiers)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_7.lua",
+"gate": "mainline",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "GetStringFromModifiers",
+"sig": "modifierString = GetStringFromModifiers(modifiers)"
+}
+],
+"old": "C_ClickBindings.GetStringFromModifiers",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_ClickBindings.MakeModifiers(...)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_7.lua",
+"gate": "mainline",
+"new": [],
+"old": "C_ClickBindings.MakeModifiers",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_DyeColor.GetDyeColorForItem(itemLinkOrID)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_1_0.lua",
+"gate": "mainline",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_DyeColor.GetDyeColorsForItem",
+"sig": "dyeColorIDs = C_DyeColor.GetDyeColorsForItem(itemLinkOrID)"
+}
+],
+"old": "C_DyeColor.GetDyeColorForItem",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_DyeColor.GetDyeColorForItemLocation(itemLocation)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_1_0.lua",
+"gate": "mainline",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_DyeColor.GetDyeColorsForItemLocation",
+"sig": "dyeColorIDs = C_DyeColor.GetDyeColorsForItemLocation(itemLocation)"
+}
+],
+"old": "C_DyeColor.GetDyeColorForItemLocation",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_1_0.lua",
+"gate": "mainline",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Housing.IsInsideOwnedHouse",
+"sig": "isInsideOwnedHouse = C_Housing.IsInsideOwnedHouse()"
+}
+],
+"old": "C_Housing.IsInsideOwnHouse",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_HousingBasicMode.StartPlacingNewDecor(catalogEntryIDOrVariantID)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_5.lua",
+"gate": "mainline",
+"new": [],
+"old": "C_HousingBasicMode.StartPlacingNewDecor",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_HousingCatalog.CanDestroyEntry(entryIDOrVariantID)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_5.lua",
+"gate": "mainline",
+"new": [],
+"old": "C_HousingCatalog.CanDestroyEntry",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_HousingCatalog.CreateCatalogSearcher()",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_5.lua",
+"gate": "mainline",
+"new": [],
+"old": "C_HousingCatalog.CreateCatalogSearcher",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_HousingCatalog.DestroyEntry(entryIDOrVariantID, destroyAll)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_5.lua",
+"gate": "mainline",
+"new": [],
+"old": "C_HousingCatalog.DestroyEntry",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_HousingCatalog.GetCatalogCategoryInfo(categoryID)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_5.lua",
+"gate": "mainline",
+"new": [],
+"old": "C_HousingCatalog.GetCatalogCategoryInfo",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_HousingCatalog.GetCatalogEntryInfo(entryID)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_5.lua",
+"gate": "mainline",
+"new": [],
+"old": "C_HousingCatalog.GetCatalogEntryInfo",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_HousingCatalog.GetCatalogEntryInfoByItem(itemInfo, _tryGetOwnedInfo)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_5.lua",
+"gate": "mainline",
+"new": [],
+"old": "C_HousingCatalog.GetCatalogEntryInfoByItem",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_HousingCatalog.GetCatalogEntryInfoByRecordID(entryType, recordID, _tryGetOwnedInfo)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_5.lua",
+"gate": "mainline",
+"new": [],
+"old": "C_HousingCatalog.GetCatalogEntryInfoByRecordID",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_HousingCatalog.GetCatalogSubcategoryInfo(subcategoryID)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_5.lua",
+"gate": "mainline",
+"new": [],
+"old": "C_HousingCatalog.GetCatalogSubcategoryInfo",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_HousingCatalog.GetFeaturedDecor()",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_5.lua",
+"gate": "mainline",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_HousingCatalog.GetFeaturedSmallProducts",
+"sig": "infos = C_HousingCatalog.GetFeaturedSmallProducts()"
+}
+],
+"old": "C_HousingCatalog.GetFeaturedDecor",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_HousingCatalog.SearchCatalogCategories(searchParams)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_5.lua",
+"gate": "mainline",
+"new": [],
+"old": "C_HousingCatalog.SearchCatalogCategories",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_HousingCatalog.SearchCatalogSubcategories(searchParams)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_5.lua",
+"gate": "mainline",
+"new": [],
+"old": "C_HousingCatalog.SearchCatalogSubcategories",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_HousingDecor.GetMaxPlacementBudget()",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_1_0.lua",
+"gate": "mainline",
+"new": [],
+"old": "C_HousingDecor.GetMaxPlacementBudget",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_HousingDecor.GetSpentPlacementBudget()",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_1_0.lua",
+"gate": "mainline",
+"new": [],
+"old": "C_HousingDecor.GetSpentPlacementBudget",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_HousingLayout.GetNumFloors()",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_1_0.lua",
+"gate": "mainline",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_HousingLayout.GetHighestOccupiedFloorIndex",
+"sig": "highestFloorIndex = C_HousingLayout.GetHighestOccupiedFloorIndex()"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_HousingLayout.GetLowestOccupiedFloorIndex",
+"sig": "lowestFloorIndex = C_HousingLayout.GetLowestOccupiedFloorIndex()"
+}
+],
+"old": "C_HousingLayout.GetNumFloors",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_HousingLayout.GetRoomPlacementBudget()",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_1_0.lua",
+"gate": "mainline",
+"new": [],
+"old": "C_HousingLayout.GetRoomPlacementBudget",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_HousingLayout.GetSpentPlacementBudget()",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_1_0.lua",
+"gate": "mainline",
+"new": [],
+"old": "C_HousingLayout.GetSpentPlacementBudget",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_Spell.GetMawPowerBorderAtlasBySpellID(spellID)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_7.lua",
+"gate": "mainline",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.GetMawPowerRarityInfoBySpellID",
+"sig": "rarityID, rarityBorderAtlas = C_Spell.GetMawPowerRarityInfoBySpellID(spellID)"
+}
+],
+"old": "C_Spell.GetMawPowerBorderAtlasBySpellID",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_Spell.GetSpellLossOfControlCooldown(spellIdentifier)",
+"confidence": null,
+"file": "Blizzard_DeprecatedSpellScript/Deprecated_SpellScript.lua",
+"gate": null,
+"new": [
+{
+"flags": [
+"secret in combat"
+],
+"in_game": "yes",
+"name": "C_Spell.GetSpellLossOfControlCooldownInfo",
+"sig": "lossOfControlInfo = C_Spell.GetSpellLossOfControlCooldownInfo(spellIdentifier)"
+}
+],
+"old": "C_Spell.GetSpellLossOfControlCooldown",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_SpellBook.GetSpellBookItemLossOfControlCooldown(spellBookItem)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_1.lua",
+"gate": "mainline",
+"new": [
+{
+"flags": [
+"secret in combat"
+],
+"in_game": "yes",
+"name": "C_SpellBook.GetSpellBookItemLossOfControlCooldownInfo",
+"sig": "lossOfControlInfo = C_SpellBook.GetSpellBookItemLossOfControlCooldownInfo(spellBookItemSlotIndex, spellBookItemSpellBank)"
+}
+],
+"old": "C_SpellBook.GetSpellBookItemLossOfControlCooldown",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_1_0.lua",
+"gate": "mainline",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Navigation.GetNextWaypointForMap",
+"sig": "x, y, waypointDescription = C_Navigation.GetNextWaypointForMap(uiMapID)"
+}
+],
+"old": "C_SuperTrack.GetNextWaypointForMap",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedTransmog/Deprecated_Transmog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_TransmogOutfitInfo.GetOptionsForSlot",
+"sig": "options, artifactOptions? = C_TransmogOutfitInfo.GetOptionsForSlot(slot)"
+}
+],
+"old": "C_TransmogOutfitInfo.GetWeaponOptionsForSlot",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedTransmog/Deprecated_Transmog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_TransmogOutfitInfo.SetViewedOptionForSlot",
+"sig": "nothing = C_TransmogOutfitInfo.SetViewedOptionForSlot(slot, option)"
+}
+],
+"old": "C_TransmogOutfitInfo.SetViewedWeaponOptionForSlot",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "C_UnitAuras.AddPrivateAuraAppliedSound(sound)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Shared/Deprecated_12_1_0.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_UnitAuras.AddAuraSound",
+"sig": "auraSoundID? = C_UnitAuras.AddAuraSound(trigger, sound)"
+}
+],
+"old": "C_UnitAuras.AddPrivateAuraAppliedSound",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_Deprecated/Shared/Deprecated_12_1_0.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_UnitAuras.RemoveAuraSound",
+"sig": "nothing = C_UnitAuras.RemoveAuraSound(auraSoundID)"
+}
+],
+"old": "C_UnitAuras.RemovePrivateAuraAppliedSound",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "CancelEmote()",
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatInfo.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ChatInfo.CancelEmote",
+"sig": "nothing = C_ChatInfo.CancelEmote()"
+}
+],
+"old": "CancelEmote",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "CancelItemTempEnchantment(index)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Shared/Deprecated_12_1_0.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_PaperDollInfo.CancelTemporaryEnchantment",
+"sig": "nothing = C_PaperDollInfo.CancelTemporaryEnchantment(slot)"
+}
+],
+"old": "CancelItemTempEnchantment",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "ChangeActionBarPage(pageIndex)",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.SetActionBarPage",
+"sig": "nothing = C_ActionBar.SetActionBarPage(pageIndex)"
+}
+],
+"old": "ChangeActionBarPage",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.AddSystemMessage",
+"sig": null
+}
+],
+"old": "Chat_AddSystemMessage",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.GetChannelColor",
+"sig": null
+}
+],
+"old": "Chat_GetChannelColor",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.GetChannelShortcutName",
+"sig": null
+}
+],
+"old": "Chat_GetChannelShortcutName",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.GetChatCategory",
+"sig": null
+}
+],
+"old": "Chat_GetChatCategory",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.GetChatFrame",
+"sig": null
+}
+],
+"old": "Chat_GetChatFrame",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.GetColoredChatName",
+"sig": null
+}
+],
+"old": "Chat_GetColoredChatName",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.GetCommunitiesChannel",
+"sig": null
+}
+],
+"old": "Chat_GetCommunitiesChannel",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.GetCommunitiesChannelColor",
+"sig": null
+}
+],
+"old": "Chat_GetCommunitiesChannelColor",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.GetCommunitiesChannelName",
+"sig": null
+}
+],
+"old": "Chat_GetCommunitiesChannelName",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.ShouldColorChatByClass",
+"sig": null
+}
+],
+"old": "Chat_ShouldColorChatByClass",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.ActivateChat",
+"sig": null
+}
+],
+"old": "ChatEdit_ActivateChat",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameEditBoxMixin.AddHistory",
+"sig": null
+}
+],
+"old": "ChatEdit_AddHistory",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.ChooseBoxForSend",
+"sig": null
+}
+],
+"old": "ChatEdit_ChooseBoxForSend",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameEditBoxMixin.ClearChat",
+"sig": null
+}
+],
+"old": "ChatEdit_ClearChat",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.DeactivateChat",
+"sig": null
+}
+],
+"old": "ChatEdit_DeactivateChat",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameEditBoxMixin.DoesCurrentChannelTargetMatch",
+"sig": null
+}
+],
+"old": "ChatEdit_DoesCurrentChannelTargetMatch",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameEditBoxMixin.ExtractChannel",
+"sig": null
+}
+],
+"old": "ChatEdit_ExtractChannel",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameEditBoxMixin.ExtractTellTarget",
+"sig": null
+}
+],
+"old": "ChatEdit_ExtractTellTarget",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.FocusActiveWindow",
+"sig": null
+}
+],
+"old": "ChatEdit_FocusActiveWindow",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.GetActiveChatType",
+"sig": null
+}
+],
+"old": "ChatEdit_GetActiveChatType",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameEditBoxMixin.GetChannelTarget",
+"sig": null
+}
+],
+"old": "ChatEdit_GetChannelTarget",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.GetLastActiveWindow",
+"sig": null
+}
+],
+"old": "ChatEdit_GetLastActiveWindow",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.GetLastTellTarget",
+"sig": null
+}
+],
+"old": "ChatEdit_GetLastTellTarget",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.GetLastToldTarget",
+"sig": null
+}
+],
+"old": "ChatEdit_GetLastToldTarget",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.GetNextTellTarget",
+"sig": null
+}
+],
+"old": "ChatEdit_GetNextTellTarget",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameEditBoxMixin.HandleChatType",
+"sig": null
+}
+],
+"old": "ChatEdit_HandleChatType",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.HasStickyFocus",
+"sig": null
+}
+],
+"old": "ChatEdit_HasStickyFocus",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.LinkItem",
+"sig": null
+}
+],
+"old": "ChatEdit_LinkItem",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameEditBoxMixin.ParseText",
+"sig": null
+}
+],
+"old": "ChatEdit_ParseText",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameEditBoxMixin.ResetChatType",
+"sig": null
+}
+],
+"old": "ChatEdit_ResetChatType",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameEditBoxMixin.ResetChatTypeToSticky",
+"sig": null
+}
+],
+"old": "ChatEdit_ResetChatTypeToSticky",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameEditBoxMixin.SendText",
+"sig": null
+}
+],
+"old": "ChatEdit_SendText",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameEditBoxMixin.Deactivate",
+"sig": null
+}
+],
+"old": "ChatEdit_SetDeactivated",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.SetLastActiveWindow",
+"sig": null
+}
+],
+"old": "ChatEdit_SetLastActiveWindow",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.SetLastTellTarget",
+"sig": null
+}
+],
+"old": "ChatEdit_SetLastTellTarget",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.SetLastToldTarget",
+"sig": null
+}
+],
+"old": "ChatEdit_SetLastToldTarget",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.TryInsertChatLink",
+"sig": null
+}
+],
+"old": "ChatEdit_TryInsertChatLink",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.TryInsertQuestLinkForQuestID",
+"sig": null
+}
+],
+"old": "ChatEdit_TryInsertQuestLinkForQuestID",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameEditBoxMixin.UpdateHeader",
+"sig": null
+}
+],
+"old": "ChatEdit_UpdateHeader",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.AddCommunitiesChannel",
+"sig": null
+}
+],
+"old": "ChatFrame_AddCommunitiesChannel",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameMixin.AddMessage",
+"sig": null
+}
+],
+"old": "ChatFrame_AddMessage",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameMixin.AddMessageGroup",
+"sig": null
+}
+],
+"old": "ChatFrame_AddMessageGroup",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameMixin.AddPrivateMessageTarget",
+"sig": null
+}
+],
+"old": "ChatFrame_AddPrivateMessageTarget",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameMixin.AddSingleMessageType",
+"sig": null
+}
+],
+"old": "ChatFrame_AddSingleMessageType",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.CanAddChannel",
+"sig": null
+}
+],
+"old": "ChatFrame_CanAddChannel",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.CanChatGroupPerformExpressionExpansion",
+"sig": null
+}
+],
+"old": "ChatFrame_CanChatGroupPerformExpressionExpansion",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.ChatPageDown",
+"sig": null
+}
+],
+"old": "ChatFrame_ChatPageDown",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.ChatPageUp",
+"sig": null
+}
+],
+"old": "ChatFrame_ChatPageUp",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.ClearChatFocusOverride",
+"sig": null
+}
+],
+"old": "ChatFrame_ClearChatFocusOverride",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameMixin.ContainsChannel",
+"sig": null
+}
+],
+"old": "ChatFrame_ContainsChannel",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameMixin.ContainsMessageGroup",
+"sig": null
+}
+],
+"old": "ChatFrame_ContainsMessageGroup",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.DisplayChatHelp",
+"sig": null
+}
+],
+"old": "ChatFrame_DisplayChatHelp",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.DisplayGameTime",
+"sig": null
+}
+],
+"old": "ChatFrame_DisplayGameTime",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.DisplayGMOTD",
+"sig": null
+}
+],
+"old": "ChatFrame_DisplayGMOTD",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.DisplayHelpText",
+"sig": null
+}
+],
+"old": "ChatFrame_DisplayHelpText",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.DisplayHelpTextSimple",
+"sig": null
+}
+],
+"old": "ChatFrame_DisplayHelpTextSimple",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.DisplayMacroHelpText",
+"sig": null
+}
+],
+"old": "ChatFrame_DisplayMacroHelpText",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.DisplaySystemMessage",
+"sig": null
+}
+],
+"old": "ChatFrame_DisplaySystemMessage",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.DisplaySystemMessageInCurrent",
+"sig": null
+}
+],
+"old": "ChatFrame_DisplaySystemMessageInCurrent",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.DisplaySystemMessageInPrimary",
+"sig": null
+}
+],
+"old": "ChatFrame_DisplaySystemMessageInPrimary",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.DisplayTimePlayed",
+"sig": null
+}
+],
+"old": "ChatFrame_DisplayTimePlayed",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.DisplayUsageError",
+"sig": null
+}
+],
+"old": "ChatFrame_DisplayUsageError",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameMixin.ExcludePrivateMessageTarget",
+"sig": null
+}
+],
+"old": "ChatFrame_ExcludePrivateMessageTarget",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.GetChatFocusOverride",
+"sig": null
+}
+],
+"old": "ChatFrame_GetChatFocusOverride",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.GetCommunitiesChannelLocalID",
+"sig": null
+}
+],
+"old": "ChatFrame_GetCommunitiesChannelLocalID",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.GetCommunityAndStreamFromChannel",
+"sig": null
+}
+],
+"old": "ChatFrame_GetCommunityAndStreamFromChannel",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.GetCommunityAndStreamName",
+"sig": null
+}
+],
+"old": "ChatFrame_GetCommunityAndStreamName",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameMixin.GetDefaultChatTarget",
+"sig": null
+}
+],
+"old": "ChatFrame_GetDefaultChatTarget",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.GetFullChannelInfo",
+"sig": null
+}
+],
+"old": "ChatFrame_GetFullChannelInfo",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.GetMobileEmbeddedTexture",
+"sig": null
+}
+],
+"old": "ChatFrame_GetMobileEmbeddedTexture",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameMixin.ReceiveAllPrivateMessages",
+"sig": null
+}
+],
+"old": "ChatFrame_ReceiveAllPrivateMessages",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameMixin.RegisterForChannels",
+"sig": null
+}
+],
+"old": "ChatFrame_RegisterForChannels",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameMixin.RegisterForMessages",
+"sig": null
+}
+],
+"old": "ChatFrame_RegisterForMessages",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameMixin.RemoveAllChannels",
+"sig": null
+}
+],
+"old": "ChatFrame_RemoveAllChannels",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameMixin.RemoveAllMessageGroups",
+"sig": null
+}
+],
+"old": "ChatFrame_RemoveAllMessageGroups",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameMixin.RemoveChannel",
+"sig": null
+}
+],
+"old": "ChatFrame_RemoveChannel",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.RemoveCommunitiesChannel",
+"sig": null
+}
+],
+"old": "ChatFrame_RemoveCommunitiesChannel",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameMixin.RemoveExcludePrivateMessageTarget",
+"sig": null
+}
+],
+"old": "ChatFrame_RemoveExcludePrivateMessageTarget",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameMixin.RemoveMessageGroup",
+"sig": null
+}
+],
+"old": "ChatFrame_RemoveMessageGroup",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameMixin.RemovePrivateMessageTarget",
+"sig": null
+}
+],
+"old": "ChatFrame_RemovePrivateMessageTarget",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.ReplyTell",
+"sig": null
+}
+],
+"old": "ChatFrame_ReplyTell",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.ReplyTell2",
+"sig": null
+}
+],
+"old": "ChatFrame_ReplyTell2",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.ResolveChannelName",
+"sig": null
+}
+],
+"old": "ChatFrame_ResolveChannelName",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.ResolvePrefixedChannelName",
+"sig": null
+}
+],
+"old": "ChatFrame_ResolvePrefixedChannelName",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.ScrollDown",
+"sig": null
+}
+],
+"old": "ChatFrame_ScrollDown",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.ScrollToBottom",
+"sig": null
+}
+],
+"old": "ChatFrame_ScrollToBottom",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.ScrollUp",
+"sig": null
+}
+],
+"old": "ChatFrame_ScrollUp",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.SendTell",
+"sig": null
+}
+],
+"old": "ChatFrame_SendTell",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.SendTellWithMessage",
+"sig": null
+}
+],
+"old": "ChatFrame_SendTellWithMessage",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.SetChatFocusOverride",
+"sig": null
+}
+],
+"old": "ChatFrame_SetChatFocusOverride",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.TimeBreakDown",
+"sig": null
+}
+],
+"old": "ChatFrame_TimeBreakDown",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.TruncateToMaxLength",
+"sig": null
+}
+],
+"old": "ChatFrame_TruncateToMaxLength",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameMixin.UnregisterAllMessageGroups",
+"sig": null
+}
+],
+"old": "ChatFrame_UnregisterAllMessageGroups",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.UpdateChatFrames",
+"sig": null
+}
+],
+"old": "ChatFrame_UpdateChatFrames",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameMixin.UpdateColorByID",
+"sig": null
+}
+],
+"old": "ChatFrame_UpdateColorByID",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameMixin.UpdateDefaultChatTarget",
+"sig": null
+}
+],
+"old": "ChatFrame_UpdateDefaultChatTarget",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "CombatLog_Color_ColorArrayByEventType(event, filterSettings)",
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "CombatLogUtil.GetColorByEventType",
+"sig": null
+}
+],
+"old": "CombatLog_Color_ColorArrayByEventType",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "CombatLog_Color_ColorArrayBySchool(school, filterSettings)",
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "CombatLogUtil.GetColorBySchool",
+"sig": null
+}
+],
+"old": "CombatLog_Color_ColorArrayBySchool",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "CombatLog_Color_ColorArrayByUnitType(unitFlags, filterSettings)",
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "CombatLogUtil.GetColorByUnitType",
+"sig": null
+}
+],
+"old": "CombatLog_Color_ColorArrayByUnitType",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "CombatLog_Color_ColorStringByEventType(unitFlags, filterSettings)",
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [],
+"old": "CombatLog_Color_ColorStringByEventType",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "CombatLog_Color_ColorStringBySchool(school, filterSettings)",
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [],
+"old": "CombatLog_Color_ColorStringBySchool",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "CombatLog_Color_ColorStringByUnitType(unitFlags, filterSettings)",
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [],
+"old": "CombatLog_Color_ColorStringByUnitType",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "CombatLog_Color_FloatToText(r, g, b, a)",
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [],
+"old": "CombatLog_Color_FloatToText",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "CombatLogUtil.HighlightColor",
+"sig": null
+}
+],
+"old": "CombatLog_Color_HighlightColorArray",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_CombatLog.DoesObjectMatchFilter",
+"sig": "matches = C_CombatLog.DoesObjectMatchFilter(mask, flags)"
+}
+],
+"old": "CombatLog_Object_IsA",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "CombatLogUtil.GenerateDamageResultString",
+"sig": null
+}
+],
+"old": "CombatLog_String_DamageResultString",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "CombatLogUtil.GetUnitIcon",
+"sig": null
+}
+],
+"old": "CombatLog_String_GetIcon",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "CombatLogUtil.GetPowerTypeString",
+"sig": null
+}
+],
+"old": "CombatLog_String_PowerType",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "CombatLogUtil.GetSpellSchoolString",
+"sig": null
+}
+],
+"old": "CombatLog_String_SchoolString",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_CombatLog.ClearEntries",
+"sig": "nothing = C_CombatLog.ClearEntries()"
+}
+],
+"old": "CombatLogClearEntries",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_CombatLog.GetEntryRetentionTime",
+"sig": "retentionTime = C_CombatLog.GetEntryRetentionTime()"
+}
+],
+"old": "CombatLogGetRetentionTime",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_CombatLog.SetEntryRetentionTime",
+"sig": "nothing = C_CombatLog.SetEntryRetentionTime(retentionTime)"
+}
+],
+"old": "CombatLogSetRetentionTime",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_CombatText.SetActiveUnit",
+"sig": "nothing = C_CombatText.SetActiveUnit(unitToken)"
+}
+],
+"old": "CombatTextSetActiveUnit",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "ConfirmReadyCheck(isReady)",
+"confidence": null,
+"file": "Blizzard_DeprecatedPartyInfo/Deprecated_PartyInfo.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_PartyInfo.ConfirmReadyCheck",
+"sig": "nothing = C_PartyInfo.ConfirmReadyCheck(isReady)"
+}
+],
+"old": "ConfirmReadyCheck",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_DeathRecap.GetRecapEvents",
+"sig": "events = C_DeathRecap.GetRecapEvents(recapID?)"
+}
+],
+"old": "DeathRecap_GetEvents",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_DeathRecap.HasRecapEvents",
+"sig": "hasEvents = C_DeathRecap.HasRecapEvents(recapID?)"
+}
+],
+"old": "DeathRecap_HasEvents",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "DemoteAssistant(name, exactNameMatch)",
+"confidence": null,
+"file": "Blizzard_DeprecatedPartyInfo/Deprecated_PartyInfo.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_PartyInfo.DemoteAssistant",
+"sig": "nothing = C_PartyInfo.DemoteAssistant(name, exactNameMatch?)"
+}
+],
+"old": "DemoteAssistant",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "DoEmote(emoteName, targetName, suppressMoveError)",
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatInfo.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ChatInfo.PerformEmote",
+"sig": "success = C_ChatInfo.PerformEmote(emoteName, targetName?, suppressMoveError?)"
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ChatInfo.CancelEmote",
+"sig": "nothing = C_ChatInfo.CancelEmote()"
+}
+],
+"old": "DoEmote",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "DoReadyCheck()",
+"confidence": null,
+"file": "Blizzard_DeprecatedPartyInfo/Deprecated_PartyInfo.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_PartyInfo.DoReadyCheck",
+"sig": "nothing = C_PartyInfo.DoReadyCheck()"
+}
+],
+"old": "DoReadyCheck",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "FindBaseSpellByID(spellID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.FindBaseSpellByID",
+"sig": "baseSpellID? = C_SpellBook.FindBaseSpellByID(spellID)"
+}
+],
+"old": "FindBaseSpellByID",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "FindFlyoutSlotBySpellID(spellID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.FindFlyoutSlotBySpellID",
+"sig": "flyoutSlot = C_SpellBook.FindFlyoutSlotBySpellID(spellID)"
+}
+],
+"old": "FindFlyoutSlotBySpellID",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "FindSpellOverrideByID(spellID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.FindSpellOverrideByID",
+"sig": "overrideSpellID? = C_SpellBook.FindSpellOverrideByID(spellID)"
+}
+],
+"old": "FindSpellOverrideByID",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetActionAutocast(actionID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.GetActionAutocast",
+"sig": "autocastAllowed, autocastEnabled = C_ActionBar.GetActionAutocast(actionID)"
+}
+],
+"old": "GetActionAutocast",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetActionBarPage()",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.GetActionBarPage",
+"sig": "currentPage = C_ActionBar.GetActionBarPage()"
+}
+],
+"old": "GetActionBarPage",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetActionCharges(actionID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [
+"secret in combat"
+],
+"in_game": "yes",
+"name": "C_ActionBar.GetActionCharges",
+"sig": "chargeInfo = C_ActionBar.GetActionCharges(actionID)"
+}
+],
+"old": "GetActionCharges",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetActionCooldown(actionID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [
+"secret in combat"
+],
+"in_game": "yes",
+"name": "C_ActionBar.GetActionCooldown",
+"sig": "cooldownInfo = C_ActionBar.GetActionCooldown(actionID)"
+}
+],
+"old": "GetActionCooldown",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetActionCount(actionID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [
+"secret in combat"
+],
+"in_game": "yes",
+"name": "C_ActionBar.GetActionUseCount",
+"sig": "count = C_ActionBar.GetActionUseCount(actionID)"
+}
+],
+"old": "GetActionCount",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetActionLossOfControlCooldown(actionID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.GetActionLossOfControlCooldown",
+"sig": null
+}
+],
+"old": "GetActionLossOfControlCooldown",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetActionText(actionID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.GetActionText",
+"sig": "text = C_ActionBar.GetActionText(actionID)"
+}
+],
+"old": "GetActionText",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetActionTexture(actionID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.GetActionTexture",
+"sig": "textureFileID = C_ActionBar.GetActionTexture(actionID)"
+}
+],
+"old": "GetActionTexture",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetAutoCompletePresenceID(name)",
+"confidence": null,
+"file": "Blizzard_DeprecatedAutoComplete/Deprecated_AutoComplete.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_AutoComplete.GetAutoCompletePresenceID",
+"sig": "presenceID? = C_AutoComplete.GetAutoCompletePresenceID(name)"
+}
+],
+"old": "GetAutoCompletePresenceID",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetAutoCompleteRealms()",
+"confidence": null,
+"file": "Blizzard_DeprecatedAutoComplete/Deprecated_AutoComplete.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_AutoComplete.GetAutoCompleteRealms",
+"sig": "realms = C_AutoComplete.GetAutoCompleteRealms()"
+}
+],
+"old": "GetAutoCompleteRealms",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetAutoCompleteResults(name, numResults, cursorPosition, allowFullMatch, includeFlags, excludeFlags)",
+"confidence": null,
+"file": "Blizzard_DeprecatedAutoComplete/Deprecated_AutoComplete.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_AutoComplete.GetAutoCompleteResults",
+"sig": "results = C_AutoComplete.GetAutoCompleteResults(name, numResults, cursorPosition, allowFullMatch, includeFlags, excludeFlags)"
+}
+],
+"old": "GetAutoCompleteResults",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetBattlefieldScore(playerIndex)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_1.lua",
+"gate": "mainline",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_PvP.GetScoreInfo",
+"sig": "info? = C_PvP.GetScoreInfo(offsetIndex)"
+}
+],
+"old": "GetBattlefieldScore",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetBattlefieldStatData(playerIndex, statIndex)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_1.lua",
+"gate": "mainline",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_PvP.GetScoreInfo",
+"sig": "info? = C_PvP.GetScoreInfo(offsetIndex)"
+}
+],
+"old": "GetBattlefieldStatData",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetBonusBarIndex()",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.GetBonusBarIndex",
+"sig": "bonusBarIndex = C_ActionBar.GetBonusBarIndex()"
+}
+],
+"old": "GetBonusBarIndex",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetBonusBarOffset()",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.GetBonusBarOffset",
+"sig": "bonusBarOffset = C_ActionBar.GetBonusBarOffset()"
+}
+],
+"old": "GetBonusBarOffset",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.GetTimestampFormat",
+"sig": null
+}
+],
+"old": "GetChatTimestampFormat",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [
+"always secret"
+],
+"in_game": "yes",
+"name": "C_CombatText.GetCurrentEventInfo",
+"sig": "nothing = C_CombatText.GetCurrentEventInfo()"
+}
+],
+"old": "GetCurrentCombatTextEventInfo",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_DeathRecap.GetRecapLink",
+"sig": "link = C_DeathRecap.GetRecapLink(recapID?)"
+}
+],
+"old": "GetDeathRecapLink",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetExtraBarIndex()",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.GetExtraBarIndex",
+"sig": "extraBarIndex = C_ActionBar.GetExtraBarIndex()"
+}
+],
+"old": "GetExtraBarIndex",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "getglobal(var)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Shared/Deprecated_12_1_0.lua",
+"gate": null,
+"new": [],
+"old": "getglobal",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedGuildScript/Deprecated_GuildScript.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_GuildInfo.GetInfoText",
+"sig": "infoText = C_GuildInfo.GetInfoText()"
+}
+],
+"old": "GetGuildInfoText",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedGuildScript/Deprecated_GuildScript.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_GuildInfo.GetMOTD",
+"sig": "motd = C_GuildInfo.GetMOTD()"
+}
+],
+"old": "GetGuildRosterMOTD",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_Deprecated/Shared/Deprecated_12_1_0.lua",
+"gate": null,
+"new": [
+{
+"flags": [
+"secret in combat"
+],
+"in_game": "yes",
+"name": "C_SpecializationInfo.GetInspectSpecialization",
+"sig": "specializationID = C_SpecializationInfo.GetInspectSpecialization(unit)"
+}
+],
+"old": "GetInspectSpecialization",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Deprecated_PaperDoll/Deprecated_PaperDoll.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_PaperDollInfo.GetInventorySlotInfo",
+"sig": "invSlot, slotTexture, checkRelic = C_PaperDollInfo.GetInventorySlotInfo(slotName)"
+}
+],
+"old": "GetInventorySlotInfo",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedSpellScript/Deprecated_SpellScript.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.GetSpellQueueWindow",
+"sig": "result = C_Spell.GetSpellQueueWindow()"
+}
+],
+"old": "GetMaxSpellStartRecoveryOffset",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetMerchantCurrencies()",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_7.lua",
+"gate": "mainline",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_MerchantFrame.GetMerchantCurrencies",
+"sig": "currencies = C_MerchantFrame.GetMerchantCurrencies()"
+}
+],
+"old": "GetMerchantCurrencies",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetMultiCastBarIndex()",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.GetMultiCastBarIndex",
+"sig": "multiCastBarIndex = C_ActionBar.GetMultiCastBarIndex()"
+}
+],
+"old": "GetMultiCastBarIndex",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetOverrideBarIndex()",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.GetOverrideBarIndex",
+"sig": "overrideBarIndex = C_ActionBar.GetOverrideBarIndex()"
+}
+],
+"old": "GetOverrideBarIndex",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetOverrideBarSkin()",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.GetOverrideBarSkin",
+"sig": "textureFileID? = C_ActionBar.GetOverrideBarSkin()"
+}
+],
+"old": "GetOverrideBarSkin",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedSpellScript/Deprecated_SpellScript.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.GetSchoolString",
+"sig": "result = C_Spell.GetSchoolString(schoolMask)"
+}
+],
+"old": "GetSchoolString",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedSpellScript/Deprecated_SpellScript.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.GetSpellQueueWindow",
+"sig": "result = C_Spell.GetSpellQueueWindow()"
+}
+],
+"old": "GetSpellQueueWindow",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetTempShapeshiftBarIndex()",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.GetTempShapeshiftBarIndex",
+"sig": "tempShapeshiftBarIndex = C_ActionBar.GetTempShapeshiftBarIndex()"
+}
+],
+"old": "GetTempShapeshiftBarIndex",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetVehicleBarIndex()",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.GetVehicleBarIndex",
+"sig": "vehicleBarIndex = C_ActionBar.GetVehicleBarIndex()"
+}
+],
+"old": "GetVehicleBarIndex",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "GetWeaponEnchantInfo()",
+"confidence": null,
+"file": "Blizzard_Deprecated/Shared/Deprecated_12_1_0.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_PaperDollInfo.GetTemporaryEnchantmentInfo",
+"sig": "enchantInfo = C_PaperDollInfo.GetTemporaryEnchantmentInfo(slot)"
+}
+],
+"old": "GetWeaponEnchantInfo",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedGuildScript/Deprecated_GuildScript.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_GuildInfo.Demote",
+"sig": "nothing = C_GuildInfo.Demote(name)"
+}
+],
+"old": "GuildDemote",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedGuildScript/Deprecated_GuildScript.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_GuildInfo.Disband",
+"sig": "nothing = C_GuildInfo.Disband()"
+}
+],
+"old": "GuildDisband",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedGuildScript/Deprecated_GuildScript.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_GuildInfo.Invite",
+"sig": "nothing = C_GuildInfo.Invite(name)"
+}
+],
+"old": "GuildInvite",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedGuildScript/Deprecated_GuildScript.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_GuildInfo.Leave",
+"sig": "nothing = C_GuildInfo.Leave()"
+}
+],
+"old": "GuildLeave",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedGuildScript/Deprecated_GuildScript.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_GuildInfo.Promote",
+"sig": "nothing = C_GuildInfo.Promote(name)"
+}
+],
+"old": "GuildPromote",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedGuildScript/Deprecated_GuildScript.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_GuildInfo.SetLeader",
+"sig": "nothing = C_GuildInfo.SetLeader(name)"
+}
+],
+"old": "GuildSetLeader",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedGuildScript/Deprecated_GuildScript.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_GuildInfo.SetMOTD",
+"sig": "nothing = C_GuildInfo.SetMOTD(motd)"
+}
+],
+"old": "GuildSetMOTD",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedGuildScript/Deprecated_GuildScript.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_GuildInfo.Uninvite",
+"sig": "nothing = C_GuildInfo.Uninvite(name)"
+}
+],
+"old": "GuildUninvite",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "HasAction(actionID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.HasAction",
+"sig": "hasAction = C_ActionBar.HasAction(actionID)"
+}
+],
+"old": "HasAction",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "HasBonusActionBar()",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.HasBonusActionBar",
+"sig": "hasBonusActionBar = C_ActionBar.HasBonusActionBar()"
+}
+],
+"old": "HasBonusActionBar",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "HasExtraActionBar()",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.HasExtraActionBar",
+"sig": "hasExtraActionBar = C_ActionBar.HasExtraActionBar()"
+}
+],
+"old": "HasExtraActionBar",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "HasOverrideActionBar()",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.HasOverrideActionBar",
+"sig": "hasOverrideActionBar = C_ActionBar.HasOverrideActionBar()"
+}
+],
+"old": "HasOverrideActionBar",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "HasTempShapeshiftActionBar()",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.HasTempShapeshiftActionBar",
+"sig": "hasTempShapeshiftActionBar = C_ActionBar.HasTempShapeshiftActionBar()"
+}
+],
+"old": "HasTempShapeshiftActionBar",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "HasVehicleActionBar()",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.HasVehicleActionBar",
+"sig": "hasVehicleActionBar = C_ActionBar.HasVehicleActionBar()"
+}
+],
+"old": "HasVehicleActionBar",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "IsActionInRange(actionID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.IsActionInRange",
+"sig": "isInRange? = C_ActionBar.IsActionInRange(actionID, target?)"
+}
+],
+"old": "IsActionInRange",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "IsAttackAction(actionID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.IsAttackAction",
+"sig": "isAttackAction = C_ActionBar.IsAttackAction(actionID)"
+}
+],
+"old": "IsAttackAction",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "IsAutoRepeatAction(actionID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.IsAutoRepeatAction",
+"sig": "isAutoRepeatAction = C_ActionBar.IsAutoRepeatAction(actionID)"
+}
+],
+"old": "IsAutoRepeatAction",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "IsConsumableAction(actionID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.IsConsumableAction",
+"sig": "isConsumableAction = C_ActionBar.IsConsumableAction(actionID)"
+}
+],
+"old": "IsConsumableAction",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "IsCurrentAction(actionID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.IsCurrentAction",
+"sig": "isCurrentAction = C_ActionBar.IsCurrentAction(actionID)"
+}
+],
+"old": "IsCurrentAction",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "IsEncounterInProgress()",
+"confidence": null,
+"file": "Blizzard_DeprecatedInstanceEncounter/Deprecated_InstanceEncounter.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_InstanceEncounter.IsEncounterInProgress",
+"sig": "isInProgress = C_InstanceEncounter.IsEncounterInProgress()"
+}
+],
+"old": "IsEncounterInProgress",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "IsEncounterLimitingResurrections()",
+"confidence": null,
+"file": "Blizzard_DeprecatedInstanceEncounter/Deprecated_InstanceEncounter.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_InstanceEncounter.IsEncounterLimitingResurrections",
+"sig": "isLimitingResurrections = C_InstanceEncounter.IsEncounterLimitingResurrections()"
+}
+],
+"old": "IsEncounterLimitingResurrections",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "IsEncounterSuppressingRelease()",
+"confidence": null,
+"file": "Blizzard_DeprecatedInstanceEncounter/Deprecated_InstanceEncounter.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_InstanceEncounter.IsEncounterSuppressingRelease",
+"sig": "isSuppressingRelease = C_InstanceEncounter.IsEncounterSuppressingRelease()"
+}
+],
+"old": "IsEncounterSuppressingRelease",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "IsEquippedAction(actionID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.IsEquippedAction",
+"sig": "isEquippedAction = C_ActionBar.IsEquippedAction(actionID)"
+}
+],
+"old": "IsEquippedAction",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "IsGUIDInGroup(guid, category)",
+"confidence": null,
+"file": "Blizzard_DeprecatedPartyInfo/Deprecated_PartyInfo.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_PartyInfo.IsGUIDInGroup",
+"sig": "isInGroup = C_PartyInfo.IsGUIDInGroup(guid, category?)"
+}
+],
+"old": "IsGUIDInGroup",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "IsItemAction(actionID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.IsItemAction",
+"sig": "isItemAction = C_ActionBar.IsItemAction(actionID)"
+}
+],
+"old": "IsItemAction",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "IsPossessBarVisible()",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.IsPossessBarVisible",
+"sig": "isPossessBarVisible = C_ActionBar.IsPossessBarVisible()"
+}
+],
+"old": "IsPossessBarVisible",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "IsRecognizedName(name, includeFlags, excludeFlags)",
+"confidence": null,
+"file": "Blizzard_DeprecatedAutoComplete/Deprecated_AutoComplete.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_AutoComplete.IsRecognizedName",
+"sig": "isRecognizedName = C_AutoComplete.IsRecognizedName(name, includeFlags, excludeFlags)"
+}
+],
+"old": "IsRecognizedName",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "IsSpellKnownOrOverridesKnown(spellID, isPet)",
+"confidence": null,
+"file": "Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_SpellBook.IsSpellInSpellBook",
+"sig": "isInSpellBook = C_SpellBook.IsSpellInSpellBook(spellID, spellBank?, includeOverrides?)"
+}
+],
+"old": "IsSpellKnownOrOverridesKnown",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "IsStackableAction(actionID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.IsStackableAction",
+"sig": "isStackableAction = C_ActionBar.IsStackableAction(actionID)"
+}
+],
+"old": "IsStackableAction",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "IsUsableAction(actionID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.IsUsableAction",
+"sig": "isUsable, isLackingResources = C_ActionBar.IsUsableAction(actionID)"
+}
+],
+"old": "IsUsableAction",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "MenuUtil.HideTooltip(owner)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_7.lua",
+"gate": "mainline",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "MenuUtil.HideTooltipEx",
+"sig": null
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "GetAppropriateTooltip",
+"sig": null
+}
+],
+"old": "MenuUtil.HideTooltip",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "MenuUtil.ShowTooltip(owner, func, ...)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_7.lua",
+"gate": "mainline",
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "MenuUtil.ShowTooltipEx",
+"sig": null
+},
+{
+"flags": [],
+"in_game": "yes",
+"name": "GetAppropriateTooltip",
+"sig": null
+}
+],
+"old": "MenuUtil.ShowTooltip",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "OptionsListButton_OnClick(self, mouseButton)",
+"confidence": null,
+"file": "Blizzard_FrameXML/DeprecatedTemplates.lua",
+"gate": null,
+"new": [],
+"old": "OptionsListButton_OnClick",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "OptionsListButton_OnEnter(self)",
+"confidence": null,
+"file": "Blizzard_FrameXML/DeprecatedTemplates.lua",
+"gate": null,
+"new": [],
+"old": "OptionsListButton_OnEnter",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "OptionsListButton_OnLeave(self)",
+"confidence": null,
+"file": "Blizzard_FrameXML/DeprecatedTemplates.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "GetAppropriateTooltip",
+"sig": null
+}
+],
+"old": "OptionsListButton_OnLeave",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "OptionsListButton_OnLoad(self, toggleFunc)",
+"confidence": null,
+"file": "Blizzard_FrameXML/DeprecatedTemplates.lua",
+"gate": null,
+"new": [],
+"old": "OptionsListButton_OnLoad",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "OptionsListButtonToggle_OnClick(self)",
+"confidence": null,
+"file": "Blizzard_FrameXML/DeprecatedTemplates.lua",
+"gate": null,
+"new": [],
+"old": "OptionsListButtonToggle_OnClick",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "PromoteToAssistant(name, exactNameMatch)",
+"confidence": null,
+"file": "Blizzard_DeprecatedPartyInfo/Deprecated_PartyInfo.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_PartyInfo.PromoteToAssistant",
+"sig": "nothing = C_PartyInfo.PromoteToAssistant(name, exactNameMatch?)"
+}
+],
+"old": "PromoteToAssistant",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "PromoteToLeader(name, exactNameMatch)",
+"confidence": null,
+"file": "Blizzard_DeprecatedPartyInfo/Deprecated_PartyInfo.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_PartyInfo.PromoteToLeader",
+"sig": "nothing = C_PartyInfo.PromoteToLeader(name, exactNameMatch?)"
+}
+],
+"old": "PromoteToLeader",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "RaidNotice_AddMessage(_noticeFrame, textString, colorInfo, displayTime)",
+"confidence": null,
+"file": "Blizzard_DeprecatedRaidWarning/Deprecated_RaidWarning.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "RaidWarningUtil.AddMessage",
+"sig": null
+}
+],
+"old": "RaidNotice_AddMessage",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "RaidNotice_Clear(noticeFrame)",
+"confidence": null,
+"file": "Blizzard_DeprecatedRaidWarning/Deprecated_RaidWarning.lua",
+"gate": null,
+"new": [],
+"old": "RaidNotice_Clear",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "RaidNotice_FadeInit(slotFrame)",
+"confidence": null,
+"file": "Blizzard_DeprecatedRaidWarning/Deprecated_RaidWarning.lua",
+"gate": null,
+"new": [],
+"old": "RaidNotice_FadeInit",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "RaidNotice_UpdateSlot(slotFrame, timings, elapsedTime, hasFading)",
+"confidence": null,
+"file": "Blizzard_DeprecatedRaidWarning/Deprecated_RaidWarning.lua",
+"gate": null,
+"new": [],
+"old": "RaidNotice_UpdateSlot",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": "Takes the option's gossipOptionID (from GetOptions) instead of its index.",
+"classic": null,
+"confidence": null,
+"file": null,
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_GossipInfo.SelectOption",
+"sig": "nothing = C_GossipInfo.SelectOption(optionID, text?, confirmed?)"
+}
+],
+"old": "SelectGossipOption",
+"sources": [
+"curated"
+],
+"where": "present"
+},
+{
+"callers": null,
+"change": null,
+"classic": "SetActionUIButton(checkboxFrame, actionID, cooldownFrame)",
+"confidence": null,
+"file": "Blizzard_DeprecatedActionBar/Deprecated_ActionBar.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_ActionBar.RegisterActionUIButton",
+"sig": "nothing = C_ActionBar.RegisterActionUIButton(checkboxFrame, actionID, cooldownFrame)"
+}
+],
+"old": "SetActionUIButton",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "SetEveryoneIsAssistant(isAssistant)",
+"confidence": null,
+"file": "Blizzard_DeprecatedPartyInfo/Deprecated_PartyInfo.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_PartyInfo.SetEveryoneIsAssistant",
+"sig": "updated = C_PartyInfo.SetEveryoneIsAssistant(isAssistant)"
+}
+],
+"old": "SetEveryoneIsAssistant",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "setglobal(var, val)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Shared/Deprecated_12_1_0.lua",
+"gate": null,
+"new": [],
+"old": "setglobal",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedGuildScript/Deprecated_GuildScript.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_GuildInfo.SetInfoText",
+"sig": "nothing = C_GuildInfo.SetInfoText(infoText)"
+}
+],
+"old": "SetGuildInfoText",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "ShowBossFrameWhenUninteractable(unit)",
+"confidence": null,
+"file": "Blizzard_DeprecatedUnitScript/Deprecated_UnitScript.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "UnitIsVisible",
+"sig": "result = UnitIsVisible(unit?)"
+}
+],
+"old": "ShowBossFrameWhenUninteractable",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "SpellGetVisibilityInfo(spellID, visiblityTypeName)",
+"confidence": null,
+"file": "Blizzard_DeprecatedSpellScript/Deprecated_SpellScript.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.GetVisibilityInfo",
+"sig": "hasCustom, alwaysShowMine, showForMySpec = C_Spell.GetVisibilityInfo(spellID, visibilityType)"
+}
+],
+"old": "SpellGetVisibilityInfo",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "SpellIsPriorityAura(spellID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedSpellScript/Deprecated_SpellScript.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.IsPriorityAura",
+"sig": "isHighPriority = C_Spell.IsPriorityAura(spellID)"
+}
+],
+"old": "SpellIsPriorityAura",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "SpellIsSelfBuff(spellID)",
+"confidence": null,
+"file": "Blizzard_DeprecatedSpellScript/Deprecated_SpellScript.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.IsSelfBuff",
+"sig": "hasSelfEffectsOnly = C_Spell.IsSelfBuff(spellID)"
+}
+],
+"old": "SpellIsSelfBuff",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "ChatFrameUtil.SubstituteChatMessageBeforeSend",
+"sig": null
+}
+],
+"old": "SubstituteChatMessageBeforeSend",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": null,
+"confidence": null,
+"file": "Blizzard_DeprecatedSpellScript/Deprecated_SpellScript.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_Spell.TargetSpellReplacesBonusTree",
+"sig": "result = C_Spell.TargetSpellReplacesBonusTree()"
+}
+],
+"old": "TargetSpellReplacesBonusTree",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "UninviteUnit(unit, reason, exactNameMatch)",
+"confidence": null,
+"file": "Blizzard_DeprecatedPartyInfo/Deprecated_PartyInfo.lua",
+"gate": null,
+"new": [
+{
+"flags": [],
+"in_game": "yes",
+"name": "C_PartyInfo.UninviteUnit",
+"sig": "nothing = C_PartyInfo.UninviteUnit(name, reason?, exactNameMatch?)"
+}
+],
+"old": "UninviteUnit",
+"sources": [
+"shim"
+],
+"where": "shim"
+},
+{
+"callers": null,
+"change": null,
+"classic": "UnitIsSpellTarget(unit, target)",
+"confidence": null,
+"file": "Blizzard_Deprecated/Mainline/Deprecated_12_0_1.lua",
+"gate": "mainline",
+"new": [
+{
+"flags": [
+"always secret"
+],
+"in_game": "yes",
+"name": "PlayerIsSpellTarget",
+"sig": "result = PlayerIsSpellTarget(unit)"
+}
+],
+"old": "UnitIsSpellTarget",
+"sources": [
+"shim"
+],
+"where": "shim"
+}
+],
+"relocated_unmapped": [
+[
+"os.exit",
+10,
+[
+"Questie"
+]
+],
+[
+"GetMinimapShape",
+3,
+[
+"AlexAtlasLoot",
+"Questie"
+]
+],
+[
+"C_QuestLog_GetQuestObjectives",
+2,
+[
+"Questie"
+]
+],
+[
+"C_TimerAfter",
+2,
+[
+"Questie"
+]
+],
+[
+"AchievementFrameAchievements_ForceUpdate",
+1,
+[
+"Questie"
+]
+],
+[
+"AchievementFrame_SelectAchievement",
+1,
+[
+"Questie"
+]
+],
+[
+"AchievementFrame_ToggleAchievementFrame",
+1,
+[
+"Questie"
+]
+],
+[
+"ActionStatus_DisplayMessage",
+1,
+[
+"Questie"
+]
+],
+[
+"C_ChallengeMode.GetChallengeModeMapTimes",
+1,
+[
+"Questie"
+]
+],
+[
+"C_DateAndTime.GetTodaysDate",
+1,
+[
+"Questie"
+]
+],
+[
+"C_QuestLog.GetAbandonQuestName",
+1,
+[
+"Questie"
+]
+],
+[
+"C_QuestLog.GetQuestLink",
+1,
+[
+"Questie"
+]
+],
+[
+"HandleCommand",
+1,
+[
+"Questie"
+]
+],
+[
+"IsDoable",
+1,
+[
+"Questie"
+]
+],
+[
+"IsLevelRequirementsFulfilled",
+1,
+[
+"Questie"
+]
+],
+[
+"MouseIsOver",
+1,
+[
+"Questie"
+]
+],
+[
+"OnQuestAdded",
+1,
+[
+"Questie"
+]
+],
+[
+"OnScenarioCriteriaAdded",
+1,
+[
+"Questie"
+]
+],
+[
+"OnTrackedQuestClick",
+1,
+[
+"Questie"
+]
+],
+[
+"QIsComplete",
+1,
+[
+"Questie"
+]
+],
+[
+"QuestLog_SetSelection",
+1,
+[
+"Questie"
+]
+],
+[
+"QuestLog_Update",
+1,
+[
+"Questie"
+]
+],
+[
+"QuestLog_UpdateQuestDetails",
+1,
+[
+"Questie"
+]
+],
+[
+"QuestWatch_Update",
+1,
+[
+"Questie"
+]
+],
+[
+"StaticPopup_Resize",
+1,
+[
+"Questie"
+]
+],
+[
+"debug.getinfo",
+1,
+[
+"Questie"
+]
+]
+],
 "secret_tests": {
 "build": "1.60.1.70862",
 "plan": "1.60.1.70862",

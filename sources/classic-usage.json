@@ -1,0 +1,2220 @@
+{
+"AbandonQuest": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"AcceptQuest": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"AchievementFrameAchievements_ForceUpdate": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"AchievementFrame_LoadUI": {
+"addons": [
+"Questie"
+],
+"n": 7
+},
+"AchievementFrame_SelectAchievement": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"AchievementFrame_ToggleAchievementFrame": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"ActionStatus_DisplayMessage": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_AddOns.GetAddOnMetadata": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_AddOns.IsAddOnLoaded": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Calendar.GetHolidayInfo": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Calendar.GetMonthInfo": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"C_Calendar.GetNumDayEvents": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Calendar.OpenCalendar": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Calendar.SetMonth": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_ChallengeMode.GetChallengeModeMapTimes": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_ChatInfo.RegisterAddonMessagePrefix": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Container.GetContainerItemInfo": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Container.GetContainerNumSlots": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Container.GetItemCooldown": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_CurveUtil.EvaluateColorValueFromBoolean": {
+"addons": [
+"Questie"
+],
+"n": 4
+},
+"C_DateAndTime.GetCurrentCalendarTime": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_DateAndTime.GetSecondsUntilDailyReset": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_DateAndTime.GetTodaysDate": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_EncodingUtil.CompressString": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_EncodingUtil.DecompressString": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_EncodingUtil.DeserializeCBOR": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_EncodingUtil.SerializeCBOR": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_GameRules.IsGameRuleActive": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"C_GameRules.IsHardcoreActive": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_GossipInfo.GetActiveQuests": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"C_GossipInfo.GetAvailableQuests": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"C_GossipInfo.GetFriendshipReputation": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"C_GossipInfo.GetNumActiveQuests": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_GossipInfo.GetNumAvailableQuests": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_GossipInfo.SelectActiveQuest": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_GossipInfo.SelectAvailableQuest": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Intl.CompareStrings": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Intl.IsNormalized": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Item.GetItemCooldown": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Item.GetItemCount": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Item.GetItemIconByID": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Item.GetItemInfo": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 25
+},
+"C_Item.GetItemInfoInstant": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 5
+},
+"C_Item.GetItemNameByID": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 1
+},
+"C_Item.GetItemQualityColor": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 10
+},
+"C_Item.GetItemSpell": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Item.GetItemSubClassInfo": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 2
+},
+"C_Item.IsEquippableItem": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Item.IsItemDataCachedByID": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Item.RequestLoadItemDataByID": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 2
+},
+"C_KeyBindings.GetBindingByKey": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_MapExplorationInfo.GetExploredAreaIDsAtPosition": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Minimap.GetViewRadius": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"C_NamePlate.GetNamePlateForUnit": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_PetBattles.IsInBattle": {
+"addons": [
+"Questie"
+],
+"n": 10
+},
+"C_PlayerInfo.CanUseItem": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 2
+},
+"C_PlayerInfo.GetContentDifficultyQuestForPlayer": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_QuestLog.AbandonQuest": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_QuestLog.GetAbandonQuestItems": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_QuestLog.GetAbandonQuestName": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_QuestLog.GetAllCompletedQuestIDs": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_QuestLog.GetInfo": {
+"addons": [
+"Questie"
+],
+"n": 6
+},
+"C_QuestLog.GetLogIndexForQuestID": {
+"addons": [
+"Questie"
+],
+"n": 4
+},
+"C_QuestLog.GetMaxNumQuestsCanAccept": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"C_QuestLog.GetNumQuestLogEntries": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"C_QuestLog.GetNumQuestObjectives": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_QuestLog.GetNumQuestWatches": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_QuestLog.GetQuestIDForLogIndex": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_QuestLog.GetQuestIDForQuestWatchIndex": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_QuestLog.GetQuestLink": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_QuestLog.GetQuestObjectives": {
+"addons": [
+"Questie"
+],
+"n": 8
+},
+"C_QuestLog.GetQuestTagInfo": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"C_QuestLog.GetQuestTimers": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"C_QuestLog.GetQuestWatchType": {
+"addons": [
+"Questie"
+],
+"n": 5
+},
+"C_QuestLog.GetSelectedQuest": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"C_QuestLog.GetTitleForQuestID": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_QuestLog.GetTrivialRange": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_QuestLog.IsComplete": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_QuestLog.IsFailed": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_QuestLog.IsOnQuest": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_QuestLog.IsQuestFlaggedCompleted": {
+"addons": [
+"Questie"
+],
+"n": 5
+},
+"C_QuestLog.RemoveQuestWatch": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"C_QuestLog.SetAbandonQuest": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_QuestLog.SetSelectedQuest": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"C_QuestLog_GetQuestObjectives": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"C_Reputation.ExpandFactionHeader": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Reputation.GetFactionDataByID": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Reputation.GetFactionDataByIndex": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Reputation.GetNumFactions": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Scenario.GetStepInfo": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"C_ScenarioInfo.GetCriteriaInfo": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"C_Secrets.ShouldAurasBeSecret": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_Spell.GetSpellName": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"C_SpellBook.IsSpellKnown": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_StableInfo.GetStablePetFoodTypes": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"C_StringUtil.TruncateWhenZero": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"C_StringUtil.WrapString": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"C_Texture.GetAtlasInfo": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 8
+},
+"C_Timer.After": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 71
+},
+"C_Timer.NewTicker": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 26
+},
+"C_Timer.NewTimer": {
+"addons": [
+"Questie"
+],
+"n": 6
+},
+"C_TimerAfter": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"C_UnitAuras.GetAuraDataByIndex": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"CanDualWield": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 1
+},
+"ChatEdit_GetActiveWindow": {
+"addons": [
+"Questie"
+],
+"n": 12
+},
+"ChatEdit_InsertLink": {
+"addons": [
+"Questie"
+],
+"n": 11
+},
+"ChatFrame_AddMessageEventFilter": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"ChatFrame_OpenChat": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"ChatFrame_RemoveMessageEventFilter": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"Clamp": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"ClearCursor": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"CloseMenus": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"CompleteQuest": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"ConfirmAcceptQuest": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"CreateColor": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 68
+},
+"CreateDataProvider": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 8
+},
+"CreateFont": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"CreateFramePool": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"CreateFromMixins": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"CreateScrollBoxListGridView": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 1
+},
+"CreateScrollBoxListLinearView": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 7
+},
+"CreateUnsecuredRegionPoolInstance": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"CreateVector2D": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"DeclineQuest": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"DressUpItemLink": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"DressUpLink": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 5
+},
+"ExecuteFrameScript": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"ExpandFactionHeader": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"ExpandSkillHeader": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"FauxScrollFrame_GetOffset": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"FormatLargeNumber": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"GameTooltip_AddColoredLine": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"GameTooltip_AddErrorLine": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GameTooltip_AddInstructionLine": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"GameTooltip_AddNormalLine": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"GameTooltip_Hide": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 2
+},
+"GameTooltip_SetTitle": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"GameTooltip_SuppressAutomaticCompareItem": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 1
+},
+"GetAbandonQuestItems": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetAbandonQuestName": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetAchievementCriteriaInfo": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetAchievementInfo": {
+"addons": [
+"Questie"
+],
+"n": 18
+},
+"GetAchievementLink": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"GetAchievementNumCriteria": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetActiveQuestID": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetActiveTitle": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"GetAppropriateTooltip": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"GetAutoQuestPopUp": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetAvailableQuestInfo": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetAvailableTitle": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"GetBindingFromClick": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetBindingKey": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetBuildInfo": {
+"addons": [
+"Questie"
+],
+"n": 9
+},
+"GetCVar": {
+"addons": [
+"Questie"
+],
+"n": 19
+},
+"GetCVarBool": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"GetChannelName": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetClassColor": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"GetContainerItemInfo": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetContainerNumSlots": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetCurrentEnvironment": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetCurrentRegion": {
+"addons": [
+"Questie"
+],
+"n": 4
+},
+"GetCurrentRegionName": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetCursorInfo": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"GetDailyQuestsCompleted": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetFactionInfo": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"GetFactionInfoByID": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetGameMessageInfo": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetGossipActiveQuests": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetGossipAvailableQuests": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetInstanceInfo": {
+"addons": [
+"Questie"
+],
+"n": 7
+},
+"GetInventoryAlertStatus": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"GetInventoryItemID": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 2
+},
+"GetInventoryItemTexture": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetItemCooldown": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetItemInfoFromHyperlink": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetLocale": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 13
+},
+"GetLootInfo": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetLootSlotLink": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetLootSourceInfo": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetMacroInfo": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetMaxPlayerLevel": {
+"addons": [
+"Questie"
+],
+"n": 5
+},
+"GetMinimapShape": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 3
+},
+"GetMouseFoci": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetMouseFocus": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetNumActiveQuests": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"GetNumAutoQuestPopUps": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetNumAvailableQuests": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"GetNumFactions": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"GetNumGossipActiveQuests": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetNumGossipAvailableQuests": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetNumGroupMembers": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 4
+},
+"GetNumQuestChoices": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetNumQuestLeaderBoards": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetNumQuestLogEntries": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"GetNumQuestLogRewards": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetNumQuestWatches": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetNumSkillLines": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetNumSubgroupMembers": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 1
+},
+"GetObjectiveText": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetPersonalRatedInfo": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"GetProfessionInfo": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetProfessions": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetQuestID": {
+"addons": [
+"Questie"
+],
+"n": 5
+},
+"GetQuestIDFromLogIndex": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetQuestIndexForWatch": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetQuestLink": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetQuestLogCompletionText": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetQuestLogIndexByID": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetQuestLogQuestText": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetQuestLogRewardInfo": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetQuestLogRewardMoney": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetQuestLogSelection": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetQuestLogSpecialItemInfo": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetQuestLogTimeLeft": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetQuestLogTitle": {
+"addons": [
+"Questie"
+],
+"n": 4
+},
+"GetQuestObjectives": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetQuestResetTime": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetQuestReward": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetQuestSortIndex": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"GetQuestTagInfo": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetQuestText": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetQuestTimers": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetQuestsCompleted": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetRealZoneText": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetRealmName": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 10
+},
+"GetRewardText": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetRewardXP": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetScreenHeight": {
+"addons": [
+"Questie"
+],
+"n": 6
+},
+"GetScreenWidth": {
+"addons": [
+"Questie"
+],
+"n": 12
+},
+"GetServerTime": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"GetSkillLineInfo": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"GetSpellInfo": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"GetStablePetFoodTypes": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetTimePreciseSec": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"GetTitleText": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetTrackedAchievements": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"GetUnitName": {
+"addons": [
+"Questie"
+],
+"n": 16
+},
+"GetWorldElapsedTime": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"HandleCommand": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"HandleModifiedItemClick": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 7
+},
+"HaveQuestData": {
+"addons": [
+"Questie"
+],
+"n": 7
+},
+"HideUIPanel": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"IsAltKeyDown": {
+"addons": [
+"Questie"
+],
+"n": 8
+},
+"IsControlKeyDown": {
+"addons": [
+"Questie"
+],
+"n": 16
+},
+"IsDoable": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"IsInGroup": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 10
+},
+"IsInRaid": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 8
+},
+"IsLevelRequirementsFulfilled": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"IsLoggedIn": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"IsModifiedClick": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 14
+},
+"IsModifierKeyDown": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"IsMouseButtonDown": {
+"addons": [
+"Questie"
+],
+"n": 7
+},
+"IsPlayerSpell": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"IsQuestCompletable": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"IsQuestSequenced": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"IsShiftKeyDown": {
+"addons": [
+"Questie"
+],
+"n": 23
+},
+"IsSpellKnown": {
+"addons": [
+"Questie"
+],
+"n": 16
+},
+"Mixin": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"MouseIsOver": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"NavBar_AddButton": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 2
+},
+"NavBar_Initialize": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 1
+},
+"NavBar_Reset": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 1
+},
+"OnQuestAdded": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"OnScenarioCriteriaAdded": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"OnTrackedQuestClick": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"PanelTemplates_SetNumTabs": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 1
+},
+"PanelTemplates_SetTab": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 8
+},
+"PlaySoundFile": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 9
+},
+"QIsComplete": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"QuestLog_SetSelection": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"QuestLog_Update": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"QuestLog_UpdateQuestDetails": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"QuestMapFrame_OpenToQuestDetails": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"QuestWatch_Update": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"RegionalUniqueNamesEnabled": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"RegisterAddonMessagePrefix": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"ReloadUI": {
+"addons": [
+"Questie"
+],
+"n": 7
+},
+"RemoveQuestWatch": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"RemoveTrackedAchievement": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"SecondsToTime": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"SelectActiveQuest": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"SelectAvailableQuest": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"SelectGossipActiveQuest": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"SelectGossipAvailableQuest": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"SelectQuestLogEntry": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"SendChatMessage": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"SetAbandonQuest": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"SetBinding": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"SetCVar": {
+"addons": [
+"Questie"
+],
+"n": 7
+},
+"SetClampedTextureRotation": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 2
+},
+"SetCursor": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"SharedTooltip_SetBackdropStyle": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"ShowQuestComplete": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"ShowUIPanel": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 4
+},
+"StaticPopup_ForEachShownDialog": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"StaticPopup_Hide": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"StaticPopup_Resize": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"StaticPopup_ResizeShownDialogs": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"StaticPopup_Show": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 5
+},
+"ToggleCharacter": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 1
+},
+"UIFrameFlash": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 2
+},
+"UIFrameFlashStop": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 2
+},
+"UnitAffectingCombat": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"UnitAura": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"UnitClassBase": {
+"addons": [
+"Questie"
+],
+"n": 8
+},
+"UnitExists": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"UnitFactionGroup": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 10
+},
+"UnitFullName": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"UnitGUID": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 20
+},
+"UnitHealth": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"UnitHealthMax": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"UnitInBattleground": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"UnitInParty": {
+"addons": [
+"Questie"
+],
+"n": 8
+},
+"UnitInRaid": {
+"addons": [
+"Questie"
+],
+"n": 6
+},
+"UnitIsConnected": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"UnitIsDeadOrGhost": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"UnitIsEnemy": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"UnitIsFriend": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"UnitIsGhost": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"UnitName": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 9
+},
+"UnitNameUnmodified": {
+"addons": [
+"Questie"
+],
+"n": 4
+},
+"UnitRace": {
+"addons": [
+"Questie"
+],
+"n": 4
+},
+"bit.band": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 4
+},
+"bit.bor": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"bit.bxor": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"bit.lshift": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 4
+},
+"bit.rshift": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"coroutine.create": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"coroutine.resume": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"coroutine.running": {
+"addons": [
+"Questie"
+],
+"n": 7
+},
+"coroutine.status": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"coroutine.yield": {
+"addons": [
+"Questie"
+],
+"n": 28
+},
+"debug.getinfo": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"math.abs": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 13
+},
+"math.atan2": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 1
+},
+"math.ceil": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 3
+},
+"math.cos": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 1
+},
+"math.floor": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 18
+},
+"math.max": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 61
+},
+"math.min": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 24
+},
+"math.modf": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"math.pow": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"math.rad": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 1
+},
+"math.random": {
+"addons": [
+"Questie"
+],
+"n": 2
+},
+"math.sin": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 1
+},
+"math.sqrt": {
+"addons": [
+"AlexAtlasLoot"
+],
+"n": 2
+},
+"os.exit": {
+"addons": [
+"Questie"
+],
+"n": 10
+},
+"string.byte": {
+"addons": [
+"Questie"
+],
+"n": 8
+},
+"string.char": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 3
+},
+"string.find": {
+"addons": [
+"Questie"
+],
+"n": 18
+},
+"string.format": {
+"addons": [
+"Questie"
+],
+"n": 26
+},
+"string.gmatch": {
+"addons": [
+"Questie"
+],
+"n": 5
+},
+"string.gsub": {
+"addons": [
+"Questie"
+],
+"n": 16
+},
+"string.len": {
+"addons": [
+"Questie"
+],
+"n": 27
+},
+"string.lower": {
+"addons": [
+"Questie"
+],
+"n": 8
+},
+"string.match": {
+"addons": [
+"Questie"
+],
+"n": 33
+},
+"string.split": {
+"addons": [
+"Questie"
+],
+"n": 1
+},
+"string.sub": {
+"addons": [
+"Questie"
+],
+"n": 14
+},
+"string.trim": {
+"addons": [
+"Questie"
+],
+"n": 4
+},
+"string.upper": {
+"addons": [
+"Questie"
+],
+"n": 11
+},
+"table.concat": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 26
+},
+"table.getn": {
+"addons": [
+"Questie"
+],
+"n": 3
+},
+"table.insert": {
+"addons": [
+"Questie"
+],
+"n": 35
+},
+"table.remove": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 18
+},
+"table.sort": {
+"addons": [
+"AlexAtlasLoot",
+"Questie"
+],
+"n": 47
+}
+}

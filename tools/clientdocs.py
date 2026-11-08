@@ -86,3 +86,42 @@ def framexml_leads():
         for a, b in _DEF_RE.findall(text):
             defined.setdefault(a or b, short)
     return {"events": events, "globals": calls, "defined": defined}
+
+
+def deprecations():
+    """{path: {"text", "gate"}} for Blizzard's deprecation add-ons (Blizzard_Deprecated*): the compatibility shims
+    Blizzard ships for old globals, plus its 11.0 spell book transition guide. "gate" is the game type a TOC line limits
+    the file to (classic / mainline / ...), or None when it loads everywhere."""
+    casc = _casc()
+    c = casc.CASC()
+    raw = c.read_path("Interface/ui-code-list.txt")
+    out = {}
+    if raw is None:
+        return out
+    paths = [p.strip().replace("\\", "/") for p in raw.decode("utf-8", "replace").splitlines()]
+    gates = {}
+    for p in paths:
+        if "eprecat" not in p or not p.endswith(".toc"):
+            continue
+        data = c.read_path(p)
+        if data is None:
+            continue
+        folder = p.rsplit("/", 1)[0] + "/"
+        whole = None
+        for line in data.decode("utf-8", "replace").splitlines():
+            m = re.match(r"##\s*AllowLoadGameType:\s*(.+)", line)
+            if m:
+                whole = m.group(1).strip()
+            m = re.match(r"([^#\s][^\[]*?)\s*\[AllowLoadGameType\s+([^\]]+)\]", line)
+            if m:
+                gates[folder + m.group(1).replace("\\", "/").replace("[Family]", "Classic")] = m.group(2).strip()
+        for q in paths:
+            if q.startswith(folder) and q.endswith(".lua") and whole:
+                gates.setdefault(q, whole)
+    for p in paths:
+        if "eprecat" in p and p.endswith(".lua"):
+            data = c.read_path(p)
+            if data is not None:
+                short = p[len("Interface/AddOns/"):]
+                out[short] = {"text": data.decode("utf-8", "replace"), "gate": gates.get(p)}
+    return out

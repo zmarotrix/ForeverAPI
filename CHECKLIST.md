@@ -54,3 +54,23 @@ Three more add-ons under **Probes**, all on by default, all quiet. Leave them on
 
 None of them stores names, chat, values or anything about your character: only event names, types, "ok" or error
 text. ApiProbe itself can stay off now unless you want another `/apiprobe calls` run.
+
+## API checks 0.1.0 (new add-on folder: restart the game once)
+
+One more add-on under **Probes**: **API checks** (`/apichecks`). It checks things testers reported. It only
+listens, so leave it on and play; each item fills in when you do the thing:
+
+- [ ] **Die once** (PLAYER_DEAD twice?). A duel loss doesn't count; a mob or falling does.
+- [ ] **Open and close a vendor, and the auction house** (MERCHANT_CLOSED / AUCTION_HOUSE_CLOSED twice?).
+- [ ] **Hearth, take a flight, and use a portal or a dungeon entrance** (is the zone text stale when the zone events fire?).
+- [ ] **Walk into an inn or a city** ("You feel rested."), **post an auction** ("Auction created."), **go AFK and come back** (`/afk` twice).
+- [ ] **Fight a few mobs**, best with a pet if your class has one (combat feed, damage meter, pet health).
+- [ ] **Target an enemy and have nameplates on** (UnitIsUnit against enemy units).
+- [ ] **Cast a spell on yourself, on a friend and on an enemy** (UNIT_SPELLCAST_SENT's target).
+- [ ] **Chat test, only if you're OK with it**: `/apichecks chat`, then `/apichecks chat yes`, then `/apichecks chat`
+      once more when it asks. It sends "." in /say, /yell and /emote, so people near you see it. Do it once in the
+      open world and once inside a dungeon. Out in the world, Blizzard may block the say and yell sent without a key
+      press and show a "blocked" message: that's the answer, and the add-on won't try that one again.
+
+Then `/reload` and run update-docs.bat. The answers are on the site's **Reported quirks** page.
+

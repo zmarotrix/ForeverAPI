@@ -1,6 +1,6 @@
 # WoW Forever add-on API
 
-Generated 2026-11-07 22:08 by `tools/apidoc.py build`. Do not edit by hand.
+Generated 2026-11-07 23:27 by `tools/apidoc.py build`. Do not edit by hand.
 
 - Client docs: Blizzard_APIDocumentationGenerated from client 1.60.1.70862
 - Game dump: ApiProbe 0.2.2 on 1.60.1.70862 (interface 16001), enUS
@@ -25,6 +25,8 @@ Rule: only ✅ and 🆕 were confirmed in game. Flags such as "restricted" or "s
 - [Restrictions seen in game](restrictions.md)
 - [CVars](cvars.md)
 - [Lua environment](lua.md)
+- [Moved from classic](relocated.md)
+- [Reported quirks, checked](checks.md)
 - [Changes between dumps](changes/)
 
 ## Systems

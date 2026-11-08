@@ -1,0 +1,10 @@
+## Interface: 16001
+## Title: |cff9ec8ffAPI|r checks
+## Category: Probes
+## Notes: Background collector for ForeverAPI. Checks behaviour testers reported: events firing twice, stale zone text, system messages that skip chat events, what combat events still carry, and three secret-value cases. Only listens and reads; /apichecks chat (which you run) tests sending chat. /apichecks
+## Author: Maro
+## Version: 0.1.0
+## X-License: All Rights Reserved
+## SavedVariables: ApiChecksDB
+
+checks.lua

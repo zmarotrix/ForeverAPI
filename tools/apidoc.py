@@ -5,6 +5,8 @@
     python tools/apidoc.py import      read the probe's SavedVariables into dumps/<build>/<time>.json
     python tools/apidoc.py build       merge client docs + latest dump + web leads into docs/ and the website site/
     python tools/apidoc.py diff A B    compare two dumps (or two client-doc extracts), write docs/changes/
+    python tools/apidoc.py classic-scan [folders]   list the globals classic add-ons call (for the relocated-API table)
+    python tools/apidoc.py luals       same as build (build also writes the VS Code definitions in luals/)
     python tools/apidoc.py all         extract, import (if there's a dump), build
 
 Nothing here downloads anything. Web leads are files you add under sources/web/ (format in README.md).
@@ -19,6 +21,7 @@ import re
 import shutil
 import sys
 
+NL = chr(10)
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
@@ -27,6 +30,10 @@ import diff as differ  # noqa: E402
 import model  # noqa: E402
 import render  # noqa: E402
 import website  # noqa: E402
+import relocated  # noqa: E402
+import luals  # noqa: E402
+import checkspage  # noqa: E402
+
 from luatable import parse_assignments  # noqa: E402
 
 ROOT = os.path.dirname(HERE)
@@ -38,6 +45,7 @@ WEB_DIR = os.path.join(ROOT, "sources", "web")
 DUMPS = os.path.join(ROOT, "dumps")
 DOCS = os.path.join(ROOT, "docs")
 SITE = os.path.join(ROOT, "site")
+LUALS = os.path.join(ROOT, "luals")
 
 
 def _rel(p):
@@ -91,6 +99,7 @@ def cmd_extract():
     version = client["version"]
     _save_json(os.path.join(CLIENT_DIR, version + ".json.gz"), client)
     _save_json(os.path.join(CLIENT_DIR, version + ".framexml.json.gz"), leads)
+    _save_json(os.path.join(CLIENT_DIR, version + ".deprecated.json.gz"), clientdocs.deprecations())
     docs = model.documented(client)
     web_events = set()
     for w in _web():
@@ -181,7 +190,7 @@ def write_widget_plan(docs, version):
     print("widget setters to test with a secret: %d" % len(plan))
 
 
-COLLECTORS = ["ApiProbe", "ApiWatch", "ApiTimeline", "ApiWidgets"]
+COLLECTORS = ["ApiProbe", "ApiWatch", "ApiTimeline", "ApiWidgets", "ApiChecks"]
 
 
 def cmd_deploy():
@@ -239,7 +248,7 @@ def latest_dump(prefix=None):
 
 # collector add-on -> (SavedVariables global, import prefix)
 COLLECTOR_SV = {"ApiWatch": ("ApiWatchDB", "watch"), "ApiTimeline": ("ApiTimelineDB", "timeline"),
-                "ApiWidgets": ("ApiWidgetsDB", "widgets")}
+                "ApiWidgets": ("ApiWidgetsDB", "widgets"), "ApiChecks": ("ApiChecksDB", "checks")}
 
 
 def import_collectors():
@@ -275,7 +284,7 @@ def latest_client(version=None):
     if version:
         p = os.path.join(CLIENT_DIR, version + ".json.gz")
         return p if os.path.exists(p) else None
-    files = sorted((p for p in glob.glob(os.path.join(CLIENT_DIR, "*.json.gz")) if ".framexml." not in p),
+    files = sorted((p for p in glob.glob(os.path.join(CLIENT_DIR, "*.json.gz")) if ".framexml." not in p and ".deprecated." not in p),
                    key=os.path.getmtime)
     return files[-1] if files else None
 
@@ -308,15 +317,41 @@ def cmd_build():
         for key, item in (w.get("items") or {}).items():
             web[key] = dict(item, site=w.get("site"), url=item.get("url") or w.get("url"))
     m = model.build(client, dump, web, framexml)
-    for prefix, field in (("watch", "watch"), ("timeline", "timeline"), ("widgets", "secret_tests")):
+    for prefix, field in (("watch", "watch"), ("timeline", "timeline"), ("widgets", "secret_tests"), ("checks", "checks")):
         p = latest_dump(prefix)
         m[field] = _load_json(p) if p else None
+    dep_path = os.path.join(CLIENT_DIR, client["version"] + ".deprecated.json.gz")
+    dep = _load_json(dep_path) if os.path.exists(dep_path) else {}
+    usage = relocated.load(os.path.join(ROOT, "sources", "classic-usage.json"))
+    m["relocated"] = relocated.build(m, dep, usage, relocated.load(os.path.join(ROOT, "sources", "relocated.json")))
+    covered = {r["old"] for r in m["relocated"]}
+    m["relocated_unmapped"] = [u for u in relocated.missing_unmapped(m, usage) if u[0] not in covered]
+    m["meta"]["project_id"] = (m.get("globals") or {}).get("WOW_PROJECT_ID", "n:?")[2:]
     stamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
     render.render(m, DOCS, stamp)
+    relocated.render_md(m["relocated"], m["relocated_unmapped"], m["meta"], os.path.join(DOCS, "relocated.md"))
+    with open(os.path.join(DOCS, "compat.json"), "w", encoding="utf-8", newline=NL) as f:
+        json.dump(relocated.compat_json(m["relocated"], m["meta"].get("key")), f, indent=1, sort_keys=True)
+    checkspage.render_md(m.get("checks"), os.path.join(DOCS, "checks.md"))
+    n = luals.write(m, LUALS)
+    print("VS Code definitions: %d files in luals/library" % n)
     page = website.write(m, SITE, stamp)
     print("website: %s" % page)
     print("docs written to %s (client %s, dump %s)" % (_rel(DOCS), client["version"],
                                                        _rel(dump_path) if dump_path else "none"))
+
+
+DEFAULT_CLASSIC = [r"G:\Projects\pfQuest\Questie", r"G:\Projects\pfQuest\AlexAtlasLoot"]
+
+
+def cmd_classic_scan(folders):
+    """Which globals classic add-ons call: sources/classic-usage.json, for the relocated-API table."""
+    folders = folders or [f for f in DEFAULT_CLASSIC if os.path.isdir(f)]
+    usage = relocated.scan(folders)
+    out = os.path.join(ROOT, "sources", "classic-usage.json")
+    with open(out, "w", encoding="utf-8", newline=NL) as f:
+        json.dump({k: usage[k] for k in sorted(usage)}, f, indent=0, sort_keys=True)
+    print("scanned %d add-on folders: %d global calls -> %s" % (len(folders), len(usage), _rel(out)))
 
 
 def cmd_diff(a, b):
@@ -349,6 +384,10 @@ def main(argv):
             cmd_diff(dumps[-2], dumps[-1])
         else:
             cmd_diff(argv[1], argv[2])
+    elif cmd == "classic-scan":
+        cmd_classic_scan(argv[1:])
+    elif cmd == "luals":
+        cmd_build()
     elif cmd == "all":
         cmd_extract()
         cmd_import()

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json",
+  "runtime.version": "Lua 5.1",
+  "workspace.library": [
+    "G:/Projects/ForeverAPI/luals/library"
+  ],
+  "diagnostics.globals": [
+    "SLASH_*"
+  ],
+  "workspace.checkThirdParty": false
+}

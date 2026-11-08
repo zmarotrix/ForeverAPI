@@ -191,6 +191,7 @@ def main():
         apidoc.DUMPS = os.path.join(tmp, "dumps")
         apidoc.DOCS = os.path.join(tmp, "docs")
         apidoc.SITE = os.path.join(tmp, "site")
+        apidoc.LUALS = os.path.join(tmp, "luals")
         apidoc.import_collectors()
         check("import: three collector files", all(apidoc.latest_dump(p) for p in ("watch", "timeline", "widgets")))
         tlj = apidoc._load_json(apidoc.latest_dump("timeline"))

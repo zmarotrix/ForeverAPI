@@ -603,6 +603,57 @@
     });
   }
 
+  // classic globals Forever dropped or moved (tools/relocated.py)
+  var WHERE = { missing: ["Gone on Forever", "p-bad"], shim: ["Still works through a Blizzard shim (to be removed)", "p-warn"],
+    present: ["Still there", "s-verified"], unverified: ["Not checked", "p-plain"] };
+  function viewRelocated() {
+    var rows = A.reloc || [];
+    var h = '<h1>Moved from classic</h1><p class="lede">Classic (1.15) globals that Forever dropped or moved, where each one went, and how the call changed. ' +
+      "Every old and new name was checked against the in-game dump. Sources: Blizzard's own transition guide and deprecation add-ons in the client, " +
+      "our curated list, and a same-name lead.</p>";
+    if (A.project) h += '<p class="note">Forever reports <span class="mono">WOW_PROJECT_ID</span> = ' + esc(A.project) +
+      ' (<span class="mono">WOW_PROJECT_CAMELOT</span>), neither mainline (1) nor classic (2), but loads Blizzard&#39;s <b>mainline</b> deprecation shims. Add-ons that branch on the project ID take neither branch.</p>';
+    h += '<p class="note">For VS Code: the same table is built into the LuaLS definitions in <span class="mono">luals/</span>; gone names are struck through with where they went. For code: <span class="mono">docs/compat.json</span>.</p>';
+    h += filterBar("rl", [["missing", "gone"], ["shim", "shimmed"], ["present", "still there"]]) + '<div id="rll"></div>';
+    if ((A.unmapped || []).length) h += '<h2>Classic add-on calls with no known home yet <span class="muted">(' + A.unmapped.length + ")</span></h2>" +
+      '<p class="note">Globals the scanned classic add-ons call that aren&#39;t in the game and nothing above maps. Some are the add-ons&#39; own helpers.</p><div class="cols">' +
+      A.unmapped.map(function (u) { return '<div class="mono">' + esc(u[0]) + ' <span class="muted">' + u[1] + "×</span></div>"; }).join("") + "</div>";
+    main.innerHTML = h;
+    wireFilter("rl", function (q, f) {
+      var items = rows.filter(function (r) {
+        var text = (r.o + " " + (r.n || []).map(function (n) { return n[0]; }).join(" ")).toLowerCase();
+        return (!q || text.indexOf(q) >= 0) && (!f || r.w === f);
+      });
+      bigList("rll", items, function (r) {
+        var w = WHERE[r.w] || [r.w, "p-plain"];
+        var nw = (r.n || []).map(function (n) {
+          var link = A.F[n[0]] ? '<a href="#/fn/' + enc(n[0]) + '">' + esc(n[0]) + "</a>" : esc(n[0]);
+          return '<div class="mono">' + link + (n[1] === "no" ? ' <span class="pill p-bad">not visible to add-ons</span>' : "") +
+            (n[2] || []).map(function (x) { return ' <span class="pill p-warn">' + esc(x) + "</span>"; }).join("") + "</div>";
+        }).join("") || '<span class="muted">none</span>';
+        var ch = (r.cf ? "<b>" + esc(r.cf.charAt(0).toUpperCase() + r.cf.slice(1)) + ".</b> " : "") + esc(r.c || "") +
+          (r.cl ? '<div class="note mono">Classic: ' + esc(r.cl) + "</div>" : "") + (r.u ? '<div class="note">Called ' + esc(r.u) + "</div>" : "");
+        return '<tr><td class="mono">' + esc(r.o) + '<div><span class="pill ' + w[1] + '">' + esc(w[0]) + "</span></div></td><td>" + nw + "</td><td>" + ch +
+          '</td><td class="muted">' + esc((r.src || []).join(", ")) + "</td></tr>";
+      }, "<tr><th>Classic</th><th>Forever</th><th>How it changed</th><th>Source</th></tr>", 300);
+    });
+  }
+
+  // targeted checks of tester reports (ApiChecks add-on)
+  function viewChecks() {
+    var c = A.checks;
+    var h = '<h1>Reported quirks</h1><p class="lede">Behaviour testers reported on Forever, checked in game by the API checks add-on. ' +
+      "Each answer is what the add-on saw; \"not seen yet\" means it hasn't watched that happen.</p>";
+    if (!c) { main.innerHTML = h + '<p class="muted">No data yet: enable the API checks add-on, play a while, then run update-docs.bat.</p>'; return; }
+    h += '<p class="note">Client ' + esc(c.build) + ", API checks " + esc(c.probe) + ".</p>";
+    (c.a || []).forEach(function (x) {
+      var md = function (t) { return esc(t).replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>"); };
+      h += '<div class="card"><div class="head"><h3>' + esc(x[0]) + "</h3></div><p>" + md(x[1]) + "</p>" +
+        ((x[2] || []).length ? '<ul class="note">' + x[2].map(function (e) { return "<li>" + md(e) + "</li>"; }).join("") + "</ul>" : "") + "</div>";
+    });
+    main.innerHTML = h;
+  }
+
   function viewGuide(id) {
     var g = GUIDES.filter(function (x) { return x.id === id; })[0];
     if (!g) return notFound(id);
@@ -650,6 +701,8 @@
     else if (view === "situations") viewSituations();
     else if (view === "timelines") viewTimelines();
     else if (view === "secrets") viewSecrets();
+    else if (view === "relocated") viewRelocated();
+    else if (view === "checks") viewChecks();
     else if (view === "guide") viewGuide(arg);
     else if (view === "glossary") viewGlossary(arg);
     else notFound(location.hash);

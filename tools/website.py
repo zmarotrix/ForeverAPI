@@ -8,6 +8,8 @@ import json
 import os
 import shutil
 
+import checkspage
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, "site_src")
 
@@ -99,6 +101,15 @@ def compact(model):
         "F": F, "E": E, "T": T, "O": O, "W": W, "C": C,
         "watch": _watch(model.get("watch")), "timeline": (model.get("timeline") or {}).get("traces"),
         "secrets": (model.get("secret_tests") or {}).get("runs"),
+        "reloc": [{k: v for k, v in {"o": r["old"], "w": r["where"], "c": r.get("change"), "cl": r.get("classic"),
+                                     "src": r["sources"], "cf": r.get("confidence"),
+                                     "u": r["callers"] and "%d× by %s" % (r["callers"]["n"], ", ".join(r["callers"]["addons"])),
+                                     "n": [[n["name"], n["in_game"], n["flags"]] for n in r["new"]]}.items()
+                   if v not in (None, "", [], {})} for r in model.get("relocated") or []],
+        "unmapped": [[n, c, a] for n, c, a in model.get("relocated_unmapped") or []],
+        "project": (model.get("meta") or {}).get("project_id"),
+        "checks": model.get("checks") and {"build": model["checks"].get("build"), "probe": model["checks"].get("probe"),
+                                            "a": checkspage.answers(model["checks"])},
     }
 
 
