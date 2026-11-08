@@ -56,7 +56,7 @@ Namespace: `C_InstanceEncounter`
 - Blizzard: Signaled when the in-progress state of an encounter changes.
 - CallbackEvent (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 26 times (18 in combat); argument kinds: `b`
+- Seen firing 36 times (26 in combat); argument kinds: `b`
 
 ### INSTANCE_ENCOUNTER_ADD_TIMER
 

@@ -514,14 +514,14 @@ Namespace: `C_MountJournal`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 93 times (0 in combat); argument kinds: ``
+- Seen firing 98 times (0 in combat); argument kinds: ``
 
 ### MOUNT_JOURNAL_USABILITY_CHANGED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1147 times (110 in combat); argument kinds: ``
+- Seen firing 1291 times (114 in combat); argument kinds: ``
 
 ### NEW_MOUNT_ADDED
 

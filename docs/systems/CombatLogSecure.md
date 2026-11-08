@@ -114,7 +114,7 @@ Namespace: `C_CombatLogSecure`
 - Status: ✅ verified
 - Payload: `message: string`, `colorR: number`, `colorG: number`, `colorB: number`, `order: CombatLogMessageOrder`
 - fires synchronously (Blizzard's docs)
-- Seen firing 2644 times (541 in combat); argument kinds: `s,n,n,n,n`
+- Seen firing 2944 times (841 in combat); argument kinds: `s,n,n,n,n`
 
 ### COMBAT_LOG_REFILTER_ENTRIES
 

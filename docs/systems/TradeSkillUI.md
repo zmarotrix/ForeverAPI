@@ -1293,7 +1293,7 @@ Namespace: `C_TradeSkillUI`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 61 times (0 in combat); argument kinds: ``
+- Seen firing 66 times (0 in combat); argument kinds: ``
 
 ### TRADE_SKILL_CRAFTING_REAGENT_BONUS_TEXT_UPDATED
 
@@ -1306,6 +1306,7 @@ Namespace: `C_TradeSkillUI`
 - Status: ✅ verified
 - Payload: `recipeSpellID: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 4 times (0 in combat); argument kinds: `n`
 
 ### TRADE_SKILL_CURRENCY_REWARD_RESULT
 
@@ -1318,12 +1319,14 @@ Namespace: `C_TradeSkillUI`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### TRADE_SKILL_DATA_SOURCE_CHANGING
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### TRADE_SKILL_DETAILS_UPDATE
 
@@ -1342,6 +1345,7 @@ Namespace: `C_TradeSkillUI`
 - Status: ✅ verified
 - Payload: `data: CraftingItemResultData`
 - fires synchronously (Blizzard's docs)
+- Seen firing 4 times (0 in combat); argument kinds: `t`
 
 ### TRADE_SKILL_ITEM_UPDATE
 
@@ -1354,6 +1358,7 @@ Namespace: `C_TradeSkillUI`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
+- Seen firing 17 times (0 in combat); argument kinds: ``
 
 ### TRADE_SKILL_NAME_UPDATE
 
@@ -1366,9 +1371,11 @@ Namespace: `C_TradeSkillUI`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### UPDATE_TRADESKILL_CAST_STOPPED
 
 - Status: ✅ verified
 - Payload: `isScrapping: bool`
 - unique event (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `b`

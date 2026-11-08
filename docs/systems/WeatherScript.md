@@ -26,7 +26,7 @@ Namespace: `C_Weather`
 - Payload: none
 - Blizzard: The weather has taken a turn.
 - unique event (Blizzard's docs)
-- Seen firing 109 times (0 in combat); argument kinds: ``
+- Seen firing 116 times (0 in combat); argument kinds: ``
 
 ## Types
 

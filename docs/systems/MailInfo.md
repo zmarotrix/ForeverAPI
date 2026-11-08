@@ -65,6 +65,7 @@ Namespace: `C_Mail`
 - Status: ✅ verified
 - Payload: `mailIndex: luaIndex`
 - fires synchronously (Blizzard's docs)
+- Seen firing 5 times (0 in combat); argument kinds: `n`
 
 ### MAIL_CLOSED
 
@@ -84,7 +85,7 @@ Namespace: `C_Mail`
 - Payload: none
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 27 times (0 in combat); argument kinds: ``
 
 ### MAIL_LOCK_SEND_ITEMS
 
@@ -116,12 +117,14 @@ Namespace: `C_Mail`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### MAIL_SUCCESS
 
 - Status: ✅ verified
 - Payload: `itemID: number?`
 - fires synchronously (Blizzard's docs)
+- Seen firing 14 times (0 in combat); argument kinds: `-`
 
 ### MAIL_UNLOCK_SEND_ITEMS
 
@@ -146,4 +149,4 @@ Namespace: `C_Mail`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 66 times (3 in combat); argument kinds: ``
+- Seen firing 86 times (4 in combat); argument kinds: ``

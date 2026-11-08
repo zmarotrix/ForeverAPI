@@ -34,7 +34,7 @@ Namespace: `C_FogOfWar`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 948 times (24 in combat); argument kinds: ``
+- Seen firing 1088 times (26 in combat); argument kinds: ``
 
 ## Types
 

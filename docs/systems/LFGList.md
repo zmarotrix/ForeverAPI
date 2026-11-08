@@ -800,7 +800,7 @@ Namespace: `C_LFGList`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 62 times (4 in combat); argument kinds: ``
+- Seen firing 65 times (5 in combat); argument kinds: ``
 
 ### LFG_LIST_CENSORED_ACTIVE_ENTRY_UPDATE
 

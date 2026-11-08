@@ -59,7 +59,7 @@ Namespace: `C_SplashScreen`
 - Status: ✅ verified
 - Payload: `info: SplashScreenInfo?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 35 times (2 in combat); argument kinds: `-`
+- Seen firing 36 times (3 in combat); argument kinds: `-`
 
 ## Types
 

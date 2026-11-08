@@ -1042,7 +1042,7 @@ Namespace: `C_Club`
 - Status: ✅ verified
 - Payload: `clubId: ClubId`, `streamId: ClubStreamId`, `messageId: ClubMessageIdentifier`
 - fires synchronously (Blizzard's docs)
-- Seen firing 186 times (33 in combat); argument kinds: `n,n,t`
+- Seen firing 212 times (37 in combat); argument kinds: `n,n,t`
 
 ### CLUB_MESSAGE_HISTORY_RECEIVED
 
@@ -1146,7 +1146,7 @@ Namespace: `C_Club`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 89 times (12 in combat); argument kinds: ``
+- Seen firing 92 times (12 in combat); argument kinds: ``
 
 ### STREAM_VIEW_MARKER_UPDATED
 
@@ -1154,7 +1154,7 @@ Namespace: `C_Club`
 - Payload: `clubId: ClubId`, `streamId: ClubStreamId`, `lastReadTime: BigUInteger?`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 173 times (28 in combat); argument kinds: `n,n,-` / `n,n,n`
+- Seen firing 185 times (28 in combat); argument kinds: `n,n,-` / `n,n,n`
 
 ## Types
 

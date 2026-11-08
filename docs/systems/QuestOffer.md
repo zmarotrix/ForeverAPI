@@ -59,7 +59,7 @@ Namespace: `C_QuestOffer`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 87 times (2 in combat); argument kinds: ``
+- Seen firing 112 times (2 in combat); argument kinds: ``
 
 ### QUEST_GREETING
 
@@ -80,7 +80,7 @@ Namespace: `C_QuestOffer`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 7 times (0 in combat); argument kinds: ``
+- Seen firing 14 times (0 in combat); argument kinds: ``
 
 ## Types
 

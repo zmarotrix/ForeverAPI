@@ -375,63 +375,63 @@
 "chat frame": 1
 },
 "rested": {
-"CHAT_MSG_SYSTEM": 1,
-"chat frame": 1
+"CHAT_MSG_SYSTEM": 2,
+"chat frame": 2
 }
 },
 "secretOn": {
-"CHAT_MSG_SYSTEM": 1
+"CHAT_MSG_SYSTEM": 2
 },
 "triggers": {
-"normal": 6,
+"normal": 7,
 "rested": 6
 }
 },
 "feed": {
 "COMBAT_LOG_MESSAGE": {
 "phases": {
-"combat": 541,
+"combat": 841,
 "outside": 719
 },
-"readable": 1260,
+"readable": 1560,
 "sigs": {
-"s,n,n,n,n": 1260
+"s,n,n,n,n": 1560
 },
-"wrapped": 1260
+"wrapped": 1560
 },
 "COMBAT_TEXT_UPDATE": {
 "info": {
-"S,N": 169
+"S,N": 223
 },
 "phases": {
-"combat": 159,
+"combat": 212,
 "just after combat": 1,
-"outside": 9
+"outside": 10
 },
 "sigs": {
-"s": 169
+"s": 223
 },
 "types": {
-"FACTION": 169
+"FACTION": 223
 }
 },
 "DAMAGE_METER_COMBAT_SESSION_UPDATED": {
 "phases": {
-"combat": 97114,
-"just after combat": 490,
-"outside": 2640
+"combat": 116336,
+"just after combat": 556,
+"outside": 2646
 },
 "sigs": {
-"n,n": 100244
+"n,n": 119538
 }
 },
 "DAMAGE_METER_CURRENT_SESSION_UPDATED": {
 "phases": {
-"combat": 80,
-"outside": 46
+"combat": 98,
+"outside": 50
 },
 "sigs": {
-"": 126
+"": 148
 }
 },
 "DAMAGE_METER_RESET": {
@@ -444,40 +444,40 @@
 },
 "UNIT_COMBAT": {
 "actions": {
-"DODGE": 1502,
-"HEAL": 2616,
-"HEAL/CRITICAL": 179,
-"IMMUNE": 94,
-"MISS": 1802,
-"PARRY": 351,
+"DODGE": 1764,
+"HEAL": 3167,
+"HEAL/CRITICAL": 213,
+"IMMUNE": 105,
+"MISS": 2108,
+"PARRY": 389,
 "REFLECT": 28,
-"RESIST": 160,
-"WOUND": 43032,
+"RESIST": 173,
+"WOUND": 51698,
 "WOUND/ABSORB": 73,
-"WOUND/BLOCK": 31,
-"WOUND/BLOCK_REDUCED": 256,
-"WOUND/CRITICAL": 3261,
-"WOUND/CRUSHING": 87,
-"WOUND/GLANCING": 389
+"WOUND/BLOCK": 33,
+"WOUND/BLOCK_REDUCED": 299,
+"WOUND/CRITICAL": 3978,
+"WOUND/CRUSHING": 89,
+"WOUND/GLANCING": 503
 },
 "phases": {
-"combat": 52497,
-"just after combat": 212,
-"outside": 1152
+"combat": 63110,
+"just after combat": 247,
+"outside": 1263
 },
 "sigs": {
-"s,s,s,N,n": 53861
+"s,s,s,N,n": 64620
 },
 "units": {
-"nameplateN": 26953,
+"nameplateN": 32625,
 "npc": 5,
-"partyN": 1696,
-"partypetN": 1127,
-"player": 7243,
-"softenemy": 425,
-"softfriend": 28,
-"target": 9752,
-"targettarget": 6632
+"partyN": 2035,
+"partypetN": 1331,
+"player": 8465,
+"softenemy": 479,
+"softfriend": 32,
+"target": 11943,
+"targettarget": 7705
 }
 }
 },
@@ -584,178 +584,212 @@
 "pet": [],
 "spellcastSent": {
 "enemy target, in combat": {
-"target nil": 162,
+"target nil": 187,
 "target plain": 1656,
-"target secret": 1436
+"target secret": 1928
 },
 "enemy target, out of combat": {
-"target nil": 26,
-"target plain": 89,
-"target secret": 52
+"target nil": 29,
+"target plain": 102,
+"target secret": 67
 },
 "friendly target, in combat": {
 "target plain": 4,
-"target secret": 3
+"target secret": 4
 },
 "friendly target, out of combat": {
-"target nil": 13,
-"target plain": 9
+"target nil": 29,
+"target plain": 27
 },
 "no target, in combat": {
 "target nil": 1,
 "target plain": 7
 },
 "no target, out of combat": {
-"target nil": 17,
-"target plain": 34
+"target nil": 21,
+"target plain": 39
+},
+"target is you, out of combat": {
+"target nil": 4
 }
 },
 "unitIsUnit": {
 "enemy nameplate: UnitIsUnit(nameplateN, player)": {
-"plain": 828
+"plain": 998
 },
 "enemy nameplate: UnitIsUnit(nameplateN, player) in combat": {
-"plain": 1892
+"plain": 2103
 },
 "enemy nameplate: UnitIsUnit(nameplateN, target)": {
-"plain": 828
+"plain": 998
 },
 "enemy nameplate: UnitIsUnit(nameplateN, target) in combat": {
-"plain": 1892
+"plain": 2103
 },
 "enemy nameplate: UnitIsUnit(player, nameplate1)": {
-"plain": 271
+"plain": 320
 },
 "enemy nameplate: UnitIsUnit(player, nameplate1) in combat": {
-"plain": 316
+"plain": 344
 },
 "enemy nameplate: UnitIsUnit(player, nameplate10)": {
-"plain": 3
+"plain": 4
 },
 "enemy nameplate: UnitIsUnit(player, nameplate10) in combat": {
-"plain": 41
+"plain": 49
 },
 "enemy nameplate: UnitIsUnit(player, nameplate11)": {
 "plain": 2
 },
 "enemy nameplate: UnitIsUnit(player, nameplate11) in combat": {
-"plain": 27
+"plain": 35
 },
 "enemy nameplate: UnitIsUnit(player, nameplate12) in combat": {
-"plain": 14
+"plain": 20
 },
 "enemy nameplate: UnitIsUnit(player, nameplate13) in combat": {
-"plain": 9
+"plain": 11
 },
 "enemy nameplate: UnitIsUnit(player, nameplate14) in combat": {
-"plain": 6
+"plain": 8
 },
 "enemy nameplate: UnitIsUnit(player, nameplate15) in combat": {
+"plain": 2
+},
+"enemy nameplate: UnitIsUnit(player, nameplate16) in combat": {
 "plain": 1
 },
 "enemy nameplate: UnitIsUnit(player, nameplate2)": {
-"plain": 158
+"plain": 192
 },
 "enemy nameplate: UnitIsUnit(player, nameplate2) in combat": {
-"plain": 271
+"plain": 299
 },
 "enemy nameplate: UnitIsUnit(player, nameplate3)": {
-"plain": 129
+"plain": 153
 },
 "enemy nameplate: UnitIsUnit(player, nameplate3) in combat": {
-"plain": 237
+"plain": 252
 },
 "enemy nameplate: UnitIsUnit(player, nameplate4)": {
-"plain": 90
+"plain": 110
 },
 "enemy nameplate: UnitIsUnit(player, nameplate4) in combat": {
-"plain": 279
+"plain": 303
 },
 "enemy nameplate: UnitIsUnit(player, nameplate5)": {
-"plain": 70
+"plain": 83
 },
 "enemy nameplate: UnitIsUnit(player, nameplate5) in combat": {
-"plain": 220
+"plain": 244
 },
 "enemy nameplate: UnitIsUnit(player, nameplate6)": {
-"plain": 57
+"plain": 66
 },
 "enemy nameplate: UnitIsUnit(player, nameplate6) in combat": {
-"plain": 166
+"plain": 185
 },
 "enemy nameplate: UnitIsUnit(player, nameplate7)": {
-"plain": 27
+"plain": 36
 },
 "enemy nameplate: UnitIsUnit(player, nameplate7) in combat": {
-"plain": 136
+"plain": 157
 },
 "enemy nameplate: UnitIsUnit(player, nameplate8)": {
-"plain": 15
+"plain": 23
 },
 "enemy nameplate: UnitIsUnit(player, nameplate8) in combat": {
-"plain": 100
+"plain": 112
 },
 "enemy nameplate: UnitIsUnit(player, nameplate9)": {
-"plain": 6
+"plain": 9
 },
 "enemy nameplate: UnitIsUnit(player, nameplate9) in combat": {
-"plain": 69
+"plain": 81
 },
 "enemy target: UnitIsUnit(player, target)": {
-"plain": 361
+"plain": 407
 },
 "enemy target: UnitIsUnit(player, target) in combat": {
-"plain": 2438
+"plain": 2818
 },
 "enemy target: UnitIsUnit(target, player)": {
-"plain": 361
+"plain": 407
 },
 "enemy target: UnitIsUnit(target, player) in combat": {
-"plain": 2438
+"plain": 2818
 },
 "enemy target: UnitIsUnit(target, target)": {
-"plain": 361
+"plain": 407
 },
 "enemy target: UnitIsUnit(target, target) in combat": {
-"plain": 2438
+"plain": 2818
 },
 "friendly target: UnitIsUnit(player, target)": {
-"plain": 60
+"plain": 93
 },
 "friendly target: UnitIsUnit(player, target) in combat": {
-"plain": 63
+"plain": 82
 },
 "friendly target: UnitIsUnit(target, player)": {
-"plain": 60
+"plain": 93
 },
 "friendly target: UnitIsUnit(target, player) in combat": {
-"plain": 63
+"plain": 82
 },
 "friendly target: UnitIsUnit(target, target)": {
-"plain": 60
+"plain": 93
 },
 "friendly target: UnitIsUnit(target, target) in combat": {
-"plain": 63
+"plain": 82
 },
 "target: UnitIsUnit(player, target) in combat": {
-"plain": 16
+"plain": 19
 },
 "target: UnitIsUnit(target, player) in combat": {
-"plain": 16
+"plain": 19
 },
 "target: UnitIsUnit(target, target) in combat": {
-"plain": 16
+"plain": 19
 }
 }
 },
 "send": [],
 "skip": [],
 "twice": {
+"AUCTION_HOUSE_CLOSED": {
+"episodes": 1,
+"fires": {
+"2": 1
+},
+"recent": [
+{
+"at": 1794129018,
+"combat": false,
+"fires": 2,
+"gapMs": 0
+}
+]
+},
+"AUCTION_HOUSE_SHOW": {
+"episodes": 1,
+"fires": {
+"1": 1
+},
+"recent": [
+{
+"at": 1794128896,
+"combat": false,
+"fires": 1,
+"gapMs": 0
+}
+]
+},
 "MERCHANT_CLOSED": {
-"episodes": 2,
+"episodes": 5,
 "fires": {
 "1": 1,
-"2": 1
+"2": 4
 },
 "recent": [
 {
@@ -769,17 +803,53 @@
 "combat": false,
 "fires": 2,
 "gapMs": 0
+},
+{
+"at": 1794128867,
+"combat": false,
+"fires": 2,
+"gapMs": 0
+},
+{
+"at": 1794129380,
+"combat": false,
+"fires": 2,
+"gapMs": 0
+},
+{
+"at": 1794129389,
+"combat": false,
+"fires": 2,
+"gapMs": 0
 }
 ]
 },
 "MERCHANT_SHOW": {
-"episodes": 1,
+"episodes": 4,
 "fires": {
-"1": 1
+"1": 4
 },
 "recent": [
 {
 "at": 1794125938,
+"combat": false,
+"fires": 1,
+"gapMs": 0
+},
+{
+"at": 1794128860,
+"combat": false,
+"fires": 1,
+"gapMs": 0
+},
+{
+"at": 1794129273,
+"combat": false,
+"fires": 1,
+"gapMs": 0
+},
+{
+"at": 1794129386,
 "combat": false,
 "fires": 1,
 "gapMs": 0
@@ -809,242 +879,6 @@
 },
 "zone": {
 "recent": [
-{
-"at": 1794126226,
-"combat": false,
-"event": "ZONE_CHANGED_NEW_AREA",
-"how": "walked",
-"loading": false,
-"stale": true,
-"t0": {
-"map": 1421,
-"mini": "Silverpine Forest",
-"real": "Silverpine Forest",
-"sub": "",
-"zone": "Silverpine Forest"
-},
-"t05": {
-"map": 1421,
-"mini": "Silverpine Forest",
-"real": "Silverpine Forest",
-"sub": "",
-"zone": "Silverpine Forest"
-},
-"t3": {
-"map": 1416,
-"mini": "Dalaran",
-"real": "Dalaran",
-"sub": "",
-"zone": "Dalaran"
-}
-},
-{
-"at": 1794126228,
-"combat": false,
-"event": "ZONE_CHANGED_NEW_AREA",
-"how": "walked",
-"loading": false,
-"stale": false,
-"t0": {
-"map": 1416,
-"mini": "Dalaran",
-"real": "Dalaran",
-"sub": "",
-"zone": "Dalaran"
-},
-"t05": {
-"map": 1416,
-"mini": "Dalaran",
-"real": "Dalaran",
-"sub": "",
-"zone": "Dalaran"
-},
-"t3": {
-"map": 1416,
-"mini": "Dalaran",
-"real": "Dalaran",
-"sub": "",
-"zone": "Dalaran"
-}
-},
-{
-"at": 1794126255,
-"combat": false,
-"event": "ZONE_CHANGED_NEW_AREA",
-"how": "loading screen",
-"loading": false,
-"stale": false,
-"t0": {
-"map": 1421,
-"mini": "Silverpine Forest",
-"real": "Silverpine Forest",
-"sub": "",
-"zone": "Silverpine Forest"
-},
-"t05": {
-"map": 1421,
-"mini": "Silverpine Forest",
-"real": "Silverpine Forest",
-"sub": "",
-"zone": "Silverpine Forest"
-},
-"t3": {
-"map": 1421,
-"mini": "Silverpine Forest",
-"real": "Silverpine Forest",
-"sub": "",
-"zone": "Silverpine Forest"
-}
-},
-{
-"at": 1794126291,
-"combat": false,
-"event": "ZONE_CHANGED_NEW_AREA",
-"how": "walked",
-"loading": false,
-"stale": false,
-"t0": {
-"map": 1416,
-"mini": "Sewer",
-"real": "City of Dalaran",
-"sub": "Sewer",
-"zone": "City of Dalaran"
-},
-"t05": {
-"map": 1416,
-"mini": "Sewer",
-"real": "City of Dalaran",
-"sub": "Sewer",
-"zone": "City of Dalaran"
-},
-"t3": {
-"map": 1416,
-"mini": "Sewer",
-"real": "City of Dalaran",
-"sub": "Sewer",
-"zone": "City of Dalaran"
-}
-},
-{
-"at": 1794126298,
-"combat": false,
-"event": "PLAYER_ENTERING_WORLD",
-"how": "loading screen",
-"loading": true,
-"login": "zone",
-"stale": false,
-"t0": {
-"map": 1416,
-"mini": "Sewer",
-"real": "City of Dalaran",
-"sub": "Sewer",
-"zone": "City of Dalaran"
-},
-"t05": {
-"map": 1416,
-"mini": "Sewer",
-"real": "City of Dalaran",
-"sub": "Sewer",
-"zone": "City of Dalaran"
-},
-"t3": {
-"map": 1416,
-"mini": "Sewer",
-"real": "City of Dalaran",
-"sub": "Sewer",
-"zone": "City of Dalaran"
-}
-},
-{
-"at": 1794126316,
-"combat": false,
-"event": "PLAYER_ENTERING_WORLD",
-"how": "loading screen",
-"loading": true,
-"login": "zone",
-"stale": false,
-"t0": {
-"map": 1416,
-"mini": "Sewer",
-"real": "City of Dalaran",
-"sub": "Sewer",
-"zone": "City of Dalaran"
-},
-"t05": {
-"map": 1416,
-"mini": "Sewer",
-"real": "City of Dalaran",
-"sub": "Sewer",
-"zone": "City of Dalaran"
-},
-"t3": {
-"map": 1416,
-"mini": "Sewer",
-"real": "City of Dalaran",
-"sub": "Sewer",
-"zone": "City of Dalaran"
-}
-},
-{
-"at": 1794126327,
-"combat": false,
-"event": "PLAYER_ENTERING_WORLD",
-"how": "loading screen",
-"loading": true,
-"login": "zone",
-"stale": false,
-"t0": {
-"map": 1416,
-"mini": "Sewer",
-"real": "City of Dalaran",
-"sub": "Sewer",
-"zone": "City of Dalaran"
-},
-"t05": {
-"map": 1416,
-"mini": "Sewer",
-"real": "City of Dalaran",
-"sub": "Sewer",
-"zone": "City of Dalaran"
-},
-"t3": {
-"map": 1416,
-"mini": "Sewer",
-"real": "City of Dalaran",
-"sub": "Sewer",
-"zone": "City of Dalaran"
-}
-},
-{
-"at": 1794126477,
-"combat": false,
-"event": "PLAYER_ENTERING_WORLD",
-"how": "spell 780",
-"loading": true,
-"login": "zone",
-"stale": true,
-"t0": {
-"map": 1415,
-"mini": "The Underbelly",
-"real": "City of Dalaran",
-"sub": "The Underbelly",
-"zone": "City of Dalaran"
-},
-"t05": {
-"map": 1415,
-"mini": "The Underbelly",
-"real": "City of Dalaran",
-"sub": "The Underbelly",
-"zone": "City of Dalaran"
-},
-"t3": {
-"map": 1424,
-"mini": "Southshore",
-"real": "Hillsbrad Foothills",
-"sub": "Southshore",
-"zone": "Hillsbrad Foothills"
-}
-},
 {
 "at": 1794126477,
 "combat": false,
@@ -1162,31 +996,267 @@
 "sub": "Sewer",
 "zone": "City of Dalaran"
 }
+},
+{
+"at": 1794127086,
+"combat": false,
+"event": "PLAYER_ENTERING_WORLD",
+"how": "walked",
+"loading": false,
+"login": "reload",
+"stale": false,
+"t0": {
+"map": 1416,
+"mini": "The Underbelly",
+"real": "City of Dalaran",
+"sub": "The Underbelly",
+"zone": "City of Dalaran"
+},
+"t05": {
+"map": 1416,
+"mini": "The Underbelly",
+"real": "City of Dalaran",
+"sub": "The Underbelly",
+"zone": "City of Dalaran"
+},
+"t3": {
+"map": 1416,
+"mini": "The Underbelly",
+"real": "City of Dalaran",
+"sub": "The Underbelly",
+"zone": "City of Dalaran"
+}
+},
+{
+"at": 1794128213,
+"combat": false,
+"event": "PLAYER_ENTERING_WORLD",
+"how": "loading screen",
+"loading": true,
+"login": "zone",
+"stale": true,
+"t0": {
+"map": 1416,
+"mini": "Sewer",
+"real": "City of Dalaran",
+"sub": "Sewer",
+"zone": "City of Dalaran"
+},
+"t05": {
+"map": 1416,
+"mini": "Sewer",
+"real": "City of Dalaran",
+"sub": "Sewer",
+"zone": "City of Dalaran"
+},
+"t3": {
+"map": 1421,
+"mini": "Silverpine Forest",
+"real": "Silverpine Forest",
+"sub": "",
+"zone": "Silverpine Forest"
+}
+},
+{
+"at": 1794128215,
+"combat": false,
+"event": "ZONE_CHANGED_NEW_AREA",
+"how": "loading screen",
+"loading": false,
+"stale": false,
+"t0": {
+"map": 1421,
+"mini": "Silverpine Forest",
+"real": "Silverpine Forest",
+"sub": "",
+"zone": "Silverpine Forest"
+},
+"t05": {
+"map": 1421,
+"mini": "Silverpine Forest",
+"real": "Silverpine Forest",
+"sub": "",
+"zone": "Silverpine Forest"
+},
+"t3": {
+"map": 1421,
+"mini": "Silverpine Forest",
+"real": "Silverpine Forest",
+"sub": "",
+"zone": "Silverpine Forest"
+}
+},
+{
+"at": 1794128264,
+"combat": false,
+"event": "PLAYER_ENTERING_WORLD",
+"how": "spell 8690",
+"loading": true,
+"login": "zone",
+"stale": true,
+"staleAt05": true,
+"t0": {
+"map": 1415,
+"mini": "Silverpine Forest",
+"real": "Silverpine Forest",
+"sub": "",
+"zone": "Silverpine Forest"
+},
+"t05": {
+"map": 1453,
+"mini": "Trade District",
+"real": "Stormwind City",
+"sub": "Trade District",
+"zone": "Stormwind City"
+},
+"t3": {
+"map": 1453,
+"mini": "Trade District",
+"real": "Stormwind City",
+"sub": "Trade District",
+"zone": "Stormwind City"
+}
+},
+{
+"at": 1794128264,
+"combat": false,
+"event": "ZONE_CHANGED_NEW_AREA",
+"how": "spell 8690",
+"loading": false,
+"stale": false,
+"t0": {
+"map": 1453,
+"mini": "Trade District",
+"real": "Stormwind City",
+"sub": "Trade District",
+"zone": "Stormwind City"
+},
+"t05": {
+"map": 1453,
+"mini": "Trade District",
+"real": "Stormwind City",
+"sub": "Trade District",
+"zone": "Stormwind City"
+},
+"t3": {
+"map": 1453,
+"mini": "Trade District",
+"real": "Stormwind City",
+"sub": "Trade District",
+"zone": "Stormwind City"
+}
+},
+{
+"at": 1794129104,
+"combat": false,
+"event": "ZONE_CHANGED_NEW_AREA",
+"how": "spell 783",
+"loading": false,
+"stale": false,
+"t0": {
+"map": 1429,
+"mini": "Elwynn Forest",
+"real": "Elwynn Forest",
+"sub": "",
+"zone": "Elwynn Forest"
+},
+"t05": {
+"map": 1429,
+"mini": "Elwynn Forest",
+"real": "Elwynn Forest",
+"sub": "",
+"zone": "Elwynn Forest"
+},
+"t3": {
+"map": 1429,
+"mini": "Elwynn Forest",
+"real": "Elwynn Forest",
+"sub": "",
+"zone": "Elwynn Forest"
+}
+},
+{
+"at": 1794129187,
+"combat": false,
+"event": "ZONE_CHANGED_NEW_AREA",
+"how": "walked",
+"loading": false,
+"stale": false,
+"t0": {
+"map": 1433,
+"mini": "Three Corners",
+"real": "Redridge Mountains",
+"sub": "Three Corners",
+"zone": "Redridge Mountains"
+},
+"t05": {
+"map": 1433,
+"mini": "Three Corners",
+"real": "Redridge Mountains",
+"sub": "Three Corners",
+"zone": "Redridge Mountains"
+},
+"t3": {
+"map": 1433,
+"mini": "Three Corners",
+"real": "Redridge Mountains",
+"sub": "Three Corners",
+"zone": "Redridge Mountains"
+}
+},
+{
+"at": 1794129652,
+"combat": false,
+"event": "ZONE_CHANGED_NEW_AREA",
+"how": "walked",
+"loading": false,
+"stale": false,
+"t0": {
+"map": 1431,
+"mini": "Duskwood",
+"real": "Duskwood",
+"sub": "",
+"zone": "Duskwood"
+},
+"t05": {
+"map": 1431,
+"mini": "Duskwood",
+"real": "Duskwood",
+"sub": "",
+"zone": "Duskwood"
+},
+"t3": {
+"map": 1431,
+"mini": "Duskwood",
+"real": "Duskwood",
+"sub": "",
+"zone": "Duskwood"
+}
 }
 ],
 "tally": {
 "PLAYER_ENTERING_WORLD / loading screen": {
-"n": 8,
-"stale": 0
-},
-"PLAYER_ENTERING_WORLD / spell": {
-"n": 5,
+"n": 9,
 "stale": 1
 },
-"PLAYER_ENTERING_WORLD / walked": {
+"PLAYER_ENTERING_WORLD / spell": {
 "n": 6,
+"stale": 2
+},
+"PLAYER_ENTERING_WORLD / walked": {
+"n": 7,
 "stale": 0
 },
 "ZONE_CHANGED_NEW_AREA / loading screen": {
-"n": 1,
+"n": 2,
 "stale": 0
 },
 "ZONE_CHANGED_NEW_AREA / spell": {
-"n": 10,
+"n": 12,
 "stale": 2
 },
 "ZONE_CHANGED_NEW_AREA / walked": {
-"n": 11,
+"n": 13,
 "stale": 3
 }
 }
@@ -87681,9 +87751,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794104634,
-"n": 13,
+"n": 16,
 "sigs": {
-"": 13
+"": 16
 }
 },
 "name": "ActionbarHidegrid",
@@ -87726,9 +87796,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794104633,
-"n": 13,
+"n": 16,
 "sigs": {
-"": 13
+"": 16
 }
 },
 "name": "ActionbarShowgrid",
@@ -87769,11 +87839,11 @@ false,
 },
 "key": "ACTIONBAR_SLOT_CHANGED",
 "live": {
-"combat": 264,
+"combat": 292,
 "first": 1794100776,
-"n": 768,
+"n": 839,
 "sigs": {
-"n": 768
+"n": 839
 }
 },
 "name": "ActionbarSlotChanged",
@@ -87801,11 +87871,11 @@ false,
 },
 "key": "ACTIONBAR_UPDATE_COOLDOWN",
 "live": {
-"combat": 7034,
+"combat": 7954,
 "first": 1794100578,
-"n": 8371,
+"n": 9743,
 "sigs": {
-"": 8371
+"": 9743
 }
 },
 "name": "ActionbarUpdateCooldown",
@@ -87827,11 +87897,11 @@ false,
 },
 "key": "ACTIONBAR_UPDATE_STATE",
 "live": {
-"combat": 30054,
+"combat": 33813,
 "first": 1794100603,
-"n": 31666,
+"n": 35707,
 "sigs": {
-"": 31666
+"": 35707
 }
 },
 "name": "ActionbarUpdateState",
@@ -87853,11 +87923,11 @@ false,
 },
 "key": "ACTIONBAR_UPDATE_USABLE",
 "live": {
-"combat": 4037,
+"combat": 4525,
 "first": 1794100603,
-"n": 4924,
+"n": 5475,
 "sigs": {
-"": 4924
+"": 5475
 }
 },
 "name": "ActionbarUpdateUsable",
@@ -87879,11 +87949,11 @@ false,
 },
 "key": "ACTION_RANGE_CHECK_UPDATE",
 "live": {
-"combat": 23035,
+"combat": 25667,
 "first": 1794100577,
-"n": 37149,
+"n": 40971,
 "sigs": {
-"n,b,b": 37149
+"n,b,b": 40971
 }
 },
 "name": "ActionRangeCheckUpdate",
@@ -87923,11 +87993,11 @@ false,
 },
 "key": "ACTION_USABLE_CHANGED",
 "live": {
-"combat": 4038,
+"combat": 4526,
 "first": 1794100603,
-"n": 4926,
+"n": 5477,
 "sigs": {
-"t": 4926
+"t": 5477
 }
 },
 "name": "ActionUsableChanged",
@@ -88157,9 +88227,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100711,
-"n": 35,
+"n": 36,
 "sigs": {
-"b": 35
+"b": 36
 }
 },
 "name": "AddonsUnloading",
@@ -88261,11 +88331,11 @@ false,
 },
 "key": "ADDON_LOADED",
 "live": {
-"combat": 2,
+"combat": 3,
 "first": 1794100577,
-"n": 1273,
+"n": 1317,
 "sigs": {
-"s,b": 1273
+"s,b": 1317
 }
 },
 "name": "AddonLoaded",
@@ -88298,11 +88368,11 @@ false,
 },
 "key": "ADDON_RESTRICTION_STATE_CHANGED",
 "live": {
-"combat": 36,
+"combat": 52,
 "first": 1794100603,
-"n": 450,
+"n": 507,
 "sigs": {
-"n,n": 450
+"n,n": 507
 }
 },
 "name": "AddonRestrictionStateChanged",
@@ -89126,11 +89196,11 @@ false,
 },
 "key": "AREA_POIS_UPDATED",
 "live": {
-"combat": 24,
+"combat": 26,
 "first": 1794100777,
-"n": 950,
+"n": 1091,
 "sigs": {
-"": 950
+"": 1091
 }
 },
 "name": "AreaPoisUpdated",
@@ -89256,9 +89326,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794101999,
-"n": 810,
+"n": 870,
 "sigs": {
-"s,s": 810
+"s,s": 870
 }
 },
 "name": "ArenaOpponentUpdate",
@@ -89358,9 +89428,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100711,
-"n": 61,
+"n": 64,
 "sigs": {
-"": 61
+"": 64
 }
 },
 "name": "ArtifactClose",
@@ -89670,7 +89740,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "AUCTION_CANCELED",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128914,
+"n": 5,
+"sigs": {
+"n": 5
+}
+},
 "name": "AuctionCanceled",
 "payload": [
 {
@@ -89790,7 +89867,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "AUCTION_HOUSE_BROWSE_RESULTS_UPDATED",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128902,
+"n": 14,
+"sigs": {
+"": 14
+}
+},
 "name": "AuctionHouseBrowseResultsUpdated",
 "payload": [],
 "source": "client-docs",
@@ -89809,7 +89893,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "AUCTION_HOUSE_CLOSED",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794129016,
+"n": 2,
+"sigs": {
+"": 2
+}
+},
 "name": "AuctionHouseClosed",
 "payload": [],
 "source": "client-docs",
@@ -89866,7 +89957,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "AUCTION_HOUSE_ITEM_DELIVERY_DELAY_UPDATE",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128894,
+"n": 1,
+"sigs": {
+"n,n": 1
+}
+},
 "name": "AuctionHouseItemDeliveryDelayUpdate",
 "payload": [
 {
@@ -89921,7 +90019,15 @@ false,
 "SynchronousEvent": true
 },
 "key": "AUCTION_HOUSE_NEW_RESULTS_RECEIVED",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128902,
+"n": 19,
+"sigs": {
+"-": 7,
+"t": 12
+}
+},
 "name": "AuctionHouseNewResultsReceived",
 "payload": [
 {
@@ -89984,7 +90090,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "AUCTION_HOUSE_PURCHASE_COMPLETED",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128914,
+"n": 5,
+"sigs": {
+"n": 5
+}
+},
 "name": "AuctionHousePurchaseCompleted",
 "payload": [
 {
@@ -90028,7 +90141,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "AUCTION_HOUSE_SHOW",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128894,
+"n": 1,
+"sigs": {
+"": 1
+}
+},
 "name": "AuctionHouseShow",
 "payload": [],
 "source": "client-docs",
@@ -90047,7 +90167,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "AUCTION_HOUSE_SHOW_COMMODITY_WON_NOTIFICATION",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128914,
+"n": 5,
+"sigs": {
+"s,n": 5
+}
+},
 "name": "AuctionHouseShowCommodityWonNotification",
 "payload": [
 {
@@ -90188,7 +90315,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "AUCTION_HOUSE_THROTTLED_MESSAGE_QUEUED",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128895,
+"n": 6,
+"sigs": {
+"": 6
+}
+},
 "name": "AuctionHouseThrottledMessageQueued",
 "payload": [],
 "source": "client-docs",
@@ -90207,7 +90341,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "AUCTION_HOUSE_THROTTLED_MESSAGE_RESPONSE_RECEIVED",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128894,
+"n": 32,
+"sigs": {
+"": 32
+}
+},
 "name": "AuctionHouseThrottledMessageResponseReceived",
 "payload": [],
 "source": "client-docs",
@@ -90226,7 +90367,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "AUCTION_HOUSE_THROTTLED_MESSAGE_SENT",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128894,
+"n": 32,
+"sigs": {
+"": 32
+}
+},
 "name": "AuctionHouseThrottledMessageSent",
 "payload": [],
 "source": "client-docs",
@@ -90245,7 +90393,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "AUCTION_HOUSE_THROTTLED_SYSTEM_READY",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128894,
+"n": 26,
+"sigs": {
+"": 26
+}
+},
 "name": "AuctionHouseThrottledSystemReady",
 "payload": [],
 "source": "client-docs",
@@ -90911,9 +91066,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100577,
-"n": 235,
+"n": 250,
 "sigs": {
-"": 235
+"": 250
 }
 },
 "name": "BagContainerUpdate",
@@ -90935,11 +91090,11 @@ false,
 },
 "key": "BAG_NEW_ITEMS_UPDATED",
 "live": {
-"combat": 17,
+"combat": 19,
 "first": 1794101038,
-"n": 86,
+"n": 116,
 "sigs": {
-"": 86
+"": 116
 }
 },
 "name": "BagNewItemsUpdated",
@@ -91030,11 +91185,11 @@ false,
 },
 "key": "BAG_UPDATE",
 "live": {
-"combat": 95,
+"combat": 109,
 "first": 1794100577,
-"n": 5523,
+"n": 6024,
 "sigs": {
-"n": 5523
+"n": 6024
 }
 },
 "name": "BagUpdate",
@@ -91062,11 +91217,11 @@ false,
 },
 "key": "BAG_UPDATE_COOLDOWN",
 "live": {
-"combat": 4175,
+"combat": 4748,
 "first": 1794100603,
-"n": 4798,
+"n": 5704,
 "sigs": {
-"": 4798
+"": 5704
 }
 },
 "name": "BagUpdateCooldown",
@@ -91088,11 +91243,11 @@ false,
 },
 "key": "BAG_UPDATE_DELAYED",
 "live": {
-"combat": 58,
+"combat": 65,
 "first": 1794100578,
-"n": 430,
+"n": 505,
 "sigs": {
-"": 430
+"": 505
 }
 },
 "name": "BagUpdateDelayed",
@@ -91116,9 +91271,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794102058,
-"n": 1,
+"n": 2,
 "sigs": {
-"": 1
+"": 2
 }
 },
 "name": "BankframeClosed",
@@ -91142,9 +91297,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794102039,
-"n": 1,
+"n": 2,
 "sigs": {
-"": 1
+"": 2
 }
 },
 "name": "BankframeOpened",
@@ -91700,7 +91855,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "BIDS_UPDATED",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128894,
+"n": 2,
+"sigs": {
+"": 2
+}
+},
 "name": "BidsUpdated",
 "payload": [],
 "source": "client-docs",
@@ -91757,9 +91919,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100577,
-"n": 35,
+"n": 36,
 "sigs": {
-"": 35
+"": 36
 }
 },
 "name": "BindingsLoaded",
@@ -92057,9 +92219,9 @@ false,
 "live": {
 "combat": 57,
 "first": 1794101737,
-"n": 471,
+"n": 525,
 "sigs": {
-"s,s,s,n": 471
+"s,s,s,n": 525
 }
 },
 "name": "BnChatMsgAddon",
@@ -92242,11 +92404,11 @@ false,
 },
 "key": "BN_FRIEND_ACCOUNT_OFFLINE",
 "live": {
-"combat": 1,
+"combat": 2,
 "first": 1794103015,
-"n": 10,
+"n": 13,
 "sigs": {
-"n,b": 10
+"n,b": 13
 }
 },
 "name": "BnFriendAccountOffline",
@@ -92318,12 +92480,12 @@ false,
 },
 "key": "BN_FRIEND_INFO_CHANGED",
 "live": {
-"combat": 917,
+"combat": 949,
 "first": 1794100582,
-"n": 7807,
+"n": 8249,
 "sigs": {
-"-": 2509,
-"n": 5298
+"-": 2660,
+"n": 5589
 }
 },
 "name": "BnFriendInfoChanged",
@@ -92447,9 +92609,9 @@ false,
 "live": {
 "combat": 19,
 "first": 1794100778,
-"n": 346,
+"n": 365,
 "sigs": {
-"": 346
+"": 365
 }
 },
 "name": "BnInfoChanged",
@@ -92780,9 +92942,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100577,
-"n": 62,
+"n": 65,
 "sigs": {
-"b": 62
+"b": 65
 }
 },
 "name": "CalendarActionPending",
@@ -93117,9 +93279,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794101999,
-"n": 27,
+"n": 29,
 "sigs": {
-"": 27
+"": 29
 }
 },
 "name": "CancelAllLootRolls",
@@ -93172,9 +93334,9 @@ false,
 "live": {
 "combat": 13,
 "first": 1794103481,
-"n": 43,
+"n": 50,
 "sigs": {
-"n": 43
+"n": 50
 }
 },
 "name": "CancelLootRoll",
@@ -94243,9 +94405,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794102269,
-"n": 29,
+"n": 32,
 "sigs": {
-"n,s": 29
+"n,s": 32
 }
 },
 "name": "ChannelLeft",
@@ -94335,9 +94497,9 @@ false,
 "live": {
 "combat": 4,
 "first": 1794100777,
-"n": 242,
+"n": 261,
 "sigs": {
-"": 242
+"": 261
 }
 },
 "name": "ChannelUiUpdate",
@@ -94871,9 +95033,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794102531,
-"n": 20,
+"n": 21,
 "sigs": {
-"n,b": 20
+"n,b": 21
 }
 },
 "name": "ChatLoggingChanged",
@@ -95028,11 +95190,11 @@ false,
 },
 "key": "CHAT_MSG_ADDON",
 "live": {
-"combat": 506,
+"combat": 532,
 "first": 1794100578,
-"n": 2573,
+"n": 2718,
 "sigs": {
-"s,s,s,s,s,n,n,s,n": 2573
+"s,s,s,s,s,n,n,s,n": 2718
 }
 },
 "name": "ChatMsgAddon",
@@ -95785,11 +95947,12 @@ false,
 },
 "key": "CHAT_MSG_BN_INLINE_TOAST_ALERT",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794101346,
-"n": 20,
+"n": 23,
 "sigs": {
-"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 20
+"S,S,s,s,S,s,n,n,s,n,n,-,S,b,b,b,b,t": 1,
+"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 22
 }
 },
 "name": "ChatMsgBnInlineToastAlert",
@@ -96662,10 +96825,10 @@ false,
 "live": {
 "combat": 1,
 "first": 1794100793,
-"n": 339,
+"n": 430,
 "sigs": {
 "s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 4,
-"s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t": 335
+"s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t": 426
 }
 },
 "name": "ChatMsgChannel",
@@ -97187,9 +97350,9 @@ false,
 "live": {
 "combat": 2,
 "first": 1794102002,
-"n": 209,
+"n": 225,
 "sigs": {
-"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 209
+"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 225
 }
 },
 "name": "ChatMsgChannelNotice",
@@ -97437,11 +97600,11 @@ false,
 },
 "key": "CHAT_MSG_COLLECTED_APPEARANCE",
 "live": {
-"combat": 3,
+"combat": 6,
 "first": 1794104178,
-"n": 30,
+"n": 37,
 "sigs": {
-"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 30
+"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 37
 }
 },
 "name": "ChatMsgCollectedAppearance",
@@ -97566,11 +97729,11 @@ false,
 },
 "key": "CHAT_MSG_COMBAT_FACTION_CHANGE",
 "live": {
-"combat": 159,
+"combat": 212,
 "first": 1794121429,
-"n": 169,
+"n": 223,
 "sigs": {
-"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 169
+"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 223
 }
 },
 "name": "ChatMsgCombatFactionChange",
@@ -97953,11 +98116,11 @@ false,
 },
 "key": "CHAT_MSG_COMBAT_XP_GAIN",
 "live": {
-"combat": 434,
+"combat": 488,
 "first": 1794100633,
-"n": 458,
+"n": 515,
 "sigs": {
-"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 458
+"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 515
 }
 },
 "name": "ChatMsgCombatXpGain",
@@ -98207,9 +98370,9 @@ false,
 "live": {
 "combat": 1,
 "first": 1794106444,
-"n": 1,
+"n": 7,
 "sigs": {
-"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 1
+"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 7
 }
 },
 "name": "ChatMsgCurrency",
@@ -98705,9 +98868,9 @@ false,
 "live": {
 "combat": 28,
 "first": 1794100879,
-"n": 158,
+"n": 169,
 "sigs": {
-"s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t": 158
+"s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t": 169
 }
 },
 "name": "ChatMsgGuild",
@@ -99567,12 +99730,12 @@ false,
 },
 "key": "CHAT_MSG_LOOT",
 "live": {
-"combat": 332,
+"combat": 351,
 "first": 1794100634,
-"n": 1223,
+"n": 1360,
 "sigs": {
-"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 400,
-"s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t": 823
+"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 476,
+"s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t": 884
 }
 },
 "name": "ChatMsgLoot",
@@ -99697,11 +99860,11 @@ false,
 },
 "key": "CHAT_MSG_MONEY",
 "live": {
-"combat": 105,
+"combat": 107,
 "first": 1794103307,
-"n": 303,
+"n": 315,
 "sigs": {
-"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 303
+"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 315
 }
 },
 "name": "ChatMsgMoney",
@@ -100082,9 +100245,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794102109,
-"n": 8,
+"n": 12,
 "sigs": {
-"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 8
+"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 12
 }
 },
 "name": "ChatMsgMonsterSay",
@@ -100333,12 +100496,12 @@ false,
 },
 "key": "CHAT_MSG_MONSTER_YELL",
 "live": {
-"combat": 18,
+"combat": 23,
 "first": 1794103809,
-"n": 38,
+"n": 46,
 "sigs": {
-"S,S,s,s,S,s,n,n,s,n,n,-,S,b,b,b,b,t": 9,
-"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 29
+"S,S,s,s,S,s,n,n,s,n,n,-,S,b,b,b,b,t": 12,
+"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 34
 }
 },
 "name": "ChatMsgMonsterYell",
@@ -100464,12 +100627,12 @@ false,
 },
 "key": "CHAT_MSG_OFFICER",
 "live": {
-"combat": 5,
+"combat": 9,
 "first": 1794122347,
-"n": 28,
+"n": 43,
 "sigs": {
-"S,S,s,s,S,s,n,n,s,n,n,S,S,b,b,b,b,t": 2,
-"s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t": 26
+"S,S,s,s,S,s,n,n,s,n,n,S,S,b,b,b,b,t": 3,
+"s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t": 40
 }
 },
 "name": "ChatMsgOfficer",
@@ -100725,12 +100888,12 @@ false,
 },
 "key": "CHAT_MSG_PARTY",
 "live": {
-"combat": 92,
+"combat": 102,
 "first": 1794100855,
-"n": 483,
+"n": 530,
 "sigs": {
-"S,S,s,s,S,s,n,n,s,n,n,S,S,b,b,b,b,t": 1,
-"s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t": 482
+"S,S,s,s,S,s,n,n,s,n,n,S,S,b,b,b,b,t": 2,
+"s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t": 528
 }
 },
 "name": "ChatMsgParty",
@@ -100856,12 +101019,12 @@ false,
 },
 "key": "CHAT_MSG_PARTY_LEADER",
 "live": {
-"combat": 8,
+"combat": 9,
 "first": 1794102312,
-"n": 43,
+"n": 45,
 "sigs": {
-"S,S,s,s,S,s,n,n,s,n,n,S,S,b,b,b,b,t": 1,
-"s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t": 42
+"S,S,s,s,S,s,n,n,s,n,n,S,S,b,b,b,b,t": 2,
+"s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t": 43
 }
 },
 "name": "ChatMsgPartyLeader",
@@ -101360,12 +101523,12 @@ false,
 },
 "key": "CHAT_MSG_PING",
 "live": {
-"combat": 8,
+"combat": 9,
 "first": 1794103543,
-"n": 24,
+"n": 27,
 "sigs": {
 "S,S,s,s,S,s,n,n,s,n,n,-,S,b,b,b,b,t": 1,
-"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 23
+"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 26
 }
 },
 "name": "ChatMsgPing",
@@ -102228,11 +102391,11 @@ false,
 },
 "key": "CHAT_MSG_SAY",
 "live": {
-"combat": 1,
+"combat": 2,
 "first": 1794102985,
-"n": 16,
+"n": 18,
 "sigs": {
-"s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t": 16
+"s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t": 18
 }
 },
 "name": "ChatMsgSay",
@@ -102358,12 +102521,12 @@ false,
 },
 "key": "CHAT_MSG_SKILL",
 "live": {
-"combat": 30,
+"combat": 32,
 "first": 1794100638,
-"n": 33,
+"n": 35,
 "sigs": {
 "S,S,s,s,S,s,n,n,s,n,n,-,S,b,b,b,b,t": 13,
-"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 20
+"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 22
 }
 },
 "name": "ChatMsgSkill",
@@ -102489,12 +102652,12 @@ false,
 },
 "key": "CHAT_MSG_SYSTEM",
 "live": {
-"combat": 26,
+"combat": 27,
 "first": 1794100705,
-"n": 280,
+"n": 328,
 "sigs": {
-"S,S,s,s,S,s,n,n,s,n,n,-,S,b,b,b,b,t": 2,
-"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 278
+"S,S,s,s,S,s,n,n,s,n,n,-,S,b,b,b,b,t": 3,
+"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 325
 }
 },
 "name": "ChatMsgSystem",
@@ -102753,9 +102916,9 @@ false,
 "live": {
 "combat": 4,
 "first": 1794102295,
-"n": 19,
+"n": 20,
 "sigs": {
-"s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t": 19
+"s,s,s,s,s,s,n,n,s,n,n,s,n,b,b,b,b,t": 20
 }
 },
 "name": "ChatMsgTextEmote",
@@ -102883,9 +103046,9 @@ false,
 "live": {
 "combat": 9,
 "first": 1794102002,
-"n": 1682,
+"n": 2310,
 "sigs": {
-"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 1682
+"s,s,s,s,s,s,n,n,s,n,n,-,n,b,b,b,b,t": 2310
 }
 },
 "name": "ChatMsgTradeskills",
@@ -103999,7 +104162,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "CLOSE_INBOX_ITEM",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794129025,
+"n": 5,
+"sigs": {
+"n": 5
+}
+},
 "name": "CloseInboxItem",
 "payload": [
 {
@@ -104793,11 +104963,11 @@ false,
 },
 "key": "CLUB_MESSAGE_ADDED",
 "live": {
-"combat": 33,
+"combat": 37,
 "first": 1794100878,
-"n": 186,
+"n": 212,
 "sigs": {
-"n,n,t": 186
+"n,n,t": 212
 }
 },
 "name": "ClubMessageAdded",
@@ -105455,11 +105625,11 @@ false,
 },
 "key": "COMBAT_LOG_MESSAGE",
 "live": {
-"combat": 541,
+"combat": 841,
 "first": 1794100578,
-"n": 2644,
+"n": 2944,
 "sigs": {
-"s,n,n,n,n": 2644
+"s,n,n,n,n": 2944
 }
 },
 "name": "CombatLogMessage",
@@ -105552,11 +105722,11 @@ false,
 },
 "key": "COMBAT_RATING_UPDATE",
 "live": {
-"combat": 26,
+"combat": 39,
 "first": 1794108151,
-"n": 39,
+"n": 55,
 "sigs": {
-"": 39
+"": 55
 }
 },
 "name": "CombatRatingUpdate",
@@ -105578,11 +105748,11 @@ false,
 },
 "key": "COMBAT_TEXT_UPDATE",
 "live": {
-"combat": 160,
+"combat": 213,
 "first": 1794106443,
-"n": 170,
+"n": 224,
 "sigs": {
-"s": 170
+"s": 224
 }
 },
 "name": "CombatTextUpdate",
@@ -105657,9 +105827,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100776,
-"n": 29,
+"n": 31,
 "sigs": {
-"": 29
+"": 31
 }
 },
 "name": "CommentatorEnterWorld",
@@ -105881,7 +106051,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "COMMODITY_PRICE_UPDATED",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128912,
+"n": 5,
+"sigs": {
+"n,n": 5
+}
+},
 "name": "CommodityPriceUpdated",
 "payload": [
 {
@@ -105960,7 +106137,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "COMMODITY_PURCHASE_SUCCEEDED",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128914,
+"n": 5,
+"sigs": {
+"": 5
+}
+},
 "name": "CommodityPurchaseSucceeded",
 "payload": [],
 "source": "client-docs",
@@ -106004,7 +106188,14 @@ false,
 "UniqueEvent": true
 },
 "key": "COMMODITY_SEARCH_RESULTS_RECEIVED",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128910,
+"n": 12,
+"sigs": {
+"": 12
+}
+},
 "name": "CommoditySearchResultsReceived",
 "payload": [],
 "source": "client-docs",
@@ -106023,7 +106214,14 @@ false,
 "UniqueEvent": true
 },
 "key": "COMMODITY_SEARCH_RESULTS_UPDATED",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128910,
+"n": 28,
+"sigs": {
+"n": 28
+}
+},
 "name": "CommoditySearchResultsUpdated",
 "payload": [
 {
@@ -106051,9 +106249,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100577,
-"n": 35,
+"n": 36,
 "sigs": {
-"": 35
+"": 36
 }
 },
 "name": "CompactUnitFrameProfilesLoaded",
@@ -106115,9 +106313,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100776,
-"n": 69,
+"n": 71,
 "sigs": {
-"-": 29,
+"-": 31,
 "s": 40
 }
 },
@@ -106628,11 +106826,11 @@ false,
 },
 "key": "CONSOLE_MESSAGE",
 "live": {
-"combat": 215,
+"combat": 267,
 "first": 1794100578,
-"n": 2481,
+"n": 2566,
 "sigs": {
-"s,n": 2481
+"s,n": 2566
 }
 },
 "name": "ConsoleMessage",
@@ -106699,9 +106897,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100577,
-"n": 61,
+"n": 64,
 "sigs": {
-"": 61
+"": 64
 }
 },
 "name": "ContentTrackingListUpdate",
@@ -106918,9 +107116,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100577,
-"n": 61,
+"n": 64,
 "sigs": {
-"": 61
+"": 64
 }
 },
 "name": "CooldownViewerDataLoaded",
@@ -107933,11 +108131,11 @@ false,
 },
 "key": "CRITERIA_UPDATE",
 "live": {
-"combat": 2685,
+"combat": 3053,
 "first": 1794100633,
-"n": 3479,
+"n": 3952,
 "sigs": {
-"": 3479
+"": 3952
 }
 },
 "name": "CriteriaUpdate",
@@ -107971,10 +108169,10 @@ false,
 "live": {
 "combat": 1,
 "first": 1794100577,
-"n": 65,
+"n": 74,
 "sigs": {
-"-,-,-,-,-": 64,
-"n,n,n,n,n": 1
+"-,-,-,-,-": 67,
+"n,n,n,n,n": 7
 }
 },
 "name": "CurrencyDisplayUpdate",
@@ -108154,11 +108352,11 @@ false,
 },
 "key": "CURRENT_SPELL_CAST_CHANGED",
 "live": {
-"combat": 35044,
+"combat": 39459,
 "first": 1794100603,
-"n": 37262,
+"n": 42042,
 "sigs": {
-"b": 37262
+"b": 42042
 }
 },
 "name": "CurrentSpellCastChanged",
@@ -108186,11 +108384,11 @@ false,
 },
 "key": "CURSOR_CHANGED",
 "live": {
-"combat": 14959,
+"combat": 16612,
 "first": 1794100598,
-"n": 18339,
+"n": 20494,
 "sigs": {
-"b,n,n,n": 18339
+"b,n,n,n": 20494
 }
 },
 "name": "CursorChanged",
@@ -108267,9 +108465,9 @@ false,
 "live": {
 "combat": 12,
 "first": 1794100577,
-"n": 512,
+"n": 522,
 "sigs": {
-"s,s": 512
+"s,s": 522
 }
 },
 "name": "CvarUpdate",
@@ -108332,11 +108530,11 @@ false,
 },
 "key": "DAMAGE_METER_COMBAT_SESSION_UPDATED",
 "live": {
-"combat": 117022,
+"combat": 136244,
 "first": 1794100605,
-"n": 120662,
+"n": 139956,
 "sigs": {
-"n,n": 120662
+"n,n": 139956
 }
 },
 "name": "DamageMeterCombatSessionUpdated",
@@ -108369,11 +108567,11 @@ false,
 },
 "key": "DAMAGE_METER_CURRENT_SESSION_UPDATED",
 "live": {
-"combat": 130,
+"combat": 148,
 "first": 1794100603,
-"n": 196,
+"n": 218,
 "sigs": {
-"": 196
+"": 218
 }
 },
 "name": "DamageMeterCurrentSessionUpdated",
@@ -108940,9 +109138,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100577,
-"n": 70,
+"n": 72,
 "sigs": {
-"": 70
+"": 72
 }
 },
 "name": "DisplaySizeChanged",
@@ -109188,9 +109386,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100577,
-"n": 61,
+"n": 64,
 "sigs": {
-"t,b": 61
+"t,b": 64
 }
 },
 "name": "EditModeLayoutsUpdated",
@@ -109369,9 +109567,9 @@ false,
 "live": {
 "combat": 4,
 "first": 1794101467,
-"n": 81,
+"n": 131,
 "sigs": {
-"b,-": 81
+"b,-": 131
 }
 },
 "name": "EnchantSpellCompleted",
@@ -109424,11 +109622,11 @@ false,
 },
 "key": "ENCOUNTER_END",
 "live": {
-"combat": 13,
+"combat": 18,
 "first": 1794103823,
-"n": 13,
+"n": 18,
 "sigs": {
-"n,s,n,n,n,t": 13
+"n,s,n,n,n,t": 18
 }
 },
 "name": "EncounterEnd",
@@ -109543,11 +109741,11 @@ false,
 },
 "key": "ENCOUNTER_START",
 "live": {
-"combat": 5,
+"combat": 8,
 "first": 1794103809,
-"n": 13,
+"n": 18,
 "sigs": {
-"n,s,n,n": 13
+"n,s,n,n": 18
 }
 },
 "name": "EncounterStart",
@@ -109591,11 +109789,11 @@ false,
 },
 "key": "ENCOUNTER_STATE_CHANGED",
 "live": {
-"combat": 18,
+"combat": 26,
 "first": 1794103809,
-"n": 26,
+"n": 36,
 "sigs": {
-"b": 26
+"b": 36
 }
 },
 "name": "EncounterStateChanged",
@@ -109799,11 +109997,11 @@ false,
 },
 "key": "ENCOUNTER_TIMELINE_LAYOUT_UPDATED",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 35,
+"n": 36,
 "sigs": {
-"": 35
+"": 36
 }
 },
 "name": "EncounterTimelineLayoutUpdated",
@@ -110147,7 +110345,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "EQUIP_BIND_TRADEABLE_CONFIRM",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794127311,
+"n": 1,
+"sigs": {
+"n,t": 1
+}
+},
 "name": "EquipBindTradeableConfirm",
 "payload": [
 {
@@ -110206,9 +110411,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100577,
-"n": 35,
+"n": 36,
 "sigs": {
-"": 35
+"": 36
 }
 },
 "name": "EventSchedulerUpdate",
@@ -110270,11 +110475,11 @@ false,
 },
 "key": "EXPERIMENTAL_CVAR_CONFIRMATION_NEEDED",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 35,
+"n": 36,
 "sigs": {
-"": 35
+"": 36
 }
 },
 "source": "game",
@@ -110362,11 +110567,11 @@ false,
 },
 "key": "FACTION_STANDING_CHANGED",
 "live": {
-"combat": 159,
+"combat": 212,
 "first": 1794121429,
-"n": 169,
+"n": 223,
 "sigs": {
-"n,n": 169
+"n,n": 223
 }
 },
 "name": "FactionStandingChanged",
@@ -110399,11 +110604,11 @@ false,
 },
 "key": "FIRST_FRAME_RENDERED",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 35,
+"n": 36,
 "sigs": {
-"": 35
+"": 36
 }
 },
 "name": "FirstFrameRendered",
@@ -110435,11 +110640,11 @@ false,
 },
 "key": "FOG_OF_WAR_UPDATED",
 "live": {
-"combat": 24,
+"combat": 26,
 "first": 1794100777,
-"n": 948,
+"n": 1088,
 "sigs": {
-"": 948
+"": 1088
 }
 },
 "name": "FogOfWarUpdated",
@@ -110632,9 +110837,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100776,
-"n": 29,
+"n": 31,
 "sigs": {
-"": 29
+"": 31
 }
 },
 "name": "FrameManagerUpdateAll",
@@ -110911,9 +111116,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100711,
-"n": 35,
+"n": 36,
 "sigs": {
-"": 35
+"": 36
 }
 },
 "name": "GamePadConfigsChanged",
@@ -111526,11 +111731,11 @@ false,
 },
 "key": "GARRISON_HIDE_LANDING_PAGE",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 191,
+"n": 202,
 "sigs": {
-"": 191
+"": 202
 }
 },
 "name": "GarrisonHideLandingPage",
@@ -111591,11 +111796,11 @@ false,
 },
 "key": "GARRISON_LANDINGPAGE_SHIPMENTS",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 110,
+"n": 116,
 "sigs": {
-"": 110
+"": 116
 }
 },
 "name": "GarrisonLandingpageShipments",
@@ -112555,11 +112760,11 @@ false,
 },
 "key": "GARRISON_UPDATE",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 114,
+"n": 120,
 "sigs": {
-"": 114
+"": 120
 }
 },
 "name": "GarrisonUpdate",
@@ -112716,9 +112921,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100776,
-"n": 894,
+"n": 899,
 "sigs": {
-"n,b": 894
+"n,b": 899
 }
 },
 "name": "GetItemInfoReceived",
@@ -112751,11 +112956,11 @@ false,
 },
 "key": "GLOBAL_MOUSE_DOWN",
 "live": {
-"combat": 7219,
+"combat": 7992,
 "first": 1794100579,
-"n": 15256,
+"n": 16939,
 "sigs": {
-"s": 15256
+"s": 16939
 }
 },
 "name": "GlobalMouseDown",
@@ -112783,11 +112988,11 @@ false,
 },
 "key": "GLOBAL_MOUSE_UP",
 "live": {
-"combat": 7252,
+"combat": 8024,
 "first": 1794100579,
-"n": 15255,
+"n": 16938,
 "sigs": {
-"s": 15255
+"s": 16938
 }
 },
 "name": "GlobalMouseUp",
@@ -112815,12 +113020,12 @@ false,
 },
 "key": "GLOBAL_REGION_MOUSE_DOWN",
 "live": {
-"combat": 6055,
+"combat": 6689,
 "first": 1794100579,
-"n": 11769,
+"n": 13148,
 "sigs": {
-"-,s": 10135,
-"t,s": 1634
+"-,s": 11199,
+"t,s": 1949
 }
 },
 "name": "GlobalRegionMouseDown",
@@ -112853,12 +113058,12 @@ false,
 },
 "key": "GLOBAL_REGION_MOUSE_UP",
 "live": {
-"combat": 7249,
+"combat": 8020,
 "first": 1794100579,
-"n": 15249,
+"n": 16932,
 "sigs": {
-"-,s": 13626,
-"t,s": 1623
+"-,s": 14995,
+"t,s": 1937
 }
 },
 "name": "GlobalRegionMouseUp",
@@ -112991,9 +113196,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794102009,
-"n": 66,
+"n": 107,
 "sigs": {
-"b": 66
+"b": 107
 }
 },
 "name": "GossipClosed",
@@ -113058,9 +113263,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794102009,
-"n": 22,
+"n": 32,
 "sigs": {
-"": 22
+"": 32
 }
 },
 "name": "GossipConfirmCancel",
@@ -113128,9 +113333,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794102007,
-"n": 46,
+"n": 71,
 "sigs": {
-"-": 46
+"-": 71
 }
 },
 "name": "GossipShow",
@@ -113158,11 +113363,11 @@ false,
 },
 "key": "GROUP_BUFF_VISUAL_ALERTS_CHANGED",
 "live": {
-"combat": 33,
+"combat": 34,
 "first": 1794100578,
-"n": 345,
+"n": 376,
 "sigs": {
-"t": 345
+"t": 376
 }
 },
 "name": "GroupBuffVisualAlertsChanged",
@@ -113330,9 +113535,9 @@ false,
 "live": {
 "combat": 21,
 "first": 1794100777,
-"n": 223,
+"n": 242,
 "sigs": {
-"": 223
+"": 242
 }
 },
 "name": "GroupRosterUpdate",
@@ -113547,11 +113752,11 @@ false,
 },
 "key": "GUILDBANK_UPDATE_WITHDRAWMONEY",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 61,
+"n": 64,
 "sigs": {
-"": 61
+"": 64
 }
 },
 "name": "GuildbankUpdateWithdrawmoney",
@@ -113642,11 +113847,11 @@ false,
 },
 "key": "GUILD_CHALLENGE_UPDATED",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 33,
+"n": 34,
 "sigs": {
-"": 33
+"": 34
 }
 },
 "name": "GuildChallengeUpdated",
@@ -113885,11 +114090,11 @@ false,
 },
 "key": "GUILD_RANKS_UPDATE",
 "live": {
-"combat": 95,
+"combat": 102,
 "first": 1794100578,
-"n": 492,
+"n": 535,
 "sigs": {
-"": 492
+"": 535
 }
 },
 "name": "GuildRanksUpdate",
@@ -113913,9 +114118,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100776,
-"n": 29,
+"n": 31,
 "sigs": {
-"": 29
+"": 31
 }
 },
 "name": "GuildRanksUpdateActivePlayer",
@@ -114154,11 +114359,11 @@ false,
 },
 "key": "GUILD_ROSTER_UPDATE",
 "live": {
-"combat": 202,
+"combat": 213,
 "first": 1794100578,
-"n": 1220,
+"n": 1293,
 "sigs": {
-"b": 1220
+"b": 1293
 }
 },
 "name": "GuildRosterUpdate",
@@ -114186,11 +114391,11 @@ false,
 },
 "key": "GUILD_TRADESKILL_UPDATE",
 "live": {
-"combat": 133,
+"combat": 141,
 "first": 1794100578,
-"n": 681,
+"n": 728,
 "sigs": {
-"": 681
+"": 728
 }
 },
 "name": "GuildTradeskillUpdate",
@@ -114405,11 +114610,11 @@ false,
 },
 "key": "HIDDEN_GROUP_BUFFS_CHANGED",
 "live": {
-"combat": 33,
+"combat": 34,
 "first": 1794100578,
-"n": 345,
+"n": 376,
 "sigs": {
-"t": 345
+"t": 376
 }
 },
 "name": "HiddenGroupBuffsChanged",
@@ -117151,9 +117356,9 @@ false,
 "live": {
 "combat": 12,
 "first": 1794100577,
-"n": 89,
+"n": 92,
 "sigs": {
-"": 89
+"": 92
 }
 },
 "name": "InitialClubsLoaded",
@@ -117754,9 +117959,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100711,
-"n": 61,
+"n": 64,
 "sigs": {
-"": 61
+"": 64
 }
 },
 "name": "InstanceLockStop",
@@ -118109,11 +118314,11 @@ false,
 },
 "key": "ITEM_COUNT_CHANGED",
 "live": {
-"combat": 26,
+"combat": 28,
 "first": 1794100635,
-"n": 157,
+"n": 197,
 "sigs": {
-"n": 157
+"n": 197
 }
 },
 "name": "ItemCountChanged",
@@ -118141,11 +118346,11 @@ false,
 },
 "key": "ITEM_DATA_LOAD_RESULT",
 "live": {
-"combat": 3564,
+"combat": 3684,
 "first": 1794100578,
-"n": 25189,
+"n": 26826,
 "sigs": {
-"n,b": 25189
+"n,b": 26826
 }
 },
 "name": "ItemDataLoadResult",
@@ -118222,7 +118427,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "ITEM_KEY_ITEM_INFO_RECEIVED",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128902,
+"n": 21,
+"sigs": {
+"n": 21
+}
+},
 "name": "ItemKeyItemInfoReceived",
 "payload": [
 {
@@ -118250,10 +118462,10 @@ false,
 "live": {
 "combat": 4,
 "first": 1794101353,
-"n": 129,
+"n": 142,
 "sigs": {
 "n,-": 2,
-"n,n": 127
+"n,n": 140
 }
 },
 "name": "ItemLocked",
@@ -118288,10 +118500,10 @@ false,
 "live": {
 "combat": 8,
 "first": 1794101353,
-"n": 188,
+"n": 209,
 "sigs": {
-"n,-": 5,
-"n,n": 183
+"n,-": 7,
+"n,n": 202
 }
 },
 "name": "ItemLockChanged",
@@ -118349,11 +118561,11 @@ false,
 },
 "key": "ITEM_PUSH",
 "live": {
-"combat": 44,
+"combat": 48,
 "first": 1794100634,
-"n": 203,
+"n": 237,
 "sigs": {
-"n,n": 203
+"n,n": 237
 }
 },
 "name": "ItemPush",
@@ -118572,10 +118784,10 @@ false,
 "live": {
 "combat": 4,
 "first": 1794101354,
-"n": 59,
+"n": 67,
 "sigs": {
-"n,-": 3,
-"n,n": 56
+"n,-": 5,
+"n,n": 62
 }
 },
 "name": "ItemUnlocked",
@@ -118868,7 +119080,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "LEARNED_SPELL_IN_SKILL_LINE",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128478,
+"n": 4,
+"sigs": {
+"n,n,b": 4
+}
+},
 "name": "LearnedSpellInSkillLine",
 "payload": [
 {
@@ -119071,9 +119290,9 @@ false,
 "live": {
 "combat": 31,
 "first": 1794100641,
-"n": 304,
+"n": 314,
 "sigs": {
-"": 304
+"": 314
 }
 },
 "name": "LfgCooldownsUpdated",
@@ -119307,11 +119526,11 @@ false,
 },
 "key": "LFG_LIST_AVAILABILITY_UPDATE",
 "live": {
-"combat": 4,
+"combat": 5,
 "first": 1794100578,
-"n": 62,
+"n": 65,
 "sigs": {
-"": 62
+"": 65
 }
 },
 "name": "LfgListAvailabilityUpdate",
@@ -119616,11 +119835,11 @@ false,
 },
 "key": "LFG_LOCK_INFO_RECEIVED",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 79,
+"n": 82,
 "sigs": {
-"": 79
+"": 82
 }
 },
 "name": "LfgLockInfoReceived",
@@ -120089,11 +120308,11 @@ false,
 },
 "key": "LFG_UPDATE_RANDOM_INFO",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 79,
+"n": 82,
 "sigs": {
-"": 79
+"": 82
 }
 },
 "name": "LfgUpdateRandomInfo",
@@ -120134,11 +120353,11 @@ false,
 },
 "key": "LOADING_SCREEN_DISABLED",
 "live": {
-"combat": 2,
+"combat": 3,
 "first": 1794100578,
-"n": 64,
+"n": 67,
 "sigs": {
-"": 64
+"": 67
 }
 },
 "name": "LoadingScreenDisabled",
@@ -120162,9 +120381,9 @@ false,
 "live": {
 "combat": 3,
 "first": 1794100711,
-"n": 64,
+"n": 67,
 "sigs": {
-"": 64
+"": 67
 }
 },
 "name": "LoadingScreenEnabled",
@@ -120391,11 +120610,11 @@ false,
 },
 "key": "LOOT_CLOSED",
 "live": {
-"combat": 110,
+"combat": 124,
 "first": 1794100634,
-"n": 428,
+"n": 458,
 "sigs": {
-"": 428
+"": 458
 }
 },
 "name": "LootClosed",
@@ -120443,11 +120662,11 @@ false,
 },
 "key": "LOOT_HISTORY_GO_TO_ENCOUNTER",
 "live": {
-"combat": 19,
+"combat": 24,
 "first": 1794103470,
-"n": 43,
+"n": 50,
 "sigs": {
-"n": 43
+"n": 50
 }
 },
 "name": "LootHistoryGoToEncounter",
@@ -120505,11 +120724,11 @@ false,
 },
 "key": "LOOT_HISTORY_UPDATE_DROP",
 "live": {
-"combat": 56,
+"combat": 61,
 "first": 1794103475,
-"n": 189,
+"n": 224,
 "sigs": {
-"n,n": 189
+"n,n": 224
 }
 },
 "name": "LootHistoryUpdateDrop",
@@ -120542,11 +120761,11 @@ false,
 },
 "key": "LOOT_HISTORY_UPDATE_ENCOUNTER",
 "live": {
-"combat": 36,
+"combat": 41,
 "first": 1794103470,
-"n": 101,
+"n": 118,
 "sigs": {
-"n": 101
+"n": 118
 }
 },
 "name": "LootHistoryUpdateEncounter",
@@ -120606,9 +120825,9 @@ false,
 "live": {
 "combat": 3,
 "first": 1794104038,
-"n": 7,
+"n": 9,
 "sigs": {
-"s,n,n,n,b": 7
+"s,n,n,n,b": 9
 }
 },
 "name": "LootItemRollWon",
@@ -120675,11 +120894,11 @@ false,
 },
 "key": "LOOT_OPENED",
 "live": {
-"combat": 32,
+"combat": 38,
 "first": 1794100914,
-"n": 102,
+"n": 115,
 "sigs": {
-"b,b": 102
+"b,b": 115
 }
 },
 "name": "LootOpened",
@@ -120712,11 +120931,11 @@ false,
 },
 "key": "LOOT_READY",
 "live": {
-"combat": 110,
+"combat": 127,
 "first": 1794100634,
-"n": 354,
+"n": 387,
 "sigs": {
-"b": 354
+"b": 387
 }
 },
 "name": "LootReady",
@@ -120746,9 +120965,9 @@ false,
 "live": {
 "combat": 12,
 "first": 1794103481,
-"n": 43,
+"n": 50,
 "sigs": {
-"n": 43
+"n": 50
 }
 },
 "name": "LootRollsComplete",
@@ -120801,11 +121020,11 @@ false,
 },
 "key": "LOOT_SLOT_CLEARED",
 "live": {
-"combat": 117,
+"combat": 124,
 "first": 1794100634,
-"n": 390,
+"n": 410,
 "sigs": {
-"n": 390
+"n": 410
 }
 },
 "name": "LootSlotCleared",
@@ -120864,11 +121083,11 @@ false,
 },
 "key": "LOSS_OF_CONTROL_ADDED",
 "live": {
-"combat": 160,
+"combat": 165,
 "first": 1794116799,
-"n": 161,
+"n": 166,
 "sigs": {
-"s,n": 161
+"s,n": 166
 }
 },
 "name": "LossOfControlAdded",
@@ -120958,11 +121177,11 @@ false,
 },
 "key": "LOSS_OF_CONTROL_UPDATE",
 "live": {
-"combat": 571,
+"combat": 589,
 "first": 1794116799,
-"n": 586,
+"n": 606,
 "sigs": {
-"s": 586
+"s": 606
 }
 },
 "name": "LossOfControlUpdate",
@@ -121119,9 +121338,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100980,
-"n": 2,
+"n": 27,
 "sigs": {
-"": 2
+"": 27
 }
 },
 "name": "MailInboxUpdate",
@@ -121230,7 +121449,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "MAIL_SHOW",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128570,
+"n": 3,
+"sigs": {
+"": 3
+}
+},
 "name": "MailShow",
 "payload": [],
 "source": "client-docs",
@@ -121249,7 +121475,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "MAIL_SUCCESS",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128581,
+"n": 14,
+"sigs": {
+"-": 14
+}
+},
 "name": "MailSuccess",
 "payload": [
 {
@@ -121551,9 +121784,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100577,
-"n": 61,
+"n": 64,
 "sigs": {
-"": 61
+"": 64
 }
 },
 "name": "MentorshipStatusChanged",
@@ -121577,9 +121810,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794102026,
-"n": 17,
+"n": 23,
 "sigs": {
-"": 17
+"": 23
 }
 },
 "name": "MerchantClosed",
@@ -121628,9 +121861,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794102024,
-"n": 93,
+"n": 110,
 "sigs": {
-"n": 93
+"n": 110
 }
 },
 "name": "MerchantFilterItemUpdate",
@@ -121660,9 +121893,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794102024,
-"n": 8,
+"n": 11,
 "sigs": {
-"": 8
+"": 11
 }
 },
 "name": "MerchantShow",
@@ -121686,9 +121919,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794102024,
-"n": 59,
+"n": 66,
 "sigs": {
-"": 59
+"": 66
 }
 },
 "name": "MerchantUpdate",
@@ -121765,11 +121998,11 @@ false,
 },
 "key": "MINIMAP_UPDATE_ZOOM",
 "live": {
-"combat": 4,
+"combat": 6,
 "first": 1794100578,
-"n": 271,
+"n": 306,
 "sigs": {
-"": 271
+"": 306
 }
 },
 "name": "MinimapUpdateZoom",
@@ -121929,11 +122162,11 @@ false,
 },
 "key": "MODIFIER_STATE_CHANGED",
 "live": {
-"combat": 1300,
+"combat": 1463,
 "first": 1794100603,
-"n": 2076,
+"n": 2320,
 "sigs": {
-"s,n": 2076
+"s,n": 2320
 }
 },
 "name": "ModifierStateChanged",
@@ -122062,9 +122295,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100577,
-"n": 93,
+"n": 98,
 "sigs": {
-"": 93
+"": 98
 }
 },
 "name": "MountJournalSearchUpdated",
@@ -122086,11 +122319,11 @@ false,
 },
 "key": "MOUNT_JOURNAL_USABILITY_CHANGED",
 "live": {
-"combat": 110,
+"combat": 114,
 "first": 1794100638,
-"n": 1147,
+"n": 1291,
 "sigs": {
-"": 1147
+"": 1291
 }
 },
 "name": "MountJournalUsabilityChanged",
@@ -122231,11 +122464,11 @@ false,
 },
 "key": "NAME_PLATE_CREATED",
 "live": {
-"combat": 49,
+"combat": 63,
 "first": 1794100578,
-"n": 160,
+"n": 176,
 "sigs": {
-"t": 160
+"t": 176
 }
 },
 "name": "NamePlateCreated",
@@ -122263,11 +122496,11 @@ false,
 },
 "key": "NAME_PLATE_UNIT_ADDED",
 "live": {
-"combat": 2695,
+"combat": 2916,
 "first": 1794100578,
-"n": 5094,
+"n": 5577,
 "sigs": {
-"s": 5094
+"s": 5577
 }
 },
 "name": "NamePlateUnitAdded",
@@ -122332,11 +122565,11 @@ false,
 },
 "key": "NAME_PLATE_UNIT_REMOVED",
 "live": {
-"combat": 3032,
+"combat": 3298,
 "first": 1794100581,
-"n": 5094,
+"n": 5577,
 "sigs": {
-"s": 5094
+"s": 5577
 }
 },
 "name": "NamePlateUnitRemoved",
@@ -122398,9 +122631,9 @@ false,
 "live": {
 "combat": 2,
 "first": 1794100578,
-"n": 31,
+"n": 33,
 "sigs": {
-"t": 31
+"t": 33
 }
 },
 "name": "NavigationFrameCreated",
@@ -122430,9 +122663,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100711,
-"n": 61,
+"n": 64,
 "sigs": {
-"": 61
+"": 64
 }
 },
 "name": "NavigationFrameDestroyed",
@@ -122920,9 +123153,9 @@ false,
 "live": {
 "combat": 9,
 "first": 1794102027,
-"n": 329,
+"n": 413,
 "sigs": {
-"": 329
+"": 413
 }
 },
 "name": "NewWmoChunk",
@@ -123378,11 +123611,11 @@ false,
 },
 "key": "OPEN_SPLASH_SCREEN",
 "live": {
-"combat": 2,
+"combat": 3,
 "first": 1794100578,
-"n": 35,
+"n": 36,
 "sigs": {
-"-": 35
+"-": 36
 }
 },
 "name": "OpenSplashScreen",
@@ -123439,7 +123672,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "OWNED_AUCTIONS_UPDATED",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128895,
+"n": 2,
+"sigs": {
+"": 2
+}
+},
 "name": "OwnedAuctionsUpdated",
 "payload": [],
 "source": "client-docs",
@@ -123626,11 +123866,11 @@ false,
 },
 "key": "PARTY_KILL",
 "live": {
-"combat": 602,
+"combat": 672,
 "first": 1794100633,
-"n": 614,
+"n": 684,
 "sigs": {
-"S,S": 325,
+"S,S": 395,
 "s,s": 289
 }
 },
@@ -123754,9 +123994,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794102155,
-"n": 44,
+"n": 48,
 "sigs": {
-"s": 44
+"s": 48
 }
 },
 "name": "PartyMemberDisable",
@@ -123786,9 +124026,9 @@ false,
 "live": {
 "combat": 1,
 "first": 1794102009,
-"n": 102,
+"n": 105,
 "sigs": {
-"s": 102
+"s": 105
 }
 },
 "name": "PartyMemberEnable",
@@ -124464,11 +124704,11 @@ false,
 },
 "key": "PET_BAR_UPDATE_USABLE",
 "live": {
-"combat": 2579,
+"combat": 2903,
 "first": 1794100608,
-"n": 2786,
+"n": 3137,
 "sigs": {
-"": 2786
+"": 3137
 }
 },
 "name": "PetBarUpdateUsable",
@@ -125359,11 +125599,11 @@ false,
 },
 "key": "PET_JOURNAL_LIST_UPDATE",
 "live": {
-"combat": 6,
+"combat": 8,
 "first": 1794100578,
-"n": 99,
+"n": 103,
 "sigs": {
-"": 99
+"": 103
 }
 },
 "name": "PetJournalListUpdate",
@@ -125498,11 +125738,11 @@ false,
 },
 "key": "PET_JOURNAL_TRAP_LEVEL_SET",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 35,
+"n": 36,
 "sigs": {
-"n": 35
+"n": 36
 }
 },
 "name": "PetJournalTrapLevelSet",
@@ -125836,7 +126076,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "PING_SYSTEM_ERROR",
-"live": null,
+"live": {
+"combat": 1,
+"first": 1794127479,
+"n": 1,
+"sigs": {
+"s": 1
+}
+},
 "name": "PingSystemError",
 "payload": [
 {
@@ -125874,9 +126121,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794102002,
-"n": 28,
+"n": 30,
 "sigs": {
-"n": 28
+"n": 30
 }
 },
 "name": "PlayerbankslotsChanged",
@@ -125931,9 +126178,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100776,
-"n": 32,
+"n": 34,
 "sigs": {
-"": 32
+"": 34
 }
 },
 "name": "PlayerAlive",
@@ -125957,9 +126204,9 @@ false,
 "live": {
 "combat": 6,
 "first": 1794104908,
-"n": 18,
+"n": 30,
 "sigs": {
-"": 18
+"": 30
 }
 },
 "name": "PlayerAvgItemLevelUpdate",
@@ -126077,9 +126324,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100776,
-"n": 82,
+"n": 87,
 "sigs": {
-"": 82
+"": 87
 }
 },
 "name": "PlayerChoiceUpdate",
@@ -126101,11 +126348,11 @@ false,
 },
 "key": "PLAYER_CONTROL_GAINED",
 "live": {
-"combat": 2,
+"combat": 3,
 "first": 1794105250,
-"n": 8,
+"n": 10,
 "sigs": {
-"": 8
+"": 10
 }
 },
 "name": "PlayerControlGained",
@@ -126127,11 +126374,11 @@ false,
 },
 "key": "PLAYER_CONTROL_LOST",
 "live": {
-"combat": 2,
+"combat": 3,
 "first": 1794105098,
-"n": 8,
+"n": 11,
 "sigs": {
-"": 8
+"": 11
 }
 },
 "name": "PlayerControlLost",
@@ -126153,11 +126400,11 @@ false,
 },
 "key": "PLAYER_DAMAGE_DONE_MODS",
 "live": {
-"combat": 524,
+"combat": 580,
 "first": 1794101071,
-"n": 1258,
+"n": 1410,
 "sigs": {
-"s": 1258
+"s": 1410
 }
 },
 "name": "PlayerDamageDoneMods",
@@ -126213,9 +126460,9 @@ false,
 "live": {
 "combat": 22,
 "first": 1794100777,
-"n": 289,
+"n": 311,
 "sigs": {
-"": 289
+"": 311
 }
 },
 "name": "PlayerDifficultyChanged",
@@ -126258,9 +126505,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100578,
-"n": 61,
+"n": 64,
 "sigs": {
-"b,b": 61
+"b,b": 64
 }
 },
 "name": "PlayerEnteringWorld",
@@ -126293,11 +126540,11 @@ false,
 },
 "key": "PLAYER_ENTER_COMBAT",
 "live": {
-"combat": 2951,
+"combat": 3313,
 "first": 1794100605,
-"n": 3063,
+"n": 3432,
 "sigs": {
-"": 3063
+"": 3432
 }
 },
 "name": "PlayerEnterCombat",
@@ -126314,11 +126561,11 @@ false,
 },
 "key": "PLAYER_EQUIPED_SPELLS_CHANGED",
 "live": {
-"combat": 400,
+"combat": 440,
 "first": 1794100635,
-"n": 26144,
+"n": 28432,
 "sigs": {
-"n": 26144
+"n": 28432
 }
 },
 "source": "game",
@@ -126339,9 +126586,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794126120,
-"n": 1,
+"n": 3,
 "sigs": {
-"n,b": 1
+"n,b": 3
 }
 },
 "name": "PlayerEquipmentChanged",
@@ -126395,9 +126642,9 @@ false,
 "live": {
 "combat": 11,
 "first": 1794101992,
-"n": 137,
+"n": 140,
 "sigs": {
-"s": 137
+"s": 140
 }
 },
 "name": "PlayerFlagsChanged",
@@ -126483,9 +126730,9 @@ false,
 "live": {
 "combat": 1,
 "first": 1794100776,
-"n": 106,
+"n": 109,
 "sigs": {
-"s": 106
+"s": 109
 }
 },
 "name": "PlayerGuildUpdate",
@@ -126597,9 +126844,9 @@ false,
 "live": {
 "combat": 5,
 "first": 1794101351,
-"n": 256,
+"n": 359,
 "sigs": {
-"n": 256
+"n": 359
 }
 },
 "name": "PlayerInteractionManagerFrameHide",
@@ -126629,9 +126876,9 @@ false,
 "live": {
 "combat": 1,
 "first": 1794102007,
-"n": 78,
+"n": 115,
 "sigs": {
-"n": 78
+"n": 115
 }
 },
 "name": "PlayerInteractionManagerFrameShow",
@@ -126661,9 +126908,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100603,
-"n": 378,
+"n": 414,
 "sigs": {
-"b": 378
+"b": 414
 }
 },
 "name": "PlayerInCombatChanged",
@@ -126773,11 +127020,11 @@ false,
 },
 "key": "PLAYER_LEAVE_COMBAT",
 "live": {
-"combat": 3024,
+"combat": 3402,
 "first": 1794100633,
-"n": 3089,
+"n": 3468,
 "sigs": {
-"": 3089
+"": 3468
 }
 },
 "name": "PlayerLeaveCombat",
@@ -126801,9 +127048,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100711,
-"n": 61,
+"n": 64,
 "sigs": {
-"": 61
+"": 64
 }
 },
 "name": "PlayerLeavingWorld",
@@ -126946,9 +127193,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100578,
-"n": 35,
+"n": 36,
 "sigs": {
-"": 35
+"": 36
 }
 },
 "name": "PlayerLogin",
@@ -126972,9 +127219,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100711,
-"n": 35,
+"n": 36,
 "sigs": {
-"": 35
+"": 36
 }
 },
 "name": "PlayerLogout",
@@ -127042,9 +127289,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794101999,
-"n": 27,
+"n": 29,
 "sigs": {
-"n,n": 27
+"n,n": 29
 }
 },
 "name": "PlayerMapChanged",
@@ -127102,11 +127349,11 @@ false,
 },
 "key": "PLAYER_MONEY",
 "live": {
-"combat": 113,
+"combat": 116,
 "first": 1794102024,
-"n": 409,
+"n": 444,
 "sigs": {
-"": 409
+"": 444
 }
 },
 "name": "PlayerMoney",
@@ -127130,9 +127377,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794105098,
-"n": 12,
+"n": 15,
 "sigs": {
-"": 12
+"": 15
 }
 },
 "name": "PlayerMountDisplayChanged",
@@ -127245,9 +127492,9 @@ false,
 "live": {
 "combat": 2,
 "first": 1794100577,
-"n": 66,
+"n": 69,
 "sigs": {
-"": 66
+"": 69
 }
 },
 "name": "PlayerPvpTalentUpdate",
@@ -127290,9 +127537,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100603,
-"n": 189,
+"n": 207,
 "sigs": {
-"": 189
+"": 207
 }
 },
 "name": "PlayerRegenDisabled",
@@ -127316,9 +127563,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100633,
-"n": 189,
+"n": 207,
 "sigs": {
-"": 189
+"": 207
 }
 },
 "name": "PlayerRegenEnabled",
@@ -127367,9 +127614,9 @@ false,
 "live": {
 "combat": 21,
 "first": 1794100777,
-"n": 223,
+"n": 242,
 "sigs": {
-"": 223
+"": 242
 }
 },
 "name": "PlayerRolesAssigned",
@@ -127416,11 +127663,11 @@ false,
 },
 "key": "PLAYER_SOFT_ENEMY_CHANGED",
 "live": {
-"combat": 4751,
+"combat": 5274,
 "first": 1794100582,
-"n": 5141,
+"n": 5693,
 "sigs": {
-"": 5141
+"": 5693
 }
 },
 "name": "PlayerSoftEnemyChanged",
@@ -127442,11 +127689,11 @@ false,
 },
 "key": "PLAYER_SOFT_FRIEND_CHANGED",
 "live": {
-"combat": 114,
+"combat": 143,
 "first": 1794102006,
-"n": 461,
+"n": 564,
 "sigs": {
-"": 461
+"": 564
 }
 },
 "name": "PlayerSoftFriendChanged",
@@ -127551,11 +127798,11 @@ false,
 },
 "key": "PLAYER_STARTED_LOOKING",
 "live": {
-"combat": 1545,
+"combat": 1737,
 "first": 1794100579,
-"n": 2412,
+"n": 2681,
 "sigs": {
-"": 2412
+"": 2681
 }
 },
 "name": "PlayerStartedLooking",
@@ -127577,11 +127824,11 @@ false,
 },
 "key": "PLAYER_STARTED_MOVING",
 "live": {
-"combat": 4440,
+"combat": 4869,
 "first": 1794100579,
-"n": 77684,
+"n": 78282,
 "sigs": {
-"": 77684
+"": 78282
 }
 },
 "name": "PlayerStartedMoving",
@@ -127603,11 +127850,11 @@ false,
 },
 "key": "PLAYER_STARTED_TURNING",
 "live": {
-"combat": 5013,
+"combat": 5559,
 "first": 1794100579,
-"n": 7765,
+"n": 8622,
 "sigs": {
-"": 7765
+"": 8622
 }
 },
 "name": "PlayerStartedTurning",
@@ -127629,11 +127876,11 @@ false,
 },
 "key": "PLAYER_STOPPED_LOOKING",
 "live": {
-"combat": 1533,
+"combat": 1722,
 "first": 1794100579,
-"n": 2412,
+"n": 2681,
 "sigs": {
-"": 2412
+"": 2681
 }
 },
 "name": "PlayerStoppedLooking",
@@ -127655,11 +127902,11 @@ false,
 },
 "key": "PLAYER_STOPPED_MOVING",
 "live": {
-"combat": 4548,
+"combat": 4988,
 "first": 1794100583,
-"n": 77684,
+"n": 78282,
 "sigs": {
-"": 77684
+"": 78282
 }
 },
 "name": "PlayerStoppedMoving",
@@ -127681,11 +127928,11 @@ false,
 },
 "key": "PLAYER_STOPPED_TURNING",
 "live": {
-"combat": 5069,
+"combat": 5617,
 "first": 1794100579,
-"n": 7765,
+"n": 8622,
 "sigs": {
-"": 7765
+"": 8622
 }
 },
 "name": "PlayerStoppedTurning",
@@ -127707,11 +127954,11 @@ false,
 },
 "key": "PLAYER_SWING",
 "live": {
-"combat": 2166,
+"combat": 2363,
 "first": 1794100605,
-"n": 2185,
+"n": 2383,
 "sigs": {
-"n,n": 2185
+"n,n": 2383
 }
 },
 "name": "PlayerSwing",
@@ -127783,9 +128030,9 @@ false,
 "live": {
 "combat": 1,
 "first": 1794100577,
-"n": 65,
+"n": 69,
 "sigs": {
-"": 65
+"": 69
 }
 },
 "name": "PlayerTalentUpdate",
@@ -127807,11 +128054,11 @@ false,
 },
 "key": "PLAYER_TARGET_CHANGED",
 "live": {
-"combat": 3605,
+"combat": 4044,
 "first": 1794100582,
-"n": 4458,
+"n": 4992,
 "sigs": {
-"": 4458
+"": 4992
 }
 },
 "name": "PlayerTargetChanged",
@@ -127833,11 +128080,11 @@ false,
 },
 "key": "PLAYER_TARGET_DIED",
 "live": {
-"combat": 335,
+"combat": 371,
 "first": 1794100633,
-"n": 336,
+"n": 372,
 "sigs": {
-"": 336
+"": 372
 }
 },
 "name": "PlayerTargetDied",
@@ -127982,9 +128229,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794112330,
-"n": 21,
+"n": 22,
 "sigs": {
-"": 21
+"": 22
 }
 },
 "name": "PlayerUpdateResting",
@@ -128006,11 +128253,11 @@ false,
 },
 "key": "PLAYER_XP_UPDATE",
 "live": {
-"combat": 641,
+"combat": 722,
 "first": 1794100633,
-"n": 699,
+"n": 783,
 "sigs": {
-"s": 699
+"s": 783
 }
 },
 "name": "PlayerXpUpdate",
@@ -128084,11 +128331,11 @@ false,
 },
 "key": "PORTRAITS_UPDATED",
 "live": {
-"combat": 283,
+"combat": 298,
 "first": 1794100776,
-"n": 595,
+"n": 628,
 "sigs": {
-"": 595
+"": 628
 }
 },
 "name": "PortraitsUpdated",
@@ -128149,11 +128396,11 @@ false,
 },
 "key": "PREFERRED_PLAY_SETTINGS_UPDATED",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 35,
+"n": 36,
 "sigs": {
-"n,n,n,n,n": 35
+"n,n,n,n,n": 36
 }
 },
 "source": "game",
@@ -128484,11 +128731,11 @@ false,
 },
 "key": "PVP_BRAWL_INFO_UPDATED",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 61,
+"n": 64,
 "sigs": {
-"": 61
+"": 64
 }
 },
 "name": "PvpBrawlInfoUpdated",
@@ -128730,11 +128977,11 @@ false,
 },
 "key": "PVP_SPECIAL_EVENT_INFO_UPDATED",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 61,
+"n": 64,
 "sigs": {
-"": 61
+"": 64
 }
 },
 "name": "PvpSpecialEventInfoUpdated",
@@ -128758,9 +129005,9 @@ false,
 "live": {
 "combat": 11,
 "first": 1794100776,
-"n": 54,
+"n": 56,
 "sigs": {
-"s": 54
+"s": 56
 }
 },
 "name": "PvpTimerUpdate",
@@ -128873,9 +129120,9 @@ false,
 "live": {
 "combat": 5,
 "first": 1794101188,
-"n": 138,
+"n": 154,
 "sigs": {
-"b": 138
+"b": 154
 }
 },
 "name": "QuestlineUpdate",
@@ -129037,9 +129284,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794107354,
-"n": 16,
+"n": 25,
 "sigs": {
-"": 16
+"": 25
 }
 },
 "name": "QuestComplete",
@@ -129060,7 +129307,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "QUEST_CURRENCY_LOOT_RECEIVED",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794129260,
+"n": 6,
+"sigs": {
+"n,n,n": 6
+}
+},
 "name": "QuestCurrencyLootReceived",
 "payload": [
 {
@@ -129098,9 +129352,9 @@ false,
 "live": {
 "combat": 12,
 "first": 1794100578,
-"n": 918,
+"n": 956,
 "sigs": {
-"n,b": 918
+"n,b": 956
 }
 },
 "name": "QuestDataLoadResult",
@@ -129167,9 +129421,9 @@ false,
 "live": {
 "combat": 2,
 "first": 1794106287,
-"n": 87,
+"n": 112,
 "sigs": {
-"": 87
+"": 112
 }
 },
 "name": "QuestFinished",
@@ -129288,11 +129542,11 @@ false,
 },
 "key": "QUEST_LOG_UPDATE",
 "live": {
-"combat": 68,
+"combat": 71,
 "first": 1794100578,
-"n": 625,
+"n": 686,
 "sigs": {
-"": 625
+"": 686
 }
 },
 "name": "QuestLogUpdate",
@@ -129316,9 +129570,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794107355,
-"n": 15,
+"n": 18,
 "sigs": {
-"n,s,n": 15
+"n,s,n": 18
 }
 },
 "name": "QuestLootReceived",
@@ -129384,9 +129638,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794108021,
-"n": 7,
+"n": 14,
 "sigs": {
-"": 7
+"": 14
 }
 },
 "name": "QuestProgress",
@@ -129410,9 +129664,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794107355,
-"n": 16,
+"n": 19,
 "sigs": {
-"n,b": 16
+"n,b": 19
 }
 },
 "name": "QuestRemoved",
@@ -129634,9 +129888,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794107355,
-"n": 14,
+"n": 23,
 "sigs": {
-"n,n,n": 14
+"n,n,n": 23
 }
 },
 "name": "QuestTurnedIn",
@@ -129675,12 +129929,12 @@ false,
 },
 "key": "QUEST_WATCH_LIST_CHANGED",
 "live": {
-"combat": 7,
+"combat": 8,
 "first": 1794100578,
-"n": 217,
+"n": 229,
 "sigs": {
-"-,-": 189,
-"n,b": 28
+"-,-": 200,
+"n,b": 29
 }
 },
 "name": "QuestWatchListChanged",
@@ -129713,11 +129967,11 @@ false,
 },
 "key": "QUEST_WATCH_UPDATE",
 "live": {
-"combat": 45,
+"combat": 47,
 "first": 1794101036,
-"n": 56,
+"n": 58,
 "sigs": {
-"n": 56
+"n": 58
 }
 },
 "name": "QuestWatchUpdate",
@@ -130328,11 +130582,11 @@ false,
 },
 "key": "RECEIVED_ACHIEVEMENT_LIST",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100776,
-"n": 8,
+"n": 9,
 "sigs": {
-"": 8
+"": 9
 }
 },
 "name": "ReceivedAchievementList",
@@ -130786,9 +131040,9 @@ false,
 "live": {
 "combat": 1,
 "first": 1794100778,
-"n": 97,
+"n": 102,
 "sigs": {
-"b": 97
+"b": 102
 }
 },
 "name": "RequestCemeteryListResponse",
@@ -131421,9 +131675,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794102008,
-"n": 50,
+"n": 53,
 "sigs": {
-"-": 50
+"-": 53
 }
 },
 "name": "ScenarioUpdate",
@@ -131647,9 +131901,9 @@ false,
 "live": {
 "combat": 10,
 "first": 1794100711,
-"n": 166,
+"n": 176,
 "sigs": {
-"": 166
+"": 176
 }
 },
 "name": "SecureTransferCancel",
@@ -131892,9 +132146,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100578,
-"n": 35,
+"n": 36,
 "sigs": {
-"": 35
+"": 36
 }
 },
 "name": "SettingsLoaded",
@@ -132001,9 +132255,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794102008,
-"n": 50,
+"n": 53,
 "sigs": {
-"": 50
+"": 53
 }
 },
 "name": "ShardTransfer",
@@ -132905,11 +133159,11 @@ false,
 },
 "key": "SKILL_LINES_CHANGED",
 "live": {
-"combat": 45,
+"combat": 47,
 "first": 1794100577,
-"n": 109,
+"n": 115,
 "sigs": {
-"": 109
+"": 115
 }
 },
 "name": "SkillLinesChanged",
@@ -133046,10 +133300,10 @@ false,
 "live": {
 "combat": 25,
 "first": 1794100779,
-"n": 146,
+"n": 158,
 "sigs": {
-"s,-": 40,
-"s,n": 106
+"s,-": 47,
+"s,n": 111
 }
 },
 "name": "SocialQueueUpdate",
@@ -133198,9 +133452,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100711,
-"n": 61,
+"n": 64,
 "sigs": {
-"": 61
+"": 64
 }
 },
 "name": "SocketInfoClose",
@@ -133779,11 +134033,11 @@ false,
 },
 "key": "SPELLS_CHANGED",
 "live": {
-"combat": 30,
+"combat": 31,
 "first": 1794100578,
-"n": 245,
+"n": 269,
 "sigs": {
-"": 245
+"": 269
 }
 },
 "name": "SpellsChanged",
@@ -133855,11 +134109,11 @@ false,
 },
 "key": "SPELL_ACTIVATION_OVERLAY_HIDE",
 "live": {
-"combat": 1813,
+"combat": 2006,
 "first": 1794100577,
-"n": 30442,
+"n": 34892,
 "sigs": {
-"-": 30442
+"-": 34892
 }
 },
 "name": "SpellActivationOverlayHide",
@@ -134042,11 +134296,11 @@ false,
 },
 "key": "SPELL_DATA_LOAD_RESULT",
 "live": {
-"combat": 1,
+"combat": 20,
 "first": 1794100577,
-"n": 743,
+"n": 827,
 "sigs": {
-"n,b": 743
+"n,b": 827
 }
 },
 "name": "SpellDataLoadResult",
@@ -134082,9 +134336,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100776,
-"n": 116,
+"n": 124,
 "sigs": {
-"n,n,b": 116
+"n,n,b": 124
 }
 },
 "name": "SpellFlyoutUpdate",
@@ -134292,11 +134546,11 @@ false,
 },
 "key": "SPELL_UPDATE_CHARGES",
 "live": {
-"combat": 18,
+"combat": 27,
 "first": 1794100776,
-"n": 89,
+"n": 103,
 "sigs": {
-"": 89
+"": 103
 }
 },
 "name": "SpellUpdateCharges",
@@ -134318,14 +134572,14 @@ false,
 },
 "key": "SPELL_UPDATE_COOLDOWN",
 "live": {
-"combat": 7698,
+"combat": 8657,
 "first": 1794100603,
-"n": 9643,
+"n": 11108,
 "sigs": {
-"-,-,-,-,-": 152,
-"n,-,-,-,-": 1763,
-"n,-,n,n,-": 7706,
-"n,-,n,n,n": 12
+"-,-,-,-,-": 173,
+"n,-,-,-,-": 2186,
+"n,-,n,n,-": 8718,
+"n,-,n,n,n": 14
 }
 },
 "name": "SpellUpdateCooldown",
@@ -134380,9 +134634,9 @@ false,
 "live": {
 "combat": 25,
 "first": 1794100777,
-"n": 181,
+"n": 195,
 "sigs": {
-"n": 181
+"n": 195
 }
 },
 "name": "SpellUpdateIcon",
@@ -134411,11 +134665,11 @@ false,
 },
 "key": "SPELL_UPDATE_USABLE",
 "live": {
-"combat": 36711,
+"combat": 41058,
 "first": 1794100578,
-"n": 77147,
+"n": 85131,
 "sigs": {
-"": 77147
+"": 85131
 }
 },
 "name": "SpellUpdateUsable",
@@ -134517,11 +134771,11 @@ false,
 },
 "key": "START_LOOT_ROLL",
 "live": {
-"combat": 19,
+"combat": 24,
 "first": 1794103470,
-"n": 43,
+"n": 50,
 "sigs": {
-"n,n,n": 43
+"n,n,n": 50
 }
 },
 "name": "StartLootRoll",
@@ -134822,11 +135076,11 @@ false,
 },
 "key": "STORE_PURCHASE_LIST_UPDATED",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 35,
+"n": 36,
 "sigs": {
-"": 35
+"": 36
 }
 },
 "source": "game",
@@ -134944,10 +135198,10 @@ false,
 "live": {
 "combat": 28,
 "first": 1794100878,
-"n": 173,
+"n": 185,
 "sigs": {
-"n,n,-": 97,
-"n,n,n": 76
+"n,n,-": 103,
+"n,n,n": 82
 }
 },
 "name": "StreamViewMarkerUpdated",
@@ -135173,9 +135427,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100776,
-"n": 29,
+"n": 31,
 "sigs": {
-"": 29
+"": 31
 }
 },
 "name": "TabardCansaveChanged",
@@ -135300,9 +135554,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100711,
-"n": 75,
+"n": 83,
 "sigs": {
-"": 75
+"": 83
 }
 },
 "name": "TaximapClosed",
@@ -135326,9 +135580,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794105264,
-"n": 8,
+"n": 11,
 "sigs": {
-"n": 8
+"n": 11
 }
 },
 "name": "TaximapOpened",
@@ -135405,9 +135659,9 @@ false,
 "live": {
 "combat": 5,
 "first": 1794100585,
-"n": 35,
+"n": 36,
 "sigs": {
-"n,n": 35
+"n,n": 36
 }
 },
 "name": "TimePlayedMsg",
@@ -135586,9 +135840,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794104907,
-"n": 1,
+"n": 2,
 "sigs": {
-"n": 1
+"n": 2
 }
 },
 "name": "TokenDistributionsUpdated",
@@ -135854,9 +136108,9 @@ false,
 "live": {
 "combat": 37,
 "first": 1794100777,
-"n": 214,
+"n": 257,
 "sigs": {
-"n": 214
+"n": 257
 }
 },
 "name": "TooltipDataUpdate",
@@ -135919,11 +136173,11 @@ false,
 },
 "key": "TOYS_UPDATED",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 132,
+"n": 137,
 "sigs": {
-"-,-,-": 95,
+"-,-,-": 100,
 "n,b,b": 37
 }
 },
@@ -136437,9 +136691,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100711,
-"n": 61,
+"n": 66,
 "sigs": {
-"": 61
+"": 66
 }
 },
 "name": "TradeSkillClose",
@@ -136485,7 +136739,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "TRADE_SKILL_CRAFT_BEGIN",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128592,
+"n": 4,
+"sigs": {
+"n": 4
+}
+},
 "name": "TradeSkillCraftBegin",
 "payload": [
 {
@@ -136535,7 +136796,14 @@ false,
 "UniqueEvent": true
 },
 "key": "TRADE_SKILL_DATA_SOURCE_CHANGED",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128588,
+"n": 1,
+"sigs": {
+"": 1
+}
+},
 "name": "TradeSkillDataSourceChanged",
 "payload": [],
 "source": "client-docs",
@@ -136554,7 +136822,14 @@ false,
 "UniqueEvent": true
 },
 "key": "TRADE_SKILL_DATA_SOURCE_CHANGING",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128588,
+"n": 1,
+"sigs": {
+"": 1
+}
+},
 "name": "TradeSkillDataSourceChanging",
 "payload": [],
 "source": "client-docs",
@@ -136622,7 +136897,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "TRADE_SKILL_ITEM_CRAFTED_RESULT",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128604,
+"n": 4,
+"sigs": {
+"t": 4
+}
+},
 "name": "TradeSkillItemCraftedResult",
 "payload": [
 {
@@ -136672,7 +136954,14 @@ false,
 "UniqueEvent": true
 },
 "key": "TRADE_SKILL_LIST_UPDATE",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128588,
+"n": 17,
+"sigs": {
+"": 17
+}
+},
 "name": "TradeSkillListUpdate",
 "payload": [],
 "source": "client-docs",
@@ -136710,7 +136999,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "TRADE_SKILL_SHOW",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128588,
+"n": 1,
+"sigs": {
+"": 1
+}
+},
 "name": "TradeSkillShow",
 "payload": [],
 "source": "client-docs",
@@ -136812,9 +137108,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794102110,
-"n": 1,
+"n": 2,
 "sigs": {
-"": 1
+"": 2
 }
 },
 "name": "TrainerClosed",
@@ -136876,9 +137172,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794102109,
-"n": 1,
+"n": 2,
 "sigs": {
-"": 1
+"": 2
 }
 },
 "name": "TrainerShow",
@@ -136902,9 +137198,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794102109,
-"n": 1,
+"n": 11,
 "sigs": {
-"": 1
+"": 11
 }
 },
 "name": "TrainerUpdate",
@@ -137022,9 +137318,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100577,
-"n": 61,
+"n": 64,
 "sigs": {
-"": 61
+"": 64
 }
 },
 "name": "TraitConfigListUpdated",
@@ -137045,7 +137341,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "TRAIT_CONFIG_UPDATED",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128349,
+"n": 1,
+"sigs": {
+"n": 1
+}
+},
 "name": "TraitConfigUpdated",
 "payload": [
 {
@@ -137070,7 +137373,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "TRAIT_NODE_CHANGED",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128344,
+"n": 3,
+"sigs": {
+"n": 3
+}
+},
 "name": "TraitNodeChanged",
 "payload": [
 {
@@ -137247,9 +137557,9 @@ false,
 "live": {
 "combat": 10,
 "first": 1794124327,
-"n": 10,
+"n": 21,
 "sigs": {
-"n": 10
+"n": 21
 }
 },
 "name": "TraitTreeCurrencyInfoUpdated",
@@ -137466,11 +137776,11 @@ false,
 },
 "key": "TRANSMOG_COLLECTION_SOURCE_ADDED",
 "live": {
-"combat": 3,
+"combat": 6,
 "first": 1794104178,
-"n": 36,
+"n": 45,
 "sigs": {
-"n": 36
+"n": 45
 }
 },
 "name": "TransmogCollectionSourceAdded",
@@ -137524,11 +137834,11 @@ false,
 },
 "key": "TRANSMOG_COLLECTION_UPDATED",
 "live": {
-"combat": 3,
+"combat": 6,
 "first": 1794100777,
-"n": 31,
+"n": 38,
 "sigs": {
-"-,-,-,-": 31
+"-,-,-,-": 38
 }
 },
 "name": "TransmogCollectionUpdated",
@@ -137729,12 +138039,12 @@ false,
 },
 "key": "TRANSMOG_SEARCH_UPDATED",
 "live": {
-"combat": 7,
+"combat": 12,
 "first": 1794100577,
-"n": 315,
+"n": 340,
 "sigs": {
-"n,-": 244,
-"n,n": 71
+"n,-": 256,
+"n,n": 84
 }
 },
 "name": "TransmogSearchUpdated",
@@ -137792,7 +138102,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "TRANSMOG_SOURCE_COLLECTABILITY_UPDATE",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128747,
+"n": 5,
+"sigs": {
+"n,b": 5
+}
+},
 "name": "TransmogSourceCollectabilityUpdate",
 "payload": [
 {
@@ -137825,9 +138142,9 @@ false,
 "live": {
 "combat": 2,
 "first": 1794102014,
-"n": 69,
+"n": 76,
 "sigs": {
-"": 69
+"": 76
 }
 },
 "name": "TreasurePickerCacheFlush",
@@ -138023,11 +138340,11 @@ false,
 },
 "key": "UI_ERROR_MESSAGE",
 "live": {
-"combat": 19585,
+"combat": 22011,
 "first": 1794100605,
-"n": 20283,
+"n": 22804,
 "sigs": {
-"n,s": 20283
+"n,s": 22804
 }
 },
 "name": "UiErrorMessage",
@@ -138090,11 +138407,11 @@ false,
 },
 "key": "UI_INFO_MESSAGE",
 "live": {
-"combat": 50,
+"combat": 53,
 "first": 1794101036,
-"n": 144,
+"n": 147,
 "sigs": {
-"n,s": 144
+"n,s": 147
 }
 },
 "name": "UiInfoMessage",
@@ -138148,9 +138465,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100577,
-"n": 70,
+"n": 72,
 "sigs": {
-"": 70
+"": 72
 }
 },
 "name": "UiScaleChanged",
@@ -138206,9 +138523,9 @@ false,
 "live": {
 "combat": 77,
 "first": 1794100620,
-"n": 341,
+"n": 365,
 "sigs": {
-"s": 341
+"s": 365
 }
 },
 "name": "UnitAreaChanged",
@@ -138262,11 +138579,11 @@ false,
 },
 "key": "UNIT_ATTACK",
 "live": {
-"combat": 44,
+"combat": 48,
 "first": 1794100638,
-"n": 48,
+"n": 53,
 "sigs": {
-"s": 48
+"s": 53
 }
 },
 "name": "UnitAttack",
@@ -138294,11 +138611,11 @@ false,
 },
 "key": "UNIT_ATTACK_POWER",
 "live": {
-"combat": 106,
+"combat": 129,
 "first": 1794101071,
-"n": 308,
+"n": 358,
 "sigs": {
-"s": 308
+"s": 358
 }
 },
 "name": "UnitAttackPower",
@@ -138326,11 +138643,11 @@ false,
 },
 "key": "UNIT_ATTACK_SPEED",
 "live": {
-"combat": 710,
+"combat": 924,
 "first": 1794101071,
-"n": 1121,
+"n": 1391,
 "sigs": {
-"s": 1121
+"s": 1391
 }
 },
 "name": "UnitAttackSpeed",
@@ -138359,11 +138676,11 @@ false,
 },
 "key": "UNIT_AURA",
 "live": {
-"combat": 20658,
+"combat": 23898,
 "first": 1794100603,
-"n": 24007,
+"n": 27915,
 "sigs": {
-"s,t": 24007
+"s,t": 27915
 }
 },
 "name": "UnitAura",
@@ -138503,11 +138820,11 @@ false,
 },
 "key": "UNIT_COMBAT",
 "live": {
-"combat": 60929,
+"combat": 71542,
 "first": 1794100605,
-"n": 62855,
+"n": 73614,
 "sigs": {
-"s,s,s,S,n": 62855
+"s,s,s,S,n": 73614
 }
 },
 "name": "UnitCombat",
@@ -138618,11 +138935,11 @@ false,
 },
 "key": "UNIT_DAMAGE",
 "live": {
-"combat": 472,
+"combat": 564,
 "first": 1794101071,
-"n": 1548,
+"n": 1824,
 "sigs": {
-"s": 1548
+"s": 1824
 }
 },
 "name": "UnitDamage",
@@ -138650,11 +138967,11 @@ false,
 },
 "key": "UNIT_DEFENSE",
 "live": {
-"combat": 44,
+"combat": 48,
 "first": 1794100638,
-"n": 47,
+"n": 52,
 "sigs": {
-"s": 47
+"s": 52
 }
 },
 "name": "UnitDefense",
@@ -138683,12 +139000,12 @@ false,
 },
 "key": "UNIT_DIED",
 "live": {
-"combat": 663,
+"combat": 748,
 "first": 1794100633,
-"n": 824,
+"n": 928,
 "sigs": {
-"S": 339,
-"s": 485
+"S": 424,
+"s": 504
 }
 },
 "name": "UnitDied",
@@ -138718,9 +139035,9 @@ false,
 "live": {
 "combat": 54,
 "first": 1794101071,
-"n": 212,
+"n": 225,
 "sigs": {
-"s": 212
+"s": 225
 }
 },
 "name": "UnitDisplaypower",
@@ -138941,9 +139258,9 @@ false,
 "live": {
 "combat": 43,
 "first": 1794100777,
-"n": 282,
+"n": 285,
 "sigs": {
-"s": 282
+"s": 285
 }
 },
 "name": "UnitFaction",
@@ -138971,11 +139288,11 @@ false,
 },
 "key": "UNIT_FLAGS",
 "live": {
-"combat": 4170,
+"combat": 4626,
 "first": 1794100603,
-"n": 6794,
+"n": 7530,
 "sigs": {
-"s": 6794
+"s": 7530
 }
 },
 "name": "UnitFlags",
@@ -139054,11 +139371,11 @@ false,
 },
 "key": "UNIT_HAPPINESS",
 "live": {
-"combat": 39860,
+"combat": 45618,
 "first": 1794100605,
-"n": 50505,
+"n": 57683,
 "sigs": {
-"s": 50505
+"s": 57683
 }
 },
 "name": "UnitHappiness",
@@ -139087,11 +139404,11 @@ false,
 },
 "key": "UNIT_HEALTH",
 "live": {
-"combat": 49414,
+"combat": 58113,
 "first": 1794100578,
-"n": 56111,
+"n": 65585,
 "sigs": {
-"s": 56111
+"s": 65585
 }
 },
 "name": "UnitHealth",
@@ -139144,11 +139461,11 @@ false,
 },
 "key": "UNIT_HEAL_PREDICTION",
 "live": {
-"combat": 2145,
+"combat": 2652,
 "first": 1794101071,
-"n": 2864,
+"n": 3518,
 "sigs": {
-"s": 2864
+"s": 3518
 }
 },
 "name": "UnitHealPrediction",
@@ -139176,11 +139493,11 @@ false,
 },
 "key": "UNIT_INVENTORY_CHANGED",
 "live": {
-"combat": 55,
+"combat": 57,
 "first": 1794100635,
-"n": 3094,
+"n": 3321,
 "sigs": {
-"s": 3094
+"s": 3321
 }
 },
 "name": "UnitInventoryChanged",
@@ -139272,11 +139589,11 @@ false,
 },
 "key": "UNIT_LOOT",
 "live": {
-"combat": 299,
+"combat": 318,
 "first": 1794100633,
-"n": 500,
+"n": 533,
 "sigs": {
-"s,b": 500
+"s,b": 533
 }
 },
 "name": "UnitLoot",
@@ -139337,9 +139654,9 @@ false,
 "live": {
 "combat": 174,
 "first": 1794100777,
-"n": 684,
+"n": 738,
 "sigs": {
-"s": 684
+"s": 738
 }
 },
 "name": "UnitMaxhealth",
@@ -139369,9 +139686,9 @@ false,
 "live": {
 "combat": 18,
 "first": 1794100777,
-"n": 110,
+"n": 111,
 "sigs": {
-"s,s": 110
+"s,s": 111
 }
 },
 "name": "UnitMaxpower",
@@ -139408,9 +139725,9 @@ false,
 "live": {
 "combat": 48,
 "first": 1794102985,
-"n": 146,
+"n": 158,
 "sigs": {
-"s,S": 146
+"s,S": 158
 }
 },
 "name": "UnitMaxHealthModifiersChanged",
@@ -139444,11 +139761,11 @@ false,
 },
 "key": "UNIT_MODEL_CHANGED",
 "live": {
-"combat": 359,
+"combat": 383,
 "first": 1794100578,
-"n": 909,
+"n": 964,
 "sigs": {
-"s": 909
+"s": 964
 }
 },
 "name": "UnitModelChanged",
@@ -139624,9 +139941,9 @@ false,
 "live": {
 "combat": 2,
 "first": 1794100777,
-"n": 141,
+"n": 145,
 "sigs": {
-"s": 141
+"s": 145
 }
 },
 "name": "UnitPhase",
@@ -139710,11 +140027,11 @@ false,
 },
 "key": "UNIT_PORTRAIT_UPDATE",
 "live": {
-"combat": 667,
+"combat": 710,
 "first": 1794100578,
-"n": 1532,
+"n": 1624,
 "sigs": {
-"s": 1532
+"s": 1624
 }
 },
 "name": "UnitPortraitUpdate",
@@ -139817,11 +140134,11 @@ false,
 },
 "key": "UNIT_POWER_FREQUENT",
 "live": {
-"combat": 109603,
+"combat": 123349,
 "first": 1794100605,
-"n": 166466,
+"n": 185656,
 "sigs": {
-"s,s": 166466
+"s,s": 185656
 }
 },
 "name": "UnitPowerFrequent",
@@ -139880,11 +140197,11 @@ false,
 },
 "key": "UNIT_POWER_UPDATE",
 "live": {
-"combat": 44952,
+"combat": 51254,
 "first": 1794100605,
-"n": 56113,
+"n": 63874,
 "sigs": {
-"s,s": 56113
+"s,s": 63874
 }
 },
 "name": "UnitPowerUpdate",
@@ -139917,11 +140234,11 @@ false,
 },
 "key": "UNIT_QUEST_LOG_CHANGED",
 "live": {
-"combat": 313,
+"combat": 323,
 "first": 1794101036,
-"n": 508,
+"n": 525,
 "sigs": {
-"s": 508
+"s": 525
 }
 },
 "name": "UnitQuestLogChanged",
@@ -139951,9 +140268,9 @@ false,
 "live": {
 "combat": 70,
 "first": 1794101071,
-"n": 378,
+"n": 406,
 "sigs": {
-"s": 378
+"s": 406
 }
 },
 "name": "UnitRangeddamage",
@@ -139981,11 +140298,11 @@ false,
 },
 "key": "UNIT_RANGED_ATTACK_POWER",
 "live": {
-"combat": 44,
+"combat": 48,
 "first": 1794100638,
-"n": 51,
+"n": 57,
 "sigs": {
-"s": 51
+"s": 57
 }
 },
 "name": "UnitRangedAttackPower",
@@ -140013,11 +140330,11 @@ false,
 },
 "key": "UNIT_RESISTANCES",
 "live": {
-"combat": 797,
+"combat": 869,
 "first": 1794101071,
-"n": 1175,
+"n": 1298,
 "sigs": {
-"s": 1175
+"s": 1298
 }
 },
 "name": "UnitResistances",
@@ -140046,11 +140363,11 @@ false,
 },
 "key": "UNIT_SPELLCAST_CHANNEL_START",
 "live": {
-"combat": 155,
+"combat": 181,
 "first": 1794106678,
-"n": 280,
+"n": 307,
 "sigs": {
-"s,-,S,s": 280
+"s,-,S,s": 307
 }
 },
 "name": "UnitSpellcastChannelStart",
@@ -140095,11 +140412,11 @@ false,
 },
 "key": "UNIT_SPELLCAST_CHANNEL_STOP",
 "live": {
-"combat": 133,
+"combat": 155,
 "first": 1794106678,
-"n": 272,
+"n": 298,
 "sigs": {
-"s,-,S,-,s": 271,
+"s,-,S,-,s": 297,
 "s,-,S,S,s": 1
 }
 },
@@ -140150,11 +140467,11 @@ false,
 },
 "key": "UNIT_SPELLCAST_CHANNEL_UPDATE",
 "live": {
-"combat": 45,
+"combat": 51,
 "first": 1794120514,
-"n": 47,
+"n": 53,
 "sigs": {
-"s,-,S,s": 47
+"s,-,S,s": 53
 }
 },
 "name": "UnitSpellcastChannelUpdate",
@@ -140199,11 +140516,11 @@ false,
 },
 "key": "UNIT_SPELLCAST_DELAYED",
 "live": {
-"combat": 59,
+"combat": 73,
 "first": 1794104198,
-"n": 74,
+"n": 88,
 "sigs": {
-"s,S,S,s": 73,
+"s,S,S,s": 87,
 "s,s,n,s": 1
 }
 },
@@ -140385,12 +140702,12 @@ false,
 },
 "key": "UNIT_SPELLCAST_FAILED",
 "live": {
-"combat": 36008,
+"combat": 40481,
 "first": 1794100605,
-"n": 36361,
+"n": 40871,
 "sigs": {
 "s,S,S,s": 19,
-"s,s,n,-": 36341,
+"s,s,n,-": 40851,
 "s,s,n,s": 1
 }
 },
@@ -140436,12 +140753,12 @@ false,
 },
 "key": "UNIT_SPELLCAST_FAILED_QUIET",
 "live": {
-"combat": 6617,
+"combat": 7574,
 "first": 1794100606,
-"n": 6813,
+"n": 7814,
 "sigs": {
-"s,S,S,s": 21,
-"s,s,n,-": 6792
+"s,S,S,s": 26,
+"s,s,n,-": 7788
 }
 },
 "name": "UnitSpellcastFailedQuiet",
@@ -140486,14 +140803,14 @@ false,
 },
 "key": "UNIT_SPELLCAST_INTERRUPTED",
 "live": {
-"combat": 429,
+"combat": 479,
 "first": 1794103305,
-"n": 549,
+"n": 608,
 "sigs": {
-"s,S,S,-,s": 245,
-"s,S,S,S,s": 38,
-"s,s,n,-,-": 252,
-"s,s,n,-,s": 14
+"s,S,S,-,s": 274,
+"s,S,S,S,s": 42,
+"s,s,n,-,-": 276,
+"s,s,n,-,s": 16
 }
 },
 "name": "UnitSpellcastInterrupted",
@@ -140665,13 +140982,13 @@ false,
 },
 "key": "UNIT_SPELLCAST_SENT",
 "live": {
-"combat": 7810,
+"combat": 8783,
 "first": 1794100603,
-"n": 8279,
+"n": 9338,
 "sigs": {
-"s,-,s,n": 505,
-"s,S,s,n": 3955,
-"s,s,s,n": 3819
+"s,-,s,n": 582,
+"s,S,s,n": 4901,
+"s,s,s,n": 3855
 }
 },
 "name": "UnitSpellcastSent",
@@ -140716,14 +141033,14 @@ false,
 },
 "key": "UNIT_SPELLCAST_START",
 "live": {
-"combat": 1681,
+"combat": 1979,
 "first": 1794100635,
-"n": 2112,
+"n": 2451,
 "sigs": {
-"s,-,S,s": 121,
-"s,-,n,s": 15,
-"s,S,S,s": 1906,
-"s,s,n,s": 70
+"s,-,S,s": 127,
+"s,-,n,s": 18,
+"s,S,S,s": 2206,
+"s,s,n,s": 100
 }
 },
 "name": "UnitSpellcastStart",
@@ -140768,12 +141085,12 @@ false,
 },
 "key": "UNIT_SPELLCAST_STOP",
 "live": {
-"combat": 1636,
+"combat": 1918,
 "first": 1794100638,
-"n": 1967,
+"n": 2293,
 "sigs": {
-"s,S,S,s": 1900,
-"s,s,n,s": 67
+"s,S,S,s": 2196,
+"s,s,n,s": 97
 }
 },
 "name": "UnitSpellcastStop",
@@ -140818,13 +141135,13 @@ false,
 },
 "key": "UNIT_SPELLCAST_SUCCEEDED",
 "live": {
-"combat": 6367,
+"combat": 7224,
 "first": 1794100603,
-"n": 7104,
+"n": 8053,
 "sigs": {
-"s,S,S,s": 1577,
-"s,s,n,-": 5475,
-"s,s,n,s": 52
+"s,S,S,s": 1835,
+"s,s,n,-": 6138,
+"s,s,n,s": 80
 }
 },
 "name": "UnitSpellcastSucceeded",
@@ -140899,11 +141216,11 @@ false,
 },
 "key": "UNIT_SPELL_HASTE",
 "live": {
-"combat": 11,
+"combat": 15,
 "first": 1794125490,
-"n": 12,
+"n": 16,
 "sigs": {
-"s": 12
+"s": 16
 }
 },
 "name": "UnitSpellHaste",
@@ -140931,11 +141248,11 @@ false,
 },
 "key": "UNIT_STATS",
 "live": {
-"combat": 76,
+"combat": 99,
 "first": 1794107880,
-"n": 182,
+"n": 220,
 "sigs": {
-"s": 182
+"s": 220
 }
 },
 "name": "UnitStats",
@@ -140963,11 +141280,11 @@ false,
 },
 "key": "UNIT_TARGET",
 "live": {
-"combat": 10452,
+"combat": 11714,
 "first": 1794100583,
-"n": 14223,
+"n": 15790,
 "sigs": {
-"s": 14223
+"s": 15790
 }
 },
 "name": "UnitTarget",
@@ -140997,9 +141314,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794125394,
-"n": 2,
+"n": 4,
 "sigs": {
-"s": 2
+"s": 4
 }
 },
 "name": "UnitTargetableChanged",
@@ -141028,11 +141345,11 @@ false,
 },
 "key": "UNIT_THREAT_LIST_UPDATE",
 "live": {
-"combat": 18319,
+"combat": 20569,
 "first": 1794100578,
-"n": 18634,
+"n": 20894,
 "sigs": {
-"s": 18634
+"s": 20894
 }
 },
 "name": "UnitThreatListUpdate",
@@ -141061,11 +141378,11 @@ false,
 },
 "key": "UNIT_THREAT_SITUATION_UPDATE",
 "live": {
-"combat": 5211,
+"combat": 6051,
 "first": 1794100578,
-"n": 5640,
+"n": 6495,
 "sigs": {
-"s": 5640
+"s": 6495
 }
 },
 "name": "UnitThreatSituationUpdate",
@@ -141114,9 +141431,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100776,
-"n": 30,
+"n": 32,
 "sigs": {
-"": 30
+"": 32
 }
 },
 "name": "UpdateAllUiWidgets",
@@ -141184,9 +141501,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100577,
-"n": 172,
+"n": 177,
 "sigs": {
-"": 172
+"": 177
 }
 },
 "name": "UpdateBindings",
@@ -141211,9 +141528,9 @@ false,
 "live": {
 "combat": 27,
 "first": 1794100776,
-"n": 220,
+"n": 237,
 "sigs": {
-"": 220
+"": 237
 }
 },
 "name": "UpdateBonusActionbar",
@@ -141324,9 +141641,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100577,
-"n": 3290,
+"n": 3384,
 "sigs": {
-"s,n,n,n": 3290
+"s,n,n,n": 3384
 }
 },
 "name": "UpdateChatColor",
@@ -141371,9 +141688,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100577,
-"n": 3290,
+"n": 3384,
 "sigs": {
-"s,b": 3290
+"s,b": 3384
 }
 },
 "name": "UpdateChatColorNameByClass",
@@ -141408,9 +141725,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100577,
-"n": 105,
+"n": 108,
 "sigs": {
-"": 105
+"": 108
 }
 },
 "name": "UpdateChatWindows",
@@ -141434,9 +141751,9 @@ false,
 "live": {
 "combat": 17,
 "first": 1794102030,
-"n": 88,
+"n": 131,
 "sigs": {
-"": 88
+"": 131
 }
 },
 "name": "UpdateExhaustion",
@@ -141469,11 +141786,11 @@ false,
 },
 "key": "UPDATE_EXTRA_ACTIONBAR",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 61,
+"n": 64,
 "sigs": {
-"": 61
+"": 64
 }
 },
 "name": "UpdateExtraActionbar",
@@ -141495,11 +141812,11 @@ false,
 },
 "key": "UPDATE_FACTION",
 "live": {
-"combat": 166,
+"combat": 220,
 "first": 1794100577,
-"n": 373,
+"n": 436,
 "sigs": {
-"": 373
+"": 436
 }
 },
 "name": "UpdateFaction",
@@ -141523,9 +141840,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100577,
-"n": 70,
+"n": 72,
 "sigs": {
-"": 70
+"": 72
 }
 },
 "name": "UpdateFloatingChatWindows",
@@ -141565,11 +141882,11 @@ false,
 },
 "key": "UPDATE_INSTANCE_INFO",
 "live": {
-"combat": 9,
+"combat": 12,
 "first": 1794100578,
-"n": 161,
+"n": 170,
 "sigs": {
-"": 161
+"": 170
 }
 },
 "name": "UpdateInstanceInfo",
@@ -141617,11 +141934,11 @@ false,
 },
 "key": "UPDATE_INVENTORY_DURABILITY",
 "live": {
-"combat": 283,
+"combat": 321,
 "first": 1794100577,
-"n": 638,
+"n": 742,
 "sigs": {
-"": 638
+"": 742
 }
 },
 "name": "UpdateInventoryDurability",
@@ -141664,9 +141981,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100577,
-"n": 70,
+"n": 72,
 "sigs": {
-"": 70
+"": 72
 }
 },
 "name": "UpdateMacros",
@@ -141707,11 +142024,11 @@ false,
 },
 "key": "UPDATE_MOUSEOVER_UNIT",
 "live": {
-"combat": 11501,
+"combat": 12835,
 "first": 1794100591,
-"n": 16082,
+"n": 18136,
 "sigs": {
-"": 16082
+"": 18136
 }
 },
 "name": "UpdateMouseoverUnit",
@@ -141752,11 +142069,11 @@ false,
 },
 "key": "UPDATE_OVERRIDE_ACTIONBAR",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 61,
+"n": 64,
 "sigs": {
-"": 61
+"": 64
 }
 },
 "name": "UpdateOverrideActionbar",
@@ -141778,11 +142095,11 @@ false,
 },
 "key": "UPDATE_PENDING_MAIL",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 66,
+"n": 86,
 "sigs": {
-"": 66
+"": 86
 }
 },
 "name": "UpdatePendingMail",
@@ -141845,11 +142162,11 @@ false,
 },
 "key": "UPDATE_SHAPESHIFT_COOLDOWN",
 "live": {
-"combat": 6940,
+"combat": 7848,
 "first": 1794100603,
-"n": 8210,
+"n": 9560,
 "sigs": {
-"": 8210
+"": 9560
 }
 },
 "name": "UpdateShapeshiftCooldown",
@@ -141873,9 +142190,9 @@ false,
 "live": {
 "combat": 64,
 "first": 1794100776,
-"n": 568,
+"n": 618,
 "sigs": {
-"": 568
+"": 618
 }
 },
 "name": "UpdateShapeshiftForm",
@@ -141899,9 +142216,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100776,
-"n": 29,
+"n": 31,
 "sigs": {
-"": 29
+"": 31
 }
 },
 "name": "UpdateShapeshiftForms",
@@ -141923,11 +142240,11 @@ false,
 },
 "key": "UPDATE_SHAPESHIFT_USABLE",
 "live": {
-"combat": 37,
+"combat": 40,
 "first": 1794102027,
-"n": 208,
+"n": 245,
 "sigs": {
-"": 208
+"": 245
 }
 },
 "name": "UpdateShapeshiftUsable",
@@ -141948,7 +142265,14 @@ false,
 "SynchronousEvent": true
 },
 "key": "UPDATE_SPELL_TARGET_ITEM_CONTEXT",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794129038,
+"n": 1,
+"sigs": {
+"": 1
+}
+},
 "name": "UpdateSpellTargetItemContext",
 "payload": [],
 "source": "client-docs",
@@ -141994,11 +142318,11 @@ false,
 },
 "key": "UPDATE_SUMMONPETS_ACTION",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 35,
+"n": 36,
 "sigs": {
-"": 35
+"": 36
 }
 },
 "name": "UpdateSummonpetsAction",
@@ -142019,7 +142343,14 @@ false,
 "UniqueEvent": true
 },
 "key": "UPDATE_TRADESKILL_CAST_STOPPED",
-"live": null,
+"live": {
+"combat": 0,
+"first": 1794128642,
+"n": 1,
+"sigs": {
+"b": 1
+}
+},
 "name": "UpdateTradeskillCastStopped",
 "payload": [
 {
@@ -142072,9 +142403,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100577,
-"n": 61,
+"n": 64,
 "sigs": {
-"": 61
+"": 64
 }
 },
 "name": "UpdateVehicleActionbar",
@@ -142309,9 +142640,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100577,
-"n": 35,
+"n": 36,
 "sigs": {
-"": 35
+"": 36
 }
 },
 "name": "VariablesLoaded",
@@ -142377,11 +142708,11 @@ false,
 },
 "key": "VEHICLE_ANGLE_SHOW",
 "live": {
-"combat": 4,
+"combat": 6,
 "first": 1794100577,
-"n": 106,
+"n": 116,
 "sigs": {
-"-": 106
+"-": 116
 }
 },
 "name": "VehicleAngleShow",
@@ -142458,11 +142789,11 @@ false,
 },
 "key": "VEHICLE_POWER_SHOW",
 "live": {
-"combat": 4,
+"combat": 6,
 "first": 1794100577,
-"n": 106,
+"n": 116,
 "sigs": {
-"-": 106
+"-": 116
 }
 },
 "name": "VehiclePowerShow",
@@ -142490,11 +142821,11 @@ false,
 },
 "key": "VEHICLE_UPDATE",
 "live": {
-"combat": 2,
+"combat": 3,
 "first": 1794100776,
-"n": 37,
+"n": 41,
 "sigs": {
-"": 37
+"": 41
 }
 },
 "name": "VehicleUpdate",
@@ -142739,11 +143070,11 @@ false,
 },
 "key": "VOICE_CHAT_ACTIVE_INPUT_DEVICE_UPDATED",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 38,
+"n": 39,
 "sigs": {
-"": 38
+"": 39
 }
 },
 "name": "VoiceChatActiveInputDeviceUpdated",
@@ -142765,11 +143096,11 @@ false,
 },
 "key": "VOICE_CHAT_ACTIVE_OUTPUT_DEVICE_UPDATED",
 "live": {
-"combat": 3,
+"combat": 4,
 "first": 1794100578,
-"n": 38,
+"n": 39,
 "sigs": {
-"": 38
+"": 39
 }
 },
 "name": "VoiceChatActiveOutputDeviceUpdated",
@@ -144543,9 +144874,9 @@ false,
 "live": {
 "combat": 0,
 "first": 1794100776,
-"n": 109,
+"n": 116,
 "sigs": {
-"": 109
+"": 116
 }
 },
 "name": "WeatherChanged",
@@ -144651,11 +144982,11 @@ false,
 },
 "key": "WORLD_CURSOR_TOOLTIP_UPDATE",
 "live": {
-"combat": 23184,
+"combat": 25870,
 "first": 1794100591,
-"n": 32487,
+"n": 36618,
 "sigs": {
-"n": 32487
+"n": 36618
 }
 },
 "name": "WorldCursorTooltipUpdate",
@@ -144901,11 +145232,11 @@ false,
 },
 "key": "ZONE_CHANGED",
 "live": {
-"combat": 6,
+"combat": 7,
 "first": 1794101283,
-"n": 362,
+"n": 395,
 "sigs": {
-"": 362
+"": 395
 }
 },
 "name": "ZoneChanged",
@@ -144927,11 +145258,11 @@ false,
 },
 "key": "ZONE_CHANGED_INDOORS",
 "live": {
-"combat": 7,
+"combat": 8,
 "first": 1794102129,
-"n": 95,
+"n": 109,
 "sigs": {
-"": 95
+"": 109
 }
 },
 "name": "ZoneChangedIndoors",
@@ -144955,9 +145286,9 @@ false,
 "live": {
 "combat": 2,
 "first": 1794100777,
-"n": 108,
+"n": 113,
 "sigs": {
-"": 108
+"": 113
 }
 },
 "name": "ZoneChangedNewArea",
@@ -462852,6 +463183,1176 @@ false,
 "build": "1.60.1.70862",
 "probe": "0.1.0",
 "traces": {
+"auction house open": [
+{
+"at": 1794128898,
+"events": [
+[
+-844,
+"GLOBAL_REGION_MOUSE_UP",
+"-,s",
+null,
+false
+],
+[
+-844,
+"PLAYER_STOPPED_LOOKING",
+"",
+null,
+false
+],
+[
+-844,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+-824,
+"GLOBAL_REGION_MOUSE_UP",
+"-,s",
+null,
+false
+],
+[
+-824,
+"PLAYER_STOPPED_TURNING",
+"",
+null,
+false
+],
+[
+-824,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+-822,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-822,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+-813,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-812,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-812,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+-781,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-781,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-781,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+-750,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-749,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-749,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+-740,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-740,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-739,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+-710,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-709,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-709,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+-589,
+"CURSOR_CHANGED",
+"b,n,n,n",
+null,
+false
+],
+[
+-589,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-589,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-589,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+-470,
+"GUILD_ROSTER_UPDATE",
+"b",
+null,
+false
+],
+[
+-470,
+"GUILD_TRADESKILL_UPDATE",
+"",
+null,
+false
+],
+[
+-469,
+"GUILD_RANKS_UPDATE",
+"",
+null,
+false
+],
+[
+-277,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+-277,
+"GLOBAL_REGION_MOUSE_DOWN",
+"-,s",
+null,
+false
+],
+[
+-237,
+"PLAYER_STOPPED_MOVING",
+"",
+null,
+false
+],
+[
+-157,
+"GLOBAL_REGION_MOUSE_UP",
+"-,s",
+null,
+false
+],
+[
+-153,
+"PLAYER_TARGET_CHANGED",
+"",
+null,
+false
+],
+[
+-153,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+-152,
+"ACTION_RANGE_CHECK_UPDATE",
+"n,b,b",
+null,
+false
+],
+[
+-152,
+"ACTION_RANGE_CHECK_UPDATE",
+"n,b,b",
+null,
+false
+],
+[
+-152,
+"ACTION_RANGE_CHECK_UPDATE",
+"n,b,b",
+null,
+false
+],
+[
+-152,
+"ACTION_RANGE_CHECK_UPDATE",
+"n,b,b",
+null,
+false
+],
+[
+-152,
+"ACTION_RANGE_CHECK_UPDATE",
+"n,b,b",
+null,
+false
+],
+[
+-152,
+"ACTION_RANGE_CHECK_UPDATE",
+"n,b,b",
+null,
+false
+],
+[
+-152,
+"SPELL_UPDATE_USABLE",
+"",
+null,
+false
+],
+[
+-140,
+"PLAYER_SOFT_FRIEND_CHANGED",
+"",
+null,
+false
+],
+[
+-24,
+"AUCTION_HOUSE_THROTTLED_MESSAGE_SENT",
+"",
+null,
+false
+],
+[
+-24,
+"ADDON_LOADED",
+"s,b",
+null,
+false
+],
+[
+-22,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-22,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-22,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-22,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-22,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-22,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-21,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+-6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+0,
+"AUCTION_HOUSE_SHOW",
+"",
+null,
+true
+],
+[
+0,
+"AUCTION_HOUSE_ITEM_DELIVERY_DELAY_UPDATE",
+"n,n",
+null,
+false
+],
+[
+0,
+"PLAYER_INTERACTION_MANAGER_FRAME_SHOW",
+"n",
+null,
+false
+],
+[
+14,
+"CHAT_MSG_CHANNEL",
+"s,s,s,s,s,s,n,n,s,n,n,s",
+null,
+false
+],
+[
+15,
+"GET_ITEM_INFO_RECEIVED",
+"n,b",
+null,
+false
+],
+[
+47,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+47,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+47,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+47,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+47,
+"AUCTION_HOUSE_THROTTLED_MESSAGE_RESPONSE_RECEIVED",
+"",
+null,
+false
+],
+[
+47,
+"BIDS_UPDATED",
+"",
+null,
+false
+],
+[
+48,
+"UNIT_TARGET",
+"s",
+"player",
+false
+],
+[
+138,
+"AUCTION_HOUSE_THROTTLED_SYSTEM_READY",
+"",
+null,
+false
+],
+[
+358,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+372,
+"CURSOR_CHANGED",
+"b,n,n,n",
+null,
+false
+],
+[
+372,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+459,
+"UPDATE_INVENTORY_DURABILITY",
+"",
+null,
+false
+],
+[
+751,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+751,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+841,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+881,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+881,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+950,
+"AUCTION_HOUSE_THROTTLED_MESSAGE_SENT",
+"",
+null,
+false
+],
+[
+951,
+"AUCTION_HOUSE_THROTTLED_MESSAGE_QUEUED",
+"",
+null,
+false
+],
+[
+951,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+952,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+952,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+982,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+982,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+982,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+1012,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+1012,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+1012,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+1101,
+"AUCTION_HOUSE_THROTTLED_MESSAGE_RESPONSE_RECEIVED",
+"",
+null,
+false
+],
+[
+1101,
+"OWNED_AUCTIONS_UPDATED",
+"",
+null,
+false
+],
+[
+1225,
+"TOKEN_DISTRIBUTIONS_UPDATED",
+"n",
+null,
+false
+],
+[
+1225,
+"OWNED_AUCTIONS_UPDATED",
+"",
+null,
+false
+],
+[
+1228,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+1228,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+1228,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+1288,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+1318,
+"UNIT_AURA",
+"s,t",
+"player",
+false
+],
+[
+1320,
+"ACTIONBAR_UPDATE_COOLDOWN",
+"",
+null,
+false
+],
+[
+1320,
+"BAG_UPDATE_COOLDOWN",
+"",
+null,
+false
+],
+[
+1321,
+"SPELL_UPDATE_COOLDOWN",
+"n,-,-,-,-",
+null,
+false
+],
+[
+1321,
+"SPELL_UPDATE_USABLE",
+"",
+null,
+false
+],
+[
+1321,
+"UPDATE_SHAPESHIFT_COOLDOWN",
+"",
+null,
+false
+],
+[
+1350,
+"AUCTION_HOUSE_THROTTLED_MESSAGE_SENT",
+"",
+null,
+false
+],
+[
+1420,
+"AUCTION_HOUSE_THROTTLED_MESSAGE_RESPONSE_RECEIVED",
+"",
+null,
+false
+],
+[
+1420,
+"BIDS_UPDATED",
+"",
+null,
+false
+],
+[
+1592,
+"CURSOR_CHANGED",
+"b,n,n,n",
+null,
+false
+],
+[
+1623,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+1673,
+"AUCTION_HOUSE_THROTTLED_SYSTEM_READY",
+"",
+null,
+false
+],
+[
+1733,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+1753,
+"CURSOR_CHANGED",
+"b,n,n,n",
+null,
+false
+],
+[
+2798,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+3118,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+3229,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+3229,
+"CHAT_MSG_SYSTEM",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+3230,
+"CHANNEL_UI_UPDATE",
+"",
+null,
+false
+],
+[
+3231,
+"PLAYER_DIFFICULTY_CHANGED",
+"",
+null,
+false
+],
+[
+3270,
+"GROUP_ROSTER_UPDATE",
+"",
+null,
+false
+],
+[
+3277,
+"PLAYER_ROLES_ASSIGNED",
+"",
+null,
+false
+],
+[
+3345,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+3346,
+"SOCIAL_QUEUE_UPDATE",
+"s,-",
+null,
+false
+],
+[
+3346,
+"CHAT_MSG_ADDON",
+"s,s,s,s,s,n,n,s,n",
+null,
+false
+],
+[
+3527,
+"ENCHANT_SPELL_COMPLETED",
+"b,-",
+null,
+false
+],
+[
+3528,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+3528,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+3651,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+3651,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+3690,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+3690,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+3690,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+3701,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+3701,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+3702,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+3741,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+3761,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+3761,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+3809,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+3871,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+]
+],
+"zoneType": "none"
+}
+],
 "back from ghost": [
 {
 "at": 1794113830,
@@ -467660,6 +469161,882 @@ false
 ],
 "truncated": true,
 "zoneType": "party"
+}
+],
+"bank open": [
+{
+"at": 1794128827,
+"events": [
+[
+-980,
+"CURSOR_CHANGED",
+"b,n,n,n",
+null,
+false
+],
+[
+-980,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-898,
+"CURSOR_CHANGED",
+"b,n,n,n",
+null,
+false
+],
+[
+-898,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-772,
+"UNIT_TARGET",
+"s",
+"player",
+false
+],
+[
+-771,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+-769,
+"GOSSIP_SHOW",
+"-",
+null,
+false
+],
+[
+-767,
+"CURSOR_CHANGED",
+"b,n,n,n",
+null,
+false
+],
+[
+-767,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-651,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+-541,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+-541,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+-541,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+-540,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+-540,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+-431,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+-171,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+-171,
+"GLOBAL_REGION_MOUSE_DOWN",
+"t,s",
+null,
+false
+],
+[
+-52,
+"GLOBAL_REGION_MOUSE_UP",
+"t,s",
+null,
+false
+],
+[
+-51,
+"GOSSIP_CONFIRM_CANCEL",
+"",
+null,
+false
+],
+[
+-51,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+-1,
+"GOSSIP_CLOSED",
+"b",
+null,
+false
+],
+[
+0,
+"BANKFRAME_OPENED",
+"",
+null,
+true
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+13,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+18,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+18,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+18,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+35,
+"PLAYER_INTERACTION_MANAGER_FRAME_SHOW",
+"n",
+null,
+false
+],
+[
+115,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+115,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+425,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+645,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+646,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+646,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+646,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+865,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+1306,
+"TOOLTIP_DATA_UPDATE",
+"n",
+null,
+false
+],
+[
+1577,
+"CURSOR_CHANGED",
+"b,n,n,n",
+null,
+false
+],
+[
+1577,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+1627,
+"CURSOR_CHANGED",
+"b,n,n,n",
+null,
+false
+],
+[
+1627,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+1647,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+1647,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+1656,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+1657,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+1657,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+1696,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+1866,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+1866,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+2228,
+"CURSOR_CHANGED",
+"b,n,n,n",
+null,
+false
+],
+[
+2231,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+2239,
+"CURSOR_CHANGED",
+"b,n,n,n",
+null,
+false
+],
+[
+2239,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+2397,
+"CHAT_MSG_CHANNEL",
+"s,s,s,s,s,s,n,n,s,n,n,s",
+null,
+false
+],
+[
+2784,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+2784,
+"GLOBAL_REGION_MOUSE_DOWN",
+"t,s",
+null,
+false
+],
+[
+2834,
+"CHAT_MSG_ADDON",
+"s,s,s,s,s,n,n,s,n",
+null,
+false
+],
+[
+2904,
+"GLOBAL_REGION_MOUSE_UP",
+"t,s",
+null,
+false
+],
+[
+2905,
+"ITEM_LOCK_CHANGED",
+"n,n",
+null,
+false
+],
+[
+2905,
+"ITEM_LOCKED",
+"n,n",
+null,
+false
+],
+[
+2905,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+3036,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3036,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3036,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3036,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3036,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3036,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3036,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3036,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3038,
+"BAG_UPDATE",
+"n",
+null,
+false
+],
+[
+3038,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3038,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3038,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3038,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3038,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3038,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3038,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3038,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3038,
+"ITEM_LOCK_CHANGED",
+"n,n",
+null,
+false
+],
+[
+3038,
+"ITEM_UNLOCKED",
+"n,n",
+null,
+false
+],
+[
+3039,
+"BAG_UPDATE",
+"n",
+null,
+false
+],
+[
+3041,
+"BAG_UPDATE_DELAYED",
+"",
+null,
+false
+],
+[
+3253,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+3254,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+3254,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+3363,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+3673,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+3783,
+"ENCHANT_SPELL_COMPLETED",
+"b,-",
+null,
+false
+],
+[
+3893,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+]
+],
+"zoneType": "none"
 }
 ],
 "boss end": [
@@ -509213,6 +511590,2469 @@ false
 "zoneType": "none"
 }
 ],
+"mailbox open": [
+{
+"at": 1794128574,
+"events": [
+[
+-897,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+-788,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+-787,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+-787,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+-787,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+-787,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+-787,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+-786,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+-694,
+"UNIT_AURA",
+"s,t",
+"player",
+false
+],
+[
+-693,
+"UNIT_AURA",
+"s,t",
+"target",
+false
+],
+[
+-693,
+"UNIT_AURA",
+"s,t",
+"targettarget",
+false
+],
+[
+-692,
+"ACTIONBAR_UPDATE_COOLDOWN",
+"",
+null,
+false
+],
+[
+-692,
+"BAG_UPDATE_COOLDOWN",
+"",
+null,
+false
+],
+[
+-691,
+"SPELL_UPDATE_COOLDOWN",
+"n,-,-,-,-",
+null,
+false
+],
+[
+-691,
+"SPELL_UPDATE_USABLE",
+"",
+null,
+false
+],
+[
+-691,
+"UPDATE_SHAPESHIFT_COOLDOWN",
+"",
+null,
+false
+],
+[
+-390,
+"GLOBAL_REGION_MOUSE_UP",
+"-,s",
+null,
+false
+],
+[
+-390,
+"PLAYER_STOPPED_MOVING",
+"",
+null,
+false
+],
+[
+-390,
+"PLAYER_STOPPED_TURNING",
+"",
+null,
+false
+],
+[
+-390,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+-340,
+"GLOBAL_REGION_MOUSE_UP",
+"-,s",
+null,
+false
+],
+[
+-340,
+"PLAYER_STOPPED_LOOKING",
+"",
+null,
+false
+],
+[
+-339,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+-328,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-327,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+-315,
+"CURSOR_CHANGED",
+"b,n,n,n",
+null,
+false
+],
+[
+-315,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-308,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-102,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+-102,
+"GLOBAL_REGION_MOUSE_DOWN",
+"-,s",
+null,
+false
+],
+[
+-1,
+"GLOBAL_REGION_MOUSE_UP",
+"-,s",
+null,
+false
+],
+[
+0,
+"MAIL_SHOW",
+"",
+null,
+true
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+24,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+24,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+24,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+25,
+"PLAYER_INTERACTION_MANAGER_FRAME_SHOW",
+"n",
+null,
+false
+],
+[
+26,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+59,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+261,
+"MAIL_INBOX_UPDATE",
+"",
+null,
+false
+],
+[
+272,
+"GET_ITEM_INFO_RECEIVED",
+"n,b",
+null,
+false
+],
+[
+292,
+"MAIL_INBOX_UPDATE",
+"",
+null,
+false
+],
+[
+344,
+"CURSOR_CHANGED",
+"b,n,n,n",
+null,
+false
+],
+[
+344,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+361,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+361,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+361,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+361,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+361,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+362,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+362,
+"UPDATE_PENDING_MAIL",
+"",
+null,
+false
+],
+[
+363,
+"MAIL_INBOX_UPDATE",
+"",
+null,
+false
+],
+[
+981,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+1591,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+2031,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+2031,
+"GLOBAL_REGION_MOUSE_DOWN",
+"t,s",
+null,
+false
+],
+[
+2181,
+"GLOBAL_REGION_MOUSE_UP",
+"t,s",
+null,
+false
+],
+[
+2181,
+"UPDATE_PENDING_MAIL",
+"",
+null,
+false
+],
+[
+2182,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+2184,
+"MAIL_INBOX_UPDATE",
+"",
+null,
+false
+],
+[
+2222,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+2542,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+2608,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+2618,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+2856,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+]
+],
+"zoneType": "none"
+},
+{
+"at": 1794128689,
+"events": [
+[
+-863,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+-863,
+"PLAYER_STARTED_MOVING",
+"",
+null,
+false
+],
+[
+-863,
+"PLAYER_STARTED_LOOKING",
+"",
+null,
+false
+],
+[
+-656,
+"BN_FRIEND_INFO_CHANGED",
+"-",
+null,
+false
+],
+[
+-656,
+"BN_FRIEND_INFO_CHANGED",
+"n",
+null,
+false
+],
+[
+-632,
+"GLOBAL_REGION_MOUSE_UP",
+"-,s",
+null,
+false
+],
+[
+-632,
+"PLAYER_STOPPED_MOVING",
+"",
+null,
+false
+],
+[
+-632,
+"PLAYER_STOPPED_LOOKING",
+"",
+null,
+false
+],
+[
+-632,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+-319,
+"GLOBAL_REGION_MOUSE_UP",
+"-,s",
+null,
+false
+],
+[
+-319,
+"PLAYER_STOPPED_TURNING",
+"",
+null,
+false
+],
+[
+-319,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+-306,
+"CURSOR_CHANGED",
+"b,n,n,n",
+null,
+false
+],
+[
+-300,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-101,
+"UNIT_AURA",
+"s,t",
+"player",
+false
+],
+[
+-101,
+"UNIT_AURA",
+"s,t",
+"target",
+false
+],
+[
+-101,
+"UNIT_AURA",
+"s,t",
+"targettarget",
+false
+],
+[
+-100,
+"ACTIONBAR_UPDATE_COOLDOWN",
+"",
+null,
+false
+],
+[
+-100,
+"BAG_UPDATE_COOLDOWN",
+"",
+null,
+false
+],
+[
+-99,
+"SPELL_UPDATE_COOLDOWN",
+"n,-,-,-,-",
+null,
+false
+],
+[
+-99,
+"SPELL_UPDATE_USABLE",
+"",
+null,
+false
+],
+[
+-99,
+"UPDATE_SHAPESHIFT_COOLDOWN",
+"",
+null,
+false
+],
+[
+-71,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+-71,
+"GLOBAL_REGION_MOUSE_DOWN",
+"-,s",
+null,
+false
+],
+[
+-1,
+"GLOBAL_REGION_MOUSE_UP",
+"-,s",
+null,
+false
+],
+[
+0,
+"MAIL_SHOW",
+"",
+null,
+true
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+5,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+10,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+10,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+10,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+11,
+"PLAYER_INTERACTION_MANAGER_FRAME_SHOW",
+"n",
+null,
+false
+],
+[
+11,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+129,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+232,
+"CURSOR_CHANGED",
+"b,n,n,n",
+null,
+false
+],
+[
+232,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+259,
+"MAIL_INBOX_UPDATE",
+"",
+null,
+false
+],
+[
+969,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+1280,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+1709,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+1709,
+"GLOBAL_REGION_MOUSE_DOWN",
+"t,s",
+null,
+false
+],
+[
+1849,
+"GLOBAL_REGION_MOUSE_UP",
+"t,s",
+null,
+false
+],
+[
+1850,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+2229,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+2439,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+2439,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+2440,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+2440,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+3269,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+3680,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+]
+],
+"zoneType": "none"
+},
+{
+"at": 1794129025,
+"events": [
+[
+-870,
+"CURSOR_CHANGED",
+"b,n,n,n",
+null,
+false
+],
+[
+-870,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-870,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-869,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+-832,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-740,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+-740,
+"GLOBAL_REGION_MOUSE_DOWN",
+"-,s",
+null,
+false
+],
+[
+-728,
+"PLAYER_STARTED_TURNING",
+"",
+null,
+false
+],
+[
+-716,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+-262,
+"GLOBAL_REGION_MOUSE_UP",
+"-,s",
+null,
+false
+],
+[
+-262,
+"PLAYER_STOPPED_TURNING",
+"",
+null,
+false
+],
+[
+-261,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+-249,
+"CURSOR_CHANGED",
+"b,n,n,n",
+null,
+false
+],
+[
+-249,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-112,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+-112,
+"GLOBAL_REGION_MOUSE_DOWN",
+"-,s",
+null,
+false
+],
+[
+-42,
+"PLAYER_STOPPED_MOVING",
+"",
+null,
+false
+],
+[
+-12,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+-12,
+"PLAYER_STARTED_TURNING",
+"",
+null,
+false
+],
+[
+-9,
+"CURSOR_CHANGED",
+"b,n,n,n",
+null,
+false
+],
+[
+-2,
+"GLOBAL_REGION_MOUSE_UP",
+"-,s",
+null,
+false
+],
+[
+0,
+"MAIL_SHOW",
+"",
+null,
+true
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+6,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+7,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+8,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+23,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+23,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+23,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+23,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+23,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+23,
+"ITEM_DATA_LOAD_RESULT",
+"n,b",
+null,
+false
+],
+[
+26,
+"PLAYER_INTERACTION_MANAGER_FRAME_SHOW",
+"n",
+null,
+false
+],
+[
+26,
+"PLAYER_STOPPED_TURNING",
+"",
+null,
+false
+],
+[
+26,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+30,
+"CURSOR_CHANGED",
+"b,n,n,n",
+null,
+false
+],
+[
+30,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+120,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+120,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+120,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+121,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+261,
+"MAIL_INBOX_UPDATE",
+"",
+null,
+false
+],
+[
+503,
+"CURSOR_CHANGED",
+"b,n,n,n",
+null,
+false
+],
+[
+503,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+1082,
+"UNIT_AURA",
+"s,t",
+"player",
+false
+],
+[
+1083,
+"ACTIONBAR_UPDATE_COOLDOWN",
+"",
+null,
+false
+],
+[
+1083,
+"BAG_UPDATE_COOLDOWN",
+"",
+null,
+false
+],
+[
+1084,
+"SPELL_UPDATE_COOLDOWN",
+"n,-,-,-,-",
+null,
+false
+],
+[
+1084,
+"SPELL_UPDATE_USABLE",
+"",
+null,
+false
+],
+[
+1084,
+"UPDATE_SHAPESHIFT_COOLDOWN",
+"",
+null,
+false
+],
+[
+1223,
+"CHAT_MSG_CHANNEL",
+"s,s,s,s,s,s,n,n,s,n,n,s",
+null,
+false
+],
+[
+1402,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+1402,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+1402,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+1402,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+1403,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+1403,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+1404,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+1404,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+1404,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+1515,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+1716,
+"CHAT_MSG_TRADESKILLS",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+1996,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+1996,
+"GLOBAL_REGION_MOUSE_DOWN",
+"t,s",
+null,
+false
+],
+[
+2086,
+"GLOBAL_REGION_MOUSE_UP",
+"t,s",
+null,
+false
+],
+[
+2088,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+2089,
+"MAIL_INBOX_UPDATE",
+"",
+null,
+false
+],
+[
+2389,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+2389,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+2407,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+2826,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+2826,
+"GLOBAL_REGION_MOUSE_DOWN",
+"t,s",
+null,
+false
+],
+[
+2916,
+"GLOBAL_REGION_MOUSE_UP",
+"t,s",
+null,
+false
+],
+[
+2916,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+3037,
+"CRITERIA_UPDATE",
+"",
+null,
+false
+],
+[
+3039,
+"MAIL_INBOX_UPDATE",
+"",
+null,
+false
+],
+[
+3039,
+"MAIL_SUCCESS",
+"-",
+null,
+false
+],
+[
+3039,
+"ITEM_PUSH",
+"n,n",
+null,
+false
+],
+[
+3039,
+"CHAT_MSG_LOOT",
+"s,s,s,s,s,s,n,n,s,n,n,s",
+null,
+false
+],
+[
+3039,
+"BAG_NEW_ITEMS_UPDATED",
+"",
+null,
+false
+],
+[
+3084,
+"BAG_UPDATE",
+"n",
+null,
+false
+],
+[
+3085,
+"BAG_UPDATE",
+"n",
+null,
+false
+],
+[
+3086,
+"BAG_UPDATE_DELAYED",
+"",
+null,
+false
+],
+[
+3199,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+3199,
+"GLOBAL_REGION_MOUSE_DOWN",
+"t,s",
+null,
+false
+],
+[
+3289,
+"GLOBAL_REGION_MOUSE_UP",
+"t,s",
+null,
+false
+],
+[
+3289,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+3409,
+"CRITERIA_UPDATE",
+"",
+null,
+false
+],
+[
+3410,
+"MAIL_INBOX_UPDATE",
+"",
+null,
+false
+],
+[
+3410,
+"MAIL_SUCCESS",
+"-",
+null,
+false
+],
+[
+3410,
+"ITEM_PUSH",
+"n,n",
+null,
+false
+],
+[
+3410,
+"CHAT_MSG_LOOT",
+"s,s,s,s,s,s,n,n,s,n,n,s",
+null,
+false
+],
+[
+3410,
+"BAG_NEW_ITEMS_UPDATED",
+"",
+null,
+false
+],
+[
+3412,
+"BAG_UPDATE",
+"n",
+null,
+false
+],
+[
+3413,
+"BAG_UPDATE",
+"n",
+null,
+false
+],
+[
+3414,
+"BAG_UPDATE_DELAYED",
+"",
+null,
+false
+],
+[
+3599,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+3599,
+"GLOBAL_REGION_MOUSE_DOWN",
+"t,s",
+null,
+false
+],
+[
+3689,
+"GLOBAL_REGION_MOUSE_UP",
+"t,s",
+null,
+false
+],
+[
+3689,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+3729,
+"SPELL_ACTIVATION_OVERLAY_HIDE",
+"-",
+null,
+false
+],
+[
+3729,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3729,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3729,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3729,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3729,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3729,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3729,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3729,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3731,
+"BAG_UPDATE",
+"n",
+null,
+false
+],
+[
+3732,
+"BAG_UPDATE",
+"n",
+null,
+false
+],
+[
+3732,
+"UNIT_INVENTORY_CHANGED",
+"s",
+"player",
+false
+],
+[
+3732,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3732,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3732,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3732,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3732,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3732,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3732,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3732,
+"PLAYER_EQUIPED_SPELLS_CHANGED",
+"n",
+null,
+false
+],
+[
+3733,
+"BAG_UPDATE",
+"n",
+null,
+false
+],
+[
+3734,
+"BAG_UPDATE",
+"n",
+null,
+false
+],
+[
+3734,
+"UNIT_INVENTORY_CHANGED",
+"s",
+"player",
+false
+],
+[
+3735,
+"BAG_UPDATE_DELAYED",
+"",
+null,
+false
+],
+[
+3901,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+3902,
+"UPDATE_MOUSEOVER_UNIT",
+"",
+null,
+false
+],
+[
+3919,
+"WORLD_CURSOR_TOOLTIP_UPDATE",
+"n",
+null,
+false
+],
+[
+3929,
+"CRITERIA_UPDATE",
+"",
+null,
+false
+],
+[
+3930,
+"CLOSE_INBOX_ITEM",
+"n",
+null,
+false
+],
+[
+3930,
+"MAIL_INBOX_UPDATE",
+"",
+null,
+false
+],
+[
+3930,
+"MAIL_SUCCESS",
+"-",
+null,
+false
+],
+[
+3930,
+"ITEM_PUSH",
+"n,n",
+null,
+false
+],
+[
+3931,
+"CHAT_MSG_LOOT",
+"s,s,s,s,s,s,n,n,s,n,n,s",
+null,
+false
+],
+[
+3931,
+"BAG_NEW_ITEMS_UPDATED",
+"",
+null,
+false
+],
+[
+3932,
+"BAG_UPDATE",
+"n",
+null,
+false
+],
+[
+3933,
+"BAG_UPDATE",
+"n",
+null,
+false
+],
+[
+3934,
+"BAG_UPDATE_DELAYED",
+"",
+null,
+false
+]
+],
+"zoneType": "none"
+}
+],
 "npc gossip": [
 {
 "at": 1794106610,
@@ -533683,6 +538523,679 @@ false
 ],
 [
 3079,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+]
+],
+"zoneType": "none"
+}
+],
+"trainer open": [
+{
+"at": 1794128479,
+"events": [
+[
+-249,
+"UPDATE_EXHAUSTION",
+"",
+null,
+false
+],
+[
+-209,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+-209,
+"GLOBAL_REGION_MOUSE_DOWN",
+"t,s",
+null,
+false
+],
+[
+-99,
+"GLOBAL_REGION_MOUSE_UP",
+"t,s",
+null,
+false
+],
+[
+-99,
+"GOSSIP_CONFIRM_CANCEL",
+"",
+null,
+false
+],
+[
+-99,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+-9,
+"GOSSIP_CLOSED",
+"b",
+null,
+false
+],
+[
+-3,
+"ADDON_LOADED",
+"s,b",
+null,
+false
+],
+[
+0,
+"TRAINER_SHOW",
+"",
+null,
+true
+],
+[
+0,
+"PLAYER_INTERACTION_MANAGER_FRAME_SHOW",
+"n",
+null,
+false
+],
+[
+26,
+"TRAINER_UPDATE",
+"",
+null,
+false
+],
+[
+1174,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+1174,
+"GLOBAL_REGION_MOUSE_DOWN",
+"t,s",
+null,
+false
+],
+[
+1264,
+"GLOBAL_REGION_MOUSE_UP",
+"t,s",
+null,
+false
+],
+[
+1265,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+2534,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+2534,
+"GLOBAL_REGION_MOUSE_DOWN",
+"t,s",
+null,
+false
+],
+[
+2654,
+"GLOBAL_REGION_MOUSE_UP",
+"t,s",
+null,
+false
+],
+[
+2654,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+2744,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+2744,
+"GLOBAL_REGION_MOUSE_DOWN",
+"t,s",
+null,
+false
+],
+[
+2745,
+"ACTION_RANGE_CHECK_UPDATE",
+"n,b,b",
+null,
+false
+],
+[
+2745,
+"ACTIONBAR_SLOT_CHANGED",
+"n",
+null,
+false
+],
+[
+2746,
+"CHAT_MSG_SYSTEM",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+2754,
+"TRAINER_UPDATE",
+"",
+null,
+false
+],
+[
+2754,
+"CRITERIA_UPDATE",
+"",
+null,
+false
+],
+[
+2756,
+"ACTIONBAR_UPDATE_COOLDOWN",
+"",
+null,
+false
+],
+[
+2756,
+"HIDDEN_GROUP_BUFFS_CHANGED",
+"t",
+null,
+false
+],
+[
+2757,
+"GROUP_BUFF_VISUAL_ALERTS_CHANGED",
+"t",
+null,
+false
+],
+[
+2765,
+"SPELLS_CHANGED",
+"",
+null,
+false
+],
+[
+2861,
+"GLOBAL_REGION_MOUSE_UP",
+"t,s",
+null,
+false
+],
+[
+2861,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+2941,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+2941,
+"GLOBAL_REGION_MOUSE_DOWN",
+"t,s",
+null,
+false
+],
+[
+3001,
+"ACTIONBAR_SLOT_CHANGED",
+"n",
+null,
+false
+],
+[
+3002,
+"CHAT_MSG_SYSTEM",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+3010,
+"TRAINER_UPDATE",
+"",
+null,
+false
+],
+[
+3010,
+"CRITERIA_UPDATE",
+"",
+null,
+false
+],
+[
+3018,
+"TRAINER_UPDATE",
+"",
+null,
+false
+],
+[
+3018,
+"PLAYER_MONEY",
+"",
+null,
+false
+],
+[
+3020,
+"ACTIONBAR_UPDATE_COOLDOWN",
+"",
+null,
+false
+],
+[
+3020,
+"HIDDEN_GROUP_BUFFS_CHANGED",
+"t",
+null,
+false
+],
+[
+3021,
+"GROUP_BUFF_VISUAL_ALERTS_CHANGED",
+"t",
+null,
+false
+],
+[
+3028,
+"SPELLS_CHANGED",
+"",
+null,
+false
+],
+[
+3055,
+"GLOBAL_REGION_MOUSE_UP",
+"t,s",
+null,
+false
+],
+[
+3055,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+3135,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+3135,
+"GLOBAL_REGION_MOUSE_DOWN",
+"t,s",
+null,
+false
+],
+[
+3165,
+"CHAT_MSG_SYSTEM",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+3168,
+"LEARNED_SPELL_IN_SKILL_LINE",
+"n,n,b",
+null,
+false
+],
+[
+3175,
+"TRAINER_UPDATE",
+"",
+null,
+false
+],
+[
+3176,
+"CRITERIA_UPDATE",
+"",
+null,
+false
+],
+[
+3176,
+"HIDDEN_GROUP_BUFFS_CHANGED",
+"t",
+null,
+false
+],
+[
+3176,
+"GROUP_BUFF_VISUAL_ALERTS_CHANGED",
+"t",
+null,
+false
+],
+[
+3183,
+"SPELLS_CHANGED",
+"",
+null,
+false
+],
+[
+3229,
+"GLOBAL_REGION_MOUSE_UP",
+"t,s",
+null,
+false
+],
+[
+3229,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+3319,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+3320,
+"GLOBAL_REGION_MOUSE_DOWN",
+"t,s",
+null,
+false
+],
+[
+3360,
+"CHAT_MSG_SYSTEM",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+3362,
+"LEARNED_SPELL_IN_SKILL_LINE",
+"n,n,b",
+null,
+false
+],
+[
+3369,
+"TRAINER_UPDATE",
+"",
+null,
+false
+],
+[
+3370,
+"CRITERIA_UPDATE",
+"",
+null,
+false
+],
+[
+3377,
+"TRAINER_UPDATE",
+"",
+null,
+false
+],
+[
+3378,
+"PLAYER_MONEY",
+"",
+null,
+false
+],
+[
+3378,
+"SPELL_UPDATE_USABLE",
+"",
+null,
+false
+],
+[
+3378,
+"HIDDEN_GROUP_BUFFS_CHANGED",
+"t",
+null,
+false
+],
+[
+3379,
+"GROUP_BUFF_VISUAL_ALERTS_CHANGED",
+"t",
+null,
+false
+],
+[
+3385,
+"SPELLS_CHANGED",
+"",
+null,
+false
+],
+[
+3432,
+"GLOBAL_REGION_MOUSE_UP",
+"t,s",
+null,
+false
+],
+[
+3432,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+3493,
+"CHAT_MSG_SYSTEM",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+3495,
+"LEARNED_SPELL_IN_SKILL_LINE",
+"n,n,b",
+null,
+false
+],
+[
+3502,
+"TRAINER_UPDATE",
+"",
+null,
+false
+],
+[
+3502,
+"CRITERIA_UPDATE",
+"",
+null,
+false
+],
+[
+3503,
+"HIDDEN_GROUP_BUFFS_CHANGED",
+"t",
+null,
+false
+],
+[
+3503,
+"GROUP_BUFF_VISUAL_ALERTS_CHANGED",
+"t",
+null,
+false
+],
+[
+3510,
+"SPELLS_CHANGED",
+"",
+null,
+false
+],
+[
+3515,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+3515,
+"GLOBAL_REGION_MOUSE_DOWN",
+"t,s",
+null,
+false
+],
+[
+3595,
+"GLOBAL_REGION_MOUSE_UP",
+"t,s",
+null,
+false
+],
+[
+3595,
+"GLOBAL_MOUSE_UP",
+"s",
+null,
+false
+],
+[
+3636,
+"CHAT_MSG_SYSTEM",
+"s,s,s,s,s,s,n,n,s,n,n,-",
+null,
+false
+],
+[
+3638,
+"LEARNED_SPELL_IN_SKILL_LINE",
+"n,n,b",
+null,
+false
+],
+[
+3645,
+"TRAINER_UPDATE",
+"",
+null,
+false
+],
+[
+3645,
+"CRITERIA_UPDATE",
+"",
+null,
+false
+],
+[
+3646,
+"HIDDEN_GROUP_BUFFS_CHANGED",
+"t",
+null,
+false
+],
+[
+3646,
+"GROUP_BUFF_VISUAL_ALERTS_CHANGED",
+"t",
+null,
+false
+],
+[
+3652,
+"SPELLS_CHANGED",
+"",
+null,
+false
+],
+[
+3688,
+"GLOBAL_MOUSE_DOWN",
+"s",
+null,
+false
+],
+[
+3688,
+"GLOBAL_REGION_MOUSE_DOWN",
+"t,s",
+null,
+false
+],
+[
+3746,
+"TRAINER_UPDATE",
+"",
+null,
+false
+],
+[
+3746,
+"PLAYER_MONEY",
+"",
+null,
+false
+],
+[
+3791,
+"GLOBAL_REGION_MOUSE_UP",
+"t,s",
+null,
+false
+],
+[
+3791,
 "GLOBAL_MOUSE_UP",
 "s",
 null,
@@ -629793,6 +635306,180 @@ false
 "on": "Map",
 "reason": "ADDON_RESTRICTION_STATE_CHANGED",
 "situation": "party/idle"
+},
+{
+"at": 1794127085,
+"on": "Map",
+"reason": "ADDON_LOADED",
+"situation": "party/idle"
+},
+{
+"at": 1794127257,
+"on": "Encounter,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794127257,
+"on": "Chat,Encounter,Map",
+"reason": "PLAYER_REGEN_DISABLED",
+"situation": "party/boss"
+},
+{
+"at": 1794127294,
+"on": "Chat,Combat,Encounter,Map",
+"reason": "ENCOUNTER_END",
+"situation": "party/combat"
+},
+{
+"at": 1794127294,
+"on": "Chat,Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/combat"
+},
+{
+"at": 1794127294,
+"on": "Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/combat"
+},
+{
+"at": 1794127302,
+"on": "Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/idle"
+},
+{
+"at": 1794127599,
+"on": "Combat,Map",
+"reason": "ENCOUNTER_START",
+"situation": "party/boss"
+},
+{
+"at": 1794127599,
+"on": "Combat,Encounter,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794127630,
+"on": "Chat,Combat,Encounter,Map",
+"reason": "ADDON_LOADED",
+"situation": "party/boss"
+},
+{
+"at": 1794127640,
+"on": "Chat,Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794127640,
+"on": "Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794127644,
+"on": "Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/idle"
+},
+{
+"at": 1794127769,
+"on": "Combat,Map",
+"reason": "ENCOUNTER_START",
+"situation": "party/boss"
+},
+{
+"at": 1794127769,
+"on": "Combat,Encounter,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794127797,
+"on": "Chat,Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794127797,
+"on": "Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794127798,
+"on": "Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/idle"
+},
+{
+"at": 1794127822,
+"on": "Encounter,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794127822,
+"on": "Chat,Encounter,Map",
+"reason": "PLAYER_REGEN_DISABLED",
+"situation": "party/boss"
+},
+{
+"at": 1794127860,
+"on": "Chat,Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794127860,
+"on": "Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794127861,
+"on": "Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/idle"
+},
+{
+"at": 1794128034,
+"on": "Combat,Map",
+"reason": "ENCOUNTER_START",
+"situation": "party/boss"
+},
+{
+"at": 1794128034,
+"on": "Combat,Encounter,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794128080,
+"on": "Chat,Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794128080,
+"on": "Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794128081,
+"on": "Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/idle"
+},
+{
+"at": 1794128208,
+"on": "none",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "none/idle"
 }
 ]
 },

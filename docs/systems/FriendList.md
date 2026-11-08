@@ -413,7 +413,7 @@ Namespace: `C_FriendList`
 - Status: ✅ verified
 - Payload: `friendId: number`, `isCompanionApp: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 10 times (1 in combat); argument kinds: `n,b`
+- Seen firing 13 times (2 in combat); argument kinds: `n,b`
 
 ### BN_FRIEND_ACCOUNT_ONLINE
 
@@ -427,7 +427,7 @@ Namespace: `C_FriendList`
 - Status: ✅ verified
 - Payload: `friendIndex: luaIndex?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 7807 times (917 in combat); argument kinds: `-` / `n`
+- Seen firing 8249 times (949 in combat); argument kinds: `-` / `n`
 
 ### BN_FRIEND_INVITE_ADDED
 
@@ -458,7 +458,7 @@ Namespace: `C_FriendList`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 346 times (19 in combat); argument kinds: ``
+- Seen firing 365 times (19 in combat); argument kinds: ``
 
 ### BN_REQUEST_FOF_SUCCEEDED
 

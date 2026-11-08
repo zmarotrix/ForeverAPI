@@ -88,28 +88,28 @@ Namespace: `C_MerchantFrame`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 17 times (0 in combat); argument kinds: ``
+- Seen firing 23 times (0 in combat); argument kinds: ``
 
 ### MERCHANT_FILTER_ITEM_UPDATE
 
 - Status: ✅ verified
 - Payload: `itemID: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 93 times (0 in combat); argument kinds: `n`
+- Seen firing 110 times (0 in combat); argument kinds: `n`
 
 ### MERCHANT_SHOW
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 8 times (0 in combat); argument kinds: ``
+- Seen firing 11 times (0 in combat); argument kinds: ``
 
 ### MERCHANT_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 59 times (0 in combat); argument kinds: ``
+- Seen firing 66 times (0 in combat); argument kinds: ``
 
 ## Types
 

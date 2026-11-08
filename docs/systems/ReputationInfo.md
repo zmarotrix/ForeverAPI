@@ -279,7 +279,7 @@ Namespace: `C_Reputation`
 - Status: ✅ verified
 - Payload: `factionID: number`, `updatedStanding: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 169 times (159 in combat); argument kinds: `n,n`
+- Seen firing 223 times (212 in combat); argument kinds: `n,n`
 
 ## Types
 

@@ -46,4 +46,4 @@ Namespace: `C_CombatText`
 - Status: ✅ verified
 - Payload: `combatTextType: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 170 times (160 in combat); argument kinds: `s`
+- Seen firing 224 times (213 in combat); argument kinds: `s`

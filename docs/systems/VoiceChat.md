@@ -808,14 +808,14 @@ Namespace: `C_VoiceChat`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 38 times (3 in combat); argument kinds: ``
+- Seen firing 39 times (4 in combat); argument kinds: ``
 
 ### VOICE_CHAT_ACTIVE_OUTPUT_DEVICE_UPDATED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 38 times (3 in combat); argument kinds: ``
+- Seen firing 39 times (4 in combat); argument kinds: ``
 
 ### VOICE_CHAT_ACTIVE_VOICE_PROVIDER_CHANGED
 

@@ -1329,7 +1329,7 @@ Namespace: `C_Item`
 - Status: ✅ verified
 - Payload: `itemID: number`, `success: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 894 times (0 in combat); argument kinds: `n,b`
+- Seen firing 899 times (0 in combat); argument kinds: `n,b`
 
 ### ITEM_CHANGED
 
@@ -1348,14 +1348,14 @@ Namespace: `C_Item`
 - Status: ✅ verified
 - Payload: `itemID: number`
 - unique event (Blizzard's docs)
-- Seen firing 157 times (26 in combat); argument kinds: `n`
+- Seen firing 197 times (28 in combat); argument kinds: `n`
 
 ### ITEM_DATA_LOAD_RESULT
 
 - Status: ✅ verified
 - Payload: `itemID: number`, `success: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 25189 times (3564 in combat); argument kinds: `n,b`
+- Seen firing 26826 times (3684 in combat); argument kinds: `n,b`
 
 ### MERCHANT_CONFIRM_TRADE_TIMER_REMOVAL
 

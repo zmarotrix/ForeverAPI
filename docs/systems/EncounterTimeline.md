@@ -443,7 +443,7 @@ Namespace: `C_EncounterTimeline`
 - Payload: none
 - Blizzard: Fired when the layout of tracks on the timeline has been updated. This can include changes to the minimum or maximum durations of tracks.
 - fires synchronously (Blizzard's docs)
-- Seen firing 35 times (3 in combat); argument kinds: ``
+- Seen firing 36 times (4 in combat); argument kinds: ``
 
 ### ENCOUNTER_TIMELINE_STATE_UPDATED
 

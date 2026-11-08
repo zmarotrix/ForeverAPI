@@ -69,14 +69,14 @@ Namespace: `C_Loot`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 27 times (0 in combat); argument kinds: ``
+- Seen firing 29 times (0 in combat); argument kinds: ``
 
 ### CANCEL_LOOT_ROLL
 
 - Status: ✅ verified
 - Payload: `rollID: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 43 times (13 in combat); argument kinds: `n`
+- Seen firing 50 times (13 in combat); argument kinds: `n`
 
 ### CONFIRM_DISENCHANT_ROLL
 
@@ -107,7 +107,7 @@ Namespace: `C_Loot`
 - Status: ✅ verified
 - Payload: `bagSlot: luaIndex`, `iconFileID: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 203 times (44 in combat); argument kinds: `n,n`
+- Seen firing 237 times (48 in combat); argument kinds: `n,n`
 
 ### LEGACY_LOOT_RULES_CHANGED
 
@@ -126,7 +126,7 @@ Namespace: `C_Loot`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 428 times (110 in combat); argument kinds: ``
+- Seen firing 458 times (124 in combat); argument kinds: ``
 
 ### LOOT_ITEM_AVAILABLE
 
@@ -139,28 +139,28 @@ Namespace: `C_Loot`
 - Status: ✅ verified
 - Payload: `itemLink: cstring`, `rollQuantity: number`, `rollType: number`, `roll: number`, `upgraded: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 7 times (3 in combat); argument kinds: `s,n,n,n,b`
+- Seen firing 9 times (3 in combat); argument kinds: `s,n,n,n,b`
 
 ### LOOT_OPENED
 
 - Status: ✅ verified
 - Payload: `autoLoot: bool`, `isFromItem: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 102 times (32 in combat); argument kinds: `b,b`
+- Seen firing 115 times (38 in combat); argument kinds: `b,b`
 
 ### LOOT_READY
 
 - Status: ✅ verified
 - Payload: `autoloot: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 354 times (110 in combat); argument kinds: `b`
+- Seen firing 387 times (127 in combat); argument kinds: `b`
 
 ### LOOT_ROLLS_COMPLETE
 
 - Status: ✅ verified
 - Payload: `lootHandle: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 43 times (12 in combat); argument kinds: `n`
+- Seen firing 50 times (12 in combat); argument kinds: `n`
 
 ### LOOT_SLOT_CHANGED
 
@@ -173,7 +173,7 @@ Namespace: `C_Loot`
 - Status: ✅ verified
 - Payload: `lootSlot: luaIndex`
 - fires synchronously (Blizzard's docs)
-- Seen firing 390 times (117 in combat); argument kinds: `n`
+- Seen firing 410 times (124 in combat); argument kinds: `n`
 
 ### MAIN_SPEC_NEED_ROLL
 
@@ -204,13 +204,14 @@ Namespace: `C_Loot`
 - Status: ✅ verified
 - Payload: `questID: number`, `currencyId: number`, `quantity: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 6 times (0 in combat); argument kinds: `n,n,n`
 
 ### QUEST_LOOT_RECEIVED
 
 - Status: ✅ verified
 - Payload: `questID: number`, `itemLink: cstring`, `quantity: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 15 times (0 in combat); argument kinds: `n,s,n`
+- Seen firing 18 times (0 in combat); argument kinds: `n,s,n`
 
 ### SHOW_LOOT_TOAST
 
@@ -247,7 +248,7 @@ Namespace: `C_Loot`
 - Status: ✅ verified
 - Payload: `rollID: number`, `rollTime: number`, `lootHandle: number?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 43 times (19 in combat); argument kinds: `n,n,n`
+- Seen firing 50 times (24 in combat); argument kinds: `n,n,n`
 
 ### TRIAL_CAP_REACHED_MONEY
 

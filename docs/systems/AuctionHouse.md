@@ -854,6 +854,7 @@ Namespace: `C_AuctionHouse`
 - Status: ✅ verified
 - Payload: `auctionID: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 5 times (0 in combat); argument kinds: `n`
 
 ### AUCTION_HOUSE_AUCTIONS_EXPIRED
 
@@ -885,12 +886,14 @@ Namespace: `C_AuctionHouse`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 14 times (0 in combat); argument kinds: ``
 
 ### AUCTION_HOUSE_CLOSED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### AUCTION_HOUSE_DISABLED
 
@@ -909,6 +912,7 @@ Namespace: `C_AuctionHouse`
 - Status: ✅ verified
 - Payload: `purchasedItemDeliveryDelay: number`, `cancelledItemDeliveryDelay: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `n,n`
 
 ### AUCTION_HOUSE_NEW_BID_RECEIVED
 
@@ -922,6 +926,7 @@ Namespace: `C_AuctionHouse`
 - Payload: `itemKey: ItemKey?`
 - Blizzard: This signal is not used in the base UI but is included for AddOn ease-of-use. Payload is nil for browse queries.
 - fires synchronously (Blizzard's docs)
+- Seen firing 19 times (0 in combat); argument kinds: `-` / `t`
 
 ### AUCTION_HOUSE_POST_ERROR
 
@@ -940,6 +945,7 @@ Namespace: `C_AuctionHouse`
 - Status: ✅ verified
 - Payload: `auctionID: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 5 times (0 in combat); argument kinds: `n`
 
 ### AUCTION_HOUSE_SCRIPT_DEPRECATED
 
@@ -952,12 +958,14 @@ Namespace: `C_AuctionHouse`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### AUCTION_HOUSE_SHOW_COMMODITY_WON_NOTIFICATION
 
 - Status: ✅ verified
 - Payload: `commodityName: string`, `commodityQuantity: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 5 times (0 in combat); argument kinds: `s,n`
 
 ### AUCTION_HOUSE_SHOW_ERROR
 
@@ -989,24 +997,28 @@ Namespace: `C_AuctionHouse`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 6 times (0 in combat); argument kinds: ``
 
 ### AUCTION_HOUSE_THROTTLED_MESSAGE_RESPONSE_RECEIVED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 32 times (0 in combat); argument kinds: ``
 
 ### AUCTION_HOUSE_THROTTLED_MESSAGE_SENT
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 32 times (0 in combat); argument kinds: ``
 
 ### AUCTION_HOUSE_THROTTLED_SYSTEM_READY
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 26 times (0 in combat); argument kinds: ``
 
 ### AUCTION_MULTISELL_FAILURE
 
@@ -1031,6 +1043,7 @@ Namespace: `C_AuctionHouse`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### BID_ADDED
 
@@ -1049,6 +1062,7 @@ Namespace: `C_AuctionHouse`
 - Status: ✅ verified
 - Payload: `updatedUnitPrice: BigUInteger`, `updatedTotalPrice: BigUInteger`
 - fires synchronously (Blizzard's docs)
+- Seen firing 5 times (0 in combat); argument kinds: `n,n`
 
 ### COMMODITY_PURCHASED
 
@@ -1067,6 +1081,7 @@ Namespace: `C_AuctionHouse`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 5 times (0 in combat); argument kinds: ``
 
 ### COMMODITY_SEARCH_RESULTS_ADDED
 
@@ -1079,12 +1094,14 @@ Namespace: `C_AuctionHouse`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
+- Seen firing 12 times (0 in combat); argument kinds: ``
 
 ### COMMODITY_SEARCH_RESULTS_UPDATED
 
 - Status: ✅ verified
 - Payload: `itemID: number`
 - unique event (Blizzard's docs)
+- Seen firing 28 times (0 in combat); argument kinds: `n`
 
 ### EXTRA_BROWSE_INFO_RECEIVED
 
@@ -1097,6 +1114,7 @@ Namespace: `C_AuctionHouse`
 - Status: ✅ verified
 - Payload: `itemID: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 21 times (0 in combat); argument kinds: `n`
 
 ### ITEM_PURCHASED
 
@@ -1121,6 +1139,7 @@ Namespace: `C_AuctionHouse`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### OWNED_AUCTION_BIDDER_INFO_RECEIVED
 

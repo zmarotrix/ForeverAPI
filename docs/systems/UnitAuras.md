@@ -466,7 +466,7 @@ Lua Taint: ApiProbe`
 - Payload: `visualAlerts: GroupBuffVisualAlertInfo[]`
 - Blizzard: The payload matches GetGroupBuffVisualAlerts, including linked rank spells.
 - fires synchronously (Blizzard's docs)
-- Seen firing 345 times (33 in combat); argument kinds: `t`
+- Seen firing 376 times (34 in combat); argument kinds: `t`
 
 ### HIDDEN_GROUP_BUFFS_CHANGED
 
@@ -474,7 +474,7 @@ Lua Taint: ApiProbe`
 - Payload: `spellIDs: number[]`
 - Blizzard: The payload matches GetHiddenGroupBuffs, including linked rank spells.
 - fires synchronously (Blizzard's docs)
-- Seen firing 345 times (33 in combat); argument kinds: `t`
+- Seen firing 376 times (34 in combat); argument kinds: `t`
 
 ### UNIT_AURA
 
@@ -482,7 +482,7 @@ Lua Taint: ApiProbe`
 - Payload: `unitTarget: UnitTokenVariant`, `updateInfo: UnitAuraUpdateInfo`
 - SecretWhenAurasRestricted (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 24007 times (20658 in combat); argument kinds: `s,t`
+- Seen firing 27915 times (23898 in combat); argument kinds: `s,t`
 
 ### UNIT_AURA_BLOCKED
 

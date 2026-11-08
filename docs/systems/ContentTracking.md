@@ -196,7 +196,7 @@ Namespace: `C_ContentTracking`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 61 times (0 in combat); argument kinds: ``
+- Seen firing 64 times (0 in combat); argument kinds: ``
 
 ### CONTENT_TRACKING_UPDATE
 

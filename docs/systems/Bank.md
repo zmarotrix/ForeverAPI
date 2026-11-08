@@ -267,14 +267,14 @@ Namespace: `C_Bank`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### BANKFRAME_OPENED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### BANK_BAG_SLOT_FLAGS_UPDATED
 
@@ -299,7 +299,7 @@ Namespace: `C_Bank`
 - Status: ✅ verified
 - Payload: `slot: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 28 times (0 in combat); argument kinds: `n`
+- Seen firing 30 times (0 in combat); argument kinds: `n`
 
 ### PLAYER_ACCOUNT_BANK_TAB_SLOTS_CHANGED
 

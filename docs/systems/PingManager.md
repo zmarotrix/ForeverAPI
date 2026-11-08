@@ -75,6 +75,7 @@ Namespace: `C_Ping`
 - Status: ✅ verified
 - Payload: `error: cstring`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (1 in combat); argument kinds: `s`
 
 ## Types
 

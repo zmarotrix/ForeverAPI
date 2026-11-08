@@ -355,14 +355,14 @@ Namespace: `C_SpecializationInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 66 times (2 in combat); argument kinds: ``
+- Seen firing 69 times (2 in combat); argument kinds: ``
 
 ### PLAYER_TALENT_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 65 times (1 in combat); argument kinds: ``
+- Seen firing 69 times (1 in combat); argument kinds: ``
 
 ### SPEC_INVOLUNTARILY_CHANGED
 

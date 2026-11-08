@@ -1130,7 +1130,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: `unitToken: cstring`, `updateReason: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 810 times (0 in combat); argument kinds: `s,s`
+- Seen firing 870 times (0 in combat); argument kinds: `s,s`
 
 ### ARENA_PREP_OPPONENT_SPECIALIZATIONS
 
@@ -1254,7 +1254,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 61 times (3 in combat); argument kinds: ``
+- Seen firing 64 times (4 in combat); argument kinds: ``
 
 ### PVP_MATCH_ACTIVE
 
@@ -1316,7 +1316,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 61 times (3 in combat); argument kinds: ``
+- Seen firing 64 times (4 in combat); argument kinds: ``
 
 ### PVP_TYPES_ENABLED
 

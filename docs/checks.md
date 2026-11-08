@@ -12,39 +12,41 @@ Client 1.60.1.70862, add-on 0.1.0.
 
 ## Does MERCHANT_CLOSED fire twice?
 
-**Yes**: 1 of 2 times it fired more than once.
+**Yes**: 4 of 5 times it fired more than once.
 
-- fires per closing a vendor: 1× 1, 2× 1
+- fires per closing a vendor: 1× 1, 2× 4
 - gap between the copies: up to 0 ms
 
 ## Does AUCTION_HOUSE_CLOSED fire twice?
 
-Not seen yet: needs closing the auction house.
+**Yes**: 1 of 1 times it fired more than once.
 
+- fires per closing the auction house: 2× 1
+- gap between the copies: up to 0 ms
 
 ## Is the zone text stale at PLAYER_ENTERING_WORLD?
 
-**Yes, sometimes**: the text changed within 3 s of the event 1 times. Read it again a moment later (or on ZONE_CHANGED / the next frame). Not covered yet: arriving by taxi.
+**Yes, sometimes**: the text changed within 3 s of the event 3 times. Read it again a moment later (or on ZONE_CHANGED / the next frame). Not covered yet: arriving by taxi.
 
-- loading screen: stale 0 of 8
-- spell: stale 1 of 5
-- walked: stale 0 of 6
+- loading screen: stale 1 of 9
+- spell: stale 2 of 6
+- walked: stale 0 of 7
 
 ## Is the zone text stale at ZONE_CHANGED_NEW_AREA?
 
 **Yes, sometimes**: the text changed within 3 s of the event 5 times. Read it again a moment later (or on ZONE_CHANGED / the next frame). Not covered yet: arriving by taxi.
 
-- loading screen: stale 0 of 1
-- spell: stale 2 of 10
-- walked: stale 3 of 11
+- loading screen: stale 0 of 2
+- spell: stale 2 of 12
+- walked: stale 3 of 13
 
 ## Does "You feel rested." skip the CHAT_MSG_ events?
 
 **No**: it arrives as CHAT_MSG_SYSTEM.
 
 - triggered 6 times
-- seen on CHAT_MSG_SYSTEM: 1
-- seen on chat frame: 1
+- seen on CHAT_MSG_SYSTEM: 2
+- seen on chat frame: 2
 
 ## Does "Auction created." skip the CHAT_MSG_ events?
 
@@ -65,7 +67,7 @@ Not seen yet.
 
 **Yes**: some couldn't be compared because the text was secret.
 
-- CHAT_MSG_SYSTEM: 1
+- CHAT_MSG_SYSTEM: 2
 
 ## Does WOW_PROJECT_ID report 1 (Retail)?
 
@@ -81,34 +83,34 @@ Not tested yet: run /apichecks chat in the world and in a dungeon.
 
 Fires in combat too; some arguments are secret.
 
-- arguments: s,s,s,N,n ×53861 (capitals are secret)
-- when: combat ×52497, just after combat ×212, outside ×1152
-- actions: WOUND ×43032, WOUND/CRITICAL ×3261, HEAL ×2616, MISS ×1802, DODGE ×1502, WOUND/GLANCING ×389, PARRY ×351, WOUND/BLOCK_REDUCED ×256, HEAL/CRITICAL ×179, RESIST ×160, IMMUNE ×94, WOUND/CRUSHING ×87, WOUND/ABSORB ×73, WOUND/BLOCK ×31, REFLECT ×28
-- units: nameplateN ×26953, target ×9752, player ×7243, targettarget ×6632, partyN ×1696, partypetN ×1127, softenemy ×425, softfriend ×28, npc ×5
+- arguments: s,s,s,N,n ×64620 (capitals are secret)
+- when: combat ×63110, just after combat ×247, outside ×1263
+- actions: WOUND ×51698, WOUND/CRITICAL ×3978, HEAL ×3167, MISS ×2108, DODGE ×1764, WOUND/GLANCING ×503, PARRY ×389, WOUND/BLOCK_REDUCED ×299, HEAL/CRITICAL ×213, RESIST ×173, IMMUNE ×105, WOUND/CRUSHING ×89, WOUND/ABSORB ×73, WOUND/BLOCK ×33, REFLECT ×28
+- units: nameplateN ×32625, target ×11943, player ×8465, targettarget ×7705, partyN ×2035, partypetN ×1331, softenemy ×479, softfriend ×32, npc ×5
 
 ## What does COMBAT_LOG_MESSAGE carry?
 
 Fires in combat too; no secret arguments seen.
 
-- arguments: s,n,n,n,n ×1260 (capitals are secret)
-- when: combat ×541, outside ×719
-- readable lines: 1260, wrapped in |K...|k: 1260
+- arguments: s,n,n,n,n ×1560 (capitals are secret)
+- when: combat ×841, outside ×719
+- readable lines: 1560, wrapped in |K...|k: 1560
 
 ## What does COMBAT_TEXT_UPDATE carry?
 
 Fires in combat too; no secret arguments seen.
 
-- arguments: s ×169 (capitals are secret)
-- when: combat ×159, just after combat ×1, outside ×9
-- types: FACTION ×169
-- GetCurrentCombatTextEventInfo: S,N ×169
+- arguments: s ×223 (capitals are secret)
+- when: combat ×212, just after combat ×1, outside ×10
+- types: FACTION ×223
+- GetCurrentCombatTextEventInfo: S,N ×223
 
 ## What does DAMAGE_METER_COMBAT_SESSION_UPDATED carry?
 
 Fires in combat too; no secret arguments seen.
 
-- arguments: n,n ×100244 (capitals are secret)
-- when: combat ×97114, just after combat ×490, outside ×2640
+- arguments: n,n ×119538 (capitals are secret)
+- when: combat ×116336, just after combat ×556, outside ×2646
 
 ## What does C_DamageMeter give add-ons?
 
@@ -143,62 +145,64 @@ Shapes below; *secret* marks a secret value.
 
 **Yes, in the cases below.**
 
-- enemy target, in combat: target nil ×162, target plain ×1656, target secret ×1436
-- enemy target, out of combat: target nil ×26, target plain ×89, target secret ×52
-- friendly target, in combat: target plain ×4, target secret ×3
-- friendly target, out of combat: target nil ×13, target plain ×9
+- enemy target, in combat: target nil ×187, target plain ×1656, target secret ×1928
+- enemy target, out of combat: target nil ×29, target plain ×102, target secret ×67
+- friendly target, in combat: target plain ×4, target secret ×4
+- friendly target, out of combat: target nil ×29, target plain ×27
 - no target, in combat: target nil ×1, target plain ×7
-- no target, out of combat: target nil ×17, target plain ×34
+- no target, out of combat: target nil ×21, target plain ×39
+- target is you, out of combat: target nil ×4
 
 ## Does UnitIsUnit return a secret against enemy units?
 
 **No secret seen.**
 
-- enemy nameplate: UnitIsUnit(nameplateN, player): plain ×828
-- enemy nameplate: UnitIsUnit(nameplateN, player) in combat: plain ×1892
-- enemy nameplate: UnitIsUnit(nameplateN, target): plain ×828
-- enemy nameplate: UnitIsUnit(nameplateN, target) in combat: plain ×1892
-- enemy nameplate: UnitIsUnit(player, nameplate1): plain ×271
-- enemy nameplate: UnitIsUnit(player, nameplate1) in combat: plain ×316
-- enemy nameplate: UnitIsUnit(player, nameplate10): plain ×3
-- enemy nameplate: UnitIsUnit(player, nameplate10) in combat: plain ×41
+- enemy nameplate: UnitIsUnit(nameplateN, player): plain ×998
+- enemy nameplate: UnitIsUnit(nameplateN, player) in combat: plain ×2103
+- enemy nameplate: UnitIsUnit(nameplateN, target): plain ×998
+- enemy nameplate: UnitIsUnit(nameplateN, target) in combat: plain ×2103
+- enemy nameplate: UnitIsUnit(player, nameplate1): plain ×320
+- enemy nameplate: UnitIsUnit(player, nameplate1) in combat: plain ×344
+- enemy nameplate: UnitIsUnit(player, nameplate10): plain ×4
+- enemy nameplate: UnitIsUnit(player, nameplate10) in combat: plain ×49
 - enemy nameplate: UnitIsUnit(player, nameplate11): plain ×2
-- enemy nameplate: UnitIsUnit(player, nameplate11) in combat: plain ×27
-- enemy nameplate: UnitIsUnit(player, nameplate12) in combat: plain ×14
-- enemy nameplate: UnitIsUnit(player, nameplate13) in combat: plain ×9
-- enemy nameplate: UnitIsUnit(player, nameplate14) in combat: plain ×6
-- enemy nameplate: UnitIsUnit(player, nameplate15) in combat: plain ×1
-- enemy nameplate: UnitIsUnit(player, nameplate2): plain ×158
-- enemy nameplate: UnitIsUnit(player, nameplate2) in combat: plain ×271
-- enemy nameplate: UnitIsUnit(player, nameplate3): plain ×129
-- enemy nameplate: UnitIsUnit(player, nameplate3) in combat: plain ×237
-- enemy nameplate: UnitIsUnit(player, nameplate4): plain ×90
-- enemy nameplate: UnitIsUnit(player, nameplate4) in combat: plain ×279
-- enemy nameplate: UnitIsUnit(player, nameplate5): plain ×70
-- enemy nameplate: UnitIsUnit(player, nameplate5) in combat: plain ×220
-- enemy nameplate: UnitIsUnit(player, nameplate6): plain ×57
-- enemy nameplate: UnitIsUnit(player, nameplate6) in combat: plain ×166
-- enemy nameplate: UnitIsUnit(player, nameplate7): plain ×27
-- enemy nameplate: UnitIsUnit(player, nameplate7) in combat: plain ×136
-- enemy nameplate: UnitIsUnit(player, nameplate8): plain ×15
-- enemy nameplate: UnitIsUnit(player, nameplate8) in combat: plain ×100
-- enemy nameplate: UnitIsUnit(player, nameplate9): plain ×6
-- enemy nameplate: UnitIsUnit(player, nameplate9) in combat: plain ×69
-- enemy target: UnitIsUnit(player, target): plain ×361
-- enemy target: UnitIsUnit(player, target) in combat: plain ×2438
-- enemy target: UnitIsUnit(target, player): plain ×361
-- enemy target: UnitIsUnit(target, player) in combat: plain ×2438
-- enemy target: UnitIsUnit(target, target): plain ×361
-- enemy target: UnitIsUnit(target, target) in combat: plain ×2438
-- friendly target: UnitIsUnit(player, target): plain ×60
-- friendly target: UnitIsUnit(player, target) in combat: plain ×63
-- friendly target: UnitIsUnit(target, player): plain ×60
-- friendly target: UnitIsUnit(target, player) in combat: plain ×63
-- friendly target: UnitIsUnit(target, target): plain ×60
-- friendly target: UnitIsUnit(target, target) in combat: plain ×63
-- target: UnitIsUnit(player, target) in combat: plain ×16
-- target: UnitIsUnit(target, player) in combat: plain ×16
-- target: UnitIsUnit(target, target) in combat: plain ×16
+- enemy nameplate: UnitIsUnit(player, nameplate11) in combat: plain ×35
+- enemy nameplate: UnitIsUnit(player, nameplate12) in combat: plain ×20
+- enemy nameplate: UnitIsUnit(player, nameplate13) in combat: plain ×11
+- enemy nameplate: UnitIsUnit(player, nameplate14) in combat: plain ×8
+- enemy nameplate: UnitIsUnit(player, nameplate15) in combat: plain ×2
+- enemy nameplate: UnitIsUnit(player, nameplate16) in combat: plain ×1
+- enemy nameplate: UnitIsUnit(player, nameplate2): plain ×192
+- enemy nameplate: UnitIsUnit(player, nameplate2) in combat: plain ×299
+- enemy nameplate: UnitIsUnit(player, nameplate3): plain ×153
+- enemy nameplate: UnitIsUnit(player, nameplate3) in combat: plain ×252
+- enemy nameplate: UnitIsUnit(player, nameplate4): plain ×110
+- enemy nameplate: UnitIsUnit(player, nameplate4) in combat: plain ×303
+- enemy nameplate: UnitIsUnit(player, nameplate5): plain ×83
+- enemy nameplate: UnitIsUnit(player, nameplate5) in combat: plain ×244
+- enemy nameplate: UnitIsUnit(player, nameplate6): plain ×66
+- enemy nameplate: UnitIsUnit(player, nameplate6) in combat: plain ×185
+- enemy nameplate: UnitIsUnit(player, nameplate7): plain ×36
+- enemy nameplate: UnitIsUnit(player, nameplate7) in combat: plain ×157
+- enemy nameplate: UnitIsUnit(player, nameplate8): plain ×23
+- enemy nameplate: UnitIsUnit(player, nameplate8) in combat: plain ×112
+- enemy nameplate: UnitIsUnit(player, nameplate9): plain ×9
+- enemy nameplate: UnitIsUnit(player, nameplate9) in combat: plain ×81
+- enemy target: UnitIsUnit(player, target): plain ×407
+- enemy target: UnitIsUnit(player, target) in combat: plain ×2818
+- enemy target: UnitIsUnit(target, player): plain ×407
+- enemy target: UnitIsUnit(target, player) in combat: plain ×2818
+- enemy target: UnitIsUnit(target, target): plain ×407
+- enemy target: UnitIsUnit(target, target) in combat: plain ×2818
+- friendly target: UnitIsUnit(player, target): plain ×93
+- friendly target: UnitIsUnit(player, target) in combat: plain ×82
+- friendly target: UnitIsUnit(target, player): plain ×93
+- friendly target: UnitIsUnit(target, player) in combat: plain ×82
+- friendly target: UnitIsUnit(target, target): plain ×93
+- friendly target: UnitIsUnit(target, target) in combat: plain ×82
+- target: UnitIsUnit(player, target) in combat: plain ×19
+- target: UnitIsUnit(target, player) in combat: plain ×19
+- target: UnitIsUnit(target, target) in combat: plain ×19
 
 ## Is UnitHealth("pet") secret?
 
