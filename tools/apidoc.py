@@ -1,10 +1,13 @@
 """ForeverAPI: document the WoW Forever add-on API from what the game itself confirms.
 
     python tools/apidoc.py extract     read Blizzard's docs and UI code out of the client, write leads.lua for the probe
-    python tools/apidoc.py deploy      copy addon/ApiProbe into the game's AddOns folder
+    python tools/apidoc.py deploy      copy addon/ForeverAPIProbe into the game's AddOns folder
     python tools/apidoc.py import      read the probe's SavedVariables into dumps/<build>/<time>.json
     python tools/apidoc.py build       merge client docs + latest dump + web leads into docs/ and the website site/
     python tools/apidoc.py diff A B    compare two dumps (or two client-doc extracts), write docs/changes/
+    python tools/apidoc.py release     zip the add-on and the VS Code definitions into dist/
+    python tools/apidoc.py contrib --github [--dry-run]   file other people's /fapi export submissions
+    python tools/apidoc.py contrib <file> --as <name>     file one from a file on disk
     python tools/apidoc.py classic-scan [folders]   list the globals classic add-ons call (for the relocated-API table)
     python tools/apidoc.py luals       same as build (build also writes the VS Code definitions in luals/)
     python tools/apidoc.py all         extract, import (if there's a dump), build
@@ -33,13 +36,18 @@ import website  # noqa: E402
 import relocated  # noqa: E402
 import luals  # noqa: E402
 import checkspage  # noqa: E402
+import contrib  # noqa: E402
 
 from luatable import parse_assignments  # noqa: E402
 
 ROOT = os.path.dirname(HERE)
-GAME = r"G:\Games\World of Warcraft\_forever_"
-ADDON_SRC = os.path.join(ROOT, "addon", "ApiProbe")
-ADDON_DST = os.path.join(GAME, "Interface", "AddOns", "ApiProbe")
+# the game folder (override with the FOREVER_GAME environment variable)
+GAME = os.environ.get("FOREVER_GAME", r"G:\Games\World of Warcraft\_forever_")
+ADDON = "ForeverAPIProbe"
+ADDON_SRC = os.path.join(ROOT, "addon", ADDON)
+ADDON_DST = os.path.join(GAME, "Interface", "AddOns", ADDON)
+# the five add-ons it replaced: deploy removes them from the game so nothing runs twice
+OLD_ADDONS = ["ApiProbe", "ApiWatch", "ApiTimeline", "ApiWidgets", "ApiChecks"]
 CLIENT_DIR = os.path.join(ROOT, "sources", "client-docs")
 WEB_DIR = os.path.join(ROOT, "sources", "web")
 DUMPS = os.path.join(ROOT, "dumps")
@@ -142,7 +150,6 @@ def cmd_extract():
     with open(os.path.join(ADDON_SRC, "leads.lua"), "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(lines))
     # API watch calls the same getters in other situations, so it gets the same leads
-    shutil.copy(os.path.join(ADDON_SRC, "leads.lua"), os.path.join(ROOT, "addon", "ApiWatch", "leads.lua"))
     write_widget_plan(docs, version)
     print("client %s: %d systems, %d documented functions, %d candidate events (%d from UI code only), %d getters to call"
           % (version, len(client["systems"]), len(docs["functions"]), len(events),
@@ -185,15 +192,20 @@ def write_widget_plan(docs, version):
         lines.append("    { %s, %s, { %s }%s }," % (_lua_str(wtype), _lua_str(name), ", ".join(_lua_str(k) for k in kinds),
                                                   ', "protected"' if protected else ""))
     lines += ["  },", "}", ""]
-    with open(os.path.join(ROOT, "addon", "ApiWidgets", "plan.lua"), "w", encoding="utf-8", newline="\n") as f:
+    with open(os.path.join(ADDON_SRC, "plan.lua"), "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(lines))
     print("widget setters to test with a secret: %d" % len(plan))
 
 
-COLLECTORS = ["ApiProbe", "ApiWatch", "ApiTimeline", "ApiWidgets", "ApiChecks"]
+COLLECTORS = [ADDON]
 
 
 def cmd_deploy():
+    for name in OLD_ADDONS:
+        old = os.path.join(GAME, "Interface", "AddOns", name)
+        if os.path.isdir(old):
+            shutil.rmtree(old)
+            print("removed the old", old)
     for name in COLLECTORS:
         src = os.path.join(ROOT, "addon", name)
         if not os.path.isdir(src):
@@ -205,19 +217,37 @@ def cmd_deploy():
         print("deployed", dst)
 
 
-def _sv_files():
-    return glob.glob(os.path.join(GAME, "WTF", "Account", "*", "SavedVariables", "ApiProbe.lua"))
+def _sv_files(old="ApiProbe"):
+    """SavedVariables files that may hold a module's data: ForeverAPIProbe.lua, or the old separate add-on's file."""
+    out = []
+    for name in (ADDON, old):
+        out += glob.glob(os.path.join(GAME, "WTF", "Account", "*", "SavedVariables", name + ".lua"))
+    return out
+
+
+def _newest_with(var, old):
+    """(path, table) of the newest SavedVariables file holding `var`, or (None, None)."""
+    for path in sorted(_sv_files(old), key=os.path.getmtime, reverse=True):
+        with open(path, encoding="utf-8", errors="replace") as f:
+            db = parse_assignments(f.read()).get(var)
+        if db:
+            return path, db
+    return None, None
 
 
 def cmd_import(path=None):
     if not path:
         import_collectors()
-    files = [path] if path else sorted(_sv_files(), key=os.path.getmtime, reverse=True)
-    if not files:
-        print("no ApiProbe SavedVariables yet: run the probe in game and /reload or log out first")
-        return None
-    with open(files[0], encoding="utf-8", errors="replace") as f:
-        db = parse_assignments(f.read()).get("ApiProbeDB") or {}
+    if path:
+        with open(path, encoding="utf-8", errors="replace") as f:
+            db = parse_assignments(f.read()).get("ApiProbeDB") or {}
+        files = [path]
+    else:
+        found, db = _newest_with("ApiProbeDB", "ApiProbe")
+        if not found:
+            print("no probe data yet: switch the probe module on in game (/fapi on probe), then /reload or log out")
+            return None
+        files = [found]
     dump = db.get("dump")
     if not dump:
         print("the SavedVariables have no dump yet (%s)" % files[0])
@@ -235,11 +265,17 @@ def cmd_import(path=None):
     return out
 
 
+def _others(path):
+    """True for a dump made from someone else's data (Collector players, GitHub submissions)."""
+    b = os.path.basename(path)
+    return "_player-" in b or "_gh-" in b
+
+
 def latest_dump(prefix=None):
     """Newest ApiProbe dump, or with a prefix ("watch", "timeline", "widgets") the newest collector import."""
     files = glob.glob(os.path.join(DUMPS, "*", "*.json.gz"))
     if prefix:
-        files = [f for f in files if os.path.basename(f).startswith(prefix + "_")]
+        files = [f for f in files if os.path.basename(f).startswith(prefix + "_") and not _others(f)]
     else:
         files = [f for f in files if os.path.basename(f)[:1].isdigit()]
     files.sort(key=os.path.getmtime)
@@ -251,6 +287,7 @@ COLLECTOR_SV = {"ApiWatch": ("ApiWatchDB", "watch"), "ApiTimeline": ("ApiTimelin
                 "ApiWidgets": ("ApiWidgetsDB", "widgets"), "ApiChecks": ("ApiChecksDB", "checks")}
 
 
+CONTRIB_DIR = os.path.join(ROOT, "contrib")
 # players' API watch data, passed on by the Norgannon Collector's import (one file per player, ApiWatchDB format)
 CONTRIB_WATCH = os.path.join(ROOT, "contrib", "watch")
 
@@ -278,56 +315,54 @@ def import_contrib():
 
 
 def merged_watch():
-    """Every watch dump of the newest watch build, players' included, as one: each situation and run kept once
-    (a finished run beats a partial one), restriction switches from all of them."""
+    """Every watch dump of the newest watch build as one. Maro's own runs are verified; runs only other people
+    sent (Collector players, GitHub submissions) come in as reported, with how many accounts agree."""
     newest = latest_dump("watch")
     if not newest:
         return None
     build_dir = os.path.dirname(newest)
+    build = os.path.basename(build_dir)
     files = sorted(glob.glob(os.path.join(build_dir, "watch_*.json.gz")), key=os.path.getmtime)
-    merged = None
-    for path in files:
-        db = _load_json(path)
-        if merged is None:
-            merged = dict(db, situations={}, transitions=[], sources=0)
-        merged["sources"] += 1
-        for sit, s in (db.get("situations") or {}).items():
-            target = merged["situations"].setdefault(sit, {"runs": {}})
-            for label, run in (s.get("runs") or {}).items():
-                have = target["runs"].get(label)
-                if have is None or (run.get("done") and not have.get("done")):
-                    target["runs"][label] = run
-        merged["transitions"] += list(db.get("transitions") or [])
-    merged["transitions"] = sorted(merged["transitions"], key=lambda t: t.get("at") or 0)[-2000:]
-    return merged
+    maro = [_load_json(p) for p in files if not _others(p)]
+    reports = [(os.path.basename(p).split("_", 1)[1].split(".json")[0], _load_json(p)) for p in files if _others(p)]
+    for rec in contrib.stored(build, CONTRIB_DIR):
+        if (rec.get("data") or {}).get("watch"):
+            reports.append((rec["who"], prepare_collector("watch", rec["data"]["watch"])))
+    return contrib.merge_watch(maro, reports)
+
+
+def _reports(build, module):
+    """[(who, data)] for one module from every filed GitHub submission of a build."""
+    return [(rec["who"], rec["data"][module]) for rec in contrib.stored(build, CONTRIB_DIR)
+            if isinstance((rec.get("data") or {}).get(module), dict)]
+
+
+def prepare_collector(prefix, db):
+    """A module's saved table in the shape the build reads (lists for timeline events, call records for watch)."""
+    if prefix == "timeline":
+        # each event is { ms, name, kinds, unit, trigger = true }: keep it as a plain list
+        for traces in (db.get("traces") or {}).values():
+            for trace in (traces.values() if isinstance(traces, dict) else traces):
+                evs = trace.get("events") or {}
+                evs = [evs[k] for k in sorted(evs)] if isinstance(evs, dict) else evs
+                trace["events"] = [[e.get(1), e.get(2), e.get(3), e.get(4), bool(e.get("trigger"))] if isinstance(e, dict)
+                                   else list(e) + [None] * (4 - len(e)) + [False] for e in evs]
+    if prefix == "watch":
+        _watch_results(db)
+    return normalize(db)
 
 
 def import_collectors():
-    """Each background collector's SavedVariables -> dumps/<build>/<prefix>_<time>.json.gz (when it has data)."""
+    """Each module's SavedVariables -> dumps/<build>/<prefix>_<time>.json.gz (when it has data)."""
     import_contrib()
-    for addon, (var, prefix) in COLLECTOR_SV.items():
-        files = sorted(glob.glob(os.path.join(GAME, "WTF", "Account", "*", "SavedVariables", addon + ".lua")),
-                       key=os.path.getmtime, reverse=True)
-        if not files:
+    for old, (var, prefix) in COLLECTOR_SV.items():
+        path, db = _newest_with(var, old)
+        if not path or not db.get("build"):
             continue
-        with open(files[0], encoding="utf-8", errors="replace") as f:
-            db = parse_assignments(f.read()).get(var) or {}
-        if not db.get("build"):
-            continue
-        if prefix == "timeline":
-            # each event is { ms, name, kinds, unit, trigger = true }: keep it as a plain list
-            for traces in (db.get("traces") or {}).values():
-                for trace in (traces.values() if isinstance(traces, dict) else traces):
-                    evs = trace.get("events") or {}
-                    evs = [evs[k] for k in sorted(evs)] if isinstance(evs, dict) else evs
-                    trace["events"] = [[e.get(1), e.get(2), e.get(3), e.get(4), bool(e.get("trigger"))] if isinstance(e, dict)
-                                       else list(e) + [None] * (4 - len(e)) + [False] for e in evs]
-        if prefix == "watch":
-            _watch_results(db)
-        stamp = datetime.datetime.fromtimestamp(os.path.getmtime(files[0])).strftime("%Y%m%d-%H%M%S")
+        stamp = datetime.datetime.fromtimestamp(os.path.getmtime(path)).strftime("%Y%m%d-%H%M%S")
         out = os.path.join(DUMPS, db["build"], "%s_%s.json.gz" % (prefix, stamp))
-        _save_json(out, normalize(db))
-        print("imported %s -> %s" % (addon, _rel(out)))
+        _save_json(out, prepare_collector(prefix, db))
+        print("imported %s -> %s" % (prefix, _rel(out)))
 
 
 def latest_client(version=None):
@@ -370,6 +405,18 @@ def cmd_build():
     for prefix, field in (("timeline", "timeline"), ("widgets", "secret_tests"), ("checks", "checks")):
         p = latest_dump(prefix)
         m[field] = _load_json(p) if p else None
+    build_key = (m.get("meta") or {}).get("key") or client["version"]
+    if m.get("secret_tests") is not None or _reports(build_key, "widgets"):
+        m["secret_tests"] = contrib.merge_widgets(m.get("secret_tests"), _reports(build_key, "widgets"))
+    live_reports = [(who, (p or {}).get("live") or {}) for who, p in _reports(build_key, "probe")]
+    m["reported_events"] = contrib.reported_events(live_reports, ((dump or {}).get("live") or {}).get("events") or {})
+    for name, n in m["reported_events"].items():
+        e = m["events"].get(name)
+        if e is None:
+            m["events"][name] = {"key": name, "status": "reported", "source": "contributors", "reported": n}
+        elif e.get("status") not in ("verified", "undocumented") or not e.get("live"):
+            e["reported"] = n
+    m["contributors"] = sorted({rec["who"] for rec in contrib.stored(build_key, CONTRIB_DIR)})
     m["watch"] = merged_watch()   # yours and every player's who shares through the Collector
     dep_path = os.path.join(CLIENT_DIR, client["version"] + ".deprecated.json.gz")
     dep = _load_json(dep_path) if os.path.exists(dep_path) else {}
@@ -405,6 +452,95 @@ def cmd_classic_scan(folders):
     print("scanned %d add-on folders: %d global calls -> %s" % (len(folders), len(usage), _rel(out)))
 
 
+def known_for_build(build):
+    """contrib.Known for a client build we have Blizzard's docs for, else None."""
+    cp = os.path.join(CLIENT_DIR, build + ".json.gz")
+    if not os.path.exists(cp):
+        return None
+    fx = os.path.join(CLIENT_DIR, build + ".framexml.json.gz")
+    dumps = sorted((p for p in glob.glob(os.path.join(DUMPS, build, "*.json.gz")) if os.path.basename(p)[:1].isdigit()),
+                   key=os.path.getmtime)
+    plan_setters = []
+    plan = os.path.join(ADDON_SRC, "plan.lua")
+    if os.path.exists(plan):
+        with open(plan, encoding="utf-8") as f:
+            p = parse_assignments(f.read()).get("ApiWidgetsPlan") or {}
+        sets = p.get("setters") or {}
+        for e in (sets.values() if isinstance(sets, dict) else sets):
+            e = list(e.values()) if isinstance(e, dict) else e
+            plan_setters.append("%s:%s" % (e[0], e[1]))
+    return contrib.Known(_load_json(cp), _load_json(fx) if os.path.exists(fx) else None,
+                         _load_json(dumps[-1]) if dumps else None, plan_setters)
+
+
+def cmd_contrib(argv):
+    """contrib --github [--dry-run]: file open "API data" issues. contrib <file> --as <name>: file a file."""
+    dry = "--dry-run" in argv
+    cache = {}
+
+    def known(build):
+        if build not in cache:
+            cache[build] = known_for_build(build)
+        return cache[build]
+    texts = []
+    if "--github" in argv:
+        for issue, text in contrib.open_issues():
+            login = (issue.get("author") or {}).get("login")
+            texts.append((contrib.person(login), "#%d" % issue["number"], text, issue["number"]))
+        print("%d open API data issue(s) on %s" % (len(texts), contrib.REPO))
+    else:
+        files = [a for a in argv if not a.startswith("--") and a != (argv[argv.index("--as") + 1] if "--as" in argv else None)]
+        who = argv[argv.index("--as") + 1] if "--as" in argv else None
+        if not files or not who:
+            print("usage: apidoc.py contrib --github [--dry-run]  |  apidoc.py contrib <file> --as <name>")
+            return 0
+        for path in files:
+            with open(path, encoding="utf-8", errors="replace") as f:
+                texts.append(("local-" + re.sub(r"[^A-Za-z0-9_-]", "", who), path, f.read(), None))
+    n = contrib.run(texts, known, dry, CONTRIB_DIR)
+    print("%d submission(s) filed under contrib/%s" % (n, " (dry run: nothing written)" if dry else ""))
+    return n
+
+
+LUALS_README = """WoW Forever API definitions for VS Code (the Lua extension by sumneko, LuaLS).
+
+Unzip this folder into your add-on workspace, then copy ForeverAPI-LuaLS/.luarc.json to the workspace root
+(or add "ForeverAPI-LuaLS/library" to Lua.workspace.library in your VS Code settings). Lua 5.1.
+
+Every function says what the game showed: verified, always secret, secret in combat, protected, forbidden.
+Classic names that are gone on Forever are struck through, with where they went.
+Reference: https://zmarotrix.github.io/ForeverAPI/
+"""
+
+
+def cmd_release():
+    """dist/ForeverAPIProbe-<version>.zip (the add-on) and dist/ForeverAPI-LuaLS-<build>.zip (VS Code definitions)."""
+    import zipfile
+    with open(os.path.join(ADDON_SRC, ADDON + ".toc"), encoding="utf-8") as f:
+        version = re.search(r"^## Version:\s*(\S+)", f.read(), re.M).group(1)
+    dist = os.path.join(ROOT, "dist")
+    os.makedirs(dist, exist_ok=True)
+    out = os.path.join(dist, "%s-%s.zip" % (ADDON, version))
+    with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
+        for name in sorted(os.listdir(ADDON_SRC)):
+            z.write(os.path.join(ADDON_SRC, name), "%s/%s" % (ADDON, name))
+    print("add-on:", _rel(out))
+    outs = [out]
+    if os.path.isdir(LUALS):
+        client = latest_client()
+        build = os.path.basename(client).split(".json")[0] if client else "unknown"
+        lz = os.path.join(dist, "ForeverAPI-LuaLS-%s.zip" % build)
+        with zipfile.ZipFile(lz, "w", zipfile.ZIP_DEFLATED) as z:
+            for root, _, files in os.walk(LUALS):
+                for name in sorted(files):
+                    p = os.path.join(root, name)
+                    z.write(p, "ForeverAPI-LuaLS/" + os.path.relpath(p, LUALS).replace(os.sep, "/"))
+            z.writestr("ForeverAPI-LuaLS/README.txt", LUALS_README)
+        print("VS Code definitions:", _rel(lz))
+        outs.append(lz)
+    return version, outs
+
+
 def cmd_diff(a, b):
     da, db_ = _load_json(a), _load_json(b)
     name = "%s__%s.md" % (os.path.basename(a).split(".json")[0], os.path.basename(b).split(".json")[0])
@@ -435,6 +571,10 @@ def main(argv):
             cmd_diff(dumps[-2], dumps[-1])
         else:
             cmd_diff(argv[1], argv[2])
+    elif cmd == "release":
+        cmd_release()
+    elif cmd == "contrib":
+        cmd_contrib(argv[1:])
     elif cmd == "classic-scan":
         cmd_classic_scan(argv[1:])
     elif cmd == "luals":

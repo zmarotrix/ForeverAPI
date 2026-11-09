@@ -80,7 +80,7 @@ function methods:SetScript(h, f) self.scripts[h] = f end
 function methods:HasScript(h) return h == "OnShow" or h == "OnEvent" or (self.otype == "Button" and h == "OnClick") end
 function methods:Hide() end
 function methods:RegisterEvent(e)
-  if e == "PROTECTED_EVENT" then Fire("ADDON_ACTION_FORBIDDEN", "ApiProbe", "UNKNOWN()") return end
+  if e == "PROTECTED_EVENT" then Fire("ADDON_ACTION_FORBIDDEN", "ForeverAPIProbe", "UNKNOWN()") return end
   if not VALID[e] then error("Attempt to register unknown event \"" .. e .. "\"") end self.events[e] = true end
 function methods:UnregisterEvent(e) self.events[e] = nil end
 function methods:RegisterAllEvents() self.all = true end
@@ -155,15 +155,24 @@ def check(name, ok, detail=""):
         print("FAIL", name, detail)
 
 
+def load_fapi(lua, files, modules):
+    """Load ForeverAPI Probe's core plus the given module files, with those modules switched on."""
+    base = os.path.join(ROOT, "addon", "ForeverAPIProbe")
+    for name in ["core.lua"] + files:
+        with open(os.path.join(base, name), encoding="utf-8") as f:
+            lua.execute("local f = assert(loadstring(...)); f('ForeverAPIProbe')", f.read())
+        if name == "core.lua":
+            lua.execute("ForeverAPIProbeDB.modules = {%s}" % ", ".join("%s = true" % m for m in modules))
+
+
 def run_probe(tweak=""):
     lua = lua51.LuaRuntime(unpack_returned_tuples=True)
     lua.execute(STUB)
     lua.execute(tweak)
     lua.execute(LEADS)
-    with open(os.path.join(ROOT, "addon", "ApiProbe", "probe.lua"), encoding="utf-8") as f:
-        lua.execute("local f = assert(loadstring(...)); f('ApiProbe')", f.read())
+    load_fapi(lua, ["probe.lua"], ["probe"])
     G = lua.globals()
-    G.Fire("ADDON_LOADED", "ApiProbe")
+    G.Fire("ADDON_LOADED", "ForeverAPIProbe")
     G.Fire("PLAYER_LOGIN")
     G.RunTimers()
     G.Tick(200)
@@ -188,7 +197,7 @@ def main():
 
     lua, sv = run_probe()
     printed = "\n".join(lua.globals().PRINTED.values())
-    check("probe printed its status", "API probe" in printed, printed)
+    check("probe printed its status", "FAPI|r probe" in printed, printed)
     check("never stores the player's name", "Maro" not in sv)
     check("never stores a string global's text", "Maro the Brave" not in sv)
     check("never reads a CVar's current value", "current values must never" not in sv)
@@ -246,7 +255,7 @@ def main():
     # tools: import, build, diff
     tmp = tempfile.mkdtemp(prefix="apiprobe-test-")
     try:
-        for name, value in (("DUMPS", os.path.join(tmp, "dumps")), ("DOCS", os.path.join(tmp, "docs"))):
+        for name, value in (("DUMPS", os.path.join(tmp, "dumps")), ("DOCS", os.path.join(tmp, "docs")), ("SITE", os.path.join(tmp, "site")), ("LUALS", os.path.join(tmp, "luals"))):
             setattr(apidoc, name, value)
         p1 = os.path.join(tmp, "a.lua")
         with open(p1, "w", encoding="utf-8") as f:

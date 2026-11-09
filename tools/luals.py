@@ -280,7 +280,7 @@ def write(model, out):
         with open(os.path.join(lib, "%s.lua" % name.replace(".", "_")), "w", encoding="utf-8", newline="\n") as f:
             f.write("\n".join(lines))
     rc = {"$schema": "https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json",
-          "runtime.version": "Lua 5.1", "workspace.library": [os.path.abspath(lib).replace("\\", "/")],
+          "runtime.version": "Lua 5.1", "workspace.library": ["ForeverAPI-LuaLS/library"],
           "diagnostics.globals": ["SLASH_*"], "workspace.checkThirdParty": False}
     with open(os.path.join(out, ".luarc.json"), "w", encoding="utf-8", newline="\n") as f:
         json.dump(rc, f, indent=2)

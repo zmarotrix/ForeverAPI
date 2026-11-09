@@ -23,7 +23,7 @@ local G = _G
 local rawget, pcall, type, select, pairs = rawget, pcall, type, select, pairs
 local issecretvalue = rawget(G, "issecretvalue")
 local function isSecret(v) return issecretvalue ~= nil and issecretvalue(v) == true end
-local function say(msg) print("|cff9ec8ffAPI watch|r " .. msg) end
+local function say(msg) print("|cff9ec8ffFAPI|r watch " .. msg) end
 local function inCombat() return InCombatLockdown and InCombatLockdown() and true or false end
 local function buildKey()
   local version, build = GetBuildInfo()
@@ -256,6 +256,7 @@ local frame = CreateFrame("Frame")
 frame:SetScript("OnUpdate", function(_, elapsed) if db then tick(elapsed) end end)
 frame:SetScript("OnEvent", function(_, event, a1, a2)
   if event == "ADDON_LOADED" and a1 == ADDON then
+    if not FAPI.gate("watch", frame) then return end
     db = ApiWatchDB
     if db.build ~= buildKey() or db.probe ~= VERSION or db.leads ~= leads.build then
       ApiWatchDB = { build = buildKey(), probe = VERSION, leads = leads.build, situations = {}, transitions = {},
@@ -285,7 +286,6 @@ for _, e in ipairs({ "ADDON_LOADED", "ADDON_ACTION_BLOCKED", "ADDON_ACTION_FORBI
   pcall(frame.RegisterEvent, frame, e) -- the last one may not exist on this client
 end
 
-SLASH_APIWATCH1 = "/apiwatch"
 SlashCmdList.APIWATCH = function()
   local lines = {}
   for sit, s in pairs(db.situations) do

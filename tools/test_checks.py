@@ -85,7 +85,7 @@ function GetCurrentCombatTextEventInfo() return SECRET, "Fire" end
 SENT = {}
 function SendChatMessage(text, chatType)
   if not HARDWARE and (chatType == "SAY" or chatType == "YELL") and INSTANCE == nil then
-    Fire("ADDON_ACTION_BLOCKED", "ApiChecks", "SendChatMessage()")
+    Fire("ADDON_ACTION_BLOCKED", "ForeverAPIProbe", "SendChatMessage()")
     return
   end
   SENT[#SENT + 1] = chatType
@@ -111,11 +111,10 @@ def main():
     lua = lua51.LuaRuntime(unpack_returned_tuples=True)
     lua.execute(test_probe.STUB)
     lua.execute(EXTRA)
-    with open(os.path.join(ROOT, "addon", "ApiChecks", "checks.lua"), encoding="utf-8") as h:
-        lua.execute("local f = assert(loadstring(...)); f(select(2, ...))", h.read(), "ApiChecks")
+    test_probe.load_fapi(lua, ["checks.lua", "export.lua"], ["checks"])
     G = lua.globals()
     run = G.RunTimers
-    G.Fire("ADDON_LOADED", "ApiChecks")
+    G.Fire("ADDON_LOADED", "ForeverAPIProbe")
     G.Fire("PLAYER_LOGIN")
     G.Fire("PLAYER_ENTERING_WORLD", True, False)
     run()
@@ -222,13 +221,17 @@ def main():
     try:
         sv_dir = os.path.join(tmp, "game", "WTF", "Account", "1", "SavedVariables")
         os.makedirs(sv_dir)
-        with open(os.path.join(sv_dir, "ApiChecks.lua"), "w", encoding="utf-8") as f:
+        with open(os.path.join(sv_dir, "ForeverAPIProbe.lua"), "w", encoding="utf-8") as f:
             f.write(sv)
         apidoc.GAME = os.path.join(tmp, "game")
         apidoc.DUMPS = os.path.join(tmp, "dumps")
         apidoc.DOCS = os.path.join(tmp, "docs")
         apidoc.SITE = os.path.join(tmp, "site")
         apidoc.LUALS = os.path.join(tmp, "luals")
+        apidoc.CONTRIB_DIR = os.path.join(tmp, "contrib")
+        apidoc.CONTRIB_WATCH = os.path.join(tmp, "contrib", "watch")
+        n = apidoc.cmd_contrib([os.path.join(sv_dir, "ForeverAPIProbe.lua"), "--as", "dave"])
+        check("contrib: a SavedVariables file attached as it is", n == 1, n)
         apidoc.import_collectors()
         check("import: checks file written", apidoc.latest_dump("checks") is not None)
         apidoc.cmd_build()

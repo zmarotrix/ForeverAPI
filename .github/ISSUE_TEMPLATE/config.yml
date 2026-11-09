@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: The Forever API reference
+    url: https://zmarotrix.github.io/ForeverAPI/
+    about: Look a function, event or type up before reporting it.

@@ -45,8 +45,8 @@ local m = getmetatable(CreateFrame("Frame")).__index
 function m:SetFontObject() end
 function m:SetValue(v) if issecretvalue(v) then error("SetValue: secret values are not allowed") end end
 function m:SetAlphaFromBoolean(b) end
-function m:SetScale() if COMBAT then Fire("ADDON_ACTION_BLOCKED", "ApiWidgets", "UNKNOWN()") end end
-function m:SetToplevel() if COMBAT then Fire("ADDON_ACTION_BLOCKED", "ApiWidgets", "UNKNOWN()") end end
+function m:SetScale() if COMBAT then Fire("ADDON_ACTION_BLOCKED", "ForeverAPIProbe", "UNKNOWN()") end end
+function m:SetToplevel() if COMBAT then Fire("ADDON_ACTION_BLOCKED", "ForeverAPIProbe", "UNKNOWN()") end end
 function m:SetShown(b) if issecretvalue(b) then error("SetShown: no secrets") end end
 function m:SetText(t) if issecretvalue(t) then error("SetText: can't take a secret") end end
 function m:SetWidth(w) end
@@ -92,12 +92,9 @@ def main():
     lua.execute(stub)
     lua.execute(EXTRA)
     lua.execute(LEADS)
-    load(lua, "ApiWatch", ["watch.lua"])
-    load(lua, "ApiTimeline", ["timeline.lua"])
-    load(lua, "ApiWidgets", ["widgets.lua"])
+    test_probe.load_fapi(lua, ["watch.lua", "timeline.lua", "widgets.lua", "checks.lua", "export.lua"], ["watch", "timeline", "widgets"])
     G = lua.globals()
-    for addon in ("ApiWatch", "ApiTimeline", "ApiWidgets"):
-        G.Fire("ADDON_LOADED", addon)
+    G.Fire("ADDON_LOADED", "ForeverAPIProbe")
     G.Fire("PLAYER_LOGIN")
     G.Fire("PLAYER_ENTERING_WORLD", True, False)
     G.RunTimers()
@@ -124,12 +121,20 @@ def main():
     lua.execute("COMBAT = false")
     G.Fire("ENCOUNTER_END", 1, "Boss", 1, 5, 1)
     tick(40)
-    for cmd in ("APIWATCH", "APITIMELINE", "APIWIDGETS"):
-        G.SlashCmdList[cmd]("")
+    for mod in ("watch", "timeline", "widgets"):
+        G.SlashCmdList.FOREVERAPIPROBE(mod)
+    G.SlashCmdList.FOREVERAPIPROBE("checks")
+    printed_off = chr(10).join(G.PRINTED.values())
+    check("a module that's off stays off", "checks is off" in printed_off and lua.eval("next(ApiChecksDB) == nil"), printed_off[-300:])
+    G.SlashCmdList.FOREVERAPIPROBE("")
+    check("/fapi lists the modules", "timeline: |cff80ff80on|r" in chr(10).join(G.PRINTED.values()) and "checks: off" in chr(10).join(G.PRINTED.values()))
     svs = {name: "%s = %s\n" % (name, lua.eval("Serialize(%s)" % name)) for name in ("ApiWatchDB", "ApiTimelineDB", "ApiWidgetsDB")}
     allsv = "".join(svs.values())
+    export = lua.eval("(FAPI.ExportString())")
+    check("export: one FAPI text block", isinstance(export, str) and export.startswith("FAPI:1:{") and '"enc":"lua"' in export, str(export)[:80])
+    check("export: no names in it", "Maro" not in __import__("base64").b64decode(export.rsplit(":", 1)[1]).decode("utf-8", "replace"))
     printed = "\n".join(G.PRINTED.values())
-    check("all three printed a status", all(s in printed for s in ("API watch", "API timeline", "API widgets")), printed)
+    check("all three printed a status", all(s in printed for s in ("FAPI|r watch", "FAPI|r timeline", "FAPI|r widgets")), printed)
     check("never stores the player's name", "Maro" not in allsv)
     check("never calls a crasher, a refused call or a non-getter", "must never be called" not in allsv)
 
@@ -185,7 +190,8 @@ def main():
     try:
         sv_dir = os.path.join(tmp, "game", "WTF", "Account", "1", "SavedVariables")
         os.makedirs(sv_dir)
-        for name, text in (("ApiWatch", svs["ApiWatchDB"]), ("ApiTimeline", svs["ApiTimelineDB"]), ("ApiWidgets", svs["ApiWidgetsDB"])):
+        # Maro's own files: timeline and widgets (his watch comes from no one: the watch below is other people's)
+        for name, text in (("ApiTimeline", svs["ApiTimelineDB"]), ("ApiWidgets", svs["ApiWidgetsDB"])):
             with open(os.path.join(sv_dir, name + ".lua"), "w", encoding="utf-8") as f:
                 f.write(text)
         apidoc.GAME = os.path.join(tmp, "game")
@@ -193,15 +199,53 @@ def main():
         apidoc.DOCS = os.path.join(tmp, "docs")
         apidoc.SITE = os.path.join(tmp, "site")
         apidoc.LUALS = os.path.join(tmp, "luals")
+        apidoc.CONTRIB_DIR = os.path.join(tmp, "contrib")
+        apidoc.CONTRIB_WATCH = os.path.join(tmp, "contrib", "watch")
+        # contributions: the same export from two people, one forged file, one from a build we don't cover
+        import base64
+        exp_path = os.path.join(tmp, "export.txt")
+        with open(exp_path, "w", encoding="utf-8") as f:
+            f.write("my notes" + chr(10) + export + chr(10) + "thanks")
+        fakes = "{" + ",".join('["Made_Up%d"]={n=1,returns={"number"}}' % i for i in range(20)) + "}"
+        forged = '{watch={build="1.60.1.70862",situations={["party/boss"]={runs={getters={results=%s}}}}}}' % fakes
+        forged_path = os.path.join(tmp, "forged.txt")
+        with open(forged_path, "w", encoding="utf-8") as f:
+            f.write('FAPI:1:{"build":"1.60.1.70862","enc":"lua"}:' + base64.b64encode(forged.encode()).decode())
+        old_path = os.path.join(tmp, "old.txt")
+        with open(old_path, "w", encoding="utf-8") as f:
+            f.write(export.replace('"build":"1.60.1.70862"', '"build":"1.0.0.1"'))
+        n1 = apidoc.cmd_contrib([exp_path, "--as", "alice"])
+        n2 = apidoc.cmd_contrib([exp_path, "--as", "bob"])
+        n3 = apidoc.cmd_contrib([forged_path, "--as", "mallory"])
+        n4 = apidoc.cmd_contrib([old_path, "--as", "carol"])
+        check("contrib: real exports filed, forged and wrong-build ones turned away", (n1, n2, n3, n4) == (1, 1, 0, 0), (n1, n2, n3, n4))
+        rec = apidoc.contrib.stored("1.60.1.70862", apidoc.CONTRIB_DIR)[0]
+        keys = [k for s_ in rec["data"]["watch"]["situations"].values() for r_ in s_["runs"].values() for k in r_["results"]]
+        check("contrib: names the client doesn't have are dropped", "UnitHealth" in keys and "GetFancyCrash" not in keys, keys)
         apidoc.import_collectors()
-        check("import: three collector files", all(apidoc.latest_dump(p) for p in ("watch", "timeline", "widgets")))
+        check("import: Maro's timeline and widgets", all(apidoc.latest_dump(p) for p in ("timeline", "widgets")))
+        mw = apidoc.merged_watch() if apidoc.latest_dump("watch") else None
+        check("trust: no Maro watch, so nothing from others is the latest Maro file", mw is None)
         tlj = apidoc._load_json(apidoc.latest_dump("timeline"))
         first = next(iter(tlj["traces"].values()))[0]["events"][0]
         check("import: timeline events are plain lists", isinstance(first, list) and len(first) == 5, first)
+        # Maro's own watch run of one situation: that one is his, the rest stays reported
+        mine = parse_assignments(svs["ApiWatchDB"])["ApiWatchDB"]
+        mine["situations"] = {"none/idle": mine["situations"]["none/idle"]}
+        maro_watch = apidoc.prepare_collector("watch", mine)
+        apidoc._save_json(os.path.join(apidoc.DUMPS, "1.60.1.70862", "watch_20990101-000000.json.gz"), maro_watch)
+        mw = apidoc.merged_watch()
+        boss = mw["situations"]["party/boss"]["runs"]["getters"]
+        check("trust: a run only others sent is reported", boss.get("by") == "reported", boss.get("by"))
+        check("trust: two accounts agreeing count as two", boss["results"]["GetBuildInfo"].get("rep") == 2
+              and mw["situations"]["party/boss"]["runs"]["target: enemy npc"]["results"]["UnitHealth"].get("rep") == 2, boss["results"])
+        check("trust: Maro's own run stays his", all(r_.get("by") == "maro" for r_ in mw["situations"]["none/idle"]["runs"].values()))
+        check("trust: a forged file never counts", "mallory" not in str(mw.get("reporters")) and "local-mallory" not in str(mw.get("reporters")))
         apidoc.cmd_build()
         with open(os.path.join(tmp, "site", "data.js"), encoding="utf-8") as f:
             data = f.read()
         check("site data carries all three", '"watch":{' in data and '"timeline":{' in data and '"secrets":{' in data)
+        check("site data marks reported runs", '"by":"reported"' in data and '"rep":2' in data)
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
 

@@ -3,8 +3,8 @@
     python tools/update.py           # does nothing if the game hasn't saved anything new since the last run
     python tools/update.py --force   # import and publish anyway
 
-update-docs.bat runs this. The website is published through the Norgannon site (its /api/ section), which copies
-site/ from here; if that workspace isn't on this computer, the docs are still rebuilt and committed here.
+update-docs.bat runs this. Publishing is a git push: GitHub Pages rebuilds https://zmarotrix.github.io/ForeverAPI/
+from site/ (.github/workflows/pages.yml). Without a remote, the docs are still rebuilt and committed here.
 """
 
 import glob
@@ -20,12 +20,11 @@ sys.path.insert(0, HERE)
 from apidoc import GAME  # noqa: E402
 
 STATE = os.path.join(ROOT, ".last-import")
-NORGANNON_PUBLISH = r"G:\Projects\pfQuest\pfQuest-Forever\tools\site\publish.py"
-LIVE = "https://zmarotrix.github.io/norgannon/api/"
+LIVE = "https://zmarotrix.github.io/ForeverAPI/"
 
 
 def saved_files():
-    return sorted(f for f in glob.glob(os.path.join(GAME, "WTF", "Account", "*", "SavedVariables", "Api*.lua")))
+    return sorted(f for f in glob.glob(os.path.join(GAME, "WTF", "Account", "*", "SavedVariables", "Api*.lua")) + glob.glob(os.path.join(GAME, "WTF", "Account", "*", "SavedVariables", "ForeverAPIProbe.lua")))
 
 
 def fingerprint(files):
@@ -70,13 +69,13 @@ def main():
         run("git", "commit", "-q", "-m", f"Import in-game API data saved {newest}", quiet=True)
         print("Committed: " + run("git", "log", "-1", "--format=%h %s", quiet=True).strip())
 
-    if os.path.isfile(NORGANNON_PUBLISH):
-        print("\nPublishing the website...")
-        out = run(sys.executable, NORGANNON_PUBLISH, quiet=True)
-        print(out.strip().splitlines()[-1] if out.strip() else "published")
-        print(f"Live in about 20 seconds at {LIVE} (Ctrl+F5 if your browser shows the old one).")
+    has_remote = subprocess.run(["git", "remote", "get-url", "origin"], cwd=ROOT, capture_output=True).returncode == 0
+    if has_remote:
+        print(chr(10) + "Publishing the website...")
+        run("git", "push", "-q", "origin", "HEAD", quiet=True)
+        print(f"Pushed. Live in a minute or two at {LIVE} (Ctrl+F5 if your browser shows the old one).")
     else:
-        print("\nThe Norgannon website workspace isn't here, so nothing was published.")
+        print(chr(10) + "This folder has no GitHub remote yet, so nothing was published.")
 
     with open(STATE, "w", encoding="utf-8") as f:
         json.dump(fp, f)

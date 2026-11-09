@@ -1,5 +1,5 @@
--- API probe: records what this client's add-on API really is, so the docs built from it (G:\Projects\ForeverAPI)
--- say only what the game confirmed.
+-- probe module: records what this client's add-on API really is, so the ForeverAPI reference built from it
+-- (https://zmarotrix.github.io/ForeverAPI/) says only what the game confirmed.
 --
 --   dump    every global, every secure table's members (C_* namespaces, Enum, Constants, mixins), one object of every
 --           widget type with its methods and script handlers, every candidate event checked with RegisterEvent, CVars
@@ -34,7 +34,7 @@ local function isSecret(v)
 end
 
 local function say(text)
-  print("|cff9ec8ffAPI probe|r " .. text)
+  print("|cff9ec8ffFAPI|r probe " .. text)
 end
 
 local function now()
@@ -584,7 +584,7 @@ end
 
 local function startCalls(phase)
   if running then return end
-  if not db.dump then say("run /apiprobe dump first.") return end
+  if not db.dump then say("run /fapi probe dump first.") return end
   local p = phaseRecord(phase)
   p.started = p.started or now()
   p.restrictions = restrictionState()
@@ -713,6 +713,7 @@ end)
 
 frame:SetScript("OnEvent", function(_, event, a1, a2)
   if event == "ADDON_LOADED" and a1 == ADDON then
+    if not FAPI.gate("probe", frame, live) then return end
     db = ApiProbeDB
     db.blocked = db.blocked or {}
     db.live = db.live or { on = true, events = {} }
@@ -756,7 +757,7 @@ end
 local function status()
   local d = db.dump
   say(("v%s on %s"):format(VERSION, buildKey()))
-  say(d and ("dump: %d globals, %d tables, %d events checked (%s)"):format(count(d.globals), count(d.tables), count(d.events), d.meta.key) or "dump: none yet (/apiprobe dump)")
+  say(d and ("dump: %d globals, %d tables, %d events checked (%s)"):format(count(d.globals), count(d.tables), count(d.events), d.meta.key) or "dump: none yet (/fapi probe dump)")
   local c = db.calls or {}
   for _, phase in ipairs({ "outside", "combat" }) do
     local p = c[phase]
@@ -768,7 +769,6 @@ local function status()
   if #db.blocked > 0 then say(("|cffff8080%d blocked-action reports|r recorded."):format(#db.blocked)) end
 end
 
-SLASH_APIPROBE1 = "/apiprobe"
 SlashCmdList.APIPROBE = function(msg)
   msg = (msg or ""):lower():match("^%s*(.-)%s*$")
   if msg == "dump" then

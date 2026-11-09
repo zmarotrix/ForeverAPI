@@ -1,12 +1,12 @@
 -- API checks: targeted checks for behaviour testers reported on Forever. Background collector for ForeverAPI.
 --
--- Everything here only listens and reads, except /apichecks chat, which you run yourself.
+-- Everything here only listens and reads, except /fapi checks chat, which you run yourself.
 --   twice     do PLAYER_DEAD, MERCHANT_CLOSED and AUCTION_HOUSE_CLOSED fire twice per death / close?
 --   zone      is the zone text stale at PLAYER_ENTERING_WORLD / ZONE_CHANGED_NEW_AREA (after a hearth, taxi, portal)?
 --   chat      do "You feel rested.", "Auction created." and AFK on/off reach CHAT_MSG_SYSTEM, or another channel?
 --   feed      what UNIT_COMBAT, COMBAT_LOG_MESSAGE, COMBAT_TEXT_UPDATE and C_DamageMeter carry, in and out of combat
 --   secrets   UNIT_SPELLCAST_SENT's target by cast context, UnitIsUnit against enemy tokens, the pet's health
---   send      (/apichecks chat only) can add-on code say / yell / emote, with and without a key press?
+--   send      (/fapi checks chat only) can add-on code say / yell / emote, with and without a key press?
 -- Stores types, secret flags, counts and Blizzard's own zone names. Never chat text, never player names.
 
 local ADDON = ...
@@ -18,7 +18,7 @@ local db
 local G = _G
 local issecretvalue = rawget(G, "issecretvalue")
 local function isSecret(v) return issecretvalue ~= nil and issecretvalue(v) == true end
-local function say(msg) print("|cff9ec8ffAPI checks|r " .. msg) end
+local function say(msg) print("|cff9ec8ffFAPI|r checks " .. msg) end
 local function inCombat() return InCombatLockdown and InCombatLockdown() and true or false end
 local function now() return GetTime and GetTime() or 0 end
 local function buildKey()
@@ -323,7 +323,7 @@ local function petHealth(when)
 end
 
 -------------------------------------------------------------------------------------------
--- send: /apichecks chat (you run it; it speaks in public)
+-- send: /fapi checks chat (you run it; it speaks in public)
 -------------------------------------------------------------------------------------------
 
 local echo -- waiting for our own message to come back
@@ -356,9 +356,9 @@ local function sendTest()
     if how == "timer" then
       C_Timer.After(0.2, send) -- no key press behind this call
     else
-      run.results[key] = { sent = "type /apichecks chat again to send this one from a key press" }
+      run.results[key] = { sent = "type /fapi checks chat again to send this one from a key press" }
       db.sendPending = true
-      say("Now type /apichecks chat once more: that sends the last one from your key press.")
+      say("Now type /fapi checks chat once more: that sends the last one from your key press.")
     end
   end
   nextOne()
@@ -414,6 +414,7 @@ end
 frame:SetScript("OnEvent", function(_, event, ...)
   if event == "ADDON_LOADED" then
     if ... ~= ADDON then return end
+    if not FAPI.gate("checks", frame) then return end
     db = ApiChecksDB
     if db.build ~= buildKey() or db.probe ~= VERSION then
       local skip = db.build == buildKey() and db.skip or nil
@@ -514,17 +515,16 @@ frame:RegisterEvent("ADDON_LOADED")
 frame:RegisterEvent("ADDON_ACTION_FORBIDDEN")
 frame:RegisterEvent("ADDON_ACTION_BLOCKED")
 
-SLASH_APICHECKS1 = "/apichecks"
 SlashCmdList.APICHECKS = function(msg)
   msg = (msg or ""):lower()
   if msg == "chat" then
     if db.sendPending then return sendFromKeypress() end
-    say("This sends \".\" in /say, /yell and /emote, so people near you see it. Run it once in the open world and once in a dungeon. Type |cffffff00/apichecks chat yes|r to go.")
+    say("This sends \".\" in /say, /yell and /emote, so people near you see it. Run it once in the open world and once in a dungeon. Type |cffffff00/fapi checks chat yes|r to go.")
   elseif msg == "chat yes" then
     sendTest()
   else
     local function n(t) local c = 0 for _ in pairs(t or {}) do c = c + 1 end return c end
-    say(("v%s. Seen: %d double-fire episodes, %d zone changes, %d chat triggers, %d combat feeds, %d secret checks. /apichecks chat tests sending chat."):format(
+    say(("v%s. Seen: %d double-fire episodes, %d zone changes, %d chat triggers, %d combat feeds, %d secret checks. /fapi checks chat tests sending chat."):format(
       VERSION, (db.twice.PLAYER_DEAD and db.twice.PLAYER_DEAD.episodes or 0) + (db.twice.MERCHANT_CLOSED and db.twice.MERCHANT_CLOSED.episodes or 0)
         + (db.twice.AUCTION_HOUSE_CLOSED and db.twice.AUCTION_HOUSE_CLOSED.episodes or 0),
       #db.zone.recent, n(db.chat.triggers), n(db.feed), n(db.secrets.unitIsUnit) + n(db.secrets.spellcastSent) + n(db.secrets.pet)))

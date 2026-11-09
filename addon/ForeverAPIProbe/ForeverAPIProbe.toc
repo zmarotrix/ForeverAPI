@@ -1,0 +1,19 @@
+## Interface: 16001
+## Title: ForeverAPI |cff9ec8ffProbe|r
+## Category: Development Tools
+## Notes: For add-on developers. Records what WoW Forever's add-on API really does (types, secret or not, errors, event order; never values or names) for the ForeverAPI reference. Records nothing until you switch modules on: /fapi
+## Author: Maro
+## Version: 1.0.0
+## X-License: All Rights Reserved
+## X-Website: https://zmarotrix.github.io/ForeverAPI/
+## SavedVariables: ForeverAPIProbeDB, ApiProbeDB, ApiWatchDB, ApiTimelineDB, ApiWidgetsDB, ApiChecksDB
+
+core.lua
+leads.lua
+plan.lua
+probe.lua
+watch.lua
+timeline.lua
+widgets.lua
+checks.lua
+export.lua

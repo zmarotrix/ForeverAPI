@@ -18,7 +18,7 @@ local G = _G
 local issecretvalue = rawget(G, "issecretvalue")
 
 local function isSecret(v) return issecretvalue ~= nil and issecretvalue(v) == true end
-local function say(msg) print("|cff9ec8ffAPI widgets|r " .. msg) end
+local function say(msg) print("|cff9ec8ffFAPI|r widgets " .. msg) end
 local function inCombat() return InCombatLockdown and InCombatLockdown() and true or false end
 local function buildKey()
   local version, build = GetBuildInfo()
@@ -210,6 +210,7 @@ local frame = CreateFrame("Frame")
 frame:SetScript("OnUpdate", function() if job then step() end end)
 frame:SetScript("OnEvent", function(_, event, a1)
   if event == "ADDON_LOADED" and a1 == ADDON then
+    if not FAPI.gate("widgets", frame) then return end
     db = ApiWidgetsDB
     if db.build ~= buildKey() or db.probe ~= VERSION or db.plan ~= plan.build then
       local skip = db.build == buildKey() and db.skip or nil
@@ -240,7 +241,6 @@ frame:RegisterEvent("PLAYER_REGEN_DISABLED")
 frame:RegisterEvent("ADDON_ACTION_BLOCKED")
 frame:RegisterEvent("ADDON_ACTION_FORBIDDEN")
 
-SLASH_APIWIDGETS1 = "/apiwidgets"
 SlashCmdList.APIWIDGETS = function(msg)
   if msg == "rerun" then
     db.runs = {}
@@ -248,6 +248,6 @@ SlashCmdList.APIWIDGETS = function(msg)
     return
   end
   local o, c = db.runs.outside, db.runs.combat
-  say(("v%s, %d setters planned. Out of combat: %s. In combat: %s. /apiwidgets rerun to test again."):format(VERSION, #plan.setters,
+  say(("v%s, %d setters planned. Out of combat: %s. In combat: %s. /fapi widgets rerun to test again."):format(VERSION, #plan.setters,
     o and (o.done and "done" or "partial") or "not yet", c and (c.done and "done" or "partial") or "waits for your next fight"))
 end

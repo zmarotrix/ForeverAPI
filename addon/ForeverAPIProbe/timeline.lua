@@ -18,7 +18,7 @@ ApiTimelineDB = ApiTimelineDB or {}
 local db
 local issecretvalue = rawget(_G, "issecretvalue")
 local function isSecret(v) return issecretvalue ~= nil and issecretvalue(v) == true end
-local function say(msg) print("|cff9ec8ffAPI timeline|r " .. msg) end
+local function say(msg) print("|cff9ec8ffFAPI|r timeline " .. msg) end
 local function buildKey()
   local version, build = GetBuildInfo()
   return tostring(version) .. "." .. tostring(build)
@@ -130,6 +130,7 @@ end
 local frame = CreateFrame("Frame")
 frame:SetScript("OnEvent", function(_, event, ...)
   if event == "ADDON_LOADED" and ... == ADDON then
+    if not FAPI.gate("timeline", frame) then return end
     db = ApiTimelineDB
     if db.build ~= buildKey() or not db.traces then -- a new add-on version keeps what it recorded
       ApiTimelineDB = { build = buildKey(), probe = VERSION, traces = {} }
@@ -148,7 +149,6 @@ frame:SetScript("OnUpdate", function()
 end)
 frame:RegisterAllEvents()
 
-SLASH_APITIMELINE1 = "/apitimeline"
 SlashCmdList.APITIMELINE = function(msg)
   if msg == "reset" then db.traces = {} say("cleared.") return end
   local have = {}

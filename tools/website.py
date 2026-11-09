@@ -28,7 +28,7 @@ def _p(params):
 def _call(rec):
     if not rec:
         return None
-    out = {k: rec[k] for k in ("n", "returns", "error", "missing", "skipped", "forbidden", "arg") if k in rec}
+    out = {k: rec[k] for k in ("n", "returns", "error", "missing", "skipped", "forbidden", "arg", "rep") if k in rec}
     return out
 
 
@@ -61,7 +61,7 @@ def compact(model):
         E[key] = {k: v for k, v in {
             "s": e["status"], "sys": e.get("system"), "p": _p(e.get("payload")) if e.get("source") == "client-docs" else None,
             "d": e.get("doc") or None, "fl": e.get("flags") or None, "chk": (e.get("check") or {}).get("register"),
-            "live": e.get("live"), "u": e.get("used_by"), "src": e.get("source"), "file": e.get("file"),
+            "live": e.get("live"), "u": e.get("used_by"), "src": e.get("source"), "file": e.get("file"), "rep": e.get("reported"),
         }.items() if v not in (None, "", {}, [])}
     T = {}
     for key, t in list(model["structures"].items()) + list(model["enums"].items()):
@@ -108,6 +108,7 @@ def compact(model):
                    if v not in (None, "", [], {})} for r in model.get("relocated") or []],
         "unmapped": [[n, c, a] for n, c, a in model.get("relocated_unmapped") or []],
         "project": (model.get("meta") or {}).get("project_id"),
+        "contributors": len(model.get("contributors") or []),
         "checks": model.get("checks") and {"build": model["checks"].get("build"), "probe": model["checks"].get("probe"),
                                             "a": checkspage.answers(model["checks"])},
     }
@@ -118,11 +119,12 @@ def _watch(w):
         return None
     sits = {}
     for name, s in (w.get("situations") or {}).items():
-        sits[name] = {label: {k: v for k, v in {"token": r.get("token"), "done": r.get("done"), "partial": r.get("partial"),
+        sits[name] = {label: {k: v for k, v in {"token": r.get("token"), "done": r.get("done"), "partial": r.get("partial"), "by": r.get("by"),
                                                  "res": {key: _call(rec) for key, rec in (r.get("results") or {}).items()}}.items()
                               if v not in (None, "", {}, [])}
                       for label, r in (s.get("runs") or {}).items()}
-    return {"situations": sits, "transitions": w.get("transitions") or [], "skip": w.get("skip") or {}}
+    return {"situations": sits, "transitions": w.get("transitions") or [], "skip": w.get("skip") or {},
+            "reporters": len(w.get("reporters") or [])}
 
 
 def write(model, out, generated):

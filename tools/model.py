@@ -76,7 +76,7 @@ def documented(client):
 SAMPLE_BY_TYPE = {
     "WOWGUID": "guid", "SpellIdentifier": "spell", "ItemInfo": "item", "ItemLocation": "itemloc",
     "PlayerLocation": "playerloc", "ClubId": "club", "AuraFilters": "s:HELPFUL", "luaIndex": "n:1",
-    "BagIndex": "n:0", "bool": "b:false", "uiAddon": "s:ApiProbe",
+    "BagIndex": "n:0", "bool": "b:false", "uiAddon": "s:ForeverAPIProbe",
 }
 SAMPLE_BY_NAME = {
     "uimapid": "map", "mapid": "map", "questid": "quest", "itemid": "item", "spellid": "spell", "classid": "class",

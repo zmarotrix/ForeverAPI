@@ -7,8 +7,15 @@
     "verified": ["✓", "verified", "Confirmed in game"],
     "undocumented": ["＋", "game only", "In game, not in Blizzard's docs (Forever-only or legacy)"],
     "not-in-game": ["✕", "not in game", "In Blizzard's docs, not in this client"],
-    "unverified": ["?", "unverified", "Not checked in game yet"]
+    "unverified": ["?", "unverified", "Not checked in game yet"],
+    "reported": ["◔", "reported", "Seen by other developers' probe runs, not yet confirmed by Maro's own run or a second contributor"]
   };
+  // other people's data: verified once two independent GitHub accounts agree, "reported (n)" before that
+  function repPill(n) {
+    if (!n) return "";
+    return n >= 2 ? '<span class="pill s-verified" title="Two or more contributors sent the same result">✓ ' + n + " contributors agree</span>"
+      : '<span class="pill s-reported" title="One contributor sent this; not confirmed yet">◔ reported (' + n + ")</span>";
+  }
   var FN_KIND = { fC: "built-in", fL: "Lua", "f?": "function" };
   var FLAG_WORDS = {
     IsProtectedFunction: "protected", HasRestrictions: "restricted in some situations",
@@ -171,8 +178,8 @@
       if (sec) return '<span class="pill p-secret">partly secret</span>';
       return '<span class="muted">' + r.n + " value" + (r.n === 1 ? "" : "s") + "</span>";
     }
-    if (!r.n) return '<span class="muted">returned nothing</span>';
-    return '<span class="ret">' + rets.map(function (v) { return '<code class="' + (/^secret/.test(v) ? "sec" : "") + '">' + esc(v) + "</code>"; }).join("") + "</span>";
+    if (!r.n) return '<span class="muted">returned nothing</span>' + (r.rep ? " " + repPill(r.rep) : "");
+    return '<span class="ret">' + rets.map(function (v) { return '<code class="' + (/^secret/.test(v) ? "sec" : "") + '">' + esc(v) + "</code>"; }).join("") + "</span>" + (r.rep ? " " + repPill(r.rep) : "");
   }
   function same(a, b) { return JSON.stringify(a || null) === JSON.stringify(b || null); }
 
@@ -212,6 +219,7 @@
     var e = A.E[k];
     var h = '<div class="card" id="' + esc(k) + '"><div class="head"><h3><a href="#/event/' + enc(k) + '">' + esc(k) + "</a></h3>" + pill(e.s);
     if (e.chk === "forbidden" || e.chk === "blocked") h += '<span class="pill p-bad">add-ons may not register</span>';
+    if (e.rep) h += repPill(e.rep);
     h += "</div>";
     if (e.p) h += '<div class="sig">' + esc(k) + "(" + params(e.p) + ')</div><div class="plain"><div><b>Handlers receive</b><ul>' + plainParams(e.p) + "</ul></div></div>";
     else if (e.src === "client-docs") h += '<div class="sig">' + esc(k) + "()</div>";
@@ -540,7 +548,7 @@
           if (label === "getters") return base && a !== b && b !== "skipped";
           return b !== "skipped" && (b === "secret" || b === "partly secret" || b === "error" || b === "refused") && a !== b;
         }).sort(sortStr);
-        h += "<details" + (changed.length ? " open" : "") + "><summary><b>" + esc(label) + "</b>" + (r.token ? " <code>" + esc(r.token) + "</code>" : "") + " · " + ks.length + " calls · " +
+        h += "<details" + (changed.length ? " open" : "") + "><summary><b>" + esc(label) + "</b>" + (r.by === "reported" ? ' <span class="pill s-reported">◔ from contributors</span>' : "") + (r.token ? " <code>" + esc(r.token) + "</code>" : "") + " · " + ks.length + " calls · " +
           (r.done ? "done" : "partial: " + esc(r.partial || "")) + " · <b>" + changed.length + "</b> differ from the baseline</summary>";
         if (changed.length) {
           h += '<div class="tablewrap"><table><tr><th>Function</th><th>Baseline (player, open world)</th><th>Here</th></tr>' + changed.map(function (k) {

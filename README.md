@@ -1,22 +1,62 @@
 # ForeverAPI
 
-Docs for the WoW Forever add-on API (product `wowf`, interface 16001) as this client really has it. The rule:
-**nothing is documented as fact unless the game confirmed it.** Everything else is a lead and says so.
+A reference for the **WoW Forever add-on API** (product `wowf`, interface 16001) as the client really has it, for
+add-on developers. The rule: **nothing is documented as fact unless the game confirmed it.** Everything else is a
+lead and says so.
 
-Made for Maro's add-ons; the suite (`G:\Projects\pfQuest\pfQuest-Forever`) is the first user of these docs.
-All Rights Reserved.
+- **Read it:** https://zmarotrix.github.io/ForeverAPI/ (search with `/`). Every function, event, enum, structure and
+  widget method; what's secret, protected or forbidden; what classic globals moved where; quirks testers reported.
+- **Code against it in VS Code:** the `ForeverAPI-LuaLS` zip on the
+  [releases page](https://github.com/zmarotrix/ForeverAPI/releases) (typed definitions with the same notes).
+- **Port classic code:** [docs/compat.json](docs/compat.json) maps each classic global to its Forever replacement.
+
+By Maro. All Rights Reserved.
+
+## How to help
+
+The reference grows from probe runs in real games: dungeons, raids, boss fights, PvP, classes and situations one
+person can't cover alone. If you play Forever, you can add yours.
+
+1. Download **ForeverAPI Probe** from the [releases page](https://github.com/zmarotrix/ForeverAPI/releases) and
+   unzip it into `_forever_/Interface/AddOns/`. Restart the game.
+2. Type `/fapi` to see the modules, and `/fapi on all` (or pick some), then `/reload`. Nothing records until you
+   do this.
+3. Play normally. Dungeons, raids, boss fights and PvP add the most.
+4. Type `/fapi export`, copy the box (Ctrl+C), and
+   [open an "API data" issue](https://github.com/zmarotrix/ForeverAPI/issues/new?template=api-data.yml). Paste it
+   there, or save it to a `.txt` file and drag that in.
+
+**What it records:** names, types, "secret or not", error text and the order events fire in. **Never** a value, a
+chat line, a character's or player's name, or a setting's value. It only calls getters, never anything that acts.
+The export header holds the client build, the probe version and a random ID made once per account (so two exports
+from you count once).
+
+**What happens to it:** your data shows on the reference as **reported** (with a count) until Maro's own run, or a
+second independent contributor, confirms it. One person's file never turns anything into verified. Files from
+another client build, or naming functions and events this client doesn't have, are turned away.
+
+The modules:
+
+| Module | Records |
+|---|---|
+| `probe` | once per client build: every global, namespace member, enum, widget method and event name; getters out of and in combat; a live count of every event and its argument types |
+| `watch` | getters again in each situation (dungeon, raid, boss fight, PvP) and on each kind of unit |
+| `timeline` | which events fire, in what order, around login, zoning, combat, loot, vendors, flights... |
+| `widgets` | which widget setters and Lua operations accept a secret value (a few seconds, once per build) |
+| `checks` | behaviour testers reported: events firing twice, stale zone text, the combat feed, secret cases. `/fapi checks chat` is an opt-in test that sends "." in /say, /yell and /emote |
 
 ## Where the facts come from
 
 | Source | What it gives | Trusted? |
 |---|---|---|
-| **ApiProbe** (in game) | every global, `C_*` namespace member, `Enum`/`Constants` value, widget method and script handler; which event names `RegisterEvent` accepts; events seen firing and their argument kinds; CVars with help and defaults; what each getter returns out of combat and in combat (types and secret-ness only) | yes: this is what "verified" means |
+| **ForeverAPI Probe** (in game, Maro's runs) | every global, `C_*` namespace member, `Enum`/`Constants` value, widget method and script handler; which event names `RegisterEvent` accepts; events seen firing and their argument kinds; CVars with help and defaults; what each getter returns out of combat and in combat (types and secret-ness only) | yes: this is what "verified" means |
 | **Client docs** | `Blizzard_APIDocumentationGenerated` from the installed client (642 files): signatures, descriptions, restriction and secret flags | lead: shown with signatures, marked unverified until the dump confirms |
 | **Client UI code** | `Interface/ui-code-list.txt`: event names Blizzard's own UI registers, functions it calls and defines | lead: names to check in game; also separates Blizzard's Lua helpers from client API |
+| **Contributors** | other developers' `/fapi export` files (`apidoc.py contrib`) | reported, with a count; verified once two independent accounts agree |
 | **Web** | anything you drop in `sources/web/` | lead only, never verified by itself |
 
-Client files are read through the suite's read-only CASC reader (`pfQuest-Forever/tools/oracle_maps/casc.py`).
-Nothing here downloads anything.
+Client files are read through a read-only CASC reader from Maro's add-on suite (not in this repo), so `extract`
+runs on Maro's machine; everything else runs anywhere with Python 3.
 
 Statuses in the docs: ✅ verified · 🆕 in game, not in Blizzard's docs (Forever-only or legacy) · ⛔ in Blizzard's
 docs, not in game · ❔ unverified. Restriction and secret flags quoted from Blizzard's docs stay marked "not checked in
@@ -25,13 +65,10 @@ game"; [docs/restrictions.md](docs/restrictions.md) lists what the probe actuall
 ## Layout
 
 ```
-addon/ApiProbe/       the probe add-on (leads.lua is generated by `extract`)
-addon/ApiWatch/       background: getters in each situation (instance, combat, boss) and on each kind of unit
-addon/ApiTimeline/    background: event order around everyday moments
-addon/ApiWidgets/     background: which widget setters and Lua operations accept a secret (plan.lua generated)
-addon/ApiChecks/      background: targeted checks of behaviour testers reported (events firing twice, stale zone
-                      text, system messages without a chat event, the combat feed, three secret cases)
-tools/test_collectors.py  stub-client checks for the three background collectors
+addon/ForeverAPIProbe/  the add-on: core.lua (/fapi, module switches), export.lua (/fapi export), and one file
+                      per module: probe, watch, timeline, widgets, checks. leads.lua and plan.lua are generated
+tools/contrib.py      other people's exports: decode, check, file under contrib/<build>/, trust counts
+tools/test_collectors.py  stub-client checks for watch, timeline, widgets, export, contrib and trust
 tools/test_checks.py  stub-client checks for ApiChecks
 tools/relocated.py    the relocated-API table: classic globals Forever dropped or moved, and where they went
 tools/luals.py        the VS Code (LuaLS) definitions
@@ -67,7 +104,7 @@ same-named `C_` function (marked as a lead). Every old and new name is checked a
 classic names to look at comes from those sources plus what the classic add-ons on disk call:
 
 ```
-python tools/apidoc.py classic-scan                    # Questie and AtlasLoot in G:\Projects\pfQuest
+python tools/apidoc.py classic-scan                    # Maro's local copies of Questie and AtlasLoot
 python tools/apidoc.py classic-scan <folder> <folder>  # any other add-ons
 ```
 
@@ -76,32 +113,46 @@ ones: the page says so at the top.
 
 ## VS Code
 
-`build` also writes `luals/`: definitions for the Lua extension by sumneko (LuaLS). Every function, event, enum
+`build` also writes `luals/` (and `release` zips it as `ForeverAPI-LuaLS-<build>.zip`): definitions for the Lua
+extension by sumneko (LuaLS). Every function, event, enum
 and structure from Blizzard's docs plus what the game has undocumented, each with what the probes saw: verified,
 always secret, secret in combat or in a given situation, protected, forbidden. Classic names that are gone on
-Forever are declared deprecated (VS Code strikes them through) with where they went. To use it, copy
-`luals/.luarc.json` into your add-on's folder, or add the `luals/library` path to `Lua.workspace.library` in VS
-Code's settings. Lua 5.1.
+Forever are declared deprecated (VS Code strikes them through) with where they went. To use it, unzip
+`ForeverAPI-LuaLS` into your workspace and copy its `.luarc.json` to the workspace root, or add its `library` folder
+to `Lua.workspace.library` in VS Code's settings. Lua 5.1.
 
-## Use without Claude
+## Maintaining it (Maro)
 
 Two double-click files in this folder:
 
-- **update-docs.bat**: after you `/reload` or log out, reads what the API add-ons collected, rebuilds `docs/` and the
-  website, and opens it.
+- **update-docs.bat**: after you `/reload` or log out, imports what ForeverAPI Probe saved, rebuilds `docs/`, the
+  website and the VS Code definitions, commits, and pushes (GitHub Pages republishes the site).
 - **refresh-addons.bat**: after a client patch, or after the game crashed with an API add-on running. It re-reads
   Blizzard's docs and the crash logs (any call that crashed goes on the skip list) and copies fresh add-ons into
   the game. Restart the game afterwards.
 
-Both need Python 3 on PATH. Nothing else is needed for them (the stub tests need `lupa`).
+Both need Python 3 on PATH. Nothing else is needed for them (the stub tests need `lupa`, contributions in the
+compact format need `cbor2`).
+
+Contributions:
+
+```
+python tools/apidoc.py contrib --github --dry-run   # what it would do with the open "API data" issues
+python tools/apidoc.py contrib --github             # file them, thank each sender, close the issues
+python tools/apidoc.py contrib <file> --as <name>   # file one from a file (sent some other way)
+python tools/apidoc.py build                        # the site shows them as reported
+```
+
+Releasing the add-on: bump `## Version` in `addon/ForeverAPIProbe/ForeverAPIProbe.toc`, run
+`python tools/apidoc.py release`, and attach both zips in `dist/` to a GitHub release.
 
 ## Use
 
 ```
 python tools/apidoc.py extract    # after a client patch: re-read Blizzard's docs, regenerate leads.lua
-python tools/apidoc.py deploy     # copy the probe into _forever_/Interface/AddOns
+python tools/apidoc.py deploy     # copy ForeverAPI Probe into _forever_/Interface/AddOns (removes the old Api* add-ons)
 # in game: see CHECKLIST.md
-python tools/apidoc.py import     # read WTF/Account/*/SavedVariables/ApiProbe.lua into dumps/
+python tools/apidoc.py import     # read WTF/Account/*/SavedVariables/ForeverAPIProbe.lua into dumps/
 python tools/apidoc.py build      # write docs/
 python tools/apidoc.py diff       # compare the last two dumps -> docs/changes/
 python tools/apidoc.py diff A B   # compare any two dumps or client-doc extracts
@@ -114,7 +165,7 @@ CVars and call results.
 
 ## The probe
 
-`/apiprobe` shows status. `dump` re-runs the dump (it also runs by itself 5 seconds after login whenever the build,
+`/fapi probe` shows status. `dump` re-runs the dump (it also runs by itself 5 seconds after login whenever the build,
 probe version or leads change). `calls` calls every getter out of combat now and arms a second run for your next
 combat. `events on|off` toggles the live event counter (on by default). `reset` clears everything.
 

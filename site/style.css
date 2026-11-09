@@ -77,6 +77,7 @@ h3 { font-size: 16px; margin: 0; }
 .s-undocumented { color: var(--new); background: var(--new-bg); }
 .s-not-in-game { color: var(--bad); background: var(--bad-bg); }
 .s-unverified { color: var(--unk); background: var(--unk-bg); }
+.s-reported { color: var(--warn, #d9a441); background: var(--unk-bg); border: 1px dashed currentColor; }
 .p-secret { color: var(--secret); background: var(--secret-bg); }
 .p-warn { color: var(--warn); background: var(--warn-bg); }
 .p-bad { color: var(--bad); background: var(--bad-bg); }

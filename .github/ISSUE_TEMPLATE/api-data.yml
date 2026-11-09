@@ -1,0 +1,32 @@
+name: API data
+description: Share what ForeverAPI Probe recorded in your game (/fapi export).
+title: "API data"
+labels: ["api-data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping map the WoW Forever add-on API.
+
+        In game, type `/fapi export`, click the box, press **Ctrl+C**, and paste it below. If it's too long to paste,
+        save it as a `.txt` file and drag that file into the box. You can also drag in
+        `WTF/Account/<account>/SavedVariables/ForeverAPIProbe.lua` as it is.
+
+        The export holds names, types, "secret or not", error text and event order. It never holds a value, a chat
+        line or a character's name. What you send shows on the reference as **reported** until Maro's own run, or a
+        second contributor, confirms it.
+  - type: textarea
+    id: export
+    attributes:
+      label: Your export
+      description: "The text that starts with FAPI:1:, or a .txt / ForeverAPIProbe.lua file dragged in."
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything worth knowing (optional)
+      description: Where you played (dungeons, raids, PvP), anything that looked odd.
+    validations:
+      required: false

@@ -1470,6 +1470,7 @@
 }
 },
 "client_version": "1.60.1.70862",
+"contributors": [],
 "cvars": {
 "AIBrain": {
 "category": 5,
@@ -426654,6 +426655,7 @@ false,
 ]
 ]
 ],
+"reported_events": {},
 "secret_tests": {
 "build": "1.60.1.70862",
 "plan": "1.60.1.70862",
@@ -568046,11 +568048,13 @@ false
 "build": "1.60.1.70862",
 "leads": "1.60.1.70862",
 "probe": "0.1.0",
+"reporters": [],
 "situations": {
 "none/combat": {
 "runs": {
 "nameplate: enemy npc": {
 "at": 1794106449,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -569025,6 +569029,7 @@ false
 },
 "nameplate: enemy player": {
 "at": 1794106442,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -570002,6 +570007,7 @@ false
 },
 "nameplate: friendly player": {
 "at": 1794120101,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -570995,6 +571001,7 @@ false
 },
 "party": {
 "at": 1794106441,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -571967,6 +571974,7 @@ false
 },
 "player": {
 "at": 1794106438,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -572944,6 +572952,7 @@ false
 },
 "target: enemy npc": {
 "at": 1794107425,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -573918,6 +573927,7 @@ false
 },
 "target: enemy player": {
 "at": 1794106439,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -574895,6 +574905,7 @@ false
 },
 "target: friendly npc": {
 "at": 1794120127,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -575869,6 +575880,7 @@ false
 },
 "target: friendly player": {
 "at": 1794109467,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -576848,6 +576860,7 @@ false
 },
 "targettarget: enemy npc": {
 "at": 1794109469,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -577819,6 +577832,7 @@ false
 },
 "targettarget: enemy player": {
 "at": 1794182974,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -578796,6 +578810,7 @@ false
 },
 "targettarget: friendly npc": {
 "at": 1794119847,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -579770,6 +579785,7 @@ false
 },
 "targettarget: friendly player": {
 "at": 1794106440,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -580751,6 +580767,7 @@ false
 "runs": {
 "focus: friendly player": {
 "at": 1794111249,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -581733,6 +581750,7 @@ false
 },
 "nameplate: enemy npc": {
 "at": 1794106335,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -582707,6 +582725,7 @@ false
 },
 "nameplate: enemy player": {
 "at": 1794106428,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -583687,6 +583706,7 @@ false
 },
 "nameplate: friendly player": {
 "at": 1794110370,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -584667,6 +584687,7 @@ false
 },
 "party": {
 "at": 1794106318,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -585647,6 +585668,7 @@ false
 },
 "player": {
 "at": 1794106316,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -586627,6 +586649,7 @@ false
 },
 "target: enemy npc": {
 "at": 1794106475,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -587601,6 +587624,7 @@ false
 },
 "target: enemy player": {
 "at": 1794106432,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -588581,6 +588605,7 @@ false
 },
 "target: friendly npc": {
 "at": 1794106606,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -589555,6 +589580,7 @@ false
 },
 "target: friendly player": {
 "at": 1794106802,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -590535,6 +590561,7 @@ false
 },
 "targettarget: enemy npc": {
 "at": 1794107405,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -591512,6 +591539,7 @@ false
 },
 "targettarget: enemy player": {
 "at": 1794113606,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -592492,6 +592520,7 @@ false
 },
 "targettarget: friendly npc": {
 "at": 1794107759,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -593466,6 +593495,7 @@ false
 },
 "targettarget: friendly player": {
 "at": 1794106627,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -594450,6 +594480,7 @@ false
 "runs": {
 "getters": {
 "at": 1794122881,
+"by": "maro",
 "done": true,
 "results": {
 "AreClassRolesSoftSuggestions": {
@@ -605674,6 +605705,7 @@ false
 },
 "nameplate: enemy npc": {
 "at": 1794122888,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -606648,6 +606680,7 @@ false
 },
 "party": {
 "at": 1794122887,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -607642,6 +607675,7 @@ false
 },
 "player": {
 "at": 1794122884,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -608620,6 +608654,7 @@ false
 },
 "target: enemy npc": {
 "at": 1794122885,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -609592,6 +609627,7 @@ false
 },
 "target: enemy player": {
 "at": 1794189850,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -610572,6 +610608,7 @@ false
 },
 "target: friendly player": {
 "at": 1794125470,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -611552,6 +611589,7 @@ false
 },
 "targettarget: enemy npc": {
 "at": 1794189277,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -612538,6 +612576,7 @@ false
 },
 "targettarget: enemy player": {
 "at": 1794189848,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -613518,6 +613557,7 @@ false
 },
 "targettarget: friendly npc": {
 "at": 1794124406,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -614493,6 +614533,7 @@ false
 },
 "targettarget: friendly player": {
 "at": 1794122886,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -615475,6 +615516,7 @@ false
 "runs": {
 "getters": {
 "at": 1794122785,
+"by": "maro",
 "done": true,
 "results": {
 "AreClassRolesSoftSuggestions": {
@@ -626696,6 +626738,7 @@ false
 },
 "nameplate: enemy npc": {
 "at": 1794122793,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -627668,6 +627711,7 @@ false
 },
 "nameplate: friendly player": {
 "at": 1794178225,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -628648,6 +628692,7 @@ false
 },
 "party": {
 "at": 1794122792,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -629626,6 +629671,7 @@ false
 },
 "player": {
 "at": 1794122789,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -630604,6 +630650,7 @@ false
 },
 "target: enemy npc": {
 "at": 1794122790,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -631576,6 +631623,7 @@ false
 },
 "target: friendly npc": {
 "at": 1794123010,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -632548,6 +632596,7 @@ false
 },
 "target: friendly player": {
 "at": 1794123505,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -633528,6 +633577,7 @@ false
 },
 "targettarget: enemy npc": {
 "at": 1794124729,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -634508,6 +634558,7 @@ false
 },
 "targettarget: friendly npc": {
 "at": 1794123635,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -635483,6 +635534,7 @@ false
 },
 "targettarget: friendly player": {
 "at": 1794122791,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -636465,6 +636517,7 @@ false
 "runs": {
 "getters": {
 "at": 1794122340,
+"by": "maro",
 "done": true,
 "results": {
 "AreClassRolesSoftSuggestions": {
@@ -647686,6 +647739,7 @@ false
 },
 "nameplate: enemy npc": {
 "at": 1794122654,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -648661,6 +648715,7 @@ false
 },
 "nameplate: friendly player": {
 "at": 1794122754,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -649642,6 +649697,7 @@ false
 },
 "party": {
 "at": 1794122345,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -650619,6 +650675,7 @@ false
 },
 "player": {
 "at": 1794122344,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -651600,6 +651657,7 @@ false
 },
 "target: enemy npc": {
 "at": 1794122783,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -652575,6 +652633,7 @@ false
 },
 "target: friendly npc": {
 "at": 1794123023,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -653550,6 +653609,7 @@ false
 },
 "target: friendly player": {
 "at": 1794122411,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -654531,6 +654591,7 @@ false
 },
 "targettarget: enemy npc": {
 "at": 1794122821,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -655506,6 +655567,7 @@ false
 },
 "targettarget: friendly npc": {
 "at": 1794127009,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
@@ -656484,6 +656546,7 @@ false
 },
 "targettarget: friendly player": {
 "at": 1794122669,
+"by": "maro",
 "done": true,
 "results": {
 "C_Commentator.GetAdditionalCameraWeightByToken": {
