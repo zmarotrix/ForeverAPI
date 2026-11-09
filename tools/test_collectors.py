@@ -26,6 +26,7 @@ for _, e in ipairs({ "ENCOUNTER_START", "ENCOUNTER_END", "PLAYER_ENTERING_WORLD"
   "PLAYER_REGEN_ENABLED", "GROUP_ROSTER_UPDATE", "CHALLENGE_MODE_START", "CHALLENGE_MODE_COMPLETED",
   "PVP_MATCH_ACTIVE", "PVP_MATCH_COMPLETE", "UNIT_HEALTH" }) do VALID[e] = true end
 function IsInInstance() return INSTANCE ~= "none", INSTANCE end
+function IsInGroup() return INGROUP == true end
 TARGET = true
 function UnitExists(u) return u == "player" or (u == "target" and TARGET) or u == "nameplate3" end
 function UnitIsPlayer(u) return u == "player" end

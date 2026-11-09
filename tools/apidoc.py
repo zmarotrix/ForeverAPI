@@ -251,8 +251,60 @@ COLLECTOR_SV = {"ApiWatch": ("ApiWatchDB", "watch"), "ApiTimeline": ("ApiTimelin
                 "ApiWidgets": ("ApiWidgetsDB", "widgets"), "ApiChecks": ("ApiChecksDB", "checks")}
 
 
+# players' API watch data, passed on by the Norgannon Collector's import (one file per player, ApiWatchDB format)
+CONTRIB_WATCH = os.path.join(ROOT, "contrib", "watch")
+
+
+def _watch_results(db):
+    for sit in (db.get("situations") or {}).values():
+        for run in (sit.get("runs") or {}).values():
+            run["results"] = {k: _call_record(r) for k, r in (run.get("results") or {}).items()}
+
+
+def import_contrib():
+    """contrib/watch/<player>.lua -> dumps/<build>/watch_player-<player>.json.gz, replaced when the file changes."""
+    for path in sorted(glob.glob(os.path.join(CONTRIB_WATCH, "*.lua"))):
+        with open(path, encoding="utf-8", errors="replace") as f:
+            db = parse_assignments(f.read()).get("ApiWatchDB") or {}
+        if not db.get("build") or not db.get("situations"):
+            continue
+        _watch_results(db)
+        name = os.path.splitext(os.path.basename(path))[0]
+        out = os.path.join(DUMPS, db["build"], "watch_player-%s.json.gz" % name)
+        if os.path.exists(out) and os.path.getmtime(out) >= os.path.getmtime(path):
+            continue
+        _save_json(out, normalize(db))
+        print("imported player watch %s -> %s" % (name, _rel(out)))
+
+
+def merged_watch():
+    """Every watch dump of the newest watch build, players' included, as one: each situation and run kept once
+    (a finished run beats a partial one), restriction switches from all of them."""
+    newest = latest_dump("watch")
+    if not newest:
+        return None
+    build_dir = os.path.dirname(newest)
+    files = sorted(glob.glob(os.path.join(build_dir, "watch_*.json.gz")), key=os.path.getmtime)
+    merged = None
+    for path in files:
+        db = _load_json(path)
+        if merged is None:
+            merged = dict(db, situations={}, transitions=[], sources=0)
+        merged["sources"] += 1
+        for sit, s in (db.get("situations") or {}).items():
+            target = merged["situations"].setdefault(sit, {"runs": {}})
+            for label, run in (s.get("runs") or {}).items():
+                have = target["runs"].get(label)
+                if have is None or (run.get("done") and not have.get("done")):
+                    target["runs"][label] = run
+        merged["transitions"] += list(db.get("transitions") or [])
+    merged["transitions"] = sorted(merged["transitions"], key=lambda t: t.get("at") or 0)[-2000:]
+    return merged
+
+
 def import_collectors():
     """Each background collector's SavedVariables -> dumps/<build>/<prefix>_<time>.json.gz (when it has data)."""
+    import_contrib()
     for addon, (var, prefix) in COLLECTOR_SV.items():
         files = sorted(glob.glob(os.path.join(GAME, "WTF", "Account", "*", "SavedVariables", addon + ".lua")),
                        key=os.path.getmtime, reverse=True)
@@ -271,9 +323,7 @@ def import_collectors():
                     trace["events"] = [[e.get(1), e.get(2), e.get(3), e.get(4), bool(e.get("trigger"))] if isinstance(e, dict)
                                        else list(e) + [None] * (4 - len(e)) + [False] for e in evs]
         if prefix == "watch":
-            for sit in (db.get("situations") or {}).values():
-                for run in (sit.get("runs") or {}).values():
-                    run["results"] = {k: _call_record(r) for k, r in (run.get("results") or {}).items()}
+            _watch_results(db)
         stamp = datetime.datetime.fromtimestamp(os.path.getmtime(files[0])).strftime("%Y%m%d-%H%M%S")
         out = os.path.join(DUMPS, db["build"], "%s_%s.json.gz" % (prefix, stamp))
         _save_json(out, normalize(db))
@@ -317,9 +367,10 @@ def cmd_build():
         for key, item in (w.get("items") or {}).items():
             web[key] = dict(item, site=w.get("site"), url=item.get("url") or w.get("url"))
     m = model.build(client, dump, web, framexml)
-    for prefix, field in (("watch", "watch"), ("timeline", "timeline"), ("widgets", "secret_tests"), ("checks", "checks")):
+    for prefix, field in (("timeline", "timeline"), ("widgets", "secret_tests"), ("checks", "checks")):
         p = latest_dump(prefix)
         m[field] = _load_json(p) if p else None
+    m["watch"] = merged_watch()   # yours and every player's who shares through the Collector
     dep_path = os.path.join(CLIENT_DIR, client["version"] + ".deprecated.json.gz")
     dep = _load_json(dep_path) if os.path.exists(dep_path) else {}
     usage = relocated.load(os.path.join(ROOT, "sources", "classic-usage.json"))

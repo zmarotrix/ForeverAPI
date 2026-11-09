@@ -634706,9 +634706,28 @@ false
 }
 },
 "skip": [],
+"sources": 3,
 "transitions": [
 {
 "at": 1794106318,
+"on": "none",
+"reason": "ADDON_LOADED",
+"situation": "none/idle"
+},
+{
+"at": 1794106318,
+"on": "none",
+"reason": "ADDON_LOADED",
+"situation": "none/idle"
+},
+{
+"at": 1794106318,
+"on": "none",
+"reason": "ADDON_LOADED",
+"situation": "none/idle"
+},
+{
+"at": 1794106401,
 "on": "none",
 "reason": "ADDON_LOADED",
 "situation": "none/idle"
@@ -634726,7 +634745,25 @@ false
 "situation": "none/idle"
 },
 {
+"at": 1794110093,
+"on": "none",
+"reason": "ADDON_LOADED",
+"situation": "none/idle"
+},
+{
 "at": 1794110373,
+"on": "none",
+"reason": "ADDON_LOADED",
+"situation": "none/idle"
+},
+{
+"at": 1794110373,
+"on": "none",
+"reason": "ADDON_LOADED",
+"situation": "none/idle"
+},
+{
+"at": 1794110568,
 "on": "none",
 "reason": "ADDON_LOADED",
 "situation": "none/idle"
@@ -634744,7 +634781,25 @@ false
 "situation": "none/idle"
 },
 {
+"at": 1794111113,
+"on": "none",
+"reason": "ADDON_LOADED",
+"situation": "none/idle"
+},
+{
 "at": 1794111375,
+"on": "none",
+"reason": "ADDON_LOADED",
+"situation": "none/idle"
+},
+{
+"at": 1794111375,
+"on": "none",
+"reason": "ADDON_LOADED",
+"situation": "none/idle"
+},
+{
+"at": 1794112164,
 "on": "none",
 "reason": "ADDON_LOADED",
 "situation": "none/idle"
@@ -634762,7 +634817,25 @@ false
 "situation": "none/idle"
 },
 {
+"at": 1794112276,
+"on": "none",
+"reason": "ADDON_LOADED",
+"situation": "none/idle"
+},
+{
 "at": 1794112563,
+"on": "none",
+"reason": "ADDON_LOADED",
+"situation": "none/idle"
+},
+{
+"at": 1794112563,
+"on": "none",
+"reason": "ADDON_LOADED",
+"situation": "none/idle"
+},
+{
+"at": 1794112933,
 "on": "none",
 "reason": "ADDON_LOADED",
 "situation": "none/idle"
@@ -634780,10 +634853,28 @@ false
 "situation": "none/idle"
 },
 {
+"at": 1794113881,
+"on": "none",
+"reason": "ADDON_LOADED",
+"situation": "none/idle"
+},
+{
 "at": 1794115099,
 "on": "none",
 "reason": "ADDON_LOADED",
 "situation": "none/idle"
+},
+{
+"at": 1794115099,
+"on": "none",
+"reason": "ADDON_LOADED",
+"situation": "none/idle"
+},
+{
+"at": 1794115707,
+"on": "Combat",
+"reason": "ZONE_CHANGED_NEW_AREA",
+"situation": "none/combat"
 },
 {
 "at": 1794115707,
@@ -634798,6 +634889,18 @@ false
 "situation": "none/idle"
 },
 {
+"at": 1794115708,
+"on": "none",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "none/idle"
+},
+{
+"at": 1794116797,
+"on": "Combat",
+"reason": "GROUP_ROSTER_UPDATE",
+"situation": "none/combat"
+},
+{
 "at": 1794116797,
 "on": "Combat",
 "reason": "GROUP_ROSTER_UPDATE",
@@ -634810,7 +634913,25 @@ false
 "situation": "none/idle"
 },
 {
+"at": 1794116840,
+"on": "none",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "none/idle"
+},
+{
 "at": 1794117008,
+"on": "none",
+"reason": "ADDON_LOADED",
+"situation": "none/idle"
+},
+{
+"at": 1794117008,
+"on": "none",
+"reason": "ADDON_LOADED",
+"situation": "none/idle"
+},
+{
+"at": 1794117124,
 "on": "none",
 "reason": "ADDON_LOADED",
 "situation": "none/idle"
@@ -634828,10 +634949,28 @@ false
 "situation": "none/idle"
 },
 {
+"at": 1794117260,
+"on": "none",
+"reason": "ADDON_LOADED",
+"situation": "none/idle"
+},
+{
 "at": 1794117396,
 "on": "Combat",
 "reason": "ADDON_LOADED",
 "situation": "none/combat"
+},
+{
+"at": 1794117396,
+"on": "Combat",
+"reason": "ADDON_LOADED",
+"situation": "none/combat"
+},
+{
+"at": 1794117456,
+"on": "none",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "none/idle"
 },
 {
 "at": 1794117456,
@@ -634846,6 +634985,18 @@ false
 "situation": "none/combat"
 },
 {
+"at": 1794117660,
+"on": "Combat",
+"reason": "GROUP_ROSTER_UPDATE",
+"situation": "none/combat"
+},
+{
+"at": 1794117673,
+"on": "none",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "none/idle"
+},
+{
 "at": 1794117673,
 "on": "none",
 "reason": "ADDON_RESTRICTION_STATE_CHANGED",
@@ -634858,9 +635009,27 @@ false
 "situation": "none/combat"
 },
 {
+"at": 1794117712,
+"on": "Combat",
+"reason": "GROUP_ROSTER_UPDATE",
+"situation": "none/combat"
+},
+{
 "at": 1794117795,
 "on": "none",
 "reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "none/idle"
+},
+{
+"at": 1794117795,
+"on": "none",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "none/idle"
+},
+{
+"at": 1794118233,
+"on": "none",
+"reason": "ADDON_LOADED",
 "situation": "none/idle"
 },
 {
@@ -634876,10 +635045,28 @@ false
 "situation": "none/combat"
 },
 {
+"at": 1794118451,
+"on": "Combat",
+"reason": "GROUP_ROSTER_UPDATE",
+"situation": "none/combat"
+},
+{
 "at": 1794118505,
 "on": "none",
 "reason": "ADDON_RESTRICTION_STATE_CHANGED",
 "situation": "none/idle"
+},
+{
+"at": 1794118505,
+"on": "none",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "none/idle"
+},
+{
+"at": 1794119723,
+"on": "Combat",
+"reason": "GROUP_ROSTER_UPDATE",
+"situation": "none/combat"
 },
 {
 "at": 1794119723,
@@ -634894,10 +635081,28 @@ false
 "situation": "none/idle"
 },
 {
+"at": 1794119763,
+"on": "none",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "none/idle"
+},
+{
 "at": 1794120230,
 "on": "Combat",
 "reason": "GROUP_ROSTER_UPDATE",
 "situation": "none/combat"
+},
+{
+"at": 1794120230,
+"on": "Combat",
+"reason": "GROUP_ROSTER_UPDATE",
+"situation": "none/combat"
+},
+{
+"at": 1794120259,
+"on": "none",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "none/idle"
 },
 {
 "at": 1794120259,
@@ -634912,10 +635117,28 @@ false
 "situation": "none/combat"
 },
 {
+"at": 1794120957,
+"on": "Combat",
+"reason": "GROUP_ROSTER_UPDATE",
+"situation": "none/combat"
+},
+{
 "at": 1794120974,
 "on": "none",
 "reason": "ADDON_RESTRICTION_STATE_CHANGED",
 "situation": "none/idle"
+},
+{
+"at": 1794120974,
+"on": "none",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "none/idle"
+},
+{
+"at": 1794121995,
+"on": "Combat",
+"reason": "ZONE_CHANGED_NEW_AREA",
+"situation": "none/combat"
 },
 {
 "at": 1794121995,
@@ -634930,10 +635153,28 @@ false
 "situation": "none/idle"
 },
 {
+"at": 1794122004,
+"on": "none",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "none/idle"
+},
+{
 "at": 1794122340,
 "on": "Map",
 "reason": "PLAYER_ENTERING_WORLD",
 "situation": "party/idle"
+},
+{
+"at": 1794122340,
+"on": "Map",
+"reason": "PLAYER_ENTERING_WORLD",
+"situation": "party/idle"
+},
+{
+"at": 1794122372,
+"on": "none",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "none/idle"
 },
 {
 "at": 1794122372,
@@ -634948,10 +635189,28 @@ false
 "situation": "party/idle"
 },
 {
+"at": 1794122401,
+"on": "Map",
+"reason": "PLAYER_ENTERING_WORLD",
+"situation": "party/idle"
+},
+{
 "at": 1794122434,
 "on": "none",
 "reason": "ADDON_RESTRICTION_STATE_CHANGED",
 "situation": "none/idle"
+},
+{
+"at": 1794122434,
+"on": "none",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "none/idle"
+},
+{
+"at": 1794122543,
+"on": "Map",
+"reason": "PLAYER_ENTERING_WORLD",
+"situation": "party/idle"
 },
 {
 "at": 1794122543,
@@ -634966,10 +635225,34 @@ false
 "situation": "none/idle"
 },
 {
+"at": 1794122620,
+"on": "none",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "none/idle"
+},
+{
 "at": 1794122650,
 "on": "Map",
 "reason": "PLAYER_ENTERING_WORLD",
 "situation": "party/idle"
+},
+{
+"at": 1794122650,
+"on": "Map",
+"reason": "PLAYER_ENTERING_WORLD",
+"situation": "party/idle"
+},
+{
+"at": 1794122880,
+"on": "Combat,Map",
+"reason": "ENCOUNTER_START",
+"situation": "party/boss"
+},
+{
+"at": 1794122880,
+"on": "Combat,Encounter,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
 },
 {
 "at": 1794122880,
@@ -634996,10 +635279,40 @@ false
 "situation": "party/boss"
 },
 {
+"at": 1794122944,
+"on": "Chat,Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794122944,
+"on": "Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
 "at": 1794122950,
 "on": "Map",
 "reason": "ADDON_RESTRICTION_STATE_CHANGED",
 "situation": "party/idle"
+},
+{
+"at": 1794122950,
+"on": "Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/idle"
+},
+{
+"at": 1794123322,
+"on": "Encounter,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794123322,
+"on": "Chat,Encounter,Map",
+"reason": "PLAYER_REGEN_DISABLED",
+"situation": "party/boss"
 },
 {
 "at": 1794123322,
@@ -635026,10 +635339,40 @@ false
 "situation": "party/boss"
 },
 {
+"at": 1794123367,
+"on": "Chat,Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794123367,
+"on": "Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
 "at": 1794123371,
 "on": "Map",
 "reason": "ADDON_RESTRICTION_STATE_CHANGED",
 "situation": "party/idle"
+},
+{
+"at": 1794123371,
+"on": "Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/idle"
+},
+{
+"at": 1794123734,
+"on": "Encounter,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794123734,
+"on": "Chat,Encounter,Map",
+"reason": "PLAYER_REGEN_DISABLED",
+"situation": "party/boss"
 },
 {
 "at": 1794123734,
@@ -635062,6 +635405,30 @@ false
 "situation": "party/combat"
 },
 {
+"at": 1794123774,
+"on": "Chat,Combat,Encounter,Map",
+"reason": "ENCOUNTER_END",
+"situation": "party/combat"
+},
+{
+"at": 1794123774,
+"on": "Chat,Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/combat"
+},
+{
+"at": 1794123774,
+"on": "Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/combat"
+},
+{
+"at": 1794123775,
+"on": "Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/idle"
+},
+{
 "at": 1794123775,
 "on": "Map",
 "reason": "ADDON_RESTRICTION_STATE_CHANGED",
@@ -635076,6 +635443,30 @@ false
 {
 "at": 1794124047,
 "on": "Combat,Encounter,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794124047,
+"on": "Combat,Map",
+"reason": "ENCOUNTER_START",
+"situation": "party/boss"
+},
+{
+"at": 1794124047,
+"on": "Combat,Encounter,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794124077,
+"on": "Chat,Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794124077,
+"on": "Combat,Map",
 "reason": "ADDON_RESTRICTION_STATE_CHANGED",
 "situation": "party/boss"
 },
@@ -635098,6 +635489,18 @@ false
 "situation": "party/idle"
 },
 {
+"at": 1794124078,
+"on": "Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/idle"
+},
+{
+"at": 1794124327,
+"on": "Combat,Map",
+"reason": "GROUP_ROSTER_UPDATE",
+"situation": "party/combat"
+},
+{
 "at": 1794124327,
 "on": "Combat,Map",
 "reason": "GROUP_ROSTER_UPDATE",
@@ -635108,6 +635511,24 @@ false
 "on": "Map",
 "reason": "ADDON_RESTRICTION_STATE_CHANGED",
 "situation": "party/idle"
+},
+{
+"at": 1794124328,
+"on": "Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/idle"
+},
+{
+"at": 1794124368,
+"on": "Encounter,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794124368,
+"on": "Chat,Encounter,Map",
+"reason": "PLAYER_REGEN_DISABLED",
+"situation": "party/boss"
 },
 {
 "at": 1794124368,
@@ -635134,6 +635555,24 @@ false
 "situation": "party/boss"
 },
 {
+"at": 1794124407,
+"on": "Chat,Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794124407,
+"on": "Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794124409,
+"on": "Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/idle"
+},
+{
 "at": 1794124409,
 "on": "Map",
 "reason": "ADDON_RESTRICTION_STATE_CHANGED",
@@ -635148,6 +635587,30 @@ false
 {
 "at": 1794124547,
 "on": "Combat,Encounter,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794124547,
+"on": "Combat,Map",
+"reason": "ENCOUNTER_START",
+"situation": "party/boss"
+},
+{
+"at": 1794124547,
+"on": "Combat,Encounter,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794124608,
+"on": "Chat,Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794124608,
+"on": "Combat,Map",
 "reason": "ADDON_RESTRICTION_STATE_CHANGED",
 "situation": "party/boss"
 },
@@ -635170,6 +635633,24 @@ false
 "situation": "party/idle"
 },
 {
+"at": 1794124609,
+"on": "Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/idle"
+},
+{
+"at": 1794124835,
+"on": "Combat,Map",
+"reason": "ENCOUNTER_START",
+"situation": "party/boss"
+},
+{
+"at": 1794124835,
+"on": "Combat,Encounter,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
 "at": 1794124835,
 "on": "Combat,Map",
 "reason": "ENCOUNTER_START",
@@ -635194,10 +635675,40 @@ false
 "situation": "party/boss"
 },
 {
+"at": 1794124878,
+"on": "Chat,Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794124878,
+"on": "Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
 "at": 1794124879,
 "on": "Map",
 "reason": "ADDON_RESTRICTION_STATE_CHANGED",
 "situation": "party/idle"
+},
+{
+"at": 1794124879,
+"on": "Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/idle"
+},
+{
+"at": 1794125470,
+"on": "Encounter,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794125470,
+"on": "Chat,Encounter,Map",
+"reason": "PLAYER_REGEN_DISABLED",
+"situation": "party/boss"
 },
 {
 "at": 1794125470,
@@ -635224,6 +635735,24 @@ false
 "situation": "party/boss"
 },
 {
+"at": 1794125524,
+"on": "Chat,Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794125524,
+"on": "Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794125525,
+"on": "Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/idle"
+},
+{
 "at": 1794125525,
 "on": "Map",
 "reason": "ADDON_RESTRICTION_STATE_CHANGED",
@@ -635233,6 +635762,18 @@ false
 "at": 1794125670,
 "on": "none",
 "reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "none/idle"
+},
+{
+"at": 1794125670,
+"on": "none",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "none/idle"
+},
+{
+"at": 1794126033,
+"on": "none",
+"reason": "ADDON_LOADED",
 "situation": "none/idle"
 },
 {
@@ -635248,10 +635789,28 @@ false
 "situation": "party/idle"
 },
 {
+"at": 1794126298,
+"on": "Map",
+"reason": "PLAYER_ENTERING_WORLD",
+"situation": "party/idle"
+},
+{
 "at": 1794126311,
 "on": "none",
 "reason": "ADDON_RESTRICTION_STATE_CHANGED",
 "situation": "none/idle"
+},
+{
+"at": 1794126311,
+"on": "none",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "none/idle"
+},
+{
+"at": 1794126327,
+"on": "Map",
+"reason": "PLAYER_ENTERING_WORLD",
+"situation": "party/idle"
 },
 {
 "at": 1794126327,
@@ -635266,6 +635825,18 @@ false
 "situation": "none/idle"
 },
 {
+"at": 1794126472,
+"on": "none",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "none/idle"
+},
+{
+"at": 1794126604,
+"on": "none",
+"reason": "ADDON_LOADED",
+"situation": "none/idle"
+},
+{
 "at": 1794126604,
 "on": "none",
 "reason": "ADDON_LOADED",
@@ -635276,6 +635847,24 @@ false
 "on": "Map",
 "reason": "PLAYER_ENTERING_WORLD",
 "situation": "party/idle"
+},
+{
+"at": 1794126664,
+"on": "Map",
+"reason": "PLAYER_ENTERING_WORLD",
+"situation": "party/idle"
+},
+{
+"at": 1794126917,
+"on": "Combat,Map",
+"reason": "ENCOUNTER_START",
+"situation": "party/boss"
+},
+{
+"at": 1794126917,
+"on": "Combat,Encounter,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
 },
 {
 "at": 1794126917,
@@ -635300,6 +635889,24 @@ false
 "on": "Combat,Map",
 "reason": "ADDON_RESTRICTION_STATE_CHANGED",
 "situation": "party/boss"
+},
+{
+"at": 1794126955,
+"on": "Chat,Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794126955,
+"on": "Combat,Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/boss"
+},
+{
+"at": 1794126973,
+"on": "Map",
+"reason": "ADDON_RESTRICTION_STATE_CHANGED",
+"situation": "party/idle"
 },
 {
 "at": 1794126973,
