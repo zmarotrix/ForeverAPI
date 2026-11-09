@@ -10,7 +10,7 @@ lead and says so.
   [releases page](https://github.com/zmarotrix/ForeverAPI/releases) (typed definitions with the same notes).
 - **Port classic code:** [docs/compat.json](docs/compat.json) maps each classic global to its Forever replacement.
 
-By Maro. All Rights Reserved.
+By Maro. All Rights Reserved. Built with AI assistance (Anthropic's Claude), directed by Maro.
 
 ## How to help
 

@@ -64,7 +64,10 @@ code { background: var(--code-bg); padding: 1px 5px; border-radius: 4px; }
 .syslist a.on { color: var(--accent); font-weight: 600; }
 .syslist small { color: var(--muted); }
 
+.col { flex: 1; min-width: 0; display: flex; flex-direction: column; }
 .main { flex: 1; min-width: 0; padding: 26px 34px 80px; max-width: 1180px; }
+.foot { padding: 14px 34px 28px; max-width: 1180px; font-size: 12.5px; color: var(--muted); border-top: 1px solid var(--line, rgba(127,127,127,.2)); }
+@media (max-width: 860px) { .foot { padding: 14px 16px 24px; } }
 h1 { font-size: 26px; margin: 0 0 6px; }
 h1 code { font-size: .8em; }
 h2 { font-size: 19px; margin: 34px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
