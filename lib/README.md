@@ -7,10 +7,13 @@ A library for WoW Forever add-ons. It handles what the Forever client doesn't do
 - combat lockdown (`LF:AfterCombat`, `LF:Restricted`)
 - first and last names (`Names`)
 - saved variables with upgrades (`LF:SavedVars`)
+- add-on messages that survive chat lockdown, compressed, with whispers to full names (`Net`)
+- chat lines that arrive, or a ready chat box when the game won't send them (`LF:Say`)
 
-It's a LibStub library: copy `LibForever-1.0/` into your add-on's `libs/`, and load `LibStub` and then the files in
-`LibForever-1.0.xml`'s order. If several add-ons ship copies, the newest one runs and takes over the older one's
-event frame and queues.
+It's a LibStub library: copy `LibForever-1.0/` into your add-on's `libs/`, and load `LibStub`, `CallbackHandler-1.0`
+and `AceComm-3.0` (both here, with ChatThrottleLib), then the files in
+`LibForever-1.0.xml`'s order. If several add-ons ship copies, the newest one runs and takes over the older one's event
+frame and queues.
 
 ```lua
 local LF = LibStub("LibForever-1.0")
@@ -23,9 +26,9 @@ end)
 Every function has LuaLS annotations. NorgannonDB Core embeds the library and uses its own names for it
 (`Core:On`, `Core.Compat`, ...).
 
-**Status: not released.** This is phase 1 of `docs/forever-toolkit-plan.md` in Maro's suite. The licence, the
+**Status: not released.** This is phases 1 and 2 of `docs/forever-toolkit-plan.md` in Maro's suite. The licence, the
 release zip and the reference pages come in phase 4. Until then, the code is All Rights Reserved like the rest of
-this repo.
+this repo. The bundled libraries keep their own licences: see `THIRD-PARTY-NOTICES.md`.
 
 Tests: `python tools/test_libforever.py` (stub client, needs `lupa`). `python tools/compat_gen.py` regenerates
 `CompatList.lua` from `docs/compat.json`.

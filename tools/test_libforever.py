@@ -1,5 +1,5 @@
 """Stub-client checks for LibForever-1.0 on its own (no NorgannonDB Core): loading, two copies, events, combat queue,
-secrets, Compat, Names and SavedVars.
+secrets, Compat, Names, Net, Say and SavedVars.
 
     python tools/test_libforever.py
 
@@ -63,6 +63,39 @@ UnitExists = function(u) return u == "party1" end
 UnitGUID = function() return "Player-1-0001" end
 GetUnitName = function(u) if u == "player" then return "Tyrant Kuma" end return "Elowen" end
 UnitName = function() return "Elowen" end
+function GetTime() return T.now or 0 end
+function IsInGuild() return true end
+function IsInInstance() return T.instance ~= nil, T.instance or "none" end
+Enum = { SendAddonMessageResult = { Success = 0, AddonMessageThrottle = 3, NotInGuild = 5 } }
+C_ChatInfo = {
+  InChatMessagingLockdown = function() return T.lockdown == true end,
+  SendAddonMessage = function() return T.addonResult or 0 end,
+  SendChatMessage = function(text, kind, _, target)
+    if T.chatRefused then error("restricted") end
+    table.insert(T.said, { text = text, kind = kind, target = target })
+  end,
+}
+T.said, T.wire, T.tickers = {}, {}, {}
+C_Timer.NewTicker = function(_, fn) local t = { fn = fn } table.insert(T.tickers, t) return t end
+function ChatFrame_OpenChat(text) T.box = text end
+-- compression that's visibly shorter, and reversible: "<n>x<char>" for a run of one character
+C_EncodingUtil = {
+  CompressString = function(s) local c = s:sub(1, 1) if s == string.rep(c, #s) then return #s .. "x" .. c end return s end,
+  DecompressString = function(z) local n, c = z:match("^(%d+)x(.)$") if not n then error("bad data") end return string.rep(c, n) end,
+  EncodeBase64 = function(s) return s end,
+  DecodeBase64 = function(s) return s end,
+}
+"""
+
+# AceComm stand-in: records what goes out; the tests hand messages to Receive themselves
+ACECOMM = r"""
+local AceComm = LibStub:NewLibrary("AceComm-3.0", 1)
+function AceComm:Embed(t)
+  function t:RegisterComm(prefix, method) self._registered = prefix end
+  function t:SendCommMessage(prefix, wire, distribution, target, priority)
+    table.insert(T.wire, { prefix = prefix, wire = wire, distribution = distribution, target = target, priority = priority })
+  end
+end
 """
 
 
@@ -93,6 +126,7 @@ def main():
         failed += 0 if ok else 1
 
     load(LIBSTUB)
+    lua.execute(ACECOMM)
     load_copy(minor)
     LF = lua.eval('(LibStub("LibForever-1.0"))')
     check("loads, and says its version", LF.MINOR == minor and LF._loading is None)
@@ -165,6 +199,80 @@ def main():
     lua.execute("LF:SetDebugSink(nil); LF:Debug('x', '%d', 1)")
     check("Debug with no sink does nothing", lua.eval("#lines == 1"))
 
+    # Net: framing
+    check("short text is framed T", lua.eval('LF.Net.Pack("hello") == "Thello"'))
+    check("long text that compresses is framed Z, and unpacks",
+          lua.eval('LF.Net.Pack(string.rep("a", 500)) == "Z500xa" and LF.Net.Unpack("Z500xa") == string.rep("a", 500)'))
+    check("long text that doesn't compress stays T", lua.eval('LF.Net.Pack(string.rep("ab", 100)):sub(1, 1) == "T"'))
+    check("bad compression, an unknown frame, too long or secret: nil",
+          lua.eval('LF.Net.Unpack("Zjunk") == nil and LF.Net.Unpack("Xabc") == nil '
+                   'and LF.Net.Unpack("T" .. string.rep("a", 50), 10) == nil and LF.Net.Unpack(S) == nil'))
+
+    # Net: a channel, the lockdown queue, whispers, refusals
+    lua.execute("""
+      inbox, drained = {}, 0
+      ch = LF.Net:Channel("Test", { onMessage = function(text, first, sender, d) table.insert(inbox, { text, first, sender, d }) end,
+        onDrain = function() drained = drained + 1 end })
+    """)
+    check("one channel per prefix, registered with AceComm", lua.eval('LF.Net:Channel("Test") == ch and ch._registered == "Test"'))
+    check("Send goes out at once",
+          lua.eval('ch:Send("hi", "GUILD") == true and T.wire[1].wire == "Thi" and T.wire[1].priority == "NORMAL"'))
+    lua.execute('T.lockdown = true; T.wire = {}')
+    check("in lockdown it waits", lua.eval('ch:Send("held", "GUILD") == false and ch:QueueSize() == 1 and #T.wire == 0')
+          and lua.eval('ch:Blocked() == "lockdown"'))
+    check("a volatile message is dropped instead",
+          lua.eval('ch:Send("stale", "GUILD", nil, nil, true) == false and ch:QueueSize() == 1'))
+    lua.execute('T.Fire("PLAYER_LOGIN")')
+    check("one ticker starts at login", lua.eval("#T.tickers == 1"))
+    lua.execute("T.tickers[1].fn()")
+    check("the tick holds it while lockdown lasts", lua.eval("#T.wire == 0"))
+    lua.execute("T.lockdown = false; T.tickers[1].fn()")
+    check("and sends it, then calls onDrain, when lockdown ends",
+          lua.eval('#T.wire == 1 and T.wire[1].wire == "Theld" and ch:QueueSize() == 0 and drained == 1'))
+    lua.execute('ch:Receive("Test", "Tping", "GUILD", "Brin Ashvale")')
+    check("a message arrives with the first and full name",
+          lua.eval('inbox[1][1] == "ping" and inbox[1][2] == "Brin" and inbox[1][3] == "Brin Ashvale" and inbox[1][4] == "GUILD"'))
+    lua.execute('T.wire = {}; ch:Send("psst", "WHISPER", "Brin")')
+    check("a whisper to a first name goes to the full name", lua.eval('T.wire[1].target == "Brin Ashvale"'))
+    lua.execute("""
+      ch:Receive("Test", "Tmine", "GUILD", "Tyrant Kuma")
+      ch:Receive("Test", "Tsay", "SAY", "Brin Ashvale")
+      ch:Receive("Other", "Tx", "GUILD", "Brin Ashvale")
+      ch:Receive("Test", "Zbroken", "GUILD", "Brin Ashvale")
+      ch:Receive("Test", S, "GUILD", "Brin Ashvale")
+    """)
+    check("your own, other distributions, other prefixes, broken and secret messages are dropped", lua.eval("#inbox == 1"))
+    lua.execute('T.addonResult = 5; ch:Test()')
+    check("a refused test send blocks the channel",
+          lua.eval('ch.refused == true and ch.lastResult == "NotInGuild" and ch:Send("x", "GUILD") == false'))
+    lua.execute('T.addonResult = 3; T.now = 1000; ch:Tick()')
+    check("a throttle on retest isn't a refusal", lua.eval('ch.refused == nil and ch:Blocked() == nil'))
+    lua.execute('T.addonResult = 0')
+
+    # Say
+    lua.execute('T.said, T.box = {}, nil; result = LF:Say("Thunderfury to Brin", "RAID")')
+    check("Say sends the line",
+          lua.eval('result == "sent" and T.said[1].kind == "RAID" and T.said[1].text == "Thunderfury to Brin"'))
+    lua.execute('T.Fire("CHAT_MSG_RAID", "Thunderfury to Brin")')
+    check("and its echo marks that chat as reaching", lua.eval('LF.state.sayMemory["RAID:world"] == true'))
+    lua.execute('T.instance = "party"; result = LF:Say("pull in 3", "SAY"); T.Tick()')
+    check("no echo: the chat box opens with the line ready",
+          lua.eval('result == "sent" and T.box == "/s pull in 3" and LF.state.sayMemory["SAY:instance"] == false'))
+    check("and the player is told why", lua.eval('T.chat[#T.chat]:find("press Enter") ~= nil'))
+    lua.execute('T.said, T.box = {}, nil; result = LF:Say("again", "SAY")')
+    check("next time in that place the box opens at once", lua.eval('result == "box" and #T.said == 0 and T.box == "/s again"'))
+    lua.execute('T.instance = nil; T.chatRefused = true; result = LF:Say("hello", "YELL")')
+    check("a refused send opens the box too",
+          lua.eval('result == "box" and T.box == "/y hello" and LF.state.sayMemory["YELL:world"] == false'))
+    lua.execute('T.chatRefused = false; T.said = {}; LF:Say("hi", "WHISPER", "Brin")')
+    check("a whisper goes to the full name", lua.eval('T.said[1].target == "Brin Ashvale"'))
+    lua.execute('saved = {}; LF:SetSayMemory(function() return saved end, function(m) told = m end); LF:Say("x", "GUILD"); T.Tick()')
+    check("SetSayMemory: an add-on's own table, and its own way to tell the player",
+          lua.eval('saved["GUILD:world"] == false and told ~= nil'))
+    lua.execute("LF:ResetSay()")
+    check("ResetSay forgets", lua.eval("next(saved) == nil"))
+    lua.execute("LF:SetSayMemory(nil)")
+
     # Another add-on's older copy loads after this one: it steps aside, and nothing is reset
     frames = lua.eval("T.FrameCount()")
     load_copy(minor - 1 if minor > 1 else 0)
@@ -186,6 +294,8 @@ def main():
     check("names learned before the upgrade are kept", lua.eval('LF.Names:Address("Elowen") == "Elowen Brightwater"')
           and lua.eval("LF.Names == oldNames"))
     check("Compat is filled again", lua.eval("LF.Compat == oldCompat and LF.Compat.GetSpellInfo ~= nil"))
+    check("Net keeps its channels, with the new methods, and one ticker",
+          lua.eval('LF.Net.channels.Test == ch and getmetatable(ch) == LF.Net.Channel_ and #T.tickers == 1'))
 
     print("failed: %d" % failed)
     print("errors: 0")
