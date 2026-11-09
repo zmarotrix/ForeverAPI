@@ -262,7 +262,7 @@ Namespace: `C_ProfSpecs`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 1 times (1 in combat); argument kinds: ``
+- Seen firing 3 times (1 in combat); argument kinds: ``
 
 ### SKILL_LINE_SPECS_UNLOCKED
 

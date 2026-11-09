@@ -31,7 +31,7 @@ Namespace: `C_Cursor`
 - Status: ✅ verified
 - Payload: `isDefault: bool`, `newCursorType: UICursorType`, `oldCursorType: UICursorType`, `oldCursorVirtualID: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 20494 times (16612 in combat); argument kinds: `b,n,n,n`
+- Seen firing 36995 times (30226 in combat); argument kinds: `b,n,n,n`
 
 ### MOUNT_CURSOR_CLEAR
 
@@ -45,4 +45,4 @@ Namespace: `C_Cursor`
 - Payload: `anchorType: WorldCursorAnchorType`
 - Blizzard: Sends an update when the mouse enters or leaves something in-world (object, unit, etc) that should display a tooltip
 - fires synchronously (Blizzard's docs)
-- Seen firing 36618 times (25870 in combat); argument kinds: `n`
+- Seen firing 66179 times (45488 in combat); argument kinds: `n`

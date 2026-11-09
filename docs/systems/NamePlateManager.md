@@ -59,46 +59,46 @@ Namespace: `C_NamePlateManager`
 - Status: ✅ verified
 - Payload: `namePlateFrame: NamePlateFrame`
 - fires synchronously (Blizzard's docs)
-- Seen firing 6 times (0 in combat); argument kinds: `t`
+- Seen firing 10 times (2 in combat); argument kinds: `t`
 
 ### FORBIDDEN_NAME_PLATE_UNIT_ADDED
 
 - Status: ✅ verified
 - Payload: `unitToken: UnitTokenType`
 - fires synchronously (Blizzard's docs)
-- Seen firing 19 times (0 in combat); argument kinds: `s`
+- Seen firing 47 times (15 in combat); argument kinds: `s`
 
 ### FORBIDDEN_NAME_PLATE_UNIT_REMOVED
 
 - Status: ✅ verified
 - Payload: `unitToken: UnitTokenType`
 - fires synchronously (Blizzard's docs)
-- Seen firing 19 times (0 in combat); argument kinds: `s`
+- Seen firing 47 times (14 in combat); argument kinds: `s`
 
 ### NAME_PLATE_CREATED
 
 - Status: ✅ verified
 - Payload: `namePlateFrame: NamePlateFrame`
 - fires synchronously (Blizzard's docs)
-- Seen firing 176 times (63 in combat); argument kinds: `t`
+- Seen firing 258 times (102 in combat); argument kinds: `t`
 
 ### NAME_PLATE_UNIT_ADDED
 
 - Status: ✅ verified
 - Payload: `unitToken: UnitTokenType`
 - fires synchronously (Blizzard's docs)
-- Seen firing 5577 times (2916 in combat); argument kinds: `s`
+- Seen firing 10485 times (5701 in combat); argument kinds: `s`
 
 ### NAME_PLATE_UNIT_BEHIND_CAMERA_CHANGED
 
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`, `isBehindCamera: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 27 times (14 in combat); argument kinds: `s,b`
+- Seen firing 74 times (56 in combat); argument kinds: `s,b`
 
 ### NAME_PLATE_UNIT_REMOVED
 
 - Status: ✅ verified
 - Payload: `unitToken: UnitTokenType`
 - fires synchronously (Blizzard's docs)
-- Seen firing 5577 times (3298 in combat); argument kinds: `s`
+- Seen firing 10485 times (6469 in combat); argument kinds: `s`

@@ -43,30 +43,32 @@ Namespace: `C_Trainer`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 6 times (0 in combat); argument kinds: ``
 
 ### TRAINER_DESCRIPTION_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 56 times (0 in combat); argument kinds: ``
 
 ### TRAINER_SERVICE_INFO_NAME_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### TRAINER_SHOW
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 4 times (0 in combat); argument kinds: ``
 
 ### TRAINER_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 11 times (0 in combat); argument kinds: ``
+- Seen firing 25 times (0 in combat); argument kinds: ``

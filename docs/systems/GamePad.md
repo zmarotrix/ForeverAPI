@@ -263,7 +263,7 @@ Namespace: `C_GamePad`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 36 times (0 in combat); argument kinds: ``
+- Seen firing 45 times (0 in combat); argument kinds: ``
 
 ### GAME_PAD_CONNECTED
 

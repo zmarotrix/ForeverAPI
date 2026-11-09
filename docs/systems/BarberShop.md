@@ -296,12 +296,14 @@ Namespace: `C_BarberShopInternal`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 6 times (0 in combat); argument kinds: ``
 
 ### BARBER_SHOP_CLOSE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### BARBER_SHOP_COST_UPDATE
 
@@ -314,12 +316,14 @@ Namespace: `C_BarberShopInternal`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 5 times (0 in combat); argument kinds: ``
 
 ### BARBER_SHOP_OPEN
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### BARBER_SHOP_RESULT
 

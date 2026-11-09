@@ -102,14 +102,14 @@ Namespace: `C_SocialQueue`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 31 times (12 in combat); argument kinds: ``
+- Seen firing 53 times (17 in combat); argument kinds: ``
 
 ### SOCIAL_QUEUE_UPDATE
 
 - Status: ✅ verified
 - Payload: `groupGUID: WOWGUID`, `numAddedItems: number?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 158 times (25 in combat); argument kinds: `s,-` / `s,n`
+- Seen firing 307 times (60 in combat); argument kinds: `s,-` / `s,n`
 
 ## Types
 

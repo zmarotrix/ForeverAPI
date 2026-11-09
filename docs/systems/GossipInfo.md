@@ -208,7 +208,7 @@ Namespace: `C_GossipInfo`
 - Status: ✅ verified
 - Payload: `interactionIsContinuing: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 107 times (0 in combat); argument kinds: `b`
+- Seen firing 166 times (4 in combat); argument kinds: `b`
 
 ### GOSSIP_CONFIRM
 
@@ -221,7 +221,7 @@ Namespace: `C_GossipInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 32 times (0 in combat); argument kinds: ``
+- Seen firing 51 times (0 in combat); argument kinds: ``
 
 ### GOSSIP_ENTER_CODE
 
@@ -240,7 +240,7 @@ Namespace: `C_GossipInfo`
 - Status: ✅ verified
 - Payload: `uiTextureKit: textureKit?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 71 times (0 in combat); argument kinds: `-`
+- Seen firing 115 times (2 in combat); argument kinds: `-`
 
 ## Types
 

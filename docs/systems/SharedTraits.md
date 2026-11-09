@@ -540,21 +540,21 @@ Namespace: `C_Traits`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 64 times (0 in combat); argument kinds: ``
+- Seen firing 99 times (0 in combat); argument kinds: ``
 
 ### TRAIT_CONFIG_UPDATED
 
 - Status: ✅ verified
 - Payload: `configID: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `n`
+- Seen firing 3 times (0 in combat); argument kinds: `n`
 
 ### TRAIT_NODE_CHANGED
 
 - Status: ✅ verified
 - Payload: `nodeID: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: `n`
+- Seen firing 44 times (0 in combat); argument kinds: `n`
 
 ### TRAIT_NODE_CHANGED_PARTIAL
 
@@ -597,7 +597,7 @@ Namespace: `C_Traits`
 - Status: ✅ verified
 - Payload: `treeID: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 21 times (10 in combat); argument kinds: `n`
+- Seen firing 83 times (10 in combat); argument kinds: `n`
 
 ### TRY_PURCHASE_TO_NODE_PARTIAL_SUCCESS
 

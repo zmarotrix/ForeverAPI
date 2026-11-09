@@ -223,7 +223,7 @@ Namespace: `C_EncounterJournal`
 - Status: ✅ verified
 - Payload: `difficultyID: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `n`
+- Seen firing 4 times (0 in combat); argument kinds: `n`
 
 ### EJ_LOOT_DATA_RECIEVED
 

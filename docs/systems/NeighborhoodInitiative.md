@@ -217,7 +217,7 @@ Namespace: `C_NeighborhoodInitiative`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ### INITIATIVE_TASK_COMPLETED
 
@@ -230,7 +230,7 @@ Namespace: `C_NeighborhoodInitiative`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 3 times (0 in combat); argument kinds: ``
 
 ## Types
 

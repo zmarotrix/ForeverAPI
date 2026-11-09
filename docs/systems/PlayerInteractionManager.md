@@ -91,11 +91,11 @@ Namespace: `C_PlayerInteractionManager`
 - Status: ✅ verified
 - Payload: `type: PlayerInteractionType`
 - fires synchronously (Blizzard's docs)
-- Seen firing 359 times (5 in combat); argument kinds: `n`
+- Seen firing 641 times (9 in combat); argument kinds: `n`
 
 ### PLAYER_INTERACTION_MANAGER_FRAME_SHOW
 
 - Status: ✅ verified
 - Payload: `type: PlayerInteractionType`
 - fires synchronously (Blizzard's docs)
-- Seen firing 115 times (1 in combat); argument kinds: `n`
+- Seen firing 205 times (3 in combat); argument kinds: `n`

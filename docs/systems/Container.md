@@ -484,21 +484,21 @@ Namespace: `C_Container`
 - Status: ✅ verified
 - Payload: `bagID: BagIndex`
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `n`
+- Seen firing 5 times (0 in combat); argument kinds: `n`
 
 ### BAG_CONTAINER_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 250 times (0 in combat); argument kinds: ``
+- Seen firing 443 times (6 in combat); argument kinds: ``
 
 ### BAG_NEW_ITEMS_UPDATED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 116 times (19 in combat); argument kinds: ``
+- Seen firing 226 times (41 in combat); argument kinds: ``
 
 ### BAG_OPEN
 
@@ -523,21 +523,21 @@ Namespace: `C_Container`
 - Status: ✅ verified
 - Payload: `bagID: BagIndex`
 - fires synchronously (Blizzard's docs)
-- Seen firing 6024 times (109 in combat); argument kinds: `n`
+- Seen firing 10626 times (312 in combat); argument kinds: `n`
 
 ### BAG_UPDATE_COOLDOWN
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 5704 times (4748 in combat); argument kinds: ``
+- Seen firing 13655 times (9164 in combat); argument kinds: ``
 
 ### BAG_UPDATE_DELAYED
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 505 times (65 in combat); argument kinds: ``
+- Seen firing 897 times (121 in combat); argument kinds: ``
 
 ### EQUIP_BIND_REFUNDABLE_CONFIRM
 
@@ -550,7 +550,7 @@ Namespace: `C_Container`
 - Status: ✅ verified
 - Payload: `slot: number`, `itemLocation: ItemLocation`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: `n,t`
+- Seen firing 3 times (0 in combat); argument kinds: `n,t`
 
 ### EXPAND_BAG_BAR_CHANGED
 
@@ -569,21 +569,21 @@ Namespace: `C_Container`
 - Status: ✅ verified
 - Payload: `bagOrSlotIndex: BagIndex`, `slotIndex: luaIndex?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 142 times (4 in combat); argument kinds: `n,-` / `n,n`
+- Seen firing 224 times (4 in combat); argument kinds: `n,-` / `n,n`
 
 ### ITEM_LOCK_CHANGED
 
 - Status: ✅ verified
 - Payload: `bagOrSlotIndex: BagIndex`, `slotIndex: luaIndex?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 209 times (8 in combat); argument kinds: `n,-` / `n,n`
+- Seen firing 329 times (8 in combat); argument kinds: `n,-` / `n,n`
 
 ### ITEM_UNLOCKED
 
 - Status: ✅ verified
 - Payload: `bagOrSlotIndex: BagIndex`, `slotIndex: luaIndex?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 67 times (4 in combat); argument kinds: `n,-` / `n,n`
+- Seen firing 105 times (4 in combat); argument kinds: `n,-` / `n,n`
 
 ### USE_COMBINED_BAGS_CHANGED
 

@@ -173,7 +173,7 @@ Namespace: `C_RecruitAFriend`
 - Status: ✅ verified
 - Payload: `info: RafInfo`
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: `t`
+- Seen firing 5 times (0 in combat); argument kinds: `t`
 
 ### RAF_RECRUITING_ENABLED_STATUS
 

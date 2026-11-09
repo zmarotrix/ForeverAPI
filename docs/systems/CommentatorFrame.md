@@ -1480,7 +1480,7 @@ Namespace: `C_Commentator`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 31 times (0 in combat); argument kinds: ``
+- Seen firing 57 times (1 in combat); argument kinds: ``
 
 ### COMMENTATOR_HISTORY_FLUSHED
 

@@ -120,14 +120,14 @@ Namespace: `C_KeyBindings`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 36 times (0 in combat); argument kinds: ``
+- Seen firing 47 times (0 in combat); argument kinds: ``
 
 ### MODIFIER_STATE_CHANGED
 
 - Status: ✅ verified
 - Payload: `key: cstring`, `down: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 2320 times (1463 in combat); argument kinds: `s,n`
+- Seen firing 4958 times (3365 in combat); argument kinds: `s,n`
 
 ### NOTIFY_TURN_STRAFE_CHANGE
 
@@ -140,7 +140,7 @@ Namespace: `C_KeyBindings`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 177 times (0 in combat); argument kinds: ``
+- Seen firing 230 times (0 in combat); argument kinds: ``
 
 ## Types
 

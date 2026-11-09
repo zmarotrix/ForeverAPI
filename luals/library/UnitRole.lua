@@ -19,7 +19,7 @@ function InitiateRolePoll() end
 ---
 ---**Secret when**: unit identity restricted.
 ---
----Seen secret: party/boss (nameplate: enemy npc), party/boss (target: enemy npc), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc).
+---Seen secret: party/boss (nameplate: enemy npc), party/boss (target: enemy npc), party/boss (targettarget: enemy npc), party/boss (targettarget: enemy player), party/boss (targettarget: friendly npc), party/boss (targettarget: friendly player), party/combat (nameplate: enemy npc), party/combat (target: enemy npc), party/combat (target: friendly npc), party/combat (targettarget: enemy npc), party/combat (targettarget: friendly npc), party/combat (targettarget: friendly player), party/idle (nameplate: enemy npc), party/idle (target: enemy npc), party/idle (target: friendly npc), party/idle (targettarget: enemy npc), party/idle (targettarget: friendly npc).
 ---@param unit UnitToken
 ---@return boolean tank
 ---@return boolean healer

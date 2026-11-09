@@ -115,3 +115,4 @@ Namespace: `C_ClickBindings`
 - Status: ✅ verified
 - Payload: `showHighlights: bool`
 - fires synchronously (Blizzard's docs)
+- Seen firing 22 times (0 in combat); argument kinds: `b`

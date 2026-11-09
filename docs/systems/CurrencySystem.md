@@ -436,7 +436,7 @@ Namespace: `C_CurrencyInfo`
 - Status: ✅ verified
 - Payload: `currencyType: number?`, `quantity: number?`, `quantityChange: number?`, `quantityGainSource: number?`, `destroyReason: number?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 74 times (1 in combat); argument kinds: `-,-,-,-,-` / `n,n,n,n,n`
+- Seen firing 111 times (1 in combat); argument kinds: `-,-,-,-,-` / `n,n,n,n,n`
 
 ### CURRENCY_TRANSFER_FAILED
 
@@ -467,7 +467,7 @@ Namespace: `C_CurrencyInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 444 times (116 in combat); argument kinds: ``
+- Seen firing 1036 times (272 in combat); argument kinds: ``
 
 ## Types
 

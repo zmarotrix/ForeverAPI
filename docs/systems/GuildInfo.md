@@ -420,13 +420,14 @@ Namespace: `C_GuildInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 34 times (4 in combat); argument kinds: ``
+- Seen firing 44 times (5 in combat); argument kinds: ``
 
 ### GUILD_EVENT_LOG_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 25 times (0 in combat); argument kinds: ``
 
 ### GUILD_INVITE_CANCEL
 
@@ -446,14 +447,14 @@ Namespace: `C_GuildInfo`
 - Payload: `motdText: cstring`
 - secret during chat lockdown (Blizzard's docs)
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `s`
+- Seen firing 3 times (0 in combat); argument kinds: `s`
 
 ### GUILD_NEWS_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 4 times (0 in combat); argument kinds: ``
 
 ### GUILD_PARTY_STATE_UPDATED
 
@@ -466,20 +467,21 @@ Namespace: `C_GuildInfo`
 - Status: ✅ verified
 - Payload: `status: PreferredPlaySettingsStatus`, `preferredLocaleID: number`, `preferredDatacenterLocalityID: number`, `lastPreferredLocaleChangeDate: time_t`, `lastPreferredDatacenterLocalityChangeDate: time_t`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `n,n,n,n,n`
 
 ### GUILD_RANKS_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 535 times (102 in combat); argument kinds: ``
+- Seen firing 985 times (191 in combat); argument kinds: ``
 
 ### GUILD_RANKS_UPDATE_ACTIVE_PLAYER
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 31 times (0 in combat); argument kinds: ``
+- Seen firing 57 times (0 in combat); argument kinds: ``
 
 ### GUILD_RECIPE_KNOWN_BY_MEMBERS
 
@@ -528,7 +530,7 @@ Namespace: `C_GuildInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: ``
+- Seen firing 8 times (0 in combat); argument kinds: ``
 
 ### GUILD_REWARDS_LIST_UPDATE
 
@@ -541,14 +543,14 @@ Namespace: `C_GuildInfo`
 - Status: ✅ verified
 - Payload: `canRequestRosterUpdate: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1293 times (213 in combat); argument kinds: `b`
+- Seen firing 2399 times (435 in combat); argument kinds: `b`
 
 ### GUILD_TRADESKILL_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 728 times (141 in combat); argument kinds: ``
+- Seen firing 1363 times (272 in combat); argument kinds: ``
 
 ### OPEN_TABARD_FRAME
 
@@ -561,7 +563,7 @@ Namespace: `C_GuildInfo`
 - Status: ✅ verified
 - Payload: `unitTarget: UnitTokenVariant`
 - fires synchronously (Blizzard's docs)
-- Seen firing 109 times (1 in combat); argument kinds: `s`
+- Seen firing 223 times (8 in combat); argument kinds: `s`
 
 ### REQUESTED_GUILD_RENAME_RESULT
 
@@ -580,7 +582,7 @@ Namespace: `C_GuildInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 31 times (0 in combat); argument kinds: ``
+- Seen firing 57 times (0 in combat); argument kinds: ``
 
 ### TABARD_SAVE_PENDING
 

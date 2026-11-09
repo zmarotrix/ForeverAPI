@@ -61,14 +61,14 @@ Namespace: `C_LootHistory`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 5 times (0 in combat); argument kinds: ``
+- Seen firing 9 times (0 in combat); argument kinds: ``
 
 ### LOOT_HISTORY_GO_TO_ENCOUNTER
 
 - Status: ✅ verified
 - Payload: `encounterID: number`
 - unique event (Blizzard's docs)
-- Seen firing 50 times (24 in combat); argument kinds: `n`
+- Seen firing 87 times (41 in combat); argument kinds: `n`
 
 ### LOOT_HISTORY_ONE_HUNDRED_ROLL
 
@@ -81,14 +81,14 @@ Namespace: `C_LootHistory`
 - Status: ✅ verified
 - Payload: `encounterID: number`, `lootListKey: number`
 - unique event (Blizzard's docs)
-- Seen firing 224 times (61 in combat); argument kinds: `n,n`
+- Seen firing 411 times (126 in combat); argument kinds: `n,n`
 
 ### LOOT_HISTORY_UPDATE_ENCOUNTER
 
 - Status: ✅ verified
 - Payload: `encounterID: number`
 - unique event (Blizzard's docs)
-- Seen firing 118 times (41 in combat); argument kinds: `n`
+- Seen firing 218 times (80 in combat); argument kinds: `n`
 
 ## Types
 

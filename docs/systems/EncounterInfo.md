@@ -25,14 +25,14 @@
 - Status: ✅ verified
 - Payload: `encounterID: number`, `encounterName: cstring`, `difficultyID: number`, `groupSize: number`, `success: number`, `encounterUnitStatus: EncounterUnitStatus[]`
 - fires synchronously (Blizzard's docs)
-- Seen firing 18 times (18 in combat); argument kinds: `n,s,n,n,n,t`
+- Seen firing 26 times (26 in combat); argument kinds: `n,s,n,n,n,t`
 
 ### ENCOUNTER_START
 
 - Status: ✅ verified
 - Payload: `encounterID: number`, `encounterName: cstring`, `difficultyID: number`, `groupSize: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 18 times (8 in combat); argument kinds: `n,s,n,n`
+- Seen firing 26 times (13 in combat); argument kinds: `n,s,n,n`
 
 ### INSTANCE_LOCK_START
 
@@ -45,7 +45,7 @@
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 64 times (0 in combat); argument kinds: ``
+- Seen firing 99 times (0 in combat); argument kinds: ``
 
 ### INSTANCE_LOCK_WARNING
 
@@ -58,14 +58,14 @@
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 37 times (11 in combat); argument kinds: ``
+- Seen firing 70 times (26 in combat); argument kinds: ``
 
 ### UPDATE_INSTANCE_INFO
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 170 times (12 in combat); argument kinds: ``
+- Seen firing 256 times (15 in combat); argument kinds: ``
 
 ## Types
 

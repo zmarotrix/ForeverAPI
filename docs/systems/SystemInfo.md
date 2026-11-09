@@ -48,7 +48,7 @@ Namespace: `C_System`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 36 times (4 in combat); argument kinds: ``
+- Seen firing 47 times (5 in combat); argument kinds: ``
 
 ### GENERIC_ERROR
 
@@ -61,28 +61,28 @@ Namespace: `C_System`
 - Status: ✅ verified
 - Payload: `button: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 16939 times (7992 in combat); argument kinds: `s`
+- Seen firing 30756 times (14598 in combat); argument kinds: `s`
 
 ### GLOBAL_MOUSE_UP
 
 - Status: ✅ verified
 - Payload: `button: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 16938 times (8024 in combat); argument kinds: `s`
+- Seen firing 30761 times (14658 in combat); argument kinds: `s`
 
 ### GLOBAL_REGION_MOUSE_DOWN
 
 - Status: ✅ verified
 - Payload: `region: ScriptRegion`, `button: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 13148 times (6689 in combat); argument kinds: `-,s` / `t,s`
+- Seen firing 23570 times (12175 in combat); argument kinds: `-,s` / `t,s`
 
 ### GLOBAL_REGION_MOUSE_UP
 
 - Status: ✅ verified
 - Payload: `region: ScriptRegion`, `button: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 16932 times (8020 in combat); argument kinds: `-,s` / `t,s`
+- Seen firing 30741 times (14651 in combat); argument kinds: `-,s` / `t,s`
 
 ### INITIAL_HOTFIXES_APPLIED
 
@@ -107,40 +107,42 @@ Namespace: `C_System`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### PLAYER_ENTERING_WORLD
 
 - Status: ✅ verified
 - Payload: `isInitialLogin: bool`, `isReloadingUi: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 64 times (0 in combat); argument kinds: `b,b`
+- Seen firing 99 times (0 in combat); argument kinds: `b,b`
 
 ### PLAYER_LEAVING_WORLD
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 64 times (0 in combat); argument kinds: ``
+- Seen firing 99 times (0 in combat); argument kinds: ``
 
 ### PLAYER_LOGIN
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 36 times (0 in combat); argument kinds: ``
+- Seen firing 47 times (0 in combat); argument kinds: ``
 
 ### PLAYER_LOGOUT
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 36 times (0 in combat); argument kinds: ``
+- Seen firing 47 times (0 in combat); argument kinds: ``
 
 ### PLAYER_QUITING
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### SEARCH_DB_LOADED
 
@@ -153,7 +155,7 @@ Namespace: `C_System`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 53 times (0 in combat); argument kinds: ``
+- Seen firing 88 times (2 in combat); argument kinds: ``
 
 ### SHARD_TRANSFER_CANCELLED
 
@@ -184,14 +186,14 @@ Namespace: `C_System`
 - Status: ✅ verified
 - Payload: `totalTimePlayed: number`, `timePlayedThisLevel: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 36 times (5 in combat); argument kinds: `n,n`
+- Seen firing 48 times (6 in combat); argument kinds: `n,n`
 
 ### UI_ERROR_MESSAGE
 
 - Status: ✅ verified
 - Payload: `errorType: luaIndex`, `message: string`
 - unique event (Blizzard's docs)
-- Seen firing 22804 times (22011 in combat); argument kinds: `n,s`
+- Seen firing 44512 times (42689 in combat); argument kinds: `n,s`
 
 ### UI_ERROR_POPUP
 
@@ -204,14 +206,14 @@ Namespace: `C_System`
 - Status: ✅ verified
 - Payload: `errorType: luaIndex`, `message: string`
 - unique event (Blizzard's docs)
-- Seen firing 147 times (53 in combat); argument kinds: `n,s`
+- Seen firing 248 times (85 in combat); argument kinds: `n,s`
 
 ### VARIABLES_LOADED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 36 times (0 in combat); argument kinds: ``
+- Seen firing 47 times (0 in combat); argument kinds: ``
 
 ### WOW_MOUSE_NOT_FOUND
 

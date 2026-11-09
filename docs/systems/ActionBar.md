@@ -825,7 +825,7 @@ Namespace: `C_ActionBar`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 16 times (0 in combat); argument kinds: ``
+- Seen firing 38 times (0 in combat); argument kinds: ``
 
 ### ACTIONBAR_PAGE_CHANGED
 
@@ -838,7 +838,7 @@ Namespace: `C_ActionBar`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 16 times (0 in combat); argument kinds: ``
+- Seen firing 38 times (0 in combat); argument kinds: ``
 
 ### ACTIONBAR_SHOW_BOTTOMLEFT
 
@@ -851,28 +851,28 @@ Namespace: `C_ActionBar`
 - Status: ✅ verified
 - Payload: `slot: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 839 times (292 in combat); argument kinds: `n`
+- Seen firing 1680 times (671 in combat); argument kinds: `n`
 
 ### ACTIONBAR_UPDATE_COOLDOWN
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 9743 times (7954 in combat); argument kinds: ``
+- Seen firing 20988 times (15180 in combat); argument kinds: ``
 
 ### ACTIONBAR_UPDATE_STATE
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 35707 times (33813 in combat); argument kinds: ``
+- Seen firing 68932 times (65235 in combat); argument kinds: ``
 
 ### ACTIONBAR_UPDATE_USABLE
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 5475 times (4525 in combat); argument kinds: ``
+- Seen firing 10032 times (8333 in combat); argument kinds: ``
 
 ### ACTION_RANGE_CHECK_UPDATE
 
@@ -880,14 +880,14 @@ Namespace: `C_ActionBar`
 - Payload: `slot: luaIndex`, `isInRange: bool`, `checksRange: bool`
 - Blizzard: Used in conjunction with EnableActionRangeCheck to inform the UI when an action goes in or out of range with its current target.
 - fires synchronously (Blizzard's docs)
-- Seen firing 40971 times (25667 in combat); argument kinds: `n,b,b`
+- Seen firing 67935 times (41604 in combat); argument kinds: `n,b,b`
 
 ### ACTION_USABLE_CHANGED
 
 - Status: ✅ verified
 - Payload: `changes: ActionUsableState[]`
 - fires synchronously (Blizzard's docs)
-- Seen firing 5477 times (4526 in combat); argument kinds: `t`
+- Seen firing 10034 times (8333 in combat); argument kinds: `t`
 
 ### PET_BAR_UPDATE
 
@@ -901,14 +901,14 @@ Namespace: `C_ActionBar`
 - Payload: none
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 237 times (27 in combat); argument kinds: ``
+- Seen firing 440 times (68 in combat); argument kinds: ``
 
 ### UPDATE_EXTRA_ACTIONBAR
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 64 times (4 in combat); argument kinds: ``
+- Seen firing 105 times (7 in combat); argument kinds: ``
 
 ### UPDATE_MULTI_CAST_ACTIONBAR
 
@@ -921,7 +921,7 @@ Namespace: `C_ActionBar`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 64 times (4 in combat); argument kinds: ``
+- Seen firing 105 times (7 in combat); argument kinds: ``
 
 ## Types
 

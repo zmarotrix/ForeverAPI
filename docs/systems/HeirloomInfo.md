@@ -90,7 +90,7 @@ Namespace: `C_HeirloomInfo`
 - Payload: `itemID: number?`, `updateReason: cstring?`, `hideUntilLearned: bool?`
 - fires synchronously (Blizzard's docs)
 - unique event (Blizzard's docs)
-- Seen firing 1 times (1 in combat); argument kinds: `-,-,-`
+- Seen firing 2 times (1 in combat); argument kinds: `-,-,-`
 
 ### HEIRLOOM_UPGRADE_TARGETING_CHANGED
 

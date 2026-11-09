@@ -57,13 +57,14 @@ Namespace: `C_WowTokenUI`
 - Status: ✅ verified
 - Payload: `result: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: `n`
+- Seen firing 9 times (0 in combat); argument kinds: `n`
 
 ### TOKEN_MARKET_PRICE_UPDATED
 
 - Status: ✅ verified
 - Payload: `result: number`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `n`
 
 ### TOKEN_REDEEM_BALANCE_UPDATED
 
@@ -118,4 +119,4 @@ Namespace: `C_WowTokenUI`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 31 times (12 in combat); argument kinds: ``
+- Seen firing 53 times (17 in combat); argument kinds: ``

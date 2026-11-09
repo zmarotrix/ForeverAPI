@@ -399,7 +399,7 @@ Namespace: `C_FriendList`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 5 times (0 in combat); argument kinds: ``
 
 ### BN_DISCONNECTED
 
@@ -413,21 +413,21 @@ Namespace: `C_FriendList`
 - Status: ✅ verified
 - Payload: `friendId: number`, `isCompanionApp: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 13 times (2 in combat); argument kinds: `n,b`
+- Seen firing 23 times (7 in combat); argument kinds: `n,b`
 
 ### BN_FRIEND_ACCOUNT_ONLINE
 
 - Status: ✅ verified
 - Payload: `friendId: number`, `isCompanionApp: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 10 times (2 in combat); argument kinds: `n,b`
+- Seen firing 20 times (2 in combat); argument kinds: `n,b`
 
 ### BN_FRIEND_INFO_CHANGED
 
 - Status: ✅ verified
 - Payload: `friendIndex: luaIndex?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 8249 times (949 in combat); argument kinds: `-` / `n`
+- Seen firing 13856 times (1600 in combat); argument kinds: `-` / `n`
 
 ### BN_FRIEND_INVITE_ADDED
 
@@ -458,7 +458,7 @@ Namespace: `C_FriendList`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 365 times (19 in combat); argument kinds: ``
+- Seen firing 563 times (23 in combat); argument kinds: ``
 
 ### BN_REQUEST_FOF_SUCCEEDED
 

@@ -125,7 +125,7 @@ Namespace: `C_EditMode`
 - Status: ✅ verified
 - Payload: `layoutInfo: EditModeLayouts`, `reconcileLayouts: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 64 times (0 in combat); argument kinds: `t,b`
+- Seen firing 99 times (0 in combat); argument kinds: `t,b`
 
 ## Types
 

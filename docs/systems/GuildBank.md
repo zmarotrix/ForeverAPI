@@ -24,6 +24,7 @@ Namespace: `C_GuildBank`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### GUILDBANKFRAME_CLOSED
 
@@ -60,6 +61,7 @@ Namespace: `C_GuildBank`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### GUILDBANK_UPDATE_TABS
 
@@ -78,4 +80,4 @@ Namespace: `C_GuildBank`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 64 times (4 in combat); argument kinds: ``
+- Seen firing 101 times (5 in combat); argument kinds: ``

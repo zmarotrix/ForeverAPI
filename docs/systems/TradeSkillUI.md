@@ -1293,7 +1293,7 @@ Namespace: `C_TradeSkillUI`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 66 times (0 in combat); argument kinds: ``
+- Seen firing 103 times (0 in combat); argument kinds: ``
 
 ### TRADE_SKILL_CRAFTING_REAGENT_BONUS_TEXT_UPDATED
 
@@ -1319,14 +1319,14 @@ Namespace: `C_TradeSkillUI`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### TRADE_SKILL_DATA_SOURCE_CHANGING
 
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### TRADE_SKILL_DETAILS_UPDATE
 
@@ -1358,7 +1358,7 @@ Namespace: `C_TradeSkillUI`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 17 times (0 in combat); argument kinds: ``
+- Seen firing 18 times (0 in combat); argument kinds: ``
 
 ### TRADE_SKILL_NAME_UPDATE
 
@@ -1371,7 +1371,7 @@ Namespace: `C_TradeSkillUI`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (0 in combat); argument kinds: ``
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ### UPDATE_TRADESKILL_CAST_STOPPED
 

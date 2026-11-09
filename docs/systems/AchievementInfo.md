@@ -81,7 +81,7 @@ Namespace: `C_AchievementInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 4 times (0 in combat); argument kinds: ``
 
 ### CRITERIA_COMPLETE
 
@@ -100,7 +100,7 @@ Namespace: `C_AchievementInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 3952 times (3053 in combat); argument kinds: ``
+- Seen firing 7548 times (5389 in combat); argument kinds: ``
 
 ### INSPECT_ACHIEVEMENT_READY
 
@@ -113,7 +113,7 @@ Namespace: `C_AchievementInfo`
 - Status: ✅ verified
 - Payload: none
 - unique event (Blizzard's docs)
-- Seen firing 9 times (4 in combat); argument kinds: ``
+- Seen firing 15 times (5 in combat); argument kinds: ``
 
 ### RECEIVED_ACHIEVEMENT_MEMBER_LIST
 

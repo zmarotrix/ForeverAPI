@@ -397,7 +397,7 @@ Namespace: `C_UIWidgetManager`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 32 times (0 in combat); argument kinds: ``
+- Seen firing 58 times (0 in combat); argument kinds: ``
 
 ### UPDATE_UI_WIDGET
 

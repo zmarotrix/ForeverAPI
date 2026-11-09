@@ -7,4 +7,4 @@
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 36 times (0 in combat); argument kinds: ``
+- Seen firing 47 times (0 in combat); argument kinds: ``

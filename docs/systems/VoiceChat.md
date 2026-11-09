@@ -808,21 +808,21 @@ Namespace: `C_VoiceChat`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 39 times (4 in combat); argument kinds: ``
+- Seen firing 56 times (6 in combat); argument kinds: ``
 
 ### VOICE_CHAT_ACTIVE_OUTPUT_DEVICE_UPDATED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 39 times (4 in combat); argument kinds: ``
+- Seen firing 56 times (6 in combat); argument kinds: ``
 
 ### VOICE_CHAT_ACTIVE_VOICE_PROVIDER_CHANGED
 
 - Status: ✅ verified
 - Payload: `voiceProviderID: VoiceProviderID`
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: `n`
+- Seen firing 10 times (1 in combat); argument kinds: `n`
 
 ### VOICE_CHAT_AUDIO_CAPTURE_ENERGY
 
@@ -990,14 +990,14 @@ Namespace: `C_VoiceChat`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 5 times (0 in combat); argument kinds: ``
 
 ### VOICE_CHAT_DEAFENED_CHANGED
 
 - Status: ✅ verified
 - Payload: `isDeafened: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 9 times (0 in combat); argument kinds: `b`
+- Seen firing 20 times (3 in combat); argument kinds: `b`
 
 ### VOICE_CHAT_DISCORD_SETTINGS_UPDATED
 
@@ -1016,7 +1016,7 @@ Namespace: `C_VoiceChat`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 9 times (0 in combat); argument kinds: ``
+- Seen firing 19 times (1 in combat); argument kinds: ``
 
 ### VOICE_CHAT_LOGIN
 
@@ -1035,14 +1035,14 @@ Namespace: `C_VoiceChat`
 - Status: ✅ verified
 - Payload: `isMuted: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 10 times (0 in combat); argument kinds: `b`
+- Seen firing 24 times (4 in combat); argument kinds: `b`
 
 ### VOICE_CHAT_OUTPUT_DEVICES_UPDATED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 9 times (0 in combat); argument kinds: ``
+- Seen firing 19 times (1 in combat); argument kinds: ``
 
 ### VOICE_CHAT_PENDING_CHANNEL_JOIN_STATE
 
@@ -1055,7 +1055,7 @@ Namespace: `C_VoiceChat`
 - Status: ✅ verified
 - Payload: `isPressed: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 16 times (0 in combat); argument kinds: `b`
+- Seen firing 44 times (4 in combat); argument kinds: `b`
 
 ### VOICE_CHAT_SILENCED_CHANGED
 
@@ -1110,14 +1110,14 @@ Namespace: `C_VoiceChat`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 4 times (0 in combat); argument kinds: ``
 
 ### VOICE_CHAT_VAD_SETTINGS_UPDATED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 6 times (0 in combat); argument kinds: ``
+- Seen firing 14 times (1 in combat); argument kinds: ``
 
 ### VOICE_CHAT_VOICE_PROVIDERS_AVAILABLE_CHANGED
 
@@ -1130,7 +1130,7 @@ Namespace: `C_VoiceChat`
 - Status: ✅ verified
 - Payload: `voiceProviderID: VoiceProviderID`
 - fires synchronously (Blizzard's docs)
-- Seen firing 4 times (0 in combat); argument kinds: `n`
+- Seen firing 10 times (1 in combat); argument kinds: `n`
 
 ## Types
 

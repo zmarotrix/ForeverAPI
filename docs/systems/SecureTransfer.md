@@ -156,7 +156,7 @@ Namespace: `C_SecureTransfer`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 176 times (10 in combat); argument kinds: ``
+- Seen firing 304 times (11 in combat); argument kinds: ``
 
 ### SECURE_TRANSFER_CONFIRM_HOUSING_PURCHASE
 

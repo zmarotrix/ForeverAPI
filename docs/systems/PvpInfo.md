@@ -1130,7 +1130,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: `unitToken: cstring`, `updateReason: cstring`
 - fires synchronously (Blizzard's docs)
-- Seen firing 870 times (0 in combat); argument kinds: `s,s`
+- Seen firing 1650 times (0 in combat); argument kinds: `s,s`
 
 ### ARENA_PREP_OPPONENT_SPECIALIZATIONS
 
@@ -1143,7 +1143,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 5 times (0 in combat); argument kinds: ``
 
 ### BATTLEFIELDS_CLOSED
 
@@ -1222,7 +1222,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: `isPvpFlagged: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 26 times (3 in combat); argument kinds: `b`
+- Seen firing 30 times (5 in combat); argument kinds: `b`
 
 ### POST_MATCH_CURRENCY_REWARD_UPDATE
 
@@ -1247,14 +1247,14 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 1 times (1 in combat); argument kinds: ``
+- Seen firing 3 times (1 in combat); argument kinds: ``
 
 ### PVP_BRAWL_INFO_UPDATED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 64 times (4 in combat); argument kinds: ``
+- Seen firing 99 times (5 in combat); argument kinds: ``
 
 ### PVP_MATCH_ACTIVE
 
@@ -1285,7 +1285,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (2 in combat); argument kinds: ``
+- Seen firing 6 times (2 in combat); argument kinds: ``
 
 ### PVP_REWARDS_UPDATE
 
@@ -1316,7 +1316,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 64 times (4 in combat); argument kinds: ``
+- Seen firing 99 times (5 in combat); argument kinds: ``
 
 ### PVP_TYPES_ENABLED
 
@@ -1383,7 +1383,7 @@ Namespace: `C_PvP`
 - Status: ✅ verified
 - Payload: `warModeEnabled: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 31 times (12 in combat); argument kinds: `b`
+- Seen firing 53 times (17 in combat); argument kinds: `b`
 
 ### WORLD_PVP_QUEUE
 

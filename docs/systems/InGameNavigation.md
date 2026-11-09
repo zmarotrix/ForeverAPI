@@ -85,21 +85,21 @@ Namespace: `C_Navigation`
 - Status: ✅ verified
 - Payload: `isWaypoint: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: `b`
+- Seen firing 4 times (0 in combat); argument kinds: `b`
 
 ### NAVIGATION_FRAME_CREATED
 
 - Status: ✅ verified
 - Payload: `region: ScriptRegion`
 - fires synchronously (Blizzard's docs)
-- Seen firing 33 times (2 in combat); argument kinds: `t`
+- Seen firing 55 times (4 in combat); argument kinds: `t`
 
 ### NAVIGATION_FRAME_DESTROYED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 64 times (0 in combat); argument kinds: ``
+- Seen firing 99 times (0 in combat); argument kinds: ``
 
 ## Types
 

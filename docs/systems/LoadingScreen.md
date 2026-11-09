@@ -7,11 +7,11 @@
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 67 times (3 in combat); argument kinds: ``
+- Seen firing 103 times (5 in combat); argument kinds: ``
 
 ### LOADING_SCREEN_ENABLED
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 67 times (3 in combat); argument kinds: ``
+- Seen firing 101 times (5 in combat); argument kinds: ``

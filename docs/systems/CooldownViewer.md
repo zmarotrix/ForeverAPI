@@ -83,7 +83,7 @@ Namespace: `C_CooldownViewer`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 64 times (0 in combat); argument kinds: ``
+- Seen firing 99 times (0 in combat); argument kinds: ``
 
 ### COOLDOWN_VIEWER_SPELL_OVERRIDE_UPDATED
 

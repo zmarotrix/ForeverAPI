@@ -32,4 +32,4 @@ Namespace: `C_CovenantCallings`
 - Status: ✅ verified
 - Payload: `callings: BountyInfo[]`
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: `t`
+- Seen firing 5 times (0 in combat); argument kinds: `t`

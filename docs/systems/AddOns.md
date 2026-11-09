@@ -308,14 +308,14 @@ Namespace: `C_AddOns`
 - Status: ✅ verified
 - Payload: `closingClient: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 36 times (0 in combat); argument kinds: `b`
+- Seen firing 47 times (0 in combat); argument kinds: `b`
 
 ### ADDON_LOADED
 
 - Status: ✅ verified
 - Payload: `addOnName: cstring`, `containsBindings: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 1317 times (3 in combat); argument kinds: `s,b`
+- Seen firing 1739 times (3 in combat); argument kinds: `s,b`
 
 ### SAVED_VARIABLES_TOO_LARGE
 

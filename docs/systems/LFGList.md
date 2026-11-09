@@ -775,7 +775,7 @@ Namespace: `C_LFGList`
 - Status: ✅ verified
 - Payload: `created: bool?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: `-` / `b`
+- Seen firing 11 times (0 in combat); argument kinds: `-` / `b`
 
 ### LFG_LIST_APPLICANT_LIST_UPDATED
 
@@ -800,7 +800,7 @@ Namespace: `C_LFGList`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 65 times (5 in combat); argument kinds: ``
+- Seen firing 102 times (6 in combat); argument kinds: ``
 
 ### LFG_LIST_CENSORED_ACTIVE_ENTRY_UPDATE
 
@@ -825,6 +825,7 @@ Namespace: `C_LFGList`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### LFG_LIST_JOINED_GROUP
 
@@ -849,14 +850,14 @@ Namespace: `C_LFGList`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (1 in combat); argument kinds: ``
+- Seen firing 7 times (1 in combat); argument kinds: ``
 
 ### LFG_LIST_SEARCH_RESULT_UPDATED
 
 - Status: ✅ verified
 - Payload: `searchResultID: number`
 - fires synchronously (Blizzard's docs)
-- Seen firing 125 times (19 in combat); argument kinds: `n`
+- Seen firing 221 times (30 in combat); argument kinds: `n`
 
 ### LFG_LIST_SHOW_SEARCH
 

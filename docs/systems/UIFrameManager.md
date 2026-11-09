@@ -25,7 +25,7 @@ Namespace: `C_FrameManager`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 31 times (0 in combat); argument kinds: ``
+- Seen firing 57 times (0 in combat); argument kinds: ``
 
 ### FRAME_MANAGER_UPDATE_FRAME
 

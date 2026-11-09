@@ -384,6 +384,7 @@ Namespace: `C_CatalogShop`
 - Status: ✅ verified
 - Payload: `shoppingSessionUUIDStr: string?`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `s`
 
 ### CATALOG_SHOP_DISABLED
 
@@ -402,6 +403,7 @@ Namespace: `C_CatalogShop`
 - Status: ✅ verified
 - Payload: `shoppingSessionUUIDStr: string?`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `s`
 
 ### CATALOG_SHOP_OPEN_SIMPLE_CHECKOUT
 
@@ -426,6 +428,7 @@ Namespace: `C_CatalogShop`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: ``
 
 ### CATALOG_SHOP_REMOVE_PENDING_PRODUCT
 
@@ -462,12 +465,14 @@ Namespace: `C_CatalogShop`
 - Status: ✅ verified
 - Payload: `productIds: number[]`
 - fires synchronously (Blizzard's docs)
+- Seen firing 1 times (0 in combat); argument kinds: `t`
 
 ### SHOW_NEW_PRODUCT_NOTIFICATION
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 2 times (0 in combat); argument kinds: ``
 
 ## Types
 

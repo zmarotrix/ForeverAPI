@@ -158,7 +158,7 @@ Namespace: `C_QuestSession`
 - Status: ✅ verified
 - Payload: `enabled: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 31 times (12 in combat); argument kinds: `b`
+- Seen firing 53 times (17 in combat); argument kinds: `b`
 
 ### QUEST_SESSION_JOINED
 

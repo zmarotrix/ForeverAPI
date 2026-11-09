@@ -185,7 +185,7 @@ Namespace: `C_ItemSocketInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 64 times (0 in combat); argument kinds: ``
+- Seen firing 99 times (0 in combat); argument kinds: ``
 
 ### SOCKET_INFO_FAILURE
 

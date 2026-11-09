@@ -79,7 +79,7 @@ Namespace: `C_VignetteInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: ``
+- Seen firing 5 times (0 in combat); argument kinds: ``
 
 ### VIGNETTE_MINIMAP_UPDATED
 

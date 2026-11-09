@@ -240,7 +240,7 @@ Namespace: `C_PaperDollInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 55 times (39 in combat); argument kinds: ``
+- Seen firing 72 times (48 in combat); argument kinds: ``
 
 ### DISABLE_XP_GAIN
 
@@ -297,14 +297,14 @@ Namespace: `C_PaperDollInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 30 times (6 in combat); argument kinds: ``
+- Seen firing 54 times (6 in combat); argument kinds: ``
 
 ### PLAYER_EQUIPMENT_CHANGED
 
 - Status: ✅ verified
 - Payload: `equipmentSlot: number`, `hasCurrent: bool`
 - fires synchronously (Blizzard's docs)
-- Seen firing 3 times (0 in combat); argument kinds: `n,b`
+- Seen firing 7 times (0 in combat); argument kinds: `n,b`
 
 ### PROFESSION_EQUIPMENT_CHANGED
 
@@ -329,6 +329,7 @@ Namespace: `C_PaperDollInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
+- Seen firing 6 times (0 in combat); argument kinds: ``
 
 ### STURDINESS_UPDATE
 
@@ -341,7 +342,7 @@ Namespace: `C_PaperDollInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 436 times (220 in combat); argument kinds: ``
+- Seen firing 568 times (220 in combat); argument kinds: ``
 
 ### UPDATE_INVENTORY_ALERTS
 
@@ -355,7 +356,7 @@ Namespace: `C_PaperDollInfo`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 742 times (321 in combat); argument kinds: ``
+- Seen firing 1288 times (562 in combat); argument kinds: ``
 
 ### WEAPON_SLOT_CHANGED
 

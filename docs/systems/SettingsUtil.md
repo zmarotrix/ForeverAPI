@@ -32,11 +32,11 @@ Namespace: `C_SettingsUtil`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 36 times (0 in combat); argument kinds: ``
+- Seen firing 47 times (0 in combat); argument kinds: ``
 
 ### SETTINGS_PANEL_OPEN
 
 - Status: ✅ verified
 - Payload: `openToCategoryID: number?`, `scrollToElementName: stringView?`
 - fires synchronously (Blizzard's docs)
-- Seen firing 10 times (0 in combat); argument kinds: `n,-`
+- Seen firing 14 times (0 in combat); argument kinds: `n,-`

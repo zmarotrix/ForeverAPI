@@ -59,28 +59,28 @@ Namespace: `C_QuestOffer`
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 112 times (2 in combat); argument kinds: ``
+- Seen firing 211 times (3 in combat); argument kinds: ``
 
 ### QUEST_GREETING
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 2 times (0 in combat); argument kinds: ``
+- Seen firing 7 times (0 in combat); argument kinds: ``
 
 ### QUEST_ITEM_UPDATE
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 15 times (0 in combat); argument kinds: ``
+- Seen firing 21 times (0 in combat); argument kinds: ``
 
 ### QUEST_PROGRESS
 
 - Status: ✅ verified
 - Payload: none
 - fires synchronously (Blizzard's docs)
-- Seen firing 14 times (0 in combat); argument kinds: ``
+- Seen firing 51 times (0 in combat); argument kinds: ``
 
 ## Types
 
