@@ -300,8 +300,10 @@ def thanks(build, mods, dropped):
     return t
 
 
-def run(texts, known_for_build, dry_run=False, contrib=CONTRIB):
-    """texts: [(who, origin, text, issue number or None)]. Returns how many files were stored."""
+def run(texts, known_for_build, dry_run=False, contrib=CONTRIB, report=None):
+    """texts: [(who, origin, text, issue number or None)]. Returns how many files were stored.
+    report, if given, gets one dict per submission: origin, who, issue, outcome (filed / turned away / no export),
+    build, modules, dropped names, problems."""
     n = 0
     for who, origin, text, number in texts:
         got, problems_all, saved = False, [], []
@@ -322,6 +324,12 @@ def run(texts, known_for_build, dry_run=False, contrib=CONTRIB):
             n += 1
             print("  %s: stored %s for %s (%s)%s" % (origin, ", ".join(clean), header.get("build"), who,
                                                     ", dropped %d unknown names" % len(dropped) if dropped else ""))
+        if report is not None:
+            last = saved[-1] if saved else None
+            report.append({"origin": origin, "who": who, "issue": number,
+                           "outcome": "filed" if saved else ("turned away" if (got or problems_all) else "no export"),
+                           "build": last and last[0].get("build"), "modules": last and sorted(last[1]),
+                           "dropped": last[2] if last else [], "problems": problems_all})
         if number is None:
             continue
         if saved:

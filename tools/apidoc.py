@@ -6,6 +6,9 @@
     python tools/apidoc.py build       merge client docs + latest dump + web leads into docs/ and the website site/
     python tools/apidoc.py diff A B    compare two dumps (or two client-doc extracts), write docs/changes/
     python tools/apidoc.py release     zip the add-on and the VS Code definitions into dist/
+    python tools/apidoc.py release --publish [--yes]   post them as GitHub release v<TOC version> (dry run without --yes)
+    python tools/apidoc.py status [--json]             repo, site, release, open submissions (for Norgannon Desk)
+    (--json on status, contrib and release --publish: the log goes to stderr, one JSON object to stdout)
     python tools/apidoc.py contrib --github [--dry-run]   file other people's /fapi export submissions
     python tools/apidoc.py contrib <file> --as <name>     file one from a file on disk
     python tools/apidoc.py classic-scan [folders]   list the globals classic add-ons call (for the relocated-API table)
@@ -22,6 +25,7 @@ import json
 import os
 import re
 import shutil
+import subprocess
 import sys
 
 NL = chr(10)
@@ -497,9 +501,75 @@ def cmd_contrib(argv):
         for path in files:
             with open(path, encoding="utf-8", errors="replace") as f:
                 texts.append(("local-" + re.sub(r"[^A-Za-z0-9_-]", "", who), path, f.read(), None))
-    n = contrib.run(texts, known, dry, CONTRIB_DIR)
+    report = []
+    n = contrib.run(texts, known, dry, CONTRIB_DIR, report)
     print("%d submission(s) filed under contrib/%s" % (n, " (dry run: nothing written)" if dry else ""))
+    if "--json" in argv:
+        _json_out({"dry_run": dry, "filed": n, "submissions": report})
     return n
+
+
+def _json_out(obj):
+    """--json: the machine-readable answer goes to the real stdout (the human log went to stderr)."""
+    sys.__stdout__.write(json.dumps(obj, indent=1, default=str) + NL)
+    sys.__stdout__.flush()
+
+
+def _gh_json(*args):
+    try:
+        out = subprocess.run(["gh", *args], capture_output=True, text=True, encoding="utf-8", timeout=60)
+        return json.loads(out.stdout) if out.returncode == 0 and out.stdout.strip() else None
+    except Exception:  # no gh, no network: the status just says unknown
+        return None
+
+
+def _probe_version():
+    with open(os.path.join(ADDON_SRC, ADDON + ".toc"), encoding="utf-8") as f:
+        return re.search(r"^## Version:\s*(\S+)", f.read(), re.M).group(1)
+
+
+def cmd_status(argv=()):
+    """apidoc.py status [--json]: one look at ForeverAPI, for Norgannon Desk."""
+    def git(*a):
+        r = subprocess.run(["git", *a], cwd=ROOT, capture_output=True, text=True)
+        return r.stdout.strip() if r.returncode == 0 else ""
+    dump = latest_dump()
+    client = latest_client()
+    issues = _gh_json("issue", "list", "-R", contrib.REPO, "--state", "open", "--label", contrib.LABEL,
+                      "--limit", "200", "--json", "number,title,author,createdAt")
+    rel = _gh_json("release", "view", "-R", contrib.REPO, "--json", "tagName,publishedAt,url")
+    version = _probe_version()
+    filed = contrib.stored(None, CONTRIB_DIR)
+    state = os.path.join(ROOT, ".last-import")
+    st = {
+        "repo": "https://github.com/" + contrib.REPO,
+        "site": "https://zmarotrix.github.io/ForeverAPI/",
+        "client_docs": os.path.basename(client).split(".json")[0] if client else None,
+        "last_dump": os.path.basename(os.path.dirname(dump)) + "/" + os.path.basename(dump) if dump else None,
+        "last_import": datetime.datetime.fromtimestamp(os.path.getmtime(state)).isoformat(timespec="seconds")
+        if os.path.exists(state) else None,
+        "probe_version": version,
+        "released": (rel or {}).get("tagName"),
+        "release_url": (rel or {}).get("url"),
+        "release_needed": bool(rel) and (rel or {}).get("tagName") != "v" + version,
+        "submissions_open": None if issues is None else [
+            {"issue": i["number"], "who": (i.get("author") or {}).get("login"), "opened": i.get("createdAt"),
+             "url": "https://github.com/%s/issues/%d" % (contrib.REPO, i["number"])} for i in issues],
+        "filed": len(filed),
+        "contributors": sorted({rec["who"] for rec in filed}),
+        "git": {"branch": git("branch", "--show-current"), "dirty": bool(git("status", "--porcelain")),
+                "ahead": git("rev-list", "--count", "@{u}..HEAD") or None},
+    }
+    if "--json" in argv:
+        _json_out(st)
+    else:
+        for k, v in st.items():
+            if k == "submissions_open" and isinstance(v, list):
+                v = len(v)
+            elif isinstance(v, list):
+                v = ", ".join(map(str, v)) or "none"
+            print("%-17s %s" % (k, v))
+    return st
 
 
 LUALS_README = """WoW Forever API definitions for VS Code (the Lua extension by sumneko, LuaLS).
@@ -511,6 +581,40 @@ Every function says what the game showed: verified, always secret, secret in com
 Classic names that are gone on Forever are struck through, with where they went.
 Reference: https://zmarotrix.github.io/ForeverAPI/
 """
+
+
+def cmd_publish_release(argv):
+    """release --publish [--yes]: make the zips and post them as GitHub release v<version> (from the TOC).
+
+    Without --yes it only says what it would do. With --yes: refuses if the tag exists or a test fails, else
+    tags, pushes and runs gh release create with both zips. Bump ## Version in the TOC first."""
+    version, outs = cmd_release()
+    tag = "v" + version
+    exists = _gh_json("release", "view", tag, "-R", contrib.REPO, "--json", "tagName") is not None
+    plan = {"tag": tag, "files": [os.path.basename(o) for o in outs], "exists": exists, "published": False}
+    if exists:
+        print("%s is already released: bump ## Version in %s.toc first." % (tag, ADDON))
+    elif "--yes" not in argv:
+        print("dry run: would test, tag %s, push and post %s. Add --yes to do it." % (tag, ", ".join(plan["files"])))
+    else:
+        for t in ("test_probe.py", "test_collectors.py", "test_checks.py"):
+            r = subprocess.run([sys.executable, os.path.join(HERE, t)], capture_output=True, text=True)
+            if r.returncode:
+                print(r.stdout[-2000:])
+                sys.exit("tests failed (%s): nothing released" % t)
+        subprocess.run(["git", "tag", tag], cwd=ROOT, check=True)
+        subprocess.run(["git", "push", "-q", "origin", "HEAD", tag], cwd=ROOT, check=True)
+        build = plan["files"][-1].split("-")[-1][:-4] if len(plan["files"]) > 1 else "?"
+        notes = ("ForeverAPI Probe %s for WoW Forever client %s. Unzip ForeverAPIProbe into _forever_/Interface/AddOns, "
+                 "restart the game, then type /fapi. VS Code definitions: the ForeverAPI-LuaLS zip." + NL + NL +
+                 "Reference: https://zmarotrix.github.io/ForeverAPI/") % (version, build)
+        subprocess.run(["gh", "release", "create", tag, *outs, "-R", contrib.REPO, "--title", "ForeverAPI Probe " + version,
+                        "--notes", notes], check=True)
+        plan["published"] = True
+        print("released", tag)
+    if "--json" in argv:
+        _json_out(plan)
+    return plan
 
 
 def cmd_release():
@@ -550,6 +654,8 @@ def cmd_diff(a, b):
 
 
 def main(argv):
+    if "--json" in argv:
+        sys.stdout = sys.stderr  # the log; _json_out writes the answer to the real stdout
     if not argv or argv[0] in ("-h", "--help", "help"):
         print(__doc__)
         return
@@ -572,7 +678,12 @@ def main(argv):
         else:
             cmd_diff(argv[1], argv[2])
     elif cmd == "release":
-        cmd_release()
+        if "--publish" in argv:
+            cmd_publish_release(argv[1:])
+        else:
+            cmd_release()
+    elif cmd == "status":
+        cmd_status(argv[1:])
     elif cmd == "contrib":
         cmd_contrib(argv[1:])
     elif cmd == "classic-scan":
