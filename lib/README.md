@@ -14,7 +14,9 @@ It isn't a UI framework or a replacement for Ace3, and it works next to Ace3.
 
 ## Quick start
 
-1. Copy these folders from `lib/` into your add-on's `libs/` folder: `LibStub`, `CallbackHandler-1.0`,
+1. Download `LibForever-1.0.1.zip` from the
+   [release](https://github.com/zmarotrix/ForeverAPI/releases/tag/libforever-1.0.1) (or use `lib/` here). Copy these
+   folders into your add-on's `libs/` folder: `LibStub`, `CallbackHandler-1.0`,
    `AceComm-3.0` and `LibForever-1.0`. Skip any your add-on already has.
 2. List them in your TOC, in this order:
 
