@@ -9,8 +9,16 @@ lead and says so.
 - **Code against it in VS Code:** the `ForeverAPI-LuaLS` zip on the
   [releases page](https://github.com/zmarotrix/ForeverAPI/releases) (typed definitions with the same notes).
 - **Port classic code:** [docs/compat.json](docs/compat.json) maps each classic global to its Forever replacement.
+- **Build on it:** [LibForever-1.0](lib/README.md), a library that handles what the Forever client doesn't: the
+  classic functions that are gone, secret values, combat lockdown, first and last names, add-on messages and chat
+  lines that arrive.
 
-By Maro. All Rights Reserved. Built with AI assistance (Anthropic's Claude), directed by Maro.
+By Maro. Built with AI assistance (Anthropic's Claude), directed by Maro.
+
+**Licence:** the library (`lib/`, [LICENSE](lib/LICENSE)), the reference (`docs/`, [LICENSE](docs/LICENSE)) and the
+VS Code definitions (`luals/`, [LICENSE](luals/LICENSE)) are MIT. The libraries bundled with LibForever keep their own
+licences ([lib/THIRD-PARTY-NOTICES.md](lib/THIRD-PARTY-NOTICES.md)). Everything else here (the probe add-on, the
+tools and the website) is All Rights Reserved.
 
 ## How to help
 
